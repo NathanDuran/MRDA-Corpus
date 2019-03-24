@@ -1,0 +1,625 @@
+Bro007-c1_0008329_0008999,okay .,o_k .
+Bro007-c1_0009907_0010607,so ==,so ==
+Bro007-c1_0010957_0020627,uh - | today we're looking at a number of uh - things we're trying .,uh - | today we're looking at a number of uh - things we're trying .
+Bro007-c1_0021797_0027597,and uh - | fortunately for listeners to this uh - we lost some of it's visual .,and uh - | fortunately for listeners to this uh - we lost some of it's visual .
+Bro007-c1_0028007_0031027,but um - | got tables in front of us .,but um - | got tables in front of us .
+Bro007-c1_0031837_0034837,um - | what is - what does combo mean ?,um - | what is - what does combo mean ?
+Bro007-c2_0036630_0044895,so combo is um - a system where we have these features that go through a network .,so combo is um - a system where we have these features that go through a network .
+Bro007-c2_0044895_0052485,and then this same string of features but low pass filtered with the low pass filter used in the m s g features .,and then this same string of features but low-pass filtered with the low-pass filter used in the m_s_g features .
+Bro007-c2_0053450_0058310,and so these low pass filtered goes through m uh - another m l p .,and so these low-pass filtered goes through m_ eh - another m_l_p .
+Bro007-c2_0059030_0066780,and then the linear output of these two m l p's are combined just by adding the values and then there is this k l t .,and then the linear output of these two m_l_p's are combined just by adding the values and then there is this k_l_t .
+Bro007-c2_0068129_0072709,um - | the output is used as uh - features as well .,um - | the output is used as uh - features as well .
+Bro007-c1_0074266_0079576,um - so - | let me try to restate this and see if i have it right .,um - so - | let me try to restate this and see if i have it right .
+Bro007-c1_0080772_0098018,there is uh - there is the features uh - there's the o g i features and then um - those features um - go through a contextual - uh ==,there is uh - there is the features uh - there's the o_g_i features and then um - those features um - go through a contextual - uh ==
+Bro007-c1_0098018_0101608,l - l - let's take this bottom arr- - one pointed to by the bottom arrow .,l- - l- - let's take this bottom arr- - one pointed to by the bottom arrow .
+Bro007-c1_0102651_0106921,um - | those features go through a contextualized k l t .,um - | those features go through a contextualized k_l_t .
+Bro007-c2_0108313_0108493,yeah .,yeah .
+Bro007-c1_0108700_0115857,then these features also uh - get um - low pass filtered .,then these features also uh - get um - low-pass filtered .
+Bro007-c2_0117056_0117316,yeah .,yeah .
+Bro007-c2_0117516_0117776,so ==,so ==
+Bro007-c2_0118546_0120996,yeah i could perhaps draw this on the blackboard .,yeah i could perhaps draw this ** on the blackboard .
+Bro007-c1_0120280_0120640,sure .,sure .
+Bro007-c1_0121210_0121490,yeah .,yeah .
+Bro007-c1_0121850_0122100,yeah .,yeah .
+Bro007-c2_0123176_0123526,yeah .,yeah .
+Bro007-c3_0124735_0125105,the graph .,the graph .
+Bro007-c3_0125105_0126015,yeah another one .,yeah another one .
+Bro007-c2_0125984_0126224,thank you .,{thank} {you} .
+Bro007-c1_0126391_0127401,yeah that's good .,yeah that's good .
+Bro007-c2_0130305_0136416,so we have these features from o g i that goes through the three paths .,so we have these features from o_g_i that goes through the three paths .
+Bro007-c1_0130349_0130699,so ==,so ==
+Bro007-c1_0132903_0133283,yeah .,yeah .
+Bro007-c1_0137008_0137748,three okay .,three o_k .
+Bro007-c2_0137918_0145485,the first is a k l t using several frames of the features .,the first is a k_l_t using several frames of the features .
+Bro007-c1_0144190_0144460,yeah .,yeah .
+Bro007-c1_0145781_0146091,yeah .,yeah .
+Bro007-c2_0146833_0153123,the second path is uh - m l p also using nine frames - several frames of features .,the second path is uh - m_l_p also using nine frames - several frames of features .
+Bro007-c1_0150215_0150625,yeah .,yeah .
+Bro007-c1_0153135_0153635,uhhuh .,uh-huh .
+Bro007-c2_0153957_0156897,the third path is this low pass filter .,the third path is this low-pass filter .
+Bro007-c1_0159741_0160171,uhhuh .,uh-huh .
+Bro007-c2_0161197_0162297,uh - m l p .,uh - m_l_p .
+Bro007-c1_0167337_0167687,aha !,aha !
+Bro007-c1_0167787_0168177,aha !,aha !
+Bro007-c2_0168575_0173855,adding the outputs just like in the second propose- - the - the proposal from - for the first evaluation .,adding the outputs just like in the second propose- - the - the proposal from - for the first evaluation .
+Bro007-c1_0170155_0170425,yeah .,yeah .
+Bro007-c1_0172477_0172727,yeah .,yeah .
+Bro007-c1_0173998_0174288,yeah .,yeah .
+Bro007-c2_0174825_0181317,and then the k l t and then the two together again .,and then the k_l_t and then the two together again .
+Bro007-c1_0176216_0177116,no the k l t .,no the k_l_t .
+Bro007-c1_0178411_0179501,and those two together .,and those two together .
+Bro007-c3_0181881_0182691,two h t k .,two h_t_k .
+Bro007-c1_0181915_0182255,that's it .,that's it .
+Bro007-c2_0185716_0188466,um - so this is ==,um - so this is ==
+Bro007-c1_0185776_0187766,okay so that's - that's this bottom one .,o_k so that's - that's this bottom one .
+Bro007-c2_0188776_0188966,yeah .,yeah .
+Bro007-c1_0189557_0193927,and so uh - | and then the - the - the one at the top .,and so uh - | and then the - the - the one at the top .
+Bro007-c1_0193927_0199107,and i presume these things that uh - are in yellow are in yellow because overall they're the best ?,and i presume these things that uh - are in yellow are in yellow because overall they're the best ?
+Bro007-c2_0199010_0199380,yeah .,yeah .
+Bro007-c2_0199600_0200300,that's the reason yeah .,that's the reason yeah .
+Bro007-c1_0200429_0201489,oh | let's focus on them then .,oh | let's focus on them then- - .
+Bro007-c1_0201489_0203509,so what's the block diagram for the one above it ?,so what's the block diagram for the one above it ?
+Bro007-c2_0205432_0208761,for the f- - the f- - first yellow line you mean ?,for the f- - the f- - first yellow line you mean ?
+Bro007-c1_0209079_0209349,yeah .,yeah .
+Bro007-c2_0209561_0209721,yeah .,yeah .
+Bro007-c2_0210381_0219734,so it's uh - | basically s- - the same except that we don't have this uh - low pass filtering so we have only two streams .,so it's uh - | basically s- - the same except that we don't have this uh - low-pass filtering so we have only two streams .
+Bro007-c3_0216008_0216318,step .,step .
+Bro007-c2_0221301_0221491,well .,well .
+Bro007-c2_0223306_0229698,there's - there's no low - low pass processing used as additional feature stream .,there's - there's no low - low-pass processing used as additional feature stream .
+Bro007-c1_0227377_0228127,uhhuh .,mm-hmm .
+Bro007-c1_0230381_0231271,uhhuh .,mm-hmm .
+Bro007-c2_0231548_0233198,um ==,um ==
+Bro007-c1_0233658_0245668,do you e- - um - they mentioned - made some - uh - when i was on the phone with sunil they - they mentioned some weighting scheme that was used to evaluate all of these numbers .,do you e- - um - they mentioned - made some - uh - when i was on the phone with sunil they - they mentioned some weighting scheme that was used to evaluate all of these numbers .
+Bro007-c2_0244225_0244455,yeah .,yeah .
+Bro007-c2_0245185_0247775,uh - actually the way things seems to ==,uh - actually the way things seems to ==
+Bro007-c2_0249408_0256988,um - well it's uh - forty percent for t i digit sixty for all the speechdat cars .,um - well it's uh - forty percent for t_i-digit sixty for all the speechdat-cars .
+Bro007-c2_0257158_0258658,well all these languages .,well all these languages .
+Bro007-c2_0259529_0264879,um - | the well match is forty medium thirty five and high mismatch twenty five .,ehm - | the well match is forty medium thirty five and high mismatch twenty-five .
+Bro007-c2_0265933_0266093,yeah .,yeah .
+Bro007-c1_0267817_0270507,um - | and we don't have the t i digits part yet ?,um - | and we don't have the t_i-digits part yet ?
+Bro007-c2_0271255_0271915,uh - | no .,uh - | no .
+Bro007-c1_0272492_0272842,okay .,o_k .
+Bro007-c2_0273219_0274199,but yeah .,but yeah .
+Bro007-c2_0275039_0280484,generally what you observe with t i digits is that the result are very close whatever the - the system .,generally what you observe with t_i-digits is that the result are very close whatever the - the system .
+Bro007-c1_0280684_0281194,okay .,o_k .
+Bro007-c1_0282037_0288357,and so have you put all these numbers together into a single number representing that ?,and so have you put all these numbers together into a single number representing that ?
+Bro007-c2_0282370_0282900,yeah .,yeah .
+Bro007-c1_0288477_0288977,i mean not ==,i mean not ==
+Bro007-c2_0289128_0289538,uh - not yet .,uh - not yet .
+Bro007-c2_0289858_0290008,no .,no .
+Bro007-c1_0290050_0293060,okay so that should be pretty easy to do and that would be good .,o_k so that should be pretty easy to do and that would be good .
+Bro007-c2_0291423_0292343,huh yeah yeah .,mmm yeah yeah .
+Bro007-c1_0293140_0294940,then we could compare the two and say what was better .,then we could compare the two and say what was better .
+Bro007-c2_0293532_0294312,huh .,mmm .
+Bro007-c2_0295213_0295403,yeah .,yeah .
+Bro007-c1_0295900_0301170,um - | and how does this compare to the numbers ?,um - | and how does this compare to the numbers ?
+Bro007-c1_0301550_0305184,oh so o g i two is just the top - top row ?,oh so o_g_i two is just the top - top row ?
+Bro007-c3_0303680_0303940,yeah .,yeah .
+Bro007-c2_0306811_0307961,so yeah to ==,so yeah to ==
+Bro007-c2_0308781_0313571,actually o g i two is the - the baseline with the o g i features .,actually o_g_i two is the - the baseline with the o_g_i features .
+Bro007-c2_0314091_0323807,but this is not exactly the result that they have because they've - they're still made some changes in the features .,but this is not exactly the result that they have because they've - they're still made some changes in the features .
+Bro007-c1_0324178_0324558,okay .,o_k .
+Bro007-c2_0324607_0331297,and - well - but - uh - actually our results are better than their results .,and - well - but - uh - actually our results are better than their results .
+Bro007-c2_0331877_0337946,um - | i don't know by how much because they did not send us the new results .,um - | i don't know by how much because they did not send us the new results .
+Bro007-c1_0339232_0339662,okay .,o_k .
+Bro007-c2_0339298_0339618,uh ==,uh ==
+Bro007-c1_0340962_0352377,uh - | okay so the one - one place where it looks like we're messing things up a bit is in the highly mismatched italian .,uh - | o_k so the one - one place where it looks like we're messing things up a bit is in the highly mismatched italian .
+Bro007-c2_0352493_0352763,yeah .,yeah .
+Bro007-c2_0353123_0353313,yeah .,yeah .
+Bro007-c1_0363049_0363609,an- ==,an- ==
+Bro007-c2_0363182_0363342,yeah .,yeah .
+Bro007-c2_0363342_0365392,there is something funny happening here because ==,there is something funny happening here because ==
+Bro007-c2_0365482_0365672,yeah .,yeah .
+Bro007-c1_0366788_0367148,yeah .,yeah .
+Bro007-c2_0367192_0373139,but there are thirty six and then sometimes we are - we are - we are around forty two and ==,but there are thirty-six and then sometimes we are - we are - we are around forty-two and ==
+Bro007-c1_0375202_0376042,now up .,now up .
+Bro007-c2_0375663_0375973,but ==,but ==
+Bro007-c1_0383583_0393431,uh - | so one of the ideas that you had mentioned last time was having a - a second um - silence detection .,uh - | so one of the ideas that you had mentioned last time was having a - a second um - silence detection .
+Bro007-c2_0394171_0394371,yeah .,yeah .
+Bro007-c2_0394651_0397121,so there are some results here .,so there are some results here .
+Bro007-c3_0397479_0398339,for the italian .,for the italian .
+Bro007-c2_0398171_0403081,uh - so the third and the fifth line of the table ==,uh - so the third and the fifth line of the table ==
+Bro007-c3_0398629_0399279,for this one .,for this one .
+Bro007-c1_0403554_0405104,so filt is what that is ?,so filt is what that is ?
+Bro007-c2_0404432_0405072,filt yeah .,filt yeah .
+Bro007-c3_0404864_0405204,yeah .,yeah .
+Bro007-c2_0406527_0412144,um - | yeah so it seems f- - for the - the well match and mismatched condition .,um - | yeah so it seems f- - for the - the well match and mismatched condition .
+Bro007-c2_0413161_0416081,it's uh - it brings something .,it's uh - it brings something .
+Bro007-c2_0417849_0430195,uh - but uh - | actually apparently there are - there's no room left for any silence detector at the server side because of the delay .,uh - but uh - | actually apparently there are - there's no room left for any silence detector at the server side because of the delay .
+Bro007-c2_0431155_0432005,uh - well ==,uh - well ==
+Bro007-c1_0431741_0432621,oh we can't do it .,oh we can't do it .
+Bro007-c1_0432691_0433131,oh okay .,oh o_k .
+Bro007-c2_0433851_0433921,no .,no .
+Bro007-c3_0434582_0436232,for that - for that we ==,for that - for that we ==
+Bro007-c1_0435940_0436200,oh .,oh .
+Bro007-c2_0436260_0437220,uh ==,uh ==
+Bro007-c1_0436890_0437280,too bad .,too bad .
+Bro007-c1_0438539_0440829,good idea but can't do it .,good idea ** but can't do it .
+Bro007-c2_0439789_0440089,yeah .,yeah .
+Bro007-c1_0440829_0441329,okay .,o_k .
+Bro007-c2_0441242_0444832,except i don't know because they - i think they are still working well .,except i don't know because they - i think they are still working well .
+Bro007-c1_0443440_0444090,uhhuh .,uh-huh .
+Bro007-c2_0444832_0453263,uh - t- - two days ago they were still working on this trying to reduce the delay of the silence detector .,uh - t- - two days ago they were still working on this trying to reduce the delay of the silence detector .
+Bro007-c2_0454355_0454855,so but ==,so but ==
+Bro007-c2_0456315_0456475,yeah .,yeah .
+Bro007-c2_0456475_0464315,if we had time perhaps we could try to find uh - some kind of compromise between the delay that's on the handset and on the server side .,if we had time perhaps we could try to find uh - some kind of compromise between the delay that's on the handset and on the server side .
+Bro007-c2_0465215_0467205,perhaps try to reduce the delay on the handset .,perhaps try to reduce the delay on the handset .
+Bro007-c2_0467205_0467535,and ==,and ==
+Bro007-c2_0468917_0479872,but - well - huh - for the moment they have this large delay on the - the feature computation and so we don't ==,but - well - hmm - for the moment they have this large delay on the - the feature computation and so we don't ==
+Bro007-c1_0478163_0478443,okay .,o_k .
+Bro007-c1_0479142_0479372,so ==,so ==
+Bro007-c1_0479372_0482402,all right so for now at least that's not there .,alright so for now at least that's not there .
+Bro007-c1_0483012_0485342,you have some results with low pass filter cepstrum .,you have some results with low-pass filter cepstrum .
+Bro007-c1_0485782_0490752,doesn't have a huge effect but it - but it looks like it you know maybe could help in a couple places .,doesn't have a huge effect but it - but it looks like it you know maybe could help in a couple places .
+Bro007-c2_0489381_0490301,i th- ==,i th- ==
+Bro007-c2_0490789_0490939,yeah .,yeah .
+Bro007-c1_0491032_0491932,uh - little bit .,uh - little bit .
+Bro007-c1_0493074_0498385,um - and um - um ==,um - and um - um ==
+Bro007-c1_0502689_0502969,yeah .,yeah .
+Bro007-c1_0503219_0507384,and uh - let's see .,and uh - let's see .
+Bro007-c1_0510191_0514404,what else did we have in there ?,what else did we have in there ?
+Bro007-c1_0514404_0519507,uh - | i guess it makes a l- - um - at this point this is ==,uh - | i guess it makes a l- - um - at this point this is ==
+Bro007-c1_0520179_0522569,i - i guess i should probably look at these others a little bit .,i - i guess i should probably look at these others a little bit .
+Bro007-c1_0522699_0526138,uh - | and you - you yellowed these out .,uh - | and you - you yellowed these out .
+Bro007-c1_0526448_0530059,uh - but uh - uh ==,uh - but uh - uh ==
+Bro007-c1_0531449_0535059,oh i see yeah | that - that one you can't use because of the delay .,oh i see yeah | that - that one you can't use because of the delay .
+Bro007-c1_0535799_0536749,those look pretty good .,those look pretty good .
+Bro007-c1_0537439_0541812,um - let's see | that one .,um - let's see | that one .
+Bro007-c1_0551725_0555215,well even the - just the - the second row doesn't look that bad | right ?,well even the - just the - the second row doesn't look that bad | right ?
+Bro007-c1_0555215_0556215,that's just uh ==,that's just uh ==
+Bro007-c2_0559620_0559890,yep .,yep .
+Bro007-c1_0559654_0559964,yeah ?,yeah ?
+Bro007-c1_0560124_0563907,and - and that looks like an interesting one too .,and - and that looks like an interesting one too .
+Bro007-c3_0560188_0560648,huh - yeah .,mmm - yeah .
+Bro007-c1_0568086_0568576,uh ==,uh ==
+Bro007-c2_0574532_0581581,actually the - yeah the second line is uh - pretty much like the first line in yellow .,actually the - yeah the second line is uh - pretty much like the first line in yellow .
+Bro007-c2_0582589_0588119,except that we don't have this k l t on the first - on the left part of the diagram .,except that we don't have this k_l_t on the first - on the left part of the diagram .
+Bro007-c2_0588973_0591456,we just have the features as they are .,we just have the features as they are .
+Bro007-c1_0591836_0592256,uhhuh .,mm-hmm .
+Bro007-c2_0593028_0594528,um ==,um ==
+Bro007-c1_0594415_0594725,yeah .,yeah .
+Bro007-c1_0595750_0599340,yeah so when we do this weighted measure we should compare the two because it might even come out better .,yeah so when we do this weighted measure we should compare the two cuz it might even come out better .
+Bro007-c2_0599556_0600226,uhhuh .,mm-hmm .
+Bro007-c1_0599590_0602410,and it's - it's - it's a little - slightly simpler .,and it's - it's - it's a little - slightly simpler .
+Bro007-c2_0603329_0603499,yeah .,yeah .
+Bro007-c1_0604760_0610045,so - so there's - so i - i would put that one also as a - as a maybe .,so - so there's - so i - i would put that one also as a - as a maybe .
+Bro007-c1_0611265_0614272,uh - | and it ==,uh - | and it ==
+Bro007-c1_0614362_0621132,yeah | and it's actually does - does significantly better on the uh - uh - highly mismatched italian .,yeah | and it's actually does - does significantly better on the uh - uh - highly mismatched italian .
+Bro007-c1_0621552_0624057,so s- ==,so s- ==
+Bro007-c1_0624057_0627996,and little worse on the mis- - on the m m case .,and little worse on the mis- - on the m_m case .
+Bro007-c1_0628056_0628296,but ==,but ==
+Bro007-c1_0629987_0635584,uh - | well yeah it's worse than a few things .,uh - | well yeah it's worse than a few things .
+Bro007-c2_0636224_0636814,uhhuh .,mm-hmm .
+Bro007-c1_0637318_0643331,so uh - let's see how that c- - that c- - c- - see how that comes out on their - their measure .,so uh - let's see how that c- - that c- - c- - see how that comes out on their - their measure .
+Bro007-c1_0643331_0646061,and - are - are we running this uh - for t i digits ?,and - are - are we running this uh - for t_i-digits ?
+Bro007-c1_0646061_0647271,or uh ?==,or uh ?==
+Bro007-c2_0647249_0647479,yeah .,yeah .
+Bro007-c2_0647999_0648159,yeah .,yeah .
+Bro007-c1_0648183_0657723,now is t i di - is- - is that part of the result that they get for the uh - development - th- - the results that they're supposed to get at the end of - end of the month the t i digits are there also ?,now is t_i di - is- - is that part of the result that they get for the uh - development - th- - the results that they're supposed to get at the end of - end of the month the t_i-digits are there also ?
+Bro007-c2_0657173_0657463,yeah .,yeah .
+Bro007-c2_0657673_0658353,it's included yeah .,it's included yeah .
+Bro007-c1_0658879_0659239,oh okay .,oh o_k .
+Bro007-c1_0662359_0662799,okay .,o_k .
+Bro007-c1_0665228_0667308,and see what else there is here .,and see what else there is here .
+Bro007-c1_0668942_0675606,um - oh i see .,um - oh i see .
+Bro007-c1_0675606_0682346,the one - i was looking down here at the - the o- - the row below the lower yellowed one .,the one - i was looking down here at the - the o- - the row below the lower yellowed one .
+Bro007-c2_0682963_0683773,uhhuh ?,mm-hmm ?
+Bro007-c1_0683046_0691473,uh - that's uh - that's with the reduced uh - k l t size - reduced dimensionality .,uh - that's uh - that's with the reduced uh - k_l_t size - reduced dimensionality .
+Bro007-c2_0690091_0690301,yeah .,yeah .
+Bro007-c2_0690831_0690991,yeah .,yeah .
+Bro007-c1_0692073_0697171,what happens there is it's around the same .,what happens there is it's around the same .
+Bro007-c1_0698281_0702981,and so you could reduce the dimension as you were saying before a bit perhaps .,and so you could reduce the dimension as you were saying before a bit perhaps .
+Bro007-c2_0704117_0707307,yeah it's - it's significantly worse well but - uhhuh .,yeah it's - it's significantly worse well but - mm-hmm .
+Bro007-c1_0707957_0709907,it's significantly worse .,it's significantly worse .
+Bro007-c1_0709907_0716470,it's - it's uh - it's - it's mostly worse .,it's - it's uh - it's - it's mostly worse .
+Bro007-c2_0710705_0714025,exc- - except for the h m .,exc- - except for the h_m .
+Bro007-c3_0713368_0715248,for many a mismatch it's worse .,for many a mismatch it's worse .
+Bro007-c2_0714025_0714355,but ==,but ==
+Bro007-c1_0717190_0717540,yeah .,yeah .
+Bro007-c1_0718725_0719505,but it is little .,but it is little .
+Bro007-c1_0719765_0721895,i mean not - not by a huge amount .,i mean not - not by a huge amount .
+Bro007-c1_0721895_0722455,i don't know .,i don't know .
+Bro007-c1_0723692_0726382,what are - what are the sizes of any of these sets ?,what are - what are the sizes of any of these sets ?
+Bro007-c1_0726382_0729082,i - i'm - i'm sure you told me before but i've forgotten .,i - i'm - i'm sure you told me before but i've forgotten .
+Bro007-c1_0729942_0737431,so - you know how many words are in uh - one of these test sets ?,so - you know how many words are in uh - one of these test sets ?
+Bro007-c2_0730045_0730425,uh ==,uh ==
+Bro007-c3_0737491_0738211,i don't remember .,i don't remember .
+Bro007-c2_0739091_0747919,um - | it's - it depends - well - the well matched is generally larger than the other sets .,um - | it's - it depends - well - the well matched is generally larger than the other sets .
+Bro007-c1_0739555_0740065,about ?,about ?
+Bro007-c2_0749200_0756065,and i think it's around two thousand or three thousand words perhaps at least .,and i think it's around two thousand or three thousand words perhaps at least .
+Bro007-c3_0752157_0752777,ye- ==,ye- ==
+Bro007-c3_0754922_0758952,but words - well word - i don't know .,but words - well word - i don't know .
+Bro007-c2_0756845_0757025,huh ?,hmm ?
+Bro007-c2_0759315_0759985,the words yeah .,the words yeah .
+Bro007-c3_0759542_0760262,sentences .,sentences .
+Bro007-c2_0759985_0761915,s- - sentences .,s- - sentences .
+Bro007-c2_0762345_0764215,some sets have five hundred sentences .,some sets have five hundred sentences .
+Bro007-c2_0764925_0765255,so ==,so ==
+Bro007-c3_0764991_0765291,yeah .,yeah .
+Bro007-c2_0766530_0767170,huh .,mmm .
+Bro007-c1_0766718_0771678,so the - so the sets - so the test sets are between five hundred and two thousand sentences let's say .,so the - so the sets - so the test sets are between five hundred and two thousand sentences let's say .
+Bro007-c1_0772048_0775448,and each sentence on the average has four or five digits ?,and each sentence on the average has four or five digits ?
+Bro007-c1_0775448_0777268,or is it - most of them longer or ?==,or is it - most of them longer or ?==
+Bro007-c3_0778743_0778913,yeah .,yeah .
+Bro007-c3_0778913_0782453,for the italian even seven digits y- - more or less .,for the italian even seven digits y- - more or less .
+Bro007-c2_0778931_0779541,yeah .,yeah .
+Bro007-c2_0780381_0781621,it - it d- ==,it - it d- ==
+Bro007-c3_0782453_0786373,but sometime the sentence have only one digit .,but sometime the sentence have only one digit .
+Bro007-c2_0782618_0783358,seven digits .,seven digits .
+Bro007-c3_0786683_0793603,and sometime uh - like uh - the number of uh - credit cards something like that .,and sometime uh - like uh - the number of uh - credit cards something like that .
+Bro007-c1_0793145_0793855,uhhuh .,mm-hmm .
+Bro007-c1_0795777_0796967,right | so between one and sixteen .,right | so between one and sixteen .
+Bro007-c1_0796967_0802927,see the - i mean - the reason i'm asking is - is - is we have all these small differences and i don't know how seriously to take them | right ?,see the - i mean - the reason i'm asking is - is - is we have all these small differences and i don't know how seriously to take them | right ?
+Bro007-c2_0798623_0799573,uhhuh ?,mm-hmm ?
+Bro007-c1_0803057_0818975,so uh - | i- - if - if you had uh - just you know to give an example if you had uh - um - if you had a thousand words then uh - a - a tenth of a percent would just be one word .,so uh - | i- - if - if you had uh - just you know to give an example if you had uh - um - if you had a thousand words then uh - a - a tenth of a percent would just be one word .
+Bro007-c2_0804011_0804711,yeah .,yeah .
+Bro007-c1_0818975_0819295,right ?,right ?
+Bro007-c1_0819505_0822155,so - so it wouldn't mean anything .,so - so it wouldn't mean anything .
+Bro007-c3_0820377_0820717,yeah .,yeah .
+Bro007-c2_0822996_0823546,yeah .,yeah .
+Bro007-c1_0823105_0823495,oh .,oh .
+Bro007-c1_0824795_0833715,um - so um - | yeah it be kind of - i'd kind of like to know what the sizes of these test sets were actually .,um - so um - | ** yeah it be kind of - i'd kind of like to know what the sizes of these test sets were actually .
+Bro007-c3_0833063_0834223,the size that we have ?,the size that we have ?
+Bro007-c2_0833288_0833638,yeah .,yeah .
+Bro007-c2_0833958_0836668,we could - we could run - run some kind of significance tests .,we could - we could run - run some kind of significance tests .
+Bro007-c1_0834938_0836028,yeah since these ==,yeah since these ==
+Bro007-c1_0837028_0838658,well also just to know the numbers .,well also just to know the numbers .
+Bro007-c2_0837058_0837358,or ==,or ==
+Bro007-c3_0837345_0837635,yeah .,yeah .
+Bro007-c1_0838658_0838838,right .,right .
+Bro007-c1_0838838_0840628,so these - these are word error rates .,so these - these are word error rates .
+Bro007-c2_0839067_0839597,yeah .,yeah .
+Bro007-c1_0840628_0842128,so this is on how many words ?,so this is on how many words ?
+Bro007-c2_0842450_0842670,yep .,yep .
+Bro007-c3_0842699_0845259,yeah we have the result that the output of the h t k .,yeah we have the result that the output of the h_t_k .
+Bro007-c1_0845725_0846085,yeah .,yeah .
+Bro007-c3_0846711_0850131,the number of - of sentences no it's the number isn't .,the number of - of sentences no it's the number isn't .
+Bro007-c2_0849322_0850002,yeah sure - sure .,yeah sure - sure .
+Bro007-c2_0850002_0850492,yeah sure .,yeah sure .
+Bro007-c1_0850656_0850856,yeah .,yeah .
+Bro007-c2_0850712_0851162,yeah .,yeah .
+Bro007-c1_0850856_0854836,so anyway if you could just mail out what those numbers are and then - then - that - that be great .,so anyway if you could just mail out what those numbers are and then - then - that - that be great .
+Bro007-c3_0853805_0854105,yeah .,yeah .
+Bro007-c1_0856356_0859355,um - | what else is there here ?,um - | what else is there here ?
+Bro007-c1_0860405_0865535,um - | see the second - second from the bottom it says s i l .,um - | see the second - second from the bottom it says s_i_l .
+Bro007-c1_0865535_0868445,but this is some different kind of silence or thing or ?==,but this is some different kind of silence or thing or ?==
+Bro007-c1_0869215_0869805,what was that ?,what was that ?
+Bro007-c2_0869296_0870216,uh ==,uh ==
+Bro007-c3_0870190_0873910,it the - the output silence of the m l p .,it the - the output silence of the m_l_p .
+Bro007-c2_0874291_0874771,oh yeah .,oh yeah .
+Bro007-c2_0874771_0875081,i see .,i see .
+Bro007-c3_0875480_0878090,it's only one small experiment to know what happened .,it's only one small experiment to know what happened .
+Bro007-c3_0878980_0891650,to apply also to in- - include also the - the silence of the m l p we have the fifty six form and the silence to pick up the silence and we include those .,to apply also to in- - include also the - the silence of the m_l_p we have the fifty-six form and the silence to pick up the silence and we include those .
+Bro007-c1_0888226_0888506,yes .,yes .
+Bro007-c1_0889166_0889986,uhhuh uhhuh .,uh-huh uh-huh .
+Bro007-c1_0893208_0895958,the silence plus the k l t output ?,the silence plus the k_l_t output ?
+Bro007-c1_0896358_0898078,oh so you're only using the silence .,oh so you're only using the silence .
+Bro007-c2_0896922_0897712,yeah .,yeah .
+Bro007-c3_0898056_0901306,yeah | because when we apply the k l t ==,yeah | because when we apply the k_l_t ==
+Bro007-c2_0900544_0905024,no | they're - i think there is this silence in addition to the um - k l t outputs .,no | they're - i think there is this silence in addition to the um - k_l_t outputs .
+Bro007-c1_0901113_0901443,no .,no .
+Bro007-c3_0903756_0904706,in addition yes .,in addition yes .
+Bro007-c3_0904856_0906116,in addition t- ==,in addition t- ==
+Bro007-c2_0905134_0911174,it is because we - we - we just keep uh - we don't keep all the dimensions after the k l t .,it is because we - we - we just keep uh - we don't keep all the dimensions after the k_l_t .
+Bro007-c2_0912538_0913758,and - yeah .,and - yeah .
+Bro007-c3_0913452_0917332,and we not s- - we are not sure if we pick - we have the silence .,and we not s- - we are not sure if we pick - we have the silence .
+Bro007-c2_0914660_0921080,so we try to add the silence also in addition to the - these twenty eight dimensions .,so we try to add the silence also in addition to the - these twenty-eight dimensions .
+Bro007-c1_0919873_0920753,i see .,i see .
+Bro007-c1_0921316_0921716,okay .,o_k .
+Bro007-c1_0921716_0924576,and what - and what's o g i forty five ?,and what - and what's o_g_i forty-five ?
+Bro007-c2_0925990_0927560,uh - | it's o- - it's o g i two .,uh - | it's o- - it's o_g_i two .
+Bro007-c1_0926185_0927285,the bottom one there ?,the bottom one there ?
+Bro007-c2_0927560_0930560,it's - so the - th- - it's the features from the first line .,it's - so the - th- - it's the features from the first line .
+Bro007-c3_0928429_0929649,it's in fact o g i two .,it's in fact o_g_i two .
+Bro007-c2_0932179_0933919,and - yeah .,and - yeah .
+Bro007-c1_0932293_0933423,s- ==,s- ==
+Bro007-c1_0936443_0938953,right | but i mean what's the - what does the last row mean ?,right | but i mean what's the - what does the last row mean ?
+Bro007-c2_0939523_0946913,so it's uh - basically this but without the k l t on the - from the left path .,so it's uh - basically this but without the k_l_t on the - from the left path .
+Bro007-c1_0953182_0955652,i thought that was the one - i thought that was the second row .,i thought that was the one - i thought that was the second row .
+Bro007-c1_0960545_0961775,so what's the difference between the second ?==,so what's the difference between the second ?==
+Bro007-c2_0960665_0964835,uh - the second line you don't have this combo stuff so you just ==,uh - the second line you don't have this combo stuff so you just ==
+Bro007-c1_0965895_0966165,oh .,oh .
+Bro007-c2_0965929_0966929,uh ==,uh ==
+Bro007-c1_0967055_0969755,so this is like the second line but with - with the combo stuff .,so this is like the second line but with - with the combo stuff .
+Bro007-c2_0967930_0968590,yeah .,yeah .
+Bro007-c3_0969872_0972552,and with the - all the output of the combo .,and with the - all the output of the combo .
+Bro007-c2_0970036_0970256,yeah .,yeah .
+Bro007-c1_0971161_0971491,okay .,o_k .
+Bro007-c1_0973069_0973309,yeah .,yeah .
+Bro007-c2_0973265_0973495,yeah .,yeah .
+Bro007-c3_0973332_0973462,uh ==,uh ==
+Bro007-c1_0974615_0975065,okay so ==,o_k so ==
+Bro007-c1_0975065_0976065,all right .,alright .
+Bro007-c1_0976065_0978749,so it looks to me - i guess the same .,so it looks to me - i guess the same .
+Bro007-c1_0980719_0990857,given that we have to take the filt ones out of the - the running because of this delay problem - so it looks to me like the ones you said - i agree are - are the ones to look at .,given that we have to take the filt ones out of the - the running because of this delay problem - so it looks to me like the ones you said - i agree are - are the ones to look at .
+Bro007-c2_0984043_0984843,uhhuh .,mm-hmm .
+Bro007-c1_0990857_0994937,but i just would add the - the - the second row one .,but i just would add the - the - the second row one .
+Bro007-c2_0994261_0994811,yeah .,yeah .
+Bro007-c1_0995597_0999227,and then um - if we can um ==,and then um - if we can um ==
+Bro007-c2_0995606_0995986,huh .,mmm .
+Bro007-c1_1001280_1012490,oh yeah also when - when they're using this weighting scheme of forty thirty five twenty five is that on the percentages or on the raw errors ?,oh yeah also when - when they're using this weighting scheme of forty thirty-five twenty-five is that on the percentages or on the raw errors ?
+Bro007-c1_1012700_1016840,i guess it's probably on the percentages | right ?,i guess it's probably on the percentages | right ?
+Bro007-c2_1014880_1024860,uh - | i guess yeah .,uh - | i guess yeah .
+Bro007-c1_1025110_1025630,yeah okay .,yeah o_k .
+Bro007-c2_1025550_1026050,i guess yeah .,i guess yeah .
+Bro007-c2_1026510_1026650,huh .,mmm .
+Bro007-c1_1027390_1027740,all right .,alright .
+Bro007-c2_1027900_1028810,it's not clear here .,it's not clear here .
+Bro007-c1_1029170_1029530,okay .,o_k .
+Bro007-c1_1030130_1031570,maybe - maybe they'll argue about it .,maybe - maybe they'll argue about it .
+Bro007-c1_1032360_1034690,um - okay .,um - o_k .
+Bro007-c1_1034690_1036790,so if we can know what - how many words are in each .,so if we can know what - how many words are in each .
+Bro007-c1_1036790_1046270,and then um - dave uh - dave promised to get us something tomorrow which will be there as far as they've gotten friday .,and then um - dave uh - dave promised to get us something tomorrow ** which will be there as far as they've gotten friday .
+Bro007-c2_1043200_1044270,uhhuh .,mm-hmm .
+Bro007-c2_1046070_1046320,yeah .,yeah .
+Bro007-c1_1046270_1047790,and then we'll operate with that .,and then we'll operate with that .
+Bro007-c1_1047790_1049650,and - uh - how long did it ?==,and - uh - how long did it ?==
+Bro007-c1_1050810_1054990,i guess if we're not doing all these things - if we're only doing um ==,i guess if we're not doing all these things - if we're only doing um ==
+Bro007-c1_1056830_1066600,um - | i guess since this is development data it's legitimate to do more than one .,um - | i guess since this is development data it's legitimate to do more than one .
+Bro007-c1_1066600_1066930,right ?,right ?
+Bro007-c1_1068290_1073240,i mean ordinarily if - in final test data you don't want to do several and - and take the best .,i mean ordinarily if - in final test data you don't want to do several and - and take the best .
+Bro007-c2_1068310_1068880,yeah .,yeah .
+Bro007-c2_1072440_1073090,huh .,mmm .
+Bro007-c1_1073240_1075830,that's - that's - that's not proper .,that's - that's - that's not proper .
+Bro007-c1_1075830_1079300,but if this is development data we could still look at a couple .,but if this is development data we could still look at a couple .
+Bro007-c2_1079700_1079930,yeah .,yeah .
+Bro007-c2_1081180_1081470,we can .,we can .
+Bro007-c2_1081470_1081660,yeah .,yeah .
+Bro007-c2_1081840_1082130,sure .,sure .
+Bro007-c2_1082350_1084070,but we have to decide .,but we have to decide .
+Bro007-c2_1084070_1088250,i mean we have to fix the system on this d- - on this data to choose the best .,i mean we have to fix the system on this d- - on this data to choose the best .
+Bro007-c1_1086190_1086490,yeah .,yeah .
+Bro007-c1_1087730_1088140,i- ==,i- ==
+Bro007-c2_1088250_1089140,and these ==,and these ==
+Bro007-c1_1088640_1089140,right .,right .
+Bro007-c1_1090180_1092170,but the question is when - when do we fix the system .,but the question is when - when do we fix the system .
+Bro007-c2_1090690_1091580,but we could .,but we could .
+Bro007-c1_1092170_1095590,do we fix the system uh - tomorrow or do we fix the system on tuesday ?,do we fix the system uh - tomorrow or do we fix the system on tuesday ?
+Bro007-c2_1093660_1094400,it d- ==,it d- ==
+Bro007-c2_1096370_1097810,i think we fixed on tuesday yeah .,i think we fixed on tuesday yeah .
+Bro007-c1_1096620_1100020,i - yeah okay | except that we do have to write it up .,i - yeah o_k | except that we do have to write it up .
+Bro007-c2_1097810_1098230,yeah .,yeah .
+Bro007-c2_1098370_1099410,uhhuh .,mm-hmm .
+Bro007-c2_1100260_1101250,uhhuh .,mm-hmm .
+Bro007-c2_1101860_1102670,yeah .,yeah .
+Bro007-c1_1102030_1102920,also so ==,also so ==
+Bro007-c2_1102940_1103160,yeah .,yeah .
+Bro007-c1_1104270_1104950,um ==,um ==
+Bro007-c2_1105380_1106320,uh - yeah well .,uh - yeah well .
+Bro007-c2_1107790_1112240,well basically it's this with perhaps some kind of printing and some - some other @reject@ .,well basically it's this ** with perhaps some kind of printing and some - some other {@reject@} .
+Bro007-c1_1113510_1113810,right .,right .
+Bro007-c1_1113820_1119780,so maybe what we do is we - we - we uh - as soon as we get the data from them we start the training and so forth .,so maybe what we do is we - we - we uh - as soon as we get the data from them we start the training and so forth .
+Bro007-c2_1113950_1114740,yeah but ==,yeah but ==
+Bro007-c2_1117900_1118430,uhhuh .,mm-hmm .
+Bro007-c1_1119780_1125950,but we start the write up right away because as you say there - there's only minor differences between these .,but we start the write-up right away because as you say there - there's only minor differences between these .
+Bro007-c2_1126190_1128040,i think you - we could - we could start soon yeah .,i think you - we could - we could start soon yeah .
+Bro007-c1_1128620_1128920,yeah .,yeah .
+Bro007-c2_1128910_1129720,write up something .,write up something .
+Bro007-c1_1129880_1133920,yeah and - and i - i would - you know i would - i'd kind of like to see it .,yeah and - and i - i would - you know i would - i'd kind of like to see it .
+Bro007-c2_1130360_1131860,um - yeah .,um - yeah .
+Bro007-c2_1132110_1132230,uhhuh .,mm-hmm .
+Bro007-c1_1134060_1135720,maybe i can - i can edit it a bit .,maybe i can - i can edit it a bit .
+Bro007-c1_1136080_1137140,uh - sure .,uh - sure .
+Bro007-c1_1138470_1142910,the - my - what in this si- - i- - in this situation is my forte which is english .,the - my - what in this si- - i- - in this situation is my forte which is english .
+Bro007-c2_1143640_1143760,yeah .,yeah .
+Bro007-c1_1146270_1148130,uh - so ==,uh - so ==
+Bro007-c2_1148220_1149540,huh .,mmm .
+Bro007-c1_1148760_1152660,uh - h- - yeah .,uh - h- - yeah .
+Bro007-c1_1152660_1156970,have y- - have you seen alt- - d- - do they have a format for how they want the system descriptions or anything ?,have y- - have you seen alt- - d- - do they have a format for how they want the system descriptions or anything ?
+Bro007-c2_1157060_1158810,uh - | not really .,uh - | not really .
+Bro007-c1_1159190_1159560,okay .,o_k .
+Bro007-c2_1159360_1165530,um - | there is the format of the table which is quite impressive .,um - | there is the format of the table which is quite impressive .
+Bro007-c1_1166120_1166540,yeah ?,yeah ?
+Bro007-c1_1170860_1174090,uh - i see .,uh - i see .
+Bro007-c1_1175250_1180910,yes for those who are listening to this and not looking at it uh - it's not really that impressive it's just tiny .,yes for those who are listening to this and not looking at it uh - it's not really that impressive it's just tiny .
+Bro007-c1_1183760_1188390,it's all these little categories set a set b set c multi condition clean .,it's all these little categories set a set b set c multi-condition clean .
+Bro007-c1_1189720_1193410,uh - no mitigation .,uh - no mitigation .
+Bro007-c1_1195340_1195610,wow .,wow .
+Bro007-c1_1196730_1199380,do you know what no - what no mitigation means here ?,do you know what no - what no mitigation means here ?
+Bro007-c2_1200440_1207550,um - | it should be the - the problem with the error - channel error .,um - | it should be the - the problem with the error - channel error .
+Bro007-c1_1205590_1206440,oh that's probably the ==,oh that's probably the ==
+Bro007-c2_1207550_1208190,or ==,or ==
+Bro007-c1_1208870_1210300,this is probably channel error stuff .,this is probably channel error stuff .
+Bro007-c2_1209230_1209510,well you ==,well you ==
+Bro007-c2_1210050_1210850,yeah .,yeah .
+Bro007-c1_1210300_1210450,huh ?,huh ?
+Bro007-c1_1210450_1214210,oh this is i- - right it says right above here channel - channel error resilience .,oh this is i- - right it says right above here channel - channel error resilience .
+Bro007-c2_1212960_1213760,yeah .,yeah .
+Bro007-c1_1214370_1214580,yeah .,yeah .
+Bro007-c1_1216130_1219500,so recognition performance is just the top part actually .,so recognition performance is just the top part actually .
+Bro007-c1_1221200_1229340,uh - | and they have - yes split between seen data bases and non seen so basically between development and - and evaluation .,uh - | and they have - yes split between seen databases and non-seen so basically between development and - and evaluation .
+Bro007-c2_1225700_1226100,yeah .,yeah .
+Bro007-c1_1230470_1231620,and so ==,and so ==
+Bro007-c1_1232330_1232590,right .,right .
+Bro007-c1_1232590_1238130,it's presumed there's all sorts of tuning that's gone on on the see- - what they call seen databases .,it's presumed there's all sorts of tuning that's gone on on the see- - what they call seen databases .
+Bro007-c1_1238130_1241240,and there won't be tuning for the uh - unseen .,and there won't be tuning for the uh - unseen .
+Bro007-c1_1245900_1248160,multi condition - multi condition .,multi-condition - multi-condition .
+Bro007-c1_1252300_1253820,so they have - looks like they have ==,so they have - looks like they have ==
+Bro007-c2_1255630_1257350,uhhuh .,mm-hmm .
+Bro007-c1_1255870_1260100,uh - uh ==,uh - uh ==
+Bro007-c1_1261700_1264780,so they splitting up between the t i digits and everything else | i see .,so they splitting up between the t_i-digits and everything else | i see .
+Bro007-c1_1265310_1270630,so the everything else is the speechdat car that's the multi- - multilingual ==,so the everything else is the speechdat-car that's the multi- - multilingual ==
+Bro007-c2_1269690_1272290,yeah so it's not divided between languages you mean | or ?==,yeah so it's not divided between languages you mean | or ?==
+Bro007-c1_1272680_1273360,well it is .,well it is .
+Bro007-c2_1272720_1273250,it just ==,it just ==
+Bro007-c1_1273370_1273770,it is .,it is .
+Bro007-c1_1273770_1279520,but there's also - there's these tables over here for the - for the t i digits and these tables over here for the car data .,but there's also - there's these tables over here for the - for the t_i-digits and these tables over here for the car data .
+Bro007-c2_1279220_1279420,oh yeah .,oh yeah .
+Bro007-c1_1279520_1281740,which is - which is i guess all the multilingual stuff .,which is - which is i guess all the multilingual stuff .
+Bro007-c1_1282630_1289850,and then uh - there's - they also split up between multi condition and clean only .,and then uh - there's - they also split up between multi-condition and clean only .
+Bro007-c2_1282650_1283120,yeah .,yeah .
+Bro007-c2_1291200_1292200,for t i digits .,for t_i-digits .
+Bro007-c1_1292610_1293220,yes .,yes .
+Bro007-c2_1293100_1294110,yeah actually yeah .,yeah actually yeah .
+Bro007-c2_1294310_1300150,for the t i digits they want to train on clean and on noisy .,for the t_i-digits they want to train on clean and on noisy .
+Bro007-c1_1300430_1300750,yeah .,yeah .
+Bro007-c2_1301860_1303230,and - yeah .,and - yeah .
+Bro007-c1_1304180_1306140,so we're doing that also i guess .,so we're doing that also i guess .
+Bro007-c2_1307050_1307550,uh - | yeah .,uh - | yeah .
+Bro007-c2_1308290_1312600,but - uh - | we actually ==,but - uh - | we actually ==
+Bro007-c2_1313640_1314610,do we have the features ?,do we have the features ?
+Bro007-c2_1314610_1314810,yeah .,yeah .
+Bro007-c2_1314890_1317550,for the clean t i digits but we did not test it yet .,for the clean t_i-digits but we did not test it yet .
+Bro007-c2_1319030_1320620,uh - the clean training stuff .,uh - the clean training stuff .
+Bro007-c1_1321710_1322010,okay .,o_k .
+Bro007-c2_1321920_1323400,huh .,mmm .
+Bro007-c1_1324540_1333790,well anyway | sounds like there'll be a lot to do just to work with our partners to fill out the tables over the next uh - next few days .,well anyway | sounds like there'll be a lot to do just to work with our partners to fill out the tables over the next uh - next few days .
+Bro007-c2_1330720_1331480,uhhuh .,mm-hmm .
+Bro007-c3_1331280_1331480,yes .,yes .
+Bro007-c1_1333990_1335460,i guess they have to send it out ==,i guess they have to send it out ==
+Bro007-c1_1335800_1341140,let's see the thirty first is uh - uh - wednesday .,let's see the thirty-first is uh - uh - wednesday .
+Bro007-c1_1341140_1347720,and i think the - it has to be there by some hour uh - european time on wednesday .,and i think the - it has to be there by some hour uh - european time on wednesday .
+Bro007-c2_1347050_1347530,huh huh .,{huh} {huh} .
+Bro007-c1_1347720_1349120,so i think basically ==,so i think basically ==
+Bro007-c3_1348620_1358050,we lost time uh - wednesday maybe because that the difference in the time may be - is a long different of the time .,we lost time uh - wednesday maybe because that the difference in the time may be - is a long different of the time .
+Bro007-c1_1351080_1351990,e- - excuse me ?,e- - excuse me ?
+Bro007-c3_1358860_1368470,maybe the thursday the twelfth of the night of the thurs- - thirty one is - is not valid in europe .,maybe the thursday the twelfth of the night of the thurs- - thirty-one is - is not valid in europe .
+Bro007-c2_1367830_1368540,yeah .,<hmm-hmm> yeah .
+Bro007-c3_1370130_1371180,we don't know is happening .,we don't know is happening .
+Bro007-c1_1371330_1374370,yes | so i mean i think we have to actually get it done tuesday .,yes | so i mean i think we have to actually get it done tuesday .
+Bro007-c3_1374770_1375320,tuesday .,tuesday .
+Bro007-c2_1375870_1376610,yeah well .,yeah well .
+Bro007-c1_1375880_1376160,right .,right .
+Bro007-c1_1376160_1377340,because i - i think ==,because i - i think ==
+Bro007-c2_1378930_1381280,except if - if it's the thirty one at midnight .,except if - if it's the thirty-one at midnight .
+Bro007-c1_1378950_1388030,uh - uh ==,uh - uh ==
+Bro007-c2_1381280_1381790,or i don't know .,or i don't know .
+Bro007-c2_1382220_1386600,we can still do some work on wednesday morning .,we can still do some work on wednesday morning .
+Bro007-c1_1388170_1389150,yeah well .,yeah well .
+Bro007-c2_1388790_1389470,yeah well .,yeah well .
+Bro007-c1_1389150_1393830,w- - i- - is but is - is it midni- - i thought it was actually something like five p m on ==,w- - i- - is but is - is it midni- - i thought it was actually something like five p_m on ==
+Bro007-c2_1393360_1393580,yeah .,yeah .
+Bro007-c3_1393390_1393690,yeah .,yeah .
+Bro007-c2_1393960_1394230,uhhuh .,mm-hmm .
+Bro007-c1_1394990_1396560,was like i thought it was five p m or something .,was like i thought it was five p_m or something .
+Bro007-c1_1396560_1397730,i didn't think it was midnight .,i didn't think it was midnight .
+Bro007-c1_1397730_1399260,i thought they said they wanted everything by ==,i thought they said they wanted everything by ==
+Bro007-c3_1398750_1399950,yeah five p m .,yeah five p_m .
+Bro007-c1_1400080_1404680,well so five p m their time is - is ==,well so five p_m their time is - is ==
+Bro007-c3_1404550_1406120,not five p m three p m .,not five p_m three p_m .
+Bro007-c1_1404760_1405030,if ==,if ==
+Bro007-c1_1406480_1406990,three p m .,three p_m .
+Bro007-c3_1406890_1407590,three p m .,three p_m .
+Bro007-c1_1407530_1408840,all right that's six in the morning here .,alright that's six in the morning here .
+Bro007-c2_1409600_1410050,it's d- ==,it's d- ==
+Bro007-c3_1410480_1410770,uh - no .,uh - no .
+Bro007-c2_1410700_1411010,no .,no .
+Bro007-c3_1411230_1413930,three - three a- - three p m ?,three - three a_- - three p_m ?
+Bro007-c2_1413760_1417880,no we are wondering about the - the - the hour that we have to ==,no we are wondering about the - the - the hour that we have to ==
+Bro007-c2_1417880_1420270,uh - i don't know if it's three p m - it's ==,eh - i don't know if it's three p_m - it's ==
+Bro007-c3_1418130_1418980,oh yeah yeah yeah yeah .,oh yeah yeah yeah yeah .
+Bro007-c3_1420480_1423220,three p m here is in europe midnight .,three p_m here is in europe midnight .
+Bro007-c2_1422560_1424250,yeah it's - it's midnight but ==,yeah it's - it's midnight but ==
+Bro007-c1_1423380_1426150,yes yes but i didn't think it was midnight that it was due .,yes yes but i didn't think it was midnight that it was due .
+Bro007-c3_1425690_1426070,oh okay .,oh o_k .
+Bro007-c1_1426150_1429250,i thought it was due at some hour during the day like five p m or something .,i thought it was due at some hour during the day like five p_m or something .
+Bro007-c3_1428200_1428700,huh huh .,{huh} {huh} .
+Bro007-c3_1428310_1428750,uhhuh .,mm-hmm .
+Bro007-c3_1429770_1430130,maybe .,<mm-hmm> maybe .
+Bro007-c1_1430120_1430780,in which case ==,in which case ==
+Bro007-c1_1432890_1434260,so i - i - uh - well we should look .,so i - i - uh - well we should look .
+Bro007-c1_1434310_1436670,but my assumption is that we basically have to be done tuesday .,but my assumption is that we basically have to be done tuesday .
+Bro007-c1_1437780_1443710,um - | so then next thursday we can sort of have a little aftermath .,um - | so then next thursday we can sort of have a little aftermath .
+Bro007-c3_1438160_1438350,yeah .,yeah .
+Bro007-c1_1443710_1446980,but then - then we'll actually have the new data which is the german and the danish .,but then - then we'll actually have the new data which is the german and the danish .
+Bro007-c2_1446900_1447060,yeah .,yeah .
+Bro007-c1_1447640_1452780,but that really will be much less work because uh - the system will be fixed .,but that really will be much less work because uh - the system will be fixed .
+Bro007-c2_1453150_1453360,yeah .,yeah .
+Bro007-c1_1453660_1460250,so all we'll do is take whatever they have and - and uh - and run it through the process .,so all we'll do is take whatever they have and - and uh - and run it through the process .
+Bro007-c2_1458010_1458560,yeah .,yeah .
+Bro007-c2_1460360_1461020,uhhuh .,mm-hmm .
+Bro007-c1_1460510_1463220,uh - | we won't be changing the training on anything .,uh - | we won't be changing the training on anything .
+Bro007-c1_1464240_1466510,so there'll be no new training there'll just be new h t k runs .,so there'll be no new training there'll just be new h_t_k runs .
+Bro007-c1_1466900_1473690,so that's means in some sense we can kind of relax from this after - after tuesday .,so that's means in some sense we can kind of relax from this after - after tuesday .
+Bro007-c1_1473750_1483520,and - and uh - | maybe next meeting we can start talking a little bit about where we want to go from here uh - in terms of uh - the research .,and - and uh - | maybe next meeting we can start talking a little bit about where we want to go from here uh - in terms of uh - the research .
+Bro007-c2_1479880_1480990,uhhuh .,mm-hmm .
+Bro007-c1_1485320_1497690,um - | you know what things uh - did you think of when you were uh - doing this process that uh - you just didn't really have time to adequately work on ?,um - | you know what things uh - did you think of when you were uh - doing this process that uh - you just didn't really have time to adequately work on ?
+Bro007-c1_1498090_1503380,uh - uh - so ==,uh - uh - so ==
+Bro007-c2_1498190_1499140,uhhuh .,mm-hmm .
+Bro007-c2_1503090_1503280,yeah .,yeah .
+Bro007-c1_1504670_1504810,what ?,what ?
+Bro007-c0_1505540_1507830,oh stephane always has these great ideas .,oh stephane always has these great ideas .
+Bro007-c0_1507830_1507960,and ==,and ==
+Bro007-c0_1508540_1510200,oh but uh - we don't have time .,oh but uh - we don't have time .
+Bro007-c2_1508640_1509100,sure .,sure .
+Bro007-c1_1511020_1511320,yeah .,yeah .
+Bro007-c0_1511780_1511950,yeah .,yeah .
+Bro007-c1_1512170_1512480,yeah .,yeah .
+Bro007-c2_1512970_1514490,i'm not sure these are great ideas .,i'm not sure these are great ideas .
+Bro007-c1_1516590_1517360,but they're ideas .,but they're ideas .
+Bro007-c1_1523410_1523690,yeah ?,yeah ?
+Bro007-c1_1523920_1524540,oh that was good .,oh that was good .
+Bro007-c2_1523980_1524200,yeah .,yeah .
+Bro007-c0_1524670_1525560,yeah .,yeah .
+Bro007-c1_1524890_1542190,and - and uh - also it's still true that uh - i think it's true that - that we - we at least got fairly consistent i- - improved results by running uh - the uh - neural net transformation in parallel with the features .,and - and uh - also it's still true that uh - i think it's true that - that we - we at least got fairly consistent i- - improved results by running uh - the uh - neural net transformation in parallel with the features .
+Bro007-c2_1525200_1525430,but ==,but ==
+Bro007-c1_1542190_1549860,rather than uh - in sequence which was - was your suggestion and that - that - that seems to have been borne out .,rather than uh - in sequence which was - was your suggestion and that - that - that seems to have been borne out .
+Bro007-c2_1543920_1544740,uhhuh .,mm-hmm .
+Bro007-c2_1547400_1548490,uhhuh .,mm-hmm .
+Bro007-c1_1550650_1556980,the fact that none of these are - are - you know enormous is - is - is not too surprising  .,the fact that none of these are - are - you know enormous is - is - is not too surprising .
+Bro007-c1_1556980_1559000,most improvements aren't enormous .,most improvements aren't enormous .
+Bro007-c1_1559090_1560720,and uh ==,and uh ==
+Bro007-c2_1560220_1560410,yeah .,yeah .
+Bro007-c1_1560720_1561370,some of them are .,some of them are .
+Bro007-c1_1561900_1570040,but uh - | i mean you have something really really wrong and you fix it you can get big and really enormous improvements .,but uh - | i mean you have something really really wrong ** and you fix it ** you can get big and really enormous improvements .
+Bro007-c2_1567880_1568850,uhhuh .,mm-hmm .
+Bro007-c1_1570040_1577990,but - uh - um - | because our best improvements over the years that we've gotten from finding bugs .,but - uh - um - | cuz our best improvements over the years that we've gotten from finding bugs .
+Bro007-c1_1578410_1578620,but ==,but ==
+Bro007-c1_1581650_1582010,anyway .,anyway .
+Bro007-c1_1582830_1583200,okay .,o_k .
+Bro007-c1_1583260_1589160,well i - i think - i see where we are and everybody knows what they're doing | and is there - is there anything else we should talk about ?,well i - i think - i see where we are and everybody knows what they're doing | and is there - is there anything else we should talk about ?
+Bro007-c1_1589160_1590520,or - or - are we done ?,or - or - are we done ?
+Bro007-c2_1591810_1593060,uhhuh .,mm-hmm .
+Bro007-c2_1595100_1595910,i think it's okay .,i think it's o_k .
+Bro007-c2_1595910_1597130,um - we ==,um - we ==
+Bro007-c2_1598530_1605300,so basically we will - i think we'll try to - to focus on these three architectures .,so basically we will - i think we'll try to - to focus on these three architectures .
+Bro007-c2_1605300_1613720,and - and perhaps i was thinking also a fourth one with just - just a single k l t .,and - and perhaps i was thinking also a fourth one with just - just a single k_l_t .
+Bro007-c2_1614340_1615760,because we did not really test that  .,because we did not really test that .
+Bro007-c2_1616470_1620310,removing all these k l t's and putting one single k l t at the end .,removing all these k_l_t's and putting one single k_l_t at the end .
+Bro007-c1_1616720_1617160,uhhuh .,uh-huh .
+Bro007-c1_1622770_1626250,yeah i mean that would be pretty low maintenance to try it .,yeah i mean that would be pretty low maintenance to try it .
+Bro007-c2_1626450_1626670,yeah .,yeah .
+Bro007-c1_1626980_1628490,uh - | if you can fit it in .,uh - | if you can fit it in .
+Bro007-c2_1628340_1629160,uhhuh .,mm-hmm .
+Bro007-c1_1629920_1636540,oh i have - yeah i do have one other piece of information which uh - i should tell people outside of this group too .,oh i have - yeah i do have one other piece of information which uh - i should tell people outside of this group too .
+Bro007-c1_1636540_1658410,uh - | i don't know if we're going to need it uh - but uh - jeff up at the uh - university of washington has uh - gotten a hold of a uh - uh - some kind of server farm of uh - of ten uh - uh - multiprocessor uh - i b m machines r s six thousands .,uh - | i don't know if we're gonna need it uh - but uh - jeff up at the uh - university of washington has uh - gotten a hold of a uh - uh - some kind of server farm of uh - of ten uh - uh - multiprocessor uh - i_b_m machines r_s six thousands .
+Bro007-c2_1657160_1657860,uhhuh .,mm-hmm .
+Bro007-c1_1659180_1665460,and - and uh - so i think each one is four processors or something or - i don't know eight hundred megahertz or something .,and - and uh - so i think each one is four processors or something or - i don't know eight hundred megahertz or something .
+Bro007-c1_1665460_1670690,and there's four processors in a box and there's ten boxes and there's some kind of ti- ==,and there's four processors in a box and there's ten boxes and there's some kind of ti- ==
+Bro007-c1_1670950_1673100,so if - you know he's got a lot of processing power .,so if - you know he's got a lot of processing power .
+Bro007-c1_1673650_1675020,and um ==,and um ==
+Bro007-c1_1675120_1676140,we'd have to schedule it .,we'd have to schedule it .
+Bro007-c1_1676140_1681530,but if we have some big jobs and we want to - want to - want to run them he's - he's offering it .,but if we have some big jobs and we wanna - wanna - wanna run them he's - he's offering it .
+Bro007-c2_1682580_1683480,uhhuh .,mm-hmm .
+Bro007-c1_1683760_1684060,so ==,so ==
+Bro007-c1_1685830_1686330,it's uh ==,it's uh ==
+Bro007-c1_1687290_1692950,when he was here uh - uh - he - he used i- - not only every machine here but every machine on campus as far as i could tell .,when he was here eh - uh - he - he used i- - not only every machine here but every machine on campus as far as i could tell .
+Bro007-c1_1693020_1693190,so ==,so ==
+Bro007-c1_1694010_1695480,so in some ways he just got his payback .,so in some ways he just got his payback .
+Bro007-c1_1695540_1703360,but uh - again i - i don't know if we'll end up with - if we're going to be c p u limited on anything that we're doing in this group .,but uh - again i - i don't know if we'll end up with - if we're gonna be c_p_u limited on anything that we're doing in this group .
+Bro007-c2_1696170_1696880,uhhuh .,mm-hmm .
+Bro007-c1_1703440_1707030,but - but if - if we are that's an offer .,but - but if - if we are that's an offer .
+Bro007-c1_1709900_1710300,okay .,o_k .
+Bro007-c1_1710300_1714890,well uh - | you guys doing great stuff so that's - that - that's really neat .,well uh - | you guys doing great stuff so that's - that - that's really neat .
+Bro007-c1_1715280_1715910,and uh ==,and uh ==
+Bro007-c1_1716820_1719500,we'll uh - uh - g- - don't think we need to uh ==,we'll uh - uh - g- - don't think we need to uh ==
+Bro007-c1_1720790_1733880,um - | oh well the other thing i guess that i will say is that uh - the digits that we're going to record momentarily is starting to get - are starting to get into a pretty good size collection .,um - | oh well the other thing i guess that i will say is that uh - the digits that we're gonna record momentarily is starting to get - are starting to get into a pretty good size collection .
+Bro007-c1_1734610_1741880,and um - | in addition to the speechdat stuff we will have those to work with really pretty soon now .,and um - | in addition to the speechdat stuff we will have those to work with really pretty soon now .
+Bro007-c1_1742080_1744710,so that's - that's another source of data .,so that's - that's another source of data .
+Bro007-c1_1745290_1751860,um - | which is s- - under somewhat better control and that we can - we can make measurements of the room .,um - | which is s- - under somewhat better control and that we can - we can make measurements of the room .
+Bro007-c1_1752090_1756580,the - uh - that - you know if we feel there's other measurements we don't have that we'd like to have we can make them .,the - uh - that - you know if we feel there's other measurements we don't have that we'd like to have we can make them .
+Bro007-c1_1756580_1756710,and ==,and ==
+Bro007-c1_1757620_1760100,uh - dave and i were just talking about that a little while ago .,uh - dave and i were just talking about that a little while ago .
+Bro007-c2_1760370_1761570,uhhuh .,mm-hmm .
+Bro007-c1_1760840_1766680,so uh - that's another - another possibility for this - this kind of work .,so uh - that's another - another possibility for this - this kind of work .
+Bro007-c1_1770400_1776070,k uh - if nobody has anything else maybe we should go around do - do our digits - do our digits duty .,k uh - if nobody has anything else maybe we should go around do - do our digits - do our digits duty .
+Bro007-c1_1780560_1781140,okay .,o_k .
+Bro007-c1_1785700_1786350,okay i'll start .,o_k i'll start .
+Bro007-c1_1788200_1791510,DIGIT_TASK,DIGIT_TASK
+Bro007-c1_1792200_1793790,uh let me say that again .,uh let me say that again .
+Bro007-c1_1793940_1837330,DIGIT_TASK,DIGIT_TASK
+Bro007-cb_1840820_1895550,DIGIT_TASK,DIGIT_TASK
+Bro007-c2_1900660_1943050,DIGIT_TASK,DIGIT_TASK
+Bro007-c0_1945060_1992910,DIGIT_TASK,DIGIT_TASK
+Bro007-c3_1994020_2045870,DIGIT_TASK,DIGIT_TASK
+Bro007-c1_2049210_2050260,okay i guess we're done .,o_k i guess we're done .
