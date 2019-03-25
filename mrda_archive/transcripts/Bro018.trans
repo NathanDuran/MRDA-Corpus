@@ -1,0 +1,1253 @@
+Bro018-c2_0001630_0002090,okay .,o_k .
+Bro018-c2_0002870_0004810,so uh - he's not here .,so uh - he's not here .
+Bro018-c4_0003688_0004058,so ==,so ==
+Bro018-c2_0004810_0006320,so you get to ==,so you get to ==
+Bro018-c4_0005500_0010690,yeah i will try to explain the thing that i did this - this week - during this week .,yeah i will try to explain the thing that i did this - this week - during this week .
+Bro018-c2_0010960_0011180,yeah .,yeah .
+Bro018-c4_0011336_0018116,well uh - you know that i work - i begin to work with a new feature to detect voice unvoice .,well eh - you know that i work - i begin to work with a new feature to detect voice-unvoice .
+Bro018-c5_0018540_0018780,uhhuh .,mm-hmm .
+Bro018-c4_0019429_0034600,what i trying two m l p to - to the - with this new feature and the fifteen feature uh - from the uh - bus- - base system .,what i trying two m_l_p to - to the - with this new feature and the fifteen feature uh - from the eh - bus- - base system .
+Bro018-c5_0035567_0036607,the - the mel cepstrum ?,the - the mel cepstrum ?
+Bro018-c4_0037780_0039850,no | satly the mes- - the mel cepstrum ==,no | satly the mes- - the mel cepstrum ==
+Bro018-c4_0039850_0043180,the new base system - the new base system .,the new base system - the new base system .
+Bro018-c5_0043290_0043730,oh the ==,oh the ==
+Bro018-c5_0043880_0044500,okay .,o_k .
+Bro018-c4_0043990_0045070,yeah | we ==,yeah | we ==
+Bro018-c5_0044500_0045220,the aurora system .,the aurora system .
+Bro018-c4_0045440_0050960,yeah | the aurora system with the new filter v a d or something like that .,yeah | the aurora system with the new filter v_a_d or something like that .
+Bro018-c5_0045794_0046054,okay .,o_k .
+Bro018-c4_0051840_0057630,and i'm trying two m l p one - one that only have t- - three output .,and i'm trying two m_l_p one - one that only have t- - three output .
+Bro018-c4_0058190_0059820,voice unvoice and silence .,voice unvoice and silence .
+Bro018-c2_0060050_0060460,uhhuh .,mm-hmm .
+Bro018-c4_0060550_0065180,and other one that have fifty six output .,and other one that have fifty-six output .
+Bro018-c4_0065970_0067530,the probabilities of the allophone .,the probabilities of the allophone .
+Bro018-c4_0068840_0073080,and i tried to do some experiment of recognition with that .,and i tried to do some experiment of recognition with that .
+Bro018-c4_0073890_0078510,and only have result with - with the m l p with the three output .,and only have result with - with the m_l_p with the three output .
+Bro018-c4_0079273_0082813,and i put together the fifteen features and the three m l p output .,and i put together the fifteen features and the three m_l_p output .
+Bro018-c4_0083623_0088770,and well the result are li- - a little bit better but more or less similar .,and well the result are li- - a little bit better but more or less similar .
+Bro018-c2_0089180_0091200,uh - | i - i'm - i'm slightly confused .,uh - | i - i'm - i'm slightly confused .
+Bro018-c5_0089400_0089570,huh .,hmm .
+Bro018-c2_0091200_0093990,what - what feeds the - uh - the three output net ?,what - what feeds the - uh - the three-output net ?
+Bro018-c4_0094840_0096470,voice unvoice and si- ==,voice unvoice and si- ==
+Bro018-c2_0096170_0096990,no no | what feeds it ?,no no | what feeds it ?
+Bro018-c2_0096990_0098140,what features does it see ?,what features does it see ?
+Bro018-c4_0097860_0098740,the feature - the input ?,the feature - the input ?
+Bro018-c4_0099430_0107040,the inputs are the fifteen - the fifteen uh - bases feature .,the inputs are the fifteen - the fifteen uh - bases feature .
+Bro018-c2_0107730_0108020,uhhuh .,uh-huh .
+Bro018-c4_0107792_0109222,the - with the new code .,the - with the new code .
+Bro018-c4_0109802_0116102,and the other three features are r the variance of the difference between the two spectrum .,and the other three features are r_ the variance of the difference between the two spectrum .
+Bro018-c2_0116440_0116800,uhhuh .,uh-huh .
+Bro018-c4_0117130_0126380,the variance of the auto correlation function except the - the first point because half the height value is r zero .,the variance of the auto-correlation function except the - the first point because half the height value is r_zero .
+Bro018-c2_0119992_0120292,uhhuh .,mm-hmm .
+Bro018-c2_0123556_0123976,uhhuh .,mm-hmm .
+Bro018-c2_0125393_0125823,uhhuh .,mm-hmm .
+Bro018-c2_0126149_0126569,uhhuh .,mm-hmm .
+Bro018-c4_0126770_0128190,and also r zero .,and also r_zero .
+Bro018-c4_0129420_0132020,the first coefficient of the auto correlation function .,the first coefficient of the auto-correlation function .
+Bro018-c4_0132250_0135833,that is like the energy with these three feature ==,that is like the energy with these three feature ==
+Bro018-c2_0133840_0134240,right .,right .
+Bro018-c4_0135913_0136953,also these three feature .,also these three feature .
+Bro018-c2_0137570_0140610,you wouldn't do like r one over r zero or something like that ?,you wouldn't do like r_one over r_zero or something like that ?
+Bro018-c2_0142290_0145710,i mean usually for voiced unvoiced you'd do - yeah you'd do something - you'd do energy .,i mean usually for voiced-unvoiced you'd do - yeah you'd do something - you'd do energy .
+Bro018-c4_0143670_0143870,yeah .,yeah .
+Bro018-c2_0145710_0151210,but then you have something like spectral slope which is you get like r one ov- - over r zero or something like that .,but then you have something like spectral slope which is you get like r_one ov- - over r_zero or something like that .
+Bro018-c4_0151952_0152512,uh - yeah .,uh - yeah .
+Bro018-c5_0152996_0153716,what are the r s ?,what are the r_'s ?
+Bro018-c5_0153876_0154566,i'm sorry i missed it .,i'm sorry i missed it .
+Bro018-c2_0154350_0155310,r correlations .,r_ correlations .
+Bro018-c4_0155420_0155530,no .,no .
+Bro018-c5_0155470_0155700,oh .,oh .
+Bro018-c4_0155530_0156270,r c- - no .,r_ c- - no .
+Bro018-c4_0157340_0158150,auto correlation ?,auto-correlation ?
+Bro018-c4_0158150_0161480,yes yes | the variance of the auto correlation function that uses that @reject@ .,yes yes | the variance of the auto-correlation function that uses that {@reject@} .
+Bro018-c2_0158914_0162640,ye- - well that's the variance .,ye- - well that's the variance .
+Bro018-c2_0162640_0163940,but if you just say what is ?==,but if you just say what is ?==
+Bro018-c2_0163940_0166340,i mean to first order um ==,i mean to first order um ==
+Bro018-c2_0166480_0169230,yeah | one of the differences between voiced unvoiced and silence is energy .,yeah | one of the differences between voiced unvoiced and silence is energy .
+Bro018-c4_0169580_0169800,yeah .,yeah .
+Bro018-c2_0169640_0172000,another one is - but the other one is the spectral shape .,another one is - but the other one is the spectral shape .
+Bro018-c4_0169800_0170330,i- - i'll ==,i- - i'll ==
+Bro018-c4_0172220_0173100,the spectral shape .,the spectral shape .
+Bro018-c4_0173150_0173270,yeah .,yeah .
+Bro018-c2_0173280_0173480,yeah .,yeah .
+Bro018-c2_0173480_0176410,and so r one over r zero is what you typically use for that .,and so r_one over r_zero is what you typically use for that .
+Bro018-c4_0176881_0177001,no .,no .
+Bro018-c4_0177001_0178001,i don't use that .,i don't use that .
+Bro018-c4_0178001_0178591,i can't use ==,i can't use ==
+Bro018-c2_0178900_0178970,no .,no .
+Bro018-c2_0178970_0181000,i'm saying that's what people us- - typically use .,i'm saying that's what people us- - typically use .
+Bro018-c4_0181630_0182480,huh .,mmm .
+Bro018-c2_0183020_0190590,see because it - because this is - this is just like a single number to tell you um - does the spectrum look like that or does it look like that .,see because it - because this is - this is just like a single number to tell you um - does the spectrum look like that or does it look like that .
+Bro018-c4_0189149_0189479,uhhuh .,mm-hmm .
+Bro018-c0_0191390_0191420,oh .,oh .
+Bro018-c0_0191420_0191780,r - r zero .,r_ - r_zero .
+Bro018-c2_0192360_0192510,right ?,right ?
+Bro018-c4_0193070_0193350,uhhuh .,mm-hmm .
+Bro018-c2_0193580_0203160,so if it's - if it's - um - if it's low energy uh - but the - but the spectrum looks like that or like that it's probably silence .,so if it's - if it's - um - if it's low energy uh - but the - but the spectrum looks like that or like that it's probably silence .
+Bro018-c4_0202000_0202330,uhhuh .,mm-hmm .
+Bro018-c2_0204068_0208821,uh - but if it's low energy and the spectrum looks like that it's probably unvoiced .,uh - but if it's low energy and the spectrum looks like that it's probably unvoiced .
+Bro018-c4_0209580_0209790,yeah .,yeah .
+Bro018-c2_0210150_0222529,so if you just - if you just had to pick two features to determine voiced unvoiced you'd pick something about the spectrum like uh - r one over r zero um - and r zero .,so if you just - if you just had to pick two features to determine voiced-unvoiced you'd pick something about the spectrum like uh - r_one over r_zero um - and r_zero .
+Bro018-c4_0219573_0219983,uhhuh .,mm-hmm .
+Bro018-c4_0220283_0220533,okay .,o_k .
+Bro018-c2_0223109_0226159,or i- - i- - you know you'd have some other energy measure .,or i- - i- - you know you'd have some other energy measure .
+Bro018-c2_0226159_0226449,and ==,and ==
+Bro018-c2_0226449_0230560,like in the old days people did like uh - zero crossing counts .,like in the old days people did like uh - zero crossing counts .
+Bro018-c4_0230540_0230990,yeah yeah .,yeah yeah .
+Bro018-c2_0231350_0231630,right ?,right ?
+Bro018-c2_0232580_0233200,s- ==,s- ==
+Bro018-c4_0232590_0234410,well | i can also th- - use this .,well | i can also th- - use this .
+Bro018-c2_0235450_0235730,yeah .,yeah .
+Bro018-c2_0236750_0237290,um ==,um ==
+Bro018-c4_0237750_0240290,bec- - because the result are a little bit better .,bec- - because the result are a little bit better .
+Bro018-c4_0240290_0246680,but we have in a point that everything is more or less the similar - more or less similar .,but we have in a point that everything is more or less the similar - more or less similar .
+Bro018-c2_0241807_0242057,yeah .,yeah .
+Bro018-c2_0246950_0247850,but um ==,but um ==
+Bro018-c4_0247608_0248688,it's not quite better .,it's not quite better .
+Bro018-c2_0249080_0263040,right | but it seemed to me that what you were - what you were getting at before was that there is something about the difference between the original signal or the original f f t and with the filter which is what ==,right | but it seemed to me that what you were - what you were getting at before was that there is something about the difference between the original signal or the original f_f_t and with the filter which is what ==
+Bro018-c2_0263040_0265130,and the variance was one take uh - on it .,and the variance was one take uh - on it .
+Bro018-c4_0265020_0265150,yeah .,yeah .
+Bro018-c4_0265150_0266660,i used this too .,i used this too .
+Bro018-c2_0267116_0267356,right .,right .
+Bro018-c2_0267356_0268536,but it - it could be something else .,but it - it could be something else .
+Bro018-c2_0268656_0270556,suppose you didn't have anything like that .,suppose you didn't have anything like that .
+Bro018-c2_0270666_0274546,then in that case if you have two nets ==,then in that case if you have two nets ==
+Bro018-c2_0276710_0280970,all right | and this one has three outputs and this one has f- ==,alright | and this one has three outputs and this one has f- ==
+Bro018-c4_0279850_0280210,uhhuh .,mm-hmm .
+Bro018-c2_0281730_0282110,whatever .,whatever .
+Bro018-c2_0282110_0283470,fifty six or something .,fifty-six or something .
+Bro018-c4_0283782_0284192,uhhuh .,mm-hmm .
+Bro018-c2_0284600_0294080,if you were to sum up the probabilities for the voiced and for the unvoiced and for the silence here we've found in the past you'll do better at voiced-unvoiced-silence than you do with this one .,if you were to sum up the probabilities for the voiced and for the unvoiced and for the silence here we've found in the past you'll do better at voiced-unvoiced-silence than you do with this one .
+Bro018-c2_0295430_0299330,so just having the three output thing doesn't - doesn't really buy you anything .,so just having the three output thing doesn't - doesn't really buy you anything .
+Bro018-c4_0299790_0299980,yeah .,yeah .
+Bro018-c2_0300180_0301630,the issue is what you feed it .,the issue is what you feed it .
+Bro018-c4_0303740_0303850,yeah .,yeah .
+Bro018-c4_0303850_0304420,i have ==,i have ==
+Bro018-c4_0304870_0305110,yeah .,yeah .
+Bro018-c2_0306280_0307140,so uh ==,so uh ==
+Bro018-c5_0306750_0315050,so you're saying take the features that go into the voiced-unvoiced-silence net and feed those into the other one as additional inputs rather than having a separate ==,so you're saying take the features that go into the voiced-unvoiced-silence net and feed those into the other one as additional inputs rather than having a separate ==
+Bro018-c4_0307085_0307275,no ==,no ==
+Bro018-c2_0312500_0315340,w- - w- - well that's another way .,w- - w- - well that's another way .
+Bro018-c4_0314260_0314530,yeah .,yeah .
+Bro018-c2_0315340_0316150,that wasn't what i was saying .,that wasn't what i was saying .
+Bro018-c2_0316150_0318330,but yeah that's certainly another thing to do .,but yeah that's certainly another thing to do .
+Bro018-c2_0318580_0324340,no i was just trying to say if you b- - if you bring this into the picture over this what more does it buy you ?,no i was just trying to say if you b- - if you bring this into the picture over this what more does it buy you ?
+Bro018-c5_0324710_0325060,huh .,mmm .
+Bro018-c2_0325290_0333640,and what i was saying is that the only thing i think that it buys you is um - based on whether you feed it something different .,and what i was saying is that the only thing i think that it buys you is um - based on whether you feed it something different .
+Bro018-c2_0334950_0336710,and something different in some fundamental way .,and something different in some fundamental way .
+Bro018-c2_0336710_0360810,and so the kind of thing that - that she was talking about before was looking at something uh - ab- - um - something uh about the difference between the - the uh - um - log f f t uh - log power uh - and the log magnitude uh - f f- - spectrum uh - and the um - uh - filter bank .,and so the kind of thing that - that she was talking about before was looking at something uh - ab- - um - something uh about the difference between the - the uh - um - log f_f_t uh - log power uh - and the log magnitude uh - f_f_- - spectrum uh - and the um - uh - filter bank .
+Bro018-c4_0361380_0361520,yeah .,yeah .
+Bro018-c2_0362500_0368810,and so the filter bank is chosen in fact to sort of integrate out the effects of pitch .,and so the filter bank is chosen in fact to sort of integrate out the effects of pitch .
+Bro018-c2_0369360_0370140,and she's saying ==,and she's saying ==
+Bro018-c2_0370140_0370760,you know trying ==,you know trying ==
+Bro018-c2_0370760_0375490,so the particular measure that she chose was the variance of this m- - of this difference .,so the particular measure that she chose was the variance of this m- - of this difference .
+Bro018-c4_0375641_0375971,uhhuh .,mm-hmm .
+Bro018-c2_0376050_0377870,but that might not be the right number .,but that might not be the right number .
+Bro018-c4_0378680_0378880,maybe .,maybe .
+Bro018-c2_0379300_0379680,right ?,right ?
+Bro018-c2_0379680_0383080,i mean maybe there's something about the variance that's - that's not enough .,i mean maybe there's something about the variance that's - that's not enough .
+Bro018-c2_0383080_0385360,or maybe there's something else that - that one could use .,or maybe there's something else that - that one could use .
+Bro018-c2_0385360_0391821,but i think that for me the thing that - that struck me was that uh - you want to get something back here .,but i think that for me the thing that - that struck me was that uh - you wanna get something back here .
+Bro018-c2_0391821_0392991,so here's - here's an idea .,so here's - here's an idea .
+Bro018-c2_0393810_0400690,uh - what about it you skip all the - all the really clever things and just fed the log magnitude spectrum into this ?,uh - what about it you skip all the - all the really clever things and just fed the log magnitude spectrum into this ?
+Bro018-c4_0404050_0404680,uh - i'm sorry .,ah - i'm sorry .
+Bro018-c2_0405720_0406390,this is f- ==,this is f- ==
+Bro018-c2_0406490_0412630,you have the log magnitude spectrum and you were looking at that and the difference between the filter bank and - and c- - c- - computing the variance .,you have the log magnitude spectrum and you were looking at that and the difference between the filter bank and - and c- - c- - computing the variance .
+Bro018-c4_0407558_0407818,yeah .,yeah .
+Bro018-c4_0408178_0408518,uhhuh .,mm-hmm .
+Bro018-c4_0412698_0413048,uhhuh .,mm-hmm .
+Bro018-c2_0413090_0414160,that's a clever thing to do .,that's a clever thing to do .
+Bro018-c2_0414160_0415410,what if you stopped being clever ?,what if you stopped being clever ?
+Bro018-c4_0416279_0416599,ha !,{ha} !
+Bro018-c2_0416420_0421110,and you just took this thing in here because it's a neural net and neural nets are wonderful .,and you just took this thing in here because it's a neural net and neural nets are wonderful .
+Bro018-c2_0421110_0427291,and figure out what they can - what they most need from things and i mean that's what they're good at .,and figure out what they can - what they most need from things and i mean that's what they're good at .
+Bro018-c4_0425490_0425690,yeah .,<mm-hmm> yeah .
+Bro018-c2_0428742_0433902,so i mean you're - you're - you're trying to be clever and say what's the statistic that should - we should get about this difference .,so i mean you're - you're - you're trying to be clever and say what's the statistic that should - we should get about this difference .
+Bro018-c2_0434662_0440501,but uh - in fact you know maybe just feeding this in or - or feeding both of them in .,but uh - in fact you know maybe just feeding this in or - or feeding both of them in .
+Bro018-c5_0438055_0438295,huh .,hmm .
+Bro018-c2_0441697_0445487,you know another way saying let it figure out what's the - what is the interaction .,you know another way saying let it figure out what's the - what is the interaction .
+Bro018-c2_0445487_0447587,especially if you do this over multiple frames .,especially if you do this over multiple frames .
+Bro018-c4_0447910_0448250,uhhuh .,mm-hmm .
+Bro018-c2_0448750_0452880,then you have this over time and - and both kinds of measures .,then you have this over time and - and both kinds of measures .
+Bro018-c2_0452880_0455940,and uh - you might get uh - something better .,and uh - you might get uh - something better .
+Bro018-c4_0457580_0457890,uhhuh .,mm-hmm .
+Bro018-c2_0458570_0459260,um ==,um ==
+Bro018-c5_0460050_0462740,so - so don't - uh - don't do the division .,so - so don't - uh - don't do the division .
+Bro018-c5_0462740_0464660,but let the net have everything .,but let the net have everything .
+Bro018-c2_0465010_0466100,that's another thing you could do .,that's another thing you could do .
+Bro018-c2_0466100_0466400,yeah .,yeah .
+Bro018-c2_0466960_0467220,yeah .,yeah .
+Bro018-c4_0466970_0467280,yeah .,yeah .
+Bro018-c2_0468400_0469020,um ==,um ==
+Bro018-c2_0471166_0476276,i mean it seems to me if you have exactly the right thing then it's better to do it without the net .,i mean it seems to me if you have exactly the right thing then it's better to do it without the net .
+Bro018-c2_0476276_0478646,because otherwise you're asking the net to learn this .,because otherwise you're asking the net to learn this .
+Bro018-c2_0478646_0481246,you know say if you wanted to learn how to do multiplication .,you know say if you wanted to learn how to do multiplication .
+Bro018-c5_0481419_0481969,uhhuh .,mm-hmm .
+Bro018-c2_0482170_0486890,i mean you could feed it a bunch of s- - you could feed two numbers that you wanted to multiply into a net .,i mean you could feed it a bunch of s- - you could feed two numbers that you wanted to multiply into a net .
+Bro018-c2_0487660_0489750,and have a bunch of non linearities in the middle .,and have a bunch of nonlinearities in the middle .
+Bro018-c2_0489870_0492990,and train it to get the product of the output and it would work .,and train it to get the product of the output and it would work .
+Bro018-c2_0493710_0494720,but it's kind of crazy .,but it's kind of crazy .
+Bro018-c2_0494720_0495800,because we know how to multiply .,cuz we know how to multiply .
+Bro018-c2_0495800_0501080,and you - you'd be you know much lower error usually if you just multiplied it out .,and you - you'd be you know much lower error usually if you just multiplied it out .
+Bro018-c2_0501457_0503807,but suppose you don't really know what the right thing is .,but suppose you don't really know what the right thing is .
+Bro018-c2_0504397_0508497,and that's what these sort of dumb machine learning methods are good at .,and that's what these sort of dumb machine learning methods are good at .
+Bro018-c2_0508727_0508807,so ==,so ==
+Bro018-c2_0510110_0510510,um ==,um ==
+Bro018-c2_0510730_0510960,anyway .,anyway .
+Bro018-c2_0510960_0511550,it's just a thought .,it's just a thought .
+Bro018-c5_0511810_0514350,how long does it take carmen to train up one of these nets ?,how long does it take carmen to train up one of these nets ?
+Bro018-c4_0515090_0516490,oh | not too much .,oh | not too much .
+Bro018-c5_0516670_0516850,yeah .,yeah .
+Bro018-c4_0517200_0518540,huh one day or less .,mmm one day or less .
+Bro018-c5_0518899_0519179,huh .,hmm .
+Bro018-c2_0520110_0520180,yeah .,yeah .
+Bro018-c2_0520180_0520780,it's probably worth it .,it's probably worth it .
+Bro018-c0_0522230_0526120,what are - what are your f- - uh - frame error rates for - for this ?,what are - what are your f- - uh - frame error rates for - for this ?
+Bro018-c4_0525741_0527021,uh - | fifty f- - six .,eh - | fifty-f- - six .
+Bro018-c4_0527021_0531441,uh - no | the frame error rate ?,uh - no | the frame error rate ?
+Bro018-c4_0531591_0533101,fifty six i think .,fifty-six i think .
+Bro018-c0_0531860_0532020,o- ==,o- ==
+Bro018-c2_0533690_0534870,is that - maybe that's accuracy ?,is that - maybe that's accuracy ?
+Bro018-c4_0533738_0534268,percent .,percent .
+Bro018-c4_0535030_0535790,the accuracy .,the accuracy .
+Bro018-c0_0535268_0539578,fif- - fifty six percent accurate for v- - voice unvoice ==,fif- - fifty-six percent accurate for v- - voice-unvoice ==
+Bro018-c4_0537270_0537470,uhhuh .,mm-hmm .
+Bro018-c4_0539650_0540310,no | for ==,no | for ==
+Bro018-c4_0540380_0540740,yes | f- ==,yes | f- ==
+Bro018-c4_0541430_0542800,i don't remember for voice unvoice .,i don't remember for voice-unvoice .
+Bro018-c0_0542590_0543090,oh okay .,oh o_k .
+Bro018-c4_0542880_0543960,maybe for the other one .,maybe for the other one .
+Bro018-c2_0544180_0546170,yeah | voiced unvoiced hopefully would be a lot better .,yeah | voiced-unvoiced hopefully would be a lot better .
+Bro018-c0_0544430_0544670,okay .,o_k .
+Bro018-c4_0544462_0544732,for voiced .,for voiced .
+Bro018-c4_0544732_0545302,i don't reme- ==,i don't reme- ==
+Bro018-c0_0545299_0546779,should be in nineties somewhere .,should be in nineties somewhere .
+Bro018-c4_0546370_0546710,better .,better .
+Bro018-c4_0546710_0547910,maybe for voice unvoice .,maybe for voice-unvoice .
+Bro018-c0_0547339_0547489,right .,right .
+Bro018-c4_0547910_0549040,this is for the other one .,this is for the other one .
+Bro018-c4_0549040_0550600,i should - i can't show that .,i should - i can't show that .
+Bro018-c0_0549850_0550190,okay .,o_k .
+Bro018-c4_0550860_0555840,but i think that fifty five was for the - when the output are the fifty six phone .,but i think that fifty-five was for the - when the output are the fifty-six phone .
+Bro018-c0_0556540_0557620,uhhuh .,mm-hmm .
+Bro018-c4_0557030_0563240,that i look in the - with the other - nnn - the other m l p that we have are more or less the same number .,that i look in the - with the other - nnn - the other m_l_p that we have are more or less the same number .
+Bro018-c4_0563530_0565800,silence will be better but more or less the same .,silence will be better but more or less the same .
+Bro018-c2_0566210_0575912,i think at the frame level for fifty six that was the kind of number we were getting for - for uh - um - reduced band width uh - stuff .,i think at the frame level for fifty-six that was the kind of number we were getting for - for uh - um - reduced band width uh - stuff .
+Bro018-c4_0575060_0584117,i think that - i - i - i think that for the other one for the three output is sixty- - sixty two sixty- - three more or less .,i think that - i - i - i think that for the other one for the three output is sixty- - sixty-two sixty- - three more or less .
+Bro018-c0_0578830_0579140,uhhuh .,mm-hmm .
+Bro018-c2_0584185_0584645,that's all ?,that's all ?
+Bro018-c4_0584317_0584477,it's ==,it's ==
+Bro018-c4_0585090_0585330,yeah .,yeah .
+Bro018-c2_0585590_0586160,that's pretty bad .,that's pretty bad .
+Bro018-c4_0586826_0588606,yeah | because it's noise also .,yeah | because it's noise also .
+Bro018-c2_0589130_0589510,aha !,aha !
+Bro018-c0_0589480_0589920,oh yeah .,oh yeah .
+Bro018-c4_0589612_0590132,and we have ==,and we have- ==
+Bro018-c2_0591150_0591520,aha !,aha !
+Bro018-c2_0591610_0591970,yeah .,yeah .
+Bro018-c4_0591966_0592326,i know .,i know .
+Bro018-c2_0592200_0592330,yeah .,yeah .
+Bro018-c2_0592330_0592650,okay .,o_k .
+Bro018-c2_0593139_0593819,but even i- - in ==,but even i- - in ==
+Bro018-c2_0594049_0595049,oh yeah in training .,oh yeah in training .
+Bro018-c2_0595049_0595449,still ==,still ==
+Bro018-c2_0597040_0597420,uh ==,uh ==
+Bro018-c2_0598429_0600879,well actually so this is a test that you should do then .,well actually so this is a test that you should do then .
+Bro018-c2_0601119_0603499,um - if you're getting fifty six percent over here ==,um - if you're getting fifty-six percent over here ==
+Bro018-c2_0603499_0604629,uh - that's in noise also .,uh - that's in noise also .
+Bro018-c2_0604629_0604889,right ?,right ?
+Bro018-c4_0604860_0605550,yeah yeah yeah .,yeah yeah yeah .
+Bro018-c2_0605777_0606227,oh okay .,oh o_k .
+Bro018-c2_0606447_0613820,if you're getting fifty six here try adding together the probabilities of all of the voiced phones here and all of the unvoiced phones .,if you're getting fifty-six here try adding together the probabilities of all of the voiced phones here and all of the unvoiced phones .
+Bro018-c4_0612907_0613217,will be ==,will be ==
+Bro018-c2_0614150_0615170,and see what you get then .,and see what you get then .
+Bro018-c4_0615514_0615774,yeah .,yeah .
+Bro018-c2_0616350_0617730,i bet you get better than sixty three .,i bet you get better than sixty-three .
+Bro018-c4_0619693_0620373,well i don't know .,well i don't know .
+Bro018-c4_0620673_0625670,but - i th- - i - i think that we - i have the result more or less maybe .,but - i th- - i - i think that we - i have the result more or less maybe .
+Bro018-c4_0625780_0626040,i don't know .,i don't know .
+Bro018-c4_0626650_0630530,i don't - i'm not sure but i remember @reject@ that i can't show that .,i don't - i'm not sure but i remember {@reject@} that i can't show that .
+Bro018-c2_0630960_0634000,okay | but that's a - that is a - a good check point .,o_k | but that's a - that is a - a good check point .
+Bro018-c2_0634000_0634900,you should do that anyway .,you should do that anyway .
+Bro018-c4_0634290_0634520,yeah .,yeah .
+Bro018-c2_0635050_0635450,okay ?,o_k ?
+Bro018-c2_0635910_0645673,given this - this uh - regular old net that's just for choosing for other purposes uh - add up the probabilities of the different subclasses and see - see how well you do .,given this - this uh - regular old net that's just for choosing for other purposes uh - add up the probabilities of the different subclasses and see - see how well you do .
+Bro018-c2_0645673_0650183,uh - and that - you know anything that you do over here should be at least as good as that .,uh - and that - you know anything that you do over here should be at least as good as that .
+Bro018-c4_0650626_0650986,uhhuh .,mm-hmm .
+Bro018-c2_0653529_0653699,okay .,o_k .
+Bro018-c4_0654190_0654700,i will do that .,i will do that .
+Bro018-c5_0655357_0659430,the targets for the neural net uh - they come from forced alignments ?,the targets for the neural net uh - they come from forced alignments ?
+Bro018-c4_0655394_0655484,but ==,but ==
+Bro018-c4_0660540_0662613,uh - | no .,uh - | no .
+Bro018-c0_0663320_0665220,timit canonical ma- - mappings .,timit canonical ma- - mappings .
+Bro018-c4_0664160_0664500,timit .,timit .
+Bro018-c5_0664950_0665350,uh .,ah .
+Bro018-c2_0665396_0666456,oh | so this is trained on timit .,oh | so this is trained on timit .
+Bro018-c5_0665510_0665770,okay .,o_k .
+Bro018-c4_0666880_0667100,yeah .,yeah .
+Bro018-c0_0667235_0668165,yeah | noisy timit .,yeah | noisy timit .
+Bro018-c2_0667425_0667745,okay .,o_k .
+Bro018-c4_0668060_0668920,yeah this for timit .,yeah this for timit .
+Bro018-c2_0669315_0670115,but noisy timit ?,but noisy timit ?
+Bro018-c4_0670430_0671040,noisy timit .,noisy timit .
+Bro018-c0_0670485_0670755,right .,right .
+Bro018-c4_0671040_0674969,we have noisy timit with the noise of the - the t i digits .,we have noisy timit with the noise of the - the t_i-digits .
+Bro018-c4_0675419_0681659,and now we have another noisy timit also with the noise of uh - italian data base .,and now we have another noisy timit also with the noise of uh - italian database .
+Bro018-c2_0684634_0685174,i see .,i see .
+Bro018-c2_0686811_0687091,yeah .,yeah .
+Bro018-c2_0687951_0694110,well there's going to be - it looks like there's going to be a noisy - uh - some large vocabulary noisy stuff too .,well there's gonna be - it looks like there's gonna be a noisy - uh - some large vocabulary noisy stuff too .
+Bro018-c2_0694440_0695370,somebody's preparing .,somebody's preparing .
+Bro018-c5_0694630_0694870,really ?,really ?
+Bro018-c2_0695820_0696110,yeah .,yeah .
+Bro018-c2_0697640_0698420,i forget what it'll be .,i forget what it'll be .
+Bro018-c2_0698800_0699590,resource management .,resource management .
+Bro018-c2_0699590_0700290,wall street journal .,wall street journal .
+Bro018-c2_0700290_0700640,something .,something .
+Bro018-c2_0700920_0705198,some - some read task actually that they're preparing .,some - some read task actually that they're preparing .
+Bro018-c0_0703758_0703968,huh !,hmm !
+Bro018-c5_0704720_0705230,for what ?==,for what ?==
+Bro018-c5_0705380_0705990,for aurora ?,for aurora ?
+Bro018-c2_0706500_0706680,yeah .,yeah .
+Bro018-c5_0707006_0707156,oh !,oh !
+Bro018-c2_0708009_0709069,yeah | so the uh ==,yeah | so the uh ==
+Bro018-c2_0710503_0716463,uh - | the issue is whether people make a decision now based on what they've already seen or they make it later .,uh - | the issue is whether people make a decision now based on what they've already seen or they make it later .
+Bro018-c2_0716463_0725148,and one of the arguments for making it later is let's make sure that whatever techniques that we're using work for something more than - than connected digits .,and one of the arguments for making it later is let's make sure that whatever techniques that we're using work for something more than - than connected digits .
+Bro018-c5_0726752_0727132,huh .,hmm .
+Bro018-c2_0727340_0727620,so ==,so ==
+Bro018-c5_0729791_0732020,when are they planning - when would they do that ?,when are they planning - when would they do that ?
+Bro018-c2_0732790_0735640,huh | i think late - uh - i think in the summer sometime .,mmm | i think late - uh - i think in the summer sometime .
+Bro018-c5_0736035_0736405,huh .,hmm .
+Bro018-c2_0738784_0739164,so ==,so ==
+Bro018-c2_0741230_0741900,okay thanks .,o_k thanks .
+Bro018-c4_0742387_0746137,this is the work that i did during this date .,this is the work that i did during this date .
+Bro018-c2_0744600_0744880,uhhuh .,uh-huh .
+Bro018-c4_0746137_0755443,and also huh i - h- - hynek last week say that if i have time i can to begin to - to study .,and also mmm i - h- - hynek last week say that if i have time i can to begin to - to study .
+Bro018-c4_0756247_0759567,well seriously the france telecom proposal ==,well seriously the france telecom proposal ==
+Bro018-c2_0759985_0760385,uhhuh .,mm-hmm .
+Bro018-c4_0760067_0761137,to look at the code ==,to look at the code ==
+Bro018-c4_0761137_0762347,and something like that .,and something like that .
+Bro018-c4_0763280_0765430,to know exactly what they are doing ==,to know exactly what they are doing ==
+Bro018-c4_0765430_0768080,because maybe that we can have some ideas .,because maybe that we can have some ideas .
+Bro018-c2_0768090_0768630,uhhuh .,mm-hmm .
+Bro018-c4_0768819_0770939,but not only to read the proposal .,but not only to read the proposal .
+Bro018-c4_0771399_0778156,look insi- - look i- - carefully what they are doing with the program and something like that .,look insi- - look i- - carefully what they are doing with the program and {something} {like} {that} .
+Bro018-c4_0778156_0780606,and i begin to - to work also in that .,{and} i begin to - to work also in that .
+Bro018-c4_0781430_0792620,but the first thing that i don't understand is that they are using r - the uh - log energy that this quite ==,but the first thing that i don't understand is that they are using r_- - the uh - log energy that this quite ==
+Bro018-c4_0793490_0800040,i don't know why they have some constant in the expression of the lower energy .,i don't know why they have some constant in the expression of the lower energy .
+Bro018-c4_0800250_0801640,i don't know what that means .,i don't know what that means .
+Bro018-c5_0803940_0805530,they have a constant in there you said ?,they have a constant in there you said ?
+Bro018-c4_0805075_0805355,yeah .,yeah .
+Bro018-c2_0807046_0814226,oh | at the front it says uh - log energy is equal to the rounded version of sixteen over the log of two .,oh | at the front it says uh - log energy is equal to the rounded version of sixteen over the log of two .
+Bro018-c4_0812119_0812399,this ==,this ==
+Bro018-c4_0814266_0814526,yeah .,yeah .
+Bro018-c2_0815112_0816072,uh ==,uh ==
+Bro018-c4_0817600_0819470,then maybe i can understand .,then maybe i can understand .
+Bro018-c2_0817637_0818537,uh - times the ==,uh - times the ==
+Bro018-c2_0818537_0819847,well this is natural log .,well this is natural log .
+Bro018-c2_0819847_0821757,and maybe it has something to do with the fact that this is ==,and maybe it has something to do with the fact that this is ==
+Bro018-c5_0823330_0825060,is that some kind of base conversion ?,is that some kind of base conversion ?
+Bro018-c2_0823363_0824693,i - i have no idea .,i - i have no idea .
+Bro018-c5_0825060_0825090,or ?==,or ?==
+Bro018-c2_0825860_0826830,yeah | that's what i was thinking .,yeah | that's what i was thinking .
+Bro018-c2_0826830_0830429,but - but um - then there's the sixty four .,but - but um - then there's the sixty-four .
+Bro018-c2_0832040_0834502,uh - i don't know .,uh - i don't know .
+Bro018-c4_0835755_0841585,because maybe they're - the threshold that they are using on the basis of this value ==,because maybe they're - the threshold that they are using on the basis of this value ==
+Bro018-c5_0837430_0838410,experimental results .,experimental results .
+Bro018-c0_0839828_0841238,mc- - mcdonald's constant .,mc- - mcdonald's constant .
+Bro018-c4_0841585_0842495,i don't know exactly .,i don't know exactly .
+Bro018-c4_0842825_0845575,because well th- - i thought maybe they have a meaning .,because well th- - i thought maybe they have a meaning .
+Bro018-c4_0845975_0849275,but i don't know what is the meaning of take exactly this value .,but i don't know what is the meaning of take exactly this value .
+Bro018-c2_0849540_0850820,yeah | it's pretty funny looking .,yeah | it's pretty funny looking .
+Bro018-c5_0850290_0857550,so they're taking the number inside the log and raising it to sixteen over log base two .,so they're taking the number inside the log and raising it to sixteen over log base two .
+Bro018-c2_0850820_0851230,i don't know .,i don't know .
+Bro018-c2_0857692_0858422,yeah | i ==,yeah | i ==
+Bro018-c2_0859959_0862289,um | right .,um | right .
+Bro018-c2_0864327_0868803,sixteen over two .,sixteen over two .
+Bro018-c5_0865000_0866880,does it have to do with those sixty fours ?,does it have to do with those sixty-fours ?
+Bro018-c5_0866880_0866930,or ?==,or ?==
+Bro018-c2_0870434_0871664,um ==,um ==
+Bro018-c2_0872250_0879007,if we ignore the sixteen the natural log of t- - one over the natural log of two times the natu- ==,if we ignore the sixteen the natural log of t- - one over the natural log of two times the natu- ==
+Bro018-c2_0879107_0879677,i don't know .,i don't know .
+Bro018-c5_0880289_0880699,uhhuh .,{uhhuh} .
+Bro018-c2_0880757_0882527,well maybe somebody will think of something .,well maybe somebody'll think of something .
+Bro018-c2_0882607_0883407,but this is uh ==,but this is uh ==
+Bro018-c2_0885040_0888580,it may just be that they - they want to have - for very small energies ==,it may just be that they - they want to have - for very small energies ==
+Bro018-c2_0888580_0891040,they want to have some kind of a ==,they want to have some kind of a ==
+Bro018-c4_0890010_0894420,yeah | the e- - the effect i don't - @reject@ i can understand the effect of this .,yeah | the e- - the effect i don't - {@reject@} i can understand the effect of this .
+Bro018-c4_0894420_0894630,no ?,no ?
+Bro018-c4_0894630_0898036,because it's to - to do something like that .,because it's to - to do something like that .
+Bro018-c4_0898346_0898616,no ?,no ?
+Bro018-c2_0898450_0907338,well it says since you're taking a natural log it says that when - when you get down to essentially zero energy this is going to be the natural log of one which is zero .,well it says since you're taking a natural log it says that when - when you get down to essentially zero energy this is gonna be the natural log of one which is zero .
+Bro018-c4_0903940_0904250,uhhuh .,mm-hmm .
+Bro018-c2_0907948_0913810,so it'll go down to - uh - to the natural log being ==,so it'll go down to - uh - to the natural log being ==
+Bro018-c2_0914740_0916280,so the lowest value for this would be zero .,so the lowest value for this would be zero .
+Bro018-c2_0916280_0918410,so y- - you're restricted to being positive .,so y- - you're restricted to being positive .
+Bro018-c2_0918780_0920890,and this sort of smooths it for very small energies .,and this sort of smooths it for very small energies .
+Bro018-c2_0921666_0925526,uh - why they chose sixty four and something else that was probably just experimental .,uh - why they chose sixty-four and something else that was probably just experimental .
+Bro018-c4_0925960_0926200,yeah .,yeah .
+Bro018-c2_0926258_0929138,and the - the - the constant in front of it i have no idea .,and the - the - the constant in front of it i have no idea .
+Bro018-c2_0929770_0930080,um ==,um ==
+Bro018-c4_0930398_0936028,well | i - i will look to try if i move this parameter in their code what happens ?,well | i - i will look to try if i move this parameter in their code what happens ?
+Bro018-c4_0936218_0940948,maybe everything is - maybe they tres hole are on basis of this .,maybe everything is - ** maybe they tres hole are on basis of this .
+Bro018-c2_0938186_0949079,uh i mean it - they - they probably have some fi- - particular s- - fixed point arithmetic that they're using .,uh i mean it - they - they probably have some fi- - particular s- - fixed point arithmetic that they're using .
+Bro018-c4_0941900_0942220,i don't know .,i don't know .
+Bro018-c5_0948680_0950650,yeah | i was just going to say maybe it has something to do with hardware .,<hmm> yeah | i was just gonna say maybe it has something to do with hardware .
+Bro018-c2_0949079_0949939,and then it just ==,and then it just ==
+Bro018-c5_0950940_0951670,something they were doing .,something they were doing .
+Bro018-c2_0951332_0951522,yeah .,yeah .
+Bro018-c2_0951910_0952290,yeah .,yeah .
+Bro018-c2_0952500_0955560,i mean that - they're s- - probably working with fixed point or integer or something .,i mean that - they're s- - probably working with fixed point or integer or something .
+Bro018-c2_0955560_0957190,i think you're supposed to on this stuff anyway .,i think you're supposed to on this stuff anyway .
+Bro018-c2_0957190_0960450,and - and so maybe that puts it in the right realm somewhere .,and - and so maybe that puts it in the right realm somewhere .
+Bro018-c5_0959650_0961320,well it just yeah puts it in the right range .,well it just yeah puts it in the right range .
+Bro018-c5_0961320_0961380,or ==,or ==
+Bro018-c2_0963410_0963580,yeah .,yeah .
+Bro018-c2_0963730_0969030,i think given at the level you're doing things in floating point on the computer i don't think it matters would be my guess .,i think given at the level you're doing things in floating point on the computer i don't think it matters would be my guess .
+Bro018-c4_0968520_0968800,uhhuh .,mm-hmm .
+Bro018-c2_0969070_0969170,but ==,but ==
+Bro018-c4_0970024_0972014,i - this more or less anything ==,i - this more or less anything ==
+Bro018-c2_0971063_0971523,yeah .,yeah .
+Bro018-c2_0974527_0976727,okay | and wh- - when did stephane take off ?,o_k | and wh- - when did stephane take off ?
+Bro018-c2_0976947_0977487,he took off ==,he took off ==
+Bro018-c4_0977160_0980380,i think that stephane will arrive today or tomorrow .,i think that stephane will arrive today or tomorrow .
+Bro018-c2_0980960_0982800,oh | he was gone these first few days .,oh | he was gone these first few days .
+Bro018-c2_0982800_0986630,and then he's here for a couple days before he goes to salt lake city .,and then he's here for a couple days before he goes to salt lake city .
+Bro018-c4_0985250_0985640,uhhuh .,mm-hmm .
+Bro018-c2_0986840_0987070,okay .,o_k .
+Bro018-c4_0987314_0990414,he's - i think that he is in las vegas or something like that .,he's - i think that he is in las vegas or something like that .
+Bro018-c2_0991010_0991220,yeah .,yeah .
+Bro018-c2_0992164_0992424,yeah .,yeah .
+Bro018-c2_0992944_0994454,so he's - he's going to i. cassp which is good .,so he's - he's going to i_cassp which is good .
+Bro018-c2_0994454_0997024,i - i don't know if there are many people who are going to i. cassp .,i - i don't know if there are many people who are going to i_cassp .
+Bro018-c4_0996196_0996586,yeah .,yeah .
+Bro018-c2_0997024_0999164,so - so i thought make sure somebody go .,so - so i thought make sure somebody go .
+Bro018-c4_0997416_0997756,yeah .,yeah .
+Bro018-c5_0998130_1002840,do - have - have people sort of stopped going to i. cassp in recent years ?,do - have - have people sort of stopped going to i_cassp in recent years ?
+Bro018-c2_1003090_1006320,um - | people are less consistent about going to i. cassp .,um - | people are less consistent about going to i_cassp .
+Bro018-c2_1006320_1011470,and i think it's still - it's still a reasonable forum for students to - to present things .,and i think it's still - it's still a reasonable forum for students to - to present things .
+Bro018-c2_1011470_1019010,uh - it's - i think for engineering students of any kind i think it's - it's if you haven't been there much it's good to go to .,uh - it's - i think for engineering students of any kind i think it's - it's if you haven't been there much it's good to go to .
+Bro018-c2_1019560_1021880,uh - to get a feel for things a range of things .,uh - to get a feel for things a range of things .
+Bro018-c2_1021880_1022720,not just speech .,not just speech .
+Bro018-c2_1023000_1023380,uh ==,uh ==
+Bro018-c2_1024160_1031450,but i think for - for sort of dyed in the wool speech people um - i think that i c s l p and eurospeech are much more targeted .,but i think for - for sort of dyed-in-the-wool speech people um - i think that i_c_s_l_p and eurospeech are much more targeted .
+Bro018-c5_1031530_1031880,uhhuh .,<hmm> mm-hmm .
+Bro018-c2_1032450_1032760,uh ==,uh ==
+Bro018-c2_1032760_1037870,and then there's these other meetings like h l t and - and uh - a s r u .,and then there's these other meetings like h_l_t and - and uh - a_s_r_u .
+Bro018-c5_1035140_1035520,uhhuh .,{uhhuh} .
+Bro018-c2_1038360_1046480,so there's - there's actually plenty of meetings that are really relevant to - to uh - computational uh - speech processing of one sort or another .,so there's - there's actually plenty of meetings that are really relevant to - to uh - computational uh - speech processing of one sort or another .
+Bro018-c5_1045350_1045690,uhhuh .,{uhhuh} .
+Bro018-c5_1045360_1045700,uhhuh .,<mmm> mm-hmm .
+Bro018-c2_1046750_1048600,um so ==,um so ==
+Bro018-c2_1049080_1053110,i mean i mostly just ignored it because i was too busy and didn't get to it .,i mean i mostly just ignored it because i was too busy and didn't get to it .
+Bro018-c2_1054190_1055060,so uh ==,so uh ==
+Bro018-c2_1056150_1058320,want to talk a little bit about what we were talking about this morning ?,wanna talk a little bit about what we were talking about this morning ?
+Bro018-c0_1058520_1058740,oh !,oh !
+Bro018-c2_1058560_1061080,just briefly or - or anything else ?,just briefly or - or anything else ?
+Bro018-c0_1058980_1061300,um - uh - | yeah .,um - uh - | yeah .
+Bro018-c0_1061300_1068480,so i - i guess some of the progress i - i've been getting a - getting my committee members for the quals .,so i - i guess some of the progress i - i've been getting a - getting my committee members for the quals .
+Bro018-c0_1069130_1073930,and um - so far i have morgan and hynek mike jordan .,and um - so far i have morgan and hynek mike jordan .
+Bro018-c0_1074190_1076110,and i asked john ohala and he agreed .,and i asked john ohala and he agreed .
+Bro018-c5_1076620_1076940,cool .,cool .
+Bro018-c0_1076920_1077800,yeah yeah .,yeah yeah .
+Bro018-c0_1077960_1081000,so i'm - i - i just need to ask um - malek .,so i'm - i - i just need to ask um - malek .
+Bro018-c0_1081460_1081690,one more .,one more .
+Bro018-c0_1082160_1083380,um tsk ==,um tsk ==
+Bro018-c0_1083590_1091110,then uh - i talked a little bit about um - continuing with these dynamic ev- - um - acoustic events .,then uh - i talked a little bit about um - continuing with these dynamic ev- - um - acoustic events .
+Bro018-c0_1091660_1104880,and um - we're - we're - we're thinking about a way to test the completeness of a - a set of um - dynamic uh - events .,and um - we're - we're - we're thinking about a way to test the completeness of a - a set of um - dynamic uh - events .
+Bro018-c0_1105450_1122790,uh - completeness in the - in the sense that um - if we - if we pick these x number of acoustic events do they provide sufficient coverage for the phones that we're trying to recognize or - or the f- - the words that we're going to try to recognize later on ?,uh - completeness in the - in the sense that um - if we - if we pick these x_ number of acoustic events do they provide sufficient coverage for the phones that we're trying to recognize or - or the f- - the words that we're gonna try to recognize later on ?
+Bro018-c0_1123440_1139650,and so morgan and i were uh - discussing um - s- - uh - s- - a form of a cheating experiment where we get um - we have uh - um - a chosen set of features or acoustic events .,and so morgan and i were uh - discussing um - s- - uh - s- - a form of a cheating experiment where we get um - we have uh - um - a chosen set of features or acoustic events .
+Bro018-c0_1140100_1146280,and we train up a hybrid um - system to do phone recognition on timit .,and we train up a hybrid um - system to do phone recognition on timit .
+Bro018-c0_1146990_1163190,so i- - i- - the idea is if we get good phone recognition results using um - these set of acoustic events then um - that - that says that these acoustic events are g- - sufficient to cover a set of phones .,so i- - i- - the idea is if we get good phone recognition results using um - these set of acoustic events then um - that - that says that these acoustic events are g- - sufficient to cover a set of phones .
+Bro018-c0_1163300_1164400,at least found in timit .,at least found in timit .
+Bro018-c0_1165060_1173500,um - so i- - it would be a - a measure of are we on the right track with - with the - the choices of our acoustic events ?,um - so i- - it would be a - a measure of are we on the right track with - with the - the choices of our acoustic events ?
+Bro018-c0_1174170_1176450,um - | so that's going on .,um - | so that's going on .
+Bro018-c0_1176760_1183950,and also just uh - working on my uh - final project for jordan's class .,and also just uh - working on my uh - final project for jordan's class .
+Bro018-c0_1183950_1184880,uh - which is ==,uh - which is ==
+Bro018-c2_1185310_1185850,actually let me ==,actually let me ==
+Bro018-c2_1185990_1186520,hold that thought .,hold that thought .
+Bro018-c0_1186030_1186210,yeah .,yeah .
+Bro018-c2_1186520_1188120,let me back up while we're still on it .,let me back up while we're still on it .
+Bro018-c0_1186930_1187650,okay sure .,o_k sure .
+Bro018-c2_1188120_1196610,the - the other thing i was suggesting though is that given that you're talking about binary features uh - maybe the first thing to do is just to count .,the - the other thing i was suggesting though is that given that you're talking about binary features uh - maybe the first thing to do is just to count .
+Bro018-c2_1197550_1202590,and uh - | count co occurrences and get probabilities for a discrete h m m .,and uh - | count co-occurrences and get probabilities for a discrete h_m_m .
+Bro018-c2_1203710_1204650,because that'd be pretty simple .,cuz that'd be pretty simple .
+Bro018-c2_1204650_1214700,because it's just - say if you had ten - ten events uh - that you were counting uh - each frame would only have a thousand possible values for these ten bits .,because it's just - say if you had ten - ten events uh - that you were counting uh - each frame would only have a thousand possible values for these ten bits .
+Bro018-c2_1215530_1222530,and uh - | so you could make a table that would - say if you had thirty nine phone categories that would be a thousand by thirty nine .,and uh - | so you could make a table that would - say if you had thirty-nine phone categories that would be a thousand by thirty-nine .
+Bro018-c2_1222530_1234690,and just count the co occurrences and divide them by the - the uh - uh - uh - occ- - uh - count the co occurrences between the event and the phone and divide them by the number of occurrences of the phone .,and just count the co-occurrences and divide them by the - the uh - uh - uh - occ- - uh - count the co-occurrences between the event and the phone and divide them by the number of occurrences of the phone .
+Bro018-c2_1234870_1238830,and that would give you the likelihood of the - of the event given the phone .,and that would give you the likelihood of the - of the event given the phone .
+Bro018-c2_1239340_1243440,and um - then just use that in a very simple h m m .,and um - then just use that in a very simple h_m_m .
+Bro018-c2_1243710_1251880,and uh - you could uh - do phone recognition then and uh - wouldn't have any of the issues of the uh - training of the net or ==,and uh - you could uh - do phone recognition then and uh - wouldn't have any of the issues of the uh - training of the net or ==
+Bro018-c2_1251880_1254240,i mean it'd be on the simple side .,i mean it'd be on the simple side .
+Bro018-c2_1254240_1254430,but ==,but ==
+Bro018-c5_1254720_1255050,uhhuh .,mm-hmm .
+Bro018-c2_1255240_1256910,uh - um ==,uh - um ==
+Bro018-c2_1259330_1277440,you know if - uh - uh - the example i was giving was that if - if you had um - onset of voicing and - and end of voicing as being two kinds of events then if you had those a- - all marked correctly and you counted co occurrences you should get it completely right .,you know if - uh - uh - the example i was giving was that if - if you had um - onset of voicing and - and end of voicing as being two kinds of events then if you had those a- - all marked correctly and you counted co-occurrences you should get it completely right .
+Bro018-c5_1277880_1278170,uhhuh .,mm-hmm .
+Bro018-c2_1279280_1279790,so ==,so ==
+Bro018-c2_1280270_1284110,um | but you'd get all the other distinctions you know randomly wrong .,um | but you'd get all the other distinctions you know randomly wrong .
+Bro018-c2_1284210_1285730,i mean there'd be nothing to tell you that .,i mean there'd be nothing to tell you that .
+Bro018-c2_1285940_1288770,so um - uh ==,so um - uh ==
+Bro018-c2_1289580_1301610,if you just do this by counting then you should be able to find out in a pretty straightforward way whether you have a sufficient uh - set of events to - to do the kind of level of - of uh - classification of phones that you'd like .,if you just do this by counting then you should be able to find out in a pretty straightforward way whether you have a sufficient uh - set of events to - to do the kind of level of - of uh - classification of phones that you'd like .
+Bro018-c2_1302890_1304100,so that was - that was the idea .,so that was - that was the idea .
+Bro018-c2_1304100_1309810,and then the other thing that we were discussing was - was um - okay how do you get the - your training data ?,and then the other thing that we were discussing was - was um - o_k how do you get the - your training data ?
+Bro018-c5_1310220_1310750,uhhuh .,mm-hmm .
+Bro018-c2_1311220_1321580,because uh - the switchboard transcription project uh - uh - you know was half a dozen people or so working off and on over a couple years .,cuz uh - the switchboard transcription project uh - uh - you know was half a dozen people or so working off and on over a couple years .
+Bro018-c2_1321580_1321670,and ==,and ==
+Bro018-c2_1323260_1327520,uh - | similar - similar amount of data to what you're talking about with timit training .,uh - | similar - similar amount of data to what you're talking about with timit training .
+Bro018-c2_1327520_1341040,so it seems to me that the only reasonable starting point is uh - to automatically translate the uh - current timit markings into the markings you want .,so it seems to me that the only reasonable starting point is uh - to automatically translate the uh - current timit markings into the markings you want .
+Bro018-c2_1341750_1351140,and uh - it won't have the kind of characteristic that you'd like of catching funny kind of things that maybe aren't there from these automatic markings .,and uh - it won't have the kind of characteristic that you'd like of catching funny kind of things that maybe aren't there from these automatic markings .
+Bro018-c5_1348720_1349030,uhhuh .,mm-hmm .
+Bro018-c2_1351190_1352100,but - but ==,but - but ==
+Bro018-c2_1352100_1354440,uh - it's uh ==,uh - it's uh ==
+Bro018-c5_1355040_1356130,it's probably a good place to start .,it's probably a good place to start .
+Bro018-c2_1356340_1356750,yeah .,yeah .
+Bro018-c5_1356750_1356980,yeah .,yeah .
+Bro018-c2_1357340_1358950,yeah and a short - short amount of time .,yeah and a short - short amount of time .
+Bro018-c2_1358950_1365210,just to - again just to see if that information is sufficient to uh - determine the phones .,just to - again just to see if that information is sufficient to uh - determine the phones .
+Bro018-c5_1359530_1360020,uhhuh .,mm-hmm .
+Bro018-c5_1365260_1365600,huh .,hmm .
+Bro018-c2_1366970_1367340,so ==,so ==
+Bro018-c5_1368130_1377120,yeah | you could even then - to - to get an idea about how different it is you could maybe take some subset and you know go through a few sentences mark them by hand .,yeah | you could even then - to - to get an idea about how different it is you could maybe take some subset and you know go through a few sentences mark them by hand .
+Bro018-c5_1377120_1381980,and then see how different it is from you know the canonical ones .,and then see how different it is from you know the canonical ones .
+Bro018-c2_1380930_1381220,right .,right .
+Bro018-c5_1381980_1386950,just to get an idea - a rough idea of h- - if it really even makes a difference .,just to get an idea - a rough idea of h- - if it really even makes a difference .
+Bro018-c2_1386710_1387940,you can get a little feeling for it that way .,you can get a little feeling for it that way .
+Bro018-c5_1387710_1388000,yeah .,yeah .
+Bro018-c2_1387940_1388950,yeah that is probably right .,yeah that is probably right .
+Bro018-c2_1389600_1396740,i mean uh - my - my guess would be that this is - since timit's read speech that this would be less of a big deal .,i mean uh - my - my guess would be that this is - since timit's read speech that this would be less of a big deal .
+Bro018-c5_1395510_1395990,uhhuh .,mm-hmm .
+Bro018-c2_1396850_1399480,if you went and looked at spontaneous speech it'd be more - more of one .,if you went and looked at spontaneous speech it'd be more - more of one .
+Bro018-c5_1398450_1398750,right .,right .
+Bro018-c5_1399140_1399370,right .,right .
+Bro018-c2_1400270_1406530,and the other thing would be say if you had these ten events you'd want to see well what if you took two events or four events or ten events or t- ==,and the other thing would be say if you had these ten events you'd wanna see well what if you took two events or four events or ten events or t- ==
+Bro018-c2_1406530_1407010,and you know and ==,and you know and ==
+Bro018-c2_1407080_1414720,and hopefully there should be some point at which having more information doesn't tell you really all that much more about what the phones are .,and hopefully there should be some point at which having more information doesn't tell you really all that much more about what the phones are .
+Bro018-c5_1413850_1414450,uhhuh .,mm-hmm .
+Bro018-c5_1417140_1422860,you could define other events as being sequences of these events too .,you could define other events as being sequences of these events too .
+Bro018-c2_1425120_1426040,uh - | you could .,uh - | you could .
+Bro018-c2_1426040_1433540,but the thing is what he's talking about here is a - uh - a translation to a per frame feature vector .,but the thing is what he's talking about here is a - uh - a translation to a per-frame feature vector .
+Bro018-c2_1437540_1440140,so there's no sequence in that .,so there's no sequence in that .
+Bro018-c2_1440140_1440750,i think .,i think .
+Bro018-c2_1440890_1441840,i think it's just a ==,i think it's just a ==
+Bro018-c5_1441190_1444390,unless you did like a second pass over it or something after you've got your ==,unless you did like a second pass over it or something after you've got your ==
+Bro018-c2_1445110_1447750,yeah | but we're just talking about something simple here yeah to see if ==,yeah | but we're just talking about something simple here yeah to see if ==
+Bro018-c5_1446550_1446780,yeah .,yeah .
+Bro018-c5_1446860_1447070,yeah yeah .,yeah yeah .
+Bro018-c5_1447520_1447650,yeah .,yeah .
+Bro018-c5_1449410_1450290,i'm adding complexity .,i'm adding complexity .
+Bro018-c2_1450610_1450920,yeah .,yeah .
+Bro018-c2_1451190_1451520,just ==,just ==
+Bro018-c2_1451770_1461400,you know | the idea is with a - with a very simple statistical structure could you - could you uh - at least verify that you've chosen features that are sufficient ?,you know | the idea is with a - with a very simple statistical structure could you - could you uh - at least verify that you've chosen features that are sufficient ?
+Bro018-c5_1455510_1455800,yeah .,yeah .
+Bro018-c2_1470040_1473380,okay | and you were saying something - starting to say something else about your - your class project or ?==,o_k | and you were saying something - starting to say something else about your - your class project or ?==
+Bro018-c0_1472530_1472880,oh .,oh .
+Bro018-c0_1473300_1474320,yeah th- - um ==,yeah th- - um ==
+Bro018-c2_1473780_1474110,yeah .,yeah .
+Bro018-c0_1474390_1481110,so | for my class project i'm - um - i'm tinkering with uh - support vector machines .,so | for my class project i'm - um - i'm tinkering with uh - support vector machines .
+Bro018-c0_1481210_1482590,something that we learned in class .,something that we learned in class .
+Bro018-c0_1482590_1487690,and uh - um - | basically just another method for doing classification .,and uh - um - | basically just another method for doing classification .
+Bro018-c0_1488240_1496130,and so i'm going to apply that to um - compare it with the results by um - king and taylor who did um - these .,and so i'm gonna apply that to um - compare it with the results by um - king and taylor who did um - these .
+Bro018-c0_1496530_1497320,um ==,um ==
+Bro018-c0_1497320_1503910,using recurrent neural nets they recognized um - a set of phonological features .,using recurrent neural nets they recognized um - a set of phonological features .
+Bro018-c0_1504400_1505160,um ==,um ==
+Bro018-c0_1505280_1509410,and made a mapping from the m f c c's to these phonological features .,and made a mapping from the m_f_c_c's to these phonological features .
+Bro018-c0_1509410_1513320,so i'm going to do a similar thing with - with support vector machines .,so i'm gonna do a similar thing with - with support vector machines .
+Bro018-c0_1513320_1514290,and see if ==,and see if ==
+Bro018-c5_1514170_1517210,so what's the advantage of support vector machines ?,so what's the advantage of support vector machines ?
+Bro018-c5_1517210_1517480,what ?==,what ?==
+Bro018-c0_1518080_1524340,um - | so support vector machines are - are good with dealing with a less amount of data .,um - | so support vector machines are - are good with dealing with a less amount of data .
+Bro018-c5_1524840_1525270,huh .,hmm .
+Bro018-c0_1525480_1533240,and um - | so if you - if you give it less data it still does a reasonable job in learning the - the patterns .,and um - | so if you - if you give it less data it still does a reasonable job in learning the - the patterns .
+Bro018-c5_1533380_1533810,huh .,hmm .
+Bro018-c0_1534090_1536930,um - and um ==,um - and um ==
+Bro018-c2_1537300_1537660,i guess it ==,i guess it ==
+Bro018-c2_1537660_1537820,yeah .,yeah .
+Bro018-c2_1537820_1538790,they're sort of succinct .,they're sort of succinct .
+Bro018-c2_1539080_1541120,and - and they uh ==,and - and they uh ==
+Bro018-c0_1540050_1540280,yeah .,yeah .
+Bro018-c5_1542560_1546130,does there some kind of a distance metric that they use ?,does there some kind of a distance metric that they use ?
+Bro018-c5_1546130_1549530,or how do they for cla- - what do they do for classification ?,or how do they for cla- - what do they do for classification ?
+Bro018-c0_1550080_1550750,um .,um .
+Bro018-c0_1550750_1551160,right .,right .
+Bro018-c0_1551160_1559910,so the - the simple idea behind a support vector machine is um - you have - you have this feature space .,so the - the simple idea behind a support vector machine is um - you have - you have this feature space .
+Bro018-c0_1559910_1560130,right ?,right ?
+Bro018-c5_1559960_1560340,uhhuh .,mm-hmm .
+Bro018-c0_1560200_1569660,and then it finds the optimal separating plane um - between these two different um - classes .,and then it finds the optimal separating plane um - between these two different um - classes .
+Bro018-c5_1565680_1566150,uhhuh .,mm-hmm .
+Bro018-c5_1569710_1570060,uhhuh .,mm-hmm .
+Bro018-c0_1570330_1575370,and - um - and so um ==,and - um - and so um ==
+Bro018-c0_1575840_1585120,what it - i- - at the end of the day what it actually does is it picks those examples of the features that are closest to the separating boundary .,what it - i- - at the end of the day what it actually does is it picks those examples of the features that are closest to the separating boundary .
+Bro018-c0_1585400_1586500,and remembers those .,and remembers those .
+Bro018-c5_1585410_1585730,uhhuh .,mm-hmm .
+Bro018-c0_1586960_1591560,and - and uses them to recreate the boundary for the test set .,and - and uses them to recreate the boundary for the test set .
+Bro018-c0_1592060_1614150,so given these - um - these features or - or these - these examples - um - critical examples which they call support f- - support vectors then um - given a new example if the new example falls um - away from the boundary in one direction then it's classified as being a part of this particular class .,so given these - um - these features or - or these - these examples - um - critical examples which they call support f- - support vectors then um - given a new example if the new example falls um - away from the boundary in one direction then it's classified as being a part of this particular class .
+Bro018-c5_1602270_1602600,oh .,oh .
+Bro018-c0_1614560_1616730,and otherwise it's the other class .,and otherwise it's the other class .
+Bro018-c5_1616740_1618390,so why save the examples ?,so why save the examples ?
+Bro018-c5_1618390_1621560,why not just save what the boundary itself is ?,why not just save what the boundary itself is ?
+Bro018-c0_1619670_1620120,uhhuh .,mm-hmm .
+Bro018-c0_1622460_1623830,um - huh ==,um - hmm ==
+Bro018-c0_1624160_1624640,let's see .,let's see .
+Bro018-c0_1627790_1628470,uh ==,uh ==
+Bro018-c0_1632630_1633550,yeah that's a good question .,yeah that's a good question .
+Bro018-c0_1633850_1634030,i ==,i ==
+Bro018-c2_1634190_1635070,that's another way of doing it .,that's another way of doing it .
+Bro018-c0_1634620_1634790,yeah .,yeah .
+Bro018-c5_1635550_1635810,huh .,mmm .
+Bro018-c2_1635610_1637410,right so - | so it i - mean i - i guess it's ==,right so - | so it i - mean i - i guess it's ==
+Bro018-c5_1637070_1637880,sort of an equivalent .,sort of an equivalent .
+Bro018-c2_1638780_1641600,you know it - it goes back to nearest neighbor sort of thing .,you know it - it goes back to nearest-neighbor sort of thing .
+Bro018-c5_1641040_1641460,uhhuh .,mm-hmm .
+Bro018-c2_1641600_1641920,right .,right .
+Bro018-c2_1641910_1644960,um - i- - i- - if - is it uh - w- ==,um - i- - i- - if - is it eh - w- ==
+Bro018-c2_1645650_1646900,when is nearest neighbor good ?,when is nearest-neighbor good ?
+Bro018-c2_1646900_1651110,well nearest neighbor good - is good if you have lots and lots of examples .,well nearest-neighbor good - is good if you have lots and lots of examples .
+Bro018-c2_1651910_1657740,um - but of course if you have lots and lots of examples then it can take a while to - to use nearest neighbor .,um - but of course if you have lots and lots of examples then it can take a while to - to use nearest-neighbor .
+Bro018-c2_1657740_1658640,there's lots of look ups .,there's lots of look ups .
+Bro018-c2_1659180_1664630,so a long time ago people talked about things where you would have uh - a condensed nearest neighbor .,so a long time ago people talked about things where you would have uh - a condensed nearest-neighbor .
+Bro018-c2_1664630_1672970,where you would - you would - you would pick out uh - some representative examples which would uh - be sufficient to represent - to - to correctly classify everything that came in .,where you would - you would - you would pick out uh - some representative examples which would uh - be sufficient to represent - to - to correctly classify everything that came in .
+Bro018-c5_1665780_1666160,oh .,oh .
+Bro018-c5_1672600_1673040,uhhuh .,mm-hmm .
+Bro018-c2_1673610_1678170,i - i think s- - i think support vector stuff sort of goes back to - to that kind of thing .,i - i think s- - i think support vector stuff sort of goes back to - to that kind of thing .
+Bro018-c5_1678530_1679100,i see .,i see .
+Bro018-c2_1678920_1679220,um ==,um ==
+Bro018-c5_1679950_1685420,so rather than doing nearest neighbor where you compare to every single one you just pick a few critical ones .,so rather than doing nearest neighbor where you compare to every single one you just pick a few critical ones .
+Bro018-c5_1685420_1685580,and ==,and ==
+Bro018-c2_1686270_1686530,yeah .,yeah .
+Bro018-c5_1686880_1687250,huh .,hmm .
+Bro018-c2_1687450_1688000,and th- - the ==,and th- - the ==
+Bro018-c2_1688550_1701950,you know um - neural net approach uh - or gaussian mixtures for that matter are sort of - fairly brute force kinds of things where you sort of - you predefine that there is this big bunch of parameters .,you know um - neural net approach uh - or gaussian mixtures for that matter are sort of - fairly brute force kinds of things where you sort of - you predefine that there is this big bunch of parameters .
+Bro018-c2_1702040_1704960,and then you - you place them as you best can to define the boundaries .,and then you - you place them as you best can to define the boundaries .
+Bro018-c2_1704960_1708420,and in fact as you know these things do take a lot of parameters ==,and in fact as you know these things do take a lot of parameters ==
+Bro018-c2_1708600_1714750,and - and uh - if you have uh - only a modest amount of data you have trouble uh - learning them .,and - and uh - if you have uh - only a modest amount of data you have trouble uh - learning them .
+Bro018-c2_1715180_1722480,um - | so i - i guess the idea to this is that it - it is reputed to uh - be somewhat better in that regard .,um - | so i - i guess the idea to this is that it - it is reputed to uh - be somewhat better in that regard .
+Bro018-c5_1715520_1715770,uhhuh .,mm-hmm .
+Bro018-c0_1722520_1722820,right .,right .
+Bro018-c0_1723070_1732230,i- - it can be a - a reduced um - parameterization of - of the - the model by just keeping certain selected examples .,i- - it can be a - a reduced um - parameterization of - of the - the model by just keeping certain selected examples .
+Bro018-c5_1732820_1733230,huh .,hmm .
+Bro018-c0_1733390_1733720,yeah .,yeah .
+Bro018-c0_1734240_1734460,so ==,so ==
+Bro018-c2_1734970_1740690,but i don't know if people have done sort of careful comparisons of this on large tasks or anything .,but i don't know if people have done sort of careful comparisons of this on large tasks or anything .
+Bro018-c2_1741070_1741810,maybe - maybe they have .,maybe - maybe they have .
+Bro018-c2_1742470_1742840,i don't know .,i don't know .
+Bro018-c0_1743150_1744090,yeah i don't know either .,yeah i don't know either .
+Bro018-c2_1744410_1744580,yeah .,yeah .
+Bro018-c1_1745380_1749200,s- - do you get some kind of number between zero and one at the output ?,s- - do you get some kind of number between zero and one at the output ?
+Bro018-c0_1749820_1753350,actually you don't get a - you don't get a nice number between zero and one .,actually you don't get a - you don't get a nice number between zero and one .
+Bro018-c0_1753350_1755290,you get - you get either a zero or a one .,you get - you get either a zero or a one .
+Bro018-c0_1756300_1757830,um - uh ==,um - uh ==
+Bro018-c0_1757830_1758720,there are - there are pap- ==,there are - there are pap- ==
+Bro018-c0_1759090_1765200,well basically it's - it's um - you - you get a distance measure at the end of the day .,well basically it's - it's um - you - you get a distance measure at the end of the day .
+Bro018-c0_1765550_1770520,and then that distance measure is - is - um - is translated to a zero or one .,and then that distance measure is - is - um - is translated to a zero or one .
+Bro018-c0_1770930_1771640,um ==,um ==
+Bro018-c2_1771770_1775690,but that's looking at it for - for classification - for binary classification .,but that's looking at it for - for classification - for binary classification .
+Bro018-c0_1774190_1775800,that's for classification .,that's for classification .
+Bro018-c5_1775650_1778810,and you get that for each class you get a zero or a one .,and you get that for each class you get a zero or a one .
+Bro018-c2_1775690_1776040,right ?,right ?
+Bro018-c0_1775800_1776160,right .,right .
+Bro018-c0_1779170_1779530,right .,right .
+Bro018-c2_1779830_1781580,but you have the distances to work with .,but you have the distances to work with .
+Bro018-c0_1781390_1782790,you have the distances to work with .,you have the distances to work with .
+Bro018-c2_1782300_1789940,because actually mississippi state people did use support vector machines for uh - uh - speech recognition and they were using it to estimate probabilities .,cuz actually mississippi state people did use support vector machines for uh - uh - speech recognition and they were using it to estimate probabilities .
+Bro018-c0_1782900_1783120,yeah .,yeah .
+Bro018-c0_1785790_1786080,yeah .,yeah .
+Bro018-c0_1789990_1801460,yeah | they - they had a - had a way to translate the distances into - into probabilities with the - with the simple um - uh - sigmoidal function .,yeah | they - they had a - had a way to translate the distances into - into probabilities with the - with the simple um - uh - sigmoidal function .
+Bro018-c2_1801670_1801810,yeah .,yeah .
+Bro018-c2_1801810_1804290,and d- - did they use sigmoid or a softmax type thing ?,and d- - did they use sigmoid or a softmax type thing ?
+Bro018-c2_1804290_1806440,and didn't they like exponentiate or something ?,and didn't they like exponentiate or something ?
+Bro018-c0_1804530_1806770,um | yeah .,um | yeah .
+Bro018-c2_1806440_1808650,and then divide by the sum of them ?,and then divide by the sum of them ?
+Bro018-c0_1806770_1810990,there's some - there's like one over one plus the exponential or something like that .,there's some - there's like one over one plus the exponential or something like that .
+Bro018-c2_1808650_1808680,or ==,or ==
+Bro018-c2_1809860_1810390,oh | it - i- ==,oh | it - i- ==
+Bro018-c2_1810600_1811660,oh so it is a sigmoidal .,oh so it is a sigmoidal .
+Bro018-c0_1811690_1811950,yeah .,yeah .
+Bro018-c2_1811820_1812070,okay .,o_k .
+Bro018-c2_1813440_1813670,all right .,alright .
+Bro018-c5_1814610_1817540,did the - did they get good results with that ?,did the - did they get good results with that ?
+Bro018-c2_1817840_1818710,i mean they're okay .,i mean they're o_k .
+Bro018-c2_1818710_1821170,i - i don't - i don't think they were earth - earth shattering .,i - i don't - i don't think they were earth - earth shattering .
+Bro018-c2_1821170_1824680,but i think that uh - this was a couple years ago .,but i think that uh - this was a couple years ago .
+Bro018-c5_1821520_1821830,huh .,hmm .
+Bro018-c2_1824680_1826070,i remember them doing it at some meeting .,i remember them doing it at some meeting .
+Bro018-c2_1826070_1831770,and - and um - | i don't think people were very critical because it was interesting just to - to try this .,and - and um - | i don't think people were very critical because it was interesting just to - to try this .
+Bro018-c2_1831770_1833410,and you know it was the first time they tried it .,and you know it was the first time they tried it .
+Bro018-c2_1833410_1836960,so - so the - you know the numbers were not incredibly good .,so - so the - you know the numbers were not incredibly good .
+Bro018-c5_1833540_1833830,huh .,hmm .
+Bro018-c2_1836960_1839540,but there's - you know it was th- - reasonable .,but there's - you know it was th- - reasonable .
+Bro018-c5_1839770_1840170,uhhuh .,mm-hmm .
+Bro018-c2_1840350_1841290,i - i don't remember anymore .,i - i don't remember anymore .
+Bro018-c2_1841290_1842750,i don't even remember what the task was .,i don't even remember what the task was .
+Bro018-c2_1843070_1845560,it was broadcast news or something .,it was broadcast news or something .
+Bro018-c2_1845560_1845860,i don't know .,i don't know .
+Bro018-c5_1846070_1846260,huh .,hmm .
+Bro018-c0_1847200_1847440,right .,right .
+Bro018-c1_1847300_1851780,uh - s- - so barry if you just have zero and ones how are you doing the speech recognition ?,uh - s- - so barry if you just have zero and ones how are you doing the speech recognition ?
+Bro018-c0_1852210_1852340,oh !,oh !
+Bro018-c0_1852340_1855080,i'm not do- - i'm not planning on doing speech recognition with it .,i'm not do- - i'm not planning on doing speech recognition with it .
+Bro018-c0_1855080_1858320,i'm just doing detection of phonological features .,i'm just doing detection of phonological features .
+Bro018-c1_1855230_1855450,oh okay .,oh o_k .
+Bro018-c0_1858810_1870360,so uh - for example this - this uh - feature set called the uh - sound patterns of english um - is just a bunch of um - binary valued features .,so uh - for example this - this uh - feature set called the uh - sound patterns of english um - is just a bunch of um - binary valued features .
+Bro018-c0_1870730_1873640,let's say is this voicing or is this not voicing ?,let's say is this voicing or is this not voicing ?
+Bro018-c0_1873640_1876240,is this sonorants not sonorants ?,is this sonorants not sonorants ?
+Bro018-c0_1876240_1877580,and stuff like that .,and stuff like that .
+Bro018-c1_1876640_1876940,okay .,o_k .
+Bro018-c0_1877580_1877880,so ==,so ==
+Bro018-c5_1877790_1879330,did you find any more mistakes in their tables ?,did you find any more mistakes in their tables ?
+Bro018-c0_1879780_1879920,oh !,oh !
+Bro018-c0_1880400_1883090,uh - | i haven't gone through the entire table yet .,uh - | i haven't gone through the entire table yet .
+Bro018-c0_1883090_1883430,yeah .,yeah .
+Bro018-c0_1883430_1885430,yesterday i brought chuck the table .,yesterday i brought chuck the table .
+Bro018-c0_1885430_1893420,and i was like wait this - is - is the mapping from n to - to this phonological feature called um - coronal .,and i was like wait this - is - is the mapping from n_ to - to this phonological feature called um - coronal .
+Bro018-c0_1893680_1895820,is - is - should it be - shouldn't it be a one .,is - is - should it be - shouldn't it be a one .
+Bro018-c0_1895900_1900750,or should it - should it be you know coronal instead of not coronal as it was labelled in the paper .,or should it - should it be you know coronal instead of not coronal as it was labelled in the paper .
+Bro018-c0_1901300_1904520,so i ha- - haven't hunted down all the - all the mistakes yet .,so i ha- - haven't hunted down all the - all the mistakes yet .
+Bro018-c2_1903340_1903670,uhhuh .,uh-huh .
+Bro018-c0_1904520_1904610,but ==,but ==
+Bro018-c2_1906000_1909250,but a- - as i was saying people do get probabilities from these things .,but a- - as i was saying people do get probabilities from these things .
+Bro018-c1_1908450_1908670,okay .,o_k .
+Bro018-c2_1909250_1911840,and - and uh - we were just trying to remember how they do .,and - and uh - we were just trying to remember how they do .
+Bro018-c2_1911840_1914860,but people have used it for speech recognition and they have gotten probabilities .,but people have used it for speech recognition and they have gotten probabilities .
+Bro018-c2_1914860_1919080,so they have some conversion from these distances to probabilities .,so they have some conversion from these distances to probabilities .
+Bro018-c1_1917950_1918060,okay .,o_k .
+Bro018-c0_1918730_1919460,right yeah .,right yeah .
+Bro018-c2_1920290_1921330,there's - you have - you have the paper .,there's - you have - you have the paper .
+Bro018-c2_1921330_1921550,right ?,right ?
+Bro018-c2_1921550_1922810,the mississippi state paper ?,the mississippi state paper ?
+Bro018-c0_1922660_1923060,uhhuh .,mm-hmm .
+Bro018-c0_1923060_1923400,uhhuh .,mm-hmm .
+Bro018-c2_1923570_1925390,yeah if you're interested y- - you could look .,yeah if you're interested y- - you could look .
+Bro018-c1_1924560_1924880,and ==,<o_k> <o_k> and ==
+Bro018-c1_1924880_1925390,okay okay .,o_k o_k .
+Bro018-c0_1925380_1925560,yeah .,yeah .
+Bro018-c2_1925540_1925710,yeah .,yeah .
+Bro018-c0_1925560_1927410,i can - i can show you - i ==,i can - i can show you - i ==
+Bro018-c0_1927680_1927910,yeah .,yeah .
+Bro018-c5_1928170_1934690,so in your - in - in the thing that you're doing uh - you have a vector of ones and zeros for each phone ?,so in your - in - in the thing that you're doing uh - you have a vector of ones and zeros for each phone ?
+Bro018-c0_1928570_1928720,our ==,our ==
+Bro018-c0_1930690_1930990,uhhuh .,mm-hmm .
+Bro018-c0_1936210_1937650,uh - is this the class project ?,uh - is this the class project ?
+Bro018-c0_1937650_1937950,or ?==,or ?==
+Bro018-c5_1937830_1938120,yeah .,yeah .
+Bro018-c0_1938460_1938700,okay .,o_k .
+Bro018-c0_1939090_1939970,um ==,um ==
+Bro018-c5_1939530_1940660,is that what you're ?==,is that what you're ?==
+Bro018-c0_1941510_1943400,right right right .,right right right .
+Bro018-c0_1943400_1955080,f- - so for every phone there is - there is a - um - a vector of ones and zeros f- - uh - corresponding to whether it exhibits a particular phonological feature or not .,f- - so for every phone there is - there is a - um - a vector of ones and zeros f- - uh - corresponding to whether it exhibits a particular phonological feature or not .
+Bro018-c5_1954160_1954570,uhhuh .,mm-hmm .
+Bro018-c5_1955370_1955590,uhhuh .,mm-hmm .
+Bro018-c5_1955910_1957210,and so when you do your ==,and so when you do your ==
+Bro018-c5_1957470_1959970,wh- - i'm - what is the task for the class project ?,wh- - i'm - what is the task for the class project ?
+Bro018-c5_1959970_1961970,to come up with the phones ?,to come up with the phones ?
+Bro018-c0_1961040_1961290,um ==,um ==
+Bro018-c5_1961970_1966520,or to come up with these vectors to see how closely they match the phones ?,or to come up with these vectors to see how closely they match the phones ?
+Bro018-c0_1963930_1964280,oh .,oh .
+Bro018-c0_1965910_1966340,right .,right .
+Bro018-c0_1966480_1981620,um - | to come up with a mapping from um - m f c c's or s- - some feature set um - to uh - w- - to whether there's existence of a particular phonological feature .,um - | to come up with a mapping from um - m_f_c_c's or s- - some feature set um - to uh - w- - to whether there's existence of a particular phonological feature .
+Bro018-c5_1966520_1966610,or ?==,or ?==
+Bro018-c5_1971130_1971540,uhhuh .,mm-hmm .
+Bro018-c0_1983030_1984760,and um ==,and um ==
+Bro018-c0_1984760_1984910,yeah .,yeah .
+Bro018-c0_1984910_1993290,basically it's to learn a mapping from - from the m f c c's to uh - phonological features .,basically it's to learn a mapping from - from the m_f_c_c's to uh - phonological features .
+Bro018-c0_1994930_1996110,is it - did that answer your question ?,is it - did that answer your question ?
+Bro018-c5_1996470_1996940,i think so .,i think so .
+Bro018-c0_1997320_1997560,okay .,o_k .
+Bro018-c5_1998480_2005030,i guess - i mean - uh - i'm not sure what you - what you're - what you get out of your system .,i guess - i mean - uh - i'm not sure what you - what you're - what you get out of your system .
+Bro018-c0_1998510_1998850,c- ==,c- ==
+Bro018-c5_2005030_2012100,do you get out a - uh - a vector of these ones and zeros and then try to find the closest matching phoneme to that vector ?,do you get out a - uh - a vector of these ones and zeros and then try to find the closest matching phoneme to that vector ?
+Bro018-c0_2006230_2006490,uhhuh .,mm-hmm .
+Bro018-c5_2012160_2012500,or ?==,or ?==
+Bro018-c0_2012620_2013040,oh .,oh .
+Bro018-c0_2013230_2013960,no no .,no no .
+Bro018-c0_2013960_2017550,i'm not - i'm not planning to do any - any phoneme mapping yet .,i'm not - i'm not planning to do any - any phoneme mapping yet .
+Bro018-c0_2017730_2024430,just it's - it's basically - it's - it's really simple basically a detection of phonological features .,just it's - it's basically - it's - it's really simple basically a detection of phonological features .
+Bro018-c5_2017760_2018050,uhhuh .,uh-huh .
+Bro018-c5_2025470_2025900,i see .,i see .
+Bro018-c0_2025490_2025850,yeah .,yeah .
+Bro018-c0_2026090_2029440,and um - because the uh ==,and um - cuz the uh ==
+Bro018-c0_2029800_2034640,so king and - and taylor um - did this with uh - recurrent neural nets .,so king and - and taylor um - did this with uh - recurrent neural nets .
+Bro018-c5_2031390_2031590,yeah .,yeah .
+Bro018-c5_2034610_2034910,uhhuh .,mm-hmm .
+Bro018-c0_2035000_2043010,and this i- - their - their idea was to first find a mapping from m f c c's to uh - phonological features .,and this i- - their - their idea was to first find a mapping from m_f_c_c's to uh - phonological features .
+Bro018-c0_2043010_2049830,and then later on once you have these phonological features then uh - map that to phones .,and then later on once you have these phonological features then uh - map that to phones .
+Bro018-c5_2047020_2047310,uhhuh .,mm-hmm .
+Bro018-c0_2050010_2053840,so i'm - i'm sort of reproducing phase one of their stuff .,so i'm - i'm sort of reproducing phase one of their stuff .
+Bro018-c5_2050030_2050260,huh .,mmm .
+Bro018-c5_2052960_2056740,so they had one recurrent net for each particular feature ?,so they had one recurrent net for each particular feature ?
+Bro018-c0_2056370_2056990,right .,right .
+Bro018-c0_2057280_2059130,right right right .,right right right .
+Bro018-c5_2057380_2057650,i see .,i see .
+Bro018-c5_2060530_2064270,i wo- - did they compare that - i mean what if you just did phone recognition and did the reverse lookup ?,i wo- - did they compare that - i mean what if you just did phone recognition and did the reverse lookup ?
+Bro018-c0_2066050_2066600,uh ==,uh ==
+Bro018-c5_2066210_2072410,so you recognize a phone and which ever phone was recognized you spit out it's vector of ones and zeros .,so you recognize a phone and which ever phone was recognized you spit out it's vector of ones and zeros .
+Bro018-c0_2067800_2069030,uhhuh .,mm-hmm .
+Bro018-c2_2073880_2074680,i expect you could do that .,i expect you could do that .
+Bro018-c5_2073890_2074160,i mean uh ==,i mean uh ==
+Bro018-c0_2074030_2074390,uh .,uh .
+Bro018-c2_2074680_2076480,that's probably not what he's going to do on his class project .,that's probably not what he's going to do on his class project .
+Bro018-c5_2076430_2076660,yeah .,yeah .
+Bro018-c2_2076480_2076770,yeah .,yeah .
+Bro018-c5_2076740_2076800,no .,no .
+Bro018-c2_2079050_2085090,so um - have you had a chance to do this um - thing we talked about yet with the uh ?==,so um - have you had a chance to do this um - thing we talked about yet with the uh ?==
+Bro018-c0_2079200_2079560,yeah .,yeah .
+Bro018-c2_2086000_2086620,um ==,um ==
+Bro018-c5_2086620_2087340,insertion penalty ?,insertion penalty ?
+Bro018-c2_2088600_2090400,uh - no | actually i was going a different ==,uh - no | actually i was going a different ==
+Bro018-c2_2090400_2091350,that's a good question too .,that's a good question too .
+Bro018-c2_2091350_2104240,but i was going to ask about the - the um - changes to the data in comparing p l p and mel cepstrum for the s r i system .,but i was gonna ask about the - the um - changes to the data in comparing p_l_p and mel cepstrum for the s_r_i system .
+Bro018-c5_2105380_2106080,uh ==,uh ==
+Bro018-c5_2107110_2107850,well what i've been ==,well what i've been ==
+Bro018-c5_2108750_2109700,changes to the data .,changes to the data .
+Bro018-c5_2109700_2110380,i'm not sure i ==,i'm not sure i ==
+Bro018-c2_2110360_2110450,right .,right .
+Bro018-c2_2110760_2115440,so we talked on the phone about this that - that there was still a difference of a - of a few percent .,so we talked on the phone about this that - that there was still a difference of a - of a few percent .
+Bro018-c5_2112420_2112680,yeah .,yeah .
+Bro018-c5_2114610_2114860,right .,right .
+Bro018-c2_2115520_2119680,and you told me that there was a difference in how the normalization was done .,and you told me that there was a difference in how the normalization was done .
+Bro018-c2_2120140_2128400,and i was asking if you were going to do - redo it uh - for p l p with the normalization done as it had been done for the mel cepstrum .,and i was asking if you were going to do - redo it uh - for p_l_p with the normalization done as it had been done for the mel cepstrum .
+Bro018-c5_2124300_2124630,uhhuh .,mm-hmm .
+Bro018-c5_2129030_2130530,uh - | right .,uh - | right .
+Bro018-c5_2130530_2131940,no | i haven't had a chance to do that .,no | i haven't had a chance to do that .
+Bro018-c5_2131940_2137500,what i've been doing is uh - trying to figure out ==,what i've been doing is uh - trying to figure out ==
+Bro018-c2_2132020_2132330,okay .,o_k .
+Bro018-c5_2137500_2139920,it just seems to me like there's a - um ==,it just seems to me like there's a - um ==
+Bro018-c5_2140300_2141330,well it seems like there's a bug .,well it seems like there's a bug .
+Bro018-c5_2141450_2146430,because the difference in performance is - it's not gigantic .,because the difference in performance is - it's not gigantic .
+Bro018-c5_2147010_2149390,but it's big enough that it - it seems wrong .,but it's big enough that it - it seems wrong .
+Bro018-c2_2149840_2149950,yeah .,yeah .
+Bro018-c2_2149950_2150340,i agree .,i agree .
+Bro018-c5_2150160_2150450,and ==,and ==
+Bro018-c2_2150340_2154620,but i thought that the normalization difference was one of the possibilities .,but i thought that the normalization difference was one of the possibilities .
+Bro018-c5_2153620_2154750,yeah | but i don't - i'm not ==,yeah | but i don't - i'm not ==
+Bro018-c2_2154620_2154790,right ?,right ?
+Bro018-c5_2154940_2155270,yeah .,yeah .
+Bro018-c5_2155330_2158890,i guess i don't think that the normalization difference is going to account for everything .,i guess i don't think that the normalization difference is gonna account for everything .
+Bro018-c5_2159500_2165160,so what i was working on is um - just going through and checking the headers of the wavefiles .,so what i was working on is um - just going through and checking the headers of the wavefiles .
+Bro018-c2_2159670_2159950,okay .,o_k .
+Bro018-c5_2165490_2172490,to see if maybe there was a - um - a certain type of compression or something that was done that my script wasn't catching .,to see if maybe there was a - um - a certain type of compression or something that was done that my script wasn't catching .
+Bro018-c5_2172670_2179400,so that for some subset of the training data uh - the - the - the features i was computing were junk .,so that for some subset of the training data uh - the - the - the features i was computing were junk .
+Bro018-c2_2179910_2180250,okay .,o_k .
+Bro018-c5_2180350_2183320,which would you know cause it to perform okay .,which would you know cause it to perform o_k .
+Bro018-c5_2183320_2185170,but uh - you know the - the models would be all messed up .,but uh - you know the - the models would be all messed up .
+Bro018-c5_2185170_2192470,so i was going through and just double checking that kind of think first to see if there was just some kind of obvious bug in the way that i was computing the features .,so i was going through and just double-checking that kind of think first to see if there was just some kind of obvious bug in the way that i was computing the features .
+Bro018-c2_2188380_2188700,uhhuh .,mm-hmm .
+Bro018-c2_2189310_2189610,i see .,i see .
+Bro018-c2_2192680_2192900,okay .,o_k .
+Bro018-c5_2193110_2198180,looking at all the sampling rates to make sure all the sampling rates were what - eight k what i was assuming they were .,looking at all the sampling rates to make sure all the sampling rates were what - eight k_ what i was assuming they were .
+Bro018-c2_2196590_2196970,yeah .,yeah .
+Bro018-c5_2198520_2199070,um ==,um ==
+Bro018-c2_2199420_2200960,yeah that makes sense to check all that .,yeah that makes sense to check all that .
+Bro018-c5_2200190_2200370,yeah .,yeah .
+Bro018-c5_2200450_2204780,so i was doing that first before i did these other things just to make sure there wasn't something ==,so i was doing that first before i did these other things just to make sure there wasn't something ==
+Bro018-c2_2205100_2214360,although really uh - uh - a couple three percent uh - difference in word error rate uh - could easily come from some difference in normalization i would think .,although really uh - uh - a couple three percent uh - difference in word error rate uh - could easily come from some difference in normalization i would think .
+Bro018-c2_2215590_2215850,but ==,but ==
+Bro018-c5_2216060_2216210,yeah .,yeah .
+Bro018-c5_2216210_2223810,and i think i'm trying to remember but i think i recall that andreas was saying that he was going to run sort of the reverse experiment .,and i think i'm trying to remember but i think i recall that andreas was saying that he was gonna run sort of the reverse experiment .
+Bro018-c5_2224380_2232740,uh - | which is to try to emulate the normalization that we did .,uh - | which is to try to emulate the normalization that we did .
+Bro018-c5_2232970_2234400,but with the mel cepstral features .,but with the mel cepstral features .
+Bro018-c5_2235940_2239610,sort of you know back up from the system that he had .,sort of you know back up from the system that he had .
+Bro018-c5_2240150_2241220,i thought he said he was going to ==,i thought he said he was gonna ==
+Bro018-c5_2241220_2243450,i have to look back through my - my email from him .,i have to look back through my - my email from him .
+Bro018-c2_2243410_2245970,yeah | he's probably off at - at uh - his meeting now .,yeah | he's probably off at - at uh - his meeting now .
+Bro018-c5_2244890_2245010,yeah .,yeah .
+Bro018-c5_2245010_2245720,he's gone now .,he's gone now .
+Bro018-c5_2246050_2246540,um ==,um ==
+Bro018-c2_2246240_2246300,yeah .,yeah .
+Bro018-c2_2247980_2248150,yeah .,yeah .
+Bro018-c2_2248350_2248520,but ==,but ==
+Bro018-c2_2248520_2248690,yeah .,yeah .
+Bro018-c2_2248690_2251890,the - i sh- - think they should be roughly equivalent .,the - i sh- - think they should be roughly equivalent .
+Bro018-c5_2248690_2248850,but ==,but ==
+Bro018-c2_2251890_2252690,um ==,um ==
+Bro018-c2_2253460_2258100,i mean again the cambridge folk found the p l p actually to be a little better .,i mean again the cambridge folk found the p_l_p actually to be a little better .
+Bro018-c5_2258000_2258330,right .,right .
+Bro018-c2_2258240_2260720,uh - so it's - um ==,uh - so it's - um ==
+Bro018-c2_2260720_2267490,i mean the other thing i wonder about was whether there was something just in the - the bootstrapping of their system which was based on ==,i mean the other thing i wonder about was whether there was something just in the - the bootstrapping of their system which was based on ==
+Bro018-c2_2267660_2268890,but maybe not since they ==,but maybe not since they ==
+Bro018-c5_2268650_2270840,yeah | see one thing that's a little bit um ==,yeah | see one thing that's a little bit um ==
+Bro018-c5_2271510_2276460,i was looking - i've been studying and going through the logs for the system that um - andreas created .,i was looking - i've been studying and going through the logs for the system that um - andreas created .
+Bro018-c5_2277170_2286000,and um - his - uh - the way that the s r i system looks like it works is that it reads the wavefiles directly .,and um - his - uh - the way that the s_r_i system looks like it works is that it reads the wavefiles directly .
+Bro018-c5_2286380_2290770,uh - | and does all of the cepstral computation stuff on the fly .,uh - | and does all of the cepstral computation stuff on the fly .
+Bro018-c2_2287020_2287330,right .,right .
+Bro018-c2_2291010_2291300,right .,right .
+Bro018-c5_2291610_2299480,and so there's no place where these - where the cepstral files are stored anywhere that i can go look at and compare to the p l p ones .,and so there's no place where these - where the cepstral files are stored anywhere that i can go look at and compare to the p_l_p ones .
+Bro018-c5_2299470_2306080,so whereas with our features he's actually storing the cepstrum on disk and he reads those in .,so whereas with our features he's actually storing the cepstrum on disk and he reads those in .
+Bro018-c2_2304590_2304900,right .,right .
+Bro018-c5_2306390_2309250,but it looked like he had to give it - uh ==,but it looked like he had to give it - uh ==
+Bro018-c5_2309250_2315940,even though the cepstrum is already computed he has to give it uh - a front end parameter file .,even though the cepstrum is already computed he has to give it uh - a front-end parameter file .
+Bro018-c5_2316020_2323010,which talks about the kind of uh - com- - computation that his mel cepstrum thing does .,which talks about the kind of uh - com- - computation that his mel cepstrum thing does .
+Bro018-c2_2321960_2322310,uhhuh .,uh-huh .
+Bro018-c5_2323010_2327430,so i- - i - i don't know if that - it probably doesn't mess it up .,so i- - i - i don't know if that - it probably doesn't mess it up .
+Bro018-c5_2327430_2331830,it probably just ignores it if it determines that it's already in the right format or something .,it probably just ignores it if it determines that it's already in the right format or something .
+Bro018-c5_2331830_2334910,but the - the - the two processes that happen are a little different .,but the - the - the two processes that happen are a little different .
+Bro018-c5_2335480_2336000,so ==,so ==
+Bro018-c2_2335650_2335860,yeah .,yeah .
+Bro018-c2_2336110_2337470,so anyway there's stuff there to sort out .,so anyway there's stuff there to sort out .
+Bro018-c5_2337200_2337530,yeah .,yeah .
+Bro018-c5_2337700_2337910,yeah .,yeah .
+Bro018-c2_2338670_2339110,so ==,so ==
+Bro018-c2_2339110_2339330,okay .,o_k .
+Bro018-c2_2339330_2341050,let's go back to what you thought i was asking you .,let's go back to what you thought i was asking you .
+Bro018-c5_2341460_2341660,yeah .,yeah .
+Bro018-c5_2341660_2342980,no | and i didn't have a chance to do that .,no | and i didn't have a chance to do that .
+Bro018-c2_2343680_2343740,ha !,ha !
+Bro018-c2_2343740_2343800,oh !,oh !
+Bro018-c2_2343800_2345380,you had the sa- - same answer anyway .,you had the sa- - same answer anyway .
+Bro018-c5_2345810_2345940,yeah .,yeah .
+Bro018-c5_2347820_2352290,yeah | i've been - um - i've been working with um - jeremy on his project .,yeah | i've been - um - i've been working with um - jeremy on his project .
+Bro018-c5_2352290_2357450,and then i've been trying to track down this bug in uh - the icsi front end features .,and then i've been trying to track down this bug in uh - the icsi front-end features .
+Bro018-c2_2354710_2355140,uhhuh .,uh-huh .
+Bro018-c5_2358150_2363020,so one thing that i did notice yesterday i was studying the - um - the uh - rasta code .,so one thing that i did notice yesterday i was studying the - um - the uh - rasta code .
+Bro018-c2_2363330_2363670,uhhuh .,uh-huh .
+Bro018-c5_2363630_2372040,and it looks like we don't have any way to um - control the frequency range that we use in our analysis .,and it looks like we don't have any way to um - control the frequency range that we use in our analysis .
+Bro018-c5_2372040_2378140,we basically - it looks to me like we do the f f t um - and then we just take all the bins .,we basically - it looks to me like we do the f_f_t um - and then we just take all the bins .
+Bro018-c5_2378570_2379440,and we use everything .,and we use everything .
+Bro018-c5_2379690_2387010,we don't have any set of parameters where we can say you know only process from you know a hundred and ten hertz to thirty seven fifty .,we don't have any set of parameters where we can say you know only process from you know a hundred and ten hertz to thirty-seven-fifty .
+Bro018-c2_2387910_2388320,um ==,um ==
+Bro018-c5_2388270_2390110,at least i couldn't see any kind of control for that .,at least i couldn't see any kind of control for that .
+Bro018-c2_2389510_2390800,yeah | i don't think it's in there .,yeah | i don't think it's in there .
+Bro018-c2_2390800_2394970,i think it's in the uh - uh - uh - the filters .,i think it's in the uh - uh - uh - the filters .
+Bro018-c2_2395680_2397530,so the f f t is on everything .,so the f_f_t is on everything .
+Bro018-c2_2397530_2398670,but the filters ==,but the filters ==
+Bro018-c2_2399570_2400240,um ==,um ==
+Bro018-c2_2400290_2407060,for instance ignore the - the lowest bins and the highest bins .,for instance ignore the - the lowest bins and the highest bins .
+Bro018-c2_2407950_2409810,and what it does is it - it copies ==,and what it does is it - it copies ==
+Bro018-c5_2409180_2409940,the - the filters ?,the - the filters ?
+Bro018-c5_2409940_2410570,which filters ?,which filters ?
+Bro018-c2_2411090_2411330,um ==,um ==
+Bro018-c2_2412760_2416800,the filter bank which is created by integrating over f f t bins .,the filter bank which is created by integrating over f_f_t bins .
+Bro018-c5_2416610_2416990,uhhuh .,mm-hmm .
+Bro018-c2_2417670_2418150,um ==,um ==
+Bro018-c5_2418200_2420830,when you get the mel - when you go to the mel scale ?,when you get the mel - when you go to the mel scale ?
+Bro018-c2_2420200_2420780,right .,right .
+Bro018-c2_2420780_2420950,yeah .,yeah .
+Bro018-c2_2420950_2421770,it's bark scale .,it's bark scale .
+Bro018-c2_2421770_2431450,and it's - it - it - um - it actually copies the - uh - um - the second filters over to the first .,and it's - it - it - um - it actually copies the - uh - um - the second filters over to the first .
+Bro018-c2_2431450_2433010,so the first filters are always ==,so the first filters are always ==
+Bro018-c2_2433010_2439040,and you can s- - you can specify a different number of uh - features - different number of filters .,and you can s- - you can specify a different number of uh - features - different number of filters .
+Bro018-c2_2439040_2439480,i think .,i think .
+Bro018-c2_2439880_2440470,as i recall .,as i recall .
+Bro018-c2_2441660_2449810,so you can specify a different number of filters and whatever um - uh - you specify the last ones are going to be ignored .,so you can specify a different number of filters and whatever um - uh - you specify the last ones are gonna be ignored .
+Bro018-c2_2449810_2454880,so that - that's a way that you sort of change what the - what the bandwidth is .,so that - that's a way that you sort of change what the - what the bandwidth is .
+Bro018-c2_2455800_2459510,y- - you can't do it without i think changing the number of filters .,y- - you can't do it without i think changing the number of filters .
+Bro018-c5_2459540_2465200,i saw something about - uh - that looked like it was doing something like that but i didn't quite understand it .,i saw something about - uh - that looked like it was doing something like that but i didn't quite understand it .
+Bro018-c2_2459560_2459800,but ==,but ==
+Bro018-c5_2465200_2465700,so maybe ==,so maybe ==
+Bro018-c2_2465880_2471030,yeah | so the idea is that the very lowest frequencies and - and typically the veriest highest frequencies are kind of junk .,yeah | so the idea is that the very lowest frequencies and - and typically the veriest highest frequencies are kind of junk .
+Bro018-c5_2471240_2471560,uhhuh .,uh-huh .
+Bro018-c2_2472730_2474190,and so um ==,and so um ==
+Bro018-c2_2474240_2480050,you just - for continuity you just approximate them by - by the second to highest and second to lowest .,you just - for continuity you just approximate them by - by the second to highest and second to lowest .
+Bro018-c5_2480070_2480500,uhhuh .,mm-hmm .
+Bro018-c2_2480400_2482270,it's just a simple thing we put in .,it's just a simple thing we put in .
+Bro018-c2_2483660_2484620,and - and so if you h- ==,and - and so if you h- ==
+Bro018-c5_2484090_2486440,but - so the - but that's a fixed uh - thing ?,but - so the - but that's a fixed uh - thing ?
+Bro018-c5_2486440_2487540,there's nothing that lets you ?==,there's nothing that lets you ?==
+Bro018-c2_2486660_2488690,yeah | i think that's a fixed thing .,yeah | i think that's a fixed thing .
+Bro018-c2_2488690_2490050,but see see - my point ?,but see see - my point ?
+Bro018-c2_2490050_2496270,if you had - if you had ten filters then you would be throwing away a lot at the two ends .,if you had - if you had ten filters then you would be throwing away a lot at the two ends .
+Bro018-c5_2495660_2496000,uhhuh .,mm-hmm .
+Bro018-c2_2496990_2500870,and if you had - if you had fifty filters you'd be throwing away hardly anything .,and if you had - if you had fifty filters you'd be throwing away hardly anything .
+Bro018-c5_2501080_2501530,uhhuh .,mm-hmm .
+Bro018-c2_2502150_2508080,um - i don't remember there being an independent way of saying we're just going to make them from here to here .,um - i don't remember there being an independent way of saying we're just gonna make them from here to here .
+Bro018-c5_2507110_2508970,use this analysis bandwidth or something .,use this analysis bandwidth or something .
+Bro018-c2_2508720_2509640,but i - i - i don't know .,but i - i - i don't know .
+Bro018-c2_2509640_2511330,it's actually been awhile since i've looked at it .,it's actually been awhile since i've looked at it .
+Bro018-c5_2510910_2516010,yeah | i went through the feacalc code and then looked at you know just calling the rasta libs and thing like that .,yeah | i went through the feacalc code and then looked at you know just calling the rasta libs and thing like that .
+Bro018-c5_2516010_2519660,and i didn't - i couldn't see any wh- - place where that kind of thing was done .,and i didn't - i couldn't see any wh- - place where that kind of thing was done .
+Bro018-c5_2519850_2522690,but um - i didn't quite understand everything that i saw .,but um - i didn't quite understand everything that i saw .
+Bro018-c2_2522650_2524210,yeah | see i don't know feacalc at all .,yeah | see i don't know feacalc at all .
+Bro018-c5_2522690_2522910,so ==,so ==
+Bro018-c5_2524370_2525080,uhhuh .,mm-hmm .
+Bro018-c2_2525380_2527370,but it calls rasta with some options .,but it calls rasta with some options .
+Bro018-c2_2527370_2528340,and um ==,and um ==
+Bro018-c5_2527460_2527710,right .,right .
+Bro018-c2_2529750_2530460,but i - i think in ==,but i - i think in ==
+Bro018-c2_2530930_2531530,i don't know .,i don't know .
+Bro018-c2_2531530_2537060,i guess for some particular database you might find that you could tune that and tweak that to get that a little better .,i guess for some particular database you might find that you could tune that and tweak that to get that a little better .
+Bro018-c2_2537060_2541060,but i think that in general it's not that critical .,but i think that in general it's not that critical .
+Bro018-c2_2541060_2541740,i mean there's ==,i mean there's ==
+Bro018-c5_2541550_2541870,yeah .,yeah .
+Bro018-c2_2542430_2545480,you can - you can throw away stuff below a hundred hertz or so .,you can - you can throw away stuff below a hundred hertz or so .
+Bro018-c2_2545480_2549730,and it's just not going to affect phonetic classification at all .,and it's just not going to affect phonetic classification at all .
+Bro018-c5_2549770_2553530,another thing i was thinking about was um - is there a ?==,another thing i was thinking about was um - is there a ?==
+Bro018-c5_2554990_2563540,i was wondering if there's maybe um - certain settings of the parameters when you compute p l p which would basically cause it to output mel cepstrum .,i was wondering if there's maybe um - certain settings of the parameters when you compute p_l_p which would basically cause it to output mel cepstrum .
+Bro018-c5_2565020_2567640,so that in effect what i could do is use our code .,so that in effect what i could do is use our code .
+Bro018-c5_2567640_2568770,but produce mel cepstrum .,but produce mel cepstrum .
+Bro018-c5_2569670_2571250,and compare that directly to ==,and compare that directly to ==
+Bro018-c2_2572160_2573280,well it's not precisely .,well it's not precisely .
+Bro018-c2_2573870_2574190,yeah .,yeah .
+Bro018-c5_2574210_2574600,huh .,hmm .
+Bro018-c2_2574310_2574740,i mean ==,i mean ==
+Bro018-c2_2574930_2577340,um - um ==,um - um ==
+Bro018-c2_2578330_2592980,what you can do is um - you can definitely change the - the filter bank from being uh - a uh - trapezoidal integration to a - a - a triangular one .,what you can do is um - you can definitely change the - the filter bank from being uh - a uh - trapezoidal integration to a - a - a triangular one .
+Bro018-c5_2593190_2593550,uhhuh .,mm-hmm .
+Bro018-c2_2594050_2597980,which is what the typical mel - mel cepstral uh - filter bank does .,which is what the typical mel - mel cepstral uh - filter bank does .
+Bro018-c5_2597950_2598400,uhhuh .,mm-hmm .
+Bro018-c2_2598940_2601630,and some people have claimed that they got some better performance doing that .,and some people have claimed that they got some better performance doing that .
+Bro018-c2_2601630_2604010,so you certainly could do that easily .,so you certainly could do that easily .
+Bro018-c2_2604660_2606140,but the fundamental difference ==,but the fundamental difference ==
+Bro018-c2_2606140_2607690,i mean there's other small differences ==,i mean there's other small differences ==
+Bro018-c5_2606880_2608480,there's a cubic root that happens .,there's a cubic root that happens .
+Bro018-c5_2608480_2608710,right ?,right ?
+Bro018-c2_2610140_2610540,yeah .,yeah .
+Bro018-c2_2610760_2613120,but you know as opposed to the log in the other case .,but you know as opposed to the log in the other case .
+Bro018-c2_2613120_2627890,i mean the fundamental d- - d- - difference that we've seen any kind of difference from before which is actually an advantage for the p l p i- - uh - i think is that the - the smoothing at the end is auto regressive instead of being cepstral - uh - from cepstral truncation .,i mean the fundamental d- - d- - difference that we've seen any kind of difference from before which is actually an advantage for the p_l_p i- - uh - i think is that the - the smoothing at the end is auto-regressive instead of being cepstral - uh - from cepstral truncation .
+Bro018-c2_2629180_2631740,so um - it's a little more noise robust .,so um - it's a little more noise robust .
+Bro018-c5_2631930_2632340,huh .,hmm .
+Bro018-c2_2633130_2640200,um - and that's - that's why when people started getting databases that had a little more noise in it like - like uh - um - broadcast news and so on .,um - and that's - that's why when people started getting databases that had a little more noise in it like - like uh - um - broadcast news and so on .
+Bro018-c2_2640200_2642390,that's why c- - cambridge switched to p l p i think .,that's why c- - cambridge switched to p_l_p i think .
+Bro018-c5_2642640_2643010,uhhuh .,mm-hmm .
+Bro018-c2_2643430_2644510,so um ==,so um ==
+Bro018-c2_2645940_2650420,that's a difference that i don't think we put any way to get around .,that's a difference that i don't think we put any way to get around .
+Bro018-c2_2650420_2651660,since it was an advantage .,since it was an advantage .
+Bro018-c5_2651980_2652510,uhhuh .,mm-hmm .
+Bro018-c2_2652120_2653620,um - uh ==,um - uh ==
+Bro018-c2_2653700_2664780,but we did - uh - we did hear this comment from people at some point that um - it - uh - they got some better results with the triangular filters rather than the trapezoidal .,but we did - eh - we did hear this comment from people at some point that um - it - uh - they got some better results with the triangular filters rather than the trapezoidal .
+Bro018-c2_2664780_2666690,so that is an option in rasta .,so that is an option in rasta .
+Bro018-c5_2667480_2667740,huh .,hmm .
+Bro018-c2_2668250_2670430,uh - and you can certainly play with that .,uh - and you can certainly play with that .
+Bro018-c2_2670860_2673220,but i think you're probably doing the right thing to look for bugs first .,but i think you're probably doing the right thing to look for bugs first .
+Bro018-c5_2673610_2680070,yeah | just - it just seems like this kind of behavior could be caused by you know s- - some of the training data being messed up .,yeah | just - it just seems like this kind of behavior could be caused by you know s- - some of the training data being messed up .
+Bro018-c2_2673670_2674280,i don't know .,i don't know .
+Bro018-c2_2680810_2681100,could be .,could be .
+Bro018-c5_2680910_2683650,you know you're sort of getting most of the way there but there's a ==,you know you're sort of getting most of the way there but there's a ==
+Bro018-c5_2684160_2685680,so i started going through and looking ==,so i started going through and looking ==
+Bro018-c5_2685910_2697090,one of the things that i did notice was that the um - log likelihoods coming out of the log recognizer from the p l p data were much lower much smaller .,one of the things that i did notice was that the um - log likelihoods coming out of the log recognizer from the p_l_p data were much lower much smaller .
+Bro018-c5_2697270_2707070,than for the mel cepstral stuff and that the average amount of pruning that was happening was therefore a little bit higher for the p l p features .,than for the mel cepstral stuff and that the average amount of pruning that was happening was therefore a little bit higher for the p_l_p features .
+Bro018-c2_2707220_2707750,uhhuh !,oh-huh !
+Bro018-c5_2708200_2715160,so since he used the same exact pruning thresholds for both i was wondering if it could be that we're getting more pruning .,so since he used the same exact pruning thresholds for both i was wondering if it could be that we're getting more pruning .
+Bro018-c2_2715390_2715960,oh !,oh !
+Bro018-c2_2716070_2721470,he - he - he used the identical pruning thresholds even though the s- - the range of p- - of the likeli- ==,he - he - he used the identical pruning thresholds even though the s- - the range of p- - of the likeli- ==
+Bro018-c5_2719010_2719260,yeah .,yeah .
+Bro018-c2_2721470_2724660,oh well that's - that's a pretty good point right there .,oh well that's - that's a pretty good point right there .
+Bro018-c5_2721620_2721860,right .,right .
+Bro018-c5_2722710_2722910,right .,right .
+Bro018-c2_2724660_2724930,yeah .,yeah .
+Bro018-c5_2725010_2725310,yeah .,yeah .
+Bro018-c5_2725510_2725880,so ==,so ==
+Bro018-c2_2725900_2733480,i would think that you might want to do something like uh - you know look at a few points to see where you are starting to get significant search errors .,i would think that you might wanna do something like uh - you know look at a few points to see where you are starting to get significant search errors .
+Bro018-c5_2732000_2732540,that's ==,that's ==
+Bro018-c5_2733430_2733630,right .,right .
+Bro018-c5_2733830_2739040,well what i was going to do is i was going to take um - a couple of the utterances that he had run through .,well what i was gonna do is i was gonna take um - a couple of the utterances that he had run through .
+Bro018-c5_2739560_2741520,then run them through again .,then run them through again .
+Bro018-c5_2741520_2745780,but modify the pruning threshold and see if it you know affects the score .,but modify the pruning threshold and see if it you know affects the score .
+Bro018-c2_2744830_2745040,yeah .,yeah .
+Bro018-c2_2746720_2746960,yeah .,yeah .
+Bro018-c5_2747300_2747530,so ==,so ==
+Bro018-c2_2747330_2756810,but i mean you could - uh - if - if - if that looks promising you could you know r- - uh - run the overall test set with a - with a few different uh - pruning thresholds for both .,but i mean you could - uh - if - if - if that looks promising you could you know r- - uh - run the overall test set with a - with a few different uh - pruning thresholds for both .
+Bro018-c5_2755170_2755610,uhhuh .,mm-hmm .
+Bro018-c5_2756940_2757140,right .,right .
+Bro018-c2_2757380_2763970,and presumably he's running at some pruning threshold that's - that's uh - you know - gets very few search errors .,and presumably he's running at some pruning threshold that's - that's uh - you know - gets very few search errors .
+Bro018-c2_2763970_2765690,but is - is relatively fast .,but is - is relatively fast .
+Bro018-c5_2764050_2764350,uhhuh .,mm-hmm .
+Bro018-c5_2765120_2769420,right | i mean yeah generally in these things you - you turn back pruning really far .,right | i mean yeah generally in these things you - you turn back pruning really far .
+Bro018-c2_2765690_2765800,and ==,and ==
+Bro018-c5_2769420_2772130,so i - i didn't think it would be that big a deal .,so i - i didn't think it would be that big a deal .
+Bro018-c5_2772130_2775320,because i was figuring well you have it turned back so far that you know it ==,because i was figuring well you have it turned back so far that you know it ==
+Bro018-c2_2775210_2778090,but you may be in the wrong range for the p l p features for some reason .,but you may be in the wrong range for the p_l_p features for some reason .
+Bro018-c5_2776310_2776690,yeah .,yeah .
+Bro018-c5_2776820_2777030,yeah .,yeah .
+Bro018-c5_2777690_2777870,yeah .,yeah .
+Bro018-c5_2778480_2782280,and the uh - the - the run time of the recognizer on the p l p features is longer .,and the uh - the - the run time of the recognizer on the p_l_p features is longer .
+Bro018-c5_2782560_2784910,which sort of implies that the networks are bushier .,which sort of implies that the networks are bushier .
+Bro018-c5_2785050_2786420,you know there's more things it's considering .,you know there's more things it's considering .
+Bro018-c5_2786800_2789320,which goes along with the fact that the matches aren't as good .,which goes along with the fact that the matches aren't as good .
+Bro018-c5_2789900_2794250,so uh - you know it could be that we're just pruning too much .,so uh - you know it could be that we're just pruning too much .
+Bro018-c5_2795420_2795750,so ==,so ==
+Bro018-c2_2795550_2795910,yeah .,yeah .
+Bro018-c2_2797300_2799430,yeah | maybe just be different kind of distributions .,yeah | maybe just be different kind of distributions .
+Bro018-c2_2799430_2800120,and - and ==,and - and ==
+Bro018-c5_2799560_2800010,uhhuh .,mm-hmm .
+Bro018-c2_2800120_2800330,yeah .,yeah .
+Bro018-c2_2800330_2802330,so that's another possible thing .,so that's another possible thing .
+Bro018-c5_2802680_2803010,uhhuh .,mm-hmm .
+Bro018-c2_2803010_2804060,they - they should - really shouldn't .,they - they should - really shouldn't .
+Bro018-c2_2804060_2808940,there's no particular reason why they would be exactly - behave exactly the same .,there's no particular reason why they would be exactly - behave exactly the same .
+Bro018-c5_2808470_2809530,uhhuh right .,mm-hmm right .
+Bro018-c5_2810200_2810380,right .,right .
+Bro018-c2_2811160_2811620,so ==,so ==
+Bro018-c5_2811870_2812210,so ==,so ==
+Bro018-c5_2812510_2813730,there's lots of little differences .,there's lots of little differences .
+Bro018-c5_2813730_2813950,so ==,so ==
+Bro018-c2_2813910_2814240,yeah .,yeah .
+Bro018-c5_2814490_2814620,uh .,uh .
+Bro018-c2_2815540_2815860,yeah .,yeah .
+Bro018-c5_2816320_2817230,trying to track it down .,trying to track it down .
+Bro018-c2_2817470_2817690,yeah .,yeah .
+Bro018-c2_2818210_2820160,i guess this was a little bit off topic i guess .,i guess this was a little bit off topic i guess .
+Bro018-c5_2819910_2820080,yeah .,yeah .
+Bro018-c2_2820160_2830170,because i was - i was thinking in terms of th- - this as being a - a - a - a core item that once we - once we had it going we would use for a number of the front end things also .,because i was - i was thinking in terms of th- - this as being a - a - a - a core item that once we - once we had it going we would use for a number of the front-end things also .
+Bro018-c5_2829930_2830220,uhhuh .,mm-hmm .
+Bro018-c2_2830240_2830530,so ==,so ==
+Bro018-c2_2833360_2833970,um ==,um ==
+Bro018-c2_2835740_2835970,want to ==,wanna ==
+Bro018-c1_2837230_2838790,that's as far as my stuff goes .,that's as far as my stuff goes .
+Bro018-c2_2837660_2838210,what's - what's on ?==,what's - what's on ?==
+Bro018-c1_2838840_2839070,yeah .,yeah .
+Bro018-c2_2838880_2839150,yeah .,yeah .
+Bro018-c1_2839070_2842130,well i tried this mean subtraction method .,well i tried this mean subtraction method .
+Bro018-c1_2842130_2842450,um ==,um ==
+Bro018-c1_2842450_2846950,due to avendano i'm taking s- - um - six seconds of speech .,due to avendano i'm taking s- - um - six seconds of speech .
+Bro018-c1_2847130_2852970,um - i'm using two second f f t analysis frames stepped by a half second .,um - i'm using two second f_f_t analysis frames stepped by a half second .
+Bro018-c1_2853340_2854470,so it's a quarter length step .,so it's a quarter length step .
+Bro018-c1_2854470_2857910,and i - i take that frame and four f- - the four - i take ==,and i - i take that frame and four f- - the four - i take ==
+Bro018-c1_2857910_2858160,sorry .,sorry .
+Bro018-c1_2858160_2862040,i take the current frame and the four past frames and the four future frames .,i take the current frame and the four past frames and the four future frames .
+Bro018-c1_2862040_2864320,and that adds up to six seconds of speech .,and that adds up to six seconds of speech .
+Bro018-c1_2864850_2871710,and i calculate um - the spectral mean of the log magnitude spectrum over that n .,and i calculate um - the spectral mean of the log magnitude spectrum over that n_ .
+Bro018-c1_2872130_2877180,i use that to normalize the s- - the current center frame by mean subtraction .,i use that to normalize the s- - the current center frame by mean subtraction .
+Bro018-c1_2877510_2880440,and i then - then i move to the next frame and i - i do it again .,and i then - then i move to the next frame and i - i do it again .
+Bro018-c1_2881200_2882740,well actually i calculate all the means first .,well actually i calculate all the means first .
+Bro018-c1_2882740_2883820,and then i do the subtraction .,and then i do the subtraction .
+Bro018-c1_2884390_2887170,and um - | the - i tried that with h d k .,and um - | the - i tried that with h_d_k .
+Bro018-c1_2887170_2890610,the aurora setup of h d k training on clean t i digits .,the aurora setup of h_d_k training on clean t_i-digits .
+Bro018-c1_2891350_2893730,and um - | it - it helped .,and um - | it - it helped .
+Bro018-c1_2893730_2896170,um - in a phony reverberation case ==,um - in a phony reverberation case ==
+Bro018-c1_2896170_2906910,um - where i just used the simulated impulse response um - the error rate went from something like eighty it was from something like eighteen percent to um - four percent .,um - where i just used the simulated impulse response um - the error rate went from something like eighty it was from something like eighteen percent to um - four percent .
+Bro018-c1_2907750_2917740,and on meeting rec- - recorder far mike digits mike - on channel f it went from um - forty one percent error to eight percent error .,and on meeting rec- - recorder far mike digits mike - on channel f_ it went from um - forty-one percent error to eight percent error .
+Bro018-c5_2919650_2921990,on - on the real data not with artificial reverb ?,on - on the real data not with artificial reverb ?
+Bro018-c1_2922340_2922680,right .,right .
+Bro018-c5_2922870_2923060,uhhuh .,uh-huh .
+Bro018-c1_2924510_2927680,and that - that was um - trained on clean speech only .,and that - that was um - trained on clean speech only .
+Bro018-c1_2927680_2930570,which i'm guessing is the reason why the baseline was so bad .,which i'm guessing is the reason why the baseline was so bad .
+Bro018-c1_2933600_2933970,and ==,<uh-huh> and ==
+Bro018-c2_2933900_2947470,that's ac- - actually a little side point is i think that's the first results that we have uh - uh - uh - of any sort on the far field - uh - on - on the far field data uh - for - recorded in - in meetings .,that's ac- - actually a little side point is i think that's the first results that we have uh - uh - uh - of any sort on the far field - uh - on - on the far field data uh - for - recorded in - in meetings .
+Bro018-c1_2947600_2951210,oh um - | actually um - adam ran the s r i recognizer .,oh um - | actually um - adam ran the s_r_i recognizer .
+Bro018-c2_2949600_2949750,did he ?,did he ?
+Bro018-c2_2952380_2953850,on the near field on the ne- ==,on the near field on the ne- ==
+Bro018-c1_2953430_2954370,on the far field also .,on the far field also .
+Bro018-c1_2954370_2956720,he did one p z m channel and one p d a channel .,he did one p_z_m channel and one p_d_a channel .
+Bro018-c2_2954650_2955110,oh | did he ?,oh | did he ?
+Bro018-c2_2956710_2957010,oh .,oh .
+Bro018-c2_2957010_2957850,i didn't recall that .,i didn't recall that .
+Bro018-c2_2958450_2960230,what kind of numbers was he getting with that ?,what kind of numbers was he getting with that ?
+Bro018-c1_2960660_2962080,i - i'm not sure .,i - i'm not sure .
+Bro018-c1_2962080_2965090,i think it was about five percent error for the p z m channel .,i think it was about five percent error for the p_z_m channel .
+Bro018-c2_2967880_2968190,five .,five .
+Bro018-c1_2968720_2969020,f- - i think .,f- - i think .
+Bro018-c1_2969020_2969420,yeah .,yeah .
+Bro018-c2_2969450_2970950,so why were you getting forty one here ?,so why were you getting forty-one here ?
+Bro018-c2_2971160_2971580,is this ?==,is this ?==
+Bro018-c1_2972300_2972740,um ==,um ==
+Bro018-c1_2973470_2976120,i - i'm g- - i'm guessing it was the - the training data .,i - i'm g- - i'm guessing it was the - the training data .
+Bro018-c1_2976430_2980380,uh - clean t i digits is like pretty pristine training data .,uh - clean t_i-digits is like pretty pristine training data .
+Bro018-c1_2980380_2984520,and if they trained the s r i system on this t v broadcast type stuff ==,and if they trained the s_r_i system on this t_v broadcast type stuff ==
+Bro018-c1_2984520_2986320,i think it's a much wider range of channels .,i think it's a much wider range of channels .
+Bro018-c1_2986320_2986570,and it ==,and it ==
+Bro018-c2_2986590_2986760,no .,no .
+Bro018-c2_2986760_2987270,but wait a minute .,but wait a minute .
+Bro018-c2_2987270_2989610,i - i - i th- - i think he ==,i - i - i th - i think he ==
+Bro018-c2_2991310_2992250,what am i saying here ?,what am i saying here ?
+Bro018-c2_2992320_2992490,yeah .,yeah .
+Bro018-c2_2992490_2993800,so that was the s r i system .,so that was the s_r_i system .
+Bro018-c2_2994260_2994710,maybe you're right .,maybe you're right .
+Bro018-c2_2994710_2994840,yeah .,yeah .
+Bro018-c2_2994840_2997950,because it was getting like one percent so it's still this kind of ratio .,cuz it was getting like one percent so it's still this kind of ratio .
+Bro018-c2_2997950_3001300,it was - it was getting one percent or something on the near field .,it was - it was getting one percent or something on the near field .
+Bro018-c2_3001300_3001840,wasn't it ?,wasn't it ?
+Bro018-c5_3002160_3002470,uhhuh .,mm-hmm .
+Bro018-c5_3002470_3004400,or it wa a- - it was around one .,or it wa a- - it was around one .
+Bro018-c2_3003490_3003790,yeah .,yeah .
+Bro018-c2_3003850_3007280,yeah | i think it was getting around one percent for the near - for the n- - for the close mike .,yeah | i think it was getting around one percent for the near - for the n- - for the close mike .
+Bro018-c5_3004620_3004820,yeah .,yeah .
+Bro018-c1_3007420_3007660,huh .,huh .
+Bro018-c2_3008180_3009350,so it was like one to five ?,so it was like one to five ?
+Bro018-c1_3008190_3008480,okay .,o_k .
+Bro018-c2_3009350_3010590,so it's still this kind of ratio .,so it's still this kind of ratio .
+Bro018-c2_3010590_3010940,it's just ==,it's just ==
+Bro018-c2_3011080_3011250,yeah .,yeah .
+Bro018-c2_3011250_3012250,it's a lot more training data .,it's a lot more training data .
+Bro018-c2_3013970_3014430,so ==,so ==
+Bro018-c2_3015570_3021930,so probably it should be something we should try then is to - is to see if - is at some point just to take - i- - to transform the data .,so probably it should be something we should try then is to - is to see if - is at some point just to take - i- - to transform the data .
+Bro018-c2_3021930_3025910,and then - and then uh - use th- - use it for the s r i system .,and then - and then uh - use th- - use it for the s_r_i system .
+Bro018-c1_3031340_3033120,b- - you me- - you mean um - ta- ?==,b- - you me- - you mean um - ta- ?==
+Bro018-c2_3032780_3036000,so you're - so you have a system which for one reason or another is relatively poor .,so you're - so you have a system which for one reason or another is relatively poor .
+Bro018-c1_3036200_3036550,yeah .,yeah .
+Bro018-c2_3036610_3039890,and - and uh - you have something like forty one percent error .,and - and uh - you have something like forty-one percent error .
+Bro018-c2_3040550_3044340,uh - | and then you transform it to eight by doing - doing this - this work .,uh - | and then you transform it to eight by doing - doing this - this work .
+Bro018-c2_3044970_3045460,um ==,um ==
+Bro018-c2_3045810_3048320,so here's this other system which is a lot better .,so here's this other system which is a lot better .
+Bro018-c2_3048570_3049960,but there's still this kind of ratio .,but there's still this kind of ratio .
+Bro018-c2_3049960_3053670,it's something like five percent error with the - the distant mike .,it's something like five percent error with the - the distant mike .
+Bro018-c2_3053670_3055550,and one percent with the close mike .,and one percent with the close mike .
+Bro018-c1_3055050_3055240,okay .,o_k .
+Bro018-c2_3056050_3061800,so the question is how close to that one can you get if you transform the data using that system ?,so the question is how close to that one can you get if you transform the data using that system ?
+Bro018-c1_3062460_3067450,r- - right | so - so i guess this s r i system is trained on a lot of s- - broadcast news or switchboard data .,r- - right | so - so i guess this s_r_i system is trained on a lot of s- - broadcast news or switchboard data .
+Bro018-c2_3068070_3068290,yeah .,yeah .
+Bro018-c1_3068310_3068620,is that right ?,is that right ?
+Bro018-c1_3068620_3069670,do you know which one it is ?,do you know which one it is ?
+Bro018-c5_3069540_3071450,it's trained on a lot of different things .,it's trained on a lot of different things .
+Bro018-c5_3071450_3071970,um ==,um ==
+Bro018-c5_3072110_3075390,it's trained on uh - a lot of switchboard call home .,it's trained on uh - a lot of switchboard call home .
+Bro018-c1_3075750_3076340,uhhuh .,uh-huh .
+Bro018-c5_3075860_3078040,um - | a bunch of different sources .,um - | a bunch of different sources .
+Bro018-c5_3078040_3078780,some digits .,some digits .
+Bro018-c5_3078880_3080240,there's some digits training in there .,there's some digits training in there .
+Bro018-c1_3079530_3079850,okay .,o_k .
+Bro018-c1_3080550_3086970,o- - one thing i'm wondering about is what this mean subtraction method um - will do if it's faced with additive noise .,o- - one thing i'm wondering about is what this mean subtraction method um - will do if it's faced with additive noise .
+Bro018-c0_3080630_3081470,huh .,hmm .
+Bro018-c1_3087720_3093100,because i - i - it's because i don't know what log magnitude spectral subtraction is going to do to additive noise .,cuz i - i - it's cuz i don't know what log magnitude spectral subtraction is gonna do to additive noise .
+Bro018-c2_3093510_3093750,yeah .,yeah .
+Bro018-c2_3093750_3095980,well it's - it's not exactly the right thing .,well it's - it's not exactly the right thing .
+Bro018-c1_3094100_3094700,that's - that's the ==,that's - that's the ==
+Bro018-c1_3095910_3096680,uhhuh .,uh-huh .
+Bro018-c2_3096030_3099840,but - uh - but you've already seen that because there is added noise here .,but - uh - but you've already seen that cuz there is added noise here .
+Bro018-c1_3100800_3102170,that's - that's - yeah that's true .,that's - that's - yeah that's true .
+Bro018-c2_3102640_3102920,yeah .,yeah .
+Bro018-c1_3103040_3103530,that's a good point .,that's a good point .
+Bro018-c2_3104390_3105480,so um ==,so um ==
+Bro018-c1_3107520_3112620,okay | so it's then - then it's - it's - it's reasonable to expect it would be helpful if we used it with the s r i system .,o_k | so it's then - then it's - it's - it's reasonable to expect it would be helpful if we used it with the s_r_i system .
+Bro018-c1_3112620_3112760,and ==,and ==
+Bro018-c2_3113440_3113620,yeah .,yeah .
+Bro018-c2_3113620_3114760,i mean as helpful ==,i mean as helpful ==
+Bro018-c2_3114760_3114970,i mean ==,i mean ==
+Bro018-c2_3115030_3115740,so that's the question .,so that's the question .
+Bro018-c2_3116160_3122410,yeah | w- - we're often asked this when we work with a system that - that isn't - isn't sort of industry - industry standard great .,yeah | w- - we're often asked this when we work with a system that - that isn't - isn't sort of industry - industry standard great .
+Bro018-c1_3122200_3122480,uhhuh .,uh-huh .
+Bro018-c2_3123100_3126070,uh - and we see some reduction in error using some clever method .,uh - and we see some reduction in error using some clever method .
+Bro018-c2_3126170_3129390,then you know will it work on a - on a - on a good system ?,then you know will it work on a - on a - on a good system ?
+Bro018-c2_3129390_3131380,so uh ==,so uh ==
+Bro018-c2_3132200_3133840,you know this other one's - it was a pretty good system .,you know this other one's - it was a pretty good system .
+Bro018-c2_3133840_3141150,i think you know one - one percent word error rate on digits is - uh - digit strings is not uh - you know stellar .,i think you know one - one percent word error rate on digits is - uh - digit strings is not uh - you know stellar .
+Bro018-c2_3141150_3145640,but - but given that this is real digits as opposed to uh - sort of laboratory ==,but - but given that this is real digits as opposed to uh - sort of laboratory ==
+Bro018-c1_3143110_3143280,uhhuh .,mm-hmm .
+Bro018-c2_3146270_3146570,well ==,well ==
+Bro018-c5_3146320_3147970,and it wasn't trained on this task either .,and it wasn't trained on this task either .
+Bro018-c2_3147790_3149100,and it wasn't trained on this task .,and it wasn't trained on this task .
+Bro018-c2_3149100_3151350,actually one percent is sort of - you know sort of in a reasonable range .,actually one percent is sort of - you know sort of in a reasonable range .
+Bro018-c2_3151350_3153390,people would say yeah i could - i can imagine getting that .,people would say yeah i could - i can imagine getting that .
+Bro018-c1_3151420_3151790,uhhuh .,mm-hmm .
+Bro018-c2_3154160_3158720,and uh - so the - the four or five percent or something is - is - is quite poor .,and uh - so the - the four or five percent or something is - is - is quite poor .
+Bro018-c1_3158760_3159420,uhhuh .,mm-hmm .
+Bro018-c2_3159500_3165940,uh - you know if you're doing a - uh - a sixteen digit uh - credit card number you'll basically get it wrong almost all the time .,uh - you know if you're doing a - uh - a sixteen digit uh - credit card number you'll basically get it wrong almost all the time .
+Bro018-c2_3165940_3168690,so - so uh - um ==,so - so uh - um ==
+Bro018-c1_3166070_3166340,huh .,hmm .
+Bro018-c2_3168830_3171210,a significant reduction in the error for that would be great .,a significant reduction in the error for that would be great .
+Bro018-c1_3171520_3172010,huh okay .,huh o_k .
+Bro018-c2_3171650_3173290,and - and then uh ==,and - and then uh ==
+Bro018-c2_3173290_3173460,yeah .,yeah .
+Bro018-c2_3173640_3173940,so ==,so ==
+Bro018-c2_3174870_3175110,yeah .,yeah .
+Bro018-c2_3175790_3176030,cool .,cool .
+Bro018-c1_3176370_3176810,sounds good .,sounds good .
+Bro018-c2_3177090_3177290,yeah .,yeah .
+Bro018-c2_3178600_3181380,all right | um - i actually have to run .,alright | um - i actually have to run .
+Bro018-c2_3181710_3183560,so i don't think i can do the digits .,so i don't think i can do the digits .
+Bro018-c2_3183560_3186480,but um - i guess i'll leave my microphone on ?,but um - i guess i'll leave my microphone on ?
+Bro018-c5_3187500_3187980,uh - | yeah .,uh - | yeah .
+Bro018-c2_3188320_3188500,yeah .,yeah .
+Bro018-c2_3188500_3188680,thank you .,thank you .
+Bro018-c5_3190960_3191060,yep .,yep .
+Bro018-c5_3206230_3206360,yeah .,yeah .
+Bro018-c5_3206570_3207030,that'll work .,that'll work .
+Bro018-c2_3209200_3209470,that's all right .,that's alright .
+Bro018-c2_3209470_3210750,i just have to run for another appointment .,i just have to run for another appointment .
+Bro018-c2_3210990_3211830,okay did i t- ==,o_k did i t- ==
+Bro018-c2_3211830_3211960,yeah .,yeah .
+Bro018-c2_3211960_3212500,i left it on .,i left it on .
+Bro018-c2_3213280_3213680,okay .,o_k .
+Bro018-c2_3215100_3252100,DIGIT_TASK,DIGIT_TASK
+Bro018-c0_3254660_3301370,DIGIT_TASK,DIGIT_TASK
+Bro018-c5_3302350_3340000,DIGIT_TASK,DIGIT_TASK
+Bro018-c1_3341670_3383380,DIGIT_TASK,DIGIT_TASK
+Bro018-c4_3387440_3439720,DIGIT_TASK,DIGIT_TASK

@@ -1,0 +1,1598 @@
+mn021|okay.|z
+mn082|okay.|z
+mn082|we can start?|z
+mn021|okay.|z
+mn082|okay.|fg
+mn082|so welcome to our next meeting.|s^rt
+mn082|uh today we will have a talk from miguel sanchez concerning his uh work related to ad hoc networks.|fh|s^rt^t
+mn082|we have here a guest a former icsi member of the n. s. a group jordi domingo pasqual.|s
+mn082|he is uh assistant professor at u. p. c.|s^rt
+mn082|and maybe jordi you have a few words concerning your work.|s
+mn082|one or two sentence.|s^e
+mn082|and because we will have tomorrow a talk from him in more detail concerning what's going on.|s^df
+mn040|uh you you want me to say|qy^bu^d.%--
+mn082|yeah only a short introduction.|s^aa|s^df^na
+mn040|oh.|s^bk
+mn082|very short introduction please.|s^cs^e
+mn040|of course.|s^bk
+mn040|uh well i'm working in the them broadband|fh|s.%-
+mn082|uh sorry one interruption.|s^fa|s
+mn082|this is not related to hearing.|s
+mn082|it's only for fixing it.|s
+mn082|it's not a earphone.|s
+mn040|uh it's not a hear|s.%--
+mn082|no.|s^aa
+mn082|so|fh
+mn040|it works like like this.|s^bu
+mn082|yeah yeah.|s^aa
+mn082|like this one.|s
+mn082|yeah.|s^aa
+mn040|uh.|s^bk
+mn082|it's only a microphone.|s
+mn040|that's|%-
+mn040|uh.|s^bk
+mn082|yeah.|b
+mn040|that's uh much more comfortable.|s
+mn082|okay.|s^bk
+mn082|yeah.|b
+mn082|okay.|s^bk
+mn040|thank you.|s^ft
+mn040|i'm uh working in the broadband communications group.|s
+mn040|and uh|fh
+mn040|uh|fh
+mn040|well the research topics at this moment is uh i. p. eighty traffic monitoring and characterization and them uh tool developing tools uh for quality of service uh performance analysis.|fh|s
+mn040|that's uh and we have several projects uh both spanish and european projects ongoing.|s
+mn040|uh in this area.|fh|s^e
+mn082|okay.|s^bk
+mn082|thank you.|s^ft
+mn082|and after the talk of uh miguel i will give you all a few slides concerning the project proposal.|s^cc^rt
+mn082|i will um say something about in which direction it will go.|s^cc
+mn082|and|fh
+mn082|uh|fh
+mn082|maybe it was my fault that i assumed that the pointer of miguel concerning u. m. t. s services was deployed to everybody.|s^am
+mn082|but it was only sent to me.|s
+mn082|so in the meantime everybody got i believe this pointer from me.|s
+mn082|and|fh
+mn082|maybe we it's a homework in principle for the next meeting to get a little bit familiar with these things.|s
+mn035|worse than no work.|s
+mn082|and um|fh
+mn082|so i believe we will not have today a very hard technical discussion.|s^t
+mn082|maybe more a few topic and items we will focus in the next days until the next meeting.|s^t
+mn082|and when we are ready with our meeting.|s
+mn082|everything is done.|s
+mn082|then uh we have to read these number.|s^t
+mn082|and we go around here every member.|s^df^t
+mn030|okay.|s^bk
+mn082|so|fh
+mn021|okay.|s^bk
+mn082|miguel please.|s^co^t^tc
+mn021|thank you.|s^ft
+mn021|well uh i i have prepared uh a really short talk about some of the topics.|s
+mn021|i i have been doing some some research work uh before coming here.|s
+mn021|and uh well mainly i will present.|fh|s^cc
+mn021|uh here you have more or less the sketch of the presentation.|s
+mn021|i will present some ideas and some concepts about what ad hoc networks are.|s^cc^rt
+mn021|about the issues in media access control in wireless networks.|s
+mn021|also about routing in such kind of networks.|s
+mn021|and uh i will make some comments also about uh the current standards of wireless local area networks.|fh|s^cc
+mn021|and finally i will present the blueprint of of my research project or my research uh proposal here.|s^cc
+mn021|so the first thing is uh what an ad hoc network is.|fh|s
+mn021|you know uh an ad hoc network is made of wireless nodes.|s^df
+mn021|these nodes of course can be mobile nodes.|s^df
+mn021|and uh in this network there is no network infrastructure.|s^df
+mn021|so uh the only active thing we have is the mobile nodes.|fh|s
+mn021|and uh|fh
+mn021|end to end communication is sometimes uh done by direct communication from one node to the other.|s
+mn021|because they can talk to each other.|s^df
+mn021|but sometimes it is not possible this direct communication because nodes end uh source or and destination nodes are um are too far away.|s
+mn021|and in this case it can be done communication can be done by uh using multi hub routing.|s
+mn021|so|fh
+mn021|an intermediate or a set of intermediate nodes will route or will forward the packet from the sender to the destination.|s
+mn021|so|fh
+mn021|uh in a sense what we have in this kind of networks is that uh nodes are as both arced as both uh endpoints and also routers of other neighboring nodes.|fh|s
+mn021|and this makes a uh difference from other kind of network.|s
+mn021|and well regarding the purposes of what can this kind of network be used for uh we can say that well cellular networks are infrastructure based networks.|s
+mn021|in this kind of ad hoc networks we don't have anything uh with the exception of the network nodes.|s
+mn021|so this uh network can be useful for uh uh occasions where no available infrastructure is present.|s
+mn021|like for example in in uh after some kind of of uh um catastrophic event.|s^e^rt
+mn021|or also when even when there is a network available we don't want for different reasons to use the available network.|s^e
+mn021|this later case can be for example the use in military systems.|s^e
+mn021|where maybe we don't want to use the other the enemy network infrastructure for evident reasons.|s^e
+mn021|yeah.|s^bk
+mn082|huh?|qw
+mn082|but you can also i believe uh to have an ad hoc network where one node is then connecting to the outer world.|s
+mn082|for instance what i have in mind you have a car where you plug in different devices and they talk to each other for instance.|s^df
+mn082|but one device decided to go to the g. s. m network or g. p. s network or whatever kind of things.|s^df
+mn021|that's okay.|s^na
+mn082|so there's a certain kind of task uh for one node within the ad hoc network to provide connectivity to the outer world.|s
+mn082|right?|qy^d^g^rt
+mn021|that's okay.|s^na
+mn082|okay.|s^bk
+mn021|that's perfect you know.|s^na
+mn082|yeah.|b
+mn021|this in this case we will say that this node is acting as a as a external gateway from this network to connect to other networks.|s
+mn082|right.|s^bk
+mn021|and of course the underlying uh protocols can can be of course uh i. p. based.|s
+mn021|uh okay.|fh
+mn021|here you have several several uh proposed uh scenarios for for used this networks.|s
+mn021|when no network is available.|s^e
+mn021|okay.|s^bk
+mn021|and another another application for example nasa is is uh studying is uh the use of these networks these ad hoc networks for sending multiple probes uh um uh missions.|s^e
+mn021|so for example all of you are aware of this uh the last atlas the last successful uh mars mission.|s^e
+mn021|the cellular vehicle was only one and was uh walking around uh roaming around the base station which in this case was the gateway uh node of this network.|s
+mn021|but it was only one mobile node of course.|s
+mn021|nothing prevents.|s
+mn021|except well maybe the cost to send not only one mobile rover but ten tons of them or or at least uh several of them.|s^e
+mn021|so uh|fh
+mn021|higher area could be covered could be explored.|s
+mn021|and uh of course all the different nodes could also use some kind of ad hoc networking ad hoc routing to extend the distance the maximum distance than uh a single radio transmission will would allow.|s
+mn021|okay?|qy^d^f^g
+mn021|and in the other case or the other area uh of of of application is the so-called network of sensors.|s
+mn021|where we can deploy a set of sensors in a maybe uninhabited area.|s^e^rt
+mn021|let's say for example the forest.|s^e
+mn021|and we can uh take some information.|s
+mn021|uh for example for for fire fighting we can just launch from a plane several small sensors.|fh|s^e^rt
+mn021|and uh|fh
+mn021|these sensors can be for example uh checking that there is no fire.|s^e
+mn021|they can have some kind of uh let's say infrared technology sensor.|s^e^rt
+mn021|so we can cover a huge area with only a small set of of sensors and without any other infrastructure.|s^df
+mn021|yeah?|qy^d
+mn030|um is that really an ad hoc network?|h|qy^rt
+mn030|because the sensors are not moving.|s^df
+mn030|and i think it's makes no sense with moving sensors because then you don't know where the sensors are.|s^ba^df
+mn021|yeah.|s^bk
+mn030|so|fh
+mn021|well|fh
+mn021|you know it's an interesting question.|s^ba
+mn021|uh the the main thing about an ad hoc network is not that nodes move.|s^ng
+mn021|it is the way of topology changes can happen.|s
+mn021|the idea that huh any change is possible at any given moment.|s^df
+mn021|but you can of course ask but if the nodes are not moving what kind of topology changes can we expect.|s:qw
+mn030|yeah.|s^bk
+mn030|that's it.|s^na
+mn021|well uh the thing is that usually in in a in a network of sensors what we have or the idea is to have um an important number of sensors and maybe with a high filer rate.|fh|s
+mn082|yeah.|b
+mn021|maybe the batteries are uh exhausted in some nodes because maybe uh they are not being able to take uh let's say any sun to recharge its cells.|s^e
+mn030|okay.|s^bk
+mn030|uhhuh.|b
+mn021|uh maybe some of them can be uh just uh out of order for other uh environmental conditions.|s^e
+mn021|so uh the idea is that even when these nodes are not moving they can start and stop working at uh let's say higher pace.|fh|s^df
+mn021|then uh what will happen in a in a regular network uh in a network where you don't have or either mobility or uh this uh on off uh rate high rate.|s
+mn082|uhhuh.|b
+mn082|let me go back to your uh uh example.|s^co
+mn030|huh.|b
+mn021|yeah.|s^bk
+mn082|have in mind some routers are burnt here at icsi or whatever kind of thing.|s
+mn082|what will happen then even in a fixed network?|qw
+mn030|uhhuh.|b
+mn082|so if some sensors are getting out of uh service and whatever kind of thing so the topology has changed even if no node is moving.|fh|s
+mn030|okay.|s^bk
+mn030|uhhuh.|s^bk
+mn082|yeah.|fh
+mn030|okay.|s^bk
+mn082|and how to provide the connectivity and the intercommunication things within this network.|s
+mn021|thank you joe.|s^ft
+mn030|yeah.|s^bk
+mn030|i see.|s^bk
+mn030|uhhuh.|s^bk
+mn021|well|fg
+mn021|uh you know and finally uh another nonmilitary applications where uh maybe a network is available like for example a room like this.|fh|s
+mn021|where we have in in fact a wired infrastructure.|s^e
+mn021|but this uh possible application of ad hoc networks could be uh any place any meeting room where we arrive with our computers.|s
+mn021|and uh we just can communicate seamlessly to each other without any kind of access point any kind of uh huh external network.|s
+mn021|because the kind of work we want to do is just only local based.|s^df
+mn021|it's only to chat to each other or to exchange files with the person which is in front of us.|s^df
+mn021|okay.|s^bk
+mn021|but we don't want to product provide uh access to the internet or something.|s
+mn021|okay?|qy^d^f^g
+mn021|and of course the same uh the same scenario could also happen in a place where there is no uh infrastructure available.|s
+mn021|let's say a meeting room uh in in the middle of the desert.|s^e
+mn021|okay?|qy^d^f^g
+mn021|without any other network.|s^e
+mn021|so|fh
+mn021|the point or or the question could be for some of us the idea of saying okay.|s:s^bk
+mn021|that sounds okay.|s:s^na
+mn021|but why not to use a longer transmission range so we can reach any destination in just one hop?|qh^cs^rt
+mn021|this seems to make sense because well uh we are this way avoiding all the routing problem.|s^df
+mn021|that well we will talk a little bit uh about routing later.|s
+mn021|but uh|fh
+mn021|it it seems that probably that the problem is is not an easy one.|s^ba
+mn021|because uh a node's moving the route is changing.|s^df
+mn021|so one can think that routing in this uh scenario is is a complex thing.|s^df
+mn021|but the problem is if we just uh try to put more power in each transmitter.|s
+mn021|so this uh transmitter can reach any destination in only one hop.|s
+mn021|what we are doing is uh to rising the power needs of each node.|s
+mn021|and also we are reducing the network uh throughput.|s
+mn021|because we are only allowing one one transmission at a time.|s^df
+mn021|because uh well we cannot allow several transmissions several high-powered transmissions at the same time.|s^df
+mn021|because one is interfering with the other.|s^df
+mn021|okay?|qy^d^f^g
+mn021|we are|%-
+mn021|uh i think i'm not telling it yet.|s
+mn021|but we are assuming that we are using a single common channel for all the nodes.|s
+mn021|okay?|qy^d^f^g
+mn021|so that's why we cannot allow several transmitters in the same channel at the same time.|s^df
+mn021|okay?|qy^d^f^g
+mn021|so the idea of having a longer transmission range is not a good one.|s^ba
+mn021|or at least it has the drawbacks um um i was telling you.|s
+mn021|uh let's speak a little bit about the media access issues in in wireless networks.|fh|s
+mn021|uh you know the easiest uh way to to show how this works is or at least one of i think one of the easiest is that this drawing or this picture.|fh|s
+mn021|what what we have is a set of nodes each one at a different location.|s^df
+mn021|at at at a at an at a given moment this uh node this dash node is is transmitting.|s
+mn021|and uh the arrows are representing this transmission.|s
+mn021|and the receiving nodes these three nodes are receiving the transmission.|s
+mn021|and i'm trying to uh show the area the covered area for of this transmission by means of this uh dashed uh line circle.|s
+mn021|okay?|qy^d^f^g
+mn021|so uh any transmission has a maximum transmission range.|fh|s
+mn021|and uh in the simpler way we can see this like a circle with the center in the transmitter and a certain radius.|fh|s
+mn021|okay?|qy^d^f^g
+mn021|the value of this radius is uh in principle is a fixed value.|s
+mn021|and it depends on the uh power of the transmitter.|s
+mn021|of course uh this is only our uh simplified model.|s^bd
+mn021|and of course this can be uh improved uh a lot.|s^bd
+mn021|okay?|qy^d^f^g
+mn021|and in fact the real behavior is not exactly this one.|s
+mn021|but uh for for what i want to say it's it's okay.|s
+mn021|it's enough.|s
+mn021|okay?|qy^d^f^g^rt
+mn021|so|fh
+mn021|what are the differences uh in this in this uh wireless transmission regarding uh to the wireless to the wired ones?|qw
+mn021|what what are the the main differences?|qw
+mn021|well the main differences come from the fact that uh in uh in uh wireless transmission we have a special domain we don't have when we are using a wire for transmitting a signal.|s
+mn021|and the point i'm trying to show in this picture is that if for example this other node wants also to transmit while this one was transmitting if we are using some kind of carry detect scheme like for example c. s. m. a or something uh uh derivated from it the problem is that this node will hear the the the transmission media.|s^df
+mn021|it won't be able to hear anything.|s
+mn021|so he will conclude that no other transmission is going on.|s^rt
+mn021|and he will start transmitting.|s
+mn021|and if he does what will happen is that this node and this other node will also receive this transmission.|s
+mn021|and this will produce at least at these two nodes a collision or a a a a a bad reception.|s
+mn021|okay?|qy^d^f^g
+mn021|so none of these two simultaneous transmissions will be properly received at this node nor at this other node.|s
+mn021|okay.|s^bk
+mn021|uh this problem is what is called|fh|s.%--
+mn021|oh sorry.|s^fa
+mn021|uh the|fh|%--
+mn021|i think this is the previous one.|s^rt
+mn021|this is the german|s.%-
+mn082|uh|fg
+mn035|no.|s^ar
+mn035|one|%-
+mn082|yes.|s^aa
+mn021|okay.|s^bk
+mn082|this one.|s
+mn021|thank you.|s^ft
+mn021|uh|fh
+mn021|this is what is called a hidden terminal problem.|s
+mn021|okay?|qy^d^f^g
+mn021|because well uh this node is not able to hear this other node because of the distance uh between them.|s^df
+mn021|but uh this problem as you can see in the in the picture is uh really producing at least some reception problem at these two nodes.|s
+mn021|okay.|s^bk
+mn021|so it is it is a problem that we have to address.|s
+mn021|and it is a new problem compared to wired uh media access control.|s
+mn021|and uh|fh
+mn021|well some some protocols have been developed to avoid this problem and to try to address this particular behavior of wireless transmissions.|s
+mn021|and the main idea is to use some kind of a reservation mechanism.|s
+mn021|so|fh
+mn021|we are um reserving a certain and a specific uh area of space so we can guarantee that nobody is trying to use the same space at the same time.|s
+mn021|okay.|fh
+mn021|this is the basic idea.|s
+mn082|uhhuh.|b
+mn082|um|fg
+mn021|yeah.|s^bk
+mn082|miguel can you give some examples for such kind of protocols?|qy^cs
+mn021|yeah.|s^aa
+mn021|yeah in fact|s^aa|s.%-
+mn082|one is really really|s.%-
+mn021|this one.|s
+mn021|this one next slide is|s.%--
+mn082|okay.|s^bk
+mn082|yeah yeah.|b
+mn082|okay.|s^bk
+mn021|okay.|s^bk
+mn021|in uh the the the main idea and and the base of most of this protocols is what this the so-called r. t. s c. t. s uh dialogue.|s
+mn021|the idea is that|s.%--
+mn021|uh|fh
+mn021|of course this is only intended for unicast transmissions.|s
+mn021|i mean only for when a node wants to transmit something to a neighbor node.|s^df
+mn021|okay?|qy^d^f^g
+mn021|but not to broadcast uh to all the nodes.|s
+mn021|okay.|s^bk
+mn021|for this for this uh work the transmitter has to send a a a reservation packet called r. t. s request to send before uh being able to send data.|s
+mn021|and the receiver is expected to return back another packet called c. t. s clear to send to allow the transmitter to send the data.|s
+mn021|if the transmitter receives successfully the c. t. s packet from the destination then it will be able to send uh the packet the data packet.|s
+mn021|if not it will uh back off and it will retry uh sometime later.|s
+mn021|okay.|s^bk
+mn021|so the main idea|s.%-
+mn082|and the media is is is still occupied during that period?|qy^d^rt
+mn082|or|qrr.%--
+mn021|uh|h
+mn021|yes.|s^aa
+mn021|yes.|s^aa^r
+mn082|okay.|s^bk
+mn021|the idea is uh if i want to send you something i first of all i need you to answer me to be sure that you are my neighbor now.|s^df
+mn021|because maybe you are off or maybe you are uh too far away.|s^df
+mn021|and also because that way miguel for example it may be is not being able to hearing me will hear your c. t. s and will know that you are about to receive uh data from me.|s^df
+mn021|okay?|qy^d^f^g^rt
+mn021|so|fh
+mn021|in fact forcing the receiver to transmit for a short period of time is also uh used to signal all the uh receiver neighbors that a a reception is taking place.|s
+mn021|okay.|s^bk
+mn082|yeah.|fg
+mn082|i didn't get it.|s
+mn082|um what happened when i sent an r. t. s packet?|fh|qw
+mn082|is then the media still occupied for me?|qy^rt
+mn082|or is anybody allowed also to send r. t. s packets?|qrr
+mn021|or everybody|s.%-
+mn082|because if i go to an intermediate node maybe you are communicating to me.|s^df
+mn082|and i am the intermediate node to the final destination michael.|s^df
+mn082|and michael send also some r. t. s packet in the time and and uh uh uh jordi too and whatever.|s^df
+mn021|yeah.|s^bk
+mn082|then you will never come to a really|s.%--
+mn082|then you're always exchanging r. t. s and non acknowledgement packets for the r. t. s.|s^df
+mn021|okay.|s^bk
+mn021|two two things.|s
+mn082|so that's uh that's uh my my problem.|s
+mn021|first of all uh this this mechanism is only a media access controlled mechanism.|s
+mn021|so it is not connected with routing uh anyhow.|s
+mn082|then fine.|s^ba
+mn021|and second point.|s
+mn082|okay.|s^bk
+mn021|uh|fh
+mn082|so it's only related to the direct neighbor within the scope of the transmissions.|s^bu
+mn021|r. t. s|s.%-
+mn021|yeah.|s^aa
+mn021|r. t. s packets can collide to other r. t. s packets.|s
+mn082|okay.|s^bk
+mn021|so this mechanism is not uh preventing collisions.|s
+mn021|it is preventing only data collisions.|s
+mn021|okay?|qy^d^f^g
+mn082|okay.|s^bk
+mn021|so the|%-
+mn021|and and you can say okay.|s:s^bk
+mn021|but what is the what the benefit is.|s:qw
+mn021|the benefit is that uh r. t. s packets and c. t. s packets are short packets.|s
+mn021|really short packets.|s^e
+mn021|let's say uh uh 30 bytes or less.|s^e
+mn082|i assume so.|s^na
+mn082|yeah.|b
+mn021|while data packets can be much much bigger.|s
+mn021|let's say uh one k. five k.s.|s^e
+mn021|okay?|qy^d^f^g
+mn082|yeah.|b
+mn021|so|fh
+mn082|fine.|s^ba
+mn021|a collision in this short packet is only wasting a small amount of time.|s
+mn021|and uh|fh
+mn021|if that way we can warranty that there is there are there is no collision uh uh between data packet well this this is this means a a huge uh increase in network throughput.|s
+mn021|because well we we only waste really small time colliding.|s^df
+mn082|okay.|s^bk
+mn021|okay?|qy^d^f^g
+mn082|but that means in principle that on the mac layer you have always a r. t. s c. t. s packet between neighboring nodes.|s
+mn021|yeah.|s^aa
+mn082|and you send afterwards the data.|s
+mn082|but the data will be maybe delayed in the intermediate node because you have always be assured to be uh uh uh r. t. s and c. t. s packets are changed before before you can forewarning the data.|s^bu
+mn082|right?|qy^d^g^rt
+mn021|yeah.|s^aa
+mn021|it is a reservation mechanism.|s^df
+mn082|yeah.|s^bk
+mn082|okay.|s^bk
+mn021|so|fh
+mn021|if reservation doesn't work okay if uh one reservation don't succeed then uh this transmission should have to wait.|s
+mn082|now the|s.%-
+mn021|until the reservation|s^e.%--
+mn021|okay.|s^bk
+mn021|yeah.|s^bk
+mn021|let me|s^co.%-
+mn082|maybe it's better to to uh draw it on the|s^cs.%--
+mn082|oops.|s^ba
+mn021|let me|s^co.%--
+mn082|so maybe my idea first.|fg|s^cs
+mn082|so this is what node one?|qy^d^rt
+mn082|this is node two.|s
+mn082|and this is the source.|s
+mn021|yeah.|s^aa
+mn082|and this is node three that is the final destination.|s
+mn021|yeah.|b
+mn021|forget forget about routing.|s^co
+mn082|yeah?|%
+mn082|yeah yeah.|s^bk
+mn082|okay.|s^aa
+mn082|but anyway i would like to do that in the ad hoc network.|s^cs
+mn082|this is maybe the this is within the scope of this uh special network.|s^rt
+mn082|that means here that is uh within the transmission power.|s^df
+mn021|okay.|s^bk
+mn082|so if i send an r. t. s and get back um a c. t. s then he is allowed to send data right?|s^bu|qy^d^g^rt
+mn021|uhhuh.|b
+mn021|a c. t. s.|s^2
+mn021|that's okay.|s^na
+mn082|so in the meantime when he gets this one he also had to send r. t. s and then c. t. s.|s
+mn082|because this is the next scope of the transmission area.|s^df
+mn021|uhhuh.|b
+mn082|and then he can send the data right?|s|qy^d^g^rt
+mn021|okay.|s^bk
+mn082|that's the case?|qy^bu^d^rt
+mn021|that's it.|s^na
+mn021|that's|%-
+mn082|yeah.|s^bk
+mn082|and that's what i mean.|s
+mn082|in the meantime he still can get some data here where he try to get certain connectivity on the mac layer.|s
+mn021|uhhuh.|s^bk
+mn021|yeah but uh a node is only is only involved in one transmission at a given time.|s^bk|s^nd
+mn021|so|fh
+mn021|if now two has uh huh answer with the with the c. t. s it will be waiting until the data that has to come.|s^df
+mn082|yeah?|qy^bh
+mn082|okay.|s^bk
+mn021|okay?|qy^d^f^g
+mn082|and then he try to forward this data.|s^rt
+mn021|yeah.|s^aa
+mn082|after that.|s^e
+mn021|but not before.|s^df
+mn082|so he is definitely first to stop.|s^bu
+mn082|he has to collect all the data.|s^bu
+mn021|yeah.|s^aa
+mn021|yeah you cannot|s^aa|s.%-
+mn082|could it not be a little bit strange?|qy^rt
+mn082|because if that is starting a file transfer with millions of bytes he have to collect all the bytes before he forwarding to to whatever.|s^df
+mn021|no no no.|s^ar
+mn021|but we are we are talking only about a data packet.|s^df
+mn082|huh?|qw^rt
+mn082|one data|s.%--
+mn021|at the mac layer.|s^e
+mn082|he have to do it for all data packets?|qy^bu^d^rt
+mn021|yeah.|s^aa
+mn082|okay.|s^bk
+mn082|okay.|s^bk
+mn082|so but in principle when he receives the data packet then he the same applies for the next data packet.|s^bu
+mn021|yeah.|s^aa
+mn021|all the packets.|s^na
+mn021|all unicast packets.|s^e^na
+mn082|but anyway in the meantime he has to forward the packet to the final destination.|s^bu
+mn021|yeah.|s^aa
+mn021|that that true.|s^aa
+mn082|right?|qy^d^g^rt
+mn021|that's true.|s^aa^r
+mn082|so it's acting in in|s.%-
+mn021|but not in the meantime.|s^e
+mn021|after receiving you know in fact probably the routing protocol will need to check the address the the let's say i. p address which is inside the data packet.|s
+mn082|okay.|b
+mn082|yeah.|b
+mn021|so|fh
+mn021|you cannot usually you cannot uh read the data packet until you the reception is over.|s
+mn021|okay?|qy^d^f^g
+mn021|because usually your network hardware only provides you a copy of a packet after a a successful reception.|s^df
+mn021|and usually you know that reception is successful if every bit has passed the c. r. c check.|s^df
+mn021|okay?|qy^d^f^g
+mn021|you have checked that the that this frame has received uh without errors.|s
+mn082|naja to to|%
+mn082|yeah.|b
+mn021|okay?|qy^d^f^g
+mn082|uhhuh.|s^aa
+mn082|yeah.|s^aa
+mn082|okay.|s^bk
+mn021|so|fg
+mn030|um a further question.|fg|s
+mn021|yeah.|s^bk
+mn030|um|fh
+mn021|that's okay.|s^ba
+mn030|am i right that this um dialogue does not prevent um any disturbance of other nodes in the um sending range of yeah n. one?|qy
+mn021|yeah let me let me put some special representation of what we are doing.|s^aa|s^co
+mn021|okay.|s^bk
+mn021|this is the transmitting node.|s^rt
+mn021|this is the receiving node.|s^rt
+mn021|and these two areas of course there's something like this are the uh places of the total space where you can hear the here this one is the r. t. s and this one is the c. t. s.|s
+mn030|uhhuh.|s^bk
+mn021|so any node|s.%--
+mn021|for example this node is a neighbor of the receiving node.|s
+mn030|uhhuh.|s^bk
+mn021|but it is not a neighbor of the transmitting node.|s
+mn030|yeah.|s^bk
+mn030|that's it.|s^bk
+mn021|so when this node hears the c. t. s transmission that is performed by the receiver this will be uh informed that a a reception is taking place in in in it's area.|s
+mn030|uhhuh.|b
+mn030|uhhuh.|b
+mn021|okay?|qy^d^f^g
+mn021|so|fh
+mn021|in fact this node will avoid any further transmission until uh this reception that will start in in a moment is over.|s
+mn030|but then this node um this transmission is uh aborted.|s
+mn021|okay?|qy^d^f^g
+mn082|and delayed.|s
+mn030|and so there's no advantage to uh if it's aborted by by any data packets.|s
+mn082|yeah.|b
+mn030|so this um node has to stop each transmission.|s
+mn021|yeah.|s^aa
+mn030|so even the at the moment ongoing transmission.|fh|s
+mn021|uhhuh.|s^bk
+mn030|is that right?|qy^g^rt
+mn021|yeah.|s^aa
+mn030|so his transmission is aborted.|s^bu
+mn082|yeah but this is typical for mac layer protocols you know.|s
+mn021|not|%--
+mn021|no.|s^ar
+mn021|no.|s^ar^r
+mn082|that's|%-
+mn021|let me let me let me show you one thing.|s^co
+mn021|if this node was transmitting before it should uh it should uh transmit an r. t. s packet in advance okay?|s|qy^d^g^rt
+mn030|uhhuh.|s^bk
+mn030|uhhuh.|s^bk
+mn021|so this node should hear it before.|s
+mn030|yeah.|s^aa
+mn082|yeah.|b
+mn030|that's right.|s^aa
+mn082|yeah.|b
+mn030|uhhuh.|s^bk
+mn021|so this node is won't be sending the uh uh c. t. s packet to the transmitter.|s
+mn030|okay.|s^bk
+mn030|yeah.|b
+mn082|yeah.|b
+mn030|uhhuh.|b
+mn021|so this transmission won't take place.|s
+mn030|okay.|s^bk
+mn030|yeah.|s^bk
+mn082|yeah.|b
+mn082|it's always true that only one node gets a media access for one frame.|s
+mn030|uhhuh.|b
+mn030|uhhuh.|b
+mn082|that's the point.|s
+mn021|yeah.|s^aa
+mn082|we always said from data.|s
+mn082|but it's really one frame.|s
+mn021|yeah.|s^bk
+mn082|yeah.|fh
+mn082|okay.|fh
+mn021|and in fact uh there is another detail.|s
+mn021|it is not uh uh uh uh in on the on the slide.|s
+mn021|and it is that both the r. t. s and the c. t. s packet uh have a field a control field where the total length of the data packet is shown.|s^df
+mn030|uhhuh.|s^bk
+mn021|so|fh
+mn021|when you hear one uh c. t. s or one uh r. t. s packet you know that the frame that they are trying to transmit or that this one is trying to transmit this one is about to receive you know the length.|s
+mn021|you know the bit rate.|s
+mn030|uhhuh.|b
+mn021|so you know that the amount of time you have to wait until you can try to get the control or try to send your own transmission.|s
+mn030|uhhuh.|b
+mn030|okay.|s^bk
+mn030|but this scenario is also uh only working if um both or all nodes have the same range of transmission.|s
+mn030|so the same radius of the sending range.|s^df
+mn021|huh yeah.|h|s^aa
+mn030|so otherwise um this one node maybe um would hear his neighbor but not vice versa.|s^bu
+mn021|uh well we are assuming that uh huh all the all the transmissions are bidirectional.|h|s^nd
+mn021|i mean uh you know it depends.|fh|s^am
+mn021|it depends mainly on on the antenna gain and the transmission power and the receiver uh threshold.|s^am^df
+mn030|uhhuh.|s^bk
+mn030|uhhuh.|s^bk
+mn021|okay?|qy^d^f^g
+mn082|uhhuh.|b
+mn030|but i'm thinking about this example you gave before.|s^ng
+mn082|maybe maybe you are right.|s^am
+mn021|so what what we are assuming is that all the nodes behave exactly the same regarding to uh transmission and receiving signals.|s
+mn082|yeah.|b
+mn082|but miguel this is a good point from from dietmar.|s
+mn030|yeah.|b
+mn082|but maybe here is a wall.|s
+mn082|and this guy is behind the wall so his transmission rate is something like that.|s
+mn021|yeah but but|fg
+mn021|yeah.|fg
+mn021|but the but in this case you know this this idea this uh geometric idea can be can be if you want uh deformed because of some obstacles.|s
+mn021|okay?|qy^d^f^g
+mn021|but this wall is working both ways.|s
+mn021|it is not only making this node not to hear this one it's also making this one not to hear this node.|s^df
+mn030|but one of the|s.%-
+mn021|so|fh
+mn021|if they|s.%--
+mn021|because of this wall if they are not neighbors well we can represent this putting this node like here.|s
+mn030|but one of the um senders could be much stronger than the other one.|s
+mn021|okay?|qy^d^f^g
+mn021|no but this is not the scenario we are assuming.|s^ar|s^ng
+mn030|so|fg
+mn030|okay.|fg
+mn030|so that was my question.|s
+mn021|yeah.|s^bk
+mn082|uhhuh.|b
+mn082|okay.|b
+mn021|we are assuming all the nodes are exactly the same.|s
+mn030|okay.|s^bk
+mn021|uh so they transmit the same power.|fh|s
+mn021|and they uh have the same uh uh sensitivity.|s
+mn030|uhhuh.|s^bk
+mn021|so they can hear|s.%--
+mn030|okay.|b
+mn021|if if if i can hear you you can hear me.|s^e
+mn030|uhhuh.|b
+mn021|and and the opposite works also.|s
+mn030|uhhuh.|b
+mn021|okay.|s^bk
+mn021|if you cannot hear me i cannot hear you.|s^e
+mn030|but|fg
+mn030|uhhuh.|b
+mn030|okay.|s^bk
+mn030|it's a assumption it's it's clear.|s
+mn030|but on the other hand um in a real world it isn't or|qr.%--
+mn030|um|fh
+mn021|in a|qy^d.%--
+mn030|in real scenarios uh you have to|s.%-
+mn035|it it is actually|s.%-
+mn021|uh not really.|h|s^nd
+mn021|but also depends on uh you know for example power relationships and antenna relationships.|s^df
+mn030|yeah.|s^aa
+mn021|you know uh|%--
+mn030|uh that's it.|s^na
+mn021|because|%-
+mn030|a car or|s.%--
+mn021|because for example uh one kind of thing|s.%--
+mn021|okay if i use a directional antenna this is making that in one direction.|s^bk|s
+mn030|yeah.|s^bk
+mn030|uhhuh.|b
+mn021|i'm getting more uh let's say more gain than another.|s
+mn030|yeah.|b
+mn021|and that's true.|s
+mn030|okay.|s^bk
+mn021|but that what is also true is that one directional antenna works both ways.|s
+mn030|that|%-
+mn030|you're not assuming this.|s
+mn030|yeah.|b
+mn021|it provides you more gain when you are transmitting but also when you are receiving.|s^df
+mn021|so in general in general even when if there uh if there are different antenna gains uh you're getting mainly bidirectional channels.|s
+mn021|only when you have an important uh power difference is when um the communication can only work one way.|s^df
+mn030|yeah.|b
+mn030|okay.|s^bk
+mn021|for example you have one big station with uh a lot of transmission power.|s^e
+mn021|and then you have a really small mobile uh thing that can hear perfectly the signal from this uh uh bigger station.|s^e
+mn030|yeah.|b
+mn030|yeah a cellular phone and a car.|s^bk|s
+mn021|but it has not enough power to transmit something that can be heard here.|s^e
+mn030|uhhuh.|b
+mn030|yeah.|b
+mn021|so um|fh
+mn021|but this this this is not our scenario.|s
+mn030|okay.|fg
+mn021|in our scenario all the nodes are exactly the same.|s^df
+mn030|uhhuh.|b
+mn030|okay.|b
+mn021|they they have the same uh signal uh behavior.|s^df
+mn030|uhhuh.|b
+mn021|so|fh
+mn021|this is not a problem for us.|s
+mn021|at least for the moment.|s^e
+mn021|maybe later we'll see some differences.|s^am^e
+mn021|so|fh
+mn021|you know the idea is that this mechanism is a reservation mechanism.|s
+mn021|and what we are doing here is try to reserve the area of space we are covering.|s
+mn021|and uh here's where our some of our work is done.|s
+mn021|the main idea for for our work is well if we are using this reservation mechanism we are reserving an area of space for a single transmission.|s
+mn021|uh if this area is bigger than what is really needed we are somehow wasting a little bit of space.|fh|s
+mn021|so uh|fh
+mn021|our first uh work in this area was to study different mechanisms to try to adjust these transmission values.|s
+mn021|these uh the area the covered area for a single transmission trying to get a minimum value.|s
+mn021|so we can reduce the not used space for other simultaneous transmissions.|s
+mn021|and this will lead us to a a better to a better network throughput to higher number of simultaneous transmissions.|s
+mn021|and we have uh huh worked about this problem uh in two different uh ways.|s
+mn021|one of these ways has been try to find a mechanism to uh calculate an optimal value for the transmission range uh and to get an equal value for all the transmitters.|s
+mn021|so the idea in this first work was to obtain a fixed value for the transmission range.|fh|s
+mn021|and the second uh work uh it is about|s.%--
+mn021|oops.|s^ba
+mn021|it is about uh an algorithm to adapt the transmission power for for every single transmission.|s
+mn021|so uh in this second part of our work we are using a different value for every single transmission.|fh|s
+mn021|so|fh
+mn021|first point what we have proposed is a way to obtain the transmission range uh for uh for an escenario where we know the number of nodes.|s
+mn021|and the area of deployment we have a a fixed area where we deploy all the nodes.|s^rt
+mn021|we have a fixed number of nodes.|s^rt
+mn021|and uh we assume that these nodes are moving freely around this this area.|s
+mn021|and uh what we have presented is a mechanism to uh calculate to obtain the uh transmission radius that provides at the same time that provide us the better throughput possible.|s
+mn021|the better possible throughput.|s^bsc
+mn021|okay?|qy^d^f^g.%
+mn021|but without our network getting partitioned.|s^e
+mn021|which is a problem that we are trying to avoid.|s^e
+mn021|you know if we have because of node motion we have something like this.|s^df
+mn021|this is the deployment area of or or node.|s
+mn021|and if we have some nodes here and some nodes here well maybe these nodes in this area cannot reach the nodes on this other area.|s
+mn021|okay?|qy^d^f^g
+mn021|uh so what can we do to avoid this?|qw
+mn021|of course we can choose uh our transmission values longer enough to reach from so the nodes from this area will be able to reach the nodes on this other area.|s
+mn021|okay?|qy^d^f^g
+mn021|but again we can assume that uh if uh nodes are moving uh more or less uh in a random fashion this configuration is not very likely to happen.|s
+mn021|okay?|qy^d^f^g
+mn021|so the point we what we have done is to present a mechanism would which provides uh one uh value for a given uh huh probability.|s
+mn021|okay?|qy^d^f^g
+mn021|so we can say that uh a given uh value are for for the transmission range will be okay for a given number of nodes if we sorry for a certain for a certain probability.|s
+mn021|okay?|qy^d^f^g
+mn021|so the point is uh we cannot say that this is not going to happen.|s
+mn021|what we can say is this is not very likely to happen if nodes move uh uh random.|s^df
+mn082|yeah but um miguel if uh in the previous slide you mentioned that you uh are working also on adaptive power control.|s^bk|s
+mn021|okay?|qy^d^f^g
+mn021|yeah.|s^bk
+mn021|yeah.|s^aa
+mn082|is it not possible then if i send something and i could not find any neighbor because one of the cluster below?|qy
+mn021|this is the next.|s
+mn021|yeah|s^bk|%-
+mn082|is it not possible to extend the power until the maximum?|qy
+mn082|and if uh i do not have any connectivity with the maximum of power okay then i'm lost anyway.|s^bu
+mn021|yeah.|s^aa
+mn082|yeah yeah.|b
+mn021|but this is this is a way that it is it is being explored by other researchers.|s
+mn021|but not not uh by me.|s^df
+mn021|but uh there is uh one at least one person who is who is doing what they call topology control.|fh|s
+mn082|uhhuh.|s^bk
+mn021|and this is uh related to to uh the control of the transmission power to get uh certain properties uh from your network.|s
+mn021|like for example they are what they are doing uh is uh some people working for b. b. n.|s^e
+mn021|ram ramanatan is the researcher.|s^e
+mn082|uhhuh.|s^bk
+mn021|and the article is is uh i think from from this year.|s^e
+mn021|and uh|fh
+mn021|these guys are doing uh what they call uh b. connected networks.|s
+mn021|they are trying all the network nodes to have at least two neighbors.|s^df
+mn082|okay.|s^bk
+mn082|uhhuh.|s^bk
+mn021|okay?|qy^d^f^g
+mn021|and they are controlling the power to uh this uh huh get this this number of neighbors.|s^df
+mn021|but this is not what i am doing.|s
+mn021|and uh the kind of power control i am doing uh um is more or less presented here.|s
+mn021|and what we are doing is to transmit uh with the minimum power needed depending on the distance to the destination.|s^df
+mn021|okay?|qy^d^f^g
+mn021|every transmission is supposed to be done to a certain neighbor node.|s
+mn021|we cull the neighbors to these nodes which are uh closer than a given distance.|s
+mn021|okay?|qy^d^f^g
+mn021|and because we wanted to to compare our algorithm with something we needed to compare it with the no power control.|s
+mn021|which is the usual uh mechanism at this uh media access control level.|s^e
+mn021|so what we are doing here is to to compare our mechanism against the no power control.|s
+mn021|but again we have to fix|s.%--
+mn021|in order to be able to compare we have to fix a given whatever but a given uh maximum transmission range to compare.|s
+mn021|and uh what we are doing is we are uh taking the advantage that we are we have this r. t. s c. t. s dialogue in advance before sending the data to uh agree with the receiver the power level he is willing to get from us.|fh|s
+mn021|okay?|qy^d^f^g
+mn021|so every single transmission in every single transmission we are checking with the receiver the power level we have to use for the data transmission.|s
+mn021|that's the main thing.|s
+mn021|and as uh|s.%-
+mn082|and how do you|qw.%--
+mn082|sorry miguel.|s^fa
+mn082|how do you check if if the nodes are moving randomly?|qw^rt
+mn021|well uh we are assuming that for at least for uh uh you know uh car and and walking or or people riding a motorcycle the um frame length is so small that only um very very small um space can be can be uh travelled while the transmission is taking place.|s
+mn021|you know.|fh
+mn021|in one|s^e.%-
+mn082|yeah okay.|s^bk
+mn082|maybe that's applied for r. t. s c. t. s.|s
+mn082|but for the real frame?|qy^d^ng^rt
+mn021|yeah.|s^aa
+mn021|well you just take the|s.%-
+mn082|the frame could also be uh whatever i don't know but a few hundred bytes you know that takes a little bit time.|s^df
+mn021|let's let's|%--
+mn021|no but|s^ar|%-
+mn021|yeah but let's say you have one kilobyte.|s^bk|s
+mn021|okay?|qy^d^f^g
+mn021|one kilobyte is uh eight uh bits.|s^e
+mn021|okay?|qy^d^f^g
+mn082|uhhuh.|s^bk
+mn021|and uh if you are transmitting at let's say uh at one megabit per second this means one microsecond per bit.|fh|s
+mn021|okay?|qy^d^f^g
+mn021|so this only is taking eight milliseconds.|s
+mn021|which is not a lot of time if you are travelling let's say at uh one hundred kilometers per second.|s^e
+mn082|no|s^ar|%--
+mn021|oh per per hour.|s
+mn082|no sorry.|s^ar|s^fa
+mn082|yeah that's right.|s^na
+mn021|sorry.|s^fa
+mn082|but first of all it took place r. t. s c. t. s.|s
+mn082|and there could be you mentioned if it's still if the medium is still occupied by another one it will be delayed anyway to a randomly time.|s
+mn021|yeah.|s^aa
+mn021|it will be delayed.|s^na
+mn021|but you will start from scratch again.|s
+mn021|i mean it will be a start with another r. t. s c. t. s.|s^df
+mn082|oh.|s^bk
+mn082|so|fg
+mn082|okay.|s^bk
+mn082|okay.|s^bk^r
+mn082|okay.|s^bk^r
+mn082|i see.|s^bk
+mn082|yeah.|s^bk
+mn082|okay.|s^bk
+mn021|okay?|qy^d^f^g
+mn021|but anyway uh well depending on on the network you now the the the this|fg|s.%--
+mn021|i will have to translate this.|s^cc^t1
+mn021|uh|fh
+mn021|it should be something ipsh|s^t1.%--
+mn021|so this should be something like|s^t1.%--
+mn021|uh|fh
+mn021|thirty meters per second.|s^t1
+mn021|okay?|qy^d^f^g
+mn082|oh yeah something like that.|s^aa|s^na
+mn021|so in in eight milliseconds well the amount of of space you are travelling is not too much.|s
+mn082|it's okay.|s^t3
+mn021|for most of of of uh the wireless technologies.|s^e
+mn021|maybe not for all of them.|s^e
+mn021|okay.|s^bk
+mn021|but i'm of course i'm also uh using a conservative value for the transmission speed.|s^df
+mn021|now you can get much more speed than speedier interfaces than this one.|s
+mn021|but the thing is uh that we are assuming that for a given transmission we can uh consider the network as if it were built of a set of static nodes.|s
+mn021|okay?|qy^d^f^g
+mn021|motion will be important for routing.|s
+mn021|but for the media access control level we are considering that motion can be is not is not important.|s^df
+mn021|okay?|qy^d^f^g
+mn082|yeah what i think maybe some uh cases why i go this way with my node and suddenly i go out of the scope of the transmission area.|s
+mn082|because it's really a random movement.|s^df
+mn082|then i still hear|s.%--
+mn082|this is during the data transmission.|s^e
+mn021|yeah but again again what we are adding with this behavior is uh uh a little bit more probably some some uh small part to the uh bit error rate.|s^bk|s
+mn082|yeah.|s^bk
+mn082|then|%
+mn021|okay?|qy^d^f^g
+mn021|maybe this frame will won't be received properly and should uh have to be uh dropped.|s
+mn082|oh yeah.|b
+mn021|but anyway|fg
+mn021|uh even if nodes are completely static uh some problems will happen in the wireless transmission.|fh|s
+mn021|so|fh
+mn021|we won't have a hundred percent uh perfect uh channel anyway.|s^df
+mn082|yep.|b
+mn082|right.|b
+mn021|so uh if this problem as you show it probably it's it's uh you can you can see that it is not very likely to happen.|fh|s
+mn021|because you you you uh have to consider the probability that of happening this|s^df.%-
+mn082|nee.|fg
+mn082|that's really right.|s^na
+mn021|huh.|b
+mn082|but what i would like to say is that besides the r. t. s c. t. s behavior you need certain kind of additional mac layer functionality to deal with these packet.|s^cs^ng
+mn021|uhhuh huh.|s^bk
+mn082|for example with transmission or or whatever.|s^e
+mn021|yeah.|s^aa
+mn021|sure sure.|s^aa
+mn082|for whatever control or whatever kind of things you know.|s^e
+mn021|in fact in fact you know i i i i i maybe i i i had to to prepare a more detailed uh view.|s
+mn021|i i just was trying to do something soft.|s^df
+mn021|not to to bore the public.|s^e
+mn021|but of course there are a lot of other smart uh things that are built in in these protocols.|s^df
+mn082|right.|b
+mn082|yeah.|b
+mn021|like for example an automatic uh acknowledgement.|s^e
+mn021|some protocols used uh in the same way as this r. t. s and c. t. s packet some of them use an uh acknowledge from the receiver.|s
+mn021|which is also a short packet.|s^e
+mn021|so you you are getting some kind of link layer uh acknowledgement scheme.|s
+mn021|which can save a lot of data transmissions.|s^e
+mn021|because uh usually when you send a a a a frame you will want to some kind of acknowledgement back.|s^df
+mn021|so if this acknowledgement has to go through the process of a new r. t. s and a new c. t. s well this takes longer than just a link layer uh extra packet.|s^df
+mn021|that of course uh is also contemplated in this uh packet length length or included in the r. t. s and c. t. s packets.|s
+mn021|so uh you know everybody can wait until this uh acknowledgement is also transmitted by the receiver.|fh|s
+mn021|so|fh
+mn021|in fact uh nnn some people proposing this mechanism is is showing a a a big improvement.|s
+mn021|and uh there are a lot of other mechanisms also regarding and a time-out mechanism or the time-out algorithm for these retries when you try to send something and you don't succeed uh what what you the amount of time you have to wait until you retry again.|fh|s
+mn021|well uh some people is also proposing different things different uh algorithms with different results.|s
+mn021|so in fact there are a lot of good|fh|s.%--
+mn021|i just was trying to present a you know the main ideas.|s^df
+mn021|so i i i you know ask uh you feel free to ask uh whatever you want.|s
+mn021|but i i want to insist that it was just an uh a simplified uh version a light version.|s^df
+mn021|okay?|qy^d^f^g^rt
+mn021|well uh you know finally this algorithm uh as i was telling uh what it's doing is to check with the receiver the power level to be used.|fh|s
+mn021|and it is very simple to see that some advantages can some advantage can be obtained.|s
+mn021|because the difference is uh if you don't have power control you are using all the time the maximum power.|s^df
+mn021|if you have power control sometimes you will use less than the maximum power.|s^df
+mn021|how often do you use less power than the maximum?|qw
+mn021|well this will this will be connected to the motion pattern.|s^df
+mn021|okay?|qy^d^f^g
+mn021|depending how nodes are moving.|s
+mn021|well maybe all the time all your neighbors are at the maximum distance|s^rt.%--
+mn021|but this probably doesn't look like uh something very very uh very likely.|s
+mn021|okay?|qy^d^f^g
+mn021|because well probably what you will have will be some neighbors that are really close.|s^df
+mn082|huh.|b
+mn021|others that are a little bit far away.|s
+mn021|and finally these neighbors that are in the in the frontier of your of your coverage area.|s
+mn021|okay.|b.%
+mn082|huh.|b
+mn021|yeah.|s^bk
+mn082|okay this is a question not directly related to these things.|fg|s
+mn082|but maybe that's why maybe only a short answer.|s
+mn082|uh do you assume that power control will be issue also in the next years?|qy^rt
+mn082|in other words um is the um success of having more power within the devices in maybe three year four years five years for batteries and and and and sofort so on.|s^e
+mn082|uh will it be succeeded that you have so much power available that this difficult mechanism who is in the wireless network will be uh out of scope?|qy
+mn021|huh.|b
+mn021|yeah.|s^aa
+mn082|because if i have a device which uh can i use maybe for twenty four hours.|s^df
+mn082|i do not have in principle really the constraint to uh deal with with uh power savings.|s^df^e
+mn021|yeah let let me let me answer you uh with a question.|fg|s
+mn021|uh if for example your car uh you you have uh an endless uh source of of gas do you think it will it will be a problem the amount of gas your your car is is using?|qy
+mn021|okay.|s^bk
+mn021|it won't be a problem for your pocket.|s
+mn021|for your wallet.|s^e
+mn021|but maybe it will be a problem for the environment.|s
+mn021|so i think that the answer to your question is in this line.|s
+mn021|that uh if you have an endless uh source of power well maybe it's not a problem for the battery uh lasting.|s^bd
+mn021|but it is a problem because you are using more area than you should.|s^df^rt
+mn021|and therefore you are preventing other transmissions to take place at the same time.|s
+mn021|and therefore uh the problem is not only connected to to the to the power.|s
+mn021|it is also connected to the to the global network throughput.|s
+mn021|okay?|qy^d^f^g^rt
+mn082|okay.|s^bk
+mn021|so|fh
+mn021|but again uh you know uh the the|s.%--
+mn021|if you ask me what what do you think what will happen in the industry|s.%--
+mn021|what i think that will happen is that they will try to get uh huh better hardware than we have now.|s
+mn021|because now the problem with transceivers is that a lot of power is uh consumed at the logic of the transceiver.|s^df
+mn021|and not uh transmitted to the air.|s^df^e
+mn021|it is not power transferred to the air.|s^e
+mn021|so the problem now is that uh most of the power uh uh uh a wireless network card is consuming is is is drawn by the by the uh logic control of the card.|s
+mn082|yeah.|b
+mn021|all the all the calculations.|s^e
+mn082|that's what i|%-
+mn021|all the hardware|s^e.%-
+mn082|yeah that was the reason i'm talking about this is uh|fg|s^df.%-
+mn021|so i am sure that uh that manufacturers will try to to squeeze until the the the last ampere of of this uh let's say uh wasted power.|s
+mn021|because what you cannot avoid is uh|s^df.%--
+mn021|to the part of the of the radio frequency power you have to transmit.|s
+mn021|i mean this is this cannot be avoided.|s
+mn021|but what you can avoid or you can reduce|s.%--
+mn021|and probably|s.%--
+mn021|because now it is the main factor the main consumption factor is the logic inside.|s^df
+mn021|in the same way at as as it happened with with processors for example.|s
+mn021|now processors are much more uh power efficient than before.|s
+mn021|okay.|s^f
+mn082|yeah but anyway that was the reason for my question.|fg|s^bd
+mn082|if i save with a lot of difficult mechanism within the air interface and between the base station or access point and the mobile node one percent of the power whereas ninety nine percent is consumed by packet processing.|s
+mn082|and and and and uh uh c. p. u or whatever.|s^e
+mn021|uhhuh.|b
+mn082|uh is it worth to have it?|fh|qy
+mn082|if i really with a normal device uh with a battery lifetime of maybe twenty four hours thirty six hours or whatever kind of thing and i think it will be increased.|s^rt
+mn082|as the more mobile nodes are in the world the better the battery will be.|s
+mn082|so that's was the reason for my question.|s
+mn021|yeah pero|s^bk|%-
+mn082|yeah yeah yeah.|s^bk
+mn021|uh but|%--
+mn021|oh sorry.|s^fa
+mn021|but even if you if you don't have to to worry about uh your power source you have to worry about your environment.|s
+mn021|about not using more resources that you don't own.|s^e
+mn082|yeah.|b
+mn082|yeah.|b
+mn021|that are uh shared about among the community.|s^e
+mn082|yeah i got it.|fg|s^bk
+mn082|yeah.|b
+mn082|yeah.|b
+mn082|okay.|s^bk
+mn040|excuse me.|fg
+mn021|okay.|s^bk
+mn040|if i understood correctly the mechanism uh you should uh look for um the minimum uh coverage range.|s^cs
+mn021|yeah.|b
+mn040|in order to maximize the throughput of the network.|s^df
+mn021|yeah.|b
+mn040|so there the the power control uh algorithm should work in order to use at each instant of time the minimum power need to reach|s.%-
+mn021|the destination.|s^2
+mn040|the neighbor.|s^e
+mn040|that because this is the way uh uh more transmissions uh|s^df.%--
+mn040|may take take place at the same time.|s^2
+mn021|can take place at the same time.|s^rt
+mn082|yeah yeah yeah yeah.|s^bk
+mn040|so you need the adaptive mechanism to minimize the coverage range.|s^rt
+mn082|yeah.|s^aa
+mn021|that's okay.|s^ba
+mn021|and to and to get the maximum network throughput.|s
+mn040|that|%-
+mn021|that's that's the idea.|s
+mn021|however however and|s.%--
+mn021|uh it is always some however.|s
+mn021|uh by applying this uh greedy mechanism in in|s.%--
+mn021|or more than greedy in this case.|s^bsc
+mn021|it could be say this stingy mechanism to trying to avoid to use any extra space is also leading to a higher level of interference at the receivers.|s
+mn021|so uh|fh
+mn021|at the end of the road we have to uh look for some tradeoffs to avoid too much uh interference at the receivers.|s
+mn021|okay?|qy^d^f^g
+mn021|so uh at the end we are using a little bit more power than these mathematically minimum values.|s
+mn021|okay.|s^f
+mn021|because if not the uh|s^df.%--
+mn021|huh|fh
+mn021|the frame error rate or the bit error rate uh skyrockets.|s
+mn082|uhhuh.|b
+mn021|okay.|s^f
+mn021|because of the of high interference levels.|s^df
+mn021|a lot of simultaneous transmissions also means for each receiver point of view a lot of neighbors or or nodes transmitting at the same time.|s
+mn021|and all the transmitters uh with the exception of the transmitter of my transmitter are my intereferers.|s
+mn021|and are and all of them are producing less quality reception.|s
+mn021|so if they are a lot of them well uh the reception can be can be uh disturbed.|s
+mn021|okay?|qy^d^f^g
+mn021|and but um um this is taking longer than i expected.|fh|s
+mn021|okay.|s^bk
+mn021|let's let's uh take a a a really a really light uh view at the at the routing in this in this network.|s^t^tc
+mn021|which is another important area of of research.|s^rt
+mn021|you know in fact there is a a group at the i. t. f uh called manit.|s^rt
+mn021|this working group is is devoted to uh try to to present or to agree a common protocol for routing i. p traffic on these uh kind of networks.|s^rt
+mn021|on these ad hoc networks.|s^e^rt
+mn021|uh and|fh
+mn021|at this moment there are i would say a lot of proposals of different protocols uh for uh end to end traffic.|s
+mn021|and also for multicast traffic.|s^rt
+mn021|on these networks.|s^e
+mn021|and uh well some day in the future uh a protocol should be chosen.|s
+mn021|but for the moment uh we have several of them on the table.|s
+mn021|and uh any protocol has some advantages and some disadvantages.|s
+mn021|the basic the basic problem we have to solve in in these uh routing protocols is the fast uh the fast pace at what uh topology changes can happen.|s
+mn021|so|fh
+mn021|the problem here is that now uh one node is my neighbor.|s
+mn021|and next second it is not.|s^e
+mn021|so any route that was going through this neighbor now is is not possible.|s
+mn021|and should change.|s^e
+mn021|and the problem is that well|s.%--
+mn021|uh|fh
+mn021|if you let me a personal comment i think that one error on the group is not to agree a set of mobility patterns to to do the the tests.|s
+mn021|because here well mobility is making these uh neighborhood relationships to appear or to disappear.|s^df^rt
+mn021|so uh it should be interesting if we agree uh a common a common set of motion patterns to perform the tests.|s^rt
+mn021|because if not well it's difficult to to perform comparisons uh between one protocol and another.|s^df
+mn021|a different one.|s^e
+mn021|but anyway now what we have is is two basic approaches to this this problem.|s
+mn021|uh mainly what they call the practive protocols.|s
+mn021|which are um extensions of of uh um back door and link end state routing protocols.|s
+mn021|distance vectors.|s^e
+mn021|sorry and and link end state protocols.|s^fa|s
+mn021|uh which are usually table driven.|s^rt
+mn021|so you have a process trying to to maintain up-to-date a set of routing tables and the nodes.|s^rt
+mn021|and uh every routing decision is uh just uh looking up the table.|s^rt
+mn021|and sending to the proper neighbor node.|s^rt
+mn021|and uh the other the other set of protocols are using a reactive uh approach.|s^rt
+mn021|and these protocols are trying to work on demand.|s
+mn021|so they are trying to solve on only these routers that are needed.|s
+mn021|so when i want to send uh a packet to a a given destination first of all i have to figure out the proper route for this packet.|s
+mn021|and then uh i'm using soft routing.|s
+mn021|i'm i'm including on the on the uh header of this packet the set of uh nodes that should be forwarding this node to the destination.|s
+mn021|uh of course uh these uh two approaches can be can be uh somehow mixed.|s
+mn021|and some hybrid proposals are also on the on the paper.|s
+mn021|and uh|fh
+mn021|these proposals are are trying to get the advantages of both uh mechanisms.|s
+mn021|uh sometimes making a kind of combination of of them.|s
+mn021|uh let's say for example using uh practive approach for the closer set of nodes.|fh|s
+mn021|let's say for the neighbors and maybe the next level.|s^rt
+mn021|and using a reactive approach.|s
+mn021|i mean as our routing approach for nodes that are closer than this practive area.|s^e
+mn021|okay.|s^bk
+mn021|and uh well|s.%--
+mn021|some multicast protocols have been proposed for this scenario too.|s^rt
+mn021|and well they have to deal with the same problems that they're uh end to end routing protocols.|s
+mn082|huh.|b
+mn082|what do you mean by multicast protocols?|qw
+mn021|yeah.|s^bk
+mn082|routing.|s^bu^e
+mn021|routing protocols intended for multicast.|s
+mn082|okay yeah.|s^bk
+mn082|okay.|s^bk
+mn021|so for for uh for sending one to any.|s^e
+mn082|yeah.|b
+mn021|huh?|qy^d^f^g.%
+mn021|uh well the main the main problems that some of the solutions uh are exhibiting is uh the lack of uh scalability.|fh|s
+mn021|uh mainly the source routing protocols have a problem when you when you scale from or scale scale badly from tens of nodes to to thousands of nodes.|s
+mn021|because well you cannot have uh uh let's say uh an endless uh header length.|s^df
+mn021|you have a limited a limited header length.|s^e
+mn082|and maybe we will have to explain a little bit for those who are not familiar with source routing.|s
+mn021|so|fh
+mn082|you can have the destinations you would like to or the in the i. p addresses of the intermediate nodes you still know.|s
+mn021|yeah.|b
+mn082|even if it's not the direct neighbor.|s^e
+mn082|but one of uh where you really want that the packet went through put it in the i. p header.|s
+mn030|uhhuh.|b
+mn082|so and|fh
+mn082|this one is going then to this guy and so on and so on.|s
+mn082|until finally it's reached destination.|s^e
+mn030|so there are|s.%-
+mn082|and that's what i mean you cannot put it thousand intermediate nodes in for example.|s
+mn030|okay.|s^bk
+mn082|but to put a thousand i. p addresses in the header so that the packet is uh forwarded accordingly to.|s
+mn030|so there's more than one i. p address in the header.|s^bu
+mn082|yeah yeah yeah yeah.|s^aa
+mn030|and|fh
+mn030|okay i see.|s^bk
+mn021|something like this.|s
+mn021|so you your packet should look like like this way.|s
+mn030|do they have to|qy.%-
+mn082|yeah.|b
+mn030|do they have to be in order?|qy^rt
+mn030|so you are looking first for node two and then for node three and so on.|s^e
+mn021|yeah.|s^aa
+mn082|yeah.|s^aa
+mn082|it's uh|%--
+mn082|you'll know to remove it's from the header in principle and and so on until it uh reaches the final destination.|s
+mn030|okay.|s^bk
+mn030|okay.|s^bk
+mn021|so this this uh header well it's it's a problem.|s
+mn021|of course there are also some some solutions.|s
+mn021|like uh uh employing some kind of of uh hierarchical source routing.|s
+mn021|so you don't have to put all the all the route|s.%--
+mn082|this one for instance.|s
+mn082|that may that the different parts could be one to number four.|s
+mn030|uhhuh.|b
+mn030|uhhuh.|b
+mn082|maybe two b. or three b..|s:s
+mn082|yeah but nevertheless this guy is a is an gateway in the router for for this packet you know.|s
+mn082|and they remove itself from the header.|s
+mn030|okay.|s^bk
+mn082|yeah.|s^bk
+mn082|it must be not the whole path you know.|s
+mn021|another problem uh is uh trying to provide some quality of service in these networks.|s
+mn021|because well them uh change is is the only thing you know for sure here|s^df.%--
+mn021|so uh providing quality of service is also is quite a challenge in in this network.|s
+mn021|but again uh there are some proposals.|s
+mn082|um miguel are you familiar with these kind of proposals?|qy^rt
+mn021|not really.|s^nd
+mn021|not really because i don't trust|s^df.%--
+mn021|you know|fh
+mn021|uh i'm sure that the proposals are okay.|s^ba^df
+mn021|but uh i don't i don't think that you cannot you you i don't think you can warranty too much in these networks.|s^df
+mn021|so i see this like a you know a a topic i'm not convinced about.|s
+mn021|i don't trust you can really provide quality of service.|s^e
+mn021|but of course|s.%-
+mn082|that depends on the service level you want to be.|s^aap
+mn082|definitely not a guarantee level.|s^e
+mn082|but maybe something like a control load level or something like that seems to be for me possible.|s
+mn021|yeah.|s^am
+mn082|right?|qy^d^g
+mn021|you know uh if you are curious uh i can i can i can provide you the some of the proposals.|s
+mn082|yeah.|b
+mn082|huh.|b
+mn021|which include|s.%-
+mn082|yeah we can discuss later off line.|s^bk|s^cs
+mn021|yeah.|s^bk
+mn082|okay.|s^bk
+mn021|and uh finally the other the other thing which is also under research or under study is uh to have some kind of a power aware routing.|s
+mn021|there are some proposals too.|s
+mn021|so that way you could|s.%--
+mn021|routing function could be connected with uh global or local power consumption.|s
+mn021|so for example you could ask to nnn the network to transmit your packet with the lowest uh global uh consumption.|s
+mn021|or with your lowest local consumption for example.|s
+mn021|okay?|qy^d^f^g^rt
+mn021|i mean would the option for me to to use less power when sending a packet is to send it to the closest neighbor.|s
+mn021|okay assuming that i'm i'm also using or having some kind of power control thing.|s^f|s
+mn021|so that way transmitting to the closer close to my closer node is uh something that requires less effort than sending to a more distant node.|s
+mn021|maybe the closer node is not a good uh it is not in the good direction to the to reach the destination.|s
+mn021|but it is for sure the the less expensive uh thing for me.|s
+mn021|okay?|qy^d^f^g^rt
+mn021|but probably this uh this is not something really useful.|s^bd
+mn021|and that what can be really useful is to reduce the global power consumption in the routing function.|s
+mn021|so|%--
+mn021|because in this way|s^df.%--
+mn021|well maybe one node is is being forced to use more power.|s
+mn021|but but if we take a look at the whole thing well we can ask for a a low consumption route.|s
+mn021|well the same way|s.%-
+mn082|yeah but the|fg|%-
+mn021|as we are asking for example when we want uh some packet to be shipped in the real life we can go and say well we will we are happy with this u. p. s ground system.|s:s
+mn021|what we want is two day delivery service or twenty four hours service and we are willing to pay more or less for this service.|s
+mn082|yeah but it's really happened also in the riot case you know.|s^bk|s
+mn082|if i get the wrong route with the r. c. m. p redirects it's in principle then the same.|s^e
+mn021|yeah.|s^aa
+mn021|yeah.|s^aa
+mn021|that's okay.|s^ba
+mn082|yeah yeah.|s^bk
+mn021|so these are more or less uh some open problems.|s^rt
+mn021|and uh well just a quick comment about probably|s.%--
+mn021|all of use are now aware of the availability of this uh standard the i. triple e. eight hundred and two point eleven.|s^rt
+mn021|uh in fact it is it is powering you know uh the evolution of the of the of networking industry in the wireless area.|s
+mn021|and in the beginning the first adaptors uh|s.%--
+mn021|oops.|s^fa
+mn021|were only one and two megabytes per second.|s^e
+mn021|but now we you you can buy for for the same price for even the same price uh the new eleven megabytes per second version.|s
+mn021|i've been use it for for a while.|s^rt
+mn021|and it can tell you it works pretty well.|s
+mn021|and uh the thing is that these devices have two different modes of operation.|fh|s
+mn021|one of them and probably the most popular is uh what we call the infrastructure mode.|s
+mn021|where you have a set of mobile nodes.|s^rt
+mn021|and then you have one or more access points.|s
+mn021|these access points are uh in fact providing the uh required connectivity from the mobiles to the network to the wired network.|s
+mn021|and from there to the internet usually.|s^e
+mn082|yeah in principle the base station.|fg|s
+mn021|yeah yeah we can call it a base station.|s^aa|s^na
+mn082|yeah.|s^bk.%
+mn082|yeah.|b
+mn021|and uh the other mode of operation which should be appropriate for example for this meeting room example uh doesn't require any any access point.|s^rt
+mn021|and in this second case communication happens uh um from one computer to the other at the link layer.|s
+mn021|okay?|qy^d^f^g^rt
+mn021|so if i want to connect to uh let's say miguel's uh michael's uh i i will send him a packet.|s^rt
+mn021|and he will receive it and that's it.|s
+mn021|okay we can build on top of this some uh routing algorithm.|s
+mn021|some ad hoc routing algorithm.|s^e
+mn021|but this is out of the scope of the of the standard.|s
+mn082|uhhuh.|b
+mn021|and|fh
+mn082|and miguel should i should ask you one question.|s
+mn021|yeah.|s^bk
+mn082|and uh uh in version one and two you you have different technologies.|s
+mn082|you know frequency hopping uh two modes and and and also infrared.|s
+mn021|yeah.|b
+mn021|yeah.|b
+mn082|does it still apply for for the uh?|qy^rt
+mn021|for the|s^2.%--
+mn021|no.|s^ar
+mn021|eleven b. is only for for uh radio.|s^rt
+mn021|and it's only for uh direct sequences spread spectrum.|s
+mn082|okay d. s. s.|s^bk|s
+mn082|okay.|s^bk
+mn082|okay.|s^bk
+mn021|but in fact there is an ongoing new version i think it's version a..|s
+mn021|but it is not uh commercially available.|s
+mn021|which will use uh orthogonal frequency division multiplexing.|s^e
+mn082|okay.|s^bk
+mn021|and will get probably twenty five megabits per second.|s
+mn021|uh but again the will move to five gigahertz.|fh|s
+mn021|uh five point five gigahertz.|s^e
+mn021|uh gigahertz uh area of a expect uh spectrum.|s^e
+mn021|but now uh current devices are split at|s.%--
+mn021|you know that the old the old wavelan are nine hundred megahertz version.|s^rt
+mn021|and the new ones are the the eleven megabits uh are uh two point four uh i. s. m band.|s
+mn082|megahertz.|s^2
+mn082|yeah.|b
+mn082|uhhuh.|b
+mn021|however uh some old uh wavelans are also but not the older ones the oldest ones are also uh two point four|s.%-
+mn021|uh gigahertz.|s^m^na
+mn082|uh gigahertz.|s^2
+mn082|yeah.|s^bk
+mn082|in the r. s. m band.|s
+mn021|and the good thing is that now especially with the new version all you|s.%--
+mn021|you you you are you start to see uh compatible products in the market.|s
+mn021|because uh maybe because it's the let's say second version.|s^df
+mn021|but also because i think it's the only way for this industry to take off.|s^df^e
+mn021|because uh previous versions if you buy let's say wavelan you are tied to wavelan the rest of your life.|s^df
+mn021|but now you can you can have interoperable products from several vendors.|s
+mn021|which is i think what in the past will power the ethernet uh revolution.|s^e
+mn021|you can buy any any compatible product.|s
+mn021|and and you know it will work with the other brand.|s
+mn082|yeah.|s^bk
+mn082|and one additional question from myself.|s
+mn082|but maybe also short.|s
+mn082|because time it running fast.|s^df
+mn082|uh i have heard that uh wireless lan and bluetooth will have some problems.|s
+mn082|uh that they influence each other.|s^e
+mn021|in front?|qy^bu^d
+mn082|do you have additional information about this topic?|qy
+mn021|yeah.|s^aa
+mn021|huh.|h
+mn021|you know|%--
+mn021|in the beginning uh what the|s.%--
+mn021|i think that to put things in perspective what we need to know is what bluetooth is and what bluetooth is for.|s
+mn021|and uh bluetooth is mainly for cutting this cable.|s
+mn021|you know the other day i was joking about that our wireless microphones were not in fact wireless.|s
+mn021|because it had this wire.|s
+mn021|so the point is that uh bluetooth is mainly a technology for cutting these kind of cables.|s
+mn021|you know oh short short distance cables.|s
+mn082|yeah that's right.|s^aa|s^na
+mn082|yeah.|b
+mn082|yeah.|b
+mn021|uh carrying usually really uh sh nnn|s.%--
+mn021|nnn|fh
+mn021|slow signals.|s^e
+mn021|or let's say boys and something like this.|s^e
+mn082|yeah but nevertheless you have the range of ten meters or of one hundred meters.|fg|s
+mn021|yeah.|s^aa
+mn021|yeah but you know uh in fact|s^aap|s.%--
+mn082|okay.|s^bk
+mn021|uh the initial version had only the the range of ten meters.|fh|s
+mn021|and i guess that somebody at a certain meeting said okay why don't we have a an extended range version.|s:s|qh^cs
+mn021|so we could reuse the same technology for other purposes.|s:s^df
+mn021|different than the original ones.|s:s^e
+mn021|so them uh i have the feeling that this is this is what is uh introducing some confusion in the in the bluetooth.|s
+mn021|uh or in the way people is is looking at bluetooth.|s
+mn021|because they can say okay hundred meters is is is an acceptable distance.|s^df
+mn021|let's say for communicating inside a building inside a a small office.|s
+mn021|so uh some people i think is being tempted to think that bluetooth could provide them uh some kind of local connectivity.|s
+mn021|but uh for for data for computing uses.|s
+mn021|uh however i think that the that the when you have tried uh current uh standard uh working devices you you|s.%--
+mn021|working at at eleven megabits per second you cannot you cannot switch to another thing to another slower thing.|s
+mn021|but uh even when they are using the same the same uh um area of a a spectrum.|s
+mn021|because bluetooth is also intended to work in two point four uh gigabits.|s^df
+mn082|yeah.|b
+mn021|uh the technologies are different.|s
+mn021|you know uh bluetooth uh is using a frequency hopping system.|s
+mn021|and uh|fh
+mn021|huh|fh
+mn021|both uh dialing sequence and frequency hopping spread the spectrum techniques are also intended to provide uh interference uh less uh data transmission.|s
+mn021|so the idea is that these two techniques are intended not to interfere with any other thing.|s
+mn021|so even when i haven't tried and i cannot tell you for sure i think that the only problem one network will encounter uh in the presence of the other is a little bit of more noise.|s
+mn021|and this will produce a little bit less throughput.|s^bd
+mn021|but nothing more.|s^df
+mn021|i don't expect any any more problem.|s
+mn021|even the the the own bluetooth specification is also|s.%--
+mn021|uh huh|fh
+mn021|assuming that another bluetooth or several bluetooth networks will be could be in the same area of space|s.%--
+mn021|and they are using the same hopping technology frequency hopping technology.|s
+mn021|but again this technology is uh trying to avoid the other networks by choosing different hopping patterns.|s
+mn021|so uh if several bluetooth networks can can uh coexist without a problem i don't see any problem will will happen if if we want to to make coexist one uh bluetooth with another wireless uh local area network technology.|s
+mn082|well that's a good news okay?|s^ba|qy^d^f
+mn021|yeah i think so.|s^aa|s^na
+mn082|but anyway um based on your uh uh initial scenario i believe because bluetooth is on one chip|s.%--
+mn021|yeah.|b
+mn082|like you have now your u. c. b buss or whatever connectivity you will have your bluetooth connectivity.|s
+mn021|five bucks.|s
+mn082|and that means your mouse and and and|s.%-
+mn021|five bucks chip.|s^e
+mn082|yeah and and and whatever kind of of uh things connected to your laptop and also your microphone and whatever you will will have is bluetooth-based.|s^bk^rt|s
+mn021|uhhuh huh.|b
+mn082|yeah or will be bluetooth-based.|s^f|s^bsc
+mn021|will be.|s^bc
+mn082|yeah and this is this is uh within maybe an uh wireless lan.|s^bk|s
+mn021|will be.|s^r
+mn082|so despite the fact that they are considered for different scenarios they are still|s.%-
+mn021|in fact in fact bluetooth is also designed.|s
+mn082|within one one area.|s^e
+mn082|yeah.|s^bk
+mn021|to be compatible with existing digital european cordless telephones.|s^e
+mn021|so hopefully we will be able to use some of our old devices or maybe our our cordless phone base station at home with a computer.|s
+mn021|so i think some really nice applications will will appear.|s
+mn082|okay we'll when i i will have some problems in the future with my wireless lan and bluetooth connectivity.|s^bk|s^j
+mn082|i will come to you.|s^cc^j
+mn082|you will solve it okay?|s^j|qy^d^f^g
+mn021|i'll try to.|s^na
+mn082|okay please go on.|s^bk|s^co^tc
+mn021|so let me let me just uh finish you know.|s
+mn082|okay.|s^bk
+mn021|uh well this is something i more or less i told you.|s
+mn021|and uh you know the point or or or|fh|s.%--
+mn021|what the the spark of of my of my work here or at least of what i was proposing to work here is the fact that these two uh two modes of operation i was telling you here that you have to choose at the driver level if your network adaptor is working in an access point based environment or in ad in an ad hoc environment i see this as a as a limitation.|s
+mn021|because i think that uh when you have to choose among two options well huh maybe you are saying no to some of the benefits the other option different than the one you are choosing could provide you.|s^df
+mn021|and i envision an an an an escenario where uh|s.%--
+mn021|oops.|s^fa
+mn021|well yeah.|s^bk
+mn021|let's go.|s^co^t1
+mn021|where we can have a kind of uh dual mode uh wireless network adaptor.|s
+mn021|so if we are not able to reach any access point but we are able to reach another network node well maybe this network node could do me the favor to reach or to forward my packets to the access point.|s
+mn021|so the main idea the driving force here is to uh try to obtain uh let's say hybrid mode.|s
+mn021|which allows an adaptor to work either in the access point or in the uh in the ad hoc mode in a seamless way.|s
+mn021|and to include in every single node driver|s.%--
+mn021|this forwarding or helper uh forwarding mechanism that will allow to extend the wireless coverage without a need of buying a lot of access points.|s
+mn021|and putting even an access point inside the restroom okay?|s^e|qy^d^f^g
+mn021|of course this idea huh can sound can sound a little bit not very appealing for the manufacturers.|s
+mn021|at least for the manufacturers of access point.|s^e
+mn021|because well they probably are very happy of selling a lot of them.|s^df
+mn082|but maybe for cars.|s^cs
+mn082|yeah if your car is the infrastructure for instance.|s^e
+mn021|yeah.|s^bk
+mn082|yeah.|b
+mn082|okay.|s^bk
+mn021|so this is the i think this is near the end this is the last.|s
+mn021|so|fh
+mn021|one possible extension of the same idea and something uh i've been thinking for awhile is the idea that well why can't do we extend this same concept to cell array systems?|qh
+mn021|why can't we for example think about some huh new mechanisms that users could get uh connectivity by means of other users and no directly to the base station?|qh
+mn021|or when we have several technologies uh in overlapped in a certain area why can't we use the closest and the cheapest maybe technology?|qh
+mn021|or maybe the less power consumption technology without the user to worry about if he is now using this or the other technology.|s^e
+mn021|and on the other hand what are the billing implications of this behavior?|qh
+mn021|because it is clear that well when i'm only uh talking to the to the base station of my provider well billing is more or less straightforward.|s^df
+mn021|but what happens if i'm working uh let's say uh across a mall and at a given moment i'm using the small base station of a cordless phone that is inside the shop i'm at the window of?|qh
+mn021|well in this case i'm using a resource which is not owned by my provider.|s
+mn021|i'm using a let's say a private property.|s^rt
+mn021|maybe i have to pay to this private property.|s
+mn021|or maybe my carrier will have to pay or to refund some money to this guy.|s
+mn021|you know this something uh i'm putting on the table.|s^df
+mn021|i'm not sure about uh if this can be really of interest or not.|s^bd
+mn021|but it's an idea.|s
+mn021|and i'll be happy to discuss it with you.|s
+mn021|and i uh i think my presentation is over.|s^t^tc
+mn021|so|fh
+mn082|uhhuh.|b
+mn082|okay.|s^bk
+mn082|many thanks miguel.|s^ft
+mn082|are there any questions?|qo^rt
+mn021|oh you are welcome.|s^fw
+mn082|maybe we have also the time to discuss with miguel off line the things if there is some uh question concerning uh his talk or maybe other questions.|s^cs
+mn082|maybe one last question from my side.|s
+mn082|because i bring it up uh concerning the proposal some kind of active routing mechanism.|s^df
+mn021|uhhuh.|b
+mn082|it's going in a quite different direction as as as as the traditional things discussed in the i. t. f.|s
+mn082|and i currently do not have any idea whether active routing is really a topic uh within the i. t. f.|s
+mn082|do you have certain kind of experience or do you know certain activities uh in that area?|qr
+mn021|nnn no to both to both questions.|h|s^nd
+mn082|okay.|s^bk
+mn021|i don't have previous experience.|s^rt
+mn021|i don't uh know if uh where it will it would fix.|s
+mn021|however uh you know i'm just doing this presentation.|s
+mn021|uh somehow a review of my previous work.|fh|s
+mn082|i know yeah.|s|s^bk
+mn021|so uh this uh doesn't mean that|s.%--
+mn021|i'm i'm probably getting involved a little bit more in this active routing thing.|s
+mn082|uhhuh.|b
+mn021|so uh i i maybe i will be able to hopefully i will be able to to give you a better answer in the future.|fh|s
+mn082|oh okay.|s^bk
+mn082|one more time many thanks miguel.|s^ft
+mn082|so|fg
+mn021|oh thanks michael for your computer.|s^ft
+mn035|no problem.|s^fw
+mn082|so i will deploy a little bit information here from the uh project proposal.|s
+mn021|should i power off it?|qy^t3
+mn035|um just log out.|s^co^t3
+mn021|okay.|s^bk^t3
+mn035|uh no.|fg|s^ar^t3
+mn035|log out.|s^co^t3
+mn021|oh okay sorry sorry.|s^bk^t3|s^fa^t3
+mn082|so i have only|s.%--
+mn082|four.|s
+mn021|oh.|s^bk
+mn082|jordi is only a short period of time here.|s
+mn021|which is which is proper|s.%-
+mn082|so he will get the colored one.|s
+mn021|michael.|s
+mn040|uh thank you thank you very much.|s^ft
+mn035|okay.|s^bk
+mn021|michael.|s^r
+mn082|and take a look to|s^cs.%--
+mn021|which is the proper answer.|s^ba
+mn082|uh|fh
+mn035|that's the proper answer.|s^na
+mn021|this one?|qy^bu^d^rt
+mn035|yeah.|b.%
+mn021|okay.|s^bk
+mn082|yeah.|s^aa
+mn021|thank you.|s^ft
+mn082|kill the computer.|s
+mn082|uh so i started uh for for advertising the project proposal here to provide a few slides.|h|s^tc
+mn082|i think first of all wilbert is not here.|s
+mn082|second um the um link here was uh enabling u. m. t. s services and application.|s
+mn082|uh i assume was not read yesterday night.|s
+mn082|so i suggest we go roughly to the slides here.|s^cs
+mn082|and um|fh
+mn082|the the problem is that in principle we have different scopes.|s
+mn082|and motivation of the project proposal from my point of view is that we will have the um wireless access networks for the next generation will be more flexible.|s
+mn082|there's a for uh current uh uh uh for for fast changes within this network.|s
+mn082|and that means if you go to slide number three that we have um the possibility to to um having normal features in the mobile access network.|s
+mn082|and|fh
+mn082|and um|fh
+mn082|and um also based on that it belongs normally to one single provider domain that it is possible to to uh use novel things.|s
+mn082|and and and new protocols and new technologies within this network.|s
+mn082|on the other hand in the internet backbone uh we it is impossible.|s
+mn082|and we see it on several examples.|s
+mn082|like this m. p. l. s.|s^e
+mn082|there's quality of service support and multicast.|s
+mn082|and all this kind of thing.|s^e
+mn082|that based on the success of the internet backbone it's become uh very unflexible to uh for the provision of these things.|s
+mn082|so if we are going to offer building blocks and provide novel solutions for the next generation of wireless access networks taking into account without modifying the end to end scope then i think it's really beneficial work.|s
+mn082|also for the use of interactive multimedia application.|s^e
+mn082|so as it is described in the uh project proposal.|s
+mn082|um the point is that um to start with um a bigger cluster of uh of potential partners to do this really really really big work.|s
+mn082|seems not to be feasible in the next time.|s^e
+mn082|because if you have settled everything and discussed everything and and and and uh without any money in the background and a lot of money in the background|s^df.%--
+mn082|that is not uh feasible from my point of view.|s
+mn082|nevertheless i discussed with a lot of partners these things.|s^df
+mn082|and today uh michael and me we were on the u. c. b to discuss with a guy who is a professor who is probably interested in the application stuff.|s
+mn082|they are going in that direction.|s
+mn082|they have a small project funded by n. s. a.|s
+mn082|n. s. f.|s^bsc
+mn082|um for this intelligent classroom is a little bit exaggerated i believe.|s^e
+mn082|but going in that direction.|s
+mn082|so there are a lot of interest.|s
+mn082|but without really hard money in the background it is very hard to come to the initial steps.|s
+mn082|and uh juan peire one of the uh members of this n. s. a group has uh identified a certain kind of start money i would like to say.|s
+mn082|so maybe if you start with a small cluster of um the constraints of this funding.|s^cs
+mn082|and that means uh six universities and and institutions.|s
+mn082|uh three in u. s. a and three in europe.|s^e
+mn082|and of course they are uh including the n. s. a group.|s
+mn082|and maybe that seems to be very reasonably for me.|s
+mn082|but then we have to align the project proposal in that sense.|s^cs
+mn082|because then we cannot do do anything as it is described in the in the bigger scope.|s^df
+mn082|so the point is um to reduce the overall picture which i described in a few words to the fact that we have really some work packages where we can focus on it.|s
+mn082|still fitting into the big picture.|s^e
+mn082|yeah.|s^f
+mn082|and so that will be the task of the next weeks.|s
+mn082|and uh|fh
+mn082|i hope that everybody is doing his homework concerning for instance.|s
+mn082|uh alternative to the intelligent classroom maybe that we can start here only with the n. s. a group.|s^cs
+mn082|within this big picture.|s^e
+mn082|um with some work.|s^e
+mn082|that we put the pieces together.|s^e
+mn082|because i believe many are very flexible here.|s^df
+mn082|accounting also the future coming uh joining people of the n. s. a group to do some work here.|s
+mn082|and if we are starting with a very very very small cluster with a common activity have maybe some starting funding for bigger uh radius of the of the the the uh project proposal with the mind that maybe at the final stage it will becoming a european proposal with this uh the the whole funding.|s
+mn082|that's uh my point and my picture i have in mind.|s
+mn082|and i will go definitely back to germany the tenth of december.|s^rt
+mn082|that is fixed now.|s
+mn082|and i hope we can use these remaining weeks to have really progress in uh for the proposal in that sense what i mentioned before.|s
+mn021|uhhuh.|b
+mn082|because then i will make the advertising that is still worth to stay here.|s^df
+mn082|and i hope then siemens will say okay for me to stay longer here.|s:s
+mn082|and then i will come back maybe in the mid of end of january.|s
+mn082|so that's uh it's a comment to the proposal.|s
+mn082|so i think everybody should consider carefully based on this statement i made uh next steps.|s^cs
+mn082|and of course everybody has little bit other work to do.|s^bd
+mn082|but it should be should be always an ongoing process until i will leave until the tenth of december.|s^df
+mn030|you mentioned um six partners of this um work.|s
+mn082|okay.|s^bk
+mn030|so you know already what partners are included.|s^bu
+mn030|okay i didn't have a look at uh slides.|s^bk|s^df
+mn082|um|h
+mn082|yeah.|s^bk
+mn082|i will distribute all the things electronically.|s
+mn030|okay.|s^bk
+mn082|to all the|s^e.%--
+mn082|okay take a look to slide of number two.|s^bk|s^cs^rt
+mn030|just i'm just curious.|s^df
+mn082|yeah.|s^bk^rt
+mn082|you see uh uh university of mannheim.|s
+mn082|university|s.%--
+mn082|also these are the official ones.|s
+mn030|yeah sure.|s^bk
+mn082|you see that in the icsi u. s on the u. s. a side i believe that the home companies and universities are still contributing.|s
+mn030|uhhuh.|b
+mn030|yeah yeah.|s^bk
+mn082|yeah?|qy^d^f^g
+mn082|but these are then the official ones.|s
+mn082|and i would like to have them|s.%-
+mn030|and all of them had agreed?|qy^bu^d^rt
+mn030|or|qrr.%--
+mn082|they say they are very interested in it.|s^na
+mn030|okay.|s^bk
+mn082|yeah?|qy^d^f^g^rt
+mn082|uh a few words the university of mannheim is at location where joerg widmer is uh working on it.|s
+mn082|and i got the statement|s.%--
+mn082|uh they are very interested in that.|s
+mn082|they did a lot in the area of um intelligent classroom.|s
+mn082|but nevertheless they did a lot in networking stuff.|s
+mn082|and university of uppsala sweden.|s
+mn082|that's the reason i invited uh christian tschudin the professor who did ten years work in in active routing.|s
+mn082|and uh okay the universidad nacional de|fh|s.%--
+mn082|yeah.|s^bk
+mn082|spanish.|s^df
+mn082|maybe we have a better expert to pronounce it.|s
+mn021|universidad nacional de educacion a distancia.|s
+mn082|uned.|s^bk^m
+mn082|i always said uned.|s
+mn082|in spain.|s^e
+mn082|uh this is this university of juan peire.|s
+mn021|yeah.|b
+mn082|and he is also the one who had recognized uh|s.%-
+mn040|who is?|qw^rt
+mn082|one|s.%--
+mn082|pair.|s^r
+mn082|pair.|s^r
+mn040|perez.|s
+mn082|not parez peire.|s^nd|s
+mn082|p. e. i. r. e.|s^e
+mn035|paez.|s
+mn021|paez paez.|s
+mn035|paez.|s^r
+mn040|uh peire.|s^bk|s
+mn082|no no no.|s^ar
+mn021|paez.|s
+mn082|not not paez.|s^nd
+mn082|not|%--
+mn082|peire.|s
+mn082|p.   e.   i.   r.   e.  .|s
+mn082|you never heard from him?|qy^bu^d^rt
+mn040|no.|s^ar
+mn040|i don't know.|s^no
+mn082|you can i you can mail him later on the|s^cs.%--
+mn040|i don't know who he is.|s^no
+mn040|okay.|s^bk
+mn082|then of course the whole n. s. a group.|s
+mn082|and also of the coordinator of all the things.|s
+mn082|then georgia tech i have good relationship to uh the long lasting uh cooperation with georgia tech.|s
+mn082|and they did a lot in this area also related to networking stuff as well as to the intelligent classroom stuff and the u. c. b.|s
+mn082|we still focusing on maybe we can have uh more professors involved.|s^df
+mn082|which are working also on the networking stuff as well as on the application stuff.|s^df
+mn082|so that the u. c. b is clustered as one uh partner.|s
+mn082|but nevertheless with different departments.|s^e
+mn021|uhhuh huh.|b
+mn082|yeah.|b
+mn082|so|fh
+mn082|but take a look to the slides i will uh deploy it um uh electronically.|s
+mn021|where your slides are available?|qw
+mn082|sorry?|qw^br^rt
+mn021|where the slides are available?|qw^r
+mn082|i will send it electronically.|s
+mn021|when?|qw
+mn082|after the meeting.|s
+mn021|uh.|s^bk
+mn021|you will send it sorry.|s
+mn082|i will.|s^cc
+mn082|future.|s
+mn021|sorry.|s^fa
+mn082|and maybe you take a look to the uh last two slides.|s^cs
+mn082|um um|fh
+mn082|maybe the g. p. r. s picture is still uh available.|s
+mn082|so you have in principle here now the mapping of the different areas um within g. p. s.|s
+mn082|and in principle the same applies for u. m. t. s.|s
+mn082|there is no so much different.|s
+mn082|um you always have the s. g. s. n and u. m. t. s.|fh|s
+mn082|they are called three g. s. g. s. n..|s
+mn082|and you have the protocol stack.|s
+mn082|um in on the slide number five to see what uh is going on.|s
+mn082|and you see the difference.|s^e
+mn082|the amazing thing is that you have i. p over i. p.|s
+mn082|as you take a look to the the uh g. g. s. n you have two i. p. layer functionality and and all those things.|s
+mn082|and you have the g. p. s tunnel uh protocol g. t. p between the g.   and the s.   and the g. t. s. n.|s
+mn082|and and so on.|s^e
+mn082|so uh i believe they are very very difficult protocols stuck between the uh between the um um involved nodes.|s
+mn082|and making it necessary in principle to deal with our four building blocks in um yeah i believe in a difficult way.|s
+mn082|if uh we have in mind quality of service routing and and uh uh mobility aspects and and all this kinds of things for i. p layer functionality.|s
+mn082|so that's in principle uh an overview of the protocol stack.|s
+mn082|and the involved nodes.|s^e
+mn082|and i will provide more and more information.|s
+mn082|but um uh i have to also figure out everything from the scratch.|s
+mn082|i am not a total expert for for the future wireless networks.|s
+mn082|okay.|s^bk^rt
+mn082|then i would like to thanks everybody.|s^ft
+mn082|and if there's no additional question comment or or other remarks i would like to start with reading uh these numbers.|s
+mn021|okay we have|s^bk|%-
+mn082|okay please the next one.|z
+mn082|okay thank you.|s^bk|s^ft
+mn082|now please let don't switch off power.|s^cs
+mn082|i have to call adam.|s
+mn082|so|fh
+mn082|so i suggest now we will have in a few minutes we will have the coffee break tea cake whatever will will be offered.|s
+mn082|and then we will have a we can have a discussion.|s

@@ -1,0 +1,582 @@
+me013|okay.|s^tc
+me013|so uh|fh
+me013|you can fill those out uh after actually.|s^co
+me013|so|fh
+me013|so i got uh these results from uh stephane.|s^rt^tc
+me013|also um i think that uh um we might hear later today about other results.|s^t
+me013|i think that uh there were some other very good results that we're going to want to compare to.|s.x
+me013|but our results from other other places.|fh|s
+me013|yeah.|fh
+mn007|i'm sorry?|qy^br^d^rt
+mn007|i didn't|s.%--
+me013|um i got this from you.|fh|s.x
+mn007|yeah.|s^bk^rt
+me013|and then i sent a note to sunil about because he has been running some other systems.|s
+me013|other than the the icsi o g i one.|s^e
+mn007|uhhuh.|b
+mn007|oh yeah.|s^bk
+me013|so um i want to want to see what that is.|fh|s.x
+me013|but uh you know so we'll see what it is comparatively later.|fh|s.x
+me013|but it looks like um|fh|s.%--
+mn007|yeah.|b^rt
+me013|you know most of the time even i mean even though it's true that the overall number for danish we didn't improve it.|s
+me013|if you look at it individually what it really says is that there's um uh|s.%--
+me013|looks like out of the six cases between the different kinds of uh matching conditions out of the six cases there's basically um a couple where it stays about the same.|s
+me013|uh three where it gets better and one where it gets worse.|fh|s
+mn007|yeah.|fg
+me013|uh go ahead.|fh|s^co^rt
+mn007|actually uh um for the danish there's still some kind of mystery.|s^rt
+mn007|because um um when we use the straight features we are not able to get these nice number.|s^df
+mn007|with the icsi o g i one i mean.|s^e
+mn007|we don't have this ninety three seventy eight we have|s.%-
+fn002|eighty nine forty four.|s^2
+mn007|yeah.|s^aa
+mn007|uh so uh that's probably something wrong with the features that we get from o g i.|fh|s^df^rt
+mn007|uh and sunil is working on on trying to to check everything.|fh|s
+me013|oh.|s^bk
+me013|and and we have a little time on that and actually|s.%--
+me013|so|fh
+mn007|huh?|qy^br^d^rt
+me013|we have a little bit of time on that actually.|s^r
+mn007|yeah.|s^aa
+me013|we have a day or so.|s^e
+me013|so|fh
+me013|when when when do you folks leave?|qw^rt
+mn007|uh sunday.|h|s
+me013|sunday.|s^m^rt
+me013|so|fh
+me013|so uh|fh
+me013|yeah.|fh
+me013|until saturday midnight or something we have|s.%--
+me013|we we have time.|s
+me013|yeah.|fh
+me013|well that would be good.|s^ba
+me013|that'd be good.|s^ba^r
+mn007|yeah.|b
+me013|yeah.|b
+me013|uh and you know whenever anybody figures it out they should also for sure email hynek.|fh|s
+me013|because hynek will be over there telling people what we did.|s^df
+me013|so he should know.|s^df
+mn007|huh.|b
+me013|good.|fh
+mn007|yeah.|b
+me013|okay.|fh
+me013|so um|fh
+me013|so we'll we'll hold off on that a little bit.|s^cc
+me013|i mean even with these results as they are it's it's it's really not that bad.|s^ba
+me013|but but uh um|fh
+me013|and it looks like the overall result as they are now even without you know any any bugs being fixed is that uh on the the other tasks we had this average of uh uh nine percent or so improvement.|s
+me013|and here we have somewhat better than that than the danish and somewhat worse than that on the german.|s
+me013|but i mean it sounds like uh one way or another the methods that we're doing can reduce the error rate from from mel cepstrum down by you know a fourth of them to uh a half of them.|fh|s
+me013|somewhere in there depending on the exact case.|s
+me013|so|fh
+me013|so that's good.|s^ba
+me013|i mean i think that uh one of the things that hynek was talking about was understanding what was in the other really good proposals.|s
+me013|and|fh
+me013|and trying to see if what should ultimately be proposed is some uh combination of things.|s
+me013|um if uh|fh
+me013|because there's things that they are doing there that we certainly are not doing.|s
+me013|and there's things that we're doing that they're not doing.|s
+me013|and and they all seem like good things.|s.x
+mn007|yeah.|b
+fn002|huh yeah.|b
+me013|so|fh
+me013|so|fh
+me018|how much how much better was the best system than ours?|qw^rt
+me013|well we don't know yet.|s^no
+me018|huh.|s^bk
+me013|uh i mean first place there's still this thing to to work out.|fh|s
+me013|and second place second thing is that the only results that we have so far from before were really development set results.|s
+me018|oh okay.|s^bk
+me013|so i think in this community that's of interest.|s
+me013|it's not like everything is being pinned on the evaluation set.|s
+me013|but um for the development set our best result was a little bit short of fifty percent.|fh|s
+me013|and the best result of any system was about fifty four.|s
+me013|where these numbers are the uh relative uh reduction in uh word error rate.|s^e
+me018|oh.|s^bk
+me018|okay.|s^bk
+me013|and um the other systems were uh somewhat lower than that.|fh|s
+me013|there was actually there was much less of a huge range than there was in aurora one.|s
+me013|in aurora one there were there were systems that basically didn't improve things.|s
+me018|huh.|b
+me013|and here the the worst system still reduced the error rate by thirty three percent or something in development set.|s
+me018|oh wow!|s^fe
+me013|so so you know sort of everybody is doing things between well roughly a third of the errors and half the errors being eliminated uh and varying on different test sets and so forth.|fh|s.x
+me018|uhhuh.|b
+me013|so i think|s.%--
+me013|um it's probably a good time to look at what's really going on and seeing if there's a there's a way to combine the best ideas.|fh|s
+me013|while at the same time not blowing up the amount of uh resources used.|s
+me013|because that's that's critical for this this test.|s
+me018|do we know anything about|qy.%--
+me018|who's was it that had the lowest on the dev set?|qw^rt
+me013|um uh the uh there were two systems that were put forth by a combination of of uh french telecom and alcatel.|h|s
+me013|and um they they differed in some respects.|fh|s
+me013|but they one was called the french telecom alcatel system the other was called the alcatel french telecom system uh which is the biggest difference i think.|s.x
+me013|but but there're there're there're some other differences too.|s
+me013|uh and and uh they both did very well.|fh|s
+me018|uhhuh.|s^bk
+me013|you know.|fh
+me013|so um my impression is they also did very well on on the the uh evaluation set.|fh|s
+me013|but um i i we haven't seen|fh|s.%--
+me013|you've you haven't seen any final results for that.|s
+me013|yeah?|qy^d^g^rt
+me018|and they used the main thing that that they used was spectral subtraction?|qy^bu^d^rt
+me018|or|qrr.%--
+me013|there is a couple pieces to it.|s.x
+me013|there's a spectral subtraction style piece it was basically you know wiener filtering.|s^e
+me013|and then then there was some some modification of the cepstral parameters where they|s^e.%-
+mn007|yeah.|fg
+mn007|actually something that's close to cepstral mean subtraction.|s^bc
+mn007|but uh the way the mean is adapted um it's signal dependent.|fh|s^df
+mn007|i'm uh|%--
+mn007|so basically the mean is adapted during speech and not during silence.|s^df
+me013|yeah.|s^aa
+mn007|but it's very close to to cepstral mean subtraction.|s
+me013|but some people have done exactly that sort of thing.|s
+me013|of of and the i mean it's not to to look in speech only to try to to measure these things during speech.|s
+mn007|yeah.|b
+mn007|yeah.|b
+me013|that's that's not that uncommon.|s
+me013|but it it so it looks like they did some some uh reasonable things.|s
+me013|uh and they're not things that we did precisely.|fh|s
+me013|we did unreasonable things which because we like to try strange things.|s
+me013|and and uh and our things worked too.|s
+me018|huh.|b
+me013|and so um|fh
+me013|uh it's possible that some combination of these different things that were done would be the best thing to do.|fh|s^cs
+me013|but the only caveat to that is that everybody's being real conscious of how much memory and how much c p u they're using.|s
+me013|because these uh standards are supposed to go on cell phones with moderate resources in both respects.|s
+me018|uhhuh.|b
+me018|did anybody uh do anything with the models as an experiment?|qy^rt
+me018|or|qrr.%--
+me013|uh they didn't report it if they did.|h|s^nd
+me018|nobody reported it?|qy^bu^d^rt
+me013|yeah.|s^aa
+me013|i think everybody was focused elsewhere.|s^df
+me013|um now one of the things that's nice about what we did is we do have a a uh a filtering which leads to a a uh a reduction in the bandwidth in the modulation spectrum which allows us to downsample.|fh|s
+me013|so uh as a result of that we have a reduced um transmission rate for the bits.|fh|s
+me018|uhhuh.|b
+me013|that was misreported the first time out.|s
+me013|it it said the same amount because for convenience sake in the particular way that this is being tested uh they were repeating the packets.|s
+me013|so it was they were they they had twenty four hundred bits per second but they were literally creating forty eight hundred bits per second um even though it was just repeated.|s
+me018|oh.|s^bk
+me018|uhhuh.|b^rt
+me018|right.|fg
+me013|so uh in practice|fh|s.%-
+me018|so you could've had a repeat count in there or something.|s^bu
+me013|well i mean this was just a phoney thing just to to fit into the the software that was testing the errors channel errors and so on.|s
+me018|oh.|s^bk
+me013|so|fh
+me018|oh.|s^bk
+me013|so in reality if you put this this system into uh the field it would be twenty four hundred bits per second not forty eight hundred.|s
+me013|so|fh
+me013|um so that's a nice feature of what what we did.|fh|s
+me013|um|fh
+me013|but um well we still have to see how it all comes out.|fh|s
+me018|huh.|b
+me013|um and then there's the whole standards process which is another thing altogether.|fh|s
+me018|when is the development set i mean the uh uh test set results due?|qw
+me018|like the day before you leave or something?|qr^d^rt
+me013|uh probably the day after they leave.|s
+me013|but we'll have to we'll have to stop it the day before we leave.|s
+mn007|yeah yeah.|s^aa
+mn007|so|b
+me018|huh.|s^bk
+me013|i think i think the the meeting is on the thirteenth or something.|s^am^rt
+mn007|yeah.|s^aa
+mn007|this tuesday.|s
+mn007|yeah.|b.x
+me013|and uh|fh
+me013|they uh|s.%--
+me013|right.|fh
+me013|and the the uh results are due like the day before the meeting or something.|fh|s
+me013|so|fh
+mn007|yeah.|s^aa
+mn007|probably.|s^am
+mn007|well|s.%-
+me013|i i think i i think they are.|s
+mn007|yeah well|s.%-
+me013|yeah.|fg
+me013|so um since we have a bit farther to travel than some of the others uh we'll have to get done a little quicker.|fh|s^co.x
+me013|but um i mean it's just tracing down these bugs.|fh|s
+me013|i mean just exactly this sort of thing of you know why why these features seem to be behaving differently uh in california than in oregon.|s
+me018|uhuh.|b
+me018|huh.|b
+me013|might have something to do with electricity shortage.|s^j
+me013|uh we didn't we didn't have enough electrons here.|fh|s^j.x
+me013|and|%--
+me013|uh but um|fh
+me013|uh i think you know the main reason for having|fh|s.%--
+me013|i mean it only takes to run the the two test sets in just in computer time is just a day or so.|s
+me013|right?|qy^d^g^rt
+me013|so|fh
+mn007|yeah.|s^aa
+mn007|it's very short interval.|s
+me013|yeah.|s^bk
+me013|so i think the the whole reason for having as long as we have which was like a week and a half is is because of bugs like that.|s
+me013|so|fh
+me013|huh.|fh
+me013|so we're going to end up with these same kind of sheets that have the the percentages and so on just for the|fh|qy^bu.%--
+mn007|yeah so there are two more columns in the sheets too.|fg|s
+me013|oh i guess it's the same sheets.|s^bu
+me013|yeah.|s^bk
+mn007|yeah.|s^aa
+mn007|it's the same sheets.|s^aa^m
+me013|yeah.|s^bk^r
+me013|just with the missing columns filled in.|s
+mn007|yeah.|s^aa.x
+mn007|yeah.|s^aa^r.x
+me013|yeah.|fh
+me013|well that'll be good.|s^ba
+me013|so i'll i'll disregard these numbers.|s^cc
+me013|that's that's that's good.|s^ba
+mn007|so hynek will try to push for trying to combine uh different things?|qy^bu^d^rt
+mn007|or|qrr.%--
+me013|uh well that's um|h|s.%--
+mn007|huh|b.x
+me013|yeah|h
+me013|i mean i think the question is is there is there some advantage.|s^cs:qy
+me013|i mean you could just take the best system and say that's the standard.|s^cs
+me013|but the thing is that if different systems are getting at good things um again within the constraint of the resources if there's something simple that you can do.|s
+me013|now for instance uh it's i think very reasonable to have a standard for the terminal's side and then for the server's side say here's a number of things that could be done.|s^cs
+me013|so um everything that we did could probably just be added on to what alcatel did.|fh|s
+me013|and it'd probably work pretty well with them too.|s
+me013|so|fh
+me013|um uh that's one one aspect of it.|fh|s^rt
+me013|and then on the terminal's side i don't know how much um memory and and c p u it takes but it seems like the filtering uh|s.%--
+me013|i mean the v a d stuff they both had.|s
+me013|right?|qy^d^g^rt
+me013|and um so and they both had some kind of online normalization.|fh|s
+me013|right?|qy^d^g^rt
+mn007|uh yeah.|h|s^aa
+me013|of sorts.|s^e
+me013|yeah?|qy^bu^d^rt
+me013|so|fh
+me013|so it seems like the main different there is the is the uh filtering.|s
+me013|and the filtering i think if you can|s.%--
+me013|it shouldn't take a lot of memory to do that uh and i also wouldn't think the c p u uh would be much either for that part.|s
+me013|so if you can if you can add those in um then uh you can cut the data rate in half.|s
+mn007|yeah.|b
+me013|so it seems like the right thing to do is to on the on the terminal's side take what they did if it if it does seem to generalize well to german and danish.|s
+me013|uh take what they did add in a filter and add in some stuff on the server's side.|fh|s
+me013|and and and that's probably a reasonable standard.|s
+me013|um uh|fh
+mn007|they are working on this already?|qy^bu^rt
+mn007|because yeah sunil told me that he was trying already to put some kind of uh filtering in the france telecom.|s^df
+me013|yeah so that's that's that's what|s^aa|s.%-
+me013|that would be ideal would be is that they could you know they could actually show that in fact a combination of some sort uh would work even better than what what any of the systems had.|s
+me013|and um then it would it would uh be something to to discuss in the meeting.|fh|s
+me013|but uh not clear what will go on.|fh|s
+me013|um i mean on the one hand um sometimes people are just anxious to get a standard out there.|fh|s
+me013|i mean you can always have another standard after that.|s
+me013|but this process has gone on for a while on already.|s
+me013|and and people might just want to pick something and say okay this is it.|s
+me013|and then that's a standard.|s
+me013|uh standards are always optional.|fh|s
+me013|it's just that uh if you disobey them then you risk not being able to sell your product.|s
+me013|or uh um|fh
+me013|and people often work on new standards while an old standard is in place and so on.|s
+me013|so it's not final even if they declared a standard.|s
+me013|the other hand they might just say they just don't know enough yet to to declare a standard.|s
+me013|so|fh
+me013|you you you will you will become experts on this and know more far more than me about the this particular standards process once you you go to this meeting.|s
+me013|so|fh
+me013|be interested in hearing.|s
+me013|so uh i'd be uh interested in hearing uh your thoughts now.|fh|s^r^tc
+me013|i mean you're almost done.|s^df
+me013|i mean you're done in the sense that um you may be able to get some new features from sunil and we'll re run it.|s
+me013|uh but other than that you're you're basically done.|fh|s
+me013|right?|qy^d^g^rt
+me013|so uh i'm interested in hearing hearing your thoughts about where you think we should go from this.|fh|s^t
+mn007|yeah.|b
+me013|i mean we tried a lot of things in a hurry.|s
+me013|and uh if we can back off from this now and sort of take our time with something and not have doing things quickly be quite so much the constraint what what you think would be the best thing to do.|fh|s
+mn007|uh well|fg
+mn007|huh|h
+mn007|well first uh to really have a look at at the speech from these databases.|s
+mn007|because well we tried several thing.|s^df
+mn007|but we did not really look at what's happening and where is the noise and|s.%--
+me013|okay.|s^bk^rt
+mn007|uh|fh
+me013|it's a novel idea.|s
+me013|look at the data.|s
+me013|okay.|s^bk
+mn007|yeah.|b
+me013|or more generally i guess what what is causing the degradation.|s^e
+mn007|yeah.|s^aa
+mn007|yeah.|s^aa^r
+mn007|actually there is one thing that well um generally we we think that most of the errors are within phoneme classes.|s
+mn007|and|%--
+mn007|so i think it could be interesting to to see if it i don't think it's still true when we add noise.|s^cs
+mn007|and so we have i i guess the confusion the confusion matrices are very different when when we have noise and when it's clean speech.|fh|s
+mn007|and probably there is much more between classes errors for noisy speech.|s^cs
+me013|uhhuh.|b.%
+mn007|and so um|fh
+mn007|yeah so perhaps we could have a a large gain uh just by looking at improving the uh recognition not of phonemes but of phoneme classes simply.|fg|s^cs
+me013|uhhuh.|b.%
+mn007|and which is a a a simpler problem perhaps but which is perhaps important for noisy speech.|fh|s
+me013|the other thing that strikes me just looking at these numbers is just taking the best cases.|s
+me013|i mean some of these of course even with all of our our wonderful processing still are horrible kinds of numbers.|s
+me013|but just take the best case the well matched uh german case after uh well matched danish after we|s.%--
+mn007|uhhuh.|b^rt
+me013|the kind of numbers we're getting are about eight or nine uh percent error per digit.|s
+mn007|uhhuh.|b^rt
+mn007|yeah.|s^aa
+me013|this is obviously not usable.|s
+me013|right?|qy^d^g^rt
+mn007|no.|s^aa
+me013|i mean if you have ten digits for a phone number i mean every now and then you'll get it right.|s.x
+mn007|sure.|s^aa
+me013|i mean it's it's uh um|s.%--
+me013|so i mean the other thing is that uh|fh|s.%--
+me013|and and and and also um part of what's nice about this is that this is uh um a realistic almost realistic database.|s
+me013|i mean it's still not people who are really trying to accomplish something.|s
+me013|but but uh within the artificial setup it isn't noise artificially added you know simulated uh additive noise.|s
+mn007|uhhuh.|b
+me013|it's real noise condition.|s
+me013|and um the the training the training i guess is always done on the close talking?|fh|qy^bu^d^rt
+mn007|no.|s^ar
+mn007|actually actually the well matched condition is still quite still quite difficult.|s
+me013|no?|qy^d^m
+mn007|i mean it's they have all these data from the close mike and from the distant mike from different driving condition open window closed window.|s^rt
+me013|yeah.|b^rt
+mn007|and they take all of this.|s
+mn007|and they take seventy percent i think for training and thirty percent for testing.|s
+fn002|uhhuh.|b^rt
+mn007|so training is done on different conditions and different microphones.|fh|s^rt
+mn007|and testing also is done on different microphone and conditions.|s
+mn007|so probably if we only take the close microphones i guess the results should be much much better than this.|fh|s
+me013|i see.|s^bk
+mn007|huh.|b.x
+me013|oh okay.|s^bk
+me013|that explains it partially.|s
+mn007|uh|fg
+me013|what about|qw.%--
+me013|in so the the|%-
+mn007|yeah.|fg
+mn007|so   there is this the mismatched is um the same kind of thing.|fg|s
+me013|go ahead.|s^co
+mn007|but the driving conditions i mean the speed and the kind of road is different for training and testing.|s^rt
+mn007|is that right?|qy^bu^rt
+fn002|yeah.|s^aa
+mn007|and the last condition is close microphone for training and distant for testing.|s
+mn007|yeah.|fh
+me013|uh okay.|h|s^bk
+me013|so|fh
+mn007|so so|fg
+me013|i see.|s^bk
+me013|so yeah.|fh
+me013|so the high so the right so the highly mismatched case is in some sense a good model for what we've been you know typically talking about when we talk about additive noise in|s.%--
+me013|and so and it does correspond to a realistic situation in the sense that um people might really be trying to uh call out telephone numbers or or something like that in in their cars.|fh|s
+mn007|yeah.|b
+me013|and they're trying to connect to something.|s^e
+mn007|huh.|b
+me013|um|fh
+mn007|actually yeah it's very close to clean speech training because well because the close microphone and noisy speech testing.|fg|s^aa
+me013|yeah.|s^aa
+me013|yeah.|b
+me013|yeah.|b
+mn007|yeah.|b
+mn007|huh.|b
+me013|and the well matched condition is what you might imagine that you might be able to approach if you know that this is the application.|s^cs
+me013|you're going to record a bunch on people in cars and so forth and do these training.|s
+me013|and then uh when you sell it to somebody they will be a different person with a different car and so on.|s
+me013|so it's this is an somewhat optimistic view on it.|s
+me013|uh so you know the real thing is somewhere in between the two.|fh|s
+me013|uh|fh
+mn007|yeah.|b
+me013|uh but|fh|%-
+mn007|but the i mean the|fg|%-
+me013|even the optimistic one is|s.%-
+mn007|it doesn't work.|s
+me013|yeah.|s^aa
+me013|right.|s^aa
+mn007|it|%-
+me013|right.|fg
+me013|it doesn't work.|s^m
+me013|so in a way that's you know that's sort of the dominant thing.|s
+me013|is that even say on the development set stuff that we saw the uh the numbers that uh that alcatel was getting when choosing out the best single numbers it was just you know it wasn't good enough for for a a for a real system.|s
+mn007|huh.|b
+mn007|uhhuh.|b^rt
+me013|you you|%--
+me013|um|fh
+me013|so uh we still have stuff to do.|fh|s^cc
+mn007|yeah.|b
+me013|uh and uh|fh
+me013|i don't know.|s^no
+me013|so looking at the data where you know what's the what's what's what's characteristic.|fh|s
+me013|yeah i think that's that's a good thing.|s^ba
+me013|does you have any thoughts about what else you're thinking that you didn't get to that you would like to do if you had more time?|qy^rt
+me013|uh|fh.%
+fn002|oh a lot of those thing.|s^na.x
+fn002|because we trying a lot of thing.|s
+fn002|and we doesn't work we remove these.|s
+fn002|maybe we trying again with the articulatory feature.|s^cs
+fn002|i don't know exactly.|s^am
+fn002|because we tried we some one experiment that doesn't work.|s
+fn002|um forgot it something i don't know exactly.|fh|s
+me013|uhhuh.|b
+fn002|because maybe do better some step the general uh diagram.|s^cs^rt
+me013|uhhuh.|b
+fn002|i don't know exactly to think what we can improve.|s^rt
+me013|yeah because a lot of time it's true.|s^na
+me013|there were a lot of times when we've tried something and it didn't work right away even though we had an intuition that there should be something there.|s^df
+me013|and so then we would just stop it.|s
+me013|um|fh
+me013|and uh one of the things i don't remember the details on but i remember at some point when you were working with a second stream and you tried a low pass filtering to cepstrum in some case you got|fh|s.%-
+fn002|m s g yeah.|s^2
+me013|well but it was an m s g like thing but it wasn't m s g.|s^na
+me013|right?|qy^d^g^rt
+me013|uh you i think in some case you got some little improvement.|fh|s
+me013|but it was you know sort of a small improvement.|s
+me013|and it was a a big added complication so you dropped it.|s
+me013|but um that was just sort of one try.|fh|s
+me013|right?|qy^d^g
+me013|you just took one filter threw it there.|s
+mn007|yeah.|s^aa
+me013|right?|qy^d^g^rt
+me013|and it seems to me that um if that is an important idea which you know might be that one could work at it for a while as you're saying.|s
+mn007|huh.|b
+me013|and uh|fh
+me013|uh and you had you know you had the multi band things also and you know there was issue of that.|fh|s^tc
+mn007|yeah.|b
+fn002|uhhuh.|b
+me013|um barry's going to be uh continuing working on multi band things as well.|fh|s
+me013|we were just talking about um some uh some work that we're interested in.|s
+me013|kind of inspired by the stuff by larry saul with the uh uh learning articulatory feature in i think in the case of his paper with sonorance based on uh multi band information where you have a a combination of gradient learning and uh e m.|s^e
+mn007|uhhuh.|b
+me013|um and um|fh
+me013|so i think that you know this is a uh this is a neat data set.|fh|s
+me013|um and then uh as we mentioned before we also have the the new uh digit set coming up from recordings in this room.|fh|s
+me013|so there's a lot of things to work with.|fh|s
+me013|um|fh
+me013|and uh|fh
+me013|what i like about it in a way is that uh the results are still so terrible.|s^j
+me013|uh uh i mean they're much better than they were you know.|fh|s^df.x
+me013|we're talking about thirty to sixty percent uh error rate reduction.|s
+me013|that's that's really great stuff to to do that in relatively short time.|s^ba
+me013|but even after that it's still you know so poor that that uh no one could really use it.|s
+me013|so um|fh
+me013|i think that's great that because and also because again it's not something|s^df.%--
+me013|sometimes we've gotten terrible results by taking some data and artificially you know convolving it with some room response or something.|s
+me013|and we take a very|s.%--
+me013|uh at one point uh brian and i went downstairs into the the basement where it was it was in a hallway where it was very reverberant.|fh|s
+me013|and we we made some recordings there.|s
+me013|and then we we uh uh made a simulation of the of the room acoustics there and and applied it to other things.|s
+mn007|uhhuh.|b
+me013|and uh|fh
+me013|but it was all pretty artificial.|s
+me013|and and you know how often would you really try to have your most crucial conversations in this very reverberant hallway.|s
+me013|um so|fh
+me013|uh this is what's nice about the aurora data and the data here is that is that it's sort of a realistic room situation uh acoustics acoustic situation both terms in noise and reflections and so on.|fh|s
+me013|and and uh|fh
+me013|uh with something that's still relatively realistic it's still very very hard to do very well.|fh|s
+me013|so|fh
+me013|yeah.|b
+mn007|yeah.|fg
+mn007|so|%--
+mn007|well|fg
+mn007|actually this is that's why we|s^df.%--
+mn007|well it's a different kind of data.|s
+mn007|we're not we're not used to work with this kind of data.|s
+me013|yeah.|b
+mn007|that's why we should have a more closer look at what's going on.|s^df^rt
+fn002|uhhuh.|b
+mn007|um|fh
+mn007|yeah.|h
+mn007|so this would be the first thing.|s
+mn007|and then of course try to well kind of debug what was wrong uh when we do aurora test on the m s g particularly and on the multi band.|s^e
+me013|yeah.|b
+me013|yeah.|b
+me013|yeah.|b
+mn007|uh|h
+me013|yeah.|b
+me013|yeah.|fg
+me013|no i i think there's lots of lots of good things to do with this.|s
+me013|so|fh
+me013|um|fh
+me013|so let's|s^co.%--
+me013|i guess you were going to say something else?|qy^d^rt
+me013|oh okay.|s^bk
+me013|what do you think?|qw
+me018|about|qo.%--
+me013|anything.|s^j
+me018|about other experiments?|qy^d^g^rt
+me018|uh now i'm interested in um uh looking at the experiments where you use um uh data from multiple languages to train the neural net.|s
+me018|and i don't know how far or if you guys even had a chance to try that but that would be it'd be interesting to me.|s^no
+mn007|yeah but|fg|%--
+mn007|again it's the kind of of thing that uh we were thinking thinking that it would work but it didn't work.|s
+mn007|and uh so there is kind of a of not a bug but something wrong in what we are doing perhaps.|fh|s.x
+me013|yeah.|b
+me018|right.|s^bk
+me018|right.|b
+me018|right.|b
+mn007|uh something wrong perhaps in the just in the the fact that the labels are|fh|s^e.%--
+mn007|well|fh
+me018|uhhuh.|b
+mn007|what worked best is the hand labeled data.|s^rt
+me018|uhhuh.|b
+mn007|um|fh
+mn007|uh so yeah.|fh
+mn007|i don't know if we can get some hand labeled data from other languages.|s^no^rt
+me018|yeah.|b
+mn007|it's not so easy to find.|s^rt
+me018|right.|b
+mn007|but that would be something interesting to to see.|s^ba
+me018|yeah.|b
+me018|yeah.|b
+me013|yeah.|b
+me013|also uh i mean there was just the whole notion of having multiple nets that were trained on different data.|fg|s
+me013|so one form of different data was is from different languages but the other|s.%--
+me013|well in fact uh in those experiments it wasn't so much combining multiple nets it was a single net that had different|fh|s.%--
+mn007|yeah.|b
+me013|so first thing is would it be better if they were multiple nets for some reason.|s:qw
+me013|second thing is never mind the different languages just having acoustic conditions rather than training them all up in one.|s
+me013|would it be helpful to have different ones?|qw
+me013|so um|fh
+me013|that was a question that was kind of raised by mike shire's thesis and on in that case in terms of reverberation.|s
+me013|right?|qy^d^g^rt
+me013|that that sometimes it might be better to do that.|s.x
+me013|but um i don't think we know for sure.|fh|s^no
+me013|so um|fh
+me013|right.|fh
+me013|so next week we uh won't meet because you'll be in europe.|s^t
+me013|when are you two getting back?|qw^rt
+fn002|um i'm|h|%-
+mn007|you on friday or on saturday?|qr^d^rt
+fn002|sunday.|s^ng
+mn007|or|qr.%--
+fn002|because it's it's less expensive the price the price the ticket.|s^df
+mn007|oh yeah sunday yeah.|s^bk
+me013|yeah that's right.|s^aa
+me018|oh.|s^bk
+me013|you've got to have a saturday overnight.|s^df
+me013|right?|qy^bu^d^rt
+mn007|i'll be back on tuesday.|s
+me013|tuesday.|s^bk^m
+me018|where's the meeting?|qw^rt
+me013|uh amsterdam i think.|h|s
+mn007|yeah amsterdam.|s^aa
+me013|yeah.|s^aa
+me018|uhhuh.|s^bk
+me013|yeah.|b
+me013|yeah yeah.|b
+me013|yep.|b
+me013|um so we'll skip next week and we'll meet two weeks from now.|fh|s^co^t
+me013|and uh i guess the main topic will be uh you telling us what happened.|fh|s^t
+mn007|yeah.|s^aa
+fn002|yeah.|s^aa
+me013|uh so|fh
+me013|yeah.|fh
+me013|well if we don't have anything else to discuss we should uh turn off the machine and then say the real nasty things.|fh|s^t
+me018|should we do digits first?|qy^rt^t
+me006|oh yeah digits.|s^aa
+me013|oh yeah digits.|s^aa
+mn007|yeah.|s^aa
+me013|yeah.|s^aa
+me013|good point.|s^ba
+me013|yeah.|s^aa
+me013|good thinking.|s^ba
+me013|why don't you go ahead?|qh^co
+me018|okay.|s
+me018|okay.|z

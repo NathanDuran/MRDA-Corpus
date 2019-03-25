@@ -1,0 +1,746 @@
+me018|all right we're on.|fg|s
+me013|test um test test test.|z
+me013|guess that's me.|z
+me013|yeah okay.|z
+me006|ooh thursday.|s^t1
+me013|so|fh
+me013|there's two sheets of paper in front of us.|s^t
+mn007|yeah so|fg
+me018|what are these?|qw
+me013|this is the arm wrestling?|qy^d^j^rt
+mn052|uh yeah we formed a coalition actually.|fg|s^na
+mn007|yeah almost.|s^aa^j
+mn052|we already made it into one.|s
+me013|oh good.|s^ba
+mn052|yeah.|b
+mn007|yeah.|b
+me013|excellent.|s^ba
+me013|that's the best thing.|s^ba
+mn007|uhhuh.|b
+me013|so tell me about it.|s^co
+mn007|so it's well it's spectral subtraction or wiener filtering.|s
+mn007|um|fh
+mn007|depending on if we put if we square the transfer function or not.|s^e^rt
+me013|right.|b
+mn007|and then with over estimation of the noise depending on the uh the s n r with smoothing along time.|s^rt
+mn007|um|fh
+mn007|smoothing along frequency.|s^e
+me013|uhhuh.|b
+mn007|it's very simple smoothing things.|s^rt
+me013|uhhuh.|b^rt
+mn007|and um the best result is when we apply this procedure on f f t bins uh with a wiener filter.|fh|s^rt
+me013|uhhuh.|b
+mn007|and there is no noise addition after after that.|s^e
+me013|okay.|b
+mn007|so it's good.|s^ba
+mn007|because it's difficult when we have to add noise to to to find the right level.|s^df
+me013|okay.|s^bk^rt
+me018|are you looking at one in in particular of these two?|qy^rt
+mn007|yeah so the it's the sheet that gives fifty f three point sixty six.|s^aa|s
+me013|uhhuh.|s^bk
+mn007|um the second sheet is uh about the same.|fh|s
+mn007|and it's a spectral subtraction instead of wiener filter.|s^rt
+mn007|and there is also a noise addition after uh cleaning up the mel bins.|s
+mn007|huh|fh.%
+mn007|well the results are similar.|s
+me013|yeah i mean it's it's actually uh very similar.|s^na
+mn007|uhhuh.|b
+me013|i mean if you look at databases|s.%--
+me013|uh|fh
+me013|the uh one that has the smallest smaller overall number is actually better on the finnish and spanish.|s
+me013|uh but it is uh worse on the uh aurora.|fh|s
+mn007|it's worse on|s^2.%--
+me013|i mean on the uh t t i digits.|s^bsc
+mn007|on the multi condition in t i digits yeah.|s^2^bc
+me013|uh uh|fh
+me013|um|fh
+mn007|huh|b
+me013|so it probably doesn't matter that much either way.|s
+me013|but um when you say uh unified do you mean uh it's one piece of software now?|qy^bu^rt
+me013|or|qrr.%--
+mn007|so now we are yeah setting up the software.|s^ng
+me013|uhhuh.|b^rt
+mn007|um it should be ready uh very soon.|h|s
+mn007|um and|%--
+me018|so what's what's happened?|qw^rt
+me018|i think i've missed something.|s
+me013|so a week ago|s.%--
+me013|maybe you weren't around when when when hynek and guenther and i|s^rt.%--
+mn052|hynek was here.|s^2
+me018|yeah i didn't.|s^aa
+me013|oh okay so yeah let's summarize.|s^bk|s^cc
+me013|um and then if i summarize somebody can tell me if i'm wrong.|fh|s^cs
+me013|which will also be possibly helpful.|s^e
+me013|what did i just press here?|qw
+me013|i hope this is still working.|s
+me013|we uh we looked at uh|s.%--
+me013|anyway we after coming back from qualcomm we had you know very strong feedback.|s
+me013|and uh i think it was hynek and guenter's and my opinion also that um you know we sort of spread out to look at a number of different ways of doing noise suppression.|s
+me013|but given the limited time uh it was sort of time to choose one.|s
+me018|uhhuh.|b
+me018|huh|b
+me013|uh and so uh the vector taylor series hadn't really worked out that much.|fh|s
+me013|uh the subspace stuff uh had not been worked with so much.|s
+me013|um so it sort of came down to spectral subtraction versus wiener filtering.|fh|s
+me018|huh|b
+me013|uh we had a long discussion about how they were the same and how they were uh completely different.|fh|s
+me018|uhhuh.|b
+me013|and uh i mean fundamentally they're the same sort of thing.|fh|s
+me013|but the math is a little different.|s^df^e
+me013|so that there's a a there's an exponent difference in the index.|s
+me013|you know what's the ideal filtering.|s
+me013|and depending on how you construct the problem.|s
+me018|uhhuh.|b
+me013|and uh i guess it's sort you know after after that meeting it sort of made more sense to me.|fh|s
+me013|because um if you're dealing with power spectra then how are you going to choose your error.|s^df
+me013|and typically you'll do choose something like a variance.|s
+me013|and so that means it'll be something like the square of the power spectra.|s
+mn052|uhhuh.|b
+me013|whereas when you're when you're doing the the uh um looking at it the other way you're going to be dealing with signals.|s
+me013|and you're going to end up looking at power uh noise power that you're trying to reduce.|s
+me013|and so uh so there should be a difference of you know conceptually of of uh a factor of two in the exponent.|s
+me018|uhhuh.|b
+me013|but there're so many different little factors that you adjust in terms of of uh uh over subtraction and and and and and so forth.|s
+me013|um that arguably you're|s^e.%--
+me013|and and and the choice of do you do you operate on the mel bands or do you operate on the f f t beforehand.|s
+me013|there're so many other choices to make that are are almost well if not independent certainly in addition to the choice of whether you uh do spectral subtraction or wiener filtering.|s
+me013|that um again we sort of felt the gang should just sort of figure out which it is they want to do.|s^cs
+me013|and then let's pick it.|s^cs^e
+me013|go forward with it.|s^cs^e
+me013|so that's that was that was last week.|s
+me013|and and uh we said uh take a week go arm wrestle.|s^co^j
+me013|you know.|fh
+me006|oh.|s^bk
+me013|figure it out.|s^co
+me013|i mean and the joke there was that each of them had specialized in one of them.|s
+me013|and and so they|s.%--
+me018|oh okay.|s^bk
+me013|so instead they went to yosemite and bonded and and they came out with a single single piece of software.|s
+me013|so it's another another victory for international collaboration.|s^j
+me013|so|fh
+me013|uh|fh
+me018|so so you guys have combined or you're going to be combining the software?|qy^bu^d^rt
+mn007|oh boy!|s^fe.%
+mn052|well the piece of software has like plenty of options.|s^df
+mn052|like you can parse command line arguments.|s^df^e
+mn052|so depending on that it it becomes either spectral subtraction or wiener filtering.|s
+me018|oh okay.|s^bk
+mn052|so|%-
+me013|well that's fine.|s^ba
+me018|they're close enough.|s^ba
+me013|but the thing is the important thing is that there is a piece of software that you that we all will be using now.|s
+mn052|yeah yeah.|s^aa^m
+me013|yes.|s^aa
+mn007|yeah.|b
+mn052|there's just one piece of software.|s^bs
+me013|yeah.|s^aa
+mn007|i need to allow it to do everything and even more more than this.|s^df
+mn007|well if we want to like optimize different parameters of|s.%-
+mn052|right.|b
+mn052|parameters yeah.|s^2
+me013|sure.|s^aa
+mn007|yeah we can do it later.|s^cc
+mn007|but still so there will be a piece of software with uh will give this system the fifty three point sixty six by default.|s
+mn007|and|%--
+me013|uhhuh.|b
+me018|how how is how good is that?|qw
+mn007|uhhuh.|b
+me018|i i i don't have a sense of|s^bd.%--
+mn007|it's just one percent off of the best proposal.|s
+mn052|best system.|s^2
+mn007|it's between we are second actually if we take this system.|s
+mn007|right?|qy^d^g^rt
+mn052|yeah.|s^aa
+me013|yeah.|s^aa
+me018|okay.|s^bk
+me018|compared to the last evaluation numbers yeah.|s^2
+me013|but uh|fg
+mn007|uhhuh yeah.|s^aa
+mn052|yeah.|s^aa
+me013|which we sort of were before.|s^df
+me013|but we were considerably far behind.|s^e
+me013|and the thing is this doesn't have neural net in yet for instance.|s^df^e
+mn007|uhhuh.|b
+me013|you know?|qy^d^g
+me018|huh|b
+me013|so it so um it's it's not using our full bag of tricks if you will.|s^df
+me018|uhhuh.|b
+me013|and uh and it it is uh very close in performance to the best thing that was there before.|s
+me013|uh but you know looking at it another way maybe more importantly uh we didn't have any explicit noise uh handling.|s
+me013|stationary dealing with|s^e.%--
+me013|we didn't explicitly have anything to deal with stationary noise.|s^bc
+me018|uhhuh.|b
+me013|and now we do.|s^e
+me018|so will the neural net operate on the output from either the wiener filtering or the spectral subtraction?|qy^bu^rt
+me013|well so so so arguably i mean what we should do|s.%--
+me018|or will it operate on the original?|qrr
+me013|i mean i gather you have it sounds like you have a few more days of of nailing things down with the software and so on.|s
+me013|but and then but um arguably what we should do is even though the software can do many things we should for now pick a set of things.|s^cs
+me013|these things i would guess.|s^e
+mn007|uhhuh.|b
+me013|and not change that.|s^cs^e
+me013|and then focus on everything that's left.|s^cs^e
+me013|and i think you know that our goal should be by next week when hynek comes back uh to uh really just to have a firm path uh for the you know for the time he's gone.|s^cs^t
+me013|of of uh what things will be attacked.|s^e
+me013|but i would i would i would thought think that what we would want to do is not futz with this stuff for a while.|s^cs
+me013|because what'll happen is we'll change many other things in the system.|s^df
+me018|uhhuh.|b
+me013|and then we'll probably want to come back to this and possibly make some other choices.|s^e
+me013|but um|fh
+me018|but just conceptually where does the neural net go?|qw
+me018|do do you want to run it on the output of the spectrally subtracted?|qy^bu
+mn007|huh|b
+me013|well depending on its size|s.%--
+me013|well one question is is it on the um server side or is it on the terminal side.|s:qy
+me013|uh if it's on the server side it you probably don't have to worry too much about size.|s^df^rt
+me018|uhhuh.|b
+me013|so that's kind of an argument for that.|s
+me013|we do still however have to consider its latency.|s
+me013|so the issue is is um for instance could we have a neural net that only looked at the past.|s:qy
+me018|right.|b
+me013|um what we've done in uh in the past is to use the neural net uh to transform um all of the features that we use.|s
+me013|so this is done early on.|s
+me013|this is essentially um um i guess it's it's more or less like a a speech enhancement technique here.|s
+me013|right?|qy^d^f^g
+me018|uhhuh.|b
+me013|where we're just kind of creating new if not new speech at least new new f f t's.|s^e
+me013|that that have you know which could be turned into speech.|s^e
+mn007|uhhuh.|b
+me013|uh that that have some of the noise removed.|fh|s^e
+me018|uhhuh.|b
+me013|um after that we still do a mess of other things to to produce a bunch of features.|fh|s
+me018|right.|b
+me013|and then those features are not now currently transformed by the neural net.|s^e
+me013|and then the the way that we had it in our proposal two before we had the neural net transformed features and we had the untransformed features.|s
+me013|which i guess you you actually did linearly transform with the k l t.|s^e
+mn007|yeah yeah right.|b
+me013|but but but uh to orthogonalize them.|s^e
+me013|but but they were not uh processed through a neural net.|s^e
+me013|and stephane's idea with that as i recall was that you'd have one part of the feature vector that was very discriminant and another part that wasn't.|s
+me018|uhhuh.|b
+me013|uh which would smooth things a bit for those occasions when uh the testing set was quite different than what you'd trained your discriminant features for.|fh|s^e
+me013|so um all of that is is uh still seems like a good idea.|s^ba
+me013|the thing is now we know some other constraints.|s
+me013|we can't have unlimited amounts of latency.|s
+me013|uh you know that's still being debated by the by people in europe.|s
+me013|but uh no matter how they end up there it's not going to be unlimited amounts.|s^df
+me013|so we have to be a little conscious of that.|s
+me018|yeah.|b
+me013|um|fh
+me013|so there's the neural net issue.|s
+me013|there's the v a d issue.|s^e
+me013|and uh there's the second stream thing.|s^e
+me013|and i think those that we last time we agreed that those are the three things that have to get uh focused on.|s
+me018|what was the issue with the v a d?|qw
+me013|well better ones are good.|s
+me018|and so the the default uh boundaries that they provide are they're okay but they're not all that great?|qy^bu^rt
+me013|i guess they still allow two hundred milliseconds on either side or|s.%--
+mn007|uhhuh.|b
+me013|is that what the deal is?|qy^rt
+mn007|uh so um they keep two hundred milliseconds at the beginning and end of speech and they keep all the|s.%-
+me018|outside the beginnings and end.|s^2
+mn007|yeah.|s^aa
+mn007|and all the speech pauses.|s^e
+me018|uhhuh.|b
+mn007|which is sometimes on the speechdat car you have pauses that are more than one or two seconds.|s
+me018|wow.|s^bk
+mn007|more than one second for sure.|s^e
+mn007|um|fh
+me018|huh|b
+mn007|yeah.|fh
+mn007|and yeah it seems to us that this way of just dropping the beginning and end is not|s.%--
+mn007|we we can do better i think.|s
+me018|uhhuh.|b
+mn007|because um with this way of dropping the frames they improve over the baseline by fourteen percent.|s^df
+mn007|and sunil already showed that with our current v a d we can improve by more than twenty percent.|s
+me018|on top of the v a d that they provide?|qy^bu^rt
+mn052|no.|s^ar
+mn007|just using either their v a d or our current v a d.|s
+mn052|our way.|s^2
+me018|oh okay.|s^bk
+mn007|so our current v a d is is more than twenty percent.|s
+mn007|while their is fourteen.|s^e
+me018|theirs is fourteen?|qy^bu^d^rt
+mn007|yeah.|s^aa
+me018|i see.|s^bk
+me018|huh.|b
+mn007|so|fh
+mn007|yeah.|fh
+mn007|and another thing that we did also is that we have all this training data for let's say for speechdat car.|fh|s
+mn007|we have channel zero which is clean.|s
+mn007|channel one which is far field microphone.|s
+mn007|and|fh
+mn007|if we just take only the um v a d probabilities computed on the clean signal and apply them on the far field uh test utterances then results are much better.|s
+me018|uhhuh.|b
+mn007|in some cases it divides the error rate by two.|s^e
+me018|wow!|s^fe
+mn007|so it means that there are stim still|s.%--
+mn007|if if we can have a good v a d well it would be great.|s^ba
+me018|how how much latency does the uh does our v a d add?|qw
+me018|is it significant?|qy^rt
+mn007|uh right now it's um a neural net with nine frames.|h|s
+me018|or|qrr.%--
+mn007|so it's forty milliseconds plus um the rank ordering.|s
+mn007|which uh should be|s.%-
+mn052|like another ten frames.|s^2
+mn007|ten.|s^aa^m
+mn007|yeah.|s^aa
+mn007|so right now it's one hundred and forty milliseconds.|s
+me006|rank.|s^m^t1
+me006|oh.|b
+me013|with the rank ordering?|qy^bu^d^rt
+me013|i'm sorry.|s^fa
+mn052|the the the smoothing the the the filtering of the probabilities.|s
+mn007|the the um|%-
+mn052|on the r.|s^e
+mn007|yeah it's not a median filtering.|s
+mn007|it's just we don't take the median value we take something|s.%--
+mn007|um so we have eleven um frames|fh|s.%-
+me013|oh this is for the v a d?|qy^bk^bu^d
+mn007|and|%-
+mn052|yeah.|s^aa
+mn007|for the v a d yeah.|s^aa^m
+mn007|and we take the third.|s
+mn052|yeah.|b
+me013|oh okay.|s^bk
+mn052|yeah.|b
+mn007|um|fh
+me013|yeah.|b
+me013|um|fg
+mn007|huh|b
+me013|so yeah i was just noticing on this that it makes reference to delay.|fh|s
+me013|so what's the if you ignore|s.%--
+me013|um the v a d is sort of in in parallel.|fh|s
+me013|isn't isn't it?|qy^d^g^rt
+me013|with with the i mean it isn't additive with the the uh l d a and the wiener filtering and so forth.|s
+mn052|the l d a?|qy^bu^d^rt
+mn052|yeah so so what happened right now we removed the delay of the l d a.|s^na
+me013|right?|qy^d^g^rt
+mn007|uhhuh.|b
+me013|yeah.|b
+mn052|so we i mean if so if we if so which is like if we reduce the delay of v a|s.%--
+mn052|so the the final delay's now is determined by the delay of the v a d.|s
+mn052|because the l d a doesn't have any delay.|s^df
+mn052|so if we if we reduce the delay of the v a d i mean it's like effectively reducing the delay.|s
+me018|how how much uh delay was there on the l d a?|qw^rt
+mn052|so the l d a and the v a d both had a hundred millisecond delay.|s
+mn052|so and they were in parallel.|s
+mn052|so which means you pick either one of them.|s
+me018|huh|b
+mn052|the the biggest whatever.|s^e
+me013|uhhuh.|b
+me018|i see.|s^bk
+mn052|so right now the l d a delays are more.|s
+me013|and there|%-
+me018|oh okay.|s^bk
+me013|and there didn't seem to be any uh penalty for that?|qy^bu^d^rt
+mn052|pardon?|qy^br^rt
+me013|there didn't seem to be any penalty for making it causal?|qy^bu^d^r^rt
+mn052|oh no it actually made it like point one percent better or something actually.|s^ar|s^ng
+me013|okay.|s^bk
+mn052|or something like that.|s
+me013|well may as well then.|s
+mn052|and|fh
+me013|and he says wiener filter is is forty milliseconds delay.|s
+mn052|yeah so that's the one which stephane was discussing like|s.%-
+mn007|huh|b
+me013|so is it|qy.%-
+me013|the smoothing.|s^2
+mn052|yeah the you smooth it and then delay the decision by|s^na.%-
+mn052|so|fh
+me013|right.|s^bk
+me013|okay.|s^bk
+me013|so that's that's really not not bad.|s^ba
+me013|so we may in fact we'll see what they decide we may in fact have um the the uh latency time available for to have a neural net.|s
+me013|i mean sounds like we probably will.|s^e
+mn052|uhhuh.|b
+me013|so|fh
+me013|that'd be good.|s^ba
+me013|because i because it certainly always helped us before.|s^df
+me013|so|fh
+me013|uh.|fh
+me018|what amount of latency are you thinking about when you say that?|qw
+me013|well they're you know they're disputing it.|s
+me013|you know they're saying uh one group is saying a hundred and thirty milliseconds and another group is saying two hundred and fifty milliseconds.|s^e
+me018|huh|b
+me013|two hundred and fifty is what it was before actually.|s^e
+me013|so|fh
+me018|oh.|s^bk
+me013|uh some people are lobbying lobbying to make it shorter.|s
+me018|huh|b
+me013|um|fh
+me013|and um|fh
+me018|were you thinking of the two fifty or the one thirty when you said we should have enough for the neural net?|qr^rt
+me013|well it just it when we find that out it might change exactly how we do it is all.|s
+me013|i mean how much effort do we put into making it causal?|qw
+me018|oh okay.|s^bk
+me013|i mean i think the neural net will probably do better if it looks at a little bit of the future.|s^ba
+me018|uhhuh.|b
+me013|but um it will probably work to some extent to look only at the past.|s^ba
+me013|and we you know limited machine and human time and effort.|s^df
+me013|and you know how how much time should we put into into that?|qw
+me013|so it'd be helpful if we find out from the the standards folks whether you know they're going to restrict that or not.|s
+me018|uhhuh.|b
+me013|um|fh
+me013|but i think you know at this point our major concern is making the performance better.|s
+me013|and and um if uh something has to take a little longer in latency in order to do it that's you know a secondary issue.|s
+me018|uhhuh.|b
+me013|but if we get told otherwise then you know we may have to clamp down a bit more.|s
+me006|huh|b
+mn052|so the one one one difference is that was there is like we tried computing the delta and then doing the frame dropping.|s
+mn007|uhhuh.|b
+mn052|the earlier system was do the frame dropping and then compute the delta on the|s.%--:s^co
+me013|uhhuh.|b
+mn052|so this|%-
+me018|which could be a kind of a funny delta.|s^2^bu
+me018|right?|qy^d^g^rt
+mn052|yeah.|s^aa
+me013|oh.|s^bk
+me013|oh oh!|s^fe
+me013|so that's fixed in this.|s^bk
+me013|yeah we talked about that.|s
+mn052|yeah.|s^aa
+mn007|yeah uhhuh|b
+mn052|so we have no delta and then|s.%--
+me013|good.|b
+mn052|so the frame dropping is the last thing that we do.|s
+mn052|so yeah what we do is we compute the silence probability.|s^rt
+mn052|convert it to that binary flag.|s^e^rt
+me013|uhhuh.|b
+mn052|and then in the end you upsample it to match the final features number of|s^e.%-
+mn007|uhhuh.|b
+me018|did that help then?|qy^rt
+mn052|it seems to be helping on the well matched condition.|s^df^na
+mn052|so that's why this improvement i got from the last result.|s
+mn052|so and it actually reduced a little bit on the high mismatch.|fh|s
+mn052|so in the final weightage it's better.|s
+mn052|because the well matched is still weighted more than.|s^df
+me013|so i mean you were doing a lot of changes.|fg|s
+me013|did you happen to notice how much uh the change was due to just this frame dropping problem?|qy^rt
+me013|what about this?|qo
+mn052|uh you had something on it.|s
+mn052|right?|qy^d^g^rt
+mn007|just the frame dropping problem.|s^na
+mn007|yeah but it's it's difficult.|s^ba
+mn007|sometime we we change two two things together.|s
+mn007|and but it's around maybe it's less than one percent.|s
+me013|uhhuh.|b
+mn052|yeah.|b
+mn007|it|%-
+me013|but like we're saying if there's four or five things like that then pretty soon you're talking real improvement.|s
+mn007|yeah.|b
+mn007|yeah and it|%-
+mn007|yeah.|b
+mn007|and then we have to be careful with that also with the neural net.|s^co
+me013|yeah.|%
+mn007|because in the proposal the neural net was also uh working on after frame dropping.|s^df
+me013|uhhuh.|s^bk
+mn007|um|fh
+me013|oh that's a real good point.|s^ba
+mn007|so well we'll have to be|s.%--
+mn007|to do the same kind of correction.|s^bsc
+me013|it might be hard if it's at the server side.|s^ba
+me013|right?|qy^d^g^rt
+mn007|huh well we can do the frame dropping on the server side.|h|s^cs
+mn007|or we can just be careful at the terminal side to send a couple of more frames before and after.|s^cs
+mn007|and so|fh
+mn007|i think it's okay.|s^ba
+me013|okay.|s^bk
+me018|you have um|s.%--
+me018|so when you|s.%--
+me018|uh maybe i don't quite understand how this works.|s^bd
+me018|but um couldn't you just send all of the frames but mark the ones that are supposed to be dropped?|qy^rt
+me018|because you have a bunch more bandwidth.|s^df
+me018|right?|qy^d^g^rt
+me013|well you could.|s^am
+me013|yeah i mean it it always seemed to us that it would be kind of nice to in addition to uh reducing insertions actually use up less bandwidth.|s^df
+me018|yeah yeah.|b
+me013|but nobody seems to have cared about that in this evaluation.|s
+me018|and that way the net could use|s.%--
+me013|so|fh
+me018|if the net's on the server side then it could use all of the frames.|s
+mn052|yes it could be.|s^am
+mn052|it's like you mean you just transferred everything.|s
+mn052|and then finally drop the frames after the neural net.|s
+mn052|right?|qy^d^g^rt
+me018|uhhuh.|s^aa
+mn007|uhhuh.|b
+mn052|yeah that's that's one thing which|s.%-
+me018|but you could even mark them before they get to the server.|s^cs
+mn052|yeah right now we are|fg|s.%-
+mn052|uh|s^aa.%--
+mn052|right now what what we did is like we just mark we just have this additional bit which goes around the features saying it's currently a it's a speech or a nonspeech.|s
+me018|oh.|s^bk
+me018|oh okay.|s^bk
+mn052|so there is no frame dropping till the final features like including the deltas are computed.|s
+me018|i see.|s^bk
+mn052|and after the deltas are computed you just pick up the ones that are marked silence and then drop them.|s
+me018|uhhuh.|b
+me018|i see.|s^bk
+me013|so it would be more or less the same thing with the neural net i guess actually.|s
+mn007|uhhuh.|b
+me018|i see.|b
+mn052|so yeah that's what that's what that's what uh this is doing right now.|fh|s
+me018|i see.|s^bk
+me018|okay.|s^bk
+me013|yeah.|b
+mn007|uhhuh.|b
+me013|um|fg
+me013|okay.|fh
+me013|so uh|fh
+me013|what's uh|qw.%--
+me013|that's that's a good set of work that that uh|s^ba.%-
+mn052|just one more thing.|s^t^tc
+mn052|like should we do something more for the noise estimation?|qy
+mn052|because we still|s^df.%-
+me013|yeah i was wondering about that.|s^aa
+mn052|yeah.|b
+mn007|uhhuh.|b
+me013|that was i i had written that down there.|s
+me013|um|fh
+mn007|so we uh actually i did the first experiment.|s
+mn007|this is with just fifteen frames.|s^e
+mn007|um|fh
+mn007|we take the first fifteen frame of each utterance to it.|s
+me013|yeah.|b
+mn007|and average their power spectra.|s^e
+mn007|um|fh
+mn007|i tried just plugging the um uh guenter noise estimation on this system.|s
+mn007|and it uh it got worse.|s^ba^e^rt
+mn007|um|fh
+mn007|but of course i didn't play with it.|s^bd
+me013|uhhuh.|b
+mn007|but uhhuh|fh
+mn007|uh i didn't do much more for noise estimation i just tried this.|fh|s
+mn007|and|fh
+me013|huh yeah well it's not surprising it'd be worse the first time.|s^ba
+mn007|uhhuh.|b
+me013|but um|fh
+me013|it does seem like you know some compromise between always depending on the first fifteen frames and always depending on a a pause is is is a good idea.|s^ba^cs
+me013|uh maybe you have to weight the estimate from the first fifteen frames more heavily than than was done in your first attempt.|s^cs
+me013|but|fh
+mn007|uhhuh.|b
+me013|but|fh
+mn007|yeah i guess.|s^aa
+me013|yeah.|b
+me013|um|fh
+me013|no i mean|%--
+me013|um|fh
+me013|do you have any way of assessing how well or how poorly the noise estimation is currently doing?|qy
+mn007|huh no we don't.|h|s^ar
+me013|yeah.|b
+mn007|we don't have nothing that|s.%-
+mn052|is there was there any experiment with|qy.%--
+mn052|well i i did the only experiment where i tried was i used the channel zero vad for the noise estimation.|s^df
+mn052|and frame dropping.|s^df^e
+mn052|so i don't have a i don't have a split like which one helped more.|s
+mn007|yeah.|b
+mn052|so it it was the best result i could get.|fh|s
+mn007|uhhuh.|b
+mn052|so that's the|fh|%-
+me013|so that's something you could do with um this final system.|s^cs
+me013|right?|qy^d^g^rt
+me013|just do this everything that is in this final system except uh use the channel zero.|s
+mn052|uhhuh.|s^aa^rt
+mn052|for the noise estimation.|s^bu
+me013|yeah.|s^aa
+mn052|yeah we can try something.|s^cc
+me013|and then see how much better it gets.|s^2
+mn052|uhhuh sure.|s^aa
+me013|if it's you know essentially not better then it's probably not worth|s^ba.%--
+mn007|yeah.|b
+me013|any more.|s^e
+mn052|yeah but the guenter's argument is slightly different.|s
+mn052|it's like even even if i use a channel zero vad i'm just averaging the the power spectrum.|s
+mn052|but the guenter's argument is like if it is a non stationary segment then he doesn't update the noise spectrum.|s^df
+mn052|so he's like he tries to capture only the stationary part in it.|s
+mn052|so the averaging is like different from updating the noise spectrum only during stationary segments.|s
+mn052|so the guenter was arguing that i mean even if you have a very good v a d averaging it like over the whole thing is not a good idea.|s
+mn052|because you're averaging the stationary and the non stationary and finally you end up getting something.|s^df
+me013|i see.|s^bk
+mn052|which is not really the because you anyway you can't remove the stationary part i mean non stationary part from the signal.|s
+mn052|so|fh
+me013|not using these methods anyway yeah.|s^2^na
+mn052|yeah so you just update only doing or update only the stationary components.|s
+mn052|yeah so that's so that's still a slight difference from what guenter is trying.|s
+mn052|and|%--
+me013|well yeah and and also there's just the fact that um|s^aap|s.%--
+me013|uh although we're trying to do very well on this evaluation um we actually would like to have something that worked well in general.|fh|s
+mn052|yeah yeah.|b
+me013|and um relying on having fifteen frames at the front or something is is pretty|fh|s.%--
+me013|i mean you might you might not.|s
+mn052|huh|b
+mn007|uhhuh.|b
+me013|so um|fh
+me013|um it'd certainly be more robust to different kinds of input if you had at least some updates.|fh|s
+me013|um|fh
+mn007|uhhuh.|b
+me013|but um|fh
+me013|well i don't know.|s^bd
+me013|what what do you uh what do you guys see as as being what you would be doing in the next week given what's happened?|qw
+mn052|cure the vad.|s^cs^rt
+mn007|yeah.|s^aa
+me018|what was that?|qw^br^rt
+mn052|v a d.|s^rt
+me018|oh.|s^bk
+mn052|and|fh
+mn052|uh|fh
+me013|okay.|s^bk
+mn007|so should we keep the same i think we might try to keep the same idea.|s^cs^rt
+mn007|of having a neural network.|s^e
+mn007|but training it on more data.|s^e
+mn007|and adding better features i think.|s^e
+mn007|but because the current network is just p l p features.|s^df
+mn007|well it's trained on noisy p l p.|s
+mn052|just the cepstra.|s^2
+mn052|yeah?|qy^d^g^rt
+mn007|p l p features computed on noisy speech.|s^e
+mn007|but there is nothing particularly robust in these features.|s
+me018|so uh|fg
+mn052|no.|b
+mn007|there's no rasta no|s.%--
+me018|so uh i i don't remember what you said the answer to my uh question earlier.|fg|s^bd
+me018|will you will you train the net on after you've done the spectral subtraction or the wiener filtering?|qy^rt
+me013|this is a different net.|s^ng
+me018|oh.|s^bk
+mn052|so we have a v a d which is like that's a neural net.|s^ng
+mn007|oh yeah huh|%-
+me018|oh you're talking about the v a d net.|s^bk
+mn052|yeah.|s^aa
+me018|okay.|s^bk
+mn007|uhhuh.|b
+me018|i see.|s^bk
+mn052|so that that v a d was trained on the noisy features.|s
+me018|uhhuh.|s^bk
+mn052|so right now we have like uh we have the cleaned up features.|s^df
+mn052|so we can have a better v a d by training the net on the cleaned up speech.|s
+me018|uhhuh.|b
+me018|i see i see.|s^bk
+mn052|yeah but we need a v a d for uh noise estimation also.|s
+mn052|so it's like where do we want to put the v a d?|qw
+mn052|uh it's like|%-
+me018|can you use the same net to do both?|qy^rt
+me018|or|qrr.%--
+mn052|for|qo^bu^d.%--
+me018|can you use the same net that you that i was talking about to do the v a d?|qy^rt
+mn052|uhhuh.|b
+mn052|uh it actually comes at at the very end.|h|s
+mn052|so the net the final net i mean which is the feature net|s.%-
+me018|uhhuh.|b
+mn052|so that actually comes after a chain of like l d a plus everything.|s
+mn052|so it's like it takes a long time to get a decision out of it.|s
+mn052|and and you can actually do it for final frame dropping.|s
+mn052|but not for the v noise estimation.|s
+me018|uhhuh.|b
+me013|you see the idea is that the um initial decision to that that you're in silence or speech happens pretty quickly.|s^bs
+me018|oh okay.|s^bk
+mn052|huh|b
+me013|and that|%-
+me018|because that's used by some of these other|s^bu.%-
+me013|yeah and that's sort of fed forward and and you say well flush everything it's not speech anymore.|s^na
+me018|oh okay.|s^bk
+me018|i see.|s^bk
+mn052|yeah.|b
+me018|i thought that was only used for doing frame dropping later on.|s
+me013|um it is used uh|h|s.%--
+me013|yeah it's only used well it's used for frame dropping.|s
+me013|um it's used for end of utterance.|fh|s
+mn007|huh|b
+me013|because you know there's if you have more than five hundred milliseconds of of of nonspeech then you figure it's end of utterance or something like that.|s^df
+me018|uhhuh.|b
+me013|so|fh
+me013|um|fh
+mn007|and it seems important for like the on line normalization.|s^2
+mn007|um we don't want to update the mean and variance during long silence portions.|fh|s^df
+mn007|um so it it has to be done before.|fh|s
+me018|oh.|s^bk
+me018|i see.|s^bk
+mn007|this mean and variance normalization.|s^e
+mn007|um|fh
+me013|um|fg
+me013|yeah so probably the v a d and and maybe testing out the noise estimation a little bit.|s^cs
+me013|i mean keeping the same method.|s
+me013|but but uh seeing if you but um noise estimation could be improved.|s
+mn007|uhhuh.|b
+me013|those are sort of related issues.|s^rt
+me013|it probably makes sense to move from there.|s
+me013|and then uh later on in the month i think we want to start including the neural net at the end.|s^cs
+me013|um|fh
+me013|okay anything else?|s^tc|qy^d^rt^t^tc
+mn007|the half dome was great.|s^ba^j^rt^tc
+me013|good.|s^ba^rt
+me013|yeah you didn't didn't fall.|s^j^rt
+mn052|well yeah.|s^aa
+me013|that's good.|s^ba
+me013|our our effort would have been devastated.|s^j^rt
+me013|if you guys had run into problems.|s^e^j
+me018|so hynek is coming back next week you said?|qy^bu^d^rt^tc
+me013|yeah that's the plan.|s^aa
+me018|huh|b
+me013|i guess the week after he'll be uh going back to europe.|s
+me013|and so we want to|s.%-
+me018|is he in europe right now or is he up at|qr.%--
+me013|no no he's he's he's dropped into the u s yeah yeah.|s^ar|s^ng
+me018|oh.|s^bk
+me018|huh|b
+me013|so|fh
+me013|uh so uh|fh
+me013|uh the idea was that uh we'd we'd sort out where we were going next with this with this work before he uh left on this next trip.|s
+me013|uh barry you just got through your quals so i don't know if you have much to say.|s^tc
+me013|but uh|fh
+me006|huh|h
+me006|no just uh looking into some some of the things that um uh john ohala and hynek um gave as feedback.|s^tc
+me006|um as as a starting point for the project.|s^e
+me006|um|fh
+me006|in in my proposal i i was thinking about starting from a set of uh phonological features or a subset of them.|s^cs
+me006|um but that might not be necessarily a good idea according to um john.|s
+me018|uhhuh.|b
+me006|he said uh um these these phonological features are are sort of figments of imagination also.|s
+me018|uhhuh.|b
+me006|um|%-
+me013|in conversational speech in particular.|s^2
+me013|i think you can you can put them in pretty reliably in synthetic speech.|s^cs
+me013|but we don't have too much trouble recognizing synthetic speech since we create it in the first place.|s
+me013|so it's|%--
+me006|right.|s^aa
+me006|yeah so um a better way would be something more more data driven.|s^cs^rt
+me018|uhhuh.|b
+me006|just looking at the data and seeing what's similar and what's not similar.|s
+me018|uhhuh.|b
+me006|so i'm i'm um taking a look at some of um sangita's work on on traps.|s
+me006|she did something where um where the traps|s.%--
+me006|she clustered the the temporal patterns of um certain certain phonemes in in averaged over many many contexts.|s
+me006|and uh some things tended to cluster.|s
+me018|uhhuh.|b^rt
+me006|right you know like stop stop consonants clustered really well.|s
+me018|huh|b
+me006|um silence was by its own self.|s
+me018|uhhuh.|b^rt
+me006|and uh um vocalic was clustered.|s
+me018|uhhuh.|b
+me006|and um so those are interesting things to|fh|s.%-
+me018|so you're now you're sort of looking to try to gather a set of these types of features?|qy^bu^d^rt
+me006|right.|s^aa
+me018|uhhuh.|b
+me006|yeah.|s^aa
+me006|just to see where where i could start off from.|s^df
+me018|uhhuh.|b
+me006|uh you know?|qy^d^f^g^rt
+me006|a a a set of small features and continue to iterate and find uh a better set.|s
+me018|uhhuh.|b
+me006|yeah.|b
+me013|okay well short meeting.|fg|s^t^tc
+me013|that's okay.|s^ba
+me018|yeah.|s^aa
+me013|okay so next week hopefully we'll can get hynek here to to join us.|s^t
+me013|and uh|fh
+me013|uh|fh
+me018|should we do digits?|qy^rt^t
+me013|digits digits.|s^t
+me013|okay now.|s^aa
+me018|go ahead morgan.|s^co
+me013|all right let me get my glasses on so i can see them.|s^co
+me018|you can start.|s^co
+me013|okay.|s^bk
+me018|okay.|z
+me018|and we're off.|z

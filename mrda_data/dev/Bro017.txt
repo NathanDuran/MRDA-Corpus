@@ -1,0 +1,1327 @@
+mn049|is it starting now?|z
+me018|yep.|z
+mn049|so what what from what|z
+mn049|whatever we say from now on it can be held against us.|z
+me006|hello?|z
+mn049|right?|z
+me018|that's right.|z
+mn049|and uh|z
+me006|it's your right to remain silent.|z
+mn049|yeah.|z
+mn049|so i the the problem is that i actually don't know how these held meetings are held.|s^rt
+mn049|if they are very informal and sort of just people are say what's going on.|s
+me018|yeah.|s^aa
+mn049|and|%-
+me018|yeah that's usually what we do.|s^aa
+me018|we just sort of go around and people say what's going on what's the latest uh|s^df.%--:qw.%--
+mn049|okay.|s^bk
+mn049|yeah.|b
+mn049|okay.|b
+mn049|so i guess that what may be a reasonable is if i uh first make a report on what's happening in aurora in general at least what from my perspective.|s^t
+me018|yeah.|b
+me018|that would be great.|s^ba
+fn002|uh|%-
+mn049|and and uh so i i think that carmen and stephane reported on uh amsterdam meeting.|fg|s^rt
+mn049|which was kind of interesting.|s^ba
+mn049|because it was for the first time we realized we are not friends really but we are competitors.|s^rt
+mn049|because until then it was sort of like everything was like wonderful.|s
+mn049|and|%-
+me018|yeah.|fg
+me018|it seemed like there were still some issues.|s
+mn049|yeah.|b
+me018|right?|qy^d^g^rt
+me018|that they were trying to decide.|s^rt
+mn049|there is a plenty of there're plenty of issues.|s^na
+me018|like the voice activity detector|s.%-
+mn049|well and what happened was that they realized that if two leading proposals which was french telecom alcatel and us both had uh voice activity detector.|s
+me018|right.|b
+mn049|and i said well a big surprise i mean we could have told you that four months ago except we didn't because nobody else was bringing it up.|s:s
+mn049|obviously french telecom didn't volunteer this information either.|s
+me018|right.|b
+mn049|because we were working on mainly on voice activity detector for past uh several months.|s
+mn049|because that's buying us the most uh thing.|s^df
+mn049|and everybody said well but this is not fair we didn't know that.|s
+mn049|and of course uh the it's not working on features really.|s
+me018|right.|b
+mn049|and i agreed.|s
+mn049|i said well yeah.|s:s
+mn049|you are absolutely right.|s^aa
+mn049|i mean if i wish that you provided better end point at speech because uh|s.%--
+mn049|or at least that if we could modify the recognizer uh to account for these long silences.|s^cs
+mn049|because otherwise uh that that that wasn't a correct thing.|s
+mn049|and so then everybody else says well we should we need to do a new evaluation without voice activity detector.|fh|s:s
+mn049|or we have to do something about it.|s:s
+me018|right.|b
+mn049|and in principle i uh i we agreed.|s
+me018|uhhuh.|b
+mn049|we said uh yeah.|s:s
+mn049|because uh|%--
+mn049|but in that case uh we would like to change the uh the algorithm.|s^cs
+mn049|because uh if we are working on different data we probably will use a different set of tricks.|s^df
+me018|right.|b
+mn049|but unfortunately nobody ever officially can somehow acknowledge that this can be done.|s^rt
+mn049|because french telecom was saying no no no now everybody has access to our code.|s
+mn049|so everybody is going to copy what we did.|s
+mn049|yeah.|fh
+mn049|well our argument was everybody has access to our code and everybody always had access to our code.|s
+mn049|we never uh uh denied that.|s
+mn049|we thought that people are honest that if you copy something and if it is protected protected by patent then you negotiate or something.|s
+me018|yeah.|b
+me018|right.|b
+mn049|right?|qy^d^g^rt
+mn049|i mean if you find our technique useful we are very happy.|s
+me018|right.|s^aa
+me018|uhhuh.|b
+mn049|but and french telecom was saying no no no.|s:s
+mn049|there is a lot of little tricks which uh sort of uh cannot be protected and you guys will take them which probably is also true.|s
+mn049|i mean you know it might be that people will take uh uh the algorithms apart and use the blocks from that.|fh|s
+mn049|but i somehow think that it wouldn't be so bad as long as people are happy uh uh uh honest about it.|s
+me018|yeah.|b
+mn049|and i think they have to be honest in the long run because winning proposal again uh what will be available is will be a code.|s
+me018|uhhuh.|b
+mn049|so the uh the people can go to code and say well listen this is what you stole from me.|s
+me018|right.|b
+mn049|you know?|qy^d^g^rt
+me018|right.|b
+mn049|so let's deal with that.|s^co
+mn049|so i don't see the problem.|s
+mn049|the biggest problem of course is that that alcatel french telecom claims well we fulfilled the conditions.|s:s
+mn049|we are the best.|s^ba
+mn049|uh we are the standard.|s
+mn049|and and other people don't feel that.|s^rt
+mn049|because they so they now decided that that is the whole thing will be done on well endpointed data.|s
+mn049|essentially that somebody will endpoint the data based on clean speech.|s^rt
+mn049|because most of this uh the speechdat car has the also close speaking mike and endpoints will be provided.|s
+me018|uhhuh.|b
+me018|uh.|s^bk
+mn049|and uh we will run again.|fh|s
+mn049|still not clear if we are going to run the if we are allowed to run uh uh new algorithms.|s
+mn049|but i assume so.|s
+mn049|because uh we would fight for that really.|s
+mn049|uh but since uh|fh|%--
+mn049|at least our experience is that only endpointing a a mel cepstrum gets uh gets you twenty one percent improvement overall and twenty seven improvement on speechdat car.|s
+me018|huh.|b
+mn049|then obvious the database uh i mean the the the uh the baseline will go up.|s
+me018|right.|b
+mn049|and nobody can then achieve fifty percent improvement.|s
+mn049|so they agreed that uh there will be a twenty five percent improvement required on on uh bad badly mismatched|s.%-
+me018|but wait a minute.|s^co
+me018|i thought the endpointing really only helped in the noisy cases.|s
+mn049|it uh|%-
+me018|oh but you still have that with the m f c c.|s^bu
+me018|okay.|s^bk
+mn049|yeah.|s^aa
+me018|yeah.|s^bk
+mn049|yeah but you have the same i mean m f c c basically has an enormous number of uh insertions.|fg|s
+me018|right.|b
+me018|yeah.|b
+me018|yeah.|b
+me018|yeah.|b
+mn049|and so so now they want to say we we will require fifty percent improvement only for well matched condition and only twenty five percent for the serial cases.|fh|s
+me018|huh.|b
+mn049|yeah and uh and they almost agreed on that except that it wasn't a hundred percent agreed.|fh|s
+mn049|and so last time uh during the meeting i just uh brought up the issue.|s
+mn049|i said well you know uh quite frankly i'm surprised how lightly you are making these decisions.|s
+mn049|because this is a major decision.|s
+mn049|for two years we are fighting for fifty percent improvement.|s
+mn049|and suddenly you are saying oh no we we will do something less.|s
+mn049|but maybe we should discuss that.|s^cs^t
+mn049|and everybody said oh we discussed that and you were not a there.|s
+mn049|and i said well a lot of other people were not there because not everybody participates at these teleconferencing things.|s:s
+mn049|then they said oh no no no because uh everybody is invited.|s
+mn049|however there is only ten or fifteen lines so people can't even you know participate.|s
+mn049|so uh they agreed and so they said okay we will discuss that.|s
+mn049|immediately nokia uh raised the question.|s
+mn049|and they said oh yeah we agree this is not good to to uh dissolve the uh uh the uh the criterion.|s
+me018|uhhuh.|b
+mn049|so now officially nokia is uh uh complaining and said they they are looking for support.|s^rt
+mn049|uh i think qualcomm is uh saying too we shouldn't abandon the fifty percent yet.|fh|s
+mn049|we should at least try once again one more round.|s^cs
+me018|uhhuh.|b
+me018|uhhuh.|b
+mn049|so this is where we are.|s^t
+me018|huh.|b
+mn049|i hope that i hope that this is going to be adopted.|s
+mn049|next wednesday we are going to have uh another uh teleconferencing call so we'll see what uh where it goes.|s
+me018|so what about the issue of um the weights on the for the different systems?|qo^tc
+me018|the well matched and medium mismatched and|s^e.%-
+mn049|yeah.|fg
+mn049|that's what that's a very good uh point.|s^ba
+mn049|because david says well you know we we can manipulate this number by choosing the right weights anyways.|s^df
+me018|uhhuh.|b
+mn049|so while you are right but uh you know but|s.%--
+mn049|uh yeah.|fh
+mn049|if you of course if you put a zero uh weight zero on a mismatched condition or highly mismatched then then you are done.|s
+me018|uhhuh.|b
+mn049|but weights were also already decided uh half a year ago.|s
+me018|and they're the staying the same?|qy^d^rt
+mn049|so|fh
+mn049|well of course people will not like it.|h|s
+me018|uhhuh.|b
+mn049|now what is happening now is that i i think that people try to match the criterion to solution.|s
+mn049|they have solution.|s
+mn049|now they want to make sure their criterion is|s.%--
+me018|right.|b
+mn049|and i think that this is not the right way.|s
+me018|yeah.|b
+mn049|uh it may be that that|s.%--
+mn049|eventually it may may it may have to happen.|s
+me018|uhhuh.|b
+mn049|but it's should happen at a point where everybody feels comfortable that we did all what we could.|s
+me018|uhhuh.|b
+mn049|and i don't think we did.|s
+mn049|basically i think that that this test was a little bit bogus because of the data.|s
+mn049|and uh essentially there were these arbitrary decisions made and and everything.|s
+mn049|so so so this is this is where it is.|s^tc
+mn049|so what we are doing at o g i now is uh uh uh working basically on our parts which we i think a little bit neglected.|s^rt
+mn049|like noise separation.|s
+mn049|uh so we are looking in ways is in uh which uh with which we can provide better initial estimate of the mel spectrum basically.|fh|s
+mn049|which would be a uh more robust to noise.|s
+mn049|and so far not much uh success.|s
+me018|huh.|b
+mn049|we tried uh things which uh a long time ago bill byrne suggested.|s
+mn049|instead of using fourier spectrum from fourier transform use the spectrum from l p c model.|s
+mn049|their argument there was the l p c model fits the peaks of the spectrum so it may be naturally more robust in noise.|s
+mn049|and i thought well that makes sense but so far we can't get much much out of it.|s
+me018|huh.|b
+mn049|uh we may try some standard techniques like spectral subtraction and|fh|s.%-
+me018|you haven't tried that yet?|qy^d^rt
+mn049|not not not much.|s^nd
+me018|huh.|b
+mn049|or even i was thinking about uh looking back into these totally ad hoc techniques.|s
+mn049|like for instance uh dennis klatt was suggesting uh the one way to uh deal with noisy speech is to add noise to everything.|s^cs
+me018|huh.|b
+mn049|so i mean uh uh add moderate amount of noise to all data.|s
+me018|oh!|s^fe
+me018|i see.|s^bk
+mn049|so that makes uh any additive noise less less effective.|s
+mn049|right?|qy^d^g^rt
+me018|right.|s^aa
+mn049|because you already uh had the noise uh in a|s.%--
+mn049|and it was working at the time.|s
+mn049|it was kind of like one of these things you know but|s.%--
+mn049|if you think about it it's actually pretty ingenious.|s^ba
+mn049|so well you know just take a take a spectrum and and and add of the constant c to every every value.|s
+me018|well you're you're basically|s.%-
+me018|yeah.|b
+me018|so you're making all your training data more uniform.|s^bs
+mn049|exactly.|s^aa
+mn049|and if if then if this data becomes noisy it it becomes effectively becomes less noisy basically.|s
+me018|huh.|b
+mn049|but of course you cannot add too much noise because then you'll then you're clean recognition goes down.|s
+mn049|but i mean it's yet to be seen how much.|s
+mn049|it's a very simple technique.|s
+me018|uhhuh.|s^no^rt
+mn049|yes indeed it's a very simple technique.|s
+mn049|you just take your spectrum and and use whatever is coming from f f t add constant.|s^cs
+me018|huh.|b
+mn049|you know?|qy^d^g^rt
+mn049|onto power spectrum.|s^rt
+mn049|that that|%--
+mn049|or the other thing is of course if you have a spectrum what you can start doing you can leave start leaving out the the parts which are uh uh low in energy.|s^cs
+mn049|and then perhaps uh one could try to find a a all pole model to such a spectrum.|s^cs
+mn049|because a all pole model will still try to to to put the the continuation basically of the of the model into these parts where the issue set to zero.|s
+mn049|so that's what we want to try.|s
+mn049|i have a visitor from brno.|s
+mn049|he's a kind of like young faculty.|s
+mn049|pretty hard working so he so he's so he's looking into that.|s
+me018|huh.|b
+mn049|and then most of the effort is uh now also aimed at this trap recognition.|s
+mn049|this uh this is this recognition from temporal patterns.|s^e
+me018|huh!|b
+me018|what is that?|qw^rt
+mn049|uh you don't know about traps!|s^fe|s
+me006|huh.|b
+me018|the traps sound familiar i but i don't|s.%-
+mn049|yeah.|fg
+mn049|i mean|%--
+mn049|this is familiar like sort of because we gave you the name.|s
+mn049|but what it is is that normally what you do is that you recognize uh speech based on a shortened spectrum.|fh|s
+me018|uhhuh.|b
+me018|uhhuh.|b^rt
+mn049|essentially l l p c mel cepstrum uh everything starts with a spectral slice.|s
+mn049|uh so if you so given the spectrogram you essentially are sliding sliding the spectrogram along the uh frequency axis.|fh|s
+me018|uhhuh.|b
+mn049|and you keep shifting this thing and you have a spectrogram.|s^e
+me018|uhhuh.|b
+mn049|so you can say well you can also take the time trajectory of the energy at a given frequency.|s
+me018|uhhuh.|b
+mn049|and what you get is then that you get a vector.|s
+mn049|and this vector can be a a assigned to some phoneme.|s
+mn049|namely you can say it i will i will say that this vector will uh will will describe the phoneme which is in the center of the vector.|s
+mn049|and you can try to classify based on that.|s
+me018|huh.|s^bk
+mn049|and you so you|%--
+mn049|so it's a very different vector very different properties.|s^rt
+mn049|we don't know much about it.|s^rt
+me018|huh.|b
+mn049|but the truth is|%-
+me018|but you have many of those vectors per phoneme.|s^ng
+mn049|well so you get many decisions.|s
+me018|right?|qy^d^g^rt
+me018|uhhuh.|s^bk
+mn049|and then you can start thinking about how to combine these decisions.|s
+me018|huh.|b
+mn049|exactly that's what yeah that's what it is.|s
+me018|huh.|b
+mn049|because if you run this uh recognition you get you still get about twenty percent error.|s
+mn049|uh twenty percent correct.|s^bsc
+me018|huh.|b
+mn049|you know?|qy^d^g^rt
+mn049|on on like for the frame by frame basis.|s
+mn049|so uh uh so it's much better than chance.|s
+me018|how wide are the uh frequency bands?|qw
+mn049|that's another thing.|s
+mn049|well currently we start i mean we start always with critical band spectrum.|s
+mn049|for various reasons.|s^df
+mn049|but uh the latest uh observation uh is that you you you are you can get quite a big advantage of using two critical bands at the same time.|s^rt
+me006|are they adjacent?|qy^rt
+me006|or are they|qrr.%-
+mn049|adjacent adjacent.|s^aa^m
+me006|okay.|s^bk
+mn049|and the reasons there are some reasons for that.|s
+mn049|because there are some reasons i can i could talk about will have to tell you about things like masking experiments which uh uh uh uh yield critical bands.|s^rt
+mn049|and also experiments with release of masking which actually tell you that something is happening across critical bands across bands.|s
+mn049|and|%-
+me018|well how do you how do you uh convert this uh energy over time in a particular frequency band into a vector of numbers?|qw
+mn049|it's uh uh uh i mean time t zero is one number time|s.%-
+me018|yeah but what's the number?|qw
+me018|is it just the|qy.%-
+mn049|it's a spectral energy logarithmic spectral energy.|s
+me018|it's just the amount of energy in that band from in that time interval.|s^bu
+mn049|yeah.|s^aa
+mn049|yes yes.|s^aa
+mn049|yes yes.|s^aa
+me018|okay.|s^bk
+mn049|and that's what that's what i'm saying then.|fg|s
+mn049|so this is a this is a starting vector.|s.x
+mn049|it's just like shortened spectrum or something.|s
+me018|uhhuh.|b
+mn049|but now we are trying to understand what this vector actually represents.|s^rt
+mn049|for instance a question is like how correlated are the elements of this vector.|s:qw
+mn049|turns out they are quite correlated because i mean especially the neighboring ones.|s
+me018|yeah.|b
+mn049|right?|qy^d^g^rt
+mn049|they they represent the same almost the same configuration of the vocal tract.|s
+me018|yeah.|s^aa
+me018|uhhuh.|b
+mn049|so there's a very high correlation.|s^bs
+mn049|so the classifiers which use the diagonal covariance matrix don't like it.|s
+mn049|so we're thinking about de correlating them.|s
+me018|huh.|b
+mn049|then the question is uh can you describe elements of this vector by gaussian distributions or to what extent.|s:qw
+mn049|because uh|%-
+mn049|and and and so on and so on.|s
+mn049|so we are learning quite a lot about that.|s
+me018|huh.|b
+mn049|and then another issue is how many vectors we should be using.|s
+mn049|i mean the so the minimum is one.|s
+me018|uhhuh.|b
+mn049|but i mean is the is the critical band the right uh uh dimension?|qy^rt
+mn049|so we somehow made arbitrary decision yes.|s
+mn049|then but then now we are thinking a lot how to uh how to use at least the neighboring band because that seems to be happening.|fh|s
+mn049|this i somehow start to believe that's what's happening in recognition.|s
+mn049|because a lot of experiments point to the fact that people can split the signal into critical bands.|s^df^rt
+mn049|but then oh uh uh|%--
+mn049|so you can you are quite capable of processing a signal uh uh independently in individual critical bands.|s
+mn049|that's what masking experiments tell you.|s
+mn049|but at the same time you most likely pay attention to at least neighboring bands.|s^rt
+mn049|when you are making any decisions you compare what's happening in in this band to what's happening to the band to to to the to the neighboring bands.|s
+mn049|and that's how you make uh decisions.|s^bs
+mn049|that's why the articulatory events which uh fletcher talks about they are about two critical bands.|s
+mn049|you need at least two basically.|s
+mn049|you need some relative relative relation.|s
+me006|huh.|b
+me018|huh.|b
+mn049|absolute number doesn't tell you the right thing.|s
+mn049|you need to you need to compare it to something else what's happening.|s
+mn049|but it's what's happening in the in the close neighborhood.|s
+mn049|so if you are making decision what's happening at one kilohertz you want to know what's happening at nine hundred hertz and it and maybe at eleven hundred hertz.|s
+mn049|but you don't much care what's happening at three kilohertz.|s
+me018|so it's really|s^bu.%--
+me018|it's sort of like saying that what's happening at one kilohertz depends on what's happening around it.|s^bu
+me018|it's sort of relative to it.|s
+mn049|to some extent it that is also true.|s^aap
+me018|uhhuh.|b
+mn049|yeah.|fg
+mn049|but it's but for but for instance uh uh what what uh humans are very much capable of doing is that if if they are exactly the same thing happening in two neighboring critical bands recognition can discard it.|s
+me018|huh.|b
+mn049|is what's happening?|qw
+mn049|hey!|s^fe
+me006|hey!|s^fe
+mn049|okay we need us another another voice here.|s
+me018|hey stephane.|s
+mn049|yeah?|qy^d^g^rt
+mn049|i think so.|s
+me018|yep.|s^aa
+mn049|yeah?|qy^d^g^rt
+me018|sure.|s^aa
+me018|go ahead.|s^co
+mn049|and so so so for instance if you if you if you add the noise that normally masks masks the uh the the signal.|fg|s
+me018|uhhuh.|b
+mn049|right?|qy^d^g^rt
+mn049|and you can show that in that if the if you add the noise outside the critical band that doesn't affect the the decisions you're making about a signal within a critical band.|s
+me018|huh.|b
+mn049|unless this noise is modulated.|s^e
+mn049|if the noise is modulated with the same modulation frequency as the noise in a critical band the amount of masking is less.|s
+me018|huh.|b
+mn049|the moment you moment you provide the noise in neighboring critical bands.|s
+mn049|so the masking curve normally it looks like sort of|s.%--
+mn049|i start from from here.|s
+mn049|so you you have uh no noise then you you you are expanding the critical band so the amount of maching is increasing.|s
+mn049|and when you hit a certain point which is a critical band then the amount of masking is the same.|s
+me018|huh.|b
+mn049|so that's the famous experiment of fletcher a long time ago.|s^bs
+mn049|like that's where people started thinking wow this is interesting.|s
+me018|yeah.|b
+mn049|so|fh
+mn049|but if you if you if you modulate the noise the masking goes up and the moment you start hitting the another critical band the masking goes down.|s
+mn049|so essentially essentially that's a very clear indication that that that cognition can take uh uh into consideration what's happening in the neighboring bands.|s
+mn049|but if you go too far in a in a if you if the noise is very broad you are not increasing much more.|s
+mn049|so so if you if you are far away from the signal uh from the signal uh the frequency at which the signal is then the even the when the noise is co modulated it it's not helping you much.|s
+me018|uhhuh.|b
+me018|yeah.|b
+me018|uhhuh.|b
+mn049|so|fh
+me006|huh.|b
+mn049|so things like this we are kind of playing with with with the hope that perhaps we could eventually use this in a in a real recognizer.|s
+me006|uhhuh.|b
+mn049|like uh partially of course we promised to do this under the the the aurora uh program.|s
+me018|but you probably won't have anything before the next time we have to evaluate.|s
+me018|right?|qy^d^g^rt
+mn049|probably not.|s^aa
+me018|yeah.|s^bk
+mn049|well maybe most likely we will not have anything which would comply with the rules.|s
+me018|uh.|s^bk
+mn049|like because uh uh|%-
+me018|latency and things.|s^2
+mn049|latency currently chops the require uh significant uh latency amount of processing.|s
+me018|uhhuh.|b
+mn049|because uh we don't know any better yet than to use the neural net classifiers uh and uh and uh traps.|s
+me018|yeah.|b
+me006|uhhuh.|b
+mn049|though the the work which uh everybody is looking at now aims at trying to find out what to do with these vectors so that a simple gaussian classifier would be happier with it.|s
+mn007|huh.|b
+me018|uhhuh.|b
+mn049|or to what extent a gaussian classifier should be unhappy uh|s.%--
+mn049|that and how to gaussian ize the vectors.|s
+mn049|and|%--
+me018|huh.|b
+mn049|so this is uh what's happening.|s^tc
+mn049|then sunil is uh uh uh asked me for one month's vacation.|s
+mn049|and since he did not take any vacation for two years i had no i didn't have a heart to tell him no.|s
+mn049|so he's in india.|s
+me018|wow!|s^fe
+mn049|and uh|%-
+me018|is he getting married or something?|qy^rt
+mn049|uh well uh he may be looking for a girl for for i don't i don't i don't ask.|s^j^ng
+mn049|i know that when last time narayanan did that he came back engaged.|s^j^rt
+me018|right.|b
+me018|well i mean i've known other friends who they they go to they go back home to india for a month they come back married.|s
+mn049|yeah.|b
+mn049|i know.|b
+mn049|i know i know.|s^aa
+me018|you know huh?|qy^d^g
+mn049|and then of course then what happened with narayanan was that he start pushing me that he needs to get a p h d because they wouldn't give him his wife.|s
+mn049|and she's very pretty and he loves her.|s
+mn049|and so so we had to really|s.%-
+me018|so he finally had some incentive to finish.|s^j
+mn049|oh yeah.|s^aa
+me018|huh?|qy^d^g^rt
+mn049|we had well i had a incentive because he he always had this plan except he never told me.|s
+me018|oh.|s^bk
+mn049|sort of figured that that was a uh that he uh he told me the day when we did very well at our nist evaluations of speaker recognition the technology and he was involved there.|s
+mn049|we were after presentation we were driving home and he told me.|s
+me018|when he knew you were happy.|s^j
+me018|huh?|qy^d^g^rt
+mn049|yeah.|s^aa
+mn049|so i i said well yeah okay so he took another another three quarter of the year but uh he was out.|s
+mn049|so i wouldn't surprise me if he has a plan like that though though uh pratibha still needs to get out first.|s
+me018|huh.|b
+mn049|because pratibha is there a a year earlier.|s
+me018|huh.|b
+mn049|and and satya needs to get out very first because he's he already has uh four years served.|s
+mn049|though one year he was getting masters.|s^e
+mn049|so|fh
+mn049|so|fh
+mn007|huh.|b
+me018|so have the um|qy.%--
+me018|when is the next uh evaluation?|qw^rt
+me018|june or something?|qr^d^rt
+mn049|which?|qw^bu^rt
+mn049|speaker recognition?|qy^bu^d^rt
+me018|no for uh aurora.|s^ar^rt
+mn049|uh there we don't know about evaluation.|h|s
+mn049|next meeting is in june.|s^no
+me018|huh.|s^bk
+mn049|and uh uh but like getting get together.|s
+me018|oh okay.|s^bk
+me018|are people supposed to rerun their systems?|qy^rt
+mn049|nobody said that yet.|s^no
+me018|or|qrr.%-
+mn049|i assume so.|s^aa
+me018|huh.|b
+mn049|uh yes uh but nobody even set up yet the date for uh delivering uh endpointed data.|s
+me018|wow.|s^bk
+mn049|and this uh that that sort of stuff.|s
+mn049|but i uh|%--
+mn049|yeah.|fh
+mn049|what i think would be of course extremely useful if we can come to our next meeting and say well you know we did get fifty percent improvement.|s^cs:s
+mn049|if if you are interested we eventually can tell you how but uh we can get fifty percent improvement.|s
+me018|uhhuh.|b
+mn049|because people will will be saying it's impossible.|s
+me018|huh.|b
+me018|do you know what the new baseline is?|qy^rt
+me018|oh i guess if you don't have|s.%-
+mn049|twenty two twenty twenty two percent better than the old baseline.|s^na^rt
+me018|using your uh voice activity detector?|qy^bu^d^rt
+mn049|yes.|s^aa
+mn049|yes.|s^aa
+mn049|but i assume that it will be similar i don't i i don't see the reason why it shouldn't be.|s
+me018|similar yeah.|s^aa^m
+me018|uhhuh.|b
+mn049|i i don't see reason why it should be worse.|s
+me018|yeah.|b
+mn049|because if it is worse then we will raise the objection.|s
+mn049|we say well you know how come.|s:qw
+mn049|because uh if we just use our voice activity detector which we don't claim even that it's wonderful it's just like one of them.|s
+mn007|uhhuh.|b
+me018|yeah.|b
+mn049|we get this sort of improvement.|s
+mn049|how come that we don't see it on on on on your endpointed data?|qw
+mn007|yeah.|fg
+mn007|i guess it could be even better.|s
+mn007|because the voice activity detector that i choosed is something that cheating it's using the alignment of the speech recognition system.|s^df
+mn049|i think so.|s^aa
+mn049|yeah.|b
+mn049|yeah uh|%-
+mn007|and only the alignment on the clean channel and then mapped this alignment to the noisy channel.|s^e
+mn049|and on clean speech data.|s^2
+me018|oh okay.|s^bk
+mn049|yeah.|b
+mn049|well david told me|fg|s.%-
+mn049|david told me yesterday or harry actually he told harry from qualcomm.|s
+mn049|and harry uh brought up the suggestion we should still go for fifty percent.|s
+mn049|he says are you aware that your system does only thirty percent uh comparing to to endpointed baselines.|s:qy
+mn007|yeah.|b
+mn049|so they must have run already something.|s
+me018|huh.|b
+mn049|so|fh
+mn049|and harry said yeah.|s
+mn049|but i mean we think that we we didn't say the last word yet that we have other other things which we can try.|s
+me018|huh.|b
+mn049|so so there's a lot of discussion now about this uh new criterion.|fh|s
+mn007|uhhuh.|b
+mn049|because nokia was objecting with uh qualcomm's we basically supported that we said yes.|s^df
+mn007|uhhuh.|b
+mn049|now everybody else is saying well you guys might must be out of your mind.|s.x
+mn049|uh the guenter hirsch who doesn't speak for ericsson anymore because he is not with ericsson.|s
+mn049|and ericsson may not may withdraw from the whole aurora activity because they have so many troubles now.|s
+me018|wow!|s^fe
+mn049|ericsson's laying off twenty percent of people.|s
+me006|wow!|s^fe
+me018|where's uh guenter going?|qw
+mn049|well guenter is already he got the job uh already was working on it for past two years or three years.|s
+me018|uhhuh.|b
+mn049|he got a job uh at some some fachschule the technical college not too far from aachen.|s
+me018|huh!|s^fe
+mn049|so it's like professor university professor.|s
+me018|uhhuh.|b
+mn049|you know not quite a university not quite a sort of it's not aachen university but it's a good school and he he's happy.|s^rt
+me018|uhhuh.|b
+me018|huh!|b
+mn049|and he well he was hoping to work uh with ericsson like on uh like consulting basis.|s
+me018|uhhuh.|b
+mn049|but right now he says says it doesn't look like that anybody is even thinking about speech recognition.|s
+me018|wow!|s^fe
+mn049|they think about survival.|s^df
+mn049|yeah.|fh
+me018|huh.|b
+mn049|so|fh
+mn049|so but this is being now discussed right now.|s
+mn049|and it's possible that uh that that it may get through that we will still stick to fifty percent.|s
+mn007|uhhuh.|b
+mn049|but that means that nobody will probably get this this improvement.|s
+mn049|yet with the current system.|s
+mn049|which essentially i think that we should be happy with.|s
+mn049|because that that would mean that at least people may be forced to look into alternative solutions.|s
+mn007|uhhuh.|b
+mn007|uhhuh.|b
+mn049|and|%--
+mn007|but maybe i i mean we are not too far from from fifty percent from the new baseline.|s
+mn049|uh but not|s^ar.%-
+mn007|which would mean like sixty percent over the current baseline which is|s.%-
+mn049|yeah.|s^aa
+mn049|yes yes.|s^aa
+mn049|we we getting we getting there right.|s^aa
+mn007|well.|fg
+mn007|we are around fifty fifty five.|s
+mn049|yeah.|b
+mn007|so|fh
+mn049|yeah.|b
+mn007|uhhuh.|b
+mn049|is it like sort of is|qy.%--
+mn049|how did you come up with this number?|qw^rt
+mn049|if you improve twenty by twenty percent the the the all baselines it's just a quick computation?|qy^d^rt
+mn007|yeah.|h
+mn007|i don't know exactly if it's|s^no.%-
+mn049|uhhuh.|b
+mn049|i think it's about right.|s
+mn007|yeah because it it depends on the weightings.|s
+mn007|and|%--
+mn049|yeah yeah.|b
+mn007|yeah.|fh
+mn007|but|fh
+mn007|uhhuh.|fh
+me018|huh.|b
+me018|how's your documentation or whatever|qw.%--
+me018|it what was it you guys were working on last week?|qw
+mn007|yeah.|h
+mn007|finally we we've not finished with this.|s^rt
+mn007|we stopped.|s
+fn002|more or less it's finished.|s^ar
+mn007|yeah.|s^aa
+fn002|to need a little more time to improve the english and maybe to fill in something some small detail something like that.|s^cs
+mn007|uhhuh.|b
+me018|huh.|b
+fn002|but it's more or less ready.|s^bs
+mn007|yeah.|s^aa
+mn007|well we have a document that explain a big part of the experiments.|s
+fn002|necessary to to include the the bibliography.|s^2
+mn007|but|%--
+fn002|uhhuh.|b
+mn007|it's not yeah finished yet.|s
+mn007|uhhuh.|b
+me018|so have you been running some new experiments?|qw^rt
+me018|i i thought i saw some jobs of yours running on some of the machine.|s
+mn007|yeah.|s^aa
+mn007|right.|s^aa
+mn007|we've done some strange things like removing c zero or c one from the the vector of parameters.|s^rt
+mn007|and we noticed that c one is almost not useful at all.|s
+mn007|you can remove it from the vector it doesn't hurt.|s^rt
+me018|really?|qh
+me018|that has no effect?|qy^d^rt
+mn007|um|h
+me018|uh is this in the baseline?|qy^rt
+me018|or in uh|qrr.%--
+mn007|in the|s^m.%--
+mn007|no.|s^ar
+mn007|in the proposal.|s^rt
+me018|in|s^m.%--
+me018|uh huh uh huh.|s^bk
+mn049|so we were just discussing since you mentioned that in it|s.%--
+mn007|uhhuh.|b
+mn049|driving in the car with morgan this morning we were discussing a good experiment for for beginning graduate student who wants to run a lot of who wants to get a lot of numbers on something.|s^rt
+mn007|uhhuh.|b
+mn049|which is like imagine that you will you will start putting every any coefficient which you are using in your vector in some general power.|s^cs
+me018|in some what?|qw^rt
+mn049|general power.|s
+mn049|like sort of you take a power of two or take a square root or something.|s
+me018|uhhuh.|b
+mn007|uhhuh.|b
+me018|uhhuh.|b
+mn049|so suppose that you are working with a c c one.|s^cs
+mn049|so if you put it in a square root that effectively makes your model half as efficient.|s^cs
+mn049|because uh your uh gaussian mixture model.|s^df
+mn049|right?|qy^d^rt
+mn049|computes the mean.|s^df
+me018|uhhuh.|b
+mn049|and and uh|%--
+mn049|but it's the mean is an exponent of the whatever the the this gaussian function.|s
+me018|you're compressing the range.|s
+me018|right?|qy^d^g^rt
+me018|of that|%-
+mn049|so you're compressing the range of this coefficient so it's becoming less efficient.|s^na
+mn049|right?|qy^d^f^rt
+me018|uhhuh.|s^aa
+mn049|so|fh
+mn049|so|fh
+mn049|morgan was and he was he was saying well this might be the alternative way how to play with a with a fudge factor.|s
+mn049|you know?|qy^d^f
+mn049|uh in the|%-
+me018|oh.|s^bk
+mn049|you know just compress the whole vector.|s
+me018|yeah.|s^aa
+mn049|and i said well in that case why don't we just start compressing individual elements like when when|s.%--
+mn049|because in old days we were doing when when people still were doing template matching and euclidean distances we were doing this liftering of parameters.|s
+mn049|right?|qy^d^g^rt
+me018|uhhuh.|s^aa^rt
+mn049|because we observed that uh higher parameters were more important than lower for recognition.|s
+mn049|and basically the the c c one contributes mainly slope.|s
+me018|right.|b
+mn049|and it's highly affected by uh frequency response of the of the recording equipment and that sort of thing.|s^e
+mn007|uhhuh.|b
+me018|uhhuh.|b
+mn049|so|fh
+mn049|so we were coming with all these various lifters.|s
+me018|uhhuh.|b
+mn049|uh bell labs had he this uh uh raised cosine lifter which still i think is built into h h t k for reasons unknown to anybody.|s
+mn049|but but uh we had exponential lifter or triangle lifter basic number of lifters.|fh|s
+me018|huh.|b
+mn049|and but so they may be a way to to fiddle with the with the|fh|s.%-
+me018|insertions?|qy^2^d^rt
+mn049|insertions deletions or the the giving a relative uh basically modifying relative importance of the various parameters.|s^aap^m
+mn007|uhhuh.|b
+mn049|the only of course problem is that there's an infinite number of combinations.|s
+me018|oh.|b
+me018|uhhuh.|b
+mn049|and if the if you if|%-
+me018|you need like a some kind of a|s^cs.%-
+mn049|yeah you need a lot of graduate students and a lot of computing power.|s^cs
+me018|you need to have a genetic algorithm that basically tries random permutations of these things.|s^cs
+mn049|i know.|b
+mn049|exactly.|s^aa
+mn049|oh.|fg
+mn049|if you were at bell labs or i|s.%--
+mn049|i shouldn't be saying this in on on a mike.|s
+mn049|right?|qy^d^g^rt
+mn049|or uh i b m.|s
+mn049|that's what maybe that's what somebody would be doing.|s
+me018|yeah.|b
+me006|huh.|b
+mn049|oh i mean i mean the places which have a lot of computing power.|s
+me018|uhhuh.|b
+mn049|so because it is really it's a it's a it's it will be a reasonable search.|s
+me018|yeah.|b
+mn049|uh|fh
+mn049|but i wonder if there isn't some way of doing this uh search like when we are searching say for best discriminants.|s
+me018|you know actually i don't know that this wouldn't be all that bad.|s^ba
+me018|i mean you you compute the features once.|s
+mn049|yeah.|s^aa
+me018|right?|qy^d^g^rt
+mn049|yeah.|s^aa
+me018|and then these exponents are just applied to that.|s
+mn049|absolutely.|s^aa
+mn049|and everything is fixed.|s
+me018|so|fg
+mn049|everything is fixed.|s^r
+me018|and is this something that you would adjust for training?|qy^rt
+mn049|each each|%-
+me018|or only recognition?|qrr
+mn049|for both you would have to do.|s
+me018|you would do it on both.|s^bu^m
+mn049|yeah.|s^aa
+me018|so you'd actually|s.%-
+mn049|you have to do both.|s^r
+mn049|because essentially you are saying uh this feature is not important.|s
+me018|uhhuh.|b
+mn049|or less important.|s
+mn049|so that's a that's a painful one.|s
+mn049|yeah.|b
+me018|so for each uh set of exponents that you would try it would require a training and a recognition.|s^bu
+mn049|yeah.|s^aa
+mn049|but but wait a minute.|s^co
+mn049|you may not need to uh uh retrain the model.|s
+mn049|you just may may need to uh give uh less weight to to uh a uh a component of the model which represents this particular feature.|s^cs
+mn049|you don't have to retrain it.|s
+me018|oh.|s^bk
+me018|so if you|%--
+me018|instead of altering the feature vectors themselves you you modify the the the gaussians in the models.|s^bu
+mn049|you just multiply.|s^2
+mn049|yeah.|b
+mn049|yep.|b
+mn049|you modify the gaussian in the model.|s^m^na
+mn049|but in the in the test data you would have to put it in the power.|s^e
+mn049|but in a training what you in a training uh in trained model all you would have to do is to multiply a model by appropriate constant.|s
+me018|uhhuh.|b
+me018|but why if you're if you're if you're altering the model why in the test data why would you have to muck with the uh cepstral coefficients?|qw
+mn049|because in uh test in uh test data you don't have a model.|s
+mn049|you have uh only data.|s^e
+mn049|but in a in a|%-
+me018|no but you're running your data through that same model.|s^nd
+mn049|that is true.|s^aa
+mn049|but i mean so what you want to do you want to say if uh you if you observe something like stephane observes that c one is not important you can do two things.|s
+me018|uhhuh.|b
+me018|uhhuh.|b
+mn049|if you have a trained trained recognizer in the model you know the the the the component which i i mean dimension|s.%-
+me018|uhhuh.|b
+me018|all of the all of the mean and variances that correspond to c one you put them to zero.|s
+mn049|to the you you know it.|s^na
+me018|yeah.|s^bk
+mn049|but what i'm proposing now if it is important but not as important you multiply it by point one in a model.|s^cs
+mn049|but but but|%-
+me018|but what are you multiplying?|qy
+me018|because those are means.|s
+me018|right?|qy^d^rt
+me018|i mean you're|%-
+me006|you're multiplying the standard deviation?|qy^d^rt
+me006|so it's|%-
+mn049|i think that you multiply the|s^cs.%-
+mn049|i would i would have to look in the in the math.|s
+mn049|i mean how how does the model uh|qw.%-
+me018|i think you|%-
+me018|yeah i think you'd have to modify the standard deviation or something so that you make it wider or narrower.|s^cs
+mn049|yeah.|b
+me006|because|%-
+mn049|yeah.|b
+me006|yeah.|b
+mn007|yeah.|b
+mn049|effectively that's that that's uh i|%-
+mn049|exactly.|s^aa
+mn049|that's what you do.|s
+mn049|that's what you do you you you modify the standard deviation as it was trained.|s^r
+me006|yeah.|b
+mn049|effectively you you know in in front of the of the model you put a constant.|s
+mn049|yeah effectively what you're doing is you is you are modifying the the the deviation.|s
+mn049|right?|qy^d^g^rt
+me018|oop.|b
+me006|the spread.|s
+me018|sorry.|s^fa
+me006|right?|qy^d^g
+mn049|yeah.|s^aa
+mn049|the spread.|s^aa^m
+me018|so|fg
+me006|it's the same same mean.|s
+mn049|and and and|fg
+me006|right?|qy^d^g^rt
+me018|so by making the standard deviation narrower uh your scores get worse for|s^bu.%--
+mn049|yeah.|s^aa
+me018|unless it's exactly right on the mean.|s^bu
+mn049|your|%-
+mn049|no.|s^ar
+mn049|by making it narrower|s.%-
+me018|right?|qy^d^g^rt
+me018|i mean there's you're you're allowing for less variance.|s
+mn049|uh your|%-
+me006|uhhuh.|b
+mn049|yes.|s^aa
+mn049|so you making this particular dimension less important.|s^bs
+mn049|because see what you are fitting is the multidimensional gaussian.|s
+mn049|right?|qy^d^f^rt
+me018|uhhuh.|s^aa
+mn049|it's a it has it has uh thirty nine dimensions or thirteen dimensions if you ignore deltas and double deltas.|s
+me018|uhhuh.|b
+me018|uhhuh.|b
+mn049|so in order if you in order to make dimension which which stephane sees uh less important uh uh i mean not not useful less important what you do is that this particular component in the model you can multiply by you can you can basically de weight it in the model.|s^cs
+mn049|but you can't do it in a in a test data.|s
+mn049|because you don't have a model for i mean uh when the test comes.|s^df
+mn049|but what you can do is that you put this particular component in and and you compress it.|s^cs
+mn049|that becomes uh gets less variance subsequently becomes less important.|s
+me018|couldn't you just do that to the test data and not do anything with your training data?|qy^rt
+mn049|that would be very bad.|s^ba
+mn049|because uh your your model was trained uh expecting uh|s^df.%--
+mn049|that wouldn't work.|s
+mn049|because your model was trained expecting a certain variance on c one.|s^df
+me018|uhhuh.|b
+mn049|and because the model thinks c one is important.|s
+mn049|after you train the model you sort of you could do you could do still what i was proposing initially.|s^cs
+mn049|that during the training you you compress c one that becomes then it becomes less important in a training.|s^cs
+me018|uhhuh.|b
+mn049|but if you have if you want to run extensive experiment without retraining the model you don't have to retrain the model.|s
+mn049|you train it on the original vector.|s
+mn049|but after you when you are doing this parametric study of importance of c one you will de weight the c one component in the model.|s^rt
+mn049|and you will put in the you will compress the this component in a in the test data by the same amount.|s
+me018|could you also if you wanted to|qy.%--
+me018|if you wanted to try an experiment uh by leaving out say c one couldn't you in your test data uh modify the all of the c one values to be um way outside of the normal range of the gaussian for c one that was trained in the model?|qy^rt
+me018|so that effectively the c one never really contributes to the score?|qy^d^rt
+mn007|uhhuh.|b.%
+me018|do you know what i'm|qy.%-
+mn049|no.|s^ar
+mn049|that would be a severe mismatch.|s
+mn049|right?|qy^d^g^rt
+mn049|what you are proposing?|qy^d^rt
+me018|yeah.|s^aa
+mn049|no you don't want that.|s^ar
+mn049|because that would then your model would be unlikely.|s^df
+mn049|your likelihood would be low.|s^e
+mn049|right?|qy^d^g^rt
+me018|uhhuh.|s^aa
+mn049|because you would be providing severe mismatch.|s
+me018|but what if you set if to the mean of the model then?|qw
+me018|and it was a you set all c ones coming in through your test data you you change whatever value that was there to the mean that your model had.|s
+mn049|no that would be very good match.|s^ba
+mn049|right?|qy^d^g^rt
+me018|yeah.|s^aa
+mn049|that you would|%-
+mn007|which|%-
+mn007|well yeah but we have several means.|s^aap
+mn007|so|fh
+mn049|i see what you are saying.|s^bk
+mn007|right?|%
+me006|saying.|s^2
+mn049|but|fh
+mn049|uh no no i don't think that it would be the same.|fh|s^ar
+mn049|let me uh|%--
+mn049|if you set it to a mean that would|s^cs.%--
+mn049|no you can't do that.|s^ar^co
+me018|oh that's true.|s^aa
+mn049|you you chuck you can't do that.|s^ar^co
+me018|right?|qy^d^g^rt
+me018|yeah because you you have|s.%-
+mn007|wait.|s^co.%
+mn007|which|%-
+me018|yeah.|b
+mn049|because that would be a really fiddling with the data.|s^df
+mn049|you can't do that.|s^co
+me018|huh huh.|b
+me018|uhhuh.|b
+me018|uhhuh.|b
+mn049|but what you can do i'm confident you|s^cs.%--
+mn049|well i'm reasonably confident and i putting it on the record.|s
+mn049|right?|qy^d^f^rt
+mn049|i mean people will listen to it for for centuries now.|s^j
+mn049|is what you can do is you train the model uh with the with the original data.|s^cs
+me006|uhhuh.|b
+mn049|then you decide that you want to see how important c c one is.|s
+mn049|so what you will do is that a component in the model for c one you will divide it by by two.|s
+mn049|and you will compress your test data by square root.|s
+me018|uhhuh.|b
+mn049|then you will still have a perfect match.|s
+mn049|except that this component of c one will be half as important in a in a overall score.|s
+me018|uhhuh.|b
+me018|uhhuh.|b^rt
+mn049|then you divide it by four and you take a square fourth root.|s
+mn049|then if you think that some component is more is more important then it then then uh uh it is based on training then you uh multiply this particular component in the model by by by|s.%-
+me018|you're talking about the standard deviation?|qy^d^rt
+mn049|yeah.|s^aa
+me018|yeah.|b
+mn049|yeah multiply this component uh it by number larger than one.|s^aa|s^rt
+me018|uhhuh.|b
+mn049|and you put your data in power higher than one.|s
+mn049|then it becomes more important in the overall score i believe.|s
+me018|but don't you have to do something to the mean also?|qy^rt
+mn007|yeah.|b
+mn007|but at the|%-
+mn049|no.|s^ar
+mn007|no.|s^ar
+mn049|no.|s^ar
+me006|yeah.|b
+mn007|but i think it's uh the the variance is on on the denominator in the in the gaussian equation.|s
+mn007|so i think it's maybe it's the contrary.|s
+mn007|if you want to decrease the importance of a parameter you have to increase it's variance.|s.x
+mn049|yes.|s^aa
+mn049|right.|s^aa.x
+mn049|yes.|s^aa
+fn002|multiply.|s.x
+mn049|exactly.|s^aa
+mn049|yeah.|fg
+mn049|so you so so you may want to do it other way around.|s^cs
+mn007|huh.|b
+mn007|that's right.|s^aa
+mn007|okay.|b
+mn049|yeah.|b
+mn007|uhhuh.|b
+me006|right.|b
+me018|but if your|%--
+me018|if your um original data for c one had a mean of two.|s
+mn049|uhhuh.|b^rt
+me018|and now you're you're you're changing that by squaring it.|s
+me018|now your mean of your c one original data has is four.|s
+me018|but your model still has a mean of two.|s
+me018|so even though you've expended the range your mean doesn't match anymore.|s
+mn007|uhhuh.|b
+me018|do you see what i mean?|qy^rt
+mn049|let's see.|s^co
+mn007|i think what i see what could be done is you don't change your features which are computed once for all.|s^cs^rt
+mn049|uhhuh.|b
+mn007|but you just tune the model.|s
+mn007|so you have your features.|s^rt
+mn007|you train your your model on these features.|s^rt
+me018|uhhuh.|b
+mn007|and then if you want to decrease the importance of c one you just take the variance of the c one component in the in the model and increase it if you want to decrease the importance of c one or decrease it|s.%--
+me018|yeah.|b
+mn049|yeah.|b
+me018|right.|b
+mn049|yeah.|b
+mn049|you would have to modify the mean in the model.|s
+mn049|i you i agree with you.|s^aa
+mn049|yeah.|b
+mn049|yeah.|b
+me018|yeah so|fg
+mn049|but i mean but it's it's it's do able.|s
+mn007|well.|fg
+mn049|right?|qy^d^g^rt
+mn049|i mean it's predictable.|s
+mn049|uh yeah.|b
+me018|it's predictable yeah.|s^aa^m
+mn049|yeah.|b
+mn049|yeah it's predictable.|s^aa^r
+me018|yeah.|b
+mn007|huh.|b
+me018|but as a simple thing you could just just muck with the variance.|s^cs
+mn007|just adjust the model.|s^2
+mn007|yeah.|b
+me018|to get uh this uh this the effect i think that you're talking about.|s^df
+mn049|uhhuh.|b
+me018|right?|qy^d^g^rt
+mn049|it might be.|s^am
+me018|could increase the variance to decrease the importance.|s
+mn049|uhhuh.|b
+mn007|uhhuh.|b
+me018|yeah because if you had a huge variance you're dividing by a large number you get a very small contribution.|fg|s
+mn007|yeah.|b
+mn007|it becomes more flat.|s
+me006|doesn't matter|%-
+mn007|and|%-
+me006|right.|b
+mn049|yeah.|b
+me018|yeah.|b
+mn007|yeah.|b
+me018|huh.|b
+me006|yeah the sharper the variance the more more important to get that one right.|s
+mn049|uhhuh.|b
+me018|yeah you know actually this reminds me of something that happened uh when i was at b b n.|fg|s
+me018|we were playing with putting um pitch into the mandarin recognizer.|s
+mn049|uhhuh.|b
+me018|and this particular pitch algorithm um when it didn't think there was any voicing was spitting out zeros.|s
+me018|so we were getting uh when we did clustering we were getting groups uh of features|s.%-
+mn049|pretty new outliers interesting outliers.|s
+me018|yeah with with a mean of zero and basically zero variance.|fg|s
+mn049|right?|qy^d^g^rt
+mn049|variance.|s^m
+me018|so when when anytime any one of those vectors came in that had a zero in it we got a great score.|fh|s
+me018|i mean it was just you know incredibly high score and so that was throwing everything off.|s
+mn007|uhhuh.|b
+me018|so if you have very small variance you get really good scores when you get something that matches.|fh|s
+mn049|yeah.|b
+me018|so so that's a way yeah yeah|fh|s.%--
+mn007|uhhuh.|b
+me018|that's a way to increase the yeah|s.%--
+me018|yeah that's interesting.|s^ba
+me018|so in fact that would be|s.%--
+me018|that doesn't require any retraining.|s^bu
+mn049|yeah.|s^aa
+mn007|no.|s^aa
+mn049|no no.|s^aa^m
+mn007|that's right.|s^aa
+me018|so it's just|s.%-
+mn007|so that means|s.%-
+mn007|tuning the models and testing actually.|s
+mn049|yeah.|b
+me018|it's just recognitions.|s
+me018|yeah.|b
+mn049|yeah.|b
+me018|you you have a step where you you modify the models make a copy of your models with whatever variance modifications you make and rerun recognition.|s
+mn007|it would be quick.|s
+mn049|yeah.|b
+mn007|uhhuh.|b
+mn049|yeah.|b
+mn049|yeah.|b
+mn049|yeah.|b
+me018|and then do a whole bunch of those.|s^rt
+mn049|yeah.|b
+mn007|uhhuh.|b
+me018|that could be set up fairly easily i think.|s
+me018|and you have a whole bunch of|s.%--
+me018|you know|fh
+mn049|chuck is getting himself in trouble.|s^j
+me018|that's an interesting idea actually.|s^ba
+me018|for testing the|%--
+me018|yeah.|fh
+me018|huh!|fh
+me006|didn't you say you got these uh h t k's set up on the new linux boxes?|qy^rt
+me018|that's right.|s^aa
+me018|in fact and and they're just right now they're installing uh increasing the memory on that uh the linux box.|s
+me006|yeah.|b
+mn049|hey!|s^fe
+mn049|and chuck is sort of really fishing for how to keep his computer busy.|s^j
+me006|right.|b
+me018|yeah.|s^aa
+mn049|right?|qy^d^g^rt
+me018|absinthe.|s
+me018|absinthe.|s
+mn049|well you know that's|s.%-
+me018|we've got five processors on that.|s
+mn049|that's yeah that's a good thing.|s^ba
+me006|oh yeah.|s^bk
+me018|and two gigs of memory.|s^e
+me006|that's right.|s^aa
+mn049|because then you just write the do and then you pretend that you are working while you are sort of you you can go fishing.|s^j
+mn007|yeah.|b
+me018|yeah.|b
+me018|exactly.|s^aa
+me006|pretend yeah.|s^aa
+me018|yeah.|b
+fn002|go fishing.|s
+me018|see how many cycles we used?|qy^d^rt
+mn049|yeah.|s^aa
+mn049|then you are sort of in this mode like all of those arpa people are.|s
+me018|yeah.|s^aa
+mn049|right?|qy^d^g^rt
+mn049|uh since it is on the record i can't say uh which company it was.|s
+mn049|but it was reported to me that uh somebody visited a company.|s
+mn049|and during a during a discussion there was this guy who was always hitting the carriage returns uh on a computer.|s^j
+me018|uhhuh.|b
+mn049|so after two hours uh the visitor said why are you hitting this carriage return.|s^j:qw
+mn049|and he said well you know we are being paid by a computer i mean we are we have a government contract.|s^j
+mn049|and they pay us by by amount of computer time we use.|s^j
+mn049|it was in old days when there were uh of p d p eights and that sort of thing.|s^j
+me018|oh my gosh!|s^fe
+me018|so he had to make it look like|s^bu.%--
+mn049|because so they had a they literally had to monitor at the time at the time on a computer how much time is being spent i or on on this particular project.|s
+me018|yeah.|b
+me018|how|s^m.%-
+me018|idle time.|s^2
+me018|yeah.|b
+me006|yeah.|b
+mn049|nobody was looking even at what was coming out.|s
+me018|have you ever seen those little|qy.%--
+me018|um|h
+me018|it's it's this thing that's the shape of a bird and it has a red ball and its beak dips into the water.|s^rt
+mn049|yeah i know.|s^aa
+mn049|right.|b
+me018|so if you could hook that up so it hit the keyboard|s^j.%--
+mn049|yeah.|b
+mn049|yeah.|b
+mn049|yeah.|b
+mn049|yeah.|b
+me018|that's an interesting experiment.|s^ba
+mn049|it would be similar similar to|s.%-
+mn049|i knew some people who were uh that was in old communist uh czechoslovakia.|s
+mn049|right?|qy^d^f^rt
+mn049|so we were watching for american airplanes coming to spy on on uh on us at the time.|s
+me018|uhhuh.|b
+me018|uhhuh.|b
+mn049|so there were three guys uh uh stationed in the middle of the woods on one lonely uh watching tower pretty much spending a year and a half there because there was this service.|s
+mn049|right?|qy^d^f^rt
+me018|ugh!|b
+mn049|and so they very quickly they made friends with local girls and local people in the village.|s
+mn049|and|fh
+me018|yeah.|b
+mn049|and so but they there was one plane flying over always uh uh above.|fh|s
+mn049|and so that was the only work which they had.|s
+mn049|they like four in the afternoon they had to report there was a plane from prague to brno basically flying there.|s
+me018|yeah.|b
+mn049|so they very first thing was that they would always run back and and at four o'clock and and quickly make a call this plane is uh uh passing.|s
+mn049|then a second thing was that they they took the line from this post to uh uh a local pub.|s
+mn049|and they were calling from the pub.|s
+mn049|and they but third thing which they made when they screwed up they finally they had to the the the pub owner to make these phone calls because they didn't even bother to be there anymore.|s
+mn049|and one day there was there was no plane.|s
+mn049|at least they were sort of smart enough that they looked if the plane is flying there.|s
+mn049|right?|qy^d^f^rt
+me018|yeah.|s^aa
+mn049|and pub owner says oh my four o'clock okay quickly pick up the phone call that there's a plane flying.|s
+mn049|there was no plane for some reason.|s
+me018|and there wasn't?|qy^d^rt
+mn049|it was downed.|s
+mn049|or and|fh
+mn049|so they got in trouble.|s
+mn049|but but uh|fh
+me018|huh!|s^fe
+me018|well that's that's a really|s.%-
+mn049|so so yeah.|b
+me018|that wouldn't be too difficult to try.|s
+me018|maybe i could set that up.|s^cc
+mn049|yeah.|b
+mn049|yeah.|b
+me018|and we'll just|%-
+mn049|well at least go test the test the uh assumption about c one i mean to begin with.|s^co
+mn049|but then of course one can then think about some predictable result to change all of them.|s
+mn007|uhhuh.|b
+mn049|it's just like we used to do these uh these uh um the the uh distance measures.|s
+mn049|it might be that uh|%-
+me018|yeah so the first set of uh variance weighting vectors would be just you know one modifying one and leaving the others the same.|fg|s
+mn049|yeah.|b
+mn049|yeah.|b
+mn049|yeah.|b
+mn049|yeah.|b
+mn049|yeah.|b
+mn007|yeah.|b
+mn007|maybe.|s^am
+me018|and and do that for each one.|s
+mn049|because you see i mean what is happening here in a in a in a in such a model is that it's tells you yeah what has a low variance uh is uh is uh is more reliable.|s
+me018|that would be one set of experiment|s.%-
+mn049|right?|qy^d^g^rt
+mn049|how do we|qw.%-
+me018|yeah when the data matches that then you get really|s^aa.%--
+mn049|yeah.|b
+mn049|yeah.|b
+mn049|yeah.|b
+mn049|yeah.|b
+mn049|yeah.|b
+me018|yeah.|b
+me018|right.|b
+mn049|how do we know especially when it comes to noise?|qw
+me018|but there could just naturally be low variance.|s
+mn049|yeah.|b^rt
+me018|because i like i've noticed in the higher cepstral coefficients the numbers seem to get smaller.|s^df
+me018|right?|qy^d^g^rt
+me018|so|%--
+mn007|they|%-
+me018|i mean just naturally.|s
+mn007|yeah.|s^aa
+mn049|yeah that's|s^aa.%-
+mn007|they have smaller means also.|s
+me018|yeah.|s^aa
+mn007|uh|h
+me018|exactly.|s^aa
+me018|and so it seems like they're already sort of compressed.|s
+mn007|uhhuh.|b
+me018|the range of values.|s^e
+mn049|yeah that's why uh people used these lifters were inverse variance weighting lifters basically that makes uh uh euclidean distance more like uh mahalanobis distance with a diagonal co variance when you knew what all the variances were over the old data.|s
+me018|uhhuh.|b
+me018|uhhuh.|b
+me018|huh.|b
+mn049|what they would do is that they would weight each coefficient by inverse of the variance.|s
+mn049|turns out that uh the variance decreases at least at fast i believe as the index of the cepstral coefficients.|s
+me018|uhhuh.|b
+mn049|i think you can show that uh uh analytically.|s
+me018|huh.|b
+mn049|so typically what happens is that you you need to weight the uh weight the higher coefficients more than uh the lower coefficients.|s
+me018|uhhuh.|b
+me018|huh.|b
+mn007|huh.|b
+mn049|so|fh
+me018|yeah|b
+mn049|when yeah is|%--
+mn049|when we talked about aurora still i wanted to make a plea uh encourage for uh more communication between between uh uh different uh parts of the distributed uh uh center.|s
+mn049|uh even when there is absolutely nothing to to to say but the weather is good in in in berkeley.|s
+mn049|i'm sure that it's being appreciated in oregon and maybe it will generate a similar responses down here.|s
+mn049|like uh|%--
+mn007|we can set up a webcam maybe.|s^cs
+mn049|yeah.|s^aa
+me006|yeah.|s^aa^j
+mn049|what you know nowadays|s.%--
+mn049|yeah.|s^aa
+mn049|it's up actually do able almost.|s
+me018|is the um|qy.%--
+me018|if we mail to aurora inhouse does that go up to you guys also?|qy^rt
+mn049|i don't think so.|s^ar
+mn007|no.|s^ar
+mn049|no.|s^ar
+me018|okay.|s^bk
+me018|so what is it|qw.%-
+mn049|so we should do that.|s^co
+me018|yeah we|s^aa^m.%--
+mn049|we should definitely set up.|s^co
+me006|yeah.|s^aa
+me018|do we have a mailing list that includes uh the o g i people?|qy^rt
+mn049|yeah.|b
+mn007|uh no.|h|s^ar
+mn007|we don't have.|s^ar
+me018|oh!|s^fe
+mn049|uhhuh.|b
+me018|maybe we should set that up.|s^cs
+me018|that would make it much easier.|s^df
+mn049|yeah.|b
+mn049|yeah.|s^aa
+mn049|yeah that would make it easier.|s^aa
+me018|so maybe just call it aurora or something that would|s^cs.%--
+mn049|yeah.|b
+mn049|yeah.|b
+mn049|and then we also can send the the to the same address.|s
+mn049|right?|qy^d^g^rt
+mn049|and it goes to everybody?|qy^bu^d^rt
+me018|uhhuh.|b
+me018|uhhuh.|b
+mn007|yeah.|b
+me018|okay.|s^bk
+me018|maybe we can set that up.|s^cs
+mn049|because what's happening naturally in research i know is that people essentially start working on something and they don't want to be much bothered.|s
+mn049|right?|qy^d^g^rt
+mn049|but what the the then the danger is in a group like this is that two people are working on the same thing and of course both of them come with the very good solution but it could have been done somehow in half of the effort or something.|s
+me018|uhhuh.|b
+mn049|oh there's another thing which i wanted to uh uh report.|s^t
+mn049|lucash i think uh wrote the software for this aurora two system.|s
+mn049|reasonably uh uh good one because he's doing it for intel.|s
+mn049|but i trust that we have uh rights to uh use it uh or distribute it and everything.|s
+mn049|because intel's intentions originally was to distribute it free of charge anyways.|s
+me018|huh!|b
+mn049|and so so uh we we will make sure that at least you can see the software and if if if if it is of any use.|fh|s^cc
+mn049|just uh|%--
+mn007|uhhuh.|b
+mn049|it might be a reasonable point for perhaps uh start converging.|s
+mn007|uhhuh.|b
+mn049|because morgan's point is that he is an experienced guy.|s
+mn049|he says well you know it's very difficult to collaborate if you are working with supposedly the same thing in quotes except which is not is not the same.|s^rt
+me018|uhhuh.|b
+mn049|which which uh uh one is using that set of hurdles another one set is using another set of hurdles.|s^rt
+mn049|so and and then it's difficult to compare.|fh|s
+mn007|what about harry?|qo
+mn007|uh we received a mail last week and you are starting to to do some experiments.|fh|s^rt
+mn049|he got the he got the software.|s
+mn049|yeah they sent the release.|s
+mn007|and use this intel version.|s
+mn049|yeah.|b
+mn049|yeah.|b
+mn049|yeah.|b
+mn049|yeah.|b
+mn007|huh.|b
+mn049|yeah because intel paid us uh|s.%--
+mn049|should i say on a microphone?|qy^rt
+mn049|uh some amount of money not much.|fh|s
+mn049|not much i can say on a microphone.|s
+mn049|much less then we should have gotten for this amount of work.|s
+mn049|and they wanted uh to to have software so that they can also play with it which means that it has to be in a certain environment.|s
+me018|huh.|b
+mn049|they use actually some intel libraries but in the process lucash just rewrote the whole thing because he figured rather than trying to make sense uh of uh including icsi software uh not for training on the nets.|s
+me018|huh.|b
+me006|oh.|b
+mn049|but i think he rewrote the the the or maybe somehow reused over the parts of the thing so that so that the whole thing including m l p trained m l p is one piece of uh software.|s
+me018|uhhuh.|b
+me018|wow!|s^fe
+mn049|is it useful?|qy^rt
+mn049|yeah.|fh.%
+me006|yeah.|s^aa
+me006|i mean i remember when we were trying to put together all the icsi software for the submission.|s
+mn049|or|%-
+mn049|that's what he was saying.|s
+mn049|right.|fh
+mn049|he said that it was like it was like just so many libraries and nobody knew what was used when.|s
+mn049|and and so that's where he started and that's where he realized that it needs to be needs to be uh uh at least cleaned up.|s
+me006|yeah.|b
+mn007|uhhuh.|b
+mn049|and so i think it this is available.|s
+me006|huh.|b
+mn007|yeah.|b
+mn049|so|fh
+mn007|well the the only thing i would check is if he does he use intel math libraries.|s
+mn007|because if it's the case it's maybe not so easy to use it on another architecture.|s
+mn049|uh|%-
+mn049|not maybe maybe not in a first maybe not in a first approximation.|s^am
+mn007|uh yeah.|s^bk
+mn049|because i think he started first just with a plain c c or c plus plus or something before|s.%--
+mn007|uhhuh.|b
+mn049|i i can check on that.|s^cc
+mn049|yeah.|fh
+mn007|yeah.|b
+me018|okay.|b
+me018|huh.|b
+mn049|and uh in otherwise the intel libraries i think they are available free of freely.|s
+mn049|but they may be running only on on uh on uh windows.|s
+mn007|yeah.|b
+mn007|yeah.|b
+mn049|or on on the|%-
+mn007|on intel architecture maybe.|s^2
+mn049|yeah on intel architecture may not run in sun.|s^aa^m
+mn007|i'm|%-
+mn007|yeah.|b
+mn007|yeah.|b
+mn049|yeah.|b
+mn049|that is that that is possible.|s
+mn049|that's why intel of course is distributing it.|s
+mn007|well|%-
+mn049|right?|qy^d^g^rt
+mn049|or that's|%--
+mn007|yeah.|fg
+mn007|well there are at least there are optimized version for their architecture.|s
+mn049|yeah.|b
+mn007|i don't know.|s^no
+mn007|i never checked carefully these sorts of|s.%--
+mn049|i know there was some issues that initially of course we do all the development on linux.|s
+mn049|but we use we don't have we have only three uh uh uh uh suns.|s
+mn049|and we have them only because they have a spert board in.|s
+mn049|otherwise otherwise we almost exclusively are working with uh p c's now with intel.|s
+mn049|in that way intel succeeded with us because they gave us too many good machines for very little money or nothing.|s
+me018|yeah.|b
+mn049|so so so we run everything on intel.|s
+me018|wow!|s^fe
+me018|huh.|b
+mn049|and|%--
+me018|does anybody have anything else?|qy^rt^t
+me018|to|%--
+me018|shall we read some digits?|qy^rt
+mn007|yeah.|s^aa
+mn049|yes.|s^aa
+mn049|i have to take my glasses|s.%-
+me018|so|fg
+me018|hynek i don't know if you've ever done this.|s
+me018|the way that it works is each person goes around in turn and uh you say the transcript number and then you read the digits the the strings of numbers as individual digits.|s
+mn049|no.|s^aa
+mn049|uhhuh.|b
+me018|so you don't say eight hundred and fifty you say eight five oh and so forth.|s
+mn049|okay.|s^bk
+mn049|okay.|s^bk^r
+me018|um|fh
+mn049|so can maybe can i maybe start then?|qy^rt
+me018|sure.|s^aa

@@ -1,0 +1,1920 @@
+me011|okay.|z
+me011|we're recording.|z
+me013|we can say the word zero all we want.|z
+mn017|i'm doing some|z
+me013|but just|z
+mn017|square brackets.|z
+mn017|coffee sipping.|z
+mn017|square brackets.|z
+mn014|that's not allowed i think.|z
+fe008|curly brackets.|z
+me001|is that voiced or unvoiced?|z
+mn014|curly brackets.|z
+me013|curly brackets.|z
+me011|curly brackets.|z
+me011|right.|z
+me013|well|z
+mn014|oops!|z
+me013|correction for transcribers.|z
+mn017|darn!|z
+me013|yeah.|z
+fe008|channel two.|z
+me011|do we use square brackets for anything?|z
+fe008|yeah.|z
+me001|these poor transcribers.|z
+fe008|uh|z
+fe008|not not right now.|z
+fe008|i mean no.|z
+me018|there's going to be some zeros from this morning's meeting because i noticed that|z
+me018|barry i think maybe you turned your mike off before the digits were|z
+me018|oh.|z
+me018|was it during digits.|z
+me018|oh so it doesn't matter.|z
+me013|yeah.|z
+mn014|so it's not it's not that bad if it's at the end.|z
+me011|it's still not a good idea.|z
+mn014|but it's in the beginning it's bad.|z
+me018|yeah.|z
+me018|yeah.|z
+me011|yeah.|z
+me011|you want to you want to keep them on so you get good noise.|z
+me011|noise floors.|z
+fe008|that's interesting.|z
+me011|through the whole meeting.|z
+me013|uh|z
+me013|i probably just should have left it on.|z
+fe008|huh.|z
+me013|yeah i did have to run.|z
+me013|but|z
+me001|is there any way to change that in the software?|z
+me011|change what in the software?|z
+me001|where like you just don't like if you if it starts catching zeros like in the driver or something.|z
+me001|in the card or somewhere in the hardware.|z
+me001|where if you start seeing zeros on across one channel you just add some random noise floor.|z
+me001|like a small noise floor.|z
+me011|i mean certainly we could do that.|z
+me011|but i don't think that's a good idea.|z
+me011|we can do that in post processing if if the application needs it.|z
+me001|yeah.|z
+me013|well i i actually don't know what the default is anymore as to how we're using the the front end stuff but for for when we use the icsi front end.|z
+mn014|manual post processing.|z
+me013|but um|z
+me011|as an argument.|z
+me013|there is an there is an an option in in rasta.|z
+me013|which|z
+me013|when i first put it in uh back in the days when i actually wrote things uh i did actually put in a random bit or so that was in it.|z
+me001|okay.|z
+me013|but then i realized that putting in a random bit was equivalent to adding uh adding flat spectrum.|z
+me001|right.|z
+me013|and it was a lot faster to just add a constant to the to the spectrum so then i just started doing that.|z
+me001|huh.|z
+me013|instead of calling rand or something.|z
+me001|okay.|z
+me001|right.|z
+me013|so|z
+me013|so it it does that.|z
+me013|gee here we all are!|s^fe^tc
+me011|uh|fg
+me011|so the only agenda items were jane was jane wanted to talk about some of the i b m transcription process.|s^t
+me013|there's an agenda?|qy^bu^d^rt^t3
+me011|i sort of condensed the three things you said into that.|s
+me011|and then just i only have like this afternoon and maybe tomorrow morning to get anything done before i go to japan for ten days.|s
+me011|so if there's anything that absolutely desperately needs to be done you should let me know now.|s^co
+me013|uh and you just sent off a eurospeech paper.|fg|s^bu
+me013|so|fh
+mn017|right.|s^aa
+mn017|i hope they accept it.|s
+mn017|i mean i|s.%--
+me013|right.|b
+mn017|both as as a submission and you know as a paper.|s^e
+mn017|um|fh
+mn017|but|fh
+me011|well yeah you sent it in late.|s
+me013|yeah i guess you first you have to do the first one.|fg|s
+me011|yeah.|fh
+me013|and then|%--
+me013|yeah.|s^bk
+mn017|we actually exceeded the delayed deadline by another day.|s^na
+mn017|so|fh
+mn014|oops.|s
+me013|oh they they had some extension that they announced or something?|qy^bu^d^rt
+mn017|well yeah.|s^aa
+mn017|liz had sent them a note saying could we please have another i don't know three days or something.|s^df
+mn017|and they said yes.|s^df
+me018|and then she said did i say three.|s^j^rt
+me018|i meant four.|s^j
+me011|oh.|s^bk
+me011|that was the other thing.|s
+me011|uh|fh
+mn017|but|fh
+me011|uh dave gelbart sent me email i think he sent it to you too that um there's a special topic section in in eurospeech on new corpora.|fg|s
+me011|and it's not due until like may fifteenth.|s^e
+me013|oh this isn't the aurora one?|qy^bu^d^rt
+me013|it's another one?|qy^bu^d
+me011|no.|s^aa
+mn014|no.|s^aa
+me011|it's a different one.|s^na
+mn014|it's|%-
+me001|huh!|s^fe
+mn014|yeah.|s^aa
+mn014|yeah.|b
+me011|and uh|fg
+me013|oh!|s^fe
+mn014|i got this mail from|s.%-
+me011|i forwarded it to jane as i thought being the most relevant person.|s
+me011|um|fh
+me011|so i thought it was highly relevant.|s^df
+me013|that's|%-
+fe008|yeah i'm|%-
+fe008|yeah.|s^aa
+fe008|i think so too.|s^na
+me011|have you did you look at the u r l?|qy^rt
+fe008|um i haven't gotten over to there yet.|h|s^nd
+fe008|but what our discussion yesterday i really i i want to submit one.|s
+me011|uhhuh.|b
+mn014|was this smartkom message?|qy^rt
+fe008|yeah.|s^aa
+mn014|i think christoph draxler sent this.|s
+fe008|and you offered to to join me if you want me to.|s
+mn014|yeah.|fh
+me011|i'll help.|s^na
+me011|but obviously i can't really do most of it.|s^arp
+fe008|yeah.|fh
+mn017|i think several people sent this.|s^t3
+fe008|yeah that's right.|s^bk|s^aa
+mn014|yeah.|b
+me011|so|fh
+mn017|yeah.|s^bk^t3
+fe008|uhhuh.|b
+me011|but any any help you need i can certainly provide.|s^na
+me013|well|fg
+mn017|yeah.|b
+me013|that's that's a great idea.|s^ba
+mn017|well|fg
+mn017|there there were some interesting results in this paper though.|s
+mn017|for instance that morgan uh accounted for fifty six percent of the robustness meetings in terms of number of words.|s^e
+me011|wow.|b
+fe008|in in terms of what?|qw^br^d^rt
+mn017|number of words.|s^r
+fe008|in|%-
+fe008|one|%--
+fe008|wow!|s^fe
+fe008|okay.|s^bk
+me011|that's just because he talks really fast.|s
+fe008|do you mean|qy^bu.%-
+me013|no.|s^ar
+mn014|oh.|s^bk
+mn014|short words.|s
+fe008|because|%
+me011|i|%
+fe008|is it partly uh correctly identified words?|qy
+fe008|or is it|qrr.%--
+mn017|no well according to the transcripts.|s^ar|s
+fe008|or just overall volume?|qrr
+me013|yeah.|s^aa
+me011|but well regardless i think it's he's he's in all of them.|s
+fe008|oh okay.|s^bk
+mn017|i mean we didn't mention morgan by name.|s
+me011|and he talks a lot.|s
+mn017|we just|s.%--
+me013|well we have now.|s
+me011|one participant.|s
+mn017|we we we something about|s.%-
+me013|but|fh
+me011|did you identify him as a senior member?|qy^rt
+mn017|no.|s^ar
+mn017|we identify him as the person dominating the conversation.|s^nd
+me013|well.|fh
+me011|yeah.|b
+fe008|okay.|b
+me013|i mean i get these a a r p things.|s^j
+me013|but i'm not really senior yet.|s^j
+mn017|right.|b
+me013|but|fh
+mn017|huh.|b
+me013|um|fg
+me013|but uh other than that delightful result what was the rest of the paper about?|qw^rt
+mn017|um|h
+mn017|well it was about it had three sections.|s
+me013|you sent it to me.|s
+me013|but i haven't seen it yet.|s
+mn017|uh|fh
+mn017|three kinds of uh results if you will.|s
+mn017|uh the one was that the just the the amount of overlap.|fh|s^e
+me011|the good the bad and the ugly.|s^j
+mn017|um|fh
+mn017|in terms of in terms of number of words.|s^e
+mn017|and also we computed something called a spurt.|s
+mn017|which is essentially a stretch of speech with uh no pauses exceeding five hundred milliseconds.|s^e
+mn017|um and we computed how many overlapped uh spurts there were and how many overlapped words there were um for four different corpora.|fh|s
+mn017|the meeting recorder meetings.|s^e
+mn017|the robustness meetings.|s^e
+mn017|switchboard.|s^e
+mn017|and callhome.|s^e
+mn017|and found and sort of compared the numbers.|s
+mn017|um|fh
+mn017|and found that the|s.%--
+mn017|uh|fh
+mn017|you know as you might expect the meeting recorder meetings had the most overlap.|s
+mn017|uh but next were switchboard and callhome.|fh|s
+mn017|which both had roughly the same.|s^e
+mn017|almost identical in fact.|s^e
+mn017|and the robustness meetings were had the least.|s^e
+mn017|so|fh
+mn017|one sort of unexpected result there is that uh two party telephone conversations have about the same amount of overlap.|s
+me011|i'm surprised.|s^t3
+mn017|sort of in you know order of magnitude wise as uh as face to face meetings with multiple|s.%-
+me011|i have i had better start changing all my slides.|s
+mn017|yeah.|s^bk
+mn017|also i in the levinson the pragmatics book in you know uh textbook there's i found this great quote where he says you know you know how people it talks about how uh how how people are so good at turn taking.|s
+fe008|uhhuh.|b
+fe008|yeah.|b
+fe008|yeah.|b
+mn017|and so they're so good that generally the overlapped speech does not is less than five percent.|s
+fe008|oh.|s^bk
+fe008|that's interesting.|s^ba
+mn017|so|fh
+fe008|yeah.|b
+mn017|this is way more than five percent.|s
+me001|did he mean face like face to face?|qy^rt
+me001|or|qrr.%--
+mn017|well in real conversations.|s
+mn017|everyday conversations.|s^e
+me001|huh.|b
+mn017|it's what these conversation analysts have been studying for years and years there.|s
+fe008|uhhuh.|b
+fe008|uhhuh.|b
+fe008|well of course no it doesn't necessarily go against what he said.|s
+mn014|but|%-
+fe008|because he said generally speaking in order to to go against that kind of a claim you'd have to big canvassing.|s^df
+me011|huh.|b
+mn014|and in|%-
+mn017|well he he made a claim.|s^ng
+me011|well|fg
+mn017|well|fh
+me013|yeah we we have pretty limited sample here.|s^bk|s
+me011|also|fg
+mn014|but|fg
+mn014|five percent of time or five percent of what?|qr^bu^d^rt
+fe008|yeah.|s^bk
+me011|yeah i was going to ask that too.|s^bk|s
+mn017|well it's time.|s
+mn014|yeah.|b
+fe008|exactly.|s^aa
+mn017|so but still but still|s.%-
+fe008|it's it's not against his conclusion.|s^df
+mn014|yeah.|s^bk
+mn014|so|fh
+fe008|it just says that it's a bell curve and that you have something that has a nice range in your sampling.|s^df
+mn017|yeah.|s^bk
+mn017|so there are slight|s.%--
+mn017|there are differences in how you measure it.|s
+mn017|but still it's you know the difference between um between that number and what we have in meetings.|s
+mn017|which is more like you know close to in meetings like these uh you know close to twenty percent.|s^e
+fe008|uhhuh.|b
+me013|what was it like say in the robustness meeting for instance?|qw
+fe008|uhhuh.|b
+mn017|that|%-
+me011|but|fg
+mn017|robustness meeting?|qy^bu^d^m^rt
+mn017|it was about half of the|s.%--
+mn017|so in terms of number of words it's like seventeen or eighteen percent for the meeting recorder meetings and about half that for uh the robustness.|fh|s
+me013|maybe ten percent?|qy^d^rt
+me011|but i don't know if that's really a fair way of comparing between multi party conversations and two party conversations.|s^nd
+mn014|then then then you have to|s.%-
+me011|yeah.|s^bk
+me011|i i i don't know.|s^no
+me011|i mean that's just something|s^df.%-
+me018|yeah i just wonder if you have to normalize by the numbers of speakers or something.|s
+fe008|yeah.|b
+mn014|then yeah then normalize by by something like that.|s^na
+mn017|well we didn't get to look at that.|s
+fe008|yeah.|s^bk
+fe008|that's a good point.|s^ba
+mn014|yeah.|s^aa
+fe008|yeah.|s^bk
+mn017|but this obvious thing to see if if there's a dependence on the number of uh participants.|s
+fe008|good idea.|s^ba
+me011|i mean|%--
+me011|i bet there's a weak dependence.|s
+mn014|yeah.|b
+me011|i'm sure it's it's not a real strong one.|s
+mn017|right.|b
+me011|right?|qy^d^f^g^rt
+me018|because not everybody talks.|s^na
+me011|because|s.%-
+mn017|right.|b
+me011|right.|s^bk
+me018|yeah.|s^bk
+me011|you have a lot of a lot of two party subsets within the meeting.|s
+mn017|right.|b
+fe008|uhhuh.|b
+me011|well regardless.|s
+mn017|so|fg
+me011|it's an interesting result regardless.|s^df
+mn017|right.|s^bk
+mn017|and and and then and we also computed this both with and without backchannels.|s
+fe008|yes that's right.|s^aa|s^na
+fe008|uhhuh.|b
+mn017|so you might think that backchannels have a special status because they're essentially just|s^df.%-
+me011|uhhuh.|b
+me011|so did we all said uhhuh and nodded at the same time.|s^j
+mn017|right.|b
+mn017|but even if you take out all the backchannels|s.%--
+me011|so|fh
+mn017|so basically you treat backchannels as nonspeech as pauses.|s
+me011|uhhuh.|b
+me013|uhhuh.|b
+mn017|you still have significant overlap.|s
+mn017|you know it goes down from maybe for switchboard it goes down from i don't know um i don't know fourteen percent of the words to maybe uh i don't know eleven percent or something.|s^e
+mn017|it's it's not a dramatic change.|s
+mn017|so it's|s.%--
+me011|uhhuh.|b
+mn017|anyway.|fg
+mn017|so it's uh|s.%--
+mn017|that was that was one set of results.|s
+mn017|and then the second one was just basically the the stuff we had in the in the h l t paper on how overlaps effect the recognition performance.|s
+fe008|huh.|b
+me011|nope.|s^ar
+me011|right.|b
+me013|uhhuh.|b
+mn017|and we rescored things um a little bit more carefully.|s
+mn017|we also fixed the transcripts in in numerous ways.|s
+mn017|uh but mostly we added one one number which was|fh|s.%--
+mn017|what if you uh basically score ignoring all|s.%--
+mn017|so so the the conjecture from the h l t results was that most of the added recognition error is from insertions due to background speech.|s
+mn017|so we scored all the recognition results uh in such a way that the|s.%--
+mn017|uh|fh
+me011|oh by the way who's on channel four?|qw^rt
+mn014|yeah.|s^bk
+me011|you're getting a lot of breath.|s
+me001|that's|%-
+mn014|i was just wondering.|s
+mn014|yeah.|b
+me001|that's me.|s
+mn017|uh well don's been working hard.|s
+me001|that's right.|s^aa
+mn017|okay.|fg
+mn017|so so if you have the foreground speaker speaking here and then there's some background speech may be overlapping it somehow.|s
+mn017|um and this is the time bin that we used.|fh|s
+mn017|then of course you're going to get insertion errors here and here.|s
+me011|right.|s^aa
+mn017|right?|qy^d^f^g^rt
+mn017|so we scored everything.|s
+mn017|and i must say the nist scoring tools are pretty nice for this.|s
+mn017|where you just basically ignore everything outside of the uh region that was deemed to be foreground speech.|s
+mn017|and where that was we had to use the forced alignment uh results from for.|s
+mn017|so|fh
+mn017|that's somewhat that's somewhat subject to error.|s
+mn017|but still we we uh don did some hand checking.|s
+mn017|and and we think that based on that we think that the results are you know valid.|s
+mn017|although of course some error is going to be in there.|s
+mn017|but basically what we found is after we take out these regions so we only score the regions that were certified as foreground speech the recognition error went down to almost uh the level of the non overlapped speech.|s
+mn017|so that means that even if you do have background speech if you can somehow separate out or find where it is uh the recognizer does a good job.|s
+me011|that's great.|s^ba
+mn014|yeah.|b
+mn017|even though there is this|s.%-
+me011|yeah i guess that doesn't surprise me.|s
+me011|because with the close talking mikes the the signal will be so much stronger.|s^df
+mn017|right.|b
+mn017|right.|b
+mn017|uhhuh.|b
+me013|uhhuh.|b
+mn017|um|fh
+mn017|so|s.%-
+me011|what what sort of normalization do you do?|qw^rt
+mn017|uh well we just we do you know|h|s.%-
+me011|i mean in you recognizer.|s^e
+me011|in the s r i recognizer.|s^e
+mn017|well we do uh v t l vocal tract length normalization.|s
+mn017|and we uh you know we we uh make all the features have zero mean and unit variance.|s
+me013|and|fh
+me011|over an entire utterance?|qy^bu^d^rt
+mn017|over over the entire over the entire channel.|s^ng
+me011|or windowed?|qrr^d
+mn014|don't train|s^t1.%--
+mn017|over the|s.%--
+mn017|but you know|fh
+me011|huh.|b
+mn017|um now we didn't re align the recognizer for this.|s
+mn017|we just took the old|s.%--
+mn017|so this is actually a sub optimal way of doing it.|s
+me013|right.|b
+mn017|right?|qy^d^f^g
+me011|right.|b
+mn017|so we took the old recognition output.|s
+mn017|and we just scored it differently.|s
+mn017|so the recognizer didn't have the benefit of knowing where the foreground speech|s^e.%-
+me013|were you including the the lapel in this?|qy^rt
+mn017|yes.|s^aa
+me013|and did the did did the did the the problems with the lapel go away also?|qy^rt
+mn017|um it yeah.|h|s^aa
+me013|or|qrr.%--
+me013|for for insertions?|qy^d^rt
+mn017|it not per i mean not completely.|s^aap
+mn017|but yes.|s^aa
+mn017|dramatically.|s^e
+me013|less so.|s^2
+mn017|so we have to|s.%--
+mn017|um|fh
+me013|i mean you still|s.%-
+mn017|well i should bring the should bring the table with results.|s^cc
+mn017|maybe we can look at it monday.|s^cs
+me013|i would presume that you still would have somewhat higher error with the lapel for insertions than|s.%--
+mn017|yes.|s^aa
+mn017|it's it's|%--
+mn017|yes.|s^aa
+me013|yeah.|fh
+mn017|yeah.|s^aa
+me013|because again looking forward to the non close miked case i think that we still|s^df.%-
+mn017|uhhuh.|b
+me011|i'm not looking forward to it.|s
+me013|it's the high signal to noise ratio.|s
+mn017|right.|b
+me013|here that that helps you.|s^t3
+mn017|right.|b
+mn017|so|fg
+mn017|so that was number that was the second set of uh the second section.|s
+mn017|and then the third thing was we looked at uh what we call interrupts.|s
+mn017|although that's that may be a misnomer.|s^e
+mn017|but basically we looked at cases where|s.%--
+mn017|uh so we we used the punctuation from the original transcripts.|s
+mn017|and we inferred the beginnings and ends of sentences.|s
+mn017|so|fh
+mn017|you know|fh
+fe008|did you use upper lower case also or not?|qy
+mn017|um|fh
+mn017|huh?|qw^br^rt
+fe008|upper lower case or no|s.%-
+mn017|no.|s^ar
+mn017|we only used you know uh periods uh question marks and exclamation.|s^e^nd
+fe008|okay.|s^bk
+mn017|and we know that there's that's not a very|s.%--
+mn017|i mean we miss a lot of them.|s^df
+fe008|yeah.|s^bk
+mn017|but but it's|s.%-
+fe008|that's okay.|s^bd
+fe008|but|%--
+fe008|comma also or not?|qy^d
+mn017|no commas.|s^nd
+mn017|no.|s^ar
+mn017|and then we looked at locations where|s.%--
+mn017|uh|fh
+mn017|if you have overlapping speech and someone else starts a sentence you know where do these where do other people start their turns not turns really but you know sentences?|qw
+mn014|uh|b
+mn017|um|fh
+mn017|so we only looked at cases where there was a foreground speaker.|s
+mn017|and then at the at the so the the foreground speaker started into their sentence and then someone else started later.|s
+mn017|okay?|qy^d^f^g^rt
+mn014|somewhere in between the start and the end.|s^bu
+mn017|and so what|s.%--
+mn014|okay.|s^bk
+mn017|sorry?|qw^br^d^rt
+mn014|somewhere in between the start and the end of the foreground.|s^bu^r
+mn017|yes.|s^aa
+mn017|uh so that such that there was overlap between the two sentences.|s^e
+mn014|yeah.|b
+mn017|so the the question was how can we what can we say about the places where the second or or actually several second speakers um start their interrupts as we call them.|s
+me018|three words from the end.|s^cs^j
+me011|at pause boundaries.|s
+mn017|and we looked at this in terms of|s.%--
+mn017|um|fh
+me011|on t closures only.|s^cs^j
+mn017|so so we had we had|s.%--
+mn017|um|fh
+mn017|to for for the purposes of this analysis we tagged the word sequences and and we time aligned them.|s
+mn017|um|fh
+mn017|and we considered it interrupt if it occurred in the middle of a word.|s
+mn017|we basically you know considered that to be a interrupt as if it were at at the beginning of the word.|s^e
+mn017|so that if any part of the word was overlapped it was considered an interrupted word.|s^e
+me013|uhhuh.|b
+mn017|and then we looked at the the the um you know the features that the tags.|s
+mn017|because we had tagged these word strings um that that occurred right before these these uh interrupt locations.|s^df
+mn014|tag by|s.%-
+mn017|and the tags we looked at are the spurt tag.|s^e
+mn017|which basically says|s.%--
+mn017|or actually|s.%--
+mn017|sorry.|s^fa
+mn017|end of spurt.|s^bsc
+mn017|so whether there was a pause essentially here.|s
+mn017|because spurts are a defined as being you know five hundred milliseconds or longer pauses.|s^df
+mn017|and then we had things like discourse markers.|s
+mn017|uh backchannels.|s
+mn017|uh disfluencies.|s
+mn017|um|fh
+mn017|uh filled pauses.|s
+mn017|so the d s are for um the interruption points of a disfluency.|s^e
+mn017|so where you hesitate or where you start the repair there.|s^e
+mn017|uh what else do we had?|fh|qw^t1
+mn017|uh repeated you know repeated words is another of that kind of disfluencies and so forth.|s^e
+mn017|so we had both the beginnings and ends of these.|s
+mn017|uh so the end of a filled pause.|s^e
+mn017|and the end of a discourse marker.|s^e
+mn017|and we just eyeballed|s.%--
+mn017|i mean we didn't really hand tag all of these things.|s
+mn017|we just looked at the distribution of words.|s
+mn017|and so every so yeah and okay uh and uhhuh were were the were deemed to be backchannels.|s
+mn017|and wow and so and uh right uh were um not right right is a backchannel.|s
+mn017|but so we sort of just based on the lexical um identity of the words we we tagged them as one of these things.|s
+mn017|and of course the the interruption points we got from the original transcripts.|s
+mn017|so|fh
+mn017|and then we looked at the|s.%--
+mn017|so we looked at the distribution of these different kinds of tags overall.|s
+mn017|uh and and and particularly at the interruption points.|s
+mn017|and uh we found that there is a marked difference.|s
+mn017|so|fh
+mn017|that for instance after|s.%--
+mn017|so at the end after a discourse marker or after backchannel or after filled pause you're much more likely to be interrupted than before.|s
+mn017|okay.|fh
+mn017|and also of course after spurt ends.|s
+mn017|which means basically in inside pauses.|s^e
+mn017|so pauses are always an opportunity for|s^e.%--
+mn017|so we have this little histogram which shows these distributions.|s
+mn017|and um|fh
+me018|i wonder|s.%-
+mn017|you know it's it's it's not no big surprises.|s^df
+mn017|but it is sort of interesting from|s.%-
+me011|it's nice to actually measure it though.|s
+mn017|yeah.|s^aa
+me018|i wonder about the cause and effect there.|s
+me018|in other words uh if you weren't going to pause you you will because you're being interrupted.|s^df
+mn017|well we're|s.%-
+me018|uh|fh
+mn017|right.|s^bk
+mn017|there's no statement about cause and effect.|s^ng
+me018|yeah.|b
+mn017|this is just a statistical correlation.|s
+me018|right.|b
+me018|no no no.|s^ar
+me018|right.|b
+me018|i i see.|s^bk
+mn017|yeah.|fh
+me018|yeah.|b
+me013|but he yeah he's he's right.|s^na
+me013|i mean maybe|s.%--
+me013|you weren't intending to pause at all.|s
+me013|but you were intending to stop for fifty seven milliseconds.|s
+mn017|right.|s^bk
+mn017|right.|b
+me013|but then chuck came in.|s
+me013|and so you paused for a second.|s
+me018|yeah.|b
+mn017|right.|b
+mn017|so|fg
+me013|or more.|s^e
+mn017|uh and that was basically it.|s
+mn017|and and we so we wrote this.|s
+mn017|and then we found we were at six pages.|s
+mn017|and then we started cutting furiously.|s
+mn014|oops.|s^ba
+mn017|and threw out half of the material again.|s
+mn017|and uh played with the latex stuff.|s
+mn017|and|%--
+mn017|uh|fh
+mn017|and until it|%-
+me011|made the font smaller and the narrows longer.|s^j
+mn014|font smaller.|s^m^na
+mn014|yeah.|s^bk
+mn017|no no.|s^ar
+mn017|well you couldn't really make everything smaller.|s^ng
+mn017|but we we put|s.%--
+mn014|put the abstract end.|s
+mn017|oh i i|s^bk|s.%--
+mn017|you know the the gap between the two columns is like ten millimeters.|s
+me011|took out white space.|s^2
+mn014|yeah.|b
+mn017|so i shrunk it to eight millimeters.|s
+mn017|and that helped some and stuff like that.|s
+me018|wasn't there wasn't there some result andreas?|qy
+me013|yeah.|b
+me018|i i thought maybe liz presented this at some conference a while ago about uh backchannels.|s
+mn017|uhhuh.|b
+mn017|uhhuh.|b
+me018|uh|fh
+me018|and that they tend to happen when uh the pitch drops.|s
+me018|you know you get a falling pitch.|s^e
+mn017|yeah.|s^bk
+me018|and so that's when people tend to backchannel.|s
+mn017|well|fg
+me018|do you|qy.%-
+mn017|we didn't talk about uh prosodic uh properties at all.|s^nd
+me018|right right.|s^bk
+mn017|although that's i i take it that's something that uh don will will look at.|s
+me018|but|%-
+mn017|now that we have the data and we have the alignment.|s^e
+me001|yeah we're going to be looking at that.|s^aa|s
+mn017|so|fh
+mn017|this is purely based on you know the words.|s
+mn017|and|%--
+me018|uhhuh.|b
+fe008|i have a reference for that though.|s
+me018|oh you do?|qh^bk^rt
+mn017|yeah.|b
+fe008|uhhuh.|s^aa
+me018|so am i recalling correctly?|qy^rt
+mn017|anyway so.|fh
+me018|about|%--
+fe008|well i didn't know about liz's finding on that.|h|s^no
+me018|uhhuh.|b
+fe008|but i know of another paper that talks about something.|s
+me018|huh.|b
+fe008|that|%--
+me001|i'd like to see that reference too.|s
+me018|it made me think about a cool little device that could be built.|s
+fe008|okay.|b
+me018|to|%--
+me018|uh|fh
+me018|to handle those people that call you on the phone and just like to talk and talk and talk.|s^e
+me018|and you just have this little detector that listens for these drops in pitch and gives them the backchannel.|s
+me018|and so then you hook that to the phone and go off.|s^e
+me011|yeah.|b
+me018|and do the do whatever you want to do.|s^e
+me011|uhhuh.|b
+mn017|oh yeah.|s^bk
+mn017|well|fg
+me018|while that thing keeps them busy.|s^e
+mn017|there's actually uh there's this a former student of here from berkeley.|s
+mn017|nigel nigel ward.|s^e
+mn017|do you know him?|qy^rt
+me018|uhhuh.|s^bk
+me018|sure.|b
+me018|yeah.|b
+mn017|he did a system uh in|s.%--
+mn017|he he lives in japan now.|s
+mn017|and he did this backchanneling automatic backchanneling system.|s
+me013|right.|b
+mn017|it's a very|s.%--
+me018|oh.|s^bk
+mn017|so exactly what you describe.|s
+mn017|but for japanese.|s
+me018|huh.|b
+mn017|and it's apparently for in japanese it's really important that you backchannel.|s^e
+mn017|it's really impolite if you don't.|s^e
+mn017|and|%--
+mn017|so|fh
+me013|huh.|b
+me013|actually for a lot of these people i think you could just sort of backchannel continuously.|s^j
+me013|and it would pretty much be fine.|s^j
+me018|it wouldn't matter.|s^na
+me001|yeah.|b
+me018|yeah.|fh
+me001|that's that's what i do.|s
+me018|random intervals.|s
+me011|there was there was of course a monty python sketch with that.|s
+me011|where the barber who was afraid of scissors was playing a a tape of clipping sounds and saying uhhuh.|s^e
+me011|yeah.|s^e
+me011|how about them sports teams?|qo^e
+mn017|anyway.|fg
+mn017|so the paper's online.|s
+mn017|and|%--
+mn017|i i think i uh i c c'ed a message to meeting recorder with the u r l.|s
+mn017|so you can get it.|s
+me011|yep.|b
+me013|yeah.|b
+me011|printed it out.|s^t3
+mn017|um uh one more thing.|s
+me011|haven't read it yet.|s^t3
+me013|yeah.|b
+mn017|so i i'm actually about to send brian kingsbury an e mail saying where he can find the the the the material he wanted for the for the speech recognition experiment.|s^rt
+mn017|so|fh
+mn017|but i haven't sent it out yet.|s
+mn017|because actually my desktop locked up.|s^df
+mn017|like i can't type anything.|s^e
+mn017|uh|fh
+mn017|so if there's any suggestions you have for that i was just going to send him the|s^cc.%-
+me018|is it the same directory that you had suggested?|qy^rt
+mn017|i made a directory.|s
+mn017|i called it|s^e.%--
+mn017|um|fh
+fe008|he still has his unix account here you know.|s
+mn017|he does?|qy^bu^d^rt
+fe008|yeah.|s^aa
+mn017|yeah.|s^bk
+fe008|and he and he's|s.%-
+mn017|but but but he has to|s.%-
+fe008|i'd have to add him to meeting recorder i guess.|s
+mn017|he he said he would prefer f t p.|s
+fe008|but|%--
+fe008|okay.|s^bk
+mn017|and also um the other person that wants it there is one person at s r i who wants to look at the um you know the uh the data we have so far.|s
+fe008|okay.|s^bk
+mn017|and so i figured that f t p is the best approach.|s^df
+mn017|so what i did is i um i made a new directory.|s
+mn017|after chuck said that would that was going to be a good thing.|s^e
+mn017|uh so it's f t p pub|fh|s.%--
+me011|pub real.|s^2
+mn017|real.|s^m^na
+mn017|exactly.|s^aa
+mn017|m t g c.|s
+mn017|what is it again?|qw^t1
+mn017|c r|s.%--
+me013|r d r d r.|s
+me011|ask dan ellis.|s^cs^j
+mn017|or|%--
+me013|yeah.|s^bk
+mn017|yeah.|s^aa
+mn017|right.|s^aa
+mn017|the same the same as the mailing list.|s
+mn017|and|%--
+me013|yeah.|s^bk
+mn017|yeah.|fh
+me013|the no vowels.|s
+mn017|um|fh
+mn017|and then under there|s.%--
+me013|yeah.|b
+mn017|um actually oh and this directory is not readable.|s
+mn017|it's only uh accessible.|s^e
+mn017|so in other words to access anything under there you have to be told what the name is.|s^df
+mn017|so that's sort of a quick and dirty way of doing access control.|s
+me011|right.|b
+me013|uhhuh.|b
+mn017|so|fh
+mn017|uh and the directory for this i call it a s r zero point one.|fh|s
+mn017|because it's sort of meant for recognition.|s^df
+me013|so anyone who hears this meeting now knows the|s.%--
+me011|beta.|s
+mn017|and then then in there i have a file that lists all the other files.|s
+mn017|so that someone can get that file and then know the file names and therefore download them.|s^df
+mn017|if you don't know the file names you can't|s.%--
+me013|is that a dash or a dot in there?|qrr^bu
+mn017|i mean you can|s.%-
+me011|don't don't don't say.|s
+mn017|dash.|s
+mn017|anyway.|fh
+mn017|so all i all i was going to do there was stick the the transcripts after we the way that we munged them for scoring.|s
+mn017|because that's what he cares about.|s^df
+mn017|and|fh
+mn017|um|fh
+mn017|and also and then the the waveforms that don segmented.|s
+mn017|i mean just basically tar them all up i mean for each meeting i tar them all into one tar file and g. zip them and stick them there.|s
+me011|i uh put digits in my own home directory home f t p directory.|s
+mn017|and so.|fh
+me011|but i'll probably move them there as well.|s
+mn017|oh okay.|s^bk.%
+mn017|okay.|b
+me018|so we could point mari to this also for her march o one request?|qy^d^rt
+mn017|yeah.|s^aa
+mn017|march o one?|qw^d
+mn017|oh!|s^bk^fe
+me018|or|%--
+me018|you remember she was|s.%-
+mn017|oh she wanted that also?|qy^d^rt
+me018|well she was saying that it would be nice if we had they had a|s^na.%--
+me018|or was she talking?|qy^rt^t1
+me018|yeah.|s^aa
+me018|she was saying it would be nice if they had uh the same set.|s^na^r
+me018|so that when they did experiments they could compare.|s^df
+mn017|right.|s^bk
+mn017|but they don't have a recognizer even.|s
+me018|yeah.|s^bk
+me001|um|fg
+mn017|but yeah.|fg
+mn017|we can send i can c c mari on this so that she knows|s.%--
+me018|yeah.|b
+me018|so for the thing that|s.%--
+fe008|that's good.|s^ba
+me018|we need to give brian the beeps file.|s
+mn017|right.|b
+me018|so i was going to probably put it|s.%-
+me011|we can put it in the same place.|s
+me018|yeah|s^bk|s.%-
+me011|just put in another directory.|s
+mn017|well make make another directory.|fg|s^co
+me018|i'll make another directory.|s^cc
+me018|yeah.|s^bk
+mn017|you don't|s.%--
+me018|exactly.|s^aa
+mn017|yeah.|s^bk
+me018|yeah.|s^bk
+mn017|yeah.|b
+me001|and andreas um sampled.|s^rt
+mn017|they are?|qy^bu^d^rt
+me001|i think so.|s^na
+me001|yeah.|s^aa
+mn017|okay.|s^bk
+me001|um so either we should regenerate the original versions or um we should just make a note of it.|s^cs
+mn017|oh.|b
+mn017|well|fg
+mn017|okay because in one directory there's two versions.|s^bk|s
+me001|yeah that's the first meeting i cut both versions.|s^bk|s
+mn017|okay.|s^bk
+me001|just to check which if there is a significant difference.|s^df
+mn017|and so i|s.%--
+mn017|but|%--
+mn017|okay.|s^bk
+mn017|so but for the other meetings it's the downsampled version that you have.|s^bu
+me001|they're all downsampled.|s^na
+me001|yeah.|s^aa
+mn017|oh okay.|s^bk
+mn017|oh that's important to know.|s
+mn017|okay.|s^bk
+mn017|so|fh
+mn017|we should probably uh give them the non downsampled versions.|s^cs
+me001|yeah.|s^aa
+me001|so|fg
+mn017|okay.|fg
+mn017|all right then i'll hold off on that and i'll wait for you to|fg|s^cc.%--
+mn017|um|fh
+me001|probably by tomorrow.|s
+me001|i can|s.%--
+mn017|okay.|s^bk
+me001|i'll send you an email.|s^cc
+mn017|all right.|s^bk
+mn017|okay.|s^bk
+mn017|yeah definitely they should have the full bandwidth version.|s
+mn017|okay.|fh.%
+me001|yeah.|s^bk
+me001|because i mean i think liz decided to go ahead with the downsampled versions because we can there was no like significant difference.|s
+mn017|well it takes it takes up less disk space for one thing.|fg|s^df
+me001|it does take up less disk space.|s^m^na
+me001|and apparently it did even better than the original than the original versions.|s^e
+mn017|yeah.|b
+mn017|yeah.|b
+mn017|right.|b
+me001|which you know is just probably random.|s^e
+mn017|yeah it was a small difference.|s
+mn017|but yeah.|fh
+me001|but um they probably want the originals.|s
+mn017|yeah.|b
+mn017|okay.|b
+mn017|okay.|fg
+mn017|good.|s^ba
+mn017|good that|s^ba.%--
+mn017|well it's a good thing that|s^ba.%-
+me011|okay i think we're losing don and andreas at three thirty.|s^bu
+me011|right?|qy^d^g^rt
+mn017|yeah.|s^aa
+me001|hey mon have to booga.|s
+me011|okay.|b
+me013|so|fg
+me013|that's why it was good to have andreas say these things.|s
+me013|but|%--
+me013|so we should probably talk about the i b m transcription process stuff that|s^cs^t^tc.%--
+fe008|okay.|s^bk
+me013|huh.|b
+fe008|so um you know that adam created um a a script to generate the beep file?|h|qy^d^rt
+fe008|to then create something to send to i b m.|s^e
+fe008|and um|fh
+fe008|you you should probably talk about that.|s^cs
+fe008|but but you were going to to use the originally transcribed file.|s
+fe008|because i tightened the time bins.|s^df
+fe008|and that's also the one that they had already in trying to debug the first stage of this.|s^e
+fe008|and uh|fh
+fe008|my understanding was that|s.%--
+fe008|um|fh
+fe008|i haven't i haven't listened to it yet.|s
+fe008|but it sounded very good.|s^ba
+me011|uhhuh.|b
+fe008|and and i understand that you guys were going to have a meeting today before this meeting.|s^bu
+me011|it was just to talk about how to generate it.|s^df
+me011|um just so that while i'm gone you can regenerate it if you decide to do it a different way.|fh|s^e
+fe008|excellent.|s^ba
+me011|so uh chuck and thilo should now more or less know how to generate the file.|s
+fe008|okay.|b
+me011|and the other thing chuck pointed out is that um since this one is hand marked there are discourse boundaries.|s
+me011|right?|qy^d^f^g
+fe008|uhhuh.|b
+me011|so so when one person is speaking there's breaks.|s^e
+me011|whereas thilo's won't have that.|s
+fe008|oh.|s^bk
+fe008|okay.|s^bk
+me011|so what what we're probably going to do is just write a script that if two chunks are very close to each other on the same channel we'll just merge them.|s
+fe008|uh interesting.|s^ba
+fe008|yeah.|s^bk
+fe008|yeah.|s^bk
+fe008|oh sure.|s^aa
+fe008|yeah sure.|s^aa
+fe008|makes sense.|s^na
+me011|so uh and that will get around the problem of the you know one word beep one word beep one word beep one word beep.|fh|s
+fe008|yeah.|b
+fe008|uh.|s^bk
+fe008|clever.|s^ba
+fe008|yes.|s^aa
+fe008|clever.|s^ba
+fe008|yeah.|s^aa
+fe008|excellent.|s^ba
+me018|yeah in fact after our meeting uh this morning thilo came in and said that um there could be other differences between the uh already transcribed meeting with the beeps in it and one that has just been run through his process.|s
+fe008|and that's the purpose.|s
+fe008|yeah.|b
+me018|so tomorrow when we go to make the um uh chunked file for i b m we're going to actually compare the two.|s
+me018|so he's going to run his process on that same meeting.|s
+fe008|great idea.|s^ba
+me018|and then we're going to do the beep ify on both and listen to them and see if we notice any real differences.|s
+mn017|beep ify!|s^fe
+fe008|okay.|s^bk
+fe008|now one thing that prevented us from you you from applying|s.%--
+fe008|exactly.|s^aa
+fe008|the training.|s^m^na
+fe008|so that is the training meeting.|s^bu
+me018|yeah.|s^bk
+me018|and we know that.|s
+fe008|okay.|b
+me018|uh we just want to if if there're any major differences between doing it on the|s.%-
+fe008|uhhuh.|b
+fe008|oh interesting.|s^ba
+fe008|uh.|s^bk
+fe008|okay.|s^bk
+me011|huh.|b
+fe008|interesting idea.|s^ba
+mn017|so this training meeting uh is that uh some data where we have uh very um you know accurate time marks for|qy.%-
+fe008|great.|s^ba
+fe008|i went back and hand marked the the bins.|s^na
+fe008|i i mentioned that last week.|s
+mn017|okay.|s^bk
+mn017|yeah.|s^bk
+me018|but the but there's yeah but there is this one issue with them in that there're there are time boundaries in there that occur in the middle of speech.|s
+mn017|because|s.%-
+me018|so|fh
+me018|like when we went to|s^e.%--
+me018|um|fh
+me018|when i was listening to the original file that adam had it's like you you hear a word then you hear a beep and then you hear the continuation of what is the same sentence.|s^e
+me011|that's on the other channel.|s
+me011|that's because of channel overlap.|s
+me018|well|fg
+me018|and and so the|s.%--
+fe008|huh|b
+me018|so there are these chunks that look like uh that have uh|s.%--
+me011|it's|%-
+me011|i mean that's not going to be true of the foreground speaker.|s
+me011|that'll only be if it's the background speaker.|s^e
+me018|right.|s^bk
+me018|so you'll you'll have a chunk of you know channel a which starts at zero and ends at ten.|s
+me018|and then the same channel starting at eleven.|s
+me018|ending at fifteen.|s
+me018|and then again starting at sixteen.|s
+me018|ending at twenty.|s
+me018|right?|qy^d^f^g^rt
+me018|so that's three chunks where actually we can just make one chunk out of that.|s
+mn017|uhhuh.|b
+me018|which is a zero twenty.|s^e
+fe008|yeah.|b
+fe008|sure.|b
+me011|that's what i just said.|s^na
+fe008|sure.|b
+me011|yeah.|fh
+me018|yeah.|s^bk
+me018|so i just wanted to make sure that it was clear.|s^df
+fe008|yeah.|s^bk
+fe008|i thought that was.|s^na
+me018|so if you were to use these you have to be careful not to pull out these individual|fg|s.%-
+fe008|yeah.|fh
+mn017|oh.|s^bk
+mn017|i mean it|s.%-
+mn017|right.|s^bk
+mn017|i mean i mean what i would i was interested in is having a having time marks for the beginnings and ends of speech.|s
+mn017|by each speaker.|s^e
+me011|well that's definitely a problem.|s^nd
+mn017|uh because we could use that to fine tune our alignment process.|s^df
+mn017|to make it more accurate.|s^e
+me018|yeah.|b
+me011|battery.|s^t3
+mn014|battery?|qy^bu^d^m^rt^t3
+me018|uhhuh.|s^aa^t3
+mn017|so|fh
+mn017|uh|fh
+mn017|it i don't care that you know there's actually abutting segments that we have to join together.|s
+mn017|that's fine.|s
+me018|okay.|s^bk
+mn017|but what we do care about is that the beginnings and ends um are actually close to the speech inside of that|s.%--
+me018|yeah.|s^bk
+mn017|uh|fh
+me018|i think jane tightened these up by hand.|s
+mn017|okay.|s^bk
+mn014|okay.|b
+fe008|yeah.|s^aa
+mn017|so what is the sort of how tight are they?|qw
+me013|uh it looks much better.|s^ba^t3
+mn014|yeah.|s^aa
+mn014|looks good.|s^ba
+fe008|they were um reasonably tight but not excruciatingly tight.|s
+mn017|oh.|s^bk
+fe008|that would've taken more time.|s^df
+fe008|i just wanted to get it so so that if you have like yeah in a swimming in a big bin then it's|s^df.%-
+mn017|no no.|fg
+mn017|i|s.%--
+mn017|actually i i|s.%--
+me011|let me make a note on yours.|s^co^t3
+mn017|i it's|s.%--
+mn014|yeah.|b
+mn017|that's fine.|s^na
+mn017|because we don't want to|s^df.%--
+mn017|that's perfectly fine.|s^na^r
+mn017|in fact it's good.|s^ba
+mn017|you always want to have a little bit of pause or nonspeech around the speech say for recognition purposes.|s^df^na
+mn017|uh|fh
+mn017|but just just you know get an i just wanted to have an idea of the of how much extra you allowed.|s
+mn017|um|fh
+mn017|so that i can interpret the numbers if i compared that with a forced alignment segmentation.|s^df
+mn017|so|fh
+fe008|i can't answer that.|s^no
+fe008|but but my main goal was um in these areas where you have a three way overlap and one of the overlaps involves yeah and it's swimming in this huge bin i wanted to get it so that it was more closely localized.|s
+mn017|uhhuh.|b
+mn017|uhhuh.|b
+mn017|right.|b
+mn017|but are we talking about i don't know a tenth of a second?|qy^rt
+mn017|a|%--
+mn017|you know?|qy^d^f^g
+mn017|how how much how much extra would you allow at most?|qw^bu
+fe008|i i wanted to|s.%--
+fe008|i wanted it to be able to be heard normally.|s
+mn017|uhhuh.|b
+fe008|so that if you if you play back that bin and have it in the mode where it stops at the boundary it sounds like a normal word.|s^e
+mn017|okay.|b
+fe008|it doesn't sound like the person.|s^e
+fe008|it sounds normal.|s^e
+fe008|it's as if the person could've stopped there.|s^e
+mn017|uhhuh.|b
+mn017|okay.|s^bk
+fe008|and it wouldn't have been an awkward place to stop.|s^e
+fe008|now sometimes you know it's these are involved in places where there was no time.|s
+fe008|and so there wouldn't be a gap afterwards because|s.%--
+mn017|okay.|b
+fe008|i mean some cases there're some people um who who have very long segments of discourse where you know they'll they'll breath and then i put a break.|s
+mn017|uhhuh.|b
+fe008|but other than that it's really pretty continuous.|s
+fe008|and this includes things like going from one sentence into the one utterance into the next one sentence into the next.|s^e
+fe008|um|fh
+fe008|without really stopping.|s^e
+fe008|i mean they|s.%--
+fe008|you know in writing you have this two spaces and a big gap.|s
+mn017|uhhuh.|b
+fe008|you know?|qy^d^f^g
+mn017|right.|b
+fe008|but but uh some people are planning|s.%--
+fe008|and you know i mean a lot we always are planning what we're going to say next.|s
+mn017|okay.|b
+fe008|but uh in which case the gap between these two complete syntactic units um which of course spoken things are not always complete syntactically.|s
+fe008|but but it would be a shorter shorter break than maybe you might like.|s
+mn017|uhhuh.|b
+fe008|but the goal there was to not have the text be so so crudely parsed in a time bin.|s
+fe008|i mean because from a discourse purpose it's it's more it's more useful to be able to see|s^df.%--
+fe008|and also you know from a speech recognition purpose my impression is that if you have too long a unit it's it doesn't help you very much either.|s
+fe008|because of the memory.|s^e
+mn017|well yeah.|s^aa
+mn017|that's fine.|s^na
+fe008|so that means that the amount of time after something is variable depending partly on context.|s
+fe008|but my general goal when there was sufficient space room pause after it to have it be kind of a natural feeling gap.|s
+mn017|okay.|b
+fe008|which i i don't know what it would be quantified as.|s^no
+fe008|you know wally chafe says that um in producing narratives the spurts that people use tend to be uh that the the what would be a pause might be something like two two seconds.|s
+mn017|huh.|b
+fe008|and um that would be you know one speaker.|s^e
+fe008|the discourse the people who look at turn taking often do use|s.%--
+mn017|uhhuh.|b
+fe008|i was interested that you chose uh you know um the you know that unit you use.|s
+fe008|because i think that's a unit that would be more consistent with sociolinguistics.|s^df
+mn017|well we chose um you know half a second.|s
+fe008|yeah.|b
+mn017|because if if you go much larger you have a you know your your statement about how much overlap there is becomes less um precise.|s^df
+mn017|because you include more of actual pause time into what you consider overlap speech.|s^df
+fe008|uhhuh.|b
+mn017|um|fh
+mn017|so|fh
+mn017|it's sort of a compromise.|s
+mn017|and it's also based|s.%--
+mn017|i mean liz suggested that value based on the distribution of pause times that you see in switchboard and and other corpora.|s^e
+fe008|uhhuh.|b
+mn017|um|fh
+mn017|so|fh
+mn014|yeah i also used i think something around zero point five seconds for the speech nonspeech detector.|s^bk|s
+mn014|for the minimum silence length.|s^e
+mn017|uhhuh.|b
+mn017|i see.|s^bk
+mn014|so|fh
+mn017|yeah.|b
+fe008|uhhuh.|b
+mn017|okay.|b
+fe008|in any case this this uh meeting that i hand|s.%--
+fe008|i hand adjusted two of them.|s
+fe008|i mentioned before.|s
+mn017|uhhuh.|b
+mn017|okay.|s^bk
+fe008|and i sent i sent email.|s
+mn017|so so at some point we will try to fine tune our forced alignment.|s
+fe008|so|fh
+fe008|and i sent the path.|s
+mn017|maybe using those as references.|s^am^e
+mn017|because you know what you would do is you would play with different parameters.|s
+mn017|and to get an you need an objective measure of how closely you can align the models to the actual speech.|s
+mn017|and that's where your your data would be very important to have.|s
+mn017|so i will|s.%--
+mn017|um|fh
+mn014|yeah and hopefully the new meetings which will start from the channelized version will will have better time boundaries and alignments.|s
+mn017|uhhuh.|b
+mn017|right.|s^aa
+fe008|but i like this idea of uh for our purposes for the for the i b m preparation uh having these joined together.|s
+mn014|yeah.|b
+fe008|and uh|fh
+mn014|yeah.|b
+fe008|it makes a lot of sense.|s
+fe008|and in terms of transcription it would be easy to do it that way.|s^cs
+mn017|yeah.|b
+fe008|the way that they have with the longer units.|s^e
+mn017|yeah.|b
+fe008|not having to fuss with adding these units at this time.|s^e
+mn014|yeah.|b
+mn017|right.|b
+mn014|which could have one drawback if there is uh a backchannel in between those three things.|s^rt
+fe008|uhhuh.|b
+mn014|the the the backchannel will will occur at the end of of those three.|s^e
+fe008|yes.|s^aa
+mn014|and and in in the in the previous version where in the which is used now there the backchannel would would be in between there somewhere.|s^e
+fe008|i see.|s^bk
+mn014|so|fh
+fe008|yeah.|fg
+mn014|that would be more natural.|s
+fe008|well|fg
+mn014|but|%-
+fe008|that's that's right.|s^aa
+fe008|but you know this brings me to the other stage of this which i discussed with you earlier today.|s
+mn014|yeah.|b
+fe008|which is the second stage is um what to do in terms of the transcribers adjustment of these data.|s
+fe008|i discussed this with you too.|s
+fe008|um the|fh|s.%--
+fe008|so the idea initially was we would get uh for the new meetings.|s
+fe008|so the e d u meetings that thilo has now presegmented all of them for us on a channel by channel basis.|s^e
+fe008|and um|fh
+fe008|so i've assigned i've i've assigned them to our transcribers.|s
+fe008|and um|fh
+fe008|so far i've discussed it with one.|s
+fe008|with uh|s.%--
+fe008|and i had a about an hour discussion with her about this yesterday.|s
+fe008|we went through uh e d u one at some extent.|s
+fe008|and it occurred to me that um that basically what we have in this kind of a format is you could consider it as a staggered mixed file.|s
+fe008|we had some discussion over the weekend about at at this other meeting that we were all at.|s
+fe008|um about whether the the i b m transcribers should hear a single channel audio or a mixed channel audio.|fh|s^e
+fe008|and um in in a way by by having this this chunk and then the backchannel after it it's like a staggered mixed channel.|fh|s
+fe008|and um it occurred to me in my discussion with her yesterday that um|fh|s.%--
+fe008|um|fh
+fe008|the the the maximal gain it's from the i b m people may be in long stretches of connected speech.|s
+fe008|so it's basically a whole bunch of words which they can really do because of the continuity within that person's turn.|s^df
+fe008|so what i'm thinking and it may be that not all meetings will be good for this but but what i'm thinking is that in the e d u meetings they tend to be driven by a couple of dominant speakers.|fh|s^cs
+fe008|and if the chunked files focused on the dominant speakers then when when it got patched together when it comes back from i b m we can add the backchannels.|s^cs
+fe008|it seems to me that um you know the backchannels per se wouldn't be so hard.|s^ba
+fe008|but then there's this question of the time uh marking and whether the beeps would be uh|s.%--
+fe008|and i'm not exactly sure how that how that would work with the with the backchannels.|s^no
+fe008|and|fh
+fe008|so um|fh
+fe008|and certainly things that are intrusions of multiple words taken out of context and displaced in time from where they occurred that would be hard.|s^ba
+fe008|so my thought is i'm having this transcriber go through the e d one meeting and indicate a start time for each dominant speaker end time for each dominant speaker.|s
+fe008|and the idea that these units would be generated for the dominant speakers and maybe not for the other channels.|s
+me011|yeah the only um disadvantage of that is then it's hard to use an automatic method to do that.|s^ng
+me011|the advantage is that it's probably faster to do that than it is to use the automated method and correct it.|s^na
+me011|so|fh
+fe008|well it|s.%--
+fe008|okay.|s^bk
+me011|we'll just have to see.|s
+fe008|i think i i think um you know the original plan was that the transcriber would adjust the the boundaries and all that for all the channels.|s
+fe008|but you know that is so time consuming.|s
+fe008|and since we have a bottleneck here we want to get i b m things that are usable as soon as possible.|s^df
+fe008|then this seemed to me it'd be a way of to get them a flood of data.|s^df
+fe008|which would be useful when it comes back to us.|s^e
+fe008|and um|fh
+fe008|oh also at the same time she when she goes through this she'll be uh if there's anything that was encoded as a pause but really has something transcribable in it then she's going to uh make a mark.|s
+me011|yeah.|fg
+fe008|uh so you know that that bin would be marked as it as double dots.|s^e
+fe008|and she'll just add an s.|s^e
+fe008|and in the other in the other case if it's marked as speech and really there's nothing transcribable in it then she's going to put a dash.|s^e
+fe008|and i'll go through and it and um you know with a with a substitution command get it so that it's clear that those are the other category.|s^cc
+fe008|i'll just you know recode them.|s^cc
+fe008|but um um the transcribable events that um i'm considering in this uh continue to be laugh as well as speech and cough and things like that.|fh|s
+fe008|so i'm not stripping things out anything.|s
+fe008|just just you know being very lenient in what's considered speech.|s^e
+me018|jane?|qy^d^rt
+fe008|yeah?|qw^d
+me018|in terms of the this new procedure you're suggesting um what is the|qw.%--
+me011|it's not that different.|s^t3
+me018|so i'm a little confused.|s
+me018|because how do we know where to put beeps?|qw^bu^rt
+me018|is it is it|qy.%-
+fe008|oh okay.|s^bk
+fe008|so what it what it what it involves is is really a uh uh the original procedure.|s
+me011|transcriber will do it.|s
+fe008|but only applied to uh a certain strategically chosen aspect of the data.|s^e
+me011|we pick the easy parts of the data basically.|s
+fe008|so|%-
+me011|and transcriber marks it by hand.|s
+fe008|you got it.|s^na
+me011|and because|s.%-
+me018|but after we've done thilo's thing.|s^bu
+me011|no.|s^ar
+fe008|yes.|s^ar
+me011|oh after.|s^bk
+fe008|yes.|s^ar^r
+me011|oh okay.|s^bk
+fe008|oh yeah!|s^aa^fe
+me011|i didn't i didn't understand that.|s^df
+me011|okay.|s^bk
+mn014|so|fg
+mn014|i'm now i'm confused.|s
+fe008|okay.|s^bk
+fe008|we start with your presegmented version.|s
+mn017|okay and i'm leaving.|s
+me001|yeah i have to go as well.|s
+mn017|so um|fh
+me011|okay leave the mikes on.|s^bk|s^co
+me011|and just put them on the table.|s^co
+me001|okay.|s^aa
+me001|thanks.|s^ft
+fe008|we start with the presegmented version.|s
+me011|let me mark you as no digits.|s^co^t3
+mn014|you start with the presegmentation.|s^bu
+mn014|yeah?|qy^d^g^rt
+fe008|yeah.|s^aa
+fe008|and then um the transcriber instead of going painstakingly through all the channels and moving the boundaries around and deciding if it's speech or not but not transcribing anything.|s
+fe008|okay.|s^bk
+fe008|instead of doing that which was our original plan the they focus on the dominant speaker.|s
+me018|uhhuh.|b
+me018|they just do that on the main channels.|s
+fe008|yeah.|s^aa
+fe008|so what they do is they identify who's the dominant speaker and when the speaker starts.|s
+me018|okay.|b
+mn014|yeah?|qy^d^rt
+mn014|okay.|s^bk
+fe008|so i mean you're still going to|s.%--
+fe008|so we're|s.%--
+mn014|and you just|s.%-
+fe008|it's based on your presegmentation.|s
+fe008|that's the basic thing.|s
+mn014|and you just use the the segments of the dominant speaker then for for sending to to i b m?|qy^d^rt
+mn014|or|qrr.%--
+fe008|yeah.|s^aa
+fe008|exactly.|s^aa
+me018|so now jane my question is when they're all done adjusting the time boundaries for the dominant speaker have they then also erased the time boundaries for the other ones?|qy^rt
+fe008|uhhuh.|b
+fe008|uh no no no.|s^ar
+me018|so how will we know who|qw.%-
+fe008|huh uh.|s^ar
+mn014|yeah.|b
+fe008|that's that's why she's notating the start and end points of the dominant speakers.|s^df
+fe008|so on a you know so in e d u one as far as i listened to it you start off with a a section by jerry.|s^e
+fe008|so jerry starts at minute so-and-so.|s^e
+fe008|and goes until minute so-and-so.|s^e
+fe008|and then mark paskin comes in.|s^e
+fe008|and he starts at minute such and such.|s^e
+fe008|and goes on till minute so-and-so.|s^e
+fe008|okay.|s^bk
+fe008|and then meanwhile she's listening to both of these guys' channels.|s
+fe008|determining if there're any cases of misclassification of speech as nothing and nothing as speech.|s
+me018|uhhuh.|b
+me018|okay.|s^bk
+fe008|and and adding a tag if that happens.|s
+me018|so she does the adjustments on those guys?|qy^bu^d
+fe008|but you know i wanted to say his segmentation is so good that um the part that i listened to with her yesterday didn't need any adjustments of the bins.|s
+mn014|on that meeting.|s^2
+me018|uhhuh.|b
+fe008|so far we haven't.|s
+fe008|so this is not going to be a major part of the process.|s
+fe008|at least least not in not on ones that that really|s^e.%-
+me018|so if you don't have to adjust the bins why not just do what it for all the channels?|qh^cs
+fe008|uhhuh.|b
+me018|why not just throw all the channels to i b m?|qh^cs
+fe008|well there's the question of whether|s.%--
+fe008|well okay.|h
+fe008|she it's a question of how much time we want our transcriber to invest here when she's going to have to invest that when it comes back from i b m anyway.|s
+me018|uhhuh.|b
+fe008|so if it's only inserting uhhuh s here and there then wouldn't that be something that would be just as efficient to do at this end instead of having it go through i b m then be patched together then be double checked here?|qy
+me018|uhhuh.|b
+me018|right.|b
+mn014|yeah.|b
+mn014|but|%
+mn014|but then we could just use the the output of the detector and do the beeping on it and send it to i b m.|s^cs^ng
+me018|without having her check anything.|s^2
+me013|right.|b
+mn014|yeah.|s^aa
+fe008|well i guess|s.%--
+mn014|for some meetings i'm i'm sure it|s.%-
+me011|i think we just we just have to listen to it and see how good they are.|s^cs
+fe008|i'm i'm open to that.|s^na
+fe008|it was|s.%-
+me013|yeah if it's working well.|s^aa|s
+me013|that sounds like a good idea.|s^ba
+mn014|that's and some on some meetings it's good.|s
+me013|since as you say you have to do stuff with the other end anyway.|s^df
+mn014|yeah.|b
+fe008|well|fg
+fe008|okay good.|s^bk|s^ba
+me018|yeah i mean we have to fix it when it comes back anyhow.|s^na
+fe008|i mean the detector this|s.%-
+mn014|yeah.|b
+fe008|now you were saying that they they differ in how well they work depending on channel systems and stuff.|s^bu
+mn014|yeah.|s^aa
+mn014|so we should perhaps just select meetings on which the speech nonspeech detection works well.|s^cs
+fe008|but e d u is great.|s^ba
+mn014|and just use those meetings to to to send to i b m and do the other ones.|s^cs
+me011|release to begin with.|s^2
+fe008|how interesting.|s^ba
+me013|what's the problem the i forget.|s
+fe008|you know|s.%-
+me013|is the problem the lapel?|qy^rt
+me013|or or|qrr.%--
+mn014|uh it really depends.|h|s^aap
+mn014|um my my my impression is that it's better for meetings with fewer speakers.|s^aap^rt
+mn014|and it's better for for meetings where nobody is breathing.|s^aap^j
+me013|oh.|s^bk
+me013|the dead meetings.|s^j
+mn014|yeah.|s^bk
+mn014|get|%
+mn014|that's it.|s^aa
+me018|so in fact this might suggest an alternative sort of a a a hybrid between these two things.|s
+me011|no the undead meeting.|s^j^nd^t3
+me011|yeah.|fh
+fe008|yeah.|b
+fe008|yeah?|qy^bh
+me018|so the the one suggestion is you know we we run thilo's thing.|s^cs
+me018|and then we have somebody go and adjust all the time boundaries.|s^cs
+fe008|yeah?|qy^bh
+me018|and we send it to i b m.|s^cs
+mn014|yeah.|b
+me018|the other one is we just run his thing and send it to i b m.|s^cs
+me018|there's a another possibility if we find that there are some problems.|s
+mn014|yeah.|b
+mn014|yeah.|b
+me018|and that is if we go ahead and we just run his and we generate the beeps file then we have somebody listen beeps file.|s^cs
+mn014|yeah.|b
+mn014|yeah.|b
+me018|and they listen to each section and say yes no whether that section is|s^cs.%--
+mn014|and erase.|s^2
+mn014|yeah.|b
+fe008|is intelligible.|s^2
+me018|intelligible or not.|s^m^na
+me018|and it just you know there's a little interface which will for all the yes it then that will be the final beep file.|s^df
+mn014|yeah.|b
+me011|blech.|s
+fe008|that's interesting.|s^ba
+fe008|because that's that's directly related to the end task.|s^df
+me011|stress test.|s^2
+me018|uhhuh.|b
+fe008|how interesting!|s^ba^fe
+me018|yeah.|s^bk
+me018|i mean it wouldn't be that much fun for a transcriber to sit there hear it beep yes or no.|s
+mn014|nope.|s^aa
+me013|i i i don't know.|s^no
+me018|but it would be quick.|s^df
+me013|it would be kind of quick.|s^aap
+me013|but they're still listening to everything.|s^ng
+me018|but there's no adjusting.|s^df
+me018|and that's what's slow.|s^df
+me018|there's no adjusting of time boundaries.|s^df^r
+fe008|well uh listening does take time too.|s^nd
+me013|yeah.|s^bk
+me018|yeah.|s^bk
+me013|i don't know.|s^no
+me013|i i think i'm i'm really tending towards|s.%--
+me011|one and a half times real time.|s^na^t3
+me013|i mean what's the worst that happens?|qw
+me013|do the transcribers|qy.%--
+me013|i mean as long as on the other end they can say there's there's something conventions so that they say huh.|s
+me018|yeah.|b
+me018|right.|b
+me013|and then we can flag those later.|s^cs
+me018|they they|s.%--
+me018|yeah.|b
+me013|it|%-
+me018|that's true.|s^aa
+me018|we can just catch it at the catch everything at this side.|s^cs^na
+me013|yeah.|b
+me018|well maybe that's the best way to go.|s^na
+me018|just|s.%-
+fe008|how interesting.|s^ba
+me011|i mean it just depends on how|s.%-
+fe008|well e d u|s.%-
+mn014|yeah.|b
+me011|sorry go ahead.|s^fa|s^cs
+fe008|so i was going to say e d u one is good enough.|s
+mn014|yeah.|b
+fe008|maybe we could include it in this in this set of uh this stuff we send.|s^cs
+mn014|yeah there's i i think there are some meetings where it would would it's possible like this.|s^bk|s^aap
+me011|yeah i i think we won't know until we generate a bunch of beep files automatically listen to them and see how bad they are.|s^ng
+mn014|yeah.|b
+mn014|yeah.|b
+me018|yeah.|b
+me018|we won't be able to include it with this first thing.|s^arp^rt
+fe008|uhhuh.|b
+fe008|huh.|b
+me011|if|%-
+fe008|oh okay.|s^bk
+me018|because there's a part of the process of the beep file which requires knowing the normalization coefficients.|s^df
+fe008|oh i see.|s^bk
+me018|and so|s.%-
+me011|that's not hard to do.|s^nd
+me011|just it takes you know it just takes five minutes rather than taking a second.|s^df
+mn014|yeah.|b
+me018|right.|s^bk
+me018|except i don't think that the the instructions for doing that was in that directory.|s^df^ng
+me011|so i just hand hard coded it.|s
+me018|right?|qy^d^f^g^rt
+me018|i i didn't see where you had|s.%-
+me011|no but it's easy enough to do.|s^ar|s^df
+mn014|what|%-
+me013|but i but i have a|s.%-
+mn014|doing the gain it's no problem.|s^nd
+me018|doing|%-
+mn014|adjusting the gain?|qy^bu^d^rt
+me018|no getting the coefficients.|s^ar|s^nd
+me018|for each channel.|s^e
+fe008|know what numbers.|s
+mn014|yeah that's no problem.|s^bk|s
+me018|okay.|fg
+me018|so we just run that one|s^bu.%-
+mn014|we can do that.|s
+me011|there are lots of ways to do it.|s
+me011|i have one program that'll do it.|s
+mn014|yeah.|b
+me011|you can find other programs.|s
+mn014|i i used it.|s
+me018|we just run that j sound stat?|qy^bu^d^rt
+mn014|so|fh
+me011|yep.|s^aa
+me013|yeah.|b
+mn014|yeah.|b
+me018|okay okay.|s^bk
+me011|minus d capital d.|s
+me013|but|%-
+mn014|yeah.|b
+me013|but but i i i have another suggestion on that which is since really what this is is is is trying to in the large send the right thing to them and there is going to be this this post processing step.|s
+me013|um|fh
+me013|why don't we check through a bunch of things by sampling it?|qh^cs
+me018|uhhuh.|b
+me013|right?|qy^d^f^g^rt
+me013|in other words rather than um uh saying we're going to listen to everything|s^cs.%-
+me011|i didn't mean listen to everything.|s^ng
+me011|i meant just see if they're any good.|s^df
+me013|yeah.|s^bk
+me013|so you do a bunch of meetings.|s^cs
+me013|you listen to to a little bit here and there.|s^cs
+me018|yeah.|s^bk
+me013|if it sounds like it's almost always right and there's not any big problem you send it to them.|s^cs
+me018|send it to them.|s^2
+mn014|yeah.|b
+me018|okay.|s^bk
+me013|and you know then they'll send us back what we what what they send back to us.|s
+fe008|oh that'd be great.|s^ba
+me013|and we'll we'll fix things up.|s
+me013|and some meetings will cost more time to fix up than others.|s^e
+me011|we should|s^cs.%-
+me011|yeah.|b
+mn014|yeah.|s^bk
+me011|and we should just double check with brian on a few simple conventions on how they should mark things.|s^cs
+me018|okay.|b
+mn014|sure.|b
+me018|when they when there's either no speech in there.|s^cs^na
+mn014|yeah.|b
+me018|or something they don't understand.|s^cs^na
+mn014|yeah.|b
+fe008|yeah.|b
+me018|things like that.|s^cs^na
+fe008|uhhuh.|b
+me013|yeah.|b
+me011|yeah because what i had originally said to brian was well they'll have to mark when they can't distinguish between the foreground and background.|s^bk|s^na
+me011|because i thought that was going to be the most prevalent.|s^df
+me018|uhhuh.|b
+me011|but if we send them without editing then we're also going to have to have uh notations for words that are cut off.|s
+mn014|yeah.|b
+me018|uhhuh.|b
+mn014|yeah.|b
+me011|and other sorts of uh acoustic problems.|s^e
+me018|and they may just guess at what those cut off words are.|s
+fe008|they do already.|s
+fe008|yeah.|b
+me018|but i mean we're going to adjust everything when we come back.|s
+me011|but what what we would like them to do is be conservative.|s
+me011|so that they should only write down the transcript if they're sure.|s^cs
+mn014|yeah.|b
+me011|and otherwise they should mark it so that we can check.|s^cs
+mn014|mark it.|s^2
+mn014|sure.|s^aa
+mn014|yeah.|b
+mn014|yeah.|b
+me018|uhhuh.|b
+fe008|well we have the unintelligibility convention.|s
+fe008|and actually they have one also.|s
+me011|uhhuh.|b
+me011|right.|s^bk
+fe008|which|s^e.%--
+me013|can i maybe have have an order of|qy^cs.%--
+me013|it's probably in your paper that i haven't looked at lately.|s
+me013|but|%--
+me013|uh an order of magnitude.|fh|s
+fe008|certainty.|s^t3
+me013|notion of of how on a good meeting how often uh do you get segments that come in the middle of words and so forth?|qw
+me013|and uh in a bad meeting how often?|qw
+mn014|uh.|b
+fe008|was is it in a in a what what is the|qw.%-
+me013|well he's saying you know that the the e d u meeting was a good good meeting.|s
+fe008|in a good meeting.|s^bu
+fe008|what|qw.%-
+mn014|yeah.|s^aa
+me013|right?|qy^d^f^g
+fe008|yeah.|s^aa
+me013|uh and so so so it was almost it was almost always doing the right thing.|s
+fe008|oh i see.|s^bk
+fe008|the characteristics.|s
+me013|so i wanted to get some sense of what what almost always meant.|s
+me013|and then uh in a bad meeting or some meetings where he said oh he's had some problems what does that mean.|s
+fe008|uhhuh.|b
+me013|so i mean does one of does it mean one percent and ten percent?|qy^rt
+fe008|okay.|b
+me013|or does it mean five percent and fifty percent?|qrr^rt
+fe008|okay.|b
+me013|uh|fh
+mn014|so|fg
+me013|or maybe percentage isn't the right word.|s^e
+fe008|just.|%
+me013|but you know how many how many per minute.|s^e
+mn014|yeah|fg|%-
+me013|or|fh
+me013|you know.|fh
+mn014|yeah.|fg
+mn014|the the problem is that nnn the numbers ian gave in the paper is just uh some frame error rate.|s
+mn014|so that's that's not really what will be effective for for the transcribers is.|s
+mn014|they have to yeah they have to insure that that's a real spurt or something.|s^rt
+mn014|and but the numbers|s.%--
+mn014|oops!|s^fe
+mn014|um|fh
+fe008|huh.|b
+mn014|let me think.|s^t1
+mn014|so the speech the amount of speech that is missed by the detector for a good meeting i is around or under one percent i would say.|s^e
+mn014|but there can be|s.%--
+mn014|yeah.|s^bk
+mn014|for|%--
+mn014|yeah.|s^bk
+mn014|but there can be more|s.%--
+mn014|there's there's more amount speech.|s
+mn014|uh more amount of|s^e.%--
+mn014|yeah well the detector says there is speech.|s
+mn014|but there is none.|s
+mn014|so that that can be a lot when when it's really a breathy channel.|s
+me013|but i think that's less of a problem.|s^nd
+me013|they'll just listen.|s
+mn014|yeah.|b
+me013|it's just wasted time.|s
+mn014|yeah.|b
+me013|and and that's for a good meeting.|s^e
+me013|now what about in a meeting that you said we've you've had some more trouble with?|qo
+mn014|i can't really hhh tsk i don't have really representative numbers i think.|s^no
+mn014|that's really|s.%--
+mn014|i i did this on on four meetings and only five minutes of of every of of these meetings.|s^e
+mn014|so it's not not that representative.|s
+mn014|but|%--
+mn014|it's perhaps|s.%--
+mn014|um|fh
+mn014|yeah it's perhaps then it's perhaps five percent of something.|s^e
+mn014|which uh the the frames speech frames which are which are missed.|s^e
+mn014|but um i can't can't really tell.|s
+me013|right.|b
+me013|so i so sometime we might want to go back and look at it more in terms of how many times is there a spurt that's that's uh interrupted.|s^cs
+mn014|yeah.|b
+mn014|yeah.|b
+mn014|yeah.|b
+me013|something like that.|s^e
+fe008|the other problem is that when it when it uh on the breathy ones where you get breathing uh indicated as speech.|s
+me013|and|fh
+mn014|so|fg
+fe008|and i guess we could just indicate to the transcribers not to encode that if they|s^cs.%--
+fe008|we could still do the beep file.|s^cs
+me013|yeah again i i think that that is probably less of a problem.|s^bk|s^ng
+me013|because if you're if there's if if a if a word is is split then they might have to listen to it a few times to really understand that they can't quite get it.|s^df
+fe008|okay.|b
+fe008|okay.|b
+fe008|okay.|b
+me013|whereas if they listen to it and there's don't hear any speech i think they'd probably just listen to it once.|s^df
+mn014|but|fg
+mn014|yeah.|b
+me013|so there'd you'd think there'd be a a factor of three or four in in uh cost function.|s^e
+fe008|okay.|b
+me013|you know between them or something.|s^e
+mn014|yeah.|s^bk
+mn014|so but i think that's that really doesn't happen very often that that that a word is cut in the middle or something.|s^nd
+mn014|that's that's really not not normal.|s^nd
+me013|so so what you're saying is that nearly always what happens when there's a problem is that is that uh there's some uh uh nonspeech that uh that is interpreted as speech.|s^bu
+mn014|that is marked as speech.|s^2
+mn014|yeah.|s^aa
+mn014|yeah.|b
+me013|well then we really should just send the stuff.|s^cs
+fe008|that would be great.|s^ba
+me013|right?|qy^d^f^g^rt
+me013|because that doesn't do any harm.|s^df
+mn014|yeah.|fg
+me013|you know if they they hear you know a dog bark and they say what was the word.|s^df
+mn014|it's|%-
+me013|they you know they|s.%--
+mn014|yeah i i|fg|%-
+me013|ruff ruff!|s^fe^j
+mn014|yeah i also thought of there there are really some channels where it is almost um only breathing in it.|s^bk|s
+me013|yeah?|qy^bh^rt
+mn014|and to to re run's|s.%--
+mn014|uh um yeah i've got a a p a method with loops into the cross correlation with the p z m mike.|fh|s^rt
+me013|uhhuh.|b
+mn014|and then to reject everything which which seems to be breath.|s
+mn014|so i could run this on those breathy channels.|s^cs^rt
+mn014|and perhaps throw out|s^cs.%-
+me011|that's a good idea.|s^ba^na
+fe008|wow that's a great idea.|s^ba^na
+me013|yeah.|s^bk
+me013|but i think i again i think that sort of that that would be good.|s^na
+me013|and what that'll do is just cut the time a little further.|s^na
+mn014|yeah.|b
+me018|uhhuh.|b
+mn014|yeah.|b
+me013|but i think none of this is stuff that really needs somebody doing these these uh uh explicit markings.|s
+me018|yeah.|b
+fe008|excellent.|s^ba
+fe008|oh i'd be delighted with that.|s^na
+fe008|i i was very impressed with the with the result.|s
+fe008|yeah.|fh
+me013|yeah because the other thing that was concerning me about it was that it seemed kind of specialized to the e d u meeting.|s
+me013|and and that then when you get a meeting like this or something.|s
+mn014|yeah.|b
+me013|and and you have a a bunch of different dominant speakers.|s
+fe008|oh yeah.|s^bk
+fe008|interesting.|s^ba
+me013|you know how are you going to handle it?|qw
+me013|whereas this sounds like a more general solution.|s^df
+fe008|oh yeah.|s^bk
+me013|is|%--
+fe008|oh yeah.|s^bk
+fe008|i i much prefer this.|s^na
+fe008|i was just trying to find a way|s^na.%--
+me013|yeah.|b
+fe008|because i i don't think the staggered mixed channel is awfully good as a way of handling overlaps.|s^df
+me013|uhhuh.|b
+fe008|but|fh
+me018|well good.|s^ba
+fe008|but uh|fh
+me018|that that really simplifies thing then.|s
+fe008|yeah.|b
+me018|and we can just you know get the meeting.|s
+me018|process it.|s
+me018|put the beeps file.|s
+me018|send it off to i b m.|s
+me018|you know?|qy^d^f^g
+fe008|uhhuh.|b
+me018|with very little work on our side.|s^e
+mn014|yeah.|s^bk
+mn014|process it.|s^m^na
+mn014|hear into it.|s^na
+mn014|i would|s.%-
+me018|do what?|qy^br^d^rt
+mn014|um listen to it.|h|s
+mn014|and then|s.%-
+me011|or at least sample it.|s^cs
+me018|well sample it.|s^cs
+mn014|yeah.|s^bk
+me013|i i would just use some samples.|s^cs
+me018|sample it.|s^cs^r
+mn014|yeah.|b
+mn014|yeah.|b
+me013|make sure you don't send them three hours of bzzz or something.|s^cs
+mn014|yeah.|b
+me018|yeah.|b
+me018|yeah.|b
+mn014|no.|s^aa
+me018|right.|b
+mn014|that won't be good.|s^na
+me018|yeah.|b
+fe008|yeah.|b
+me018|yeah that would be very good.|s^na
+mn014|yeah.|b
+me018|and then we can you know|s^cs.%--
+me013|yeah.|b
+me018|that'll ought to be a good way to get the pipeline going.|s^na
+fe008|oh i'd be delighted.|s
+fe008|yeah.|b
+mn014|and there's there's one point which i uh yeah which which i we covered when i when i listened to one of the e d u meetings.|s^rt
+me013|great.|s^ba
+mn014|and that's that somebody is playing sound from his laptop.|s^e
+me011|uhhuh.|b
+mn014|and the speech nonspeech detector just assigns randomly the speech to to one of the channels.|s
+mn014|so|fh
+mn014|i i didn't think of of of this before.|s
+me011|what can you do?|qw
+mn014|but what what shall we do about things like this?|qw^rt
+fe008|well you were suggesting you suggested maybe just not sending that part of the meeting.|s
+me011|yep huh.|s^bk
+fe008|but|%--
+mn014|but|fg
+mn014|sometimes the the the laptop is in the background.|s
+mn014|and some somebody is is talking.|s
+mn014|and that's really a little bit confusing.|s^rt
+mn014|but|%--
+me013|that's life.|s^ng
+me011|it's a little bit confusing.|s^na
+mn014|yeah.|b
+me011|i mean what're we going to do?|qh
+mn014|yeah.|b
+mn014|okay.|b
+me013|yeah.|b
+me011|even a hand transcription would|s^df.%--
+fe008|do you|qy.%-
+me011|a hand transcriber would have trouble with that.|s^bsc^df
+mn014|yeah.|s^aa
+mn014|that's that's a second question.|s
+me011|so|fh
+mn014|what what will different transcribers do with with the laptop sound?|qw^rt
+me013|what was the what was the laptop sound?|qw
+fe008|would you would|qy.%-
+fe008|yeah go ahead.|s^co
+me013|i mean was it speech?|qy^e^rt
+me013|or was it|qrr.%-
+mn014|yeah.|s^aa
+mn014|it's speech.|s^na
+me013|great.|s^ba
+fe008|well|fg
+fe008|so|fg
+fe008|i mean|fg
+fe008|so my standard approach has been if it's not someone close miked then they don't end up on one of the close miked channels.|s
+fe008|they end up on a different channel.|s^e
+fe008|and we have any number of channels available.|s^e
+me013|uhhuh.|b
+fe008|i mean it's an infinite number of channels.|s^e
+mn014|yeah.|b
+fe008|so just put them on some other channel.|s^cs
+mn014|but|fg
+mn014|when when this is sent to to the i m uh i b m transcribers i don't know if if they can tell that's really|s^no.%--
+fe008|yeah.|s^aa
+fe008|that's right.|s^aa
+me011|yeah because there will be no channel on which it is foreground.|s^aa|s^df
+mn014|yeah.|b
+mn014|yeah.|b
+fe008|well they have a convention in their own procedures which is for a background sound.|s
+me011|uh|fg
+me011|right but uh in general i don't think we want them transcribing the background.|s^bk|s^nd
+me011|because that would be too much work.|s^df^nd
+me011|yeah.|b.%
+mn014|yeah.|b
+me011|right.|s^bk
+me011|for it|%--
+me011|because in the overlap sections then|s^df.%-
+me018|well i don't think jane's saying they're going to transcribe it.|s^ng
+me018|but they'll just mark it as being there's some background stuff there.|s^bu
+me011|but that's going to be all over the place.|s^nd
+me018|right?|qy^d^g^rt
+fe008|yeah.|s^aa
+me011|how how will they tell the difference between that sort of background and the dormal normal background of two people talking at once?|qw^df
+mn014|yeah.|b
+fe008|oh i think i think it'd be easy to to say background laptop.|s^cs^nd
+me018|but wait a minute.|s^co
+me011|how would they know that?|qw^nd
+me018|why would they treat them differently?|qw^bu
+mn014|yeah.|b
+fe008|well because one of them|s.%-
+me011|because otherwise it's going to be too much work for them to mark it.|s
+me011|they'll be marking it all over the place.|s^e
+mn014|yeah.|b
+fe008|oh i|s^bk.%--
+fe008|background laptop or background l t wouldn't take any time.|s
+me011|sure.|s^bk
+me011|but how are they going to tell the difference between that and two people just talking at the same time?|qw^nd
+fe008|and|%-
+fe008|oh you can tell.|s^nd
+mn014|yeah.|b
+fe008|acoustically can't you tell?|qy^nd
+mn014|it's really good sound.|s
+mn014|so|fh
+fe008|oh is it?|qy^bh
+fe008|oh!|s^bk^fe
+me013|well i mean|fg
+me013|isn't there a category something like uh sounds for someone for whom there is no close mike?|qy^rt
+mn014|yeah that would be very important.|s^ba
+fe008|yeah.|s^aa
+me011|but how do we how do we do that for the i b m folks?|qw
+mn014|yeah.|fh
+me011|how can they tell that?|qw
+me018|well we may just have to do it when it gets back here.|s^cs
+me011|yes.|s^aa
+me011|that's my opinion as well.|s^na
+mn014|yeah.|b
+me011|so we don't do anything for it with it.|s^co
+fe008|okay.|s^bk
+me018|yeah.|b
+fe008|that sounds good.|s^ba^na
+fe008|that sounds good.|s^ba^na
+me018|yeah.|b
+me011|and they'll just mark it however they mark it.|s^e
+me011|and we'll correct it when it comes back.|s^co^e
+mn014|so|s.%-
+me013|yeah.|b
+fe008|okay.|b
+mn014|there was a category for speech.|s
+me011|yeah.|s^aa
+me011|the default.|s^2
+fe008|yeah.|s^aa
+mn014|okay.|s^bk
+me011|no not default.|s^ar|s^bsc
+fe008|well as it comes back we have a uh when we can use the channelized interface for encoding it then it'll be easy for us to handle.|s
+mn014|yeah.|b
+fe008|but but if if out of context they can't tell if it's a channeled uh you know a close miked speaker or not then that would be confusing to them.|s
+mn014|okay.|b
+me011|right.|b
+mn014|okay.|b
+fe008|i don't know.|fh
+fe008|i it doesn't|s.%--
+fe008|i don't|s.%--
+fe008|either way would be fine with me.|s
+fe008|i don't really care.|s
+me013|yeah.|b.x
+me013|so|fg
+me013|shall we uh do digits and get out of here?|qy^cs^rt^t^tc
+fe008|i have i have one question.|s^ng^tc
+me011|yep.|s^aa
+fe008|do you think we should send the um that whole meeting to them and not worry about pre processing it?|qy^cs^rt
+me013|yes ma'am.|s^bk.%
+fe008|or|qrr.%--
+fe008|uh what i mean is we we should leave the part with the audio in the uh beep file that we send to i b m for that one.|s^cs
+fe008|or should we start after the that part of the meeting is over?|qy^cs
+me013|which part?|qw^bu
+fe008|in what we send.|s^e
+fe008|so the part where they're using sounds from their from their laptops.|s
+mn014|with|%-
+mn014|with the laptop sound?|qy^2^d
+mn014|or|qrr.%--
+fe008|if we have speech from the laptop should we just uh excise that from what we send to i b m?|qy
+mn014|just|%-
+fe008|or should we give it to them and let them do with it what they can?|qrr
+me018|i think we should just|s.%--
+me018|it it's going to be too much work if we have to worry about that i think.|s^nd
+fe008|okay.|s^bk
+fe008|that'd be nice to have a a uniform procedure.|s^cs
+me018|yeah i think if we just send it all to them.|s
+me018|you know.|fh
+fe008|good.|s^aa
+me011|worry about it when we get back.|s
+me018|let|%--
+fe008|and see how well they do.|s
+me018|yeah worry about it when we get back in.|s^na
+me013|yeah.|b
+fe008|and give them freedom to to indicate if it's just not workable.|s^cs
+me018|yeah.|b
+fe008|yeah.|s^bk
+me013|yeah.|s^aa
+fe008|okay.|s^bk
+me013|because i wouldn't don't think we would mind having that transcribed if they did it.|s^df^na
+fe008|excellent.|s^ba
+me011|i think|%-
+fe008|yeah.|b
+me011|as i say we'll just have to listen to it and see how horrible it is.|s^cs
+me018|yeah|b
+fe008|yeah.|b
+mn014|yeah.|s^aa
+fe008|okay.|s^bk
+me011|sample it rather.|s^bsc
+fe008|all right.|s^bk
+me018|yeah.|b
+mn014|i think that that will be a little bit of a problem.|s
+fe008|that's great.|s^ba
+mn014|as it really switches around between two different channels i think.|s^df
+me011|uhhuh.|b
+mn014|what what i would|%-
+me011|and and they're very it's very audible on the close talking channels?|qy^d^rt
+mn014|yeah.|s^aa
+me011|oh well.|s^ng
+me013|yeah.|b
+me011|i mean it's the same problem as the lapel mike.|s
+mn014|yeah.|s^bk
+me011|but|%--
+fe008|oh interesting.|s^ba
+mn014|comparable.|s
+mn014|yeah.|s^bk
+me013|yeah.|b
+fe008|okay.|fg
+fe008|all right.|fg
+mn014|okay.|b
+me013|let's do digits.|s^co^t^tc
+fe008|digits.|s
+fe008|okay so we read the transcript number first.|s^bk|s
+fe008|right?|qy^d^g^rt
+me011|are we going to do it altogether or separately?|qr
+mn014|so|fh
+mn014|what time is it?|qw
+me013|uh why don't we do it together?|qh^cs^rt
+fe008|uh quarter to four.|s
+mn014|oh okay.|s^bk
+me013|that's that's a nice fast way to do it.|s^df
+fe008|uhhuh.|b
+me013|one two three.|s
+me013|go.|s^co
+fe008|it's kind of interesting if there're any more errors in these than we had the first set.|z
+me011|nnn yeah.|z
+me011|i think there probably will be.|z
+mn014|yeah.|z
+me018|do you guys plug your ears when you do it?|z
+me011|i do.|z
+mn014|no.|z
+fe008|i usually do.|z
+me018|i do.|z
+fe008|i didn't this time.|z
+mn014|i don't.|z
+me018|you don't?|z
+me013|i haven't been.|z
+mn014|no.|z
+me018|how can you do that?|z
+me013|no.|z
+me018|i i|z
+me013|uh concentration.|z
+mn014|perhaps there are lots of errors in it.|z
+me018|gah.|z
+me018|you hate to have your ears plugged?|z
+me011|are you guys ready?|z
+me013|yeah.|z
+me018|really?|z
