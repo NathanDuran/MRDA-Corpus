@@ -70,7 +70,7 @@ mn015|nuh.|b
 me010|uh there has to be one.|s
 me010|and i think we're just going to use it as it is.|s
 me010|and um|fh
-mn015|n.  .|b
+mn015|n. .|b
 mn015|you happy with that?|qy
 me010|well yeah.|aa
 me010|there's one tricky part about|s
@@ -547,7 +547,7 @@ mn015|however the uh so that you understand it is really simple.|s
 mn015|uh you you have a route.|rt
 mn015|and you cut it up in different pieces.|s
 mn015|and every every element of that of that every segment we call a route element.|s
-mn015|and so from a.   to b.   we cut up in three different steps.|rt
+mn015|and so from a. to b. we cut up in three different steps.|rt
 mn015|and every step has a from object where you start a to object.|s
 mn015|where where you sort of end and some points of interest along the way.|s
 mn015|what i was sort of missing here and uh maybe it was just me being too stupid is i didn't sort of get the the notion of the global goal of the whole route.|s
@@ -977,10 +977,10 @@ me012|like let's just look at the case when um this is actually the the final ac
 me012|so this is like uh you know touch.|s
 me012|or|%--
 me012|sorry.|fa
-mn015|e.   eva.|s
+mn015|e. eva.|s
 me012|uh|fh
 me012|yeah.|aa
-me012|e.   e.v.a. right?|m
+me012|e. e.v.a. right?|m
 mn015|yeah.|aa
 me012|enter view approach right?|s
 mn036|what was this?|qw
@@ -1024,7 +1024,7 @@ me012|and that's a lot of probabilities to put here which is kind of a pain.|s
 me012|so noisy-ors are a way to uh sort of deal with this.|fh
 me012|um|fh
 me012|where should i put this?|t1
-me012|so the idea is that um let's call these uh c. one c. two c. three and c. four and e.   for cause and effect i guess.|s
+me012|so the idea is that um let's call these uh c. one c. two c. three and c. four and e. for cause and effect i guess.|s
 me012|the idea is to have these intermediate nodes.|s
 me012|right.|f
 me012|well actually the idea first of all is that each of these things has a quote unquote distinguished state.|s
@@ -1061,10 +1061,10 @@ me012|okay?|d
 me012|and the final thing is that um this is a deterministic function of these.|df
 me012|so we don't need to specify any probabilities.|s
 me012|we just have to um say what function this is right?|s
-me012|so we can let this be um g.   of e. one comma e. two e. three e. four right.|s
-me012|and our example g.   would be um a majority vote.|rt
+me012|so we can let this be um g. of e. one comma e. two e. three e. four right.|s
+me012|and our example g. would be um a majority vote.|rt
 me012|right?|d
-me010|well okay so so the important point is not what the g.   function is.|fg
+me010|well okay so so the important point is not what the g. function is.|fg
 me010|the important point is that um there is a a a general kind of idea of shortcutting the full c.p.t.|s
 me010|the full conditional probability table with some function.|e
 me010|okay.|f
@@ -1107,13 +1107,13 @@ me010|so if javabayes won't do it for you.|s
 mn015|huh.|b
 me010|that you can convert all that into what the c.p.t. would be.|e
 me010|um and what i sent out about a week ago was an idea of how to do that for um evidence combination.|fh
-me010|so one of one function that you could use as your g.   function is an evidence combining.|cs
+me010|so one of one function that you could use as your g. function is an evidence combining.|cs
 me010|so you just take the uh if each of if each of the ones has its own little table like that then you could take the uh strength of each of those times its little table.|cs
-me010|and you'd add up the total evidence for v.   e.   and a.  .|cs
+me010|and you'd add up the total evidence for v. e. and a. .|cs
 me012|huh.|b
 me012|i don't think you can do this.|nd
 fe004|uhhuh.|b
-me012|because g.   is a function from that to that.|df
+me012|because g. is a function from that to that.|df
 me010|yep.|b
 me010|right.|bk
 me012|right?|d
@@ -1160,7 +1160,7 @@ me012|yeah.|aa
 fe004|yeah.|bk
 me012|so specifically in this case you have to have this many numbers.|rt
 me012|whereas in this case you just have to have three for this three for this three for this right?|s
-me012|so you have to have just three n.  .|rt
+me012|so you have to have just three n. .|rt
 mn015|uhhuh.|b
 me012|so this is much smaller than that.|s
 me003|asymptotically.|2
@@ -1211,7 +1211,7 @@ me012|so|fh
 mn015|still sort of leaves one question.|s
 mn015|it i mean you you can always uh see easily that that i'm not grasping everything correctly.|s
 mn015|but what seemed attractive to me in uh in the last discussion we had was that we find out a means of of getting these point four point five point one of c. four.|s
-mn015|not because you know a.   is a landmark or not but we we we label this whatever object type.|s
+mn015|not because you know a. is a landmark or not but we we we label this whatever object type.|s
 mn015|and if it's a garden it's point three point four point two.|s
 mn015|if it's a castle it's point eight point one point one.|s
 mn015|if it's uh a town hall it's point two point three point five.|rt
@@ -1393,12 +1393,12 @@ me003|right?|d
 me003|that you could|s
 me010|it may or may not.|s
 me010|i don't know.|no
-me010|that's the question is to what extent does it allow us to put in these g.   functions?|qh
+me010|that's the question is to what extent does it allow us to put in these g. functions?|qh
 me010|and i don't know.|no
 me003|well no but i mean what i uh the|ar
 me003|so you could have four different bayes-nets that you're running.|s
 me003|and then run your own write your own function that would take the output of those four.|e
-me003|and make your own g.   function is what i was saying.|e
+me003|and make your own g. function is what i was saying.|e
 me010|yeah that's fine.|bk
 me010|if it's if it comes only at the end.|df
 me010|but suppose you want it embedded?|qh
@@ -1440,7 +1440,7 @@ me010|i'm just saying that|df
 me010|that was that was my note.|s
 me010|the little note i sent said that.|e
 me012|uhhuh.|b
-me010|it said here's the way you'd take the logical g.   function and turn it into a c.p.t.|s
+me010|it said here's the way you'd take the logical g. function and turn it into a c.p.t.|s
 me012|uhhuh.|b
 me010|i mean that the the evidence combining function.|s
 me010|so we could do that.|cs

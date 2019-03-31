@@ -125,7 +125,7 @@ fe016|right right read them as single digits.|aa
 fe016|so sixty one is read as six one.|s
 fe008|uhhuh.|b
 fe016|and if people make a mistake we|s
-me011|how about o.   versus zero?|qw
+me011|how about o. versus zero?|qw
 me013|i mean the other thing is we could just bag it.|cs
 me013|because it's it's|df
 me013|i'm not worrying about it.|s
@@ -164,8 +164,8 @@ fe016|so we can know from the transcript what the person said and the transcribe
 me013|okay well if you|bk
 fe016|but if they make mistakes it's no big deal.|s
 fe016|if the people say a hundred instead of one o.o.|e
-fe016|and also maybe we can just let them choose zero versus o.   as they as they like.|cs
-fe016|because even the same person sometimes says o.   and sometimes says zero in different context.|df
+fe016|and also maybe we can just let them choose zero versus o. as they as they like.|cs
+fe016|because even the same person sometimes says o. and sometimes says zero in different context.|df
 me013|yeah.|b
 fe016|and that's sort of interesting.|ba
 fe016|so i don't have a specific need.|bd
@@ -775,7 +775,7 @@ me011|yep.|aa
 fe016|and we're going to basically rewrite out these waveforms that we did.|s
 me001|uhhuh.|b
 fe016|because as you notice in the paper your m.o. four in one meeting.|df
-fe016|and m.o. two   in another meeting.|s
+fe016|and m.o. two in another meeting.|s
 fe016|and it's we just need to standardize the|s
 me001|yeah.|bk
 me001|that was my fault.|df
@@ -837,7 +837,7 @@ me001|eighteen.|s
 fe016|eighteen.|s
 fe016|it was a spare that dave had around.|s
 me013|oh okay.|bk
-me011|slash n.   slash machine name slash x.a.   in all likelihood.|s
+me011|slash n. slash machine name slash x.a. in all likelihood.|s
 me001|oh i see.|bk
 me001|okay.|bk
 me001|all right i did know that.|bk
@@ -972,7 +972,7 @@ me011|the way they're doing it you have that already extracted.|s
 me011|and it's embedded in the file name.|s
 me011|and so you know you just say|s
 fe016|yeah that's so that's part of it.|fg
-me011|so you just say you know asterisk e.   asterisk dot wave and you get what you want.|s
+me011|so you just say you know asterisk e. asterisk dot wave and you get what you want.|s
 fe016|is|%--
 fe016|right.|aa
 fe016|and the other part is just that once they're written out it it is a lot faster to to process them.|s
@@ -1076,8 +1076,8 @@ me001|so|fh
 me011|each partition.|2
 me011|and you want to use either x.a. or scratch.|s
 me001|okay.|bk
-me011|well x.   question mark.|bsc
-me011|anything starting with x.   is scratch.|df
+me011|well x. question mark.|bsc
+me011|anything starting with x. is scratch.|df
 me001|okay.|bk
 fe008|with two two digits.|2
 me011|two digits right.|m
@@ -1099,7 +1099,7 @@ fe008|and um so|fh
 fe008|i did a bunch of checks.|s
 fe008|and the first thing i did was obviously a spell check.|s
 fe008|and at that point i discovered certain things.|s
-fe008|like um accommodate with one m.  .|s
+fe008|like um accommodate with one m. .|s
 fe008|that kind of thing.|s
 fe008|and then in addition to that i did an exhaustive listing of the forms in the data file.|s
 fe008|which included detecting things like faulty punctuation and things.|s
@@ -1140,7 +1140,7 @@ fe008|so there|s
 fe008|for the most part we're keeping it standard word level transcription.|s
 fe008|but there's|s
 fe008|and that's done with the assumption that pronunciation variants can be handled.|s
-fe008|so for things like and the fact that someone doesn't say the d.   uh that's not important enough to capture in the transcription.|s
+fe008|so for things like and the fact that someone doesn't say the d. uh that's not important enough to capture in the transcription.|s
 fe008|because a a good pronunciation uh you know model would be able to handle that.|df
 fe008|however things like because where you're lacking an entire very prominent first syllable.|s
 fe008|and furthermore it's a form that's specific to spoken language.|s
@@ -1181,7 +1181,7 @@ me011|uhhuh.|b
 fe008|okay i also wrote a script which will um retrieve anything in curly brackets or anything which i've classified as an acronym.|fg
 fe008|and a pronounced acronym.|s
 fe008|and the way i tag pronounced acronyms is that i have underscores between the components.|s
-fe008|so if it's a.c.l. then it's a.   underscore c.   underscore l.  .|s
+fe008|so if it's a.c.l. then it's a. underscore c. underscore l. .|s
 fe008|and the|s
 me011|and so so your list here are these ones that actually occurred in the meetings?|rt
 fe008|yes uhhuh yeah.|aa
@@ -1383,7 +1383,7 @@ fe008|okay.|bk
 me011|in monty python you say argh a lot.|s
 me001|oh yeah?|bh
 me011|so|fh
-me011|well or if you're a c.   programmer.|s
+me011|well or if you're a c. programmer.|s
 me001|huh.|b
 fe008|yeah that's right.|aa
 me013|yeah.|aa
@@ -1574,7 +1574,7 @@ me001|that's not bad.|ba
 fe008|yeah.|b
 fe016|so anyway|fh
 fe008|that's interesting.|ba
-fe016|is the p.   p.t.a. working.|e
+fe016|is the p. p.t.a. working.|e
 fe008|right and sometimes i mean you see a couple of these that are actually okay's.|fg
 fe008|so it's it's may be that they got to the point where i mean it was low enough understandable|s
 fe008|understandability that they weren't entirely sure the person said okay.|e
@@ -1969,8 +1969,8 @@ fe016|wait.|co
 me001|i'm sorry i'm i didn't follow that last thing.|fa
 fe008|so so gloss in the same line that would have gloss quote one one one dash one thirty you'd have a gloss at the end of the line saying uh curly bracket nums curly bracket.|s
 me001|right.|b
-fe008|so if you if you did a uh a grep minus v.   nums.|s
-fe016|oh so you could do grep minus v.   nums.|s
+fe008|so if you if you did a uh a grep minus v. nums.|s
+fe016|oh so you could do grep minus v. nums.|s
 fe016|so that's the|s
 fe008|and you get rid of anything that was read.|s
 fe016|yeah.|b
@@ -1979,7 +1979,7 @@ me001|okay.|bk
 fe016|if somebody said something like boy i'm really tired okay and then started reading that would be on a separate line.|bu
 fe008|yes.|aa
 fe016|okay great.|bk
-fe016|because i was doing the grep minus v.   quick and dirty.|df
+fe016|because i was doing the grep minus v. quick and dirty.|df
 fe016|and looked like that was working okay.|s
 fe008|uhhuh.|b
 fe016|but|fh

@@ -106,6 +106,8 @@ def process_transcript(transcript, database, excluded_chars=None, excluded_tags=
         utterance_text = " ".join(utterance_text)
         # Strip leading and trailing whitespace
         utterance_text.strip()
+        # Strip duplicate whitespace
+        utterance_text = re.sub(' +', ' ', utterance_text)
 
         # Process the utterance dialogue act, adjacency pair and speaker
         # Get the dialogue act from the database file
@@ -122,13 +124,6 @@ def process_transcript(transcript, database, excluded_chars=None, excluded_tags=
         if raw_da_tag == '%-':  # Collapse disruptions i.e. interrupted and abandoned
             raw_da_tag = '%--'
         da_tag = raw_da_tag
-
-        # # Get the adjacency pair (if it exists) TODO Add AP?
-        # adjacency_pair = database[utt_index].split(',')[9]
-        # # Convert AP to a more friendly format
-        # if len(adjacency_pair) > 0:
-        #     # Split AP labels into number and characters
-        #     ap_split = re.findall(r'[A-Za-z]|-?\d+\.\d+|\d+', adjacency_pair)
 
         # Get the speaker label
         speaker = database[utt_index].split(',')[7]

@@ -96,7 +96,7 @@ me010|he charges so much right?|ba
 me003|yeah.|aa
 me010|no i think it's a good idea that you may as well ask sure.|bd
 fn050|yeah.|bk
-mn015|and um well pretty pretty much on on the top of my list i would have asked keith how the where is x.   hand parse is standing.|fg
+mn015|and um well pretty pretty much on on the top of my list i would have asked keith how the where is x. hand parse is standing.|fg
 mn015|um but we'll skip that.|fh
 mn015|uh there's good news from johno.|rt
 mn015|the generation templates are done.|rt
@@ -246,7 +246,7 @@ mn015|and what we know about that.|e
 me045|where|bk
 fe004|where the where is construction is.|s
 me045|okay.|bk
-mn015|where is x.  ?|e
+mn015|where is x. ?|e
 me045|what what thing is this?|qw
 me045|okay.|bk
 mn015|oh!|fe
@@ -486,7 +486,7 @@ fe004|yeah.|aa
 me010|right.|b
 mn015|so these are either true or false.|s
 mn015|and it's also just true or false.|s
-mn015|if we encounter a phrase such as where is x.   should that set this to true and this to true?|qy
+mn015|if we encounter a phrase such as where is x. should that set this to true and this to true?|qy
 mn015|and the bayes-net figures out which under the situation in general is more likely.|e
 mn015|um or should it just activate this have this be false?|qrr
 mn015|and the bayes-net figures out whether this actually now means|e
@@ -525,7 +525,7 @@ me045|well the question is basically is this conventional or conversational impl
 me010|exactly yeah.|aa
 fe004|might be yeah.|am
 me010|and i guess see the more important thing at this stage is that we should be able to know how we would handle it in|s
-me010|in the short run it's more important to know how we would treat technically what we would do if we decided a.   and what we would do if we decided b.   than it is to decide a.   or b.   right now.|s
+me010|in the short run it's more important to know how we would treat technically what we would do if we decided a. and what we would do if we decided b. than it is to decide a. or b. right now.|s
 fe004|right.|bk
 me045|okay right.|bk
 fe004|right.|b
@@ -555,7 +555,7 @@ mn015|now what could imagine to you know have a list for each construction of th
 mn015|that's the really stupid way.|ba
 mn015|then there is the really clever way that was suggested by keith.|rt
 mn015|and then there is the uh middle way that i'm suggesting.|s
-mn015|and that is you you get x.   which is whatever.|s
+mn015|and that is you you get x. which is whatever.|s
 mn015|the castle.|s
 mn015|the ontology will tell us that castles have opening hours.|s
 mn015|that they have admission fees.|s
@@ -568,7 +568,7 @@ mn015|for each entity we look it up check whether any of these were mentioned an
 mn015|but keith suggested that a a much cleaner way would be is you know to keep track of the discourse in such a way that you if you know that something like that has been mentioned before this just continues to add up|s
 mn015|you know in in a|s
 me045|so if someone mentions admission fees that activates an enter schema which sticks around for a little while in your in the representation of what's being talked about.|s
-me045|and then when someone asks where is x.   you've already got the the enter schema activated.|s
+me045|and then when someone asks where is x. you've already got the the enter schema activated.|s
 me010|uhhuh.|b
 fe004|kind of a priming|s
 me045|and you're able to to conclude on it.|s
@@ -626,7 +626,7 @@ me010|that the uh standard way that that these contexts work is sort of stack li
 me010|but that's sort of the most recent thing.|s
 me010|and so it could be that when another uh tourist entity gets mentioned you|s
 fe004|renew.|2
-me010|essentially you know re i   essentially re-initialize the state.|s
+me010|essentially you know re i essentially re-initialize the state.|s
 me003|huh.|b
 fe004|yeah.|b
 me045|uhhuh.|b
@@ -718,7 +718,7 @@ mn015|even though uh the lexical construction itself out out of context uh won't
 mn015|i mean you have to keep track whether the person says.|df
 mn015|but but i'm not interested in the opening times.|s
 fe004|yeah.|b
-mn015|is sort of more a v.   type.|e
+mn015|is sort of more a v. type.|e
 me010|yeah there's yeah there's that as well.|fg
 mn015|yep.|b
 mn015|huh.|b
@@ -1100,7 +1100,7 @@ fe004|so|fh
 mn015|okay.|bk
 mn015|and um|fh
 mn015|sounds good.|ba
-me045|someday we also have to we should probably talk about the other side of the where is x.   construction.|cs
+me045|someday we also have to we should probably talk about the other side of the where is x. construction.|cs
 me045|which is the issue of um how do you simulate questions?|qh
 me045|what does the simspec look like for a question?|e
 mn015|yeah.|bk

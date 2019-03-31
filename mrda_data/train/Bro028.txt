@@ -969,12 +969,12 @@ me026|and so he he actually does an optimization procedure to choose an an optim
 me018|huh.|b
 me018|what does he do to choose those?|qw
 me026|the method he uses is kind of funny.|ba
-me026|is um he starts with he has a set of m.   of them.|s
+me026|is um he starts with he has a set of m. of them.|s
 me026|um|fh
 me026|he and then he uses that to classify.|s
-me026|i mean he he tries um using just m.   minus one of them.|rt
-me026|so there are m.   possible subsets of this length m. vector.|s
-me026|he tries classifying using each of the m.   possible sub-vectors.|s
+me026|i mean he he tries um using just m. minus one of them.|rt
+me026|so there are m. possible subsets of this length m. vector.|s
+me026|he tries classifying using each of the m. possible sub-vectors.|s
 mn007|huh.|b
 me026|whichever sub-vector um works the the best i guess he says the the feature that didn't use was the most useless feature.|s
 me013|yeah.|b
@@ -1164,7 +1164,7 @@ me006|uh presumably those are important patterns for discriminating between phon
 me006|and maybe maybe some uh intermediate categories can come from just looking at the patterns of um that the neural net learns.|s
 me013|before you get on the next part let me just point out that there's there's a a pretty nice relationship between what you're talking about doing and what you're talking about doing there right?|s
 me006|yeah.|b
-me013|so it seems to me that you know if you take away the the the difference of this primary features and say you use as we had talked about maybe doing you use p.   rasta p.l.p. or something for the the primary features um then this feature discovery uh uh thing is just what he's talking about doing too.|s
+me013|so it seems to me that you know if you take away the the the difference of this primary features and say you use as we had talked about maybe doing you use p. rasta p.l.p. or something for the the primary features um then this feature discovery uh uh thing is just what he's talking about doing too.|s
 me013|except that he's talking about doing them in order to discover intermediate categories that correspond to these uh uh what these sub features are are are are showing you.|s
 me013|and um the other difference is that um he's doing this in a in a multi band setting.|s
 me013|which means that he's constraining himself to look across time in some relatively limited uh uh spectral extent right?|s
