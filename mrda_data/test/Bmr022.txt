@@ -1,22 +1,22 @@
-me018|is it on?|qy^rt
-me011|okay here we go.|s^t^tc
-me013|uh so uh so i i definitely have to leave at three thirty today.|fg|s
+me018|is it on?|rt
+me011|okay here we go.|t
+me013|uh so uh so i i definitely have to leave at three thirty today.|fg
 me011|so|fh
-me013|for whatever that's|s.%-
+me013|for whatever that's|s
 me011|definitely have to go to tea.|s
 me011|so|fh
-me013|yeah they're they're having birthday cake and such.|s^bk|s
+me013|yeah they're they're having birthday cake and such.|bk
 me011|that too.|s
 me011|but|fh
 me013|and so i can't miss that.|s
-fe016|you're a may birthday.|s^bu
-fe016|right?|qy^d^g^rt
-me013|i'm a may birthday yeah.|s|s^aa
-me013|so i have to|s.%-
-mn014|oops!|s^fe
+fe016|you're a may birthday.|bu
+fe016|right?|d
+me013|i'm a may birthday yeah.|s
+me013|so i have to|s
+mn014|oops!|fe
 fe016|barbara told me.|s
-me013|yeah.|s^bk
-fe016|barbara peskin.|s^e
+me013|yeah.|bk
+fe016|barbara peskin.|e
 me011|um so|fg
 me011|only a couple of agenda items since no one sent me email for agenda items.|s
 me011|uh the first is the i b m transcripts i'd like to uh mention.|s
@@ -28,14 +28,14 @@ me011|there are i mean there are areas which are clearly wrong.|s
 me011|and there are a lot of areas where they put question marks where the acoustics weren't very good.|s
 me011|and i think that's fine putting it in question marks is better than doing it wrong.|s
 me011|the big problem was they had the wrong number of beeps in it.|s
-mn014|oops!|s^fe
+mn014|oops!|fe
 me011|so it didn't align.|s
 me011|and that's exactly what i was afraid of.|s
-me011|and i went in and more or less by hand corrected it by loading it|s.%--
+me011|and i went in and more or less by hand corrected it by loading it|s
 me011|i wrote a script that will convert it to the the channeltrans format looked at it in in channeltrans and found the places where it got unsynchronized.|s
-me011|and then either|s.%--
+me011|and then either|s
 fe008|huh|b
-mn014|inserted ones.|s^2
+mn014|inserted ones.|2
 me011|and in this case only only had to remove beeps.|s
 me011|because that was always the error is that they put in it extraneous beeps.|s
 fe008|huh.|b
@@ -45,156 +45,156 @@ me011|and basically it's assigning the wrong speaker to the text and it all gets
 me011|so it's very difficult to do.|s
 fe008|huh.|b
 me011|so it took me several hours just to do that.|s
-me013|so this is|%-
+me013|so this is|%--
 mn014|for one meeting.|s
-me013|this is one it's one hour of of of speech?|qy^bu^d^rt
-me011|yep.|s^aa
-me013|and it took you a few hours to to do it.|s^bu
+me013|this is one it's one hour of of of speech?|bu
+me011|yep.|aa
+me013|and it took you a few hours to to do it.|bu
 me011|it took me a couple hours to write the scripts.|s
-me011|and then it it probably took me maybe forty five minutes just going through it.|s^e
+me011|and then it it probably took me maybe forty five minutes just going through it.|e
 me011|now obviously it will be a lot faster from now on.|s
-me011|because now i sort of understand how it works.|s^df
-me011|but i think if we had some way uh some tool that made it easier to insert and delete beeps it would make it a lot easier.|s^cs
+me011|because now i sort of understand how it works.|df
+me011|but i think if we had some way uh some tool that made it easier to insert and delete beeps it would make it a lot easier.|cs
 me011|because one of the problems is that it takes a very long time when you make a change to load it back up in the channel transcriber.|s
-mn014|yep.|s^aa
-fe008|yeah that's true.|s^aa|s^na
-fe008|i've noticed that yeah.|s^na|s^aa
-me018|one of the things that adam said that i thought would be a good idea would be um if we used different beeps.|s^cs
-me011|and so there may be|s.%-
-fe008|which makes sense.|s^ba
+mn014|yep.|aa
+fe008|yeah that's true.|aa
+fe008|i've noticed that yeah.|na
+me018|one of the things that adam said that i thought would be a good idea would be um if we used different beeps.|cs
+me011|and so there may be|s
+fe008|which makes sense.|ba
 me018|so for example if we alternated between two beeps a high and a low.|s
-me013|he said that?|qy^bu^d^rt
+me013|he said that?|bu
 me018|uh well in in some email that uh we had.|s
 fe008|oh on the email.|s
-mn014|for|%-
-me013|oh oh okay.|s^bk
+mn014|for|%--
+me013|oh oh okay.|bk
 fe008|yeah.|b
-me011|i didn't just say that no.|s^nd|s^ar
-me018|yeah um because then|s^bk|s^df.%-
+me011|i didn't just say that no.|nd
+me018|yeah um because then|bk
 me011|so so this is the the other approach which is what do we do in the future to try to make this less common?|qh
 me018|yeah.|b
-me011|but it's still going to happen.|s^bd^df
-fe008|well and then the other possibility was that we provide them with a a file that already has the beeps in it or something.|s^cs
+me011|but it's still going to happen.|bd
+fe008|well and then the other possibility was that we provide them with a a file that already has the beeps in it or something.|cs
 me011|so|fh
 me013|huh.|b
-fe008|wasn't that what you said?|qy^rt
+fe008|wasn't that what you said?|rt
 me018|sort of a text template.|s
-me018|but i don't know how we can do that.|s^df^no
+me018|but i don't know how we can do that.|df
 fe008|uhhuh.|b
-me011|yeah we don't know what their process is.|fg|s^no
+me011|yeah we don't know what their process is.|fg
 me011|so i had two ideas.|s
 me011|the first was to provide them a text template that had both the beeps in it and the speaker i ds.|s
 fe008|yeah.|b
 me011|you know just male female english nonenglish one two three four.|s
 me011|um|fh
-me013|can i i i just|qy.%-
+me013|can i i i just|qy
 me011|and they just filled it in.|s
 me013|how many how many beeps are there and how many do were they were were off?|qw
 me011|it was like a hundred twenty.|s
 me011|and they had a hundred twenty three or something like that.|s
-me013|all right.|s^bk
-me011|is that right?|qy^rt
-me018|well i thought it was a lot more than that.|s^ng
-me013|and is it a|qy.%-
-me011|well i i don't remember.|s^no
+me013|all right.|bk
+me011|is that right?|rt
+me018|well i thought it was a lot more than that.|ng
+me013|and is it a|qy
+me011|well i i don't remember.|no
 me018|they were three off basically.|s
-me013|yeah and it was a hundred ish.|fg|s
-fe016|and this is the mixed signal?|qy^bu^d^rt
-fe008|oh!|s^bk^fe
-me013|so so if you get one|s.%--
+me013|yeah and it was a hundred ish.|fg
+fe016|and this is the mixed signal?|bu
+fe008|oh!|bk
+me013|so so if you get one|s
 fe008|huh.|b
-me013|uh uh excuse me.|s^fa
-me013|if you get one off it everything is off because of the alignment.|s^bu
-me013|right?|qy^d^g^rt
-me011|yep.|s^aa
-mn014|yep.|s^aa
-me013|uh and this is all in one file that's continuous.|s^bu
-me018|yeah.|s^aa
-me011|yep.|s^aa
-me013|so why don't you make it multiple files?|qh^cs
-me011|how would that help?|qw^rt
-me013|because then if they have one off then then it would only screw up that file.|s^df
-me011|oh you mean just break the one hour into a few chunks.|s^bk|s^bu
-me013|yeah.|s^aa
+me013|uh uh excuse me.|fa
+me013|if you get one off it everything is off because of the alignment.|bu
+me013|right?|d
+me011|yep.|aa
+mn014|yep.|aa
+me013|uh and this is all in one file that's continuous.|bu
+me018|yeah.|aa
+me011|yep.|aa
+me013|so why don't you make it multiple files?|cs
+me011|how would that help?|rt
+me013|because then if they have one off then then it would only screw up that file.|df
+me011|oh you mean just break the one hour into a few chunks.|bk
+me013|yeah.|aa
 me013|i mean it seems now if you just make one mistake then everything is off.|s
 me018|well the only the only question about that that i have is um i think brian has to put all this stuff onto a tape.|s
-me018|so i don't know whether|s.%--
+me018|so i don't know whether|s
 me013|yeah.|b
-me011|i'm sure they would prefer it sort of one hour.|s^ba
-me018|can he send them i guess he could send them multiple tapes.|s.x
+me011|i'm sure they would prefer it sort of one hour.|ba
+me018|can he send them i guess he could send them multiple tapes.|s
 fe008|oh.|b
 me018|uh|fh
-me013|yeah just say okay is ten minutes is|s^aa^rt|s.%--
-me013|i mean maybe there's other things to do that are more clever.|s^bd
-me013|but this just seemed to be the sort of the obvious thing.|s^df
-me013|because again if you make one mistake then everything after that mistake is off.|s^df
+me013|yeah just say okay is ten minutes is|aa
+me013|i mean maybe there's other things to do that are more clever.|bd
+me013|but this just seemed to be the sort of the obvious thing.|df
+me013|because again if you make one mistake then everything after that mistake is off.|df
 me018|uhhuh.|b
 me013|and uh|fh
 me018|well the only other issue is we'd have to worry about reassembling them in the proper order.|s
 me018|uh|fh
 me013|yeah.|b
-me011|that i mean just naming schemes will get|s.%--
+me011|that i mean just naming schemes will get|s
 me011|we can definitely do that.|s
 me011|so so one question is are there good places in the files where we can really do that?|qh
-fe016|well the other thing you can|s^cs.%-
+fe016|well the other thing you can|cs
 me011|i mean so so so someone will have to go through them and listen to them and pick a place to break them.|s
 mn014|yeah.|b
-fe016|the other thing you can do|s^cs.%--
-fe016|this is on the mixed signal?|qy^bu^d^rt
-fe016|or are these the individual|qrr.%--
-fe016|the ones with the beeps that they're getting that they made mistakes on is the mixed one?|qy^bu^d^rt
+fe016|the other thing you can do|cs
+fe016|this is on the mixed signal?|bu
+fe016|or are these the individual|qrr
+fe016|the ones with the beeps that they're getting that they made mistakes on is the mixed one?|bu
 me011|they are played from the individual.|s
-me018|individual channels.|s^2
-mn014|individual channels.|s^2
-fe016|or they're|s^e.%--
+me018|individual channels.|2
+mn014|individual channels.|2
+fe016|or they're|e
 fe016|if it's individual um we can probably run a forced alignment.|s
 fe016|where you include the beeps as words and pretty much figure out where the errors are.|s
-fe016|i don't think we could do it on the mixed signal.|s^rt
+fe016|i don't think we could do it on the mixed signal.|rt
 fe016|because it|%--
 fe016|but on the individual channels that would probably work if they have enough words in the transcript.|s
-me018|yeah we in fact that's yeah maybe we|fg|s.%-
+me018|yeah we in fact that's yeah maybe we|fg
 fe016|so i mean that's pretty quick to run.|s
 fe016|it it's um|%--
-fe016|i mean we could try it.|s^cs
-fe016|because if a beep is treated as a unique word|s^df.%-
-me011|you mean so actually put put the wavefile in with beep in it.|s^bu
-fe016|beep|%-
+fe016|i mean we could try it.|cs
+fe016|because if a beep is treated as a unique word|df
+me011|you mean so actually put put the wavefile in with beep in it.|bu
+fe016|beep|%--
 fe016|put in put beep in as a word.|s
 me011|and and have a beep model.|s
 me018|we have the original wavefile with all the beeps.|s
-fe016|yeah yeah well the beep model actually you could train a beep model.|fg|s^cs
-fe016|that that's a good idea.|s^ba
-me018|it would be very good.|s^ba
+fe016|yeah yeah well the beep model actually you could train a beep model.|fg
+fe016|that that's a good idea.|ba
+me018|it would be very good.|ba
 fe016|um|fh
-me011|yes it would be because it's very very regular.|s^aa|s^ba^na
+me011|yes it would be because it's very very regular.|aa
 fe016|yeah.|b
-fe016|yeah so um|s^aa|%-
-me013|oh kind of low variance.|s^ba
-me013|wouldn't that be?|qy^g^rt
-mn014|yeah.|s^aa
-me018|yeah very low.|s^aa
+fe016|yeah so um|aa
+me013|oh kind of low variance.|ba
+me013|wouldn't that be?|g
+mn014|yeah.|aa
+me018|yeah very low.|aa
 me011|yeah.|b
 me013|you sort of might end up with some infinities there.|s
-fe016|um that might actually|s.%-
-me011|you have to may add some jitter to it.|s^cs^j
+fe016|um that might actually|s
+me011|you have to may add some jitter to it.|cs
 me013|but|fh
-me013|can i see that?|qy^rt^t3
+me013|can i see that?|rt
 fe016|i mean that might actually work.|s
-me013|where's the case?|qw^t3
-fe016|because you'll i guess the trick is figuring out you know where it doesn't align.|s^df^rt
-fe016|but if it's a problem of extra beeps rather than missing beeps then um that's easier.|s^df
-me018|it could it could there could be some missing ones.|s^cs
+me013|where's the case?|t3
+fe016|because you'll i guess the trick is figuring out you know where it doesn't align.|df
+fe016|but if it's a problem of extra beeps rather than missing beeps then um that's easier.|df
+me018|it could it could there could be some missing ones.|cs
 fe016|and it might work.|s
 fe016|oh.|b
 me018|but|fh
-me013|so is this a|s.%--
+me013|so is this a|s
 me011|it's just in this case they were not.|s
-me013|seven or something?|qy^rt^t3
-me013|or|qrr.%--
-me013|what is it?|qw^t3
-fe008|m one hundred.|s^t3
+me013|seven or something?|rt
+me013|or|qrr
+me013|what is it?|t3
+fe008|m one hundred.|t3
 me011|so i think uh chuck had a good explanation for it which i liked.|s
-me013|m one hundred oh.|s^bk^m
+me013|m one hundred oh.|bk
 me011|which is these they're listening to it and so they write something down and let's say they miss it they rewind.|s
 me011|well they hear the beep again.|s
 me011|was that that beep or was that a different beep?|qh
@@ -204,112 +204,112 @@ me011|my original thought was you could have a different tone for each speaker.|
 me011|you know there's plenty of tone space.|s
 me011|and that might help cue the transcriptionist.|s
 me011|you know give them a little cue about where they are.|s
-me013|or you could you could have ascending tones or something.|s^cs
+me013|or you could you could have ascending tones or something.|cs
 me011|what do you mean?|qw
-me013|uh or|h|%-
+me013|uh or|h
 fe016|yeah.|b
 me018|increasingly high higher frequencies.|s
-fe016|you could have um each speaker in the meeting say beep and record it.|s^cs^j
-fe016|and that will be their|s.%--
-me013|no i just i don't know if you have a hundred or something just just sort of move them up up a a half tone or something for for each one.|s^cs
-fe016|sorry.|s^fa
-me013|and then|%-
+fe016|you could have um each speaker in the meeting say beep and record it.|cs
+fe016|and that will be their|s
+me013|no i just i don't know if you have a hundred or something just just sort of move them up up a a half tone or something for for each one.|cs
+fe016|sorry.|fa
+me013|and then|%--
 me011|that's what i was saying is that that you could have each speaker could have their own tone.|s
-me013|oh was it?|s^bk|qy^bh^rt
-me013|oh.|s^bk
-me013|see i should listen.|s^cc^j
-me013|yeah?|qy^d^f^g
+me013|oh was it?|bk
+me013|oh.|bk
+me013|see i should listen.|cc
+me013|yeah?|d
 fe016|huh|b
 me011|and you know since there are no more than you know ten speakers or so per meeting there's plenty of tone space.|s
 fe008|oh.|b
-fe008|well|%-
-fe008|but|%-
-me013|uh okay yeah so the only|s^bk|s.%--
-me013|that might work too.|s^am^ba
-me013|yeah i was just thinking that actually temporally just uh uh uh an increasing tones so that|fh|s.%--
-me011|oh okay.|s^bk
+fe008|well|%--
+fe008|but|%--
+me013|uh okay yeah so the only|bk
+me013|that might work too.|am
+me013|yeah i was just thinking that actually temporally just uh uh uh an increasing tones so that|fh
+me011|oh okay.|bk
 me013|they would really have a sense of whether they were going you know forward or backward.|s
-me011|bo eep be oop!|s^fe
-mn014|in the end?|qy^bu^d^rt
+me011|bo eep be oop!|fe
+mn014|in the end?|bu
 mn014|yeah.|b
-fe008|well you|%-
+fe008|well you|%--
 me013|or|fh
-fe008|so just truly chromatically up all the way through the entire meeting.|s^bu
+fe008|so just truly chromatically up all the way through the entire meeting.|bu
 me013|yeah.|b
-me013|yeah.|s^aa
-me013|well it's a thought.|s^bd^df
-fe008|interesting.|s^ba
-me011|oh oh oh i see.|s^bk
-fe008|it'd be impossible to to misorder them.|s^ba
+me013|yeah.|aa
+me013|well it's a thought.|bd
+fe008|interesting.|ba
+me011|oh oh oh i see.|bk
+fe008|it'd be impossible to to misorder them.|ba
 me013|yeah.|b
-fe008|yeah.|s^aa
+fe008|yeah.|aa
 fe016|but i guess you'd still get the mistake that you mentioned.|s
-fe016|because the person|s^df.%--
-me011|well|%-
+fe016|because the person|df
+me011|well|%--
 fe016|i mean if that's some of the errors those would probably stay the same regardless.|s
 me011|yep.|b
-me011|i mean chuck's suggestion of just two beeps is nice.|s^ba
-me013|yeah maybe.|s^am
-me011|because then you could have them actually transcribe h beep or l beep.|s^df:s
-me011|high beep or low beep.|s^e
-me018|and then when we get them back if we see two l beeps in a row|s^df^na.%-
-me011|it would be much easier.|s^ba
-me013|that's probably better.|s^ba
-fe016|yeah you have like a sanity sanity check on them.|s^aa|s
-me013|yeah.|s^bk
-me013|scratch my other idea.|s^co
+me011|i mean chuck's suggestion of just two beeps is nice.|ba
+me013|yeah maybe.|am
+me011|because then you could have them actually transcribe h beep or l beep.|df
+me011|high beep or low beep.|e
+me018|and then when we get them back if we see two l beeps in a row|df
+me011|it would be much easier.|ba
+me013|that's probably better.|ba
+fe016|yeah you have like a sanity sanity check on them.|aa
+me013|yeah.|bk
+me013|scratch my other idea.|co
 fe008|it's pretty simple.|s
-fe008|pretty simple.|s^r
-fe016|that's a good idea.|s^ba
+fe008|pretty simple.|r
+fe016|that's a good idea.|ba
 me013|yeah.|b
 me011|yep.|b
 fe016|alternating.|s
 me013|yeah.|b
-me018|and it would it seems like it would help them.|s^df
-me018|you know if they just finished a long passage and they heard one beep and then they hear it again they know it's the same beep.|s^e
-me018|versus if they heard a slightly different one.|s^e
+me018|and it would it seems like it would help them.|df
+me018|you know if they just finished a long passage and they heard one beep and then they hear it again they know it's the same beep.|e
+me018|versus if they heard a slightly different one.|e
 me013|yeah.|b
-fe008|huh interesting.|s^ba
-fe016|yeah that's a good like error checking approach i think.|s^aa|s^ba
-me011|yeah we can|fg|%--
-me011|yeah like do do uh one for each one for each person in the meeting you can only hire people who have perfect pitch.|fh|s^cs^j
-me011|and they can say a flat b.|s^e^j
-fe008|well well.|s^ba
-fe008|high low is pretty straightforward.|s^ba
-me013|great idea.|s^ba
+fe008|huh interesting.|ba
+fe016|yeah that's a good like error checking approach i think.|aa
+me011|yeah we can|fg
+me011|yeah like do do uh one for each one for each person in the meeting you can only hire people who have perfect pitch.|fh
+me011|and they can say a flat b.|e
+fe008|well well.|ba
+fe008|high low is pretty straightforward.|ba
+me013|great idea.|ba
 me013|yeah.|b
-fe008|yeah.|s^aa
-me013|no two is probably better than what i was suggesting.|s^aa|s
-me013|because what i was suggesting in order to make it through a reasonable range for the whole thing you'd have to have the the tonal differences between the two kind of small.|s^df
-me013|and actually you want them large.|s^e
-me011|yep.|s^aa
+fe008|yeah.|aa
+me013|no two is probably better than what i was suggesting.|aa
+me013|because what i was suggesting in order to make it through a reasonable range for the whole thing you'd have to have the the tonal differences between the two kind of small.|df
+me013|and actually you want them large.|e
+me011|yep.|aa
 me013|so|fh
-fe008|you'd have to they'd have to have the acoustics of dogs hear into the high high ranges.|s^j
+fe008|you'd have to they'd have to have the acoustics of dogs hear into the high high ranges.|j
 me011|uhhuh.|b
 me013|yeah.|b
 me011|so i think certainly doing two beeps is is no brainer.|s
 fe008|yeah.|b
-me011|and then the other question is if they can|s.%--
+me011|and then the other question is if they can|s
 me011|if they do something on a computer in a format we can handle we could give them a text file that was a template with speaker i d and beeps already in it.|s
-me011|and then they could just fill that in.|s^e
+me011|and then they could just fill that in.|e
 me018|yeah.|b
-me018|maybe i should write to brian and tell him what the problem was.|s^cs
-me013|so what|s.%-
-me018|and what our proposed solutions are.|s^e
-me011|right.|s^bk
-me013|yeah.|s^am
-me018|see what he thinks would work best with them.|s^e
+me018|maybe i should write to brian and tell him what the problem was.|cs
+me013|so what|s
+me018|and what our proposed solutions are.|e
+me011|right.|bk
+me013|yeah.|am
+me018|see what he thinks would work best with them.|e
 me013|i mean what's going wrong on the other end?|qw
 me013|what are they doing?|qw
 me011|well as i said i think we don't actually know.|s
-me013|what uh|qw.%-
+me013|what uh|qw
 me011|but i think chuck's hypothesis was a good one.|s
-me011|which is you you listen to something you write down what you thought you heard but you want to listen to it again so you rewind.|s^e
-me018|and there are some|s.%-
-me011|and then you hear the beep again and then you say well is that that beep.|s:qy
-me011|or is that a new beep.|s^e:qrr
-me011|i don't remember.|s:s^no
-me011|and so you know a couple times they got it wrong.|s^e
+me011|which is you you listen to something you write down what you thought you heard but you want to listen to it again so you rewind.|e
+me018|and there are some|s
+me011|and then you hear the beep again and then you say well is that that beep.|s
+me011|or is that a new beep.|e
+me011|i don't remember.|s
+me011|and so you know a couple times they got it wrong.|e
 me018|and there are some cases where there's um very little speech before you hear a beep.|s
 me018|so you hear a little bit of speech beep.|s
 mn014|yeah.|b
@@ -317,324 +317,324 @@ fe008|uhhuh.|b
 me018|a little bit of speech beep.|s
 me018|maybe three of those in a row.|s
 me018|and was that three beeps?|qh
-me018|was that two beeps?|qh^e
-me018|um see they have brian said the setup that they have is um|s.%--
+me018|was that two beeps?|e
+me018|um see they have brian said the setup that they have is um|s
 me018|uh um|fh
 me018|they've got headphones.|s
 me018|and then i guess they have a computer.|s
 me018|and they have a foot pedal.|s
-me018|which lets them quickly scan back and forth through the tape.|s^e
-me018|makes the tape go real fast forward or fast backward.|s^e
+me018|which lets them quickly scan back and forth through the tape.|e
+me018|makes the tape go real fast forward or fast backward.|e
 me018|and so they can hear something then step on the pedal and quickly rewind and go back and hear it again.|s
-me018|and so they're|s.%--
+me018|and so they're|s
 me018|i think they're probably going over and over sections.|s
 me018|and then they get confused about whether they've already put that beep.|s
 me018|or if they heard you know three beeps in a row was that three or two?|qh
 me018|and|fh
-fe008|it's a shame we can't really give a number.|s^ba^cs
+fe008|it's a shame we can't really give a number.|ba
 me013|okay.|b
-fe008|so it would be a number and a beep.|s^e
-fe008|it's a shame we can't do that.|s^ba
-me011|well we could.|s^aap
-me018|oh that's an interesting idea.|s^ba^rt
-me011|we could but then that starts getting pretty long.|s^ba^df^ng
-me018|no no no but wait maybe maybe what we have instead of a beep is a uh synthesized number.|s^cs
-mn014|yep.|s^bk
-me018|and they put the number in when they hear it.|s^cs
-fe008|that'll work.|s^na
-me018|so replacing the beep with twenty three|s.%--
-me018|twenty four|s.%--
-me018|twenty five|s.%--
+fe008|so it would be a number and a beep.|e
+fe008|it's a shame we can't do that.|ba
+me011|well we could.|aap
+me018|oh that's an interesting idea.|ba
+me011|we could but then that starts getting pretty long.|ba
+me018|no no no but wait maybe maybe what we have instead of a beep is a uh synthesized number.|cs
+mn014|yep.|bk
+me018|and they put the number in when they hear it.|cs
+fe008|that'll work.|na
+me018|so replacing the beep with twenty three|s
+me018|twenty four|s
+me018|twenty five|s
 me018|and then they have to transcribe what that number is each time.|s
-fe008|wow that'd also be shorter to type.|s^ba|s^ba
-me018|yeah just a two three two four that would be|s^aa|s.%-
+fe008|wow that'd also be shorter to type.|ba
+me018|yeah just a two three two four that would be|aa
 me011|well they would have to have a mark.|s
 me018|there'd be some kind of mark in front of it.|s
-fe008|interesting.|s^ba
-me013|well because they're distinguishing between twenty three|s.%--
+fe008|interesting.|ba
+me013|well because they're distinguishing between twenty three|s
 me013|that's your indicator there and twenty three that somebody happens to say in a meeting.|s
-fe008|oh that's true.|s^bk
-me018|well it would have yeah it would have to be um you know either obviously a sounding synthesized uh little|s.%-
+fe008|oh that's true.|bk
+me018|well it would have yeah it would have to be um you know either obviously a sounding synthesized uh little|s
 mn014|yeah.|b
-me013|but they might miss that.|s^bu^ng
-me013|right?|qy^d^g^rt
-fe008|or maybe could it be a click and the number.|s^cs
+me013|but they might miss that.|bu
+me013|right?|d
+fe008|or maybe could it be a click and the number.|cs
 me018|yeah.|b
-me018|or a beep and the number.|s^cs
+me018|or a beep and the number.|cs
 me011|well it's sequential.|s
-fe008|or a beep and the number and then and then you just do the the you do it as a a digit.|s^cs
-me011|right you would go sequential so unless you got pretty unlucky|fg|s.%--
+fe008|or a beep and the number and then and then you just do the the you do it as a a digit.|cs
+me011|right you would go sequential so unless you got pretty unlucky|fg
 me018|uh right.|b
 mn014|yeah.|b
-me011|what the person was saying and the number|s.%-
-me018|in fact we could put it at the beginning of each utterance.|s^cs
+me011|what the person was saying and the number|s
+me018|in fact we could put it at the beginning of each utterance.|cs
 me018|we could say beep one.|s
 me018|and then they'll hear the speech.|s
-me013|i think having a beep too is good.|s^na
-me011|so beep number|s.%--
-me011|yeah|%-
-me018|or a number beep|s^cs.%-
-me011|it's just getting pretty long.|s^ba^ng
-me011|you know the utterances are very short.|s^ba
-mn014|yep.|s^aa
+me013|i think having a beep too is good.|na
+me011|so beep number|s
+me011|yeah|%--
+me018|or a number beep|cs
+me011|it's just getting pretty long.|ba
+me011|you know the utterances are very short.|ba
+mn014|yep.|aa
 me018|uhhuh.|b
-me011|and so you're going to be talking beep number yes beep number no.|s:s^fe
+me011|and so you're going to be talking beep number yes beep number no.|s
 me018|uhhuh.|b
-fe008|well if if it saves time|s^df.%--
-me018|yeah and i think it would i actually i i like that.|s^aa|s
-fe008|yeah.|s^bk
+fe008|well if if it saves time|df
+me018|yeah and i think it would i actually i i like that.|aa
+fe008|yeah.|bk
 me011|and when they transcribe this meeting it's going to be really impossible.|s
-me018|i think it would|s.%--
-mn014|yeah that's funny.|s^aa|s^ba
-me013|we're saying beep yeah for instance.|s:s
+me018|i think it would|s
+mn014|yeah that's funny.|aa
+me013|we're saying beep yeah for instance.|s
 me011|yeah yep.|b
 me018|yeah.|b
-me018|but see that would that would definitely keep|s.%-
-me011|it's not a bad idea.|s^ba
+me018|but see that would that would definitely keep|s
+me011|it's not a bad idea.|ba
 me018|yeah.|b
 me018|keep things from getting out of sequence.|s
 me018|if they heard it over again they would know it would be obvious from their transcript whether they did that one or not.|s
 fe008|it might actually help them in terms of their place holding.|s
-me011|that would help get them synchronized.|s^na
-fe008|yeah.|s^bk
-fe008|and it might be helpful to them in terms of|s.%-
+me011|that would help get them synchronized.|na
+fe008|yeah.|bk
+fe008|and it might be helpful to them in terms of|s
 me018|yeah.|b
 me011|i think it would be.|s
-me011|because they would know their place.|s^df
+me011|because they would know their place.|df
 me018|and we have plenty of digits data.|s
 me018|so|fh
-me011|yeah.|s^bk
-me011|they would know their place darn it!|s^fe^r
-fe008|know|%-
-me011|those transcriptionists need to know their place.|s^r
+me011|yeah.|bk
+me011|they would know their place darn it!|fe
+fe008|know|%--
+me011|those transcriptionists need to know their place.|r
 mn014|oh.|b
-fe008|well no no no no.|s^ar
-me013|but it sounds like a a a a short conversation with brian might be might be helpful to get a sense of what's going on.|s^cs
-me018|yeah i'll i'll i'll write him an|s^aa|s^cc.%-
-me011|yeah the numbers are a good idea.|fg|s^ba
+fe008|well no no no no.|ar
+me013|but it sounds like a a a a short conversation with brian might be might be helpful to get a sense of what's going on.|cs
+me018|yeah i'll i'll i'll write him an|aa
+me011|yeah the numbers are a good idea.|fg
 me018|yeah.|b
-fe008|okay.|s^bk
-mn014|or just|%-
-me011|other than lengthening the transcript i think it would be very helpful.|s^ba
-mn014|just instead of the sequential number|s.%--
-mn014|perhaps just the speaker i d or something.|s^cs
-mn014|just say speaker one or|s^cs^e.%--
+fe008|okay.|bk
+mn014|or just|%--
+me011|other than lengthening the transcript i think it would be very helpful.|ba
+mn014|just instead of the sequential number|s
+mn014|perhaps just the speaker i d or something.|cs
+mn014|just say speaker one or|cs
 mn014|or just one two three four for four speakers or something.|s
 mn014|could could be helpful.|s
 fe008|i|%--
-me011|yeah you don't have to|s^aa|s.%--
+me011|yeah you don't have to|aa
 me011|you could keep them short by not or just go one through ten one through ten one through ten or one through twenty.|s
-mn014|yeah yeah yeah yep.|s^aa
-fe008|and then also if we i mean i don't know what their setup is but your template idea might be a way of of of|s.%--
+mn014|yeah yeah yeah yep.|aa
+fe008|and then also if we i mean i don't know what their setup is but your template idea might be a way of of of|s
 me011|uhhuh.|b
 fe008|we could actually build the numbers into a template.|s
-me011|yep.|s^aa
+me011|yep.|aa
 fe008|well|%--
-me018|i'll talk to brian and see what he|s^cc.%-
-me011|yeah single digit numbers|fg|s.%--
-me011|that also appeals to me so that you don't have to you know|s.%--
+me018|i'll talk to brian and see what he|cc
+me011|yeah single digit numbers|fg
+me011|that also appeals to me so that you don't have to you know|s
 mn014|yeah.|b
-fe008|that's a good idea.|s^ba
-fe008|very simple.|s^ba
-me011|one hundred twenty four.|s^j:s
+fe008|that's a good idea.|ba
+fe008|very simple.|ba
+me011|one hundred twenty four.|j
 me018|yeah.|b
 mn014|yeah.|b
 me013|well although|%--
-me011|beep one thousand three hundred forty two.|s^j:s
-me013|you're saying it's it's about an hour meeting.|s^bu
-me011|uhhuh.|s^aa
-me013|and there were a hundred and twenty three|s^bu.%-
-me011|i don't remember.|s^no
+me011|beep one thousand three hundred forty two.|j
+me013|you're saying it's it's about an hour meeting.|bu
+me011|uhhuh.|aa
+me013|and there were a hundred and twenty three|bu
+me011|i don't remember.|no
 fe008|it's forty five minutes.|s
 me011|chuck was saying there was more than that.|s
-me013|huh?|qw^br
-fe008|forty five minutes for that one.|s^r
+me013|huh?|br
+fe008|forty five minutes for that one.|r
 me011|more beeps than that.|s
 me018|i was thinking there was on the order of fifteen hundred segments.|s
-me018|but maybe i'm|s.%--
+me018|but maybe i'm|s
 fe016|there must be.|s
-fe016|because otherwise you're going a whole|s.%--
+fe016|because otherwise you're going a whole|s
 mn014|i think it should be more.|s
 fe008|it's possible.|s
-mn014|yeah.|s^bk
-fe016|that was at least forty five minutes.|s^bu
-fe016|right?|qy^d^g^rt
-fe008|yeah that's right.|s^aa
-me011|was it that many?|qy^rt
-me011|i just don't recall.|s^no
-fe008|yeah it was forty five minutes.|s^aa|s^na
+mn014|yeah.|bk
+fe016|that was at least forty five minutes.|bu
+fe016|right?|d
+fe008|yeah that's right.|aa
+me011|was it that many?|rt
+me011|i just don't recall.|no
+fe008|yeah it was forty five minutes.|aa
 fe016|that's the shortest meeting we have.|s
-fe016|most of them are double that or|s.%--
+fe016|most of them are double that or|s
 me011|yep.|b
 me013|well i was just wondering what the average length thing was.|s
 fe016|so|fh
-me018|oh of a of a segment that they're hearing?|s^bk|qy^bu^d^rt
-mn014|it's|%-
-me013|yeah.|s^aa
-me018|i don't know.|s^no
-fe008|huh interesting.|s^ba
+me018|oh of a of a segment that they're hearing?|bk
+mn014|it's|%--
+me013|yeah.|aa
+me018|i don't know.|no
+fe008|huh interesting.|ba
 me011|easy enough to figure out.|s
 me013|uh|fh
-me018|i don't know.|s^no^r
-fe016|so if there are in the in the hundreds and or thousands of these|s.%--
+me018|i don't know.|no
+fe016|so if there are in the in the hundreds and or thousands of these|s
 me018|yeah.|b
-me011|we have all that data.|s^df
+me011|we have all that data.|df
 fe016|it must be in the high hundreds of them at least.|s
-me013|so right so|fg|%-
+me013|so right so|fg
 fe016|so that's getting a little cumbersome for them to type like five hundred.|s
-mn014|yeah.|s^aa
+mn014|yeah.|aa
 fe008|well with just one digit though.|s
-fe008|i think|%-
-fe016|but yeah if they recycle through|fg|s.%-
-me013|well|%-
-me018|yeah if we if we did mod ten then|fg|s^cs.%-
-mn014|yeah.|s^aa
-me013|right but my point was you know if it's a big difference to me if there's a thousand or there's a hundred.|fg|s
+fe008|i think|%--
+fe016|but yeah if they recycle through|fg
+me013|well|%--
+me018|yeah if we if we did mod ten then|fg
+mn014|yeah.|aa
+me013|right but my point was you know if it's a big difference to me if there's a thousand or there's a hundred.|fg
 me013|if there's a thousand then that means that this is only happening three times out of a thousand.|s
 me013|which means you know even just splitting it up into a few files would probably take you know nearly all the time.|s
-me013|there would be no|s.%--
+me013|there would be no|s
 fe016|yeah.|b
 me013|if it's a hundred then you know that's not the issue.|s
 me013|but if it's a hundred then the average length of each one is pretty pretty long.|s
 me013|and so having a little thing at the front of it is no big deal.|s
 me018|uhhuh.|b
 me013|so that's why i was curious.|s
-me011|yeah you're right.|fg|s^aa
+me011|yeah you're right.|fg
 me011|it had to have been more than that.|s
 me011|i mean it was a forty five minute meeting.|s
 me011|so|fh
 fe016|right.|b
 me011|and it certainly was not a minute a chunk.|s
 me011|it was a few seconds a chunk.|s
-fe016|that's what i|s.%--
+fe016|that's what i|s
 me018|uhhuh.|b
-fe016|yeah so it'd be a lot of overhead to type.|fg|s^ba
-me011|so i'm just mis remembering.|s^df
-me011|i'm just mis remembering.|s^df^r
-fe016|oh i|%-
+fe016|yeah so it'd be a lot of overhead to type.|fg
+me011|so i'm just mis remembering.|df
+me011|i'm just mis remembering.|df
+fe016|oh i|%--
 me011|so|fh
-fe008|well and the other thing is maybe the numbers would help them keep their place in the transcript and speed the process|fg|s.%-
+fe008|well and the other thing is maybe the numbers would help them keep their place in the transcript and speed the process|fg
 fe016|yeah.|b
 me011|it might make the transcript faster.|s
 fe016|yeah.|b
-me011|i mean i a quick conversation with brian would be good.|s^cs
-fe008|uhhuh.|b.%
+me011|i mean i a quick conversation with brian would be good.|cs
+fe008|uhhuh.|b
 me018|yeah.|b
 me011|so|fh
-me011|okay.|s^bk
-me011|and other than that|s.%-
-fe016|actually if it is|s.%--
-fe016|i mean it's not a bad idea to try the alignment.|s^ba^cs
+me011|okay.|bk
+me011|and other than that|s
+fe016|actually if it is|s
+fe016|i mean it's not a bad idea to try the alignment.|ba
 fe016|um if there's only like three of them then if you align the first point at which things get messed up is sort of the location of the first problem.|s
 me011|uhhuh.|b
-fe016|and then the second|s.%--
+fe016|and then the second|s
 fe016|i mean you could do it that way.|s
-fe016|or you could|s.%--
+fe016|or you could|s
 fe016|it's it's|%--
 fe016|it would be able to handle any errors.|s
-fe016|so if they make on the average that many and it costs them more time to do something different than what they're doing which i don't know but if it does then we could try doing that as a post process.|s^cs
+fe016|so if they make on the average that many and it costs them more time to do something different than what they're doing which i don't know but if it does then we could try doing that as a post process.|cs
 me011|right.|b
-fe016|and um have a student or a transcriber run this alignment.|s^cs
-fe016|or we can do it.|s^cs
+fe016|and um have a student or a transcriber run this alignment.|cs
+fe016|or we can do it.|cs
 me011|yep.|b
 fe016|and|fh
-me018|you know actually what all that we would|s.%-
+me018|you know actually what all that we would|s
 fe016|then you can iteratively figure out where the problems are.|s
-me018|you know liz all we would|s.%-
-fe016|it would take a little work.|s^rt
+me018|you know liz all we would|s
+fe016|it would take a little work.|rt
 fe016|but not any real human not a lot of human work.|s
-me011|right i mean that's what we want to avoid.|s^bk|s
+me011|right i mean that's what we want to avoid.|bk
 me018|i mean if in terms of the alignment actually all we would need is we wouldn't even need words.|s
 me018|we would need a general speech model and a beep model.|s
-me018|because all we're really concerned about is missing beeps or too many beeps.|s^df
-fe016|well the the forced alignment will run|s.%--
-me018|so if we had a|s.%-
+me018|because all we're really concerned about is missing beeps or too many beeps.|df
+fe016|well the the forced alignment will run|s
+me018|so if we had a|s
 fe016|otherwise it'll take forever.|s
-fe016|i mean to really run recognition|s.%-
+fe016|i mean to really run recognition|s
 me018|uhhuh.|b
-me018|well i guess what i'm thinking of is that that a lot of times there will be they'll put in question marks that represent some unknown amount of speech.|fg|s
+me018|well i guess what i'm thinking of is that that a lot of times there will be they'll put in question marks that represent some unknown amount of speech.|fg
 fe016|or|fh
 fe016|right.|b
-me018|so we're going to have to have some kind of|s.%-
-fe016|yeah then we just map it to a reject model.|fg|s
+me018|so we're going to have to have some kind of|s
+fe016|yeah then we just map it to a reject model.|fg
 fe016|in and in fact that's what we do now.|s
-fe016|because there's cases even after jane listens where you know we have|s.%--
+fe016|because there's cases even after jane listens where you know we have|s
 me018|right.|b
 fe016|an expert can't even tell what they're talking about.|s
 me018|yeah.|b
 fe016|um so that's okay.|s
 fe016|just map that to reject.|s
-me018|right well what i was thinking is map all the speech to the reject model.|fg|s^cs
+me018|right well what i was thinking is map all the speech to the reject model.|fg
 fe016|and|fh
-me018|and then you have a beep model.|s^cs^e
+me018|and then you have a beep model.|cs
 me013|yeah.|b
-me011|but that won't work.|s^nd
-me013|yeah you're still talking a forced|fg|s.%-
-me011|because it's|s^df.%-
-fe016|the forced alignment might not work then.|s^rt
-fe016|although we can try it.|s^cs
+me011|but that won't work.|nd
+me013|yeah you're still talking a forced|fg
+me011|because it's|df
+fe016|the forced alignment might not work then.|rt
+fe016|although we can try it.|cs
 fe016|um|fh
-me011|well but all we'll get|fg|s.%-
+me011|well but all we'll get|fg
 me013|well with the beep models is what's really you'd have really it would be really good though.|s
 me018|the beep model is is going to match like really well.|s
 fe016|right.|b
 me013|so|fh
-me013|so it's so it's really just doing yeah a keyword like a spotting for beep with|s.%-
-fe016|right but it'll it'll grab the next beep in other words.|s^bk|s
+me013|so it's so it's really just doing yeah a keyword like a spotting for beep with|s
+fe016|right but it'll it'll grab the next beep in other words.|bk
 fe016|it'll be|%--
 fe016|you'll get back another offset.|s
-fe016|um i mean i was thinking of.|fh|s
+fe016|um i mean i was thinking of.|fh
 fe016|then i and then i realized well the recognizer will just go along and line up all the beeps.|s
 fe016|and then there'll be all the extra beeps at the end.|s
 fe016|if there were more beeps then you wanted.|s
-me011|right you you need but you need the text.|s^bk|s^arp
-fe016|so you need the word you need the word to sort of control the relative location.|s^df
-me011|to tell it where it got it wrong.|s^e
+me011|right you you need but you need the text.|bk
+fe016|so you need the word you need the word to sort of control the relative location.|df
+me011|to tell it where it got it wrong.|e
 me011|yeah.|fh
-me018|no i'm not i'm not suggesting that we don't have anything between the beeps.|s^df
-fe016|it will tell you|s.%-
-fe016|oh.|s^bk
-me018|but i what i'm saying is what's between the beeps we don't really care about.|s^df
-fe016|i think you do care about it.|s^nd
-me011|because you have to know which ones match which.|s^df^na^rt
-fe016|unless you want to know if they're|s.%-
-fe016|right.|s^aa
+me018|no i'm not i'm not suggesting that we don't have anything between the beeps.|df
+fe016|it will tell you|s
+fe016|oh.|bk
+me018|but i what i'm saying is what's between the beeps we don't really care about.|df
+fe016|i think you do care about it.|nd
+me011|because you have to know which ones match which.|df
+fe016|unless you want to know if they're|s
+fe016|right.|aa
 fe016|otherwise you just count up the total number of beeps.|s
 me011|and we can do that with wordcount.|s
 me011|right we already know that that we're three short.|s
 fe016|yeah.|b
-me011|and so if we just did uh beep and non beep all you would get is that you have three mistakes.|s^df
-me011|but you wouldn't tell you which ones were wrong.|s^df
-fe016|right.|s^aa
+me011|and so if we just did uh beep and non beep all you would get is that you have three mistakes.|df
+me011|but you wouldn't tell you which ones were wrong.|df
+fe016|right.|aa
 me011|you need some of the words in there so that you can say well this segment matches this one.|s
 me011|this segment matches this one.|s
 me011|and this one doesn't match at all.|s
-me011|unless we insert a beep.|s^e
+me011|unless we insert a beep.|e
 fe016|i mean the only thing i'm worried about with that approach is that if we need to figure out the beep alignment problem before the transcribers do the corrections here then we're in trouble.|s
 me013|okay.|b
 fe016|in other words if the transcripts aren't sort of good enough that the aligner constraints are good enough to sort of show you where the errors are then it wouldn't work.|s
-fe016|but it might work.|s^df
+fe016|but it might work.|df
 fe016|it might work to do this if their transcripts are pretty close on the words that usually get recognized correctly.|s
 fe016|which are the you know function words.|s
-fe016|the common words.|s^e
+fe016|the common words.|e
 me011|well actually you know there's an even easier way.|s
 me011|we don't really need a beep model.|s
 me011|um just extract the segments and do a forced alignment.|s
 me011|and if the score is good then you say it matches.|s
-fe016|right you can also|fg|s.%-
-fe016|in fact that's what we do|s.%-
-fe016|right the individual segments between the beeps|fg|s.%--
+fe016|right you can also|fg
+fe016|in fact that's what we do|s
+fe016|right the individual segments between the beeps|fg
 fe016|um if beeps were like the segments that we get from um the transcription tool already that that's what we have done.|s
-fe016|and it works very well.|s^ba
+fe016|and it works very well.|ba
 fe016|you can see these segments align and these don't.|s
 fe016|um then you just have to go back in and figure out where the endpoints of those segments are.|s
-fe016|because some of them will be wrong.|s^df
-fe016|because the the beeps were missing by definition.|s^df^e
+fe016|because some of them will be wrong.|df
+fe016|because the the beeps were missing by definition.|df
 me011|right.|b
-me018|so do you get a score for each alignment?|qy^rt
+me018|so do you get a score for each alignment?|rt
 fe016|so it might actually work.|s
-me018|is that what you get?|qy^e^rt
-fe016|um you you get um|s.%--
+me018|is that what you get?|e
+fe016|um you you get um|s
 fe016|definitely when they don't align at all it it it fails.|s
 fe016|i mean that that's how we found a lot of problems before with um words being on the wrong place or something.|s
 me018|uhhuh.|b
@@ -642,344 +642,344 @@ fe016|so a failed alignment is a very good indicator that that the words don't m
 me018|uhhuh.|b
 me018|i'm just wondering when what it means to fail.|s
 fe016|um|%--
-me018|is it the the likelihood scores below some threshold|qy.%-
-fe016|yeah is uh it right.|s^aa
-fe016|it can't match up the|s.%--
+me018|is it the the likelihood scores below some threshold|qy
+fe016|yeah is uh it right.|aa
+fe016|it can't match up the|s
 fe016|that's why you actually need the text.|s
-fe016|in order to force you to try to match something that gives you a model to match against.|s^e
+fe016|in order to force you to try to match something that gives you a model to match against.|e
 fe016|so|fh
-fe016|it's just an idea if if it turns out that|s.%--
-fe016|i mean i also like this idea of high and low beeps or|s.%--
-fe016|but it if suppose we get one or two errors still per you know per transcript then we we might want to try some approach like that.|s^cs
-me011|well the numbered ones would make it a lot easier.|s^ba
-me011|because you could then really localize where the error is.|s^df
+fe016|it's just an idea if if it turns out that|s
+fe016|i mean i also like this idea of high and low beeps or|s
+fe016|but it if suppose we get one or two errors still per you know per transcript then we we might want to try some approach like that.|cs
+me011|well the numbered ones would make it a lot easier.|ba
+me011|because you could then really localize where the error is.|df
 fe008|uhhuh.|b
 fe008|yeah.|b
-fe016|where it is.|s^2
-fe016|right.|s^bk
+fe016|where it is.|2
+fe016|right.|bk
 fe016|if so if that doesn't add time for them that'd be great.|s
 fe008|yeah.|b
-me011|yep.|s^bk
-fe016|you know like|s.%--
+me011|yep.|bk
+fe016|you know like|s
 fe008|i think it would save them time.|s
 fe016|we have to ask them.|s
 fe008|i think it would help them keep the track track of it.|s
-me013|uh uh again especially if there's hundred many hundreds or thousands i still think it would it would cut the incidence of this a lot if it was possible to break it into a couple files.|fg|s
-fe008|interesting.|s^ba
-me013|yeah because it you know it's|s^df.%-
-fe008|yeah.|s^bk
+me013|uh uh again especially if there's hundred many hundreds or thousands i still think it would it would cut the incidence of this a lot if it was possible to break it into a couple files.|fg
+fe008|interesting.|ba
+me013|yeah because it you know it's|df
+fe008|yeah.|bk
 fe016|i guess also even for the transcribers it's quicker to load a smaller file.|s
 fe016|into the you know for the checking problem.|s
-me011|yeah i mean we could certainly break the meetings.|fg|s
-me011|we could certainly break the meetings into pieces.|s^e
+me011|yeah i mean we could certainly break the meetings.|fg
+me011|we could certainly break the meetings into pieces.|e
 fe016|into twenty minutes chunks or something.|s
 fe016|or|fh
-me011|so just|%-
-me013|i mean you've already broken them into chunks.|s^df
+me011|so just|%--
+me013|i mean you've already broken them into chunks.|df
 me013|so if you have if you have a if you have a thousand chunks then make ten things of a hundred or or you know.|s
-me018|just|%-
-me018|just accumulate it till you get twenty minutes worth?|qy^bu^d^rt
+me018|just|%--
+me018|just accumulate it till you get twenty minutes worth?|bu
 me018|there's one file.|s
-me011|that's true yeah.|s^na|s^aa
+me011|that's true yeah.|na
 mn014|yep.|b
 me013|and then it will be you know this every now and then there'll be a a beep missing.|s
 fe008|so someone's going to talk to brian.|s
-me018|yeah i'll|s^aa|%-
+me018|yeah i'll|aa
 me011|i think that was chuck.|s
 me018|i'll talk to him.|s
-fe008|okay.|s^bk
-me011|yep.|s^bk
+fe008|okay.|bk
+me011|yep.|bk
 fe008|i also looked over the text.|s
 fe008|and i was impressed by the accuracy.|s
-fe008|it looks really good.|s^ba^e
-me011|yeah it does look good.|s^aa|s^na
+fe008|it looks really good.|ba
+me011|yeah it does look good.|aa
 me011|i mean i found several errors.|s
-me011|but they were not significant.|s^bd
+me011|but they were not significant.|bd
 me011|they were all things that i could easily listen to and sometimes convince myself they said one thing and sometimes the other.|s
 me011|so|fh
-fe008|yeah it's there.|s^aa|s^na
-fe008|uhhuh.|s^bk
+fe008|yeah it's there.|aa
+fe008|uhhuh.|bk
 fe016|i haven't looked at these.|s
 fe016|um|fh
-fe016|because i was gone last week.|s^df
-fe016|but but don had told me that there's a difference in some of the conventions.|s^rt
-fe008|oh yes but this is not important.|s^aa|s^bd
-fe016|so but those are all easy things.|s^bu
+fe016|because i was gone last week.|df
+fe016|but but don had told me that there's a difference in some of the conventions.|rt
+fe008|oh yes but this is not important.|aa
+fe016|so but those are all easy things.|bu
 fe008|it's systematic.|s
-fe016|right?|qy^d^g^rt
-fe008|yeah.|s^aa
-fe016|yeah okay.|s^bk
+fe016|right?|d
+fe008|yeah.|aa
+fe016|yeah okay.|bk
 fe008|and and brian actually forwarded me in advance.|s
 fe008|he he he very nicely worked out a set of conventions which is intermediate between ours and the ones that they're used to.|s
-fe008|which is which is really a good a good way to do it.|s^ba
-fe016|okay.|s^bk
+fe008|which is which is really a good a good way to do it.|ba
+fe016|okay.|bk
 fe016|so we can just map.|s
-fe016|map them to|s^e.%--
-fe008|no problem.|s^na
-fe016|great.|s^bk
-fe016|huh|b.%
-me011|okay.|s^bk
+fe016|map them to|e
+fe008|no problem.|na
+fe016|great.|bk
+fe016|huh|b
+me011|okay.|bk
 me011|um|fg
-me011|we still haven't really sat down and talked about file reorganization.|s^t^tc
+me011|we still haven't really sat down and talked about file reorganization.|t
 me011|and directory reorganization.|s
-me011|so we still have to do that.|s^t
+me011|so we still have to do that.|t
 me011|but i don't think we need to do that in this meeting.|s
 me011|but uh it is something that needs to get done.|s
 me011|and i want to also coordinate it with dave so that we do a level zero backup right after.|s
-me011|so we don't waste a lot of tapes.|s^df
+me011|so we don't waste a lot of tapes.|df
 me011|but uh|fh
 me011|so let's let's try to do that sometime.|s
-me011|okay?|qy^rt
-me011|okay?|qy^r^rt
-fe008|yeah we can do it this week.|s^aa|s^cs
-fe008|yeah.|s^aa
+me011|okay?|rt
+me011|okay?|r
+fe008|yeah we can do it this week.|aa
+fe008|yeah.|aa
 me011|um|fh
-me011|we also still have to make a decision about mike issues.|s^t^tc
-me011|what we want to do with that.|s^e
-fe008|i thought we were going to get two more of the ones|s.%-
-me011|and just swap them in and out?|qy^2^bu^d^rt
-me011|yeah we could certainly do that.|s^aa|s^na
-mn014|so why not?|qw^rt
-me011|so uh morgan just to|s.%--
+me011|we also still have to make a decision about mike issues.|t
+me011|what we want to do with that.|e
+fe008|i thought we were going to get two more of the ones|s
+me011|and just swap them in and out?|2
+me011|yeah we could certainly do that.|aa
+mn014|so why not?|rt
+me011|so uh morgan just to|s
 me011|uh since you weren't at the meeting last week uh apparently a bunch of the e d u folks really hate this style mike.|s
-fe016|um i wouldn't well it they didn't say hate.|fg|s^ng:s
-fe016|but they they they come on time to their meetings in order to not be left the last person who has to sit by those mikes.|s^df
-fe008|can i i i|%-
-me011|i mean that's that's that's a fairly strong indication of dislike.|s^ba
-fe008|i actually really like them though.|s^ba
+fe016|um i wouldn't well it they didn't say hate.|fg
+fe016|but they they they come on time to their meetings in order to not be left the last person who has to sit by those mikes.|df
+fe008|can i i i|%--
+me011|i mean that's that's that's a fairly strong indication of dislike.|ba
+fe008|i actually really like them though.|ba
 me011|um|fh
-me013|which one is these?|qw^rt
-fe016|there were a few people you and like three or four people who really like them.|s^na
-me013|the uh|s^bu.%-
-me011|the crown.|s^2
-me013|uhhuh.|s^bk
-fe008|yeah i do.|s^aa|s^na
-fe016|and and all the others really don't.|s^e
-me011|so what i was thinking is we could get a few more of the sony ones.|s^cs
-me011|and just unplug them and plug them in.|s^cs^e
+me013|which one is these?|rt
+fe016|there were a few people you and like three or four people who really like them.|na
+me013|the uh|bu
+me011|the crown.|2
+me013|uhhuh.|bk
+fe008|yeah i do.|aa
+fe016|and and all the others really don't.|e
+me011|so what i was thinking is we could get a few more of the sony ones.|cs
+me011|and just unplug them and plug them in.|cs
 me011|and the only thing is that when you fill out the digit forms you have to be sure to indicate which mike was actually used.|s
-me011|so i mean that's easy to do.|s^ba
+me011|so i mean that's easy to do.|ba
 me011|um|fh
 me011|it it moves us away from this uniform all the mikes are the same.|s
 me011|which some people had said was a benefit.|s
 me011|but|fh
-fe008|the other thing too is you said that the acoustic quality of the one that you're wearing the fancy one is actually somewhat better than|s.%-
-me011|it is yeah.|s^aa|s^na
-fe008|so i don't know if it's a noticeable difference.|s^no
-fe008|but it is|s.%--
+fe008|the other thing too is you said that the acoustic quality of the one that you're wearing the fancy one is actually somewhat better than|s
+me011|it is yeah.|aa
+fe008|so i don't know if it's a noticeable difference.|no
+fe008|but it is|s
 fe008|i mean i i personally really prefer that model.|s
 fe008|so i think you know we've got this problem of people having different different preferences.|s
 me013|you know there are so many things about this that are non uniform that i think having having some modicum of uniformity is a good thing.|s
-me013|but you're just not going to i mean we've|s.%--
-fe008|okay.|s^bk
+me013|but you're just not going to i mean we've|s
+fe008|okay.|bk
 me013|uh|fh
-me013|for instance just the fact that people sit in different positions different times.|s^df
-me013|the exactly where they put it with respect to their mouth is different each time.|s^df^e
+me013|for instance just the fact that people sit in different positions different times.|df
+me013|the exactly where they put it with respect to their mouth is different each time.|df
 me011|yep.|b
 me013|uh|fh
-me013|i i just don't|s.%--
+me013|i i just don't|s
 me013|i mean i think we we're we're getting rid of major differences.|s
-fe008|uhhuh.|b.%
+fe008|uhhuh.|b
 me013|like we're not using the lapel anymore and so forth.|s
 me013|but|fh
 me013|the other stuff is just going to some variability we're going to have to accept.|s
-fe008|it's i i understand.|s^bk
-fe008|that's fine with me.|s^ba
-fe008|i i would say that um i find this model easier to adjust.|s^df
+fe008|it's i i understand.|bk
+fe008|that's fine with me.|ba
+fe008|i i would say that um i find this model easier to adjust.|df
 fe008|that's one of the reasons i don't like these.|s
-fe008|because i keep you know bending it.|s^df
+fe008|because i keep you know bending it.|df
 me013|uhhuh.|b
-fe008|and then it's and i never really know|s.%-
-me013|yeah see i i happen to like the old one better.|fg|s^ba
-fe008|you do?|qh^d^rt
+fe008|and then it's and i never really know|s
+me013|yeah see i i happen to like the old one better.|fg
+fe008|you do?|d
 me013|but|fh
-fe008|okay.|s^bk
-me013|yeah.|s^aa
-fe016|what about just a different headband thing?|qh^cs
+fe008|okay.|bk
+me013|yeah.|aa
+fe016|what about just a different headband thing?|cs
 me013|and some people do.|s
 me013|but|fh
-fe016|or even if we could attach two headband|s^cs.%--
-me011|i mean|%-
-fe016|like i don't mind those.|s^ba^df
-me011|we|s.%-
-fe016|but it they bounce around.|s^df
+fe016|or even if we could attach two headband|cs
+me011|i mean|%--
+fe016|like i don't mind those.|ba
+me011|we|s
+fe016|but it they bounce around.|df
 me011|we have lots of choices of microphones.|s
-fe016|i mean can we keep the microphones and just somehow attach a more comfortable thing over your head?|qy^rt
+fe016|i mean can we keep the microphones and just somehow attach a more comfortable thing over your head?|rt
 me011|uhhuh.|b
 me011|huh|b
-me011|yeah.|s^aa
+me011|yeah.|aa
 fe016|that's my problem with this one.|s
-fe016|the the ear thing comes out to here.|s^e
-fe016|it doesn't even fit over my ear.|s^e
-me011|right.|s^bk
-fe016|and for some of the others it's their ears were shaped in a way that didn't hold the|s.%-
+fe016|the the ear thing comes out to here.|e
+fe016|it doesn't even fit over my ear.|e
+me011|right.|bk
+fe016|and for some of the others it's their ears were shaped in a way that didn't hold the|s
 fe008|huh|b
 me011|right.|b
 fe008|huh|b
-me011|i mean so we can go microphone shopping and get get more microphones.|s^cs
-me011|it's just|s^df.%-
-fe008|then they have to be rewired though.|s^bu
-me011|i'm just not sure what we should do.|s^no
+me011|i mean so we can go microphone shopping and get get more microphones.|cs
+me011|it's just|df
+fe008|then they have to be rewired though.|bu
+me011|i'm just not sure what we should do.|no
 mn014|yeah.|b
-fe008|don't they?|qy^rt
+fe008|don't they?|rt
 fe008|specially.|s
-me013|you know i mean here's another argument against worrying too much about uniformity.|fg|s
+me013|you know i mean here's another argument against worrying too much about uniformity.|fg
 me013|we have something like forty five hours of data collected.|s
 me013|and uh we're also going to be integrating in this corpus stuff that's that's being done at u w uh with entirely different microphones.|s
 me011|yep.|b
-me013|so i i think you know getting away from the lapel having close mounted mikes having people adjust them as they're most as as as comfortable as they can|s.%--
-me011|well i|%-
-me013|i think that's sort of the big deal.|s^ba
-me011|i agree with that.|s^na
-me011|and so my feeling is we should get mikes that people like.|s^cs
-me013|yeah.|s^aa
-fe008|yeah.|s^aa
+me013|so i i think you know getting away from the lapel having close mounted mikes having people adjust them as they're most as as as comfortable as they can|s
+me011|well i|%--
+me013|i think that's sort of the big deal.|ba
+me011|i agree with that.|na
+me011|and so my feeling is we should get mikes that people like.|cs
+me013|yeah.|aa
+fe008|yeah.|aa
 me011|and so my feeling is going out and buying a few more mikes is fine.|s
-me013|yeah.|s^bk
-mn014|yeah that's right.|s^aa|s^na
-me011|so should i just go do that?|qy^rt
-me013|yeah.|s^aa
-me011|okay.|s^bk
-fe016|what about these|qw.%-
+me013|yeah.|bk
+mn014|yeah that's right.|aa
+me011|so should i just go do that?|rt
+me013|yeah.|aa
+me011|okay.|bk
+fe016|what about these|qw
 me011|and then also should we go ahead and get another wireless system?|qy
-me011|you know for whatever it's going to be uh|s^e.%-
+me011|you know for whatever it's going to be uh|e
 fe008|uhhuh.|b
-me013|uh another wireless system.|s^bk^m
-me013|you mean another transmitter?|qy^bu^d^rt
-me013|or or|qrr.%-
-me011|uh no actually get we need another box.|s^ar|s
-me011|because each each box in the back room can only take six.|s^df
-me013|oh to get to get rid of the wired things.|s^bk|s
-me011|so we|s^cs.%-
+me013|uh another wireless system.|bk
+me013|you mean another transmitter?|bu
+me013|or or|qrr
+me011|uh no actually get we need another box.|ar
+me011|because each each box in the back room can only take six.|df
+me013|oh to get to get rid of the wired things.|bk
+me011|so we|cs
 me011|yep.|b
-me013|yes absolutely.|s^aa
-me011|okay.|s^bk
-me013|yeah.|s^bk
-me013|uh because because we've had with the exception of forgetting to change the batteries from time to time uh we've really had no no trouble with this at all.|s^df
+me013|yes absolutely.|aa
+me011|okay.|bk
+me013|yeah.|bk
+me013|uh because because we've had with the exception of forgetting to change the batteries from time to time uh we've really had no no trouble with this at all.|df
 me011|so i'll just go i'll do that.|s
-me011|yep.|s^aa
-me013|right?|qy^d^g^rt
-me013|and and the wired stuff is just going to continue to degrade as you know|s.%--
-me013|and nobody will remember how to|s.%-
-fe016|another one just bit the dust.|s^t3
-me013|yeah nobody will remember how to repair a jimbox or a jimlet or a|fg|s.%--
-me018|really?|qy^bh^t3
-fe016|i think there's a problem with this one.|s^t3
+me011|yep.|aa
+me013|right?|d
+me013|and and the wired stuff is just going to continue to degrade as you know|s
+me013|and nobody will remember how to|s
+fe016|another one just bit the dust.|t3
+me013|yeah nobody will remember how to repair a jimbox or a jimlet or a|fg
+me018|really?|bh
+fe016|i think there's a problem with this one.|t3
 me011|yep.|b
-me013|you know it's|s.%--
-me011|okay then i will just go do that.|s^bk|s
+me013|you know it's|s
+me011|okay then i will just go do that.|bk
 me013|yeah.|b
 me011|and send the bill to uh what's her name?|qw
 me013|whoever will pay.|s
-me013|yeah.|s^bk
-me011|whoever will pay.|s^bk^m
+me013|yeah.|bk
+me011|whoever will pay.|bk
 me011|you.|s
-me013|yeah yeah.|s^bk
-fe016|i have a quick question about microphones.|s^t^tc
+me013|yeah yeah.|bk
+fe016|i have a quick question about microphones.|t
 fe016|um|fh
-fe016|i got this crazy idea that um in the future people will just walk around with the microphones that they use for their cell phones.|s^rt
-fe016|you know these little boom ones.|s^e
+fe016|i got this crazy idea that um in the future people will just walk around with the microphones that they use for their cell phones.|rt
+fe016|you know these little boom ones.|e
 fe016|like and really go to meetings with close talking mikes.|s
 fe016|if they're their own personal microphone.|s
-fe016|and so i'm wondering if we can get a couple of|s^cs.%--
-fe016|i don't know how good quality they are.|s^bd
-fe016|but it would be really interesting to see if they're good enough.|s^cs^df
-me013|do you mean the kind that hang from the ear sort of thing?|qy^bu^rt
+fe016|and so i'm wondering if we can get a couple of|cs
+fe016|i don't know how good quality they are.|bd
+fe016|but it would be really interesting to see if they're good enough.|cs
+me013|do you mean the kind that hang from the ear sort of thing?|bu
 fe016|the kind that guys that like to look like they're really cool at airports wear.|s
-me013|or the|qrr.%--
-mn014|yeah.|b.%
-me011|yeah.|b.%
-me013|yeah but i don't know that one.|s^bk|s
+me013|or the|qrr
+mn014|yeah.|b
+me011|yeah.|b
+me013|yeah but i don't know that one.|bk
 me013|so what's that mean?|qw
 me011|this it's it's a cell phone jack.|s
 fe016|you can't miss it.|s
-me018|oh yeah you do.|s^nd
-fe016|you cannot miss it.|s^r
-me013|is this just this little|%-
-fe016|they're the guys going around|s.%--
+me018|oh yeah you do.|nd
+fe016|you cannot miss it.|r
+me013|is this just this little|%--
+fe016|they're the guys going around|s
 fe016|they're probably talking to nobody.|s
-fe016|but|%-
-me013|oh they they have little headsets?|s^bk|qy^bu^d^rt
-mn014|yep.|s^aa
-fe016|yes.|s^aa
-me013|or what do they|qrr.%--
-me011|yep.|s^aa
-fe016|they wear the|s.%--
+fe016|but|%--
+me013|oh they they have little headsets?|bk
+mn014|yep.|aa
+fe016|yes.|aa
+me013|or what do they|qrr
+me011|yep.|aa
+fe016|they wear the|s
 fe016|well there you go.|s
 me013|oh you've you've got one.|s
-fe016|yes!|s^aa^fe
+fe016|yes!|aa
 fe016|that's that it looks sort of like that.|s
 me011|except that one's even bigger than most of the ones i've seen.|s
 me013|so where where does how do you wear that?|qw
 me011|most of the ones are just a little boom.|s
-me013|what does that|qw^e.%--
-fe008|you you put it over the corner of your ear.|s^rt
-me013|yeah over the corner of the ear.|s^bk|s^bk^m
+me013|what does that|e
+fe008|you you put it over the corner of your ear.|rt
+me013|yeah over the corner of the ear.|bk
 fe008|i can't i'm having competing microphone headphone problems here.|s
 me018|there's another kind which goes in your ear.|s
 me018|and it hangs down.|s
-me018|there's a little bulb|s.%-
-mn014|yep it just just hangs down there.|fg|s
-me013|yeah that i've seen.|fg|s
-me013|yeah.|s^bk
+me018|there's a little bulb|s
+mn014|yep it just just hangs down there.|fg
+me013|yeah that i've seen.|fg
+me013|yeah.|bk
 me018|that hangs has the mike on it.|s
-fe016|okay so whatever people sort of wear to use|fg|s.%--
+fe016|okay so whatever people sort of wear to use|fg
 fe008|this one.|s
 mn014|yeah.|b
-me011|uhhuh.|b.%
-fe016|yeah something like with their cell phones.|s^aa|s
+me011|uhhuh.|b
+fe016|yeah something like with their cell phones.|aa
 me013|yeah.|b
 fe016|it'd be really great i think if we can argue that.|s
-fe008|it's an interesting idea.|s^ba
+fe008|it's an interesting idea.|ba
 fe016|people like that.|s
-fe008|the acoustics|s.%-
-fe008|the acoustics on this are really better than when i talk into it directly.|s^ba
-me011|yeah the the biggest issue is the stupid cable.|fg|s
-me013|but what|%-
+fe008|the acoustics|s
+fe008|the acoustics on this are really better than when i talk into it directly.|ba
+me011|yeah the the biggest issue is the stupid cable.|fg
+me013|but what|%--
 fe016|are they?|qh
-me013|why would it be cool?|qw^rt
-me011|that sony|s^e.%--
-me011|the connector that sony has that uh|s.%--
-fe016|oh okay.|s^bk
-fe016|so it's they're not compatible?|qy^bu^d^rt
+me013|why would it be cool?|rt
+me011|that sony|e
+me011|the connector that sony has that uh|s
+fe016|oh okay.|bk
+fe016|so it's they're not compatible?|bu
 me011|it's non standard.|s
 me011|and so you can't just plug something in.|s
-me011|you need to get it wired.|s^e
-me013|oh i'm sorry.|s^bk|s^fa
-me013|you're talking about that as a possible thing to plug into the sonys.|s^bu
-fe016|well|%-
-fe016|um just as an example for you know the future of the fact that maybe people will wear those microphones.|fg|s
-me011|right.|s^aa
-me013|no?|qy^d^g^rt
-me018|how standard are these?|qw^t3
+me011|you need to get it wired.|e
+me013|oh i'm sorry.|bk
+me013|you're talking about that as a possible thing to plug into the sonys.|bu
+fe016|well|%--
+fe016|um just as an example for you know the future of the fact that maybe people will wear those microphones.|fg
+me011|right.|aa
+me013|no?|d
+me018|how standard are these?|t3
 fe008|works with this.|s
-fe008|i don't know.|s^no
+fe008|i don't know.|no
 fe016|or some people might.|s
-me013|well some people will yeah.|s^aap|s^aa
-fe016|to meetings.|s^e
-fe016|you know.|s^f
-fe016|not a i'm not saying there's not a far field microphone uh application.|s^df
+me013|well some people will yeah.|aap
+fe016|to meetings.|e
+fe016|you know.|f
+fe016|not a i'm not saying there's not a far field microphone uh application.|df
 fe016|but|fh
 fe016|if we have a i've always wondered how well they would work.|s
-me018|it is an interesting idea.|s^ba
-me018|if we could build an adaptor that went from|s.%--
-me018|because i think mine looks like this too.|s^df
-me018|if we had this style plug that went to that then we'd just have adaptors.|s^cs
+me018|it is an interesting idea.|ba
+me018|if we could build an adaptor that went from|s
+me018|because i think mine looks like this too.|df
+me018|if we had this style plug that went to that then we'd just have adaptors.|cs
 me011|right.|b
-me018|and people would plug them in.|s^cs^e
+me018|and people would plug them in.|cs
 me018|you could use they could use their own.|s
-fe016|oh right so they could use the|s^bk|s.%--
+fe016|oh right so they could use the|bk
 me011|i wonder if you could do an adaptor.|s
-me011|i don't know if you can or not.|s^no
-fe016|anyway it's just an idea.|s^bd
-me013|yeah.|s^bk
+me011|i don't know if you can or not.|no
+fe016|anyway it's just an idea.|bd
+me013|yeah.|bk
 fe016|um|fh
 me011|an adaptor might be a better idea than redoing the wiring all the time.|s
-fe016|huh|b.%
-me013|well i mean another|s.%-
+fe016|huh|b
+me013|well i mean another|s
 me013|another side to that is that um in principle uh if it all comes together supposedly we're going to get two um i ram boards.|s
 me011|right.|b
-me013|uh little later on in the year.|s^e
+me013|uh little later on in the year.|e
 me013|and so we're going to want to be thinking in terms of some wireless connection to it.|s
 me011|uhhuh.|b
 me013|um|fh
@@ -987,18 +987,18 @@ me013|so we have you know some kind of little something.|s
 me013|and uh we have a wireless connection this board that's doing the computation for the the uh the recognition.|s
 me013|and so you know we want to be able to show off to somebody.|s
 me013|you know we have a base station somewhere.|s
-me013|and you're wandering around uh hands free.|s^e
+me013|and you're wandering around uh hands free.|e
 me013|and|fh
 me011|yep.|b
 me018|i don't understand.|s
-me018|so so there's a mike that plugs in|s^bu.%--
-me018|you're saying there's a mike that plugs in to the i ram board?|qy^bu^d^rt
-me013|no no what i'm saying is that we're going to have to put together some kind of a little superstructure some sort of demo box that it that doesn't do a whole lot.|s^ar|s
-me018|or|qrr.%--
-me011|demo.|s^2
+me018|so so there's a mike that plugs in|bu
+me018|you're saying there's a mike that plugs in to the i ram board?|bu
+me013|no no what i'm saying is that we're going to have to put together some kind of a little superstructure some sort of demo box that it that doesn't do a whole lot.|ar
+me018|or|qrr
+me011|demo.|2
 me013|but it somehow connects to uh remotely to this i ram board.|s
 me013|which will be doing the real computation.|s
-me018|oh i see.|s^bk
+me018|oh i see.|bk
 me013|in other words we're we're not going to attempt to build uh it do the real work of building a portable device that's little that is doing all the computation we want to do for the recognition and the far field mike uh compensation and all that stuff.|s
 me013|so we're going to do all that on this powerful board.|s
 me013|and uh have some wireless connection to it.|s
@@ -1006,186 +1006,186 @@ me013|and then the question is what is what does it look like?|qh
 me013|does it look like something that you you hold like this?|qh
 me013|or do we make a big deal out of it that you hold it arm at arm's length so that you can see some display?|qh
 me013|or uh|fh
-me013|do we have one of these|qh.%--
-me013|you know i don't know.|s^bd^no
+me013|do we have one of these|qh
+me013|you know i don't know.|bd
 me013|so it these are all possibilities.|s
 me011|yep.|b
 me011|i mean what i was envisioning was a p d a with a cellular link in it.|s
-me011|you know with one of the short range wireless.|s^e
+me011|you know with one of the short range wireless.|e
 me011|and let just do capture the audio on the p d a and send the audio over the wireless net.|s
-me013|yeah so is bluetooth the sort of thing that'd be uh|s^bk|qy.%-
+me013|yeah so is bluetooth the sort of thing that'd be uh|bk
 me011|but|fh
 me011|uh bluetooth is shorter range.|s
 me011|but you could use bluetooth.|s
-me011|whatever the network guys already have hooked up for this floor.|s^e
-me011|i don't remember what it's called.|s^no
-me013|huh|b.%
-me011|okay then uh another issue on file reorganization is uh making data available to people outside icsi.|fg|s^t
+me011|whatever the network guys already have hooked up for this floor.|e
+me011|i don't remember what it's called.|no
+me013|huh|b
+me011|okay then uh another issue on file reorganization is uh making data available to people outside icsi.|fg
 me011|so specifically the u w folks have been wanting to get access to it.|s
-me011|so i think the right thing to do for that is figure out how to do c v s without uh compromising security.|s^cs
-me011|some s s h tunneled c v s.|s^e
-me018|well i was|%-
+me011|so i think the right thing to do for that is figure out how to do c v s without uh compromising security.|cs
+me011|some s s h tunneled c v s.|e
+me018|well i was|%--
 me011|and then give them access.|s
 me018|i was reading through some of the c v s documentation.|s
 me018|and you can just substitute c v s for your r s h command.|s
-me011|yes except that the command has to not take a password.|s^aa|s^aap^df
+me011|yes except that the command has to not take a password.|aa
 me018|huh|b
-me011|because it's non interactive.|s^df
+me011|because it's non interactive.|df
 me011|and so the only way to do that is with uh s hosts.|s
 me011|which is insecure.|s
-me018|huh|b.%
+me018|huh|b
 me011|so we still have to sort of look at it a little bit.|s
 me011|i mean i'm sure it's been solved.|s
 me011|and i just haven't found the solution yet.|s
 me011|but i am sure that people have done it.|s
-me011|because it's going to be a problem a lot of people have.|s^df
+me011|because it's going to be a problem a lot of people have.|df
 me011|but um|fh
-me013|who well we're talking about a fairly limited group.|s^df
+me013|who well we're talking about a fairly limited group.|df
 me013|are are is it a small enough group that they would could just have accounts?|qy
-me013|does that solve anything?|qy^e
-me011|uh not really.|s^nd
-me011|because then we have the coordination issue.|s^df
-me011|i mean so one thing they could do|s^cs.%--
-me011|i mean i guess that's true.|s^am
-me011|they could simply log in to icsi|s.%-
+me013|does that solve anything?|e
+me011|uh not really.|nd
+me011|because then we have the coordination issue.|df
+me011|i mean so one thing they could do|cs
+me011|i mean i guess that's true.|am
+me011|they could simply log in to icsi|s
 me013|yeah.|b
-me018|well they're going to have to have accounts|s.%-
-me011|and do everything locally.|s^e
-me018|if they use s s h they have to have an account anyways.|s^e
-me011|yeah except they could share one.|s^aa|s^arp^cs
-me013|well but that's not|fg|s^nd.%-
-me011|the uh the s s h accounts and the user accounts don't have to be similar.|s^df
+me018|well they're going to have to have accounts|s
+me011|and do everything locally.|e
+me018|if they use s s h they have to have an account anyways.|e
+me011|yeah except they could share one.|aa
+me013|well but that's not|fg
+me011|the uh the s s h accounts and the user accounts don't have to be similar.|df
 me011|so|fh
 me011|i mean there are lots of ways of doing it.|s
-me011|but but if we can't figure out a remote way of doing it just letting them log in to icsi might be okay.|s^cs
+me011|but but if we can't figure out a remote way of doing it just letting them log in to icsi might be okay.|cs
 fe016|uhhuh.|b
 me011|so the intention was to put everything except the audio files themselves under revision control.|s
 me011|and the audio files it's not worth doing.|s
-me011|because they're too big.|s^df
-me011|you're never going to be copying them around and making working copies of them.|s^df^e
+me011|because they're too big.|df
+me011|you're never going to be copying them around and making working copies of them.|df
 me013|right.|b
 me011|and then the other issue jane and i spoke of briefly is just general permission issues.|s
 me011|that right now lots of people create the files.|s
 me011|and then we have group meeting recorder.|s
 me011|but that means anyone in the meeting recorder group can overwrite the files.|s
 me011|and so that's a pretty coarse level of granularity.|s
-me011|so we might want to think about doing a meeting recorder user owner for those files.|s^cs
-me011|and then doing group slightly differently.|s^cs^e
+me011|so we might want to think about doing a meeting recorder user owner for those files.|cs
+me011|and then doing group slightly differently.|cs
 me011|but|fh
-me011|i think what we have now|s.%-
-fe016|can you just do like s u x or something to modify|qy^cs.%--
-fe016|i mean if you just have one user that|s^e.%-
-me011|another option is to make a non make it owned by a not real user.|s^cs
-me011|and then root will be able to do it.|s^cs^e
-me011|but root is pretty tightly controlled here.|s^bd^df
+me011|i think what we have now|s
+fe016|can you just do like s u x or something to modify|cs
+fe016|i mean if you just have one user that|e
+me011|another option is to make a non make it owned by a not real user.|cs
+me011|and then root will be able to do it.|cs
+me011|but root is pretty tightly controlled here.|bd
 fe016|uhhuh.|b
 fe008|i had another thought.|s
-me011|so i don't think that's a good solution.|s^ba^bd
-fe008|would would it be|qh^cs.%--
+me011|so i don't think that's a good solution.|ba
+fe008|would would it be|cs
 fe008|there are scripts that uh run.|s
-fe008|and and when it's finished compressing would it be possible for the script to change the permissions on the file to be more strict?|qy^rt
-fe008|have them|s^e.%-
-me011|yes but if you do that then someone who isn't the owner can't unchange it.|s^aa|s^df
-fe008|but after the meeting's done would they want to?|qy^df^rt
-me011|yeah as i said it's just a question of uh do you want to have to track down root if you have to make any change?|s^bk|qh^df
-fe016|but it doesn't have to be root.|s^cs
-fe016|it could be some other user that we all can s u x to.|s^cs^e
-fe008|that's true.|s^aa
-me011|you have security issues with that.|s^df^ng
+fe008|and and when it's finished compressing would it be possible for the script to change the permissions on the file to be more strict?|rt
+fe008|have them|e
+me011|yes but if you do that then someone who isn't the owner can't unchange it.|aa
+fe008|but after the meeting's done would they want to?|df
+me011|yeah as i said it's just a question of uh do you want to have to track down root if you have to make any change?|bk
+fe016|but it doesn't have to be root.|cs
+fe016|it could be some other user that we all can s u x to.|cs
+fe008|that's true.|aa
+me011|you have security issues with that.|df
 me011|so|fh
-fe008|yeah that's true.|s^aa|s^na
-fe016|i mean|%-
-me018|that's what we do with doctor speech though.|s^bu
-me018|right?|qy^d^g^rt
-me011|no with doctor speech it's just a group.|s^ar|s
-me011|so there're lots of different owners of of the files but the group is always doctor speech.|s^e
-me011|or real usually.|s^e
-me018|but there is a user doctor speech.|s^bu
-me018|right?|qy^d^g^rt
-me018|i mean i i s u x to doctor speech when i need to make a a directory on uh one of the|s^df.%-
-me011|oh do you?|s^bk|qy^bh^rt
-fe016|oh so that's what i meant.|s^bk|s
-fe016|it just some user like meeting root or something.|s^cs:s
-me011|oh okay.|s^bk
-fe016|i don't know.|s^bd^no
+fe008|yeah that's true.|aa
+fe016|i mean|%--
+me018|that's what we do with doctor speech though.|bu
+me018|right?|d
+me011|no with doctor speech it's just a group.|ar
+me011|so there're lots of different owners of of the files but the group is always doctor speech.|e
+me011|or real usually.|e
+me018|but there is a user doctor speech.|bu
+me018|right?|d
+me018|i mean i i s u x to doctor speech when i need to make a a directory on uh one of the|df
+me011|oh do you?|bk
+fe016|oh so that's what i meant.|bk
+fe016|it just some user like meeting root or something.|cs
+me011|oh okay.|bk
+fe016|i don't know.|bd
 me011|i mean i'm not too worried.|s
-me011|because the group's pretty small.|s^df
+me011|because the group's pretty small.|df
 me011|but|fh
 me013|yeah.|b
 fe008|also it seems like once it's been stored that night it's it's possible to recover from backups.|s
 fe008|so that the main risk is avoiding it being accidentally deleted during the day that it was recorded.|s
 me011|well and just you then also just have the general problem of permission on the other files.|s
-me011|that do you want people checking out a transcript file when they find an error and correcting it?|qh^e
-me011|or do they do you want it to go through you?|qh^e
-fe008|yeah yeah.|s^bk
+me011|that do you want people checking out a transcript file when they find an error and correcting it?|e
+me011|or do they do you want it to go through you?|e
+fe008|yeah yeah.|bk
 fe008|and i'd prefer it to go through me.|s
-me011|okay but that means that you're going to have to be available for people all the time who say there's an error here.|s^bk|s:s
-me011|rather than just them just going in and correcting it.|s^e
-fe008|well i at this point|s.%-
+me011|okay but that means that you're going to have to be available for people all the time who say there's an error here.|bk
+me011|rather than just them just going in and correcting it.|e
+fe008|well i at this point|s
 me018|well with c v s though you don't actually have to do it that way.|s
 fe008|yeah.|b
-fe016|yeah.|b.%
-me011|well but you have a choice.|s^df^ng
-me011|either you let people do it themselves or you don't.|s^e
+fe016|yeah.|b
+me011|well but you have a choice.|df
+me011|either you let people do it themselves or you don't.|e
 fe008|yeah.|b
-me018|what i'm saying is that it can be the case that people can do it themselves and it can be reviewed.|s^df
-me018|right?|qy^d^f^g^rt
-me011|right.|s^bk
+me018|what i'm saying is that it can be the case that people can do it themselves and it can be reviewed.|df
+me018|right?|d
+me011|right.|bk
 me018|i mean it's not like it's one or the other.|s
 me018|we can do both.|s
-fe016|yeah you can|s^aa|%-
-me011|right so you could get email.|s^bk|s
-me011|send email to jane that someone has done a revision.|s^cs
-me018|right.|s^aa
-fe008|i i want to also say that you know this is a|s.%--
+fe016|yeah you can|aa
+me011|right so you could get email.|bk
+me011|send email to jane that someone has done a revision.|cs
+me018|right.|aa
+fe008|i i want to also say that you know this is a|s
 fe008|uh uh my my view on this is that once it's in a final version and i'm working toward all these being final versions then it can go into this next this next realm.|s
-fe008|but it it's sort of counter productive to have changes made which i would be making if i'd just gotten that far in the file.|s^ba
-fe008|you know it's it's um|s.%-
-me011|well so you don't have to release it to the world until you're ready to.|s^df
+fe008|but it it's sort of counter productive to have changes made which i would be making if i'd just gotten that far in the file.|ba
+fe008|you know it's it's um|s
+me011|well so you don't have to release it to the world until you're ready to.|df
 fe008|yeah.|b
-fe008|that's right.|s^aa
-me011|so the question is|qh.%-
-fe008|and then after that then this would probably work.|s^ba
+fe008|that's right.|aa
+me011|so the question is|qh
+fe008|and then after that then this would probably work.|ba
 fe008|yeah.|b
-me011|so you would keep it in a separate file structure until you were ready to put it in the repository.|s^cs
-fe008|good good.|s^bk
-fe016|i mean|%-
-me011|or just keep the lock on it.|s^cs^e
-fe016|is c v s like|qy.%-
-fe016|yeah just keep the lock on.|s^aa|s^m^na
-fe016|i mean just check it out check it out.|s^cs
-me011|until you're|s^e.%-
-me011|yep.|s^aa
-fe016|and don't let anyone check it out|s^cs.%-
-me018|no it does not the c v s doesn't work that way.|s^ar|s^nd^rt
-fe016|oh.|s^bk
+me011|so you would keep it in a separate file structure until you were ready to put it in the repository.|cs
+fe008|good good.|bk
+fe016|i mean|%--
+me011|or just keep the lock on it.|cs
+fe016|is c v s like|qy
+fe016|yeah just keep the lock on.|aa
+fe016|i mean just check it out check it out.|cs
+me011|until you're|e
+me011|yep.|aa
+fe016|and don't let anyone check it out|cs
+me018|no it does not the c v s doesn't work that way.|ar
+fe016|oh.|bk
 fe016|it oh it doesn't.|s
 me018|there's no there's no lock when you check something out.|s
-fe016|oh okay.|s^bk
-me018|not like r c s.|s^e
-me018|in other words everybody can check out anything.|s^e
-fe016|oh.|s^bk
-me018|the c stands for concurrent.|s:s^rt
-fe016|so why not use r c s at that point just at that stage?|qh^cs
-me011|because it's not remote.|s^df
-fe016|it's not remote.|s^bk^m
-me011|the nice thing about c v s is is you can be on a different machine.|s^e
-fe016|but at that point we only want probably jane to be in control anyway.|s^df
-fe016|and she|s.%--
-fe016|i mean it's just an|s^bd.%-
-me011|no because u w wants to have access to these files.|s^ar|s^df
+fe016|oh okay.|bk
+me018|not like r c s.|e
+me018|in other words everybody can check out anything.|e
+fe016|oh.|bk
+me018|the c stands for concurrent.|s
+fe016|so why not use r c s at that point just at that stage?|cs
+me011|because it's not remote.|df
+fe016|it's not remote.|bk
+me011|the nice thing about c v s is is you can be on a different machine.|e
+fe016|but at that point we only want probably jane to be in control anyway.|df
+fe016|and she|s
+fe016|i mean it's just an|bd
+me011|no because u w wants to have access to these files.|ar
 me011|that's the whole point.|s
-fe016|but not to modify them.|s^bu^df
-fe016|right?|qy^d^g^rt
-fe016|just to read them.|s^e
-me011|well if they if they record a meeting and they create a key file and they find an error in their key file they shouldn't have to tell us about that.|s^df
+fe016|but not to modify them.|bu
+fe016|right?|d
+fe016|just to read them.|e
+me011|well if they if they record a meeting and they create a key file and they find an error in their key file they shouldn't have to tell us about that.|df
 me011|so that they can create correct an error in one of their files.|s
-fe008|well the key file is|s.%-
-me011|so that's why i want to do it|s.%-
-fe016|i don't know.|s^no^rt
-fe008|key file's different.|s^df
-fe016|uh i mean|s.%-
-fe008|key|%-
+fe008|well the key file is|s
+me011|so that's why i want to do it|s
+fe016|i don't know.|no
+fe008|key file's different.|df
+fe016|uh i mean|s
+fe008|key|%--
 me011|different than what?|qw
 fe008|well key file has the extra attributes that if you notice that there are lots of spikes on channel.|s
 fe008|so-and-so and it's useful as a repository for putting that there.|s
@@ -1194,255 +1194,255 @@ fe008|and didn't get mentioned in the key file.|s
 fe008|but they were only there for a second.|s
 fe008|but it's useful to mention that they were there.|s
 fe008|so i i think that the key file is for notations related to the meeting.|s
-me011|well|%-
+me011|well|%--
 me011|but i mean the meetings are going to be the same way.|s
 fe008|but it's different from the transcript.|s
 me011|so u w records a meeting.|s
 me011|we transcribe it.|s
 fe008|yeah.|b
 me011|a few months later they listen to it.|s
-me011|and they say ope they got that acronym wrong.|s:s
+me011|and they say ope they got that acronym wrong.|s
 fe008|yeah.|b
-fe016|then they should send that through|s^cs.%--
-me011|why why|%-
+fe016|then they should send that through|cs
+me011|why why|%--
 fe016|well it's sort of not really a question about permissions.|s
 fe016|but more of procedure.|s
-fe016|either those all go through jane or through someone.|s^df
+fe016|either those all go through jane or through someone.|df
 me011|uhhuh.|b
-fe016|or they all don't.|s^df^e
-fe016|but it's sort of|s.%--
+fe016|or they all don't.|df
+fe016|but it's sort of|s
 fe016|and if they all do then there isn't a problem.|s
-fe016|right?|qy^d^f^g^rt
-fe016|because once they give us the data it's ours.|s^df
-fe016|and if they want to make changes|s.%--
+fe016|right?|d
+fe016|because once they give us the data it's ours.|df
+fe016|and if they want to make changes|s
 fe016|i mean ours to sort of transcribe and annotate.|s
 me011|the the the point here is that it would be nice for there to be one repository.|s
 fe016|and if they want to make changes they can do that.|s
-me013|yeah.|s^aa
-fe008|yeah.|s^aa
+me013|yeah.|aa
+fe008|yeah.|aa
 me011|and if we don't let them modify their own data they're not going to store their data in our repository.|s
 me011|or if we make it inconvenient for them to change their data.|s
-fe016|so then if they do have|s.%-
+fe016|so then if they do have|s
 me011|i i'm just looking at it the other way around.|s
-fe016|okay so what if they have what if they have accounts here and they use r c s?|fg|qh
-me011|so so let's say we|s.%-
-fe016|at that point where you can really lock a file.|s^e
-fe016|i mean i'm worried if you can't lock a file this this to me sounds very scary.|s^ba^df
+fe016|okay so what if they have what if they have accounts here and they use r c s?|fg
+me011|so so let's say we|s
+fe016|at that point where you can really lock a file.|e
+fe016|i mean i'm worried if you can't lock a file this this to me sounds very scary.|ba
 fe008|huh.|b
 fe016|um|fh
-fe016|and if they have accounts here and they're modifying it|s.%--
+fe016|and if they have accounts here and they're modifying it|s
 fe016|if they're if they're so closely linked that they're actually modifying transcripts and key files then they could do it by you know secure shelling into icsi under r c s at that point.|s
 me011|well i don't see a real difference between r c s and any other system.|s
 me011|i mean it's just mechanisms.|s
 me011|the nice thing about c v s is that you can have multiple people modifying.|s
 me011|and if the changes don't overlap each other they can just do it.|s
-fe008|huh|b.%
-fe008|that's interesting.|s^ba
+fe008|huh|b
+fe008|that's interesting.|ba
 me011|so the problem with r c s is that if two people want to modify a file at the same time they can't.|s
 mn014|yeah.|b
-me011|because the granularity of locking is at the file level.|s^df
+me011|because the granularity of locking is at the file level.|df
 me013|what does c v s do if they if they do overlap?|qw
 me011|uh there're lots of different policies for dealing with it.|s
 fe016|uhhuh.|b
 me018|but typically a person has to uh mediate you know which changes actually get go through.|s
 me011|so|fh
-mn014|yeah.|s^aa
-fe008|oh.|s^bk
-mn014|yeah to decide which one is|fg|s.%--
-fe008|oh.|s^bk
+mn014|yeah.|aa
+fe008|oh.|bk
+mn014|yeah to decide which one is|fg
+fe008|oh.|bk
 mn014|yeah.|b
-me013|oh|%-
-fe016|so maybe there is a way in c v s to effectively lock something if you don't want people to make any changes?|qy^bu^d^rt
+me013|oh|%--
+fe016|so maybe there is a way in c v s to effectively lock something if you don't want people to make any changes?|bu
 me011|at the repository level there certainly is.|s
 fe016|uhhuh.|b
-me011|you can mark a file as as you can't check this out.|s^e:s
-fe016|oh.|s^bk
+me011|you can mark a file as as you can't check this out.|e
+fe016|oh.|bk
 fe016|so|%--
-me018|c v s is pretty good.|s^ba
-fe016|so then you could use c v s.|s^cs
-fe016|and you know just have remote access.|s^cs^e
+me018|c v s is pretty good.|ba
+fe016|so then you could use c v s.|cs
+fe016|and you know just have remote access.|cs
 me013|okay.|b
 me011|yep.|b
-fe016|but then it's up to whoever is sort of responsible for that level of transcription to decide how and when to put these locks.|s^bd^df
+fe016|but then it's up to whoever is sort of responsible for that level of transcription to decide how and when to put these locks.|bd
 me011|well it's it's just like source code.|s
 fe016|or|fh
-me011|right?|qy^d^f^g^rt
+me011|right?|d
 me011|so that when you're developing it and it's really rough you don't put it in the repository.|s
 fe016|yeah.|b
 me011|you wait to the point when you're ready to release it.|s
 me011|and then you put it in the repository.|s
-me018|yeah so the|fg|s.%-
+me018|yeah so the|fg
 fe008|uhhuh.|b
-me011|and if other people want to copy|s.%-
-me018|the maybe the model|s.%--
+me011|and if other people want to copy|s
+me018|the maybe the model|s
 me018|it's a little bit different in c v s.|s
 me018|when you check something out you actually create your own directory with copies of everything in it.|s
 me011|copy.|s
 me018|and that's what you work on.|s
 me018|so until you're ready to check it in nobody sees anything you've done.|s
-me018|and then when you check it in it puts sort of you know every change that you've done is goes into the central|s.%-
-fe016|right.|s^bk
-fe016|so if that's at|s.%--
-me013|huh|b.%
-fe016|i guess it depends on jane's|s.%--
+me018|and then when you check it in it puts sort of you know every change that you've done is goes into the central|s
+fe016|right.|bk
+fe016|so if that's at|s
+me013|huh|b
+fe016|i guess it depends on jane's|s
 fe016|uh you know|%--
-fe016|if that's if that model works for the transcripts then that's fine.|s^ba
+fe016|if that's if that model works for the transcripts then that's fine.|ba
 fe016|but if that um allows someone to come in and modify while you're modifying and they turn out to be changes that you know would have been better to wait until your version came out then that's really up to you.|s
-fe016|not up to the software.|s^e
-fe008|i think it's a very good point.|s^ba
-fe008|because what if the uh what if one set of changes one person was making was with reference to some typographical convention?|qh^df
-me011|uhhuh.|b.%
-fe008|and the other person quite unknowingly was changing it the other way around.|s^e
+fe016|not up to the software.|e
+fe008|i think it's a very good point.|ba
+fe008|because what if the uh what if one set of changes one person was making was with reference to some typographical convention?|df
+me011|uhhuh.|b
+fe008|and the other person quite unknowingly was changing it the other way around.|e
 fe008|then you could end up with a real mess.|s
 fe008|in terms of like consistency of conventions across a file there is an argument to be made for having a single editor editing at that level.|s
-fe008|but i like i like what liz is saying about|s^ba.%-
-me018|well yeah there would there would have to be somebody to enforce the consistency.|fg|s
-fe008|that's right.|s^bk
+fe008|but i like i like what liz is saying about|ba
+me018|well yeah there would there would have to be somebody to enforce the consistency.|fg
+fe008|that's right.|bk
 fe008|and i also like i also like liz's uh um phraseology of at this level of i don't remember how you put it but this at this level of transcription or whatever.|s
 me018|yeah.|b
 fe008|i mean it's like there are different layers of whatever.|s
 fe008|and different types of conventions.|s
 fe008|and if it were an acronym then i would i think that it would make sense for them to have input into that level of things.|s
-fe008|but i wouldn't want them to be changing|s.%-
-me011|i'm just|%-
-me011|imagine that we reverse this.|s^co
+fe008|but i wouldn't want them to be changing|s
+me011|i'm just|%--
+me011|imagine that we reverse this.|co
 me011|and they were keeping the repository and we were collecting meetings and sending them to them.|s
 fe008|yeah.|b
 fe008|uhhuh.|b
 me011|if i found an error and i sent them email and said here's this error and i didn't get a response for a couple weeks i would stop sending them the my data.|s
 me011|and i would start collecting it here.|s
 me011|and we would end up with two corpora.|s
-fe008|well|%-
+fe008|well|%--
 me011|and i don't want that to happen.|s
 fe008|yeah.|b
-fe008|i agree.|s^aa
-me011|so we have to make it convenient for them to make changes that they want to make.|s^cs
-fe008|well|%-
+fe008|i agree.|aa
+me011|so we have to make it convenient for them to make changes that they want to make.|cs
+fe008|well|%--
 fe008|well i see now we're back into the same situation as when we were uh talking about allowing people to edit the transcripts before they become public.|s
 fe008|so there's a question of how easy or how hard to modify.|s
 fe008|and how that impacts the amount of changing that's done.|s
 me011|uhhuh.|b
-fe008|and i i think that it's um|s.%--
+fe008|and i i think that it's um|s
 fe008|i i have received some suggestions for change which i've made.|s
 fe008|and um i think with an acronym that's a clear case where it would be an easy change to incorporate.|s
 fe008|but it would worry me to have people um having free reign to change these things because of the need to have consistent conventions.|s
 fe008|and people who are only just visiting the data might not have a sense of the larger system.|s
-fe016|yeah that's what i would be worried about too.|s^aa|s^na
-me018|well i think|s.%-
-me018|yeah i think there are probably ways that you can say that you know only certain users are allowed to change things.|fg|s
+fe016|yeah that's what i would be worried about too.|aa
+me018|well i think|s
+me018|yeah i think there are probably ways that you can say that you know only certain users are allowed to change things.|fg
 fe008|yeah.|b
 fe008|uhhuh.|b
-me018|uh so we can probably restrict it to be|s^cs.%--
-me018|you know casual users who are just browsing can just get it read only.|s^cs
-me018|can't check in to the archive.|s^cs^e
+me018|uh so we can probably restrict it to be|cs
+me018|you know casual users who are just browsing can just get it read only.|cs
+me018|can't check in to the archive.|cs
 fe008|uhhuh.|b
-me018|whereas we could say other people you know these people are allowed to actually submit changes.|s^cs
+me018|whereas we could say other people you know these people are allowed to actually submit changes.|cs
 fe016|right.|b
-me018|i mean i i think one thing that's probably everybody would agree on is that there will never be a point where you know we can say that for sure there's no problems with any of the transcripts.|s^df
-me018|i mean there's|s.%--
-me018|uh you know something's going to get overlooked at some point.|s^df^e
-me018|or somebody's going to want to make a change somehow.|s^df^e
-me018|so we need to have some mechanism for um handling changes in the future.|s^cs
-fe008|i i agree but i have to also add one other thing which before i forget it.|s^aa|s
+me018|i mean i i think one thing that's probably everybody would agree on is that there will never be a point where you know we can say that for sure there's no problems with any of the transcripts.|df
+me018|i mean there's|s
+me018|uh you know something's going to get overlooked at some point.|df
+me018|or somebody's going to want to make a change somehow.|df
+me018|so we need to have some mechanism for um handling changes in the future.|cs
+fe008|i i agree but i have to also add one other thing which before i forget it.|aa
 fe008|which is adam's point about when you were reviewing the i b m transcripts.|s
 fe008|this was mentioned at the beginning of the meeting.|s
 fe008|you said that there were some places where it wasn't what was written already but you could see how they might have thought that's what it said.|s
 fe008|so there it's not just a right and wrong thing.|s
 fe008|sometimes there there are absolutely stretches where there is no no if you were at the meeting and you could ask the person.|s
-me018|yeah exactly.|s^aa
+me018|yeah exactly.|aa
 me018|uhhuh.|b
 fe008|maybe you know they could they could've told you.|s
 fe008|but five minutes later they might not have been able to tell you.|s
 me018|right.|b
-fe008|even if they were listening to it.|s^e
+fe008|even if they were listening to it.|e
 fe008|so sometimes it isn't right and wrong.|s
 me018|yeah.|b
 fe008|sometimes it's multiple interpretations.|s
 fe008|and|fh
-me018|good point.|s^ba
+me018|good point.|ba
 me018|yeah.|b
 fe008|now but of course this does raise the possibility of allowing um an extra annotation for you know alternative interpretations of a stretch.|s
 me018|uhhuh.|b
 fe008|but i just wanted to say it isn't simply right or wrong.|s
-me018|yeah that's a good point.|s^aa|s^ba
+me018|yeah that's a good point.|aa
 fe008|or overlooked or not overlooked.|s
 fe008|sometimes they're truly ambiguous.|s
 fe008|and um uh um|fh
 me018|uhhuh.|b
-fe008|nice to have a notation for that.|s^cs
-me013|got to go.|s.%
+fe008|nice to have a notation for that.|cs
+me013|got to go.|s
 fe008|but yeah.|fh
 me018|yeah.|b
 fe016|i mean i like that idea.|s
-fe016|because even a casual user can always send email to whoever's in charge.|s^df
+fe016|because even a casual user can always send email to whoever's in charge.|df
 me018|uhhuh.|b
-fe016|and say you know we'd like these changes.|s:s
-me011|well|%-
-fe016|and you know hopefully we'll give them a response.|s^rt
-me011|i just i don't|s.%-
-fe016|and if they really do it a lot and they say we're a casual user but we want a chance to change the transcripts then we can face that if it happens.|s:s
-me011|i don't see that this is|s.%-
+fe016|and say you know we'd like these changes.|s
+me011|well|%--
+fe016|and you know hopefully we'll give them a response.|rt
+me011|i just i don't|s
+fe016|and if they really do it a lot and they say we're a casual user but we want a chance to change the transcripts then we can face that if it happens.|s
+me011|i don't see that this is|s
 me011|yep.|b
-me011|can you write unread on that?|qy^t3
+me011|can you write unread on that?|t3
 fe016|but|fh
-me011|yeah thank you.|s^aa^t3|s^ft^t3
+me011|yeah thank you.|aa
 fe016|i don't really see the people at u w that i know of right now making huge investing huge amounts of time in changing transcripts.|s
-fe016|but i could be wrong.|s^bd^df
-me011|probably not transcripts.|s^na
-me011|but it would be nice to have one mechanism for all the files.|s^cs^df
+fe016|but i could be wrong.|bd
+me011|probably not transcripts.|na
+me011|but it would be nice to have one mechanism for all the files.|cs
 me011|and they're certainly going to want to change tools.|s
 fe016|yeah.|b
 me011|and so you know it's the same as source code.|s
 me011|you you release source code at some point.|s
 me011|and either you have to do everything or you share responsibility.|s
-me018|yeah i mean a lot of the open source projects face this same problem.|fg|s
-fe016|right.|s^aa
+me018|yeah i mean a lot of the open source projects face this same problem.|fg
+fe016|right.|aa
 me018|you know anybody can check out the code.|s
 me018|but not everybody can check it in.|s
-fe016|right and there's some happy medium.|s^aa|s
-me018|yeah.|s^bk
+fe016|right and there's some happy medium.|aa
+me018|yeah.|bk
 fe016|and we don't know what that is yet until we get feedback from people.|s
-fe016|but what if it's okay to just handle it with sort of a person in charge of the philosophy behind the changes?|qh^cs
-fe016|and some people with permissions maybe by request to make changes.|s^cs^e
+fe016|but what if it's okay to just handle it with sort of a person in charge of the philosophy behind the changes?|cs
+fe016|and some people with permissions maybe by request to make changes.|cs
 fe016|that we don't just give people permissions if they're not going to make changes.|s
 fe016|because i've overwritten a a file by mistake.|s
 fe016|not wanting to have done that.|s
-fe016|because i didn't think i had permission when i did.|s^df^rt
+fe016|because i didn't think i had permission when i did.|df
 me011|uhhuh.|b
-fe016|um and then just seeing if that is enough to to handle the transcript changes.|s^cs
+fe016|um and then just seeing if that is enough to to handle the transcript changes.|cs
 fe008|uhhuh.|b
 fe016|i'm just worried about letting everybody go in and make changes.|s
-fe016|because it's real easy when you're trying to i don't know run alignments and there's a word you want to fix to go in and do that and then mess up other things.|s^df
+fe016|because it's real easy when you're trying to i don't know run alignments and there's a word you want to fix to go in and do that and then mess up other things.|df
 fe016|if you don't know you know the overall philosophy behind the the conventions.|s
 fe008|uhhuh.|b
 me011|right.|b
 me018|then there is also the possibility remember in c v s when we talk about making changes there's sort of two types that can be made.|s
-fe008|and it|s.%-
+fe008|and it|s
 fe008|uhhuh.|b
-me011|you can back everything out.|s^t3
+me011|you can back everything out.|t3
 me018|to your local or to the global.|s
 fe016|uhhuh.|b
 me018|and so people can make changes to their local.|s
-fe016|right.|s^aa
+fe016|right.|aa
 me018|and if they screw those up that's you know in their that's only on them.|s
-fe016|exactly.|s^aa
+fe016|exactly.|aa
 fe008|uhhuh.|b
 me018|it's it's the checking in part that we really care about.|s
 me018|and that we can control with you know who can check things in and stuff.|s
 me018|so we can i think we can do this.|s
-fe016|or just yeah start by make it a really tight control.|s^cs
-fe008|uhhuh.|b.%
+fe016|or just yeah start by make it a really tight control.|cs
+fe008|uhhuh.|b
 me018|uhhuh.|b
-fe016|and then as people really need the control you can ascertain whether or not to|s^cs.%-
-me018|yeah they can still check it out|fg|s.%-
-me018|yeah because they can still check out full copies and make whatever changes they want to their local copies.|fg|s^df
-fe016|right.|s^aa
+fe016|and then as people really need the control you can ascertain whether or not to|cs
+me018|yeah they can still check it out|fg
+me018|yeah because they can still check out full copies and make whatever changes they want to their local copies.|fg
+fe016|right.|aa
 me018|and it won't affect the the the global official ones at all.|s
 fe016|right.|b
-me011|right but what i want to avoid is ending up with two corpora.|s^bk|s
+me011|right but what i want to avoid is ending up with two corpora.|bk
 mn014|yeah.|b
-me018|yes.|s^bk
-me018|definitely.|s^aa.%
+me018|yes.|bk
+me018|definitely.|aa
 me011|and so if you make it too hard for them to check back in they'll check it out once.|s
 me018|yep.|b
 me011|they'll make all the changes.|s
@@ -1450,25 +1450,25 @@ me011|they'll never tell us about the changes.|s
 me018|uhhuh.|b
 me011|and we'll get two different corpora.|s
 me018|uhhuh.|b
-me011|right?|qy^d^f^g
-fe016|i think we're already going to i mean there's already some chance that different annotations different places you know|s.%--
-fe016|but you can control that by knowing you're making two corpora.|s^df
+me011|right?|d
+fe016|i think we're already going to i mean there's already some chance that different annotations different places you know|s
+fe016|but you can control that by knowing you're making two corpora.|df
 fe016|or knowing that you're adding um annotations on one version and you don't have the latest corrections maybe at that point.|s
 fe016|and then you finish the project and you realize that there were corrections made on your originals.|s
 fe016|and then you have to merge them.|s
 fe016|and the the thing that makes it okay to do that is knowing where the synch time boundaries are.|s
-fe016|because you can automatically pretty much merge things if you've only got twenty words or so in an utterance.|s^df
+fe016|because you can automatically pretty much merge things if you've only got twenty words or so in an utterance.|df
 fe016|it's when you get the whole meeting.|s
 fe016|and the synch times have changed.|s
 fe016|or you can't correspond to a previous version with synch times that you get in trouble.|s
 fe016|so|fh
-fe016|was there anything else on your list?|qy^t^tc
-me011|nope.|s^ar
-me011|shall we do some digits?|qy^rt^t^tc
-fe016|now wait are are we doing them simultaneously or one at a time?|fg|qr
-me011|i wasn't planning on doing it simultaneously.|s^nd
-fe016|all right.|s^bk
+fe016|was there anything else on your list?|t
+me011|nope.|ar
+me011|shall we do some digits?|rt
+fe016|now wait are are we doing them simultaneously or one at a time?|fg
+me011|i wasn't planning on doing it simultaneously.|nd
+fe016|all right.|bk
 me018|lee you liked that|%--
-me018|huh?|qy^d^g.%
-me011|oop ouch!|s^fe
-fe008|ooo!|s^fe
+me018|huh?|d
+me011|oop ouch!|fe
+fe008|ooo!|fe

@@ -1,74 +1,74 @@
-me018|okay.|s^bk^rt^t^tc
-me013|okay so the one one thing i knew i wanted to talk about was about uh sort of last minute stuff to uh try to get some recognition results.|s^rt^t
-mn017|recognition results.|s^bk^m
-me013|yeah.|s^aa
-mn017|for|qy^bu^d.%--
-me013|so uh on on on meeting data.|s^rt
+me018|okay.|bk
+me013|okay so the one one thing i knew i wanted to talk about was about uh sort of last minute stuff to uh try to get some recognition results.|rt
+mn017|recognition results.|bk
+me013|yeah.|aa
+mn017|for|bu
+me013|so uh on on on meeting data.|rt
 me013|and so i'm i'm not sure exactly what you're doing already.|s
-me013|and and there's some stuff i've talked to dave|s.%-
+me013|and and there's some stuff i've talked to dave|s
 mn017|well i just started recognition on the on thilo's segments.|s
-mn017|which was|s.%--
-mn017|but using the|s.%--
-mn017|the close talking microphone.|s^bsc
+mn017|which was|s
+mn017|but using the|s
+mn017|the close talking microphone.|bsc
 me013|okay so um|fg
 mn017|and you wanted i know you wanted the far field data.|s
-me013|right so so we have some stuff with no overlap uh for which there would be near near field results.|s^aa|s
+me013|right so so we have some stuff with no overlap uh for which there would be near near field results.|aa
 mn017|uhhuh.|b
 me013|we wanted to get the far field results for that.|s
 me013|and then this this real uh long shot thing would be that we'd apply dave's processing to uh potentially training and test data.|s
 mn017|uhhuh.|b
 me013|and do the look at the same thing.|s
-me013|and in talking this morning with uh chuck and with dave one thought was to use|s.%--
+me013|and in talking this morning with uh chuck and with dave one thought was to use|s
 me013|we couldn't remember how different the numbers were.|s
-me013|but if you just worked with males only and used the short training there're there're|s.%--
+me013|but if you just worked with males only and used the short training there're there're|s
 me013|uh i think chuck's recollection was that when he was doing the feature stuff it took maybe a day and a half.|s
-me013|to do the training.|s^e
-mn017|to re train?|qy^bu^d^rt
-me013|yeah.|s^aa
+me013|to do the training.|e
+mn017|to re train?|bu
+me013|yeah.|aa
 mn017|uh|h
-mn017|yeah.|s^bk^rt
+mn017|yeah.|bk
 mn017|um|fh
-mn017|that's about right.|s^ba
-mn017|actually it should probably be|s.%--
+mn017|that's about right.|ba
+mn017|actually it should probably be|s
 mn017|it depends on who else is using machines.|s
 mn017|but we have more machines now.|s
 mn017|so|fh
-me018|that's true.|s^aa
+me018|that's true.|aa
 mn017|it's more like a day probably.|s
-me013|um how much worse is the short training set than the large one in terms of the ultimate performance?|fg|qw
+me013|um how much worse is the short training set than the large one in terms of the ultimate performance?|fg
 mn017|huh it's like something like three three percent.|s
 mn017|three or four percent absolute.|s
-me013|yep.|s^aa
+me013|yep.|aa
 me013|so it's that should be fine for this i would think.|s
-me013|so we and you have the short you have short training results for the close case?|qy^bu^d^rt
-mn017|um not for meetings.|h|s^nd
-mn017|because we didn't train we didn't ever recognize with the with the small models on meeting data.|s^df
+me013|so we and you have the short you have short training results for the close case?|bu
+mn017|um not for meetings.|h
+mn017|because we didn't train we didn't ever recognize with the with the small models on meeting data.|df
 mn017|but i i have the models.|s
-mn017|so i could run|s.%-
-me013|so how do you know it's|qw.%--
+mn017|so i could run|s
+me013|so how do you know it's|qw
 me013|oh it's three percent on on uh on hub five.|s
-mn017|on|%-
-me018|hub five.|s^r
-me013|i see.|s^bk
-me013|yeah but we have the models so we could get that number.|fg|s
+mn017|on|%--
+me018|hub five.|r
+me013|i see.|bk
+me013|yeah but we have the models so we could get that number.|fg
 me013|and|fh
-me013|so the question is what|qw.%-
-mn017|i mean the the huh|s.%--
-mn017|the recognition also takes non negligible amount of time.|s^df
-mn017|so we might want to restrict it to maybe a few meetings.|s^cs
+me013|so the question is what|qw
+mn017|i mean the the huh|s
+mn017|the recognition also takes non negligible amount of time.|df
+mn017|so we might want to restrict it to maybe a few meetings.|cs
 mn017|if you want to do a full comparison.|s
-me013|it has to be enough so that|s.%--
+me013|it has to be enough so that|s
 mn017|uh|fh
 me013|i mean it's the non overlap only.|s
 me013|um and|fh
 me013|it has to be enough to be sort of comparable to what you folks were seeing and what you reported already.|s
 mn017|huh.|b
-me013|i mean|s.%-
+me013|i mean|s
 mn017|well do we have the do we have the processed data?|qr
-mn017|that that's also|s.%-
-me013|no he has to create that.|s^ar|s
+mn017|that that's also|s
+me013|no he has to create that.|ar
 me013|but but but so|fg
-mn017|right.|s^bk
+mn017|right.|bk
 me013|um|fh
 me013|we have a whole parallel set of things over here which are all with digits.|s
 mn017|huh.|b
@@ -76,73 +76,73 @@ mn017|i see.|b
 me013|and and and dave has been working with that and there's all of those issues.|s
 me013|but i know that if i go in with something that's not just digits it would be good.|s
 me013|and um so|fh
-me013|we already have these results that you|s.%--
+me013|we already have these results that you|s
 me013|i mean on uh a a a particular test set that you that we reported at h l t.|s
 mn017|uhhuh.|b
 mn017|right.|b
-me013|um it'd be nice to have something more than that.|s^cs
-me013|and we had talked about was having distant|s.%--
+me013|um it'd be nice to have something more than that.|cs
+me013|and we had talked about was having distant|s
 me013|um and then|fh
-me013|uh if we could on top of that|s^cs.%--
+me013|uh if we could on top of that|cs
 me013|i mean so this is going to be a lot worse.|s
-me013|right?|qy^d^f^g^rt
-me013|whatever comparison we one would presume.|s^e
+me013|right?|d
+me013|whatever comparison we one would presume.|e
 mn017|uhhuh.|b
-me013|but we don't know how much worse|s.%--
-mn017|right.|s^aa
-me013|uh which is certainly one interesting thing.|s^ba
+me013|but we don't know how much worse|s
+mn017|right.|aa
+me013|uh which is certainly one interesting thing.|ba
 me013|and then um|fh
 me013|dave|%--
-me013|i think we figured that it'd probably take a day or two to compute the the|s.%--
+me013|i think we figured that it'd probably take a day or two to compute the the|s
 me013|uh uh|fh
-me013|well how many hours of training|fh|qw.%-
-mn017|actually i did re train|s.%--
-mn017|i recently re trained um for another reason on the full training set.|s^df
-mn017|and that took only i think it took only two days.|s^df
+me013|well how many hours of training|fh
+mn017|actually i did re train|s
+mn017|i recently re trained um for another reason on the full training set.|df
+mn017|and that took only i think it took only two days.|df
 me013|yeah.|b
 mn017|so it's actually conceivable to do use the full training set.|s
-me013|yeah but we also have to do this other processing so having a smaller training set.|s^aap|s^ng
+me013|yeah but we also have to do this other processing so having a smaller training set.|aap
 me013|if it's only a few percent difference it might be be worth doing it.|s
-mn017|oh i see.|s^bk
+mn017|oh i see.|bk
 me013|how big is the small training set?|qw
 me013|do you remember?|qy
 mn017|huh uh hhh.|b
-mn017|i don't know.|s^no
+mn017|i don't know.|no
 mn017|something something like something between thirty and fifty hours maybe.|s
-mn017|i i forget the|s.%-
+mn017|i i forget the|s
 me013|it's around there.|s
-me013|and and and male is roughly half of that?|qy^bu^d^rt
-mn017|right.|s^aa
-me013|or|qrr^g.%--
+me013|and and and male is roughly half of that?|bu
+mn017|right.|aa
+me013|or|g
 me018|well that's only male.|s
 me013|or or or was that only male?|qrr
-mn017|uh actually i don't know.|h|s^no
+mn017|uh actually i don't know.|h
 mn017|i i can look it up.|s
-mn017|it's it's it's just|s.%--
+mn017|it's it's it's just|s
 mn017|uh i don't know the remember the the number.|s
-me018|we could only just do the male only.|s^cs
-me013|okay.|s^bk
-me018|right?|qy^d^g^rt
-me018|or will we run into trouble when we|qrr^bu.%-
+me018|we could only just do the male only.|cs
+me013|okay.|bk
+me018|right?|d
+me018|or will we run into trouble when we|bu
 mn017|well the males account for most of this meeting data anyhow.|s
-me018|yeah.|s^bk
+me018|yeah.|bk
 mn017|so|fh
-mn017|yeah i would say we you do only males.|s^aa|s^cs^na
-me013|yeah.|s^bk
+mn017|yeah i would say we you do only males.|aa
+me013|yeah.|bk
 me013|so|fg
 me013|yeah so that's certainly part of the issue is that right now he's he hasn't written his stuff for efficiency.|s
-me013|yeah it's it's in matlab.|fh|s
+me013|yeah it's it's in matlab.|fh
 me013|and so on.|s
 me013|and and uh it's not an impossible amount of time.|s
 mn017|uhhuh.|b
-me013|we we were guesstimating it was like one and a half times faster than real time or something.|s^rt
+me013|we we were guesstimating it was like one and a half times faster than real time or something.|rt
 me013|so if there's thirty hours of data you can calculate that he can do uh the enhancement in a day.|s
 me013|and something.|s
 mn017|uhhuh.|b
 me013|so|fh
 me013|but if we were dealing with two hundred hours or something i think it'd be prohibitive.|s
 mn017|no it's definitely it's less than a hundred hours for sure.|s
-mn017|it's|s.%--
+mn017|it's|s
 me013|yeah.|b
 mn017|it's probably actually uh it's uh i think it's around thirty hours.|s
 mn017|just for for one gender.|s
@@ -150,8 +150,8 @@ me018|that's what i was thinking.|s
 me013|yeah.|b
 mn017|yeah.|b
 me018|yeah.|b
-me013|yeah so i mean it's a bit of a push.|fg|s
-me013|but it seems like|s.%--
+me013|yeah so i mean it's a bit of a push.|fg
+me013|but it seems like|s
 me013|okay we've got some models.|s
 me013|we've got some training data we have software that works he's got a method that helps with you know other another task.|s
 me013|um|fh
@@ -159,109 +159,109 @@ me013|it you know appears to be you know debugged.|s
 mn017|uhhuh.|b
 me013|um|fh
 me018|so so one thing i was wondering is did you already do that middle one or should we re do that one too?|qr
-mn017|no i didn't do that.|s^ar|s
-mn017|because we haven't even cut the waveforms for that.|s^df
-me018|you didn't do that okay.|s^bk^m|s^bk
-me018|yeah that's what i was going to say next.|s^aa|s
+mn017|no i didn't do that.|ar
+mn017|because we haven't even cut the waveforms for that.|df
+me018|you didn't do that okay.|bk
+me018|yeah that's what i was going to say next.|aa
 mn017|so|fh
-me018|we have to cut the uh|s.%--
+me018|we have to cut the uh|s
 mn017|right.|b
 mn017|so|fh
 me018|so is morgan is the plan to just pick one of the far field mikes?|qy
 me018|uh|fh
 mn017|and there's a bit of a question whether you want to use um what segmentations you want to use.|s
-me013|yes.|s^aa
+me013|yes.|aa
 mn017|uh|fh
-mn017|uh david just|s.%--
-mn017|um i'm sorry.|s^fa
+mn017|uh david just|s
+mn017|um i'm sorry.|fa
 mn017|don just uh created a new version of the first meetings that we had previously recognized.|s
 mn017|but with different segmentation.|s
 mn017|and so um|fh
-mn017|it would be nice|s^cs.%--
-mn017|i mean if the results are comparable to what we had before|s^df.%--
-mn017|to use those segmentations.|s^cs
-mn017|because then we could claim that everything's automatic.|s^df
-me018|do you know when he'll have the the comparison?|qy^rt
-mn017|right?|qy^d^f^g
-mn017|well i'm as i said i just started the recognizer um|s.%--
+mn017|it would be nice|cs
+mn017|i mean if the results are comparable to what we had before|df
+mn017|to use those segmentations.|cs
+mn017|because then we could claim that everything's automatic.|df
+me018|do you know when he'll have the the comparison?|rt
+mn017|right?|d
+mn017|well i'm as i said i just started the recognizer um|s
 mn017|it will uh it will probably be a couple hours before before i have some results.|s
-me013|oh well that's not bad.|s^bk|s^ba
-me018|oh okay.|s^bk
+me013|oh well that's not bad.|bk
+me018|oh okay.|bk
 mn017|so|fh
 me018|so because i don't think the new data will be ready uh for a couple days probably.|s
-me013|you mean the training.|s^bu
+me013|you mean the training.|bu
 me018|so|fh
-me018|the training.|s^m^na
-mn017|but the segmentations matter for the filtering.|s^bu
+me018|the training.|m
+mn017|but the segmentations matter for the filtering.|bu
 me013|yeah.|b
-mn017|right?|qy^d^g^rt
+mn017|right?|d
 mn017|because|%--
-me013|for the test.|s^aap
-mn017|for the test set yeah.|s^bk^m|s^bk
+me013|for the test.|aap
+mn017|for the test set yeah.|bk
 mn017|so|fh
-me013|yeah|s^aa.%-
-me018|yeah.|s^aa
-mn017|need to be|s.%--
-mn017|but first first of course you would want to process the training data.|s^cs
-mn017|because we want to get that started.|s^cs
-me013|right.|s^aa
+me013|yeah|aa
+me018|yeah.|aa
+mn017|need to be|s
+mn017|but first first of course you would want to process the training data.|cs
+mn017|because we want to get that started.|cs
+me013|right.|aa
 mn017|yeah.|b
 me013|yeah.|b
-me013|i mean it it'd be really great if it was all automatic but i think that you know given the pressure of time if|fg|s.%--
+me013|i mean it it'd be really great if it was all automatic but i think that you know given the pressure of time if|fg
 me013|i mean since you're going to find out in a short amount of time that's great.|s
 mn017|uhhuh.|b
-me013|but if if it doesn't work out i think we would rather charge ahead with the older segmentations.|s^cs
+me013|but if if it doesn't work out i think we would rather charge ahead with the older segmentations.|cs
 mn017|uhhuh.|b
-mn017|right.|s^bk
+mn017|right.|bk
 me013|and um|fh
 me013|and we were going to use one of the p z m's.|s
-me013|i i don't know what|s^no.%--
-me013|probably whatever one you've been using for for for the digits.|s^cs
+me013|i i don't know what|no
+me013|probably whatever one you've been using for for for the digits.|cs
 me018|i think it's that one.|s
-me018|right?|qy^d^g^rt
-me013|is it this one?|qy^rt
+me018|right?|d
+me013|is it this one?|rt
 me026|it's f.|s
 me018|f.|s
-me018|yeah that's it.|s^aa|s
-me013|i i'd which|s.%-
-me013|that's f?|qy^bu^d^rt
-me013|how do you know?|qw^rt
-me018|that's f.|s^m^na
+me018|yeah that's it.|aa
+me013|i i'd which|s
+me013|that's f?|bu
+me013|how do you know?|rt
+me018|that's f.|m
 me018|it's the second nearest the machine room.|s
-me013|oh.|s^bk
-me013|bien sur|s^ft.%--
+me013|oh.|bk
+me013|bien sur|ft
 me013|all right so|fg
 me013|bet they'll have fun with that one.|s
 me013|okay so.|fh
 me013|uh|fh
-me018|okay so uh i just want to make sure i understand what we need to run.|fg|s
+me018|okay so uh i just want to make sure i understand what we need to run.|fg
 me018|um|fh
-me018|let's see.|s^t1
-me018|so it's|s.%--
-me018|okay so if we're talking about|s.%--
-me018|let's let's assume that we're going to use the new segmentations.|s^co
+me018|let's see.|t1
+me018|so it's|s
+me018|okay so if we're talking about|s
+me018|let's let's assume that we're going to use the new segmentations.|co
 me018|we need to um run recognition just looking at the no overlap column.|s
-me018|basically we have to do recognitions for all three of those cases.|s^bu
-me018|right?|qy^d^g^rt
+me018|basically we have to do recognitions for all three of those cases.|bu
+me018|right?|d
 me013|uhhuh.|b
-me013|right.|s^aa
-me018|um because we're going to be using the just the male uh model.|s^df
+me013|right.|aa
+me018|um because we're going to be using the just the male uh model.|df
 me018|short training set for the male.|s
 mn017|uhhuh.|b
-me018|so we need to have results for all three of those.|s^cs
-me018|even though we have|s.%-
-mn017|maybe you should limit ourselves to the meeting recorder meetings.|s^arp^cs^rt
-me018|okay.|s^bk
+me018|so we need to have results for all three of those.|cs
+me018|even though we have|s
+mn017|maybe you should limit ourselves to the meeting recorder meetings.|arp
+me018|okay.|bk
 mn017|um|fh
-mn017|if you were going to cut down on the test set i would suggest that.|s^cs
-me013|well maybe.|h|s^am
+mn017|if you were going to cut down on the test set i would suggest that.|cs
+me013|well maybe.|h
 me013|but i i mean how long does it take for the test?|qw
 mn017|actually the longer the robustness meetings take longer.|s
-mn017|because there's this one speaker who talks a lot.|s^rt
+mn017|because there's this one speaker who talks a lot.|rt
 mn017|and so|fh
 mn017|the um|%--
-mn017|no it's because for all the for the adaptation and normalization steps you cannot|s^df.%--
-mn017|you have to you have to uh um|s.%--
+mn017|no it's because for all the for the adaptation and normalization steps you cannot|df
+mn017|you have to you have to uh um|s
 mn017|you cannot chop it up into small pieces.|s
 mn017|so you're sort of limited by how long the longest speaker uh is speaking.|s
 mn017|so how much data there is from the the speaker who talks the most.|s
@@ -273,422 +273,422 @@ me018|right.|b
 me018|yeah.|b
 me013|but what what was your result for uh that we had at the h l t?|qw
 mn017|so|fh
-me013|was that a combination of me?|qy^e^rt
+me013|was that a combination of me?|e
 mn017|that was both types of meetings.|s
 mn017|but most but there were only two robustness meetings and four or five uh meeting recorders.|s
-me018|and if we're re doing the baseline anyways it it it would be okay.|s^bu
-mn017|right.|s^aa
-me018|to to just limit ourselves to a smaller|s^e.%--
+me018|and if we're re doing the baseline anyways it it it would be okay.|bu
+mn017|right.|aa
+me018|to to just limit ourselves to a smaller|e
 me018|how long would it take to run recognition if we did that?|qw
 mn017|oh.|h
 mn017|uh i i|h
-mn017|i don't have i don't have a good|s^no.%-
-me018|i mean is is it like a day or is it a few hours or|qo.%--
-me018|roughly.|s^e
-mn017|for everything?|qy^bu^d^rt
-mn017|for all the meetings?|qy^bu^d^e^rt
+mn017|i don't have i don't have a good|no
+me018|i mean is is it like a day or is it a few hours or|qo
+me018|roughly.|e
+mn017|for everything?|bu
+mn017|for all the meetings?|bu
 me018|for|%--
-me018|yeah let's say we just did the meeting recorder meetings for our test set.|s^aa|s
+me018|yeah let's say we just did the meeting recorder meetings for our test set.|aa
 mn017|uh|h
 mn017|um|h
 mn017|it's probably more than a day.|s
 mn017|but probably less than two.|s
-me018|oh really?|qy^bh
-me018|i didn't realize each test took that long.|s^no
+me018|oh really?|bh
+me018|i didn't realize each test took that long.|no
 mn017|well no i mean for all the meetings.|s
-mn017|because it's again it's|s^df.%--
+mn017|because it's again it's|df
 mn017|um|fh
-me013|so you were doing like|s.%-
-mn017|so each meeting each meetings takes uh something like|s.%--
-mn017|again we we i ran when we ran these we were sort of short on machines.|s^bd^df
+me013|so you were doing like|s
+mn017|so each meeting each meetings takes uh something like|s
+mn017|again we we i ran when we ran these we were sort of short on machines.|bd
 mn017|and um|fh
 me018|uhhuh.|b
-mn017|i don't know.|s^df^no
+mn017|i don't know.|df
 mn017|i i would estimate maybe four hours per meeting.|s
-mn017|something like that.|s^e
-me018|four hours per meeting.|s^bk^m
-mn017|right.|s^aa
-me018|wow!|s^fe
-me013|yeah but if you so if you do half a dozen meetings that's that's about a day.|fg|s
+mn017|something like that.|e
+me018|four hours per meeting.|bk
+mn017|right.|aa
+me018|wow!|fe
+me013|yeah but if you so if you do half a dozen meetings that's that's about a day.|fg
 me013|we also have more machines now.|s
-mn017|right right so that's why i'm saying i'm not sure how they would scale with more machines.|s^aa|s
+mn017|right right so that's why i'm saying i'm not sure how they would scale with more machines.|aa
 me013|well|%--
 me013|yeah.|b
 me013|yeah.|b
-me013|i mean if we had about six a six hour test set's not bad.|s^ba^bu
-me013|right?|qy^d^g^rt
-mn017|right.|s^aa
-me018|six hour test set.|s^m^t1
-me018|six meetings okay.|s|s^aa
-me013|you know?|qy^d^f^g
-me013|right?|qy^d^f^g
-me013|i mean a lot of the evaluations have been|s.%-
+me013|i mean if we had about six a six hour test set's not bad.|ba
+me013|right?|d
+mn017|right.|aa
+me018|six hour test set.|m
+me018|six meetings okay.|s
+me013|you know?|d
+me013|right?|d
+me013|i mean a lot of the evaluations have been|s
 mn014|yeah we did.|s
-mn017|we have m r|s.%--
-mn017|two we have two three four|s^t1.%--
+mn017|we have m r|s
+mn017|two we have two three four|t1
 mn017|i think there are four meeting recorder meetings that we worked with.|s
-me013|four that you worked with?|qy^bu^d^m^rt
-mn014|i think it's|s.%--
+me013|four that you worked with?|bu
+mn014|i think it's|s
 mn014|is it the same set as the alignments?|qy
-mn017|yeah.|s^aa
+mn017|yeah.|aa
 mn014|i think it's five meeting recorder meetings.|s
-mn017|five?|qy^bu^d^rt
-mn017|okay.|s^bk
-me013|that would be okay too.|s^ba
-me013|i mean i'm|s.%--
-me013|so if they have a set that they worked with|s.%--
+mn017|five?|bu
+mn017|okay.|bk
+me013|that would be okay too.|ba
+me013|i mean i'm|s
+me013|so if they have a set that they worked with|s
 me013|and you you got|%--
-me013|did you do similarly in performance between them and the other meetings?|qy^rt
-me013|or was it|qrr.%--
-mn017|uh with the compared to robustness?|h|qy^bu^d^rt
-mn017|yeah.|s^aa
+me013|did you do similarly in performance between them and the other meetings?|rt
+me013|or was it|qrr
+mn017|uh with the compared to robustness?|h
+mn017|yeah.|aa
 mn017|the big variation is by whether it's a native speaker or not.|s
 me013|yeah.|b
-mn017|and whether it's um|s.%--
-mn017|uh i think that's the actually|s.%--
+mn017|and whether it's um|s
+mn017|uh i think that's the actually|s
 mn017|and and of course what um you know whether it's lapel or uh headset microphone.|s
-me013|and overlap or not.|s^2
-mn017|yeah.|s^aa
+me013|and overlap or not.|2
+mn017|yeah.|aa
 me013|yeah.|b
-me013|so maybe just with the the the meeting recorder set of the that you did before.|s^cs^rt
-mn017|and we can exclude we don't need to recognize the non natives.|s^cs
-mn017|because we know that|s^df.%--
-mn017|i mean in fact we excluded them previously from|s.%--
-me013|yeah so we want to do the same same thing.|s^aa|s^cs^na
-mn017|right.|s^aa
-me018|okay so all right so if we got a list of the uh segmentations for these five meeting recorder meetings we could start uh the first two experiments going right away using the short male models.|fg|s
-mn017|uhhuh.|b^rt
-me018|so you could get those going while dave is um creating waveforms for the re training the short male models.|s^cs^r
-me013|yeah once we know which segmentations we're using.|s^aa|s^aap
+me013|so maybe just with the the the meeting recorder set of the that you did before.|cs
+mn017|and we can exclude we don't need to recognize the non natives.|cs
+mn017|because we know that|df
+mn017|i mean in fact we excluded them previously from|s
+me013|yeah so we want to do the same same thing.|aa
+mn017|right.|aa
+me018|okay so all right so if we got a list of the uh segmentations for these five meeting recorder meetings we could start uh the first two experiments going right away using the short male models.|fg
+mn017|uhhuh.|rt
+me018|so you could get those going while dave is um creating waveforms for the re training the short male models.|cs
+me013|yeah once we know which segmentations we're using.|aa
 me013|yeah.|b
-me018|right okay okay.|s^aa|s^bk
-me018|and then|s.%--
-me018|okay so do we also want to run that bottom experiment without re training the short male models on his thing?|s^bk|qy^bu^rt
+me018|right okay okay.|aa
+me018|and then|s
+me018|okay so do we also want to run that bottom experiment without re training the short male models on his thing?|bk
 me018|did you want that?|qy
-me018|or|qrr.%--
-me013|um i i agree that that would be an interesting thing to do.|h|s^ba
-me013|but i sort of regard it as secondary.|s^ng^rt
-me018|okay so we'll save that.|s^bk|s
+me018|or|qrr
+me013|um i i agree that that would be an interesting thing to do.|h
+me013|but i sort of regard it as secondary.|ng
+me018|okay so we'll save that.|bk
 me013|so if there's sort of machines sitting around and people sitting around and they're waiting for other things to finish then sure.|s
 me013|but|fh
-me013|uh chuck had been asking about that earlier as kind of a control to know um|s.%--
+me013|uh chuck had been asking about that earlier as kind of a control to know um|s
 me013|because i mean you could imagine a fantasy in which you said that dave's processing made the uh far microphone like the near microphone.|s
 me013|in which case you shouldn't have to actually re train.|s
 mn017|uhhuh.|b
 me013|but it's it's not really true.|s
-me013|it's it's sort of fantasy.|s^ba
+me013|it's it's sort of fantasy.|ba
 me013|it does it does muck up the data in in some funny ways.|s
 mn017|uhhuh.|b
 me013|and so|fh
 me013|i'm i'm kind of questioning that.|s
-me018|well it|%-
+me018|well it|%--
 me013|but but|fg
 me018|well on a more basic level also it means that that third experiment there are actually two differences between the other experiments.|s
-me018|not one.|s^e
-me013|right.|s^aa
-me018|so it's hard to know|s^ba.%-
-me013|it involves re training and it involves a|s.%-
-me018|right.|s^aa
-me013|uh that's right.|s^na
-me013|i mean the other thing which which it might come in to is if there was some problem in the re training.|s^cs^rt
-me013|i mean maybe you'd just have some mechanical thing we do wrong.|s^e
+me018|not one.|e
+me013|right.|aa
+me018|so it's hard to know|ba
+me013|it involves re training and it involves a|s
+me018|right.|aa
+me013|uh that's right.|na
+me013|i mean the other thing which which it might come in to is if there was some problem in the re training.|cs
+me013|i mean maybe you'd just have some mechanical thing we do wrong.|e
 me018|uhhuh.|b
 me013|uh that uh since dave's experience was that it didn't help as much if you didn't re train but it does help some that we would hopefully see that.|s
 me018|right.|b
 me018|uhhuh.|b
-me013|so that that's that's true.|s^aa
-mn017|wait did|qy.%--
+me013|so that that's that's true.|aa
+mn017|wait did|qy
 mn017|so when you used original the original models and you just process the test set in this way do you get any do you get decent performance or not?|qr
-me026|i i i think um for the far mike h t k system i was using it did help somewhat.|s^rt
+me026|i i i think um for the far mike h t k system i was using it did help somewhat.|rt
 mn017|uhhuh.|b
-me026|i could re check that.|s^rt
+me026|i could re check that.|rt
 me026|but it was such a bad baseline that i don't know what that means.|s
 mn017|uhhuh.|b
-mn017|right.|s^bk
-mn017|right.|s^bk
-mn017|okay.|s^bk
+mn017|right.|bk
+mn017|right.|bk
+mn017|okay.|bk
 me026|because the baseline word error rate was around forty percent on digits.|s
 mn017|uhhuh.|b
-me018|on the far field?|qy^bu^d^rt
-me026|right.|s^aa
+me018|on the far field?|bu
+me026|right.|aa
 me013|right so|fg
-mn017|okay well i'll i can get started on the|fg|s^cs^t^tc.%--
-mn017|well the first the one that already has a|s.%--
-mn017|cross there.|s^t1
-mn017|we need to re do that with small models.|s^cs
-mn017|right?|qy^d^g^rt
-me013|yeah.|s^aa
+mn017|okay well i'll i can get started on the|fg
+mn017|well the first the one that already has a|s
+mn017|cross there.|t1
+mn017|we need to re do that with small models.|cs
+mn017|right?|d
+me013|yeah.|aa
 mn017|and then have to ask um i guess don to uh cut the um cut the segments for the for the distant mike.|s
-mn017|uh uh that's so we would be using the same channel for each for everything?|qy^bu^d^rt
-me013|yeah.|s^aa
-me018|uhhuh.|s^aa
-mn017|okay.|s^bk
+mn017|uh uh that's so we would be using the same channel for each for everything?|bu
+me013|yeah.|aa
+me018|uhhuh.|aa
+mn017|okay.|bk
 mn017|so|fh
-me013|i mean do you do you have to rely on his segmentations at all to do the top one?|qy^rt
-mn017|no no we would use the same segmentations.|s^ar|s
+me013|i mean do you do you have to rely on his segmentations at all to do the top one?|rt
+mn017|no no we would use the same segmentations.|ar
 mn017|but he needs to extract extract the form segments from a different channel.|s
-me013|oh okay.|s^bk
-me013|got it.|s^bk
-mn017|right.|s^bk
-me018|so when you said you were going to start that top one were you going to use the new segmentations?|qy^rt
+me013|oh okay.|bk
+me013|got it.|bk
+mn017|right.|bk
+me018|so when you said you were going to start that top one were you going to use the new segmentations?|rt
 mn017|uhhuh.|b
-mn017|um yeah.|h|s^aa
-me018|okay.|s^bk
-mn017|if assuming that the performance turns out to be comparable with with the old experiments and the old segmentations.|s^e
-me018|right okay.|s^bk
-mn017|now there's the issue of|s.%--
-mn017|oh okay so there's the issue of speaker normalization.|fg|s^t^tc
+mn017|um yeah.|h
+me018|okay.|bk
+mn017|if assuming that the performance turns out to be comparable with with the old experiments and the old segmentations.|e
+me018|right okay.|bk
+mn017|now there's the issue of|s
+mn017|oh okay so there's the issue of speaker normalization.|fg
 mn017|so with the distant microphone you wouldn't know which speaker is talking.|s
-mn017|right?|qy^d^f^g^rt
-me018|can we|qy.%-
+mn017|right?|d
+me018|can we|qy
 me013|we we talked about this before.|s
 me013|i think what we were saying was that um the very fact that in both cases we're ignoring the overlap section means that um uh we're to some extent finessing that.|s
 me013|so um|fh
-me013|i think for the purposes of just determining whether a far field microphone uh what the effect of the far field microphone is we should do the same to both.|s^cs
+me013|i think for the purposes of just determining whether a far field microphone uh what the effect of the far field microphone is we should do the same to both.|cs
 mn017|uhhuh.|b
-mn017|i see so you want to cheat?|s^bk|qy^j^rt
+mn017|i see so you want to cheat?|bk
 me013|i mean|%--
-me013|we want to incorporate certain data that would not be available during final tests uh under a a full fair test of it much as we are in the all the numbers that we have so far.|s^df^ng
-mn017|okay so we assume we assume knowledge of the speakers as as um in a way that's compatible with the close talking test set.|fg|s
-mn014|oops!|s^fe^t1
-me013|yeah.|s^aa
+me013|we want to incorporate certain data that would not be available during final tests uh under a a full fair test of it much as we are in the all the numbers that we have so far.|df
+mn017|okay so we assume we assume knowledge of the speakers as as um in a way that's compatible with the close talking test set.|fg
+mn014|oops!|fe
+me013|yeah.|aa
 me013|we we simply want to determine what's the difference in performance due to being distant versus close.|s
-mn017|okay.|s^bk
-mn017|oh okay.|s^bk
-me018|so does that mean you turn off speaker normalization when you run it or you just let it do what it would do|fg|qr.%-
-mn017|no it means no it just means|s^ar|s.%--
+mn017|okay.|bk
+mn017|oh okay.|bk
+me018|so does that mean you turn off speaker normalization when you run it or you just let it do what it would do|fg
+mn017|no it means no it just means|ar
 mn017|you you group together the segments that by magic you know belong to one speaker.|s
-mn017|and and treat|s.%-
+mn017|and and treat|s
 me013|i mean to a lesser extent you had that same magic the other way too.|s
-me013|because you have leakage into other microphones.|s^bu^df
-me013|right?|qy^d^g^rt
+me013|because you have leakage into other microphones.|bu
+me013|right?|d
 me013|but it's just you're using the fact that this is where this person is.|s
-mn017|right.|s^aa
-mn017|right.|s^aa
-me013|right?|qy^d^f^g^rt
+mn017|right.|aa
+mn017|right.|aa
+me013|right?|d
 me013|so|fh
 mn017|but um|fg
-me013|it's just easier to do.|s^ba
-mn017|well in the new test actually that's not true.|s^nd
-mn017|so again if this if these new segmentations work okay then we then it's a fair it's a completely fair test.|fg|s
+me013|it's just easier to do.|ba
+mn017|well in the new test actually that's not true.|nd
+mn017|so again if this if these new segmentations work okay then we then it's a fair it's a completely fair test.|fg
 me013|yeah.|b
-me013|so how do you determine what you use to group together to be a a|qw.%-
+me013|so how do you determine what you use to group together to be a a|qw
 mn017|you group together all the data coming in through one channel.|s
 mn017|and where thilo's speech detector has has determined that there is speech.|s
 mn017|and that speech is is deemed to come from that speaker whether that's true or not.|s
 mn017|so if you get some cross talk from another microphone then you just process this it as if it were from that speaker.|s
 me013|the only other alternative would be to turn off speaker adaptation in both.|s
-mn017|well that's more of a problem.|s^ng
-mn017|i mean because it's you can just pretend it's some kind of|s^df.%--
-mn017|i mean you can pretend it's all from one speaker.|s^bd
-mn017|and do all this processing the same.|s^bd
-mn017|but then you're going to get results that are worse on account of not doing proper speaker normalization.|s^df
+mn017|well that's more of a problem.|ng
+mn017|i mean because it's you can just pretend it's some kind of|df
+mn017|i mean you can pretend it's all from one speaker.|bd
+mn017|and do all this processing the same.|bd
+mn017|but then you're going to get results that are worse on account of not doing proper speaker normalization.|df
 me013|uhhuh.|b
-mn017|and you're going to have|s.%--
-mn017|so you could certainly do better than that by doing for instance uh cluster the segments.|s^cs
+mn017|and you're going to have|s
+mn017|so you could certainly do better than that by doing for instance uh cluster the segments.|cs
 mn017|which is what we do say in a broadcast news system where you don't have speaker labels.|s
 mn017|but that would be another processing step that i'm i would have to debug first and so forth.|s
 me018|uhhuh.|b
 mn017|and so we want to avoid that.|s
 mn017|so i agree with you we should we should uh do the you know this sort of cheating experiment.|s
-me013|okay.|s^bk
-me013|yeah and so that will tell us what the difference it between the mikes.|fg|s
-me013|and then uh in order to|s.%--
-me013|the the other difference that we'd have to take care of is that|s.%--
-me013|uh yeah we we don't have a mike that uh is particular to a person.|fh|s
+me013|okay.|bk
+me013|yeah and so that will tell us what the difference it between the mikes.|fg
+me013|and then uh in order to|s
+me013|the the other difference that we'd have to take care of is that|s
+me013|uh yeah we we don't have a mike that uh is particular to a person.|fh
 me013|and so we'll have to do some clustering.|s
 me013|and that'll be another another uh issue too.|s
 mn017|uhhuh.|b
-me013|but it it i could be wrong.|s^bd
-me013|but it seems to me that that the speaker|s.%--
+me013|but it it i could be wrong.|bd
+me013|but it seems to me that that the speaker|s
 me013|the the level of degradation that you get from having the distant mike in a normal acoustic is much greater than what you get from say not applying speaker adaptation or applying speaker adaptation.|s
 mn017|uhhuh.|b
-me013|i think that the|s.%--
+me013|i think that the|s
 me013|i mean we'll see.|s
 me013|but but i think that the kind of gains that we've seen from speaker adaptation on hub five sort of things are like a few percent.|s
-me013|right?|qy^d^f^g
+me013|right?|d
 me013|and|fh
-mn017|it's not just speaker adaptation.|s^nd
+mn017|it's not just speaker adaptation.|nd
 mn017|it's the whole feature normalization process.|s
 mn017|it's uh all that is speaker based.|s
-mn017|you know so we|s.%--
-mn017|so in that i'm|s.%--
+mn017|you know so we|s
+mn017|so in that i'm|s
 mn017|um|fh
 mn017|you know the most important of course is the cepstral mean subtraction.|s
-me013|yeah.|s^aa
-mn017|and that|s.%--
-mn017|i don't know if we|s.%--
-mn017|we never really|s.%--
-mn017|i don't remember|s^no.%--
-mn017|because it's so far so long ago that we didn't do that on a per speaker basis.|s^df
-me013|it doesn't make that much difference i think.|s^nd
-mn017|but|%-
-me013|i would doubt that it would be a huge amount of difference for that.|s^e
-me013|so i mean i i think that that difference would definitely be marginal.|s^ba
-me013|i think the main thing is to do something.|s^cs
-me013|to do some cepstral mean subtraction on some level.|s^cs^e
-me013|and uh so what's different about this processing is just that we're doing it at a much longer time scale.|fh|s
+me013|yeah.|aa
+mn017|and that|s
+mn017|i don't know if we|s
+mn017|we never really|s
+mn017|i don't remember|no
+mn017|because it's so far so long ago that we didn't do that on a per speaker basis.|df
+me013|it doesn't make that much difference i think.|nd
+mn017|but|%--
+me013|i would doubt that it would be a huge amount of difference for that.|e
+me013|so i mean i i think that that difference would definitely be marginal.|ba
+me013|i think the main thing is to do something.|cs
+me013|to do some cepstral mean subtraction on some level.|cs
+me013|and uh so what's different about this processing is just that we're doing it at a much longer time scale.|fh
 me018|uhhuh.|b
 mn017|uhhuh.|b
-me013|right?|qy^d^f^g
+me013|right?|d
 me013|but um|fh
 mn017|and by the way|fg
-me026|what|%-
+me026|what|%--
 mn017|it's actually we're we're already if we use the same segmentations that we use for the close talking microphone then the segmentations assume that we have access to all channels.|s
 mn017|and cross correlate them.|s
-me013|that's right.|s^aa
+me013|that's right.|aa
 mn017|so there's no point in not using that knowledge for speaker identification.|s
-me013|yeah.|s^bk
-me018|uhhuh.|s^bk
-me026|uh i think also for the log spectral mean subtraction uh we want to know which speaker's talking when.|s^cs
+me013|yeah.|bk
+me018|uhhuh.|bk
+me026|uh i think also for the log spectral mean subtraction uh we want to know which speaker's talking when.|cs
 me013|yeah.|b
-me026|because we want to chain together the audio from one particular speaker to calculate the mean.|s^df
+me026|because we want to chain together the audio from one particular speaker to calculate the mean.|df
 mn017|yeah.|b
-me026|and subtract it.|s^e
-me026|and we don't|s.%-
-mn017|right.|s^aa
-me013|right.|s^bk
+me026|and subtract it.|e
+me026|and we don't|s
+mn017|right.|aa
+me013|right.|bk
 mn017|okay.|b
-me013|um yeah i guess.|h|s^am
+me013|um yeah i guess.|h
 me013|but um|fh
-me013|i also think that again once we got into it that um using some kind of clustering would probably work reasonably well there too.|s^bd^cs
-me013|certainly for the the two microphone case|s.%--
+me013|i also think that again once we got into it that um using some kind of clustering would probably work reasonably well there too.|bd
+me013|certainly for the the two microphone case|s
 me013|which we're not going to mess with because it's another whole deal with the low quality microphones.|s
 me013|um|fh
 me013|we ought to be able to at least tell that it appears that things are coming from a particular direction.|s
 me026|uhhuh.|b
 me013|so we ought to be able to use that information um as well.|s
-me013|but i think we might be able to do not too bad a job of separating out uh segments that appear to come from a single speaker.|s^cs
-me013|both in terms of acoustic similarity and in terms of direction.|s^e
-me013|so i mean but that's another research thing to do.|s^bd
-me013|and probably won't get done the next week.|s^bd^e
-mn017|right so what what is the schedule here?|fg|qw^rt
+me013|but i think we might be able to do not too bad a job of separating out uh segments that appear to come from a single speaker.|cs
+me013|both in terms of acoustic similarity and in terms of direction.|e
+me013|so i mean but that's another research thing to do.|bd
+me013|and probably won't get done the next week.|bd
+mn017|right so what what is the schedule here?|fg
 me013|well i mean i'm i'm leaving for for the uh the new orleans meeting uh next saturday.|s
 me013|and and um|fh
 mn017|uhhuh.|b
 me013|it'd be kind of nice to have some results at least a day or two before that so that i could figure out what i wanted to say about it.|s
 mn017|uhhuh.|b
-mn017|oh we'll call you when you get there.|fg|s^j
-me018|you'll have email?|qy^bu^d^j
-me018|right?|qy^d^g^rt
-me013|yeah.|s^aa
+mn017|oh we'll call you when you get there.|fg
+me018|you'll have email?|bu
+me018|right?|d
+me013|yeah.|aa
 me013|uh not to mention that that uh mari's putting together this report next week too you know.|s
 mn017|uhhuh.|b
 me013|so uh|fh
 me013|what we were hoping was that over the weekend we could do uh the um calculation on the training set.|s
 mn017|uhhuh.|b
 me013|and uh|h
-me013|uh maybe you know we could by the end of the weekend we could have the top one.|s^cs
-me013|and and then early next week do these.|s^cs
+me013|uh maybe you know we could by the end of the weekend we could have the top one.|cs
+me013|and and then early next week do these.|cs
 mn017|uhhuh.|b
 me013|if we had enough machines maybe do them in parallel.|s
 mn017|uhhuh.|b
 me013|so that by the middle of the week we had had some kind of result.|s
 me013|i mean it's it's one of these hail mary kinds of things.|s
-me013|i mean it|s.%--
-me013|it uh might might not work out.|s^bd
+me013|i mean it|s
+me013|it uh might might not work out.|bd
 mn017|uhhuh.|b
 me013|but uh figured i may as well ask for it.|s
 mn017|okay.|b
 mn017|i'll ask|%--
 me018|so|fh
-mn017|the other thing is um|s.%--
+mn017|the other thing is um|s
 mn017|and i'll ask don which is easier to process in terms of creating these.|s
-mn017|the the test data for the far far microphone.|s^e
-mn017|if if it turns out that for some reason it's easier for him to use the old um the the the old|s.%--
+mn017|the the test data for the far far microphone.|e
+mn017|if if it turns out that for some reason it's easier for him to use the old um the the the old|s
 mn017|uh|fh
-me018|segmentation.|s^2
-mn017|segmentations then we'll just use that i figure.|s^bk^m|s^cs
-me013|right.|s^bk
+me018|segmentation.|2
+mn017|segmentations then we'll just use that i figure.|bk
+me013|right.|bk
 mn017|um|fh
 me018|so um|fh
 me018|i don't want you to have to be burdened with doing a lot of stuff.|s
-me018|what what can i do to|qw.%--
-me018|you said it would be easy for you to do that top one there.|s^rt
-me018|and i guess don can do the segmentations of the uh channel f.|s^rt
-mn017|uhhuh.|s^aa
+me018|what what can i do to|qw
+me018|you said it would be easy for you to do that top one there.|rt
+me018|and i guess don can do the segmentations of the uh channel f.|rt
+mn017|uhhuh.|aa
 mn017|um|h
-me018|i mean i can certainly help with uh re training the short male models.|s^cs
-mn017|right.|s^aa
+me018|i mean i can certainly help with uh re training the short male models.|cs
+mn017|right.|aa
 me018|uh once we have the new data.|s
-me013|you have models of short males?|qy^bu^d^j^rt
-mn017|yeah.|s^bk
+me013|you have models of short males?|bu
+mn017|yeah.|bk
 mn017|um right uh let's see the the|fh
-mn017|you you can i mean you could you could you could run the|s^cs.%--
+mn017|you you can i mean you could you could you could run the|cs
 mn017|um|fh
-mn017|you basically once the um the top the top one's done you could easily re run the whole set of experiments.|s^cs
-me018|the top one is done i|s^2.%-
-me018|i can re do the next one.|s^cs
-me018|yeah.|s^bk
+mn017|you basically once the um the top the top one's done you could easily re run the whole set of experiments.|cs
+me018|the top one is done i|2
+me018|i can re do the next one.|cs
+me018|yeah.|bk
 me018|uhhuh.|b
-mn017|uh i mean manage the jobs and so forth.|s^e
-me018|yeah sure.|s^bk
+mn017|uh i mean manage the jobs and so forth.|e
+me018|yeah sure.|bk
 mn017|uh um|fh
-me018|yeah the the bottom one would just be a matter of pointing it at a new set of files and kicking it off.|fg|s
-mn017|that's all|%-
-me018|so that would be|s^ba.%--
-me018|i mean not the bottom one.|s^bsc
-me018|but the middle one|s^bsc.%--
+me018|yeah the the bottom one would just be a matter of pointing it at a new set of files and kicking it off.|fg
+mn017|that's all|%--
+me018|so that would be|ba
+me018|i mean not the bottom one.|bsc
+me018|but the middle one|bsc
 mn017|uhhuh.|b
-me018|would be really easy once you've got the top one going.|s^ba
+me018|would be really easy once you've got the top one going.|ba
 mn017|yeah.|b
-me018|i could do that.|s^cs
-mn017|right.|s^bk
-me018|okay so i guess i just need to get don to uh|s^bk|s.%--
-mn017|right so somehow the|fg|s.%--
-mn017|assuming he uses the new naming scheme then he should call the waveforms|s^cs.%--
+me018|i could do that.|cs
+mn017|right.|bk
+me018|okay so i guess i just need to get don to uh|bk
+mn017|right so somehow the|fg
+mn017|assuming he uses the new naming scheme then he should call the waveforms|cs
 mn017|the so the waveform names have the you know meeting meeting i d.|s
 mn017|and the microphone.|s
-mn017|and the um|s.%--
-mn017|i guess the channel and the microphone and the speaker um speaker|s.%--
+mn017|and the um|s
+mn017|i guess the channel and the microphone and the speaker um speaker|s
 mn017|something that identifies the speaker.|s
 me018|uhhuh.|b
 mn017|so|fh
-me018|to keep it the same but just change them all to channel f?|qy^bu^d^rt
-mn017|exactly so uh well you still need to be able to distinguish the different speakers.|s^aa|s
+me018|to keep it the same but just change them all to channel f?|bu
+mn017|exactly so uh well you still need to be able to distinguish the different speakers.|aa
 mn017|that's the key point.|s
 me018|right right.|b
-mn017|because if we want to do what we just discussed|s^df.%--
-mn017|so uh uh the the best the easiest way to do that would be to just take you know you make the channel be channel f.|s^cs
+mn017|because if we want to do what we just discussed|df
+mn017|so uh uh the the best the easiest way to do that would be to just take you know you make the channel be channel f.|cs
 me018|yeah.|b
-mn017|but then keep the speaker names the same as they would be in the old in the close talking uh version.|s^cs^e
+mn017|but then keep the speaker names the same as they would be in the old in the close talking uh version.|cs
 me018|yeah.|b
-me018|okay.|s^bk
+me018|okay.|bk
 me018|okay.|b
-me018|okay.|s^bk
-me018|and so that's something that don would do.|s^bu
-me018|right?|qy^d^g^rt
-me018|when he creates these.|s^e
-mn017|right exactly.|s^aa
-me018|okay okay.|s^bk
-me018|so will you talk to him about that?|qy^rt
+me018|okay.|bk
+me018|and so that's something that don would do.|bu
+me018|right?|d
+me018|when he creates these.|e
+mn017|right exactly.|aa
+me018|okay okay.|bk
+me018|so will you talk to him about that?|rt
 me018|or do you want me to talk to him?|qrr
 mn017|i uh i i can talk to him.|s
-me018|okay.|s^bk
-me018|and then the bottom one in terms of the test will be|s.%--
+me018|okay.|bk
+me018|and then the bottom one in terms of the test will be|s
 me018|uh|fh
-me018|that will just be a copy of the one above it except for different models from training.|s^bu
-me026|well we also have to mean subtract the test data.|s^arp^ng
-me018|uh okay.|s^bk
-me018|so we need to run|s^t1.%--
-me018|okay.|s^bk
-me018|well once we have the new uh|s.%--
+me018|that will just be a copy of the one above it except for different models from training.|bu
+me026|well we also have to mean subtract the test data.|arp
+me018|uh okay.|bk
+me018|so we need to run|t1
+me018|okay.|bk
+me018|well once we have the new uh|s
 me018|well once i do that uh second experiment we'll have the um files.|s
 me018|and i can give you those to to process.|s
-me026|okay.|s^bk
-me026|and there's um|s.%--
+me026|okay.|bk
+me026|and there's um|s
 me026|so the way this means subtraction expects to work is it expects to have um this continuous stream of audio data from a particular speaker to operate on.|s
 me026|and it goes along it with this sliding window calculating the mean using the data in the window.|s
 me026|and then subtracting that.|s
-me018|so do you create this continuous stream from the individual utterance files?|qy^rt
-me026|i mean uh|%-
-me026|that's that's how i've been doing it.|s^na
-me026|just by concatenating files together.|s^e
+me018|so do you create this continuous stream from the individual utterance files?|rt
+me026|i mean uh|%--
+me026|that's that's how i've been doing it.|na
+me026|just by concatenating files together.|e
 mn017|uhhuh.|b
-me026|um and if these files and|s.%--
+me026|um and if these files and|s
 me026|since they're individual utterance files um long silence periods are removed.|s
-me026|which is a good thing.|s^ba
-me026|because this method might estimate the mean badly if it had to face long silence periods.|s^df
+me026|which is a good thing.|ba
+me026|because this method might estimate the mean badly if it had to face long silence periods.|df
 me026|but that does mean that i need as much i need twice as much disk space as the original set.|s
 me026|because i need while i'm running it because i need to create this intermediate set um of these big files.|s
 mn017|uhhuh.|b
@@ -696,251 +696,251 @@ me018|yeah.|b
 me026|and then create the finally the mean subtracted um little files.|s
 me026|and then i can get rid of the big files.|s
 me026|but while i'm doing the processing i'll i need twice as much disk space.|s
-me018|okay i'm going to i'll check with um markham.|s^bk|s^cc
-me018|and see what happened with the the disks.|s^e
+me018|okay i'm going to i'll check with um markham.|bk
+me018|and see what happened with the the disks.|e
 me018|he went to put those on a couple of weeks ago.|s
-me018|and something|%-
+me018|and something|%--
 me013|i think markham's out on vacation.|s
-me013|i think check with dave.|s^cs
-me018|oh okay i'll ask david then.|s^bk|s
+me013|i think check with dave.|cs
+me018|oh okay i'll ask david then.|bk
 mn014|yeah.|b
 me013|yeah.|b
-me018|you haven't seen new disks pop up?|qy^bu^d
-me018|have you?|qy^g^rt
-mn014|nope.|s^ar
+me018|you haven't seen new disks pop up?|bu
+me018|have you?|g
+mn014|nope.|ar
 mn014|i was wondering if they were in.|s
-me018|okay.|s^bk
+me018|okay.|bk
 me018|yeah.|b
-mn017|well they grow them on trees now.|s^j
+mn017|well they grow them on trees now.|j
 me013|i thought they were like mushrooms.|s
-me018|well he went to put them on|s^j.%-
-mn017|just you shake them and they fall down.|s^cs^j
+me018|well he went to put them on|j
+mn017|just you shake them and they fall down.|cs
 me013|they're popping up.|s
 me018|yeah.|b
 me018|he went to put them on and then something happened.|s
-me018|and he sent around a note saying oh uh it didn't work and we'll have to schedule another time.|s:s
+me018|and he sent around a note saying oh uh it didn't work and we'll have to schedule another time.|s
 mn014|yeah.|b
 mn014|yeah.|b
 mn014|something went wrong.|s
-me018|and then|%-
-me018|didn't see|%-
-mn014|nothing happened.|s^2
-me018|nothing happened.|s^m^na
+me018|and then|%--
+me018|didn't see|%--
+mn014|nothing happened.|2
+me018|nothing happened.|m
 mn014|no yeah.|b
 me018|so|fh
 me018|i'll check with david about that.|s
 me018|okay.|b
-mn017|okay.|s^bk
+mn017|okay.|bk
 me013|yeah.|b
 me013|because we still all have the that other one going.|s
 me013|which is the uh the macrophone training.|s
-me026|right.|s^aa
+me026|right.|aa
 me026|and|fg
-me026|so so andreas um|s.%--
-mn017|uhhuh.|s^bk^rt
+me026|so so andreas um|s
+mn017|uhhuh.|bk
 me026|in u doctor speech data s r i hub five there's this uh hub five training set.|s
 mn017|uhhuh.|b
-me026|now is that the long training set there?|qy^rt
+me026|now is that the long training set there?|rt
 mn017|uhhuh.|b
 mn017|uhhuh.|b
-mn017|that's everything yeah.|s^na|s
-me026|okay.|s^bk
-mn017|so|%-
-mn017|so i can give you a list of the short version.|s^cs
-me026|okay i i think you already did actually.|s^bk|s^ng
-mn017|so you can|s.%-
-mn017|oh okay.|s^bk
-me026|okay and so say the macrophone files that are included in this short training are just a subset of the macrophone files.|fg|s^bu
-me026|right?|qy^d^g^rt
-mn017|that's right.|s^aa
-me026|okay.|s^bk
+mn017|that's everything yeah.|na
+me026|okay.|bk
+mn017|so|%--
+mn017|so i can give you a list of the short version.|cs
+me026|okay i i think you already did actually.|bk
+mn017|so you can|s
+mn017|oh okay.|bk
+me026|okay and so say the macrophone files that are included in this short training are just a subset of the macrophone files.|fg
+me026|right?|d
+mn017|that's right.|aa
+me026|okay.|bk
 me026|so so um when you you did some t i digits experiments training on macrophone.|s
 mn017|yeah.|b
 me026|um|fh
-me026|but that's not necessarily any less data than the s r i hub five|s^bu.%--
-me026|set it's not a it's not a subset of the short s r i hub five set.|s^bu
-me026|right?|qy^d^g^rt
+me026|but that's not necessarily any less data than the s r i hub five|bu
+me026|set it's not a it's not a subset of the short s r i hub five set.|bu
+me026|right?|d
 mn017|um|h
 mn017|no it is.|s
 mn017|the|%--
-mn017|sorry.|s^fa
-mn017|um can you repeat the question?|qy^rt
-me026|uh when you trained on macrophone um to do those digits experiments did you use the entire macrophone corpus?|qy^r^rt
-mn017|there it is a|s^m.%--
+mn017|sorry.|fa
+mn017|um can you repeat the question?|rt
+me026|uh when you trained on macrophone um to do those digits experiments did you use the entire macrophone corpus?|r
+mn017|there it is a|m
 mn017|yeah.|b
-mn017|no only the portion that was in the hub five training set.|s^ar|s
-me026|oh okay.|s^bk
-me013|that was in the hub five small training set?|qy^bu^d^rt
+mn017|no only the portion that was in the hub five training set.|ar
+me026|oh okay.|bk
+me013|that was in the hub five small training set?|bu
 mn017|well the hub five small training set contains as much macrophone as the large training set for historical reasons.|s
-me013|yes.|s^bk
+me013|yes.|bk
 mn017|yeah.|b
-me026|okay.|s^bk
+me026|okay.|bk
 me026|so um|fh
-mn017|so do you have that processed there then.|s^bu
-mn017|right?|qy^d^g^rt
-mn017|because you already did did didn't you already do that experiment?|qy^rt
+mn017|so do you have that processed there then.|bu
+mn017|right?|d
+mn017|because you already did did didn't you already do that experiment?|rt
 me026|i i got confused.|s
-me026|because i thought i thought you were using the whole macrophone set.|s^df^rt
+me026|because i thought i thought you were using the whole macrophone set.|df
 mn017|uhhuh.|b
-mn017|no.|s^ar
-me026|um okay.|s^bk
+mn017|no.|ar
+me026|um okay.|bk
 me026|well if if if i just need to use that subset i i can get it processed.|s
 me026|i actually got i think i got into it before.|s
 me026|and then i thought i was doing the wrong thing.|s
 mn017|uhhuh.|b
 me026|and i stopped.|s
-me026|and it it shouldn't take that long to do.|s^ba
+me026|and it it shouldn't take that long to do.|ba
 mn017|okay.|b
-mn017|right.|s^bk
-me013|okay.|s^bk
+mn017|right.|bk
+me013|okay.|bk
 mn017|and you need only the males.|s
 mn017|so|fh
-me026|oh okay.|s^bk
-me018|so basically dave so for you to get your processing going you need the list of the uh|s^bu.%--
-me018|well i guess it'll|s.%--
-me018|you'll you'll we'll need to get the segmentations.|s^bu
-me026|yeah.|s^aa
+me026|oh okay.|bk
+me018|so basically dave so for you to get your processing going you need the list of the uh|bu
+me018|well i guess it'll|s
+me018|you'll you'll we'll need to get the segmentations.|bu
+me026|yeah.|aa
 me018|figure out whether we're using the new or the old from don.|s
 mn017|uhhuh.|b
 me018|and then|%--
 me018|uh|fh
 me018|from that you need the from the segmentations you'll have the list of wavefiles that the short uh set is trained on.|s
 me018|and then you'll need disk space.|s
-me018|and once you've got those things then you can start your processing.|s^bu
-me018|right?|qy^d^g^rt
-me026|yeah.|s^aa
-me018|okay.|s^bk
-mn017|does this this|qy.%--
+me018|and once you've got those things then you can start your processing.|bu
+me018|right?|d
+me026|yeah.|aa
+me018|okay.|bk
+mn017|does this this|qy
 mn017|it's sort of not very nice to use the small training set for another reason.|s
 mn017|which is that the you also are losing on again because you don't use all the data you have for one speaker.|s
-mn017|so the normalizations you compute for your training speakers will be uh crummier than they would in the large training set.|s^ba
-mn017|so um i have to so to make it really a matching experiment i have to find|s.%--
+mn017|so the normalizations you compute for your training speakers will be uh crummier than they would in the large training set.|ba
+mn017|so um i have to so to make it really a matching experiment i have to find|s
 mn017|uh i have to use short models that were trained on normalizations that were also only estimated on the short set.|s
-mn017|which is uh|s.%-
-me018|do you have this uh|qy.%-
-mn017|i think so.|s^am
+mn017|which is uh|s
+me018|do you have this uh|qy
+mn017|i think so.|am
 mn017|i've i i have to check.|s
 mn017|in any case i could re train short models within a few hours actually at if i use machines at s r i.|s
-me013|i wonder about that though.|s^am
+me013|i wonder about that though.|am
 mn017|uhhuh.|b
 me013|i mean because all we're doing the only reason we're using the short training set is is for speed.|s
 me013|and there we're not really making any claims about using a smaller training set.|s
-mn017|yeah.|s^aa
-me013|so as long as we're not using any testing data from|s^cs.%-
-mn017|no but the thing is if if we used if we used the whole training set for normalizations then david would have to process much more data.|s^nd
+mn017|yeah.|aa
+me013|so as long as we're not using any testing data from|cs
+mn017|no but the thing is if if we used if we used the whole training set for normalizations then david would have to process much more data.|nd
 me013|yeah.|b
 mn017|which that's a that's one bottleneck for us.|s
-mn017|right?|qy^d^g^rt
-mn017|in terms of|s.%-
-me013|oh you mean for for his normalizations.|s^bk|s^bu
-mn017|yeah.|s^aa
-me013|oh oh oh i'm sorry.|s^bk|s^fa
+mn017|right?|d
+mn017|in terms of|s
+me013|oh you mean for for his normalizations.|bk
+mn017|yeah.|aa
+me013|oh oh oh i'm sorry.|bk
 mn017|right.|b
-mn017|so you want to do the exact same thing.|s^cs
-me013|right.|s^aa
-mn017|or else you'll have apples and oranges.|s^df
+mn017|so you want to do the exact same thing.|cs
+me013|right.|aa
+mn017|or else you'll have apples and oranges.|df
 me013|yeah.|b
 mn017|so|fh
-mn017|it doesn't make i don't think it makes that much of a difference.|s^bd^rt
-mn017|it's just this little detail that if you can take care of that then you should.|s^cs^df
+mn017|it doesn't make i don't think it makes that much of a difference.|bd
+mn017|it's just this little detail that if you can take care of that then you should.|cs
 me013|uhhuh.|b
 mn017|i i think i have i have the models.|s
-mn017|i have i have|s.%--
+mn017|i have i have|s
 mn017|um|fh
-mn017|let's see um|s^t1.%--
-mn017|yeah and if not i can re train those models very quickly.|fg|s
-me018|oh there's there's one other issue.|fg|s
+mn017|let's see um|t1
+mn017|yeah and if not i can re train those models very quickly.|fg
+me018|oh there's there's one other issue.|fg
 me018|uh and that is that dave throws out speakers that have less than twelve seconds of training data.|s
 me018|and he said there were a few in the macrophone set like that.|s
 me018|so do we need to wait to find out who he's going to throw out?|qy
-me018|so that we create a new set of short models that don't include those speakers.|s^e^rt
+me018|so that we create a new set of short models that don't include those speakers.|e
 mn017|uh|h
-me013|say this again.|s^br^co
-me013|sorry i missed it.|s^fa|s^df
+me013|say this again.|br
+me013|sorry i missed it.|fa
 me018|so in the problem is that if we proceed like we just described um when he goes to um create the new training data with his processing he throws out some speakers.|s
 me018|so the two training sets won't be identical.|s
 mn017|yeah.|b
-me013|he throws out some speakers that are that are very small.|s^aap
-me018|yeah have just a little bit.|s^aa|s
-mn017|yeah i don't think it'll make a matter.|fg|s^ba^nd
-me013|yeah i think there was only a few|s^aa|s.%-
-me018|okay.|s^bk
+me013|he throws out some speakers that are that are very small.|aap
+me018|yeah have just a little bit.|aa
+mn017|yeah i don't think it'll make a matter.|fg
+me013|yeah i think there was only a few|aa
+me018|okay.|bk
 me013|we thought to be the case.|s
 mn017|in fact i thought about throwing those out too.|s
-mn017|because when i heard how little speech there was for some of them i thought they can only hurt your models.|s^df
+mn017|because when i heard how little speech there was for some of them i thought they can only hurt your models.|df
 mn017|because they're again their normalizations will be all all all over the map.|s
 me018|yeah.|b
 me013|right.|b
 mn017|and you won't get very very clean models from them anyhow.|s
 mn017|so|fh
-me018|so you think it's okay then?|qy^bu^d
-mn017|yeah.|s^aa
-mn017|in fact if if you want to do this uh to speed things up um you we can leave out the macrophone data altogether.|s^cs
-mn017|that hurt|s.%--
-mn017|actually|s.%--
-mn017|oh no sorry.|s^fa
+me018|so you think it's okay then?|bu
+mn017|yeah.|aa
+mn017|in fact if if you want to do this uh to speed things up um you we can leave out the macrophone data altogether.|cs
+mn017|that hurt|s
+mn017|actually|s
+mn017|oh no sorry.|fa
 mn017|not in the short.|s
 mn017|then you have too little data.|s
-mn017|okay.|s^bk
-mn017|sorry forget that.|s^fa|s^co
+mn017|okay.|bk
+mn017|sorry forget that.|fa
 mn017|um|fh
-mn017|when you use when you go to the large training set then leaving out macrophone actually sometimes helps you.|s^df
-mn017|because it's it's just not relevant to the to the meeting and or to conversational speech anyway.|s^df
-me018|it's read.|s^2^bu^rt
-mn017|okay.|s^bk
-mn017|yeah leave it out.|s^cs
-mn017|and um in the event that i re train the short models|s.%--
-mn017|um why don't you give me a list of the files that you throw out?|qh^cs
+mn017|when you use when you go to the large training set then leaving out macrophone actually sometimes helps you.|df
+mn017|because it's it's just not relevant to the to the meeting and or to conversational speech anyway.|df
+me018|it's read.|2
+mn017|okay.|bk
+mn017|yeah leave it out.|cs
+mn017|and um in the event that i re train the short models|s
+mn017|um why don't you give me a list of the files that you throw out?|cs
 mn017|and i i'll throw them out too.|s
-me026|right.|s^bk
+me026|right.|bk
 mn017|and then we have complete completely identical training conditions.|s
-me018|we|%-
-me018|right.|s^bk
-me018|actually you should be able to figure out dave.|s^bu
-me018|right?|qy^d^f^g
-me018|once you know the segmentations uh who you're going to which speakers will get left out even before you run your processing.|s^bu
+me018|we|%--
+me018|right.|bk
+me018|actually you should be able to figure out dave.|bu
+me018|right?|d
+me018|once you know the segmentations uh who you're going to which speakers will get left out even before you run your processing.|bu
 me026|uhhuh.|b
-me018|right?|qy^d^g^rt
-me026|the segmentations?|qy^br^d^rt
-me018|yeah the segmentations from don.|s^aa|s^rt
+me018|right?|d
+me026|the segmentations?|br
+me018|yeah the segmentations from don.|aa
 mn017|but the segmentations are only they only affect the test set.|s
-me018|once we|%-
-me026|oh.|s^bk
-mn017|we're talking about the training speakers.|s^e
-me018|uh right right right right right.|s^bk
-me013|no the training set he could go through right now and see how how long the|s.%--
-mn017|right.|s^aa
-me018|right but i'm just wondering how long it will take to get that information.|fg|s
+me018|once we|%--
+me026|oh.|bk
+mn017|we're talking about the training speakers.|e
+me018|uh right right right right right.|bk
+me013|no the training set he could go through right now and see how how long the|s
+mn017|right.|aa
+me018|right but i'm just wondering how long it will take to get that information.|fg
 me026|um|h
-mn017|he already has the you already have the information.|s^bu
+mn017|he already has the you already have the information.|bu
 me026|i i have i have it for for macrophone um already i think.|s
-mn017|right?|qy^d^g
+mn017|right?|d
 me026|and um i think by tomorrow i'll have it for for the rest.|s
 mn017|uhhuh.|b
-mn017|okay all right.|s^bk
-me018|okay.|s^bk
+mn017|okay all right.|bk
+me018|okay.|bk
 mn017|okay.|b
 me013|at that one maybe.|s
 me013|uh|fg
-me013|been looking at synthesizers?|qy^bu^d^rt^t
-mn014|synthesizers?|qy^br^d^rt
+me013|been looking at synthesizers?|bu
+mn014|synthesizers?|br
 me013|you were looking at festival.|s
-mn014|yeah yeah i was doing something for the smartkom data collectioners.|s^aa|s^df
+mn014|yeah yeah i was doing something for the smartkom data collectioners.|aa
 me013|yeah.|b
 mn014|robert has taken his laptop back to germany so we needed a new synthesis machine.|s
 mn014|and we have now a sun workstation in the library which does the synthesis.|s
-mn014|and the festival speech system is running on|s.%-
-me018|sorry robert did what?|s^fa|qw^br^d^rt
-me018|robert took what?|qw^br^d^rt
-mn014|his laptop where uh which we used for the smartkom data collection for the synthesis.|s^rt
+mn014|and the festival speech system is running on|s
+me018|sorry robert did what?|fa
+me018|robert took what?|br
+mn014|his laptop where uh which we used for the smartkom data collection for the synthesis.|rt
 me018|uhhuh.|b
 mn014|and so he took it to germany.|s
 mn014|and so we couldn't do any data collection.|s
 me018|oh.|b
-me018|is he gone now?|qy^rt
+me018|is he gone now?|rt
 mn014|uh|fh
-mn014|no he's just gone to a smartkom workshop.|s^ar|s
-me018|oh oh oh oh okay.|s^bk
+mn014|no he's just gone to a smartkom workshop.|ar
+me018|oh oh oh oh okay.|bk
 mn014|and so we have now the sun in the library which can do that.|s
 me018|uhhuh.|b
 mn014|and i looked into the f zero thing and talked to to liz.|s
@@ -956,25 +956,25 @@ me013|and since it doesn't have a hook in it for uh modifying energy we'll have 
 me013|so|fh
 mn017|uhhuh.|b
 me018|uhhuh.|b
-mn017|okay.|s^bk
-me013|so rrrrr rrrrm.|s^rt
+mn017|okay.|bk
+me013|so rrrrr rrrrm.|rt
 me013|something like that.|s
-me018|are you are you interfacing to that thing with the c plus plus routines?|qy^rt
-me018|or are you is there another interface that you use?|qrr^rt
-mn014|for for festival?|qy^bu^d
-me018|yeah.|s^aa
-mn014|uh you can just use it from the|s.%--
+me018|are you are you interfacing to that thing with the c plus plus routines?|rt
+me018|or are you is there another interface that you use?|rt
+mn014|for for festival?|bu
+me018|yeah.|aa
+mn014|uh you can just use it from the|s
 mn014|yeah basically from the command line.|s
 mn014|and defining the phones whatever you want to have synthesized.|s
 me018|oh.|b
 mn014|and give the f zero targets.|s
-me018|and it saves it in a|s^2.%-
+me018|and it saves it in a|2
 mn014|and then get gives out a a waveform.|s
 mn014|and i i want to manipulate the the waveform then.|s
 me018|i see.|b
-me018|oh that's neat.|s^ba
+me018|oh that's neat.|ba
 mn017|uhhuh.|b
-me013|okay?|qy^bu^d^rt^tc
-me013|digits?|qy^bu^d^rt^tc
-me018|uh okay.|s^bk
+me013|okay?|bu
+me013|digits?|bu
+me018|uh okay.|bk
 me013|that's all folks.|z

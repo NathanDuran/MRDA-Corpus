@@ -1,40 +1,40 @@
-me018|okay.|s^bk
+me018|okay.|bk
 me013|uh|fg
-me013|somebody else should run this.|s^co
-me013|i'm sick of being the one to sort of go through and say well what do you think about this.|s^df:qo
-me013|you want to|%-
-me018|should we take turns?|qy^cs^rt
+me013|somebody else should run this.|co
+me013|i'm sick of being the one to sort of go through and say well what do you think about this.|df
+me013|you want to|%--
+me018|should we take turns?|cs
 mn052|yeah.|b
-me018|you want me to run it today?|qy^cs^d^rt
-me013|yeah why don't you run it today.|s^co^na
-me018|okay.|s^bk
-me013|okay.|s^bk
+me018|you want me to run it today?|cs
+me013|yeah why don't you run it today.|co
+me018|okay.|bk
+me013|okay.|bk
 me018|okay.|fg
 me018|um|fg
-me018|let's see maybe we should just get a list of items.|s^cs
-me018|things that we should talk about.|s^e
+me018|let's see maybe we should just get a list of items.|cs
+me018|things that we should talk about.|e
 me018|um|fh
 me018|i guess there's the usual updates.|s
 me018|everybody going around and saying uh you know what they're working on.|s
 me018|the things that happened the last week.|s
-me018|but aside from that is there anything in particular that anybody wants to bring up?|qy^rt
+me018|but aside from that is there anything in particular that anybody wants to bring up?|rt
 mn052|huh.|b
-me018|for today.|s^e^rt
-me018|no.|s^ar
-me018|okay.|s^bk
-me018|so why don't we just around and people can give updates.|s^co
+me018|for today.|e
+me018|no.|ar
+me018|okay.|bk
+me018|so why don't we just around and people can give updates.|co
 fn002|oh.|b
-me018|uh do you want to start stephane?|qy^cs^rt
-mn007|all right.|s^aa
+me018|uh do you want to start stephane?|cs
+mn007|all right.|aa
 mn007|um|fh
-mn007|well the first thing maybe is that the eurospeech paper is uh accepted.|s^rt
+mn007|well the first thing maybe is that the eurospeech paper is uh accepted.|rt
 mn007|um|fh
 mn007|yeah.|fh
-me018|this is what what do you uh what's in the paper there?|qw^rt
-mn007|so it's the paper that describe basically the um system that were proposed for the aurora.|s^rt
-me018|the one that we we submitted the last round?|qy^bu^d^rt
-mn007|right yeah.|s^aa
-me018|uhhuh.|s^bk
+me018|this is what what do you uh what's in the paper there?|rt
+mn007|so it's the paper that describe basically the um system that were proposed for the aurora.|rt
+me018|the one that we we submitted the last round?|bu
+mn007|right yeah.|aa
+me018|uhhuh.|bk
 mn052|yeah.|b
 mn007|um yeah.|fh
 mn007|so and the fff comments seems from the reviewer are good.|s
@@ -42,21 +42,21 @@ mn007|so|fh
 me018|huh.|b
 mn007|huh|fh
 mn007|yeah.|fh
-me018|where where's it going to be this year?|qw^rt
-mn007|it's uh aalborg in denmark.|s^rt
-me018|oh okay.|s^bk
-mn007|and it's|s.%--
+me018|where where's it going to be this year?|rt
+mn007|it's uh aalborg in denmark.|rt
+me018|oh okay.|bk
+mn007|and it's|s
 mn007|yeah.|fh
 mn007|september.|s
 me018|huh.|b
 mn007|huh|fh
 mn007|yeah.|fg
-mn007|then uh whhh|s.%--
+mn007|then uh whhh|s
 mn007|well i've been working on on mainly on on line normalization this week.|s
-mn007|uh i've been trying different slightly slightly different approaches.|fh|s
-mn007|um the first thing is trying to play a little bit again with the um time constant.|fh|s^e^rt
-mn007|uh second thing is uh the training of uh on line normalization with two different means.|s^e
-mn007|one mean for the silence and one for the speech.|s^e
+mn007|uh i've been trying different slightly slightly different approaches.|fh
+mn007|um the first thing is trying to play a little bit again with the um time constant.|fh
+mn007|uh second thing is uh the training of uh on line normalization with two different means.|e
+mn007|one mean for the silence and one for the speech.|e
 mn007|um|fh
 mn007|and so i have two recursions which are controlled by the um probability of the voice activity detector.|s
 mn007|huh|fh
@@ -64,241 +64,241 @@ mn007|this actually don't doesn't seem to help.|s
 mn007|although it doesn't hurt.|s
 mn007|so|fh
 mn007|but well both on line normalization approach seems equivalent.|s
-me018|are the means pretty different for the two?|qy^rt
-mn007|well they|s.%-
-mn007|yeah.|s^aa
-mn007|they can be very different.|s^na
+me018|are the means pretty different for the two?|rt
+mn007|well they|s
+mn007|yeah.|aa
+mn007|they can be very different.|na
 mn007|yeah uhhuh|fh
-me018|huh?|qy^bh
-me013|so do you maybe make errors in different places?|qy^rt
-me013|different kinds of errors.|s^e
-mn007|i didn't look uh more closely.|s^df
-mn007|um it might be yeah.|s^na
-mn007|uhhuh.|s^aa
+me018|huh?|bh
+me013|so do you maybe make errors in different places?|rt
+me013|different kinds of errors.|e
+mn007|i didn't look uh more closely.|df
+mn007|um it might be yeah.|na
+mn007|uhhuh.|aa
 mn007|um|fh
 mn007|well uh there is one thing that we can observe is that the mean are more different for for c zero and c one than for the other coefficients.|s
 mn007|and|fh
 mn007|yeah.|fh
-mn007|and yeah it the c one is|s.%--
+mn007|and yeah it the c one is|s
 mn007|there are strange strange thing happening with c one is that when you have different kind of noises the mean for the the silence portion is can be different.|s
 me018|huh.|b
 mn007|and|fh
 mn007|so when you look at the trajectory of c one it's has a strange shape.|s
 mn007|and|fh
 mn007|i was expecting the that these two mean helps.|s
-mn007|especially because of the the strange c c one shape.|s^df
-mn007|uh which can like you can have um a trajectory for the speech.|fh|s^e
-mn007|and then when you are in the silence it goes somewhere.|s^e^rt
-mn007|but if the noise is different it goes somewhere else.|s^e
-me018|oh.|s^bk
+mn007|especially because of the the strange c c one shape.|df
+mn007|uh which can like you can have um a trajectory for the speech.|fh
+mn007|and then when you are in the silence it goes somewhere.|e
+mn007|but if the noise is different it goes somewhere else.|e
+me018|oh.|bk
 mn007|so which would mean that if we estimate the mean based on all the signal even though we have frame dropping but we don't frame uh drop everything.|s
 mn007|but uh this can hurts the estimation of the mean for speech.|s
 mn007|and|fh
-mn007|huh but i still have to investigate further i think.|s^cc
-mn007|um a third thing is um that instead of having a fixed time constant i try to have a time constant that's smaller at the beginning of the utterances.|fh|s^rt
-mn007|to adapt more quickly to the something that's closer to the right mean.|s^e
+mn007|huh but i still have to investigate further i think.|cc
+mn007|um a third thing is um that instead of having a fixed time constant i try to have a time constant that's smaller at the beginning of the utterances.|fh
+mn007|to adapt more quickly to the something that's closer to the right mean.|e
 mn007|um|fh
-mn007|yeah.|s^bk
+mn007|yeah.|bk
 mn007|and then this time constant increases.|s
-mn007|and i have a threshold that|s.%--
+mn007|and i have a threshold that|s
 me013|uhhuh.|b
 mn007|well if it's higher than a certain threshold i keep it to this threshold to still uh adapt um the mean when if the utterance is uh long enough to to continue to adapt after like one second.|s
 me013|uhhuh.|b
 mn007|or|fh
 me013|uhhuh.|b
 mn007|huh|fh
-mn007|uh well this doesn't help neither.|fh|s
-mn007|but this doesn't hurt.|s^df
+mn007|uh well this doesn't help neither.|fh
+mn007|but this doesn't hurt.|df
 mn007|so well.|fh
-mn007|it seems pretty|s.%--
-me018|wasn't there some experiment you were going to try?|qy^rt
-me018|where you did something differently for each um uh i don't know whether it was each mel band or each uh um f f t bin or|s^e.%--
-me018|there was something you were going to uh some parameter you were going to vary depending on the frequency.|s^e
-me018|i don't know if that was|s^no.%--
-mn007|i guess it was|s.%--
-mn007|i don't know.|s^no
-mn007|no.|s^ar
+mn007|it seems pretty|s
+me018|wasn't there some experiment you were going to try?|rt
+me018|where you did something differently for each um uh i don't know whether it was each mel band or each uh um f f t bin or|e
+me018|there was something you were going to uh some parameter you were going to vary depending on the frequency.|e
+me018|i don't know if that was|no
+mn007|i guess it was|s
+mn007|i don't know.|no
+mn007|no.|ar
 mn007|maybe it's this this idea of having different on line normalization um tunings for the different m f c c's.|s
-me018|for each uh|s^2.%--
+me018|for each uh|2
 me013|uhhuh.|b
 mn007|but|fh
 mn007|uhhuh.|b
 me018|yeah.|fg
 me018|i i thought morgan you brought it up a couple meetings ago.|s
-me018|and then it was something about uh|s.%--
-me018|and then somebody said yeah it does seem like you know c zero is the one that's you know the major one or uh|s.%--:s.%--
-me018|i can't remember exactly what it was now.|s^no
+me018|and then it was something about uh|s
+me018|and then somebody said yeah it does seem like you know c zero is the one that's you know the major one or uh|s
+me018|i can't remember exactly what it was now.|no
 mn007|huh.|b
-mn007|yeah there|fg|s.%--
-mn007|uh actually yeah.|s^aa
-mn007|um it's very important to normalize c zero.|fh|s
+mn007|yeah there|fg
+mn007|uh actually yeah.|aa
+mn007|um it's very important to normalize c zero.|fh
 mn007|and much less to normalize the other coefficients.|s
 mn007|and um|fh
-mn007|uh well at least with the current on line normalization scheme.|s^e
+mn007|uh well at least with the current on line normalization scheme.|e
 mn007|and|fh
 mn007|we i think we kind of know that normalizing c one doesn't help with the current scheme.|s
 mn007|and|fh
 mn007|and yeah.|fh
 mn007|in my idea i i was thinking that the the the reason is maybe because of these funny things that happen between speech and silence which have different means.|s
 mn007|um|fh
-mn007|yeah.|s^bk
-mn007|but maybe it's not so so easy to|s.%--
+mn007|yeah.|bk
+mn007|but maybe it's not so so easy to|s
 me013|um|fg
-me013|i really would like to suggest looking um a little bit at the kinds of errors.|s^cs
-me013|i know you can get lost in that and go forever and not see too much but sometimes.|s^df
+me013|i really would like to suggest looking um a little bit at the kinds of errors.|cs
+me013|i know you can get lost in that and go forever and not see too much but sometimes.|df
 mn007|uhhuh.|b
 me013|but but um|fh
 me013|just seeing that each of these things didn't make things better may not be enough.|s
-me013|it may be that they're making them better in some ways and worse in others.|s^df
-mn007|yeah.|s^aa
+me013|it may be that they're making them better in some ways and worse in others.|df
+mn007|yeah.|aa
 mn007|uhhuh.|b
-me013|or increasing insertions and decreasing deletions.|s^df
+me013|or increasing insertions and decreasing deletions.|df
 me013|or|fh
 me013|or um|fh
 me013|um|fh
-me013|you know helping with noisy case.|s^df
-me013|but hurting in quiet case.|s^df
+me013|you know helping with noisy case.|df
+me013|but hurting in quiet case.|df
 me013|and if you saw that then maybe you it would something would occur to you of how to deal with that.|s
 mn007|uhhuh.|b
 mn007|uhhuh.|b
 mn052|huh.|b
-mn007|all right.|s^bk
+mn007|all right.|bk
 mn007|huh.|b
 mn007|yeah.|fg
 mn007|um|fh
-mn007|so that's it i think for the on line normalization.|s^rt
+mn007|so that's it i think for the on line normalization.|rt
 mn007|um|fh
-mn007|yeah i've been playing a little bit with some kind of thresholding.|s^tc
+mn007|yeah i've been playing a little bit with some kind of thresholding.|tc
 mn007|and|fh
 mn007|huh|fh
-mn007|as a first experiment i think|s.%--
-mn007|yeah.|s^bk
-mn007|well what i did is is to take um to measure the average|s.%--
-mn007|no the maximum energy of each utterance.|s^bsc^rt
-mn007|and then put a threshold|s.%--
+mn007|as a first experiment i think|s
+mn007|yeah.|bk
+mn007|well what i did is is to take um to measure the average|s
+mn007|no the maximum energy of each utterance.|bsc
+mn007|and then put a threshold|s
 mn007|well this for each mel band.|s
-mn007|then put a threshold that's fifteen d b below|s.%--
-mn007|well uh a couple of d b below this maximum.|s^rt
+mn007|then put a threshold that's fifteen d b below|s
+mn007|well uh a couple of d b below this maximum.|rt
 me013|uhhuh.|b
 me013|huh.|b
 mn007|and|fh
 mn007|actually it was not a threshold.|s
-mn007|it was just adding noise.|s^df
+mn007|it was just adding noise.|df
 me013|uhhuh.|b
-mn007|so i was adding a white noise energy.|s^rt
-mn007|uh that's fifteen d b below the maximum energy of the utterance.|s^e
+mn007|so i was adding a white noise energy.|rt
+mn007|uh that's fifteen d b below the maximum energy of the utterance.|e
 mn007|and|fh
-mn007|yeah.|s^bk
-mn007|when we look at at the um m f c c that result from this they are a lot more smoother.|s^rt
+mn007|yeah.|bk
+mn007|when we look at at the um m f c c that result from this they are a lot more smoother.|rt
 mn007|um|fh
-mn007|when we compare like a channel zero and channel one utterance|s.%--
-mn007|um so a clean and uh the same noisy utterance.|fh|s^e
+mn007|when we compare like a channel zero and channel one utterance|s
+mn007|um so a clean and uh the same noisy utterance.|fh
 mn007|well there is almost no difference between the cepstral coefficients of the two.|s
-me018|huh?|qy^bh
+me018|huh?|bh
 mn007|um|fh
-mn007|and yeah.|s^bk
-mn007|and the result that we have in term of speech recognition actually it's not it's not worse.|s^rt
-mn007|it's not better neither.|s^df
+mn007|and yeah.|bk
+mn007|and the result that we have in term of speech recognition actually it's not it's not worse.|rt
+mn007|it's not better neither.|df
 me018|huh.|b
 mn007|but it's um kind of surprising that it's not worse.|s
-mn007|because basically you add noise that's fifteen d b just fifteen d b below the maximum energy.|s^df
-me006|sorry.|s^fa^t3
-mn007|and|%-
+mn007|because basically you add noise that's fifteen d b just fifteen d b below the maximum energy.|df
+me006|sorry.|fa
+mn007|and|%--
 me018|so why does that smooth things out?|qw
-mn007|at least|s.%-
-me018|i don't i don't understand that.|s^no
-me013|well there's less difference right?|s|qy^d^g
+mn007|at least|s
+me018|i don't i don't understand that.|no
+me013|well there's less difference right?|s
 mn007|it's i think it's whitening this the portion that are more silent.|s
-me013|because it's|s^df.%-
+me013|because it's|df
 mn007|as you add a white noise that are has a very high energy it whitens everything.|s
-me018|huh oh okay.|s^bk
+me018|huh oh okay.|bk
 mn007|and|fh
 mn007|and the high energy portion of the speech don't get much affected anyway by the other noise.|s
 mn007|and as the noise you add is the same is the shape it's also the same.|s
-me018|huh?|qy^bh
+me018|huh?|bh
 me013|yeah.|b
 mn007|so they have the trajectory are very very similar.|s
 mn007|and and|fh
 me013|so i mean again if you trained in one kind of noise and tested in the same kind of noise you'd you know given enough training data you don't do do badly.|s
 me013|the reason that we that we have the problems we have is because it's different in training and test.|s
-me013|even if the general kind is the same the exact instances are different.|s^e
+me013|even if the general kind is the same the exact instances are different.|e
 me018|uhhuh.|b
 me013|and and|fh
-me013|so when you whiten it then it's like you the the only noise to to first order the only noise that you have is white noise.|fh|s
+me013|so when you whiten it then it's like you the the only noise to to first order the only noise that you have is white noise.|fh
 me013|and you've added the same thing to training and test.|s
 me018|uhhuh.|b
-me013|so it's|s.%--
-me018|huh?|qy^bh
+me013|so it's|s
+me018|huh?|bh
 me013|uh|fh
-me018|so would that be similar to like doing the smoothing then over time?|qy^rt
-me018|or|qrr.%--
+me018|so would that be similar to like doing the smoothing then over time?|rt
+me018|or|qrr
 mn007|uhhuh.|b
-me013|well it's a kind of smoothing.|s^na
-mn007|i think it's i think it's different.|s^nd
-me013|but|%-
-mn007|it's it's something that yeah that affects more or less the silence portions.|s^df
-mn007|because|s.%--
+me013|well it's a kind of smoothing.|na
+mn007|i think it's i think it's different.|nd
+me013|but|%--
+mn007|it's it's something that yeah that affects more or less the silence portions.|df
+mn007|because|s
 me018|uhhuh.|b
 mn007|well anyway the the portion of speech that have high energy are not a lot affected by the noises in the aurora database.|s
 me013|uhhuh.|b
 mn007|if if you compare the two shut channels of speechdat car during speech portion it's the m f c c are not very different.|s
 mn007|they are very different when energy's lower.|s
-mn007|like during fricatives or during speech pauses.|s^e
+mn007|like during fricatives or during speech pauses.|e
 mn007|and|fh
 mn007|uh|fh
-me013|yeah but you're still getting more recognition errors.|s^bk|s
-me013|which means that the differences even though they look like they're not so big are are hurting your recognition.|s^e
-me013|right?|qy^d^g^rt
-mn007|yeah so it distort the speech.|s^aa|s^na
-mn007|right.|s^aa
+me013|yeah but you're still getting more recognition errors.|bk
+me013|which means that the differences even though they look like they're not so big are are hurting your recognition.|e
+me013|right?|d
+mn007|yeah so it distort the speech.|aa
+mn007|right.|aa
 mn007|um|fh
-me013|yeah.|s^bk
-me018|so performance went down?|qy^bu^d^rt
-mn007|no.|s^ar
-mn007|it didn't.|s^nd
-me018|oh.|s^bk
+me013|yeah.|bk
+me018|so performance went down?|bu
+mn007|no.|ar
+mn007|it didn't.|nd
+me018|oh.|bk
 mn007|but|%--
 mn007|yeah.|fh
-mn007|so but in this case i i really expect that maybe the the two these two stream of features they are very different.|fh|s
-mn007|i mean and maybe we could gain something by combining them.|s^cs
+mn007|so but in this case i i really expect that maybe the the two these two stream of features they are very different.|fh
+mn007|i mean and maybe we could gain something by combining them.|cs
 me013|well the other thing is that you just picked one particular way of doing it.|s
 mn007|or|fh
-me013|uh i mean first place it's fifteen d b uh down across the utterance.|fh|s
-me013|and maybe you'd want to have something that was a little more adaptive.|s^cs
+me013|uh i mean first place it's fifteen d b uh down across the utterance.|fh
+me013|and maybe you'd want to have something that was a little more adaptive.|cs
 me013|secondly you happened to pick fifteen d b.|s
 mn007|huh.|b
-me013|and maybe twenty would be better.|s^cs
-mn007|yeah.|s^aa
-me013|or or twelve.|s^cs
-mn007|yeah right.|s^aa
+me013|and maybe twenty would be better.|cs
+mn007|yeah.|aa
+me013|or or twelve.|cs
+mn007|yeah right.|aa
 me018|so what was the what was the threshold part of it?|qw
-me018|was the threshold uh how far down?|qw^rt
-me013|yeah.|s^bk
-me013|well he yeah he had to figure out how much to add.|s^no
+me018|was the threshold uh how far down?|rt
+me013|yeah.|bk
+me013|well he yeah he had to figure out how much to add.|no
 me013|so he was looking he was looking at the peak value.|s
-me018|uhhuh.|s^bk
-me013|right?|qy^d^g^rt
-mn007|uhhuh.|s^aa
-me013|and then|s.%--
-me018|and and so what's|qw.%--
-me018|i don't understand.|s^no
-me018|how does it go?|qw^rt
-me018|if it if if the peak value's above some threshold then you add the noise?|qy^bu^d^rt
-me018|or if it's below|qrr.%-
-mn007|i systematically add the noise.|s^na
+me018|uhhuh.|bk
+me013|right?|d
+mn007|uhhuh.|aa
+me013|and then|s
+me018|and and so what's|qw
+me018|i don't understand.|no
+me018|how does it go?|rt
+me018|if it if if the peak value's above some threshold then you add the noise?|bu
+me018|or if it's below|qrr
+mn007|i systematically add the noise.|na
 mn007|but the um noise level is just some kind of threshold below the peak.|s
-me018|oh oh i see.|s^bk
+me018|oh oh i see.|bk
 mn007|huh|fh
-me018|i see.|s^bk^r
+me018|i see.|bk
 mn007|um|fh
 me013|yeah.|b
 mn007|yeah.|fh
-mn007|which is not really noise actually.|s^e
-mn007|it's just adding a constant to each of the mel uh energy.|s^e
+mn007|which is not really noise actually.|e
+mn007|it's just adding a constant to each of the mel uh energy.|e
 me018|uhhuh.|b
-mn007|to each of the mel filter bank.|s^e
+mn007|to each of the mel filter bank.|e
 mn007|yeah.|fh
-me018|i see.|s^bk
+me018|i see.|bk
 mn007|so yeah it's really uh white noise.|s
 mn007|i|%--
 me018|uhhuh.|b
@@ -307,102 +307,102 @@ me013|so then afterwards a log is taken.|s
 me013|and that's sort of why the the little variation tends to go away.|s
 mn007|uhhuh.|b
 mn007|um|fg
-mn007|yeah so|fg|s.%--
+mn007|yeah so|fg
 mn007|well the this threshold is still a factor that we have to look at.|s
-mn007|and i don't know maybe a constant noise addition would would be fine also.|s^cs
+mn007|and i don't know maybe a constant noise addition would would be fine also.|cs
 mn007|or|fh
 mn007|um|fh
-me013|or or not constant but but uh varying over time in fact is another way to go.|s^cs
+me013|or or not constant but but uh varying over time in fact is another way to go.|cs
 mn007|uhhuh.|b
 mn007|uhhuh.|b
 me013|um|fh
-mn007|yeah.|s^bk
+mn007|yeah.|bk
 mn007|um|fh
-me013|were you using the the normalization in addition to this?|qy^rt
+me013|were you using the the normalization in addition to this?|rt
 me013|i mean what was the rest of the system?|qw
 mn007|um|h
 mn007|yeah it was it was uh the same system.|s
 mn007|uhhuh.|fh
 me013|okay.|b
-mn007|it was the same system.|s^r
+mn007|it was the same system.|r
 mn007|huh|fh
 mn007|oh yeah.|fg
-mn007|a third thing is that um i play a little bit with the um finding what was different between um|s^tc.%--
+mn007|a third thing is that um i play a little bit with the um finding what was different between um|tc
 mn007|and there were a couple of differences.|s
-mn007|like the l d a filters were not the same.|s^e^rt
+mn007|like the l d a filters were not the same.|e
 mn007|um|fh
-mn007|he had the france telecom blind equalization in the system.|s^rt
+mn007|he had the france telecom blind equalization in the system.|rt
 mn007|um|fh
 mn007|the number of m f c c that was were used was different.|s
-mn007|you used thirteen.|s^e
-mn007|and we used fifteen.|s^e
+mn007|you used thirteen.|e
+mn007|and we used fifteen.|e
 mn007|well a bunch of differences.|s
-mn007|and um actually the result that he he got were much better on t i digits especially.|fh|s
+mn007|and um actually the result that he he got were much better on t i digits especially.|fh
 mn007|so i'm kind of investigated to see what was the main factor for this difference.|s
 mn007|and it seems that the l d a filter is is was hurting.|s
-mn007|um so when we put some noise compensation the um l d a filter that that's derived from noisy speech is not more anymore optimal.|fh|s^rt
-mn007|and it makes a big difference um on t i digits.|s^rt
-mn007|trained on clean.|s^e^rt
+mn007|um so when we put some noise compensation the um l d a filter that that's derived from noisy speech is not more anymore optimal.|fh
+mn007|and it makes a big difference um on t i digits.|rt
+mn007|trained on clean.|e
 mn007|uh if we use the the old l d a filter i mean the l d a filter that was in the proposal we have like eighty two point seven percent recognition rate.|s
 mn007|um|fh
-mn007|on noisy speech when the system is trained on clean speech.|s^e^rt
+mn007|on noisy speech when the system is trained on clean speech.|e
 mn007|but|fh
 mn007|and when we use the filter that's derived from clean speech we jumped.|s
-mn007|so from eighty two point seven to eighty five point one.|s^e
-mn007|which is a huge leap.|s^e
+mn007|so from eighty two point seven to eighty five point one.|e
+mn007|which is a huge leap.|e
 me013|uhhuh.|b
 mn007|um|fh
-mn007|yeah.|s^bk
+mn007|yeah.|bk
 mn007|so now the results are more similar.|s
 mn007|and|fh
 mn007|i don't i will not i think investigate on the other differences.|s
-mn007|which is like the number of m f c c that we keep and other small things.|s^e
-mn007|that we can i think optimize later on anyway.|s^e
-me013|sure.|s^aa
-me013|but on the other hand if everybody is trying different kinds of noise suppression things and so forth it might be good to standardize on the piece that we're not changing.|s^cs
-me013|right?|qy^d^g^rt
-me013|so if there's any particular reason to pick one or the other|s^df.%--
+mn007|which is like the number of m f c c that we keep and other small things.|e
+mn007|that we can i think optimize later on anyway.|e
+me013|sure.|aa
+me013|but on the other hand if everybody is trying different kinds of noise suppression things and so forth it might be good to standardize on the piece that we're not changing.|cs
+me013|right?|d
+me013|so if there's any particular reason to pick one or the other|df
 me013|i mean|fh
 me013|which which one is closer to what the proposal was that was submitted to aurora?|qw
-me013|are they|qy.%--
-me013|they both|s.%--
-me013|well i mean|s.%--
-mn007|i think|s.%--
+me013|are they|qy
+me013|they both|s
+me013|well i mean|s
+mn007|i think|s
 mn007|yeah i think uh the new system that i tested is i guess closer.|s
-mn007|because it doesn't have it have less of of france telecom stuff.|s^df
-mn052|you mean the|s.%-
+mn007|because it doesn't have it have less of of france telecom stuff.|df
+mn052|you mean the|s
 mn007|i|%--
-mn052|the whatever you uh tested with recently right?|s^bu|qy^d^g^rt
+mn052|the whatever you uh tested with recently right?|bu
 mn007|huh?|%
-mn007|yeah.|s^aa
-mn052|yeah?|qy^bh
-me013|well no i i'm i|s.%--
+mn007|yeah.|aa
+mn052|yeah?|bh
+me013|well no i i'm i|s
 me013|yeah you're trying to add in france telecom.|s
-mn007|but we|%-
-me013|tell them about the rest of it.|s^co
-me013|like you said the number of filters might be different or something.|s^e
-me013|right?|qy^d^g^rt
-mn052|the number of cepstral coefficients is what?|qw^d
+mn007|but we|%--
+me013|tell them about the rest of it.|co
+me013|like you said the number of filters might be different or something.|e
+me013|right?|d
+mn052|the number of cepstral coefficients is what?|d
 me013|or|fh
-mn007|uhhuh.|s^aa
+mn007|uhhuh.|aa
 me013|yeah.|fg
-me013|so i mean i think we'd want to standardize there.|s^cs
-me013|wouldn't we?|qy^g^rt
-mn007|yeah yeah.|s^aa
-me013|so you guys should pick something.|fh|s^cs
+me013|so i mean i think we'd want to standardize there.|cs
+me013|wouldn't we?|g
+mn007|yeah yeah.|aa
+me013|so you guys should pick something.|fh
 mn052|yeah.|b
 me013|and|fh
 mn052|yeah.|b
-me013|well all all three of you.|s^e
+me013|well all all three of you.|e
 mn007|i think we were going to work with with this or this new system.|s
-mn007|or with|s.%--
-mn052|uh so the the right now the the system that is there in the what we have in the repositories with uses fifteen.|fg|s^bu
+mn007|or with|s
+mn052|uh so the the right now the the system that is there in the what we have in the repositories with uses fifteen.|fg
 mn007|so|fh
-mn007|right.|s^aa
-mn007|yeah.|s^aa
-mn052|yeah.|s^aa
-mn052|so yeah.|s^aa^r
-mn052|so yep.|s^aa^r
+mn007|right.|aa
+mn007|yeah.|aa
+mn052|yeah.|aa
+mn052|so yeah.|aa
+mn052|so yep.|aa
 mn007|but we will use the the l d a filters derived from clean speech.|s
 mn052|yeah yeah.|b
 mn007|well yeah actually it's it's not the the l d a filter.|s
@@ -413,169 +413,169 @@ mn052|well.|b
 mn007|so|fh
 mn052|yeah.|b
 mn052|so we haven't we have been always using uh fifteen coefficients.|s
-mn052|not thirteen.|s^e
+mn052|not thirteen.|e
 mn007|yeah.|b
 mn007|uhhuh.|b
 mn052|yeah.|fh
-mn052|well uh that's something's|fh|s.%--
+mn052|well uh that's something's|fh
 mn052|um|fh
 mn052|yeah.|fh
 mn052|then|%--
 mn052|huh|fh
 me013|i think as long as you guys agree on it it doesn't matter.|s
-me013|i think we have a maximum of sixty uh features that we're allowed.|s^e
+me013|i think we have a maximum of sixty uh features that we're allowed.|e
 me013|so|fh
 mn007|yeah.|b
-mn052|yeah maybe we can i mean at least|fh|s^cs.%--
-mn052|um i'll run some experiments to see whether once i have this noise compensation to see whether thirteen and fifteen really matters or not.|fh|s^cc
+mn052|yeah maybe we can i mean at least|fh
+mn052|um i'll run some experiments to see whether once i have this noise compensation to see whether thirteen and fifteen really matters or not.|fh
 mn007|uhhuh.|b
 mn007|uhhuh.|b
-mn052|never tested it with the compensation.|s^df
-mn052|but without uh compensation it was like fifteen was slightly better than thirteen.|s^df
+mn052|never tested it with the compensation.|df
+mn052|but without uh compensation it was like fifteen was slightly better than thirteen.|df
 mn007|yeah.|b
 mn052|so that's why we stuck to thirteen.|s
 mn007|yeah.|b
 mn007|and there is there is also this log energy versus c zero.|s
-mn052|sorry.|s^fa
-mn052|fifteen.|s^bsc
-mn052|yeah the log energy versus c zero.|s^bk|s^m
+mn052|sorry.|fa
+mn052|fifteen.|bsc
+mn052|yeah the log energy versus c zero.|bk
 mn007|well.|fh
 mn052|uh that's that's the other thing.|s
-mn007|if if|%-
+mn007|if if|%--
 mn052|i mean without noise compensation certainly c zero is better than log energy.|s
-mn052|i mean because the there are more uh mismatched conditions than the matching conditions for testing.|s^df
+mn052|i mean because the there are more uh mismatched conditions than the matching conditions for testing.|df
 mn007|uhhuh.|b
 mn052|you know.|fh
-mn052|always for the matched condition you always get a slightly better performance for log energy than c zero.|s^df
+mn052|always for the matched condition you always get a slightly better performance for log energy than c zero.|df
 mn007|uhhuh.|b
-mn052|but not for|s.%--
+mn052|but not for|s
 mn052|i mean for matched and the clean condition both you get log energy.|s
-mn052|i mean you get a better performance with log energy.|s^df
+mn052|i mean you get a better performance with log energy.|df
 mn007|uhhuh.|b
-mn052|well um maybe once we have this noise compensation i don't know we have to try that also whether we want to go for c zero or log energy.|fh|s^cs
+mn052|well um maybe once we have this noise compensation i don't know we have to try that also whether we want to go for c zero or log energy.|fh
 mn007|uhhuh.|b
-mn052|we can see that.|s^cs
+mn052|we can see that.|cs
 mn007|yeah.|b
 mn052|huh|fh
 mn007|huh.|b
-me018|so do you have more stephane?|qy^rt^tc
-me018|or|qrr.%--
-mn007|uh that's it i think.|s^nd
+me018|so do you have more stephane?|rt
+me018|or|qrr
+mn007|uh that's it i think.|nd
 mn007|huh|fh
-me018|do you have anything morgan?|qy^rt^tc
-me018|or|qrr.%--
+me018|do you have anything morgan?|rt
+me018|or|qrr
 me013|uh|h
-me013|no i'm just you know being a manager this week.|s^ar|s^j
+me013|no i'm just you know being a manager this week.|ar
 me013|so|fh
-me018|how about you barry?|qo^tc
-me006|um still working on my my quals preparation stuff.|h|s^rt
-me006|um so i'm i'm thinking about um starting some uh cheating experiments to uh determine the um the relative effectiveness of um some intermediate categories that i want to classify.|fh|s
-me006|so for example um if i know where voicing occurs and everything um i would do a phone um phone recognition experiment.|s^e
-me006|um somehow putting in the the uh the perfect knowledge that i have about voicing.|fh|s^e
-me006|so um in particular i was thinking um in in the hybrid framework just taking those l n a files and um setting to zero those probabilities that um that these phones are not voicing.|fh|s
-me006|so say like i know this particular segment is voicing.|s^e
+me018|how about you barry?|tc
+me006|um still working on my my quals preparation stuff.|h
+me006|um so i'm i'm thinking about um starting some uh cheating experiments to uh determine the um the relative effectiveness of um some intermediate categories that i want to classify.|fh
+me006|so for example um if i know where voicing occurs and everything um i would do a phone um phone recognition experiment.|e
+me006|um somehow putting in the the uh the perfect knowledge that i have about voicing.|fh
+me006|so um in particular i was thinking um in in the hybrid framework just taking those l n a files and um setting to zero those probabilities that um that these phones are not voicing.|fh
+me006|so say like i know this particular segment is voicing.|e
 me018|uhhuh.|b
-me006|um i would say uh go into the corresponding l n a file and zonk out the the posteriors for um those phonemes that um are not voiced.|fh|s^e
+me006|um i would say uh go into the corresponding l n a file and zonk out the the posteriors for um those phonemes that um are not voiced.|fh
 me018|uhhuh.|b
 me006|and then see what kinds of improvements i get.|s
-me018|huh?|qy^bh
-me006|and so this would be a useful thing um to know in terms of like which which um which of these categories are are good for um speech recognition.|s^df
+me018|huh?|bh
+me006|and so this would be a useful thing um to know in terms of like which which um which of these categories are are good for um speech recognition.|df
 me018|uhhuh.|b
-me006|so that's|fh|%--
-me006|i hope to get those uh those experiments done by by the time quals come come around in july.|s^cc
-me018|so do you just take the probabilities of the other ones and spread them out evenly among the the remaining ones?|qy^rt
-me006|yeah.|s^aa
-me006|i i i was thinking|s.%--
-me006|okay so just set to set to some really low number the the non voiced um phones.|s^bk|s
+me006|so that's|fh
+me006|i hope to get those uh those experiments done by by the time quals come come around in july.|cc
+me018|so do you just take the probabilities of the other ones and spread them out evenly among the the remaining ones?|rt
+me006|yeah.|aa
+me006|i i i was thinking|s
+me006|okay so just set to set to some really low number the the non voiced um phones.|bk
 me018|uhhuh.|b
-me006|right?|qy^d^f^g^rt
+me006|right?|d
 me006|and then renormalize.|s
 me018|huh.|b
-me006|right.|s^bk
-me018|cool.|s^ba
+me006|right.|bk
+me018|cool.|ba
 mn052|uhhuh.|b
 me006|yeah.|b
-me018|that will be really interesting to see.|s^ba
-me018|you know?|qy^d^f^g^rt
-me018|so then you're going to feed the those into some standard recognizer?|qy^bu^d
+me018|that will be really interesting to see.|ba
+me018|you know?|d
+me018|so then you're going to feed the those into some standard recognizer?|bu
 me006|uhhuh.|b
-me018|uh are you going to do digits?|qy^rt
-me006|yeah.|s^aa
-me018|or|qrr.%--
-me006|um well i'm going to work with timit.|fh|s
-me018|with timit okay.|s^bk
-me006|timit uh phone recognition with timit.|s^e
+me018|uh are you going to do digits?|rt
+me006|yeah.|aa
+me018|or|qrr
+me006|um well i'm going to work with timit.|fh
+me018|with timit okay.|bk
+me006|timit uh phone recognition with timit.|e
 me018|uhhuh.|b
 me006|and um|fh
-me018|oh so then you'll feed those|s^bu.%--
-me018|sorry.|s^fa
-me018|so where do the outputs of the net go into if you're doing phone recognition?|qw^rt
-me006|oh.|s^bk
-me006|um the outputs of the net go into the standard um icsi hybrid um recognizer.|fh|s
+me018|oh so then you'll feed those|bu
+me018|sorry.|fa
+me018|so where do the outputs of the net go into if you're doing phone recognition?|rt
+me006|oh.|bk
+me006|um the outputs of the net go into the standard um icsi hybrid um recognizer.|fh
 me006|so maybe um chronos.|s
-me018|and you're going to the you're going to do phone recognition with that?|qy^bu^d^rt
-me006|or|%-
-me006|phone recognition.|s^m^na
-me018|okay okay.|s^bk
-me006|right right.|s^aa
-me018|i see.|s^bk
+me018|and you're going to the you're going to do phone recognition with that?|bu
+me006|or|%--
+me006|phone recognition.|m
+me018|okay okay.|bk
+me006|right right.|aa
+me018|i see.|bk
 me006|so|fh
-me006|and uh another thing would be to extend this to uh digits or something where i can look at whole words.|fh|s^cs
+me006|and uh another thing would be to extend this to uh digits or something where i can look at whole words.|fh
 me018|uhhuh.|b
-me006|and i would be able to see uh not just like phoneme events but um inter phoneme events.|s^df
+me006|and i would be able to see uh not just like phoneme events but um inter phoneme events.|df
 me018|uhhuh.|b
-me006|so like this is from a stop to to a a vocalic.|s^e
-me006|segment.|s^e
-me006|you know?|qy^d^f^g^rt
-me006|something that is transitional in nature.|s^e
+me006|so like this is from a stop to to a a vocalic.|e
+me006|segment.|e
+me006|you know?|d
+me006|something that is transitional in nature.|e
 me018|right.|b
-me018|cool.|s^ba
+me018|cool.|ba
 me006|yeah.|fh
-me018|great.|s^ba
+me018|great.|ba
 me018|uh|fh
 me006|so that's that's it.|s
-me018|okay.|s^bk
+me018|okay.|bk
 me018|um|fh
 me006|yeah.|b
-me018|let's see i haven't done a whole lot on anything related to this this week.|s^tc
-me018|i've been focusing mainly on meeting recorder stuff.|s^df
+me018|let's see i haven't done a whole lot on anything related to this this week.|tc
+me018|i've been focusing mainly on meeting recorder stuff.|df
 mn007|oh.|b
-me018|so um i guess i'll just pass it on to dave.|fh|s^cc^tc
-me026|uh okay.|s^bk
+me018|so um i guess i'll just pass it on to dave.|fh
+me026|uh okay.|bk
 me026|well in my lunch talk last week i i said i'd tried phase normalization and gotten garbage results using that um long term mean subtraction approach.|s
-me026|it turned out there was a bug in my matlab code.|s^df
+me026|it turned out there was a bug in my matlab code.|df
 me026|so i tried it again.|s
 me026|um|fh
-me026|and um the results were were better.|fh|s
-me026|i got intelligible speech back.|s^e
+me026|and um the results were were better.|fh
+me026|i got intelligible speech back.|e
 me026|but they still weren't as good as just subtracting the magnitude the log magnitude means.|s
 me026|and also i've been talking to um andreas and thilo about the um smartkom language model.|s
 me026|and about coming up with a good model for um far mike use of the smartkom system.|s
 me026|so|fh
-me026|i'm going to be working on um implementing this mean subtraction approach in the far mike system.|s^cc
-me026|for the smartkom system i mean.|s^bsc
+me026|i'm going to be working on um implementing this mean subtraction approach in the far mike system.|cc
+me026|for the smartkom system i mean.|bsc
 me026|and um|fh
-me026|one of the experiments we're going to do is um we're going to um train the a broadcast news net.|s^cc
-me026|which is because that's what we've been using so far.|s^df
-me026|and um adapt it on some other data um andreas wants to use.|s^cc
+me026|one of the experiments we're going to do is um we're going to um train the a broadcast news net.|cc
+me026|which is because that's what we've been using so far.|df
+me026|and um adapt it on some other data um andreas wants to use.|cc
 me026|um|fh
-me026|data that resembles read speech.|s^e
-me026|like these digit readings.|s^e
-me026|because he feels that the smartkom system interaction is not going to be exactly conversational.|s^df
+me026|data that resembles read speech.|e
+me026|like these digit readings.|e
+me026|because he feels that the smartkom system interaction is not going to be exactly conversational.|df
 me018|uhhuh.|b
 me026|so actually i was wondering how long does it take to train that broadcast news net?|qw
 me013|the big one takes a while.|s
-me013|yeah that takes two three weeks.|s^bk|s^e
-me026|two three weeks.|s^bk^m
-me013|so but you know uh you can get|s.%--
+me013|yeah that takes two three weeks.|bk
+me026|two three weeks.|bk
+me013|so but you know uh you can get|s
 me013|i don't know if you even want to run the big one uh um in the in the final system.|s
-me013|because you know it takes a little while to run it.|s^df
-me013|so um you can scale it down by|fh|s^cs.%--
-me013|i'm sorry.|s^fa
+me013|because you know it takes a little while to run it.|df
+me013|so um you can scale it down by|fh
+me013|i'm sorry.|fa
 me013|it was two three weeks for training up for the large broadcast news test set training set.|s
 me026|oh.|b
 me013|i don't know how much you'd be training on.|s
-me026|okay.|s^bk
+me026|okay.|bk
 me013|the full.|s
 me013|uh so if you trained on half as much and made the net uh uh half as big then it would be one fourth the amount of time.|s
 me026|okay.|b
@@ -587,62 +587,62 @@ me013|also i guess we had we've had these uh little discussions.|s
 me013|i guess you haven't had a chance to work with it too much.|s
 me013|about about uh uh uh other ways of taking care of the phase.|s
 me026|uhhuh.|b
-me013|so i mean i i guess that was something i could say would be that we've talked a little bit about.|fh|s
-me013|you just doing it all with complex arithmetic.|s^e
+me013|so i mean i i guess that was something i could say would be that we've talked a little bit about.|fh
+me013|you just doing it all with complex arithmetic.|e
 me013|and uh|fh
 me013|and not not uh doing the polar representation with magnitude and phase.|s
 me013|but it looks like there's ways that one could potentially just work with the complex numbers and and and in principle get rid of the effects of the average complex spectrum.|s
 me013|but|%--
 me026|and um|fg
-me026|actually regarding the phase normalization|s.%--
+me026|actually regarding the phase normalization|s
 me026|so i did two experiments.|s
-me026|and one is|s^e.%--
+me026|and one is|e
 me026|so phases get added modulo two pi.|s
-me026|and because you only know the phase of the complex number to a value modulo two pi.|s^df
+me026|and because you only know the phase of the complex number to a value modulo two pi.|df
 me026|and so i thought at first um that uh what i should do is unwrap the phase.|s
-me026|because that will undo that.|s^df
-me026|um but i actually got worse results doing that unwrapping using the simple phase unwrapper that's in matlab than i did not unwrapping at all.|fh|s
-me018|huh?|qy^bh
+me026|because that will undo that.|df
+me026|um but i actually got worse results doing that unwrapping using the simple phase unwrapper that's in matlab than i did not unwrapping at all.|fh
+me018|huh?|bh
 mn052|uhhuh.|b
 me013|yeah.|b
 me013|so.|b
 me026|and that's all i have to say.|s
 me018|huh.|b
 me013|yeah.|b
-me013|so i'm i'm still hopeful that that|s.%--
+me013|so i'm i'm still hopeful that that|s
 me013|i mean we we don't even know if the phase is something the average phase is something that we do want to remove.|s
 me013|i mean maybe there's some deeper reason why it isn't the right thing to do.|s
 me013|but um|fh
 me013|at least in principle it looks like there's there's uh a couple potential ways to do it.|s
-me013|one one being to just work with the complex numbers.|s^e
+me013|one one being to just work with the complex numbers.|e
 me013|um|fh
-me013|and uh in rectangular kind of coordinates.|fh|s^e
-me013|and the other is to uh do a taylor series.|s^e
+me013|and uh in rectangular kind of coordinates.|fh
+me013|and the other is to uh do a taylor series.|e
 me013|well.|fh
-me013|so you work with the complex numbers.|s^df
-me013|and then when you get the spectrum the average complex spectrum um actually divide it out.|s^df
-me013|um as opposed to taking the log and subtracting.|fh|s^e
-me013|so then|s.%--
+me013|so you work with the complex numbers.|df
+me013|and then when you get the spectrum the average complex spectrum um actually divide it out.|df
+me013|um as opposed to taking the log and subtracting.|fh
+me013|so then|s
 me013|um|fh
 me013|um|fh
 me013|you know there might be some numerical issues.|s
-me013|we don't really know that.|s^no
+me013|we don't really know that.|no
 me013|the other thing we talked a little bit about was taylor series expansion.|s
 me013|and um|fh
-me013|uh actually i was talking to dick karp about it a little bit.|fh|s
-me013|and and and since i got thinking about it.|s^df
+me013|uh actually i was talking to dick karp about it a little bit.|fh
+me013|and and and since i got thinking about it.|df
 me013|and and uh|fh
-me013|so one thing is that you'd have to do i think|s^cs.%--
+me013|so one thing is that you'd have to do i think|cs
 me013|uh|fh
 me013|we may have to do this on a whiteboard.|s
-me013|but i think you have to be a little careful about scaling the numbers that you're taking the complex numbers that you're taking the log of.|s^cs
-me013|because the taylor expansion for it has you know a square and a cube and and so forth.|s^df
+me013|but i think you have to be a little careful about scaling the numbers that you're taking the complex numbers that you're taking the log of.|cs
+me013|because the taylor expansion for it has you know a square and a cube and and so forth.|df
 me013|and and so if if you have a a number that is modulus you know uh very different from one it should be right around one.|s
-me013|if it's|s.%--
-me013|because it's a expansion of log one.|s^df
-me013|one minus epsilon.|s^e
-me013|or is is one plus epsilon.|s^e
-me013|or is it one plus|qy^bu.%--
+me013|if it's|s
+me013|because it's a expansion of log one.|df
+me013|one minus epsilon.|e
+me013|or is is one plus epsilon.|e
+me013|or is it one plus|bu
 me013|well there's an epsilon squared over two.|s
 me026|okay.|b
 me013|and an epsilon cubed over three.|s
@@ -650,44 +650,44 @@ me013|and so forth.|s
 me013|so if epsilon is bigger than one then it diverges.|s
 me026|oh.|b
 me013|so you have to do some scaling.|s
-me013|but that's not a big deal.|s^bd
-me013|because it's the log of of k times a complex number.|s^df
+me013|but that's not a big deal.|bd
+me013|because it's the log of of k times a complex number.|df
 me013|then you can just that's the same as log of k plus log of the complex number.|s
 me026|oh.|b
 me026|okay.|b
 me013|uh|fh
-me013|so there's|s.%--
+me013|so there's|s
 me013|converges.|s
 me013|but|fh
 me018|huh.|b
-me018|okay.|s^bk
-me018|how about you sunil?|qo^rt^tc
-mn052|so um i've been uh implementing this uh wiener filtering for this aurora task.|h|s
+me018|okay.|bk
+me018|how about you sunil?|rt
+mn052|so um i've been uh implementing this uh wiener filtering for this aurora task.|h
 mn052|and uh|fh
 mn052|i i actually thought it was it was doing fine when i tested it once.|s
 mn052|it's like using a small section of the code.|s
 mn052|and then i ran the whole recognition experiment with italian.|s
 mn052|and i got like worse results than not using it.|s
-mn052|then i|s.%--
+mn052|then i|s
 mn052|so i've been trying to find where the problem came from.|s
 mn052|and then it looks like i have some problem in the way.|s
-mn052|there is some some very silly bug somewhere.|s^df
-mn052|and ugh!|s^fe
+mn052|there is some some very silly bug somewhere.|df
+mn052|and ugh!|fe
 mn052|i i mean uh it actually it actually made the whole thing worse.|s
 mn052|i was looking at the spectrograms that i got.|s
 mn052|and it's like it's it's very horrible.|s
-mn052|like when i|s^e.%-
-me013|i i missed the|s.%--
-me013|i'm sorry.|s^fa
-me013|i was i was distracted.|s^df
+mn052|like when i|e
+me013|i i missed the|s
+me013|i'm sorry.|fa
+me013|i was i was distracted.|df
 me013|i missed the very first sentence.|s
 me013|so then i'm a little lost on the rest.|s
-mn052|oh i mean|s.%-
-me013|what what what|qw.%-
-mn052|oh yeah.|s^bk
+mn052|oh i mean|s
+me013|what what what|qw
+mn052|oh yeah.|bk
 mn052|i actually implemented the wiener filtering as a module and then tested it out separately.|s
-me013|yeah i see.|s^bk
-me013|oh okay.|s^bk
+me013|yeah i see.|bk
+me013|oh okay.|bk
 mn052|and it it it gave like i just got the signal out.|s
 mn052|and it it was okay.|s
 mn052|so i plugged it in somewhere.|s
@@ -696,7 +696,7 @@ mn052|and then plugging it in somewhere.|s
 mn052|and then i in that process i messed it up somewhere.|s
 mn052|so|fh
 me013|okay.|b
-mn052|so it was|s.%--
+mn052|so it was|s
 mn052|i mean i thought it was all fine.|s
 mn052|and then i ran it and i got something worse than not using it.|s
 mn052|so|fh
@@ -704,38 +704,38 @@ mn052|i was like i'm trying to find where the problem came.|s
 me013|uhhuh.|b
 mn052|and it seems to be like somewhere.|s
 me013|okay.|b
-mn052|some silly stuff.|s^e
-mn052|and um the other thing uh was uh uh|fh|s^tc.%--
+mn052|some silly stuff.|e
+mn052|and um the other thing uh was uh uh|fh
 mn052|well hynek showed up one suddenly on one day.|s
-mn052|and then i was talking|s.%--
+mn052|and then i was talking|s
 me013|right.|b
-me013|yeah.|s^bk
-me013|as as he is wont to do.|s^j
+me013|yeah.|bk
+me013|as as he is wont to do.|j
 me013|yeah.|fh
 mn052|uh yeah.|fg
 mn052|so i was actually that day i was thinking about doing something about the wiener filtering and then carlos matter of stuff.|s
 mn052|and then he showed up.|s
 mn052|and then i told him.|s
 mn052|and then he gave me a whole bunch of filters.|s
-mn052|what carlos used for his uh uh thesis.|s^e
+mn052|what carlos used for his uh uh thesis.|e
 mn052|and then that was something which came up.|s
 mn052|and then um|fh
 mn052|so uh i'm actually uh thinking of using that also in this uh wiener filtering.|s
-mn052|because that is a modified wiener filtering approach.|s^df
-mn052|where instead of using the current frame it uses adjacent frames also in designing the wiener filter.|s^e
+mn052|because that is a modified wiener filtering approach.|df
+mn052|where instead of using the current frame it uses adjacent frames also in designing the wiener filter.|e
 mn052|so instead of designing our own new wiener filters i may just use one of those carlos filters in in this implementation.|s
 me013|uhhuh.|b
 mn052|and see whether it it actually gives me something better.|s
-mn052|than using just the current current frame.|s^e
-mn052|which is in a way uh something like the smoothing the wiener filter.|s^e
+mn052|than using just the current current frame.|e
+mn052|which is in a way uh something like the smoothing the wiener filter.|e
 me013|uhhuh.|b
 mn052|but|fh
 mn052|so i don't know.|fh
-mn052|i was|s.%--
-mn052|i'm i'm i'm like|s.%--
+mn052|i was|s
+mn052|i'm i'm i'm like|s
 mn052|that so that is the next thing once this i once i sort this uh problem out maybe i'll just go into that also.|s
 mn052|and|fh
-mn052|the the other thing was about the subspace approach.|s^tc
+mn052|the the other thing was about the subspace approach.|tc
 mn052|so um|fh
 mn052|i like plugged some groupings for computing this uh uh uh values and eigenvectors.|s
 mn052|so just i just some small block of things which i needed to put together for the subspace approach.|s
@@ -745,75 +745,75 @@ mn052|uh yeah.|fh
 mn052|i guess yep i guess that's it.|s
 mn052|and uh that's where i am right now.|s
 mn052|so|fh
-me018|oh how about you carmen?|qo^tc
+me018|oh how about you carmen?|tc
 fn002|huh i'm working with v t s.|s
-fn002|um i do several experiment with the spanish database first.|fh|s
-fn002|only with v t s and nothing more.|s^e
-fn002|not v a d.|s^e
-fn002|no l d a.|s^e
-fn002|nothing more.|s^e
-me018|what what is v t s again?|qw^rt
-mn052|new|%-
+fn002|um i do several experiment with the spanish database first.|fh
+fn002|only with v t s and nothing more.|e
+fn002|not v a d.|e
+fn002|no l d a.|e
+fn002|nothing more.|e
+me018|what what is v t s again?|rt
+mn052|new|%--
 fn002|uh vectorial taylor series.|s
-me018|oh yes.|s^bk
-me018|right right.|s^aa
+me018|oh yes.|bk
+me018|right right.|aa
 fn002|to remove the noise too.|s
 me018|i think i ask you that every single meeting.|s
-me018|don't i?|qy^g
-fn002|what?|qw^br
+me018|don't i?|g
+fn002|what?|br
 me018|i ask you that question every meeting.|s
-fn002|yeah.|s^aa
-fn002|if well|%-
-me013|so that'd be good from for analysis.|s^j
-me013|it's good to have some uh cases of the same utterance at different different times.|s^df^j
-me018|yeah.|s^bk
-me018|what is v t s?|qw^j
+fn002|yeah.|aa
+fn002|if well|%--
+me013|so that'd be good from for analysis.|j
+me013|it's good to have some uh cases of the same utterance at different different times.|df
+me018|yeah.|bk
+me018|what is v t s?|j
 me013|yeah.|fh
-fn002|v t s.|s^m
-fn002|i'm|s.%--
-fn002|well um the question is that|s.%--
+fn002|v t s.|m
+fn002|i'm|s
+fn002|well um the question is that|s
 fn002|well.|fh
 fn002|remove some noise but not too much.|s
-fn002|and when we put the the them v a d the result is better.|fh|s
+fn002|and when we put the the them v a d the result is better.|fh
 fn002|and we put everything the result is better.|s
 fn002|but it's not better than the result that we have without v t s.|s
-fn002|no no.|s^ar
-me013|i see.|s^bk
-me013|so that given that you're using the v a d also the effect of the v t s is not so far|s.%--
-fn002|is not.|s^na
-me013|do you how much of that do you think is due to just the particular implementation and how much you're adjusting it?|qw^rt
-me013|or how much do you think is intrinsic to|qw.%--
-fn002|pfft i don't know.|s^no
-fn002|because|s^df.%--
+fn002|no no.|ar
+me013|i see.|bk
+me013|so that given that you're using the v a d also the effect of the v t s is not so far|s
+fn002|is not.|na
+me013|do you how much of that do you think is due to just the particular implementation and how much you're adjusting it?|rt
+me013|or how much do you think is intrinsic to|qw
+fn002|pfft i don't know.|no
+fn002|because|df
 fn002|hhh|fh
 mn007|are you still using only the ten first frame for noise estimation?|qy
-mn007|or|qrr.%--
-fn002|uh i do the experiment using only the uh to use only one fair estimation of the noise.|h|s^rt
-mn007|or|qrr.%--
+mn007|or|qrr
+fn002|uh i do the experiment using only the uh to use only one fair estimation of the noise.|h
+mn007|or|qrr
 mn007|yeah.|b
 mn007|huh.|b
 fn002|and also i did some experiment uh doing um a lying estimation of the noise.|s
-fn002|and well it's a little bit better but not|s.%--
-mn007|maybe you have to standardize this thing also.|s^cs
-mn007|noise estimation.|s^e
-mn007|because all the thing that you are testing use a different|s^df.%--
+fn002|and well it's a little bit better but not|s
+mn007|maybe you have to standardize this thing also.|cs
+mn007|noise estimation.|e
+mn007|because all the thing that you are testing use a different|df
 fn002|huh.|b
 mn052|huh.|b
-mn007|they all need some some noise noise spectra.|s^df
-fn002|no i do that two did two time.|s^ar|s
-mn007|but they use every all use a different one.|s^df
+mn007|they all need some some noise noise spectra.|df
+fn002|no i do that two did two time.|ar
+mn007|but they use every all use a different one.|df
 me013|i have an idea.|s
-me013|if if uh uh|s.%--
-me013|you're right.|s^aa
+me013|if if uh uh|s
+me013|you're right.|aa
 me013|i mean each of these require this.|s
-me013|um given that we're going to have for this test at least of uh boundaries what if initially we start off by using known sections of nonspeech for the estimation?|qw^cs
+me013|um given that we're going to have for this test at least of uh boundaries what if initially we start off by using known sections of nonspeech for the estimation?|cs
 fn002|uhhuh.|b
 mn007|uhhuh.|b
-me013|right?|qy^d^g^rt
+me013|right?|d
 mn007|yeah.|b
 me013|so um|fh
 mn007|uhhuh.|b
-me013|first place i mean even if ultimately we wouldn't be given the boundaries uh this would be a good initial experiment to separate out the effects of things.|s^df
+me013|first place i mean even if ultimately we wouldn't be given the boundaries uh this would be a good initial experiment to separate out the effects of things.|df
 me013|i mean how much is the poor you know relatively uh unhelpful result that you're getting in this or this or this?|qw
 me013|is due to some inherent limitation to the method for these tasks?|qy
 me013|and how much of it is just due to the fact that you're not accurately finding enough regions that that are really noise?|qw
@@ -821,26 +821,26 @@ mn052|huh.|b
 fn002|uhhuh.|b
 mn007|uhhuh.|b
 me013|um|fh
-me013|so maybe if you tested it using that you'd have more reliable stretches of nonspeech to do the estimation from.|s^df
+me013|so maybe if you tested it using that you'd have more reliable stretches of nonspeech to do the estimation from.|df
 me013|and see if that helps.|s
-fn002|yeah.|s^bk
-fn002|another thing is the them the codebook.|s^tc
-fn002|the initial codebook.|s^bsc
-fn002|that maybe|s.%--
+fn002|yeah.|bk
+fn002|another thing is the them the codebook.|tc
+fn002|the initial codebook.|bsc
+fn002|that maybe|s
 fn002|well it's too clean.|s
 fn002|and|fh
 me013|uhhuh.|b
-fn002|because it's a|s^df.%--
+fn002|because it's a|df
 fn002|i don't know.|fh
-fn002|the methods|s.%--
-fn002|if you want you i can say something about the method.|s^cs
-me013|uhhuh.|s^aa
-fn002|yeah in the|s.%--
-fn002|because it's a little bit different of the other method.|s^df
-fn002|well we have|s.%--
+fn002|the methods|s
+fn002|if you want you i can say something about the method.|cs
+me013|uhhuh.|aa
+fn002|yeah in the|s
+fn002|because it's a little bit different of the other method.|df
+fn002|well we have|s
 fn002|if this if this is the noise signal uh in the log domain we have something like this.|s
 fn002|now we have something like this.|s
-fn002|and the idea of these methods is to given a um|s.%--
+fn002|and the idea of these methods is to given a um|s
 me013|huh huh.|b
 fn002|how do you say?|qw
 fn002|i will read because it's better for my english.|s
@@ -853,321 +853,321 @@ fn002|well like this relation is not linear.|s
 fn002|the methods propose to develop this in a vectorial taylor series approximation.|s
 me013|i'm actually just confused about the equations you have up there.|s
 me013|so uh|fh
-me013|the top equation is is is|s.%-
+me013|the top equation is is is|s
 fn002|no this in the it's this is the log domain.|s
 fn002|i i must to say that.|s
 me013|which is which is the log domain?|qw
-fn002|is the t is egual is equal to uh log of|s.%--
+fn002|is the t is egual is equal to uh log of|s
 me013|and|%--
-me013|but y is what?|qw^d
-me013|y of the spectrum?|qy^d^rt
+me013|but y is what?|d
+me013|y of the spectrum?|d
 fn002|uh this this is this.|s
-me013|or|qrr.%--
+me013|or|qrr
 fn002|and this is this.|s
-me013|no no.|s^ar
-me013|the top y is what?|qw^d
-fn002|uhhuh.|s^bk
-me013|is that power spectrum?|qy^rt
+me013|no no.|ar
+me013|the top y is what?|d
+fn002|uhhuh.|bk
+me013|is that power spectrum?|rt
 fn002|uh this is the noisy speech.|s
 mn007|this|%
-me013|no is that power spectrum?|qy^r^rt
-me013|is it|qy.%-
-mn007|yeah i guess it's the power spectrum of noisy speech.|s^na
-fn002|yeah it's the power spectrum.|s^na
-me013|oh okay.|s^bk
+me013|no is that power spectrum?|r
+me013|is it|qy
+mn007|yeah i guess it's the power spectrum of noisy speech.|na
+fn002|yeah it's the power spectrum.|na
+me013|oh okay.|bk
 mn007|yeah and|fh
-me013|so that's uh|s.%-
-fn002|this is the noisy|s.%--
-fn002|yeah it's|s.%--
+me013|so that's uh|s
+fn002|this is the noisy|s
+fn002|yeah it's|s
 fn002|of the value.|s
-me013|okay.|s^bk
-me013|yeah.|s^bk
-me013|okay.|s^bk
-me013|so this it's the magnitude squared or something.|s^bu
-fn002|yeah.|s^aa
-me013|okay so you have power spectrum added there.|s^bk|s
-me013|and down here you have you you put the|s.%--
+me013|okay.|bk
+me013|yeah.|bk
+me013|okay.|bk
+me013|so this it's the magnitude squared or something.|bu
+fn002|yeah.|aa
+me013|okay so you have power spectrum added there.|bk
+me013|and down here you have you you put the|s
 me013|depends on t.|s
-me013|but all of this is just you just mean|s.%--
+me013|but all of this is just you just mean|s
 fn002|yeah it's the same.|s
-me013|you just mean the log of the of the one up above.|s^bu
-fn002|yeah.|s^aa
+me013|you just mean the log of the of the one up above.|bu
+fn002|yeah.|aa
 mn007|uhhuh.|b
-me013|and uh so that is x times|fh|s^bu.%--
+me013|and uh so that is x times|fh
 me013|uh|fh
 fn002|yeah maybe|fg
 mn052|one one plus n by x.|s
 fn002|but|fg
-fn002|well we can we can put this expression|fg|s.%-
-me013|x times one plus uh n uh n n n minus x?|qy^bu^d^rt
+fn002|well we can we can put this expression|fg
+me013|x times one plus uh n uh n n n minus x?|bu
 fn002|the|%--
-fn002|yeah.|s^aa
-me013|and then|s.%--
+fn002|yeah.|aa
+me013|and then|s
 fn002|and the noise signal.|s
-me013|uh so that's log of x plus log of one plus uh|fh|s.%--
+me013|uh so that's log of x plus log of one plus uh|fh
 me013|well.|fh
-me013|is that right?|qy^rt^t1
-me013|log of|s^e^t1.%--
-mn052|one plus n by x.|s^t1
+me013|is that right?|rt
+me013|log of|e
+mn052|one plus n by x.|t1
 fn002|well huh|fg
-me013|i actually don't see how you get that.|s^no
-fn002|well if we apply the log we have e is|s.%--
+me013|i actually don't see how you get that.|no
+fn002|well if we apply the log we have e is|s
 me013|uh|fh
 mn007|huh.|b
 fn002|uh log e is equal oh to log of x plus n.|s
 mn052|uh and|%
-me013|yeah.|s^bk
+me013|yeah.|bk
 fn002|and well|fh
-mn052|and log of|s^t1.%--
+mn052|and log of|t1
 fn002|uh we can say that e is equal to log of um exponential of x plus exponential of n.|s
 me013|uh|fg
 mn052|uhhuh.|b
-me013|no.|s^ar^rt
-mn052|no.|s^ar
-me013|that doesn't follow.|s^nd
-mn052|well if e restricts|s.%--
-mn052|it is|s.%-
+me013|no.|ar
+mn052|no.|ar
+me013|that doesn't follow.|nd
+mn052|well if e restricts|s
+mn052|it is|s
 fn002|well this is this is in the the time domain.|s
-fn002|well we have that|s.%--
+fn002|well we have that|s
 fn002|um|fh
-fn002|we have first that for example x is equal|s.%--
+fn002|we have first that for example x is equal|s
 fn002|uh|fh
 fn002|well.|fh
 fn002|this is the frequency domain.|s
 fn002|and we can put that the log domain.|s
 me013|yeah.|b
-fn002|log of x omega.|s^e
+fn002|log of x omega.|e
 fn002|but well in the time domain we have an exponential.|s
-fn002|no?|qy^d^f^g^rt
-fn002|no?|qy^d^f^g^r^rt
-fn002|oh maybe it's i am|s.%--
+fn002|no?|d
+fn002|no?|d
+fn002|oh maybe it's i am|s
 fn002|i'm problem.|s
-me013|yeah.|s^bk
+me013|yeah.|bk
 me013|i mean just never mind what they are.|s
-me013|uh it's just if x and n are variables.|fh|s
-me013|right?|qy^d^f^g^rt
-mn052|what is uh|qw.%--
+me013|uh it's just if x and n are variables.|fh
+me013|right?|d
+mn052|what is uh|qw
 me013|the the the log of x plus n is not the same as the log of e to the x plus e to the n.|s
 fn002|yeah.|fg
-fn002|but this|s.%--
-fn002|well i don't|s.%--
+fn002|but this|s
+fn002|well i don't|s
 fn002|well uh|fh
-me013|maybe we can take it off line.|s^cs
-fn002|maybe|s.%-
+me013|maybe we can take it off line.|cs
+fn002|maybe|s
 me013|but i i don't know.|fh
-fn002|i i can do this incorrectly.|s^ng
-fn002|well the expression that appear in the in the paper is uh|s.%-
-mn052|the log.|s^2
-mn052|the taylor series expansion for log one plus n by x is|s.%--
-fn002|is x|s.%-
-mn007|is it the first order expansion.|s^2
-me013|okay.|s^bk
-mn052|yeah the first one.|s^na
+fn002|i i can do this incorrectly.|ng
+fn002|well the expression that appear in the in the paper is uh|s
+mn052|the log.|2
+mn052|the taylor series expansion for log one plus n by x is|s
+fn002|is x|s
+mn007|is it the first order expansion.|2
+me013|okay.|bk
+mn052|yeah the first one.|na
 mn007|yeah i guess.|fh
-mn052|yeah.|s^aa
+mn052|yeah.|aa
 mn052|yeah.|b
 me013|okay.|fg
 mn007|yeah.|fh
-me013|yeah because it doesn't just follow what's there.|fg|s^df
+me013|yeah because it doesn't just follow what's there.|fg
 mn007|uhhuh.|b
 mn052|yeah if if you take log x into log one plus n by x and then expand the log one plus n by x into taylor series.|s
 me013|it has to be some uh taylor series.|s
 mn007|yeah.|b
-fn002|now this is the|s.%--
-fn002|and then|s.%--
-mn007|yeah but the the second expression that you put is the first order expansion of the nonlinear relation between|s^bk|s^nd.%--
-fn002|not exactly.|s^arp
-me013|no.|s^ar
-fn002|no no no.|s^ar
-fn002|it's not the first space.|s^nd
-fn002|well we have pfft uh them|s.%--
-fn002|well we can put that x is equal i is equal to log of uh|s.%--
+fn002|now this is the|s
+fn002|and then|s
+mn007|yeah but the the second expression that you put is the first order expansion of the nonlinear relation between|bk
+fn002|not exactly.|arp
+me013|no.|ar
+fn002|no no no.|ar
+fn002|it's not the first space.|nd
+fn002|well we have pfft uh them|s
+fn002|well we can put that x is equal i is equal to log of uh|s
 fn002|huh|fh
-me013|that doesn't follow.|s^nd
-fn002|well we can put uh this?|qy^d^rt
+me013|that doesn't follow.|nd
+fn002|well we can put uh this?|d
 mn052|huh.|b
-mn052|no.|s^ar
-me013|that i mean that the top one does not imply the second one.|s^df^nd
-fn002|the top?|qy^bu^d^m^rt
-me013|because because the log of a sum is not the same as|s^df.%--
-fn002|yeah yeah yeah yeah yeah.|s^bk
-me013|i mean as|s.%--
+mn052|no.|ar
+me013|that i mean that the top one does not imply the second one.|df
+fn002|the top?|bu
+me013|because because the log of a sum is not the same as|df
+fn002|yeah yeah yeah yeah yeah.|bk
+me013|i mean as|s
 me013|yeah.|fh
-fn002|but we can|s.%--
+fn002|but we can|s
 fn002|uh we we know that for example the log of e plus b is equal to log of e plus log to b.|s
-me013|right.|s^aa
-fn002|and we can say here it|s.%-
-me013|right so you could|s^bk|s.%--
-mn007|what is that?|qw^t3
-fn002|and we can uh put this inside.|s^rt
-me013|yeah.|s^aa
-fn002|and then we can|s.%--
+me013|right.|aa
+fn002|and we can say here it|s
+me013|right so you could|bk
+mn007|what is that?|t3
+fn002|and we can uh put this inside.|rt
+me013|yeah.|aa
+fn002|and then we can|s
 fn002|uh|fh
-fn002|you know?|qy^d^f^g
-me013|no.|s^ar
+fn002|you know?|d
+me013|no.|ar
 me013|but|%--
-fn002|yeah.|s^nd
+fn002|yeah.|nd
 mn052|uh.|b
-me013|i don't see how you get the second expression from the top one.|s^no
-me013|the i mean just more generally here if you say log of um a plus b|s^df.%--
-me013|the log of log of a plus b is not|s^df.%--
-me013|or a plus b is not the um log of e to the a plus e to the b.|s^bsc^df
-fn002|no no no no no no no.|s^ar
-fn002|this not.|s^nd
-fn002|no.|s^ar
-me013|right?|qy^d^f^g^rt
-me013|and that's what you seem to be saying.|s^df
-fn002|no.|s^ar
-fn002|it's not but this is the same|s.%--
-fn002|oh.|s^bk
-me013|right?|qy^d^f^g^rt
-me013|because you because you up here you have the a plus b.|s^df
-fn002|no.|s^ar
-fn002|i say if i apply log i have uh log of e is equal to log of uh in this side is equal to log of x.|s^df
-me013|plus n.|s^2
-fn002|plus n.|s^e
-me013|right.|s^aa
-fn002|no?|qy^d^g^rt
-fn002|right.|s^aa
-me013|right.|s^aa
-me013|and then how do you go from there to the|qw.%--
+me013|i don't see how you get the second expression from the top one.|no
+me013|the i mean just more generally here if you say log of um a plus b|df
+me013|the log of log of a plus b is not|df
+me013|or a plus b is not the um log of e to the a plus e to the b.|bsc
+fn002|no no no no no no no.|ar
+fn002|this not.|nd
+fn002|no.|ar
+me013|right?|d
+me013|and that's what you seem to be saying.|df
+fn002|no.|ar
+fn002|it's not but this is the same|s
+fn002|oh.|bk
+me013|right?|d
+me013|because you because you up here you have the a plus b.|df
+fn002|no.|ar
+fn002|i say if i apply log i have uh log of e is equal to log of uh in this side is equal to log of x.|df
+me013|plus n.|2
+fn002|plus n.|e
+me013|right.|aa
+fn002|no?|d
+fn002|right.|aa
+me013|right.|aa
+me013|and then how do you go from there to the|qw
 fn002|this is right.|s
-fn002|and then if i apply exponential to have here e|s.%--
-me013|look.|s^co
+fn002|and then if i apply exponential to have here e|s
+me013|look.|co
 me013|okay.|fg
-me013|so let's|s.%--
+me013|so let's|s
 me013|i mean c equals a plus b  .|s
 mn007|it's log of capital y.|s
 mn007|yeah right.|fh
-me013|and then|s.%--
-fn002|yeah.|s^aa
-mn007|capital y.|s^t1
+me013|and then|s
+fn002|yeah.|aa
+mn007|capital y.|t1
 mn052|x x.|s
 mn052|this is x inside.|s
 mn007|uhhuh.|b
-fn002|we have this.|s^bu
-me013|right.|s^aa
-fn002|no?|qy^d^g^rt
-me013|yeah.|s^aa
-me013|that one's right.|s^na
-fn002|uhhuh.|s^bk
-mn052|one and|s.%--
+fn002|we have this.|bu
+me013|right.|aa
+fn002|no?|d
+me013|yeah.|aa
+me013|that one's right.|na
+fn002|uhhuh.|bk
+mn052|one and|s
 fn002|uh we can put here the set transformation.|s
-me013|oh.|s^bk
-me013|i see.|s^bk
-fn002|no?|qy^d^g^rt
-me013|i see.|s^bk^r
+me013|oh.|bk
+me013|i see.|bk
+fn002|no?|d
+me013|i see.|bk
 me013|okay i understand now.|s
-me013|all right thanks.|s^ft
+me013|all right thanks.|ft
 fn002|yeah.|fg
 fn002|in this case well we can put here a y.|s
 me013|okay.|fg
 me013|so yeah.|fh
-me013|it's just by definition that the individual that the uh|s.%--
+me013|it's just by definition that the individual that the uh|s
 me013|so capital x is by definition the same as e to the little x.|s
-me013|because she's saying that the little x is is the uh is the log.|s^df
-me013|all right.|s^bk
+me013|because she's saying that the little x is is the uh is the log.|df
+me013|all right.|bk
 fn002|now we can put this.|s
-me013|yeah.|s^aa
-fn002|no?|qy^d^g^rt
+me013|yeah.|aa
+fn002|no?|d
 fn002|and here we can multiply by x.|s
 me013|all right.|b
-me013|i think these things are a lot clearer when you can use fonts different fonts there.|s^cs
-fn002|oh yes.|s^aa
-me013|so you know which is which.|s^df
-fn002|yeah yeah.|s^aa
+me013|i think these things are a lot clearer when you can use fonts different fonts there.|cs
+fn002|oh yes.|aa
+me013|so you know which is which.|df
+fn002|yeah yeah.|aa
 me013|but i i i understand what you mean now.|s
-fn002|that's true.|s^na
-fn002|that's true.|s^na^r
-me013|okay.|s^bk
+fn002|that's true.|na
+fn002|that's true.|na
+me013|okay.|bk
 fn002|but this this is correct.|s
-me013|sure.|s^bk
-fn002|and now i can do it|s.%--
+me013|sure.|bk
+fn002|and now i can do it|s
 fn002|uh|fh
-fn002|pfff!|s^fe
+fn002|pfff!|fe
 fn002|i can put log of e x plus log.|s
 me013|oh.|b
-me013|yes i understand now.|s^bk|s
-fn002|and this is|s.%-
+me013|yes i understand now.|bk
+fn002|and this is|s
 me013|and that's where it comes from.|s
 me013|yeah.|fh
 mn007|yeah right.|b
 me013|right.|b
 fn002|now it's correct.|s
 me013|right.|b
-me013|okay.|s^bk
-me013|thanks.|s^ft
-fn002|well the idea|fg|s.%--
+me013|okay.|bk
+me013|thanks.|ft
+fn002|well the idea|fg
 fn002|well.|fh
-fn002|we have fixed this|qy^bu^d.%--
-me013|okay so now once you get that that one then you then you do a or second order or something taylor series expansion of this.|s^bk|s^co
-fn002|yeah.|s^bk
+fn002|we have fixed this|bu
+me013|okay so now once you get that that one then you then you do a or second order or something taylor series expansion of this.|bk
+fn002|yeah.|bk
 fn002|this is another linear relation that this to develop this in vectors taylor series.|s
 mn007|yeah sure.|b
 me013|right.|b
-fn002|uhhuh.|s^aa
-fn002|and for that well the goal is to obtain um estimate a p d f for the noisy speech.|s^rt
-fn002|when we have a a statistic for clean speech and for the noisy speech.|s^e
-fn002|huh?|qy^d^g^rt
-fn002|and when|fh|%--
-fn002|the way to obtain the p d f for the noisy speech is|s.%--
+fn002|uhhuh.|aa
+fn002|and for that well the goal is to obtain um estimate a p d f for the noisy speech.|rt
+fn002|when we have a a statistic for clean speech and for the noisy speech.|e
+fn002|huh?|d
+fn002|and when|fh
+fn002|the way to obtain the p d f for the noisy speech is|s
 fn002|well we know this statistic.|s
-fn002|and we know the noisy|s.%--
-fn002|well we can apply first order of the vector taylor series of the of the of well the order that we want increase the complexity of the problem.|s^cs
+fn002|and we know the noisy|s
+fn002|well we can apply first order of the vector taylor series of the of the of well the order that we want increase the complexity of the problem.|cs
 me013|uhhuh.|b
 fn002|and then when we have a expression uh for the mean and variance of the noisy speech we apply a technique of minimum mean square estimation.|s
 me013|uhhuh.|b
-fn002|to obtain the expected value of the clean speech given the this statistic for the noisy speech.|s^e
+fn002|to obtain the expected value of the clean speech given the this statistic for the noisy speech.|e
 me013|uhhuh.|b
 fn002|the statistic for clean speech and the statistic of the noisy speech.|s
 fn002|this only that.|s
 fn002|but the idea is that.|s
-mn007|and the the model of clean speech is a codebook right?|s^bu|qy^d^g
-fn002|yeah.|s^aa
+mn007|and the the model of clean speech is a codebook right?|bu
+fn002|yeah.|aa
 fn002|we have our codebook with different density gaussian.|s
 me013|uhhuh.|b
-fn002|we can we can put that the p d f for the clean test probability of the clean speech is equal to|s.%--
+fn002|we can we can put that the p d f for the clean test probability of the clean speech is equal to|s
 me013|yeah.|b
 mn007|uhhuh.|b
 me013|so um|fg
-me013|how|qw.%--
+me013|how|qw
 me013|how much in in the work they reported how much noisy speech did you need to get uh good enough statistics?|qw
-me013|for the to get this mapping.|s^e^rt
-fn002|i don't know exactly.|s^no
-me013|yeah.|s^bk
-fn002|i i need to|s.%--
+me013|for the to get this mapping.|e
+fn002|i don't know exactly.|no
+me013|yeah.|bk
+fn002|i i need to|s
 me013|yeah.|b
-fn002|i don't know exactly.|s^no^r
-me013|because i think what's certainly characteristic of a lot of the data in this test is that um you don't have the|s^df.%--
-me013|the training set may not be a a great estimator for the noise in the test set.|s^df
-me013|sometimes it is.|s^e
-me013|and sometimes it's not.|s^e
+fn002|i don't know exactly.|no
+me013|because i think what's certainly characteristic of a lot of the data in this test is that um you don't have the|df
+me013|the training set may not be a a great estimator for the noise in the test set.|df
+me013|sometimes it is.|e
+me013|and sometimes it's not.|e
 fn002|yeah.|fg
 fn002|i the clean speech the codebook for clean speech i am using timit.|s
 fn002|and i have now uh sixty four gaussian.|s
 me013|uhhuh.|b
-me013|and what are you using for the noisy|qw.%--
-me013|doing that strictly|s^e.%-
-fn002|of the noise|s.%--
-fn002|i estimate the noises|s.%--
+me013|and what are you using for the noisy|qw
+me013|doing that strictly|e
+fn002|of the noise|s
+fn002|i estimate the noises|s
 fn002|well for the noises i only use one gaussian.|s
 me013|uhhuh.|b
-me013|and and you and you train it up entirely from uh nonspeech sections in the test?|qy^bu^d
+me013|and and you and you train it up entirely from uh nonspeech sections in the test?|bu
 mn007|huh.|b
-fn002|uh yes.|h|s^aa
-fn002|the first experiment that i do it is solely to calculate the huh well this value.|s^df
+fn002|uh yes.|h
+fn002|the first experiment that i do it is solely to calculate the huh well this value.|df
 me013|yeah.|b
-fn002|uh the compensation of the dictionary one time.|fh|s^df
-fn002|using the the noise at the beginning of the sentence.|s^e
+fn002|uh the compensation of the dictionary one time.|fh
+fn002|using the the noise at the beginning of the sentence.|e
 fn002|this is the first experiment.|s
 me013|uhhuh.|b
 me013|yeah.|b
 fn002|and i fix this for all the all the sentences.|s
-fn002|uh because|fh|%--
-fn002|well the v t s methods|s.%--
+fn002|uh because|fh
+fn002|well the v t s methods|s
 fn002|in fact the first thing that i do is to to obtain uh an expression for e.|s
-fn002|probability expression of of e.|s^e
-fn002|that mean that the v t s huh with the v t s we obtain|s^df.%--
+fn002|probability expression of of e.|e
+fn002|that mean that the v t s huh with the v t s we obtain|df
 fn002|uh|fh
 fn002|well we we obtain the means for each gaussian and the variance.|s
 me013|uhhuh.|b
@@ -1177,8 +1177,8 @@ me013|uhhuh.|b
 fn002|this one thing.|s
 fn002|and the other thing that this with these methods is to uh obtain to calculate this value.|s
 me013|uhhuh.|b
-fn002|because we can write|s^df.%--
-fn002|uh we can write that the estimation of the clean speech is equal at an expected value of the clean speech conditional to uh the noise signal the probability of the the statistic of the clean speech and the statistic of the noise.|s^r
+fn002|because we can write|df
+fn002|uh we can write that the estimation of the clean speech is equal at an expected value of the clean speech conditional to uh the noise signal the probability of the the statistic of the clean speech and the statistic of the noise.|r
 me013|uhhuh.|b
 me013|uhhuh.|b
 fn002|this is the methods that say that we're going obtain this.|s
@@ -1186,47 +1186,47 @@ me013|uhhuh.|b
 fn002|and we can put that this is equal to the estimated value of e minus a function that conditional to e to the t to the noise signal.|s
 fn002|well this is this function is the the term after develop this the term that we we take.|s
 fn002|give p x and uh p the noise.|s
-mn052|x k c noise.|s^t1
+mn052|x k c noise.|t1
 me013|huh.|b
-fn002|and i can put that this is equal to the noise signal minus|s.%--
-fn002|well i put before this name|s.%--
+fn002|and i can put that this is equal to the noise signal minus|s
+fn002|well i put before this name|s
 fn002|uh|fh
-fn002|and i can calculate this.|s^rt
-me013|what is the first variable in that probability?|qw^rt
+fn002|and i can calculate this.|rt
+me013|what is the first variable in that probability?|rt
 fn002|uh this is the gaussian.|s
-me013|no no i'm sorry.|s^ar|s^fa
-me013|in in the one you pointed at.|s^e
-me013|what's that variable?|qw^rt
-fn002|uh this is the|s.%--
-mn052|weak.|s^t1
-mn052|so probably it it would do that.|s^t1
-fn002|like this.|s^rt
-mn007|it's one mixture of the model right?|s^bu|qy^d^g
+me013|no no i'm sorry.|ar
+me013|in in the one you pointed at.|e
+me013|what's that variable?|rt
+fn002|uh this is the|s
+mn052|weak.|t1
+mn052|so probably it it would do that.|t1
+fn002|like this.|rt
+mn007|it's one mixture of the model right?|bu
 fn002|but conditional.|s
-fn002|no it's|s^ar|s^nd.%-
-fn002|it's not exactly this.|s^nd
+fn002|no it's|ar
+fn002|it's not exactly this.|nd
 fn002|it's modify.|s
-fn002|uh if we have clean speech we have the dictionary for the clean speech we have a probability of our our weight for each gaussian.|fh|s
-fn002|no?|qy^d^f^g
+fn002|uh if we have clean speech we have the dictionary for the clean speech we have a probability of our our weight for each gaussian.|fh
+fn002|no?|d
 fn002|and now this weight is different now.|s
 me013|okay.|b
 me013|yes.|b
-fn002|because it's conditional.|s^df
-fn002|and this i need to to|s.%--
-fn002|i know this.|s^rt
+fn002|because it's conditional.|df
+fn002|and this i need to to|s
+fn002|i know this.|rt
 me013|uhhuh.|b
 fn002|and i know this.|s
-fn002|because this is from the dictionary that you have.|s^df
+fn002|because this is from the dictionary that you have.|df
 me013|uhhuh.|b
 fn002|i need to calculate this.|s
-fn002|and for calculate this i have an i i can develop an expression that is|s.%--
+fn002|and for calculate this i have an i i can develop an expression that is|s
 me013|yes.|b
 fn002|that.|s
-fn002|i can calculate i can i calculated this value uh with the statistic of the noisy speech that i calculated before with the v t s approximation.|s^rt
+fn002|i can calculate i can i calculated this value uh with the statistic of the noisy speech that i calculated before with the v t s approximation.|rt
 me013|uhhuh.|b
 fn002|and well normalizing.|s
 fn002|and i know everything.|s
-fn002|uh with the|s.%--
+fn002|uh with the|s
 fn002|nnn|fh
 fn002|when i develop this in taylor taylor series i can't um calculate the mean and the variance of the for each of the gaussian of the dictionary for the noisy speech.|s
 fn002|and this is fixed.|s
@@ -1234,83 +1234,83 @@ me013|uhhuh.|b
 fn002|if i never do an a newer estimation of the noise this mean as mean and the variance are fixed.|s
 me013|uhhuh.|b
 fn002|and for each uh frame of the speech the only thing that i need to do is to calculate this.|s
-fn002|in order to calculate the estimation of the clean speech given our noisy speech.|s^e
+fn002|in order to calculate the estimation of the clean speech given our noisy speech.|e
 me013|so i'm i'm not following this perfectly.|s
 me013|but um|fh
 me013|i|%--
-me013|are you saying that all of these estimates are done using um estimates of the probability density for the noise that are calculated only from the first ten frames?|qy^bu^d^rt
-fn002|yeah.|s^aa
-me013|and never change throughout anything else.|s^e
-fn002|never|s^m^na.%--
+me013|are you saying that all of these estimates are done using um estimates of the probability density for the noise that are calculated only from the first ten frames?|bu
+fn002|yeah.|aa
+me013|and never change throughout anything else.|e
+fn002|never|m
 fn002|this is one of the approximations that i am doing.|s
-me013|per per per utterance?|qy^d^rt
-me013|or per|qrr.%--
-fn002|per utterance yes.|s^m^na|s^aa
-me013|per utterance.|s^bk^m
-fn002|per utterance yes.|s^na^r|s^aa^r
-me013|okay.|s^bk
-me013|so it's done it's done new for each new utterance.|s^bu
-fn002|and|%-
-fn002|yeah.|s^aa
-me013|so this changes the whole mapping for every utterance.|s^bu
-fn002|it's not|s.%-
-fn002|yeah.|s^aa
-fn002|yeah.|s^aa^r
-fn002|it's fixed the dictionary.|s^df
-me013|okay.|s^bk
-fn002|and the other estimation is when i do the uh on line estimation i change the means and variance of for the noisy speech.|s^rt
+me013|per per per utterance?|d
+me013|or per|qrr
+fn002|per utterance yes.|m
+me013|per utterance.|bk
+fn002|per utterance yes.|na
+me013|okay.|bk
+me013|so it's done it's done new for each new utterance.|bu
+fn002|and|%--
+fn002|yeah.|aa
+me013|so this changes the whole mapping for every utterance.|bu
+fn002|it's not|s
+fn002|yeah.|aa
+fn002|yeah.|aa
+fn002|it's fixed the dictionary.|df
+me013|okay.|bk
+fn002|and the other estimation is when i do the uh on line estimation i change the means and variance of for the noisy speech.|rt
 me013|okay.|b
-me013|yeah?|qy^bh^rt
-fn002|each time that i detect noise.|s^e
+me013|yeah?|bh
+fn002|each time that i detect noise.|e
 me013|uhhuh.|b
 fn002|i do it uh again this.|s
-fn002|develop.|s^rt
-fn002|estimate the new mean and the variance of the noisy speech.|s^rt
+fn002|develop.|rt
+fn002|estimate the new mean and the variance of the noisy speech.|rt
 fn002|and with with this new new mean and variance i estimate again this.|s
-me013|so you estimated uh completely forgetting what you had before?|qy^d^rt
+me013|so you estimated uh completely forgetting what you had before?|d
 fn002|um|h
-me013|uh or is there some adaptation?|fh|qy
-fn002|no no no it's not completely noise.|s^ar|s^nd
-fn002|i am doing something like an adaptation of the noise.|s^df
+me013|uh or is there some adaptation?|fh
+fn002|no no no it's not completely noise.|ar
+fn002|i am doing something like an adaptation of the noise.|df
 me013|okay.|b
-me013|now do we know either from their experience or from yours that uh just having uh two parameters the the mean and variance is enough?|qy^rt
+me013|now do we know either from their experience or from yours that uh just having uh two parameters the the mean and variance is enough?|rt
 me013|yeah.|fh
 me013|i mean i know you don't have a lot of data to estimate with.|s
 me013|but but uh|fh
 me013|um|fh
 fn002|i estimate mean and variance for each one of the gaussian of the codebook.|s
-me013|no i'm talking about the noise.|s^ar|s^nd
-fn002|oh.|s^bk
-fn002|um well only one|s.%--
-me013|there's only one gaussian.|s^e
+me013|no i'm talking about the noise.|ar
+fn002|oh.|bk
+fn002|um well only one|s
+me013|there's only one gaussian.|e
 fn002|i am only using only one.|s
-me013|right.|s^bk
-fn002|i don't know|s^no.%--
-me013|and you and and it's|s.%--
+me013|right.|bk
+fn002|i don't know|no
+me013|and you and and it's|s
 me013|uh uh|fh
-me013|right.|s^bk
-me013|it's only|s.%--
-me013|it's only one|s^r.%--
-me013|wait a minute.|s^co
-me013|this is|s.%--
-me013|what's the dimensionality of the gaussian?|qw^rt
-me013|this is|s.%--
-fn002|uh it's in after the mel filter bank.|h|s^rt
-me013|so this is twenty or something?|qy^d
+me013|right.|bk
+me013|it's only|s
+me013|it's only one|r
+me013|wait a minute.|co
+me013|this is|s
+me013|what's the dimensionality of the gaussian?|rt
+me013|this is|s
+fn002|uh it's in after the mel filter bank.|h
+me013|so this is twenty or something?|d
 fn002|twenty three.|s
-me013|twenty?|qy^bu^d^m
-me013|so it's|s.%--
-me013|yeah so it's actually forty numbers that you're getting.|s^bk|s
-me013|yeah maybe maybe you don't have a|s.%--
+me013|twenty?|bu
+me013|so it's|s
+me013|yeah so it's actually forty numbers that you're getting.|bk
+me013|yeah maybe maybe you don't have a|s
 fn002|uh the original paper say that only one gaussian for the noise.|s
-me013|well yeah.|s^aa
-me013|but i mean no no paper is is a bible.|s^ng
+me013|well yeah.|aa
+me013|but i mean no no paper is is a bible.|ng
 fn002|yeah maybe isn't the right thing.|s
-me013|you know?|qy^d^f^g
-me013|this is this is uh|s.%--
+me013|you know?|d
+me013|this is this is uh|s
 fn002|yeah yeah yeah.|b
-me013|the question is um whether it would be helpful particularly if you used if you had more|s.%--
-me013|so suppose you did|s.%--
+me013|the question is um whether it would be helpful particularly if you used if you had more|s
+me013|so suppose you did|s
 me013|this is almost cheating.|s
 me013|it certainly isn't real time.|s
 me013|but if suppose you use the real boundaries that that you were in fact were given by the v a d and so forth.|s
@@ -1319,51 +1319,51 @@ me013|and you look you take all all of the nonspeech components in an utterance.
 me013|so you have a fair amount.|s
 me013|do you benefit from having a better model for the noise?|qy
 me013|that would be another question.|s
-fn002|maybe.|s^am
+fn002|maybe.|am
 me013|so first question would be to what extent are the errors that you're still seeing based on the fact that you have poor boundaries for the uh uh nonspeech.|s
 me013|and the second question might be given that you have good boundaries could you do better if you used more parameters to characterize the noise.|s
 me013|um|fh
-me013|also another question might be|s.%--
-me013|um they are doing they're using first term only of the vector taylor series?|fh|qy^bu^d^rt
-fn002|yeah.|s^aa
-me013|um if you do a second term does it get too complicated because of the nonlinearity?|fh|qy^rt
-fn002|yeah it's quite complicated.|s^aa|s^na
-me013|yeah okay.|s^bk
-me013|no i won't ask the next question then.|s^cc
+me013|also another question might be|s
+me013|um they are doing they're using first term only of the vector taylor series?|fh
+fn002|yeah.|aa
+me013|um if you do a second term does it get too complicated because of the nonlinearity?|fh
+fn002|yeah it's quite complicated.|aa
+me013|yeah okay.|bk
+me013|no i won't ask the next question then.|cc
 fn002|oh it's it's the for me it's the first time that i am working with v t s.|s
 fn002|uh|fh
-me013|yeah.|s^bk
-me013|no it's interesting.|s^ba
-me013|uh we haven't had anybody work with it before.|s^df
+me013|yeah.|bk
+me013|no it's interesting.|ba
+me013|uh we haven't had anybody work with it before.|df
 me013|so it's interesting to get your get your feedback about it.|s
 fn002|it's another type of approximation because because it's a statistic statistic approximation to remove the noise.|s
-fn002|i don't know.|s^no
+fn002|i don't know.|no
 me013|right.|b
-me018|great.|s^ba
+me018|great.|ba
 me018|okay.|fg
-me018|well i guess we're about done.|s^tc
+me018|well i guess we're about done.|tc
 me018|um|fh
 me018|so some of the digit forms don't have digits.|s
-me018|uh we ran out.|s^df
-me018|and there were some blanks in there.|s^df
+me018|uh we ran out.|df
+me018|and there were some blanks in there.|df
 me018|so not everybody will be reading digits.|s
 me018|but um|fh
-me018|i guess you've got some right morgan?|s^bu|qy^d^g^rt
-me013|i have some.|s^na
+me018|i guess you've got some right morgan?|bu
+me013|i have some.|na
 me018|so|fh
-me018|why don't you go ahead and start?|qw^cs
+me018|why don't you go ahead and start?|cs
 me018|and i think it's just us down here at this end that have them.|s
 me018|so|fh
-me013|uh okay.|h|s^aa
-mn052|so we switch off with this?|qy^d
+me013|uh okay.|h
+mn052|so we switch off with this?|d
 me018|whenever you're ready.|s
-mn052|or|qrr.%--
-me018|uh leave it on.|s^co^nd
-mn052|no okay.|s^aa
+mn052|or|qrr
+me018|uh leave it on.|co
+mn052|no okay.|aa
 me018|uh|fh
 me013|they prefer to have them on.|s
 me018|and the|%--
-me013|just so that they're continuing to get the distant uh information.|s^df
+me013|just so that they're continuing to get the distant uh information.|df
 me018|yeah.|b
 mn052|okay.|b
 mn052|okay.|b

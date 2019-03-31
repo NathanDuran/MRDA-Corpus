@@ -4,30 +4,30 @@ fn050|go ahead and read.|z
 me010|yeah.|z
 fn050|okay.|z
 mn015|all right.|b
-me010|yeah let's get started.|s^co
-me010|um hopefully nancy will come.|h|s
+me010|yeah let's get started.|co
+me010|um hopefully nancy will come.|h
 me010|if not she won't.|s
-me045|uh robert do you uh have any way to turn off your uh screensaver on there so that it's not going off every uh|fg|qy.%--
-me045|it seems to have about at two minute|s.%-
-mn015|yeah i've i uh it's not that i didn't try.|fg|s
+me045|uh robert do you uh have any way to turn off your uh screensaver on there so that it's not going off every uh|fg
+me045|it seems to have about at two minute|s
+mn015|yeah i've i uh it's not that i didn't try.|fg
 me045|okay.|b
 mn015|and um i i told it to stay on forever and ever but if it's not plugged in it just doesn't obey my commands.|s
-me045|okay.|s^bk
+me045|okay.|bk
 mn015|it has a mind.|s
-me045|got it.|s^bk
-fe046|wants to conserve.|s^e
+me045|got it.|bk
+fe046|wants to conserve.|e
 mn015|but i i just you know sort of keep on wiggling.|s
-me045|yeah okay.|s^bk.x
+me045|yeah okay.|bk
 mn015|but uh we'll just be working on it at intensity so it doesn't happen.|s
 mn015|we'll see.|b
-mn015|should we plunge right into it?|qy^rt
-me010|yeah.|s^aa
-mn015|so would you like to|qy.%--
+mn015|should we plunge right into it?|rt
+me010|yeah.|aa
+mn015|so would you like to|qy
 me010|i think so.|s
 mn015|so what i've tried to do here is list all the decision nodes that we have identified on this side.|s
 mn015|commented and what they're about and sort of the properties we may um give them.|s
 mn015|and here are the uh tasks to be implemented via our data collection.|s
-mn015|so all of these tasks|s.%--
+mn015|so all of these tasks|s
 mn015|the reading is out of these tasks more or less imply that the user wants to go there sometime or the other.|s
 mn015|and analogously for example here we have our eva um intention.|s
 mn015|and these are the data tasks where we can assume the person would like to enter view or just approach the thing.|s
@@ -40,10 +40,10 @@ mn015|or trying to plant the intention of going sometime on the next tour or the
 me010|right right.|b
 mn015|but i think that might be overdoing it a little.|s
 me010|so yeah.|b
-me010|so let me pop up a level.|s^t
+me010|so let me pop up a level.|t
 me010|and uh make sure that we're all oriented the same.|s
-me010|so what we're going to do today is two related things.|s^t
-me010|uh one of them is to work on the semantics of the belief net which is going to be the main inference engine for the system uh making decisions.|fh|s
+me010|so what we're going to do today is two related things.|t
+me010|uh one of them is to work on the semantics of the belief net which is going to be the main inference engine for the system uh making decisions.|fh
 me010|and decisions are going to turn out to be parameter choices for calls on other modules.|s
 me010|so the natural language understanding thing is uh we think going to only have to choose parameters but you know a fairly large set of parameters.|s
 me010|so to do that we need to do two things.|s
@@ -58,10 +58,10 @@ me010|and we're also sort of uh in the same process going to work with fey on wh
 me010|so one of the steps that's coming up real soon is to actually get subjects uh in here and have them actually record like this.|s
 me010|uh record dialogues more or less.|s
 me010|and depending on what fey sort of provokes them to say we'll get information on different things.|s
-me010|so|%-
-mn015|well how people phrase different intentions more or less.|s^bu
-me010|yeah people with the phrase them.|s^bk
-mn015|huh?|qy^d^g
+me010|so|%--
+mn015|well how people phrase different intentions more or less.|bu
+me010|yeah people with the phrase them.|bk
+mn015|huh?|d
 me010|and so uh for you know keith and people worrying about what constructions people use uh we have some we have some ways to affect that by the way the dialogues go.|s
 me010|so what robert kindly did is to lay out a table of the kinds of uh things that that might come up.|s
 me010|and the kinds of decisions.|s
@@ -71,56 +71,56 @@ me010|and it's not all that many and it's perfectly feasible technically to buil
 me010|and he has a handout.|s
 mn015|yeah.|fg
 mn015|maybe it was too fast plunging in there because we have two updates.|s
-me010|yeah.|s^bk
+me010|yeah.|bk
 mn015|um you can look at this if you want.|s
 mn015|these are what our subject's going to have to fill out.|s
 mn015|any comments i can can still be made and the changes will be put in correspondingly.|s
 fe046|yes.|b
 mn015|let me summarize in two sentences.|s
-mn015|mainly for eva's benefit who probably has not heard about the data collection at all.|s.x
-fn050|okay.|b.x
-mn015|or have you heard about it?|qy^bu^rt
-fn050|not that much.|s^ar
-mn015|no.|s^bk^m
+mn015|mainly for eva's benefit who probably has not heard about the data collection at all.|s
+fn050|okay.|b
+mn015|or have you heard about it?|bu
+fn050|not that much.|ar
+mn015|no.|bk
 fn050|you didn't|%--
 mn015|okay we were going to put this in front of people.|s
 mn015|they give us some information on themselves.|s
 fn050|okay.|b
 mn015|then then they will read uh a task where lots of german words are sort of thrown in between.|s
 mn015|and um and they have to read isolated proper names.|s
-mn015|and these change|s.%-
-me010|i don't see a release|s.%-
+mn015|and these change|s
+me010|i don't see a release|s
 mn015|no this is not the release form.|s
-mn015|this is the speaker information form.|s^e
-me010|got it.|s^bk
-me010|okay fine.|s^bk
-me010|okay.|s^bk
+mn015|this is the speaker information form.|e
+me010|got it.|bk
+me010|okay fine.|bk
+me010|okay.|bk
 mn015|the release form is over there in that box.|s
-me010|all right fair enough.|s^bk
+me010|all right fair enough.|bk
 mn015|and um and then they going to have to um um choose from one of these tasks which are listed here.|s
 mn015|they they pick a couple.|s
 mn015|say three uh uh six as a matter of fact.|s
 mn015|six different things they sort of think they would do if they were in heidelberg or traveling someplace.|s
-mn015|and um and they have a map.|h|s
+mn015|and um and they have a map.|h
 me045|huh.|b
 mn015|like this.|s
 mn015|very sketchy simplified map.|s
 mn015|and they can take notes on that map.|s
-mn015|and then they call this computer system that works perfectly and understands everything.|s^j
+mn015|and then they call this computer system that works perfectly and understands everything.|j
 fn050|okay.|b
 mn015|and um|fh
 mn015|the yeah the computer system sits right in front of you.|s
-me045|this is a fictional system obviously.|s^j
-me045|huh?|qy^d^g
-mn015|that's fey.|s^e
-fe046|i've i understand everything.|s^j
-me010|and she does know everything.|s^j
-fe046|yes i do.|s^aa
+me045|this is a fictional system obviously.|j
+me045|huh?|d
+mn015|that's fey.|e
+fe046|i've i understand everything.|j
+me010|and she does know everything.|j
+fe046|yes i do.|aa
 mn015|and she has a way of making this machine talk.|s
 mn015|so she can copy sentences into a window or type really fast.|s
 mn015|and this machine will use speech synthesis to produce that.|s
-mn015|so if you ask how do i get to the castle then a several seconds later it'll come out of here in order to get to the castle you do|s.%--
-mn015|okay?|qy^f^rt
+mn015|so if you ask how do i get to the castle then a several seconds later it'll come out of here in order to get to the castle you do|s
+mn015|okay?|f
 me045|yeah.|b
 mn015|and um and then after three tasks the system breaks down.|s
 mn015|and fey comes on the phone as a human operator.|s
@@ -130,121 +130,121 @@ fn050|okay.|b
 fn050|huh.|b
 me045|uhhuh.|b
 me045|uhhuh.|b
-mn015|that's the data collection.|s^bs
-mn015|and um and fey has some thirty subjects lined up?|qy^bu^d^rt
-mn015|something|%-
-fe046|yeah.|s^aa
+mn015|that's the data collection.|bs
+mn015|and um and fey has some thirty subjects lined up?|bu
+mn015|something|%--
+fe046|yeah.|aa
 fe046|and more and more every day.|s
 mn015|and um and they're ready uh to roll.|s
-mn015|and we're going to start tomorrow at three?|qy^bu^d^rt
-mn015|four?|qy^bu^d^rt
-mn015|one?|qy^bu^d^rt
-fe046|tomorrow|s^rt.%--
-fe046|well we don't know for sure.|s^no
-fe046|because we don't know whether that person is coming or not.|s^e
-mn015|okay.|s^bk
+mn015|and we're going to start tomorrow at three?|bu
+mn015|four?|bu
+mn015|one?|bu
+fe046|tomorrow|rt
+fe046|well we don't know for sure.|no
+fe046|because we don't know whether that person is coming or not.|e
+mn015|okay.|bk
 fe046|but|fh
 mn015|around four-ish.|s
 mn015|and um we're still looking for a room on the sixth floor because they stole away that conference room um behind our backs.|s
-mn015|but|%-
-me010|well there are these uh uh|s.%--
-me010|oh i see we have to|s.%--
+mn015|but|%--
+me010|well there are these uh uh|s
+me010|oh i see we have to|s
 me010|yeah it's tricky.|s
 me010|we'll let's let we'll do that off line okay.|s
 mn015|yeah but i it's happening.|s
 mn015|david and and jane and and lila are working on that as we speak.|s
 me010|okay.|b
 mn015|okay.|s
-mn015|that was the uh the data collection in a nutshell.|s^bs
-mn015|and um i can report a so i did this but i also tried to do this|h|s.%--
-mn015|so if i click on here|s^t1.%--
-mn015|isn't this wonderful?|qy^t1
+mn015|that was the uh the data collection in a nutshell.|bs
+mn015|and um i can report a so i did this but i also tried to do this|h
+mn015|so if i click on here|t1
+mn015|isn't this wonderful?|t1
 mn015|we get to the uh uh belief net just focusing on on the go there node.|s
 mn015|uh analogously this would be sort of the reason node and the timing node and so forth.|s
 me045|uhhuh.|b
 mn015|and what what happened is that um design wise i'd sort of noticed that we can we still get a lot of errors from a lot of points to one of these sub go there user go there situation nodes.|s
-mn015|so i came up with a couple of additional nodes here where um|s.%--
+mn015|so i came up with a couple of additional nodes here where um|s
 mn015|whether the user is thrifty or not and what his budget is currently like is going to result in some financial state of the user.|s
 mn015|how much will he is he willing to spend?|qh
-mn015|or can spend.|s^bsc
+mn015|or can spend.|bsc
 mn015|being the same at this just the money available which may influence us whether he wants to go there.|s
-mn015|if it is you know charging tons of dollars for admission or its going to cost a lot of|s^e.%--
+mn015|if it is you know charging tons of dollars for admission or its going to cost a lot of|e
 mn015|whatever.|s
-mn015|twenty two million to fly to international space station you know.|s^j
+mn015|twenty two million to fly to international space station you know.|j
 me010|right.|b
 mn015|just not all people can do that.|s
-mn015|so and this actually turned out to be pretty key because having specified sort of these uh this this intermediate level um and sort of noticing that everything that happens here|s.%--
-mn015|let's go to our favorite endpoint one.|s^t1
-mn015|is again more or less we have um|s.%--
+mn015|so and this actually turned out to be pretty key because having specified sort of these uh this this intermediate level um and sort of noticing that everything that happens here|s
+mn015|let's go to our favorite endpoint one.|t1
+mn015|is again more or less we have um|s
 mn015|then the situation nodes contributing to the the endpoint situation node which contributes to the endpoint and so forth.|s
 mn015|um i can now sort of draw straight lines from these to here meaning it of course goes where the sub s.|s
 mn015|everything that comes from situation everything that comes from user goes with the sub u.|s
 mn015|and whatever we specify for the so called keith node or the discourse what comes from the um parser construction parser um will contribute to the d and the ontology to the sub o node.|s
-mn015|and um one just sort of has to watch which also final decision node so it doesn't make sense to figure out whether he wants to enter view or approach an object if he never wants to go there in the first place.|fh|s
+mn015|and um one just sort of has to watch which also final decision node so it doesn't make sense to figure out whether he wants to enter view or approach an object if he never wants to go there in the first place.|fh
 mn015|but this makes the design thing fairly simple.|s
-mn015|and um now all that's left to do then is the c p g's the conditional probabilities for the likelihood of a person having enough money actually wanting to go a place if it costs you know this or that.|fh|s
-mn015|and um okay.|fh|s
+mn015|and um now all that's left to do then is the c p g's the conditional probabilities for the likelihood of a person having enough money actually wanting to go a place if it costs you know this or that.|fh
+mn015|and um okay.|fh
 mn015|and once um bhaskara has finished his classwork that's where we're going to end up doing.|s
 mn015|you get involved in that process too.|s
-mn015|and um and for now uh the the question is how much of these decisions do we want to build in explicitly into our data collection?|fh|qh
-mn015|so um one could sort of think of|fh|s.%--
+mn015|and um and for now uh the the question is how much of these decisions do we want to build in explicitly into our data collection?|fh
+mn015|so um one could sort of think of|fh
 mn015|you know we could call the see or you know people who visit the zoo.|s
 mn015|we could call it visit the zoo tomorrow.|s
 mn015|so we have an intention of seeing something but not now but later.|s
 me010|right.|b
 me010|yeah.|fg
-me010|yeah so let's uh see i i think that from one point of view uh um all these places are the same.|fg|s
+me010|yeah so let's uh see i i think that from one point of view uh um all these places are the same.|fg
 me010|so that that um in terms of the linguistics and stuff there may be a few different kinds of places.|s
 me010|so i it seems to me that we ought to decide you know what things are are actually going to matter to us.|s
-me010|and um so the zoo and the university and the castle et cetera um are all big-ish things that um you know have different parts to them and one of them might be fine.|fh|s
+me010|and um so the zoo and the university and the castle et cetera um are all big-ish things that um you know have different parts to them and one of them might be fine.|fh
 mn015|huh.|b
 mn015|huh huh.|b
-me010|and|%-
-mn015|yeah the the reason why we did it that way as a as a reminder is uh no person is going to do all of them.|fg|s^df
+me010|and|%--
+mn015|yeah the the reason why we did it that way as a as a reminder is uh no person is going to do all of them.|fg
 mn015|they're just going to select um according to their preferences.|s
 me010|yeah yeah.|fg
-mn015|uh yeah i usually visit zoos or i usually visit castles or i usually|s.%--
+mn015|uh yeah i usually visit zoos or i usually visit castles or i usually|s
 mn015|and then you pick that one.|s
-me010|right no no.|s^bk|fg
+me010|right no no.|bk
 me010|but but point is to to to build a system that's got everything in it that might happen you do one thing.|s
-fe046|they're redundant.|s^2^bu^rt
+fe046|they're redundant.|2
 me010|to build a system that um had the most data on a relatively confined set of things you do something else.|s
 me010|and the speech people for example are going to do better if they if things come up uh repeatedly.|s
 me010|now of course if everybody says exactly the same thing then it's not interesting.|s
-me010|so all i'm saying is there's there's a kind of question of what we're trying to accomplish.|s^bs
-me010|and i think my temptation for the data gathering would be to uh|h|s.%--
+me010|so all i'm saying is there's there's a kind of question of what we're trying to accomplish.|bs
+me010|and i think my temptation for the data gathering would be to uh|h
 me010|you know and each person is only going to do it once.|s
 me010|so you don't have to worry about them being bored.|s
 me010|so if if it's one service one luxury item you know one big-ish place and so forth and so on um then my guess is that that the data is going to be easier to handle.|s
-me010|now of course you have this i guess possible danger that somehow there're certain constructions that people use uh when talking about a museum that they wouldn't talk about with a university and stuff.|s^df.x
+me010|now of course you have this i guess possible danger that somehow there're certain constructions that people use uh when talking about a museum that they wouldn't talk about with a university and stuff.|df
 me010|um but i guess i'm i uh my temptation is to go for simpler.|s
-me010|you know less variation.|s^e
-me010|but i don't know what other people think about this in terms of|s^no.%--
+me010|you know less variation.|e
+me010|but i don't know what other people think about this in terms of|no
 me010|uh|fh
-me045|so i don't exactly understand|s.%--
+me045|so i don't exactly understand|s
 me045|like i i i guess we're trying to limit the detail of our ontology or types of places that someone could go.|s
-me045|right?|qy^d^g
+me045|right?|d
 me045|but who is it that has to care about this?|qw
 me045|or what component of the system?|qrr
-me010|oh.|s^bk
-me010|well uh i think there are two places where it comes up.|h|s
+me010|oh.|bk
+me010|well uh i think there are two places where it comes up.|h
 me010|one is uh in the these people who are going to take this and and try to do speech with it.|s
 me045|uhhuh.|b
 me010|uh lots of pronunciations of of the same thing are going to give you better data than you know a few pronunciations of lots more things.|s
 me045|okay.|b
 me010|that's one.|s
-me045|so we would rather just ask uh have a bunch of people talk about the zoo.|s^bu
-me045|uh and assume that that will that the constructions that they use there will give us everything we need to know about these sort of zoo castle whatever type things these bigger places.|s^bu
-me010|bigger.|s^2
-me010|yeah well this is a question for|s^aa|s.%-
+me045|so we would rather just ask uh have a bunch of people talk about the zoo.|bu
+me045|uh and assume that that will that the constructions that they use there will give us everything we need to know about these sort of zoo castle whatever type things these bigger places.|bu
+me010|bigger.|2
+me010|yeah well this is a question for|aa
 me045|and that way you get the speech data of people saying zoo over and over again or whatever too.|s
-me010|yeah.|s^aa
-me010|yeah.|s^aa
+me010|yeah.|aa
+me010|yeah.|aa
 me010|yeah.|fg
-me045|okay.|s^bk
+me045|okay.|bk
 me010|so this is a question for you.|s
 me045|uhhuh.|b
-me010|and you know if we if we do and we probably will actually try to uh build a prototype uh|s.%--
+me010|and you know if we if we do and we probably will actually try to uh build a prototype uh|s
 me010|probably we could get by with the prototype only handling a few of them anyway.|s
 me010|so um|fh
 mn015|yeah this was sort of these are all different sort of activities.|s
@@ -255,15 +255,15 @@ mn015|you know either they're the symphony type or opera type or the tourist sit
 mn015|this is what i would do.|s
 me045|uhhuh.|b
 mn015|and then we have the fix thing and then maybe do something the other day thing.|s
-mn015|so my question is|s.%--
+mn015|so my question is|s
 mn015|i guess to some extent we should we just have to try it out and see if it works.|s
-mn015|it would be challenging in in a sense to try to make it so so complex that they even really should schedule or to plan it uh a more complex thing in terms of|s.%--
+mn015|it would be challenging in in a sense to try to make it so so complex that they even really should schedule or to plan it uh a more complex thing in terms of|s
 mn015|okay.|h
 mn015|you know they should get the feeling that there are these six things they have to do.|s
 mn015|and they can be done maybe in two days.|s
 me010|well|fg
 me010|yeah.|fg
-me010|well i think|s.%-
+me010|well i think|s
 mn015|so they make these decisions.|s
 me010|yeah.|fg
 mn015|can i go there tomorrow?|qh
@@ -276,52 +276,52 @@ me010|you know let's first think about all the things you might like to do.|s
 me010|so there in i mean in i i i'm sure that if that's what you did then they would start telling you about that and then you could get into um various things about ordering if you wanted.|s
 mn015|uhhuh.|b
 mn015|yeah.|b
-mn015|yeah but i think this is part of the instructor's job.|s^arp
+mn015|yeah but i think this is part of the instructor's job.|arp
 mn015|and that can be done sort of to say okay now we've picked these six tasks.|s
 mn015|now you have you can call the system and you have two days.|s
-mn015|and|s.%--
-me010|i'm sorry.|s^ar
-me010|no we have to help we have to decide.|s^ar|s^ng
-me010|fey will carry out whatever we decide.|s^e
+mn015|and|s
+me010|i'm sorry.|ar
+me010|no we have to help we have to decide.|ar
+me010|fey will carry out whatever we decide.|e
 me010|but we have to decide you know what is the appropriate scenario.|s
 me010|that's what we're going to talk about yeah.|s
 mn015|yep yep.|b
-mn036|but these are two different scenarios entirely.|s^ng
-mn036|i mean one is a planner the other it kind of give you instructions on the spot.|s^e
-mn015|yeah but the i don't i'm not really interested in sort of phase planning capabilities.|s^aap|s^ng
+mn036|but these are two different scenarios entirely.|ng
+mn036|i mean one is a planner the other it kind of give you instructions on the spot.|e
+mn015|yeah but the i don't i'm not really interested in sort of phase planning capabilities.|aap
 mn015|but it's more the how do people phrase these planning requests?|qh
 mn015|so are we going to masquerade the system as this as you said simple response system?|qy
-mn015|i have one question i get one response.|s^e
+mn015|i have one question i get one response.|e
 mn015|or should we allow for a certain level of complexity?|qrr
 mn015|and i think the data would be nicer if we get temporal references.|s
 me010|well so keith what do you think?|qw
-me045|well um it seems that|h|s.%--
-me045|yeah i mean|s.%--
+me045|well um it seems that|h
+me045|yeah i mean|s
 me045|off the top of my head it kind of seems like you would probably just want you know richer data.|s
 me045|more complex stuff going on.|s
 me045|people trying to do more complex sets of things.|s
 me045|i mean you know if our goal is to really sort of be able to handle a whole bunch of different stuff then throwing harder situations at people will get them to do more linguistic more interesting linguistic stuff.|s
-me045|but i mean i'm i'm not really sure.|s^no
+me045|but i mean i'm i'm not really sure.|no
 me045|uh because i don't fully understand like what our choices are of ways to do this here yet.|s
-mn015|i mean we have tested this and|s.%--
-mn015|have you heard listen to the first two or|qy^rt.%--
+mn015|i mean we have tested this and|s
+mn015|have you heard listen to the first two or|rt
 mn015|as a matter of fact the second person is uh is was faced with exactly this kind of setup.|s
 mn015|and|%--
 me045|i started to listen to one and it was just like um uh sort of depressing.|s
 me045|i thought i'd just sort of listen to the beginning part and the person was just sort of reading off her script or something.|s
 me045|and|%--
-mn015|oh okay.|s^bk
+mn015|oh okay.|bk
 me010|yeah.|b
 mn015|that was the first subject.|s
 me045|yeah.|b
 me010|first one wasn't very good.|s
 me045|yeah.|b
 mn015|yeah.|b
-me045|so um i|%-
-fe046|although|%-
-mn015|um it is already with this it got pretty with this setup and that particular subject it got pretty complex.|fg|s
+me045|so um i|%--
+fe046|although|%--
+mn015|um it is already with this it got pretty with this setup and that particular subject it got pretty complex.|fg
 me045|uhhuh.|b
-mn015|maybe i suggest we make some fine tuning of these get sort of run through ten or so subjects.|s^cs
+mn015|maybe i suggest we make some fine tuning of these get sort of run through ten or so subjects.|cs
 me045|uhhuh.|b
 mn015|and then take a breather.|s
 mn015|and see whether we want to make it more complex or not depending on what what sort of results we're getting.|s
@@ -329,183 +329,183 @@ me045|right.|b
 me045|yeah.|fg
 me045|it in fact um i am just you know today next couple days going to start really diving into this data.|s
 me045|i've basically looked at one of the files.|s
-me045|you know one of these|s.%--
+me045|you know one of these|s
 me045|you gave me those dozens of files.|s
 me045|and i looked at one of them which was about ten sentences found fifteen twenty different construction types that we would have to look for and so on.|s
 me045|and like all right well let's start here.|s
 me045|um so i haven't really gone into the you know looked at all of the stuff that's going on.|s
-me045|so i don't really|s.%--
+me045|so i don't really|s
 me045|right i mean once i start doing that i'll have more to say about this kind of thing.|s
-me010|okay.|s^bk
-mn015|and and always|s.%-
+me010|okay.|bk
+mn015|and and always|s
 me010|but well but you did say something important which is that um you can probably keep yourself fairly well occupied uh with the simple cases for quite a while.|s
-me045|yeah.|s^aa
-me010|although obviously so so that does suggest that|s.%--
+me045|yeah.|aa
+me010|although obviously so so that does suggest that|s
 me010|uh now i have looked at all the data and it's it's actually at least to an amateur quite redundant.|s
 me010|that that it was it was very stylized and quite a lot of people said more or less the same thing.|s
 me045|yeah yeah.|b
-me045|i um i did sort of scan it at first and noticed that and then looked in detail at one of them.|s^aap
+me045|i um i did sort of scan it at first and noticed that and then looked in detail at one of them.|aap
 me010|yeah.|b
 me045|but yeah yeah i noticed that too.|s
 me010|so we we we want to do more than that.|s
 mn015|and with this we're getting more.|s
-me010|okay.|s^bk
+me010|okay.|bk
 mn015|no question.|s
 me010|right.|b
-me010|so|%-
-mn015|uh do we want to get going beyond more which is sort of the|qy.%--
-me010|well okay so let's let's take let's i|h|s.%--
+me010|so|%--
+mn015|uh do we want to get going beyond more which is sort of the|qy
+me010|well okay so let's let's take let's i|h
 me010|i think your suggestion is good which is we'll do a uh a batch.|s
-me010|okay.|s^f
+me010|okay.|f
 me010|and uh|fh
 me010|fey how long is it going to be till you have ten subjects?|qw
-me010|couple days?|qy^rt
-me010|or a week?|qy^rt
-me010|or i don't i don't have a feel for|s^no.%--
-fe046|um i can yeah i mean i i think can probably schedule ten people uh whenever.|h|s
+me010|couple days?|rt
+me010|or a week?|rt
+me010|or i don't i don't have a feel for|no
+fe046|um i can yeah i mean i i think can probably schedule ten people uh whenever.|h
 me010|well it's it's up to you.|s
-me010|i mean i i uh we don't have any huge time pressure.|s^e
-me010|it's just when you have|%-
-fe046|how long will it be?|qw^bs
-fe046|um i i would say maybe two weeks.|h|s
-me010|yeah.|s^aa
-me010|oh okay.|s^bk
+me010|i mean i i uh we don't have any huge time pressure.|e
+me010|it's just when you have|%--
+fe046|how long will it be?|bs
+fe046|um i i would say maybe two weeks.|h
+me010|yeah.|aa
+me010|oh okay.|bk
 me010|so let's do this.|s
-me010|let's plan next monday okay to have a review of what we have so far.|s^co
-me010|and|%-
-mn015|this means audio but|s.%--
-me010|huh?|qy^br
+me010|let's plan next monday okay to have a review of what we have so far.|co
+me010|and|%--
+mn015|this means audio but|s
+me010|huh?|br
 mn015|no transcriptions of course.|s
-me010|no we won't have the transcriptions.|s^aa
+me010|no we won't have the transcriptions.|aa
 mn015|yeah.|b
-me010|but what we should be able to do|s.%--
-me010|and i don't know if fey if you will have time to do this.|s^df
-me010|but it would be great if you could um not transcribe it all but pick out uh some stuff.|s^cs
+me010|but what we should be able to do|s
+me010|and i don't know if fey if you will have time to do this.|df
+me010|but it would be great if you could um not transcribe it all but pick out uh some stuff.|cs
 me010|i mean we could uh just sit here and listen to it all.|s
-me010|are you going to have the audio on the web site?|qy^rt
-me010|okay.|s^bk
-mn015|until we reach the gigabyte thing and david johnson kills me and we're going to put it on the web site yeah.|s^na
-me010|oh we could get|s.%--
-me010|i mean you can buy another disk for two hundred dollars.|s^bu
-me010|right?|qy^d^g
-me010|i mean it's it's not like|s.%--
+me010|are you going to have the audio on the web site?|rt
+me010|okay.|bk
+mn015|until we reach the gigabyte thing and david johnson kills me and we're going to put it on the web site yeah.|na
+me010|oh we could get|s
+me010|i mean you can buy another disk for two hundred dollars.|bu
+me010|right?|d
+me010|i mean it's it's not like|s
 me010|okay.|b
-me010|so we'll take care of david johnson.|s^tc
-me010|okay.|s^bk
-mn015|no he uh he he has been solving all our problems or is wonderful.|s^ng
-fe046|take care of him.|s^m
+me010|so we'll take care of david johnson.|tc
+me010|okay.|bk
+mn015|no he uh he he has been solving all our problems or is wonderful.|ng
+fe046|take care of him.|m
 me010|okay.|b
 mn015|so|%--
 me010|all right.|b
 me010|so we'll buy a disk.|s
-me010|but anyway so um if you if you can think of a way to uh point us to to interesting things sort of as you're doing this or or something.|s^cs^tc
-me010|uh make your make notes or something that that this is you know something worth looking at.|s^cs
-me010|and other than that yeah i guess we'll just have to uh listen|s.%--
-me010|although i guess it's only ten minutes each.|s^bu
-me010|right?|qy^d^g^rt
-me010|roughly.|s^e
-fe046|well i guess.|h|s^am
-fe046|i'm not sure how long it's actually going to take.|s^no
+me010|but anyway so um if you if you can think of a way to uh point us to to interesting things sort of as you're doing this or or something.|cs
+me010|uh make your make notes or something that that this is you know something worth looking at.|cs
+me010|and other than that yeah i guess we'll just have to uh listen|s
+me010|although i guess it's only ten minutes each.|bu
+me010|right?|d
+me010|roughly.|e
+fe046|well i guess.|h
+fe046|i'm not sure how long it's actually going to take.|no
 mn015|the reading task is a lot shorter.|s
 mn015|that was cut by fifty percent.|s
-mn015|and the reading|s.%--
+mn015|and the reading|s
 mn015|nobody's interested in that except for the speech people.|s
-me010|right.|s^aa
-me010|no we don't care about that at all.|s^na
+me010|right.|aa
+me010|no we don't care about that at all.|na
 mn015|so|%--
 mn015|it's actually like five minutes dialogue.|s
-me010|my guess is it's going to be ten.|s^ng
-me010|people|%-
-mn015|ten minutes is long.|s^ng
-me010|i understand.|s^bk
-me010|but people people you know uh|s^arp.%-
-fe046|it feels like a long time.|s^aap
+me010|my guess is it's going to be ten.|ng
+me010|people|%--
+mn015|ten minutes is long.|ng
+me010|i understand.|bk
+me010|but people people you know uh|arp
+fe046|it feels like a long time.|aap
 fe046|but|fh
-mn015|yeah.|s^aa
+mn015|yeah.|aa
 me010|yeah.|b
-mn015|it feels like forever when you're doing it.|s^na
+mn015|it feels like forever when you're doing it.|na
 mn015|but then it turns out to be three minutes and forty five seconds.|s
 me010|yeah.|b
-me010|could be.|s^am
+me010|could be.|am
 me045|yeah.|b
 me010|okay.|b
-me010|i was thinking people would you know hesitate and whatever.|s^df
+me010|i was thinking people would you know hesitate and whatever.|df
 me010|whatever it is we'll we'll deal with it.|s
-mn015|yeah it's not|s.%--
+mn015|yeah it's not|s
 me010|okay so that'll be that'll be um on on the web page.|s
 mn015|and it's fun.|s
 mn015|okay.|b
-me010|that's great.|s^ba^tc
-me010|um but anyway yeah so i think it's a good idea to start with the sort of relatively straight forward just response system.|fh|s^tc
+me010|that's great.|ba
+me010|um but anyway yeah so i think it's a good idea to start with the sort of relatively straight forward just response system.|fh
 me010|and then if we want to uh get them to start doing uh multiple step planning with a whole bunch of things and then organize them.|s
 me010|um|%--
-me010|tell them which things are near each other.|s^e
+me010|tell them which things are near each other.|e
 me010|and|fh
 me010|you know any of that stuff.|s
-me010|uh you know which things would you like to do tuesday morning.|fh|s^e
+me010|uh you know which things would you like to do tuesday morning.|fh
 mn015|yeah.|b
 me010|so yeah i that seems pretty straight forward.|s
-fe046|but were you saying that|qy^bu.%-
+fe046|but were you saying that|bu
 mn015|i need those back by the way.|s
-me010|okay.|s^bk
+me010|okay.|bk
 fe046|yeah.|b
 me045|okay.|b
-mn015|that's for|s.%-
-me010|i'm sorry fey what?|s^fa|qy^br
-fe046|that maybe one thing we should do is go through this list and sort of select things that are categories and then offer only one member of that category?|qy^bu^d^rt
-me010|that's what i was suggesting for the first round yeah.|s^na
-fe046|okay.|s^bk
-me045|so rather than having zoo and castle|s^e.%--
-fe046|and then i mean they could be alternate versions of the same if you wanted data on different constructions.|s^bu
-me010|they could but but uh they|s^am.%-
-me010|yeah but uh but|s^bk|s^arp.%--
-fe046|like one person gets the version with the zoo as a choice and the other person gets the|s^e.%-
-me010|you could|s^am.%-
-me010|but but i i i think in the short run|s^arp.%-
-mn015|and|%-
-mn015|no the|s^ar.%--
-mn015|the person don't get it.|s^nd
-mn015|i mean this is why we did it because when we gave them just three tasks for part a and three tasks for part b|s.%-
+mn015|that's for|s
+me010|i'm sorry fey what?|fa
+fe046|that maybe one thing we should do is go through this list and sort of select things that are categories and then offer only one member of that category?|bu
+me010|that's what i was suggesting for the first round yeah.|na
+fe046|okay.|bk
+me045|so rather than having zoo and castle|e
+fe046|and then i mean they could be alternate versions of the same if you wanted data on different constructions.|bu
+me010|they could but but uh they|am
+me010|yeah but uh but|bk
+fe046|like one person gets the version with the zoo as a choice and the other person gets the|e
+me010|you could|am
+me010|but but i i i think in the short run|arp
+mn015|and|%--
+mn015|no the|ar
+mn015|the person don't get it.|nd
+mn015|i mean this is why we did it because when we gave them just three tasks for part a and three tasks for part b|s
 me010|right.|b
 me010|yeah.|b
-fe046|well no they could still choose.|s^aa^df
-fe046|they just wouldn't be able to choose both zoo and say touring the castle.|s^e
-mn015|exactly.|s^aa
-mn015|this is limiting the choices but yeah.|s^bs
-mn015|right.|s^bk
-mn015|okay sorry.|s^fa
+fe046|well no they could still choose.|aa
+fe046|they just wouldn't be able to choose both zoo and say touring the castle.|e
+mn015|exactly.|aa
+mn015|this is limiting the choices but yeah.|bs
+mn015|right.|bk
+mn015|okay sorry.|fa
 mn015|but um i i think this approach will very well work.|s
 mn015|but the person was able to look at it and say okay this is what i would actually do.|s
 fe046|yeah.|b
 me010|okay.|b
 mn015|yeah.|b
 mn015|okay.|b
-fe046|he was vicious.|s^j
-mn015|okay we got to we got to disallow uh traveling to zoos and uh castles at the same time sort of|s^cs.%-
-fe046|i mean there they are significantly different but|s^ng.%--
-mn015|but no they're i mean they're sort of this is where tour becomes you know|s^nd.%--
+fe046|he was vicious.|j
+mn015|okay we got to we got to disallow uh traveling to zoos and uh castles at the same time sort of|cs
+fe046|i mean there they are significantly different but|ng
+mn015|but no they're i mean they're sort of this is where tour becomes you know|nd
 mn015|tourists maybe a bit different.|s
-fe046|yeah i guess so.|s^am
+fe046|yeah i guess so.|am
 mn015|and um these are just places where you you enter um much like here.|s
 me010|yeah.|b
-mn015|but we can uh|s.%-
-me010|yeah in fact if if if you use the right verb for each in common|fg|s.%--
-me010|like you know attend a theater symphony or opera is is a group.|s^e
-me010|and tour the university castle or zoo.|s^e
+mn015|but we can uh|s
+me010|yeah in fact if if if you use the right verb for each in common|fg
+me010|like you know attend a theater symphony or opera is is a group.|e
+me010|and tour the university castle or zoo.|e
 mn015|uhhuh yeah.|b
 me010|all of these do have this kind of tour um aspect about the way you would go to them.|s
-me010|and uh the movie theater is probably also uh is attend et cetera.|fh|s
-mn015|attend.|s^2
-mn015|yeah.|s^bk
+me010|and uh the movie theater is probably also uh is attend et cetera.|fh
+mn015|attend.|2
+mn015|yeah.|bk
 me010|so it may turn out to be not so many different kinds of things.|s
 mn015|huh uhhuh.|b
 me010|and then what one would expect is that that the sentence types would uh their responses would tend to be grouped according to the kind of activity you would expect.|s
 me045|uhhuh.|b
 mn036|but i mean it seem that um there is a difference between going to see something and things like exchange money or dine out.|s
-me010|oh absolutely.|s^aa
+me010|oh absolutely.|aa
 me010|yeah.|b
-mn036|uh function yeah.|s.%
-mn015|yeah this is where|s.%-
+mn036|uh function yeah.|s
+mn015|yeah this is where|s
 mn015|yeah.|fg
 mn015|the function stuff is definitely different and the getting information or stuff yeah.|s
 mn015|okay.|b
@@ -513,124 +513,124 @@ mn015|but this is open.|s
 mn015|so since people going to still pick something we're not going to get any significant amount of redundancy.|s
 mn015|and for reasons we don't want it really in that sense.|s
 mn015|and um we would be ultimately more interested in getting all the possible ways of people asking oh for different things with or with a computer.|s
-mn015|and so if you can think of any other sort of high level tasks a tourist may do just always just mail them to us and we'll sneak them into the collection.|s^co
+mn015|and so if you can think of any other sort of high level tasks a tourist may do just always just mail them to us and we'll sneak them into the collection.|co
 mn015|we're not going to do much statistical stuff with it.|s
 me010|we don't have enough.|s
-mn015|no.|s^aa
-mn015|but it seems like since we since we are getting towards uh subject uh fifty subjects.|s^ng
+mn015|no.|aa
+mn015|but it seems like since we since we are getting towards uh subject uh fifty subjects.|ng
 mn015|and if we can keep it up um to a uh sort of five four-ish per week rate we may even reach the one hundred before fey takes off to chicago.|s
 fe046|that means that one hundred people have to be interested.|s
-me045|good luck.|s^ba^j
+me045|good luck.|ba
 fe046|yeah.|b
-me010|well um these are all people off campus from campus so far.|s^bu
-fe046|yeah.|s^aa
-me010|right?|qy^d^g
-fe046|yeah.|s^aa
-me010|so we yeah we don't know how many we can get next door at the uh shelter for example.|s^no
+me010|well um these are all people off campus from campus so far.|bu
+fe046|yeah.|aa
+me010|right?|d
+fe046|yeah.|aa
+me010|so we yeah we don't know how many we can get next door at the uh shelter for example.|no
 me045|huh.|b
 me010|uh for ten bucks probably quite a few.|s
 me045|yeah.|b
-me045|that's right.|s^aa
+me045|that's right.|aa
 me010|yeah.|b
-me010|so all right so let's go let's go back then to the the chart with all the decisions and stuff and see how we're doing.|s^co^t^tc
+me010|so all right so let's go let's go back then to the the chart with all the decisions and stuff and see how we're doing.|co
 mn015|yep.|b
 me010|do do people think that you know this is is going to um cover what we need or should we be thinking about more?|qy
-mn015|okay in terms of decision nodes?|s^bk|qy^bu^d^rt
-me010|yep.|s^aa
+mn015|okay in terms of decision nodes?|bk
+me010|yep.|aa
 mn015|i mean go there is is a yes or no.|s
-mn015|right?|qy^d^g^rt
-me010|yep.|s^aa
+mn015|right?|d
+me010|yep.|aa
 me045|uhhuh.|b
 mn015|i'm also interested in in this property uh line here.|s
-mn015|so if you look at sorry look at that|s.%--
+mn015|so if you look at sorry look at that|s
 mn015|um timing was um i have these three.|s
-mn015|do we need a final differentiation there?|qy^rt
-mn015|now later on the same tour sometimes on the next tour?|qy^d^rt
+mn015|do we need a final differentiation there?|rt
+mn015|now later on the same tour sometimes on the next tour?|d
 me045|what's this idea of next tour?|qw
-me045|i mean|s.%-
+me045|i mean|s
 mn015|it's sort of next day.|s
 mn015|so you're doing something now and you have planned to do these three four things.|s
 me045|uhhuh.|b
-mn015|and you can do something immediately.|s^rt
+mn015|and you can do something immediately.|rt
 me045|uhhuh.|b
 mn015|you could sort of tag it on to that tour.|s
-me045|or okay.|s^bk
+me045|or okay.|bk
 mn015|or you can say this is something i would do i want to do sometime in my life basically.|s
 me045|okay.|fg
 me045|okay.|fg
-me045|so so this tour is sort of just like the idea of current round of of touristness or whatever.|s^bu
-me010|right.|s^aa
+me045|so so this tour is sort of just like the idea of current round of of touristness or whatever.|bu
+me010|right.|aa
 me010|yeah.|fg
-me045|okay.|s^bk
-me010|yeah probably between stops back at the hotel.|fg|s
-me045|okay.|s^bk
-me045|got it.|s^bk
-me010|i mean if you if if you wanted precise about it uh you know|s.%--
-me045|got it.|s^bk
+me045|okay.|bk
+me010|yeah probably between stops back at the hotel.|fg
+me045|okay.|bk
+me045|got it.|bk
+me010|i mean if you if if you wanted precise about it uh you know|s
+me045|got it.|bk
 me010|uh and i think that's the way tourists do organize their lives.|s
-me045|sure sure sure.|s^aa
-me010|you know okay we'll go back to the hotel and then we'll go off.|s^e
+me045|sure sure sure.|aa
+me010|you know okay we'll go back to the hotel and then we'll go off.|e
 me010|and|fh
-me045|okay.|s^bk
-mn036|so all tours a tour happens only within one day?|qy^d
-me010|yes.|s^aa
+me045|okay.|bk
+mn036|so all tours a tour happens only within one day?|d
+me010|yes.|aa
 me045|okay.|b
-mn036|so the next tour will be tomorrow?|qy^d
-me010|it|%-
-me010|right.|s^aa
-me010|for this.|s^2
-me045|okay.|s^bk
+mn036|so the next tour will be tomorrow?|d
+me010|it|%--
+me010|right.|aa
+me010|for this.|2
+me045|okay.|bk
 me045|just to be totally clear.|s
 me045|okay.|b
-mn015|well my visit to prague there were some nights where i never went back to the hotel.|s^ng
+mn015|well my visit to prague there were some nights where i never went back to the hotel.|ng
 mn015|so whether that counts as a two day tour or not we'll have to think.|s
 me045|you just spend the whole time at u fleku or something.|s
 mn036|yeah.|b
 me010|i we will we will not ask you more.|s
-fe046|right.|s^aa
+fe046|right.|aa
 mn036|right.|b
-fe046|that's enough.|s^na
-mn015|i don't know.|s^no
+fe046|that's enough.|na
+mn015|i don't know.|no
 mn015|what is the uh the the english uh um cognate if you want for sankt nimmerlandstag?|qw
-me045|keine ahnung.|s^no
+me045|keine ahnung.|no
 mn015|sort of we'll do it on when you say on that day it means it'll never happen.|s
 me010|yeah.|b
-me010|right.|s^aa
+me010|right.|aa
 me045|okay.|b
-mn015|do you have an expression?|qy^rt
-mn015|probably you|s^rt.%--
-me045|not that i know of actually.|s^ar
-mn015|yeah when hell yep we'll do it when hell freezes over.|s^aa|s^m
+mn015|do you have an expression?|rt
+mn015|probably you|rt
+me045|not that i know of actually.|ar
+mn015|yeah when hell yep we'll do it when hell freezes over.|aa
 me010|yeah.|b
-mn015|so maybe that should be another property in there.|s^cs
+mn015|so maybe that should be another property in there.|cs
 mn036|right.|b
-fe046|never.|s^e
+fe046|never.|e
 me010|yeah.|b
 me010|yeah.|b
-mn015|okay.|s^bk
-mn015|um the reason why why do we go there in the first place|s.%--
+mn015|okay.|bk
+mn015|um the reason why why do we go there in the first place|s
 mn015|i e uh it's either uh for sightseeing for meeting people for running errands or doing business.|s
-mn015|entertainment is a good one in there i think.|s^ba
-mn015|i agree.|s^ba
-me045|so business is supposed to uh be sort of it like professional type stuff?|qy^bu^d
-me045|right?|qy^d^g
+mn015|entertainment is a good one in there i think.|ba
+mn015|i agree.|ba
+me045|so business is supposed to uh be sort of it like professional type stuff?|bu
+me045|right?|d
 me045|or something like that?|qrr
-mn015|yep.|s^aa
-me045|okay.|s^bk
-me045|um|b.%--
+mn015|yep.|aa
+me045|okay.|bk
+me045|um|b
 mn015|i mean this this is uh an old uh johno thing.|s
 mn015|he sort of had it in there.|s
 mn015|who is the the is the person?|qh
 mn015|so it might be a tourist.|s
-mn015|it might be a business man who's using the system who wants to sort of go to some|s.%-
+mn015|it might be a business man who's using the system who wants to sort of go to some|s
 me045|uhhuh.|b
-me045|yeah.|s^aa
-me010|yeah or or both.|s^aap
+me045|yeah.|aa
+me010|yeah or or both.|aap
 me045|yeah.|fg
-me045|yeah i mean like for example my my father is about to travel to prague.|fg|s
+me045|yeah i mean like for example my my father is about to travel to prague.|fg
 mn015|yep.|b
 me045|he'll be there for two weeks.|s
-me045|he is going to uh|s.%--
+me045|he is going to uh|s
 me045|he's there to teach a course at the business school but he also is touring around.|s
 me045|and so he may have some mixture of these things.|s
 me010|huh.|b
@@ -638,31 +638,31 @@ mn015|yep.|b
 me010|sure.|b
 mn015|yep.|b
 me010|right.|b
-mn015|he would|s.%-
+mn015|he would|s
 mn036|what what do you have in mind in terms of um socializing?|qw
-mn036|what kind of activities|qw.%-
+mn036|what kind of activities|qw
 mn015|uh just meeting people basically.|s
-mn036|oh|%-
+mn036|oh|%--
 mn015|i want to meet someone somewhere which puts a very heavy constraint on the eva.|s
 mn015|you know because then if you're meeting somebody at the town hall you're not entering it usually.|s
 me045|yeah.|b
 mn015|you're just want to approach it.|s
-me045|so i mean does this capture like where do you put|qy.%--
-me045|exchange money is an errand.|s^bu
-me045|right?|qy^d^g
-me045|but what about uh|qw.%--
+me045|so i mean does this capture like where do you put|qy
+me045|exchange money is an errand.|bu
+me045|right?|d
+me045|but what about uh|qw
 me010|uhhuh.|b
-mn015|yep.|s^aa
+mn015|yep.|aa
 me045|so like go to a movie is now entertainment.|s
-me045|dine out is|qw.%--
-mn036|socializing i guess.|s^2
-me010|no i i|s^ar.%--
-me010|well i don't know.|s^no
+me045|dine out is|qw
+mn036|socializing i guess.|2
+me010|no i i|ar
+me010|well i don't know.|no
 me010|let let well we'll put it somewhere.|s
-me045|so i mean|s.%-
+me045|so i mean|s
 me010|but but um|%--
 me045|right.|b
-me010|i would say that if dine out is a special uh|s.%--
+me010|i would say that if dine out is a special uh|s
 me010|if you're doing it for that purpose then it's entertainment.|s
 me045|yeah.|b
 me010|and we'll also as as you'll further along we'll get into business about well you're you know this is going over a meal time.|s
@@ -670,33 +670,33 @@ me010|do you want to stop for a meal or pick up food or something?|qy
 me045|uhhuh.|b
 me010|and that's different.|s
 me010|that's that's sort of part of that's not a destination reason that's sort of en passant right.|s
-me045|right.|s^aa
+me045|right.|aa
 mn015|that goes with the energy depletion function blech.|s
 me045|yeah.|b
 me010|right yeah.|b
-mn015|okay endpoint|s^tc.%-
-me045|tourist needs food badly.|s^e
+mn015|okay endpoint|tc
+me045|tourist needs food badly.|e
 me010|right.|b
 mn015|endpoint is pretty clear.|s
-mn015|um mode.|fh|s^rt
-mn015|uh i have found three.|s^rt
+mn015|um mode.|fh
+mn015|uh i have found three.|rt
 mn015|drive there walk there uh or be driven which means bus taxi bart.|s
-me010|okay.|s^bk
-mn015|yeah.|s^aa
-mn015|yep.|s^aa
+me010|okay.|bk
+mn015|yeah.|aa
+mn015|yep.|aa
 me010|obviously taxis are very different than buses.|s
-me010|but on the other hand the system doesn't have any public transport this the planner system doesn't have any public transport in it yet.|s^df
-mn015|so this granularity would suffice i think if we say the person|s.%--
-mn015|probably based on the utterance we on the situation we can conclude|s.%--
+me010|but on the other hand the system doesn't have any public transport this the planner system doesn't have any public transport in it yet.|df
+mn015|so this granularity would suffice i think if we say the person|s
+mn015|probably based on the utterance we on the situation we can conclude|s
 mn015|wants to drive there walk there or use some other form of transportation.|s
 me045|how much of heidelberg can you get around by public transport?|qw
-me045|i mean in terms of the interesting bits.|s^e
-me045|there's lots of bits where you don't really|s.%--
-me045|i've only was there ten years ago for a day so i don't remember but|s^df.%--
-me010|well|%-
-me045|i mean like the sort of the touristy bits|s^e.%--
+me045|i mean in terms of the interesting bits.|e
+me045|there's lots of bits where you don't really|s
+me045|i've only was there ten years ago for a day so i don't remember but|df
+me010|well|%--
+me045|i mean like the sort of the touristy bits|e
 mn015|everywhere.|s
-me045|is it like|qy.%--
+me045|is it like|qy
 me010|you can't get to the philosophers' way very well.|s
 me010|but|%--
 me045|yeah.|b
@@ -706,388 +706,388 @@ mn015|yeah.|b
 me045|okay.|b
 me010|but i think other things you can if i remember right.|s
 fn050|so is like biking there part of like driving there?|qy
-mn015|yeah um we actually biking should be should be a separate point because we have a very strong bicycle planning component.|fg|s
-fn050|or|qrr.%--
-me010|oh!|s^bk^fe
-mn015|so|s.%--
-fe046|huh that's good.|s^ba
-mn015|um|%-
-me010|put it in.|s^co
-mn015|bicycles should be in there.|s^bk
+mn015|yeah um we actually biking should be should be a separate point because we have a very strong bicycle planning component.|fg
+fn050|or|qrr
+me010|oh!|bk
+mn015|so|s
+fe046|huh that's good.|ba
+mn015|um|%--
+me010|put it in.|co
+mn015|bicycles should be in there.|bk
 mn015|but|%--
-mn015|will we have|qy^rt.%--
-mn015|i mean is this realistic?|qh^rt
-mn015|i mean|s.%--
-me045|yeah.|s^bk
-me010|okay we can leave it out i guess.|s^bk|s^am
+mn015|will we have|rt
+mn015|i mean is this realistic?|rt
+mn015|i mean|s
+me045|yeah.|bk
+me010|okay we can leave it out i guess.|bk
 me045|yeah.|b
-mn015|we can we can sort of uh drive|s.%--
-me045|i would i would lump it with walk because hills matter.|s^cs
-mn015|yeah.|s^aa
-me045|right?|qy^d^g
-me045|you know.|s^f
+mn015|we can we can sort of uh drive|s
+me045|i would i would lump it with walk because hills matter.|cs
+mn015|yeah.|aa
+me045|right?|d
+me045|you know.|f
 me045|things like that.|s
-mn015|yeah.|b.x
+mn015|yeah.|b
 me010|okay.|b
-me010|skateboards.|s^e
-me010|right?|qy^g^rt
+me010|skateboards.|e
+me010|right?|g
 mn036|right.|b
-me010|anyway.|s^tc
+me010|anyway.|tc
 me010|scooters.|s
-me010|right?|qy^d^g
+me010|right?|d
 mn015|yep.|b
-me010|all right.|s^tc
-mn015|okay length is um you want to get this over with as fast as possible.|s^bk|s^rt
-mn015|you want to use some part of what of the time you have.|s^rt
-mn015|um they can.|h|s^aa^rt
-mn015|but we should just make a decision whether we feel that they want to use some substantial or some fraction of their time.|s^arp^cs^df
-mn015|you know they want to do it so badly that they are willing to spend uh you know the necessary and plus time.|s^e
+me010|all right.|tc
+mn015|okay length is um you want to get this over with as fast as possible.|bk
+mn015|you want to use some part of what of the time you have.|rt
+mn015|um they can.|h
+mn015|but we should just make a decision whether we feel that they want to use some substantial or some fraction of their time.|arp
+mn015|you know they want to do it so badly that they are willing to spend uh you know the necessary and plus time.|e
 me045|huh.|b
 mn015|and um|fh
-mn015|and you know if we feel that they want to do nothing but that thing then you know we should point out that to the planner that they probably want to use all the time they have.|s^cs
-mn015|so stretch out that visit for that.|s^co
-me010|uhhuh.|s^aa
-me045|wow!|s^fe
-me045|it seems like this would be really hard to guess.|s^ba
+mn015|and you know if we feel that they want to do nothing but that thing then you know we should point out that to the planner that they probably want to use all the time they have.|cs
+mn015|so stretch out that visit for that.|co
+me010|uhhuh.|aa
+me045|wow!|fe
+me045|it seems like this would be really hard to guess.|ba
 me045|i mean on the part of the system.|s
-me045|it seems like it|s.%--
-me045|i mean you're you're talking about rather than having the user decide this you're supposed we're supposed to figure it out?|qy^d^rt
+me045|it seems like it|s
+me045|i mean you're you're talking about rather than having the user decide this you're supposed we're supposed to figure it out?|d
 me010|well|h
 mn015|the user can always say it but it's just sort of we we hand over these parameters if we make if we have a feeling that they are important.|s
 me045|overrider.|s
-me010|yeah.|s^aa
+me010|yeah.|aa
 me045|uhhuh.|b
 mn015|and that we can actually infer them to a significant degree or we ask.|s
 me010|and|fg
 me010|and yeah and part of the system design is that if it looks to be important and you can't figure it out then you ask.|s
-me045|okay.|s^bk
+me045|okay.|bk
 mn015|yeah.|b
-me045|okay.|s^bk
+me045|okay.|bk
 me010|but hopefully you don't ask you know all these things all the time.|s
 me010|or uh so but there's but definitely a back off position to asking.|s
-me045|yeah.|s^bk
+me045|yeah.|bk
 me045|yeah.|b
-me045|right.|s^bk
+me045|right.|bk
 me045|yeah.|b
-mn015|and if no no part of the system ever comes up with the idea that this could be important no planner is ever going to ask for it.|s^e
+mn015|and if no no part of the system ever comes up with the idea that this could be important no planner is ever going to ask for it.|e
 me045|yeah.|b
-mn015|so and i like the idea that you know sort of|s^ba.%--
-mn015|jerry pushed this idea from the very beginning that it's part of the understanding business to sort of make a good question of what's sort of important in this general picture what you need|s.%--
+mn015|so and i like the idea that you know sort of|ba
+mn015|jerry pushed this idea from the very beginning that it's part of the understanding business to sort of make a good question of what's sort of important in this general picture what you need|s
 me045|uhhuh.|b
 mn015|if you want to simulate it for example what parameters would you need for the simulation?|qh
 mn015|and timing uh uh length would definitely be part of it.|s
-mn015|costs?|qh^rt
-mn015|little money some money lots of money?|qo^rt
-me010|uhhuh.|s^aa
-mn015|actually maybe uh uh so|s.%--
-mn015|yeah okay.|s^bk
-mn015|huh?|qw^br
+mn015|costs?|rt
+mn015|little money some money lots of money?|rt
+me010|uhhuh.|aa
+mn015|actually maybe uh uh so|s
+mn015|yeah okay.|bk
+mn015|huh?|br
 me045|you could say some in there.|s
 mn036|i must say that this one looks a bit strange to me.|s
 mn036|um maybe it seems like appropriate if i go to las vegas.|s
-mn036|well but i decide kind of how much money uh i'm willing to lose.|s.x
+mn036|well but i decide kind of how much money uh i'm willing to lose.|s
 mn036|but i as a tourist i'll just paying what's what's more or less is required.|s
-me010|well no.|s^ar
-me010|i think there are there're different things where you have a choice.|s^df
+me010|well no.|ar
+me010|i think there are there're different things where you have a choice.|df
 fe046|huh.|b
-me010|for example uh this interacts with am i are you willing to take a taxi?|qh^e
+me010|for example uh this interacts with am i are you willing to take a taxi?|e
 me045|yeah.|b
-me045|dinner.|s^2
-me010|or uh you know if if you're going to the opera are you going to look for the best seats or the peanut gallery?|qh^e
-mn036|the best seat or or right.|s^2
-me010|or you know?|qy^f
+me045|dinner.|2
+me010|or uh you know if if you're going to the opera are you going to look for the best seats or the peanut gallery?|e
+mn036|the best seat or or right.|2
+me010|or you know?|f
 me010|whatever.|s
 me045|okay so|fg
-me010|so i think there are a variety of things in which um|s.%--
+me010|so i think there are a variety of things in which um|s
 me010|tourists really do have different styles eating.|s
 me010|another one.|s
-me010|you know?|qy^d^f^g
-me045|yeah.|s^aa
-mn036|right that's true.|s^aa
-fe046|right.|s^aa
-mn015|the what what my sort of sentiment is they're|s.%--
+me010|you know?|d
+me045|yeah.|aa
+mn036|right that's true.|aa
+fe046|right.|aa
+mn015|the what what my sort of sentiment is they're|s
 mn015|well i i once had to write a a a a charter a carter for a a student organization.|s
-mn015|and they had wanted me to define what the quorum is going to be.|s^rt
-mn015|and i looked at the other ones and they always said ten percent of the student body has to be present at their general meeting otherwise it's not a|s.%--
+mn015|and they had wanted me to define what the quorum is going to be.|rt
+mn015|and i looked at the other ones and they always said ten percent of the student body has to be present at their general meeting otherwise it's not a|s
 mn015|and i wrote in there enough people have to be there.|s
 mn015|and it was hotly debated but people agreed with me that everybody probably has a good feeling whether it was a farce a joke or whether there were enough people.|s
 me045|yeah.|b
-mn015|and if you go to turkey you will find when people go shopping they will say how much cheese do you want.|s:qw
+mn015|and if you go to turkey you will find when people go shopping they will say how much cheese do you want.|s
 mn015|and they say uh enough.|s
 mn015|and the and the this used all over the place.|s
 mn015|because the person selling the cheese knows you know that person has two kids and you know a husband that dislikes cheese so this is enough.|s
 me045|uhhuh.|b
 mn015|and um so the middle part is always sort of the the golden way.|s
-mn015|right?|qy^d^g^rt
+mn015|right?|d
 mn015|so you can you can be really make it as cheap as possible or you can say i want uh you know i don't care.|s
-me045|money is no object.|s^e
+me045|money is no object.|e
 me045|uhhuh.|b
 me010|yeah.|b
-mn015|money is no object.|s^aa^m
+mn015|money is no object.|aa
 mn015|or you say i just want to spend enough.|s
 me045|uhhuh.|b
 mn015|or the sufficient or the appropriate amount.|s
 me045|yeah.|b
 mn015|but then again this may turn out to be insufficient for our purposes.|s
 mn015|but well this is my first guess.|s
-me045|i mean|s.%-
+me045|i mean|s
 mn015|in much the same way as how how you know should the route be?|qh
 me045|yeah.|b
-mn015|should it be the easiest route even if it's a little bit longer?|qh^rt
-me045|uhhuh.|b.%
-mn015|no steep inclinations?|qh^d^rt
-mn015|go the normal way?|qh^d^rt
+mn015|should it be the easiest route even if it's a little bit longer?|rt
+me045|uhhuh.|b
+mn015|no steep inclinations?|d
+mn015|go the normal way?|d
 mn015|whatever that again means uh or do you does the person want to rough it?|qy
 me045|uhhuh.|b
 me045|i mean so there's a couple of different ways you can interpret these things.|s
-me045|right?|qy^d^g^rt
+me045|right?|d
 me045|you know i want to go there and i don't care if it's really hard.|s
-me045|or if you're an extreme sport person you know|s.%--
+me045|or if you're an extreme sport person you know|s
 me045|i want to go there and i insist on it being the hard way.|s
-me010|right.|s^bk
-me045|right?|qy^d^g
+me010|right.|bk
+me045|right?|d
 me045|you know so i assume we're going for the first interpretation.|s
 fe046|right.|b
-me045|right?|qy^d^g
-me045|something like|s.%--
-me045|i'll go|s.%--
-me045|i mean|s.%--
-me045|i'd|s.%--
-me045|i don't know.|s^no
+me045|right?|d
+me045|something like|s
+me045|i'll go|s
+me045|i mean|s
+me045|i'd|s
+me045|i don't know.|no
 me010|no i think he was going for the second one actually.|s
-me045|it's different from thing to|s.%-
-me045|yeah?|qy^bh^rt
-me010|anyway we'll sort yeah we'll sort that out.|s^cc
-me045|i i|s.%-
-me045|okay.|s^bk
-me010|right.|s^bk
+me045|it's different from thing to|s
+me045|yeah?|bh
+me010|anyway we'll sort yeah we'll sort that out.|cc
+me045|i i|s
+me045|okay.|bk
+me010|right.|bk
 me045|yeah.|b
-me010|absolutely.|s^aa
+me010|absolutely.|aa
 mn015|well this is all sort of um top of my head.|s
 mn015|no no research behind that.|s
 me045|yeah.|b
-mn015|um object information.|s^rt^tc
-mn015|do i do i want to know anything about that object.|s:qh^rt
-mn015|is either true or false.|s^rt
+mn015|um object information.|rt
+mn015|do i do i want to know anything about that object.|s
+mn015|is either true or false.|rt
 mn015|and if i care about it being open accessible or not i don't think there's any middle ground there.|s
-mn015|um either i want to know where it is or not.|s^rt
-mn015|i want to know about it's history or not.|s^rt
+mn015|um either i want to know where it is or not.|rt
+mn015|i want to know about it's history or not.|rt
 mn015|or um i want to know about what it's good for or not.|s
-mn015|maybe one could put scales in there too.|s^cs
-mn015|so i want to know a lot about it.|s^e
-me010|yeah now|fg|%-
-me010|okay.|s^bk
-me010|i'm sorry!|s^fe
-me010|go ahead.|s^co
-me010|what were you going to say?|qy^br^rt
+mn015|maybe one could put scales in there too.|cs
+mn015|so i want to know a lot about it.|e
+me010|yeah now|fg
+me010|okay.|bk
+me010|i'm sorry!|fe
+me010|go ahead.|co
+me010|what were you going to say?|br
 mn015|one could put scales in there.|s
 mn015|so i want to know a lot about the history.|s
-mn015|just a bit|s.%-
-me010|yeah right.|s^bk
-me010|well if we|s.%--
-me010|right.|s^aa
-me010|so object becomes entity.|s^rt
-me010|right?|qy^d^g^rt
-mn015|yep that's true.|s^aa
+mn015|just a bit|s
+me010|yeah right.|bk
+me010|well if we|s
+me010|right.|aa
+me010|so object becomes entity.|rt
+me010|right?|d
+mn015|yep that's true.|aa
 me010|yeah but we don't have to do it now.|s
-mn015|yep.|s^bk
+mn015|yep.|bk
 mn015|that was the wrong shortcut anyhow.|s
-me010|and we think that's it interestingly enough that um you know|s.%--
+me010|and we think that's it interestingly enough that um you know|s
 me010|or or or something very close to it is going to be uh going to be enough.|s
-me010|and|s.%--
+me010|and|s
 fe046|still wrong.|s
-mn015|yeah.|s^aa
-me045|okay.|s^bk^rt^tc
-me010|all right so um so i think the order of things is that um robert will clean this up a little bit although it looks pretty good.|s^rt
-me010|and|s.%--
+mn015|yeah.|aa
+me045|okay.|bk
+me010|all right so um so i think the order of things is that um robert will clean this up a little bit although it looks pretty good.|rt
+me010|and|s
 mn015|what|%--
-mn015|well this is the part that|s.%--
-me010|huh?|qy^br
+mn015|well this is the part that|s
+me010|huh?|br
 mn015|this is the part that needs the work.|s
-me010|right.|s^aa
+me010|right.|aa
 me010|yeah so|%--
 me045|yeah.|b
-me010|right.|s^aa^r
+me010|right.|aa
 me010|so so um in parallel uh three things are going to happen.|s
 me010|uh robert and eva and bhaskara are going to actually build a belief net that that um has c p t's and you know tries to infer this from various kinds of information.|s
-me010|and fey is going to start collecting data.|s^rt
+me010|and fey is going to start collecting data.|rt
 me010|and we're going to start thinking about uh what constructions we want to elicit.|s
-me010|and then it may iterate on uh further data collection to elicit|s.%-
-me045|do you mean do you mean eliciting particular constructions?|qy^rt
-me045|or do you mean like what kinds of things we want to get people talking about semantically speaking uh|qrr.%--
-me010|well yes.|s^bk
+me010|and then it may iterate on uh further data collection to elicit|s
+me045|do you mean do you mean eliciting particular constructions?|rt
+me045|or do you mean like what kinds of things we want to get people talking about semantically speaking uh|qrr
+me010|well yes.|bk
 me010|both.|s
-me045|okay.|s^bk
-me010|uh and though for us constructions are primarily semantic.|fh|s
-me010|right?|qy^d^g
-me045|right.|s^aa^m
-me010|and and so uh|s.%-
-me045|sure.|s^aa
-me045|i mean from my point of view i'm i'm trying to care about the syntax so you know|s.%-
-me010|well that too.|s^rt
+me045|okay.|bk
+me010|uh and though for us constructions are primarily semantic.|fh
+me010|right?|d
+me045|right.|aa
+me010|and and so uh|s
+me045|sure.|aa
+me045|i mean from my point of view i'm i'm trying to care about the syntax so you know|s
+me010|well that too.|rt
 me010|but um you know if if we in if we you know make sure that we get them talking about temporal order.|s
-me045|okay.|s^bk
+me045|okay.|bk
 me045|yeah.|b
-me010|okay that would be great.|s^ba
+me010|okay that would be great.|ba
 me010|and if if they use prepositional phrases or subordinate clauses or whatever.|s
 me045|uhhuh.|b
 me045|right okay.|b
 me010|um|fh
 me010|you know whatever form they use is fine.|s
-me045|okay.|s^bk
-me010|but i i think that probably we're going to try to look at it as you know what semantic constructions do we do we want them to uh do|s^cs.%--
-me045|okay.|s^bk
-me010|you know um caused motion.|s^e
-me010|i don't know.|s^no
+me045|okay.|bk
+me010|but i i think that probably we're going to try to look at it as you know what semantic constructions do we do we want them to uh do|cs
+me045|okay.|bk
+me010|you know um caused motion.|e
+me010|i don't know.|no
 me010|something like that.|s
 me045|okay.|b
 me010|uh but uh uh this is actually a conversation you and i have to have about your thesis fantasies and how all this fits into that.|s
-me045|got it.|s^bk
+me045|got it.|bk
 me045|yeah.|b
 me045|uh yeah okay.|b
-me010|but uh|s.%-
-mn015|well i will tell you the german tourist data.|s^cs
-me045|okay.|s^bk
+me010|but uh|s
+mn015|well i will tell you the german tourist data.|cs
+me045|okay.|bk
 mn015|because i have not been able to dig out all the stuff out of the thirty d v ds.|s
 me045|okay.|b
-mn015|um if you|s.%-
-me045|is that roughly the equivalent of of what i've seen in english or is it|qr.%-
-mn015|no not at all.|s^ar
-me045|okay.|s^bk
+mn015|um if you|s
+me045|is that roughly the equivalent of of what i've seen in english or is it|qr
+mn015|no not at all.|ar
+me045|okay.|bk
 mn015|dialogues.|s
-me045|okay.|s^bk
+me045|okay.|bk
 mn015|smartkom human.|s
 mn015|wizard of oz.|s
 me045|okay.|b
 me045|same|%--
-me045|okay that.|s^bk
-me045|got it.|s^bk
+me045|okay that.|bk
+me045|got it.|bk
 me045|like what what have i got now?|qw
-me045|i mean i have uh what what i'm what i|s.%--
-me045|those files that you sent me are the user side of some interaction with fey?|qy^bu^rt
-mn015|a little bit of data i|s.%-
-me045|is that what it is or|qr^g.%-
-mn015|with nothing.|s^2
-me010|no no.|s^ar
-me045|just talking into a box and not hearing anything back.|s^bu
-mn015|yep.|s^aa
-me045|okay.|s^bk
-mn015|yep.|s^bk
+me045|i mean i have uh what what i'm what i|s
+me045|those files that you sent me are the user side of some interaction with fey?|bu
+mn015|a little bit of data i|s
+me045|is that what it is or|g
+mn015|with nothing.|2
+me010|no no.|ar
+me045|just talking into a box and not hearing anything back.|bu
+mn015|yep.|aa
+me045|okay.|bk
+mn015|yep.|bk
 mn015|some data i collected in a couple weeks for training recognizers and email way back when.|s
-me045|okay okay.|s^bk
+me045|okay okay.|bk
 mn015|nothing to write home about.|s
-me045|okay.|s^bk
-mn015|and um the|s.%--
+me045|okay.|bk
+mn015|and um the|s
 mn015|see this this this uh ontology node is probably something that i will try to expand.|s
 mn015|once we have the full ontology a p i what can we expect to get from the ontology?|qh
-mn015|and hopefully you can sort of also try to find out you know sooner or later in the course of the summer what we can expect to get from the discourse that might you know or the|s^cs.%--
+mn015|and hopefully you can sort of also try to find out you know sooner or later in the course of the summer what we can expect to get from the discourse that might you know or the|cs
 me045|uhhuh.|b
 me010|uhhuh.|b
-mn015|not the discourse the utterance as it were uh|s^bsc.%--
+mn015|not the discourse the utterance as it were uh|bsc
 me045|uhhuh.|b
-me010|right.|s^bk
-mn015|in terms of uh|s.%--
-me010|right but we're not expecting keith to actually build a parser.|fg|s
-mn015|no no no no no.|s^aa
-me045|right right.|s^bk
-me010|okay.|s^bk
+me010|right.|bk
+mn015|in terms of uh|s
+me010|right but we're not expecting keith to actually build a parser.|fg
+mn015|no no no no no.|aa
+me045|right right.|bk
+me010|okay.|bk
 me010|we are expecting johno to build a parser.|s
-mn015|yes.|s^aa
+mn015|yes.|aa
 me010|but that's a|%--
-me045|by the end of the summer too.|s^j
-me010|no.|s^ar
-mn015|no.|s^ar^m
-me010|no.|s^ar
-me010|uh he's he's hoping to do this for his masters' thesis by a year from now.|fh|s
-mn015|but it's sort of it's|s.%-
-me045|right.|s^bk
-me045|huh!|s^fe
+me045|by the end of the summer too.|j
+me010|no.|ar
+mn015|no.|ar
+me010|no.|ar
+me010|uh he's he's hoping to do this for his masters' thesis by a year from now.|fh
+mn015|but it's sort of it's|s
+me045|right.|bk
+me045|huh!|fe
 me045|still pretty formidable actually.|s
-me010|uh absolutely.|s^aa
-me010|uh limited.|s^e
-me010|i mean you know the idea is is|s.%--
+me010|uh absolutely.|aa
+me010|uh limited.|e
+me010|i mean you know the idea is is|s
 me045|yeah.|b
 me010|well the hope is that the parser itself is uh pretty robust.|s
-me010|but it's not popular it's only only|s.%-
-me045|right right.|s^bk
-me045|existence proof you know.|s^2
+me010|but it's not popular it's only only|s
+me045|right right.|bk
+me045|existence proof you know.|2
 me045|set up the infrastructure.|s
-me010|right.|s^bk
-me010|it's only|s.%-
+me010|right.|bk
+me010|it's only|s
 me045|yeah.|b
-me010|right.|s^bk
-me045|um sometime i have to talk to some subset of the people in this group at least about um what sort of constructions i'm looking for.|s^cs^tc
+me010|right.|bk
+me045|um sometime i have to talk to some subset of the people in this group at least about um what sort of constructions i'm looking for.|cs
 me045|i mean you know obviously like just again looking at this one uh thing you know i saw things from sort of as general as argument structure constructions.|s
 me045|oh you know i have to do verb phrase.|s
 me045|i have to do uh uh unbounded dependencies.|s
-me045|you know which have a variety of constructions in uh uh|s.%--
+me045|you know which have a variety of constructions in uh uh|s
 me045|instantiate that.|s
-me045|on the other hand i have to have you know|s.%--
-me045|there's particular uh fixed expressions or semi fixed expressions like get plus path expression for you know how how do i get there.|s:qh
+me045|on the other hand i have to have you know|s
+me045|there's particular uh fixed expressions or semi fixed expressions like get plus path expression for you know how how do i get there.|s
 me010|uhhuh.|b
-me045|how do i get in.|s:qh
-me045|how do i get away.|s:qh
+me045|how do i get in.|s
+me045|how do i get away.|s
 me010|right.|b
 me045|and all that kind of stuff.|s
-me045|um so there's a variety of sort of different sorts of constructions.|fh|s
-me010|absolutely.|s^aa
-me045|and it you know it's it's sort of like anything goes.|s^bu^rt
-me045|like|s.%-
-me010|okay so this is i think we're going to mainly work on with george.|s^bk|s
-me010|okay and|s.%--
+me045|um so there's a variety of sort of different sorts of constructions.|fh
+me010|absolutely.|aa
+me045|and it you know it's it's sort of like anything goes.|bu
+me045|like|s
+me010|okay so this is i think we're going to mainly work on with george.|bk
+me010|okay and|s
 me045|okay.|b
-me010|let me say what i think is is|s.%--
+me010|let me say what i think is is|s
 me010|so the idea is uh first of all i misspoke when i said we thought you should do the constructions.|s
-me010|cause apparently for a linguist that means to do completely and perfectly.|s^df
+me010|cause apparently for a linguist that means to do completely and perfectly.|df
 me010|so what i yeah okay so what what i meant was do a first cut at.|s
-me045|uh that's what|s.%-
-me045|yeah yeah.|s^bk
-me010|okay because uh we do want to get them perfectly but i think we're going to have to do a first cut at a lot of them to see how they interact.|s^bk|s
-me045|of course.|s^aa
+me045|uh that's what|s
+me045|yeah yeah.|bk
+me010|okay because uh we do want to get them perfectly but i think we're going to have to do a first cut at a lot of them to see how they interact.|bk
+me045|of course.|aa
 me045|right exactly.|fg
 me045|now it we talked about this before.|s
-me045|right?|qy^d^f^g
+me045|right?|d
 me045|and i i it would it would be completely out of the question to really do more than say like oh i don't know ten over the summer.|s
 me010|yeah.|b
 me045|but uh but you know obviously we need to get sort of a general view of what things look like.|s
-me045|so|s.%--
+me045|so|s
 me045|yeah.|b
-me010|right.|s^bk
-me010|so the idea is going to be to do|s^cs.%--
-me010|sort of like nancy did in some of uh these papers where you do enough of them so you can go from top to bottom.|s^cs
-me010|so you can do you know uh have a complete story of of some piece of dialogue.|s^cs
+me010|right.|bk
+me010|so the idea is going to be to do|cs
+me010|sort of like nancy did in some of uh these papers where you do enough of them so you can go from top to bottom.|cs
+me010|so you can do you know uh have a complete story of of some piece of dialogue.|cs
 me045|uhhuh.|b
 me010|and that's going to be much more useful than having all of the clausal constructions and nothing else or or or something like that.|s
 me045|yeah.|b
 me045|sure.|b
 me045|yeah.|b
-me010|so that the the trick is going to be to take this and pick a some sort of lattice of constructions.|s^cs
+me010|so that the the trick is going to be to take this and pick a some sort of lattice of constructions.|cs
 me045|uhhuh.|b
-me010|some lexical and some phrasal and and you know|s.%--
+me010|some lexical and some phrasal and and you know|s
 me045|uhhuh.|b
 me010|whatever you need in order to uh be able to then uh by hand you know explain some fraction of the utterances.|s
 me045|uhhuh.|b
 me045|yeah.|b
-me010|and so exactly which ones will partly depend on your research interests and a bunch of other things.|fh|s
+me010|and so exactly which ones will partly depend on your research interests and a bunch of other things.|fh
 me045|uhhuh.|b
-me045|sure.|s^aa
+me045|sure.|aa
 me045|okay.|b
 me045|but i mean in terms of the sort of level of uh of analysis.|s
-me045|you know these don't necessarily have to be more complex than like the out of construction in the b c p paper where it's just like you know half a page on each one or something.|s^bu
-me010|correct.|s^aa
-me010|oh yeah yeah.|s^aa.x
-me010|a half a page is is what we'd like.|s^na
+me045|you know these don't necessarily have to be more complex than like the out of construction in the b c p paper where it's just like you know half a page on each one or something.|bu
+me010|correct.|aa
+me010|oh yeah yeah.|aa
+me010|a half a page is is what we'd like.|na
 me045|yeah.|b
 me010|and if if there's something that really requires a lot more than that then it does.|s
-me010|and we have to do it.|s^e
+me010|and we have to do it.|e
 me010|but|%--
 me045|yeah.|fg
-me045|for the first cut that should be fine yeah.|s^2
-me010|yeah.|s^aa
-mn015|we could sit down and think of sort of the the ideal speaker utterances.|s^cs
+me045|for the first cut that should be fine yeah.|2
+me010|yeah.|aa
+mn015|we could sit down and think of sort of the the ideal speaker utterances.|cs
 mn015|and i mean two or three that follow each other.|s
 me045|uhhuh.|b
-mn015|so where we can also sort of once we have everything up and running show the tremendous insane inferencing capabilities of our system.|s^j
+mn015|so where we can also sort of once we have everything up and running show the tremendous insane inferencing capabilities of our system.|j
 me045|uhhuh.|b
 mn015|so you know as as the smartkom people have.|s
 mn015|this is sort of their standard demo dialogue which is you know what the system survives and nothing but that.|s
@@ -1102,64 +1102,64 @@ me045|yeah.|b
 me045|yeah.|fg
 me045|that's about six times in this little one here so uh yeah.|s
 me010|right.|b
-mn015|yep.|b.x
-mn015|where is x?|qh^cs
+mn015|yep.|b
+mn015|where is x?|cs
 mn015|might be another one which is not too complicated.|s
 me045|yeah.|b
 me045|uhhuh.|b
-mn015|and um tell me something about x.|s^cs
+mn015|and um tell me something about x.|cs
 me045|yeah.|b
 mn015|and hey that's that's already covering eighty percent of the system's functionality.|s
-me010|right but it's not covering eighty percent of the intellectual interest.|fg|s^arp
-me045|yeah.|s^aa
-mn015|no we can throw in an out of film construction if you want to.|s^ar|s^cs
-me010|no no no.|s^ar
-mn015|but|%-
+me010|right but it's not covering eighty percent of the intellectual interest.|fg
+me045|yeah.|aa
+mn015|no we can throw in an out of film construction if you want to.|ar
+me010|no no no.|ar
+mn015|but|%--
 me010|well the the thing is there's a lot that needs to be done to get this right.|s
-me010|okay i|s^tc.%-
-mn015|okay.|s^bk
-me010|we done?|qy^rt^tc
-mn015|i have one bit of news.|s^rt^tc
-me010|good.|s^bk
-mn015|um the action planner guy has wrote has written a a lengthy proposal on how he wants to do the action planning.|h|s
-me010|good.|s^ba
+me010|okay i|tc
+mn015|okay.|bk
+me010|we done?|rt
+mn015|i have one bit of news.|rt
+me010|good.|bk
+mn015|um the action planner guy has wrote has written a a lengthy proposal on how he wants to do the action planning.|h
+me010|good.|ba
 mn015|and i responded to him also rather lengthy how he should do the action planning.|s
-mn015|and|s.%-
-me010|action planning meaning discourse modeling?|qy^bu^d
-mn015|yes.|s^aa
+mn015|and|s
+me010|action planning meaning discourse modeling?|bu
+mn015|yes.|aa
 mn015|and i tacked on a little paragraph about the fact that the whole world calls that module a dialogue manager.|s
 me010|right.|b
 mn015|and wouldn't it make sense to do this here too?|qh
 me010|right.|b
-mn015|and also rainer malaka is going to be visiting us shortly.|s^rt
+mn015|and also rainer malaka is going to be visiting us shortly.|rt
 mn015|most likely in the beginning of june.|s
 me010|uhhuh.|fg
 me010|i'll be gone.|s
-mn015|yeah.|s^bk
+mn015|yeah.|bk
 mn015|he's just in a conference somewhere and he is just swinging through town.|s
-me010|sure okay.|s^bk
+me010|sure okay.|bk
 mn015|and um making me incapable of going to n a a c l for which i had funding.|s
 mn015|but no no pittsburg this year.|s
 me045|huh.|b
-mn015|when is the uh santa barbara|qw.%--
-mn015|who is going to|qw.%--
-mn015|uh should a lot of people|s.%--
+mn015|when is the uh santa barbara|qw
+mn015|who is going to|qw
+mn015|uh should a lot of people|s
 mn015|that's something i will would sort of enjoy.|s
-me010|probably should go.|s^cs
-me010|that was that's one you should probably go to.|s^cs^r
-mn015|yep.|s^aa
+me010|probably should go.|cs
+me010|that was that's one you should probably go to.|cs
+mn015|yep.|aa
 me045|how much does it cost?|qw
-mn015|there's|%-
+mn015|there's|%--
 me045|i haven't planned to go.|s
-me010|uh probably we can uh pay for it.|h|s
-me045|okay.|s^bk
-me010|um a student rate shouldn't be very high.|h|s
+me010|uh probably we can uh pay for it.|h
+me045|okay.|bk
+me010|um a student rate shouldn't be very high.|h
 me010|so if we all decide it's a good idea for you to go then you'll we'll pay for it.|s
-me045|right.|s^bk
+me045|right.|bk
 me045|sure.|b
 fe046|then you can go.|s
 me010|i mean i i don't have a feeling one way or the other at the moment.|s
 me010|but it probably is.|s
-me045|okay.|s^bk
-me010|okay great.|s^ba
-me045|thanks.|s^ft
+me045|okay.|bk
+me010|okay great.|ba
+me045|thanks.|ft

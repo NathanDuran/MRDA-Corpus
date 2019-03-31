@@ -10,7 +10,7 @@ data_dir = 'mrda_data/'
 utterance_only_flag = False
 
 # Excluded dialogue act tags i.e. x = Non-verbal
-excluded_tags = ['x']
+excluded_tags = ['x'] # TODO exclude z tag?
 # Excluded characters for ignoring i.e. '=='
 excluded_chars = {'<', '>', '(', ')', '-', '#', '|', '=', '@'}
 

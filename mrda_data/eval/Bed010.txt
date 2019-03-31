@@ -5,43 +5,43 @@ me010|all right.|z
 mn036|sure.|z
 me010|good.|fg
 me010|yeah.|fg
-me010|okay so let's get started.|s^tc
+me010|okay so let's get started.|tc
 me010|nancy said she's coming.|s
 me010|and that means she will be.|s
-me010|um my suggestion is that robert and johno sort of give us a report on last week's adventures uh to start.|fh|s^t
+me010|um my suggestion is that robert and johno sort of give us a report on last week's adventures uh to start.|fh
 me010|so everybody knows there were these guys uh from uh uh actually from uh d f k i uh part of the german smartkom project who were here for the week.|s
 me010|and i think got a lot done.|s
-mn015|yeah i think so too.|s^aa
+mn015|yeah i think so too.|aa
 mn015|um|fh
 mn015|the we got to the point where we can now speak into the smartkom system and it'll go all the way through and then say something like roman numeral one am smarticus.|s
 mn015|it actually says roemisch einz am smarticus.|s
 mn015|which means it's just using a german synthesis module for english sentences.|s
 me045|okay.|b
-me045|okay.|s^bk
-mn015|so uh|%-
-me010|it doesn't know i.|s^j.x
-me045|okay.|s^bk
-mn015|um the uh|fh|%-
-me045|oh.|s^bk
-me045|am spartacus.|s^2
+me045|okay.|bk
+mn015|so uh|%--
+me010|it doesn't know i.|j
+me045|okay.|bk
+mn015|um the uh|fh
+me045|oh.|bk
+me045|am spartacus.|2
 me003|i am i am smarticus is what it's saying.|s
 me045|verstehe.|s
-mn036|right.|s^aa
+mn036|right.|aa
 me003|i|%
 me045|okay.|b
 mn015|the uh synthesis is just a question of um hopefully it's just a question of exchanging a couple of files once we have them.|s
-mn015|and um it's not going to be a problem because we decided to stick to the so called concept to speech approach.|fh|s
+mn015|and um it's not going to be a problem because we decided to stick to the so called concept to speech approach.|fh
 mn015|so i'm i'm i'm going backwards now.|s
-mn015|so synthesis is where you sort of make this uh make these sounds.|fh|s
+mn015|so synthesis is where you sort of make this uh make these sounds.|fh
 mn015|and concept to speech is feeding into this synthesis module giving it what needs to be said and the whole syntactic structure.|s
-mn015|so it can pronounce things better presumably then just with text to speech.|s^df
+mn015|so it can pronounce things better presumably then just with text to speech.|df
 me045|uhhuh.|b
-mn015|and uh johno learned how to write x m l tags.|fh|s
-mn015|uh and did write the tree adjoining grammar for some some sentences.|fh|s
-mn015|no?|qy^d^g
-mn015|right?|qy^d^g^rt
-mn015|yeah for a couple|s.%-
-me003|yeah.|s^aa
+mn015|and uh johno learned how to write x m l tags.|fh
+mn015|uh and did write the tree adjoining grammar for some some sentences.|fh
+mn015|no?|d
+mn015|right?|d
+mn015|yeah for a couple|s
+me003|yeah.|aa
 me003|so uh the way the uh the dialogue manager works is it dumps out what it wants to know or what it wants to tell the person to a uh in x m l.|s
 me003|and there's a conversion system for different uh to go from x m l to something else.|s
 me003|and so the knowledge base for the system that generates the syntactic structures for the generation is uh in a lisp like the knowledge base is in a lisp like form.|s
@@ -50,404 +50,404 @@ me003|so you have a basically a goal.|s
 me003|and it you know says okay well i'm going to try to do the greet the person goal.|s
 me045|uhhuh.|b
 me003|so it just starts uh it binds some variables and it just decides to you know do some subscold.|s
-me003|basically it just means build the tree.|s^e
+me003|basically it just means build the tree.|e
 me003|and then it passes the tree onto uh the the generation module.|s
-me045|okay.|b.%
+me045|okay.|b
 mn015|but i think that the point is that out of the twelve possible utterances that the german system can do we've already written the the syntax trees for three or four.|s
 me003|we|fg
 me003|yeah.|fg
 me003|so the syntax trees are very simple.|s
-me003|it's like most of the sentences in one tree.|s^rt
+me003|it's like most of the sentences in one tree.|rt
 me045|uhhuh.|b
 me003|and instead of you know breaking down to like small units and building back up they basically took the sentences and basically cut them in half or you know into thirds or something like that and made trees out of those.|s
-me003|and so uh uh tilman wrote a little tool that you could take lisp notation and generate an x m l uh tree uh what do structure from the from the lisp.|fh|s
-me003|and so basically you just say you know noun goes to you know|s.%--
-me003|nah i don't i've never been good at those.|s^no
+me003|and so uh uh tilman wrote a little tool that you could take lisp notation and generate an x m l uh tree uh what do structure from the from the lisp.|fh
+me003|and so basically you just say you know noun goes to you know|s
+me003|nah i don't i've never been good at those.|no
 me003|so there's like the v p goes to n and those things in lisp and it will generate for you.|s
-me045|okay.|s^bk
-me045|n v.|s^bk^m
-me045|yeah.|s^bk
-me045|okay.|s^bk
-me045|all right.|s^tc
+me045|okay.|bk
+me045|n v.|bk
+me045|yeah.|bk
+me045|okay.|bk
+me045|all right.|tc
 mn015|and because we're sticking to that structure the synthesis module doesn't need to be changed so all that fancy stuff.|s
 mn015|and the texas speech version of it which is actually the simpler version is going to be done in october which is much too late for us.|s
 mn015|so|fh
-mn015|this way we we worked around that.|s^rt
-mn015|the uh the system um i can show you the system.|s^cc
+mn015|this way we we worked around that.|rt
+mn015|the uh the system um i can show you the system.|cc
 mn015|i actually want at least maybe you should be able to start it on your own if you want to play around with it in in the future.|s
 mn015|right now it's brittle and you need to start it up and then make twenty changes on on on on seventeen modules before they actually can stomach it anything.|s
 mn015|and send in a a a couple of side queries on some dummy center set up program so that it actually works.|s
-mn015|because it's designed for this seevit thing where you have the gestural recognition running with this siemens virtual touch screen which we don't have here.|s^df
+mn015|because it's designed for this seevit thing where you have the gestural recognition running with this siemens virtual touch screen which we don't have here.|df
 me045|uhhuh.|b
 mn015|and so we're doing it via mouse.|s
 mn015|but the whole system was designed to work with this thing.|s
 mn015|and it was it was a lot of engineering stuff.|s
-mn015|no science in there whatsoever.|s^rt
+mn015|no science in there whatsoever.|rt
 mn015|but it's working now.|s
-mn015|and um that's the good news.|fh|s
-mn015|so everything else actually did prove to be language independent except for the parsing and the generation.|s^rt
-me003|why i had i did need to generate different trees than the german ones.|s^ng^rt
-me003|mainly because you know like uh the gerund in in german is automatically taken care of with just a regular verb.|s^df
-mn015|you have to switch it on.|s^t3
+mn015|and um that's the good news.|fh
+mn015|so everything else actually did prove to be language independent except for the parsing and the generation.|rt
+me003|why i had i did need to generate different trees than the german ones.|ng
+me003|mainly because you know like uh the gerund in in german is automatically taken care of with just a regular verb.|df
+mn015|you have to switch it on.|t3
 me045|uhhuh.|b
-me003|so i'd uh have to add am walking.|s:s
+me003|so i'd uh have to add am walking.|s
 me003|or i'd have to add a little stem for the am when i build the built the tree.|s
-me045|okay.|s^bk
+me045|okay.|bk
 me045|okay.|fg
 me045|yeah i noticed that um that some of the examples they had had you know non english word orders and so on.|s
 me045|you know and then all that good stuff.|s
 me045|so|fh
-me003|yeah.|s^aa
-me010|all right.|s^bk
-me045|like|%-
-me010|so it might be worth keith you looking at this.|s^cs
-me045|yeah.|s^aa
+me003|yeah.|aa
+me010|all right.|bk
+me045|like|%--
+me010|so it might be worth keith you looking at this.|cs
+me045|yeah.|aa
 me010|um|h
-me003|well tilman|%-
-me045|i i still don't i still don't really understand like|s^no.%--
-me045|i mean we sort of say um|s.%--
-me045|you know i i still don't exactly understand sort of the information flow uh in in this thing or what the modules are and so on.|s^no
-me045|so you know like just that such and such module uh um decides that it wants to achieve the goal of greeting the user.|s^bu
-me045|and then magically it sort of|s.%--
+me003|well tilman|%--
+me045|i i still don't i still don't really understand like|no
+me045|i mean we sort of say um|s
+me045|you know i i still don't exactly understand sort of the information flow uh in in this thing or what the modules are and so on.|no
+me045|so you know like just that such and such module uh um decides that it wants to achieve the goal of greeting the user.|bu
+me045|and then magically it sort of|s
 me010|yeah|fg
 me045|i mean how does it know which syntactic structure to pull out and all that?|qw
 me010|i|fg
 me010|yeah.|fg
 me010|so i think it's not worth going over in the group.|s
 me045|uh|%
-me010|but sort of when you get free and you have the time uh either robert or johno or i can walk you through it.|s^cc
-me045|sure.|s^bk
-me045|yeah.|s^aa
-me045|soon.|s^2
-me045|okay.|s^bk
+me010|but sort of when you get free and you have the time uh either robert or johno or i can walk you through it.|cc
+me045|sure.|bk
+me045|yeah.|aa
+me045|soon.|2
+me045|okay.|bk
 me010|and you can ask all the questions about how this all fits together.|s
-me045|that's fine.|s^ba
+me045|that's fine.|ba
 me010|it's eee messy.|s
 me010|but once you understand it you understand it.|s
 me010|it's it's there's nothing really complicated about it.|s
-me045|okay.|s^bk
-mn015|no.|s^aa
-me045|and i remember one thing that that came up in the talk last wednesday um was this|s.%--
-me045|i i think he talked about the idea of like um he was talking about these lexicalized uh uh tree adjoining grammars where you sort of for each word you um|s.%--
-me003|okay you know how to do it?|qw^rt^t3
-me045|for each lexical item the lexical entry says what all the uh trees are that it can appear in.|s^e^rt
-me045|and of course that's not that's the opposite of constructional.|fh|s
+me045|okay.|bk
+mn015|no.|aa
+me045|and i remember one thing that that came up in the talk last wednesday um was this|s
+me045|i i think he talked about the idea of like um he was talking about these lexicalized uh uh tree adjoining grammars where you sort of for each word you um|s
+me003|okay you know how to do it?|rt
+me045|for each lexical item the lexical entry says what all the uh trees are that it can appear in.|e
+me045|and of course that's not that's the opposite of constructional.|fh
 me045|that's you know that's that's h p s g or whatever.|s
-me010|right.|s^aa
+me010|right.|aa
 me010|right.|fg
-me045|you know?|qy^d^g^rt
+me045|you know?|d
 me010|now we're we're not committed for our research to do any of those things.|s
 me045|yeah.|b
 me045|uhhuh.|b
-me010|so uh we are committed for our funding.|fh|s^e
+me010|so uh we are committed for our funding.|fh
 me045|right.|b
-me010|okay?|qy^d^f
-me010|to uh|%-
-me045|make our stuff fit to that.|s^2
-me010|yeah to|s^aa|%--
-me010|no to just get the get the demos they need.|s^ar|s^df
+me010|okay?|d
+me010|to uh|%--
+me045|make our stuff fit to that.|2
+me010|yeah to|aa
+me010|no to just get the get the demos they need.|ar
 me045|uhhuh.|b
-me010|okay?|qy^d^f
+me010|okay?|d
 me010|so between us all we have to get the demos they need.|s
-me010|if it turns out we can also give them lots more than that by you know tapping into other things we do that's great.|s^cs
-me003|you should probably move the microphone closer to your face.|s^cs^t3
+me010|if it turns out we can also give them lots more than that by you know tapping into other things we do that's great.|cs
+me003|you should probably move the microphone closer to your face.|cs
 me045|uhhuh.|b
 me010|but it turns out not to be in any of the contracts.|s
-me003|there's like a little the twisty thing you can move it with.|s^t3
-me045|okay.|s^bk
-me010|and deliberately.|fh|s^e
-me010|so the reason i'd like you to understand uh what's going on in this demo system is not because it's important to the research.|fh|s^df
+me003|there's like a little the twisty thing you can move it with.|t3
+me045|okay.|bk
+me010|and deliberately.|fh
+me010|so the reason i'd like you to understand uh what's going on in this demo system is not because it's important to the research.|fh
 me010|it's just for closure.|s
-me010|so that if we come up with a question of could we fit this deeper stuff in there or something.|s:qw
+me010|so that if we come up with a question of could we fit this deeper stuff in there or something.|s
 me010|you know what the hell we're talking about fitting in.|s
-me045|right.|s^aa
-me045|okay.|s^bk
+me045|right.|aa
+me045|okay.|bk
 me010|so it's just uh in the same actually with the rest of us.|s
 me010|we just need to really understand what's there.|s
 me010|is there anything we can make use of?|qy
-me010|uh is there anything we can give back beyond the sort of minimum requirements?|fh|qy
+me010|uh is there anything we can give back beyond the sort of minimum requirements?|fh
 me010|but none of that has a short time fuse.|s
-me045|okay.|s^bk
+me045|okay.|bk
 me010|so the the demo requirements for this fall are sort of taken care of as of later this week or something.|s
 me010|and then so it's probably fifteen months or something until there's another serious demo requirement.|s
 me010|that doesn't mean we don't think about it for fifteen months.|s
-me045|oh okay.|s^bk
+me045|oh okay.|bk
 me010|but it means we can not think about it for six months.|s
-me045|right.|s^bk
-me045|right yeah.|s^aa
-me010|so the plan for this summer uh really is to step back from the applied project.|fh|s^t^tc
-mn015|right.|b.x
+me045|right.|bk
+me045|right yeah.|aa
+me010|so the plan for this summer uh really is to step back from the applied project.|fh
+mn015|right.|b
 me010|keep the keep the context open but actually go after the basic issues.|s
 me045|huh.|b
-me045|oh okay.|s^bk
+me045|oh okay.|bk
 me010|and|fh
-me010|so the idea is there's this uh other subgroup that's worrying about formalizing the getting a notation.|fh|s
-me010|but sort of in parallel with that uh the hope is in particularly you will work on constructions in english and german for this domain.|s^co
+me010|so the idea is there's this uh other subgroup that's worrying about formalizing the getting a notation.|fh
+me010|but sort of in parallel with that uh the hope is in particularly you will work on constructions in english and german for this domain.|co
 me045|uhhuh.|b
-me010|but not worry about parsing them or fitting them into smartkom or any of the other anything any other constraints for the time being.|s^e
+me010|but not worry about parsing them or fitting them into smartkom or any of the other anything any other constraints for the time being.|e
 me045|yeah.|b
-me045|okay.|s^bk
-me045|got it.|s^bk
+me045|okay.|bk
+me045|got it.|bk
 me010|it's hard enough to get it semantically and syntactically right and then and get the constructions in their form and stuff.|s
-me045|yeah.|s^aa
+me045|yeah.|aa
 me010|and i i don't want you feeling that you have to somehow meet all these other constraints.|s
-me045|right okay.|s^bk
-me010|um and similarly with the parsing uh we're going to worry about parsing uh the general case.|fh|s
-me010|you know construction parser for general constructions.|s^e
-me010|and if we need a cut down version for something or whatever we'll worry about that later.|fh|s
-me045|okay.|s^bk
-me010|so i'd like to for the summer turn into science mode.|s^cc
-me045|okay.|s^bk
+me045|right okay.|bk
+me010|um and similarly with the parsing uh we're going to worry about parsing uh the general case.|fh
+me010|you know construction parser for general constructions.|e
+me010|and if we need a cut down version for something or whatever we'll worry about that later.|fh
+me045|okay.|bk
+me010|so i'd like to for the summer turn into science mode.|cc
+me045|okay.|bk
 me010|and i assume that's also uh your plan as well.|s
 me010|right.|b
-me045|so i mean the the point is that like the meetings um so far that i've been at have been sort of been geared towards this demo.|fh|s
+me045|so i mean the the point is that like the meetings um so far that i've been at have been sort of been geared towards this demo.|fh
 me010|yeah.|b
 me010|yeah.|fg
-me010|but but we're|s.%-
+me010|but but we're|s
 me045|and then that's going to go away pretty soon.|s
-me010|right.|s^aa
-me045|okay.|s^bk
+me010|right.|aa
+me045|okay.|bk
 me045|and then we'll sort of shift gears fairly substantially.|s
-me010|yeah.|s^aa
-mn015|it's|%-
-me010|yeah.|s^aa
-mn015|it's got|s.%-
-me045|huh?|qy^d^g^rt
-me010|yeah.|s^aa
+me010|yeah.|aa
+mn015|it's|%--
+me010|yeah.|aa
+mn015|it's got|s
+me045|huh?|d
+me010|yeah.|aa
 mn015|what i what i think is is a good idea that i can can show to anyone who's interested.|s
 mn015|we can even make a sort of an internal demo.|s
-mn015|and i i show you what i do.|s^rt
+mn015|and i i show you what i do.|rt
 me045|uhhuh.|b
 mn015|i speak into it and you hear it talk.|s
-me045|okay.|s^bk
+me045|okay.|bk
 mn015|and i can sort of walk through the information.|s
 mn015|so this is like in half hour or forty five minutes.|s
 mn015|just fun.|s
-me045|okay.|s^bk
+me045|okay.|bk
 mn015|and so you when somebody on the streets comes up to you and asks you what is smartkom so you can sort of give a sensible answer.|s
-me045|right.|s^bk
-me045|okay.|s^bk
-me010|so we could set that up as actually an institute wide thing?|qy^d^rt
-me010|just give a talk in the big room and and so people know what's going on.|s^e^rt
-me010|when you're ready.|s^e
-mn015|absolutely.|s^aa
-me010|yeah i mean that's the kind of thing|fg|s.%--
+me045|right.|bk
+me045|okay.|bk
+me010|so we could set that up as actually an institute wide thing?|d
+me010|just give a talk in the big room and and so people know what's going on.|e
+me010|when you're ready.|e
+mn015|absolutely.|aa
+me010|yeah i mean that's the kind of thing|fg
 me010|that's the level at which you know we can just invite everybody and say this is a project that we've been working on and here's a demo version of it and stuff like that.|s
 me045|yeah.|b
-mn015|okay.|s^bk
-mn015|well we we do want to have all the bugs out where you have to sort of pipe in extra x m l messages from left and right before you're|s^aap.%--
+mn015|okay.|bk
+mn015|well we we do want to have all the bugs out where you have to sort of pipe in extra x m l messages from left and right before you're|aap
 me045|uhhuh.|b
-me010|indeed.|s^aa
-mn015|yeah.|s^bk
-mn015|okay.|s^rt^tc
+me010|indeed.|aa
+mn015|yeah.|bk
+mn015|okay.|rt
 mn015|makes sense.|s
 me010|but so that|%--
 me010|it's clear then i think.|s
 me010|actually roughly starting uh let's say next meeting because this meeting we have one other thing to tie up besides the trip report.|s
 me045|yeah.|b
 me045|okay.|b
-me010|but uh starting next meeting i think we want to flip into this mode where|fh|s^cc.%--
-me010|uh i mean there are a lot of issues.|fh|s
-me010|what's the ontology look like.|s:qw
+me010|but uh starting next meeting i think we want to flip into this mode where|fh
+me010|uh i mean there are a lot of issues.|fh
+me010|what's the ontology look like.|s
 me045|uhhuh.|b
-me010|you know what do the constructions look like.|s:qw
-me010|what's the execution engine look like.|s:qw
-me010|huh lots of things.|fh|s
+me010|you know what do the constructions look like.|s
+me010|what's the execution engine look like.|s
+me010|huh lots of things.|fh
 me045|uhhuh.|b
 me010|but more focused on uh an idealized version than just getting the demo out.|s
-me010|now before we do that let's get back in|s^tc.%--
-me010|oh!|s^fe
+me010|now before we do that let's get back in|tc
+me010|oh!|fe
 me010|but it's still i think useful for you to understand the demo version enough so that you can can see what what it is that that uh it might eventually get retro fitted into or something.|s
 me045|yeah.|b
-me045|okay.|s^bk
-me045|right.|s^bk
+me045|okay.|bk
+me045|right.|bk
 me010|and johno's already done that uh looked at the uh the looked at the smartkom stuff.|s
 me003|uh|fg
-me003|to some|s^aap.%--
-me003|uh what what part of the smartkom stuff?|fh|qw
+me003|to some|aap
+me003|uh what what part of the smartkom stuff?|fh
 me010|well the parser and that stuff.|s
-me003|oh yeah yeah.|s^aa
-me010|okay anyway.|s^tc
-me010|so the trip|s.%--
-me010|the report on these|s.%--
-me010|the last we we sort of interrupted you guys telling us about what happened last week.|s^t
+me003|oh yeah yeah.|aa
+me010|okay anyway.|tc
+me010|so the trip|s
+me010|the report on these|s
+me010|the last we we sort of interrupted you guys telling us about what happened last week.|t
 me045|yeah.|b
 me045|it's all right.|s
-mn015|um well it was just amazing to to see uh how how instable the whole thing is.|h|s
+mn015|um well it was just amazing to to see uh how how instable the whole thing is.|h
 me010|maybe you're done then.|s
-mn015|and if you just take the|s.%--
+mn015|and if you just take the|s
 mn015|and i i got the feeling that we are the only ones right now who have a running system.|s
-mn015|i don't know what the guys in kaiserslautern have running.|s^no
+mn015|i don't know what the guys in kaiserslautern have running.|no
 mn015|because|%--
 mn015|the version that is the full version that's on the server does not work.|s
 mn015|and you need to do a lot of stuff to make it work.|s
 mn015|and so it's|%--
 mn015|and even tilman and ralf sort of said yeah there never was a really working version that uh did it without all the shortcuts that they built in for the uh october version.|s
 mn015|so we're actually maybe ahead of the system gruppe by now.|s
-mn015|the system the integration group.|s^e
+mn015|the system the integration group.|e
 mn015|and it was uh it was fun to some extent.|s
-mn015|but the uh the outcome that is sort of of scientific interest is that i think both ralf and tilman|fh|s.%--
-mn015|um i know that they enjoyed it here.|fh|s^rt
+mn015|but the uh the outcome that is sort of of scientific interest is that i think both ralf and tilman|fh
+mn015|um i know that they enjoyed it here.|fh
 mn015|and they they they liked uh a lot of the stuff they saw here.|s
-mn015|what what we have been thinking about.|s^e^rt
+mn015|what what we have been thinking about.|e
 mn015|and they're more than willing to to um cooperate by all means.|s
-mn015|and um part of my responsibility is uh to use our internal group ware server at e m l.|fh|s
+mn015|and um part of my responsibility is uh to use our internal group ware server at e m l.|fh
 mn015|make that open to all of us and them.|s
 mn015|so that whatever we discuss in terms of parsing and and generating and constructions we we sort of uh put it in there.|s
 mn015|and they put what they do in there.|s
-mn015|and maybe we can even um get some overlap get some synergy out of that.|s.x
+mn015|and maybe we can even um get some overlap get some synergy out of that.|s
 mn015|and um|fh
 mn015|the uh|%--
-mn015|if i find someone at in e m l that is interested in that um i i may even think that we could look take constructions and and generate from them.|s^cs
-mn015|because the tree adjoining grammars that that tilman is using is as you said nothing but a mathematical formalism.|s^df
+mn015|if i find someone at in e m l that is interested in that um i i may even think that we could look take constructions and and generate from them.|cs
+mn015|because the tree adjoining grammars that that tilman is using is as you said nothing but a mathematical formalism.|df
 mn015|and you can just do anything with it whether it's syntactic trees h p s g like stuff or whether it's construction.|s
 mn015|so if you ever get to the generation side of constructing things and there might be something of interest there.|s
 mn015|but in the moment we're of course definitely focused on the understanding um pipeline.|s
-me010|any other uh visit reports sort of stories?|qy^d^rt
-me010|uh we so we now know i think what the landscape is like.|fh|s
+me010|any other uh visit reports sort of stories?|d
+me010|uh we so we now know i think what the landscape is like.|fh
 me045|uhhuh.|b
-me010|and so we just push on and and uh do what we need to do.|s^co
-me010|and one of the things we need to do is the um and this i think is relatively tight tightly constrained is to finish up this belief net stuff.|s^co
+me010|and so we just push on and and uh do what we need to do.|co
+me010|and one of the things we need to do is the um and this i think is relatively tight tightly constrained is to finish up this belief net stuff.|co
 me010|so|fh
-me010|uh and i was going to switch to start talking about that unless there're other more general questions.|fh|s^t^tc
-me010|okay so here's where we are on the belief net stuff as far as i understand it.|fh|s
-me010|um going back i guess two weeks ago uh robert had laid out this belief net missing only the connections.|fh|s
-me010|right?|qy^d^g^rt
+me010|uh and i was going to switch to start talking about that unless there're other more general questions.|fh
+me010|okay so here's where we are on the belief net stuff as far as i understand it.|fh
+me010|um going back i guess two weeks ago uh robert had laid out this belief net missing only the connections.|fh
+me010|right?|d
 me010|that is so he'd put all all the dots down.|s
 me010|and we went through this and i think more or less convinced ourselves that at least the vast majority of the nodes that we needed for the demo level we were thinking of were in there.|s
 me010|yeah we may run across one or two more.|s
 me010|but of course the connections weren't.|s
-me010|so uh bhaskara and i went off and looked at some technical questions about were certain operations sort of legitimate belief net computations and was there some known problem with them or had someone already uh solved you know how to do this and stuff.|fh|s
-me010|and so bhaskara tracked that down.|fh|s
+me010|so uh bhaskara and i went off and looked at some technical questions about were certain operations sort of legitimate belief net computations and was there some known problem with them or had someone already uh solved you know how to do this and stuff.|fh
+me010|and so bhaskara tracked that down.|fh
 me010|the answer seems to be uh no no one has done it but yes it's a perfectly reasonable thing to do if that's what you set out to do.|s
-me010|and so the current state of things is that again starting now um we'd like to actually get a running belief net for this particular subdomain done in the next few weeks.|s^cs
-me010|so bhaskara is switching projects as of the first of june.|s^rt
-me010|and uh he's going to leave us an inheritance which is a uh hopefully a belief net that does these things.|fh|s
+me010|and so the current state of things is that again starting now um we'd like to actually get a running belief net for this particular subdomain done in the next few weeks.|cs
+me010|so bhaskara is switching projects as of the first of june.|rt
+me010|and uh he's going to leave us an inheritance which is a uh hopefully a belief net that does these things.|fh
 me010|and there're two aspects to it one of which is you know technical.|s
-me010|getting the coding right and making it run and uh stuff like that.|s^e
-me010|and the other is the actual semantics.|s^e
-me010|okay what all you know what are the considerations and how and what are the ways in which they relate?|fh|qw
+me010|getting the coding right and making it run and uh stuff like that.|e
+me010|and the other is the actual semantics.|e
+me010|okay what all you know what are the considerations and how and what are the ways in which they relate?|fh
 me010|so he he doesn't need help from this group on the technical aspects or if he does uh we'll do that separately.|s
 me045|uhhuh.|b
 me010|but in terms of what are the decisions and stuff like that that's something that we all have to work out.|s
-me010|is is that right?|qy^bu^rt
-me010|i mean that's that's both you guys' understanding of where we are?|qy^bu^d^rt
-mn015|absolutely.|s^aa
-me010|okay.|s^bk
-me012|so i guess um is there like a latest version of the belief net of the proposed belief net?|fg|qy^rt
-me012|like|%-
-mn015|we had um decided|s.%--
-me012|like|%-
-mn015|um well no we didn't decide.|fh|s^bsc
+me010|is is that right?|bu
+me010|i mean that's that's both you guys' understanding of where we are?|bu
+mn015|absolutely.|aa
+me010|okay.|bk
+me012|so i guess um is there like a latest version of the belief net of the proposed belief net?|fg
+me012|like|%--
+mn015|we had um decided|s
+me012|like|%--
+mn015|um well no we didn't decide.|fh
 mn015|we wanted to look into maybe getting it the visualization a bit clearer.|s
 mn015|but i think if we do it um sort of a paper version of all the nodes and then the connections between them that should suffice.|s
-me012|uhhuh.|b^rt
-me012|yeah.|s^aa
-me012|that should be fine.|s^2^ba
+me012|uhhuh.|rt
+me012|yeah.|aa
+me012|that should be fine.|2
 me003|yeah i|fg
-me010|yeah i mean that's a separate problem.|fg|s^aap
+me010|yeah i mean that's a separate problem.|fg
 me010|we do in the long run want to do better visualization and all that stuff.|s
 mn015|yeah.|b
 me010|that's separable.|s
 me010|yeah.|fh
-me003|i did look into that uh in terms of you know exploding the nodes out and down|s.%--
+me003|i did look into that uh in terms of you know exploding the nodes out and down|s
 me010|yep.|b
 me010|right.|b
 me003|javabayes does not support that.|s
-me003|i can imagine a way of hacking at the code to do that.|s^cs
-me003|it'd probably take two weeks or so to actually go through and do it.|s^rt
-me010|not not at this point.|s^nd
-me003|and i went through all the other packages on kevin murphy's page.|s^rt
-me010|right.|s^bk
+me003|i can imagine a way of hacking at the code to do that.|cs
+me003|it'd probably take two weeks or so to actually go through and do it.|rt
+me010|not not at this point.|nd
+me003|and i went through all the other packages on kevin murphy's page.|rt
+me010|right.|bk
 me003|and i couldn't find the necessary mix of free and uh with the gui and with this thing that we want.|s
-me010|well we can if it's if we can pay|s^cs.%--
+me010|well we can if it's if we can pay|cs
 me010|yeah if you know it's paying a thousand dollars or something we can do that.|s
-me010|okay?|qy^d^f^rt
-me003|okay.|s^bk
+me010|okay?|d
+me003|okay.|bk
 me010|so so don't view free as as a absolute constraint.|s
-me003|okay so then i'll go back and look at the ones on the list that|s^bk|s^cc.%-
-me010|okay.|s^bk
-me012|yeah.|b.x
+me003|okay so then i'll go back and look at the ones on the list that|bk
+me010|okay.|bk
+me012|yeah.|b
 mn015|but|fg
-me010|and you can ask kevin.|s^cs
-me012|yeah the one that uh people seem to use is uh hugin or whatever.|fg|s^rt
+me010|and you can ask kevin.|cs
+me012|yeah the one that uh people seem to use is uh hugin or whatever.|fg
 me003|huh.|b
 mn015|but|fg
-me010|hugin.|s^m
+me010|hugin.|m
 me010|yeah that's free.|s
-me012|how|qw.%-
-me012|i don't think it's|s^ng.%--
-me012|is it free?|qy^rt
-me012|because i've seen it advertised in places so i it seems to|s^df.%--
-me010|uh it may be free to academics.|h|s
-me010|like i i don't know.|s^no
-me010|i have a i have a copy that i i downloaded.|s^df
-me012|okay.|s^bk
-me010|so at one point it was free.|s^df
-me012|okay.|s^bk
-me010|uh but i noticed people do use hugin.|fh|s
+me012|how|qw
+me012|i don't think it's|ng
+me012|is it free?|rt
+me012|because i've seen it advertised in places so i it seems to|df
+me010|uh it may be free to academics.|h
+me010|like i i don't know.|no
+me010|i have a i have a copy that i i downloaded.|df
+me012|okay.|bk
+me010|so at one point it was free.|df
+me012|okay.|bk
+me010|uh but i noticed people do use hugin.|fh
 me010|so um|fh
-me003|how do you spell that?|qw^rt
-fe004|why?|qw^t3
+me003|how do you spell that?|rt
+fe004|why?|t3
 me010|h u g i n.|s
 me010|and bhaskara can give you a pointer.|s
-me010|so then in any case um|s.%--
-me010|but paying a|s.%--
-me010|you know if if it's uh|s.%--
+me010|so then in any case um|s
+me010|but paying a|s
+me010|you know if if it's uh|s
 me010|probably for university it's it's going to be real cheap anyway.|s
-me010|but um you know if it's fifty thousand dollars we aren't going to do it.|fh|s
-me010|i'm mean we have no need for that.|s^df
-mn015|i i also would suggest not to spend two weeks in in in changing the the javabayes code.|s^cs
-me010|no.|s^aa
+me010|but um you know if it's fifty thousand dollars we aren't going to do it.|fh
+me010|i'm mean we have no need for that.|df
+mn015|i i also would suggest not to spend two weeks in in in changing the the javabayes code.|cs
+me010|no.|aa
 me010|he's not going to do that.|s
 me045|yeah.|b
-me003|okay.|s^bk
-mn015|i i will send you a pointer to a java applet that does that.|s^cc
-mn015|it's sort of a fish eye.|s^e
-mn015|you you have a node and you click on it and it shows you all the connections.|s^e^rt
+me003|okay.|bk
+mn015|i i will send you a pointer to a java applet that does that.|cc
+mn015|it's sort of a fish eye.|e
+mn015|you you have a node and you click on it and it shows you all the connections.|e
 mn015|and then if you click on something else that moves away that goes into the middle.|s
 me003|huh.|b
-mn015|and maybe there is an easy way of interfacing those two.|s^am
+mn015|and maybe there is an easy way of interfacing those two.|am
 mn015|if that doesn't work it's not a problem we we need to solve right now.|s
-mn015|what i'm what my job is i will um give you the input in terms of of the internal structure.|s^cc
-mn015|maybe node by node or something like this.|s^cs^rt
+mn015|what i'm what my job is i will um give you the input in terms of of the internal structure.|cc
+mn015|maybe node by node or something like this.|cs
 mn015|or should i collect it all?|qrr
 me012|uhhuh.|b
 mn015|and|fh
 me010|doesn't matter.|s
-me012|um just any like like sort of rough representation of the entire belief net is probably best.|h|s
-mn015|okay.|s^bk.%
-mn015|and um you're going to be around again always tuesdays and thursdays afternoon-ish as usual?|fh|qy^bu^d^rt
-me012|yeah.|s^aa
-mn015|or will that change?|qr^rt
-me012|i mean yeah.|h|s^aa
-me012|i can like i|s.%--
-me012|um this week i guess um kind of i have a lot of projects and stuff but after that i will generally be more free.|h|s
-me012|so yes i might i can be around.|s^am|s^cc
+me012|um just any like like sort of rough representation of the entire belief net is probably best.|h
+mn015|okay.|bk
+mn015|and um you're going to be around again always tuesdays and thursdays afternoon-ish as usual?|fh
+me012|yeah.|aa
+mn015|or will that change?|rt
+me012|i mean yeah.|h
+me012|i can like i|s
+me012|um this week i guess um kind of i have a lot of projects and stuff but after that i will generally be more free.|h
+me012|so yes i might i can be around.|am
 me012|and i mean generally if you email me also i can be around on other days.|s
 mn015|yeah.|b
-mn015|okay.|s^bk
-me010|yeah and this is not a crisis that i mean you do everybody who's a student should you know do their work get their courses all in good shape.|s^co
-me010|and and and and then we'll dig dig down on this.|s^cc
-mn015|yeah that's|s^aa|%--
+mn015|okay.|bk
+me010|yeah and this is not a crisis that i mean you do everybody who's a student should you know do their work get their courses all in good shape.|co
+me010|and and and and then we'll dig dig down on this.|cc
+mn015|yeah that's|aa
 mn015|yeah.|b
 mn015|okay.|fg
-mn015|no that's good.|s^ba
+mn015|no that's good.|ba
 mn015|that means i have i i can spend this week doing it.|s
 mn015|so|fh
 me012|okay.|b
 me045|how do you go about this process of deciding what these connections are?|qw
 me045|i know that there's an issue of how to weight the different things too and stuff.|s
-me010|right.|s^aa
-me045|right?|qy^d^g^rt
-me045|i mean do you just sort of guess and see if it sort of|s.%-
+me010|right.|aa
+me045|right?|d
+me045|i mean do you just sort of guess and see if it sort of|s
 me010|well there there there there're two different things you do.|s
 mn015|it's|fg
-me010|one is you design and the other is you learn.|s^e
-me010|okay?|qy^d^f^rt
-me010|so uh what we're going to do initially is is do design and if you will guess.|fh|s^co
+me010|one is you design and the other is you learn.|e
+me010|okay?|d
+me010|so uh what we're going to do initially is is do design and if you will guess.|fh
 me045|okay.|b
-me010|okay?|qy^d^f^g^rt
+me010|okay?|d
 me010|uh that is you know use your best knowledge of of the domain to uh hypothesize what the dependencies are and stuff.|s
 me045|right.|b
 me045|okay.|b
@@ -456,194 +456,194 @@ me045|yeah.|b
 me010|and there are even techniques for learning the structure although that takes a lot more data.|s
 me010|and it's not as and so forth and so on.|s
 me010|so uh|fh
-me010|but for the limited amount of stuff we have for this particular exercise i think we'll just design it.|s^cs
-me045|all right.|s^bk
-mn015|yeah.|s^bk
+me010|but for the limited amount of stuff we have for this particular exercise i think we'll just design it.|cs
+me045|all right.|bk
+mn015|yeah.|bk
 mn015|hopefully as time passes we'll get more and more data from heidelberg and from people actually using it and stuff.|s
-me045|okay.|s^bk
+me045|okay.|bk
 mn015|so but this is the long run.|s
 me045|yeah.|b
 mn015|but to solve our problems uh a mediocre design will do i think in the beginning.|s
-me045|yeah.|s^aa
-me045|that's right.|s^aa^rt
-me045|yeah oh and by the way speaking of data um are there|fg|s.%--:qy.%--
+me045|yeah.|aa
+me045|that's right.|aa
+me045|yeah oh and by the way speaking of data um are there|fg
 me045|i could swore uh i could swear i saw it sitting on someone's desk at some point.|s
-me045|but is there a um a transcript of any of the sort of initial interactions of people with the with the system?|qy^rt
-me010|uhhuh.|s^aa^rt
-me045|because you know i'm still sort of itching to to look at what look at the stuff and see what people are saying.|s^df
+me045|but is there a um a transcript of any of the sort of initial interactions of people with the with the system?|rt
+me010|uhhuh.|aa
+me045|because you know i'm still sort of itching to to look at what look at the stuff and see what people are saying.|df
 me010|yeah.|b
-me010|yeah make yourself a note.|s^co
+me010|yeah make yourself a note.|co
 me010|so and and of course keith would like the german as well as the english.|s
 me010|so whatever you guys can get.|s
-mn015|the german?|qy^bu^d^rt
-mn015|oh yeah of course german.|s^na
+mn015|the german?|bu
+mn015|oh yeah of course german.|na
 mn015|yeah.|b
 me010|yeah the your native language.|s
-me010|right?|qy^d^g^rt
-me010|you remember that one.|s^j
-mn015|okay.|s^bk
-mn015|that's important yeah.|s^ba
-me010|so he'll get you some data.|s^co
+me010|right?|d
+me010|you remember that one.|j
+mn015|okay.|bk
+mn015|that's important yeah.|ba
+me010|so he'll get you some data.|co
 me045|yeah|fg
-me045|okay.|s^bk
+me045|okay.|bk
 me045|yeah i mean i i sort of um found the uh uh the audio of some of those.|s
 mn015|huh.|b
-me045|and um it kind of sounded like i didn't want to trudge through that you know.|fh|s
+me045|and um it kind of sounded like i didn't want to trudge through that you know.|fh
 me045|it was just strange.|s
 me045|but|fh
-me010|yep.|s^aa
+me010|yep.|aa
 mn015|we probably will not get those to describe because they were trial runs.|s
-me045|oh yeah.|s^aa
-me045|okay.|s^bk
-mn015|um but uh that's but we have data in english and german already.|fh|s
+me045|oh yeah.|aa
+me045|okay.|bk
+mn015|um but uh that's but we have data in english and german already.|fh
 mn015|so|fh
-me045|okay.|s^bk
+me045|okay.|bk
 me045|yeah i mean|fg
-mn015|transcribed.|s^e
-mn015|i will send you that.|s^cc
-mn015|okay.|s^bk
+mn015|transcribed.|e
+mn015|i will send you that.|cc
+mn015|okay.|bk
 me010|okay.|fg
-me010|so while we're still at this sort of top level anything else that we ought to talk about today?|fh|qy^d^t
-mn015|how was your thingy?|qw^t
-me045|oh um i just wanted to uh like mention as an issue um you know last meeting i wasn't here.|fg|s^t^tc
-me045|because i went to a linguistics colloquium on the fictive motion stuff.|s^df
-me010|oh right.|s^aa
-me045|and that was pretty interesting.|s^ba
+me010|so while we're still at this sort of top level anything else that we ought to talk about today?|fh
+mn015|how was your thingy?|t
+me045|oh um i just wanted to uh like mention as an issue um you know last meeting i wasn't here.|fg
+me045|because i went to a linguistics colloquium on the fictive motion stuff.|df
+me010|oh right.|aa
+me045|and that was pretty interesting.|ba
 me045|and you know i mean|fh
 me045|seems to me that that will fairly obviously be of relevance to uh to what we're doing here.|s
 me045|because you know people are likely to give descriptions.|s
-me045|like you know what's that thing uh right where you start to go up the hill or something like that.|s^e
-me045|you know meaning a few feet up the hill or whatever from some reference point and all that stuff.|s^e
+me045|like you know what's that thing uh right where you start to go up the hill or something like that.|e
+me045|you know meaning a few feet up the hill or whatever from some reference point and all that stuff.|e
 me045|so i mean i'm sure in terms of you know people trying to state locations or you know all that kind of stuff this is going to be very relevant.|s
 me045|so|fh
-me045|um now that was the talk was about english versus japanese um which obviously the japanese doesn't affect us directly except that um some of the construction|fh|s.%--
-me045|he'd what he talked about was that you know in english we say things like you know your bike is parked across the street.|s:s
-me045|and we use these prepositional phrases you know well if you were to move across the street you would be at the bike.|s:s
-me045|but um in in japanese the the more conventionalized tendency is to use a sort of a description of where one has crossed to the river there is a tree.|s:s
-me045|um and you know you can actually say things like um there's a tree where one has crossed the river but no one has ever crossed the river or something like that.|fh|s:s
+me045|um now that was the talk was about english versus japanese um which obviously the japanese doesn't affect us directly except that um some of the construction|fh
+me045|he'd what he talked about was that you know in english we say things like you know your bike is parked across the street.|s
+me045|and we use these prepositional phrases you know well if you were to move across the street you would be at the bike.|s
+me045|but um in in japanese the the more conventionalized tendency is to use a sort of a description of where one has crossed to the river there is a tree.|s
+me045|um and you know you can actually say things like um there's a tree where one has crossed the river but no one has ever crossed the river or something like that.|fh
 me045|so the idea is that this really is you know that's supposed show that's it's really fictive and so on.|s
 me045|but um|fh
-me045|but the point is that that kind of construction is also used in english you know like right where you start to go up the hill or just when you get off the train or something like that to uh to indicate where something is.|s:s
+me045|but the point is that that kind of construction is also used in english you know like right where you start to go up the hill or just when you get off the train or something like that to uh to indicate where something is.|s
 me010|huh.|b
-me045|so we'll have to think about|s^cc.%-
+me045|so we'll have to think about|cc
 me010|so|fg
 me010|how much is that used in german?|qw
-mn015|um the uh well i i was on a uh on a on a different sidetrack.|h|s
+mn015|um the uh well i i was on a uh on a on a different sidetrack.|h
 mn015|i mean the the deep map project which um is undergoing some renovation at at the moment.|s
-me010|oh okay.|s^bk
+me010|oh okay.|bk
 mn015|but this is a a three language project german english japanese.|s
-me045|okay.|s^bk
-mn015|and um we have a uh uh i have taken care that we have the the japanese generation and stuff.|fh|s
-mn015|and so i looked into uh spatial description.|fh|s
-mn015|so we can generate spatial descriptions how to get from a to b and and information on objects in german english and japanese.|s^df
+me045|okay.|bk
+mn015|and um we have a uh uh i have taken care that we have the the japanese generation and stuff.|fh
+mn015|and so i looked into uh spatial description.|fh
+mn015|so we can generate spatial descriptions how to get from a to b and and information on objects in german english and japanese.|df
 me045|uhhuh.|b
 mn015|and there is a huge uh project on spatial descriptions uh differences in spatial descriptions.|s
-mn015|well if if you're interested in that.|s^e
-mn015|so how how|qw.%--
+mn015|well if if you're interested in that.|e
+mn015|so how how|qw
 mn015|i mean it does sort of go all the way down to the conceptual level to some extent.|s
-me045|okay.|s^bk
+me045|okay.|bk
 mn015|so|fh
 mn015|um|fh
-me010|so where is this huge project?|qw^rt
+me010|so where is this huge project?|rt
 mn015|it's kleist.|s
 mn015|it's the uh bielefeld generation of uh spatial descriptions and whatever.|s
-me010|uhhuh.|b^rt
-me010|well that may be another thing that keith wants to look at.|s^cs
-me045|okay.|s^bk
-mn015|but um i i think we should leave japanese constructions maybe outside of the scope for for now.|fh|s^cs
-me045|yeah.|s^aa
-mn015|but um definitely it's interesting to look at at cross the bordered there.|fh|s^ba
+me010|uhhuh.|rt
+me010|well that may be another thing that keith wants to look at.|cs
+me045|okay.|bk
+mn015|but um i i think we should leave japanese constructions maybe outside of the scope for for now.|fh
+me045|yeah.|aa
+mn015|but um definitely it's interesting to look at at cross the bordered there.|fh
 me010|uhhuh.|b
 mn036|are are you going to pay any attention to the relative position of of the direction relative relative to the speaker?|qy
-mn036|for example there are some differences between hebrew and english.|s^e
+mn036|for example there are some differences between hebrew and english.|e
 mn036|we can say um park in front of the car as you come you drive behind the car.|s
 mn036|in hebrew it means park behind the car because to follow the car is defined as it faces you.|s
 mn015|uhhuh.|b
 mn015|intrinsic.|s
 mn015|yeah.|b
 mn036|while in english front of the car is the absolute front of the car.|s
-me045|okay.|s^bk
-me045|right so the canonical direction of motion determines where the front is.|fg|s^bu
+me045|okay.|bk
+me045|right so the canonical direction of motion determines where the front is.|fg
 mn036|so|fh
-mn036|right.|s^aa
-mn036|right.|s^aa^r
-me045|okay.|s^bk
-mn036|so is german uh closer to to uh uh uh uh to i mean uh|qy.%--
+mn036|right.|aa
+mn036|right.|aa
+me045|okay.|bk
+mn036|so is german uh closer to to uh uh uh uh to i mean uh|qy
 mn015|uhhuh.|b
 mn036|i don't think it it's related to syntax though so it may be entirely different.|s
-mn015|um as a matter of fact|fh|s.%-
-me010|no it's not.|s^aa
-me045|right.|s^aa
+mn015|um as a matter of fact|fh
+me010|no it's not.|aa
+me045|right.|aa
 mn036|yeah.|b
-mn015|um did you ever get to look at the the paper that i sent you on the on that problem in english and german?|fg|qy^rt
-me045|i think|s.%-
-mn015|carroll ninety three.|s^e
-mn015|um i there is a a study on the differences between english and german on exactly that problem.|fh|s
+mn015|um did you ever get to look at the the paper that i sent you on the on that problem in english and german?|fg
+me045|i think|s
+mn015|carroll ninety three.|e
+mn015|um i there is a a study on the differences between english and german on exactly that problem.|fh
 mn036|huh.|b
-mn015|so it's they actually say the monkey in front of the car.|s:s
-mn015|where's the monkey?|qw^rt
+mn015|so it's they actually say the monkey in front of the car.|s
+mn015|where's the monkey?|rt
 me045|uhhuh.|b
 mn015|and um they found statistically very significant differences in english and german.|s
 mn015|so i i i|%--
 mn015|it might be since there are only a finite number of ways of doing it that that german might be more like hebrew in that respect.|s
 mn015|the solution they proposed was that it was due to syntactic factors.|s
 me045|huh.|b
-mn036|that but it wasn't was|s^arp.%--
+mn036|that but it wasn't was|arp
 mn015|that syntactic factors do do play a role there whether you're more likely you know to develop uh choices that lead you towards using uh intrinsic versus extrinsic reference frames.|s
 mn036|right.|%
 mn036|uhhuh.|b
 mn036|right.|b
 me010|huh.|b
-me045|i mean it seems to me that you can get both in in english depending|s.%--
-me045|you know like in front of the car could you know like|s.%--
+me045|i mean it seems to me that you can get both in in english depending|s
+me045|you know like in front of the car could you know like|s
 me045|here's the car sideways to me in between me and the car or something's in front of the car or whatever.|s
 me045|i could see that.|s
-me010|absolutely.|s^aa
+me010|absolutely.|aa
 me045|but|fh
-me045|but anyway so you know i mean this was this was a a very good talk on those kinds of issues and so on.|s^tc
+me045|but anyway so you know i mean this was this was a a very good talk on those kinds of issues and so on.|tc
 me045|so uh|fh
-mn015|i can also give you uh a pointer to a paper of mine which is the the ultimate taxonomy of reference frames.|s^cc
-me045|all right.|s^ba
+mn015|i can also give you uh a pointer to a paper of mine which is the the ultimate taxonomy of reference frames.|cc
+me045|all right.|ba
 mn015|so|fh
-me045|cool.|s^ba
+me045|cool.|ba
 mn015|i'm the only person in the world who actually knows how it works.|s
 me010|oh.|b
-me010|oh.|s^bk
-mn015|not really.|s^e
-me010|great.|s^ba
+me010|oh.|bk
+mn015|not really.|e
+me010|great.|ba
 me010|no i've not seen that.|s
-mn015|it's called a|s.%-
+mn015|it's called a|s
 mn036|what do you mean um reference frames?|qw
 mn036|uh uh|fh
 mn015|it's it's spatial reference frames.|s
-mn015|you actually have only|s.%--
-mn015|um if you want to have a|h|s.%--
-mn015|this is usually um|s.%--
+mn015|you actually have only|s
+mn015|um if you want to have a|h
+mn015|this is usually um|s
 mn015|i should there should be an l though.|s
 mn015|well actually you have only have two choices.|s
 mn015|you can either do a two point or a three point.|s
-mn015|which is you you're familiar with with the origo?|qy^rt
+mn015|which is you you're familiar with with the origo?|rt
 mn015|where that's the center origo is the center of the frame of reference.|s
 mn015|and then you have the reference object and the object to be localized.|s
 me045|huh.|b
 me045|huh.|b
-mn015|okay?|qy^d^f^rt
+mn015|okay?|d
 mn036|uhhuh.|b
 mn015|in some cases the origo is the same as the reference object.|s
-fe004|this was like|s.%-
-me010|so that would be origin in english.|s^bu
-me045|the origin.|s^aa^r
-me010|right?|qy^d^g^rt
+fe004|this was like|s
+me010|so that would be origin in english.|bu
+me045|the origin.|aa
+me010|right?|d
 me045|yeah.|b
-mn036|right.|s^aa
+mn036|right.|aa
 mn015|origo is a terminus technikus in that sense.|s
 mn015|that's even used in the english literature.|s
 mn015|origo.|s
-me045|oh okay.|s^bk
-me010|all right.|s^bk^rt
-me045|i never heard it.|s^rt
+me045|oh okay.|bk
+me010|all right.|bk
+me045|i never heard it.|rt
 mn036|okay.|b
-me045|okay.|s^bk^rt
+me045|okay.|bk
 mn015|and um so|fh
 mn015|this video tape is in front of me.|s
 mn015|i'm the origo and i'm also the reference object.|s
@@ -658,26 +658,26 @@ me045|uhhuh.|b
 mn015|and reference object and um no from from my point of view your shoe is left of the chair.|s
 me045|right.|fg
 me045|you you can actually say things like um it's behind the tree from me or something like that i think in in in certain circumstances in english.|s
-me045|right?|qy^d^g^rt
-mn015|yeah.|s^aa
-me045|as sort of from where i'm standing it would appear that|s.%--
+me045|right?|d
+mn015|yeah.|aa
+me045|as sort of from where i'm standing it would appear that|s
 mn015|yeah.|b
 mn015|so|fg
 fe004|looks a little bit like reichenbach for time.|s
-me010|yeah it sounds like it.|s^na
-me010|doesn't it?|qy^d^g^rt
-fe004|it's a lot like it.|s^aa^m
+me010|yeah it sounds like it.|na
+me010|doesn't it?|d
+fe004|it's a lot like it.|aa
 me010|yeah.|b
 me045|yeah.|b
-mn015|and then and then here you|s.%-
+mn015|and then and then here you|s
 fe004|um|fh
 mn015|on this scale you have it either be ego or allocentric.|s
-me010|uhhuh.|s^aa^rt
+me010|uhhuh.|aa
 mn015|and that's that's basically it.|s
-mn015|so egocentric two point egocentric three point or you can have allocentric.|fh|s
-mn015|so as seen from the church the town hall is right of that um fire station.|fh|s
-me045|oh okay.|s^bk
-mn015|uhhuh it's hardly ever used but it's|fh|s.%-
+mn015|so egocentric two point egocentric three point or you can have allocentric.|fh
+mn015|so as seen from the church the town hall is right of that um fire station.|fh
+me045|oh okay.|bk
+mn015|uhhuh it's hardly ever used but it's|fh
 mn036|i'd love to see it if you if you have a copy kind of.|s
 me010|yeah.|fg
 me010|i see this is this is getting into ami's thing.|s
@@ -686,27 +686,27 @@ mn036|uh|b
 me045|uhhuh.|b
 me010|he's he's very interested in that.|s
 mn036|here|%
-mn015|okay.|s^bk
+mn015|okay.|bk
 me010|so|fh
 me010|uh yeah.|fh
 me045|me too.|s
 me010|well why don't you just put it on the web page?|qw
-me010|there's this e d u|s.%--
-me010|right?|qy^d^g^rt
+me010|there's this e d u|s
+me010|right?|d
 mn015|yeah.|fg
-mn015|it's or or just|s.%--
-mn015|yeah.|s^bk
+mn015|it's or or just|s
+mn015|yeah.|bk
 mn015|it's also all on my my home page at e m l.|s
 me010|or a link to it.|s
 mn015|it's called an anatomy of a spatial description.|s
-me010|just|%-
-mn015|but i'll send that link.|s^cc
+me010|just|%--
+mn015|but i'll send that link.|cc
 mn036|okay great.|b
-me010|maybe just put a link on.|s^cs
-mn015|yep.|s^bk
+me010|maybe just put a link on.|cs
+mn015|yep.|bk
 me010|yeah.|fh
 mn015|yep.|fh
-me010|by the way there something that i didn't know until about a week ago or so is apparently there are separate brain areas for things within reach and things that are out of reach.|fg|s
+me010|by the way there something that i didn't know until about a week ago or so is apparently there are separate brain areas for things within reach and things that are out of reach.|fg
 me010|so there's there's uh all this linguistic stuff about you know near and far or yon and and so forth.|s
 me045|huh.|b
 me045|uhhuh.|b
@@ -714,418 +714,418 @@ me010|so this is all this is there's this linguistic facts.|s
 me010|but apparently the uh here's the way the findings go.|s
 me010|that you know they do m r i and and if you're uh got something within reach then there's one of your areas lights up.|s
 me010|and if something's out of reach uh a different one.|s
-me010|but here's the the amazing result um they say.|s^ba
+me010|but here's the the amazing result um they say.|ba
 me010|you get someone with a with a deficit so that they have a perfectly normal ability at distance things.|s
-me010|so the typical task is subdivision.|fh|s
-me010|so there's a a line on the wall over there and you give them a laser pointer and you say where's the midpoint.|s:qw
+me010|so the typical task is subdivision.|fh
+me010|so there's a a line on the wall over there and you give them a laser pointer and you say where's the midpoint.|s
 me010|and they do fine.|s
 me010|if you give them the line and they have to touch it.|s
-me010|they can't.|s^e
+me010|they can't.|e
 me010|there's just that part of the brain isn't functioning so they can't do that.|s
 me010|here's the real experiment.|s
-me010|the same thing on the wall you give them a laser where is it.|s:qw
-me010|they do it.|s^e
+me010|the same thing on the wall you give them a laser where is it.|s
+me010|they do it.|e
 me045|uhhuh.|b
-me010|give them a stick long stick and say do it.|s:s
-me010|they can't do it.|s^e
+me010|give them a stick long stick and say do it.|s
+me010|they can't do it.|e
 me010|so there's a remapping of distant space into nearby space.|s
 mn036|right.|b
-mn036|so they doubled|s^bu.%-
-fe004|because it's within reach now?|qy^bu^d^rt
-mn036|the the end the end of this|s.%-
-me010|it's not within reach and you use the within reach uh mechanism.|s^ng
-me045|yeah.|s^aa
-fe004|oh wow!|s^fe
+mn036|so they doubled|bu
+fe004|because it's within reach now?|bu
+mn036|the the end the end of this|s
+me010|it's not within reach and you use the within reach uh mechanism.|ng
+me045|yeah.|aa
+fe004|oh wow!|fe
 me045|yeah.|b
-me045|circuits.|s^2
-me010|so i'll i'll dig you up this reference.|s^cc
+me045|circuits.|2
+me010|so i'll i'll dig you up this reference.|cc
 mn036|right.|b
-me045|that's cool.|s^ba
-me010|and so this this is uh|s.%--
+me045|that's cool.|ba
+me010|and so this this is uh|s
 me010|first of all it explains something that i've always wondered about.|s
-me010|and i'll do this this test on you guys as well.|s^cc
+me010|and i'll do this this test on you guys as well.|cc
 me010|so|fh
-me010|uh i have had an experience not often but a certain number of times when for example i'm working with a tool a screwdriver or something for a long time i start feeling the tip directly.|fh|s
-me010|not indirectly.|s^e
+me010|uh i have had an experience not often but a certain number of times when for example i'm working with a tool a screwdriver or something for a long time i start feeling the tip directly.|fh
+me010|not indirectly.|e
 me010|but you actually can feel the tip.|s
 me045|yeah.|b
 me045|yeah.|b
 me010|and people who are uh accomplished violinists and stuff like that claim they also have this kind of thing where you get a direct sensation of physical sensation of the end affector.|s
 me045|yeah.|b
-me045|what's going on at the end of the tool.|s^2
+me045|what's going on at the end of the tool.|2
 me045|yeah.|b
 mn036|the the the the extension.|s
-me010|huh?|qw^br^d^rt
-me045|what's going on at the end of the tool or whatever.|s^r
-me010|yeah.|s^aa
-me010|within|%-
-mn036|right.|s^aa
-me010|huh?|qw^br^d^rt
-mn036|the extension of of your hand right.|s^r
-me010|yeah.|s^aa
-me010|right.|s^aa
-me010|have you had this?|qy^rt
+me010|huh?|br
+me045|what's going on at the end of the tool or whatever.|r
+me010|yeah.|aa
+me010|within|%--
+mn036|right.|aa
+me010|huh?|br
+mn036|the extension of of your hand right.|r
+me010|yeah.|aa
+me010|right.|aa
+me010|have you had this?|rt
 mn036|the|%
-mn036|i i think so.|s^am
-mn036|i mean it's not exactly the same thing but but it it it's getting close to that.|s^e
+mn036|i i think so.|am
+mn036|i mean it's not exactly the same thing but but it it it's getting close to that.|e
 fe004|what does it feel like?|qw
 me045|yeah.|b
 me010|oh it feels like your as if your uh neurons had extended themselves out to this tool and you're feeling forces on it and so forth.|s
 me010|and and you deal directly with it.|s
 mn036|i once i i was playing you know with those um uh devices that allow you to manipulate objects when it's dangerous to get close.|s
-me010|right yeah yeah yeah.|s^bk
-me045|oh okay.|s^bk
+me010|right yeah yeah yeah.|bk
+me045|oh okay.|bk
 mn036|so you can insert your hand something.|s
 me010|yeah.|b
-mn036|and there's a correspondence between|s.%--
+mn036|and there's a correspondence between|s
 me010|yeah.|b
 mn036|so i played with it.|s
 mn036|after a while you don't feel the difference anymore.|s
-me010|yeah right.|s^aa
-mn036|i i mean it's kind of|s.%-
+me010|yeah right.|aa
+mn036|i i mean it's kind of|s
 me045|uhhuh.|b
 mn036|very kind of you stop back and suddenly it goes away.|s
 mn036|and you have to kind of work again to recapture it but yeah.|s
 me045|yeah.|b
 me010|right.|b
-me010|yeah so anyway so so this was the first actual experimental evidence i'd seen that was consistent with this anecdotal stuff.|fg|s^tc
-me045|that's cool.|s^ba
+me010|yeah so anyway so so this was the first actual experimental evidence i'd seen that was consistent with this anecdotal stuff.|fg
+me045|that's cool.|ba
 me010|and of course it makes a lovely uh story about why languages uh make this distinction.|s
 me010|of course there are behavioral differences too.|s
 me010|things you can reach are really quite different than things you can't.|s
 me045|yeah.|b
 me010|but there seems to be an really deep embodied neural difference.|s
-me010|and this is um|s.%--
-me010|so in addition to the|s.%-
+me010|and this is um|s
+me010|so in addition to the|s
 mn015|this is more proximal distal.|s
-me010|yeah uh exactly.|s^aa
+me010|yeah uh exactly.|aa
 me010|so in addition to ego and allocentric uh which appear all over the place you also apparently have this proximal distal thing which is very deeply uh embedded.|s
-mn015|well dan montello sort of|s.%--
+mn015|well dan montello sort of|s
 mn015|he he does the uh uh the cognitive map world down in santa barbara.|s
 mn015|and he he always talks about these.|s
-mn015|he he already well|s.%--
+mn015|he he already well|s
 mn015|probably most likely without knowing this this evidence uh is talking about these small scale spaces that you can manipulate versus large scale environmental spaces.|s
 me010|yeah.|b
 me010|well there's there's uh been a lot of behavioral things on this but that was the first neuro physiological thing i saw.|s
-me010|anyway yeah so we'll we'll look at this.|s^cc^tc
-me010|and so all of these issues now are now starting to come up.|fh|s
+me010|anyway yeah so we'll we'll look at this.|cc
+me010|and so all of these issues now are now starting to come up.|fh
 me010|so now we're now done with demos.|s
 me010|we're starting to do science.|s
-me010|right?|qy^d^g^rt
-me010|and so these issues about uh reference and spatial reference discourse reference uhuh uhuh all this sort of stuff uh deixis which is part of what you were talking about.|fh|s
+me010|right?|d
+me010|and so these issues about uh reference and spatial reference discourse reference uhuh uhuh all this sort of stuff uh deixis which is part of what you were talking about.|fh
 me045|uhhuh.|b
 me045|uhhuh.|b
-me010|um so all of this stuff is coming up essentially starting now.|fh|s
-me010|so we got to do all this.|s^co
-me010|so there's that.|s^t
-me010|and then there's also a set of system things that come up.|s^t
-me010|so okay we're not using their system that means we need our system.|s:s
-me045|uhhuh.|s^aa
-me010|right?|qy^d^g^rt
+me010|um so all of this stuff is coming up essentially starting now.|fh
+me010|so we got to do all this.|co
+me010|so there's that.|t
+me010|and then there's also a set of system things that come up.|t
+me010|so okay we're not using their system that means we need our system.|s
+me045|uhhuh.|aa
+me010|right?|d
 me010|it it follows.|s
-me045|yeah.|s^aa
-me010|and so uh in addition to the business about just getting the linguistics right and the formalism and stuff we're actually going to build something.|fh|s^cc
-me010|and uh johno is point person on the parser analyzer whatever that is.|fh|s
-me010|and we're going to start on that in parallel with the um the grammar stuff.|fh|s
+me045|yeah.|aa
+me010|and so uh in addition to the business about just getting the linguistics right and the formalism and stuff we're actually going to build something.|fh
+me010|and uh johno is point person on the parser analyzer whatever that is.|fh
+me010|and we're going to start on that in parallel with the um the grammar stuff.|fh
 me010|but to do that we're going to need to make some decisions like ontology.|s
 me045|all right.|b
-me010|so um and so this is another thing where we're going to you know have to get involved and make relatively early i think make some decisions on uh is there an ontology a p i that that|fh|s.%--:qy.%--
+me010|so um and so this is another thing where we're going to you know have to get involved and make relatively early i think make some decisions on uh is there an ontology a p i that that|fh
 me010|there's a sort of standard way of getting things from ontologies.|s
 me010|and we build the parser and stuff around that.|s
 me010|or is there a particular ontology that we're going to standardize on and if so for example is there something that we can use there?|qy
 me010|does uh either the uh smartkom project or one of the projects at e m l have something that we can just pull out for that?|qy
-me010|uh so there are going to be some some some things like that which are not science but system.|fh|s
+me010|uh so there are going to be some some some things like that which are not science but system.|fh
 me010|but we aren't going to ignore those.|s
-me010|because we're we're not only going the plan is not only to lay out this thing but to actually uh build some of it.|s^df
+me010|because we're we're not only going the plan is not only to lay out this thing but to actually uh build some of it.|df
 me010|and how much we build and and so forth.|s
 me045|i|%--
-me010|uh part of it if it works right is|fh|s.%--
+me010|uh part of it if it works right is|fh
 me010|it looks like we're now in a position that the construction analyzer that we want for this applied project can be the same as the construction analyzer that nancy needs for the child language modeling.|s
 me010|so it's always been out of phase.|s
 me010|but it now seems that um there's a good shot at that.|s
 me010|so we've talked about it.|s
 me010|and the hope is that we can make these things the same thing.|s
-me045|okay.|s^bk
+me045|okay.|bk
 me010|and of course it's only in both cases it's only one piece of a bigger system.|s
 me045|uhhuh.|b
 me010|but it would be nice if that piece were exactly the same piece.|s
 me010|it was just this uh construction analyzer.|s
 me045|right.|b
-me010|and so we think we think we have a shot at at that.|fh|s
+me010|and so we think we think we have a shot at at that.|fh
 me045|okay.|b
-me010|so the|s.%--
+me010|so the|s
 me010|so|fh
-me010|to to come full circle on that this formalization task|s.%--
-me010|okay?|qy^d^f
-me010|is trying to get the formalism into into a shape where it can actually uh|s^e.%-
+me010|to to come full circle on that this formalization task|s
+me010|okay?|d
+me010|is trying to get the formalism into into a shape where it can actually uh|e
 me045|yeah.|fg
-me045|be of use to someone who's trying to do this.|s^2
-me045|right?|qy^d^g^rt
-me010|well yeah.|s^aa
+me045|be of use to someone who's trying to do this.|2
+me045|right?|d
+me010|well yeah.|aa
 me010|where it actually is is covers the whole range of things.|s
 me010|and the the the the thing that got mark into the worst trouble is he had a very ambitious thing he was trying to do.|s
 me010|and he insisted on trying to do it with a limited set of mechanisms.|s
 me010|it turned out inherently not to cover the space.|s
-me045|okay.|s^bk
+me045|okay.|bk
 me010|and it just it was just terribly frustrating for him.|s
 me045|yeah.|b
-me010|and he seemed fully committed to both sides of this irreconcilable thing.|fh|s
+me010|and he seemed fully committed to both sides of this irreconcilable thing.|fh
 me045|i see.|b
 me045|right.|b
 me010|and|fh
-me010|uh johno is much more pragmatic.|fh|s
-me045|okay.|s^bk
-me010|huh?|qy^br^rt
+me010|uh johno is much more pragmatic.|fh
+me045|okay.|bk
+me010|huh?|br
 me045|good to know.|s
 me010|is this is true.|s
-me010|is it not?|qy^d^g^rt
-me003|yes.|s^aa
-me010|okay.|s^bk
+me010|is it not?|d
+me003|yes.|aa
+me010|okay.|bk
 me010|so there's you know sort of yeah deep really deep emotional commitment to a certain theory being uh complete.|s
-me045|oh okay.|s^bk
-fe004|you don't have a hidden purist streak?|qy^d^j^rt
-me003|oh no.|s^ar
-fe004|okay.|s^bk
-me010|well it hasn't it it certainly hasn't been observed in any case.|s^j
-fe004|just checking.|s^df
-me003|no sir.|s^aa
-me045|all right.|s^bk
-me010|um now you do but that's okay.|fh|s
-me010|uh so for for|fh|%-
-me045|because i don't have to implement anything.|s^df^j
-me010|exactly right.|s^aa
-fe004|i have a problem then.|s^j
-me010|exactly.|s^aa
-fe004|it's so whether i do depends on whether i'm talking to him or him probably.|s^j
+me045|oh okay.|bk
+fe004|you don't have a hidden purist streak?|d
+me003|oh no.|ar
+fe004|okay.|bk
+me010|well it hasn't it it certainly hasn't been observed in any case.|j
+fe004|just checking.|df
+me003|no sir.|aa
+me045|all right.|bk
+me010|um now you do but that's okay.|fh
+me010|uh so for for|fh
+me045|because i don't have to implement anything.|df
+me010|exactly right.|aa
+fe004|i have a problem then.|j
+me010|exactly.|aa
+fe004|it's so whether i do depends on whether i'm talking to him or him probably.|j
 mn036|huh.|b
-me045|yeah right.|s^aa
+me045|yeah right.|aa
 me010|right.|b
-fe004|which meeting i'm in.|s^e
-me010|why actually uh the thing is you you do but the thing you have to implement is so small that uh|fg|s.%--
-fe004|it's okay to be purist within that context.|s^2^j
-me010|within that.|s^aa^m
-fe004|yes.|s^bk
-me010|yeah.|s^aa
-fe004|good.|s^ba
-me010|and uh it's and still i think you know get something done.|fh|s
-me045|cool!|s^fe
+fe004|which meeting i'm in.|e
+me010|why actually uh the thing is you you do but the thing you have to implement is so small that uh|fg
+fe004|it's okay to be purist within that context.|2
+me010|within that.|aa
+fe004|yes.|bk
+me010|yeah.|aa
+fe004|good.|ba
+me010|and uh it's and still i think you know get something done.|fh
+me045|cool!|fe
 me010|but to try to do something upscale and purist particularly if if um what you're purist about doesn't actually work is real hard.|s
-fe004|yay.|b.%
+fe004|yay.|b
 me045|uhhuh.|b
 me045|yeah.|b
 me010|okay.|fh
-me010|and then the other thing is while we're doing this uh robert's going to pick a piece of this space.|s^t
+me010|and then the other thing is while we're doing this uh robert's going to pick a piece of this space.|t
 mn036|it's possible yeah.|s
-me045|okay.|s^bk
-me010|okay?|qy^d^f^m
-me010|uh for his absentee thesis.|fh|s^e
+me045|okay.|bk
+me010|okay?|d
+me010|uh for his absentee thesis.|fh
 me010|i think you all know that that you can just in germany almost just send in your thesis.|s
-me045|just a drive up.|s^2^j
+me045|just a drive up.|2
 me045|ca-chuk.|%
-me010|yeah right.|s^aa
+me010|yeah right.|aa
 mn036|um|fg
-me045|there you go.|s^j
-me010|okay.|s^bk^j
-mn015|there there's a drive in thesis uh joint over in saarbruecken.|s^j
-me045|exactly.|s^aa
-me045|drive through yeah.|s^2^aa
-me010|it costs a lot.|s^j
-me010|the the amount you put in your credit card and as well.|s^e
+me045|there you go.|j
+me010|okay.|bk
+mn015|there there's a drive in thesis uh joint over in saarbruecken.|j
+me045|exactly.|aa
+me045|drive through yeah.|2
+me010|it costs a lot.|j
+me010|the the amount you put in your credit card and as well.|e
 me010|but uh|fh
 me010|but anyway.|fh
-me010|so uh that's um also got to be worked out hopefully over the next few weeks.|fh|s^co
-me010|so that that it becomes clear uh what piece uh robert wants to jump into.|s^df
-me010|and while we're at this level uh there's at least one new doctoral student in computer science who will be joining the project either next week or the first of august depending on the blandishments of microsoft.|s^t
-me045|okay.|s^bk
-me010|so uh and her name is eva.|fh|s^e
-me045|okay.|b.%
-me010|it really is.|s^df
+me010|so uh that's um also got to be worked out hopefully over the next few weeks.|fh
+me010|so that that it becomes clear uh what piece uh robert wants to jump into.|df
+me010|and while we're at this level uh there's at least one new doctoral student in computer science who will be joining the project either next week or the first of august depending on the blandishments of microsoft.|t
+me045|okay.|bk
+me010|so uh and her name is eva.|fh
+me045|okay.|b
+me010|it really is.|df
 me010|nobody believed that.|s
-fe004|yeah i thought it had to be a joke of your part you know.|fg|s
-fe004|like johno made it up.|s^j
-me010|yeah.|s^aa
-fe004|i'm sure.|s.%
-me012|is this person someone who's in first year this year?|qy^rt
-me010|no first year coming.|s^aa
-me012|or|qrr.%--
+fe004|yeah i thought it had to be a joke of your part you know.|fg
+fe004|like johno made it up.|j
+me010|yeah.|aa
+fe004|i'm sure.|s
+me012|is this person someone who's in first year this year?|rt
+me010|no first year coming.|aa
+me012|or|qrr
 me010|so she's she's now out here.|s
 me010|she's moved.|s
 me012|okay.|b
 me010|and she'll be a student as of then.|s
 me010|and probably she'll pick up from you on the belief net stuff.|s
 me010|so she'll be chasing you down and stuff like that.|s
-me012|okay.|s^bk
+me012|okay.|bk
 mn015|document.|s
 me010|uh|fh
-me012|right?|qy^d^g^rt
-me010|uh against all traditions.|fh|s^na
+me012|right?|d
+me010|uh against all traditions.|fh
 me010|and actually i talked today to a uh undergraduate who wants to do an honors thesis on this.|s
 me010|uh|fh
-fe004|someone from the class?|qy^bu^d^rt
-me010|no.|s^ar
+fe004|someone from the class?|bu
+me010|no.|ar
 me010|interestingly enough.|s
-fe004|we always get these people who are not in the class who|s.%-
-me010|some of some of them yeah.|s^arp
-fe004|it's interesting.|s^ba
+fe004|we always get these people who are not in the class who|s
+me010|some of some of them yeah.|arp
+fe004|it's interesting.|ba
 me010|so anyway.|fh
-me010|uh but uh she's another one of these ones with a three point nine average and so forth and so on.|fh|s
+me010|uh but uh she's another one of these ones with a three point nine average and so forth and so on.|fh
 me045|uhhuh.|b
-me010|uh so um i've i've given her some things to read.|fh|s
+me010|uh so um i've i've given her some things to read.|fh
 me010|so we'll see how this goes.|s
 me010|oh there's yet another one of the incoming first incoming first year graduate students who's expressed interest.|s
 me010|so we'll see how that goes.|s
 me010|um|fh
 me010|anyway|fh
-me010|so i think as far as this group goes um it's certainly worth continuing for the next few weeks to get closure on the uh belief net and the ideas that are involved in that and what are what are the concepts.|fh|s^t
+me010|so i think as far as this group goes um it's certainly worth continuing for the next few weeks to get closure on the uh belief net and the ideas that are involved in that and what are what are the concepts.|fh
 me010|we'll see whether it's going to make sense to have this be separate from the other bigger effort with the formalization stuff or not.|s
-me010|i'm not sure.|s^no
+me010|i'm not sure.|no
 me010|it partly depends on what your thesis turns out to be and how that goes.|s
 me010|so we'll see.|s
-me010|and then ami you can decide you know how much time you want to put into it.|s^co
+me010|and then ami you can decide you know how much time you want to put into it.|co
 me010|and uh it's beginning to take shape.|s
 mn036|okay.|b
 me010|so uh and|fh
-mn036|right|fg.%
+mn036|right|fg
 me010|i think you will find that if you want to look technically at some of the your traditional questions in this light uh keith who's building constructions will be quite happy to uh see what you know you envision as the issues and the problems and um how they might uh get reflected in constructions.|s
-me045|sure.|s^aa
+me045|sure.|aa
 me010|i suspect that's right.|s
-me045|yeah.|s^aa
-me045|yeah.|s^aa^r
+me045|yeah.|aa
+me045|yeah.|aa
 mn036|i i may have to go to switzerland for in june or beginning of july for between two weeks and four weeks but uh after that or before that.|s
-me010|okay.|s^bk
-me010|fine.|s^bk
-me010|and um if it's useful we can probably arrange for you to drop by and visit either at heidelberg or at the german a i center while you're in in the neighborhood.|fh|s^cs
-mn036|right.|s^bk
+me010|okay.|bk
+me010|fine.|bk
+me010|and um if it's useful we can probably arrange for you to drop by and visit either at heidelberg or at the german a i center while you're in in the neighborhood.|fh
+mn036|right.|bk
 mn036|yeah uh|%--
 mn036|actually i'm invited to do some consulting with a bank in geneva which has an affiliation with a research institute in geneva which i forgot the name of.|s
 me010|yeah.|b
 me010|yep.|b
 me010|do|%--
-me010|well we're connected to uh|fg|s.%--
+me010|well we're connected to uh|fg
 mn036|yeah.|b
-me010|there's a there's a a very significant connection between|s.%--
-me010|we'll we'll go through this.|s^cc
+me010|there's a there's a a very significant connection between|s
+me010|we'll we'll go through this.|cc
 mn036|yeah.|b
-me010|i c s i and e p f l which is the uh it's the|s.%--
+me010|i c s i and e p f l which is the uh it's the|s
 me010|germany's got two big technical institutes.|s
 me010|there's one in in zurich.|s
-mn036|uhhuh.|b^rt
-me010|e t h.|s^e
-me010|and then there's one the french speaking one in lausanne.|s^e
-me010|okay?|qy^d^f^rt
-me045|oh so in switzerland.|s^bs
-me010|which is uh e p f l.|s^e
-me010|so find out who they are associated with in geneva.|s^co
+mn036|uhhuh.|rt
+me010|e t h.|e
+me010|and then there's one the french speaking one in lausanne.|e
+me010|okay?|d
+me045|oh so in switzerland.|bs
+me010|which is uh e p f l.|e
+me010|so find out who they are associated with in geneva.|co
 mn036|great.|b
 me010|probably we're connected to them.|s
 mn036|right.|b
-mn036|great.|s^ba
-mn036|i'll let you know.|s^cc
-mn036|i'll send you email.|s^cc
-me010|okay.|s^bk
-me010|yeah.|s^bk
-me010|and so anyway we uh we can undoubtedly get ami uh to give a talk at uh e m l or something like that while he's in in uh|s^cs.%--
+mn036|great.|ba
+mn036|i'll let you know.|cc
+mn036|i'll send you email.|cc
+me010|okay.|bk
+me010|yeah.|bk
+me010|and so anyway we uh we can undoubtedly get ami uh to give a talk at uh e m l or something like that while he's in in uh|cs
 mn015|huh.|b
-mn015|uh i i think the one you you gave here a couple of weeks ago would be of interest there too.|fh|s
-mn036|sure yeah.|s^aa
-me010|a lot of interest actually either place d f k i or uh|s.%--
-me010|yeah so and and if there is a book that you'll be building up some audience for it.|fh|s
+mn015|uh i i think the one you you gave here a couple of weeks ago would be of interest there too.|fh
+mn036|sure yeah.|aa
+me010|a lot of interest actually either place d f k i or uh|s
+me010|yeah so and and if there is a book that you'll be building up some audience for it.|fh
 mn036|yeah.|b
-mn036|right.|s^bk
+mn036|right.|bk
 me010|and you'll get feedback from these guys.|s
-mn036|great yeah.|s^ba.%
-me010|because they've actually these d f k i guys have done as much as anyone over the last decade in trying to build them.|s^df
-me010|so we'll set that up.|s^cc
-mn036|cool.|s^ba
+mn036|great yeah.|ba
+me010|because they've actually these d f k i guys have done as much as anyone over the last decade in trying to build them.|df
+me010|so we'll set that up.|cc
+mn036|cool.|ba
 me010|okay.|fh
-me010|so uh unless we want to start digging into the uh the belief net and the decisions now which would be fine it's probably|fh|s.%-
-mn015|i i|%-
+me010|so uh unless we want to start digging into the uh the belief net and the decisions now which would be fine it's probably|fh
+mn015|i i|%--
 mn015|it's probably better if i come next week with the um version o point nine of the structure.|s
-me010|okay.|s^bk
-me010|so how about if you two guys between now and next week come up with something that is partially proposal and partially questions.|s^cs
-me010|saying here's what we think we understand here are the things we think we don't understand.|s^e:s
-me010|and that we as a group will try to to finish it.|s^cc
-me010|what i'd like to do is shoot for finishing all this next monday.|s^cs
-me012|sure.|s^aa
-me010|okay?|qy^d^g^rt
-me010|uh these are the decisions|fh|s.%--
+me010|okay.|bk
+me010|so how about if you two guys between now and next week come up with something that is partially proposal and partially questions.|cs
+me010|saying here's what we think we understand here are the things we think we don't understand.|e
+me010|and that we as a group will try to to finish it.|cc
+me010|what i'd like to do is shoot for finishing all this next monday.|cs
+me012|sure.|aa
+me010|okay?|d
+me010|uh these are the decisions|fh
 me010|i don't think we're going to get lots more information.|s
 me010|it's a design problem.|s
 me045|uhhuh.|b
 me012|yeah.|b
 me010|you know we|%--
 me010|yeah.|h
-me010|and let's come up with a first cut at what this should look like and then finish it up.|s^co
+me010|and let's come up with a first cut at what this should look like and then finish it up.|co
 me045|okay.|b
-me010|does that make sense?|qy^rt
-me045|okay.|s^aa
-mn015|and um the the semester will be over next week but then you have projects for one more week to come?|fh|qy^bu^d^rt
-me012|no i i think i'll be done everything by this uh by the end of this week.|s^ar|s
-mn015|same with you?|qy^d^rt
-mn015|no.|s^ar
+me010|does that make sense?|rt
+me045|okay.|aa
+mn015|and um the the semester will be over next week but then you have projects for one more week to come?|fh
+me012|no i i think i'll be done everything by this uh by the end of this week.|ar
+mn015|same with you?|d
+mn015|no.|ar
 me003|nnn|fh
 me003|this well i've i have projects but then the my professor of one of my classes also has a final that he's giving us.|s
 me003|and he's giving us five days to do it which means it going to be hard.|s
-me010|yeah.|s^aa
-me045|yeah.|s^aa
-me010|oh is it a take home final?|qy^bu^rt
-me003|yeah.|s^aa
+me010|yeah.|aa
+me045|yeah.|aa
+me010|oh is it a take home final?|bu
+me003|yeah.|aa
 me010|who's doing this?|qw
 me003|aikin alex yeah.|s
-me010|yeah figured.|s^bk
+me010|yeah figured.|bk
 me010|that would have been my guess.|s
 me012|huh.|b
 me010|right.|fh
-me010|um but anyway yeah.|fh|s
+me010|um but anyway yeah.|fh
 me045|pretty soon.|s
 mn015|okay.|b
-me010|okay so i guess that's|fh|s.%-
+me010|okay so i guess that's|fh
 me003|so the seventeenth will definitely be the last day like it or not for me.|s
 me010|right.|b
 me010|right.|b
-me010|so let's do this.|s^co
-me010|and then well there's going to be some separate|s.%--
+me010|so let's do this.|co
+me010|and then well there's going to be some separate|s
 me010|these guys are talking.|s
-me010|uh we have a group on the formalization.|fh|s
-me010|uh nancy and johno and i are going to talk about parsers.|fh|s
-me010|so there're various kinds of uh|s.%--
+me010|uh we have a group on the formalization.|fh
+me010|uh nancy and johno and i are going to talk about parsers.|fh
+me010|so there're various kinds of uh|s
 me045|okay.|b
 me010|of course nothing gets done even in a meeting of seven people.|s
-me010|right?|qy^d^g^rt
-me010|so um two or three people is the size in which actual work gets done.|fh|s
+me010|right?|d
+me010|so um two or three people is the size in which actual work gets done.|fh
 me045|right.|b
 mn015|huh.|b
-me045|yeah.|s^aa
-me010|so we'll do that.|s^cc
+me045|yeah.|aa
+me010|so we'll do that.|cc
 me010|great.|fh
-me010|oh the other thing we want to do is catch up with uh ellen and see what she's doing.|s^t
-me010|because the um image schemas are going to be um an important|s^df.%--
+me010|oh the other thing we want to do is catch up with uh ellen and see what she's doing.|t
+me010|because the um image schemas are going to be um an important|df
 me045|yeah.|b
-me045|quite relevant yeah.|s^2
+me045|quite relevant yeah.|2
 me010|we we want those.|s
-me010|right?|qy^d^g^rt
+me010|right?|d
 me045|yeah.|b
 me010|and we want them formalized and stuff like that.|s
-me045|oh yeah.|s^aa
+me045|oh yeah.|aa
 me045|yeah.|b
-me010|so let me let me make a note to do that.|s^co
+me010|so let me let me make a note to do that.|co
 me045|okay.|fg
 me045|yeah i'm actually probably going to be in contact with her uh pretty soon anyway because of various of us students were going to have a reading group about precisely that sort of thing over the summer.|s
-me003|okay.|s^bk^t3
-me010|oh right.|s^aa
-me010|right right right.|s^aa^r
-me010|that's great.|s^ba
-me045|so|fh.%
+me003|okay.|bk
+me010|oh right.|aa
+me010|right right right.|aa
+me010|that's great.|ba
+me045|so|fh
 me010|yeah i i shweta mentioned that although she said it's a secret.|s
-me045|okay.|s^bk
-me003|hi.|s^t3
+me045|okay.|bk
+me003|hi.|t3
 me045|right.|fg
-me010|the faculty aren't faculty aren't supposed to know.|s^j
-me045|no faculty.|s^2
-me003|wednesday's much better for me yeah.|s^t3
+me010|the faculty aren't faculty aren't supposed to know.|j
+me045|no faculty.|2
+me003|wednesday's much better for me yeah.|t3
 me010|but um|fh
-me010|i'm sufficiently clueless that i count as a|s.%--
-me045|yeah right.|s^aa
+me010|i'm sufficiently clueless that i count as a|s
+me045|yeah right.|aa
 me045|it's as if we didn't tell anyone at all.|s
 me003|bhaskara.|s
-me045|right.|s^bk
+me045|right.|bk

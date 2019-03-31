@@ -1,8 +1,6 @@
 import os
 import pickle
 import re
-import string
-
 import spacy
 from spacy.tokenizer import Tokenizer
 nlp = spacy.load('en')
@@ -109,11 +107,21 @@ def process_transcript(transcript, database, excluded_chars=None, excluded_tags=
         # Strip leading and trailing whitespace
         utterance_text.strip()
 
-        # TODO Concatenate multi-utterance's with '+' label
-
         # Process the utterance dialogue act, adjacency pair and speaker
         # Get the dialogue act from the database file
-        da_tag = database[utt_index].split(',')[5]  # TODO Split DA on '.'?
+        raw_da_tag = database[utt_index].split(',')[5]
+
+        if any(char in ['|'] for char in raw_da_tag):  # Take first da if multiple
+            raw_da_tag = raw_da_tag.split('|')[0]
+        if any(char in [':'] for char in raw_da_tag):  # Remove quote da split
+            raw_da_tag = raw_da_tag.split(':')[0]
+        if any(char in ['^'] for char in raw_da_tag):  # Remove general da tag
+            raw_da_tag = raw_da_tag.split('^')[1]
+        if any(char in ['.'] for char in raw_da_tag):  # Remove disruptive form tag
+            raw_da_tag = raw_da_tag.split('.')[0]
+        if raw_da_tag == '%-':  # Collapse disruptions i.e. interrupted and abandoned
+            raw_da_tag = '%--'
+        da_tag = raw_da_tag
 
         # # Get the adjacency pair (if it exists) TODO Add AP?
         # adjacency_pair = database[utt_index].split(',')[9]
