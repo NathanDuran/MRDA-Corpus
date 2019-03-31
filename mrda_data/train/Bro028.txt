@@ -205,7 +205,7 @@ me013|anyway you can probably justify anything if what's|fh|s.%-
 mn007|yeah.|fg
 mn007|and and the features are different also.|s
 me013|yeah.|b
-mn007|i mean the v. a. d doesn't use the same features there are.|s
+mn007|i mean the v.a.d. doesn't use the same features there are.|s
 me013|uhhuh.|b
 me006|huh.|b
 me013|oh.|s^bk
@@ -219,7 +219,7 @@ mn007|huh.|b.%
 mn007|uh well there are other things that we should do.|fh|s^bd
 mn007|but um it requires time.|fh|s^df
 mn007|and we have ideas.|s
-mn007|like so these things are like having a better v. a. d.|s
+mn007|like so these things are like having a better v.a.d.|s
 mn007|uh we have some ideas about that.|s
 mn007|it would probably implies working a little bit on features that are more suited to a voice activity detection.|s
 me013|uhhuh.|b.%
@@ -568,8 +568,8 @@ me013|it's a bad sign when you looking at the numbers you can't tell whether it'
 me018|yeah.|s^aa
 me018|yeah it's it's going to be hard.|fg|s^ba
 me018|um|fh
-me018|they're i'm still waiting for them to release the um multi c. p. u. version of their scripts.|s
-me018|because right now their script only handles processing on a single c. p. u.|s^df
+me018|they're i'm still waiting for them to release the um multi c.p.u. version of their scripts.|s
+me018|because right now their script only handles processing on a single c.p.u.|s^df
 me018|which will take a really long time to run.|s
 me018|so|fh
 me013|this is for the training?|qy^bu^d^rt
@@ -578,14 +578,14 @@ me018|uh i|h|s.%--
 me018|yes for the training also.|s^aa|s^na
 me013|okay.|s^bk
 me018|and um they're supposed to be coming out with it any time.|s
-me018|the multi c. p. u. one.|s
+me018|the multi c.p.u. one.|s
 me013|okay.|s^bk
 me018|so as soon as they get that then i'll i'll grab those too.|s
 me018|and so|%-
 me013|yeah because we have to get started.|fg|s^df
 me013|because it's because uh|s^df.%-
 me018|yeah.|s^aa
-me018|yeah i'll go ahead and try to run it though with just the single c. p. u one.|fg|s
+me018|yeah i'll go ahead and try to run it though with just the single c.p.u. one.|fg|s
 me013|if the|%-
 me018|and i they they um released like a smaller data set that you can use that only takes like sixteen hours to train and stuff.|s
 me018|so i can i can run it on that just to make sure that the the thing works and everything.|s
@@ -742,8 +742,8 @@ me018|yeah.|s^aa
 me018|gaussian mixture model.|s^m^na
 me006|okay.|s^bk
 me018|it's the same system that they use when they participate in the hub five evals.|s
-me018|it's a um sort of came out of uh uh looking a lot like h. t. k.|s
-me018|i mean they started off with um when they were building their system they were always comparing to h. t. k to make sure they were getting similar results.|s
+me018|it's a um sort of came out of uh uh looking a lot like h.t.k.|s
+me018|i mean they started off with um when they were building their system they were always comparing to h.t.k. to make sure they were getting similar results.|s
 me018|and so it's a gaussian mixture system.|s
 me018|uh|fh
 me013|do they have the same sort of mix down sort of procedure where they start off with a small number of some things?|qy
@@ -773,7 +773,7 @@ me013|i don't know if any of this is going to come in in time to be relevant.|s^
 me013|but uh we had talked about uh guenter playing around uh uh over in germany.|s
 mn007|uhhuh.|b
 me013|and and uh possibly coming up with something that would uh uh fit in later.|s
-me013|uh i saw that other mail where he said that he uh it wasn't going to work for him to do c. v. s.|s
+me013|uh i saw that other mail where he said that he uh it wasn't going to work for him to do c.v.s.|s
 mn007|yeah.|b
 mn007|yeah so now he has a version of the software.|fg|s
 me013|so he just has it all sitting there.|s^bu
@@ -852,7 +852,7 @@ me013|and i don't remember whether it was filter bank things.|s^no
 me018|so|%-
 mn007|and i didn't|s.%-
 me018|oh.|s^bk.%
-me013|or whether it was f. f. t bins.|s^e
+me013|or whether it was f.f.t. bins.|s^e
 me013|or|fh
 me018|huh.|s^bk
 me018|and and that that um histogram represents the different energy levels that have been seen at that frequency?|qy^bu^d^rt
@@ -929,7 +929,7 @@ me013|uh maybe just uh quickly today about maybe you could just say a little bit
 me013|and|fh
 me013|and then barry can say something about what what we're talking about.|s^cs^t
 me026|okay.|s^aa
-me026|so michael kleinschmidt who's a p. h. d student from germany showed up this week.|s
+me026|so michael kleinschmidt who's a p.h.d. student from germany showed up this week.|s
 me026|he'll be here for about six months.|s
 me026|and he's done some work using an auditory model of um human hearing.|s
 me026|and using that uh to generate speech recognition features.|s
@@ -946,7 +946,7 @@ me026|although i don't understand them that well.|s^bd^df
 me026|the i think it's a two stage idea.|s
 me026|and um the first stage of these features correspond to what's called the peripheral auditory system.|s
 me026|and i guess that is like a filter bank with a compressive nonlinearity.|s
-me026|and i'm not sure what we have in there that isn't already modeled in something like um p. l. p.|s^no
+me026|and i'm not sure what we have in there that isn't already modeled in something like um p.l.p.|s^no
 me026|i should learn more about that.|s
 me026|and then the second stage is um the most different thing i think from what we usually do.|s
 me026|it's um it computes features which are um based on sort of like based on different um wavelet basis functions used to analyze the input.|s
@@ -998,18 +998,18 @@ me013|and potentially one that's maybe a bit more systematic than what we've don
 me013|uh and a a bit more inspiration from from auditory things.|s
 me013|so it's so i think it's a neat thing to try.|s
 me013|the primary features um are in fact|s.%--
-me013|yeah essentially it's it's uh you know p. l. p or or mel cepstrum or something like that.|s
+me013|yeah essentially it's it's uh you know p.l.p. or or mel cepstrum or something like that.|s
 me013|you've you've got some uh compression.|s
 me013|we always have some compression.|s
 me013|we always have some you know the the the kind of filter bank with a kind of quasi log scaling.|s
 me013|um if you put in if you also include the rasta in it|s.%--
-me013|rasta the filtering being done in the log domain has an a. g. c. like uh characteristic which you know people typically put in these kind of uh um uh auditory front ends.|s
+me013|rasta the filtering being done in the log domain has an a.g.c. like uh characteristic which you know people typically put in these kind of uh um uh auditory front ends.|s
 me013|so it's very very similar.|s
 me013|uh but it's not exactly the same.|s
 me013|um|fh
 me013|i would agree that the second one is is somewhat more different.|s
 me013|but um it's mainly different in that the things that we have been doing like that have been um had a different kind of motivation and have ended up with different kinds of constraints.|s
-me013|so for instance if you look at the l. d. a rasta stuff you know basically what they do is they they look at the different eigenvectors out of the l. d. a and they form filters out of it right?|s|qy^d^f^g
+me013|so for instance if you look at the l.d.a. rasta stuff you know basically what they do is they they look at the different eigenvectors out of the l.d.a. and they form filters out of it right?|s|qy^d^f^g
 me013|and those filters have different uh kinds of temporal extents and temporal characteristics.|s
 me013|and so in fact they're multi scale.|s
 me013|but they're not sort of systematically multi scale like let's start here and go to there and go to there and go to there and so forth.|s
@@ -1024,7 +1024,7 @@ me013|uh i mean you don't have to.|fg|s
 me013|but but but uh hynek has.|s^df
 me013|um|fh
 me013|but it's also uh|s.%--
-me013|when hynek's had people do this kind of l. d. a analysis they've done it on frequency direction.|s
+me013|when hynek's had people do this kind of l.d.a. analysis they've done it on frequency direction.|s
 me013|and they've done it on the time direction.|s
 me013|i think he may have had people sometimes doing it on both simultaneously.|s
 me013|some two d..|s^e
@@ -1164,7 +1164,7 @@ me006|uh presumably those are important patterns for discriminating between phon
 me006|and maybe maybe some uh intermediate categories can come from just looking at the patterns of um that the neural net learns.|s
 me013|before you get on the next part let me just point out that there's there's a a pretty nice relationship between what you're talking about doing and what you're talking about doing there right?|s|qy^d^f^g
 me006|yeah.|b
-me013|so it seems to me that you know if you take away the the the difference of this primary features and say you use as we had talked about maybe doing you use p.   rasta p. l. p. or something for the the primary features um then this feature discovery uh uh thing is just what he's talking about doing too.|s
+me013|so it seems to me that you know if you take away the the the difference of this primary features and say you use as we had talked about maybe doing you use p.   rasta p.l.p. or something for the the primary features um then this feature discovery uh uh thing is just what he's talking about doing too.|s
 me013|except that he's talking about doing them in order to discover intermediate categories that correspond to these uh uh what these sub features are are are are showing you.|s
 me013|and um the other difference is that um he's doing this in a in a multi band setting.|s
 me013|which means that he's constraining himself to look across time in some relatively limited uh uh spectral extent right?|s|qy^d^g^rt
@@ -1177,7 +1177,7 @@ me006|uhhuh.|b
 me006|um|fg
 me006|yeah so so that's the that's the first part uh one one of the ideas to get at some some patterns of intermediate categories.|fh|s
 me006|um the other one was um to uh come up with a a a model um a graphical model that treats the intermediate categories as hidden hidden variables latent variables that we don't know anything about.|s
-me006|but that through um statistical training and the e. m algorithm um at the end of the day we have um we have learned something about these these latent um latent variables.|s
+me006|but that through um statistical training and the e.m. algorithm um at the end of the day we have um we have learned something about these these latent um latent variables.|s
 me006|which happen to correspond to intermediate categories.|s^e
 me006|um yeah and so those are the the two directions that i'm i'm looking into right now.|fh|s
 me006|and uh um yeah|fh

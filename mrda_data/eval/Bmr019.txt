@@ -138,10 +138,10 @@ me013|um yeah we actually talked about this in the uh front end meeting this mor
 me011|uhhuh.|b
 me013|much the same thing.|s^e
 me013|and and it was|s.%--
-me013|uh i mean there the point of interest to the group was primarily that um the uh the system that we had that was based on h. t. k that's used by you know all the participants in aurora was so much worse than the than the s. r. i.|s^rt
+me013|uh i mean there the point of interest to the group was primarily that um the uh the system that we had that was based on h.t.k. that's used by you know all the participants in aurora was so much worse than the than the s.r.i.|s^rt
 me011|everybody.|s^2
-me013|and the interesting thing is that even though yes it's a digits task and that's a relatively small number of words and there's a bunch of digits that you train on it's just not as good as having a a very large amount of data and training up a a a nice good big h. m. m.|s
-me013|um also you had the adaptation in the s. r. i system which we didn't have in this.|s
+me013|and the interesting thing is that even though yes it's a digits task and that's a relatively small number of words and there's a bunch of digits that you train on it's just not as good as having a a very large amount of data and training up a a a nice good big h.m.m.|s
+me013|um also you had the adaptation in the s.r.i. system which we didn't have in this.|s
 me013|um so um|fh
 mn017|and we know|s.%--
 mn017|did i send you some results without adaptation?|qy^rt
@@ -168,40 +168,40 @@ mn017|so it's um that's the number there.|s
 mn017|point six i believe is what you get with both uh means and variance adaptation.|s
 me011|right.|b
 me013|but i think one thing is that uh i would presume|s.%--
-me013|have you ever have you ever tried this exact same recognizer out on the actual t. i. digits test set?|qy^rt
+me013|have you ever have you ever tried this exact same recognizer out on the actual t.i. digits test set?|qy^rt
 mn017|this exact same recognizer?|qw^br
 mn017|no.|s^ar
 me013|it might be interesting to do that.|s^cs
 me013|because my my because my sense|s^df.%--
 me013|um|fh
-mn017|but but i have i mean people people at s. r. i are actually working on digits.|s
+mn017|but but i have i mean people people at s.r.i. are actually working on digits.|s
 me011|i bet it would do even slightly better.|s
 mn017|i could and they are using a system that's um you know is actually trained on digits.|s
 mn017|um but otherwise uses the same you know decoder the same uh training methods and so forth.|s^df
 me013|uhhuh.|b
-mn017|and i could ask them what they get on t. i. digits.|s^cs
+mn017|and i could ask them what they get on t.i. digits.|s^cs
 me013|yeah although i'd be i think it'd be interesting to just take this exact actual system.|s^bk|s^cs^ng
 me013|so that these numbers were comparable.|s^df
 mn017|uhhuh.|b
 mn017|well adam knows how to run it.|s
-me013|and try it out on t. i. digits.|s^cs^e
+me013|and try it out on t.i. digits.|s^cs^e
 me011|yeah no problem.|s^aa|s^ba
 mn017|so you just make a|s.%-
 me013|yeah.|b
 me013|yeah.|b
 me013|yeah.|b
 me013|because our sense from the other from the aurora uh task is that|s^df.%--
-me011|and try it with t. i. digits.|s
+me011|and try it with t.i. digits.|s
 mn017|uhhuh.|b
-me013|i mean because we were getting sub one percent numbers on t. i. digits also with the tandem thing.|s^df
+me013|i mean because we were getting sub one percent numbers on t.i. digits also with the tandem thing.|s^df
 mn017|uhhuh.|b
 mn017|huh.|b
 me013|so one so there were a number of things we noted from this.|s
-me013|one is yeah the s. r. i system is a lot better than the h. t. k.|s
+me013|one is yeah the s.r.i. system is a lot better than the h.t.k.|s
 mn017|huh.|b
-me013|this you know very limited training h. t. k system.|s
+me013|this you know very limited training h.t.k. system.|s
 mn017|uhhuh.|b.%
-me013|uh but the other is that um the digits recorded here in this room with these close mikes uh are actually a lot harder than the studio recording t. i. digits.|s
+me013|uh but the other is that um the digits recorded here in this room with these close mikes uh are actually a lot harder than the studio recording t.i. digits.|s
 mn017|uhhuh.|b
 me013|i think you know one reason for that uh might be that there's still even though it's close talking there still is some noise and some room acoustics.|s
 mn017|uhhuh.|b
@@ -220,16 +220,16 @@ me026|huh.|b
 me011|so i just cut it out.|s
 me011|you know so i just edited out the first uh word of the utterance.|s
 me013|yeah.|b
-me011|um so there's a little bit of correction but it's definitely not as clean as t. i. digits.|s
-me011|so my expectations is t. i. digits would especially|s.%--
-me011|i think t. i. digits is all american english.|s^bu
+me011|um so there's a little bit of correction but it's definitely not as clean as t.i. digits.|s
+me011|so my expectations is t.i. digits would especially|s.%--
+me011|i think t.i. digits is all american english.|s^bu
 me011|right?|qy^d^g^rt
 me011|so it would probably do even a little better still.|s
 me013|uhhuh.|s^aa
-me011|on the s. r. i system.|s^e
+me011|on the s.r.i. system.|s^e
 me011|but we could give it a try.|s^bd^cs
 mn017|well|fg
-mn017|but remember we're using a telephone bandwidth front end here uh on this uh on this s. r. i system.|s
+mn017|but remember we're using a telephone bandwidth front end here uh on this uh on this s.r.i. system.|s
 mn017|so um i was i thought that maybe that's actually a good thing.|s
 mn017|because it it gets rid of some of the uh the noises.|s^rt
 mn017|um you know in the the below and above the um the you know speech bandwidth.|s^e
@@ -238,7 +238,7 @@ me013|uhhuh.|b
 mn017|and um|fh
 mn017|i suspect that to get sort of the last bit out of these higher quality recordings you would have to in fact uh use models that uh were trained on wider band data.|s
 mn017|and of course we can't do that or|s.%-
-me011|what's t. i. digits?|qw^rt
+me011|what's t.i. digits?|qw^rt
 me011|i thought|s.%-
 me013|it's wide band yeah.|s^na|s^aa
 me013|it's in in fact we looked it up.|s
@@ -248,7 +248,7 @@ me013|and it was actually twenty kilohertz sampling.|s
 me011|oh that's right.|s^bk
 me011|i i did look that up.|s
 mn017|uhhuh.|b.%
-me011|i couldn't remember whether that was t. i. digits or one of the other digit tasks.|s^df^no
+me011|i couldn't remember whether that was t.i. digits or one of the other digit tasks.|s^df^no
 me013|yeah.|b
 mn017|right.|b
 mn017|but but i would|s.%--
@@ -263,13 +263,13 @@ mn017|now uh does|%-
 mn017|one one issue|s.%-
 me011|you might want to move the mike down a little bit.|s^cs^t3
 mn017|one issue with with that is that um the system has this uh notion of a speaker to which is used in adaptation variance uh you know both in uh mean and variance normalization.|s
-mn017|and also in the v. t. l estimation.|s
+mn017|and also in the v.t.l. estimation.|s
 me013|uhhuh.|b
 mn017|so|fh
 me011|yeah i noticed the script that extracted it.|fg|s
 mn017|do|%-
 mn017|is|%-
-mn017|so does so so does does um the t. i. digits database have speakers that are known?|qy^rt
+mn017|so does so so does does um the t.i. digits database have speakers that are known?|qy^rt
 me011|yep.|s^aa
 me011|yep.|s^aa^r
 mn017|and is there is there enough data or a comparable comparable amount of data to to what we have in our recordings here?|qy^rt
@@ -281,7 +281,7 @@ mn017|okay.|s^bk
 me013|yeah.|fg
 me013|well the other thing would be to do it without the adaptation and compare to these numbers without the adaptation.|fg|s
 me013|that would|s.%-
-mn017|right uh but i'm not so much worried about the adaptation actually than than the um um the uh v. t. l estimation.|s^bk|s^df^ng
+mn017|right uh but i'm not so much worried about the adaptation actually than than the um um the uh v.t.l. estimation.|s^bk|s^df^ng
 me011|right.|b
 mn017|if you have only one utterance per speaker you might actually screw up on estimating the the warping uh factor.|s^e
 mn017|so um|fh
@@ -297,13 +297,13 @@ mn017|so|fh
 me011|so although i i sort of know how to run it there are a little a few details here and there that i'll have to dig out.|s
 mn017|okay.|fg
 mn017|the key|s.%-
-mn017|so the system actually extracts the speaker i. d from the waveform names.|s
+mn017|so the system actually extracts the speaker i.d. from the waveform names.|s
 me011|right i saw that.|s^aa|s
 mn017|and there's a there's a script and that is actually all in one script.|s
 mn017|so there's this one script that parses waveform names.|s
-mn017|and extracts things like the um speaker uh i. d.|s
-mn017|or something that can stand in as a speaker i. d.|s^e
-mn017|so we might have to modify that script to recognize the um speakers um in the in the uh um t. i. digits database.|s^cs
+mn017|and extracts things like the um speaker uh i.d.|s
+mn017|or something that can stand in as a speaker i.d.|s^e
+mn017|so we might have to modify that script to recognize the um speakers um in the in the uh um t.i. digits database.|s^cs
 me011|right.|b
 me011|right.|b
 me011|and that uh|s.%-
@@ -313,7 +313,7 @@ mn017|that would be the sort of probably the safest way to do|s.%-
 me011|i might have to do that anyway to to do|s.%--
 me011|because we may have to do an extract to get the amount of data per speaker about right.|s^df
 mn017|uhhuh.|b
-me011|the other thing is isn't t. i. digits isolated digits?|qy^rt
+me011|the other thing is isn't t.i. digits isolated digits?|qy^rt
 mn017|right.|b
 me011|or is that another one?|qrr
 me011|i'm i looked through a bunch of the digits corpora.|s^df
@@ -321,7 +321,7 @@ me011|and now they're all blurring.|s^df^e
 me013|uhhuh.|b
 me011|because one of them was literally people reading a single digit.|s
 me011|and then others were connected digits.|s
-me013|yeah most of t. i. digits is connected digits i think.|fg|s
+me013|yeah most of t.i. digits is connected digits i think.|fg|s
 me011|okay.|s^bk
 me013|the i mean we had a bellcore corpus that we were using.|s
 me011|maybe it's the bell gram.|s
@@ -498,7 +498,7 @@ fe016|and just front end those pieces.|s
 fe016|or you can run it on the whole data.|s
 fe016|which is which is you know a|s.%-
 me013|but but but how did we get the how did we determine the links uh that we're testing on in the stuff we reported?|qw
-fe016|in the h. l. t paper we took segments that are channel time aligned.|s
+fe016|in the h.l.t. paper we took segments that are channel time aligned.|s
 fe016|which is now being changed in the transcription process.|s
 fe016|which is good.|s
 fe016|and we took cases where the transcribers said there was only one person talking here.|s:s
@@ -513,17 +513,17 @@ fe016|the bad numbers were from the segments where there was overlap.|s
 me013|well we could start with the good ones.|s^cs
 me013|but anyway so i think that we should try it once with the same conditions that were used to create those.|s^cs
 fe016|yeah.|b
-me013|and in those same segments just use one of the p. z. m.'s.|s^cs^e
+me013|and in those same segments just use one of the p.z.m.'s.|s^cs^e
 fe016|right so we we can do that.|s^bk|s
 me013|and then you know i mean the thing is if we were getting uh what thirty five forty percent something like that on on that particular set|s.%--
 fe016|yeah.|b
 me013|uh does it go to seventy or eighty?|qh
 me013|or does it use up so much memory we can't decode it?|qh
 fe016|right.|b
-fe016|it might also depend on which speaker it is and how close they are to the p. z. m.|s^rt
+fe016|it might also depend on which speaker it is and how close they are to the p.z.m.|s^rt
 me013|uh|fh
 fe016|i don't know how different they are from each other.|s^no
-mn017|you want to probably choose the p. z. m channel that is closest to the speaker.|s^cs
+mn017|you want to probably choose the p.z.m. channel that is closest to the speaker.|s^cs
 fe016|to be best|s.%-
 me011|for this particular digit ones i just picked that one.|s
 mn014|yeah.|b
@@ -540,16 +540,16 @@ me013|but i i'd like to see it on the same exact same data set that that we did 
 me011|actually|%-
 me011|i actually should've picked a different one.|s
 me013|right?|qy^d^f^g
-me011|because that could be why the p. d. a is worse.|s^df
+me011|because that could be why the p.d.a. is worse.|s^df
 me011|because it's further away from most of the people reading digits.|s^df
 mn014|it's further away yeah.|s^2^na|s^aa
 mn014|yeah.|b
 me013|that's probably one of the reasons.|s^na
 fe008|huh.|b
 fe008|uhhuh.|b
-fe016|well yeah you could look at i guess that p. z. m or something.|fg|s^cs
+fe016|well yeah you could look at i guess that p.z.m. or something.|fg|s^cs
 me011|yep.|b
-me013|but the other is it's very uh i mean even though there's i'm sure the the the s. r. i uh front end has some kind of pre emphasis it's it's uh still it's picking up lots of low frequency energy.|s^df^ng
+me013|but the other is it's very uh i mean even though there's i'm sure the the the s.r.i. uh front end has some kind of pre emphasis it's it's uh still it's picking up lots of low frequency energy.|s^df^ng
 mn017|uhhuh.|b
 me013|so even discriminating against it i'm sure some of it's getting through.|s
 me013|um|fh
@@ -560,7 +560,7 @@ me011|yep.|s^aa
 fe016|i mean|%--
 me013|well they're bad.|s^aap
 me013|but i mean if you listen to it it sounds okay you know.|s^df^ng
-me011|yeah when you listen to it uh the p. z. m and the p. d. a yeah the p. d. a has higher sound floor.|fg|s
+me011|yeah when you listen to it uh the p.z.m. and the p.d.a. yeah the p.d.a. has higher sound floor.|fg|s
 me013|yeah.|b.%
 me011|but not by a lot.|s
 me011|it's really pretty uh pretty much the same.|s^e
@@ -568,9 +568,9 @@ fe016|i just remember you saying you got them to be cheap on purpose.|s
 fe016|cheap in terms of their quality.|s^e
 fe016|so|fh
 me013|well they're twenty five cents or so.|s
-me011|we wanted them to be to be typical of what would be in a p. d. a.|s
+me011|we wanted them to be to be typical of what would be in a p.d.a.|s
 me013|yeah.|b.x
-me011|so they are they're not the p. z. m three hundred dollar type.|s
+me011|so they are they're not the p.z.m. three hundred dollar type.|s
 fe016|uhhuh.|b.%
 me011|they're the twenty five cent.|s
 me013|yeah.|b
@@ -601,7 +601,7 @@ me013|well i think what we want to do is we want to uh|s.%--
 me013|and we've talked about this in other contexts.|s
 me013|we want to have the ability to feed it different features.|s
 mn017|uhhuh.|b
-me013|and then um from the point of view of the front end research it would be uh substituting for h. t. k.|s
+me013|and then um from the point of view of the front end research it would be uh substituting for h.t.k.|s
 mn017|okay.|b
 mn017|okay.|s^bk
 me013|i think that's the key thing.|s
@@ -628,7 +628,7 @@ me011|yeah.|b
 mn017|and um|fh
 me013|yeah.|s^bk
 me013|right.|s^bk
-mn017|it's uh i mean the the front end is that's in the s. r. i recognizer is very nice in that it does a lot of things on the fly.|s
+mn017|it's uh i mean the the front end is that's in the s.r.i. recognizer is very nice in that it does a lot of things on the fly.|s
 mn017|but it unfortunately is not designed and um like the uh icsi system is where you can feed it from a pipeline of of the command.|s^df
 mn017|so the what that means probably for the foreseeable future is that you have to uh dump out um|s.%--
 mn017|you know if you want to use some new features you have to dump them into individual files.|s
@@ -823,7 +823,7 @@ fe008|and then i hand marked it myself so that we do have uh the beginning and e
 mn017|uhhuh.|b
 fe008|um i didn't do it word level.|s
 fe008|but but in terms|s.%--
-fe008|so i so for for one of the n. s. a groups.|s
+fe008|so i so for for one of the n.s.a. groups.|s
 fe016|uhhuh.|b
 fe008|and also i went back to the original one that i first transcribed and and did it uh uh utterance by utterance for that particular one.|s
 fe008|so i think you do have|s.%--
@@ -854,10 +854,10 @@ fe008|which is what i assume.|s^rt
 fe008|isn't that what what you|qy.%--
 fe008|well see adam would be|s.%-
 mn017|yeah whatever you use.|fg|s
-mn017|i mean we convert it to this format that the um nist scoring tool uh c. t. m conversation time marked file.|s
+mn017|i mean we convert it to this format that the um nist scoring tool uh c.t.m. conversation time marked file.|s
 fe016|yeah.|b
 mn017|and and then that's the that's what the|s.%-
-me011|i think transcriber uh outputs c. t. m.|s
+me011|i think transcriber uh outputs c.t.m.|s
 fe008|if it|%-
 fe008|okay.|s^bk
 me011|i think so.|s^am
@@ -885,7 +885,7 @@ me013|uh|fh
 fe016|you mean on on the hand marked um|s^bu.%--
 fe016|so we we only i only looked at actually alignments from one meeting that we chose.|s
 me013|yeah.|s^aa
-fe016|i think m. r four.|s^e
+fe016|i think m.r. four.|s^e
 fe016|just randomly um|s.%--
 fe016|and|fh
 mn017|actually not randomly.|s^nd
@@ -897,7 +897,7 @@ mn017|yeah.|b
 fe016|and it was a meeting recorder meeting.|s
 fe016|um|fh
 fe016|but yeah we should try to use what you have.|s
-fe016|i did rerun recognition on your new version of m. r one.|s
+fe016|i did rerun recognition on your new version of m.r. one.|s
 fe008|oh good.|s^ba
 fe016|i i mean the the one with dan ellis in it and eric.|s
 fe008|good.|s^ba
@@ -924,7 +924,7 @@ fe008|which meant in overlaps i was at a at a terrific disadvantage.|s
 fe016|right.|b
 fe016|right.|b
 fe008|in addition it was before the channelized uh possibility was there.|s
-fe008|and finally i did it using the speakers of my um of you know off the c. p. u on my on my machine.|s
+fe008|and finally i did it using the speakers of my um of you know off the c.p.u. on my on my machine.|s
 fe008|because i didn't have a headphone.|s^df
 fe008|so it like i mean|s.%--
 fe016|right.|b
@@ -1157,7 +1157,7 @@ mn017|uh this this is just maybe someone has some some ideas about how to do it 
 me001|huh.|b
 mn017|but we so we're taking these uh alignments from the individual channels.|s
 mn017|we're|s.%--
-mn017|from each alignment we're producing uh one of these c. t. m files.|s
+mn017|from each alignment we're producing uh one of these c.t.m. files.|s
 mn017|which essentially has it's just a linear sequence of words with the begin times for every word and the duration.|s
 fe008|great.|b
 mn017|and and and of course|s.%-
@@ -1414,12 +1414,12 @@ mn017|no i'm sorry.|s^df
 fe016|uh beep!|s^fe
 mn017|no i didn't mean anybody any particular system.|s^df
 me011|i mean|s.%-
-mn017|i meant this h. t. k back end.|s^e
+mn017|i meant this h.t.k. back end.|s^e
 mn017|if they|s.%-
-me013|oh you don't like h. t. k?|s^bk|qy^bu^d^j^rt
+me013|oh you don't like h.t. k?|s^bk|qy^bu^d^j^rt
 mn005|yeah.|b.%
-mn017|i don't i don't have any stock in h. t. k or entropic or anything.|s^no
-me013|no i mean this it's the h. t. k that is trained on a very limited amount of data.|s
+mn017|i don't i don't have any stock in h.t.k. or entropic or anything.|s^no
+me013|no i mean this it's the h.t.k. that is trained on a very limited amount of data.|s
 me011|it's it's very specific.|s
 mn017|right.|s^aa
 me013|yeah.|s^bk
@@ -1449,7 +1449,7 @@ mn017|uhhuh.|b
 me013|and in fact most methods that people now use were originally tried with something that was not their absolute best system at some level.|s
 me013|but of course sometimes it doesn't uh port.|s
 me013|so i think that's that's an interesting question.|s
-me013|if we're getting three percent error on uh uh english uh native speakers um using the aurora system and we do some improvements and bring it from three to two do those same improvements bring uh you know the s. r. i system from one point three to you know to point eight|qo.%-
+me013|if we're getting three percent error on uh uh english uh native speakers um using the aurora system and we do some improvements and bring it from three to two do those same improvements bring uh you know the s.r.i. system from one point three to you know to point eight|qo.%-
 mn017|huh.|b
 mn017|uhhuh.|b.%
 me011|zero.|s^2
@@ -1481,7 +1481,7 @@ me013|so|fh
 mn017|it's a eurospeech paper but not related to meetings.|s
 mn017|but it's on digits.|s
 mn017|so um|fh
-mn017|uh a colleague at s. r. i developed a improved version of m. m. i. e training.|s
+mn017|uh a colleague at s.r.i. developed a improved version of m.m.i.e. training.|s
 me013|uhhuh.|b
 mn017|and he tested it mostly on digits.|s
 mn017|because it's sort of a you know it doesn't take weeks to train it.|s^df
@@ -1602,7 +1602,7 @@ fe008|yeah.|b
 fe016|i mean i know about the first meeting.|s
 fe016|um|fh
 fe016|but the other one that you did.|s
-fe016|the n. s. a one.|s^e
+fe016|the n.s.a. one.|s^e
 fe016|which we hadn't done because we weren't running recognition on it.|s
 fe008|uhhuh.|b
 fe016|because the non native speaker|s^df.%--
@@ -1620,7 +1620,7 @@ fe016|right.|s^aa
 fe016|so|fh
 fe008|great.|s^ba
 fe008|i sent email when i finished the that one.|s
-fe016|n. s. a three i think.|s
+fe016|n.s.a. three i think.|s
 fe008|that was sort of|s.%-
 fe008|yeah that's right that's right.|s^aa|s^na
 fe008|that's much simpler.|s^ba
@@ -1629,12 +1629,12 @@ fe016|but i know the number.|s^df
 me013|that part's definitely going to confuse somebody who looks at these later.|s
 mn017|right.|b
 mn017|um|fh
-me013|i mean this is we're recording secret n. s. a meetings.|s^df
+me013|i mean this is we're recording secret n.s.a. meetings.|s^df
 mn017|not the|%-
 me013|i mean it's|s.%-
 mn017|yeah.|b
 mn017|uh|fh
-fe008|yeah not that n. s. a.|s^nd
+fe008|yeah not that n.s.a.|s^nd
 mn017|the the|%-
 me013|it's network services and applications.|s
 fe016|they are hard to understand.|s^na

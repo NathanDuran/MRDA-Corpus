@@ -60,7 +60,7 @@ def process_transcript(transcript, database, excluded_chars=None, excluded_tags=
                     utterance_text.append(word)
 
         # Check utterance is not only punctuation (because the rest was invalid/removed)
-        if len(utterance_text) == 1 and any(char in ['.', '?', '!'] for char in utterance_text[0]):
+        if len(utterance_text) > 0 and all(char in ['.', '?', '!', ' '] for char in utterance_text[0]):
             # If so, ignore
             continue
         # Else if the last token is punctuation, concatenate with last word
@@ -69,6 +69,40 @@ def process_transcript(transcript, database, excluded_chars=None, excluded_tags=
                 utterance_text[-2] = ''.join((utterance_text[-2], utterance_text[-1]))
                 utterance_text.pop()
 
+        # Concatenate acronyms i.e. 't.v.'
+        tmp_utt_txt = []
+        i = 0
+        while i < len(utterance_text):
+
+            # Check if this token is part of an acronym i.e. 't.'
+            if re.match("([a-zA-Z]\.)", utterance_text[i]):
+
+                # Add the first part of the acronym
+                accronym_list = [utterance_text[i]]
+
+                # Find and add the following acronym tokens
+                next_ind = i + 1
+                while next_ind < len(utterance_text) and (re.match("([a-zA-Z]\.)", utterance_text[next_ind])
+                                                          or (re.match("([a-zA-Z])", utterance_text[next_ind])
+                                                              and len(utterance_text[next_ind]) == 1)):
+                    # If the last token is missing full stop then append one
+                    if re.match("([a-zA-Z])", utterance_text[next_ind]) and len(utterance_text[next_ind]) == 1:
+                        utterance_text[next_ind] += '.'
+                    accronym_list.append(utterance_text[next_ind])
+                    next_ind += 1
+
+                # Skip the acronym tokens we just appended
+                i += len(accronym_list)
+
+                # Join the acronym tokens and append to the sentence
+                accronym = ''.join(accronym_list)
+                tmp_utt_txt.append(accronym)
+
+            # Else just add the word
+            else:
+                tmp_utt_txt.append(utterance_text[i])
+                i += 1
+        utterance_text = tmp_utt_txt
 
         # Join words for complete sentence
         utterance_text = " ".join(utterance_text)
@@ -92,7 +126,7 @@ def process_transcript(transcript, database, excluded_chars=None, excluded_tags=
         speaker = database[utt_index].split(',')[7]
 
         # Print original and processed utterances
-        # print(str(utt_index) + " " + utterance_tokens)
+        # print(str(utt_index) + " " + text)
         # print(str(utt_index) + " " + speaker + " " + utterance_text + " " + da_tag)
 
         # Check we are not adding an empty utterance (i.e. because it was just 'DIGIT_TASK'),

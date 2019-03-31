@@ -16,9 +16,9 @@ me013|i guess it's all right.|z
 me013|so|fg
 me013|let's see.|fh
 me013|yeah barry's not here and dave's not here.|s
-me013|um i can say about just just quickly to get through it that dave and i submitted this a. s. r. u|fh|s.%-
+me013|um i can say about just just quickly to get through it that dave and i submitted this a.s.r.u.|fh|s.%-
 me018|this is for|qy^d.%--
-me018|a. s. r. u.|s^bk
+me018|a.s.r.u.|s^bk
 me013|yeah.|s^aa
 me013|so|fh
 me013|um|fh
@@ -26,7 +26,7 @@ me013|yeah it's it's interesting.|s^ba
 me013|i mean basically we're dealing with reverberation.|s
 me013|and um when we deal with pure reverberation the technique he's using works really really well.|fh|s
 me013|uh and when they had the reverberation here uh we'll measure the signal to noise ratio.|fh|s
-me013|and it's uh about nine d. b.|s
+me013|and it's uh about nine d.b.|s
 mn052|huh.|b
 me013|so|fh
 me013|um|fh
@@ -37,11 +37,11 @@ me018|it's nine d. b?|qy^bu^d^rt
 me013|yeah.|s^aa
 me013|um|fg
 me013|and actually it brought up a question which may be relevant to the aurora stuff too.|s
-me013|um i know that when you figured out the filters that we're using for the mel scale there was some experimentation that went on at at uh at o. g. i.|s
+me013|um i know that when you figured out the filters that we're using for the mel scale there was some experimentation that went on at at uh at o.g.i.|s
 me013|um|fh
-me013|but one of the differences that we found between the two systems that we were using the the aurora h. t. k system baseline system and the system that we were the the uh other system we were using the uh the s. r. i system was that the s. r. i system had maybe a um hundred hertz high pass.|s
+me013|but one of the differences that we found between the two systems that we were using the the aurora h.t.k. system baseline system and the system that we were the the uh other system we were using the uh the s.r.i. system was that the s.r.i. system had maybe a um hundred hertz high pass.|s
 mn052|yep.|b
-me013|and the uh aurora h. t. k it was like twenty.|s
+me013|and the uh aurora h.t.k. it was like twenty.|s
 mn052|sixty four.|s^2
 mn052|sixty four.|s^nd^r
 me013|uh|fh
@@ -78,7 +78,7 @@ mn007|yeah.|s^aa
 me013|is this oh from the from|s.%-
 mn007|it|%--
 mn007|this is the filter bank in the frequency domain that starts at sixty four.|s
-me013|oh so you uh so you really set it to zero the f. f. t.|s^bu
+me013|oh so you uh so you really set it to zero the f.f.t.|s^bu
 mn052|yeah.|b
 mn052|yeah.|s^aa
 mn007|yeah.|fh
@@ -117,7 +117,7 @@ mn052|so i tried a hundred to four k.  .|s
 mn052|yeah.|fh
 me013|um|fg
 mn052|so it was|s.%-
-me013|and on and on the um um t. i. digits also?|qy^d^rt
+me013|and on and on the um um t.i. digits also?|qy^d^rt
 mn052|no no no.|s^ar
 mn052|i think i just tried it on speechdat-car.|s^df^nd
 me013|huh.|b
@@ -130,7 +130,7 @@ me013|i guess.|s^e
 me013|in terms of the noise.|s^e
 me013|the speechdat-car is more uh sort of roughly stationary a lot of it.|s
 mn052|yeah.|b
-me013|and and t. i. digits maybe is not so much as|s.%--
+me013|and and t.i. digits maybe is not so much as|s.%--
 mn007|uhhuh.|b
 mn052|yeah.|b
 me013|yeah.|fh
@@ -217,7 +217,7 @@ me013|i mean|%--
 me013|the overall results seemed to be first place in in in the case of either um artificial reverberation or a modest sized training set.|s
 me013|uh either way uh uh it helped a lot.|fh|s
 me013|and but if you had a a really big training set a recognizer uh system that was capable of taking advantage of a really large training set|s.%--
-me013|i thought that one thing with the h. t. k is that is has the as we're using the configuration we're using is is being bound by the terms of aurora.|s
+me013|i thought that one thing with the h.t.k. is that is has the as we're using the configuration we're using is is being bound by the terms of aurora.|s
 me013|we have all those parameters just set as they are.|s
 me013|so even if we had a hundred times as much data we wouldn't go out to you know ten or or a hundred times as many gaussians or anything.|s^e
 me013|so|fh
@@ -395,14 +395,14 @@ me013|oh uh do you know geoff zweig?|s^bk|qy
 me018|no.|s^ar
 me013|oh.|s^bk
 me013|uh he he uh he was here for a couple years.|s
-me013|and he uh got his p. h. d.|s
+me013|and he uh got his p.h.d.|s
 me018|oh okay.|s^bk
 me013|he|%--
-me013|and he's uh been at i. b. m for the last couple years.|s
+me013|and he's uh been at i.b.m. for the last couple years.|s
 me018|oh okay.|s^bk
 me013|so|fh
 me018|wow.|s^ba
-me013|uh so he did he did his p. h. d on dynamic bayes-nets.|s
+me013|uh so he did he did his p.h.d. on dynamic bayes-nets.|s
 me018|that would be neat.|s^ba
 me013|uh for for speech recognition.|s^e
 me013|he had some continuity built into the model.|s^e
@@ -412,12 +412,12 @@ me013|um|fh
 me018|huh.|b
 me013|so|fh
 mn052|huh.|b
-mn007|um i've been playing with first the um v. a. d.|fg|s^rt^tc
+mn007|um i've been playing with first the um v.a.d.|fg|s^rt^tc
 mn007|um so it's exactly the same approach.|fh|s
-mn007|but the features that the v. a. d neural network use are uh m. f. c. c after noise compensation.|s
+mn007|but the features that the v.a.d. neural network use are uh m.f.c.c. after noise compensation.|s
 mn007|oh i think i have the results.|s
 me013|what was it using before?|qw^rt
-mn007|before it was just p. l. p.'s.|s
+mn007|before it was just p.l.p.'s.|s
 mn007|so|fh
 mn052|yeah it was actually|s^bk|s.%--
 mn052|no.|s^ar
@@ -430,7 +430,7 @@ mn052|not compensated.|s
 mn007|um|fh
 mn007|this is what we get after this.|s
 mn007|so actually we yeah here the features are noise compensated.|s
-mn007|and there is also the l. d. a filter.|s
+mn007|and there is also the l.d.a. filter.|s
 mn007|um and then it's a pretty small neural network which use um nine frames of of six features from c. zero to c. fives plus the first derivatives.|fh|s^rt
 mn007|and it has one hundred hidden units.|s^rt
 me018|is that nine frames uh centered around the current frame ? or?|qy^rt
@@ -470,8 +470,8 @@ mn007|but the problem is still that the latency is too large.|s
 me013|what's the latency?|qw
 mn007|because|s^df.%--
 mn007|um|h
-mn007|the the latency of the v. a. d is two hundred and twenty milliseconds.|s
-mn007|and uh the v. a. d is used uh for online normalization.|s^rt
+mn007|the the latency of the v.a.d. is two hundred and twenty milliseconds.|s
+mn007|and uh the v.a.d. is used uh for online normalization.|s^rt
 mn007|and it's used before the delta computation.|s
 mn007|so if you add these components it goes to a hundred and seventy.|s
 mn007|right?|qy^d^g
@@ -520,7 +520,7 @@ me013|forty|s^t1.%--
 mn007|uh|fh
 mn052|so it's two hundred actually.|s
 mn007|yeah there are twenty that comes from|fg|s.%--
-mn007|there is ten that comes from the l. d. a filters also.|s^rt
+mn007|there is ten that comes from the l.d.a. filters also.|s^rt
 mn052|oh okay.|s^bk
 mn007|right?|qy^d^g
 mn007|uh so it's two hundred and ten.|fh|s
@@ -540,7 +540,7 @@ me013|uh wait a minute.|fg|s^co
 me013|it's forty forty for the for the cleaning of the speech.|s
 mn007|so|fg
 mn007|forty cleaning.|s
-me013|forty for the i. n.   a. n. n.|s
+me013|forty for the i.n.   a.n.n.|s
 me013|a hundred for the smoothing.|s
 mn007|yeah.|s^aa
 me013|well but at ten|s.%-
@@ -556,8 +556,8 @@ mn052|yeah.|s^aa
 mn052|so it's like five six cepstrum plus delta.|s
 mn052|at nine nine frames of|s^e.%--
 me013|and then ten milliseconds for|s.%--
-mn052|there's an l. d. a filter.|s
-me013|ten milliseconds for l. d. a filter.|s
+mn052|there's an l.d.a. filter.|s
+me013|ten milliseconds for l.d.a. filter.|s
 me013|and and ten another ten milliseconds you said for the frame?|qy^bu^d
 mn007|for the frame i guess.|s^na
 mn007|i computed two twenty.|s
@@ -576,17 +576,17 @@ me013|after the noise part the forty the the other hundred and eighty|s.%--
 me013|well i mean|fh|%--
 me013|wait a minute.|s^co
 me013|some of this is uh is uh is in parallel isn't it?|s^bu|qy^g^rt
-me013|i mean the l. d. a|s.%--
-me013|oh you have the l. d. a as part of the v. d.   uh v. a. d?|qy^bu^d^rt
+me013|i mean the l.d.a.|s.%--
+me013|oh you have the l.d.a. as part of the v.d.   uh v.a. d?|qy^bu^d^rt
 me013|or|qrr.%--
-mn007|the v. a. d use uh l. d. a filtered features also.|s
+mn007|the v.a.d. use uh l.d.a. filtered features also.|s
 me013|oh it does?|qy^bh
 mn007|uhhuh.|s^aa
 me013|uh.|s^bk
 me013|so in that case there isn't too much in parallel.|s
 me013|uh|fh
 mn007|no.|s^aa
-mn007|there is um just downsampling upsampling and the l. d. a.|s
+mn007|there is um just downsampling upsampling and the l.d.a.|s
 me013|um so the delta at the end is how much?|fg|qw^d
 mn007|it's fifty.|s
 mn052|it's|%
@@ -653,23 +653,23 @@ me018|but still that's that's a pretty big uh win.|s^ba
 me018|and it doesn't seem like you're in terms of your delay you're uh that|s.%--
 me013|he added a bit on.|s
 mn007|huh.|b
-me013|i guess because before we were we were had were able to have the noise uh stuff uh and the l. v. a be in parallel.|s^df
+me013|i guess because before we were we were had were able to have the noise uh stuff uh and the l.v.a. be in parallel.|s^df
 me013|and now he's he's requiring it to be done first.|s^df
 mn007|well i think the main thing maybe is the cleaning of the speech which takes forty milliseconds or so.|fg|s
 me013|right.|s^aa
 me013|well so you say|s.%--
 mn007|and|fh
-me013|let's say ten milliseconds seconds for the l. d. a.|s
-mn007|and but the l. d. a is well pretty short right now.|s^ng
+me013|let's say ten milliseconds seconds for the l.d.a.|s
+mn007|and but the l.d.a. is well pretty short right now.|s^ng
 me013|well ten.|s
 mn007|yeah.|fh
 me013|and then forty for the other.|s
-mn052|yeah the l. d. a l. d. a we don't know is like is it very crucial for the features right?|s^bu|qy^d^g^rt
+mn052|yeah the l.d.a.l.d.a. we don't know is like is it very crucial for the features right?|s^bu|qy^d^g^rt
 mn007|no.|s^ar
 mn007|i just|%--
 mn052|yeah.|b
 mn007|this is the first try.|s^df
-mn007|i mean i maybe the l. d. a.'s not very useful then.|s^am
+mn007|i mean i maybe the l.d.a.'s not very useful then.|s^am
 me013|right.|s^bk
 me013|so you could start pulling back.|s
 me013|but|%--
@@ -681,13 +681,13 @@ me013|right?|qy^d^g
 me013|but were you doing that before?|qy^rt
 mn007|huh.|h
 mn052|on the in the|%-
-mn007|well in the proposal um the input of the v. a. d network were just three frames i think.|s
+mn007|well in the proposal um the input of the v.a.d. network were just three frames i think.|s
 mn052|uhhuh.|b
 mn052|just|s^2.%-
 mn052|yeah just the static no delta.|s^aa|s
 mn007|uh static features.|s^e
 me013|right.|s^bk
-me013|so what you have now is uh forty for the the noise twenty for the delta and ten for the l. d. a.|s
+me013|so what you have now is uh forty for the the noise twenty for the delta and ten for the l.d.a.|s
 me013|that's seventy milliseconds of stuff which was formerly in parallel.|s
 me013|right?|qy^d^g^rt
 me013|so i think|s.%--
@@ -762,7 +762,7 @@ me013|probably half.|s
 me013|good.|s^ba
 mn007|um|fh
 mn007|yeah.|s^bk
-mn007|so actually this is in between what we had with the previous v. a. d and what sunil did with an i. d. l v. a. d.|s
+mn007|so actually this is in between what we had with the previous v.a.d. and what sunil did with an i.d.l.v.a.d.|s
 mn007|which gave sixty two percent improvement right?|s^e|qy^d^g
 mn052|yeah it's almost that.|s^aa|s^aap
 mn007|so|fh
@@ -772,7 +772,7 @@ mn007|yeah.|b
 mn052|yeah.|fh
 me018|what was that?|qw^br^rt
 me018|say that last part again.|s^co^rt
-mn007|so if you use like an i. d. l v. a. d uh for dropping the frames|s.%--
+mn007|so if you use like an i.d.l.v.a.d. uh for dropping the frames|s.%--
 mn052|or the best we can get.|s^2
 mn007|the best that we can get that means that we estimate the silence probability on the clean version of the utterances.|s^m^na^rt
 mn007|then you can go up to sixty two percent error rate reduction globally.|s
@@ -783,7 +783,7 @@ me018|so that would be even that wouldn't change this number down here to sixty 
 mn007|yeah.|s^aa
 me013|yeah.|s^aa
 me013|so you you were|s.%-
-mn007|if you add a good very good v. a. d that works as well as a v. a. d working on clean speech.|s
+mn007|if you add a good very good v.a.d. that works as well as a v.a.d. working on clean speech.|s
 me018|yeah.|b
 me018|yeah.|b
 mn007|then you you would go|s.%-
@@ -791,11 +791,11 @@ me018|so that's sort of the best you could hope for.|s
 mn007|uhhuh.|s^aa
 me013|probably yeah.|s^na
 me018|i see.|s^bk
-me013|so fifty three is what you were getting with the old v. a. d.|s^bu
+me013|so fifty three is what you were getting with the old v.a.d.|s^bu
 mn007|yeah.|s^aa
 me013|and uh|fh
-me013|and sixty two with the the you know quote unquote cheating v. a. d.|s^bu
-me013|and fifty seven is what you got with the real v. a. d.|s^bu
+me013|and sixty two with the the you know quote unquote cheating v.a.d.|s^bu
+me013|and fifty seven is what you got with the real v.a.d.|s^bu
 mn007|uhhuh.|s^aa
 me013|that's great.|s^ba
 mn007|uh yeah the next thing is i started to play|fh|s^tc.%--
@@ -811,20 +811,20 @@ mn007|huh|fh
 mn007|i just did the configuration that's very similar to what we did for the february proposal.|s
 mn007|and|fh
 mn007|um|fh
-mn007|so there is a a first feature stream that use uh straight m. f. c. c features.|s^rt
+mn007|so there is a a first feature stream that use uh straight m.f.c.c. features.|s^rt
 me013|uhhuh.|b
 mn007|well these features actually.|s^e^rt
-mn007|and the other stream is the output of a neural network using as input also these um cleaned m. f. c. c.|s
+mn007|and the other stream is the output of a neural network using as input also these um cleaned m.f.c.c.|s
 mn007|um|fh
 mn007|i don't have the|s.%-
 me018|those are those are what is going into the tandem net?|qy^bu^d^rt
 mn007|huh.|fh
 me018|those two.|s^e^rt
-mn007|so there is just this feature stream the fifteen m. f. c. c plus delta and double delta.|s^rt
+mn007|so there is just this feature stream the fifteen m.f.c.c. plus delta and double delta.|s^rt
 me013|no.|s^ar
 me018|yeah.|s^bk
-mn007|um so it's makes forty five features that are used as input to the h. t. k.|fh|s^rt
-mn007|and then there is there are more inputs that comes from the tandem m. l. p.|s
+mn007|um so it's makes forty five features that are used as input to the h.t.k.|fh|s^rt
+mn007|and then there is there are more inputs that comes from the tandem m.l.p.|s
 me018|oh oh.|s^bk
 me018|okay.|s^bk
 me013|yeah.|s^bk
@@ -839,7 +839,7 @@ me018|right.|s^bk
 me018|okay.|s^bk
 mn007|so um|fg
 mn007|uh yeah.|fh
-mn007|right now it seems that i just tested on speechdat-car while the experiment are running on your on t. i. digits.|s
+mn007|right now it seems that i just tested on speechdat-car while the experiment are running on your on t.i. digits.|s
 mn007|well it improves on the well matched and the mismatched conditions.|s
 mn007|but it get worse on the highly mismatched.|s^rt
 mn007|um|fh
@@ -847,7 +847,7 @@ me018|compared to these numbers?|qy^d^rt
 mn007|compared to these numbers yeah.|s^na
 mn007|um|fh
 mn007|like on the well match and medium mismatch the gain is around five percent relative.|s^rt
-mn007|but it goes down a lot more like fifteen percent on the h. m case.|s
+mn007|but it goes down a lot more like fifteen percent on the h.m. case.|s
 me013|you're just using the full ninety features?|qy^d^rt
 mn007|the|%--
 me013|you have ninety features?|qy^d^rt
@@ -862,8 +862,8 @@ mn007|yeah.|s^aa
 me013|and you're just feeding them like that.|s^bu
 mn007|yeah.|s^aa
 mn007|uhhuh.|s^aa
-me013|there isn't any k. l. t or anything?|qy^d
-mn007|there's a k. l. t after the neural network as as before.|s^nd
+me013|there isn't any k.l.t. or anything?|qy^d
+mn007|there's a k.l.t. after the neural network as as before.|s^nd
 me018|that's how you get down to twenty eight?|qy^d^rt
 mn007|yeah.|s^aa
 me018|why twenty eight?|qw^rt
@@ -937,7 +937,7 @@ mn007|because i expected the neural net to help more when there is more mismatch
 me013|uhhuh.|b
 mn052|so was the training set same as the the february proposal?|qy^rt
 mn007|yeah it's the same training set.|s^aa|s^na
-mn007|so it's timit with the t. i. digits' uh noises uh added.|s^e^na^rt
+mn007|so it's timit with the t.i. digits' uh noises uh added.|s^e^na^rt
 mn052|okay.|b
 me013|uhhuh.|b
 mn007|um|fh
@@ -959,16 +959,16 @@ mn007|uhhuh.|b
 me013|you know what it does in combination.|s
 me013|you don't necessarily know what|s.%--
 me018|what if you did the|qw.%--
-me018|would it make sense to do the k. l. t on the full set of combined features?|qy^rt
+me018|would it make sense to do the k.l.t. on the full set of combined features?|qy^rt
 me018|instead of just on the|s^e.%--
 mn007|yeah.|s^aa
 mn007|i i guess.|s^na
 mn007|um|fh
 mn007|the reason i did it this ways is that in february it we we tested different things like that.|s^df
-mn007|so having two k. l. t having just a k. l. t for a network or having a global k. l. t.|s^e
+mn007|so having two k.l.t. having just a k.l.t. for a network or having a global k.l.t.|s^e
 me018|oh i see.|s^bk
 mn007|and|fh
-me018|so you tried the global k. l. t before.|s^bu
+me018|so you tried the global k.l.t. before.|s^bu
 mn007|well|fg
 mn007|yeah.|s^aa
 me018|and it didn't really|s.%--
@@ -986,7 +986,7 @@ mn007|uhhuh.|b
 mn007|uhhuh.|b
 me013|and i guess if the|s.%--
 me013|these are all|s.%--
-me013|so all of these seventy three features are going into um the uh the h. m. m.|s^bu
+me013|so all of these seventy three features are going into um the uh the h.m.m.|s^bu
 mn007|yeah.|s^aa
 me013|and is are are are any deltas being computed of of them?|qy^bu^rt
 mn007|of the straight features yeah.|s^na
@@ -1038,13 +1038,13 @@ me013|and um|fh
 me013|they're being fed into these uh variants only gaussians and so forth.|s
 me013|and and uh|fh
 mn007|uhhuh.|b
-me013|so maybe it would be a better idea now than it was before to uh have uh one k. l. t over everything.|fh|s^cs
+me013|so maybe it would be a better idea now than it was before to uh have uh one k.l.t. over everything.|fh|s^cs
 mn007|uhhuh.|b
 me013|to de correlate it.|s^e
 mn007|yeah i see.|s^bk
 me013|maybe.|s^am
 me013|you know.|fh
-mn052|what are the s. n. r.'s in the training set timit?|qw^rt
+mn052|what are the s.n.r.'s in the training set timit?|qw^rt
 mn007|it's uh ranging from zero to clean.|s^rt
 mn007|yeah.|s^aa
 mn052|uhhuh.|b
@@ -1088,7 +1088,7 @@ me013|huh.|fh
 mn052|so is it is it though the performance big relation in the high high mismatch has something to do with the uh cleaning up that you that is done on the timit after adding noise?|qy^rt
 mn007|yeah.|b
 mn052|so|fh
-mn052|it's all the noises are from the t. i. digits.|s^bu
+mn052|it's all the noises are from the t.i. digits.|s^bu
 mn052|right?|qy^d^g^rt
 mn007|yeah.|s^aa
 mn052|so you|%--
@@ -1100,10 +1100,10 @@ mn007|huh.|b
 mn052|i mean earlier you never had any compensation.|s
 mn052|you just trained it straight away.|s
 mn007|uhhuh.|s^aa
-mn052|so it had like all these different conditions of s. n. r.'s actually in their training set of neural net.|s
+mn052|so it had like all these different conditions of s.n.r.'s actually in their training set of neural net.|s
 mn007|uhhuh.|b
 mn007|uhhuh.|b
-mn052|but after cleaning up you have now a different set of s. n. r.'s right?|s^bu|qy^d^g
+mn052|but after cleaning up you have now a different set of s.n.r.'s right?|s^bu|qy^d^g
 mn007|yeah.|s^aa
 mn052|for the training of the neural net.|s^e
 mn007|uhhuh.|s^aa
@@ -1112,7 +1112,7 @@ mn052|is it something to do with the mismatch that that's created after the clea
 mn007|you mean the the most noisy occurrences on speechdat-car might be a lot more noisy than|qy^bu^d.%--
 mn052|uhhuh.|b
 mn052|of that|%--
-mn052|i mean the s. n. r after the noise compensation of the speechdat-car.|s
+mn052|i mean the s.n.r. after the noise compensation of the speechdat-car.|s
 me013|oh.|s^bk
 me013|so right.|s^aa
 me013|so the training the the neural net is being trained with noise compensated stuff.|s
@@ -1125,15 +1125,15 @@ me013|which makes sense.|s^e
 me013|but uh you're saying yeah the noisier ones are still going to be even after our noise compensation are still going to be pretty noisy.|fh|s^bs
 mn052|yeah.|b
 mn007|uhhuh.|b
-mn052|yeah so now the after noise compensation the neural net is seeing a different set of s. n. r.'s than that was originally there in the training set of timit.|s^bk|s
+mn052|yeah so now the after noise compensation the neural net is seeing a different set of s.n.r.'s than that was originally there in the training set of timit.|s^bk|s
 mn052|because in the timit it was zero to some clean.|s^df
 me013|right.|s^aa
 me013|yes.|s^bk
-mn052|so the net saw all the s. n. r conditions.|s^df
+mn052|so the net saw all the s.n.r. conditions.|s^df
 me013|right.|s^bk
-mn052|now after cleaning up it's a different set of s. n. r.|s
+mn052|now after cleaning up it's a different set of s.n.r.|s
 me013|right.|s^bk
-mn052|and that s. n. r may not be like covering the whole set of s. n. r.'s that you're getting in the speechdat-car.|s
+mn052|and that s.n.r. may not be like covering the whole set of s.n.r.'s that you're getting in the speechdat-car.|s
 me013|right.|s^bk
 me013|but the speechdat-car data that you're seeing is also reduced in noise.|s^ng
 mn052|yeah yeah yeah.|s^aa
@@ -1144,7 +1144,7 @@ mn052|but i'm saying there could be some some issues of.|s^df
 me013|so|fh
 mn007|uhhuh.|b
 me013|yeah.|b
-mn007|well if the initial range of s. n. r is different we the problem was already there before.|s
+mn007|well if the initial range of s.n.r. is different we the problem was already there before.|s
 mn007|and|fh.%
 me013|yeah.|b
 mn007|because|%--
@@ -1168,15 +1168,15 @@ mn007|yeah uh|%
 mn052|well i|fg
 me013|so maybe it's treating some things differently.|s
 mn052|i don't know.|fg
-mn052|i i just that could be seen from the t. i. digits uh testing condition.|s
-mn052|because um the noises are from the t. i. digits right?|s^df|qy^d^g^rt
+mn052|i i just that could be seen from the t.i. digits uh testing condition.|s
+mn052|because um the noises are from the t.i. digits right?|s^df|qy^d^g^rt
 mn052|noise.|s^e
 mn007|yeah.|s^aa
 mn007|so|fg
-mn052|so cleaning up the t. i. digits.|s
-mn052|and if the performance goes down in the t. i. digits mismatch high mismatch like this|s.%-
+mn052|so cleaning up the t.i. digits.|s
+mn052|and if the performance goes down in the t.i. digits mismatch high mismatch like this|s.%-
 mn007|clean training yeah.|s
-mn052|on a clean training or zero d. b testing.|s^na
+mn052|on a clean training or zero d.b. testing.|s^na
 mn007|yeah we'll so we'll see.|s
 mn052|yeah.|s^bk
 mn007|uh|fh
@@ -1202,7 +1202,7 @@ me013|but it was just i think just having a a nice variation in acoustic conditi
 mn007|uhhuh.|b
 mn007|yep.|b
 mn052|huh.|b
-mn007|yeah actually to uh what i observed in the h. m case is that the number of deletion dramatically increases.|s
+mn007|yeah actually to uh what i observed in the h.m. case is that the number of deletion dramatically increases.|s
 mn007|it it doubles.|s^e
 me013|number of deletions.|s^bu
 mn007|when i added the the neural network it doubles the number of deletions.|s
@@ -1291,10 +1291,10 @@ me013|well that's interesting.|s^ba
 mn007|it was helping uh if the features are were bad.|s
 mn007|i mean|fh
 me013|yeah.|b
-mn007|just plain p. l. p.'s or m. f. c. c.'s.|s^e
+mn007|just plain p.l.p.'s or m.f.c.c.'s.|s^e
 me013|yeah.|b
 mn007|but|fh
-mn007|as soon as we added l. d. a online normalization and all these things then|s.%-
+mn007|as soon as we added l.d.a. online normalization and all these things then|s.%-
 me013|they were doing similar enough things.|s^bu^rt
 me013|well i still think it would be sort of interesting to see what would happen if you just had the neural net without the side thing.|s^cs
 mn007|yeah.|b
@@ -1343,25 +1343,25 @@ me013|yeah it should be pretty close to cancelled out.|s
 mn052|yeah.|b
 mn007|uhhuh.|b
 me018|you know i've been wondering about something.|s
-me018|in the um a lot of the um the hub five systems um recently have been using l. d. a.|s
-me018|and and they um they run l. d. a on the features right before they train the models.|s
-me018|so there's the the l. d. a is is right there before the h. m. m.'s.|s^e
+me018|in the um a lot of the um the hub five systems um recently have been using l.d.a.|s
+me018|and and they um they run l.d.a. on the features right before they train the models.|s
+me018|so there's the the l.d.a. is is right there before the h.m.m.'s.|s^e
 mn052|yeah.|b
-me018|so you guys are using l. d. a.|s
+me018|so you guys are using l.d.a.|s
 me018|but it seems like it's pretty far back in the process.|s^bu
-mn052|uh this l. d. a is different from the l. d. a that you are talking about.|s^ng
-mn052|the l. d. a that you saying is like you take a block of features like nine frames or something and then do an l. d. a on it.|s^df
+mn052|uh this l.d.a. is different from the l.d.a. that you are talking about.|s^ng
+mn052|the l.d.a. that you saying is like you take a block of features like nine frames or something and then do an l.d.a. on it.|s^df
 me018|yeah.|b
 me018|uhhuh.|b
 mn052|and then reduce the dimensionality to something like twenty four or something like that.|s^df
 me018|yeah you you you can.|s^aa|s^na
-mn052|and then feed it to h. m. m.|s^df
+mn052|and then feed it to h.m.m.|s^df
 me018|i mean it's you know you're just basically|s.%-
 mn052|yeah so this is like a two two dimensional tile.|fg|s
 me018|you're shifting the feature space.|s
 me018|yeah.|fh
 mn052|so this is a two dimensional tile.|s^r
-mn052|and the l. d. a that we are applying is only in time.|s
+mn052|and the l.d.a. that we are applying is only in time.|s
 mn052|not in frequency.|s^e
 mn052|high cost frequency.|s^e
 mn052|so it's like more like a filtering in time.|s
@@ -1369,12 +1369,12 @@ mn052|rather than doing a|s^e.%-
 me018|uh okay.|s^bk
 me018|so what what about um what|qw.%--
 me018|i mean i don't know if this is a good idea or not.|s^no
-me018|but what if you put ran the other kind of l. d. a uh on your features right before they go into the h. m. m?|qw
+me018|but what if you put ran the other kind of l.d.a. uh on your features right before they go into the h.m. m?|qw
 mn052|uh it|%
 mn007|uhhuh.|b
 mn007|no actually i think|s.%--
 mn007|well.|fh
-mn007|what do we do with the a. n. n is is something like that.|s
+mn007|what do we do with the a.n.n. is is something like that.|s
 mn007|except that it's not linear.|s^e
 mn007|but it's it's like a nonlinear discriminant analysis.|s
 me018|yeah.|s^bk
@@ -1384,7 +1384,7 @@ me018|right.|s^bk
 me018|the so|%--
 mn007|but|%-
 me018|yeah so it's sort of like|s.%--
-me018|the tandem stuff is kind of like nonlinear l. d. a.|s
+me018|the tandem stuff is kind of like nonlinear l.d.a.|s
 mn007|yeah.|s^bk
 mn007|it's|%--
 me018|i|%--
@@ -1396,22 +1396,22 @@ me018|but i mean but the other features that you have um the non tandem ones|s.%
 mn007|uhhuh.|s^bk
 mn007|yeah i know.|s
 mn007|that that yeah.|s^bk
-mn007|well in the proposal they were transformed using p. c. a.|s
+mn007|well in the proposal they were transformed using p.c.a.|s
 mn007|but|fh
 me018|uhhuh.|s^bk
-mn007|yeah it might be that l. d. a could be better.|s
+mn007|yeah it might be that l.d.a. could be better.|s
 me013|the the argument is kind of in|s.%--
 me013|and it's not like we really know.|s
 me013|but the argument anyway is that um uh we always have the|s.%--
 me013|i mean discriminative things are good.|s
-me013|l. d. a neural nets they're good.|s^e
+me013|l.d.a. neural nets they're good.|s^e
 me018|yeah.|b
 me013|uh they're good because you you you learn to distinguish between these categories that you want to be good at distinguishing between.|s^df
-me013|and p. c. a doesn't do that.|s
-me013|it p. a. p. c. a low order p. c. a throws away pieces that are uh maybe not not going to be helpful just because they're small basically.|s^df
+me013|and p.c.a. doesn't do that.|s
+me013|it p.a.p.c.a. low order p.c.a. throws away pieces that are uh maybe not not going to be helpful just because they're small basically.|s^df
 me018|right.|b
 me013|but uh the problem is training sets aren't perfect and testing sets are different.|fh|s
-me013|so you you you face the potential problem with discriminative stuff be it l. d. a or neural nets that you are training to discriminate between categories in one space.|s
+me013|so you you you face the potential problem with discriminative stuff be it l.d.a. or neural nets that you are training to discriminate between categories in one space.|s
 me013|but what you're really going to be getting is is something else.|s
 me018|uhhuh.|b
 me013|and so uh stephane's idea was uh let's feed uh both this discriminatively trained thing and something that's not.|s
@@ -1434,7 +1434,7 @@ me018|uhhuh.|b
 me013|and some of the time it's going to hurt you.|s
 me013|and by combining two information sources if you know if if|s.%-
 me018|right.|b
-me018|so you wouldn't necessarily then want to do l. d. a on the non tandem features because now you're doing something to them that|s^bu.%-
+me018|so you wouldn't necessarily then want to do l.d.a. on the non tandem features because now you're doing something to them that|s^bu.%-
 me013|that|%-
 me013|i think that's counter to that idea.|s^na
 me018|yeah.|b
@@ -1444,7 +1444,7 @@ me013|we don't really know what's going to work best.|s^df
 me013|but if that's the hypothesis at least it would be counter to that hypothesis to do that.|s^df^na
 me018|right.|b
 me013|um|fh
-me013|and in principle you would think that the neural net would do better at the discriminant part than l. d. a.|s
+me013|and in principle you would think that the neural net would do better at the discriminant part than l.d.a.|s
 me018|right.|b
 me018|yeah.|b
 me013|though maybe not.|s^e
@@ -1454,11 +1454,11 @@ me018|exactly.|s^aa
 me018|i mean we uh we were getting ready to do the tandem uh stuff for the hub five system.|s
 me018|and um andreas and i talked about it.|fh|s
 me018|and the idea the thought was well uh yeah that you know the neural net should be better.|s:s
-me018|but we should at least have uh a number you know to show that we did try the l. d. a in place of the neural net.|s^cs
+me018|but we should at least have uh a number you know to show that we did try the l.d.a. in place of the neural net.|s^cs
 me018|so that we can you know show a clear path.|s^df
 me013|right.|s^bk
 me018|you know that you have it without it.|s
-me018|then you have the l. d. a.|s
+me018|then you have the l.d.a.|s
 me018|then you have the neural net.|s
 me018|and you can see theoretically.|s
 me018|so|fh
@@ -1489,7 +1489,7 @@ me018|yeah.|b
 me013|i mean one of the things that always disturbed me uh in the the resurgence of neural nets that happened in the eighties was that um a lot of people because neural nets were pretty easy to to use a lot of people were just using them for all sorts of things without uh looking at all into the linear uh uh versions of them.|s
 me018|yeah.|b
 me018|uhhuh.|b
-me013|and uh people were doing recurrent nets but not looking at i. i. r filters.|fh|s
+me013|and uh people were doing recurrent nets but not looking at i.i.r. filters.|fh|s
 me018|yeah.|b
 me013|and you know i mean uh|fh
 me013|so i think yeah it's definitely a good idea to try it.|s
@@ -1501,14 +1501,14 @@ me013|well they've been putting them in their systems off and on for ten years.|
 me018|but|fh
 me013|but but but uh|fh
 me018|yeah what i mean is it's it's like in the hub five evaluations you know.|s^bk|s^df^ng
-me018|and you read the system descriptions and everybody's got you know l. d. a on their features.|s^df
+me018|and you read the system descriptions and everybody's got you know l.d.a. on their features.|s^df
 me013|and now they all have that.|s^2
 me013|i see.|s^bk
 me018|and so.|fh
 me013|yeah.|b
 me018|uh|fh
 mn007|it's the transformation they're estimating on.|s
-mn007|well they are trained on the same data as the final h. m. m are.|s
+mn007|well they are trained on the same data as the final h.m.m. are.|s
 me018|yeah so it's different.|s^bk|s^nd
 me018|yeah.|s^aa
 me018|exactly.|s^aa
@@ -1521,10 +1521,10 @@ me018|i i don't know enough about it.|s^no
 mn007|uhhuh.|b
 me018|but um|fh
 me013|i mean part of why|s.%--
-me013|i i think part of why you were getting into the k. l. t you were describing to me at one point that you wanted to see if uh you know getting good orthogonal features was and combining the the different temporal ranges was the key thing that was happening or whether it was this discriminant thing right?|s^bu|qy^d^g
+me013|i i think part of why you were getting into the k.l.t. you were describing to me at one point that you wanted to see if uh you know getting good orthogonal features was and combining the the different temporal ranges was the key thing that was happening or whether it was this discriminant thing right?|s^bu|qy^d^g
 me013|so you were just trying|s.%--
 me013|i think you|s.%--
-me013|i mean this is it doesn't have the l. d. a aspect.|s
+me013|i mean this is it doesn't have the l.d.a. aspect.|s
 me013|but as far as the orthogonalizing transformation you were trying that at one point right?|s^bu|qy^d^g
 mn007|uhhuh.|b
 mn007|uhhuh.|s^aa
@@ -1535,8 +1535,8 @@ me013|it doesn't work as well.|s
 me013|yeah.|b
 me013|yeah.|b
 mn052|so yeah.|fg
-mn052|i've been exploring a parallel v. a. d without neural network.|s^tc
-mn052|with like less latency using s. n. r and energy um after the cleaning up.|s^e
+mn052|i've been exploring a parallel v.a.d. without neural network.|s^tc
+mn052|with like less latency using s.n.r. and energy um after the cleaning up.|s^e
 mn052|so what i'd been trying was um|s.%--
 mn052|uh|fh
 mn052|after the after the noise compensation i was trying to find a feature based on the ratio of the energies that is after clean and before clean.|s
@@ -1553,7 +1553,7 @@ mn052|so from fifty three point six it went to fifty four point eight.|s^e
 mn052|so it's like only slightly more than a percent improvement.|s
 me013|uhhuh.|b
 mn052|just like|s.%--
-mn052|which means that it's it's doing a slightly better job than the previous v. a. d.|s^e
+mn052|which means that it's it's doing a slightly better job than the previous v.a.d.|s^e
 me013|uhhuh.|b
 mn052|uh at a lower delay.|fh|s^e
 me013|uhhuh.|b
@@ -1577,7 +1577,7 @@ me013|oh plus the delta.|s^bk
 me013|right.|s^bk
 mn052|yeah.|s^aa
 me013|okay.|s^bk
-mn052|so that delay plus the l. d. a.|s
+mn052|so that delay plus the l.d.a.|s
 me013|uhhuh.|b
 mn052|uh so the delay is only the forty millisecond of the noise cleaning plus the hundred millisecond smoothing at the output.|s
 me013|uhhuh.|b
@@ -1588,7 +1588,7 @@ mn052|so the the the biggest|s.%--
 mn052|the problem for me was to find a consistent threshold that works well across the different databases.|s
 mn052|because i i try to make it work on speechdat-car.|s^df
 me013|uhhuh.|b
-mn052|and it fails on t. i. digits.|s^df
+mn052|and it fails on t.i. digits.|s^df
 mn052|or if i try to make it work on that it's just the italian or something it doesn't work on the finnish.|s^df
 me013|uhhuh.|b
 mn052|so|fh
@@ -1658,12 +1658,12 @@ mn007|yeah yeah.|s^bk
 mn007|right.|s^bk
 mn052|um|fh
 mn052|instead of just having uh those cleaned up cepstrum should we feed some additional information like the the|qy.%--
-mn052|we have the v. a. d flag.|s
-mn052|i mean should we feed the v. a. d flag also at the input so that it it has some additional discriminating information at the input?|qy
+mn052|we have the v.a.d. flag.|s
+mn052|i mean should we feed the v.a.d. flag also at the input so that it it has some additional discriminating information at the input?|qy
 mn007|uhhuh.|s^bk
 mn007|um|fh
-me013|uh the the v. a. d what?|qw^br^d^rt
-mn052|we have the v. a. d information also available at the back end.|s
+me013|uh the the v.a.d. what?|qw^br^d^rt
+mn052|we have the v.a.d. information also available at the back end.|s
 me013|uhhuh.|b
 mn052|so if it is something the neural net is not able to discriminate the classes|s.%--
 me013|yeah.|b
@@ -1680,14 +1680,14 @@ mn052|the biggest classification would be the speech and silence.|s
 mn052|so by having an additional uh feature which says this is speech and this is nonspeech i mean it certainly helps in some unseen noise conditions for the neural net.|s
 me018|what|qw.%--
 me018|do do you have that feature available for the test data?|qy^rt
-mn052|well i mean we have we are transferring the v. a. d to the back end.|s
+mn052|well i mean we have we are transferring the v.a.d. to the back end.|s
 mn052|feature to the back end.|s^e
 mn052|because we are dropping it at the back end after everything all the features are computed.|s^df
 me018|oh oh i see.|s^bk
 mn052|so|fh
 me018|i see.|s^bk^r
 mn052|so the neural|s.%--
-mn052|so that is coming from a separate neural net or some v. a. d.|s
+mn052|so that is coming from a separate neural net or some v.a.d.|s
 me018|okay.|s^bk
 me018|okay.|s^bk^r
 mn052|which is which is certainly giving a|s^e.%-
@@ -1790,11 +1790,11 @@ me018|yeah.|s^aa
 mn007|or|%--
 me013|yeah for instance.|s^na
 me013|but i|fg
-mn007|it it seems that the v. a. d network doesn't well it doesn't drop uh too many frames.|s
+mn007|it it seems that the v.a.d. network doesn't well it doesn't drop uh too many frames.|s
 mn007|because the the number of deletion is reasonable.|s^df
-mn007|but it's just when we add the tandem the final m. l. p and then|s.%--
+mn007|but it's just when we add the tandem the final m.l.p. and then|s.%--
 me013|yeah.|s^bk
-me013|now the only problem is you don't want to i guess wait for the output of the v. a. d before you can put something into the other system.|s^cs
+me013|now the only problem is you don't want to i guess wait for the output of the v.a.d. before you can put something into the other system.|s^cs
 me013|because that'll shoot up the latency a lot.|s^df
 me013|right?|qy^d^g^rt
 me013|am i missing something here?|qy^rt
@@ -1812,7 +1812,7 @@ mn052|um|h
 mn052|well we we don't have it actually.|h|s^ng
 mn052|because it's it has a high rate energy.|s^df
 me013|no.|s^ar
-mn052|the v. a. d has a|s.%--
+mn052|the v.a.d. has a|s.%--
 me018|uh.|s^bk
 me013|yeah.|b
 me018|okay.|s^bk
@@ -1824,7 +1824,7 @@ me013|in time.|s^e
 me013|so maybe if that doesn't work|s.%--
 me013|um|fh
 me013|but it would be interesting to see if that was the problem anyway.|s^cs
-me013|and and and then i guess another alternative would be to take the feature that you're feeding into the v. a. d and feeding it into the other one as well.|s^cs
+me013|and and and then i guess another alternative would be to take the feature that you're feeding into the v.a.d. and feeding it into the other one as well.|s^cs
 mn007|uhhuh.|b
 mn007|uhhuh.|b
 me013|and then maybe it would just learn learn it better.|s^cs
@@ -1832,14 +1832,14 @@ me013|um|fh
 me013|but that's|%--
 me013|yeah that's an interesting thing to try to see if what's going on is that in the highly mismatched condition it's um causing deletions by having this silence probability up up too high.|s^bk|s^cs
 mn007|uhhuh.|b
-me013|at some point where the v. a. d is saying it's actually speech.|s^e
+me013|at some point where the v.a.d. is saying it's actually speech.|s^e
 mn007|yeah.|s^bk
 mn007|so|fg
 me013|which is probably true.|s^e
 me013|because|%--
-me013|well the v. a.|s.%--
-me013|if the v. a. d said|s.%--
-me013|since the v. a. d is is is right a lot|s.%--
+me013|well the v.a.|s.%--
+me013|if the v.a.d. said|s.%--
+me013|since the v.a.d. is is is right a lot|s.%--
 me013|uh|fh
 mn007|yeah.|b
 me013|huh.|fh
@@ -1858,7 +1858,7 @@ me018|for the tandem net you mean?|s^bu|qy^d^g^rt
 mn007|well i'm|%-
 mn007|yeah.|s^aa
 me018|huh.|b
-mn007|i'm thinking also a about dan's work where he he trained a network not on phoneme targets but on the h. m. m state targets.|s
+mn007|i'm thinking also a about dan's work where he he trained a network not on phoneme targets but on the h.m.m. state targets.|s
 mn007|and|fh
 mn007|it was giving slightly better results.|s
 me013|problem is if you are going to run this on different test sets including large vocabulary.|s^ng
@@ -1873,7 +1873,7 @@ mn007|and come up with a a reasonable not too large set of context dependent uni
 mn007|and|%--
 mn007|and|fh
 mn007|yeah.|fh
-mn007|and then anyway we would have to reduce this with the k. l. t.|s
+mn007|and then anyway we would have to reduce this with the k.l.t.|s
 me013|yeah.|b
 mn007|so|fh
 mn007|but|fh
@@ -1894,7 +1894,7 @@ mn007|yeah.|fh
 mn007|around five percent better i guess.|s
 mn007|if if|%--
 me018|like sixty?|qy^d^rt
-me013|well we don't know what's it's going to be the t. i. digits yet.|s^no
+me013|well we don't know what's it's going to be the t.i. digits yet.|s^no
 me013|he hasn't got the results back yet.|s^df
 mn007|yeah.|s^aa
 mn007|if you extrapolate the speechdat-car well matched and medium mismatch it's around yeah maybe five.|s

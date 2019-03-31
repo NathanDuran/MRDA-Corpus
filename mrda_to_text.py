@@ -37,9 +37,6 @@ remove_file(data_dir, dev_set_file, utterance_only_flag)
 # Get a list of all the transcripts
 transcript_list = os.listdir(archive_dir + "/transcripts")
 
-# TEST TRANSCRIPT
-# trans_name = "Bed004"
-
 # Process each transcript
 for meeting in transcript_list:
 

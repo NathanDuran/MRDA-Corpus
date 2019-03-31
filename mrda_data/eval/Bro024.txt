@@ -8,7 +8,7 @@ me018|could you go ahead and turn on uh stephane's|z
 me026|uhhuh.|z
 me013|so that's the virtual stephane over there.|z
 me018|okay.|z
-mn058|do you use a p. c for recording?|z
+mn058|do you use a p.c. for recording?|z
 mn058|or|z
 me018|uh yeah.|z
 me018|a linux box.|z
@@ -30,7 +30,7 @@ me018|okay.|b
 me018|why don't you go ahead dave?|qw^co
 me026|okay.|s^bk
 me026|um|fh
-me026|so yeah the this past week i've been mainly occupied with um getting some results from the s. r. i system trained on this short hub five training set for the mean subtraction method.|fh|s
+me026|so yeah the this past week i've been mainly occupied with um getting some results from the s.r.i. system trained on this short hub five training set for the mean subtraction method.|fh|s
 me026|and um|fh
 me026|i ran some tests last night.|s
 me026|but um|fh
@@ -47,7 +47,7 @@ me026|and um|fh
 me026|apart from that i guess the the main thing i have i have to talk is um where i'm planning to go over the next week.|s
 me026|um|fh
 me026|so i've been working on integrating this mean subtraction approach into the smartkom system.|s
-me026|and there's this question of well so um in my tests before with h. t. k i found it worked it worked the best with about twelve seconds of data used to estimate the mean.|s
+me026|and there's this question of well so um in my tests before with h.t.k.i. found it worked it worked the best with about twelve seconds of data used to estimate the mean.|s
 me026|but we'll often have less in the smartkom system.|s^rt
 me026|um|fh
 me026|so i think we'll use as much data as we have at a particular time.|s
@@ -63,7 +63,7 @@ me026|and six seconds in train was about point three percent better.|s
 me026|um and um it's not clear to me yet whether that's something significant.|fh|s^no
 me026|so i want to do some tests and um actually make some plots of um for a particular amount of data and test what happens if you vary the amount of data in train.|s
 me018|uhhuh.|s^bk
-me013|uh guenter i don't know if you followed this stuff but this is uh a uh uh long-term long-term window f. f. t.'s.|s
+me013|uh guenter i don't know if you followed this stuff but this is uh a uh uh long-term long-term window f.f.t.'s.|s
 mn058|yeah.|s^bk
 me013|yeah.|s^bk
 me013|yeah he you talked about it.|s^bk
@@ -117,7 +117,7 @@ me026|that's that's interesting.|s^ba
 me026|all right the uh i see your point.|s^bk
 me026|i guess i was thinking of it as um an interesting research problem.|s^df
 me013|yeah.|s^bk
-me026|the how to i was thinking that for the a. s. r. u paper we could have a section saying for smartkom we we in we tried this approach in uh interactive system which i don't think has been done before.|s
+me026|the how to i was thinking that for the a.s.r.u. paper we could have a section saying for smartkom we we in we tried this approach in uh interactive system which i don't think has been done before.|s
 me013|uhhuh.|b
 me013|uhhuh.|b
 me026|and and then there was two research questions from that.|s
@@ -126,7 +126,7 @@ me013|uhhuh.|b
 me026|all right.|s^bk
 me026|and the other was this question of um what i was just talking about now.|s^e
 me026|so i guess that's why i thought it was interesting.|s
-me013|i mean a short time f. f. t short time cepstrum calculation uh mean mean calculation work that people have in commercial systems they do this all the time.|s
+me013|i mean a short time f.f.t. short time cepstrum calculation uh mean mean calculation work that people have in commercial systems they do this all the time.|s
 me013|they the they calculate it from previous utterances and then use it you know.|s^df
 me026|yeah.|b
 me026|um|b
@@ -164,7 +164,7 @@ me026|just because that's what carlos did before.|s^df
 me026|uh i wrote to him asking about he chose the two seconds.|fh|s
 me026|and it seemed like he chose it a bit informally.|s
 me026|so um|fh
-me026|with the with the h. t. k set-up i should be able to do some experiments on just varying that length.|s
+me026|with the with the h.t.k. set-up i should be able to do some experiments on just varying that length.|s
 me026|say between one and three seconds in a few different reverberation conditions.|s^e
 me026|um say this room and also a few of the artificial impulse responses we have for reverberation.|fh|s^e
 me026|just um making some plots and seeing how they look.|s^e
@@ -185,7 +185,7 @@ me026|huh.|b
 me013|but it might make a difference.|s
 me013|i don't know.|s^no
 me026|uh yeah.|s^bk
-me026|i don't i don't think the t. i. digits data that i have um is would be appropriate for that.|s^ng
+me026|i don't i don't think the t.i. digits data that i have um is would be appropriate for that.|s^ng
 me013|yeah probably not.|s^na
 me013|yeah.|s^aa
 me026|but what do you what about if i i fed it through some kind of um speech processing algorithm that changed the speech rate?|qw^cs
@@ -204,8 +204,8 @@ me026|yeah.|b
 me026|right.|s^bk
 me013|could be.|s^am
 me013|i don't know.|s^no.%
-me026|and and the third thing um uh is um barry explained l. d. a filtering to me yesterday.|s^tc
-me026|and so um mike shire in his thesis um did a a series of experiments um training l. d. a filters in on different conditions.|fh|s
+me026|and and the third thing um uh is um barry explained l.d.a. filtering to me yesterday.|s^tc
+me026|and so um mike shire in his thesis um did a a series of experiments um training l.d.a. filters in on different conditions.|fh|s
 me026|and you were interested in having me repeat this for|s.%--
 me026|for this mean subtraction approach?|qy^bu^d^rt
 me026|is is that right?|qy
@@ -220,7 +220,7 @@ me026|right.|s^bk
 me026|uhhuh.|s^bk
 me013|just sort of to de emphasize the jarring.|s^df
 me013|so i think that would sort of be the first thing to do.|s
-me013|but then yeah the l. d. a uh is interesting because it would sort of say well suppose you actually trained this up to do the best you could by some criterion.|s
+me013|but then yeah the l.d.a. uh is interesting because it would sort of say well suppose you actually trained this up to do the best you could by some criterion.|s
 me013|what would the filter look like then?|qw
 me026|uhhuh.|b
 me013|uh|fh
@@ -326,7 +326,7 @@ me026|right.|b
 me026|right.|s^bk
 me026|okay.|s^bk
 me026|i see.|s^bk
-me026|because i so this smartkom task first off it's this t. v and movie information system.|s
+me026|because i so this smartkom task first off it's this t.v. and movie information system.|s
 me013|yeah but you might have somebody who's using it.|s^bk|s
 me026|and|%-
 me013|and then later you might have somebody else who's using it.|s
@@ -336,7 +336,7 @@ me013|and so you'd want to set some|s.%--
 me026|right.|s^bk
 me026|right.|s^bk^r
 me026|i i see.|s^bk
-me026|i was i was about to say so if if you ask it what what movies are on t. v tonight.|s:qw
+me026|i was i was about to say so if if you ask it what what movies are on t.v. tonight.|s:qw
 me013|yeah.|s^bk
 me013|yeah.|b
 me026|if i look at my wristwatch when i say that it's about two seconds.|s
@@ -400,7 +400,7 @@ me013|yeah.|s^bk
 me013|that's|%-
 me018|so you can always|s^df.%--
 me013|yeah.|b
-me013|the other thing is that and and i i remember b. b. n doing this is that if you have a multi pass system um if the first pass it takes most of the computation the second and the third pass could be very very quick.|s
+me013|the other thing is that and and i i remember b.b.n. doing this is that if you have a multi pass system um if the first pass it takes most of the computation the second and the third pass could be very very quick.|s
 me013|just looking at a relatively small small uh space of hypotheses.|s^e
 me026|huh.|b
 me026|uhhuh.|b
@@ -477,12 +477,12 @@ mn052|so the last week uh i showed some results with only speechdat-car.|s
 mn052|which was like some fifty six percent.|s^e
 mn052|and uh i didn't|fh|s.%--
 mn052|i mean i i found that the results|s.%--
-mn052|i mean i wasn't getting that results on the t. i. digit.|s
-mn052|so i was like looking into why what is wrong with the t. i. digits.|s
+mn052|i mean i wasn't getting that results on the t.i. digit.|s
+mn052|so i was like looking into why what is wrong with the t.i. digits.|s
 mn052|why why i was not getting it.|s
-mn052|and i found that the noise estimation is a reason for the t. i. digits to perform worse than the baseline.|s
+mn052|and i found that the noise estimation is a reason for the t.i. digits to perform worse than the baseline.|s
 mn052|so uh i actually picked|fh|s.%--
-mn052|i mean the first thing i did was i just scaled the noise estimate by a factor which is less than one to see if that because i found there are a lot of zeros in the spectrogram for the t. i. digits when i used this approach.|s
+mn052|i mean the first thing i did was i just scaled the noise estimate by a factor which is less than one to see if that because i found there are a lot of zeros in the spectrogram for the t.i. digits when i used this approach.|s
 mn052|so the first thing i did was i just scaled the noise estimate.|s
 mn052|and i found|s.%--
 mn052|so the the results that i've shown here are the complete results using the new|s.%--
@@ -490,7 +490,7 @@ mn052|well the the new technique is nothing but the noise estimate scaled by a f
 mn052|so it's just an ad hoc.|s
 mn052|i mean some intermediate result because it's not optimized for anything.|s^df
 mn052|so the results the trend the only trend i could see from those results was like the the the current noise estimation or the uh noise composition scheme is working good for like the car noise type of thing.|fh|s
-mn052|because i've the only only very good result in the t. i. digits is the noise car noise condition for their test a..|s
+mn052|because i've the only only very good result in the t.i. digits is the noise car noise condition for their test a..|s
 mn052|which is like the best i could see that|s.%--
 mn052|uh for any non stationary noise like babble or subway or any street some restaurant noise it's like it's not performing very well.|fh|s
 mn052|so|fh
@@ -520,7 +520,7 @@ mn052|and uh|fh
 mn052|so|fh
 mn052|so the overall result is like in the last page.|s
 mn052|which is like forty seven.|s^e
-mn052|which is still very imbalanced because there are like fifty six percent on the speechdat-car and thirty five percent on the t. i. digits.|s^e
+mn052|which is still very imbalanced because there are like fifty six percent on the speechdat-car and thirty five percent on the t.i. digits.|s^e
 mn052|and|fh
 mn052|uh|fh
 mn052|the fifty six percent is like comparable to what the french telecom gets.|s
@@ -540,7 +540,7 @@ mn058|and if you if you look|s.%-
 me013|is that fifty percent improvement?|qy^rt
 mn052|yeah.|s^aa
 mn058|yeah.|s^aa
-mn052|for that's for the clean training and the noisy testing for the t. i. digits.|s^df
+mn052|for that's for the clean training and the noisy testing for the t.i. digits.|s^df
 me013|so it's improvement over the baseline mel cepstrum.|s^bu
 mn052|yeah.|s^aa
 mn052|yeah.|s^aa^r
@@ -575,16 +575,16 @@ me013|i see.|s^bk
 mn052|yeah.|b
 me013|i see.|s^bk
 mn007|nnn.|fh
-me013|this is this is t. i digits we're looking at?|qy^bu^d^rt
+me013|this is this is t.i. digits we're looking at?|qy^bu^d^rt
 mn052|yeah.|s^aa
-me013|this whole page is t. i. digits?|qy^bu^d^rt
+me013|this whole page is t.i. digits?|qy^bu^d^rt
 mn052|yeah.|s^aa^r
 mn052|oh.|s^bk
 me013|or this is|qrr.%--
 mn052|oh yeah.|s^bk
 mn052|it's not written anywhere.|s
-mn052|yeah it's t. i. digits.|s^na
-mn052|the first spreadsheet is t. i. digits.|s^na
+mn052|yeah it's t.i. digits.|s^na
+mn052|the first spreadsheet is t.i. digits.|s^na
 me013|huh.|b
 mn058|huh.|b
 me013|how does clean training do for the uh car?|qw
@@ -595,7 +595,7 @@ mn052|still it still uh that that's still consistent.|s
 mn052|i mean i get the best performance in the case of car which is the third column in the a.   condition.|s
 me013|no.|s^ar
 me013|i mean this is added noise.|s^ng
-me013|i mean this is t. i. digits.|s^ng
+me013|i mean this is t.i. digits.|s^ng
 me013|i'm sorry.|s^fa
 me013|i meant in in the in the uh multi language uh uh finnish and|s^ng.%--
 mn052|uh|fg
@@ -636,11 +636,11 @@ me013|all right.|s^bk
 mn052|so|fg
 mn052|uh|fg
 mn052|yeah.|fg
-mn052|so all the h. m.   numbers are very good.|s
+mn052|so all the h.m.   numbers are very good.|s
 mn052|in the sense they are better than what the french telecom gets.|s^e
 mn052|so|fh
 mn052|but the the only number that's still i mean which stephane also got in his result was that medium mismatch of the finnish.|s
-mn052|which is very which is a very strange situation where we used the we changed the proto for initializing the h. m. m.|s^e
+mn052|which is very which is a very strange situation where we used the we changed the proto for initializing the h.m.m.|s^e
 mn052|i mean this this is basically because it gets stuck in some local minimum in the training.|s^df
 mn052|that seventy five point seven nine in the finnish mismatch which is that the eleven point nine six what we see.|s
 me013|uhhuh.|b
@@ -689,7 +689,7 @@ mn052|yeah.|s^aa^r
 mn052|it has some music also.|s^na
 mn052|i mean very horrible music like like 4x.|s^e^na
 mn052|i know.|s
-me013|so maybe for that one you need a much smarter v. a. d?|qy^cs^d^rt
+me013|so maybe for that one you need a much smarter v.a. d?|qy^cs^d^rt
 me013|huh|fh
 me013|if it's music.|s^e
 mn052|uh|fg
@@ -718,7 +718,7 @@ mn052|because all those numbers were in sixties and seventies.|s^df
 mn052|because we never had any noise compensations.|s^df
 mn058|huh.|b
 mn052|so that's where the biggest improvement came up.|s
-mn052|not much in the well match and the medium match and t. i. digits also right now.|s
+mn052|not much in the well match and the medium match and t.i. digits also right now.|s
 mn052|so this is still at three or four percent improvement over the first proposal.|s
 mn058|huh.|b
 mn058|huh.|b
@@ -730,7 +730,7 @@ mn058|yeah.|s^bk
 mn058|i i started thinking about also|s.%--
 mn058|i mean yeah uh i discovered the same problem when i started working on uh on this aurora task almost two years ago.|s
 mn058|that you have the problem with this|s^df.%--
-mn058|at the beginning we had only this condition training of the t. i. digits.|s^df
+mn058|at the beginning we had only this condition training of the t.i. digits.|s^df
 mn052|yeah.|b
 mn058|and uh i i found the same problem.|fh|s
 mn058|just taking um what we were used to use i mean uh some type of spectral subtraction you get even worse results than the basis.|s^df
@@ -764,7 +764,7 @@ mn058|it it seems to be the best what what what we can do in this moment is mult
 mn058|and when we now start introducing some some noise reduction technique we we introduce also somehow artificial distortions.|s^cs
 mn052|yeah.|b
 mn058|and these artificial distortions uh i have the feeling that they are the reason why why we have the problems in this multi condition training.|s
-mn058|that means the h. m. m.'s we trained they are they are based on gaussians.|s
+mn058|that means the h.m.m.'s we trained they are they are based on gaussians.|s
 mn052|yeah.|b
 mn058|and on modeling gaussians.|s^e
 mn058|and if you|s.%--
@@ -879,7 +879,7 @@ mn007|and they add noise on the trajectory of uh the log energy only right?|s|qy
 me013|oh they do.|s^bk
 me013|oh.|b
 mn052|yep.|s^aa
-mn052|c. c. zero and log energy also.|s^na
+mn052|c.c. zero and log energy also.|s^na
 mn007|yeah.|s^aa
 mn052|yeah.|s^aa
 mn007|um|fh
@@ -912,7 +912,7 @@ mn058|uhhuh.|b
 me013|so it because i mean i think this is most interesting for the mel filters.|s^df
 mn058|uhhuh.|b
 me013|right?|qy^d^g
-me013|or or f. f. t.'s.|s^e
+me013|or or f.f.t.'s.|s^e
 me013|one or the other.|s^e
 mn058|but but they do not apply filtering of the log energy or what|s.%--
 mn052|like uh i mean|s.%--
@@ -968,9 +968,9 @@ mn052|so i just just tried another system i mean another filter which i've like 
 mn052|which is very similar to the existing uh filter.|s^e
 mn052|only uh only thing is that the phase is is like a totally nonlinear phase.|s
 mn052|because it's a it's not a symmetric filter anymore.|s^df
-me018|this is for the l. d. a?|qy^d^rt
+me018|this is for the l.d. a?|qy^d^rt
 mn052|yeah.|s^aa
-mn052|so so this this is like so this makes the delay like zero for l. d. a.|s
+mn052|so so this this is like so this makes the delay like zero for l.d.a.|s
 mn052|because it's completely causal.|s^df
 me018|oh.|s^bk
 mn052|so|fh
@@ -1032,7 +1032,7 @@ mn007|uhhuh.|s^aa
 mn058|yeah.|s^aa
 me013|yeah.|b
 mn058|i i don't remember the|s^no.%--
-mn058|they were not using the h. t. k delta?|qy^bu^d^rt
+mn058|they were not using the h.t.k. delta?|qy^bu^d^rt
 mn052|no they're using a nine point window.|s^ar|s^nd
 mn052|which is like a four on either side.|s^e
 mn058|nine point.|s^bk^m
@@ -1048,7 +1048,7 @@ me018|okay.|s^bk
 mn007|where does the compression in decoding delay comes from?|qw^rt
 mn052|that's the way the the the frames are packed.|s
 mn052|like you have to wait for one more frame to pack.|s^df
-mn052|because it's the c. r. c is computed for two frames always.|s^df
+mn052|because it's the c.r.c. is computed for two frames always.|s^df
 mn007|uhhuh.|b
 me013|well that they would need that forty milliseconds also.|s^bu^rt
 me013|right?|qy^d^g
@@ -1061,7 +1061,7 @@ me013|oh.|s^bk
 mn052|but they have coded zero delay for that.|s
 mn052|because they i know they changed it.|s^df
 mn052|their compression.|s^e
-mn052|they have their own c. r. c.|s
+mn052|they have their own c.r.c.|s
 mn052|their their own error correction mechanism.|s^e
 me013|oh.|b
 mn052|so they don't have to wait more than one more frame to know whether the current frame is in error.|s^df
@@ -1119,8 +1119,8 @@ me013|oh okay.|s^bk
 mn007|can we look at this?|qy^cs^rt
 me026|yeah.|b
 mn007|so|fg
-mn007|yeah there are two figures showing actually the huh um performance of the current v. a. d.|s^bk|s^rt^tc
-mn007|so it's a neural network based on p. l. p parameters.|s
+mn007|yeah there are two figures showing actually the huh um performance of the current v.a.d.|s^bk|s^rt^tc
+mn007|so it's a neural network based on p.l.p. parameters.|s
 mn007|uh which estimate silence probabilities.|s^e
 mn007|and then i just put a median filtering on this.|s
 mn007|to smooth the probabilities right?|s^e|qy^d^g^rt
@@ -1129,7 +1129,7 @@ mn007|i didn't use the the scheme that's currently in the proposal.|s
 mn007|because i don't want to.|s^df
 mn007|in the proposal|s.%--
 mn007|well in in the system we want to add like speech frame before every word and a little bit of of uh a couple of frames after also.|s^df
-mn007|uh but to estimate the performance of the v. a. d we don't want to do that.|s
+mn007|uh but to estimate the performance of the v.a.d. we don't want to do that.|s
 mn007|because it would artificially increase the um the false alarm rate of speech detection.|s^df
 mn007|right?|qy^d^f^g
 mn007|um|fh
@@ -1189,7 +1189,7 @@ mn052|okay.|s^bk
 mn052|okay.|s^bk
 mn052|so the detection threshold is very|s.%-
 mn007|so the|fg|%-
-mn007|the v. a. d?|qy^d^rt
+mn007|the v.a. d?|qy^d^rt
 mn052|yeah yeah.|b.%
 mn007|yeah.|s^aa
 mn007|there first a threshold on the probability that puts all the values to zero or one.|s
@@ -1206,11 +1206,11 @@ mn007|uhhuh.|s^aa
 mn007|so going from channel zero to channel one uh almost double the error rate.|s^rt
 mn007|um|fh
 mn007|yeah.|fh
-mn007|well so it's a reference performance that we can you know if we want to to work on the v. a. d we can work on this basis.|s
+mn007|well so it's a reference performance that we can you know if we want to to work on the v.a.d. we can work on this basis.|s
 mn052|uhhuh.|b
 mn007|and|fh
 mn052|okay.|s^bk
-me006|is this is this v. a. d a m. l. p?|qy
+me006|is this is this v.a.d.a.m.l. p?|qy
 mn007|yeah.|s^aa
 me006|okay.|s^bk
 me006|how how big is it?|qw
@@ -1238,12 +1238,12 @@ fn002|it's worse.|s
 mn007|it's not trained on finnish.|s^na
 mn007|yeah.|s^aa
 me013|what's it trained on?|qw^rt
-mn052|i mean the m. l. p.'s not trained on finnish.|s
+mn052|i mean the m.l.p.'s not trained on finnish.|s
 me013|right.|s^bk
 me013|what's it trained on?|qw^rt
 mn052|oh oh.|s^bk
 mn052|sorry.|s^fa
-mn052|uh it's italian t. i. digits.|s
+mn052|uh it's italian t.i. digits.|s
 me013|yeah.|b
 me013|oh it's trained on italian?|qy^bh
 mn052|yeah.|s^aa
@@ -1273,7 +1273,7 @@ mn007|well the music energy's very low apparently.|s^e
 mn052|yeah.|b
 mn007|uh|fh
 mn007|uh from zero to two two thousand hertz.|s^e
-mn007|so maybe just looking at this frequency range for from five hundred to two thousand would improve somewhat the v. a. d.|s^cs
+mn007|so maybe just looking at this frequency range for from five hundred to two thousand would improve somewhat the v.a.d.|s^cs
 mn052|huh.|b
 mn007|and|fh
 mn052|yeah.|s^aa
@@ -1306,7 +1306,7 @@ mn052|yeah.|s^aa
 mn052|it must be somewhere.|s
 mn052|yeah.|b
 mn007|for the aurora data that it was trained on it was different.|s
-mn007|like for t. i. digits you used a a previous system that you had i guess.|s^e
+mn007|like for t.i. digits you used a a previous system that you had i guess.|s^e
 mn052|what|%--
 mn052|no it|s^ar^t3|%--
 mn052|yeah yeah.|s^aa^t3
@@ -1314,7 +1314,7 @@ mn052|that's true.|s^aa^t3
 mn007|so the alignments from the different database that are used for training came from different system.|s
 mn052|yeah.|b
 mn007|then we put them together.|s
-mn007|well you put them together and trained the v. a. d on them.|s
+mn007|well you put them together and trained the v.a.d. on them.|s
 mn052|yeah.|b
 mn007|huh.|fh
 mn052|yeah.|b
@@ -1347,7 +1347,7 @@ mn058|huh.|s^bk
 mn052|i mean it|s.%--
 mn007|yeah.|b
 mn052|so the system|s.%--
-mn052|so the v. a. d was trained on maybe different set of labels for channel zero and channel one.|s
+mn052|so the v.a.d. was trained on maybe different set of labels for channel zero and channel one.|s
 mn007|uhhuh.|b
 mn052|and|fh
 mn058|uhhuh.|s^aa
@@ -1364,11 +1364,11 @@ mn007|yeah.|b.%
 mn052|yeah.|s^bk
 mn007|um|fg
 mn007|and uh hhh|fg
-mn007|actually when we look at at the v. a. d for some utterances it's almost perfect.|s
+mn007|actually when we look at at the v.a.d. for some utterances it's almost perfect.|s
 mn007|i mean it just dropped one frame.|s^e
 mn007|the first frame of speech.|s^e
 mn007|or|fh
-mn007|so there are some utterances where it's almost one hundred percent v. a. d performance.|s
+mn007|so there are some utterances where it's almost one hundred percent v.a.d. performance.|s
 mn058|huh.|s^bk
 mn007|uh|fh
 mn007|but yeah.|fh
@@ -1377,7 +1377,7 @@ mn007|yep.|s^bk
 mn007|so the next thing is um i have the spreadsheet for three different system.|s^rt^tc
 mn007|but for this you only have to look right now on the speechdat-car performance.|s
 mn007|uh because i didn't test|s^df.%--
-mn007|so i didn't test the spectral subtraction on t. i. digits yet.|fh|s^df
+mn007|so i didn't test the spectral subtraction on t.i. digits yet.|fh|s^df
 mn007|uh so you have three sheets.|fh|s^rt
 mn007|one is the um proposal one system.|s^e
 mn007|actually it's not exactly proposal one.|s
@@ -1394,18 +1394,18 @@ mn007|with a maximum overestimation factor of two point five.|s^e
 mn007|uh there is smoothing of the gain trajectory with some kind of uh low pass filter.|s
 mn007|which has forty milliseconds latency.|s^e^rt
 mn007|and then after subtraction um i add a constant to the energies.|s
-mn007|and i have two cases where the first case is where the constant is twenty five d. b below the mean speech energy.|s^rt
-mn007|and the other is thirty d. b below.|s
+mn007|and i have two cases where the first case is where the constant is twenty five d.b. below the mean speech energy.|s^rt
+mn007|and the other is thirty d.b. below.|s
 mn007|um|fh
 mn007|and for these two system we have like fifty five point uh five percent improvement.|s
 mn007|and fifty eight point one.|s
 mn007|so again it's around fifty six fifty seven.|s
 mn007|uh|fh
-me013|because i notice the t. i. digits number is exactly the same for these last two.|s
+me013|because i notice the t.i. digits number is exactly the same for these last two.|s
 mn007|yeah because i didn't|s^aa|s^df.%--
-mn007|for the france telecom uh spectral subtraction included in the our system the t. i. digits number are the right one.|s^df
+mn007|for the france telecom uh spectral subtraction included in the our system the t.i. digits number are the right one.|s^df
 mn007|but not for the other system.|s^df
-mn007|because i didn't test it yet this system including with spectral subtraction on the t. i. digits data.|s^df
+mn007|because i didn't test it yet this system including with spectral subtraction on the t.i. digits data.|s^df
 mn007|i just tested it on speechdat-car.|s^df
 mn058|uhhuh.|s^bk
 me013|uh!|s^bk^fe
@@ -1427,7 +1427,7 @@ mn007|uhhuh.|b
 mn007|um|fh
 mn007|yeah.|fh
 mn052|so this|s.%--
-mn052|so by uh by by reducing the noise a a decent threshold like minus thirty d. b it's like uh you are like reducing the floor of the noisy regions right?|s^bu|qy^d^g
+mn052|so by uh by by reducing the noise a a decent threshold like minus thirty d.b. it's like uh you are like reducing the floor of the noisy regions right?|s^bu|qy^d^g
 mn007|yeah.|s^bk
 mn007|yeah.|s^aa
 mn007|the floor is lower.|s^na
@@ -1435,11 +1435,11 @@ mn007|um|fh
 mn052|uhhuh.|b
 mn007|uhhuh.|fh
 me013|i'm sorry.|s^fa
-me013|so when you say minus twenty five or minus thirty d. b with respect to what?|qw^d
+me013|so when you say minus twenty five or minus thirty d.b. with respect to what?|qw^d
 mn007|to the average um speech energy.|s
 mn007|which is estimated on the world database.|s^e
 me013|okay.|s^bk
-me013|so basically you're creating a signal to noise ratio of twenty five or thirty d. b.|s^bs
+me013|so basically you're creating a signal to noise ratio of twenty five or thirty d.b.|s^bs
 mn007|yeah.|s^aa
 mn007|but it's not|s.%--
 mn058|i i i think what you do is this.|s
@@ -1520,7 +1520,7 @@ mn007|i think|%-
 me013|then then i'm confused.|s
 me013|i thought|s.%--
 me013|you're saying it doesn't depend on the utterance.|s^bs
-me013|but i thought you were adding an amount that was twenty five d. b down from the signal energy.|s^bu
+me013|but i thought you were adding an amount that was twenty five d.b. down from the signal energy.|s^bu
 mn007|yeah.|s^bk
 mn007|so the way i did that i just measured the average speech energy of the all the italian data.|s^df^rt
 me013|oh!|s^bk^fe
@@ -1529,7 +1529,7 @@ mn007|uhhuh.|fh
 me013|oh it's just a constant amount over all.|s^bk|s^bs
 mn007|yeah.|b
 mn007|and|fg
-mn007|what i observed is that for italian and spanish when you go to thirty and twenty five d. b uh it it's good.|s
+mn007|what i observed is that for italian and spanish when you go to thirty and twenty five d.b. uh it it's good.|s
 mn052|okay.|s^bk
 mn052|oh.|s^bk
 mn007|it stays in this range.|s
@@ -1658,7 +1658,7 @@ mn007|uh yeah.|s^bk
 mn007|i could try this.|s^na
 mn007|um|fh
 mn058|and|%--
-mn052|so before estimating the s. n. r smooth the envelope.|s^bu
+mn052|so before estimating the s.n.r. smooth the envelope.|s^bu
 mn058|yeah.|s^aa
 mn058|yeah.|s^aa^r
 mn058|uhhuh.|s^aa
@@ -1764,7 +1764,7 @@ me013|yeah.|b
 me013|okay.|fg
 me018|carmen?|qy^d^tc
 me018|do you uh|qy.%--
-fn002|well i only say that the this is a summary of the of all the v. t. s experiments.|h|s
+fn002|well i only say that the this is a summary of the of all the v.t.s. experiments.|h|s
 fn002|and say that the result in the last um for italian the last experiment for italian are bad.|s
 fn002|i make a mistake when i write.|s
 fn002|up at d.   i copy one of the bad result.|s
@@ -1773,7 +1773,7 @@ fn002|and|fh
 fn002|there you know this|s.%--
 fn002|um|fh
 fn002|well.|fh
-fn002|if we put everything we improve a lot the spectral use of the v. t. s.|s
+fn002|if we put everything we improve a lot the spectral use of the v.t.s.|s
 fn002|but the final result are not still huh good like the wiener filter for example.|s
 fn002|i don't know.|s^no
 fn002|maybe it's it's possible to to have the same result.|s
@@ -1787,17 +1787,17 @@ mn052|you have some results that are good for the high mismatch.|s
 fn002|and yeah.|fh
 fn002|i are more or less similar but but are worse.|s
 fn002|and|fh
-fn002|still i don't have the result for t. i. digits.|s^rt
+fn002|still i don't have the result for t.i. digits.|s^rt
 fn002|the program is training.|s^df
-fn002|maybe for this weekend i will have result t. i. digits.|s^am
+fn002|maybe for this weekend i will have result t.i. digits.|s^am
 fn002|and i can complete that like this.|s
 fn002|well.|fh
 me013|uh.|b
 me013|right.|b
-fn002|one thing that i note are not here in this result but are speak are spoken before with sunil i i improve my result using clean l. d. a filter.|s
+fn002|one thing that i note are not here in this result but are speak are spoken before with sunil i i improve my result using clean l.d.a. filter.|s
 mn052|uhhuh.|b
 me013|uhhuh.|b
-fn002|if i use uh the l. d. a filter that are training with the noisy speech that hurts the my results.|s
+fn002|if i use uh the l.d.a. filter that are training with the noisy speech that hurts the my results.|s
 me013|so what are these numbers here?|qw
 me013|are these with the clean or with the noisy?|qr
 fn002|this is with the clean.|s
@@ -1805,23 +1805,23 @@ me013|okay.|s^bk
 fn002|with the noise i have worse result that if i doesn't use it.|s
 me013|uhhuh.|b
 fn002|but that may be because with this technique we are using really really clean speech.|s^df
-fn002|the speech the representation that go to the h. t. k is really clean speech.|s
+fn002|the speech the representation that go to the h.t.k. is really clean speech.|s
 fn002|because it's from the dictionary.|s^df
 fn002|the code book.|s^e
 fn002|and maybe from that.|s^am
 fn002|i don't know.|s^no
 mn007|uhhuh.|b
-fn002|because i think that you did some experiments using the two the two l. d. a filter clean and and noise.|s
+fn002|because i think that you did some experiments using the two the two l.d.a. filter clean and and noise.|s
 mn007|it's|%-
 fn002|and it doesn't matter too much.|s
 mn007|um|h
 mn007|yeah i did that.|s^na
 mn007|but it doesn't matter on speechdat-car.|s^rt
-mn007|but it matters uh a lot on t. i. digits.|s
+mn007|but it matters uh a lot on t.i. digits.|s
 fn002|it's better to use clean.|s^bu
 mn052|using the clean filter.|s^bu
 mn007|yeah.|s^aa
-mn007|uh it's much better when you we used the clean derived l. d. a filter.|s^na
+mn007|uh it's much better when you we used the clean derived l.d.a. filter.|s^na
 fn002|uhhuh.|b
 fn002|maybe you can do also this.|s^cs
 mn052|yeah.|b
@@ -1831,7 +1831,7 @@ mn052|yeah i'll try.|s^cc
 mn007|but yeah.|fh
 mn007|sunil in in your result it's|s.%-
 mn052|i i'll try the|s^cc.%--
-mn052|no i i my result is with the noisy noisy l. d. a.|s
+mn052|no i i my result is with the noisy noisy l.d.a.|s
 mn007|it's with the noisy one.|s^bk
 mn007|yeah.|s^bk
 mn052|yeah.|b
@@ -1839,15 +1839,15 @@ me013|oh.|s^bk
 mn052|it's with the noisy.|s
 mn007|so|fh
 mn052|yeah.|s^aa
-mn052|it's it's not the clean l. d. a.|s^e
+mn052|it's it's not the clean l.d.a.|s^e
 me013|um|fg
 mn052|it's in in the front sheet i have like like the summary.|s
 mn052|yeah.|s^bk
 me013|and and your result is with the|qw^d.%--
-mn007|it's with the clean l. d. a.|s
+mn007|it's with the clean l.d.a.|s
 mn052|oh.|s^bk
-mn052|this is your results are all with the clean l. d. a result.|s^bu
-fn002|yeah with the clean l. d. a.|s
+mn052|this is your results are all with the clean l.d.a. result.|s^bu
+fn002|yeah with the clean l.d.a.|s
 mn007|yeah.|s^aa
 mn052|okay.|s^bk
 fn002|is that the reason?|qy
@@ -1861,8 +1861,8 @@ mn052|uh|fg
 mn007|yeah.|fh
 mn052|uh|fg
 mn007|but i observe my case it's in uh uh at least on speechdat-car it doesn't matter.|s
-mn007|but t. i. digits it's like two or three percent absolute uh better.|s
-mn052|on t. i. digits this matters.|s^2
+mn007|but t.i. digits it's like two or three percent absolute uh better.|s
+mn052|on t.i. digits this matters.|s^2
 mn052|absolute.|s^2
 mn052|uh|fh
 mn007|so if|%-

@@ -14,10 +14,10 @@ me001|channel two.|z
 me011|uhhuh?|z
 me018|you can tell if it's picking up breath noise and stuff.|z
 me011|yeah.|z
-me011|it has a little indicator on it on the a. f.|z
+me011|it has a little indicator on it on the a.f.|z
 me018|uhhuh.|z
 me018|so if you|z
-me018|yeah if you breathe under breathe and then you see a. f go off then you know it's picking up your mouth noise.|z
+me018|yeah if you breathe under breathe and then you see a.f. go off then you know it's picking up your mouth noise.|z
 fe016|oh that's good.|z
 fe016|because we have a lot of breath noises.|z
 me011|yep.|z
@@ -41,7 +41,7 @@ fe016|i think a starting point is clearly the the channelized output of dave gel
 fe016|which don brought a copy of.|s^e^rt
 me011|yeah.|b
 me011|yeah i'm i'm familiar with that.|s^bk|s
-me011|i mean we i sort of already have developed an x. m. l format for this sort of stuff.|s
+me011|i mean we i sort of already have developed an x.m.l. format for this sort of stuff.|s
 fe016|um|fh
 fe016|which|%-
 me018|can i see it?|qy^rt^t3
@@ -62,8 +62,8 @@ me011|um so so it definitely had that as a concept.|s
 me011|so it has a single timeline.|s
 fe016|uhhuh.|s^bk
 me011|and then you can have lots of different sections.|s
-me011|each of which have i. d.'s attached to it.|s
-me011|and then you can refer from other sections to those i. d.'s.|s
+me011|each of which have i.d.'s attached to it.|s
+me011|and then you can refer from other sections to those i.d.'s.|s
 me011|if you want to.|s^e
 me011|so that|s.%--
 me011|um|fh
@@ -80,7 +80,7 @@ me011|yeah.|s^bk
 me011|t.   equals one point three two.|s^t1
 me011|uh|fh
 me011|and then i i also had optional things like accuracy.|s
-me011|and then i. d equals t.   one uh one seven.|s^t1
+me011|and then i.d. equals t.   one uh one seven.|s^t1
 me011|and then i also wanted to to be to be able to not specify specifically what the time was and just have a stamp.|s
 fe016|right.|s^bk
 me011|yeah so these are arbitrary assigned by a program.|s
@@ -106,7 +106,7 @@ me011|okay.|b
 me011|yes.|s^aa
 me011|exactly.|s^aa
 mn017|yeah.|b
-me011|and then uh and then these also have i. d.'s.|s
+me011|and then uh and then these also have i.d.'s.|s
 me011|right?|qy^d^f^g^rt
 me011|so you could you could have some sort of other other tag later in the file that would be something like um oh i don't know uh noise type equals door slam.|s^cs
 me011|you know?|qy^d^f^g
@@ -139,7 +139,7 @@ fe016|or sort of what's the um sequence of going from the waveforms that stay th
 mn017|oh that's|s^bk.%-
 mn017|that's actually very nicely handled here.|s
 fe016|um|fh
-mn017|because you could you could all you'd have to change is the um time stamps in the timeline without without uh changing the i. d.'s.|s^df
+mn017|because you could you could all you'd have to change is the um time stamps in the timeline without without uh changing the i.d.'s.|s^df
 fe016|and you'd be able to propagate all of the the information?|qy^bu^d
 me011|right.|s^bk
 me011|that's the that's why you do that extra level of indirection.|s
@@ -170,7 +170,7 @@ me011|it's parsing limitations.|s^nd
 me011|i don't want to have this text file that you have to read in the whole thing to do something very simple for.|s
 mn017|oh no.|s^ar
 mn017|you would use it only for purposes where you actually want the phone level information i'd imagine.|s^nd
-fe016|so you could have some file that configures how much information you want in your in your x. m. l or something.|s
+fe016|so you could have some file that configures how much information you want in your in your x.m.l. or something.|s
 me011|right.|s^bk
 me011|i mean you'd|%--
 fe016|um|fh
@@ -201,10 +201,10 @@ me011|uh that's a well or something like it.|s
 me011|it's uh icsi has a format for frame level representation of features.|s
 fe016|okay.|s^bk
 me011|um|fh
-fe016|that you could call that you would tie into this representation with like an i. d.|s^bu
+fe016|that you could call that you would tie into this representation with like an i.d.|s^bu
 me011|right.|s^aa
 me011|right.|s^aa^r
-me011|or or there's a there's a particular way in x. m. l to refer to external resources.|s
+me011|or or there's a there's a particular way in x.m.l. to refer to external resources.|s
 fe016|and|fh
 fe016|okay.|s^bk
 me011|so you would say refer to this external file.|s:s^co
@@ -235,7 +235,7 @@ fe016|these are big files.|s^na
 fe016|these are really|s.%--
 fe016|i mean|fh
 me011|right?|qy^d^f^g^rt
-me011|because you have a two-gigabyte limit on most o. s.'s.|s^df
+me011|because you have a two-gigabyte limit on most o.s.'s.|s^df
 mn017|right.|s^bk
 mn017|okay.|s^bk
 mn017|i would say|s.%--
@@ -279,7 +279,7 @@ mn017|i don't know what their structure is.|s^no
 fe016|okay.|s^bk
 mn017|i've forgot what the|s^no.%-
 me018|but wait a minute.|s^co
-me018|p. file for each frame is storing a vector of cepstral or p. l. p values.|s^bu
+me018|p. file for each frame is storing a vector of cepstral or p.l.p. values.|s^bu
 me018|right?|qy^d^g^rt
 me011|it's whatever you want actually.|s^ng
 me018|right.|s^bk
@@ -335,10 +335,10 @@ mn017|but|fh
 mn017|yeah so there is something like that.|s^na
 mn017|but it's um probably not as|s.%-
 me018|and i think there's|s.%-
-me011|well what does h. t. k do for features?|qw
+me011|well what does h.t.k. do for features?|qw
 me011|or does it even have a concept of features?|qy
 mn017|they it has its own|s.%--
-mn017|i mean entropic has their own feature format that's called like s.   s. d or some s. f or something like that.|s
+mn017|i mean entropic has their own feature format that's called like s.   s.d. or some s.f. or something like that.|s
 fe016|yeah.|s^bk
 me018|yeah.|s^bk
 me011|i'm just wondering would it be worth while to use that instead?|qy^cs^df^rt
@@ -437,7 +437,7 @@ me011|yeah.|s^bk
 mn017|do they already have tools?|qy^rt
 me011|i mean i i chose this for a couple reasons.|s
 me011|one of them is that it's easy to parse.|s^df
-me011|you don't need a full x. m. l parser.|s^df
+me011|you don't need a full x.m.l. parser.|s^df
 me011|it's very easy to just write a perl script to parse it.|s^df
 mn017|as long as uh each tag is on one line.|s
 me011|exactly.|s^aa
@@ -451,10 +451,10 @@ me011|so each type tag has only particular items that it can take.|s
 fe016|can you but you can add to those structures if you|s^bu.%--
 me011|sure.|s^aa
 me011|if you have more information.|s^2
-me011|so what what nist would say is that instead of doing this you would say something like link start equals um you know some node i. d.|s:s
+me011|so what what nist would say is that instead of doing this you would say something like link start equals um you know some node i.d.|s:s
 fe016|yeah.|s^aa
 fe016|so|fh
-me011|end equals some other node i. d.|s:s
+me011|end equals some other node i.d.|s:s
 me011|and then type would be utterance.|s
 mn017|huh.|b
 me011|you know so it's very similar.|s
@@ -572,7 +572,7 @@ me011|um|h
 mn017|you would have like a speaker tag or something?|qy^d^rt
 me011|there's a speaker tag up at the top which identifies them.|s
 me011|and then each|s.%--
-me011|the way i had it is each turn or each utterance i don't even remember now had a speaker i. d tag attached to it.|s
+me011|the way i had it is each turn or each utterance i don't even remember now had a speaker i.d. tag attached to it.|s
 mn017|uhhuh.|b
 mn017|okay.|s^bk
 me011|and in this format you would have a different tag.|s
@@ -582,7 +582,7 @@ me011|so so somewhere else you would have another thing that would be|s.%--
 me011|um|fh
 me011|let's see would it be a node or a link?|qr^t1
 me011|um|fh
-me011|and so so this one would have um an i. d is link link seventy four or something like that.|s
+me011|and so so this one would have um an i.d. is link link seventy four or something like that.|s
 me011|and then somewhere up here you would have a link that that uh you know was referencing l. seventy four and had speaker adam.|s
 mn017|uhhuh.|b
 fe016|actually it's the channel i think that|s^ng.%--
@@ -599,7 +599,7 @@ mn017|right.|b
 fe016|yeah but|s^bk|%-
 mn017|but but so how in the nist format do we express a hierarchical relationship between um say an utterance and the words within it?|fg|qw
 mn017|so how do you tell that these are the words that belong to that utterance?|qw
-me011|um you would have another structure lower down than this that would be saying they're all belonging to this i. d.|h|s
+me011|um you would have another structure lower down than this that would be saying they're all belonging to this i.d.|h|s
 mn017|uhhuh.|s^bk
 me018|so each thing refers to the utterance that it belongs to.|s^bu
 me011|right.|s^aa
@@ -638,7 +638,7 @@ me011|it's well there're two ways of doing it.|s
 fe016|so it would just be floating before the sentence or floating after the sentence without a time mark.|s
 me011|you could have some sort of link type.|s^df
 me011|type equals sentence.|s^df
-me011|and i. d is s. whatever.|s^df
+me011|and i.d. is s. whatever.|s^df
 me011|and then lower down you could have an utterance.|s^df
 me011|so the type is utterance equals utt.|s^df
 me011|and you could either say that|s.%--
@@ -770,10 +770,10 @@ fe016|and then querying it.|s
 fe016|okay.|fh
 mn017|you want sort of a grep that's that works at the structural on the structural representation.|s^cs
 me011|you have that.|s^ng
-me011|there's a standard again in x. m. l specifically for searching x. m. l documents structured x.   x. m. l documents where you can specify both the content and the structural position.|s
+me011|there's a standard again in x.m.l. specifically for searching x.m.l. documents structured x.   x.m.l. documents where you can specify both the content and the structural position.|s
 mn017|yeah but it's it's not clear that that's|s^bk|s^ng.%--
 fe016|if|%-
-mn017|that's relative to the structure of the x. m. l document.|s^df^nd
+mn017|that's relative to the structure of the x.m.l. document.|s^df^nd
 mn017|not to the structure of what you're representing in the document.|s^df^nd
 me011|you use it as a tool.|s^df
 me011|you use it as a tool.|s^df^r
@@ -817,24 +817,24 @@ fe016|or another example was you know uh where in the language where in the word
 fe016|so|fh
 fe016|i guess that one's actually easier.|s^ba
 me018|what about|qw.%--
-me018|what about um the idea of using a relational database to uh store the information from the x. m. l?|qo^r
+me018|what about um the idea of using a relational database to uh store the information from the x.m. l?|qo^r
 me018|so you would have|s^df.%--
-me018|x. m. l basically would|s^df.%--
+me018|x.m.l. basically would|s^df.%--
 me018|uh|fh
-me018|you you could use the x. m. l to put the data in.|s^df
-me018|and then when you get data out you put it back in x. m. l.|s^df
-me018|so use x. m. l as sort of the the transfer format.|s^df
+me018|you you could use the x.m.l. to put the data in.|s^df
+me018|and then when you get data out you put it back in x.m.l.|s^df
+me018|so use x.m.l. as sort of the the transfer format.|s^df
 me011|transfer.|s^2
 me018|uh but then you store the data in the database.|s^df
 me018|which allows you to do all kinds of good search things in there.|s^e
 me011|the uh|fg
-me011|one of the things that atlas is doing is they're trying to define an a. p. i which is independent of the back store.|s
+me011|one of the things that atlas is doing is they're trying to define an a.p.i. which is independent of the back store.|s
 fe016|huh?|qy^bh
-me011|so that uh you could define a single a. p. i and the the storage could be flat x. m. l files or a database.|s^df
+me011|so that uh you could define a single a.p.i. and the the storage could be flat x.m.l. files or a database.|s^df
 me018|uhhuh.|b
 me011|my opinion on that is for the sort of stuff that we're doing i suspect it's overkill to do a full relational database that um just a flat file and uh search tools i bet will be enough.|s^ba
 mn017|but|%
-me011|but that's the advantage of atlas is that if we actually take decide to go that route completely and we program to their a. p. i then if we wanted to add a database later it would be pretty easy.|s
+me011|but that's the advantage of atlas is that if we actually take decide to go that route completely and we program to their a.p.i. then if we wanted to add a database later it would be pretty easy.|s
 me018|uhhuh.|b
 me018|uhhuh.|b
 fe016|it seems like the kind of thing you'd do if i don't know if people start adding all kinds of bells and whistles to the data.|s^ng
@@ -873,8 +873,8 @@ me011|so what i was saying is that|s^df.%-
 mn017|right.|b
 mn017|but that's what you'll have to do.|s^ng
 me011|for perl if you want to just do perl.|s^df^ng
-me011|if you wanted to use the structured x. m. l query language that's a different thing.|s^nd
-me011|and it's a set of tools that let you specify given the d.   d. d. t d. t. d of the document um what sorts of structural searches you want to do.|s^df
+me011|if you wanted to use the structured x.m.l. query language that's a different thing.|s^nd
+me011|and it's a set of tools that let you specify given the d.   d.d.t.d.t.d. of the document um what sorts of structural searches you want to do.|s^df
 me011|so you want to say that you know you're looking for um a tag within a tag within a particular tag that has this particular text in it um and uh refers to a particular value.|s^e
 me011|and so the point isn't that an end user who is looking for a query like you specified wouldn't program it in this language.|s^e
 me011|what you would do is someone would build a tool that used that as a library.|s^e
@@ -970,10 +970,10 @@ me011|we have expertise here.|s^df
 me011|and so if we pick something else there's the learning curve problem.|s
 me011|but i mean it is just something we developed at icsi.|s^df
 me011|and so|fh
-mn017|is there an is there an i. a. p. i?|qy^rt
+mn017|is there an is there an i.a.p. i?|qy^rt
 me011|yeah.|s^aa
 mn017|okay.|s^bk
-me011|there's an a. p. i for it.|s^na
+me011|there's an a.p.i. for it.|s^na
 me011|and uh|fh
 mn017|there used to be a problem that they get too large.|s^rt
 me011|a bunch of libraries p. file utilities.|s^na
@@ -981,13 +981,13 @@ mn017|and so basically the uh the filesystem wouldn't|s.%-
 me011|well that's going to be a problem no matter what.|s^ng
 me011|you have the two-gigabyte limit on the filesystem size.|s^df
 me011|and we definitely hit that with broadcast news.|s^e
-mn017|maybe you could extend the a. p. i to uh support uh like splitting up you know conceptually one file into smaller files on disk.|s^cs
+mn017|maybe you could extend the a.p.i. to uh support uh like splitting up you know conceptually one file into smaller files on disk.|s^cs
 mn017|so that you can essentially you know have arbitrarily long|s^df.%-
 me011|yep.|s^bk
 me011|most of the tools can handle that.|s^ng
 me011|so that|s.%--
 mn017|yeah.|b
-me011|we didn't do it at the a. p. i. level.|s
+me011|we didn't do it at the a.p.i. level.|s
 me011|we did it at the tool level.|s
 me011|that that most many of them can you can specify several p. files.|s
 me011|and they'll just be done sequentially.|s
@@ -1163,7 +1163,7 @@ mn017|um|fh
 mn017|the my point is that you're going to end up with uh word sequences that are differently annotated.|s
 mn017|and you want some tool uh that is able to sort of merge these different annotations back into a single uh version.|s
 mn017|okay?|qy^d^f^g
-mn017|um and we had this problem very massively uh at s. r. i when we worked uh a while back on uh well on dialogue acts as well as uh you know|fh|s.%--
+mn017|um and we had this problem very massively uh at s.r.i. when we worked uh a while back on uh well on dialogue acts as well as uh you know|fh|s.%--
 mn017|um what was it?|fh|qw
 mn017|uh|fh
 fe016|well all the switchboard in it.|s
@@ -1196,7 +1196,7 @@ me011|yep.|s^bk
 mn017|so|fh
 fe016|you could definitely do that with the|s^cs.%-
 me011|there's actually a diff library you can use to do things like that that so you have different formats.|s
-mn017|so somewhere in the a. p. i you would like to have like a merge or some some function that merges two two versions.|s
+mn017|so somewhere in the a.p.i. you would like to have like a merge or some some function that merges two two versions.|s
 me011|yeah i think it's going to be very hard.|s^bk|s^ng
 me011|any sort of structured anything when you try to merge is really really hard.|s^df
 mn017|right.|b
