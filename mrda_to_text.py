@@ -9,8 +9,8 @@ data_dir = 'mrda_data/'
 # If flag is set will only write utterances and not speaker or DA label
 utterance_only_flag = False
 
-# Excluded dialogue act tags i.e. x = Non-verbal
-excluded_tags = ['x'] # TODO exclude z tag?
+# Excluded dialogue act tags i.e. x = Non-verbal and z = Non-labeled
+excluded_tags = ['x', 'z']
 # Excluded characters for ignoring i.e. '=='
 excluded_chars = {'<', '>', '(', ')', '-', '#', '|', '=', '@'}
 

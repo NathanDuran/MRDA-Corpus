@@ -1,36 +1,3 @@
-me011|okay we're on.|z
-me013|okay.|z
-mn005|yes.|z
-me011|and we seem to be working.|z
-mn005|one two three four|z
-me013|okay.|z
-me011|we didn't crash we're not crashing anymore.|z
-me011|and it really bothers me.|z
-me018|i do.|z
-me013|yeah.|z
-mn005|no crashing.|z
-me018|i crashed when i started this morning.|z
-me011|you crashed crashed this morning?|z
-mn005|yeah?|z
-me011|i did not crash this morning.|z
-me013|oh!|z
-me013|well maybe it's just you know how many how many times you crash in a day.|z
-me018|really?|z
-me018|yeah.|z
-me018|maybe yeah.|z
-me013|first time first time in the day.|z
-me013|you know.|z
-me018|or maybe it's once you've done enough meetings it won't crash on you anymore.|z
-mn014|yeah.|z
-mn005|no.|z
-fe008|yeah.|z
-me018|it's a matter of experience.|z
-mn014|yeah.|z
-me013|yeah.|z
-fe008|self learning yeah.|z
-me013|that's that's great.|z
-me018|yeah.|z
-mn005|yeah.|z
 me013|uh|fg
 me013|do we have an agenda?|t
 me013|liz liz and andreas can't can't uh can't come.|s
@@ -868,120 +835,30 @@ mn005|it's a it's a|%--
 mn005|the band the band is uh from zero to to four kilohertz.|s
 mn005|and i i i|%--
 me013|and you just take the instantaneous frequency.|bu
-mn005|yeah i i i used two two method two methods.|z
-mn005|uh one uh based on the f uh f t t.|z
-mn005|to f f t|z
-mn005|to to obtain the or to study the harmonics|z
-mn005|from from the spectrum directly|z
-mn005|and to study the energy and the multiples of|z
 me013|yeah.|b
 me013|yeah.|b
-mn005|frequency.|z
-mn005|and another another algorithm i have|z
-mn005|is the in the instantaneous frequency|z
-mn005|based on on|z
-mn005|on the f f t to|z
-mn005|to to calculate the the phase derivate|z
-mn005|in the time.|z
-mn005|uh uh the|z
-mn005|i mean i i have two two algorithms.|z
 me013|right.|b
-mn005|but uh in in my opinion the the the instantaneous frequency|z
-mn005|the the the behavior|z
-mn005|uh was|z
-mn005|it was very interesting.|z
-mn005|because i i saw uh how the spectrum concentrate uh|z
 me013|oh.|b
-mn005|around the the harmonic.|z
-mn005|but then|z
-mn005|when i apply the the rule|z
-mn005|uh of the in the the instantaneous frequency of the of the continuous filter in the the near filter|z
-mn005|the the rule that uh people propose in the paper|z
-mn005|doesn't work.|z
-mn005|and i don't know|z
-mn005|why.|z
 me013|but the instantaneous frequency|s
 me013|wouldn't that give you something more like the central frequency of the you know of the where most of the energy is?|rt
 me013|i mean i think if you|s
 me013|does does it why would it correspond to pitch?|qw
-mn005|yeah.|z
-mn005|i i i not sure.|z
-mn005|i i i try to to|z
 me013|yeah.|b
-mn005|when first i i calculate uh using the f f t|z
 fe008|digital camera.|s
-mn005|the the|z
 me011|keep forgetting.|t1
-mn005|i get the the spectrum|z
 me013|yeah.|b
-mn005|and i represent|z
-mn005|all the frequency.|z
 me013|yeah.|b
-mn005|and when|z
-mn005|i obtained the instantaneous frequency.|z
-mn005|and i change the the the|z
-mn005|using the|z
-mn005|instantaneous frequency here.|z
 me013|oh so you scale you you do a a scaling along that axis according to instantaneous.|bk
-mn005|i use|z
-mn005|yeah.|z
-mn005|yeah.|z
 me013|it's a kind of normalization.|bu
-mn005|yeah.|z
-mn005|because when when|z
 me013|okay.|bk
-mn005|uh when|z
-mn005|i i use these these frequency|z
-mn005|uh the range is different and the resolution is different.|z
 me013|yeah.|b
-mn005|and|z
-mn005|i observe|z
-mn005|more|z
-mn005|more or less|z
-mn005|thing like this.|z
-mn005|and|z
-mn005|the paper said that uh|z
-mn005|these frequencies|z
-mn005|are probably|z
-mn005|uh harmonics.|z
 me013|i see.|bk
-mn005|but uh they used|z
 me013|huh.|b
-mn005|uh a rule|z
-mn005|uh|z
-mn005|based in the in the|z
-mn005|because|z
-mn005|to to calculate the|z
-mn005|instantaneous frequency|z
-mn005|they use a hanning window.|z
 me013|yeah.|b
-mn005|and they said that uh|z
-mn005|if these peak are uh harmonics|z
-mn005|the|z
-mn005|instantaneous frequency|z
-mn005|of the|z
-mn005|contiguous|z
-mn005|uh uh|z
-mn005|uh filters|z
-mn005|are very near|z
-mn005|or have to be very near.|z
-mn005|but uh phh!|z
-mn005|i don't|z
-mn005|i i i i|z
-mn005|i and i don't know what is the|z
-mn005|what is the distance.|z
-mn005|and i tried to to put different distance|z
-mn005|uh|z
-mn005|to put difference uh|z
-mn005|uh length of the window|z
-mn005|uh different front sieve|z
-mn005|pfff!|z
-mn005|and i i not sure what happened.|z
 me013|okay yeah well i i guess i'm not following it enough.|bk
 me013|probably going to have to look at the paper.|s
 me013|but which i'm not going to have time to do in the next few days.|s
 me013|but but i'm i'm curious about it.|ba
-mn005|yeah.|z
 me013|um uh|fh
 me013|okay.|bk
 fe008|i did it did occur to me that this is uh the return to the transcription.|t
@@ -1089,7 +966,6 @@ me011|uhhuh.|b
 fe008|and just simply the keystrokes it takes to negotiate to put the boundaries in to to type it in it's just a huge amount of time.|s
 me011|uhhuh.|b
 mn014|oops.|t1
-mn005|yeah.|z
 me013|what|%--
 fe008|and you want to be sure it's used.|cs
 fe008|and you want to be sure it's done as efficiently as possible.|s
@@ -1176,7 +1052,6 @@ me013|and moving your head.|s
 me013|and all these sorts of things.|s
 me013|then actually speech recognition isn't that bad right now.|ba
 me013|i mean you can|s
-mn005|yeah.|z
 me013|you know it's it's the technology's come along pretty well.|ba
 me013|the the the reason we still complain about it is because is when when you have more realistic conditions then then things fall apart.|s
 fe008|okay fair enough.|bk
@@ -1212,9 +1087,7 @@ me018|i mean that's what a lot of people do nowadays.|s
 me011|right.|b
 me013|right.|b
 me018|and so in order to build the model you need to have some amount of it marked.|s
-mn005|yeah.|z
 me018|so that you know where the boundaries are.|df
-mn005|huh|z
 me013|yeah.|b
 me018|so|fh
 me018|i mean i don't think we need to worry a lot about breaths that are happening outside of a you know conversation.|s
@@ -1222,11 +1095,7 @@ me018|we don't have to go and search for them to to mark them at all.|cs
 me018|but i mean if they're there while they're transcribing some hunk of words i'd say put them in if possible.|cs
 fe008|okay and it's also the fact that they differ a lot from one channel to the other.|bk
 fe008|because of the way the microphone's adjusted.|df
-mn005|yeah.|z
 me018|uhhuh.|aa
 fe008|okay.|bk
 me013|should we do the digits?|rt
 me011|yep.|aa
-me011|okay.|z
-mn005|okay.|z
-me001|huh all right.|z
