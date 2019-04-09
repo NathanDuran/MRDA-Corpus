@@ -1,1291 +1,1291 @@
-me018|okay we're on.|s
-me013|okay.|bk
-me013|what are we talking about today?|qw
-mn007|i don't know.|no
-mn007|do you have news from the conference talk?|rt
-mn007|uh|fh
-mn007|that was programmed for yesterday i guess.|e
-me013|uh|h
-fn002|yesterday.|2
-me013|uh|h
-fn002|yesterday morning on video conference.|s
-me013|uh|h
-mn007|well|fh
-me013|oh.|bk
-me006|oh conference call.|bk
-me013|i'm sorry.|fa
-me013|i know now i know what you're talking about.|s
-me013|no nobody's told me anything.|ar
-mn007|all right.|bk
-me018|oh this was the uh talk where they were supposed to try to decide|s
-mn007|to to decide what to do.|2
-mn007|yeah.|aa
-fn002|yeah.|b
-me018|uh right.|b
-me013|yeah.|b
-me013|no that would have been a good thing to find out before this meeting.|s
-me013|that's|%--
-me013|no i have no i have no idea.|no
-me013|um|fh
-me013|uh|fh
-me013|so|fh
-me013|i mean let's let's assume for right now that we're just kind of plugging on ahead.|co
-mn007|yeah.|b
-me013|because even if they tell us that uh the rules are different uh we're still interested in doing what we're doing.|df
-me013|so what are you doing?|rt
-mn007|uhhuh.|b
-mn007|uh well we've a little bit worked on trying to see uh what were the bugs and the problem with the latencies.|h
-fn002|to improve.|2
-mn007|so|fh
-mn007|we took first we took the l d a filters.|s
-mn007|and uh we designed new filters.|s
-mn007|using uh recursive filters actually.|e
-me013|so when you say we is that something sunil is doing?|rt
-me013|or is that|qrr
-mn007|i'm sorry?|br
-me013|who is doing that?|rt
-mn007|uh us.|h
-me013|oh oh.|bk
-mn007|yeah.|fh
-me013|oh okay.|bk
-fn002|but|%
-mn007|so we took the filters the fir filters and we designed uh i i r filters that have the same frequency response.|s
-me013|uhhuh.|b
-mn007|well similar but that have shorter delays.|e
-me013|uhhuh.|b
-mn007|so they had two filters.|s
-mn007|one for the low frequency bands.|e
-mn007|and another for the high frequency bands.|e
-mn007|and so we redesigned two filters.|s
-mn007|and the low frequency band has sixty four milliseconds of delay.|rt
-mn007|and the high frequency band filter has something like eleven milliseconds compared to the two hundred milliseconds of the i i r filters.|rt
-mn007|but it's not yet test.|s
-mn007|so we have the filters.|s
-mn007|but we still have to implement a routine that does recursive filtering.|rt
-me013|okay.|b
-mn007|and|%--
-me013|you you had a discussion with sunil about this though?|d
-mn007|no.|ar
-mn007|no.|ar
-me013|uh huh.|bk
-me013|yeah you should talk with him.|cs
-mn007|yeah yeah.|aa
-me013|yeah.|fh
-me013|no i mean because the the the the whole problem that happened before was coordination.|s
-me013|right?|d
-mn007|uhhuh.|b
-me013|so so you need to discuss with him what we're doing.|co
-mn007|yeah.|aa
-me013|uh because they could be doing the same thing and or something.|df
-mn007|uhhuh.|b
-mn007|uh|fg
-mn007|i|%--
-mn007|yeah.|bk
-mn007|i don't know if that's what they were trying to|no
-me013|right.|aa
-mn007|they were trying to do something different like taking uh well using filter that takes only a past.|nd
-mn007|and|%--
-mn007|this is just a little bit different.|nd
-mn007|but i i will send him an email and tell him exactly what we are doing.|cc
-mn007|so|fh
-me013|yeah.|bk
-me013|yeah.|bk
-me013|um|fh
-me013|i mean|fh
-mn007|um|fh
-me013|we just we just have to be in contact more.|co
-me013|i think that the the fact that we we did that with had that thing with the latencies was indicative of the fact that there wasn't enough communication.|df
-mn007|uhhuh.|b
-me013|so|fh
-me013|okay.|b
-mn007|all right.|bk
-mn007|um|fg
-mn007|yeah.|bk
-mn007|well there is one um remark about these filters that they don't have a linear phase.|s
-mn007|so|fh
-me013|right.|bk
-mn007|well i don't know.|no
-mn007|perhaps it perhaps it doesn't hurt.|s
-mn007|because the phase is almost linear.|df
-mn007|but|%--
-mn007|um|fh
-mn007|and so yeah for the delay i gave you here it's it's uh computed on the five hertz modulation frequency.|s
-mn007|which is the huh well the most important for speech.|e
-mn007|so|fh
-mn007|uh|fh
-mn007|this is the first thing.|s
-fn002|the low|s
-me013|so that would be uh a reduction of a hundred and thirty six milliseconds.|bu
-mn007|yeah.|aa
-me013|which uh|e
-me013|what was the total we ended up with through the whole system?|qw
-mn007|three hundred and thirty.|s
-me013|so that would be within|d
-mn007|yeah.|aa
-mn007|but there are other points actually.|s
-mn007|uh|fh
-mn007|which will perhaps add some more delay.|e
-mn007|is that some other other stuff in the process were perhaps not very um well not very correct.|rt
-mn007|like the downsampling which was simply dropping frames.|e
-me013|yeah.|b
-mn007|um|fh
-mn007|so we will try also to add a nice downsampling.|cc
-mn007|having a filter that that|e
-me013|uhhuh.|b
-mn007|well a low pass filter at at twenty five hertz.|e
-mn007|uh because when when we look at the l d a filters well they are basically low pass.|df
-mn007|but they leave a lot of what's above twenty five hertz.|s
-me013|yeah.|b
-mn007|um|fh
-mn007|and so yeah.|fh
-mn007|this will be another filter which would add ten milliseconds again.|s
-me013|yeah.|b
-mn007|um|fh
-mn007|yeah.|bk
-mn007|and then there's a third thing.|rt
-mn007|is that um basically the way online normalization was done uh is just using this recursion on on the um um on the feature stream.|rt
-me013|yeah.|b
-mn007|and but this is a filter.|s
-mn007|so it has also a delay.|s
-mn007|uh|fh
-mn007|and when we look at this filter actually it has a delay of eighty five milliseconds.|s
-mn007|so if we|s
-me013|eighty five?|bu
-mn007|yeah.|aa
-mn007|if we want to be very correct.|s
-mn007|so if we want to the estimation of the mean to to be well the right estimation of the mean we have to to take eighty five milliseconds in the future.|co
-mn007|huh|fh
-me013|huh!|bk
-me013|that's a little bit of a problem.|nd
-mn007|yeah.|aa
-mn007|um|fh
-mn007|but well when we add up everything it's it will be all right.|bd
-mn007|we would be at|s
-mn007|so sixty five plus ten plus for the downsampling.|s
-mn007|plus eighty five for the online normalization.|s
-mn007|so it's|s
-me013|uh|fg
-me013|yeah but then there's|ng
-mn007|plus plus eighty for the neural net and p c a.|s
-me013|oh.|bk
-mn007|so it would be around two hundred and forty.|s
-mn007|so well|fh
-me013|just just barely in there.|s
-mn007|plus plus the frames.|s
-mn007|but it's okay.|s
-me018|what's the allowable?|rt
-me013|two fifty.|s
-me013|unless they changed the rules.|e
-mn007|huh.|b
-me013|which there is there's some discussion of.|e
-me013|but|fh
-me018|what were they thinking of changing it to?|qw
-mn007|yeah.|b
-me013|uh well the people who had very low latency want it to be low uh very very narrow uh latency bound.|h
-me013|and the people who have longer latency don't.|s
-me013|so|fh
-me018|huh.|b
-mn007|so yeah.|b
-me013|unfortunately we're the main ones with long latency.|s
-me013|but|fh
-me018|uh.|bk
-me013|but uh|fh
-me013|you know it's|s
-mn007|yeah.|fg
-mn007|and basically the best proposal had something like thirty or forty milliseconds of latency.|s
-me013|yeah.|aa
-mn007|so|fh
-mn007|well.|fh
-me013|yeah.|bk
-me013|so they were basically|s
-me013|i mean|fh
-me013|they were more or less trading computation for performance.|s
-me013|and we were uh trading latency for performance.|s
-me013|and they were dealing with noise explicitly and we weren't.|s
-me013|and so i think of it as complementary.|s
-me013|that if we can put the|e
-me018|think of it as what?|br
-me013|complementary.|s
-me018|huh.|b
-me013|i think the best systems|s
-me013|so uh everything that we did in a way it was it was just adamantly insisting on going in with a brain damaged system.|s
-me013|which is something actually we've done a lot over the last thirteen years.|e
-me013|uh which is we say well this is the way we should do it.|s
-me013|and then we do it.|s
-me013|and then someone else does something that's straight forward.|s
-me013|so this was a test that largely had additive noise.|s
-me013|and we did we did absolutely nothing explicitly to handle additive noise.|s
-me018|right.|bk
-me013|we just uh you know trained up systems to be more discriminant.|s
-me013|and uh we did this uh rasta like filtering.|fh
-me013|which was done in the log domain.|e
-me013|and was tending to handle convolutional noise.|s
-me013|we did we actually did nothing about additive noise.|s
-me013|so um|fh
-me013|the uh spectral subtraction schemes a couple places did seem seem to do a nice job.|s
-me013|and so|fh
-me013|uh|fh
-me013|we're talking about putting putting some of that in while still keeping some of our stuff.|s
-me013|i think you should be able to end up with a system that's better than both.|s
-me013|but clearly the way that we're operating for this other stuff does involved some latency to to get rid of most of that latency.|s
-me013|to get down to forty or fifty milliseconds we'd have to throw out most of what we're doing.|s
-me013|and and uh i don't think there's any good reason for it in the application actually.|fh
-me013|i mean you're you're you're speaking to a recognizer on a remote server.|s
-me013|and uh having a a a quarter second for some processing to clean it up it doesn't seem like it's that big a deal.|s
-me018|uhhuh.|b
-me013|these aren't large vocabulary things.|df
-me013|so the decoder shouldn't take a really long time and.|df
-me013|so|fh
-me018|and i don't think anybody's going to notice the difference between a quarter of a second of latency and thirty milliseconds of latency.|na
-me013|no.|aa
-me013|what what does was your experience when you were doing this stuff with uh the the the surgical uh uh microscopes and so forth?|qw
-me013|um how long was it from when somebody uh finished an utterance to when uh something started happening?|fh
-me018|um we had a silence detector.|h
-me018|so|fh
-me018|we would look for the end of an utterance based on the silence detector.|s
-me013|uhhuh.|b
-me018|and i i can't remember now off the top of my head how many frames of silence we had to detect before we would declare it to be the end of an utterance.|no
-me013|uhhuh.|b
-me013|uhhuh.|b
-me018|um|fh
-me018|but it was|s
-me018|uh|fh
-me018|i would say it was probably around the order of two hundred and fifty milliseconds.|s
-me013|yeah.|bk
-me013|and that's when you'd start doing things.|bu
-me018|yeah.|aa
-me018|we did the back trace at that point.|s
-me013|yeah.|bk
-me018|to get the answer.|e
-me013|of course that didn't take too long at that point.|bu
-me018|no.|aa
-me018|no it was pretty quick.|na
-me013|yeah.|bk
-me013|yeah.|bk
-me018|so|fh
-me013|so you you so you had a|s
-me013|so you had a a quarter second delay before uh plus some little processing time.|bu
-me018|this|%--
-me018|right.|aa
-me013|and then the the microscope would start moving or something.|bu
-me018|right.|aa
-me013|yeah.|fh
-me018|right.|b
-me013|and there's physical inertia there.|s
-me013|so probably the the motion itself was all|s
-me018|and it felt to uh the users that it was instantaneous.|s
-me018|i mean as fast as talking to a person.|e
-me018|it i don't think anybody ever complained about the delay.|df
-me013|yeah.|bk
-me013|so you would think as long as it's under half a second or something.|s
-me018|yeah.|aa
-me013|uh i'm not an expert on that.|bd
-me013|but|fh
-me018|yeah.|b
-me018|i don't remember the exact numbers.|s
-me018|but|%--
-me013|yeah.|bk
-me018|it was something like that.|s
-me018|i don't think you can really tell.|s
-me018|a person i don't think a person can tell the difference between uh you know a quarter of a second and a hundred milliseconds.|s
-me018|and|%--
-me013|yeah.|b
-me018|i'm not even sure if we can tell the difference between a quarter of a second and half a second.|s
-me013|yeah.|b
-me018|i mean it just it feels so quick.|df
-me013|i mean basically if you yeah if you said uh um what's the uh uh what's the shortest route to the opera.|s
-me013|and it took half a second to get back to you.|s
-me018|yeah.|bk
-me013|i mean it would be|s
-me013|i mean it might even be too abrupt.|s
-me013|you might have to put in a a a delay.|s
-me018|yeah.|b
-me018|i mean it may feel different than talking to a person.|s
-me013|yeah.|fh
-me018|because when we talk to each other we tend to step on each other's utterances.|df
-me018|so like if i'm asking you a question you may start answering before i'm even done.|e
-me013|yeah.|bk
-me018|so it it would probably feel different.|s
-me013|right.|b
-me018|but i don't think it would feel slow.|nd
-me013|right.|b
-me013|well anyway|fg
-me013|i mean i think|s
-me013|we could cut we know what else we could cut down on the neural net time.|cs
-me013|by by uh playing around a little bit.|cs
-me013|going more into the past.|cs
-me013|or something like that.|cs
-me013|we we talked about that.|s
-me018|so is the latency from the neural net caused by how far ahead you're looking?|rt
-me013|uhhuh.|aa
-mn007|uhhuh.|b
-me013|and there's also|s
-me013|well there's the neural net and there's also this uh uh multi frame uh uh k l t.|e
-me018|wasn't there|qy
-me018|was it in the uh recurrent neural nets where they weren't looking ahead at all?|rt
-me013|they weren't looking ahead much.|aap
-me013|they they looked ahead a little bit.|aap
-me018|a little bit.|bk
-me018|okay.|bk
-me013|yeah.|b
-me013|yeah.|fg
-me013|i mean you could do this with a recurrent net.|cs
-me013|and and then|s
-me013|but you also could just um|cs
-me013|i mean we haven't experimented with this.|df
-me013|but i imagine you could um uh predict a uh um a label uh from more in the past than in than than in the future.|cs
-me013|i mean we've we've done some stuff with that before.|s
-me013|i think it it works okay.|s
-mn007|uhhuh.|b
-me013|so|fh
-me018|we've always had usually we used the symmetric windows.|s
-me018|but|fh
-me013|yeah.|aa
-me018|i don't think|s
-me013|but we've but we played a little bit with with asymmetric guys.|s
-me018|yeah.|b
-me013|you can do it.|s
-me013|so|fh
-me013|so that's what that's what you're busy with.|s
-me013|messing around with this.|s
-mn007|uh yeah.|h
-me013|yeah.|fh
-me013|and uh|fh
-fn002|also we were thinking to to uh apply the uh spectral subtraction from ericsson.|s
-mn007|yeah.|b
-me013|uhhuh.|b
-fn002|and to to change the contextual k l t for l d a.|s
-me018|change the what?|br
-fn002|the contextual k l t.|s
-me018|i'm missing that last word.|br
-me013|k k l t.|s
-me006|oh k l t.|s
-fn002|k l t.|s
-me018|k l t.|bk
-me018|oh k l t.|bk
-me013|uhhuh.|b
-fn002|k l t.|r
-me018|uhhuh.|bk
-fn002|i'm sorry.|fa
-fn002|uh to change and use l d a discriminative.|s
-mn007|yeah.|b
-fn002|but|fh
-me013|uh huh.|b
-fn002|i don't know.|fh
-me013|uh|fg
-me018|what is the advantage of that?|rt
-fn002|uh|h
-mn007|well it's that by for the moment we have uh something that's discriminant and nonlinear.|rt
-mn007|and the other is linear but it's not discriminant at all.|s
-mn007|well it's it's a linear transformation that|s
-mn007|uh|fh
-me013|so at least just to understand maybe what the difference was between how much you were getting from just putting the frames together and how much you're getting from the discriminative.|s
-me013|what the nonlinearity does for you or doesn't do for you.|s
-me013|just to understand it a little better i guess.|s
-mn007|huh.|b
-mn007|well|fg
-mn007|uh|fh
-mn007|yeah.|fh
-mn007|actually what we want to do perhaps it's to replace to to have something that's discriminant but linear also.|s
-mn007|and to see if it if it improves over over the non discriminant linear transformation.|rt
-mn007|and if the neural net is better than this.|s
-me018|huh.|b
-mn007|or well|fh
-me013|yeah well that's what i meant is to see whether whether it having the neural net really buys you anything.|bk
-mn007|so|fh
-mn007|huh.|b
-me013|uh i mean it did look like it buys you something over just the k l t.|s
-mn007|yeah.|bk
-me013|but maybe it's just the discrimination.|s
-me013|and and maybe yeah maybe the nonlinear discrimination isn't necessary.|s
-fn002|maybe.|am
-mn007|yeah.|b
-mn007|uhhuh.|b
-fn002|maybe.|am
-me013|could be.|s
-me013|good good to know.|s
-me013|but the other part you were saying was the spectral subtraction.|s
-me013|so you just kind of uh|s
-mn007|yeah.|b
-me013|at what stage do you do that?|qw
-me013|do you you're doing that|qy
-me013|um|fh
-mn007|so it would be on the|s
-mn007|um|fh
-fn002|we was|s
-mn007|on on the mel frequency bands.|s
-mn007|so yeah.|fh
-fn002|yeah.|aa
-fn002|we no nnn|%--
-mn007|before everything.|e
-me013|okay.|bk
-me013|so just do that on the mel|co
-fn002|we we was thinking to do before after v a d.|s
-fn002|oh we don't know exactly when it's better.|no
-mn007|yeah.|aa
-mn007|um|fh
-fn002|before after v a d.|s
-fn002|or|%--
-fn002|and then|s
-me013|so so you know that that that the way that they're|fg
-mn007|um.|%
-me013|uh one thing that would be no good to find out about from this conference call is that what they were talking about what they're proposing doing was having a third party um run a good v a d and and determine boundaries.|s
-fn002|yeah.|b
-me013|and then given those boundaries then have everybody do the recognition.|s
-fn002|begin to work.|2
-me013|the reason for that was that um uh if one one group put in the v a d and another didn't.|e
-me013|uh or one had a better v a d than the other.|e
-me013|since that they're not viewing that as being part of the the task.|s
-me013|and that any any manufacturer would put a bunch of effort into having some kind of good speech silence detection.|s
-me013|it still wouldn't be perfect.|s
-me013|but i mean|fh
-me013|the argument was let's not have that be part of this test.|s
-me013|let's let's separate that out.|e
-me013|and so|s
-me013|uh i guess they argued about that yesterday.|s
-me013|and|%--
-me013|yeah i'm sorry.|fa
-me013|i don't don't know the answer.|no
-me013|but we should find out.|cs
-me013|i'm sure we'll find out soon.|s
-me013|what they uh what they decided.|e
-me013|so uh|fh
-me013|yeah so there's the question of the v a d.|s
-me013|but otherwise it's it's on the the uh the mel filter bank uh energies i guess.|bu
-fn002|uhhuh.|b
-me013|you do doing the|qy
-mn007|huh yeah.|aa
-fn002|uhhuh.|aa
-me013|and you're you're subtracting in the in the in the i guess it's power power domain.|bu
-me013|uh or or magnitude domain.|fh
-me013|probably power domain right?|bu
-me013|why|%
-mn007|i guess it's power domain yeah.|na
-mn007|i don't remember exactly.|df
-fn002|i don't remember.|no
-me013|yeah.|b
-mn007|but|%--
-mn007|yeah.|bk
-mn007|so it's before everything else.|e
-me013|yep.|b
-mn007|and|fh
-me013|i mean if you look at the theory it's it should be in the power domain.|na
-me013|but but uh i've seen implementations where people do it in the magnitude domain.|s
-mn007|yeah.|b
-me013|and|%--
-mn007|huh.|b
-me013|i have asked people why.|s
-me013|and they shrug their shoulders and say oh it works.|s
-me013|so|fh
-mn007|yeah.|b
-me013|uh|fh
-me013|and there's this|s
-me013|i guess there's this mysterious|s
-me013|i mean people who do this a lot i guess have developed little tricks of the trade.|s
-me013|i mean there's there's this um|s
-me013|you don't just subtract the the estimate of the noise spectrum.|s
-me013|you subtract that times|s
-mn007|a little bit more.|2
-mn007|and|fh
-me013|or or less.|s
-mn007|yeah.|b
-me013|or|fh
-me018|really?|bh
-mn007|yeah.|b
-me018|huh!|bk
-me013|yeah.|fh
-mn007|and generated this this|s
-me013|uh.|fh
-mn007|um|fh
-mn007|so you have the estimation of the power spectra of the noise.|rt
-mn007|and you multiply this by a factor which is dependent on the s n r.|s
-fn002|huh maybe.|am
-mn007|so well.|fh
-me018|huh!|bk
-mn007|when the speech when the signal level is more important compared to this noise level the coefficient is small and around one.|rt
-mn007|but when the power the signal level is uh small compared to the noise level the coefficient is more important.|s
-mn007|and this reduce actually the musical noise.|s
-mn007|uh|fh
-me018|oh!|bk
-mn007|which is more important during silence portions.|e
-mn007|when the the energy's small.|e
-me018|uhhuh.|bk
-me018|huh!|bk
-mn007|so there are tricks like this.|s
-mn007|but huh|fh
-me018|huh!|bk
-me013|yeah.|b
-me013|so|b
-mn007|yeah.|fh
-me018|is the estimate of the noise spectrum a running estimate?|rt
-mn007|yeah.|aa
-me013|yeah.|aa
-me018|or|qrr
-mn007|yeah.|aa
-me013|well that's i mean that's what differs from different different tasks and different uh spectral subtraction methods.|s
-me013|i mean if if you have uh fair assurance that uh the noise is is quite stationary then the smartest thing to do is use as much data as possible to estimate the noise.|cs
-me018|huh!|b
-me013|get a much better estimate and subtract it off.|cs
-me018|uhhuh.|b
-me013|but if it's varying at all which is going to be the case for almost any real situation you have to do it online uh with some forgetting factor or something.|cs
-me018|so do you is there some long window that extends into the past over which you calculate the average?|rt
-me013|well there's a lot of different ways of computing the noise spectrum.|s
-me013|so one of the things that uh hans guenter hirsch did uh and and other people|s
-me013|actually he's he wasn't the only one i guess.|df
-me013|was to uh take some period of of of speech and in each band uh develop a histogram.|s
-me013|so to get a decent histogram of these energies takes at least a few seconds really.|s
-me013|but uh i mean you can do it with a smaller amount.|s
-me013|but it's pretty rough.|e
-me013|and um in fact i think the nist standard method of determining signal to noise ratio is based on this.|fh
-me013|so|s
-me018|a couple seconds?|bu
-me013|no no.|ar
-me013|it's based on this kind of method.|nd
-me013|this histogram method.|e
-me018|huh.|b
-me013|so you have a histogram.|s
-me013|now if you have signal and you have noise you basically have these two bumps in the histogram.|s
-me013|which you could approximate as two gaussians.|e
-me018|but don't they overlap sometimes?|rt
-me013|oh yeah.|aa
-me018|okay.|bk
-me013|so you have a mixture of two gaussians.|s
-me018|yeah.|bk
-me013|right?|d
-me013|and you can use e m to figure out what it is you know.|s
-me018|yeah.|b
-me013|so so basically now you have this mixture of two gaussians.|s
-me013|you you know what they are.|s
-me013|and uh|%--
-me013|i mean sorry.|fa
-me013|you estimate what they are.|bsc
-me013|and uh|fh
-me013|so this gives you what the signal is and what the noise energy is in that band in the spectrum.|s
-me013|and then you look over the whole thing.|s
-me013|and now you have a noise spectrum.|s
-me013|so uh hans guenter hirsch and others have used that kind of method.|fh
-me013|and the other thing to do is which is sort of more trivial and obvious is to uh uh determine through magical means that that uh there's no speech in some period.|cs
-me013|and then see what the spectrum is.|cs
-me018|uhhuh.|b
-me013|uh|fh
-me013|but|%--
-me013|you know it's that that that's tricky to do.|s
-me013|it has mistakes.|df
-me013|uh and if you've got enough time uh this other method appears to be somewhat more reliable.|cs
-me013|uh a variant on that for just determining signal to noise ratio is to just uh you can do a a uh an iterative thing e.m. like thing to determine means only.|cs
-me013|i guess it is e m still.|s
-me013|but just just determine the means only.|cs
-me013|don't worry about the variances.|cs
-me018|uhhuh.|b
-me013|and then you just use those mean values as being the the uh uh signal to noise ratio in that band.|cs
-me018|but what is the|qw
-me018|it seems like this kind of thing could add to the latency.|s
-me018|i mean depending on where the window was that you used to calculate the signal to noise ratio.|df
-mn007|yeah.|aa
-mn007|sure.|aa
-mn007|but|%--
-mn007|huh|fh
-me013|not necessarily.|nd
-me013|because if you don't look into the future.|df
-me013|right?|d
-me018|okay.|bk
-me018|well that i guess that was my question.|s
-me013|if you just|s
-me013|yeah.|bk
-me013|i mean if you just|s
-me018|yeah.|fh
-me013|if you|s
-me013|you uh|s
-me013|at the beginning you have some|s
-me018|guess.|2
-me013|some guess.|m
-me013|and and uh uh|fh
-mn007|yeah but it|fg
-me013|it's an interesting question.|s
-me013|i wonder how they did do it.|s
-mn007|actually it's a huh if you want to have a good estimation on non stationary noise you have to look in the in the future.|s
-mn007|i mean so if you take your window and build your histogram in this window um what you can expect is to have an estimation of of the noise in in the middle of the window.|fh
-mn007|not at the end.|e
-mn007|so|fh
-fn002|uhhuh.|b
-me013|well yeah.|bk
-me013|but what does what what what does alcatel do?|rt
-mn007|the but but people|s
-me013|and and france telecom?|d
-mn007|they just look in the past.|s
-mn007|i guess it works because the noise are uh uh almost stationary.|s
-me013|pretty stationary.|2
-me006|pretty stationary.|t1
-mn007|but|fh
-me006|yeah.|b
-mn007|um|fh
-me013|well the thing|fg
-me013|yeah i mean you're talking about non stationary noise.|bk
-me013|but i think that spectral subtraction is rarely is is not going to work really well for for non stationary noise.|s
-mn007|well if if you have a good estimation of the noise.|nd
-me013|you know?|d
-mn007|yeah.|ar
-mn007|because|s
-mn007|well.|fh
-mn007|it has to work.|nd
-me013|but it's hard to|nd
-me013|but that's hard to do.|nd
-mn007|yeah.|aa
-mn007|that's hard to do.|m
-mn007|yeah.|aa
-me013|yeah.|bk
-me013|so so i think that that what what is what's more common is that you're going to be helped with slowly varying or stationary noise.|s
-mn007|but|fg
-mn007|uhhuh.|b
-me013|that's what spectral subtraction will help with practically speaking.|e
-mn007|uhhuh.|b
-mn007|uhhuh.|b
-me013|if it varies a lot to get if if to get a good estimate you need a few seconds of speech.|s
-me013|even if it's centered.|e
-me013|right?|d
-me013|if you need a few seconds to get a decent estimate but it's changed a lot in a few seconds then it you know it's kind of a problem.|df
-mn007|uhhuh.|b
-mn007|yeah.|b
-me013|i mean imagine five hertz is the middle of the of the speech modulation spectrum.|s
-mn007|huh.|b
-me013|right?|d
-me013|so imagine a jack hammer going at five hertz.|s
-mn007|yeah.|bk
-me013|i mean good good luck.|s
-mn007|that's|%--
-me013|so|fh
-mn007|so in this case yeah sure you cannot|bu
-me013|yeah.|aa
-mn007|but i think um hirsch does experiment with windows of like between five hundred milliseconds and one second.|s
-mn007|and|fh
-mn007|well five hundred was not so bad.|ba
-mn007|i mean|fh
-mn007|and he worked on non stationary noises.|s
-mn007|like noise modulated with well with amplitude modulations.|e
-mn007|and|fh
-mn007|things like that.|e
-mn007|and|fh
-me018|were his uh windows centered around the|rt
-mn007|but|fh
-mn007|um|h
-mn007|yeah.|aa
-mn007|well.|fh
-mn007|i think|s
-mn007|yeah.|aa
-mn007|well in in the paper he showed that actually the estimation of the noise is is delayed.|s
-mn007|well it's there is|s
-mn007|you you have to center the window.|na
-mn007|yeah.|aa
-me013|yeah.|b
-mn007|huh.|fh
-me013|no i understand it's better to do.|s
-me013|but i just think that that uh for real noises what what's most likely to happen is that there'll be some things that are relatively stationary.|ng
-mn007|huh .|b
-me013|where you can use one or another spectral subtraction thing.|e
-me013|and other things where it's not so stationary.|s
-mn007|yeah.|b
-me013|and|%--
-me013|i mean you can always pick something that that falls between your methods.|s
-me013|uh|fh
-mn007|huh.|b
-me013|uh|fh
-me013|but i don't know if you know if sinusoidally uh amplitude modulated noise is is sort of a big problem in in in practice.|no
-me013|i think that it's uh|s
-mn007|yeah.|b
-me018|we could probably get a really good estimate of the noise if we just went to the noise files.|cs
-me018|and built the averages from them.|cs
-me013|yeah.|aa
-me013|well.|fh
-mn007|what|%
-mn007|what do you mean?|bu
-me013|just cheat.|s
-me013|you're saying cheat.|r
-mn007|but if the if the noise is stationary perhaps you don't even need some kind of noise estimation algorithm.|s
-me013|yeah.|b
-me013|yeah.|b
-mn007|we just take the beginning of the utterance.|cs
-mn007|and|fh
-me013|oh yeah.|aa
-me013|sure.|aa
-fn002|it's the same.|s
-mn007|i know i don't know if people tried this for aurora.|no
-mn007|well everybody seems to use some kind of adaptive well scheme.|s
-fn002|yeah.|b
-me013|but but|fg
-fn002|a dictionary.|2
-mn007|but|%--
-me013|you know stationary|s
-mn007|is it very useful.|s
-me018|very slow adaptation.|s
-mn007|and is the|s
-me013|right.|aa
-me013|the word stationary is has a very precise statistical meaning.|s
-me013|but you know in in signal processing really what we're talking about i think is things that change slowly uh compared with our our processing techniques.|s
-me013|so if you're driving along in a car i i would think that most of the time the nature of the noise is going to change relatively slowly .|e
-mn007|uhhuh.|b
-me013|it's not going to stay absolute the same.|e
-me013|if you if you check it out uh five minutes later you may be in a different part of the road.|e
-me013|or whatever.|s
-mn007|uhhuh.|b
-me013|but it's it's|s
-me013|using the local characteristics in time is probably going to work pretty well.|s
-mn007|uhhuh.|b
-me013|but you could get hurt a lot if you just took something from the beginning of all the speech of you know an hour of speech.|s
-me013|and then later|s
-mn007|yeah.|b
-me013|uh so they may be you know may be overly uh complicated for for this test.|s
-me013|but|%--
-me013|but but uh|fh
-me013|i don't know.|no
-me013|but what you're saying you know makes sense though.|s
-me013|i mean if possible you shouldn't you should you should make it uh the center of the center of the window.|s
-me013|but|%--
-me013|uh we're already having problems with these delay uh delay issues.|fh
-mn007|yeah so.|b
-me013|so|fh
-me013|uh we'll have to figure ways without it.|cs
-me013|um|fh
-me018|if they're going to provide a uh voice activity detector that will tell you the boundaries of the speech then couldn't you just go outside those boundaries and do your estimate there?|rt
-me013|oh yeah.|aa
-me013|you bet.|na
-me013|yeah.|aa
-me013|so i i imagine that's what they're doing.|s
-me013|right?|d
-me013|is they're|s
-me013|they're probably looking in nonspeech sections.|s
-me013|and getting some uh|s
-mn007|yeah.|bk
-mn007|they have some kind of threshold on on the previous estimate.|s
-mn007|and|fh
-mn007|so|fh
-mn007|yeah.|fh
-mn007|i think yeah i think ericsson used this kind of threshold yeah.|s
-mn007|so they they have an estimate of the noise level.|e
-mn007|and they put a threshold like six or ten d b above.|e
-mn007|and|fh
-mn007|what's under this threshold is used to update the estimate.|e
-mn007|is is that right?|rt
-fn002|yeah.|b
-mn007|or|qrr
-fn002|i think so.|na
-fn002|i have not here the proposal.|df
-mn007|so it's it's|s
-mn007|yeah.|fh
-me013|does france telecom do this?|rt
-mn007|it's like saying what's under the threshold is silence.|s
-mn007|and|fh
-me006|huh.|b
-me013|does france telecom do do the same thing?|r
-me013|more or less?|d
-mn007|i i|s
-mn007|you know perhaps?|d
-fn002|no.|ar
-fn002|i i have not here the proposal.|df
-me013|okay.|bk
-me013|um|fg
-me013|okay.|bk
-me013|if we're we're done done with that|tc
-me013|uh|fh
-me013|let's see.|t1
-me013|uh maybe we can talk about a couple other things briefly.|co
-me013|just uh things that that we've been chatting about.|e
-me013|but haven't made it into these meetings yet.|e
-me013|so you're coming up with your quals proposal.|s
-me013|and uh want to just give a two three minute summary of what you're planning on doing?|co
-me006|oh.|bk
-me006|um|fh
-me006|two three.|s
-me006|it can be shorter than that.|s
-me006|um|fh
-me013|yeah.|aa
-me006|well i've i've talked to some of you already.|fh
-me006|um but i'm uh looking into extending the work done by larry saul and john allen and uh mazin rahim.|fh
-me006|um they they have a system that's uh a multi band um system.|fh
-me006|but their multi band is is a little different than the way that we've been doing multi band in the past.|s
-me006|where um where we've been uh taking um sub band features and training up these neural nets and on on phonetic targets.|e
-me006|and then combining them somehow down the line.|e
-me006|um|fh
-me006|they're they're taking sub band features and um training up a detector that detects for um these phonetic features.|s
-me006|for example um he presents um uh a detector to detect sonorance.|e
-me006|and so what what it basically is is um it's there's|s
-me006|at the lowest level there it's it's an or i mean it's an and gate.|s
-me006|so uh on each sub band you have several independent tests.|e
-me006|to test whether um there's the existence of sonorance in a sub band.|e
-me006|and then um it it's combined by a soft and gate.|s
-me006|and at the at the higher level|s
-me006|for every if|s
-me006|um|fh
-me006|the higher level there's a soft or gate.|s
-me006|uh so if if this detector detects um the presence of of sonorance in any of the sub bands then the uh the or gate at the top says okay well this frame has evidence of sonorance.|s
-me006|and these are all|s
-me018|what are what are some of the low level detectors that they use?|rt
-me006|oh okay.|bk
-me006|well the low level detectors are logistic regressions.|rt
-me006|um|fh
-me006|and|%--
-me006|the uh|fh
-me006|the one|s
-me013|so that by the way basically is a is one of the units in our in our our neural network.|s
-me013|so that's all it is.|e
-me013|it's a it's a sigmoid.|e
-me006|yeah.|aa
-me013|uh with weighted sum at the input.|e
-me018|huh.|b
-me006|right.|b
-me013|which you train by gradient descent.|e
-me006|yeah.|bk
-me006|so he uses um an e m algorithm to to um train up these um parameters for the logistic regression.|s
-me006|the|%--
-me013|well actually|fg
-me013|yeah.|fg
-me013|so i was using e m to get the targets.|s
-me013|so so you have this this this and gate what we were calling an and gate but it's a product product rule thing at the output.|s
-me013|and then he uses uh and then feeding into that are|s
-me013|i'm sorry.|fa
-me013|there's it's an or at the output isn't it?|bu
-me013|yeah.|aa
-me006|uhhuh.|aa
-me013|so that's the product.|s
-me013|and then|s
-me013|um|fh
-me013|then he has each of these and things.|s
-me013|and|fh
-me013|um|fh
-me013|but|%--
-me013|so they're little neural neural units.|s
-me013|um|fh
-me013|and um|fh
-me013|they have to have targets.|s
-me013|and so the targets come from e m.|s
-me018|and so are each of these low level detectors are they|qy
-me018|uh|fh
-me018|are these something that you decide ahead of time?|qy
-me018|like i'm going to look for this particular feature?|d
-me018|or i'm going to look at this frequency?|d
-me018|or|qrr
-me018|what what what are they looking at?|qw
-me006|um|fg
-me018|what are their inputs?|qw
-me006|right.|bk
-me006|so the|s
-me006|okay.|bk
-me006|so at for each sub band there are basically uh several measures of s n r and and correlation.|s
-me018|uh.|bk
-me018|okay.|bk
-me006|um|fh
-me018|okay.|bk
-me006|um and he said there's like twenty of these per per sub band.|s
-me006|um|fh
-me006|and for for every every sub band you you just pick ahead of time um i'm going to have like five independent logistic tests.|s
-me018|uhhuh.|b
-me006|and you initialize these parameters um in some some way.|s
-me006|and use e m to come up with your training targets for a for the the low level detectors.|s
-me018|uhhuh.|b
-me006|and then once you get that done you you you train the whole whole thing on maximum likelihood.|s
-me006|um|fh
-me006|and he shows that using this this method to detect sonorance is it's very robust compared to um to typical uh full band gaussian mixtures um estimations of of sonorance.|s
-me018|uhhuh.|b
-me018|uhhuh.|b
-me006|and uh|fh
-me006|so|fh
-me006|so that's just that's just one detector.|s
-me006|so you can imagine building many of these detectors on different features.|s
-me006|you get enough of these detectors together um then you have enough information to do um higher level discrimination.|s
-me006|for example discriminating between phones.|e
-me018|uhhuh.|b
-me006|and then you keep working your way up until you you build a full recognizer.|s
-me018|uhhuh.|b
-me006|so um that's that's the direction which i'm i'm thinking about going in my quals.|fh
-me018|cool.|ba
-me013|you know it has a number of properties that i really liked.|s
-me013|i mean one is the going towards um using narrow band information for uh phonetic features of some sort.|e
-me013|rather than just uh immediately going for the the typical sound units.|e
-me018|right.|bk
-me013|another thing i like about it is that you this thing is going to be trained explicitly trained for a product of errors rule.|s
-me013|which is what uh allen keeps pointing out that fletcher observed in the twenties.|e
-me018|uhhuh.|b
-me013|uh for people listening to narrow band stuff that's friday's talk by the way.|s
-me013|and then um|fh
-me013|uh the third thing i like about it is|fh
-me013|uh and we've played around with this in a different kind of way a little bit.|e
-me013|but it hasn't been our dominant way of of operating anything.|e
-me013|um this issue of where the targets come from.|s
-me013|so in our case when we've been training it multi band things the way we get the targets for the individual bands is uh that we get the phonetic label for the sound there.|s
-me018|uhhuh.|b
-me013|and we say okay we train every|s
-me013|what this is saying is okay that's maybe what our ultimate goal is.|s
-me013|or not ultimate but penultimate goal is getting these these small sound units.|s
-me013|but but um|fh
-me013|along the way how much should we uh|qw
-me013|uh what should we be training these intermediate things for?|rt
-me013|i mean because uh we don't know uh that this is a particularly good feature.|no
-me013|i mean there's no way uh|s
-me013|someone in the audience yesterday was asking well couldn't you have people go through and mark the individual bands and say where the where it was sonorant or not.|s
-me018|uhhuh.|b
-me013|but you know i think having a bunch of people listening to critical band wide uh chunks of speech trying to determine whether i think it'd be impossible.|s
-me006|ouch.|ba
-me013|it's all going to sound like like sine waves to you more or less.|df
-me018|uhhuh.|b
-me013|i mean|s
-me013|well|s
-me013|i mean it's all|s
-me013|narrow band.|s
-me013|uh|fh
-me013|i i think it's very hard for someone to to a person to make that determination.|s
-me013|so um|fh
-me013|um we don't really know how those should be labeled.|fh
-me013|it could be that you should um not be paying that much attention to uh certain bands for certain sounds uh in order to get the best result.|s
-me018|uhhuh.|b
-me013|so um what we have been doing there just sort of mixing it all together is certainly much much cruder than that.|s
-me013|we trained these things up on the on the the final label.|e
-me013|now we have i guess done experiments.|s
-me013|you've probably done stuff where you have um done separate uh viterbis on the different|s
-me006|yeah.|aa
-me006|forced alignment on the sub band labels.|e
-me013|yeah.|bk
-me006|yeah.|bk
-me013|you've done that.|s
-me013|did did that help at all?|rt
-me006|um it helps for one or one iteration.|h
-me006|but um anything after that it doesn't help.|arp
-me013|so so that may or may it that aspect of what he's doing may or may not be helpful.|s
-me013|because in a sense that's the same sort of thing you're taking global information and determining what you how you should|df
-me013|but this is this is uh i i think a little more direct.|s
-me018|how did they measure the performance of their detector?|rt
-me013|and|%--
-me013|well he's he's just actually looking at uh the confusions between sonorant and non sonorant.|s
-me018|uhhuh.|b
-me013|so he hasn't applied it to recognition.|s
-me013|or if he did he didn't talk about it.|s
-me013|it's it's just|s
-me013|and one of the concerns in the audience actually was that that um the uh|s
-me013|uh he he did a comparison to uh you know our old foil.|s
-me013|the the nasty old standard recognizer with mel mel filter bank at the front and h m ms and and so forth.|s
-me013|and um it didn't do nearly as well.|s
-me013|especially in in noise.|e
-me013|but the|s
-me013|one of the good questions in the audience was well yeah but that wasn't trained for that.|s
-me013|i mean this use of a very smooth uh spectral envelope is something that you know has evolved as being generally a good thing for speech recognition.|s
-me013|but if you knew that what you were going to do is detect sonorants or not|s
-me013|so sonorants and non sonorants is is is almost like voiced unvoiced except i guess that the voiced stops are are also called obstruents.|e
-me013|uh|fh
-me013|so it's|s
-me013|it's uh but with the exception of the stops i guess it's pretty much the same as voiced unvoiced.|bu
-me013|right?|d
-me018|uhhuh.|aa
-me013|so so|fh
-me013|um|fh
-me013|so um|fh
-me013|if you knew you were doing that|s
-me013|if you were doing something say for a a uh a a vocoder you wouldn't use the same kind of features.|s
-me013|you would use something that was sensitive to the periodicity and and not just the envelope.|s
-me013|uh and so in that sense it was an unfair test.|s
-me013|um|fh
-me013|so i think that the questioner was right.|s
-me013|it it was in that sense an unfair test.|s
-me013|nonetheless it was one that was interesting because uh this is what we are actually using for speech recognition.|s
-me013|these smooth envelopes.|e
-me013|and this says that perhaps even you know trying to use them in the best way that we can that that that we ordinarily do with you know gaussian mixtures and h m ms and so forth you you don't uh actually do that well on determining whether something is sonorant or not.|s
-me018|didn't they|qy
-me013|which means you're going to make errors between similar sounds that are sonorant or obstruent.|e
-me018|didn't they also do some kind of an oracle experiment?|rt
-me018|where they said if we could detect the sonorants perfectly and then show how it would improve speech recognition?|d
-me018|i thought i remember hearing about an experiment like that.|df
-me013|these same people?|d
-me018|uhhuh.|aa
-me013|i don't remember that.|no
-me018|huh.|b
-me013|that would that's|s
-me013|you're right.|aa
-me013|that's exactly the question to follow up this discussion is.|na
-me013|suppose you did that uh got that right.|na
-me013|um|fh
-me013|yeah.|fh
-me018|huh.|b
-mn007|what could be the other low level detectors i mean for other kind of features?|qw
-mn007|or|fh
-mn007|in addition to detecting sonorants.|e
-mn007|or|fh
-me006|um|h
-mn007|that's what you want to to to go for also?|bu
-me006|what|qw
-mn007|or|qrr
-me006|oh build other other detectors on different phonetic features?|bu
-mn007|other low level detectors?|2
-mn007|yeah.|aa
-me006|um|h
-me006|uh let's see.|t1
-me006|um|fh
-me006|yeah.|bk
-me006|i i don't know.|no
-me006|um|fh
-me006|um|fh
-me006|i mean easiest thing would be to go go do some voicing stuff.|s
-me006|but that's very similar to sonorance.|s
-mn007|uhhuh.|b
-me006|um|fh
-me018|when we when we talked with john ohala the other day we made a list of some of the things that|s
-me006|yeah.|b
-me006|oh okay.|bk
-me018|like frication.|e
-me006|uhhuh.|b
-me018|abrupt closure.|e
-me006|uhhuh.|b
-me018|r coloring.|e
-me018|nasality.|e
-me018|voicing.|e
-me013|yeah.|fg
-me013|so there's a half dozen like that that are|s
-me018|uh.|fh
-me006|yeah.|bk
-me006|nasality.|bk
-me013|now this was coming at it from a different angle.|s
-me013|but maybe it's a good way to start.|na
-me013|uh these are things which uh john felt that a a uh a human annotator would be able to reliably mark.|s
-me006|oh okay.|bk
-me013|so the sort of things he felt would be difficult for a human annotator to reliably mark would be tongue position kinds of things.|s
-me006|placing stuff.|2
-me018|uhhuh.|b
-me013|yeah.|aa
-me006|yeah.|bk
-me013|uh|fh
-me018|there's also things like stress.|cs
-me018|you can look at stress.|cs
-me006|uhhuh.|b
-me013|but stress doesn't uh fit in this thing of coming up with features that will distinguish words from one another.|nd
-me013|right?|d
-me013|it's a it's a good thing to mark.|na
-me013|and will probably help us ultimate with recognition.|df
-me018|yeah.|bk
-me018|there's a few cases where it can like permit and permit.|s
-me013|but|%--
-me018|but that's not very common in english.|e
-me018|in other languages it's more uh important.|e
-me013|well yeah.|bk
-me013|but either case you'd write p e r m i t.|s
-me013|right?|d
-me013|so you'd get the word right.|s
-me018|no i'm saying i thought you were saying that stress doesn't help you distinguish between words.|ar
-me013|um|h
-me018|oh i see what you're saying.|bk
-me018|as long as you get the sequence.|bu
-me013|we're if we're doing if we're talking about transcription as opposed to something else.|s
-me018|right?|d
-me018|yeah.|b
-me018|yeah yeah yeah yeah.|b
-me013|yeah.|fh
-me018|right.|b
-me018|so where it could help is maybe at a higher level.|s
-me006|like a understanding application.|s
-me013|right.|aa
-me018|yeah.|bk
-me018|understanding.|m
-me018|yeah.|b
-me013|yeah.|aa
-me006|yeah.|bk
-me018|exactly.|b
-me013|but that's this afternoon's meeting.|s
-me013|yeah.|fh
-me013|we don't understand anything in this meeting.|j
-me013|yeah.|bk
-me013|so that's|s
-me013|yeah.|fh
-me013|that's you know a neat neat thing.|s
-me013|and|%--
-me013|and uh|fh
-me006|so um ohala's going to help do these uh transcriptions of the meeting data?|d
-me013|so|fh
-me018|uh|h
-me018|well i don't know.|no
-me018|we we sort of didn't get that far.|df
-me018|um we just talked about some possible features that could be marked by humans.|fh
-me018|and um|fh
-me006|huh.|b
-me018|because of having maybe some extra transcriber time we thought we could go through and mark some portion of the data for that.|s
-me018|and uh|fh
-me006|huh.|b
-me013|yeah.|bk
-me013|i mean that's not an immediate problem that we don't immediately have a lot of extra transcriber time.|s
-me018|yeah.|bk
-me013|but but uh in the long term i guess chuck is going to continue the dialogue with john.|s
-me018|right.|bk
-me013|and and uh|fh
-me013|and we'll we'll end up doing some i think.|s
-me018|i'm definitely interested in this area too.|s
-me018|uh acoustic feature stuff.|e
-me013|uhhuh.|b
-me006|okay.|bk
-me018|so|fh
-me013|yeah i think it's an interesting interesting way to go.|s
-me006|cool.|ba
-me013|um|fh
-me013|i say it like said int i think it has a number of good things.|s
-me013|um|fh
-me013|so uh you want to talk maybe a two or three minutes about what we've been talking about today and other days?|fh
-me026|yeah.|aa
-me026|okay.|aa
-me026|so um|fh
-me026|we're interested in um methods for far mike speech recognition.|s
-me026|um mainly uh methods that deal with the reverberation in the far mike signal.|e
-me026|so um|fh
-me026|one approach would be um say m s g and p l p like was used in aurora one.|e
-me026|and um there are other approaches which actually attempt to remove the reverberation instead of being robust to it like m s g.|s
-me026|and so we're interested in um comparing the performance of um a robust approach like m s g with these um speech enhancement or de reverber de reverberation approaches.|s
-mn007|uhhuh.|b
-me026|and um it looks like we're going to use the meeting recorder digits data for that.|s
-mn007|and the de reverberation algorithm.|bu
-mn007|do you have can you give some more details on this?|rt
-mn007|or does it use one microphone?|e
-mn007|several microphones?|d
-mn007|does it|qy
-me026|okay.|bk
-me026|well um|fh
-me026|there was something that was done by um a guy named carlos i forget his last name who worked with hynek who um|s
-me013|avendano.|s
-me026|okay.|bk
-me026|who um|fh
-me013|yeah.|b
-mn007|uhhuh.|b
-me026|um it was like rasta in the sense that of it was um de convolution by filtering.|s
-me026|um except he used a longer time window.|s
-mn007|uhhuh.|b
-me026|like a second maybe.|e
-me026|and the reason for that is rasta's time window is too short to um include the whole um reverberation.|df
-me026|um i don't know what you call it.|no
-me026|the reverberation response.|s
-me026|if you see if you see what i mean.|s
-me026|the reverberation filter from my mouth to that mike is like it's it's too long in the in the time domain for the um for the rasta filtering to take care of it.|df
-me026|and um|fh
-me026|then there are a couple of other speech enhancement approaches which haven't been tried for speech recognition yet.|s
-me026|but have just been tried for enhancement.|s
-me026|which um have the assumption that um you can do l p c um analysis of of the signal you get at the far microphone.|e
-me026|and the um all pole filter that you get out of that should be good.|rt
-me026|it's just the um excitation signal that is going to be distorted by the reverberation.|e
-me026|and so you can try and reconstruct a better excitation signal.|cs
-me026|and um feed that through the um all pole filter and get enhanced speech with reverberation reduced.|cs
-mn007|uhhuh.|b
-mn007|uhhuh.|b
-me013|there's also this uh um uh echo cancellation stuff that we've sort of been chasing.|s
-me013|so uh|fh
-me013|we have uh|s
-me013|and when we're saying these digits now we do have a close microphone signal.|s
-me013|and then there's the distant microphone signal.|s
-me013|and you could as a kind of baseline say okay given that we have both of these uh we should be able to do uh a cancellation.|s
-me013|so that uh um we we uh essentially identify the system in between the linear time invariant system between the microphones and and and and and invert it.|s
-me013|uh or or cancel it out to to some some reasonable approximation.|s
-mn007|uhhuh.|b
-me013|through one method or another.|e
-me013|uh that's not a practical thing.|ba
-me013|uh if you have a distant mike you don't have a close mike ordinarily.|s
-me013|but we thought that might make also might make a good baseline.|s
-me013|uh it still won't be perfect because there's noise.|s
-me013|uh but|%--
-me013|and then there are uh there are single microphone methods that i think people have done for uh for this kind of de reverberation.|s
-me013|do do you know any references to any?|rt
-me013|because i i i was i i lead him down a a bad path on that.|df
-mn007|uh|h
-mn007|i i guess i guess when people are working with single microphones they are more trying to do|s
-me013|but|%--
-mn007|well not not very|s
-mn007|well there is the avendano work.|rt
-me013|right.|bk
-mn007|but also trying to huh uh trying to find the de-convolution filter.|rt
-mn007|but in the|s
-mn007|um|fh
-mn007|not in the time domain.|e
-mn007|but in the uh the stream of features uh i guess.|e
-me013|yeah.|bk
-me013|okay.|bk
-mn007|well there there's someone working on this on in mons.|fg
-mn007|so perhaps|s
-mn007|yeah.|fh
-mn007|we should try to|cs
-mn007|he's working on this.|s
-mn007|on trying to|e
-me013|yeah.|b
-mn007|on reverberation.|e
-mn007|um|fh
-me013|the first paper on this is going to have great references.|s
-me013|i can tell already.|s
-mn007|uhhuh.|b
-me013|it's always good to have references.|s
-me013|especially when reviewers read it.|e
-me013|or or one of the authors and feel they'll you're okay.|e
-me013|you've you cited me.|j
-mn007|so yeah.|fg
-mn007|well he did echo cancellation.|tc
-mn007|and he did some fancier things.|s
-mn007|like uh uh training different network on different reverberation conditions.|e
-mn007|and then trying to find the best one.|e
-mn007|but well.|fh
-me013|yeah.|b
-mn007|yeah.|b
-me013|the the other thing uh that dave was talking about earlier was uh uh multiple mike things.|s
-me013|uh where they're all distant.|fh
-me013|so um i mean there's there's all this work on arrays.|s
-me013|but the other thing is uh what can we do that's cleverer that can take some advantage of only two mikes.|s
-me013|uh particularly if there's an obstruction between them.|s
-me013|as we as we have over there.|e
-mn007|if there is|br
-me013|an obstruction between them.|s
-mn007|uh yeah.|bk
-me013|it creates a shadow.|df
-me013|which is is helpful.|e
-me013|it's part of why you have such good directionality with with two ears.|e
-me013|even though they're not several feet apart.|e
-mn007|uhhuh.|b
-me013|for most for most people's heads.|j
-me018|that could help though.|s
-me013|so that|s
-me013|yeah the|s
-me013|the head in the way is really|s
-me013|that's what it's for.|s
-me013|it's basically|s
-me018|that's what the head's for?|bu
-me013|yeah.|aa
-me013|it's to separate the ears.|df
-me018|to separate the ears?|2
-me013|that's right.|aa
-me013|yeah.|aa
-me013|yeah.|fh
-me013|uh|fh
-me013|so|fh
-me013|anyway.|fg
-me013|uh i think that's that's all we have this week.|fh
-me006|oh.|b
-me013|o k.|fg
-me013|and uh i think it's digit time.|fh
-me018|actually the um for some reason the digit forms are blank.|s
-me013|yeah?|bh
-me018|uh i think that may be due to the fact that adam ran out of digits uh and didn't have time to regenerate any.|df
-me013|oh!|bk
-me013|oh!|bk
-me013|i guess it's|s
-me013|well there's no real reason to write our names on here then.|bu
-me018|yeah.|b
-me018|if you want to put your credit card numbers and uh|j
-me013|is there?|g
-me006|oh no|%--
-me013|or do did any do we need the names for the other stuff?|rt
-me013|or|qrr
-me018|uh yeah.|aa
-me018|i do need your names and and the time and all that.|na
-me013|oh okay.|bk
-me018|because we put that into the key files.|df
-me013|oh okay.|bk
-me018|um|fh
-me018|but|%--
-me013|okay.|bk
-me018|that's why we have the forms.|df
-me018|uh even if there are no digits.|e
-me013|okay.|bk
-me013|yeah.|fg
-me013|i didn't notice this.|s
-me013|i'm sitting here.|s
-me013|and i was i was about to read them too.|s
-me013|it's a uh blank sheet of paper.|s
-me018|so i guess we're we're done.|s
-me013|yeah.|b
-me013|yeah.|b
-me013|i'll do my credit card number later.|cc
-me013|okay.|fh
+me018|okay we're on.|S
+me013|okay.|S
+me013|what are we talking about today?|Q
+mn007|i don't know.|S
+mn007|do you have news from the conference talk?|Q
+mn007|uh|F
+mn007|that was programmed for yesterday i guess.|S
+me013|uh|F
+fn002|yesterday.|S
+me013|uh|F
+fn002|yesterday morning on video conference.|S
+me013|uh|F
+mn007|well|F
+me013|oh.|S
+me006|oh conference call.|S
+me013|i'm sorry.|S
+me013|i know now i know what you're talking about.|S
+me013|no nobody's told me anything.|S
+mn007|all right.|S
+me018|oh this was the uh talk where they were supposed to try to decide|D
+mn007|to to decide what to do.|S
+mn007|yeah.|S
+fn002|yeah.|B
+me018|uh right.|B
+me013|yeah.|B
+me013|no that would have been a good thing to find out before this meeting.|S
+me013|that's|D
+me013|no i have no i have no idea.|S
+me013|um|F
+me013|uh|F
+me013|so|F
+me013|i mean let's let's assume for right now that we're just kind of plugging on ahead.|S
+mn007|yeah.|B
+me013|because even if they tell us that uh the rules are different uh we're still interested in doing what we're doing.|S
+me013|so what are you doing?|Q
+mn007|uhhuh.|B
+mn007|uh well we've a little bit worked on trying to see uh what were the bugs and the problem with the latencies.|S
+fn002|to improve.|S
+mn007|so|F
+mn007|we took first we took the l d a filters.|S
+mn007|and uh we designed new filters.|S
+mn007|using uh recursive filters actually.|S
+me013|so when you say we is that something sunil is doing?|Q
+me013|or is that|D
+mn007|i'm sorry?|Q
+me013|who is doing that?|Q
+mn007|uh us.|S
+me013|oh oh.|S
+mn007|yeah.|F
+me013|oh okay.|S
+fn002|but|D
+mn007|so we took the filters the fir filters and we designed uh i i r filters that have the same frequency response.|S
+me013|uhhuh.|B
+mn007|well similar but that have shorter delays.|S
+me013|uhhuh.|B
+mn007|so they had two filters.|S
+mn007|one for the low frequency bands.|S
+mn007|and another for the high frequency bands.|S
+mn007|and so we redesigned two filters.|S
+mn007|and the low frequency band has sixty four milliseconds of delay.|S
+mn007|and the high frequency band filter has something like eleven milliseconds compared to the two hundred milliseconds of the i i r filters.|S
+mn007|but it's not yet test.|S
+mn007|so we have the filters.|S
+mn007|but we still have to implement a routine that does recursive filtering.|S
+me013|okay.|B
+mn007|and|D
+me013|you you had a discussion with sunil about this though?|Q
+mn007|no.|S
+mn007|no.|D
+me013|uh huh.|S
+me013|yeah you should talk with him.|S
+mn007|yeah yeah.|S
+me013|yeah.|F
+me013|no i mean because the the the the whole problem that happened before was coordination.|S
+me013|right?|Q
+mn007|uhhuh.|B
+me013|so so you need to discuss with him what we're doing.|S
+mn007|yeah.|S
+me013|uh because they could be doing the same thing and or something.|S
+mn007|uhhuh.|B
+mn007|uh|F
+mn007|i|D
+mn007|yeah.|S
+mn007|i don't know if that's what they were trying to|D
+me013|right.|S
+mn007|they were trying to do something different like taking uh well using filter that takes only a past.|S
+mn007|and|D
+mn007|this is just a little bit different.|S
+mn007|but i i will send him an email and tell him exactly what we are doing.|S
+mn007|so|F
+me013|yeah.|S
+me013|yeah.|S
+me013|um|F
+me013|i mean|F
+mn007|um|F
+me013|we just we just have to be in contact more.|S
+me013|i think that the the fact that we we did that with had that thing with the latencies was indicative of the fact that there wasn't enough communication.|S
+mn007|uhhuh.|B
+me013|so|F
+me013|okay.|B
+mn007|all right.|S
+mn007|um|F
+mn007|yeah.|S
+mn007|well there is one um remark about these filters that they don't have a linear phase.|S
+mn007|so|F
+me013|right.|S
+mn007|well i don't know.|S
+mn007|perhaps it perhaps it doesn't hurt.|S
+mn007|because the phase is almost linear.|S
+mn007|but|D
+mn007|um|F
+mn007|and so yeah for the delay i gave you here it's it's uh computed on the five hertz modulation frequency.|S
+mn007|which is the huh well the most important for speech.|S
+mn007|so|F
+mn007|uh|F
+mn007|this is the first thing.|S
+fn002|the low|D
+me013|so that would be uh a reduction of a hundred and thirty six milliseconds.|S
+mn007|yeah.|S
+me013|which uh|D
+me013|what was the total we ended up with through the whole system?|Q
+mn007|three hundred and thirty.|S
+me013|so that would be within|D
+mn007|yeah.|S
+mn007|but there are other points actually.|S
+mn007|uh|F
+mn007|which will perhaps add some more delay.|S
+mn007|is that some other other stuff in the process were perhaps not very um well not very correct.|S
+mn007|like the downsampling which was simply dropping frames.|S
+me013|yeah.|B
+mn007|um|F
+mn007|so we will try also to add a nice downsampling.|S
+mn007|having a filter that that|D
+me013|uhhuh.|B
+mn007|well a low pass filter at at twenty five hertz.|S
+mn007|uh because when when we look at the l d a filters well they are basically low pass.|S
+mn007|but they leave a lot of what's above twenty five hertz.|S
+me013|yeah.|B
+mn007|um|F
+mn007|and so yeah.|F
+mn007|this will be another filter which would add ten milliseconds again.|S
+me013|yeah.|B
+mn007|um|F
+mn007|yeah.|S
+mn007|and then there's a third thing.|S
+mn007|is that um basically the way online normalization was done uh is just using this recursion on on the um um on the feature stream.|S
+me013|yeah.|B
+mn007|and but this is a filter.|S
+mn007|so it has also a delay.|S
+mn007|uh|F
+mn007|and when we look at this filter actually it has a delay of eighty five milliseconds.|S
+mn007|so if we|D
+me013|eighty five?|Q
+mn007|yeah.|S
+mn007|if we want to be very correct.|S
+mn007|so if we want to the estimation of the mean to to be well the right estimation of the mean we have to to take eighty five milliseconds in the future.|S
+mn007|huh|F
+me013|huh!|S
+me013|that's a little bit of a problem.|S
+mn007|yeah.|S
+mn007|um|F
+mn007|but well when we add up everything it's it will be all right.|S
+mn007|we would be at|D
+mn007|so sixty five plus ten plus for the downsampling.|S
+mn007|plus eighty five for the online normalization.|S
+mn007|so it's|D
+me013|uh|F
+me013|yeah but then there's|D
+mn007|plus plus eighty for the neural net and p c a.|S
+me013|oh.|S
+mn007|so it would be around two hundred and forty.|S
+mn007|so well|F
+me013|just just barely in there.|S
+mn007|plus plus the frames.|S
+mn007|but it's okay.|S
+me018|what's the allowable?|Q
+me013|two fifty.|S
+me013|unless they changed the rules.|S
+mn007|huh.|B
+me013|which there is there's some discussion of.|S
+me013|but|F
+me018|what were they thinking of changing it to?|Q
+mn007|yeah.|B
+me013|uh well the people who had very low latency want it to be low uh very very narrow uh latency bound.|S
+me013|and the people who have longer latency don't.|S
+me013|so|F
+me018|huh.|B
+mn007|so yeah.|B
+me013|unfortunately we're the main ones with long latency.|S
+me013|but|F
+me018|uh.|S
+me013|but uh|F
+me013|you know it's|D
+mn007|yeah.|F
+mn007|and basically the best proposal had something like thirty or forty milliseconds of latency.|S
+me013|yeah.|S
+mn007|so|F
+mn007|well.|F
+me013|yeah.|S
+me013|so they were basically|D
+me013|i mean|F
+me013|they were more or less trading computation for performance.|S
+me013|and we were uh trading latency for performance.|S
+me013|and they were dealing with noise explicitly and we weren't.|S
+me013|and so i think of it as complementary.|S
+me013|that if we can put the|D
+me018|think of it as what?|Q
+me013|complementary.|S
+me018|huh.|B
+me013|i think the best systems|D
+me013|so uh everything that we did in a way it was it was just adamantly insisting on going in with a brain damaged system.|S
+me013|which is something actually we've done a lot over the last thirteen years.|S
+me013|uh which is we say well this is the way we should do it.|S
+me013|and then we do it.|S
+me013|and then someone else does something that's straight forward.|S
+me013|so this was a test that largely had additive noise.|S
+me013|and we did we did absolutely nothing explicitly to handle additive noise.|S
+me018|right.|S
+me013|we just uh you know trained up systems to be more discriminant.|S
+me013|and uh we did this uh rasta like filtering.|S
+me013|which was done in the log domain.|S
+me013|and was tending to handle convolutional noise.|S
+me013|we did we actually did nothing about additive noise.|S
+me013|so um|F
+me013|the uh spectral subtraction schemes a couple places did seem seem to do a nice job.|S
+me013|and so|F
+me013|uh|F
+me013|we're talking about putting putting some of that in while still keeping some of our stuff.|S
+me013|i think you should be able to end up with a system that's better than both.|S
+me013|but clearly the way that we're operating for this other stuff does involved some latency to to get rid of most of that latency.|S
+me013|to get down to forty or fifty milliseconds we'd have to throw out most of what we're doing.|S
+me013|and and uh i don't think there's any good reason for it in the application actually.|S
+me013|i mean you're you're you're speaking to a recognizer on a remote server.|S
+me013|and uh having a a a quarter second for some processing to clean it up it doesn't seem like it's that big a deal.|S
+me018|uhhuh.|B
+me013|these aren't large vocabulary things.|S
+me013|so the decoder shouldn't take a really long time and.|S
+me013|so|F
+me018|and i don't think anybody's going to notice the difference between a quarter of a second of latency and thirty milliseconds of latency.|S
+me013|no.|S
+me013|what what does was your experience when you were doing this stuff with uh the the the surgical uh uh microscopes and so forth?|Q
+me013|um how long was it from when somebody uh finished an utterance to when uh something started happening?|Q
+me018|um we had a silence detector.|S
+me018|so|F
+me018|we would look for the end of an utterance based on the silence detector.|S
+me013|uhhuh.|B
+me018|and i i can't remember now off the top of my head how many frames of silence we had to detect before we would declare it to be the end of an utterance.|S
+me013|uhhuh.|B
+me013|uhhuh.|B
+me018|um|F
+me018|but it was|D
+me018|uh|F
+me018|i would say it was probably around the order of two hundred and fifty milliseconds.|S
+me013|yeah.|S
+me013|and that's when you'd start doing things.|S
+me018|yeah.|S
+me018|we did the back trace at that point.|S
+me013|yeah.|S
+me018|to get the answer.|S
+me013|of course that didn't take too long at that point.|S
+me018|no.|S
+me018|no it was pretty quick.|S
+me013|yeah.|S
+me013|yeah.|S
+me018|so|F
+me013|so you you so you had a|D
+me013|so you had a a quarter second delay before uh plus some little processing time.|S
+me018|this|D
+me018|right.|S
+me013|and then the the microscope would start moving or something.|S
+me018|right.|S
+me013|yeah.|F
+me018|right.|B
+me013|and there's physical inertia there.|S
+me013|so probably the the motion itself was all|D
+me018|and it felt to uh the users that it was instantaneous.|S
+me018|i mean as fast as talking to a person.|S
+me018|it i don't think anybody ever complained about the delay.|S
+me013|yeah.|S
+me013|so you would think as long as it's under half a second or something.|S
+me018|yeah.|S
+me013|uh i'm not an expert on that.|S
+me013|but|F
+me018|yeah.|B
+me018|i don't remember the exact numbers.|S
+me018|but|D
+me013|yeah.|S
+me018|it was something like that.|S
+me018|i don't think you can really tell.|S
+me018|a person i don't think a person can tell the difference between uh you know a quarter of a second and a hundred milliseconds.|S
+me018|and|D
+me013|yeah.|B
+me018|i'm not even sure if we can tell the difference between a quarter of a second and half a second.|S
+me013|yeah.|B
+me018|i mean it just it feels so quick.|S
+me013|i mean basically if you yeah if you said uh um what's the uh uh what's the shortest route to the opera.|S
+me013|and it took half a second to get back to you.|S
+me018|yeah.|S
+me013|i mean it would be|D
+me013|i mean it might even be too abrupt.|S
+me013|you might have to put in a a a delay.|S
+me018|yeah.|B
+me018|i mean it may feel different than talking to a person.|S
+me013|yeah.|F
+me018|because when we talk to each other we tend to step on each other's utterances.|S
+me018|so like if i'm asking you a question you may start answering before i'm even done.|S
+me013|yeah.|S
+me018|so it it would probably feel different.|S
+me013|right.|B
+me018|but i don't think it would feel slow.|S
+me013|right.|B
+me013|well anyway|F
+me013|i mean i think|D
+me013|we could cut we know what else we could cut down on the neural net time.|S
+me013|by by uh playing around a little bit.|S
+me013|going more into the past.|S
+me013|or something like that.|S
+me013|we we talked about that.|S
+me018|so is the latency from the neural net caused by how far ahead you're looking?|Q
+me013|uhhuh.|S
+mn007|uhhuh.|B
+me013|and there's also|D
+me013|well there's the neural net and there's also this uh uh multi frame uh uh k l t.|S
+me018|wasn't there|D
+me018|was it in the uh recurrent neural nets where they weren't looking ahead at all?|Q
+me013|they weren't looking ahead much.|S
+me013|they they looked ahead a little bit.|S
+me018|a little bit.|S
+me018|okay.|S
+me013|yeah.|B
+me013|yeah.|F
+me013|i mean you could do this with a recurrent net.|S
+me013|and and then|D
+me013|but you also could just um|D
+me013|i mean we haven't experimented with this.|S
+me013|but i imagine you could um uh predict a uh um a label uh from more in the past than in than than in the future.|S
+me013|i mean we've we've done some stuff with that before.|S
+me013|i think it it works okay.|S
+mn007|uhhuh.|B
+me013|so|F
+me018|we've always had usually we used the symmetric windows.|S
+me018|but|F
+me013|yeah.|S
+me018|i don't think|D
+me013|but we've but we played a little bit with with asymmetric guys.|S
+me018|yeah.|B
+me013|you can do it.|S
+me013|so|F
+me013|so that's what that's what you're busy with.|S
+me013|messing around with this.|S
+mn007|uh yeah.|S
+me013|yeah.|F
+me013|and uh|F
+fn002|also we were thinking to to uh apply the uh spectral subtraction from ericsson.|S
+mn007|yeah.|B
+me013|uhhuh.|B
+fn002|and to to change the contextual k l t for l d a.|S
+me018|change the what?|Q
+fn002|the contextual k l t.|S
+me018|i'm missing that last word.|S
+me013|k k l t.|S
+me006|oh k l t.|S
+fn002|k l t.|S
+me018|k l t.|S
+me018|oh k l t.|S
+me013|uhhuh.|B
+fn002|k l t.|S
+me018|uhhuh.|S
+fn002|i'm sorry.|S
+fn002|uh to change and use l d a discriminative.|S
+mn007|yeah.|B
+fn002|but|F
+me013|uh huh.|B
+fn002|i don't know.|F
+me013|uh|F
+me018|what is the advantage of that?|Q
+fn002|uh|F
+mn007|well it's that by for the moment we have uh something that's discriminant and nonlinear.|S
+mn007|and the other is linear but it's not discriminant at all.|S
+mn007|well it's it's a linear transformation that|D
+mn007|uh|F
+me013|so at least just to understand maybe what the difference was between how much you were getting from just putting the frames together and how much you're getting from the discriminative.|S
+me013|what the nonlinearity does for you or doesn't do for you.|S
+me013|just to understand it a little better i guess.|S
+mn007|huh.|B
+mn007|well|F
+mn007|uh|F
+mn007|yeah.|F
+mn007|actually what we want to do perhaps it's to replace to to have something that's discriminant but linear also.|S
+mn007|and to see if it if it improves over over the non discriminant linear transformation.|S
+mn007|and if the neural net is better than this.|S
+me018|huh.|B
+mn007|or well|F
+me013|yeah well that's what i meant is to see whether whether it having the neural net really buys you anything.|S
+mn007|so|F
+mn007|huh.|B
+me013|uh i mean it did look like it buys you something over just the k l t.|S
+mn007|yeah.|S
+me013|but maybe it's just the discrimination.|S
+me013|and and maybe yeah maybe the nonlinear discrimination isn't necessary.|S
+fn002|maybe.|S
+mn007|yeah.|B
+mn007|uhhuh.|B
+fn002|maybe.|S
+me013|could be.|S
+me013|good good to know.|S
+me013|but the other part you were saying was the spectral subtraction.|S
+me013|so you just kind of uh|D
+mn007|yeah.|B
+me013|at what stage do you do that?|Q
+me013|do you you're doing that|D
+me013|um|F
+mn007|so it would be on the|D
+mn007|um|F
+fn002|we was|D
+mn007|on on the mel frequency bands.|S
+mn007|so yeah.|F
+fn002|yeah.|S
+fn002|we no nnn|D
+mn007|before everything.|S
+me013|okay.|S
+me013|so just do that on the mel|D
+fn002|we we was thinking to do before after v a d.|S
+fn002|oh we don't know exactly when it's better.|S
+mn007|yeah.|S
+mn007|um|F
+fn002|before after v a d.|S
+fn002|or|D
+fn002|and then|D
+me013|so so you know that that that the way that they're|D
+mn007|um.|D
+me013|uh one thing that would be no good to find out about from this conference call is that what they were talking about what they're proposing doing was having a third party um run a good v a d and and determine boundaries.|S
+fn002|yeah.|B
+me013|and then given those boundaries then have everybody do the recognition.|S
+fn002|begin to work.|S
+me013|the reason for that was that um uh if one one group put in the v a d and another didn't.|S
+me013|uh or one had a better v a d than the other.|S
+me013|since that they're not viewing that as being part of the the task.|S
+me013|and that any any manufacturer would put a bunch of effort into having some kind of good speech silence detection.|S
+me013|it still wouldn't be perfect.|S
+me013|but i mean|F
+me013|the argument was let's not have that be part of this test.|S
+me013|let's let's separate that out.|S
+me013|and so|D
+me013|uh i guess they argued about that yesterday.|S
+me013|and|D
+me013|yeah i'm sorry.|S
+me013|i don't don't know the answer.|S
+me013|but we should find out.|S
+me013|i'm sure we'll find out soon.|S
+me013|what they uh what they decided.|S
+me013|so uh|F
+me013|yeah so there's the question of the v a d.|S
+me013|but otherwise it's it's on the the uh the mel filter bank uh energies i guess.|S
+fn002|uhhuh.|B
+me013|you do doing the|D
+mn007|huh yeah.|S
+fn002|uhhuh.|S
+me013|and you're you're subtracting in the in the in the i guess it's power power domain.|S
+me013|uh or or magnitude domain.|S
+me013|probably power domain right?|S
+me013|why|D
+mn007|i guess it's power domain yeah.|S
+mn007|i don't remember exactly.|S
+fn002|i don't remember.|S
+me013|yeah.|B
+mn007|but|D
+mn007|yeah.|S
+mn007|so it's before everything else.|S
+me013|yep.|B
+mn007|and|F
+me013|i mean if you look at the theory it's it should be in the power domain.|S
+me013|but but uh i've seen implementations where people do it in the magnitude domain.|S
+mn007|yeah.|B
+me013|and|D
+mn007|huh.|B
+me013|i have asked people why.|S
+me013|and they shrug their shoulders and say oh it works.|S
+me013|so|F
+mn007|yeah.|B
+me013|uh|F
+me013|and there's this|D
+me013|i guess there's this mysterious|D
+me013|i mean people who do this a lot i guess have developed little tricks of the trade.|S
+me013|i mean there's there's this um|D
+me013|you don't just subtract the the estimate of the noise spectrum.|S
+me013|you subtract that times|D
+mn007|a little bit more.|S
+mn007|and|F
+me013|or or less.|S
+mn007|yeah.|B
+me013|or|F
+me018|really?|Q
+mn007|yeah.|B
+me018|huh!|S
+me013|yeah.|F
+mn007|and generated this this|D
+me013|uh.|F
+mn007|um|F
+mn007|so you have the estimation of the power spectra of the noise.|S
+mn007|and you multiply this by a factor which is dependent on the s n r.|S
+fn002|huh maybe.|S
+mn007|so well.|F
+me018|huh!|S
+mn007|when the speech when the signal level is more important compared to this noise level the coefficient is small and around one.|S
+mn007|but when the power the signal level is uh small compared to the noise level the coefficient is more important.|S
+mn007|and this reduce actually the musical noise.|S
+mn007|uh|F
+me018|oh!|S
+mn007|which is more important during silence portions.|S
+mn007|when the the energy's small.|S
+me018|uhhuh.|S
+me018|huh!|S
+mn007|so there are tricks like this.|S
+mn007|but huh|F
+me018|huh!|S
+me013|yeah.|B
+me013|so|B
+mn007|yeah.|F
+me018|is the estimate of the noise spectrum a running estimate?|Q
+mn007|yeah.|S
+me013|yeah.|S
+me018|or|D
+mn007|yeah.|S
+me013|well that's i mean that's what differs from different different tasks and different uh spectral subtraction methods.|S
+me013|i mean if if you have uh fair assurance that uh the noise is is quite stationary then the smartest thing to do is use as much data as possible to estimate the noise.|S
+me018|huh!|B
+me013|get a much better estimate and subtract it off.|S
+me018|uhhuh.|B
+me013|but if it's varying at all which is going to be the case for almost any real situation you have to do it online uh with some forgetting factor or something.|S
+me018|so do you is there some long window that extends into the past over which you calculate the average?|Q
+me013|well there's a lot of different ways of computing the noise spectrum.|S
+me013|so one of the things that uh hans guenter hirsch did uh and and other people|D
+me013|actually he's he wasn't the only one i guess.|S
+me013|was to uh take some period of of of speech and in each band uh develop a histogram.|S
+me013|so to get a decent histogram of these energies takes at least a few seconds really.|S
+me013|but uh i mean you can do it with a smaller amount.|S
+me013|but it's pretty rough.|S
+me013|and um in fact i think the nist standard method of determining signal to noise ratio is based on this.|S
+me013|so|D
+me018|a couple seconds?|Q
+me013|no no.|S
+me013|it's based on this kind of method.|S
+me013|this histogram method.|S
+me018|huh.|B
+me013|so you have a histogram.|S
+me013|now if you have signal and you have noise you basically have these two bumps in the histogram.|S
+me013|which you could approximate as two gaussians.|S
+me018|but don't they overlap sometimes?|Q
+me013|oh yeah.|S
+me018|okay.|S
+me013|so you have a mixture of two gaussians.|S
+me018|yeah.|S
+me013|right?|Q
+me013|and you can use e m to figure out what it is you know.|S
+me018|yeah.|B
+me013|so so basically now you have this mixture of two gaussians.|S
+me013|you you know what they are.|S
+me013|and uh|D
+me013|i mean sorry.|S
+me013|you estimate what they are.|S
+me013|and uh|F
+me013|so this gives you what the signal is and what the noise energy is in that band in the spectrum.|S
+me013|and then you look over the whole thing.|S
+me013|and now you have a noise spectrum.|S
+me013|so uh hans guenter hirsch and others have used that kind of method.|S
+me013|and the other thing to do is which is sort of more trivial and obvious is to uh uh determine through magical means that that uh there's no speech in some period.|S
+me013|and then see what the spectrum is.|S
+me018|uhhuh.|B
+me013|uh|F
+me013|but|D
+me013|you know it's that that that's tricky to do.|S
+me013|it has mistakes.|S
+me013|uh and if you've got enough time uh this other method appears to be somewhat more reliable.|S
+me013|uh a variant on that for just determining signal to noise ratio is to just uh you can do a a uh an iterative thing e.m. like thing to determine means only.|S
+me013|i guess it is e m still.|S
+me013|but just just determine the means only.|S
+me013|don't worry about the variances.|S
+me018|uhhuh.|B
+me013|and then you just use those mean values as being the the uh uh signal to noise ratio in that band.|S
+me018|but what is the|D
+me018|it seems like this kind of thing could add to the latency.|S
+me018|i mean depending on where the window was that you used to calculate the signal to noise ratio.|S
+mn007|yeah.|S
+mn007|sure.|S
+mn007|but|D
+mn007|huh|F
+me013|not necessarily.|S
+me013|because if you don't look into the future.|S
+me013|right?|Q
+me018|okay.|S
+me018|well that i guess that was my question.|S
+me013|if you just|D
+me013|yeah.|S
+me013|i mean if you just|D
+me018|yeah.|F
+me013|if you|D
+me013|you uh|D
+me013|at the beginning you have some|D
+me018|guess.|S
+me013|some guess.|S
+me013|and and uh uh|F
+mn007|yeah but it|D
+me013|it's an interesting question.|S
+me013|i wonder how they did do it.|S
+mn007|actually it's a huh if you want to have a good estimation on non stationary noise you have to look in the in the future.|S
+mn007|i mean so if you take your window and build your histogram in this window um what you can expect is to have an estimation of of the noise in in the middle of the window.|F
+mn007|not at the end.|S
+mn007|so|F
+fn002|uhhuh.|B
+me013|well yeah.|S
+me013|but what does what what what does alcatel do?|Q
+mn007|the but but people|D
+me013|and and france telecom?|Q
+mn007|they just look in the past.|S
+mn007|i guess it works because the noise are uh uh almost stationary.|S
+me013|pretty stationary.|S
+me006|pretty stationary.|S
+mn007|but|F
+me006|yeah.|B
+mn007|um|F
+me013|well the thing|D
+me013|yeah i mean you're talking about non stationary noise.|S
+me013|but i think that spectral subtraction is rarely is is not going to work really well for for non stationary noise.|S
+mn007|well if if you have a good estimation of the noise.|S
+me013|you know?|Q
+mn007|yeah.|S
+mn007|because|D
+mn007|well.|F
+mn007|it has to work.|S
+me013|but it's hard to|D
+me013|but that's hard to do.|S
+mn007|yeah.|S
+mn007|that's hard to do.|S
+mn007|yeah.|S
+me013|yeah.|S
+me013|so so i think that that what what is what's more common is that you're going to be helped with slowly varying or stationary noise.|S
+mn007|but|F
+mn007|uhhuh.|B
+me013|that's what spectral subtraction will help with practically speaking.|S
+mn007|uhhuh.|B
+mn007|uhhuh.|B
+me013|if it varies a lot to get if if to get a good estimate you need a few seconds of speech.|S
+me013|even if it's centered.|S
+me013|right?|Q
+me013|if you need a few seconds to get a decent estimate but it's changed a lot in a few seconds then it you know it's kind of a problem.|S
+mn007|uhhuh.|B
+mn007|yeah.|B
+me013|i mean imagine five hertz is the middle of the of the speech modulation spectrum.|S
+mn007|huh.|B
+me013|right?|Q
+me013|so imagine a jack hammer going at five hertz.|S
+mn007|yeah.|S
+me013|i mean good good luck.|S
+mn007|that's|D
+me013|so|F
+mn007|so in this case yeah sure you cannot|D
+me013|yeah.|S
+mn007|but i think um hirsch does experiment with windows of like between five hundred milliseconds and one second.|S
+mn007|and|F
+mn007|well five hundred was not so bad.|S
+mn007|i mean|F
+mn007|and he worked on non stationary noises.|S
+mn007|like noise modulated with well with amplitude modulations.|S
+mn007|and|F
+mn007|things like that.|S
+mn007|and|F
+me018|were his uh windows centered around the|D
+mn007|but|F
+mn007|um|F
+mn007|yeah.|S
+mn007|well.|F
+mn007|i think|D
+mn007|yeah.|S
+mn007|well in in the paper he showed that actually the estimation of the noise is is delayed.|S
+mn007|well it's there is|D
+mn007|you you have to center the window.|S
+mn007|yeah.|S
+me013|yeah.|B
+mn007|huh.|F
+me013|no i understand it's better to do.|S
+me013|but i just think that that uh for real noises what what's most likely to happen is that there'll be some things that are relatively stationary.|S
+mn007|huh .|B
+me013|where you can use one or another spectral subtraction thing.|S
+me013|and other things where it's not so stationary.|S
+mn007|yeah.|B
+me013|and|D
+me013|i mean you can always pick something that that falls between your methods.|S
+me013|uh|F
+mn007|huh.|B
+me013|uh|F
+me013|but i don't know if you know if sinusoidally uh amplitude modulated noise is is sort of a big problem in in in practice.|S
+me013|i think that it's uh|D
+mn007|yeah.|B
+me018|we could probably get a really good estimate of the noise if we just went to the noise files.|S
+me018|and built the averages from them.|S
+me013|yeah.|S
+me013|well.|F
+mn007|what|D
+mn007|what do you mean?|Q
+me013|just cheat.|S
+me013|you're saying cheat.|S
+mn007|but if the if the noise is stationary perhaps you don't even need some kind of noise estimation algorithm.|S
+me013|yeah.|B
+me013|yeah.|B
+mn007|we just take the beginning of the utterance.|S
+mn007|and|F
+me013|oh yeah.|S
+me013|sure.|S
+fn002|it's the same.|S
+mn007|i know i don't know if people tried this for aurora.|S
+mn007|well everybody seems to use some kind of adaptive well scheme.|S
+fn002|yeah.|B
+me013|but but|F
+fn002|a dictionary.|S
+mn007|but|D
+me013|you know stationary|D
+mn007|is it very useful.|S
+me018|very slow adaptation.|S
+mn007|and is the|D
+me013|right.|S
+me013|the word stationary is has a very precise statistical meaning.|S
+me013|but you know in in signal processing really what we're talking about i think is things that change slowly uh compared with our our processing techniques.|S
+me013|so if you're driving along in a car i i would think that most of the time the nature of the noise is going to change relatively slowly .|S
+mn007|uhhuh.|B
+me013|it's not going to stay absolute the same.|S
+me013|if you if you check it out uh five minutes later you may be in a different part of the road.|S
+me013|or whatever.|S
+mn007|uhhuh.|B
+me013|but it's it's|D
+me013|using the local characteristics in time is probably going to work pretty well.|S
+mn007|uhhuh.|B
+me013|but you could get hurt a lot if you just took something from the beginning of all the speech of you know an hour of speech.|S
+me013|and then later|D
+mn007|yeah.|B
+me013|uh so they may be you know may be overly uh complicated for for this test.|S
+me013|but|D
+me013|but but uh|F
+me013|i don't know.|S
+me013|but what you're saying you know makes sense though.|S
+me013|i mean if possible you shouldn't you should you should make it uh the center of the center of the window.|S
+me013|but|D
+me013|uh we're already having problems with these delay uh delay issues.|S
+mn007|yeah so.|B
+me013|so|F
+me013|uh we'll have to figure ways without it.|S
+me013|um|F
+me018|if they're going to provide a uh voice activity detector that will tell you the boundaries of the speech then couldn't you just go outside those boundaries and do your estimate there?|Q
+me013|oh yeah.|S
+me013|you bet.|S
+me013|yeah.|S
+me013|so i i imagine that's what they're doing.|S
+me013|right?|Q
+me013|is they're|D
+me013|they're probably looking in nonspeech sections.|S
+me013|and getting some uh|D
+mn007|yeah.|S
+mn007|they have some kind of threshold on on the previous estimate.|S
+mn007|and|F
+mn007|so|F
+mn007|yeah.|F
+mn007|i think yeah i think ericsson used this kind of threshold yeah.|S
+mn007|so they they have an estimate of the noise level.|S
+mn007|and they put a threshold like six or ten d b above.|S
+mn007|and|F
+mn007|what's under this threshold is used to update the estimate.|S
+mn007|is is that right?|Q
+fn002|yeah.|B
+mn007|or|D
+fn002|i think so.|S
+fn002|i have not here the proposal.|S
+mn007|so it's it's|D
+mn007|yeah.|F
+me013|does france telecom do this?|Q
+mn007|it's like saying what's under the threshold is silence.|S
+mn007|and|F
+me006|huh.|B
+me013|does france telecom do do the same thing?|Q
+me013|more or less?|Q
+mn007|i i|D
+mn007|you know perhaps?|Q
+fn002|no.|S
+fn002|i i have not here the proposal.|S
+me013|okay.|S
+me013|um|F
+me013|okay.|S
+me013|if we're we're done done with that|D
+me013|uh|F
+me013|let's see.|S
+me013|uh maybe we can talk about a couple other things briefly.|S
+me013|just uh things that that we've been chatting about.|S
+me013|but haven't made it into these meetings yet.|S
+me013|so you're coming up with your quals proposal.|S
+me013|and uh want to just give a two three minute summary of what you're planning on doing?|Q
+me006|oh.|S
+me006|um|F
+me006|two three.|S
+me006|it can be shorter than that.|S
+me006|um|F
+me013|yeah.|S
+me006|well i've i've talked to some of you already.|S
+me006|um but i'm uh looking into extending the work done by larry saul and john allen and uh mazin rahim.|S
+me006|um they they have a system that's uh a multi band um system.|S
+me006|but their multi band is is a little different than the way that we've been doing multi band in the past.|S
+me006|where um where we've been uh taking um sub band features and training up these neural nets and on on phonetic targets.|S
+me006|and then combining them somehow down the line.|S
+me006|um|F
+me006|they're they're taking sub band features and um training up a detector that detects for um these phonetic features.|S
+me006|for example um he presents um uh a detector to detect sonorance.|S
+me006|and so what what it basically is is um it's there's|D
+me006|at the lowest level there it's it's an or i mean it's an and gate.|S
+me006|so uh on each sub band you have several independent tests.|S
+me006|to test whether um there's the existence of sonorance in a sub band.|S
+me006|and then um it it's combined by a soft and gate.|S
+me006|and at the at the higher level|D
+me006|for every if|D
+me006|um|F
+me006|the higher level there's a soft or gate.|S
+me006|uh so if if this detector detects um the presence of of sonorance in any of the sub bands then the uh the or gate at the top says okay well this frame has evidence of sonorance.|S
+me006|and these are all|D
+me018|what are what are some of the low level detectors that they use?|Q
+me006|oh okay.|S
+me006|well the low level detectors are logistic regressions.|S
+me006|um|F
+me006|and|D
+me006|the uh|F
+me006|the one|D
+me013|so that by the way basically is a is one of the units in our in our our neural network.|S
+me013|so that's all it is.|S
+me013|it's a it's a sigmoid.|S
+me006|yeah.|S
+me013|uh with weighted sum at the input.|S
+me018|huh.|B
+me006|right.|B
+me013|which you train by gradient descent.|S
+me006|yeah.|S
+me006|so he uses um an e m algorithm to to um train up these um parameters for the logistic regression.|S
+me006|the|D
+me013|well actually|F
+me013|yeah.|F
+me013|so i was using e m to get the targets.|S
+me013|so so you have this this this and gate what we were calling an and gate but it's a product product rule thing at the output.|S
+me013|and then he uses uh and then feeding into that are|D
+me013|i'm sorry.|S
+me013|there's it's an or at the output isn't it?|S
+me013|yeah.|S
+me006|uhhuh.|S
+me013|so that's the product.|S
+me013|and then|D
+me013|um|F
+me013|then he has each of these and things.|S
+me013|and|F
+me013|um|F
+me013|but|D
+me013|so they're little neural neural units.|S
+me013|um|F
+me013|and um|F
+me013|they have to have targets.|S
+me013|and so the targets come from e m.|S
+me018|and so are each of these low level detectors are they|D
+me018|uh|F
+me018|are these something that you decide ahead of time?|Q
+me018|like i'm going to look for this particular feature?|Q
+me018|or i'm going to look at this frequency?|Q
+me018|or|D
+me018|what what what are they looking at?|Q
+me006|um|F
+me018|what are their inputs?|Q
+me006|right.|S
+me006|so the|D
+me006|okay.|S
+me006|so at for each sub band there are basically uh several measures of s n r and and correlation.|S
+me018|uh.|S
+me018|okay.|S
+me006|um|F
+me018|okay.|S
+me006|um and he said there's like twenty of these per per sub band.|S
+me006|um|F
+me006|and for for every every sub band you you just pick ahead of time um i'm going to have like five independent logistic tests.|S
+me018|uhhuh.|B
+me006|and you initialize these parameters um in some some way.|S
+me006|and use e m to come up with your training targets for a for the the low level detectors.|S
+me018|uhhuh.|B
+me006|and then once you get that done you you you train the whole whole thing on maximum likelihood.|S
+me006|um|F
+me006|and he shows that using this this method to detect sonorance is it's very robust compared to um to typical uh full band gaussian mixtures um estimations of of sonorance.|S
+me018|uhhuh.|B
+me018|uhhuh.|B
+me006|and uh|F
+me006|so|F
+me006|so that's just that's just one detector.|S
+me006|so you can imagine building many of these detectors on different features.|S
+me006|you get enough of these detectors together um then you have enough information to do um higher level discrimination.|S
+me006|for example discriminating between phones.|S
+me018|uhhuh.|B
+me006|and then you keep working your way up until you you build a full recognizer.|S
+me018|uhhuh.|B
+me006|so um that's that's the direction which i'm i'm thinking about going in my quals.|S
+me018|cool.|S
+me013|you know it has a number of properties that i really liked.|S
+me013|i mean one is the going towards um using narrow band information for uh phonetic features of some sort.|S
+me013|rather than just uh immediately going for the the typical sound units.|S
+me018|right.|S
+me013|another thing i like about it is that you this thing is going to be trained explicitly trained for a product of errors rule.|S
+me013|which is what uh allen keeps pointing out that fletcher observed in the twenties.|S
+me018|uhhuh.|B
+me013|uh for people listening to narrow band stuff that's friday's talk by the way.|S
+me013|and then um|F
+me013|uh the third thing i like about it is|D
+me013|uh and we've played around with this in a different kind of way a little bit.|S
+me013|but it hasn't been our dominant way of of operating anything.|S
+me013|um this issue of where the targets come from.|S
+me013|so in our case when we've been training it multi band things the way we get the targets for the individual bands is uh that we get the phonetic label for the sound there.|S
+me018|uhhuh.|B
+me013|and we say okay we train every|D
+me013|what this is saying is okay that's maybe what our ultimate goal is.|S
+me013|or not ultimate but penultimate goal is getting these these small sound units.|S
+me013|but but um|F
+me013|along the way how much should we uh|D
+me013|uh what should we be training these intermediate things for?|Q
+me013|i mean because uh we don't know uh that this is a particularly good feature.|S
+me013|i mean there's no way uh|D
+me013|someone in the audience yesterday was asking well couldn't you have people go through and mark the individual bands and say where the where it was sonorant or not.|S
+me018|uhhuh.|B
+me013|but you know i think having a bunch of people listening to critical band wide uh chunks of speech trying to determine whether i think it'd be impossible.|S
+me006|ouch.|S
+me013|it's all going to sound like like sine waves to you more or less.|S
+me018|uhhuh.|B
+me013|i mean|D
+me013|well|D
+me013|i mean it's all|D
+me013|narrow band.|S
+me013|uh|F
+me013|i i think it's very hard for someone to to a person to make that determination.|S
+me013|so um|F
+me013|um we don't really know how those should be labeled.|S
+me013|it could be that you should um not be paying that much attention to uh certain bands for certain sounds uh in order to get the best result.|S
+me018|uhhuh.|B
+me013|so um what we have been doing there just sort of mixing it all together is certainly much much cruder than that.|S
+me013|we trained these things up on the on the the final label.|S
+me013|now we have i guess done experiments.|S
+me013|you've probably done stuff where you have um done separate uh viterbis on the different|D
+me006|yeah.|S
+me006|forced alignment on the sub band labels.|S
+me013|yeah.|S
+me006|yeah.|S
+me013|you've done that.|S
+me013|did did that help at all?|Q
+me006|um it helps for one or one iteration.|S
+me006|but um anything after that it doesn't help.|S
+me013|so so that may or may it that aspect of what he's doing may or may not be helpful.|S
+me013|because in a sense that's the same sort of thing you're taking global information and determining what you how you should|D
+me013|but this is this is uh i i think a little more direct.|S
+me018|how did they measure the performance of their detector?|Q
+me013|and|D
+me013|well he's he's just actually looking at uh the confusions between sonorant and non sonorant.|S
+me018|uhhuh.|B
+me013|so he hasn't applied it to recognition.|S
+me013|or if he did he didn't talk about it.|S
+me013|it's it's just|D
+me013|and one of the concerns in the audience actually was that that um the uh|D
+me013|uh he he did a comparison to uh you know our old foil.|S
+me013|the the nasty old standard recognizer with mel mel filter bank at the front and h m ms and and so forth.|S
+me013|and um it didn't do nearly as well.|S
+me013|especially in in noise.|S
+me013|but the|D
+me013|one of the good questions in the audience was well yeah but that wasn't trained for that.|S
+me013|i mean this use of a very smooth uh spectral envelope is something that you know has evolved as being generally a good thing for speech recognition.|S
+me013|but if you knew that what you were going to do is detect sonorants or not|D
+me013|so sonorants and non sonorants is is is almost like voiced unvoiced except i guess that the voiced stops are are also called obstruents.|S
+me013|uh|F
+me013|so it's|D
+me013|it's uh but with the exception of the stops i guess it's pretty much the same as voiced unvoiced.|S
+me013|right?|Q
+me018|uhhuh.|S
+me013|so so|F
+me013|um|F
+me013|so um|F
+me013|if you knew you were doing that|D
+me013|if you were doing something say for a a uh a a vocoder you wouldn't use the same kind of features.|S
+me013|you would use something that was sensitive to the periodicity and and not just the envelope.|S
+me013|uh and so in that sense it was an unfair test.|S
+me013|um|F
+me013|so i think that the questioner was right.|S
+me013|it it was in that sense an unfair test.|S
+me013|nonetheless it was one that was interesting because uh this is what we are actually using for speech recognition.|S
+me013|these smooth envelopes.|S
+me013|and this says that perhaps even you know trying to use them in the best way that we can that that that we ordinarily do with you know gaussian mixtures and h m ms and so forth you you don't uh actually do that well on determining whether something is sonorant or not.|S
+me018|didn't they|D
+me013|which means you're going to make errors between similar sounds that are sonorant or obstruent.|S
+me018|didn't they also do some kind of an oracle experiment?|Q
+me018|where they said if we could detect the sonorants perfectly and then show how it would improve speech recognition?|Q
+me018|i thought i remember hearing about an experiment like that.|S
+me013|these same people?|Q
+me018|uhhuh.|S
+me013|i don't remember that.|S
+me018|huh.|B
+me013|that would that's|D
+me013|you're right.|S
+me013|that's exactly the question to follow up this discussion is.|S
+me013|suppose you did that uh got that right.|S
+me013|um|F
+me013|yeah.|F
+me018|huh.|B
+mn007|what could be the other low level detectors i mean for other kind of features?|Q
+mn007|or|F
+mn007|in addition to detecting sonorants.|S
+mn007|or|F
+me006|um|F
+mn007|that's what you want to to to go for also?|Q
+me006|what|D
+mn007|or|D
+me006|oh build other other detectors on different phonetic features?|Q
+mn007|other low level detectors?|Q
+mn007|yeah.|S
+me006|um|F
+me006|uh let's see.|S
+me006|um|F
+me006|yeah.|S
+me006|i i don't know.|S
+me006|um|F
+me006|um|F
+me006|i mean easiest thing would be to go go do some voicing stuff.|S
+me006|but that's very similar to sonorance.|S
+mn007|uhhuh.|B
+me006|um|F
+me018|when we when we talked with john ohala the other day we made a list of some of the things that|D
+me006|yeah.|B
+me006|oh okay.|S
+me018|like frication.|S
+me006|uhhuh.|B
+me018|abrupt closure.|S
+me006|uhhuh.|B
+me018|r coloring.|S
+me018|nasality.|S
+me018|voicing.|S
+me013|yeah.|F
+me013|so there's a half dozen like that that are|D
+me018|uh.|F
+me006|yeah.|S
+me006|nasality.|S
+me013|now this was coming at it from a different angle.|S
+me013|but maybe it's a good way to start.|S
+me013|uh these are things which uh john felt that a a uh a human annotator would be able to reliably mark.|S
+me006|oh okay.|S
+me013|so the sort of things he felt would be difficult for a human annotator to reliably mark would be tongue position kinds of things.|S
+me006|placing stuff.|S
+me018|uhhuh.|B
+me013|yeah.|S
+me006|yeah.|S
+me013|uh|F
+me018|there's also things like stress.|S
+me018|you can look at stress.|S
+me006|uhhuh.|B
+me013|but stress doesn't uh fit in this thing of coming up with features that will distinguish words from one another.|S
+me013|right?|Q
+me013|it's a it's a good thing to mark.|S
+me013|and will probably help us ultimate with recognition.|S
+me018|yeah.|S
+me018|there's a few cases where it can like permit and permit.|S
+me013|but|D
+me018|but that's not very common in english.|S
+me018|in other languages it's more uh important.|S
+me013|well yeah.|S
+me013|but either case you'd write p e r m i t.|S
+me013|right?|Q
+me013|so you'd get the word right.|S
+me018|no i'm saying i thought you were saying that stress doesn't help you distinguish between words.|S
+me013|um|F
+me018|oh i see what you're saying.|S
+me018|as long as you get the sequence.|S
+me013|we're if we're doing if we're talking about transcription as opposed to something else.|S
+me018|right?|Q
+me018|yeah.|B
+me018|yeah yeah yeah yeah.|B
+me013|yeah.|F
+me018|right.|B
+me018|so where it could help is maybe at a higher level.|S
+me006|like a understanding application.|S
+me013|right.|S
+me018|yeah.|S
+me018|understanding.|S
+me018|yeah.|B
+me013|yeah.|S
+me006|yeah.|S
+me018|exactly.|B
+me013|but that's this afternoon's meeting.|S
+me013|yeah.|F
+me013|we don't understand anything in this meeting.|S
+me013|yeah.|S
+me013|so that's|D
+me013|yeah.|F
+me013|that's you know a neat neat thing.|S
+me013|and|D
+me013|and uh|F
+me006|so um ohala's going to help do these uh transcriptions of the meeting data?|Q
+me013|so|F
+me018|uh|F
+me018|well i don't know.|S
+me018|we we sort of didn't get that far.|S
+me018|um we just talked about some possible features that could be marked by humans.|S
+me018|and um|F
+me006|huh.|B
+me018|because of having maybe some extra transcriber time we thought we could go through and mark some portion of the data for that.|S
+me018|and uh|F
+me006|huh.|B
+me013|yeah.|S
+me013|i mean that's not an immediate problem that we don't immediately have a lot of extra transcriber time.|S
+me018|yeah.|S
+me013|but but uh in the long term i guess chuck is going to continue the dialogue with john.|S
+me018|right.|S
+me013|and and uh|F
+me013|and we'll we'll end up doing some i think.|S
+me018|i'm definitely interested in this area too.|S
+me018|uh acoustic feature stuff.|S
+me013|uhhuh.|B
+me006|okay.|S
+me018|so|F
+me013|yeah i think it's an interesting interesting way to go.|S
+me006|cool.|S
+me013|um|F
+me013|i say it like said int i think it has a number of good things.|S
+me013|um|F
+me013|so uh you want to talk maybe a two or three minutes about what we've been talking about today and other days?|Q
+me026|yeah.|S
+me026|okay.|S
+me026|so um|F
+me026|we're interested in um methods for far mike speech recognition.|S
+me026|um mainly uh methods that deal with the reverberation in the far mike signal.|S
+me026|so um|F
+me026|one approach would be um say m s g and p l p like was used in aurora one.|S
+me026|and um there are other approaches which actually attempt to remove the reverberation instead of being robust to it like m s g.|S
+me026|and so we're interested in um comparing the performance of um a robust approach like m s g with these um speech enhancement or de reverber de reverberation approaches.|S
+mn007|uhhuh.|B
+me026|and um it looks like we're going to use the meeting recorder digits data for that.|S
+mn007|and the de reverberation algorithm.|S
+mn007|do you have can you give some more details on this?|Q
+mn007|or does it use one microphone?|Q
+mn007|several microphones?|Q
+mn007|does it|D
+me026|okay.|S
+me026|well um|F
+me026|there was something that was done by um a guy named carlos i forget his last name who worked with hynek who um|D
+me013|avendano.|S
+me026|okay.|S
+me026|who um|F
+me013|yeah.|B
+mn007|uhhuh.|B
+me026|um it was like rasta in the sense that of it was um de convolution by filtering.|S
+me026|um except he used a longer time window.|S
+mn007|uhhuh.|B
+me026|like a second maybe.|S
+me026|and the reason for that is rasta's time window is too short to um include the whole um reverberation.|S
+me026|um i don't know what you call it.|S
+me026|the reverberation response.|S
+me026|if you see if you see what i mean.|S
+me026|the reverberation filter from my mouth to that mike is like it's it's too long in the in the time domain for the um for the rasta filtering to take care of it.|S
+me026|and um|F
+me026|then there are a couple of other speech enhancement approaches which haven't been tried for speech recognition yet.|S
+me026|but have just been tried for enhancement.|S
+me026|which um have the assumption that um you can do l p c um analysis of of the signal you get at the far microphone.|S
+me026|and the um all pole filter that you get out of that should be good.|S
+me026|it's just the um excitation signal that is going to be distorted by the reverberation.|S
+me026|and so you can try and reconstruct a better excitation signal.|S
+me026|and um feed that through the um all pole filter and get enhanced speech with reverberation reduced.|S
+mn007|uhhuh.|B
+mn007|uhhuh.|B
+me013|there's also this uh um uh echo cancellation stuff that we've sort of been chasing.|S
+me013|so uh|F
+me013|we have uh|D
+me013|and when we're saying these digits now we do have a close microphone signal.|S
+me013|and then there's the distant microphone signal.|S
+me013|and you could as a kind of baseline say okay given that we have both of these uh we should be able to do uh a cancellation.|S
+me013|so that uh um we we uh essentially identify the system in between the linear time invariant system between the microphones and and and and and invert it.|S
+me013|uh or or cancel it out to to some some reasonable approximation.|S
+mn007|uhhuh.|B
+me013|through one method or another.|S
+me013|uh that's not a practical thing.|S
+me013|uh if you have a distant mike you don't have a close mike ordinarily.|S
+me013|but we thought that might make also might make a good baseline.|S
+me013|uh it still won't be perfect because there's noise.|S
+me013|uh but|D
+me013|and then there are uh there are single microphone methods that i think people have done for uh for this kind of de reverberation.|S
+me013|do do you know any references to any?|Q
+me013|because i i i was i i lead him down a a bad path on that.|S
+mn007|uh|F
+mn007|i i guess i guess when people are working with single microphones they are more trying to do|D
+me013|but|D
+mn007|well not not very|D
+mn007|well there is the avendano work.|S
+me013|right.|S
+mn007|but also trying to huh uh trying to find the de-convolution filter.|S
+mn007|but in the|D
+mn007|um|F
+mn007|not in the time domain.|S
+mn007|but in the uh the stream of features uh i guess.|S
+me013|yeah.|S
+me013|okay.|S
+mn007|well there there's someone working on this on in mons.|S
+mn007|so perhaps|D
+mn007|yeah.|F
+mn007|we should try to|D
+mn007|he's working on this.|S
+mn007|on trying to|D
+me013|yeah.|B
+mn007|on reverberation.|S
+mn007|um|F
+me013|the first paper on this is going to have great references.|S
+me013|i can tell already.|S
+mn007|uhhuh.|B
+me013|it's always good to have references.|S
+me013|especially when reviewers read it.|S
+me013|or or one of the authors and feel they'll you're okay.|S
+me013|you've you cited me.|S
+mn007|so yeah.|F
+mn007|well he did echo cancellation.|S
+mn007|and he did some fancier things.|S
+mn007|like uh uh training different network on different reverberation conditions.|S
+mn007|and then trying to find the best one.|S
+mn007|but well.|F
+me013|yeah.|B
+mn007|yeah.|B
+me013|the the other thing uh that dave was talking about earlier was uh uh multiple mike things.|S
+me013|uh where they're all distant.|S
+me013|so um i mean there's there's all this work on arrays.|S
+me013|but the other thing is uh what can we do that's cleverer that can take some advantage of only two mikes.|S
+me013|uh particularly if there's an obstruction between them.|S
+me013|as we as we have over there.|S
+mn007|if there is|D
+me013|an obstruction between them.|S
+mn007|uh yeah.|S
+me013|it creates a shadow.|S
+me013|which is is helpful.|S
+me013|it's part of why you have such good directionality with with two ears.|S
+me013|even though they're not several feet apart.|S
+mn007|uhhuh.|B
+me013|for most for most people's heads.|S
+me018|that could help though.|S
+me013|so that|D
+me013|yeah the|D
+me013|the head in the way is really|D
+me013|that's what it's for.|S
+me013|it's basically|D
+me018|that's what the head's for?|Q
+me013|yeah.|S
+me013|it's to separate the ears.|S
+me018|to separate the ears?|Q
+me013|that's right.|S
+me013|yeah.|S
+me013|yeah.|F
+me013|uh|F
+me013|so|F
+me013|anyway.|F
+me013|uh i think that's that's all we have this week.|S
+me006|oh.|B
+me013|o k.|F
+me013|and uh i think it's digit time.|S
+me018|actually the um for some reason the digit forms are blank.|S
+me013|yeah?|Q
+me018|uh i think that may be due to the fact that adam ran out of digits uh and didn't have time to regenerate any.|S
+me013|oh!|S
+me013|oh!|S
+me013|i guess it's|D
+me013|well there's no real reason to write our names on here then.|S
+me018|yeah.|B
+me018|if you want to put your credit card numbers and uh|D
+me013|is there?|Q
+me006|oh no|D
+me013|or do did any do we need the names for the other stuff?|Q
+me013|or|D
+me018|uh yeah.|S
+me018|i do need your names and and the time and all that.|S
+me013|oh okay.|S
+me018|because we put that into the key files.|S
+me013|oh okay.|S
+me018|um|F
+me018|but|D
+me013|okay.|S
+me018|that's why we have the forms.|S
+me018|uh even if there are no digits.|S
+me013|okay.|S
+me013|yeah.|F
+me013|i didn't notice this.|S
+me013|i'm sitting here.|S
+me013|and i was i was about to read them too.|S
+me013|it's a uh blank sheet of paper.|S
+me018|so i guess we're we're done.|S
+me013|yeah.|B
+me013|yeah.|B
+me013|i'll do my credit card number later.|S
+me013|okay.|F

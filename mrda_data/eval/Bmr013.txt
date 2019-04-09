@@ -1,1050 +1,1050 @@
-me013|so uh|%--
-fe008|all right.|tc
-me011|um so i wanted to discuss digits briefly but that won't take too long.|fg
-me013|oh good.|ba
-me013|right.|b
-me013|okay agenda items.|bk
-me013|uh we have digits.|fh
-me013|what else we got?|t
-mn014|new version of the presegmentation.|cs
-me013|new version of presegmentation.|bk
-fe008|um do we want to say something about the an update of the uh transcript?|fg
-fe016|yeah why don't you summarize the|aa
-me013|update on transcripts.|bk
-fe016|and i guess that includes some the filtering for the the a s i refs too.|e
-fe008|huh.|aa
-me013|filtering for what?|br
-fe016|for the references that we need to go from the the fancy transcripts to the sort of brain dead.|s
-fe008|it'll it'll be basically it'll be a recap of a meeting that we had jointly this morning.|s
-me013|uhhuh.|b
-fe016|with don as well.|e
-fe008|uhhuh.|aa
-me013|got it.|bk
-me013|anything else more pressing than those things?|d
-me013|so so why don't we just do those?|fh
-me013|you said yours was brief so|s
-me011|okay.|bk
-me011|okay well the uh as you can see from the numbers on the digits we're almost done.|fg
-me011|the digits goes up to about four thousand.|rt
-me011|um and so uh we probably will be done with the t i digits in um another couple weeks um depending on how many we read each time.|fh
-me011|so there were a bunch that we skipped.|s
-me011|you know someone fills out the form and then they're not at the meeting and so it's blank.|e
-me011|um but those are almost all filled in as well.|fh
-me011|and so once we're it's done it would be very nice to train up a recognizer and actually start working with this data.|cs
-me018|so we'll have a corpus that's the size of t i digits?|bu
-me011|and so|%--
-me011|one particular test set of t i digits.|e
-me018|test set okay.|m
-me011|so i i extracted there was a file sitting around which people have used here as a test set.|s
-me011|it had been randomized and so on.|s
-me018|uhhuh.|bk
-me011|and that's just what i used to generate the order of these particular ones.|s
-me018|great.|ba
-me018|great.|ba
-me011|um.|fh
-me013|so i'm impressed by what we could do is take the standard training set for t i digits train up with whatever you know great features we think we have uh for instance and then test on uh this test set.|s
-me013|and presumably uh it should do reasonably well on that.|cs
-me013|and then presumably we should go to the distant mike and it should do poorly.|cs
-me018|yeah.|b
-me011|right.|aa
-me013|and then we should get really smart over the next year or two and it that should get better.|j
-me011|and increase it by one or two percent yeah.|j
-me013|yeah yeah.|b
-me011|um but in order to do that we need to extract out the actual digits.|fg
-me013|right.|aa
-me011|um so that the reason it's not just a transcript is that there're false starts and misreads and miscues and things like that.|fh
-me011|and so i have a set of scripts and x waves where you just select the portion hit r.|s
-me011|um it tells you what the next one should be and you just look for that.|fh
-me011|you know so it it'll put on the screen the next set is six nine nine two two.|fh
-me011|and you find that and hit the key and it records it in a file in a particular format.|s
-me013|so is this|qy
-me011|and so the the question is should we have the transcribers do that or should we just do it?|qr
-me011|well some of us.|bsc
-me011|i've been i've done eight meetings something like that just by hand.|s
-me011|just myself rather.|bsc
-me011|so it will not take long.|s
-me011|um|fh
-me013|uh what what do you think?|fg
-fe008|my feeling is that|s
-fe008|we discussed this right before coffee.|s
-fe008|and i think it's a it's a fine idea partly because um it's not unrelated to their present skill set.|ba
-fe008|but it will add for them an extra dimension it might be an interesting break for them.|s
-fe008|and also it is contributing to the uh composition of the transcript.|s
-fe008|because we can incorporate those numbers directly and it'll be a more complete transcript.|s
-fe008|so i'm i think it's fine that part.|ba
-me011|there is there is|s
-me013|so you think it's fine to have the transcribers do it?|bu
-fe008|uhhuh.|aa
-me013|yeah okay.|bk
-me011|there's one other small bit which is just entering the information which at which is at the top of this form onto the computer to go along with the where the digits are recorded automatically.|s
-me018|good.|b
-me013|yeah.|b
-me011|and so it's just you know typing in name times time date and so on.|s
-me011|um which again either they can do but it is you know firing up an editor or again i can do.|fh
-me011|or someone else can do.|e
-fe008|and that you know i'm not that that one i'm not so sure if it's into the the things that i wanted to use the hours for.|ng
-fe008|because the the time that they'd be spending doing that they wouldn't be able to be putting more words on.|df
-me013|huh.|b
-fe008|but that's really your choice it's your|s
-me018|so are these two separate tasks that can happen?|fg
-me018|or do they have to happen at the same time before|qrr
-me011|no they don't have this you have to enter the data before you do the second task but they don't have to happen at the same time.|ar
-me011|so it's it's just i have a file which has this information on it and then when you start using my scripts for extracting the times it adds the times at the bottom of the file.|e
-me018|okay.|bk
-me011|and so um i mean it's easy to create the files and leave them blank and so actually we could do it in either order.|fh
-me018|oh okay.|bk
-me011|um it's it's sort of nice to have the same person do it just as a double check to make sure you're entering for the right person.|fh
-me011|but either way.|e
-me013|yeah.|b
-me013|yeah just by way of uh uh a uh order of magnitude uh um we've been working with this aurora uh data set.|fg
-me013|and uh the best score on the nicest part of the data that is where you've got training and test set that are basically the same kinds of noise and so forth uh is about.|s
-me013|uh|h
-me013|i think the best score was something like five percent uh error per digit.|s
-me013|so that|%--
-me011|per digit.|bu
-mn014|per digit.|m
-me013|you're right.|aa
-me013|so if you were doing ten digit uh recognition you would really be in trouble.|s
-me018|uhhuh.|b
-me013|so so the the point there and this is uh car noise uh uh things but but real real situation.|s
-me013|well real|t1
-me013|um the uh there's one microphone that's close that they have as as this sort of thing close versus distant.|fh
-me013|uh but in a car.|fh
-me013|instead of instead of having a projector noise it's it's car noise.|s
-me013|uh but it wasn't artificially added to get some some artificial signal to noise ratio.|fh
-me013|it was just people driving around in a car.|s
-me013|so that's that's an indication|s
-me013|that was with many sites competing and this was the very best score and so forth.|s
-me013|so more typical numbers like|s
-me018|although the models weren't that good.|ba
-me018|right?|d
-me018|i mean the models are pretty crappy?|bu
-me013|you're right.|aa
-me013|i think that we could have done better on the models.|s
-me013|but the thing is that we got this this is the kind of typical number for all of the uh uh things in this task all of the um languages.|df
-me013|and so i i think we'd probably the models would be better in some than in others.|s
-me018|huh.|b
-me013|um so uh anyway just an indication once you get into this kind of realm even if you're looking at connected digits it can be pretty hard.|fh
-fe008|huh.|b
-fe008|it's going to be fun to see how we compare at this.|s
-me013|yeah.|b
-me018|how did we do on the t i digits?|tc
-fe008|very exciting.|ba
-me011|well the prosodics are so much different.|s
-me011|it's going to be strange.|ba
-me011|i mean the prosodics are not the same as t i digits for example.|s
-me013|yeah.|b
-me011|so i'm i'm not sure how much of effect that will have.|no
-fe016|what do you mean the prosodics?|qw
-me018|how do|qw
-me011|um just what we were talking about with grouping.|h
-me011|that with these the grouping there's no grouping at all and so it's just the only sort of discontinuity you have is at the beginning and the end.|s
-fe016|so what are they doing in aurora?|qw
-fe016|are they reading actual phone numbers?|rt
-me011|aurora i don't know.|no
-me011|i don't know what they do in aurora.|no
-fe016|or a a digit at a time or|qrr
-me013|uh i'm not sure how|h
-fe016|because it's|%--
-me013|no no i mean it's connected it's connected uh digits.|s
-fe016|connected.|bk
-me013|yeah.|bk
-fe016|so there's also the not just the prosody but the cross the cross word modeling is probably quite different.|s
-me013|but|%--
-me011|but right.|aa
-me011|but in t i digits they're reading things like zip codes and phone numbers and things like that.|fg
-me018|how|%--
-fe016|right.|aa
-me011|so it's going to be different.|s
-me018|how do we do on t i digits?|qw
-me011|i don't remember.|no
-me011|i mean very good.|ba
-me011|right?|d
-me013|yeah i mean we were in the|aa
-me011|one and a half percent two percent something like that?|2
-me013|uh i no i think we got under a percent.|h
-me011|oh really?|bu
-me013|but it was but it's but i mean the very best system that i saw in the literature was a point two five percent or something that somebody had at at bell labs or uh but but uh sort of pulling out all the stops.|df
-me011|okay.|b
-fe008|it strikes me that there are more each of them is more informative because it's so random.|s
-me011|all right.|bk
-me018|huh.|b
-me013|but i think a lot of systems sort of get half a percent or three quarters a percent.|df
-me011|right.|b
-me013|and we're we're in there somewhere.|e
-me011|but that i mean it's really it's it's close talking mikes no noise clean signal just digits i mean everything is good.|s
-me013|yeah.|b
-fe016|it's the beginning of time in speech recognition.|s
-me011|yes exactly.|aa
-me013|yeah.|aa
-me011|and we've only recently got it to anywhere near human.|s
-fe016|it's like the single cell you know it's the beginning of life.|j
-me018|prehistory.|2
-fe016|yeah.|b
-me011|and it's still like an order of magnitude worse than what humans do.|s
-fe016|right.|aa
-me013|yeah.|b
-me011|so|%
-me013|when when they're wide awake yeah.|j
-me011|yeah.|b
-me013|um.|fh
-me011|after coffee.|j
-me013|after coffee right.|j
-me013|not after lunch.|j
-me011|okay so um what i'll do then is i'll go ahead and enter this data.|fg
-me011|and then hand off to jane and the transcribers to do the actual extraction of the digits.|cc
-me013|yeah.|b
-me013|yeah.|b
-me013|one question i have that that i mean we wouldn't know the answer to now but might do some guessing but i was talking before about doing some modeling of uh uh marking of articulatory features with overlap and so on.|s
-me011|huh.|b
-me013|and and um|fh
-me013|on some subset.|s
-me013|one thought might be to do this uh on on the digits or some piece of the digits.|s
-me013|uh it'd be easier uh and so forth.|s
-me013|the only thing is i'm a little concerned that maybe the kind of phenomena in|s
-me013|the reason for doing it is because the the argument is that certainly with conversational speech the stuff that we've looked at here before um just doing the simple mapping from um the phone to the corresponding features that you could look up in a book uh isn't right.|s
-me013|it isn't actually right.|r
-me013|in fact there's these overlapping processes where some voicing some up and then some you know some nasality is comes in here and so forth.|e
-me013|and you do this gross thing saying well i guess it's this phone starting there.|s
-me013|so uh that's the reasoning.|fh
-me013|but it could be that when we're reading digits because it's it's for such a limited set that maybe maybe that phenomenon doesn't occur as much.|s
-me013|i don't know.|no
-me013|anybody do you have any anybody have any opinion about that?|rt
-fe008|and that people might articulate more.|s
-fe008|and you that might end up with more a closer correspondence.|s
-me013|uhhuh.|b
-me013|yeah.|b
-me011|yeah that's i i agree.|na
-me011|that it's just|%--
-me018|sort of less predictability.|s
-me018|and you have to|%--
-fe008|uhhuh.|b
-me013|yeah.|b
-fe016|well it's definitely true that when people are reading even if they're re reading what they had said spontaneously that they have very different patterns.|s
-me011|it's a well would this corpus really be the right one to even try that on?|fg
-fe016|mitch showed that and some dissertations have shown that.|e
-me013|right.|b
-fe016|so the fact that they're reading first of all whether they're reading in a room of people or you know just the fact that they're reading will make a difference.|s
-me013|yeah.|b
-fe016|and depends what you're interested in.|s
-me013|see i don't know.|no
-me013|so maybe the thing will be do to take some very small subset mean not have a big program but take a small set uh subset of the conversational speech and a small subset of the digits.|cs
-me013|and look and and just get a feeling for it.|cs
-me013|um just take a look really.|fh
-fe008|that could could be an interesting design too because then you'd have the the comparison of the uh predictable speech versus the less predictable speech.|s
-me013|because i don't think anybody is i at least i don't know of anybody uh|df
-me013|well i don't know the answers.|no
-me018|hey|fg
-me013|yeah.|b
-fe008|and maybe you'd find that it worked in in the case of the of the uh non predictable.|s
-me013|yeah.|b
-me018|have to think about the particular acoustic features to mark too because i mean some things they wouldn't be able to mark like uh you know uh tense lax.|s
-me013|uhhuh.|b
-me018|some things are really difficult.|s
-me018|you know?|d
-me018|just listening.|s
-me011|i think we can get ohala in to give us some advice on that.|cs
-fe008|well|fg
-me018|yeah.|na
-fe008|also i thought you were thinking of a much more restricted set of features that|s
-me013|yeah but i i i i was like he said i was going to bring john in and ask john what he thought.|s
-fe008|yeah sure.|bk
-fe008|sure.|bk
-fe008|yeah.|b
-me013|right.|b
-me013|but i mean you want you want it be restrictive but you also want it to to to have coverage.|aa
-me011|right.|b
-me013|you know you should it should be such that if you if you uh if you had um all of the features determined that you that you were uh have chosen that that would tell you uh in the steady state case uh the phone.|s
-fe008|yeah.|b
-me013|so um|fh
-fe008|okay.|b
-me011|even i guess with vowels that would be pretty hard.|bu
-me011|wouldn't it?|g
-me011|to identify actually you know which one it is.|s
-fe008|it would seem to me that the points of articulation would be more|s
-fe008|uh i mean that's i think about articulatory features i think about points of articulation which means uh rather than vowels.|s
-me011|yeah.|b
-me018|points of articulation?|bu
-me018|what do you mean?|rt
-fe008|so is it uh bilabial or dental or is it you know palatal.|s
-me013|uhhuh.|b
-fe008|which which are all like where where your tongue comes to rest.|e
-me011|uvular.|s
-me018|place of place of articulation.|s
-me013|place place.|m
-fe008|place.|bsc
-me013|yeah.|b
-mn014|place.|s
-fe008|thank you what whatever i said that's|ft
-me018|okay.|b
-me013|yeah.|b
-fe008|i really meant place.|s
-me018|okay i see.|bk
-me013|yeah.|b
-me013|okay we got our jargon then okay.|fg
-fe008|yeah.|b
-me013|uh|fh
-fe016|well it's also there's really a difference between the pronunciation models in the dictionary and the pronunciations that people produce.|fg
-fe016|and so you get some of that information from steve's work on the on the labeling.|s
-me013|right.|b
-me011|right.|b
-fe016|and it really|%--
-fe016|i actually think that data should be used more.|cs
-fe016|that maybe although i think the meeting context is great that he has transcriptions that give you the actual phone sequence.|s
-fe016|and you can go from not from that to the articulatory features but that would be a better starting point for marking the gestural features then data where you don't have that.|s
-fe016|because we you want to know both about the way that they're producing a certain sound and what kinds of you know what kinds of phonemic differences you get between these transcribed sequences and the dictionary ones.|s
-me013|well you might be right that might be the way at getting at what i was talking about.|aap
-me013|but the particular reason why i was interested in doing that was because i remember when that happened and john ohala was over here and he was looking at the spectrograms of the more difficult ones.|arp
-me013|uh he didn't know what to say about what is the sequence of phones there.|fh
-me013|they came up with some compromise.|s
-me013|because that really wasn't what it look like.|s
-fe016|right.|b
-me013|it didn't look like a sequence of phones.|s
-me011|right.|b
-me013|it look like this blending thing happening here and here and here.|s
-fe016|right.|b
-me011|yeah so you have this feature here and overlap yeah.|na
-me018|there was no name for that.|s
-me013|yeah.|b
-fe016|but right.|fg
-me013|yeah.|b
-fe016|but it still is there's a there are two steps.|nd
-fe016|one you know one is going from a dictionary pronunciation of something like going to see you tomorrow.|s
-me011|and or gonta.|s
-me013|right.|b
-me013|yeah.|b
-fe016|it could be going to or going to or gonta you know.|s
-me013|right.|b
-fe016|and yeah.|fh
-fe016|going to see you tomorrow uh guh see you tomorrow.|s
-fe016|and that it would be nice to have these intermediate or these some these reduced pronunciations that those transcribers had marked or to have people mark those as well.|cs
-me013|uhhuh.|b
-fe016|because it's not um that easy to go from the dictionary word the dictionary phone pronunciation to the gestural one without this intermediate or a syllable level kind of representation.|df
-me011|well i don't think morgan's suggesting that we do that though.|nd
-me013|do you mean|bu
-mn014|yeah.|b
-me013|yeah i mean i'm at the moment of course we're just talking about what to provide as a tool for people to do research who have different ideas about how to do it.|s
-me013|so for instance you might have someone who just has a has words with states and has uh uh comes from articulatory gestures to that.|s
-me013|and someone else might actually want some phonetic uh intermediate thing.|s
-me013|so i think it would be be best to have all of it if we could.|cs
-me013|but um|fh
-me011|but what i'm imagining is a score like notation where each line is a particular feature.|s
-me013|yeah.|b
-me011|right?|d
-me011|so you would say you know it's voiced through here and so you have label here and you have nasal here.|e
-me013|yeah.|b
-me011|and they they could be overlapping in all sorts of bizarre ways that don't correspond to the timing on phones.|e
-me013|i mean this is the kind of reason why|s
-me013|i remember when at one of the switchboard workshops that uh when we talked about doing the transcription project dave talkin said can't be done.|s
-me011|right.|b
-me013|he was he was what what he meant was that this isn't you know a sequence of phones.|s
-me013|and when you actually look at switchboard that's not what you see and you know and it|s
-me011|and in in fact the inter annotator agreement was not that good.|bu
-me011|right?|d
-me011|on the harder ones?|e
-me013|yeah i mean it|aa
-fe016|it depends how you look at it and|s
-fe016|i i understand what you're saying about this kind of transcription exactly.|s
-me013|yeah.|b
-fe016|because i've seen you know where does the voicing bar start and so forth.|df
-me013|yeah.|b
-fe016|all i'm saying is that it is useful to have that the transcription of what was really said and which syllables were reduced.|s
-fe016|uh if you're going to add the features.|fh
-fe016|it's also useful to have some level of representation which is is a reduced it's a pronunciation variant that currently the dictionaries don't give you.|s
-me013|uhhuh.|b
-fe016|because if you add them to the dictionary and you run recognition you you add confusion.|df
-me013|right.|b
-fe016|so people purposely don't add them.|s
-me013|right.|b
-fe016|so it's useful to know which variant was was produced at least at the phone level.|s
-me018|so it would be it would be great if we had either these kind of labelings on the same portion of switchboard that steve marked or steve's type markings on this data with these.|cs
-fe016|right.|aa
-fe016|that's all i mean.|s
-fe016|exactly.|aa
-me013|yeah.|b
-fe016|exactly.|aa
-me013|yeah no i i don't disagree with that.|fg
-fe016|and steve's type is fairly it's not that slow.|df
-fe016|uh uh|fh
-fe016|i don't know exactly what the timing was but|no
-me013|yeah i don't disagree with it.|fg
-me013|the the only thing is that what you actually will end end up with is something|arp
-me013|it's all compromised.|s
-me013|right?|d
-me013|so the string that you end up with isn't actually what happened.|s
-me013|but it's it's the best compromise that a group of people scratching their heads could come up with to describe what happened.|s
-fe016|uhhuh.|b
-me018|and it's more accurate than phone labels.|e
-me013|but and it's more accurate than the than the dictionary or if you've got a pronunciation uh lexicon that has three or four.|m
-me011|the word.|b
-me018|yeah.|b
-me013|this might be have been the fifth one that you that you pruned or whatever.|s
-me018|so it's like a continuum.|bs
-fe016|right.|b
-fe016|right.|fg
-me018|it's you're going all the way down.|s
-me013|so sure.|s
-fe016|right.|fg
-fe016|that's what i meant is|s
-me018|yeah.|b
-me013|yeah.|b
-fe016|and in some places it would fill in so the kinds of gestural features are not everywhere.|s
-me013|yeah.|b
-me011|well|fg
-me018|right.|b
-fe016|so there are some things that you don't have access to either from your ear or the spectrogram.|s
-me018|uhhuh.|b
-fe016|but you know what phone it was and that's about all you can all you can say.|s
-me018|right.|b
-fe016|and then there are other cases where nasality voicing|s
-me018|it's basically just having multiple levels of of information and marking on the signal.|s
-fe016|right.|aa
-fe016|right.|b
-me013|yeah.|b
-fe016|right.|b
-me011|well the other difference is that the the features are not synchronous.|s
-me011|right?|d
-me011|they overlap each other in weird ways.|s
-me018|uhhuh.|b
-me018|uhhuh.|b
-me011|so it's not a strictly one dimensional signal.|s
-me013|right.|b
-me011|so i think that's sort of qualitatively different.|s
-fe016|right.|fg
-fe016|you can add the features in uh but it'll be underspecified.|aa
-fe008|huh.|b
-fe016|there'll be no way for you to actually mark what was said completely by features.|s
-me011|well not with our current system but you could imagine designing a system that the states were features rather than phones.|aa
-fe016|and if you're|%--
-fe016|well we we've probably have a separate um discussion of uh of whether you can do that.|arp
-fe008|that's well isn't that i thought that was well but that wasn't that kind of the direction?|bu
-me011|yeah.|aa
-fe008|i thought|s
-me013|yeah so i mean what what where this is i mean i i want would like to have something that's useful to people other than those who are doing the specific kind of research i have in mind.|fg
-me013|so it should be something broader.|cs
-me013|but the but uh where i'm coming from is uh we're coming off of stuff that larry saul did with with um uh john dalan and muzim rahim in which uh they uh have um a a multi band system that is uh trained through a combination of gradient learning and e m to um estimate uh the uh value for for for a particular feature.|s
-me013|okay?|d
-me013|and this is part of a larger image that john dalan has about how the human brain does it in which he's sort of imagining that individual frequency channels are coming up with their own estimate of of these these kinds of something like this.|s
-me013|might not be you know exact features that jakobson thought of or something.|s
-me013|but i mean you know some something like that.|s
-me013|some kind of low level features which are not fully you know phone classification.|s
-me013|and the the this particular image of how how it's done is that then given all of these estimates at that level there's a level above it then which is is making some kind of sound unit classification such as you know phone.|s
-me013|and and you know you could argue what what a sound unit should be and and so forth.|s
-me013|but that that's sort of what i was imagining doing.|s
-me013|um and but it's still open within that whether you would have an intermediate level in which it was actually phones or not.|fh
-me013|you wouldn't necessarily have to.|s
-me013|um but again i wouldn't want to wouldn't want what we we produced to be so know local in perspective that it it was matched what we were thinking of doing one week.|fh
-me013|and and and you know what you're saying is absolutely right.|fh
-me013|that that if we can we should put in uh another level of of description there if we're going to get into some of this low level stuff.|bs
-me018|well you know um i mean if we're talking about having the annotators annotate these kinds of features it seems like|fg
-me018|you know you|fh
-me018|the the question is do they do that on meeting data?|rt
-me018|or do they do that on switchboard?|qrr
-me011|that's what i was saying.|na
-me011|maybe meeting data isn't the right corpus.|cs
-fe008|well it seems like you could do both.|cs
-fe008|i mean i was thinking that it would be interesting to do it with respect to parts of switchboard anyway in terms of|cs
-me013|uhhuh.|b
-fe008|uh partly to see if you could generate first guesses at what the articulatory feature would be based on the phone representation at that lower level.|fh
-me013|uhhuh.|b
-fe008|it might be a time gain.|s
-fe008|but also in terms of comparability of um|s
-me013|uhhuh.|b
-me018|well because the yeah and then also if you did it on switchboard you would have the full continuum of transcriptions.|df
-fe008|what you gain.|t1
-fe008|yep.|aa
-me018|you'd have it from the lowest level the acoustic features then you'd have the you know the phonetic level that steve did.|s
-fe008|uhhuh.|aa
-fe016|yeah that that's all i was thinking about.|aa
-me018|and|fh
-fe016|it is telephone band so the bandwidth might be|s
-me018|yeah.|b
-fe008|and you could tell that|s
-me018|it'd be a complete set then.|s
-fe008|and you get the relative gain up ahead.|s
-me013|it's so it's a little different.|s
-fe016|yeah.|rt
-me013|so i mean you know we'll see how much we can uh get the people to do and how much money we'll have and all this sort of thing.|fg
-fe008|uhhuh.|b
-fe008|uhhuh.|b
-me018|but it it might be good to do what jane was saying uh you know seed it with guesses about what we think the features are based on you know the phone or steve's transcriptions or something to make it quicker.|cs
-me013|but|fh
-me013|might be do both.|e
-me011|all right so based on the phone transcripts they would all be synchronous but then you could imagine nudging them here and there.|bu
-me018|adjusting.|2
-me018|yeah exactly.|aa
-me018|scoot the voicing over a little because|cs
-fe008|yeah.|b
-me011|right.|aa
-me013|well i think what i mean i'm i'm a little behind in what they're doing now and uh the stuff they're doing on switchboard now.|s
-me013|but i think that steve and the gang are doing something with an automatic system first and then doing some adjustment.|s
-me013|as i as i recall.|rt
-me013|so i mean that's probably the right way to go anyway is to is to start off with an automatic system with a pretty rich pronunciation dictionary that that um you know tries to label it all.|cs
-me013|and then people go through and fix it.|e
-fe008|so in in our case you'd think about us starting with maybe the regular dictionary entry?|bu
-fe008|and then|s
-me013|well regular dictionary i mean this is a pretty rich dictionary.|fg
-fe008|or would we?|qrr
-me013|it's got got a fair number of pronunciations in it.|e
-me018|or you could start from the if we were going to do the same set of sentences that steve had done we could start with those transcriptions.|cs
-fe008|but|fg
-fe008|uhhuh.|aa
-me013|yeah.|aa
-fe016|that's actually what i was thinking is|na
-fe008|so i was thinking|s
-me011|right.|b
-me018|yeah.|b
-fe016|the problem is when you run uh if you run a regular dictionary um even if you have variants in there which most people don't you don't always get out the actual pronunciations.|s
-me018|yeah.|b
-fe016|so that's why the human transcriber's giving you the that pronunciation.|df
-fe008|yeah.|b
-me013|actually maybe they're using phone recognizers.|nd
-fe008|oh.|bk
-fe016|and so|s
-fe016|they they i thought that they were.|na
-me013|is that what they're doing?|rt
-me011|they are.|aa
-fe016|we should catch up on what steve is|cs
-me013|oh okay.|bk
-fe016|uh i think that would be a good good idea.|h
-me013|yeah.|b
-me013|yeah so i think that we also don't have i mean|s
-me013|we've got a good start on it.|s
-me013|but we don't have a really good meeting recorder or recognizer or transcriber or anything yet.|s
-me013|so|fh
-fe016|yeah.|aa
-me013|so i mean another way to look at this is to is to uh do some stuff on switchboard which has all this other stuff to it.|cs
-me013|and then um as we get further down the road and we can do more things ahead of time we can do some of the same things to the meeting data.|fh
-me018|uhhuh.|b
-fe008|okay.|b
-me018|yeah.|b
-fe008|and i'm and these people might they they are most of them are trained with i p a.|s
-me013|yeah.|b
-fe008|they'd be able to do phonetic level coding or articulatory.|s
-me018|are they busy for the next couple years or|rt
-fe008|well you know i mean they they they're interested in continuing working with us.|na
-fe008|so i mean i and this would be up their alley so we could when the when you meet with with john ohala and find you know what taxonomy you want to apply then they'd be good to train onto it.|s
-me013|yeah.|b
-me013|yeah.|b
-me013|anyway this is not an urgent thing at all.|tc
-fe008|yeah.|b
-me013|just it came up.|e
-me018|it'd be very interesting though to have that data.|ba
-fe016|yeah.|aa
-me011|i wonder how would you do a forced alignment?|qw
-fe008|i think so too.|ba
-fe016|might|%--
-fe008|interesting idea.|ba
-me011|to to i mean you'd want to iterate somehow.|cs
-me011|yeah.|b
-me011|it's interesting thing to think about.|ba
-fe016|it might be|%--
-me018|huh.|b
-fe016|i was thinking it might be|cs
-me011|i mean you'd you'd want models for spreading.|cs
-me018|of the acoustic features?|bu
-me011|yeah.|aa
-me018|uhhuh.|aa
-me013|uhhuh.|b
-me013|yeah.|b
-fe016|well it might be neat to do some phonetic features on these non word words.|cs
-fe016|are are these kinds of words that people never the huh s and the huh s and the huh and the uh?|e
-fe016|these no i'm serious.|df
-fe016|there are all these kinds of functional uh elements.|s
-fe016|i don't know what you call them.|no
-fe016|but not just fill pauses but all kinds of ways of interrupting and so forth.|s
-me011|uhhuh.|b
-fe016|and some of them are yeah uhhuh s and huh s and huh.|e
-fe016|huh okay uh grunts.|e
-fe016|uh|fh
-fe016|that might be interesting.|ba
-fe008|he's got lip lip smacks.|s
-fe016|in the meetings.|e
-me013|we should move on.|co
-fe008|yeah.|aa
-me013|uh new version of uh presegmentation?|h
-mn014|uh oh yeah um i worked a little bit on the on the presegmentation to to get another version which does channel specific uh speech-nonspeech detection.|fg
-mn014|and what i did is i used some normalized features which uh look into the which is normalized energy uh energy normalized by the mean over the channels and by the minimum over the other.|s
-mn014|within each channel.|bsc
-mn014|and to to huh to yeah to normalize also loudness and and modified loudness and things and that those special features actually are in my feature vector.|fh
-me011|oh.|bk
-mn014|and and therefore to be able to uh somewhat distinguish between foreground and background speech in in the different in each channel.|rt
-mn014|and uh i tested it on on three or four meetings and it seems to work well yeah fairly well i i would say.|rt
-mn014|there are some problems with the lapel mike.|rt
-me011|of course.|bk
-mn014|yeah.|b
-me011|wow that's great.|ba
-mn014|uh yeah.|fh
-mn014|and|%--
-me011|so i i understand that's what you were saying about your problem with minimum.|bu
-mn014|yeah.|aa
-mn014|and|fg
-mn014|yeah and and i had i had uh specific problems with|aa
-me011|i get it.|bk
-me011|so new use ninetieth quartile rather than minimum.|bu
-mn014|yeah.|aa
-mn014|yeah.|aa
-fe008|wow!|fe
-mn014|yeah yeah then i i did some some some things like that.|fg
-fe008|interesting.|ba
-mn014|as there there are some some problems in when in the channel there they the the speaker doesn't doesn't talk much or doesn't talk at all.|df
-mn014|then the yeah there are there are some problems with with with with normalization and then uh there the system doesn't work at all.|s
-mn014|so i'm i'm glad that there is the the digit part where everybody is forced to say something.|s
-me013|right.|b
-mn014|so that's that's great for for my purpose.|ba
-mn014|and the thing is i i then the evaluation of of the system is a little bit hard as i don't have any references.|s
-me011|well we did the hand|rt
-me011|the one by hand.|bsc
-mn014|yeah that's the one one where i do the training on so i can't do the evaluation on.|aa
-mn014|so the thing is can the transcribers perhaps do some some some meetings in in terms of speech-nonspeech in in the specific channels?|rt
-me011|uh.|b
-me018|well won't you have that from their transcriptions?|bu
-fe008|well i have|s
-fe008|well okay so now we need|fg
-me011|no because we need is really tight.|ar
-mn014|yeah.|aa
-fe008|so um|fg
-fe008|i think i might have done what you're requesting though i did it in the service of a different thing.|s
-mn014|oh great.|ba
-fe008|i have thirty minutes that i've more tightly transcribed with reference to individual channels.|s
-mn014|okay.|b
-mn014|okay that's great.|ba
-mn014|that's great too.|ba
-fe008|and i could and|cs
-mn014|yeah so|fh
-me011|hopefully that's not the same meeting that we did.|s
-fe008|and|s
-fe008|no actually it's a different meeting.|ar
-me011|good.|bk
-fe008|so um so the you know we have the they transcribe as if it's one channel with these with the slashes to separate the overlapping parts.|fh
-mn014|okay.|b
-fe008|and then we run it through then it then i'm going to edit it and i'm going to run it through channelize which takes it into dave gelbart's format.|s
-mn014|yeah.|b
-mn014|yeah.|b
-fe008|and then you have all these things split across according to channel.|s
-fe008|and then that means that if a person contributed more than once in a given overlap during that time bend that that two parts of the utterance end up together it's the same channel.|s
-fe008|and then i took his tool and last night for the first thirty minutes of one of these transcripts i tightened up the um boundaries on individual speakers' channels.|s
-mn014|okay.|b
-mn014|okay.|b
-fe008|because his his interface allows me to have total flexibility in the time tags across the channels.|s
-mn014|yeah.|b
-mn014|yeah.|b
-fe008|and um so.|fh
-me018|so current this week.|s
-mn014|so yeah yeah that that that's great but what would be nice to have some more meetings not just one meeting to to be sure that that there is a system.|arp
-fe008|yes.|b
-fe008|might not be what you need.|2
-me011|yeah so if we could get a couple meetings done with that level of precision i think that would be a good idea.|cs
-mn014|okay.|bk
-fe008|oh okay.|bk
-mn014|yeah.|b
-fe008|uh how how much|qw
-fe008|so the meetings vary in length.|s
-fe008|what are we talking about in terms of the number of minutes you'd like to have as your as your training set?|qw
-mn014|it seems to me that it would be good to have a few minutes from from different meetings.|cs
-mn014|so|h
-mn014|but i'm not sure about how much.|e
-fe008|okay now you're saying different meetings because of different speakers or because of different audio quality or both or|bu
-mn014|both.|s
-mn014|both.|r
-fe008|okay.|bk
-mn014|different different number of speakers different speakers different conditions.|s
-me013|yeah we don't have that much variety in meetings yet.|fg
-me013|uh i mean we have this meeting and the feature meeting and we have a couple others that we have uh couple examples of but but uh|fh
-mn014|yeah|arp
-mn014|yeah.|b
-fe008|uhhuh.|b
-me001|even probably with the gains differently will affect it you mean|cs
-mn014|uh not really as|h
-me013|potentially.|s
-me001|oh because you use the normalization?|bu
-mn014|because of the normalization yeah.|df
-me001|okay.|bk
-me013|oh okay.|bk
-mn014|yeah.|b
-fe016|we can try running|cs
-fe016|we haven't done this yet because um uh andreas is is going to move over the s r i recognizer.|rt
-fe016|basically i ran out of machines at s r i.|df
-fe016|because we're running the evals.|df
-mn014|okay.|b
-fe016|and i just don't have machine time there.|df
-fe016|but once that's moved over uh hopefully in a a couple days then we can take um what jane just told us about as the presegmented the the segmentations that you did at level eight or at some threshold that jane right and try doing forced alignment um on the word strings.|cs
-me011|oh shoot!|fe
-mn014|yeah.|b
-mn014|yeah.|b
-fe008|the presegment.|2
-mn014|yeah.|b
-fe008|yeah.|b
-mn014|with the recognizer?|bu
-mn014|yeah.|b
-fe016|and if it's good then that will that may give you a good boundary.|s
-fe016|of course if it's good we don't then we're we're fine.|s
-mn014|yeah.|fg
-fe016|but i don't know yet whether these segments that contain a lot of pauses around the words will work or not.|no
-mn014|i i would quite like to have some manually transcribed references for for the system as i'm not sure if if it's really good to compare with with some other automatic found boundaries.|cs
-fe016|yeah.|bk
-fe016|right.|b
-fe008|well no if we were to start with this and then tweak it manually would that that would be okay?|ng
-mn014|yeah.|b
-fe016|right.|b
-mn014|yeah sure.|aa
-fe016|they might be okay.|am
-fe008|okay.|b
-fe016|it you know it really depends on a lot of things.|s
-mn014|yeah.|b
-fe016|but i would have maybe a transcriber uh look at the result of a forced alignment and then adjust those.|s
-mn014|yeah.|b
-mn014|to adjust them or|2
-mn014|yeah.|aa
-mn014|yeah yeah.|aa
-fe016|that might save some time.|s
-fe016|if they're horrible it won't help at all.|s
-mn014|yeah great.|aa
-fe016|but they might not be horrible.|s
-mn014|yeah.|b
-fe016|so but i'll let you know when we uh have that.|cc
-mn014|okay great.|ba
-fe008|how many minutes would you want from|rt
-fe008|i mean we could easily get a section you know like say a minute or so from every meeting that we have so from the newer ones that we're working on everyone that we have.|s
-fe008|and then|%--
-fe008|should provide this.|s
-mn014|if it's not the first minute of of the meeting that that's okay with me.|s
-mn014|but in in the first minute uh often there are some some strange things going on which which aren't really well for which which aren't really good.|s
-mn014|so what what i'd quite like perhaps is to have some five minutes of of of different meetings.|fh
-mn014|so|fh
-fe008|somewhere not in the very beginning five minutes okay.|bs
-mn014|yeah.|b
-fe008|and then i wanted to ask you just for my information.|s
-fe008|then would you be|qy
-fe008|because i don't quite|df
-fe008|so would you be training then um the segmenter so that it could on the basis of that segment the rest of the meeting?|rt
-fe008|so if i give you like five minutes is the idea that this would then be applied to uh to providing tighter time bands?|rt
-mn014|i i could do a a retraining with that yeah.|aa
-fe008|wow interesting.|ba
-mn014|that's but but i hope that i i don't need to do it.|s
-fe008|okay.|b
-fe008|uhhuh.|b
-mn014|so uh it can be do in an unsupervised way.|s
-fe008|excellent.|bk
-mn014|so|%--
-fe008|excellent okay.|bk
-mn014|i'm i'm not sure.|am
-mn014|but for for for those three meetings which i which i did it seems to be quite well.|s
-mn014|but there are some some as i said some problems with the lapel mike.|s
-mn014|but perhaps we can do something with with cross correlations to to get rid of the of those.|cs
-mn014|and|fh
-mn014|yeah.|fh
-mn014|that's that's what i that's my future work.|s
-mn014|well well what i want to do is to to look into cross correlations for for removing those false overlaps.|s
-fe008|wonderful.|ba
-fe016|are the um wireless different than the wired mikes at all?|rt
-fe016|i mean have you noticed any difference?|rt
-mn014|i'm i'm not sure um if if there are any wired mikes in those meetings or uh i have have to have a look at them.|no
-mn014|but i'm i'm i think there's no difference between.|ar
-fe016|so it's just the lapel versus everything else?|bu
-mn014|yeah.|aa
-mn014|yeah.|aa
-fe008|okay so then if that's five minutes per meeting we've got like twelve minutes twelve meetings roughly that i'm that i've been working with then.|s
-me013|of of of the meetings that you're working with how many of them are different|qw
-mn014|no.|ar
-me013|are there any of them that are different than these two meetings?|qy
-fe008|well oh in terms of the speakers or the conditions or the|qr
-me013|yeah speakers.|s
-me013|sorry.|fa
-me013|so|fh
-fe008|um we have different combinations of speakers.|h
-mn014|yeah that|%--
-fe008|i mean just from what i've seen uh there are some where um you're present or not present.|e
-fe008|and then then you have the difference between the networks group and this group.|e
-mn014|yeah i know some of the n s a meetings yeah.|s
-me013|yeah.|fg
-me013|so i didn't know in the group you had if you had|no
-mn014|yeah.|b
-me013|so you have the networks meeting?|bu
-fe008|yep we do.|aa
-mn014|yeah.|aa
-me013|do you have any of jerry's meetings in your pack uh|r
-fe008|um no.|h
-me013|no.|bk
-fe008|we could|bsc
-fe008|i mean you you recorded one last week or so.|s
-fe008|i could get that new one in this week i get that new one in.|cc
-me011|yep.|b
-fe016|we're going to be recording them every monday.|s
-me013|yeah.|b
-me013|because i think he really needs variety.|df
-fe016|so|fh
-me013|and and having as much variety for speaker certainly would be a big part of that i think.|e
-fe008|great.|b
-mn014|yeah.|b
-mn014|yeah.|b
-fe008|okay so if i|s
-fe008|okay included include|t1
-fe008|okay then uh if i were to include all together samples from twelve meetings that would only take an hour.|s
-fe008|and i could get the transcribers to do that.|cc
-fe008|right?|d
-fe008|i mean what i mean is that would be an hour sampled and then they'd transcribe those that hour.|s
-fe008|right?|d
-fe008|that's what i should do?|rt
-me013|yeah.|aa
-me013|and|s
-me013|right.|fh
-me013|but you're|%--
-mn014|that's that's|%--
-fe008|i don't mean transcribe.|bsc
-fe008|i mean i mean adjust.|s
-fe008|so they get it into the multi channel format and then adjust the timebands so it's precise.|e
-me013|so that should be faster than the ten times kind of thing.|bu
-fe008|absolutely.|aa
-me013|yeah.|fh
-fe008|i did i did um uh so last night i did uh|s
-fe008|oh gosh.|t1
-fe008|well last night i did about half an hour in three hours which is not terrific.|s
-me013|yeah.|b
-fe008|but um|fh
-me013|yeah.|b
-fe008|anyway it's an hour and a half per|s
-me013|well that's probably|%--
-mn014|so|fg
-fe008|well i can't calculate on my on my feet.|s
-mn014|do the transcribers actually start with uh transcribing new meetings or are they|rt
-fe008|well um they're still working they still have enough to finish that i haven't assigned a new meeting.|h
-mn014|okay.|bk
-fe008|but the next|%--
-fe008|i was about to need to assign a new meeting.|s
-fe008|and i was going to take it from one of the new ones.|e
-mn014|okay.|b
-fe008|and i could easily give them jerry feldman's meeting.|e
-fe008|no problem.|s
-fe008|and then|fh
-mn014|okay.|b
-fe016|so they're really running out of data i mean that's good.|s
-fe008|uhhuh.|aa
-fe008|uh that first set.|s
-fe016|um okay.|bk
-me013|they're running out of data unless we make the decision that we should go over and start uh transcribing the other set.|s
-fe016|so|%--
-me013|there the first the first half.|rt
-fe008|and so i was in the process of like editing them but this is wonderful news.|s
-mn014|yeah.|b
-mn014|okay.|b
-me013|all right.|b
-fe008|we funded the experiment with uh|s
-fe008|also we were thinking maybe applying that that to getting the|s
-fe008|yeah that'll be very useful to getting the overlaps to be more precise all the way through.|fh
-me013|so this blends nicely into the update on transcripts.|s
-fe008|yes it does.|aa
-me013|okay.|b
-fe008|so um um liz and and don and i met this morning in the barco room with the lecture hall.|t
-fe016|yeah please.|t3
-fe016|go ahead.|co
-fe016|and this afternoon.|2
-fe008|and this afternoon.|m
-fe008|it drifted into the afternoon uh concerning this issue of um the well there's basically the issue of the interplay between the transcript format and the processing that they need to do for the s r i recognizer.|s
-fe008|and um well so i mentioned the process that i'm going through with the data.|fh
-fe008|so you know i get the data back from the well uh metaphorically get the data back from the transcriber.|s
-fe008|and then i check for simple things like spelling errors and things like that.|s
-fe008|and um i'm going to be doing a more thorough editing with respect to consistency of the conventions.|s
-fe008|but they're they're generally very good.|s
-fe008|and then i run it through uh the channelize program to get it into the multi channel format okay.|s
-fe008|and the what we discussed this morning i would summarize as saying that um these units that result in a a particular channel and a particular timeband at at that level um vary in length.|s
-fe008|and um their recognizer would prefer that the units not be overly long.|s
-fe008|but it's really an empirical question whether the units we get at this point through just that process i described might be sufficient for them.|s
-fe008|so as a first pass through a first chance without having to do a lot of hand editing what we're going to do is i'll run it through channelize give them those data after i've done the editing process and be sure it's clean.|cc
-fe008|and i can do that pretty quickly with just that minimal editing without having to hand break things.|s
-me013|uhhuh.|b
-fe008|and then we'll see if the units that we're getting uh with the at that level are sufficient.|s
-fe008|and maybe they don't need to be further broken down.|s
-fe008|and if they do need to be further broken down then maybe it just be piece wise maybe it won't be the whole thing.|s
-fe008|so that's that's what we were discussing this morning as far as i among|s
-fe016|right.|b
-fe008|also we discussed some adaptational things.|s
-fe016|then lots of|%--
-fe016|right.|b
-fe008|so it's like|s
-fe008|uh you know i hadn't uh incorporated a convention explicitly to handle acronyms for example.|fh
-fe008|but if someone says p z m it would be nice to have that be directly interpretable from the transcript what they said.|s
-me013|uhhuh.|b
-fe008|or uh tcl t c l i mean.|bsc
-fe008|it's like|s
-fe008|it's and so um i've i've incorporated also convention with that.|s
-fe008|but that's easy to handle at the post editing phase.|s
-fe008|and i'll mention it to transcribers for the next phase.|cc
-fe008|but that's okay.|ba
-fe008|and then a similar uh convention for numbers.|s
-fe008|so if they say one eighty three versus one eight three.|s
-fe008|um and also i'll be um encoding as i do my post editing the things that are in curly brackets which are clarificational material.|fh
-fe008|and uh to incorporate uh keyword at the beginning.|s
-fe008|so it's going to be either a gloss or it's going to be a vocal sound like a laugh or a cough or so forth.|s
-fe008|or a non vocal sound like a door slam and that can be easily done with a you know just a one little additional thing in the in the general format.|s
-fe016|yeah we we just needed a way to strip you know all the comments all the things the that linguist wants but the recognizer can't do anything with.|fg
-fe016|um but to keep things that we mapped to like reject models or you know uh mouth noise or cough.|fh
-fe016|and then there's this interesting issue jane brought up.|s
-fe016|which i hadn't thought about before.|e
-fe016|but i was realizing as i went through the transcripts that there are some noises like|s
-fe016|um|fh
-fe016|well the good example was an in breath where a transcriber working from the mixed signal doesn't know whose breath it is.|s
-me011|right.|b
-fe016|and they've been assigning it to someone that may or may not be correct.|s
-fe016|and what we do is if it's a breath sound you know a sound from the speaker we map it to a noise model like a mouth noise model in the recognizer.|s
-fe016|and yeah it probably doesn't hurt that much once in a while to have these.|s
-fe016|but if they're in the wrong channel that's not a good idea.|ba
-fe016|and then there's also things like door-slams that's really in no one's channel.|s
-fe016|they're like it's in the room.|s
-me011|right.|b
-mn014|yeah.|b
-fe016|and uh jane had this nice uh idea of having like an extra uh couple tiers|s
-me011|an extra channel.|2
-fe008|yeah.|fg
-fe016|yeah.|aa
-fe008|i've been i've been adding that to the ones i've been editing.|s
-fe016|and we were thinking that is useful also when there's uncertainties.|s
-fe016|so if they hear a breath and they don't know who breath it is it's better to put it in that channel than to put it in the speaker's channel.|s
-fe016|because maybe it was someone else's breath.|df
-fe016|or uh|fh
-fe016|so i think that's a good you can always clean that up post processing.|s
-fe008|yeah.|b
-fe016|so a lot of little details.|s
-fe016|but i think we're coming to some kind of closure on that.|s
-fe016|so the idea is then uh don can take uh jane's post processed channelized version and with some scripts you know convert that to to a reference for the recognizer.|s
-fe016|and we can can run these.|s
-fe016|so when that's ready you know as soon as that's ready and as soon as the recognizer is here we can get twelve hours of force aligned and recognized data.|s
-fe016|and you know start working on it.|s
-fe008|and|%--
-fe016|so we're i don't know a a week or two away i would say from.|s
-fe016|uh if if that process is automatic once we get your post process transcript.|e
-fe008|uhhuh.|b
-fe008|and that doesn't the amount of editing that it would require is not very much either.|ba
-fe008|i'm just hoping that the units that are provided in that way will be sufficient.|s
-fe008|because i would save a lot of uh time dividing things.|df
-fe016|yeah some of them are quite long.|aa
-fe016|just from|%--
-fe016|i don't know.|no
-fe016|how long were|qw
-fe016|you did one|bu
-me001|i saw a couple around twenty seconds.|s
-me001|and that was just without looking too hard for it.|s
-me001|so i would imagine that there might be some that are longer.|s
-fe016|right.|bk
-fe008|well|fg
-fe008|one question.|s
-fe008|would that be a single speaker or is that multiple speakers overlapping?|qr
-me001|no no but if we're going to segment it|ar
-me001|like if there's one speaker in there that says okay or something right in the middle it's going to have a lot of dead time around it.|s
-fe016|right it's not the it's not the fact that we can't process a twenty second segment it's the fact that there's twenty seconds in which to place one word in the wrong place.|fg
-me001|so it's not|s
-me001|yeah.|b
-fe016|you know if if someone has a very short utterance there.|e
-fe008|yeah.|b
-fe016|and that's where we might want to have this individual you know have your pre process input.|s
-mn014|yep.|b
-mn014|yeah.|b
-mn014|sure.|b
-fe016|and i just don't know.|bd
-mn014|i i i thought that perhaps the transcribers could start then from the those multi channel uh speech-nonspeech detections if they would like to.|s
-fe008|that's very important.|ba
-fe016|i have to run it.|cc
-fe016|right.|bk
-fe008|in in doing the hand marking?|bu
-mn014|yeah.|aa
-fe008|yeah that's what i was thinking too.|aa
-fe016|right.|b
-fe016|so that's probably what will happen.|s
-fe008|yeah.|b
-fe016|but we'll try it this way and see.|s
-mn014|yeah.|b
-fe016|i mean it's probably good enough for force alignment.|rt
-fe016|if it's not then we're really then we definitely|s
-mn014|yeah.|b
-fe016|uh but for free recognition i'm it'll probably not be good enough.|s
-fe016|we'll probably get lots of errors because of the cross talk and noises and things.|s
-mn014|yep.|b
-me013|good.|ba
-me013|i think that's probably our agenda or starting up there.|t
-fe008|oh i wanted to ask one thing.|fg
-me013|yeah?|rt
-fe008|the microphones the new microphones.|rt
-fe008|when do we get uh|qw
-me011|uh they said it would take about a week.|h
-fe008|oh exciting.|bk
-fe008|k.|bk
-me013|k.|bk
-me018|you ordered them already?|bu
-me011|uhhuh.|aa
-me018|great.|ba
-fe016|so what happens to our old microphones?|qw
-me013|they go where old microphones go.|s
-me011|um|h
-fe016|do we give them to someone?|rt
-fe016|or|qrr
-me011|well the only thing we're going to have extra for now|s
-fe016|we don't have more receivers.|s
-fe016|we just have|s
-me011|right we|aa
-fe016|right.|b
-me011|so the only thing we'll have extra now is just the lapel.|s
-me011|not not the bodypack.|s
-me011|just the lapel.|e
-fe016|just the lapel itself.|2
-me011|um and then one of the one of those.|s
-me011|since what i decided to do on morgan's suggestion was just get two new microphones um and try them out.|s
-fe016|uhhuh.|b
-me011|and then if we like them we'll get more.|s
-fe016|okay.|bk
-me013|yeah.|b
-me011|since they're they're like two hundred bucks a piece.|s
-me011|we won't uh at least try them out.|s
-me018|so it's a replacement for this headset mike.|bu
-me011|yep yep.|aa
-me013|yeah.|b
-me011|and they're going to do the wiring for us.|s
-me018|what's the um style of the headset?|qw
-me011|it's um it's by crown.|s
-me011|and it's one of these sort of mount around the ear thingies.|e
-me011|and uh when i when i mentioned that we thought it was uncomfortable he said it was a common problem with the sony.|s
-me011|and this is how apparently a lot of people are getting around it.|s
-me018|huh.|b
-me011|and i checked on the web and every site i went to raved about this particular mike.|s
-me011|it's apparently comfortable and stays on the head well.|s
-me011|so we'll see if it's any good.|s
-me011|but uh i think it's promising.|s
-fe008|you said it was used by aerobics instructors?|bu
-me011|yup.|aa
-me011|yep yep so it was it was advertised for performers.|fg
-fe008|that says a lot.|ba
-me013|for the for the record adam is not a paid employee or a consultant of crown.|j
-me011|and|%--
-me011|excuse me?|br
-fe008|oh.|bk
-me011|excuse me?|br
-fe016|right.|bk
-me013|i said for the record adam is is not a paid consultant or employee of crown.|r
-me011|that's right.|aa
-fe016|however he may be solicited after these meetings are distributed.|s
-me011|well we're using the crown p z ms.|s
-fe016|don't worry about finishing your dissertation.|co
-me013|yeah.|b
-me011|these are crown.|bu
-me011|aren't they?|g
-me011|the p z ms are crown.|bu
-me013|all right.|bk
-me011|aren't they?|g
-me013|yeah.|aa
-me011|yeah i thought they were.|bk
-me013|you bet you bet.|s
-me011|and they work very well.|j
-fe016|yes.|bk
-me013|so if we go to a workshop about all this this it's going to be a meeting about meetings about meetings.|s
-me013|okay.|bk
-me013|so|fh
-me011|and then it we have to go to the planning session for that workshop.|s
-me013|oh yeah what which will be the meeting about the meeting about the meeting.|fh
-me011|because then it would be a meeting about the meeting about the meeting about meetings.|s
-me013|yeah.|b
-me013|just start saying m four.|cs
-me013|yeah okay.|bk
-me011|yeah.|b
-me011|m to the fourth.|cs
-me013|should we do the digits?|rt
-me011|yep go for it.|aa
-me013|okay.|bk
+me013|so uh|D
+fe008|all right.|D
+me011|um so i wanted to discuss digits briefly but that won't take too long.|D
+me013|oh good.|S
+me013|right.|D
+me013|okay agenda items.|S
+me013|uh we have digits.|D
+me013|what else we got?|Q
+mn014|new version of the presegmentation.|D
+me013|new version of presegmentation.|S
+fe008|um do we want to say something about the an update of the uh transcript?|Q
+fe016|yeah why don't you summarize the|D
+me013|update on transcripts.|S
+fe016|and i guess that includes some the filtering for the the a s i refs too.|S
+fe008|huh.|S
+me013|filtering for what?|Q
+fe016|for the references that we need to go from the the fancy transcripts to the sort of brain dead.|S
+fe008|it'll it'll be basically it'll be a recap of a meeting that we had jointly this morning.|S
+me013|uhhuh.|B
+fe016|with don as well.|S
+fe008|uhhuh.|S
+me013|got it.|S
+me013|anything else more pressing than those things?|D
+me013|so so why don't we just do those?|Q
+me013|you said yours was brief so|D
+me011|okay.|S
+me011|okay well the uh as you can see from the numbers on the digits we're almost done.|S
+me011|the digits goes up to about four thousand.|S
+me011|um and so uh we probably will be done with the t i digits in um another couple weeks um depending on how many we read each time.|S
+me011|so there were a bunch that we skipped.|S
+me011|you know someone fills out the form and then they're not at the meeting and so it's blank.|S
+me011|um but those are almost all filled in as well.|S
+me011|and so once we're it's done it would be very nice to train up a recognizer and actually start working with this data.|S
+me018|so we'll have a corpus that's the size of t i digits?|Q
+me011|and so|D
+me011|one particular test set of t i digits.|S
+me018|test set okay.|S
+me011|so i i extracted there was a file sitting around which people have used here as a test set.|S
+me011|it had been randomized and so on.|S
+me018|uhhuh.|S
+me011|and that's just what i used to generate the order of these particular ones.|S
+me018|great.|S
+me018|great.|S
+me011|um.|F
+me013|so i'm impressed by what we could do is take the standard training set for t i digits train up with whatever you know great features we think we have uh for instance and then test on uh this test set.|S
+me013|and presumably uh it should do reasonably well on that.|S
+me013|and then presumably we should go to the distant mike and it should do poorly.|S
+me018|yeah.|B
+me011|right.|S
+me013|and then we should get really smart over the next year or two and it that should get better.|S
+me011|and increase it by one or two percent yeah.|S
+me013|yeah yeah.|B
+me011|um but in order to do that we need to extract out the actual digits.|S
+me013|right.|S
+me011|um so that the reason it's not just a transcript is that there're false starts and misreads and miscues and things like that.|S
+me011|and so i have a set of scripts and x waves where you just select the portion hit r.|S
+me011|um it tells you what the next one should be and you just look for that.|S
+me011|you know so it it'll put on the screen the next set is six nine nine two two.|S
+me011|and you find that and hit the key and it records it in a file in a particular format.|S
+me013|so is this|D
+me011|and so the the question is should we have the transcribers do that or should we just do it?|Q
+me011|well some of us.|S
+me011|i've been i've done eight meetings something like that just by hand.|S
+me011|just myself rather.|S
+me011|so it will not take long.|S
+me011|um|F
+me013|uh what what do you think?|Q
+fe008|my feeling is that|D
+fe008|we discussed this right before coffee.|S
+fe008|and i think it's a it's a fine idea partly because um it's not unrelated to their present skill set.|S
+fe008|but it will add for them an extra dimension it might be an interesting break for them.|S
+fe008|and also it is contributing to the uh composition of the transcript.|S
+fe008|because we can incorporate those numbers directly and it'll be a more complete transcript.|S
+fe008|so i'm i think it's fine that part.|S
+me011|there is there is|D
+me013|so you think it's fine to have the transcribers do it?|Q
+fe008|uhhuh.|S
+me013|yeah okay.|S
+me011|there's one other small bit which is just entering the information which at which is at the top of this form onto the computer to go along with the where the digits are recorded automatically.|S
+me018|good.|B
+me013|yeah.|B
+me011|and so it's just you know typing in name times time date and so on.|S
+me011|um which again either they can do but it is you know firing up an editor or again i can do.|S
+me011|or someone else can do.|S
+fe008|and that you know i'm not that that one i'm not so sure if it's into the the things that i wanted to use the hours for.|S
+fe008|because the the time that they'd be spending doing that they wouldn't be able to be putting more words on.|S
+me013|huh.|B
+fe008|but that's really your choice it's your|D
+me018|so are these two separate tasks that can happen?|Q
+me018|or do they have to happen at the same time before|D
+me011|no they don't have this you have to enter the data before you do the second task but they don't have to happen at the same time.|S
+me011|so it's it's just i have a file which has this information on it and then when you start using my scripts for extracting the times it adds the times at the bottom of the file.|S
+me018|okay.|S
+me011|and so um i mean it's easy to create the files and leave them blank and so actually we could do it in either order.|S
+me018|oh okay.|S
+me011|um it's it's sort of nice to have the same person do it just as a double check to make sure you're entering for the right person.|S
+me011|but either way.|S
+me013|yeah.|B
+me013|yeah just by way of uh uh a uh order of magnitude uh um we've been working with this aurora uh data set.|S
+me013|and uh the best score on the nicest part of the data that is where you've got training and test set that are basically the same kinds of noise and so forth uh is about.|S
+me013|uh|F
+me013|i think the best score was something like five percent uh error per digit.|S
+me013|so that|D
+me011|per digit.|S
+mn014|per digit.|D
+me013|you're right.|S
+me013|so if you were doing ten digit uh recognition you would really be in trouble.|S
+me018|uhhuh.|B
+me013|so so the the point there and this is uh car noise uh uh things but but real real situation.|S
+me013|well real|D
+me013|um the uh there's one microphone that's close that they have as as this sort of thing close versus distant.|S
+me013|uh but in a car.|S
+me013|instead of instead of having a projector noise it's it's car noise.|S
+me013|uh but it wasn't artificially added to get some some artificial signal to noise ratio.|S
+me013|it was just people driving around in a car.|S
+me013|so that's that's an indication|D
+me013|that was with many sites competing and this was the very best score and so forth.|S
+me013|so more typical numbers like|D
+me018|although the models weren't that good.|S
+me018|right?|Q
+me018|i mean the models are pretty crappy?|Q
+me013|you're right.|S
+me013|i think that we could have done better on the models.|S
+me013|but the thing is that we got this this is the kind of typical number for all of the uh uh things in this task all of the um languages.|S
+me013|and so i i think we'd probably the models would be better in some than in others.|S
+me018|huh.|B
+me013|um so uh anyway just an indication once you get into this kind of realm even if you're looking at connected digits it can be pretty hard.|S
+fe008|huh.|B
+fe008|it's going to be fun to see how we compare at this.|S
+me013|yeah.|B
+me018|how did we do on the t i digits?|Q
+fe008|very exciting.|S
+me011|well the prosodics are so much different.|S
+me011|it's going to be strange.|S
+me011|i mean the prosodics are not the same as t i digits for example.|S
+me013|yeah.|B
+me011|so i'm i'm not sure how much of effect that will have.|S
+fe016|what do you mean the prosodics?|Q
+me018|how do|D
+me011|um just what we were talking about with grouping.|S
+me011|that with these the grouping there's no grouping at all and so it's just the only sort of discontinuity you have is at the beginning and the end.|S
+fe016|so what are they doing in aurora?|Q
+fe016|are they reading actual phone numbers?|Q
+me011|aurora i don't know.|S
+me011|i don't know what they do in aurora.|S
+fe016|or a a digit at a time or|D
+me013|uh i'm not sure how|D
+fe016|because it's|D
+me013|no no i mean it's connected it's connected uh digits.|S
+fe016|connected.|S
+me013|yeah.|S
+fe016|so there's also the not just the prosody but the cross the cross word modeling is probably quite different.|S
+me013|but|D
+me011|but right.|S
+me011|but in t i digits they're reading things like zip codes and phone numbers and things like that.|S
+me018|how|D
+fe016|right.|S
+me011|so it's going to be different.|S
+me018|how do we do on t i digits?|Q
+me011|i don't remember.|S
+me011|i mean very good.|S
+me011|right?|Q
+me013|yeah i mean we were in the|D
+me011|one and a half percent two percent something like that?|Q
+me013|uh i no i think we got under a percent.|S
+me011|oh really?|Q
+me013|but it was but it's but i mean the very best system that i saw in the literature was a point two five percent or something that somebody had at at bell labs or uh but but uh sort of pulling out all the stops.|S
+me011|okay.|B
+fe008|it strikes me that there are more each of them is more informative because it's so random.|S
+me011|all right.|S
+me018|huh.|B
+me013|but i think a lot of systems sort of get half a percent or three quarters a percent.|S
+me011|right.|B
+me013|and we're we're in there somewhere.|S
+me011|but that i mean it's really it's it's close talking mikes no noise clean signal just digits i mean everything is good.|S
+me013|yeah.|B
+fe016|it's the beginning of time in speech recognition.|S
+me011|yes exactly.|S
+me013|yeah.|S
+me011|and we've only recently got it to anywhere near human.|S
+fe016|it's like the single cell you know it's the beginning of life.|S
+me018|prehistory.|S
+fe016|yeah.|B
+me011|and it's still like an order of magnitude worse than what humans do.|S
+fe016|right.|S
+me013|yeah.|B
+me011|so|D
+me013|when when they're wide awake yeah.|S
+me011|yeah.|B
+me013|um.|F
+me011|after coffee.|S
+me013|after coffee right.|S
+me013|not after lunch.|S
+me011|okay so um what i'll do then is i'll go ahead and enter this data.|S
+me011|and then hand off to jane and the transcribers to do the actual extraction of the digits.|S
+me013|yeah.|B
+me013|yeah.|B
+me013|one question i have that that i mean we wouldn't know the answer to now but might do some guessing but i was talking before about doing some modeling of uh uh marking of articulatory features with overlap and so on.|S
+me011|huh.|B
+me013|and and um|F
+me013|on some subset.|S
+me013|one thought might be to do this uh on on the digits or some piece of the digits.|S
+me013|uh it'd be easier uh and so forth.|S
+me013|the only thing is i'm a little concerned that maybe the kind of phenomena in|D
+me013|the reason for doing it is because the the argument is that certainly with conversational speech the stuff that we've looked at here before um just doing the simple mapping from um the phone to the corresponding features that you could look up in a book uh isn't right.|S
+me013|it isn't actually right.|S
+me013|in fact there's these overlapping processes where some voicing some up and then some you know some nasality is comes in here and so forth.|S
+me013|and you do this gross thing saying well i guess it's this phone starting there.|S
+me013|so uh that's the reasoning.|S
+me013|but it could be that when we're reading digits because it's it's for such a limited set that maybe maybe that phenomenon doesn't occur as much.|S
+me013|i don't know.|S
+me013|anybody do you have any anybody have any opinion about that?|Q
+fe008|and that people might articulate more.|S
+fe008|and you that might end up with more a closer correspondence.|S
+me013|uhhuh.|B
+me013|yeah.|B
+me011|yeah that's i i agree.|S
+me011|that it's just|D
+me018|sort of less predictability.|S
+me018|and you have to|D
+fe008|uhhuh.|B
+me013|yeah.|B
+fe016|well it's definitely true that when people are reading even if they're re reading what they had said spontaneously that they have very different patterns.|S
+me011|it's a well would this corpus really be the right one to even try that on?|Q
+fe016|mitch showed that and some dissertations have shown that.|S
+me013|right.|B
+fe016|so the fact that they're reading first of all whether they're reading in a room of people or you know just the fact that they're reading will make a difference.|S
+me013|yeah.|B
+fe016|and depends what you're interested in.|S
+me013|see i don't know.|S
+me013|so maybe the thing will be do to take some very small subset mean not have a big program but take a small set uh subset of the conversational speech and a small subset of the digits.|S
+me013|and look and and just get a feeling for it.|S
+me013|um just take a look really.|S
+fe008|that could could be an interesting design too because then you'd have the the comparison of the uh predictable speech versus the less predictable speech.|S
+me013|because i don't think anybody is i at least i don't know of anybody uh|D
+me013|well i don't know the answers.|S
+me018|hey|F
+me013|yeah.|B
+fe008|and maybe you'd find that it worked in in the case of the of the uh non predictable.|S
+me013|yeah.|B
+me018|have to think about the particular acoustic features to mark too because i mean some things they wouldn't be able to mark like uh you know uh tense lax.|S
+me013|uhhuh.|B
+me018|some things are really difficult.|S
+me018|you know?|Q
+me018|just listening.|S
+me011|i think we can get ohala in to give us some advice on that.|S
+fe008|well|F
+me018|yeah.|S
+fe008|also i thought you were thinking of a much more restricted set of features that|D
+me013|yeah but i i i i was like he said i was going to bring john in and ask john what he thought.|S
+fe008|yeah sure.|S
+fe008|sure.|S
+fe008|yeah.|B
+me013|right.|B
+me013|but i mean you want you want it be restrictive but you also want it to to to have coverage.|S
+me011|right.|B
+me013|you know you should it should be such that if you if you uh if you had um all of the features determined that you that you were uh have chosen that that would tell you uh in the steady state case uh the phone.|S
+fe008|yeah.|B
+me013|so um|F
+fe008|okay.|B
+me011|even i guess with vowels that would be pretty hard.|S
+me011|wouldn't it?|Q
+me011|to identify actually you know which one it is.|S
+fe008|it would seem to me that the points of articulation would be more|D
+fe008|uh i mean that's i think about articulatory features i think about points of articulation which means uh rather than vowels.|S
+me011|yeah.|B
+me018|points of articulation?|Q
+me018|what do you mean?|Q
+fe008|so is it uh bilabial or dental or is it you know palatal.|S
+me013|uhhuh.|D
+fe008|which which are all like where where your tongue comes to rest.|S
+me011|uvular.|D
+me018|place of place of articulation.|S
+me013|place place.|S
+fe008|place.|S
+me013|yeah.|B
+mn014|place.|D
+fe008|thank you what whatever i said that's|D
+me018|okay.|D
+me013|yeah.|B
+fe008|i really meant place.|S
+me018|okay i see.|S
+me013|yeah.|B
+me013|okay we got our jargon then okay.|S
+fe008|yeah.|B
+me013|uh|F
+fe016|well it's also there's really a difference between the pronunciation models in the dictionary and the pronunciations that people produce.|S
+fe016|and so you get some of that information from steve's work on the on the labeling.|S
+me013|right.|B
+me011|right.|B
+fe016|and it really|D
+fe016|i actually think that data should be used more.|S
+fe016|that maybe although i think the meeting context is great that he has transcriptions that give you the actual phone sequence.|S
+fe016|and you can go from not from that to the articulatory features but that would be a better starting point for marking the gestural features then data where you don't have that.|S
+fe016|because we you want to know both about the way that they're producing a certain sound and what kinds of you know what kinds of phonemic differences you get between these transcribed sequences and the dictionary ones.|S
+me013|well you might be right that might be the way at getting at what i was talking about.|S
+me013|but the particular reason why i was interested in doing that was because i remember when that happened and john ohala was over here and he was looking at the spectrograms of the more difficult ones.|S
+me013|uh he didn't know what to say about what is the sequence of phones there.|S
+me013|they came up with some compromise.|S
+me013|because that really wasn't what it look like.|S
+fe016|right.|B
+me013|it didn't look like a sequence of phones.|S
+me011|right.|B
+me013|it look like this blending thing happening here and here and here.|S
+fe016|right.|B
+me011|yeah so you have this feature here and overlap yeah.|S
+me018|there was no name for that.|S
+me013|yeah.|B
+fe016|but right.|F
+me013|yeah.|B
+fe016|but it still is there's a there are two steps.|S
+fe016|one you know one is going from a dictionary pronunciation of something like going to see you tomorrow.|S
+me011|and or gonta.|D
+me013|right.|B
+me013|yeah.|B
+fe016|it could be going to or going to or gonta you know.|S
+me013|right.|B
+fe016|and yeah.|F
+fe016|going to see you tomorrow uh guh see you tomorrow.|S
+fe016|and that it would be nice to have these intermediate or these some these reduced pronunciations that those transcribers had marked or to have people mark those as well.|S
+me013|uhhuh.|B
+fe016|because it's not um that easy to go from the dictionary word the dictionary phone pronunciation to the gestural one without this intermediate or a syllable level kind of representation.|S
+me011|well i don't think morgan's suggesting that we do that though.|S
+me013|do you mean|D
+mn014|yeah.|D
+me013|yeah i mean i'm at the moment of course we're just talking about what to provide as a tool for people to do research who have different ideas about how to do it.|S
+me013|so for instance you might have someone who just has a has words with states and has uh uh comes from articulatory gestures to that.|S
+me013|and someone else might actually want some phonetic uh intermediate thing.|S
+me013|so i think it would be be best to have all of it if we could.|S
+me013|but um|F
+me011|but what i'm imagining is a score like notation where each line is a particular feature.|S
+me013|yeah.|B
+me011|right?|Q
+me011|so you would say you know it's voiced through here and so you have label here and you have nasal here.|S
+me013|yeah.|B
+me011|and they they could be overlapping in all sorts of bizarre ways that don't correspond to the timing on phones.|S
+me013|i mean this is the kind of reason why|D
+me013|i remember when at one of the switchboard workshops that uh when we talked about doing the transcription project dave talkin said can't be done.|S
+me011|right.|B
+me013|he was he was what what he meant was that this isn't you know a sequence of phones.|S
+me013|and when you actually look at switchboard that's not what you see and you know and it|D
+me011|and in in fact the inter annotator agreement was not that good.|S
+me011|right?|Q
+me011|on the harder ones?|Q
+me013|yeah i mean it|D
+fe016|it depends how you look at it and|D
+fe016|i i understand what you're saying about this kind of transcription exactly.|S
+me013|yeah.|B
+fe016|because i've seen you know where does the voicing bar start and so forth.|S
+me013|yeah.|B
+fe016|all i'm saying is that it is useful to have that the transcription of what was really said and which syllables were reduced.|S
+fe016|uh if you're going to add the features.|S
+fe016|it's also useful to have some level of representation which is is a reduced it's a pronunciation variant that currently the dictionaries don't give you.|S
+me013|uhhuh.|B
+fe016|because if you add them to the dictionary and you run recognition you you add confusion.|S
+me013|right.|B
+fe016|so people purposely don't add them.|S
+me013|right.|B
+fe016|so it's useful to know which variant was was produced at least at the phone level.|S
+me018|so it would be it would be great if we had either these kind of labelings on the same portion of switchboard that steve marked or steve's type markings on this data with these.|S
+fe016|right.|S
+fe016|that's all i mean.|S
+fe016|exactly.|S
+me013|yeah.|B
+fe016|exactly.|S
+me013|yeah no i i don't disagree with that.|S
+fe016|and steve's type is fairly it's not that slow.|S
+fe016|uh uh|F
+fe016|i don't know exactly what the timing was but|D
+me013|yeah i don't disagree with it.|S
+me013|the the only thing is that what you actually will end end up with is something|D
+me013|it's all compromised.|S
+me013|right?|Q
+me013|so the string that you end up with isn't actually what happened.|S
+me013|but it's it's the best compromise that a group of people scratching their heads could come up with to describe what happened.|S
+fe016|uhhuh.|B
+me018|and it's more accurate than phone labels.|S
+me013|but and it's more accurate than the than the dictionary or if you've got a pronunciation uh lexicon that has three or four.|S
+me011|the word.|D
+me018|yeah.|B
+me013|this might be have been the fifth one that you that you pruned or whatever.|S
+me018|so it's like a continuum.|S
+fe016|right.|B
+fe016|right.|F
+me018|it's you're going all the way down.|S
+me013|so sure.|S
+fe016|right.|F
+fe016|that's what i meant is|D
+me018|yeah.|B
+me013|yeah.|B
+fe016|and in some places it would fill in so the kinds of gestural features are not everywhere.|S
+me013|yeah.|B
+me011|well|F
+me018|right.|B
+fe016|so there are some things that you don't have access to either from your ear or the spectrogram.|S
+me018|uhhuh.|B
+fe016|but you know what phone it was and that's about all you can all you can say.|S
+me018|right.|B
+fe016|and then there are other cases where nasality voicing|D
+me018|it's basically just having multiple levels of of information and marking on the signal.|S
+fe016|right.|S
+fe016|right.|B
+me013|yeah.|B
+fe016|right.|D
+me011|well the other difference is that the the features are not synchronous.|S
+me011|right?|Q
+me011|they overlap each other in weird ways.|S
+me018|uhhuh.|B
+me018|uhhuh.|B
+me011|so it's not a strictly one dimensional signal.|S
+me013|right.|B
+me011|so i think that's sort of qualitatively different.|S
+fe016|right.|F
+fe016|you can add the features in uh but it'll be underspecified.|S
+fe008|huh.|B
+fe016|there'll be no way for you to actually mark what was said completely by features.|S
+me011|well not with our current system but you could imagine designing a system that the states were features rather than phones.|S
+fe016|and if you're|D
+fe016|well we we've probably have a separate um discussion of uh of whether you can do that.|S
+fe008|that's well isn't that i thought that was well but that wasn't that kind of the direction?|Q
+me011|yeah.|S
+fe008|i thought|D
+me013|yeah so i mean what what where this is i mean i i want would like to have something that's useful to people other than those who are doing the specific kind of research i have in mind.|S
+me013|so it should be something broader.|S
+me013|but the but uh where i'm coming from is uh we're coming off of stuff that larry saul did with with um uh john dalan and muzim rahim in which uh they uh have um a a multi band system that is uh trained through a combination of gradient learning and e m to um estimate uh the uh value for for for a particular feature.|S
+me013|okay?|Q
+me013|and this is part of a larger image that john dalan has about how the human brain does it in which he's sort of imagining that individual frequency channels are coming up with their own estimate of of these these kinds of something like this.|S
+me013|might not be you know exact features that jakobson thought of or something.|S
+me013|but i mean you know some something like that.|S
+me013|some kind of low level features which are not fully you know phone classification.|S
+me013|and the the this particular image of how how it's done is that then given all of these estimates at that level there's a level above it then which is is making some kind of sound unit classification such as you know phone.|S
+me013|and and you know you could argue what what a sound unit should be and and so forth.|S
+me013|but that that's sort of what i was imagining doing.|S
+me013|um and but it's still open within that whether you would have an intermediate level in which it was actually phones or not.|S
+me013|you wouldn't necessarily have to.|S
+me013|um but again i wouldn't want to wouldn't want what we we produced to be so know local in perspective that it it was matched what we were thinking of doing one week.|S
+me013|and and and you know what you're saying is absolutely right.|S
+me013|that that if we can we should put in uh another level of of description there if we're going to get into some of this low level stuff.|S
+me018|well you know um i mean if we're talking about having the annotators annotate these kinds of features it seems like|D
+me018|you know you|F
+me018|the the question is do they do that on meeting data?|Q
+me018|or do they do that on switchboard?|Q
+me011|that's what i was saying.|S
+me011|maybe meeting data isn't the right corpus.|S
+fe008|well it seems like you could do both.|S
+fe008|i mean i was thinking that it would be interesting to do it with respect to parts of switchboard anyway in terms of|D
+me013|uhhuh.|B
+fe008|uh partly to see if you could generate first guesses at what the articulatory feature would be based on the phone representation at that lower level.|S
+me013|uhhuh.|B
+fe008|it might be a time gain.|S
+fe008|but also in terms of comparability of um|D
+me013|uhhuh.|B
+me018|well because the yeah and then also if you did it on switchboard you would have the full continuum of transcriptions.|S
+fe008|what you gain.|S
+fe008|yep.|S
+me018|you'd have it from the lowest level the acoustic features then you'd have the you know the phonetic level that steve did.|S
+fe008|uhhuh.|S
+fe016|yeah that that's all i was thinking about.|S
+me018|and|F
+fe016|it is telephone band so the bandwidth might be|D
+me018|yeah.|B
+fe008|and you could tell that|D
+me018|it'd be a complete set then.|S
+fe008|and you get the relative gain up ahead.|S
+me013|it's so it's a little different.|S
+fe016|yeah.|B
+me013|so i mean you know we'll see how much we can uh get the people to do and how much money we'll have and all this sort of thing.|S
+fe008|uhhuh.|B
+fe008|uhhuh.|B
+me018|but it it might be good to do what jane was saying uh you know seed it with guesses about what we think the features are based on you know the phone or steve's transcriptions or something to make it quicker.|S
+me013|but|F
+me013|might be do both.|S
+me011|all right so based on the phone transcripts they would all be synchronous but then you could imagine nudging them here and there.|S
+me018|adjusting.|S
+me018|yeah exactly.|S
+me018|scoot the voicing over a little because|D
+fe008|yeah.|B
+me011|right.|S
+me013|well i think what i mean i'm i'm a little behind in what they're doing now and uh the stuff they're doing on switchboard now.|S
+me013|but i think that steve and the gang are doing something with an automatic system first and then doing some adjustment.|S
+me013|as i as i recall.|S
+me013|so i mean that's probably the right way to go anyway is to is to start off with an automatic system with a pretty rich pronunciation dictionary that that um you know tries to label it all.|S
+me013|and then people go through and fix it.|S
+fe008|so in in our case you'd think about us starting with maybe the regular dictionary entry?|Q
+fe008|and then|D
+me013|well regular dictionary i mean this is a pretty rich dictionary.|S
+fe008|or would we?|Q
+me013|it's got got a fair number of pronunciations in it.|S
+me018|or you could start from the if we were going to do the same set of sentences that steve had done we could start with those transcriptions.|S
+fe008|but|F
+fe008|uhhuh.|S
+me013|yeah.|S
+fe016|that's actually what i was thinking is|D
+fe008|so i was thinking|D
+me011|right.|B
+me018|yeah.|D
+fe016|the problem is when you run uh if you run a regular dictionary um even if you have variants in there which most people don't you don't always get out the actual pronunciations.|S
+me018|yeah.|B
+fe016|so that's why the human transcriber's giving you the that pronunciation.|S
+fe008|yeah.|D
+me013|actually maybe they're using phone recognizers.|S
+fe008|oh.|D
+fe016|and so|D
+fe016|they they i thought that they were.|S
+me013|is that what they're doing?|Q
+me011|they are.|D
+fe016|we should catch up on what steve is|D
+me013|oh okay.|S
+fe016|uh i think that would be a good good idea.|S
+me013|yeah.|B
+me013|yeah so i think that we also don't have i mean|D
+me013|we've got a good start on it.|S
+me013|but we don't have a really good meeting recorder or recognizer or transcriber or anything yet.|S
+me013|so|F
+fe016|yeah.|S
+me013|so i mean another way to look at this is to is to uh do some stuff on switchboard which has all this other stuff to it.|S
+me013|and then um as we get further down the road and we can do more things ahead of time we can do some of the same things to the meeting data.|S
+me018|uhhuh.|D
+fe008|okay.|B
+me018|yeah.|B
+fe008|and i'm and these people might they they are most of them are trained with i p a.|S
+me013|yeah.|D
+fe008|they'd be able to do phonetic level coding or articulatory.|S
+me018|are they busy for the next couple years or|D
+fe008|well you know i mean they they they're interested in continuing working with us.|S
+fe008|so i mean i and this would be up their alley so we could when the when you meet with with john ohala and find you know what taxonomy you want to apply then they'd be good to train onto it.|S
+me013|yeah.|B
+me013|yeah.|B
+me013|anyway this is not an urgent thing at all.|S
+fe008|yeah.|D
+me013|just it came up.|S
+me018|it'd be very interesting though to have that data.|S
+fe016|yeah.|S
+me011|i wonder how would you do a forced alignment?|Q
+fe008|i think so too.|S
+fe016|might|D
+fe008|interesting idea.|S
+me011|to to i mean you'd want to iterate somehow.|S
+me011|yeah.|B
+me011|it's interesting thing to think about.|S
+fe016|it might be|D
+me018|huh.|D
+fe016|i was thinking it might be|D
+me011|i mean you'd you'd want models for spreading.|S
+me018|of the acoustic features?|Q
+me011|yeah.|S
+me018|uhhuh.|S
+me013|uhhuh.|B
+me013|yeah.|B
+fe016|well it might be neat to do some phonetic features on these non word words.|S
+fe016|are are these kinds of words that people never the huh s and the huh s and the huh and the uh?|Q
+fe016|these no i'm serious.|S
+fe016|there are all these kinds of functional uh elements.|S
+fe016|i don't know what you call them.|S
+fe016|but not just fill pauses but all kinds of ways of interrupting and so forth.|S
+me011|uhhuh.|B
+fe016|and some of them are yeah uhhuh s and huh s and huh.|S
+fe016|huh okay uh grunts.|S
+fe016|uh|F
+fe016|that might be interesting.|S
+fe008|he's got lip lip smacks.|D
+fe016|in the meetings.|D
+me013|we should move on.|S
+fe008|yeah.|S
+me013|uh new version of uh presegmentation?|Q
+mn014|uh oh yeah um i worked a little bit on the on the presegmentation to to get another version which does channel specific uh speech-nonspeech detection.|S
+mn014|and what i did is i used some normalized features which uh look into the which is normalized energy uh energy normalized by the mean over the channels and by the minimum over the other.|S
+mn014|within each channel.|S
+mn014|and to to huh to yeah to normalize also loudness and and modified loudness and things and that those special features actually are in my feature vector.|S
+me011|oh.|D
+mn014|and and therefore to be able to uh somewhat distinguish between foreground and background speech in in the different in each channel.|S
+mn014|and uh i tested it on on three or four meetings and it seems to work well yeah fairly well i i would say.|S
+mn014|there are some problems with the lapel mike.|S
+me011|of course.|S
+mn014|yeah.|B
+me011|wow that's great.|S
+mn014|uh yeah.|F
+mn014|and|D
+me011|so i i understand that's what you were saying about your problem with minimum.|S
+mn014|yeah.|S
+mn014|and|F
+mn014|yeah and and i had i had uh specific problems with|D
+me011|i get it.|S
+me011|so new use ninetieth quartile rather than minimum.|S
+mn014|yeah.|S
+mn014|yeah.|S
+fe008|wow!|S
+mn014|yeah yeah then i i did some some some things like that.|S
+fe008|interesting.|S
+mn014|as there there are some some problems in when in the channel there they the the speaker doesn't doesn't talk much or doesn't talk at all.|S
+mn014|then the yeah there are there are some problems with with with with normalization and then uh there the system doesn't work at all.|S
+mn014|so i'm i'm glad that there is the the digit part where everybody is forced to say something.|S
+me013|right.|D
+mn014|so that's that's great for for my purpose.|S
+mn014|and the thing is i i then the evaluation of of the system is a little bit hard as i don't have any references.|S
+me011|well we did the hand|D
+me011|the one by hand.|S
+mn014|yeah that's the one one where i do the training on so i can't do the evaluation on.|S
+mn014|so the thing is can the transcribers perhaps do some some some meetings in in terms of speech-nonspeech in in the specific channels?|Q
+me011|uh.|B
+me018|well won't you have that from their transcriptions?|Q
+fe008|well i have|D
+fe008|well okay so now we need|D
+me011|no because we need is really tight.|S
+mn014|yeah.|S
+fe008|so um|F
+fe008|i think i might have done what you're requesting though i did it in the service of a different thing.|S
+mn014|oh great.|S
+fe008|i have thirty minutes that i've more tightly transcribed with reference to individual channels.|S
+mn014|okay.|B
+mn014|okay that's great.|S
+mn014|that's great too.|S
+fe008|and i could and|D
+mn014|yeah so|F
+me011|hopefully that's not the same meeting that we did.|S
+fe008|and|D
+fe008|no actually it's a different meeting.|S
+me011|good.|S
+fe008|so um so the you know we have the they transcribe as if it's one channel with these with the slashes to separate the overlapping parts.|S
+mn014|okay.|B
+fe008|and then we run it through then it then i'm going to edit it and i'm going to run it through channelize which takes it into dave gelbart's format.|S
+mn014|yeah.|D
+mn014|yeah.|D
+fe008|and then you have all these things split across according to channel.|S
+fe008|and then that means that if a person contributed more than once in a given overlap during that time bend that that two parts of the utterance end up together it's the same channel.|S
+fe008|and then i took his tool and last night for the first thirty minutes of one of these transcripts i tightened up the um boundaries on individual speakers' channels.|S
+mn014|okay.|B
+mn014|okay.|B
+fe008|because his his interface allows me to have total flexibility in the time tags across the channels.|S
+mn014|yeah.|B
+mn014|yeah.|D
+fe008|and um so.|F
+me018|so current this week.|S
+mn014|so yeah yeah that that that's great but what would be nice to have some more meetings not just one meeting to to be sure that that there is a system.|S
+fe008|yes.|B
+fe008|might not be what you need.|S
+me011|yeah so if we could get a couple meetings done with that level of precision i think that would be a good idea.|S
+mn014|okay.|S
+fe008|oh okay.|S
+mn014|yeah.|B
+fe008|uh how how much|D
+fe008|so the meetings vary in length.|S
+fe008|what are we talking about in terms of the number of minutes you'd like to have as your as your training set?|Q
+mn014|it seems to me that it would be good to have a few minutes from from different meetings.|S
+mn014|so|F
+mn014|but i'm not sure about how much.|S
+fe008|okay now you're saying different meetings because of different speakers or because of different audio quality or both or|D
+mn014|both.|S
+mn014|both.|S
+fe008|okay.|S
+mn014|different different number of speakers different speakers different conditions.|S
+me013|yeah we don't have that much variety in meetings yet.|S
+me013|uh i mean we have this meeting and the feature meeting and we have a couple others that we have uh couple examples of but but uh|D
+mn014|yeah|D
+mn014|yeah.|B
+fe008|uhhuh.|B
+me001|even probably with the gains differently will affect it you mean|D
+mn014|uh not really as|D
+me013|potentially.|S
+me001|oh because you use the normalization?|Q
+mn014|because of the normalization yeah.|S
+me001|okay.|S
+me013|oh okay.|S
+mn014|yeah.|D
+fe016|we can try running|D
+fe016|we haven't done this yet because um uh andreas is is going to move over the s r i recognizer.|S
+fe016|basically i ran out of machines at s r i.|S
+fe016|because we're running the evals.|S
+mn014|okay.|B
+fe016|and i just don't have machine time there.|S
+fe016|but once that's moved over uh hopefully in a a couple days then we can take um what jane just told us about as the presegmented the the segmentations that you did at level eight or at some threshold that jane right and try doing forced alignment um on the word strings.|S
+me011|oh shoot!|D
+mn014|yeah.|B
+mn014|yeah.|B
+fe008|the presegment.|S
+mn014|yeah.|B
+fe008|yeah.|B
+mn014|with the recognizer?|Q
+mn014|yeah.|B
+fe016|and if it's good then that will that may give you a good boundary.|S
+fe016|of course if it's good we don't then we're we're fine.|S
+mn014|yeah.|F
+fe016|but i don't know yet whether these segments that contain a lot of pauses around the words will work or not.|S
+mn014|i i would quite like to have some manually transcribed references for for the system as i'm not sure if if it's really good to compare with with some other automatic found boundaries.|S
+fe016|yeah.|S
+fe016|right.|B
+fe008|well no if we were to start with this and then tweak it manually would that that would be okay?|S
+mn014|yeah.|B
+fe016|right.|B
+mn014|yeah sure.|S
+fe016|they might be okay.|S
+fe008|okay.|D
+fe016|it you know it really depends on a lot of things.|S
+mn014|yeah.|B
+fe016|but i would have maybe a transcriber uh look at the result of a forced alignment and then adjust those.|S
+mn014|yeah.|B
+mn014|to adjust them or|D
+mn014|yeah.|S
+mn014|yeah yeah.|S
+fe016|that might save some time.|S
+fe016|if they're horrible it won't help at all.|S
+mn014|yeah great.|S
+fe016|but they might not be horrible.|S
+mn014|yeah.|B
+fe016|so but i'll let you know when we uh have that.|S
+mn014|okay great.|S
+fe008|how many minutes would you want from|D
+fe008|i mean we could easily get a section you know like say a minute or so from every meeting that we have so from the newer ones that we're working on everyone that we have.|S
+fe008|and then|D
+fe008|should provide this.|S
+mn014|if it's not the first minute of of the meeting that that's okay with me.|S
+mn014|but in in the first minute uh often there are some some strange things going on which which aren't really well for which which aren't really good.|S
+mn014|so what what i'd quite like perhaps is to have some five minutes of of of different meetings.|S
+mn014|so|F
+fe008|somewhere not in the very beginning five minutes okay.|S
+mn014|yeah.|B
+fe008|and then i wanted to ask you just for my information.|S
+fe008|then would you be|D
+fe008|because i don't quite|D
+fe008|so would you be training then um the segmenter so that it could on the basis of that segment the rest of the meeting?|Q
+fe008|so if i give you like five minutes is the idea that this would then be applied to uh to providing tighter time bands?|Q
+mn014|i i could do a a retraining with that yeah.|S
+fe008|wow interesting.|S
+mn014|that's but but i hope that i i don't need to do it.|S
+fe008|okay.|B
+fe008|uhhuh.|B
+mn014|so uh it can be do in an unsupervised way.|S
+fe008|excellent.|S
+mn014|so|D
+fe008|excellent okay.|S
+mn014|i'm i'm not sure.|S
+mn014|but for for for those three meetings which i which i did it seems to be quite well.|S
+mn014|but there are some some as i said some problems with the lapel mike.|S
+mn014|but perhaps we can do something with with cross correlations to to get rid of the of those.|S
+mn014|and|F
+mn014|yeah.|F
+mn014|that's that's what i that's my future work.|S
+mn014|well well what i want to do is to to look into cross correlations for for removing those false overlaps.|S
+fe008|wonderful.|S
+fe016|are the um wireless different than the wired mikes at all?|Q
+fe016|i mean have you noticed any difference?|Q
+mn014|i'm i'm not sure um if if there are any wired mikes in those meetings or uh i have have to have a look at them.|S
+mn014|but i'm i'm i think there's no difference between.|S
+fe016|so it's just the lapel versus everything else?|Q
+mn014|yeah.|S
+mn014|yeah.|S
+fe008|okay so then if that's five minutes per meeting we've got like twelve minutes twelve meetings roughly that i'm that i've been working with then.|S
+me013|of of of the meetings that you're working with how many of them are different|D
+mn014|no.|D
+me013|are there any of them that are different than these two meetings?|Q
+fe008|well oh in terms of the speakers or the conditions or the|D
+me013|yeah speakers.|S
+me013|sorry.|S
+me013|so|F
+fe008|um we have different combinations of speakers.|S
+mn014|yeah that|D
+fe008|i mean just from what i've seen uh there are some where um you're present or not present.|S
+fe008|and then then you have the difference between the networks group and this group.|S
+mn014|yeah i know some of the n s a meetings yeah.|S
+me013|yeah.|F
+me013|so i didn't know in the group you had if you had|D
+mn014|yeah.|B
+me013|so you have the networks meeting?|Q
+fe008|yep we do.|S
+mn014|yeah.|S
+me013|do you have any of jerry's meetings in your pack uh|D
+fe008|um no.|S
+me013|no.|S
+fe008|we could|D
+fe008|i mean you you recorded one last week or so.|S
+fe008|i could get that new one in this week i get that new one in.|S
+me011|yep.|B
+fe016|we're going to be recording them every monday.|S
+me013|yeah.|B
+me013|because i think he really needs variety.|S
+fe016|so|F
+me013|and and having as much variety for speaker certainly would be a big part of that i think.|S
+fe008|great.|B
+mn014|yeah.|B
+mn014|yeah.|B
+fe008|okay so if i|D
+fe008|okay included include|D
+fe008|okay then uh if i were to include all together samples from twelve meetings that would only take an hour.|S
+fe008|and i could get the transcribers to do that.|S
+fe008|right?|Q
+fe008|i mean what i mean is that would be an hour sampled and then they'd transcribe those that hour.|S
+fe008|right?|Q
+fe008|that's what i should do?|Q
+me013|yeah.|S
+me013|and|D
+me013|right.|F
+me013|but you're|D
+mn014|that's that's|D
+fe008|i don't mean transcribe.|S
+fe008|i mean i mean adjust.|S
+fe008|so they get it into the multi channel format and then adjust the timebands so it's precise.|S
+me013|so that should be faster than the ten times kind of thing.|S
+fe008|absolutely.|S
+me013|yeah.|F
+fe008|i did i did um uh so last night i did uh|D
+fe008|oh gosh.|S
+fe008|well last night i did about half an hour in three hours which is not terrific.|S
+me013|yeah.|B
+fe008|but um|F
+me013|yeah.|B
+fe008|anyway it's an hour and a half per|D
+me013|well that's probably|D
+mn014|so|F
+fe008|well i can't calculate on my on my feet.|S
+mn014|do the transcribers actually start with uh transcribing new meetings or are they|D
+fe008|well um they're still working they still have enough to finish that i haven't assigned a new meeting.|S
+mn014|okay.|S
+fe008|but the next|D
+fe008|i was about to need to assign a new meeting.|S
+fe008|and i was going to take it from one of the new ones.|S
+mn014|okay.|B
+fe008|and i could easily give them jerry feldman's meeting.|S
+fe008|no problem.|S
+fe008|and then|F
+mn014|okay.|B
+fe016|so they're really running out of data i mean that's good.|S
+fe008|uhhuh.|S
+fe008|uh that first set.|S
+fe016|um okay.|S
+me013|they're running out of data unless we make the decision that we should go over and start uh transcribing the other set.|S
+fe016|so|D
+me013|there the first the first half.|S
+fe008|and so i was in the process of like editing them but this is wonderful news.|S
+mn014|yeah.|D
+mn014|okay.|D
+me013|all right.|D
+fe008|we funded the experiment with uh|D
+fe008|also we were thinking maybe applying that that to getting the|D
+fe008|yeah that'll be very useful to getting the overlaps to be more precise all the way through.|S
+me013|so this blends nicely into the update on transcripts.|S
+fe008|yes it does.|S
+me013|okay.|D
+fe008|so um um liz and and don and i met this morning in the barco room with the lecture hall.|S
+fe016|yeah please.|S
+fe016|go ahead.|S
+fe016|and this afternoon.|S
+fe008|and this afternoon.|S
+fe008|it drifted into the afternoon uh concerning this issue of um the well there's basically the issue of the interplay between the transcript format and the processing that they need to do for the s r i recognizer.|S
+fe008|and um well so i mentioned the process that i'm going through with the data.|S
+fe008|so you know i get the data back from the well uh metaphorically get the data back from the transcriber.|S
+fe008|and then i check for simple things like spelling errors and things like that.|S
+fe008|and um i'm going to be doing a more thorough editing with respect to consistency of the conventions.|S
+fe008|but they're they're generally very good.|S
+fe008|and then i run it through uh the channelize program to get it into the multi channel format okay.|S
+fe008|and the what we discussed this morning i would summarize as saying that um these units that result in a a particular channel and a particular timeband at at that level um vary in length.|S
+fe008|and um their recognizer would prefer that the units not be overly long.|S
+fe008|but it's really an empirical question whether the units we get at this point through just that process i described might be sufficient for them.|S
+fe008|so as a first pass through a first chance without having to do a lot of hand editing what we're going to do is i'll run it through channelize give them those data after i've done the editing process and be sure it's clean.|S
+fe008|and i can do that pretty quickly with just that minimal editing without having to hand break things.|S
+me013|uhhuh.|D
+fe008|and then we'll see if the units that we're getting uh with the at that level are sufficient.|S
+fe008|and maybe they don't need to be further broken down.|S
+fe008|and if they do need to be further broken down then maybe it just be piece wise maybe it won't be the whole thing.|S
+fe008|so that's that's what we were discussing this morning as far as i among|D
+fe016|right.|B
+fe008|also we discussed some adaptational things.|S
+fe016|then lots of|D
+fe016|right.|B
+fe008|so it's like|D
+fe008|uh you know i hadn't uh incorporated a convention explicitly to handle acronyms for example.|S
+fe008|but if someone says p z m it would be nice to have that be directly interpretable from the transcript what they said.|S
+me013|uhhuh.|B
+fe008|or uh tcl t c l i mean.|S
+fe008|it's like|D
+fe008|it's and so um i've i've incorporated also convention with that.|S
+fe008|but that's easy to handle at the post editing phase.|S
+fe008|and i'll mention it to transcribers for the next phase.|S
+fe008|but that's okay.|S
+fe008|and then a similar uh convention for numbers.|S
+fe008|so if they say one eighty three versus one eight three.|S
+fe008|um and also i'll be um encoding as i do my post editing the things that are in curly brackets which are clarificational material.|S
+fe008|and uh to incorporate uh keyword at the beginning.|S
+fe008|so it's going to be either a gloss or it's going to be a vocal sound like a laugh or a cough or so forth.|S
+fe008|or a non vocal sound like a door slam and that can be easily done with a you know just a one little additional thing in the in the general format.|S
+fe016|yeah we we just needed a way to strip you know all the comments all the things the that linguist wants but the recognizer can't do anything with.|S
+fe016|um but to keep things that we mapped to like reject models or you know uh mouth noise or cough.|S
+fe016|and then there's this interesting issue jane brought up.|S
+fe016|which i hadn't thought about before.|S
+fe016|but i was realizing as i went through the transcripts that there are some noises like|D
+fe016|um|F
+fe016|well the good example was an in breath where a transcriber working from the mixed signal doesn't know whose breath it is.|S
+me011|right.|B
+fe016|and they've been assigning it to someone that may or may not be correct.|S
+fe016|and what we do is if it's a breath sound you know a sound from the speaker we map it to a noise model like a mouth noise model in the recognizer.|S
+fe016|and yeah it probably doesn't hurt that much once in a while to have these.|S
+fe016|but if they're in the wrong channel that's not a good idea.|S
+fe016|and then there's also things like door-slams that's really in no one's channel.|S
+fe016|they're like it's in the room.|S
+me011|right.|D
+mn014|yeah.|D
+fe016|and uh jane had this nice uh idea of having like an extra uh couple tiers|D
+me011|an extra channel.|S
+fe008|yeah.|F
+fe016|yeah.|S
+fe008|i've been i've been adding that to the ones i've been editing.|S
+fe016|and we were thinking that is useful also when there's uncertainties.|S
+fe016|so if they hear a breath and they don't know who breath it is it's better to put it in that channel than to put it in the speaker's channel.|S
+fe016|because maybe it was someone else's breath.|S
+fe016|or uh|F
+fe016|so i think that's a good you can always clean that up post processing.|S
+fe008|yeah.|B
+fe016|so a lot of little details.|S
+fe016|but i think we're coming to some kind of closure on that.|S
+fe016|so the idea is then uh don can take uh jane's post processed channelized version and with some scripts you know convert that to to a reference for the recognizer.|S
+fe016|and we can can run these.|S
+fe016|so when that's ready you know as soon as that's ready and as soon as the recognizer is here we can get twelve hours of force aligned and recognized data.|S
+fe016|and you know start working on it.|S
+fe008|and|D
+fe016|so we're i don't know a a week or two away i would say from.|S
+fe016|uh if if that process is automatic once we get your post process transcript.|S
+fe008|uhhuh.|B
+fe008|and that doesn't the amount of editing that it would require is not very much either.|S
+fe008|i'm just hoping that the units that are provided in that way will be sufficient.|S
+fe008|because i would save a lot of uh time dividing things.|S
+fe016|yeah some of them are quite long.|S
+fe016|just from|D
+fe016|i don't know.|S
+fe016|how long were|D
+fe016|you did one|D
+me001|i saw a couple around twenty seconds.|S
+me001|and that was just without looking too hard for it.|S
+me001|so i would imagine that there might be some that are longer.|S
+fe016|right.|S
+fe008|well|D
+fe008|one question.|S
+fe008|would that be a single speaker or is that multiple speakers overlapping?|Q
+me001|no no but if we're going to segment it|D
+me001|like if there's one speaker in there that says okay or something right in the middle it's going to have a lot of dead time around it.|S
+fe016|right it's not the it's not the fact that we can't process a twenty second segment it's the fact that there's twenty seconds in which to place one word in the wrong place.|S
+me001|so it's not|D
+me001|yeah.|B
+fe016|you know if if someone has a very short utterance there.|S
+fe008|yeah.|B
+fe016|and that's where we might want to have this individual you know have your pre process input.|S
+mn014|yep.|B
+mn014|yeah.|B
+mn014|sure.|B
+fe016|and i just don't know.|S
+mn014|i i i thought that perhaps the transcribers could start then from the those multi channel uh speech-nonspeech detections if they would like to.|S
+fe008|that's very important.|S
+fe016|i have to run it.|S
+fe016|right.|S
+fe008|in in doing the hand marking?|Q
+mn014|yeah.|S
+fe008|yeah that's what i was thinking too.|S
+fe016|right.|B
+fe016|so that's probably what will happen.|S
+fe008|yeah.|B
+fe016|but we'll try it this way and see.|S
+mn014|yeah.|B
+fe016|i mean it's probably good enough for force alignment.|S
+fe016|if it's not then we're really then we definitely|D
+mn014|yeah.|B
+fe016|uh but for free recognition i'm it'll probably not be good enough.|S
+fe016|we'll probably get lots of errors because of the cross talk and noises and things.|S
+mn014|yep.|B
+me013|good.|S
+me013|i think that's probably our agenda or starting up there.|S
+fe008|oh i wanted to ask one thing.|S
+me013|yeah?|Q
+fe008|the microphones the new microphones.|S
+fe008|when do we get uh|D
+me011|uh they said it would take about a week.|S
+fe008|oh exciting.|S
+fe008|k.|S
+me013|k.|S
+me018|you ordered them already?|Q
+me011|uhhuh.|S
+me018|great.|S
+fe016|so what happens to our old microphones?|Q
+me013|they go where old microphones go.|S
+me011|um|F
+fe016|do we give them to someone?|Q
+fe016|or|D
+me011|well the only thing we're going to have extra for now|D
+fe016|we don't have more receivers.|S
+fe016|we just have|D
+me011|right we|D
+fe016|right.|B
+me011|so the only thing we'll have extra now is just the lapel.|S
+me011|not not the bodypack.|S
+me011|just the lapel.|S
+fe016|just the lapel itself.|S
+me011|um and then one of the one of those.|S
+me011|since what i decided to do on morgan's suggestion was just get two new microphones um and try them out.|S
+fe016|uhhuh.|B
+me011|and then if we like them we'll get more.|S
+fe016|okay.|S
+me013|yeah.|B
+me011|since they're they're like two hundred bucks a piece.|S
+me011|we won't uh at least try them out.|S
+me018|so it's a replacement for this headset mike.|S
+me011|yep yep.|S
+me013|yeah.|B
+me011|and they're going to do the wiring for us.|S
+me018|what's the um style of the headset?|Q
+me011|it's um it's by crown.|S
+me011|and it's one of these sort of mount around the ear thingies.|S
+me011|and uh when i when i mentioned that we thought it was uncomfortable he said it was a common problem with the sony.|S
+me011|and this is how apparently a lot of people are getting around it.|S
+me018|huh.|D
+me011|and i checked on the web and every site i went to raved about this particular mike.|S
+me011|it's apparently comfortable and stays on the head well.|S
+me011|so we'll see if it's any good.|S
+me011|but uh i think it's promising.|S
+fe008|you said it was used by aerobics instructors?|Q
+me011|yup.|S
+me011|yep yep so it was it was advertised for performers.|S
+fe008|that says a lot.|S
+me013|for the for the record adam is not a paid employee or a consultant of crown.|S
+me011|and|D
+me011|excuse me?|Q
+fe008|oh.|S
+me011|excuse me?|Q
+fe016|right.|S
+me013|i said for the record adam is is not a paid consultant or employee of crown.|S
+me011|that's right.|S
+fe016|however he may be solicited after these meetings are distributed.|S
+me011|well we're using the crown p z ms.|S
+fe016|don't worry about finishing your dissertation.|S
+me013|yeah.|B
+me011|these are crown.|S
+me011|aren't they?|Q
+me011|the p z ms are crown.|S
+me013|all right.|S
+me011|aren't they?|Q
+me013|yeah.|S
+me011|yeah i thought they were.|S
+me013|you bet you bet.|S
+me011|and they work very well.|S
+fe016|yes.|S
+me013|so if we go to a workshop about all this this it's going to be a meeting about meetings about meetings.|S
+me013|okay.|S
+me013|so|F
+me011|and then it we have to go to the planning session for that workshop.|S
+me013|oh yeah what which will be the meeting about the meeting about the meeting.|S
+me011|because then it would be a meeting about the meeting about the meeting about meetings.|S
+me013|yeah.|B
+me013|just start saying m four.|S
+me013|yeah okay.|S
+me011|yeah.|B
+me011|m to the fourth.|S
+me013|should we do the digits?|Q
+me011|yep go for it.|S
+me013|okay.|S

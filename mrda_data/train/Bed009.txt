@@ -1,1098 +1,1099 @@
-me010|okay let's be done with this.|bk
-me010|okay.|tc
-mn048|okay.|bk
-me010|this is ami who|s
-me010|and this is tilman and ralf.|s
-mn048|hi.|s
-mn048|uhhuh nice to meet you.|s
-mn047|hi.|m
-me010|hi.|s
-me010|okay.|bk
-me010|so we're going to try to finish by five so people who want to can go hear nancy chang's talk uh downstairs.|s
-mn048|huh.|b
-me010|and you guys are giving talks on tomorrow and wednesday lunch times.|bu
-mn048|yes.|aa
-mn047|huh.|b
-me010|right?|d
-me010|that's great.|bk
-me010|okay so do do you know what we're going to do?|rt
-mn015|i thought two things.|rt
-mn015|uh we'll introduce ourselves and what we do.|rt
-mn015|and um we already talked with andreas thilo and david.|rt
-mn015|and some lines of code were already written today.|rt
-mn015|and almost tested.|rt
-mn015|and just going to say we have um again the recognizer to parser thing where we're working on.|rt
-mn015|and that should be no problem.|rt
-mn015|and then that can be sort of developed uh as needed when we get enter the tourism domain.|s
-mn015|them we have talked this morning with the with tilman about the generator.|rt
-mn015|and um there one of our diligent workers has to sort of volunteer to look over tilman's shoulder while he is changing the grammars to english.|rt
-mn048|uhhuh.|b
-mn015|because we have we face two ways.|s
-mn015|either we do a syllable concatenating um grammar for the english generation which is sort of starting from scratch and doing it the easy way.|rt
-mn015|or we simply adopt the uh um more in depth um style that is implemented in the german system.|rt
-mn015|and um are then able not only to produce strings but also the syntactic parse.|s
-mn015|uh not parse not|bsc
-mn015|the syntactic tree that is underneath in the syntactic structure.|rt
-mn015|which is the way we decided we were going to go because a it's easier in the beginning.|df
-mn048|uhhuh.|b
-mn015|and um it does require some some knowledge of of those grammars and and and some linguistic background.|s
-mn015|but um it shouldn't be a problem for anyone.|df
-me010|okay so that sounds good.|bk
-me010|johno are you going to have some time to do that uh with these guys?|rt
-me003|sure.|aa
-me010|because you're the grammar maven.|ba
-me003|okay.|bk
-me010|i mean it makes sense.|bu
-me010|doesn't it?|d
-me003|yeah.|aa
-me010|yeah good.|bk
-me010|okay.|bk
-me010|so i think that's probably the the right way to do that.|ba
-me010|and|fh
-me010|yeah so i i actually want to to find out about it too.|s
-me010|but i may not have time to get in.|s
-mn015|the the ultimate goal is that before they leave we we can run through the entire system input through output on at least one or two sample things.|rt
-mn015|and um and by virtue of doing that then in this case johno will have acquired the knowledge of how to extend it.|s
-mn015|ad infinitum.|s
-mn015|when needed if needed when wanted and so forth.|s
-me010|okay that sounds great.|bk
-mn015|and um also um ralf has hooked up with david and you're going to continue either all through tonight or tomorrow on whatever to get the uh parser interface working.|s
-mn047|huh.|b
-mn015|they are thinning out and thickening out lattices.|s
-mn015|and doing this kind of stuff to see what works best.|s
-mn047|huh.|b
-mn047|yep.|b
-me010|great.|b
-me010|so you guys enjoy your weekend?|rt
-mn048|yes very much so.|aa
-mn047|yeah very much.|s
-me010|okay before before you got put to work?|bk
-mn047|yeah.|bk
-me010|great.|b
-me010|okay so that's|tc
-me010|sort of one branch is to get us caught up on what's going on.|s
-me010|also of course it would be really nice to know what the plans are in addition to what's sort of already in code.|cs
-mn048|yes.|b
-me010|and we can|s
-me010|i don't know.|no
-me010|was there uh a time when we were set up to do that?|rt
-me010|it probably will work better if we do it later in the week after we actually understand uh better what's going on.|cs
-mn048|yes.|b
-mn047|huh.|b
-mn048|yeah.|b
-me010|so when do you guys leave?|qw
-mn048|um we're here through sunday.|h
-mn047|oh.|b
-mn048|so|fh
-me010|oh okay.|bk
-mn048|all through friday would be fine.|s
-me010|so|fh
-me010|okay so|fg
-me010|so we'll find a time later in the week to uh get together and talk about your understanding of what smartkom plans are.|cc
-mn048|uhhuh.|rt
-me010|and how we can change them.|e
-mn048|yes sure.|bk
-me010|uh|fh
-mn015|should we already set a date for that?|rt
-mn015|might be beneficial while we're all here.|df
-me010|okay.|aa
-me010|um what what does not work for me is thursday afternoon.|h
-me010|i can do earlier in the day on thursday or um most of the time on friday.|cs
-me010|not all.|e
-mn015|thursday morning sounds fine?|cs
-me010|but johno?|rt
-mn048|uhhuh.|bk
-me010|what are your constraints?|qw
-me003|um thursday afternoon doesn't work for me but|h
-mn015|neither does thursday morning?|d
-mn015|no?|d
-me003|uh thursday morning should be fine.|h
-me010|eleven?|cs
-mn048|okay.|aa
-me010|eleven on thursday?|d
-me003|i was just thinking i i will have leavened by eleven.|rt
-me010|right right.|bk
-me010|this is then out of deference to our non morning people.|s
-mn048|uhhuh.|b
-mn048|okay.|b
-mn048|so at eleven?|bu
-mn047|huh?|br
-mn048|thursday around eleven?|bu
-mn048|okay.|bk
-me010|yeah.|aa
-me010|and actually we can invite um andreas as well.|cs
-mn015|uh he will be in washington though.|ng
-me010|oh that's true.|bk
-me010|he's off off on his trip already.|s
-mn015|but um david is here and he's actually knows everything about the smartkom recognizer.|s
-me010|thilo.|s
-me010|okay well yeah.|bk
-me010|maybe we'll see if david could make it.|cs
-me010|that would be good.|ba
-mn015|okay so|fg
-mn015|facing to to what we've sort of been doing here|s
-mn015|um|h
-mn015|well for one thing we're also using this room to collect data.|s
-mn048|yeah obviously.|bd
-mn015|um um not this type of data.|fh
-mn015|no not meeting data but sort of sort uh our version of a wizard experiment such|s
-mn048|oh okay.|bk
-mn015|not like the ones in munich but pretty close to it.|s
-mn048|uhhuh.|rt
-mn015|the major difference to the munich ones is that we do it via the telephone.|rt
-mn048|okay.|b
-mn015|even though all the recording is done here.|s
-mn015|and so it's a sort of a computer call system that gives you tourist information.|s
-mn048|uhhuh.|b
-mn015|tells you how to get places.|s
-mn015|and it breaks halfway through the experiment and a human operator comes on.|s
-mn015|and part of that is sort of trying to find out whether people change their linguistic verbal behavior when first thinking they speak to a machine and then to a human.|s
-mn048|yeah.|b
-mn015|and we're setting it up so that we can we hope to implant certain intentions in people.|s
-mn015|for example um we have first looked at a simple sentence that how do i get to the powder tower.|s
-mn015|okay so you have the castle of heidelberg.|f
-mn048|okay.|b
-mn015|and there is a tower and it's called powder tower.|s
-mn048|oh okay.|b
-mn048|yeah.|b
-mn015|and um so what will you parse out of that sentence?|qh
-mn015|probably something that we specified in m three l.|s
-mn047|huh.|b
-mn015|that is action go to whatever domain object whatever powder tower.|s
-mn015|and maybe some model will tell us some g p s module in the mobile scenario where the person is at the moment.|s
-mn015|and um we've sort of gone through that once before in the deep mail project.|s
-mn015|and we noticed that first of all what are|s
-mn015|i should've brought some slides.|s
-mn015|but what our|s
-mn015|so here's the tower.|s
-mn015|think of this as a two dimensional representation of the tower.|s
-mn015|and our system led people here to a point where they were facing a wall in front of the tower.|s
-mn015|there is no entrance there but it just happens to be the closest point of the road network to the geometric center.|s
-mn015|because that's how the algorithm works.|s
-mn015|so we took out that part of the road network as a hack.|rt
-mn015|and then it found actually the way to the entrance.|s
-mn015|which was now the closest point of the road network to|s
-mn048|yeah.|b
-mn015|okay geometric center.|rt
-mn015|but what we actually observed in heidelberg is that most people when they want to go there they actually don't want to enter.|s
-mn015|because it's not really interesting.|df
-mn015|they want to go to a completely different point where they can look at it and take a picture.|s
-mn048|oh okay.|b
-mn047|huh.|b
-mn048|yeah.|b
-mn015|and so what uh uh a you|s
-mn015|let's say a simple parse from a from an utterance won't really give us is what the person actually wants.|s
-mn015|does he want to go there to see it?|qy
-mn015|does he want to go there now?|rt
-mn015|later?|d
-mn015|how does the person want to go there?|qw
-mn015|is that person more likely to want to walk there?|qy
-mn015|walk a scenic route?|d
-mn015|and so forth.|s
-mn015|there are all kinds of decisions that we have identified in terms of getting to places and in terms of finding information about things.|s
-mn015|and we are constructing and then we've identified more or less the extra linguistic parameters that may play a role.|s
-mn015|information related to the user and information related to the situation.|s
-mn015|and we also want to look closely on the linguistic information that|s
-mn015|what we can get from the utterance.|s
-mn015|that's part of why we implant these intentions in the data collection to see whether people actually phrase things differently.|s
-mn015|whether they want to enter in order to buy something or whether they just want to go there to look at it.|e
-mn015|and um so the idea is to construct uh um suitable interfaces and a belief net for a module that actually tries to guess what the underlying intention was.|fh
-mn015|and then enrich or augment the m three l structures with what it thought what more it sort of got out of that utterance.|s
-mn015|so if it can make a good suggestion hey.|s
-mn015|you know that person doesn't want to enter.|s
-mn015|that person just wants to take a picture because he just bought film.|s
-mn015|or that person wants to enter because he discussed the admission fee before.|s
-mn015|or that person wants to enter because he wants to buy something.|s
-mn015|and that you usually do inside of buildings and so forth.|s
-mn015|these uh these types of uh these bits of additional information are going to be embedded into the m three l structure in an sort of subfield that we have reserved.|rt
-mn015|and if the action planner does something with it great.|s
-mn015|if not you know then that's also something um that we can't really|s
-mn015|at least we want to offer the extra information we don't really um we're not too worried.|s
-mn048|uhhuh.|b
-mn047|huh.|b
-mn015|i mean ultimately if you have if you can offer that information somebody's going to do something with it sooner or later.|s
-mn015|that's sort of part of our belief.|s
-me003|what was he saying?|qw
-mn015|um for example right now i know the g i s from email is not able to calculate these viewpoints.|s
-mn015|so that's a functionality that doesn't exist yet to do that dynamically.|s
-mn048|uhhuh.|b
-mn015|but if we can offer it that distinction maybe somebody will go ahead and implement it.|s
-mn015|surely nobody's going to go ahead and implement it if it's never going to be used.|s
-mn015|so|fh
-mn015|what have i forgotten about?|qh
-mn015|oh yeah!|fe
-me010|well uh|%--
-mn015|how we do it?|qh
-mn015|yeah that's the|s
-me010|no no.|ar
-me010|it's a good time to pause.|cs
-me010|i i see questions on peoples' faces.|s
-me010|so why don't|cs
-me010|let's let's let's hear.|s
-mn048|oh.|b
-mn048|well the obvious one would be if if you envision this as a module within smartkom where exactly would that sit?|rt
-mn015|um so far i've thought of it as sort of adding it onto the modeler knowledge module.|h
-mn048|that's the|s
-mn047|huh.|b
-mn048|okay yeah.|bk
-mn015|so this is one that already adds additional information to the|s
-mn048|makes perfect sense.|ba
-mn048|yes.|bk
-mn047|huh uh.|b
-mn015|but it could sit anywhere in the attention recognition.|s
-mn015|i mean basically this is what attention recognition literally sort of can|s
-mn048|well it's supposed to do.|2
-mn047|huh.|b
-mn048|yeah.|bk
-me010|that's what it should do.|bc
-me010|right.|b
-me010|yeah.|b
-mn048|yeah.|bk
-mn048|yeah.|b
-mn047|huh.|b
-mn015|yeah.|b
-mn048|well from my understanding of what the people at phillips were originally trying to do doesn't seem to quite fit into smartkom currently.|s
-mn048|so what they're really doing right now is only selecting among the alternatives the hypotheses that they're given enriched by the domain knowledge and the um discourse modeler and so on.|s
-mn015|yeah.|b
-mn015|yeah.|b
-mn048|so if if this is additional information that could be merged in by them.|cs
-mn048|and then it would be available to action planning and and others.|s
-mn015|yeah.|b
-mn015|the|%--
-me010|let's let's|%--
-me010|that|%--
-me010|okay that was one question.|t
-me010|is there other other things that|qy
-me010|because we want to not pass over any you know questions or concerns that you have.|df
-mn048|well there're there're two levels of of giving an answer and i guess on both levels i don't have any um further questions.|s
-mn047|huh.|b
-mn047|huh.|b
-mn048|uh the the two levels will be as far as i'm concerned as uh standing here for the generation module.|s
-mn047|huh.|b
-mn048|and the other is is my understanding of what smartkom uh is supposed to be.|s
-me010|right.|b
-mn048|and i i think that fits in perfectly.|ba
-me010|so well let me let me expand on that a little bit from the point of view of the generation.|s
-mn047|huh.|b
-mn048|yeah.|b
-me010|so the idea is that we've actually got this all laid out and we could show it to you|s
-me010|um robert didn't bring it today but there's a a belief net which is|s
-me010|there's a first cut at a belief net that that doesn't it isn't fully uh instantiated.|s
-me010|and in particular some of the the combination rules and ways of getting the the conditional probabilities aren't there.|s
-me010|but we believe that we have laid out the fundamental decisions in this little space.|s
-mn048|uhhuh.|rt
-me010|and the things that influence them.|s
-me010|so one of the decisions is what we call this a v e thing.|s
-me010|do you want to um access view or enter a thing?|qh
-mn047|huh.|b
-me010|so that's a discrete decision.|s
-mn048|uhhuh.|b
-me010|there are only three possibilities and the uh|s
-me010|what one would like is for this uh knowledge modeling module to add which of those it is and give it to the planner.|s
-mn048|uhhuh.|b
-me010|but uh the current design suggests that if it seems to be an important decision and if the belief net is equivocal so that it doesn't say that one of these is much more probable than the other then an option is to go back and ask for the information you want.|s
-mn048|uhhuh.|b
-me010|all right?|d
-me010|now there are two ways one can go imagine doing that.|s
-me010|for the debugging we'll probably just have a a drop down menu.|s
-me010|and the while you're debugging you will just|s
-me010|okay.|b
-me010|but for a full system then one might very well formulate a query.|s
-me010|give it to the dialogue planner and say this you know are you know you are you planning to enter.|s
-mn048|uhhuh.|rt
-me010|or whatever it whatever that might be.|s
-me010|so that's under that model.|s
-me010|then there would be a uh um a loop in which this thing would formulate a query.|s
-mn048|yes.|b
-me010|presumably give it to you.|s
-me010|that would get expressed and then hopefully you know you'd get an answer back.|s
-mn048|yep.|b
-me010|and that would of course the answer would have to be parsed.|s
-mn047|huh.|b
-me010|right?|d
-mn047|yep.|b
-me010|and|fh
-me010|okay so that uh|fh
-mn048|yes.|b
-me010|we probably won't do this early on because the current focus is more on the decision making and stuff like that.|s
-mn048|yep.|b
-me010|but while we're on the subject i just wanted to give you a sort of head's up that it could be that some months from now we said okay we're now ready to try to close that loop in terms of querying about some of these decisions.|s
-mn048|uhhuh.|b
-mn048|uhhuh.|b
-mn047|huh.|b
-mn048|yep.|b
-mn048|so my suggestion then is that you um look into the currently ongoing discussion about how the action plans are supposed to look like.|fg
-mn048|and they're currently um agreeing or or in the process of agreeing on an x m l ification of um something like a state transition network of how dialogues would proceed.|s
-mn048|and the these um transition networks uh will be what the action planner interprets in a sense.|s
-me010|huh.|b
-me010|did you know this robert?|rt
-mn015|uh michael is doing that.|bu
-mn015|right?|d
-mn048|well uh marcus lerkult is actually implementing that stuff.|aap
-mn048|and marcus and michael together are um leading the discussion there.|s
-mn015|okay.|bk
-mn048|yeah.|b
-me010|so we we have to get in on that.|s
-mn015|uhhuh.|aa
-mn048|yep.|aa
-me010|because um partly those are like x schemas.|s
-mn047|huh.|b
-mn048|definitely.|aa
-me010|the transition diagrams.|s
-mn015|huh.|b
-me010|and it may be that that um we should early on make sure that they have the flexibility that we need.|s
-mn015|huh.|b
-mn015|but they uh|s
-mn015|have i understood this right?|rt
-mn015|they they govern more or less the the dialogue behavior or the action.|bu
-mn048|uhhuh.|aa
-mn015|it's not really what you do with the content of the dialogue but it's|s
-mn015|so i mean there is this this this nice|s
-mn047|uh no.|ar
-mn047|it's it's also a quantrant uh uh|s
-mn015|is it|bu
-me010|so there's so there the word action okay is is what's ambiguous here.|s
-mn047|i think.|am
-mn047|huh.|b
-mn048|yes.|aa
-me010|so um one thing is there's an actual planner that tells the person in the tourist domain now.|fh
-me010|tells the person how to go.|rt
-mn048|okay.|bk
-me010|first go here.|rt
-me010|first go there.|rt
-mn047|uhhuh.|b
-me010|uh you know take a bus.|rt
-me010|whatever it is.|s
-me010|so that's that form of planning and action and a route planner and g i s all sort of stuff.|s
-me010|uh but i think that isn't what you mean.|fh
-mn048|no.|aa
-mn048|no in smartkom terminology that's um called a function that's modeled by a function modeler.|df
-mn048|and it's that's completely um encapsulated from the dialogue system.|s
-mn048|that's simply a functionality that you give data as in a query.|s
-mn048|and then you get back from that huh a functioning model um which might be a planner or a v c r or whatever.|s
-mn048|um some result and that's then then used.|s
-me010|well okay.|fg
-me010|so that's what i thought.|fg
-me010|so action action here means uh speech uh you know dialogue act.|bu
-mn048|yeah yeah.|aa
-mn015|huh.|b
-mn048|yeah in that in that sense.|aa
-mn048|yes.|aa
-me010|yeah.|b
-mn048|dialogue act.|m
-mn048|yeah.|b
-me010|um i think i think it's not going to i think that's not going to be good enough.|fh
-me010|i i what uh what i meant by that.|s
-me010|so i think the idea of having a you know transition diagram for the grammar of conversations is a good idea.|s
-mn048|uhhuh.|b
-me010|okay.|f
-me010|and i think that we do definitely have to get in on it and find out okay.|s
-me010|but i think that um|s
-me010|when so when you get to the tourist domain it's not just an information retrieval system.|s
-mn048|uhhuh.|b
-me010|right?|d
-mn048|clearly.|aa
-me010|so this this is where i think this|s
-mn048|yes.|b
-me010|people are going to have to think this through a bit more carefully.|s
-mn048|uhhuh.|b
-me010|so if it's only like in in the in the film and t v thing|s
-me010|okay you can do this.|s
-me010|and you just get information and give it to people.|s
-me010|but what happens when you actually get them moving and so forth and so on|s
-mn048|yep.|b
-me010|uh your i i think the notion of this as a self contained uh module.|s
-me010|you know the functional module that that interacts with with where the tourism stuff is going probably is too restrictive.|s
-mn048|yep.|aa
-me010|now i don't know how much people have thought ahead to the tourist domain in this.|s
-mn048|probably not enough.|s
-mn048|i mean an another uh more basic point there is that the current um tasks and therefore the concepts in this ac|s
-mn048|what's called the action plan and what's really the dialogue manager.|s
-me010|yeah.|b
-mn048|um is based on slots that have to be filled.|h
-mn048|and the um kind of values in these slots would be fixed things like the a time or a movie title or something like this.|s
-me010|uhhuh.|b
-me010|right.|b
-mn048|whereas in the a um tourist domain it might be an entire route.|s
-me010|indeed.|aa
-mn048|set based or even very complex structured information in these slots.|s
-me010|right.|fg
-mn048|and i'm not sure if if complex slots of that type are really um being taken into consideration.|no
-me010|okay.|bk
-me010|could you could you put a message into the right place to see if we can at least ask that question?|t3
-mn048|so that's that's really something we|s
-mn015|yep.|aa
-mn048|uhhuh.|b
-mn048|i mean nothing's being completely settled there.|s
-mn015|yep.|bk
-mn048|so this is really an ongoing discussion.|s
-mn015|uhhuh.|b
-mn015|yeah and um it might actually|fg
-mn048|and that's|s
-mn015|okay.|bk
-mn015|uh also because um again in deep map we have faced and implemented those problems once already.|s
-mn015|maybe we can even shuffle some know how from there to to markus and michael.|s
-mn048|uhhuh.|b
-mn048|yes.|aa
-mn047|huh.|b
-mn048|yep.|b
-mn015|and um huh you don't know|h
-mn015|okay|%--
-mn015|i'll i'll talk to michael.|cc
-mn015|it's what i do anyway.|s
-mn015|who how far is the uh the the m three l specification for for the natural language input gone on the the uh|qw
-mn015|i haven't seen anything for the uh tourist path domain.|s
-mn047|yeah it's it's not defined yet.|bk
-mn015|and um you are probably also involved in that.|bu
-mn047|um yeah.|aa
-mn015|right?|d
-mn015|uh together with the usual gang.|s
-mn015|um petra and jan.|e
-mn047|yeah there's a meeting next next week i think.|aa
-mn015|okay because that's those are the|bk
-mn015|i think the the true key issues is how does the whatever comes out of the language input pipeline look like?|qo
-mn015|and then what the action planner does with it?|qo
-mn015|and how that is uh specified?|qo
-mn015|i didn't think of the internal working of the uh the action planner and the language uh the function model as sort of relevant.|s
-mn015|because what what they take is sort of this this fixed representation of a of an intention.|s
-mn015|and that can be as detailed or as crude as you want it to be.|s
-mn048|uhhuh.|b
-mn015|but um the internal workings of of the|s
-mn015|whether you know there're dialogue action planners that work with belief nets that are action planners that work with you know state automata.|s
-mn015|so that shouldn't really matter too much.|s
-mn015|i mean it does matter.|s
-mn015|because it does have to keep track of you|df
-mn015|we are on part six of a route that consists of eight steps and so forth.|s
-me010|yeah there there i think there are a lot of reasons why it matters.|fg
-mn048|right.|aa
-me010|okay?|d
-me010|so that|s
-me010|uh|fh
-me010|for example the it's the action planner is going to take some spec and make some suggestions about what the user should do.|s
-me010|what the user says after that is going to be very much caught up with what the action planner told it.|s
-mn048|yes.|b
-me010|if the if the parser and the language end doesn't know what the person's been told|rt
-me010|okay.|f
-me010|it's you're making your life much more difficult than it has to be.|s
-mn015|yeah.|b
-me010|right?|d
-me010|so if someone says the best to uh go there is by taxi.|s
-me010|let's say.|s
-me010|now the planner comes out and says you want to get there fast.|s
-me010|take a taxi.|s
-me010|okay.|f
-me010|and the language end doesn't know that.|s
-me010|okay there's all sorts of dialogues that won't make any sense which would be just fine.|s
-mn048|huh|fg
-me010|uh|fh
-mn015|yeah.|b
-mn048|that would|s
-mn048|but that i think that that uh point has been realized.|s
-mn048|and it's it's not really um been defined yet.|s
-mn048|but there's going to be some kind of feedback and input from uh the action planner into all the analysis modules telling them what to expect and what the current state of the discourse is.|s
-mn047|huh.|b
-mn048|beyond what's currently being implemented which is just word lists.|s
-me010|yeah but this is not the this is not just the state of the discourse.|aa
-mn015|uhhuh.|b
-mn048|of of special interest.|t1
-me010|this is actually the state of the plan.|s
-me010|that's why|s
-mn015|uhhuh.|b
-mn048|yes yes uhhuh yeah.|b
-me010|okay so it|fh
-me010|and|fg
-me010|uh it's great if people are already taking that into account.|rt
-me010|but one would have have to see see the details.|s
-mn048|the specifics aren't really there yet.|s
-mn048|yes.|b
-me010|yeah.|b
-mn048|so there's work to do there.|s
-me010|so anyway robert that's why i was thinking that.|s
-mn015|uhhuh.|b
-me010|um|fh
-me010|i think you're going to need|rt
-me010|we talked about this several times that that the the input end is going to need a fair amount of feedback from the planning end.|s
-mn048|huh.|b
-me010|in in one of these things which are are much more continuous than the just the dialogue over movies and stuff.|s
-mn048|yeah.|b
-mn047|huh.|b
-mn048|and even on on a more basic level the the action planner actually needs to be able to have um an expressive power that can deal with these structures.|s
-me010|huh?|br
-mn048|and not just um say um um the dialogue um will consist of ten possible states and these states really are fixed in in a certain sense.|s
-me010|would there be any chance of getting the terminology changed so that the dialogue planner was called a dialogue planner?|qy
-mn048|you have to|s
-me010|because there's this other thing the there's this other thing in in the tourist domain which is going to be a route planner.|s
-mn048|that'd be nice.|aa
-me010|or it's really going to be an action planner.|s
-me010|and it|fh
-mn048|it ought to be called a a dialogue manager.|s
-mn048|because that's what everybody else calls it.|s
-me010|i would think.|aa
-me010|yeah.|b
-mn047|huh.|b
-me010|huh?|br
-mn048|yeah.|b
-me010|so so what would happen if we sent a note saying gee we've talked about this and couldn't we change this uh the whole word?|cs
-me010|i have no idea how complicated these things are.|df
-mn015|probably close to impossible.|s
-mn048|depends on who you talk to how.|arp
-mn048|we'll see.|cc
-mn048|i'll go check.|cc
-mn048|cause i completely agree.|df
-mn047|huh.|b
-mn048|yeah.|fh
-mn048|and i think this is just for historical reasons within uh the preparation phase of the project.|s
-mn048|and not because somebody actually believes it ought to be action planner.|s
-mn048|so if there is resistance against changing it that's just because oh we don't want to change things.|s
-mn048|that that not deep reason|s
-me010|okay.|bk
-me010|anyway|t
-me010|if if that persists then we're going to need another term for the thing that actually does the planning of the uh routes and whatever we are doing for the tourist.|s
-mn015|that's external services.|s
-me010|yeah but that's not uh|bk
-me010|that has all the wrong connotations.|ng
-me010|it's it sounds like it's you know stand alone.|rt
-me010|it doesn't interact.|rt
-me010|it doesn't|s
-me010|that's why i'm saying.|s
-me010|i think you can't|s
-me010|it's fine for looking up when you know when the show's on t v.|ba
-me010|you go to|s
-me010|but i i i i think it's really really wrong headed for something that you that has a lot of state.|s
-me010|it's going to interact in a complicated way with the uh understanding parts.|s
-mn015|yeah.|b
-mn015|yeah i think just the the spatial planner and the route planner.|fg
-mn015|i showed you once the action between them among them in the deep map system.|rt
-me010|right.|b
-mn015|so a printout of the communication between those two fills up.|fh
-mn015|i don't know how many pages.|no
-mn015|and that's just part of how do i get to one place.|s
-mn048|huh.|b
-mn015|it's really insane.|s
-mn015|and uh|fh
-mn015|but um so this is um definitely a good point to get uh michael into the discussion.|s
-mn015|or to enter his discussion actually.|s
-mn015|that's the way around.|s
-mn048|yeah marcus|fg
-mn015|markus.|bk
-mn015|is he new in the in the|rt
-mn048|where's|qw
-mn048|yeah he's he started um i think january.|aa
-mn047|yeah.|b
-mn048|and he's going to be responsible for the implementation of this action planner.|s
-mn048|dialogue manager.|bsc
-mn015|is he going to continue with the old uh thing?|qy
-mn048|no.|ar
-mn048|no he's completely going to rewrite everything in java.|ar
-mn015|okay.|bk
-mn048|okay so that's interesting.|ba
-mn015|yes i was just that's my next question.|aa
-mn048|huh.|b
-mn015|whether we're we're going to stick to prolog or not.|s
-mn048|no.|ar
-mn048|no that's going to be phased out.|ar
-me010|yeah.|b
-mn015|okay.|bk
-mn015|but i do think the the function modeling concept has a certain makes sense in a in a certain light.|s
-mn048|yeah.|b
-mn015|because the action planner should not be or the dialogue manager in that case should not um have to worry about whether it's interfacing with um something that does route planning in this way or that way.|s
-mn048|uhhuh.|b
-me010|i totally agree.|aa
-me010|sure.|aa
-mn015|huh?|br
-mn015|it|s
-me010|yeah i i agree.|r
-me010|there is there's a logic to dialogue which which is is separable.|s
-me010|yeah.|b
-mn015|and it cant sort of formulate its what it wants in a in a rather abstract uh way.|s
-mn015|you know find me a good route for this.|s
-me010|uhhuh.|b
-mn015|it doesn't really have to worry how route planner a or how route planner b actually wants it.|s
-mn015|so this is seemed like a good idea.|s
-mn015|in the beginning.|s
-me010|it's tricky.|s
-me010|it's tricky because one could well imagine|s
-me010|i think it will turn out to be the case that uh this thing we're talking about the extended uh knowledge modeler will fill in some parameters about what the person wants.|s
-me010|one could well imagine that the next thing that's trying to fill out the detailed uh route planning let's say will also have questions that it would like to ask the user.|s
-me010|you could well imagine you get to a point where it's got a a choice to make and it just doesn't know something.|s
-me010|and so you would like it also be able to uh formulate a query.|s
-mn048|uhhuh.|b
-me010|and to run that back through uh the dialogue manager and to the output module and back around.|s
-mn015|huh.|b
-me010|and a good design would would allow that to happen.|s
-mn015|a lot of|2
-mn015|yeah.|b
-mn047|huh.|b
-me010|if if you know if if you can't make it happen then you you do your best.|s
-mn048|yeah.|aap
-mn048|but that doesn't necessarily contradict um an architecture where there really is a a well defined interface.|s
-me010|i totally agree.|ba
-mn048|and and|%--
-me010|but but what it|s
-me010|but what the point is|s
-me010|in that case the dialogue manager is sort of event driven.|s
-me010|so the dialogue manager may think it's in a dialogue state of one sort.|s
-me010|and this one of these planning modules comes along and says hey right now we need to ask a question.|s
-mn048|uhhuh.|rt
-me010|so that forces the dialogue manager to change state.|s
-mn048|yes.|bk
-me010|okay.|bk
-me010|it could be|s
-mn048|sure.|bk
-mn048|yeah i i think that's that's the um concept that people have.|fg
-me010|yeah yeah it it|fg
-me010|okay.|bk
-mn048|yep.|bk
-mn048|and and the the underlying idea of course is that there is something like kernel modules with kernel functionality that you can plug uh certain applications like tourist information or um the home scenario with uh controlling a v c r and so on.|s
-mn048|and then extend it to an arbitrary number of applications eventually.|s
-mn048|so wouldn't|qy
-mn048|that's an additional reason to have this well defined interface.|s
-me010|oh yeah yeah.|aa
-mn048|and keep these things like uh tourist information external.|s
-mn048|and then call it external services.|s
-mn015|huh.|b
-mn048|but of course the the more complex|s
-mn015|yeah there is another philosophical issue that i think you know you can evade.|fg
-mn048|yep.|b
-mn015|but at least it makes sense to me that sooner or later uh a service is going to come and describe itself to you.|s
-mn015|and that's sort of what srini is working on in in in the daml uh project where um you you find a g i s about that gives you information on berkeley.|rt
-mn048|yeah.|b
-mn015|and it's it's going to be there and tell you what it can do and how it wants to do things.|s
-mn015|and so you can actually interface to such a system without ever having met it before.|s
-mn015|and the function modeler and a self description of the um external service haggle it out.|s
-mn048|huh.|b
-mn015|and you can use the same language core understanding core to interface with planner a planner b planner c and so forth.|s
-mn048|huh.|b
-mn047|huh.|b
-mn015|which is you know uh uh utopian|s
-mn015|completely utopian at the moment.|s
-mn015|but slowly you know getting into the realm of the uh contingent.|s
-mn048|huh.|b
-mn015|but we are facing of course much more um realistic problems.|rt
-mn015|and language input for example is of course uh crucial you know also when you do the sort of deep understanding analysis that we envision.|rt
-mn015|um then of course the uh um you know|fh
-mn015|what is it?|qo
-mn015|poverty of the stimulus.|rt
-mn015|yet the uh the less we get of that the better.|s
-mn015|and um so we we're thinking for example how much syntactic analysis actually happens already in the parser?|fh
-mn047|huh.|b
-mn015|and whether one could interface to that potentially.|rt
-mn047|yeah.|fg
-mn047|are there currently is uh|qy
-mn047|no syntactic analysis.|rt
-mn047|but in the next release there will be some.|s
-mn015|huh.|b
-me010|how's it|qw
-mn047|unless|s
-mn047|and it's|s
-mn047|um uh|fg
-mn047|you can access this|s
-me010|so uh we we looked at the current pattern matching thing.|fg
-mn047|huh.|aa
-me010|and as you say it's just a surface pattern matcher.|s
-me010|uh so what are what are the plans roughly?|qw
-mn047|um it's to to integrate and syntactic analysis.|h
-mn047|and um add some more features like segmentation.|rt
-mn047|so then an more than one utterance is there um there's often uh pause between it.|rt
-mn047|and a segmentation occurs.|s
-me010|so the um|s
-mn047|um|fh
-me010|so the idea is to uh have a a particular|bu
-mn047|yeah.|b
-me010|do you have a particular parser in mind?|rt
-me010|is it uh|qy
-me010|i mean have you thought through|qy
-me010|is it an h p s g parser?|rt
-me010|is it a whatever?|rt
-mn047|no no it's uh i think it's it's totally complicated for|ar
-mn047|it's just one one person.|s
-me010|okay.|fg
-mn047|and so i have to keep the|s
-me010|oh you have to do it.|bk
-me010|you have to do it.|bk
-me010|yeah.|b
-mn047|yeah.|aa
-mn047|uh and so things must be simpler.|s
-me010|i see.|bk
-me010|so|%--
-mn047|but uh miel syntactic analysis with um finite state transducers.|s
-me010|but the people at d f|s
-me010|yeah.|fg
-me010|people at d f k i have written a fair number of parsers.|s
-me010|other you know people over the years uh have written various parsers at d f k i.|s
-me010|none of them are suitable?|d
-me010|i i i i'm asking.|df
-me010|i don't know.|df
-mn047|yeah uh the problem is that it has to be very fast.|bk
-mn047|because um if you want to for more than one path anywhere|s
-me010|okay.|bk
-mn047|what's in the latches from the speech recognizer?|qo
-me010|uhhuh.|b
-mn047|so it's speed is crucial.|s
-mn047|uh|fh
-mn047|and they are not fast enough.|s
-me010|uhhuh.|b
-mn047|and they also have to be very robust because of um speech recognition errors.|s
-mn047|and|%--
-me010|okay.|bk
-me010|so um so there was a chunk parser in verbmobil that was one of the uh branchers.|fg
-me010|you know they i|s
-me010|there were these various uh competing uh syntax modules.|s
-me010|and i know one of them was a chunk parser.|s
-me010|and i don't remember who did that.|s
-mn047|i think it's that|s
-mn015|alan?|d
-mn047|might|s
-mn047|at tubingen i thought.|s
-me010|yeah i i don't remember.|bk
-mn047|was do you know something about that?|qy
-mn048|tubingen was at least involved in putting the chunks together.|s
-mn047|in at|%--
-mn048|i can't quite recall whether they actually produced the chunks in the first place.|s
-mn047|oh.|bk
-me010|uh i see.|bk
-me010|yeah that's right.|aa
-mn048|or|%--
-me010|there|s
-mn047|oh from from stuttgart.|s
-me010|that's right.|aa
-me010|they they had there were this was done with a two phase thing where the chunk parser itself was pretty stupid.|s
-mn047|yeah also|fg
-me010|and then there was a kind of trying to fit them together that used more context.|s
-mn048|right.|b
-mn048|yeah.|b
-me010|right.|b
-mn048|well you and and especially you did some some.|fg
-mn048|um um|fh
-mn048|was a learning based approach which learned from a big corpus of of trees.|s
-me010|right.|aa
-mn047|uhhuh.|b
-me010|right.|b
-mn048|and yes the it the chunk parser was a finite state machine that um mark light originally worked on in while he was in tubingen.|s
-mn048|and then somebody else in tubingen picked that up so it was done in tubingen.|s
-mn048|yeah.|b
-mn048|definitely.|b
-me010|but is that the kind of thing|rt
-me010|it sounds like the kind of thing that you were thinking of.|s
-mn047|yeah.|aa
-mn048|yeah i guess it's similar.|aa
-mn047|yeah.|aa
-mn047|that's in this direction.|s
-mn047|yes.|aa
-me010|what?|br
-mn047|yeah it's in in this direction.|r
-me010|huh.|b
-mn015|the|%--
-mn015|from michael strube i've heard very good stuff about the chunk parser that is done by forwiss.|s
-mn015|uh which is in embassy doing the parsing.|s
-mn048|uhhuh.|rt
-mn015|so this is sort of came as a surprise to me that you know embassy is featuring a nice parser.|s
-mn015|but it's what i hear one could also look at that and see whether there is some synergy possible.|s
-mn047|uhhuh yeah.|b
-mn047|it would be very interesting.|ba
-mn047|uhhuh.|b
-mn047|huh yeah.|b
-mn015|and they're doing chunk parsing.|s
-mn015|and it's uh|s
-mn015|i i can give you the names of the people who do it there.|s
-mn015|but um|fh
-mn015|then there is of course more ways of parsing things.|s
-me010|of course.|aa
-me010|but but uh given the constraints that you want it to be small and fast and so forth my guess is you're probably into some kind of chunk parsing.|arp
-me010|and uh i'm not a big believer in this um statistical you know cleaning up.|s
-me010|uh|fh
-me010|it that seems to me kind of a last resort if uh you can't do it any other way.|s
-me010|uh|fh
-me010|but i don't know.|no
-me010|it may may be that's what you guys finally decide do.|s
-mn047|huh.|b
-me010|uh|fh
-me010|and have you looked|qy
-me010|uh just again for context|s
-mn047|uhhuh.|bk
-me010|there is this this one that they did at s r i some years ago.|s
-me010|fastus?|d
-mn047|um|h
-me010|a|%--
-mn047|yeah i've i've looked at it.|aa
-mn047|but but it's no not much uh information available.|df
-me010|uh.|aa
-mn047|i found|s
-mn047|but it's also finite state transducers i thought.|s
-me010|it is.|aa
-me010|yeah.|aa
-me010|i mean it's it was pretty ambitious.|s
-mn047|and|s
-me010|and of course it was english oriented.|s
-me010|um|fh
-mn047|yeah and and purely finite state transducers are not so good for german since there's um|fg
-me010|right.|b
-me010|yeah i guess that's the point is is all the morphology and stuff.|fg
-mn047|the word order is is uh not fixed.|s
-me010|and english is all all word order.|s
-me010|and it makes a lot more sense.|s
-mn047|yeah.|aa
-me010|and|fh
-me010|yeah okay.|bk
-me010|good point.|ba
-me010|so in in in german you've got uh most of this done with|s
-mn047|uhhuh also it's uh it's um yes uh the um choice between uh this processing and that processing and my template matcher.|s
-me010|right.|bk
-me010|right.|b
-me010|so what about|qw
-me010|um|fh
-me010|did|qy
-me010|like morfix?|d
-me010|you've got stemmers?|d
-me010|or is that something that|qrr
-mn047|um yeah but it's all in the in the lexicon.|h
-me010|but did you have that?|rt
-mn047|so it's|s
-mn047|yeah the information is available.|aa
-me010|okay.|bk
-me010|i see.|s
-me010|so but|s
-me010|so you just connect to the lexicon.|s
-mn047|so|%--
-mn047|yeah.|aa
-me010|and uh|fh
-me010|at least for german you have all all of the uh the stemming information.|bu
-mn047|yeah we can|aa
-mn047|oh yeah.|b
-mn047|we have knowledge bases from from verbmobil system we can use.|s
-me010|yep.|b
-mn047|and so|%--
-me010|right.|b
-me010|but it it it doesn't look like you're using it|s
-me010|i didn't see it being used in the current template uh parser.|s
-me010|i i didn't see any uh|s
-me010|of course we actually only looked at the english.|s
-mn047|it|%--
-me010|did we look at the german?|rt
-mn047|um|h
-me010|i don't remember.|no
-me010|so|qw
-mn047|yeah but but it's used for for stem forms.|fg
-mn048|well i think i think there's some misunderstanding here.|s
-mn047|oh okay.|bk
-mn048|it's morphix is not used online.|s
-mn048|so the lexicon might be derived by morphix.|s
-mn047|what?|qw
-mn048|but what what's happening online is just um um a a retrieval from the lexicon which would give all the stemming information.|s
-me010|right.|b
-me010|right.|b
-mn047|huh.|b
-mn048|so it would be a full foreign lexicon.|s
-me010|and that's what you have.|bu
-mn047|yeah.|aa
-mn048|yep.|aa
-me010|okay.|bk
-me010|what|qw
-me010|uh i didn't|s
-mn015|we threw out all the forms.|s
-me010|huh?|br
-mn015|we threw out all the forms.|r
-mn015|because you know english.|df
-mn015|well|%--
-me010|oh okay.|bk
-me010|so it yeah i thought i'd|s
-mn047|uhhuh.|b
-me010|so in german then you actually do case matching and things like in the in the pattern matcher or not?|d
-mn047|um not yet but it's planned to do that.|h
-me010|okay.|bk
-me010|because i i didn't i didn't think i saw it.|df
-me010|have we looked at the german?|qw
-mn047|yeah.|b
-me010|oh i|s
-me010|yeah.|b
-me010|that's getting it from the lexicon is just fine.|ba
-me010|yeah yeah yeah.|b
-mn048|sure.|b
-mn047|oh yes.|b
-mn048|right.|b
-me010|no problem with that.|s
-me010|um|fg
-me010|yeah and here's the case where the english and the german might really be significantly different.|fg
-me010|in terms of if you're trying to build some fast parser and so forth.|s
-me010|and|fh
-me010|you really might want to do it in a significantly different way.|cs
-me010|i don't know.|no
-me010|so you've you guys have looked at this?|d
-me010|also?|g
-me010|in terms of you know if you're doing this for english as well as german.|rt
-me010|um do you think now that it would be this doing it similarly?|fh
-mn047|um yeah.|h
-mn047|it's um i think it's um|s
-mn047|yes it's it's um possible to to do list processing.|aa
-mn047|and maybe this is um more adequate for english.|rt
-mn047|and in german um set processing is used.|s
-me010|set.|2
-mn047|maybe yeah|s
-mn047|some extensions uh have to be made for for a english version.|s
-me010|huh.|b
-me010|okay.|bk
-me010|interesting.|ba
-me010|not easy.|ba
-mn015|well there's i'm sure there's going to be more discussion on that after your talk.|rt
-mn047|uhhuh.|aa
-me010|right.|b
-mn047|yeah.|b
-mn015|we're just going to foreshadow what we saw that|s
-me010|right.|b
-mn015|and um|fh
-me010|now actually|s
-me010|um|fh
-me010|are you guys free at five?|rt
-me010|or do you have to go somewhere at five o'clock tonight?|rt
-me010|in ten minutes?|d
-mn047|uh.|h
-mn047|no.|ar
-mn048|uh uh i think we're expect|%--
-mn047|oder there was an talk?|rt
-mn048|yeah there there's the um practice talk.|aa
-mn047|uh huh yeah.|b
-me010|great.|bk
-me010|so you're going to that.|bu
-mn048|yeah that that's what we were planning to do.|aa
-me010|that's good because that will uh tell you a fair amount about the form of semantic construction grammar that we're using.|s
-mn048|yeah.|b
-me010|so so i i think that probably as good an introduction as you'll get.|rt
-mn048|uhhuh.|rt
-mn047|uh.|b
-me010|uh to the form of of uh conceptual grammar that that we have in mind for this.|s
-mn047|huh uh.|b
-me010|it won't talk particularly about how that relates to what uh robert was saying at the beginning.|s
-me010|but let me give you a very short version of this.|s
-me010|so we talked about the fact that there're going to be a certain number of decisions that you want the knowledge modeler to make that will be then fed to the function module that does uh route planning.|s
-me010|it's called the route planner or something.|s
-mn048|uhhuh.|b
-me010|so there are these decisions.|s
-me010|and then one half of this we talked about at little bit is how if you had the right information.|s
-me010|if you knew something about what was said.|rt
-me010|and about the something about was the agent a tourist or a native or a business person?|qo
-me010|or uh young or old.|e
-me010|whatever.|s
-me010|that information.|rt
-me010|and also about the|s
-me010|uh what we're calling the entity.|s
-me010|is it a castle?|e
-me010|is it a bank?|e
-me010|is it a town square?|e
-me010|is it a statue?|e
-me010|whatever.|s
-me010|so all that kind of information could be combined into decision networks and give you decisions.|s
-me010|but the other half of the problem is how would you get that kind of information from the parsed input?|qo
-me010|so um|s
-me010|so what you might try to do is just build more templates saying uh|s
-me010|we're trying to build a|s
-me010|you know build a template that uh somehow would capture the fact that he wants to take a picture.|s
-mn047|huh.|b
-me010|okay?|d
-me010|and and we could you could do this.|s
-me010|and it's a small enough domain that probably you you know|s
-mn047|huh.|b
-me010|okay.|b
-me010|you could do this.|s
-me010|but uh from our point of view this is also a research project.|s
-me010|and there are a couple of people not here for various reasons who are doing doctoral dissertations on this.|s
-mn048|uhhuh.|b
-me010|and the idea that we're really after is a very deep semantics based on cognitive linguistics.|s
-me010|and the notion that there are a relatively small number of primitive conceptual schemas that characterize a lot of activity.|s
-me010|so a typical one in this formulation is a container.|s
-me010|so this is a static thing.|s
-me010|and the notion is that all sorts of physical situations are characterized in terms of containers.|s
-me010|going in and out the portals and|e
-mn047|huh.|b
-me010|okay.|b
-me010|but also importantly for lakoff and these guys is all sorts of metaphorical things are also characterized this way.|s
-me010|you get in trouble and you know et cetera.|s
-mn047|huh.|b
-me010|and so|%--
-me010|so what we're really trying to do is to map from the discourse to the conceptual semantics level.|s
-me010|and from there to the appropriate decisions.|s
-me010|so another one of these primitive what are called image schemas is uh goal seeking.|s
-mn048|uhhuh.|b
-me010|so this a notion of a source path goal trajector possibly obstacles.|s
-mn048|uhhuh.|b
-me010|and the idea is this is another conceptual primitive.|s
-me010|and that all sorts of things particularly in the tourist domain can be represented in terms of uh source path and goal.|rt
-mn048|uhhuh.|b
-me010|so the idea would be could we build an analyzer that would take an utterance.|rt
-me010|and say aha.|s
-me010|this utterance is talking about an attempt to reach a goal.|rt
-me010|the goal is this.|s
-me010|the the uh traveler is that.|rt
-me010|uh|fh
-me010|the where we are at now is is this|s
-me010|they've mentioned possible obstacles et cetera.|s
-me010|so the and this is again attempt to get very wide coverage.|s
-me010|so if you can do this then the notion would be that across a very large range of domains you could use this deep conceptual basis as the interface.|s
-mn048|uhhuh.|b
-mn048|uhhuh.|b
-me010|and then|s
-me010|uh|fh
-me010|the processing of that both on the input end recognizing that certain words in a language talk about containers or goals et cetera.|s
-me010|and on the output end given this kind of information you can then uh make decisions about what actions to take.|s
-me010|provides they claim a very powerful general notion of deep semantics.|s
-me010|so that's what we're really doing.|s
-mn048|uhhuh.|rt
-me010|and|fh
-me010|nancy is going to|s
-me010|her talk is going to be not about using this in applications but about modeling how children might learn this kind of uh deep semantic grammar.|s
-mn048|uhhuh.|rt
-mn048|yep yep.|b
-mn048|and how do you envision um the the um this deep semantic to be worked with?|qw
-mn048|would it be highly ambiguous if|qy
-mn048|and then there would be another module that takes that um highly underspecified deep semantic construction?|bu
-mn048|and map it onto the current context to find out what the person really was talking about in that context?|bu
-me010|well that's that's that's where the belief net comes in.|s
-mn048|or or a|s
-me010|so the idea is|s
-me010|let's take this business about going to the powder tower.|s
-mn048|uhhuh.|rt
-me010|so part of what you'll get out of this will be the fact|s
-me010|if it works right|s
-me010|okay that this is an agent that wants to go to this place.|s
-me010|and that's their goal.|s
-me010|and there will be additional situational information.|s
-mn048|uhhuh.|b
-mn048|oh okay.|b
-me010|uh okay.|f
-me010|part of it comes from the ontology.|s
-me010|the tower is this kind of object.|s
-mn048|uhhuh.|b
-mn048|yeah okay.|b
-me010|part of it comes from the user model.|s
-mn048|uhhuh.|b
-me010|and the idea of the belief net is it combines the information from the dialogue which comes across in this general way.|s
-mn048|uhhuh.|rt
-me010|you know this is a this is a goal seeking behavior along with specific information from the ontology about the kinds of objects involved.|s
-mn048|yeah.|b
-mn048|okay.|b
-mn048|yeah.|b
-mn048|yep yep yep yep.|b
-me010|and about the situation about is it raining.|s
-me010|i don't know.|no
-me010|whatever it is.|s
-me010|and so that's the belief net that we've laid out.|s
-mn048|uhhuh.|b
-me010|and so the coupling to the situation comes in this model from at at at the belief net combining evidence from the dialogue with the ontology with the situation.|s
-mn048|yeah.|b
-mn047|huh.|b
-me010|but nancy isn't going to talk about that.|rt
-mn048|yeah.|b
-me010|just about the um|s
-mn048|oh yeah.|b
-mn048|i see.|b
-mn048|yeah yeah really.|b
-mn015|first steps.|s
-me010|right.|fh
-me010|the the construction grammar.|s
-mn015|and she's going to start.|s
-mn015|in a minute.|e
-me010|in a minute.|s
-mn047|uh okay.|bk
-me010|okay.|b
-mn036|is it in|qy
-mn036|then your place in five five a?|d
-mn048|all right.|b
+me010|okay let's be done with this.|S
+me010|okay.|S
+mn048|okay.|S
+me010|this is ami who|D
+me010|and this is tilman and ralf.|S
+mn048|hi.|S
+mn048|uhhuh nice to meet you.|S
+mn047|hi.|S
+me010|hi.|S
+me010|okay.|S
+me010|so we're going to try to finish by five so people who want to can go hear nancy chang's talk uh downstairs.|S
+mn048|huh.|B
+me010|and you guys are giving talks on tomorrow and wednesday lunch times.|S
+mn048|yes.|S
+mn047|huh.|B
+me010|right?|Q
+me010|that's great.|S
+me010|okay so do do you know what we're going to do?|Q
+mn015|i thought two things.|S
+mn015|uh we'll introduce ourselves and what we do.|S
+mn015|and um we already talked with andreas thilo and david.|S
+mn015|and some lines of code were already written today.|S
+mn015|and almost tested.|S
+mn015|and just going to say we have um again the recognizer to parser thing where we're working on.|S
+mn015|and that should be no problem.|S
+mn015|and then that can be sort of developed uh as needed when we get enter the tourism domain.|S
+mn015|them we have talked this morning with the with tilman about the generator.|S
+mn015|and um there one of our diligent workers has to sort of volunteer to look over tilman's shoulder while he is changing the grammars to english.|S
+mn048|uhhuh.|B
+mn015|because we have we face two ways.|S
+mn015|either we do a syllable concatenating um grammar for the english generation which is sort of starting from scratch and doing it the easy way.|S
+mn015|or we simply adopt the uh um more in depth um style that is implemented in the german system.|S
+mn015|and um are then able not only to produce strings but also the syntactic parse.|S
+mn015|uh not parse not|D
+mn015|the syntactic tree that is underneath in the syntactic structure.|S
+mn015|which is the way we decided we were going to go because a it's easier in the beginning.|S
+mn048|uhhuh.|B
+mn015|and um it does require some some knowledge of of those grammars and and and some linguistic background.|S
+mn015|but um it shouldn't be a problem for anyone.|S
+me010|okay so that sounds good.|S
+me010|johno are you going to have some time to do that uh with these guys?|Q
+me003|sure.|S
+me010|because you're the grammar maven.|S
+me003|okay.|S
+me010|i mean it makes sense.|S
+me010|doesn't it?|Q
+me003|yeah.|S
+me010|yeah good.|S
+me010|okay.|S
+me010|so i think that's probably the the right way to do that.|S
+me010|and|F
+me010|yeah so i i actually want to to find out about it too.|S
+me010|but i may not have time to get in.|S
+mn015|the the ultimate goal is that before they leave we we can run through the entire system input through output on at least one or two sample things.|S
+mn015|and um and by virtue of doing that then in this case johno will have acquired the knowledge of how to extend it.|S
+mn015|ad infinitum.|S
+mn015|when needed if needed when wanted and so forth.|S
+me010|okay that sounds great.|S
+mn015|and um also um ralf has hooked up with david and you're going to continue either all through tonight or tomorrow on whatever to get the uh parser interface working.|S
+mn047|huh.|B
+mn015|they are thinning out and thickening out lattices.|S
+mn015|and doing this kind of stuff to see what works best.|S
+mn047|huh.|B
+mn047|yep.|B
+me010|great.|B
+me010|so you guys enjoy your weekend?|Q
+mn048|yes very much so.|S
+mn047|yeah very much.|S
+me010|okay before before you got put to work?|S
+mn047|yeah.|S
+me010|great.|B
+me010|okay so that's|D
+me010|sort of one branch is to get us caught up on what's going on.|S
+me010|also of course it would be really nice to know what the plans are in addition to what's sort of already in code.|S
+mn048|yes.|B
+me010|and we can|D
+me010|i don't know.|S
+me010|was there uh a time when we were set up to do that?|Q
+me010|it probably will work better if we do it later in the week after we actually understand uh better what's going on.|S
+mn048|yes.|B
+mn047|huh.|B
+mn048|yeah.|B
+me010|so when do you guys leave?|Q
+mn048|um we're here through sunday.|S
+mn047|oh.|D
+mn048|so|F
+me010|oh okay.|S
+mn048|all through friday would be fine.|S
+me010|so|F
+me010|okay so|F
+me010|so we'll find a time later in the week to uh get together and talk about your understanding of what smartkom plans are.|S
+mn048|uhhuh.|B
+me010|and how we can change them.|S
+mn048|yes sure.|S
+me010|uh|F
+mn015|should we already set a date for that?|Q
+mn015|might be beneficial while we're all here.|S
+me010|okay.|S
+me010|um what what does not work for me is thursday afternoon.|S
+me010|i can do earlier in the day on thursday or um most of the time on friday.|S
+me010|not all.|S
+mn015|thursday morning sounds fine?|Q
+me010|but johno?|Q
+mn048|uhhuh.|S
+me010|what are your constraints?|Q
+me003|um thursday afternoon doesn't work for me but|D
+mn015|neither does thursday morning?|Q
+mn015|no?|Q
+me003|uh thursday morning should be fine.|S
+me010|eleven?|Q
+mn048|okay.|S
+me010|eleven on thursday?|Q
+me003|i was just thinking i i will have leavened by eleven.|S
+me010|right right.|S
+me010|this is then out of deference to our non morning people.|S
+mn048|uhhuh.|B
+mn048|okay.|B
+mn048|so at eleven?|Q
+mn047|huh?|Q
+mn048|thursday around eleven?|Q
+mn048|okay.|D
+me010|yeah.|S
+me010|and actually we can invite um andreas as well.|S
+mn015|uh he will be in washington though.|S
+me010|oh that's true.|S
+me010|he's off off on his trip already.|S
+mn015|but um david is here and he's actually knows everything about the smartkom recognizer.|S
+me010|thilo.|S
+me010|okay well yeah.|S
+me010|maybe we'll see if david could make it.|S
+me010|that would be good.|S
+mn015|okay so|F
+mn015|facing to to what we've sort of been doing here|D
+mn015|um|F
+mn015|well for one thing we're also using this room to collect data.|S
+mn048|yeah obviously.|S
+mn015|um um not this type of data.|D
+mn015|no not meeting data but sort of sort uh our version of a wizard experiment such|D
+mn048|oh okay.|S
+mn015|not like the ones in munich but pretty close to it.|S
+mn048|uhhuh.|B
+mn015|the major difference to the munich ones is that we do it via the telephone.|S
+mn048|okay.|B
+mn015|even though all the recording is done here.|S
+mn015|and so it's a sort of a computer call system that gives you tourist information.|S
+mn048|uhhuh.|B
+mn015|tells you how to get places.|S
+mn015|and it breaks halfway through the experiment and a human operator comes on.|S
+mn015|and part of that is sort of trying to find out whether people change their linguistic verbal behavior when first thinking they speak to a machine and then to a human.|S
+mn048|yeah.|B
+mn015|and we're setting it up so that we can we hope to implant certain intentions in people.|S
+mn015|for example um we have first looked at a simple sentence that how do i get to the powder tower.|S
+mn015|okay so you have the castle of heidelberg.|S
+mn048|okay.|B
+mn015|and there is a tower and it's called powder tower.|S
+mn048|oh okay.|B
+mn048|yeah.|B
+mn015|and um so what will you parse out of that sentence?|Q
+mn015|probably something that we specified in m three l.|S
+mn047|huh.|B
+mn015|that is action go to whatever domain object whatever powder tower.|S
+mn015|and maybe some model will tell us some g p s module in the mobile scenario where the person is at the moment.|S
+mn015|and um we've sort of gone through that once before in the deep mail project.|S
+mn015|and we noticed that first of all what are|D
+mn015|i should've brought some slides.|S
+mn015|but what our|D
+mn015|so here's the tower.|S
+mn015|think of this as a two dimensional representation of the tower.|S
+mn015|and our system led people here to a point where they were facing a wall in front of the tower.|S
+mn015|there is no entrance there but it just happens to be the closest point of the road network to the geometric center.|S
+mn015|because that's how the algorithm works.|S
+mn015|so we took out that part of the road network as a hack.|S
+mn015|and then it found actually the way to the entrance.|S
+mn015|which was now the closest point of the road network to|D
+mn048|yeah.|B
+mn015|okay geometric center.|S
+mn015|but what we actually observed in heidelberg is that most people when they want to go there they actually don't want to enter.|S
+mn015|because it's not really interesting.|S
+mn015|they want to go to a completely different point where they can look at it and take a picture.|S
+mn048|oh okay.|B
+mn047|huh.|B
+mn048|yeah.|B
+mn015|and so what uh uh a you|D
+mn015|let's say a simple parse from a from an utterance won't really give us is what the person actually wants.|S
+mn015|does he want to go there to see it?|Q
+mn015|does he want to go there now?|Q
+mn015|later?|Q
+mn015|how does the person want to go there?|Q
+mn015|is that person more likely to want to walk there?|Q
+mn015|walk a scenic route?|Q
+mn015|and so forth.|S
+mn015|there are all kinds of decisions that we have identified in terms of getting to places and in terms of finding information about things.|S
+mn015|and we are constructing and then we've identified more or less the extra linguistic parameters that may play a role.|S
+mn015|information related to the user and information related to the situation.|S
+mn015|and we also want to look closely on the linguistic information that|D
+mn015|what we can get from the utterance.|S
+mn015|that's part of why we implant these intentions in the data collection to see whether people actually phrase things differently.|S
+mn015|whether they want to enter in order to buy something or whether they just want to go there to look at it.|S
+mn015|and um so the idea is to construct uh um suitable interfaces and a belief net for a module that actually tries to guess what the underlying intention was.|S
+mn015|and then enrich or augment the m three l structures with what it thought what more it sort of got out of that utterance.|S
+mn015|so if it can make a good suggestion hey.|S
+mn015|you know that person doesn't want to enter.|S
+mn015|that person just wants to take a picture because he just bought film.|S
+mn015|or that person wants to enter because he discussed the admission fee before.|S
+mn015|or that person wants to enter because he wants to buy something.|S
+mn015|and that you usually do inside of buildings and so forth.|S
+mn015|these uh these types of uh these bits of additional information are going to be embedded into the m three l structure in an sort of subfield that we have reserved.|S
+mn015|and if the action planner does something with it great.|S
+mn015|if not you know then that's also something um that we can't really|D
+mn015|at least we want to offer the extra information we don't really um we're not too worried.|S
+mn048|uhhuh.|B
+mn047|huh.|B
+mn015|i mean ultimately if you have if you can offer that information somebody's going to do something with it sooner or later.|S
+mn015|that's sort of part of our belief.|S
+me003|what was he saying?|D
+mn015|um for example right now i know the g i s from email is not able to calculate these viewpoints.|S
+mn015|so that's a functionality that doesn't exist yet to do that dynamically.|S
+mn048|uhhuh.|B
+mn015|but if we can offer it that distinction maybe somebody will go ahead and implement it.|D
+mn015|surely nobody's going to go ahead and implement it if it's never going to be used.|S
+mn015|so|F
+mn015|what have i forgotten about?|Q
+mn015|oh yeah!|S
+me010|well uh|D
+mn015|how we do it?|Q
+mn015|yeah that's the|D
+me010|no no.|S
+me010|it's a good time to pause.|S
+me010|i i see questions on peoples' faces.|S
+me010|so why don't|D
+me010|let's let's let's hear.|S
+mn048|oh.|D
+mn048|well the obvious one would be if if you envision this as a module within smartkom where exactly would that sit?|Q
+mn015|um so far i've thought of it as sort of adding it onto the modeler knowledge module.|D
+mn048|that's the|D
+mn047|huh.|D
+mn048|okay yeah.|D
+mn015|so this is one that already adds additional information to the|D
+mn048|makes perfect sense.|S
+mn048|yes.|S
+mn047|huh uh.|B
+mn015|but it could sit anywhere in the attention recognition.|S
+mn015|i mean basically this is what attention recognition literally sort of can|D
+mn048|well it's supposed to do.|S
+mn047|huh.|B
+mn048|yeah.|S
+me010|that's what it should do.|S
+me010|right.|B
+me010|yeah.|B
+mn048|yeah.|S
+mn048|yeah.|B
+mn047|huh.|B
+mn015|yeah.|B
+mn048|well from my understanding of what the people at phillips were originally trying to do doesn't seem to quite fit into smartkom currently.|S
+mn048|so what they're really doing right now is only selecting among the alternatives the hypotheses that they're given enriched by the domain knowledge and the um discourse modeler and so on.|S
+mn015|yeah.|B
+mn015|yeah.|B
+mn048|so if if this is additional information that could be merged in by them.|S
+mn048|and then it would be available to action planning and and others.|S
+mn015|yeah.|B
+mn015|the|D
+me010|let's let's|D
+me010|that|D
+me010|okay that was one question.|S
+me010|is there other other things that|D
+me010|because we want to not pass over any you know questions or concerns that you have.|S
+mn048|well there're there're two levels of of giving an answer and i guess on both levels i don't have any um further questions.|S
+mn047|huh.|B
+mn047|huh.|B
+mn048|uh the the two levels will be as far as i'm concerned as uh standing here for the generation module.|S
+mn047|huh.|B
+mn048|and the other is is my understanding of what smartkom uh is supposed to be.|S
+me010|right.|B
+mn048|and i i think that fits in perfectly.|S
+me010|so well let me let me expand on that a little bit from the point of view of the generation.|S
+mn047|huh.|B
+mn048|yeah.|B
+me010|so the idea is that we've actually got this all laid out and we could show it to you|D
+me010|um robert didn't bring it today but there's a a belief net which is|D
+me010|there's a first cut at a belief net that that doesn't it isn't fully uh instantiated.|S
+me010|and in particular some of the the combination rules and ways of getting the the conditional probabilities aren't there.|S
+me010|but we believe that we have laid out the fundamental decisions in this little space.|S
+mn048|uhhuh.|B
+me010|and the things that influence them.|S
+me010|so one of the decisions is what we call this a v e thing.|S
+me010|do you want to um access view or enter a thing?|Q
+mn047|huh.|B
+me010|so that's a discrete decision.|S
+mn048|uhhuh.|B
+me010|there are only three possibilities and the uh|D
+me010|what one would like is for this uh knowledge modeling module to add which of those it is and give it to the planner.|S
+mn048|uhhuh.|B
+me010|but uh the current design suggests that if it seems to be an important decision and if the belief net is equivocal so that it doesn't say that one of these is much more probable than the other then an option is to go back and ask for the information you want.|S
+mn048|uhhuh.|B
+me010|all right?|Q
+me010|now there are two ways one can go imagine doing that.|S
+me010|for the debugging we'll probably just have a a drop down menu.|S
+me010|and the while you're debugging you will just|D
+me010|okay.|B
+me010|but for a full system then one might very well formulate a query.|S
+me010|give it to the dialogue planner and say this you know are you know you are you planning to enter.|S
+mn048|uhhuh.|B
+me010|or whatever it whatever that might be.|S
+me010|so that's under that model.|S
+me010|then there would be a uh um a loop in which this thing would formulate a query.|S
+mn048|yes.|B
+me010|presumably give it to you.|S
+me010|that would get expressed and then hopefully you know you'd get an answer back.|S
+mn048|yep.|B
+me010|and that would of course the answer would have to be parsed.|S
+mn047|huh.|B
+me010|right?|Q
+mn047|yep.|B
+me010|and|F
+me010|okay so that uh|F
+mn048|yes.|D
+me010|we probably won't do this early on because the current focus is more on the decision making and stuff like that.|S
+mn048|yep.|D
+me010|but while we're on the subject i just wanted to give you a sort of head's up that it could be that some months from now we said okay we're now ready to try to close that loop in terms of querying about some of these decisions.|S
+mn048|uhhuh.|B
+mn048|uhhuh.|B
+mn047|huh.|B
+mn048|yep.|B
+mn048|so my suggestion then is that you um look into the currently ongoing discussion about how the action plans are supposed to look like.|S
+mn048|and they're currently um agreeing or or in the process of agreeing on an x m l ification of um something like a state transition network of how dialogues would proceed.|S
+mn048|and the these um transition networks uh will be what the action planner interprets in a sense.|S
+me010|huh.|B
+me010|did you know this robert?|Q
+mn015|uh michael is doing that.|S
+mn015|right?|Q
+mn048|well uh marcus lerkult is actually implementing that stuff.|S
+mn048|and marcus and michael together are um leading the discussion there.|S
+mn015|okay.|S
+mn048|yeah.|B
+me010|so we we have to get in on that.|S
+mn015|uhhuh.|S
+mn048|yep.|S
+me010|because um partly those are like x schemas.|S
+mn047|huh.|B
+mn048|definitely.|S
+me010|the transition diagrams.|S
+mn015|huh.|B
+me010|and it may be that that um we should early on make sure that they have the flexibility that we need.|S
+mn015|huh.|B
+mn015|but they uh|D
+mn015|have i understood this right?|Q
+mn015|they they govern more or less the the dialogue behavior or the action.|S
+mn048|uhhuh.|S
+mn015|it's not really what you do with the content of the dialogue but it's|D
+mn015|so i mean there is this this this nice|D
+mn047|uh no.|S
+mn047|it's it's also a quantrant uh uh|D
+mn015|is it|D
+me010|so there's so there the word action okay is is what's ambiguous here.|S
+mn047|i think.|S
+mn047|huh.|B
+mn048|yes.|S
+me010|so um one thing is there's an actual planner that tells the person in the tourist domain now.|S
+me010|tells the person how to go.|S
+mn048|okay.|S
+me010|first go here.|S
+me010|first go there.|S
+mn047|uhhuh.|B
+me010|uh you know take a bus.|S
+me010|whatever it is.|S
+me010|so that's that form of planning and action and a route planner and g i s all sort of stuff.|S
+me010|uh but i think that isn't what you mean.|S
+mn048|no.|S
+mn048|no in smartkom terminology that's um called a function that's modeled by a function modeler.|S
+mn048|and it's that's completely um encapsulated from the dialogue system.|S
+mn048|that's simply a functionality that you give data as in a query.|S
+mn048|and then you get back from that huh a functioning model um which might be a planner or a v c r or whatever.|S
+mn048|um some result and that's then then used.|S
+me010|well okay.|S
+me010|so that's what i thought.|S
+me010|so action action here means uh speech uh you know dialogue act.|S
+mn048|yeah yeah.|S
+mn015|huh.|B
+mn048|yeah in that in that sense.|S
+mn048|yes.|S
+me010|yeah.|B
+mn048|dialogue act.|S
+mn048|yeah.|D
+me010|um i think i think it's not going to i think that's not going to be good enough.|S
+me010|i i what uh what i meant by that.|S
+me010|so i think the idea of having a you know transition diagram for the grammar of conversations is a good idea.|S
+mn048|uhhuh.|B
+me010|okay.|S
+me010|and i think that we do definitely have to get in on it and find out okay.|S
+me010|but i think that um|D
+me010|when so when you get to the tourist domain it's not just an information retrieval system.|S
+mn048|uhhuh.|B
+me010|right?|Q
+mn048|clearly.|S
+me010|so this this is where i think this|D
+mn048|yes.|B
+me010|people are going to have to think this through a bit more carefully.|S
+mn048|uhhuh.|B
+me010|so if it's only like in in the in the film and t v thing|D
+me010|okay you can do this.|S
+me010|and you just get information and give it to people.|S
+me010|but what happens when you actually get them moving and so forth and so on|D
+mn048|yep.|B
+me010|uh your i i think the notion of this as a self contained uh module.|S
+me010|you know the functional module that that interacts with with where the tourism stuff is going probably is too restrictive.|S
+mn048|yep.|D
+me010|now i don't know how much people have thought ahead to the tourist domain in this.|S
+mn048|probably not enough.|S
+mn048|i mean an another uh more basic point there is that the current um tasks and therefore the concepts in this ac|D
+mn048|what's called the action plan and what's really the dialogue manager.|S
+me010|yeah.|B
+mn048|um is based on slots that have to be filled.|S
+mn048|and the um kind of values in these slots would be fixed things like the a time or a movie title or something like this.|S
+me010|uhhuh.|B
+me010|right.|B
+mn048|whereas in the a um tourist domain it might be an entire route.|S
+me010|indeed.|S
+mn048|set based or even very complex structured information in these slots.|S
+me010|right.|F
+mn048|and i'm not sure if if complex slots of that type are really um being taken into consideration.|S
+me010|okay.|S
+me010|could you could you put a message into the right place to see if we can at least ask that question?|Q
+mn048|so that's that's really something we|D
+mn015|yep.|S
+mn048|uhhuh.|B
+mn048|i mean nothing's being completely settled there.|S
+mn015|yep.|S
+mn048|so this is really an ongoing discussion.|S
+mn015|uhhuh.|B
+mn015|yeah and um it might actually|D
+mn048|and that's|D
+mn015|okay.|S
+mn015|uh also because um again in deep map we have faced and implemented those problems once already.|S
+mn015|maybe we can even shuffle some know how from there to to markus and michael.|S
+mn048|uhhuh.|B
+mn048|yes.|S
+mn047|huh.|B
+mn048|yep.|D
+mn015|and um huh you don't know|D
+mn015|okay|D
+mn015|i'll i'll talk to michael.|S
+mn015|it's what i do anyway.|S
+mn015|who how far is the uh the the m three l specification for for the natural language input gone on the the uh|D
+mn015|i haven't seen anything for the uh tourist path domain.|S
+mn047|yeah it's it's not defined yet.|S
+mn015|and um you are probably also involved in that.|S
+mn047|um yeah.|S
+mn015|right?|Q
+mn015|uh together with the usual gang.|S
+mn015|um petra and jan.|S
+mn047|huh.|D
+mn047|yeah there's a meeting next next week i think.|S
+mn015|okay because that's those are the|D
+mn015|i think the the true key issues is how does the whatever comes out of the language input pipeline look like?|Q
+mn015|and then what the action planner does with it?|Q
+mn015|and how that is uh specified?|Q
+mn015|i didn't think of the internal working of the uh the action planner and the language uh the function model as sort of relevant.|S
+mn015|because what what they take is sort of this this fixed representation of a of an intention.|S
+mn015|and that can be as detailed or as crude as you want it to be.|S
+mn048|uhhuh.|B
+mn015|but um the internal workings of of the|D
+mn015|whether you know there're dialogue action planners that work with belief nets that are action planners that work with you know state automata.|S
+mn015|so that shouldn't really matter too much.|S
+mn015|i mean it does matter.|S
+mn015|because it does have to keep track of you|D
+mn015|we are on part six of a route that consists of eight steps and so forth.|S
+me010|yeah there there i think there are a lot of reasons why it matters.|S
+mn048|right.|S
+me010|okay?|Q
+me010|so that|D
+me010|uh|F
+me010|for example the it's the action planner is going to take some spec and make some suggestions about what the user should do.|S
+me010|what the user says after that is going to be very much caught up with what the action planner told it.|S
+mn048|yes.|D
+me010|if the if the parser and the language end doesn't know what the person's been told|D
+me010|okay.|S
+me010|it's you're making your life much more difficult than it has to be.|S
+mn015|yeah.|B
+me010|right?|Q
+me010|so if someone says the best to uh go there is by taxi.|S
+me010|let's say.|S
+me010|now the planner comes out and says you want to get there fast.|S
+me010|take a taxi.|S
+me010|okay.|S
+me010|and the language end doesn't know that.|S
+me010|okay there's all sorts of dialogues that won't make any sense which would be just fine.|S
+mn048|huh|D
+me010|uh|F
+mn015|yeah.|B
+mn048|that would|D
+mn048|but that i think that that uh point has been realized.|S
+mn048|and it's it's not really um been defined yet.|S
+mn048|but there's going to be some kind of feedback and input from uh the action planner into all the analysis modules telling them what to expect and what the current state of the discourse is.|S
+mn047|huh.|B
+mn048|beyond what's currently being implemented which is just word lists.|S
+me010|yeah but this is not the this is not just the state of the discourse.|S
+mn015|uhhuh.|B
+mn048|of of special interest.|S
+me010|this is actually the state of the plan.|S
+me010|that's why|D
+mn015|uhhuh.|B
+mn048|yes yes uhhuh yeah.|B
+me010|okay so it|F
+me010|and|F
+me010|uh it's great if people are already taking that into account.|S
+me010|but one would have have to see see the details.|S
+mn048|the specifics aren't really there yet.|S
+mn048|yes.|D
+me010|yeah.|B
+mn048|so there's work to do there.|S
+me010|so anyway robert that's why i was thinking that.|S
+mn015|uhhuh.|B
+me010|um|F
+me010|i think you're going to need|D
+me010|we talked about this several times that that the the input end is going to need a fair amount of feedback from the planning end.|S
+mn048|huh.|B
+me010|in in one of these things which are are much more continuous than the just the dialogue over movies and stuff.|S
+mn048|yeah.|B
+mn047|huh.|B
+mn048|and even on on a more basic level the the action planner actually needs to be able to have um an expressive power that can deal with these structures.|S
+me010|huh?|Q
+mn048|and not just um say um um the dialogue um will consist of ten possible states and these states really are fixed in in a certain sense.|S
+me010|would there be any chance of getting the terminology changed so that the dialogue planner was called a dialogue planner?|Q
+mn048|you have to|D
+me010|because there's this other thing the there's this other thing in in the tourist domain which is going to be a route planner.|S
+mn048|that'd be nice.|S
+me010|or it's really going to be an action planner.|S
+me010|and it|F
+mn048|it ought to be called a a dialogue manager.|S
+mn048|because that's what everybody else calls it.|S
+me010|i would think.|S
+me010|yeah.|B
+mn047|huh.|B
+me010|huh?|Q
+mn048|yeah.|B
+me010|so so what would happen if we sent a note saying gee we've talked about this and couldn't we change this uh the whole word?|Q
+me010|i have no idea how complicated these things are.|S
+mn015|probably close to impossible.|S
+mn048|depends on who you talk to how.|S
+mn048|we'll see.|S
+mn048|i'll go check.|S
+mn048|cause i completely agree.|S
+mn047|huh.|B
+mn048|yeah.|F
+mn048|and i think this is just for historical reasons within uh the preparation phase of the project.|S
+mn048|and not because somebody actually believes it ought to be action planner.|S
+mn048|so if there is resistance against changing it that's just because oh we don't want to change things.|S
+mn048|that that not deep reason|D
+me010|okay.|S
+me010|anyway|D
+me010|if if that persists then we're going to need another term for the thing that actually does the planning of the uh routes and whatever we are doing for the tourist.|S
+mn015|that's external services.|S
+me010|yeah but that's not uh|D
+me010|that has all the wrong connotations.|S
+me010|it's it sounds like it's you know stand alone.|S
+me010|it doesn't interact.|S
+me010|it doesn't|D
+me010|that's why i'm saying.|S
+me010|i think you can't|D
+me010|it's fine for looking up when you know when the show's on t v.|S
+me010|you go to|D
+me010|but i i i i think it's really really wrong headed for something that you that has a lot of state.|S
+me010|it's going to interact in a complicated way with the uh understanding parts.|S
+mn015|yeah.|B
+mn015|yeah i think just the the spatial planner and the route planner.|S
+mn015|i showed you once the action between them among them in the deep map system.|S
+me010|right.|B
+mn015|so a printout of the communication between those two fills up.|S
+mn015|i don't know how many pages.|S
+mn015|and that's just part of how do i get to one place.|S
+mn048|huh.|B
+mn015|it's really insane.|S
+mn015|and uh|F
+mn015|but um so this is um definitely a good point to get uh michael into the discussion.|S
+mn015|or to enter his discussion actually.|S
+mn015|that's the way around.|S
+mn048|yeah marcus|D
+mn015|markus.|S
+mn015|is he new in the in the|D
+mn048|where's|D
+mn048|yeah he's he started um i think january.|S
+mn047|yeah.|B
+mn048|and he's going to be responsible for the implementation of this action planner.|S
+mn048|dialogue manager.|S
+mn015|is he going to continue with the old uh thing?|Q
+mn048|no.|S
+mn048|no he's completely going to rewrite everything in java.|S
+mn015|okay.|S
+mn048|okay so that's interesting.|S
+mn015|yes i was just that's my next question.|S
+mn048|huh.|D
+mn015|whether we're we're going to stick to prolog or not.|S
+mn048|no.|S
+mn048|no that's going to be phased out.|S
+me010|yeah.|D
+mn015|okay.|S
+mn015|but i do think the the function modeling concept has a certain makes sense in a in a certain light.|S
+mn048|yeah.|B
+mn015|because the action planner should not be or the dialogue manager in that case should not um have to worry about whether it's interfacing with um something that does route planning in this way or that way.|S
+mn048|uhhuh.|B
+me010|i totally agree.|S
+me010|sure.|S
+mn015|huh?|Q
+mn015|it|D
+me010|yeah i i agree.|S
+me010|there is there's a logic to dialogue which which is is separable.|S
+me010|yeah.|B
+mn015|and it cant sort of formulate its what it wants in a in a rather abstract uh way.|S
+mn015|you know find me a good route for this.|S
+me010|uhhuh.|B
+mn015|it doesn't really have to worry how route planner a or how route planner b actually wants it.|S
+mn015|so this is seemed like a good idea.|S
+mn015|in the beginning.|S
+me010|it's tricky.|S
+me010|it's tricky because one could well imagine|D
+me010|i think it will turn out to be the case that uh this thing we're talking about the extended uh knowledge modeler will fill in some parameters about what the person wants.|S
+me010|one could well imagine that the next thing that's trying to fill out the detailed uh route planning let's say will also have questions that it would like to ask the user.|S
+me010|you could well imagine you get to a point where it's got a a choice to make and it just doesn't know something.|S
+me010|and so you would like it also be able to uh formulate a query.|S
+mn048|uhhuh.|B
+me010|and to run that back through uh the dialogue manager and to the output module and back around.|S
+mn015|huh.|B
+me010|and a good design would would allow that to happen.|S
+mn015|a lot of|D
+mn015|yeah.|B
+mn047|huh.|B
+me010|if if you know if if you can't make it happen then you you do your best.|S
+mn048|yeah.|S
+mn048|but that doesn't necessarily contradict um an architecture where there really is a a well defined interface.|S
+me010|i totally agree.|S
+mn048|and and|D
+me010|but but what it|D
+me010|but what the point is|D
+me010|in that case the dialogue manager is sort of event driven.|S
+me010|so the dialogue manager may think it's in a dialogue state of one sort.|S
+me010|and this one of these planning modules comes along and says hey right now we need to ask a question.|S
+mn048|uhhuh.|B
+me010|so that forces the dialogue manager to change state.|S
+mn048|yes.|S
+me010|okay.|S
+me010|it could be|D
+mn048|sure.|S
+mn048|yeah i i think that's that's the um concept that people have.|S
+me010|yeah yeah it it|D
+me010|okay.|S
+mn048|yep.|S
+mn048|and and the the underlying idea of course is that there is something like kernel modules with kernel functionality that you can plug uh certain applications like tourist information or um the home scenario with uh controlling a v c r and so on.|S
+mn048|and then extend it to an arbitrary number of applications eventually.|S
+mn048|so wouldn't|D
+mn048|that's an additional reason to have this well defined interface.|S
+me010|oh yeah yeah.|S
+mn048|and keep these things like uh tourist information external.|S
+mn048|and then call it external services.|S
+mn015|huh.|B
+mn048|but of course the the more complex|D
+mn015|yeah there is another philosophical issue that i think you know you can evade.|S
+mn048|yep.|B
+mn015|but at least it makes sense to me that sooner or later uh a service is going to come and describe itself to you.|S
+mn015|and that's sort of what srini is working on in in in the daml uh project where um you you find a g i s about that gives you information on berkeley.|S
+mn048|yeah.|B
+mn015|and it's it's going to be there and tell you what it can do and how it wants to do things.|S
+mn015|and so you can actually interface to such a system without ever having met it before.|S
+mn015|and the function modeler and a self description of the um external service haggle it out.|S
+mn048|huh.|B
+mn015|and you can use the same language core understanding core to interface with planner a planner b planner c and so forth.|S
+mn048|huh.|B
+mn047|huh.|B
+mn015|which is you know uh uh utopian|D
+mn015|completely utopian at the moment.|S
+mn015|but slowly you know getting into the realm of the uh contingent.|S
+mn048|huh.|B
+mn015|but we are facing of course much more um realistic problems.|S
+mn015|and language input for example is of course uh crucial you know also when you do the sort of deep understanding analysis that we envision.|S
+mn015|um then of course the uh um you know|D
+mn015|what is it?|Q
+mn015|poverty of the stimulus.|S
+mn015|yet the uh the less we get of that the better.|S
+mn015|and um so we we're thinking for example how much syntactic analysis actually happens already in the parser?|Q
+mn047|huh.|B
+mn015|and whether one could interface to that potentially.|S
+mn047|yeah.|F
+mn047|are there currently is uh|D
+mn047|no syntactic analysis.|S
+mn047|but in the next release there will be some.|S
+mn015|huh.|B
+me010|how's it|D
+mn047|unless|D
+mn047|and it's|D
+mn047|um uh|F
+mn047|you can access this|D
+me010|so uh we we looked at the current pattern matching thing.|S
+mn047|huh.|S
+me010|and as you say it's just a surface pattern matcher.|S
+me010|uh so what are what are the plans roughly?|Q
+mn047|um it's to to integrate and syntactic analysis.|S
+mn047|and um add some more features like segmentation.|S
+mn047|so then an more than one utterance is there um there's often uh pause between it.|S
+mn047|and a segmentation occurs.|S
+me010|so the um|D
+mn047|um|F
+me010|so the idea is to uh have a a particular|D
+mn047|yeah.|B
+me010|do you have a particular parser in mind?|Q
+me010|is it uh|D
+me010|i mean have you thought through|D
+me010|is it an h p s g parser?|Q
+me010|is it a whatever?|Q
+mn047|no no it's uh i think it's it's totally complicated for|D
+mn047|it's just one one person.|S
+me010|okay.|F
+mn047|and so i have to keep the|D
+me010|oh you have to do it.|S
+me010|you have to do it.|S
+me010|yeah.|B
+mn047|yeah.|S
+mn047|uh and so things must be simpler.|S
+me010|i see.|S
+me010|so|D
+mn047|but uh miel syntactic analysis with um finite state transducers.|S
+me010|but the people at d f|D
+me010|yeah.|F
+me010|people at d f k i have written a fair number of parsers.|S
+me010|other you know people over the years uh have written various parsers at d f k i.|S
+me010|none of them are suitable?|Q
+me010|i i i i'm asking.|S
+me010|i don't know.|S
+mn047|yeah uh the problem is that it has to be very fast.|S
+mn047|because um if you want to for more than one path anywhere|D
+me010|okay.|S
+mn047|what's in the latches from the speech recognizer?|Q
+me010|uhhuh.|B
+mn047|so it's speed is crucial.|S
+mn047|uh|F
+mn047|and they are not fast enough.|S
+me010|uhhuh.|B
+mn047|and they also have to be very robust because of um speech recognition errors.|S
+mn047|and|D
+me010|okay.|S
+me010|so um so there was a chunk parser in verbmobil that was one of the uh branchers.|S
+me010|you know they i|D
+me010|there were these various uh competing uh syntax modules.|S
+me010|and i know one of them was a chunk parser.|S
+me010|and i don't remember who did that.|S
+mn047|i think it's that|D
+mn015|alan?|Q
+mn047|might|D
+mn047|at tubingen i thought.|S
+me010|yeah i i don't remember.|S
+mn047|was do you know something about that?|Q
+mn048|tubingen was at least involved in putting the chunks together.|S
+mn047|in at|D
+mn048|i can't quite recall whether they actually produced the chunks in the first place.|S
+mn047|oh.|S
+me010|uh i see.|S
+me010|yeah that's right.|S
+mn048|or|D
+me010|there|D
+mn047|oh from from stuttgart.|S
+me010|that's right.|S
+me010|they they had there were this was done with a two phase thing where the chunk parser itself was pretty stupid.|S
+mn047|yeah also|D
+me010|and then there was a kind of trying to fit them together that used more context.|S
+mn048|right.|B
+mn048|yeah.|B
+me010|right.|B
+mn048|well you and and especially you did some some.|S
+mn048|um um|F
+mn048|was a learning based approach which learned from a big corpus of of trees.|S
+me010|right.|S
+mn047|uhhuh.|B
+me010|right.|B
+mn048|and yes the it the chunk parser was a finite state machine that um mark light originally worked on in while he was in tubingen.|S
+mn048|and then somebody else in tubingen picked that up so it was done in tubingen.|S
+mn048|yeah.|B
+mn048|definitely.|B
+me010|but is that the kind of thing|D
+me010|it sounds like the kind of thing that you were thinking of.|S
+mn047|yeah.|S
+mn048|yeah i guess it's similar.|S
+mn047|yeah.|S
+mn047|that's in this direction.|S
+mn047|yes.|S
+me010|what?|Q
+mn047|yeah it's in in this direction.|S
+me010|huh.|B
+mn015|the|D
+mn015|from michael strube i've heard very good stuff about the chunk parser that is done by forwiss.|S
+mn015|uh which is in embassy doing the parsing.|S
+mn048|uhhuh.|B
+mn015|so this is sort of came as a surprise to me that you know embassy is featuring a nice parser.|S
+mn015|but it's what i hear one could also look at that and see whether there is some synergy possible.|S
+mn047|uhhuh yeah.|B
+mn047|it would be very interesting.|S
+mn047|uhhuh.|B
+mn047|huh yeah.|B
+mn015|and they're doing chunk parsing.|S
+mn015|and it's uh|D
+mn015|i i can give you the names of the people who do it there.|S
+mn015|but um|F
+mn015|then there is of course more ways of parsing things.|S
+me010|of course.|S
+me010|but but uh given the constraints that you want it to be small and fast and so forth my guess is you're probably into some kind of chunk parsing.|S
+me010|and uh i'm not a big believer in this um statistical you know cleaning up.|S
+me010|uh|F
+me010|it that seems to me kind of a last resort if uh you can't do it any other way.|S
+me010|uh|F
+me010|but i don't know.|S
+me010|it may may be that's what you guys finally decide do.|S
+mn047|huh.|B
+me010|uh|F
+me010|and have you looked|D
+me010|uh just again for context|D
+mn047|uhhuh.|S
+me010|there is this this one that they did at s r i some years ago.|S
+me010|fastus?|Q
+mn047|um|F
+me010|a|D
+mn047|yeah i've i've looked at it.|S
+mn047|but but it's no not much uh information available.|S
+me010|uh.|S
+mn047|i found|D
+mn047|but it's also finite state transducers i thought.|S
+me010|it is.|S
+me010|yeah.|S
+me010|i mean it's it was pretty ambitious.|S
+mn047|and|D
+me010|and of course it was english oriented.|S
+me010|um|F
+mn047|yeah and and purely finite state transducers are not so good for german since there's um|D
+me010|right.|B
+me010|yeah i guess that's the point is is all the morphology and stuff.|S
+mn047|the word order is is uh not fixed.|S
+me010|and english is all all word order.|S
+me010|and it makes a lot more sense.|S
+mn047|yeah.|S
+me010|and|F
+me010|yeah okay.|S
+me010|good point.|S
+me010|so in in in german you've got uh most of this done with|D
+mn047|uhhuh also it's uh it's um yes uh the um choice between uh this processing and that processing and my template matcher.|S
+me010|right.|S
+me010|right.|B
+me010|so what about|D
+me010|um|F
+me010|did|D
+me010|like morfix?|Q
+me010|you've got stemmers?|Q
+me010|or is that something that|D
+mn047|um yeah but it's all in the in the lexicon.|S
+me010|but did you have that?|Q
+mn047|so it's|D
+mn047|yeah the information is available.|S
+me010|okay.|S
+me010|i see.|S
+me010|so but|D
+me010|so you just connect to the lexicon.|S
+mn047|so|D
+mn047|yeah.|S
+me010|and uh|F
+me010|at least for german you have all all of the uh the stemming information.|S
+mn047|yeah we can|D
+mn047|oh yeah.|B
+mn047|we have knowledge bases from from verbmobil system we can use.|S
+me010|yep.|B
+mn047|and so|D
+me010|right.|B
+me010|but it it it doesn't look like you're using it|D
+me010|i didn't see it being used in the current template uh parser.|S
+me010|i i didn't see any uh|D
+me010|of course we actually only looked at the english.|S
+mn047|it|D
+me010|did we look at the german?|Q
+mn047|um|F
+me010|i don't remember.|S
+me010|so|D
+mn047|yeah but but it's used for for stem forms.|S
+mn048|well i think i think there's some misunderstanding here.|S
+mn047|oh okay.|S
+mn048|it's morphix is not used online.|S
+mn048|so the lexicon might be derived by morphix.|S
+mn047|what?|D
+mn048|but what what's happening online is just um um a a retrieval from the lexicon which would give all the stemming information.|S
+me010|right.|B
+me010|right.|B
+mn047|huh.|B
+mn048|so it would be a full foreign lexicon.|S
+me010|and that's what you have.|S
+mn047|yeah.|S
+mn048|yep.|D
+me010|okay.|S
+me010|what|D
+me010|uh i didn't|D
+mn015|we threw out all the forms.|S
+me010|huh?|Q
+mn015|we threw out all the forms.|S
+mn015|because you know english.|S
+mn015|well|D
+me010|oh okay.|S
+me010|so it yeah i thought i'd|D
+mn047|uhhuh.|B
+me010|so in german then you actually do case matching and things like in the in the pattern matcher or not?|Q
+mn047|um not yet but it's planned to do that.|S
+me010|okay.|S
+me010|because i i didn't i didn't think i saw it.|S
+me010|have we looked at the german?|Q
+mn047|yeah.|B
+me010|oh i|D
+me010|yeah.|B
+me010|that's getting it from the lexicon is just fine.|S
+me010|yeah yeah yeah.|B
+mn048|sure.|B
+mn047|oh yes.|B
+mn048|right.|B
+me010|no problem with that.|S
+me010|um|F
+me010|yeah and here's the case where the english and the german might really be significantly different.|S
+me010|in terms of if you're trying to build some fast parser and so forth.|S
+me010|and|D
+me010|you really might want to do it in a significantly different way.|S
+me010|i don't know.|S
+me010|so you've you guys have looked at this?|Q
+me010|also?|Q
+me010|in terms of you know if you're doing this for english as well as german.|S
+me010|um do you think now that it would be this doing it similarly?|Q
+mn047|um yeah.|S
+mn047|it's um i think it's um|D
+mn047|yes it's it's um possible to to do list processing.|S
+mn047|and maybe this is um more adequate for english.|S
+mn047|and in german um set processing is used.|S
+me010|set.|S
+mn047|maybe yeah|D
+mn047|some extensions uh have to be made for for a english version.|S
+me010|huh.|D
+me010|okay.|S
+me010|interesting.|S
+me010|not easy.|S
+mn015|well there's i'm sure there's going to be more discussion on that after your talk.|S
+mn047|uhhuh.|S
+me010|right.|B
+mn047|yeah.|B
+mn015|we're just going to foreshadow what we saw that|D
+me010|right.|B
+mn015|and um|F
+me010|now actually|D
+me010|um|F
+me010|are you guys free at five?|Q
+me010|or do you have to go somewhere at five o'clock tonight?|Q
+me010|in ten minutes?|Q
+mn047|uh.|F
+mn047|no.|S
+mn048|uh uh i think we're expect|D
+mn047|oder there was an talk?|Q
+mn048|yeah there there's the um practice talk.|S
+mn047|uh huh yeah.|B
+me010|great.|S
+me010|so you're going to that.|S
+mn048|yeah that that's what we were planning to do.|S
+me010|that's good because that will uh tell you a fair amount about the form of semantic construction grammar that we're using.|S
+mn048|yeah.|B
+me010|so so i i think that probably as good an introduction as you'll get.|S
+mn048|uhhuh.|B
+mn047|uh.|B
+me010|uh to the form of of uh conceptual grammar that that we have in mind for this.|S
+mn047|huh uh.|B
+me010|it won't talk particularly about how that relates to what uh robert was saying at the beginning.|S
+me010|but let me give you a very short version of this.|S
+me010|so we talked about the fact that there're going to be a certain number of decisions that you want the knowledge modeler to make that will be then fed to the function module that does uh route planning.|S
+me010|it's called the route planner or something.|S
+mn048|uhhuh.|B
+me010|so there are these decisions.|S
+me010|and then one half of this we talked about at little bit is how if you had the right information.|S
+me010|if you knew something about what was said.|S
+me010|and about the something about was the agent a tourist or a native or a business person?|Q
+me010|or uh young or old.|S
+me010|whatever.|S
+me010|that information.|S
+me010|and also about the|D
+me010|uh what we're calling the entity.|S
+me010|is it a castle?|Q
+me010|is it a bank?|Q
+me010|is it a town square?|Q
+me010|is it a statue?|Q
+me010|whatever.|S
+me010|so all that kind of information could be combined into decision networks and give you decisions.|S
+me010|but the other half of the problem is how would you get that kind of information from the parsed input?|Q
+me010|so um|D
+me010|so what you might try to do is just build more templates saying uh|D
+me010|we're trying to build a|D
+me010|you know build a template that uh somehow would capture the fact that he wants to take a picture.|S
+mn047|huh.|B
+me010|okay?|Q
+me010|and and we could you could do this.|S
+me010|and it's a small enough domain that probably you you know|D
+mn047|huh.|B
+me010|okay.|B
+me010|you could do this.|S
+me010|but uh from our point of view this is also a research project.|S
+me010|and there are a couple of people not here for various reasons who are doing doctoral dissertations on this.|S
+mn048|uhhuh.|B
+me010|and the idea that we're really after is a very deep semantics based on cognitive linguistics.|S
+me010|and the notion that there are a relatively small number of primitive conceptual schemas that characterize a lot of activity.|S
+me010|so a typical one in this formulation is a container.|S
+me010|so this is a static thing.|S
+me010|and the notion is that all sorts of physical situations are characterized in terms of containers.|S
+me010|going in and out the portals and|D
+mn047|huh.|B
+me010|okay.|B
+me010|but also importantly for lakoff and these guys is all sorts of metaphorical things are also characterized this way.|S
+me010|you get in trouble and you know et cetera.|S
+mn047|huh.|B
+me010|and so|D
+me010|so what we're really trying to do is to map from the discourse to the conceptual semantics level.|S
+me010|and from there to the appropriate decisions.|S
+me010|so another one of these primitive what are called image schemas is uh goal seeking.|S
+mn048|uhhuh.|B
+me010|so this a notion of a source path goal trajector possibly obstacles.|S
+mn048|uhhuh.|B
+me010|and the idea is this is another conceptual primitive.|S
+me010|and that all sorts of things particularly in the tourist domain can be represented in terms of uh source path and goal.|S
+mn048|uhhuh.|B
+me010|so the idea would be could we build an analyzer that would take an utterance.|S
+me010|and say aha.|S
+me010|this utterance is talking about an attempt to reach a goal.|S
+me010|the goal is this.|S
+me010|the the uh traveler is that.|S
+me010|uh|F
+me010|the where we are at now is is this|D
+me010|they've mentioned possible obstacles et cetera.|S
+me010|so the and this is again attempt to get very wide coverage.|S
+me010|so if you can do this then the notion would be that across a very large range of domains you could use this deep conceptual basis as the interface.|S
+mn048|uhhuh.|B
+mn048|uhhuh.|B
+me010|and then|D
+me010|uh|F
+me010|the processing of that both on the input end recognizing that certain words in a language talk about containers or goals et cetera.|S
+me010|and on the output end given this kind of information you can then uh make decisions about what actions to take.|S
+me010|provides they claim a very powerful general notion of deep semantics.|S
+me010|so that's what we're really doing.|S
+mn048|uhhuh.|B
+me010|and|F
+me010|nancy is going to|D
+me010|her talk is going to be not about using this in applications but about modeling how children might learn this kind of uh deep semantic grammar.|S
+mn048|uhhuh.|B
+mn048|yep yep.|D
+mn048|and how do you envision um the the um this deep semantic to be worked with?|Q
+mn048|would it be highly ambiguous if|D
+mn048|and then there would be another module that takes that um highly underspecified deep semantic construction?|Q
+mn048|and map it onto the current context to find out what the person really was talking about in that context?|Q
+me010|well that's that's that's where the belief net comes in.|S
+mn048|or or a|D
+me010|so the idea is|D
+me010|let's take this business about going to the powder tower.|S
+mn048|uhhuh.|B
+me010|so part of what you'll get out of this will be the fact|D
+me010|if it works right|D
+me010|okay that this is an agent that wants to go to this place.|S
+me010|and that's their goal.|S
+me010|and there will be additional situational information.|S
+mn048|uhhuh.|B
+mn048|oh okay.|B
+me010|uh okay.|S
+me010|part of it comes from the ontology.|S
+me010|the tower is this kind of object.|S
+mn048|uhhuh.|B
+mn048|yeah okay.|B
+me010|part of it comes from the user model.|S
+mn048|uhhuh.|B
+me010|and the idea of the belief net is it combines the information from the dialogue which comes across in this general way.|S
+mn048|uhhuh.|B
+me010|you know this is a this is a goal seeking behavior along with specific information from the ontology about the kinds of objects involved.|S
+mn048|yeah.|B
+mn048|okay.|B
+mn048|yeah.|B
+mn048|yep yep yep yep.|D
+me010|and about the situation about is it raining.|S
+me010|i don't know.|S
+me010|whatever it is.|S
+me010|and so that's the belief net that we've laid out.|S
+mn048|uhhuh.|B
+me010|and so the coupling to the situation comes in this model from at at at the belief net combining evidence from the dialogue with the ontology with the situation.|S
+mn048|yeah.|B
+mn047|huh.|B
+me010|but nancy isn't going to talk about that.|S
+mn048|yeah.|B
+me010|just about the um|D
+mn048|oh yeah.|B
+mn048|i see.|B
+mn048|yeah yeah really.|B
+mn015|first steps.|S
+me010|right.|F
+me010|the the construction grammar.|S
+mn015|and she's going to start.|S
+mn015|in a minute.|S
+me010|in a minute.|S
+mn047|uh okay.|S
+me010|okay.|B
+mn036|is it in|D
+mn036|then your place in five five a?|Q
+mn048|all right.|B

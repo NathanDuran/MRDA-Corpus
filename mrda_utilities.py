@@ -28,7 +28,7 @@ class Utterance:
         return str(self.speaker + " " + self.text + " " + self.da_label)
 
 
-def process_transcript(transcript, database, excluded_chars=None, excluded_tags=None):
+def process_transcript(transcript, database, da_map, excluded_chars=None, excluded_tags=None):
 
     # Process each utterance in the transcript and create list of Utterance objects
     utterances = []
@@ -113,17 +113,22 @@ def process_transcript(transcript, database, excluded_chars=None, excluded_tags=
         # Get the dialogue act from the database file
         raw_da_tag = database[utt_index].split(',')[5]
 
-        if any(char in ['|'] for char in raw_da_tag):  # Take first da if multiple
-            raw_da_tag = raw_da_tag.split('|')[0]
-        if any(char in [':'] for char in raw_da_tag):  # Remove quote da split
-            raw_da_tag = raw_da_tag.split(':')[0]
-        if any(char in ['^'] for char in raw_da_tag):  # Remove general da tag
-            raw_da_tag = raw_da_tag.split('^')[1]
-        if any(char in ['.'] for char in raw_da_tag):  # Remove disruptive form tag
-            raw_da_tag = raw_da_tag.split('.')[0]
-        if raw_da_tag == '%-':  # Collapse disruptions i.e. interrupted and abandoned
-            raw_da_tag = '%--'
-        da_tag = raw_da_tag
+        # Get the basic da tag
+        if raw_da_tag not in da_map:
+            print(raw_da_tag + " Not in map!")
+        basic_da_tag = da_map[raw_da_tag]
+
+        # if any(char in ['|'] for char in raw_da_tag):  # Take first da if multiple
+        #     raw_da_tag = raw_da_tag.split('|')[0]
+        # if any(char in [':'] for char in raw_da_tag):  # Remove quote da split
+        #     raw_da_tag = raw_da_tag.split(':')[0]
+        # if any(char in ['^'] for char in raw_da_tag):  # Remove general da tag
+        #     raw_da_tag = raw_da_tag.split('^')[1]
+        # if any(char in ['.'] for char in raw_da_tag):  # Remove disruptive form tag
+        #     raw_da_tag = raw_da_tag.split('.')[0]
+        # if raw_da_tag == '%-':  # Collapse disruptions i.e. interrupted and abandoned
+        #     raw_da_tag = '%--'
+        da_tag = basic_da_tag
 
         # Get the speaker label
         speaker = database[utt_index].split(',')[7]
@@ -134,7 +139,7 @@ def process_transcript(transcript, database, excluded_chars=None, excluded_tags=
 
         # Check we are not adding an empty utterance (i.e. because it was just 'DIGIT_TASK'),
         # or adding an utterance with an excluded tag.
-        if len(utterance_text) > 0 and da_tag not in excluded_tags:
+        if len(utterance_text) > 0 and da_tag.lower() not in excluded_tags:
 
             # Create Utterance and add to list
             current_utt = Utterance(speaker, utterance_text, da_tag)
@@ -145,6 +150,18 @@ def process_transcript(transcript, database, excluded_chars=None, excluded_tags=
     dialogue = Dialogue(transcript_id, len(utterances), utterances)
 
     return dialogue
+
+
+def get_da_maps(path):
+    # Load the da maps from file
+    da_map_data = load_data(path)
+
+    # Split on tabs and save to dictionary (key=full_da : val=basic_da)
+    da_map = dict()
+    for line in da_map_data:
+        da_map[line.split('\t')[0]] = line.split('\t')[1]
+
+    return da_map
 
 
 def load_data(path, verbose=True):

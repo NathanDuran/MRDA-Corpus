@@ -1,1389 +1,1392 @@
-me003|so|fh
-me003|so is keith showing up?|fg
-me003|he's talking with george right now.|s
-me003|uh is he going to get a rip uh rip himself away from from that?|qy
-me010|what?|qw
-fe004|he'll probably come later.|s
-me010|he's|%
-me010|probably not is my guess.|nd
-me003|oh then it's just going to be the five of us?|bk
-mn015|well he he was very affirmative in his way of saying he will be here at four.|s
-me010|yeah.|aa
-mn015|but you know that was before he knew about that george lecture probably.|s
-me010|right.|b
-me010|this this is not it's not bad for the project if keith is talking to george.|s
-me010|okay so my suggestion is we just|fh
-fe004|forge ahead.|2
-me010|forge ahead yeah.|m
-mn015|cool.|bk
-fe004|are you in charge?|rt
-mn015|sure.|aa
-mn015|um|fh
-mn015|well i sort of had informal talks with most of you.|s
-mn015|so eva just reported she's really happy about the c.b.t.'s being in the same order in the x.m.l.|s
-mn015|as in the um java declaration format.|rt
-fn050|yeah.|b
-fn050|the|%--
-mn015|so you don't have to do too much in the style sheet transversion.|rt
-fn050|uh yeah.|aa
-fn050|yeah so|fg
-mn015|the uh java the embedded bayes wants to take input uh uh a bayes-net in in some java notation.|s
-mn015|and eva is using the xalan style sheet processor to convert the x.m.l. that's output by the java bayes for the into the uh e. bayes input.|s
-me003|huh.|b
-fn050|actually maybe i could try like emailing the guy.|s
-fn050|and see if he has something already.|s
-me010|sure.|aa
-mn015|huh.|b
-fn050|that'd be weird that he has both the java bayes and the embedded bayes in|s
-fn050|yeah.|bk
-me003|but that's some sort of conversion program?|bu
-fn050|yeah.|aa
-fn050|and put them into different formats.|s
-fn050|oh|%--
-fn050|yep he could do that too.|aa
-me003|i think you should demand things from him.|cs
-me010|he charges so much right?|ba
-me003|yeah.|aa
-me010|no i think it's a good idea that you may as well ask sure.|bd
-fn050|yeah.|bk
-mn015|and um well pretty pretty much on on the top of my list i would have asked keith how the where is x. hand parse is standing.|fg
-mn015|um but we'll skip that.|fh
-mn015|uh there's good news from johno.|rt
-mn015|the generation templates are done.|rt
-me003|so the trees for|s
-me003|the x.m.l. trees for the for the for the synthesizer are written.|s
-me003|so i just need to do the uh write a new set of tree combining rules.|rt
-me003|but i think those will be pretty similar to the old ones.|s
-me003|so|fh
-me003|just going to be you know|s
-me010|oh.|bk
-me010|you were going to send me a note about hiring|s
-mn015|yes.|aa
-me010|i didn't finish the sentence.|s
-me010|but he understood it.|s
-me003|i know what he's talking about.|s
-me010|okay.|bk
-me010|but nancy doesn't.|s
-fe004|hiring somebody.|s
-me003|the guy.|s
-mn015|okay so natural language generation produces not a just a surface string that is fed into a text to speech but a surface string with a syntax tree that's fed into a concept to speech.|fg
-me010|no.|ar
-fe004|yeah.|b
-fe004|uhhuh.|b
-mn015|now and this concept to speech module has certain rules on how if you get the following syntactic structure how to map this onto prosodic rules.|s
-fe004|better.|ba
-fe004|uhhuh.|b
-fe004|sure.|b
-fe004|uhhuh.|b
-mn015|and fey has foolheartedly agreed to rewrite uh the german uh syntax-to-prosody rules.|s
-fe004|i didn't know she spoke german.|no
-mn015|no she doesn't.|aa
-fe004|oh okay.|bk
-mn015|but she speaks english.|s
-fe004|oh rewrite the german ones into english.|bk
-mn015|into english.|m
-fe004|okay got it.|bk
-mn015|and um therefore the|fh
-mn015|uh|fh
-mn015|if it's okay that we give her a couple of more hours per week then she'll do that.|s
-fe004|okay got it.|bk
-me003|what language is that written|qw
-me003|is that that scheme thing that you showed me?|rt
-mn015|yeah.|aa
-mn015|that's the lisp type scheme.|e
-me003|she knows how to program in scheme.|bu
-me003|i hope.|e
-mn015|no i.|ar
-mn015|my guess is i i asked for a commented version of that file.|rt
-mn015|if we get that then it's doable.|na
-mn015|even without getting into it even though the scheme uh stuff is really well documented in the festival.|s
-me003|well i guess if you're not used to functional programming scheme can be completely incomprehensible.|ng
-me003|because there's no|df
-me003|like there's lots of unnamed functions.|df
-me010|syntax.|2
-me010|yeah.|b
-me003|and|fh
-me003|you know.|f
-fe004|uhhuh.|b
-me010|anyway it we'll sort this out.|s
-me010|um|fh
-me010|but anyway send me the note.|co
-me010|and then i'll check with uh morgan on the money.|cc
-me010|i i don't anticipate any problem.|s
-me010|but we have to ask.|df
-me010|oh so this was you know on the generation thing|fg
-me010|um|fh
-me010|if she's really going to do that then we should be able to get prosody as well.|s
-me010|so it'll say it's nonsense with perfect intonation.|s
-me003|are we going to can we change the voice of the of the thing?|rt
-me003|because right now the voice sounds like a murderer.|s
-mn015|yep we we have to change the voice.|aa
-fe004|which one?|qw
-me003|the the little smarticus.|s
-me003|smarticus sounds like a murderer.|e
-fe004|oh.|bk
-me045|that's good to know.|s
-me003|i have your reservations.|j
-me045|but i will not give them to you unless you come into my lair.|2
-mn015|it is uh we have the choice between the uh usual festival voices.|s
-mn015|which i already told the smartkom people we aren't going to use because they're really bad.|s
-fe004|festival?|br
-me010|it's the name of some program.|s
-me010|the the synthesizer.|e
-fe004|oh oh got it okay.|bk
-mn015|but um|fh
-me045|you know the usual party voices.|j
-fe004|yeah i know.|aa
-fe004|that doesn't sound exactly right either.|s
-mn015|o.g.i. has uh crafted a couple of diphone type voices that are really nice.|s
-mn015|and we're going to use that.|s
-mn015|we can still um agree on a gender if we want.|s
-mn015|so we still have male or female.|s
-fe004|i think|s
-fe004|well let's just pick whatever sounds best.|cs
-mn015|huh?|br
-fe004|whatever sounds best.|r
-mn015|uh|%
-me003|does o.g.i. stand for original german institute?|rt
-fe004|unfortunately probably male voices a bit more research on.|s
-fe004|so|fh
-mn015|oregon.|ng
-me010|oregon graduate institute.|s
-mn015|try oregon.|cs
-me003|oh.|bk
-fe004|oregon graduate|ng
-me003|uh.|bk
-me010|it turns out there's the longstanding links with these guys in the speech group.|s
-fe004|huh!|b
-me010|very long.|e
-me003|huh!|b
-mn015|huh.|b
-me010|in fact there's this guy who's basically got a joint appointment.|s
-me010|hynek hermansky.|s
-me010|spends a fair amount of time here.|s
-me010|anyway|fg
-me010|leave it.|co
-me010|won't be a problem.|ba
-mn015|okay.|fg
-mn015|and it's probably also absolutely uninteresting for all of you to um learn that as of twenty minutes ago david and i per accident uh managed to get the whole smartkom system running on the uh icsi linux machines with the icsi n.t. machines.|t
-mn015|thereby increasing the number of running smartkom systems in this house from one on my laptop to three.|s
-fe004|huh that's good.|%
-me003|how was this by accident?|rt
-fe004|yeah i know.|aa
-fe004|that's the part i didn't understand.|no
-mn015|um i suggested to try something that was really kind of.|fh
-mn015|even though against better knowledge shouldn't have worked.|s
-mn015|but it worked.|s
-fe004|huh!|b
-mn015|intuition.|j
-mn015|maybe maybe maybe a bit for the a.i. intuition thing.|e
-fe004|will it work again?|rt
-me045|yeah.|bk
-fe004|or|qrr
-me003|yeah.|bk
-mn015|okay.|bk
-mn015|and um we'll never found out why.|fh
-mn015|it's just like why why the generation the presentation manager is now working.|rt
-me045|huh!|b
-mn015|which|%--
-me045|this is something you you get used to as a programmer right?|s
-me045|you know and it's cool it works out that way.|f
-mn015|so the the people at saarbruecken and i decided not to touch it ever again.|fh
-mn015|yeah that would work.|fh
-mn015|okay.|bk
-mn015|um i was going to ask you where something is.|fh
-mn015|and what we know about that.|e
-me045|where|bk
-fe004|where the where is construction is.|s
-me045|okay.|bk
-mn015|where is x. ?|e
-me045|what what thing is this?|qw
-me045|okay.|bk
-mn015|oh!|fe
-mn015|but by uh we can ask uh did you get to read all four hundred words.|rt
-mn015|was it okay?|qy
-me010|i did.|na
-mn015|was it|qy
-me003|i i i was looking at it.|s
-me010|yeah.|aa
-me003|it doesn't follow logically.|s
-me003|it doesn't the first paragraph doesn't seem to have any link to the second paragraph.|e
-me045|and so on.|2
-mn015|huh.|b
-mn015|that|%
-me010|yeah.|b
-me003|yeah.|b
-me010|you know yeah it|s
-me003|each paragraph is good though.|ba
-me003|i|%--
-me010|yeah well it's fine.|bk
-me045|it was written by committee.|s
-me010|anyway|fg
-me010|um|fh
-me010|but the meeting looks like it's it's going to be good.|s
-me010|so|fh
-mn015|yeah.|b
-me010|i think it's uh|s
-fe004|yeah i didn't know about it until robert told me like|fg
-me010|yeah i i i ran across it in i don't even know where.|fg
-me010|you know some just some weird place.|e
-me010|and uh yeah i'm surprised i didn't know about it.|fh
-fe004|yeah well yeah i was like why didn't dan tell me.|fg
-me010|since we know all the invited speakers.|s
-me010|right or|aa
-me045|right.|aa
-me010|anyway.|fh
-me010|so but anyway|fh
-me010|yeah.|bk
-me010|so i i did see that.|s
-me010|oh yeah before we get started on this|s
-me010|so i also had a nice email correspondence with daphne kohler who said yes indeed she would love to work with us on the um you know using these structured belief nets and stuff.|s
-me010|but starting in august.|s
-me010|that she's also got a new student working on this and that we should get in touch with them again in august.|e
-me010|and then we'll figure out a way for you uh you to get seriously connected with um their group.|s
-me010|so|fh
-me010|that's uh looks pretty good.|s
-me010|and um|fh
-me010|yeah i'll say it now.|s
-me010|so um|fh
-me010|and it looks to me like we're now at a good point to do something start working on something really hard.|s
-me010|we've been so far working on things that are easy.|s
-me045|oh!|bk
-me010|uh which is mental spaces and uh and or|fh
-me045|huh!|b
-fe004|it's hard.|ba
-me010|huh?|br
-fe004|yeah it's hard.|r
-me010|it's a hard puzzle.|na
-fe004|yeah.|aa
-me045|yeah.|b
-me010|but the other part of it is the way they connect to these uh probabilistic relational models.|s
-me010|so there's all the problems that the linguists know about about mental spaces and the cognitive linguists know about.|s
-me010|but then there's this problem of the belief net people have only done a moderately good job of dealing with temporal belief nets.|s
-me010|uh which they call dynamic|s
-me010|they incorrectly call dynamic belief nets.|s
-fe004|huh.|b
-me010|so there's a term dynamic belief net doesn't mean that.|s
-me010|it means time slices.|s
-me010|and srini used those and people use them.|s
-me010|uh but|fh
-me010|one of the things i would like to do over the next uh month it may take more is to understand to what extent we can not only figure out the constructions for them for multiple worlds|s
-me010|and|fh
-me010|uh sort of what the formalism will look like and where the slots and fillers will be but also what that would translate into in terms of belief net and the inferences.|s
-me010|so the story is that if you have these probabilistic relational models they're set up in principle so that you can make new instances.|s
-me010|and instances connect to each other and all that sort of stuff.|s
-me010|so it should be feasible to set them up in such a way that if you've got the past tense and the present tense and each of those is a separate uh belief structure that they do their inferences with just the couplings that are appropriate.|s
-me010|but that's that's as far as i can tell it's it's putting together two real hard problems.|s
-me010|one is the linguistic part of what are the couplings.|s
-me010|and and when you have a certain uh construction that implies certain couplings and other couplings.|s
-me010|you know between let's say between the past and the present.|f
-me010|or any other one of these things.|s
-me010|and then we have this inference problem of exactly technically how does the belief net work.|s
-me010|if it's got um let's say one in in you know different tenses.|s
-me010|or my beliefs and your beliefs.|s
-me010|or any of these other ones of of multiple models.|s
-me010|so um|fh
-me010|you know in the long run we need to solve both of those.|s
-me010|and my suggestion is that we start digging into them both uh in a way that you know|s
-me010|hopefully turns out to be consistent.|s
-me010|so that the|s
-me010|um|fh
-me010|and sometimes it's actually easier to solve two hard problems than one.|s
-me045|yeah.|aa
-me010|because they constrain each other.|df
-me010|i mean if you've got huge huge range of possible choices|df
-me010|um|fh
-me010|we'll see.|s
-me010|but anyway so that's um|fg
-me045|oh yeah like uh i solved the the problem of um we were talking about how do you|fg
-me045|various issues of how come a plural noun gets to quote count as a noun phrase.|s
-me045|you know occur as an argument of a higher construction but a bare singular stem doesn't get to act that way.|s
-me010|right.|b
-me045|um|fh
-me045|and it would take a really long time to explain it now.|s
-me045|but i'm about to write it up this evening.|s
-me045|i solved that at the same time as how do we keep adjectives from floating to the left of determiners and how do we keep all of that from floating outside the noun phrase to get something like i the kicked dog.|s
-me045|um|fh
-me010|that's great.|ba
-me045|did it did it at once.|s
-me045|so maybe maybe it'll be a similar thing.|s
-me010|yeah.|b
-fe004|cool.|ba
-me010|no i know i i think that is going to be sort of the key to this to the big project of the summer of of getting the constructions right.|s
-me010|is that people do manage to do this.|s
-me010|so there probably are some uh relatively clean rules.|s
-me010|they're just not context free trees.|s
-me045|right.|b
-me010|and if we if the formalism is is good then we should be able to have you know sort of moderate scale thing.|s
-me010|and that by the way is is keith what i encouraged george to be talking with you about.|s
-me010|not the formalism yet.|s
-me045|uhhuh.|b
-me010|but the phenomena.|s
-me045|yeah.|bk
-me010|the|%--
-me010|and|fh
-me010|oh another thing|fg
-me010|um|fh
-me010|there was this uh thing that nancy agreed to in a in a weak moment this morning that.|s
-me045|huh.|b
-fe004|i was really strong.|s
-me045|huh.|b
-fn050|huh.|b
-me010|uh sorry in a in a friendly moment.|fa
-me045|same thing.|j
-me010|anyway uh that we were that we're going to try to get a uh first cut at the revised formalism by the end of next week.|fh
-me010|okay.|f
-me045|all right.|bk
-me010|probably skipping the mental spaces part.|s
-fe004|seems|%--
-me045|right i do.|fg
-me010|uh just trying to write up essentially what what you guys have worked out so that everybody has something to look at.|fh
-me010|we've talked about it but only the innermost inner group currently uh|s
-me045|uhhuh.|b
-me045|knows.|2
-me010|knows uh|m
-me045|okay.|b
-fe004|yeah and and not even all of them really do.|fg
-me045|yeah.|aa
-fe004|but like|%--
-me010|right.|aa
-me045|there's the group as a whole knows.|s
-me045|but no individual member|s
-me010|well that that yeah there's one of the advantages of a document right?|s
-me045|yeah.|aa
-me010|is is that it actually transfers from head to head.|e
-fe004|right.|b
-me010|so anyway.|fg
-me045|okay.|b
-me010|so um|fh
-fe004|uh communication.|s
-me010|huh?|br
-fe004|communication.|r
-me010|communication documentation and stuff.|aap
-me045|huh.|b
-me010|anyway so uh with a little luck|s
-me010|uh let's let's have that as a goal anyway.|fh
-me010|and|%--
-me045|so uh what was the date there?|qw
-me045|monday?|bu
-me045|or|qrr
-me010|no no no.|ar
-me045|it's a friday.|s
-me010|no uh we're talking about a week end of next week.|s
-fe004|but uh but but the two of us will probably talk to you at well before|s
-me045|end of next week.|bk
-me045|i thought you said beginning of|s
-fe004|i mean|%--
-me045|yeah.|aa
-fe004|anyway let's talk separately about how|cs
-me045|yeah i have a busy weekend.|s
-me045|but after that yeah.|s
-me045|gung ho.|s
-me010|okay yeah so so sometime next week.|bk
-me045|great.|ba
-me010|now if it turns out that that effort leads us into some big hole that's fine.|s
-me045|uhhuh.|b
-me045|okay.|bk
-me010|you know if you say we're we're dump dump dump.|e
-me010|there's a really hard problem.|e
-me010|we haven't solved yet.|e
-me010|that that's just fine.|e
-me045|okay.|bk
-fe004|uhhuh.|b
-me045|but at at least sort of try and work out what the state of the art is right now.|s
-me010|right if to the extent that we have it let's write it.|aa
-me045|okay.|bk
-me010|and to the extent we don't let's find out what we need to do.|cs
-me045|okay.|bk
-me010|so uh|fh
-mn015|can we is it worth thinking of an example out of our tourism thing domain that involves a a a decent mental space shift or setting up?|qy
-me010|i think it is.|na
-me010|but uh but i interrupted before keith got to tell us what happened with where is the powder tower or whatever.|s
-fe004|right.|b
-me045|well uh what was supposed to happen?|h
-me045|i've sort of been actually caught up in some other ones.|s
-me045|so um you know i don't have a write up of or i haven't elaborated on the ideas that we were already talking about.|s
-mn015|huh yeah i think i think we already came to the conclusion that we have two alternative paths that we two alternative ways of representing it.|fg
-me045|which were|s
-mn015|one is sort of a has a|s
-mn015|um|fh
-me045|it's gone.|s
-mn015|um|fh
-me045|the question of whether the polysemy is sort of like in the construction or pragmatic.|s
-fe004|one of them was|s
-fe004|right.|aa
-mn015|or comes|s
-fe004|right.|aa
-mn015|is resolved later.|s
-mn015|yeah.|b
-me045|i think it has to be the the second case.|s
-mn015|yeah.|aa
-me045|um so did you is it clear what we're talking about here?|fg
-fe004|i agree.|aa
-me010|uh|h
-me045|the question is whether the construction is semantic or like ambiguous between asking for location and asking for path.|s
-mn015|it's|%--
-fe004|so you might be yeah and asking for directions.|s
-me045|um|fh
-mn015|should we have a a a|qy
-me045|or or whether the construction semantically uh is clearly only asking for location.|s
-fe004|uh|%--
-me045|but pragmatically that's construed as meaning tell me how to get there.|s
-me010|uhhuh.|b
-mn015|so assume these are two uh nodes we can observe in the bayes-net.|bu
-me010|yep.|aa
-fe004|yeah.|aa
-me010|right.|b
-mn015|so these are either true or false.|s
-mn015|and it's also just true or false.|s
-mn015|if we encounter a phrase such as where is x. should that set this to true and this to true?|qy
-mn015|and the bayes-net figures out which under the situation in general is more likely.|e
-mn015|um or should it just activate this have this be false?|qrr
-mn015|and the bayes-net figures out whether this actually now means|e
-me010|uh that's a|s
-me010|okay so that's a that's a separate issue.|fh
-fe004|slightly different.|2
-me045|okay.|b
-me010|so i i i i agree with you that um it's a disaster to try to make separate constructions for every uh pragmatic reading.|s
-me045|uhhuh.|b
-me010|although there are some that will need to be there.|s
-fe004|good.|b
-fe004|uhhuh.|b
-me045|right.|aa
-fe004|right.|aa
-me010|i mean there's some that|e
-fe004|or have every construction list all the possible pragmatic implications of the same one.|e
-me010|you can't do that either.|nd
-me010|yeah.|bk
-fe004|right.|aa
-fe004|yeah.|b
-me010|but you know um almost certainly can you pass the salt is a construction worth noting that there is this this this this uh|s
-me045|yeah.|b
-fe004|request.|2
-me045|uhhuh yeah.|b
-fe004|very yeah.|s
-me045|so right this one is maybe in the gray area.|fg
-me045|is it is it like that or is it just sort of obvious from world knowledge that no one you wouldn't want to know the location without wanting to know how to get there or whatever?|qrr
-fe004|huh.|b
-me010|yeah.|b
-mn015|one|%
-mn015|or in some cases it's it's quite definitely.|s
-me010|yeah.|b
-mn015|so that you just know want to know where it is.|s
-me045|yeah.|fg
-me045|well the question is basically is this conventional or conversational implicature.|s
-me010|exactly yeah.|aa
-fe004|might be yeah.|am
-me010|and i guess see the more important thing at this stage is that we should be able to know how we would handle it in|s
-me010|in the short run it's more important to know how we would treat technically what we would do if we decided a. and what we would do if we decided b. than it is to decide a. or b. right now.|s
-fe004|right.|bk
-me045|okay right.|bk
-fe004|right.|b
-fe004|which one it is.|2
-me045|which of that is yeah okay.|2
-mn015|huh.|b
-fe004|because there will be other examples that are one way or the other right.|s
-me010|we know for sure that we have to be able to do both.|df
-me045|yeah.|b
-me010|so i guess in the short run let's let's be real clear on what the two alternatives would be.|cs
-me045|okay.|bk
-mn015|and then we had another idea floating around um which we wanted to uh get your input on.|s
-mn015|and that concerns the|s
-mn015|but the nice thing is we would have a person that would like to work on it.|s
-mn015|and that's irina gurevich from e.m.l. who is going to be visiting us uh the week before uh august.|s
-mn015|and a little bit into august.|s
-mn015|and she would like to apply the ontology that is um being crafted at e.m.l.|s
-mn015|that's not the one i sent you.|s
-mn015|the one i sent you was from g.m.d. out of a european crumpet.|s
-me010|it was terrible.|ba
-mn015|agreed.|aa
-mn015|um and one of the one of the those ideas was|fg
-mn015|so|fh
-mn015|back to the old johno observation that if if you have a dialogue history and it said the word admission fee was uh mentioned um it's more likely that the person actually wants to enter than just take a picture of it.|s
-mn015|from the outside.|e
-mn015|now what could imagine to you know have a list for each construction of things that one should look up in the discourse history yeah.|s
-mn015|that's the really stupid way.|ba
-mn015|then there is the really clever way that was suggested by keith.|rt
-mn015|and then there is the uh middle way that i'm suggesting.|s
-mn015|and that is you you get x. which is whatever.|s
-mn015|the castle.|s
-mn015|the ontology will tell us that castles have opening hours.|s
-mn015|that they have admission fees.|s
-mn015|they have whatever.|rt
-mn015|and then this is we go via a thesaurus.|s
-mn015|and look up certain linguistic surface structures that are related to these concepts.|s
-mn015|and feed those through the dialogue history.|s
-mn015|and check dynamically|s
-mn015|for each entity we look it up check whether any of these were mentioned and then activate the corresponding nodes on the discourse side.|s
-mn015|but keith suggested that a a much cleaner way would be is you know to keep track of the discourse in such a way that you if you know that something like that has been mentioned before this just continues to add up|s
-mn015|you know in in a|s
-me045|so if someone mentions admission fees that activates an enter schema which sticks around for a little while in your in the representation of what's being talked about.|s
-me045|and then when someone asks where is x. you've already got the the enter schema activated.|s
-me010|uhhuh.|b
-fe004|kind of a priming|s
-me045|and you're able to to conclude on it.|s
-me010|yeah.|b
-fe004|priming a spreading activation.|2
-me010|right.|b
-me045|yeah.|bk
-me010|yeah so that's certainly more realistic.|fg
-me010|i i mean psychologically.|e
-me045|right.|b
-me010|now technically|s
-me045|yeah.|b
-me010|um|fh
-me003|well uh is it doesn't it seem like if you just managed the dialogue history with a a thread that you know kept track of of the activity of|fg
-me003|i mean because it would the the thread would know what nodes like needed to be activated.|s
-me003|so it could just keep track of how long it's been since something's been mentioned and automatically load it in.|s
-me010|yeah.|bk
-me010|you could do that.|am
-me010|um|fh
-me010|but here's here's a way|s
-me010|in in the bayes-net you could you could think about it this way that if um at the time admissions fee was mentioned you could increase the probability that someone wanted to enter.|s
-fe004|turn prior on.|s
-me003|yeah that's what i i wasn't i was i wasn't thinking in terms of enter schemas.|bk
-me003|i was just|s
-me010|fair enough okay.|ba
-me010|but but in terms of the the current implementation|s
-me010|right.|f
-me010|so that|s
-me010|um|fh
-fe004|it would already be higher in the context.|2
-me010|that the the the conditional probability that someone|s
-me010|so at the time you mentioned it|s
-me010|this is this is essentially the bayes-net equivalent of the spreading activation.|s
-me045|uhhuh.|b
-me045|yeah.|b
-me010|it's in some ways it's not as good.|s
-me010|but it's the implementation we got.|df
-me045|yeah sure.|aa
-me010|we don't have a connectionist implementation.|df
-me045|no i mean|s
-me010|now now my guess is that it's not a question of time but it is a question of whether another intervening object has been mentioned.|s
-fe004|yeah relevance.|fg
-fe004|yeah.|b
-me010|i mean we could look at|s
-me045|yeah.|b
-me010|this is|s
-me010|of course the other thing we we do is is we have this data coming.|s
-me045|yeah.|b
-me010|which probably will blow all our theories.|s
-me010|but but skipping that|s
-me045|yeah right.|bk
-me010|so so but my guess is what what'll probably will happen here's a here's a proposed design is that there're certain constructions which uh for our purposes do change the probabilities of eva decisions and various other kinds.|s
-me010|and|fh
-me010|that the uh standard way that that these contexts work is sort of stack like or whatever.|s
-me010|but that's sort of the most recent thing.|s
-me010|and so it could be that when another uh tourist entity gets mentioned you|s
-fe004|renew.|2
-me010|essentially you know re i essentially re-initialize the state.|s
-me003|huh.|b
-fe004|yeah.|b
-me045|uhhuh.|b
-me010|and of course if we had a fancier one with multiple worlds you could have uh you could keep track of what someone was uh saying about this and that.|s
-me010|you know i want to go in the morning.|e
-me045|yeah.|b
-me010|i want to|e
-me045|here's my plan for today.|s
-me045|here's my plan for tomorrow.|s
-me010|yeah or yeah in the morning morning i'm planning to go shopping.|aa
-me045|hypothetically.|e
-me010|in the afternoon to the powder tower.|e
-me045|yeah.|b
-me010|uh so i'm talking about shopping.|s
-me010|and then you say uh you know well um what's it cost or something.|s
-me045|uhhuh.|b
-me010|or|%--
-me010|anyway.|fh
-me010|so one could well imagine|s
-me010|but not yet.|s
-me045|yeah.|b
-me010|but i do think that the it'll turn out that it's going to be depend pretty much on whether there's been an override.|s
-mn015|yeah i mean if if you ask how much does a train ride and and cinema around the vineyards cost and then somebody tells you it's sixty dollars and then you say okay how much is uh i would like to visit the whatever something completely different then i go to you know point reyes.|fg
-me010|yeah.|b
-mn015|it it's not more likely that you want to enter anything.|s
-mn015|but it's as a matter of fact a complete rejection of entering by doing that.|s
-me010|right.|b
-fe004|right.|b
-me010|right.|b
-me045|yeah.|b
-fe004|so when you have admission fee and it changes something it's only for that particular it's relational right?|bu
-fe004|it's only for that particular object.|bu
-me010|yeah i|aa
-me010|yeah.|aa
-me010|well and and and the simple idea is that it's it's only for for the current uh tourist entity of interest.|e
-fe004|yeah.|bk
-me045|yeah.|bk
-fe004|right.|b
-mn015|yeah but that's|fg
-mn015|i mean this this function|s
-mn015|so has the current object been mentioned in in with a question about concerning its|s
-me010|no no it's it it goes the other it goes in the other direction.|ar
-me010|is|%--
-me010|when when the this is mentioned the uh probability of of let's say entering changes.|s
-fe004|of that object.|2
-me010|changes.|2
-fe004|for but|%--
-fe004|right.|bk
-me003|you could just uh just basically it it observes an uh it sets the a node for entered or true or something.|cs
-me010|yeah.|b
-me010|yeah.|b
-me010|now uh but i think robert's right that to determine that okay you may well want to go through a thesaurus.|fg
-me003|discourse enter.|e
-me010|and and|fh
-me010|so if the issue is if so now this construction has been matched and you say okay does this actually have any implications for our decisions then there's another piece of code that presumably does that computation.|fg
-fe004|so sort of forward chaining in a way rather than backward.|bu
-me010|yeah yeah.|aa
-fe004|okay.|bk
-me010|but but what's robert's saying is is|s
-me010|and i think he's right is you don't want to try to build into the construction itself all the synonyms and all you know all the|s
-me010|uh|fh
-me010|maybe.|am
-me010|i'll have to think about that.|cc
-fe004|huh.|b
-me010|i don't know.|no
-me010|i mean it i can i can think of arguments in either direction on that.|s
-me010|but somehow you want to do it.|df
-mn015|uhhuh.|b
-mn015|well it's just another sort of construction side is how to get at the possible inferences we can draw from the discourse history.|s
-mn015|or changing of the probabilities and or.|s
-fe004|guess it's like i the other thing is whether you have a user model that has you know whatever a current plan whatever plans that had been discussed.|s
-fe004|and|%--
-fe004|i don't know.|bd
-fe004|i mean|s
-me003|what uh what's the argument for putting it in the construction?|rt
-me003|is it just that the synonym selection is better or|qo
-me010|oh well the the the argument is that you're going to have the|s
-me010|if you've recognized the word|s
-me010|you've recognized the word which means you have a lexical construction for it.|s
-me010|so you could just as well tag the lexical construction with the fact that it's a uh you know thirty percent increase in probability of entering.|s
-me010|you so you could you could you could invert invert the whole thing so you you tag that information on to the lexicon.|s
-me003|huh.|b
-me003|oh i see.|bk
-me010|since you had to recognize it anyway.|df
-me010|that that's the argument in the other direction.|s
-me010|at at|%--
-me010|yeah and this is|fh
-mn015|even though uh the lexical construction itself out out of context uh won't do it.|s
-mn015|i mean you have to keep track whether the person says.|df
-mn015|but but i'm not interested in the opening times.|s
-fe004|yeah.|b
-mn015|is sort of more a v. type.|e
-me010|yeah there's yeah there's that as well.|fg
-mn015|yep.|b
-mn015|huh.|b
-mn015|so|fh
-mn015|but we'll|s
-mn015|uh we have time to|s
-mn015|this is a just a sidetrack.|s
-mn015|but uh|fh
-mn015|i think it's also something that people have not done before is um sort of abuse an ontology for these kinds of uh inferences on|s
-mn015|whether anything relevant to the current something has been uh has crept up in the dialogue history already or not.|s
-mn015|and um|fh
-mn015|i have the uh if we wanted to have that function in the dialogue dialogue module of smartkom i have the written consent of jan to put it in there.|s
-me010|good.|ba
-me010|okay well this this is highly relevant to someone's thesis.|fg
-mn015|yes.|aa
-mn015|um that's uh i'm i'm keeping on good terms with jan.|fh
-me010|you've noticed that.|s
-mn015|yeah.|aa
-me010|okay.|bk
-me010|so the point is it's very likely that robert's thesis is going to be along these lines.|s
-me010|and the local rules are if it's your thesis you get to decide how it's done.|s
-fe004|oh|bk
-me010|okay so if you know if this is seriously if this becomes part of your thesis you can say hey we're going to do it this way that's the way it's done.|bk
-mn015|huh.|b
-fe004|yay it's not me!|fe
-fe004|it's always me when it's someone's thesis.|s
-me010|no no no!|ar
-me010|no no we've got a lot we've got a lot of theses going.|nd
-me045|there's a few of us around now.|na
-fe004|yay!|fe
-fe004|i know it is.|s
-me010|yeah.|b
-me010|right.|b
-mn015|well let's let's talk after friday the twenty ninth.|cs
-mn015|then we'll see how|s
-me010|right so he's got a he's got a meeting in germany with his thesis advisor.|fg
-fe004|yeah he said he's going to finish his thesis by then.|fg
-me045|oh yeah.|bk
-mn015|yeah.|b
-mn015|i should try to finish it by then yeah.|s
-me010|oh right.|bk
-mn015|so|fh
-me010|um|fh
-me010|yeah so i think in fact that's the other thing.|fg
-me010|uh this is this is speaking of hard problems this is a very good time um to start trying to make explicit where construal comes in.|s
-me010|and you know where where the construction per se ends and where construal comes in.|s
-me045|uhhuh.|b
-mn015|uhhuh.|b
-me010|because this is clearly part of|df
-fe004|yeah we've we've done quite a bit of that.|fg
-me010|huh?|br
-me045|yeah.|aa
-fe004|we've been doing quite a bit of that.|r
-me045|yeah.|b
-me010|well i said but that's part of what the|s
-fe004|we have many jobs for you robert.|s
-me010|yeah well he's going to need this.|fg
-fe004|the conclusion.|e
-me045|yeah it seems to always land in your category.|fg
-fe004|yeah.|aa
-me010|right so right so thing that's part of why we want the formalism.|fg
-me045|you're lucky.|ba
-me010|is is because it is going to have implicit in it|s
-me045|yeah.|b
-mn015|was i in the room?|rt
-fe004|no you weren't there on purpose.|ar
-fe004|like|%--
-me045|made it much easier to make these decisions.|ba
-fe004|obviously.|e
-me045|uh|fh
-fe004|yeah.|b
-me010|right well i that's tentative.|fg
-me010|they aren't decisions.|nd
-me045|yeah right right right.|bk
-me010|they're they're just proposals.|e
-fe004|no they're decisions.|ar
-me045|yes excuse me.|aa
-fe004|okay.|bk
-me010|yeah that that's the point is is|s
-me045|yeah.|bk
-mn015|constraints.|s
-mn015|let's call them constraints around which one has to|cs
-me010|yeah.|bk
-me010|yeah anyway but so that's that's|fg
-fe004|actually|nd
-fe004|yeah there's a problem with that word too though.|bk
-me003|yeah but it the decisions i made had to do with my thesis.|fg
-me010|yeah.|b
-me003|so consequently don't i get to decide then that it's robert's job?|bu
-me010|no.|ar
-me010|uh|fh
-me045|anyhow.|s
-fe004|well i'll just pick a piece of the problem and then just push the hard stuff into the center and say it's robert's.|s
-mn015|i've always been completely in favor of consensus decisions.|s
-fe004|like|fh
-mn015|so we'll we'll find a way.|s
-me010|right.|b
-fe004|i can|%
-me010|well we we we will.|s
-me010|but um|fh
-fe004|i haven't okay.|s
-me010|not|%--
-mn015|it it might even be interesting then to say that i should be forced to um sort of pull some of the ideas that have been floating in my head out of the uh out of the top hat.|s
-me010|yes.|aa
-mn015|and um|fh
-me045|always good.|ba
-me010|right.|b
-mn015|that metaphor is not going anywhere you know.|s
-me045|yeah.|b
-me010|no absolutely.|ar
-me010|so uh you had you know you you had done one draft.|bu
-mn015|yes and um it's none of that is basically still around.|aa
-me010|and another draft|s
-fe004|i didn't get|s
-mn015|but it's|s
-me010|okay.|bk
-me045|that's normal.|ba
-fe004|oh i guess it's good i didn't read it.|ba
-me010|i this is i'm shocked.|j
-me010|this is the first time i've seen a thesis proposal change.|j
-me010|right anyway uh so|fh
-fe004|really?|bh
-me010|but yeah a second that would be great.|fh
-me010|so uh a i mean you're going to need it anyway.|s
-mn015|huh.|b
-mn015|yeah and i would like to discuss it.|aa
-me010|and|%--
-mn015|and you know get you guys's input.|s
-me010|right.|b
-mn015|and make it sort of bomb proof.|s
-me010|yep.|bk
-fe004|bomb proof.|bk
-me045|good.|bk
-fe004|oh oh okay.|bk
-mn015|bulletproof.|bsc
-mn015|that's the word i was looking for.|s
-me010|both proof.|s
-me045|either way.|s
-fe004|both.|s
-me010|right.|bk
-me010|uh|fg
-fe004|good luck really.|ba
-me010|so that so this i mean so this is the point is we we're going to have to cycle through this.|s
-me010|but the draft of the proposal on the constructions is is going to tell us a lot about what we think needs to be done by construal.|s
-me045|yeah.|b
-me010|and um we ought to be doing it.|fh
-mn015|okay.|b
-mn015|yeah we need we need some then we need to make some dates.|fg
-mn015|um|fh
-mn015|meeting regular meeting time for the summer.|s
-mn015|we really haven't found one.|s
-mn015|we did thursdays one for a while.|s
-mn015|i just talked to ami.|s
-mn015|it's a coincidence that he can't do couldn't do it today here.|s
-fe004|usually he can.|s
-mn015|usually he has no real constraints.|na
-mn015|so|fh
-me010|and the n.t.l. meeting moved to wednesday.|s
-me010|because of of uh|df
-mn015|yeah it was just an exception.|fg
-me010|yeah you weren't here.|fg
-me010|but but but uh and so if that's okay with you.|bu
-me010|you would|%--
-me045|it's is it staying basically at the wednesday noon?|rt
-me010|yeah it was|aa
-me045|okay it was off this week.|bk
-fe004|yeah i always thought it was staying.|aa
-me045|yeah.|b
-me010|right.|b
-fe004|yeah i thought it was just this week that we were changing it.|fg
-mn015|huh yeah.|b
-me010|okay.|bk
-mn015|and um how do we feel about doing it wednesdays?|fg
-mn015|because it seems to me that this is sort of a time where when we have things to discuss with other people there.|df
-mn015|they seem to be tons of people around.|df
-me010|the only disadvantage is that it may interfere with other.|s
-mn015|or|%--
-mn015|subgroup meetings.|2
-me010|you know other other|s
-me010|no you uh people in this group connecting with with.|ar
-fe004|those people who happen to be around.|2
-me010|those people who who might not be around so much.|m
-me010|uh i don't care.|h
-me010|uh you know i have no fixed|e
-me045|to tell you the truth i'd i'd i'd would like to avoid more than one i.c.s.i. meeting per day if possible.|s
-me010|okay.|bk
-me045|but i mean i don't know.|bd
-me045|whatever.|s
-me010|no that's fine.|ba
-me010|i mean that|s
-mn015|the i'd like to have them all in one day.|s
-mn015|so package them up and then|df
-me045|yeah i can understand that.|bk
-me010|well|s
-me010|people people differ in their tastes in this matter.|s
-me045|yeah.|b
-me010|i i'm neutral.|s
-me045|yeah.|b
-fe004|yeah i'm always here anyway.|fg
-mn015|it's okay that|s
-fe004|so|fh
-me010|yeah that's me too.|aa
-fe004|it doesn't matter.|s
-me010|i'm basically i'm here.|s
-me010|so|fh
-mn015|well if one sort of thing is this room is taken at after three thirty pretty much every day.|s
-mn015|by the data collection.|e
-fe004|oh.|bk
-mn015|so we have subjects anyway except for this week we have subjects in here.|df
-mn015|that's why it was one.|s
-fe004|oh.|bk
-me010|okay.|bk
-mn015|so we just knew|s
-fe004|so did you just say that ami can't make one o'clock?|bu
-mn015|no he can.|ar
-fe004|oh okay.|bk
-me045|oh.|bk
-mn015|so let's say thursday one.|cs
-mn015|but for next week this is a bit late.|df
-mn015|so i would suggest that we need to to talk|cs
-fe004|oh oh|fg
-fe004|okay.|b
-mn015|okay about the the|bk
-fe004|could we do thursday at one thirty?|rt
-fe004|would that that be horrible?|e
-mn015|no.|ar
-mn015|yes.|aa
-fe004|oh really?|bh
-mn015|because uh this room is again taken at two thirty by morgan.|df
-fe004|oh okay okay you didn't tell me that.|bk
-fe004|okay that's fine.|bk
-mn015|and the meeting recorder meeting meeting meeting recording on meeting meetings.|s
-fe004|okay okay okay okay yeah.|bk
-mn015|so|fh
-me010|interesting.|ba
-me045|uh yeah.|bk
-me010|so you're proposing that we meet tuesday.|bu
-mn015|how about that?|qw
-me010|i i could|%--
-me045|next week.|2
-fe004|well we're meeting tuesday.|s
-fe004|i mean we usually meet tuesday or like linguists um at two.|s
-me003|would it|%--
-me045|that's right.|bk
-fe004|so|fh
-me003|and the|s
-fe004|do you want to meet again here|qy
-mn015|i mean|s
-me003|is the speech-gen meeting still at on tuesdays?|rt
-mn015|well actually we did scrap our monday time just because bhaskara couldn't come monday.|s
-fe004|hhh maybe i do need a palm pilot.|t3
-mn015|so there's nothing's impeding monday anymore either.|s
-me045|that doesn't apply to a|t3
-mn015|get a fresh start.|s
-me003|although i thought you wanted to go camping on monday uh take off mondays a lot so you could go camping.|bu
-mn015|yeah that's another thing yeah.|na
-mn015|but um i mean there are also usually then holidays anyways.|fg
-mn015|i mean like sometimes it works out that way.|na
-fe004|usually?|bu
-mn015|so huh.|fg
-fe004|well i mean the linguists' meeting happens to be at two.|fg
-fe004|but i think that's i mean|s
-me045|that should be relatively flexible|s
-fe004|pretty flexible i think.|s
-me045|yeah there's just sort of the two to four of us.|aa
-fe004|so|fh
-fe004|the multiple meetings.|2
-me045|right?|d
-me045|yeah.|aa
-fe004|yeah.|b
-me045|so|fh
-fe004|right.|bk
-me045|and you know of course nancy and i are just sort of always talking anyway and sometimes we do it in that room.|s
-fe004|yeah.|b
-me045|so you know i mean|s
-mn015|okay so forget about the the camping thing.|bk
-mn015|so let's uh any other problems|qo
-mn015|but i suggested monday.|s
-mn015|if that's a problem for me then i shouldn't suggest it.|s
-me003|ha ha ha.|s
-me010|okay.|bk
-mn015|so|fh
-me045|um all of the proposed times sound fine with me.|s
-fe004|same here.|na
-mn015|monday?|bu
-me010|okay i mean what i think robert's saying is that|bk
-me045|earlier in the week.|2
-me010|earlier we|m
-me010|at least for next week there's a lot of stuff we want to get done.|df
-me045|uhhuh yeah.|b
-me010|so why don't we plan to meet monday?|cs
-mn015|huh.|b
-me010|and we'll see if we want to meet any more than that.|cc
-me045|okay.|aa
-mn015|okay.|bk
-fe004|what time?|rt
-fe004|at one two three?|bu
-mn015|one two three?|bu
-mn015|three's too late.|df
-mn015|two thirty?|bu
-me010|oh i yeah i actually two is the earliest i can meet on monday.|bk
-mn015|okay two.|bk
-me010|here i'm blissfully agreeing to things and realizing that i actually do have some stuff scheduled on monday.|s
-me045|sure sounds great.|s
-me045|uh so that's the eighteenth.|s
-fe004|you guys will still remind me right?|bu
-me003|no way.|ar
-fe004|you'll come and take all the the the good headphones first and then remind me.|j
-mn015|why do you|qw
-me045|yeah exactly.|aa
-mn015|and|fh
-me045|sorry two p.m.|fa
-fe004|why do i have this unless i'm going to write?|t1
-mn015|do i get to see uh your formalism before that?|rt
-fe004|fine.|ba
-fe004|yes.|t1
-fe004|uh would you like to?|h
-mn015|uhhuh.|aa
-mn015|i i would like i would sort of get a get a notion of what what you guys have in store for me.|s
-fe004|okay i was actually going to work on it for tomorrow like this this weekend.|bk
-fe004|yeah.|b
-me010|well you know maybe maybe we can put this is part of what we can do monday if we want.|rt
-fe004|yeah|bk
-fe004|okay.|bk
-me045|all right.|bk
-mn015|okay.|b
-fe004|i mean i i i|s
-me010|is some some version.|s
-fe004|yeah so there was like you know in my head the goal to have like an intermediate version like everything i know.|aa
-me045|uhhuh.|b
-fe004|and then i would talk to you and figure out everything you know that you know see if they're consistent.|s
-me045|yeah.|b
-me045|okay.|b
-me045|why don't maybe you and i should meet sort of more or less first thing monday morning and then we can work on this.|cs
-fe004|yes yeah.|aa
-fe004|that's fine with me.|na
-me045|okay.|bk
-fe004|so|fh
-fe004|i might i might um|s
-fe004|you said you're busy over until the weekend right?|bu
-me045|yeah sort of through the weekend.|aa
-me045|because kate has a photography show.|df
-fe004|that's fine so we might continue our email thing.|bk
-me045|yeah.|b
-fe004|and that might be fine too.|s
-fe004|so maybe i'll send you some.|s
-me045|um if you have time after this i'll show you the noun phrase thing.|s
-fe004|okay that would be cool.|bk
-fe004|so|fh
-fe004|okay and we'll you want to|fg
-mn015|so the idea is on monday at two we'll we'll see an intermediate version of the formalism for the constructions.|s
-me045|yeah.|b
-fe004|so that's okay for you|bu
-mn015|and do an online merging with my construal ideas.|e
-fe004|sure sure.|bk
-me010|okay.|bk
-me045|all right.|bk
-mn015|so it won't be like a semi formal presentation of my proposal.|s
-fe004|that's okay.|s
-mn015|it'll be more like towards finalizing that proposal.|e
-mn015|okay that's fine.|bk
-me045|okay.|bk
-fe004|because then you'll find out more of what we're making you do.|s
-mn015|yep and then|fg
-me045|yeah.|b
-me003|huh huh.|b
-mn015|yikes.|ba
-me045|oy deadlines.|s
-fe004|we'll make a presentation of your of your proposal.|cc
-mn015|perfect can you also write it up?|ba
-fe004|it's like this is what we're doing.|rt
-fe004|and the complement is robert.|s
-mn015|i'll i'll send you|j
-mn015|i'll i'll send you a style file right?|j
-fe004|okay.|s
-mn015|you just|s
-fe004|i already sent you my my bib file.|s
-fe004|so|fh
-mn015|okay.|bk
-mn015|and um|fh
-mn015|sounds good.|ba
-me045|someday we also have to we should probably talk about the other side of the where is x. construction.|cs
-me045|which is the issue of um how do you simulate questions?|qh
-me045|what does the simspec look like for a question?|e
-mn015|yeah.|bk
-me010|uhhuh.|b
-me045|because it's a little different.|df
-fe004|yeah.|b
-me010|yeah now we|fg
-me045|we had to we had an idea for this which seemed like it would probably work.|s
-me010|great okay.|ba
-me010|yeah simspec may need we may need to rename that.|fg
-fe004|i yeah i|aa
-me045|yeah.|aa
-me010|okay so let's think of a name for for whatever the this intermediate structure is.|bk
-me010|oh we talked about semspec for semantic specification.|s
-me045|huh.|b
-me010|and that seems|s
-me010|um|fh
-me045|it's more general.|2
-me010|you know so it's a minimal change.|s
-fe004|only have to change one vowel.|s
-fe004|that's great.|ba
-me010|yeah just|%
-fe004|all the old like graphs.|s
-me010|right.|b
-fe004|just change the just like mark out the|s
-me045|cool.|ba
-me010|right a little|fg
-me010|you know that's what text substitution uh macros are for.|s
-me045|yeah it's good for you.|aa
-fe004|yeah.|bk
-me010|anyway uh so let's let's for the moment call it that until we think of something better.|fg
-me045|okay.|bk
-me010|and yeah we absolutely need to find|s
-me010|part of what was missing were markings of all sorts that weren't in there.|s
-me010|including the questions.|e
-me010|we didn't we never did figure out how we were going to do emphasis in in uh the semspec.|s
-me045|uhhuh.|b
-me045|yeah.|b
-fe004|yeah we've talked a little bit about that too.|fg
-fe004|which|%--
-fe004|uh uh it's hard for me to figure out with sort of our general linguistic issues how they map onto this particular one.|s
-fe004|but|fh
-me045|yeah.|aa
-fe004|okay yeah understood.|bk
-me010|but that's part of the formalism.|s
-me010|is got to be uh how things like that get marked.|s
-me045|uhhuh.|b
-fe004|do you have data like the the you have preliminary data?|qy
-fe004|because i know you know we've been using this one easy sentence.|df
-fe004|and i'm sure you guys have uh maybe you are the one who've been looking at the rest of it.|s
-me045|um|%--
-fe004|it'd it'd be useful for me if we want to have it a little bit more data oriented.|s
-me045|to tell you the truth what i've been looking at has not been the data so far.|rt
-fe004|yeah.|b
-fe004|uhhuh uhhuh.|b
-me045|and i have not gotten them out of the way yet.|s
-fe004|uhhuh.|b
-me045|surprise.|j
-me045|so um|fh
-fe004|yeah.|b
-me045|so i have not really approached a lot of the data.|s
-me045|but i mean obviously like these the the question one.|s
-me045|since we have this idea about the indefinite pronoun thing and all that you know i can try and um run with that.|s
-me045|you know try and do some of the sentence constructions now.|s
-mn015|okay do you want to run the indefinite pronoun idea past jerry?|fg
-me045|it would make sense.|s
-fe004|okay.|b
-me045|oh yeah the basic idea is that|bk
-me045|um uh you know|fh
-me045|uh let's see if i can formulate this.|s
-mn015|so mary fixed the car with a wrench.|s
-me045|yeah.|b
-mn015|so you perform the mental sum.|s
-mn015|and then you know who fixed the car with a wrench.|s
-mn015|you basically are told to to do this.|rt
-mn015|in the in analogously to the way you would do someone fixed the car with a wrench.|e
-mn015|and then you hand it back to your hippocampus.|s
-mn015|and find out what that you know.|s
-me045|means.|2
-mn015|means.|aa
-mn015|and then come up with that so who that someone was.|e
-me045|the w.h. question has this as sort of extra thing which says and when you're done tell me who fills that slot or you know.|s
-me010|uhhuh.|b
-me045|so um|fh
-me045|and you know this is sort of a nice way to do it.|s
-me045|the idea of sort of saying that you treat from the simulation point of view or whatever you treat uh w.h. constructions similarly to uh indefinite pronouns.|s
-me045|like someone fixed the car.|s
-me045|because lots of languages um have w.h. questions with an indefinite pronoun in situ or whatever.|df
-fe004|use actually the same one.|2
-me045|and you just get intonation to tell you that it's a question.|s
-me010|all right which is|bk
-me045|so it makes sense.|s
-me045|um|fh
-me010|skolemization.|s
-me045|huh?|br
-me010|in in logic it's it's it's huh.|s
-fe004|huh.|b
-fe004|right let's put a skolem skolem constant in.|fg
-me045|yeah.|b
-me010|what?|br
-fe004|yeah.|b
-me045|sure.|bk
-fe004|yeah right.|bk
-me045|okay.|bk
-me010|that's not that's not saying it's bad.|s
-me010|it's just that|df
-me045|right right no of course.|bk
-fe004|huh.|b
-me010|that that the logicians have have uh|s
-me045|that's right.|bk
-mn015|come up with this.|2
-me045|it makes sense from that point of view too which is actually better.|s
-me045|so yeah um|fh
-me045|anyway but just that kind of thing.|fg
-me045|and we'll figure out exactly how to write that up and so on.|cc
-me045|but|fh
-me010|good.|bk
-me045|uh no all the focus stuff.|s
-me045|we sort of just dropped that.|s
-me045|because it was too weird.|df
-me045|and we didn't even know like what we were talking about exactly.|s
-me045|what the object of study was.|s
-fe004|um huh.|b
-me045|so|fh
-me010|yeah well if if i mean part of of what the exercise is by the end of next week is to say what are the things that we just don't have answers for yet.|s
-me045|yeah.|b
-me010|that's fine.|ba
-me045|yep.|b
-me010|i mean|%--
-fe004|uhhuh.|b
-mn015|well if you if you do want to discuss focus background and then get me into that.|cs
-mn015|because i mean i i scientifically worked on that for for almost two years.|df
-me045|yeah.|b
-me045|okay then certainly we will.|bk
-fe004|yeah you should definitely um be on on that|aa
-me045|good.|ba
-fe004|maybe maybe by after monday we'll you can see what things we are and aren't|s
-me045|yeah we should figure out what our questions are for example to ask you.|fg
-fe004|yeah yeah.|aa
-me045|so|fh
-fe004|okay.|bk
-me045|okay.|bk
-me010|hans.|tc
-me010|has i haven't seen hans boas.|rt
-fe004|he's been around.|s
-me045|yeah.|aa
-me010|okay so has he been been involved with this?|bk
-fe004|just maybe not today.|s
-me010|or|qrr
-fe004|uh with us?|bu
-fe004|yeah.|aa
-me045|yeah.|aa
-me010|yeah.|b
-fe004|i would say that that those discussions have been primarily um keith and keith and me.|e
-fe004|but um|fh
-fe004|like in the meeting i mean he sort of i like the last meeting we had i think we were all very much part of it.|s
-me045|yeah.|b
-fe004|but um|fh
-me045|sometimes hans has been sort of coming in there as sort of like a devil's advocate type role or something.|rt
-fe004|but different|s
-fe004|yeah.|aa
-me045|like this make you know i'm going to pretend i'm a linguist who has nothing to do with this.|rt
-me045|this makes no sense.|s
-me045|and he'll just go off on parts of it which definitely need fixing.|s
-fe004|right.|b
-me045|but aren't where we're at right now.|s
-fe004|like like what you call certain things.|s
-me045|so it's|s
-fe004|which we decided long ago we don't care that much right now.|s
-me045|yeah.|b
-me010|right.|b
-me010|okay.|bk
-fe004|but in a sense it's good to know that he of all people|ba
-fe004|you know like maybe a lot of people would have much stronger reactions.|ba
-fe004|so you know he's like a relatively friendly linguist.|e
-me045|yeah.|b
-fe004|and yet a word like constraint causes a lot of problems.|s
-me045|yeah.|b
-fe004|and so right so|fh
-me010|okay this is consistent with um the role i had suggested that he he play.|bk
-fe004|uh.|bk
-me045|uhhuh.|b
-me010|okay which was that one of the things i would like to see happen is a paper that was tentatively called towards a formal cognitive semantics.|f
-me010|which was addressed to these linguists uh who haven't been following this stuff at all.|s
-me045|yeah.|b
-me010|so it could be that he's actually at some level thinking about how am i going to communicate this story.|s
-me045|yeah.|b
-me045|yeah.|b
-me010|so internally we should just do whatever works.|s
-me045|yeah.|b
-me010|because it's hard enough.|df
-me045|yeah.|b
-me010|but if he if he turns is is really going to turn around and help to write this version that does connect with as many as possible of the other linguists in the world um then then it becomes important to use terminology that doesn't make it hard.|s
-fe004|uhhuh.|b
-me045|uhhuh.|b
-me045|yeah.|b
-me045|yeah.|b
-fe004|uhhuh sure.|b
-me010|i mean it's going to be plenty hard for for people to understand it as it is.|bd
-me010|but you don't want to make it worse.|s
-me045|yeah.|b
-me045|yeah.|b
-me010|so|fh
-me045|no right i mean that role is is uh indispensable.|aa
-me045|but that's not where sort of our heads were at in these meetings.|df
-me010|right.|bk
-me010|yeah yeah no that's fine.|fg
-me045|it was a little strange.|s
-me010|i just wanted to|s
-me010|i have to catch up with him and i wanted to get a feeling for that okay.|s
-me045|yeah.|bk
-fe004|uhhuh.|b
-me045|so i don't know what his take will be on these meetings exactly you know.|s
-me010|okay good.|bk
-me045|because sometimes he sort of sounds like we're talking a bunch of goobledy-gook from his point of view.|df
-fe004|i think it's good when we're|s
-fe004|when we're into data and looking at the some specific linguistic phenomenon in in english or in german in particular whatever that's great.|s
-me010|yeah.|b
-me045|uhhuh.|b
-fe004|and ben and and hans are if if anything more you know they have more to say than let's say i would about some of these things.|s
-me010|right.|b
-fe004|but when it's like well how do we capture these things you know i think it's definitely been keith and i who have you know who have worried more about the|s
-me010|well that's good that's i think that should be the the core group.|ba
-me045|uhhuh.|b
-fe004|which is fine.|ba
-me045|yeah.|b
-fe004|uhhuh.|b
-me010|and um|fh
-me010|that's you know i think very close to the maximum number of people working together that can get something done.|s
-me045|yeah.|b
-fe004|yes.|aa
-fe004|yeah we actually have i think we have been making progress.|fg
-fe004|and its sort of surprising.|s
-me045|yeah.|b
-me010|i i i i definitely get that impression yeah.|na
-fe004|you know like|s
-me010|that's great.|ba
-me045|yep.|bk
-fe004|yeah.|b
-fe004|so anyone else would like uh ruin the balance of|j
-fe004|anyway.|s
-me010|well but well but then then we have to come back to the bigger group.|s
-fe004|right.|bk
-me045|yeah.|b
-me010|yeah great and then we're we're going to|fg
-me010|because of this other big thing we haven't talked about is actually implementing this stuff.|rt
-me010|so that i guess the three of us are going to connect tomorrow about that.|s
-fe004|yeah we could talk tomorrow.|aa
-fe004|i was just going to say though that for instance there was you know out of a meeting with johno came the suggestion that oh could it be that the meaning constraints really aren't used for selection.|s
-fe004|which has sort of been implicit in the parsing strategy we talked about.|s
-me010|right.|b
-fe004|in which case we we can just say that they're the effects or the bindings.|s
-fe004|which uh so far in terms of like putting up all the constraints as you know pushing them into type constraints the when i've you know then proposed it to linguists who haven't yet given me you know we haven't yet thought of a reason that that wouldn't work.|s
-fe004|right as long as we allow our type constraints to be reasonably complex.|f
-me010|well it|s
-fe004|so anyway to be to talk about later.|cc
-me010|yeah it has to in the sense that you're going to use them|fg
-me010|it's you know it's sort of a um generate and test kind of thing.|s
-fe004|uhhuh uhhuh.|b
-me010|and if you over generate then you'll have to do more.|s
-me010|i mean if there are some constraints that you hold back and don't use uh in your initial matching then you'll match some things.|s
-fe004|uhhuh uhhuh.|b
-me010|i mean i i i don't think there's any way that it could completely fail.|s
-me010|it it could be that uh you wind up|s
-me010|i mean|%--
-me010|the original bad idea of purely context free grammars died because there were just vastly too many parses.|s
-me010|you know exponentially many parses.|e
-me010|and so the concern might be that not that it would totally fail but that|s
-fe004|uhhuh.|b
-fe004|uhhuh.|b
-fe004|that it would still generate too many right?|2
-me010|it would still|m
-fe004|so by just having even bringing semantics in for matching just in the form of semantic types right?|s
-fe004|like conceptually these have to be construed as this this and this might still give us quite a few possibilities.|s
-me010|yeah.|b
-me010|we don't know.|no
-fe004|that you know and and it certainly helps a lot.|s
-me010|but yeah.|aa
-fe004|i mean let's put it that way.|s
-me010|no question yeah.|na
-fe004|so|fh
-me010|and i think it's a it's a perfectly fine place to start.|s
-me010|you know and say let's see how far we can go this way.|s
-fe004|uhhuh uhhuh.|b
-me010|and uh|fh
-me003|well it definitely makes the problem easier.|s
-me010|i'm i'm in favor of that.|s
-me010|uh because i think i think it's as you know i think it's real hard and if if we|df
-me010|right.|bk
-fe004|so friday?|bu
-fe004|monday?|bu
-me045|yeah.|aa
-fe004|monday.|bk
-me045|yeah.|aa
-fe004|so okay that's tuesday.|s
-me010|yeah.|b
-me045|yeah.|aa
-fe004|like that's the conclusion okay.|s
-mn015|so your dance card is completely filled now?|d
-me003|uhhuh.|b
-me045|shoot.|ba
-fe004|yeah and i have nothing to do this weekend but work.|aa
-mn015|why don't|%--
-fe004|no that's not really true|ar
-fe004|but like|%--
-me045|bummer.|ba
-me003|what about what about d.d. r?|qw
-fe004|it's almost true.|s
-fe004|oh i don't have it this weekend.|s
-fe004|so tsk don't have to worry about that.|s
-me003|huh.|bk
-me010|d.d.r. he asked?|br
-fe004|speaking of dance.|s
-fe004|dance dance revolution.|s
-fe004|i can't believe i'm|s
-fe004|it's a it's like a game but it's for like dancing.|s
-fe004|hard to it's like karaoke but for dancing.|e
-fe004|and they tell you what|s
-fe004|it's amazing.|ba
-fe004|it's so much fun.|ba
-fe004|yeah it's so good.|ba
-fe004|my friend has a home version and he brought it over.|s
-fe004|and we are so into it.|s
-fe004|it's so amazing.|s
-fe004|well you know of it?|d
-fe004|it's one of your hobbies?|d
-fe004|it's great exercise i must say.|s
-fe004|i can't wait to hear this.|s
-fe004|uhhuh.|b
-fe004|oh definitely they have like places instead of like yeah instead of karaoke bars now that have like d.d.r.|aa
-fe004|like|%--
-fe004|yeah yeah i didn't until i started hanging out with this friend who's like oh well i can bring over the d.d.r. if you want.|bk
-fe004|oh oh dance dance revolution okay.|s
-fe004|he actually brought a clone called stepping selection.|s
-fe004|but it's just as good.|ba
-fe004|so|fh
+me003|so|F
+me003|so is keith showing up?|Q
+me003|he's talking with george right now.|S
+me003|uh is he going to get a rip uh rip himself away from from that?|Q
+me010|what?|Q
+fe004|he'll probably come later.|S
+me010|he's|D
+me010|probably not is my guess.|S
+me003|oh then it's just going to be the five of us?|S
+mn015|well he he was very affirmative in his way of saying he will be here at four.|S
+me010|yeah.|D
+mn015|but you know that was before he knew about that george lecture probably.|S
+me010|right.|B
+me010|this this is not it's not bad for the project if keith is talking to george.|S
+me010|okay so my suggestion is we just|D
+fe004|forge ahead.|S
+me010|forge ahead yeah.|S
+mn015|cool.|D
+fe004|are you in charge?|Q
+mn015|sure.|S
+mn015|um|F
+mn015|well i sort of had informal talks with most of you.|S
+mn015|so eva just reported she's really happy about the c.b.t.'s being in the same order in the x.m.l.|S
+mn015|as in the um java declaration format.|S
+fn050|yeah.|B
+fn050|the|D
+mn015|so you don't have to do too much in the style sheet transversion.|S
+fn050|uh yeah.|S
+fn050|yeah so|F
+mn015|the uh java the embedded bayes wants to take input uh uh a bayes-net in in some java notation.|S
+mn015|and eva is using the xalan style sheet processor to convert the x.m.l. that's output by the java bayes for the into the uh e. bayes input.|S
+me003|huh.|B
+fn050|actually maybe i could try like emailing the guy.|S
+fn050|and see if he has something already.|S
+me010|sure.|S
+mn015|huh.|B
+fn050|that'd be weird that he has both the java bayes and the embedded bayes in|D
+fn050|yeah.|S
+me003|but that's some sort of conversion program?|Q
+fn050|yeah.|S
+fn050|and put them into different formats.|S
+fn050|oh|D
+fn050|yep he could do that too.|S
+me003|i think you should demand things from him.|S
+me010|he charges so much right?|S
+me003|yeah.|S
+me010|no i think it's a good idea that you may as well ask sure.|S
+fn050|yeah.|S
+mn015|and um well pretty pretty much on on the top of my list i would have asked keith how the where is x. hand parse is standing.|S
+mn015|um but we'll skip that.|S
+mn015|uh there's good news from johno.|S
+mn015|the generation templates are done.|S
+me003|so the trees for|D
+me003|the x.m.l. trees for the for the for the synthesizer are written.|S
+me003|so i just need to do the uh write a new set of tree combining rules.|S
+me003|but i think those will be pretty similar to the old ones.|S
+me003|so|F
+me003|just going to be you know|D
+me010|oh.|S
+me010|you were going to send me a note about hiring|D
+mn015|yes.|S
+me010|i didn't finish the sentence.|S
+me010|but he understood it.|S
+me003|i know what he's talking about.|S
+me010|okay.|S
+me010|but nancy doesn't.|S
+fe004|hiring somebody.|S
+mn015|we um|D
+me003|the guy.|S
+mn015|okay so natural language generation produces not a just a surface string that is fed into a text to speech but a surface string with a syntax tree that's fed into a concept to speech.|S
+me010|no.|S
+fe004|yeah.|B
+fe004|uhhuh.|D
+mn015|now and this concept to speech module has certain rules on how if you get the following syntactic structure how to map this onto prosodic rules.|S
+fe004|better.|S
+fe004|uhhuh.|B
+fe004|sure.|B
+fe004|uhhuh.|B
+mn015|and fey has foolheartedly agreed to rewrite uh the german uh syntax-to-prosody rules.|S
+fe004|i didn't know she spoke german.|S
+mn015|no she doesn't.|S
+fe004|oh okay.|S
+mn015|but she speaks english.|S
+fe004|oh rewrite the german ones into english.|S
+mn015|into english.|S
+fe004|okay got it.|S
+mn015|and um therefore the|D
+mn015|uh|F
+mn015|if it's okay that we give her a couple of more hours per week then she'll do that.|S
+fe004|okay got it.|S
+me003|what language is that written|D
+me003|is that that scheme thing that you showed me?|Q
+mn015|yeah.|S
+mn015|that's the lisp type scheme.|S
+me003|she knows how to program in scheme.|S
+me003|i hope.|S
+mn015|no i.|D
+mn015|my guess is i i asked for a commented version of that file.|S
+mn015|if we get that then it's doable.|S
+mn015|even without getting into it even though the scheme uh stuff is really well documented in the festival.|S
+me003|well i guess if you're not used to functional programming scheme can be completely incomprehensible.|S
+me003|because there's no|D
+me003|like there's lots of unnamed functions.|S
+me010|syntax.|D
+me010|yeah.|B
+me003|and|F
+me003|you know.|S
+fe004|uhhuh.|B
+me010|anyway it we'll sort this out.|S
+me010|um|F
+me010|but anyway send me the note.|S
+me010|and then i'll check with uh morgan on the money.|S
+me010|i i don't anticipate any problem.|S
+me010|but we have to ask.|S
+me010|oh so this was you know on the generation thing|D
+me010|um|F
+me010|if she's really going to do that then we should be able to get prosody as well.|S
+me010|so it'll say it's nonsense with perfect intonation.|S
+me003|are we going to can we change the voice of the of the thing?|Q
+me003|because right now the voice sounds like a murderer.|S
+mn015|yep we we have to change the voice.|S
+fe004|which one?|Q
+me003|the the little smarticus.|S
+me003|smarticus sounds like a murderer.|S
+fe004|oh.|S
+me045|that's good to know.|S
+me003|i have your reservations.|S
+me045|but i will not give them to you unless you come into my lair.|S
+mn015|it is uh we have the choice between the uh usual festival voices.|S
+mn015|which i already told the smartkom people we aren't going to use because they're really bad.|S
+fe004|festival?|Q
+me010|it's the name of some program.|S
+me010|the the synthesizer.|S
+fe004|oh oh got it okay.|S
+mn015|but um|F
+me045|you know the usual party voices.|S
+fe004|yeah i know.|S
+fe004|that doesn't sound exactly right either.|S
+mn015|o.g.i. has uh crafted a couple of diphone type voices that are really nice.|S
+mn015|and we're going to use that.|S
+mn015|we can still um agree on a gender if we want.|S
+mn015|so we still have male or female.|S
+fe004|i think|D
+fe004|well let's just pick whatever sounds best.|S
+mn015|huh?|Q
+fe004|whatever sounds best.|S
+mn015|uh|D
+me003|does o.g.i. stand for original german institute?|Q
+fe004|unfortunately probably male voices a bit more research on.|S
+fe004|so|F
+mn015|oregon.|S
+me010|oregon graduate institute.|S
+mn015|try oregon.|S
+me003|oh.|S
+fe004|oregon graduate|D
+me003|uh.|S
+me010|it turns out there's the longstanding links with these guys in the speech group.|S
+fe004|huh!|B
+me010|very long.|S
+me003|huh!|B
+mn015|huh.|B
+me010|in fact there's this guy who's basically got a joint appointment.|S
+me010|hynek hermansky.|S
+me010|spends a fair amount of time here.|S
+me010|anyway|F
+me010|leave it.|S
+me010|won't be a problem.|S
+mn015|okay.|F
+mn015|and it's probably also absolutely uninteresting for all of you to um learn that as of twenty minutes ago david and i per accident uh managed to get the whole smartkom system running on the uh icsi linux machines with the icsi n.t. machines.|S
+mn015|thereby increasing the number of running smartkom systems in this house from one on my laptop to three.|S
+fe004|huh that's good.|D
+me003|how was this by accident?|Q
+fe004|yeah i know.|S
+fe004|that's the part i didn't understand.|S
+mn015|um i suggested to try something that was really kind of.|S
+mn015|even though against better knowledge shouldn't have worked.|S
+mn015|but it worked.|S
+fe004|huh!|B
+mn015|intuition.|S
+mn015|maybe maybe maybe a bit for the a.i. intuition thing.|S
+fe004|will it work again?|Q
+me045|yeah.|S
+fe004|or|D
+me003|yeah.|S
+mn015|okay.|S
+mn015|and um we'll never found out why.|S
+mn015|it's just like why why the generation the presentation manager is now working.|S
+me045|huh!|B
+mn015|which|D
+me045|this is something you you get used to as a programmer right?|S
+me045|you know and it's cool it works out that way.|S
+mn015|huh.|D
+mn015|so the the people at saarbruecken and i decided not to touch it ever again.|S
+mn015|yeah that would work.|S
+mn015|okay.|S
+mn015|um i was going to ask you where something is.|S
+mn015|and what we know about that.|S
+me045|where|D
+fe004|where the where is construction is.|S
+me045|okay.|S
+mn015|where is x. ?|Q
+me045|what what thing is this?|Q
+me045|okay.|S
+mn015|oh!|S
+mn015|but by uh we can ask uh did you get to read all four hundred words.|S
+mn015|was it okay?|Q
+me010|i did.|S
+mn015|was it|D
+me003|i i i was looking at it.|S
+me010|yeah.|S
+me003|it doesn't follow logically.|S
+me003|it doesn't the first paragraph doesn't seem to have any link to the second paragraph.|S
+me045|and so on.|S
+mn015|huh.|B
+mn015|that|D
+me010|yeah.|B
+me003|yeah.|B
+me010|you know yeah it|D
+me003|each paragraph is good though.|S
+me003|i|D
+me010|yeah well it's fine.|S
+me045|it was written by committee.|S
+me010|anyway|F
+me010|um|F
+me010|but the meeting looks like it's it's going to be good.|S
+me010|so|F
+mn015|yeah.|B
+me010|i think it's uh|D
+fe004|yeah i didn't know about it until robert told me like|D
+me010|yeah i i i ran across it in i don't even know where.|S
+me010|you know some just some weird place.|S
+me010|and uh yeah i'm surprised i didn't know about it.|S
+fe004|yeah well yeah i was like why didn't dan tell me.|S
+me010|since we know all the invited speakers.|S
+me010|right or|D
+me045|right.|S
+me010|anyway.|F
+me010|so but anyway|F
+me010|yeah.|S
+me010|so i i did see that.|S
+me010|oh yeah before we get started on this|D
+me010|so i also had a nice email correspondence with daphne kohler who said yes indeed she would love to work with us on the um you know using these structured belief nets and stuff.|S
+me010|but starting in august.|S
+me010|that she's also got a new student working on this and that we should get in touch with them again in august.|S
+me010|and then we'll figure out a way for you uh you to get seriously connected with um their group.|S
+me010|so|F
+me010|that's uh looks pretty good.|S
+me010|and um|F
+me010|yeah i'll say it now.|S
+me010|so um|F
+me010|and it looks to me like we're now at a good point to do something start working on something really hard.|S
+me010|we've been so far working on things that are easy.|S
+me045|oh!|S
+me010|uh which is mental spaces and uh and or|D
+me045|huh!|B
+fe004|it's hard.|S
+me010|huh?|Q
+fe004|yeah it's hard.|S
+me010|it's a hard puzzle.|S
+fe004|yeah.|S
+me045|yeah.|B
+me010|but the other part of it is the way they connect to these uh probabilistic relational models.|S
+me010|so there's all the problems that the linguists know about about mental spaces and the cognitive linguists know about.|S
+me010|but then there's this problem of the belief net people have only done a moderately good job of dealing with temporal belief nets.|S
+me010|uh which they call dynamic|D
+me010|they incorrectly call dynamic belief nets.|S
+fe004|huh.|B
+me010|so there's a term dynamic belief net doesn't mean that.|S
+me010|it means time slices.|S
+me010|and srini used those and people use them.|S
+me010|uh but|F
+me010|one of the things i would like to do over the next uh month it may take more is to understand to what extent we can not only figure out the constructions for them for multiple worlds|D
+me010|and|F
+me010|uh sort of what the formalism will look like and where the slots and fillers will be but also what that would translate into in terms of belief net and the inferences.|S
+me010|so the story is that if you have these probabilistic relational models they're set up in principle so that you can make new instances.|S
+me010|and instances connect to each other and all that sort of stuff.|S
+me010|so it should be feasible to set them up in such a way that if you've got the past tense and the present tense and each of those is a separate uh belief structure that they do their inferences with just the couplings that are appropriate.|S
+me010|but that's that's as far as i can tell it's it's putting together two real hard problems.|S
+me010|one is the linguistic part of what are the couplings.|S
+me010|and and when you have a certain uh construction that implies certain couplings and other couplings.|S
+me010|you know between let's say between the past and the present.|S
+me010|or any other one of these things.|S
+me010|and then we have this inference problem of exactly technically how does the belief net work.|S
+me010|if it's got um let's say one in in you know different tenses.|S
+me010|or my beliefs and your beliefs.|S
+me010|or any of these other ones of of multiple models.|S
+me010|so um|F
+me010|you know in the long run we need to solve both of those.|S
+me010|and my suggestion is that we start digging into them both uh in a way that you know|D
+me010|hopefully turns out to be consistent.|S
+me010|so that the|D
+me010|um|F
+me010|and sometimes it's actually easier to solve two hard problems than one.|S
+me045|yeah.|S
+me010|because they constrain each other.|S
+me010|i mean if you've got huge huge range of possible choices|D
+me010|um|F
+me010|we'll see.|S
+me010|but anyway so that's um|D
+me045|oh yeah like uh i solved the the problem of um we were talking about how do you|D
+me045|various issues of how come a plural noun gets to quote count as a noun phrase.|S
+me045|you know occur as an argument of a higher construction but a bare singular stem doesn't get to act that way.|S
+me010|right.|B
+me045|um|F
+me045|and it would take a really long time to explain it now.|S
+me045|but i'm about to write it up this evening.|S
+me045|i solved that at the same time as how do we keep adjectives from floating to the left of determiners and how do we keep all of that from floating outside the noun phrase to get something like i the kicked dog.|S
+me045|um|F
+me010|that's great.|S
+me045|did it did it at once.|S
+me045|so maybe maybe it'll be a similar thing.|S
+me010|yeah.|B
+fe004|cool.|S
+me010|no i know i i think that is going to be sort of the key to this to the big project of the summer of of getting the constructions right.|S
+me010|is that people do manage to do this.|S
+me010|so there probably are some uh relatively clean rules.|S
+me010|they're just not context free trees.|S
+me045|right.|B
+me010|and if we if the formalism is is good then we should be able to have you know sort of moderate scale thing.|S
+me010|and that by the way is is keith what i encouraged george to be talking with you about.|S
+me010|not the formalism yet.|S
+me045|uhhuh.|B
+me010|but the phenomena.|S
+me045|yeah.|S
+me010|the|D
+me010|and|F
+me010|oh another thing|D
+me010|um|F
+me010|there was this uh thing that nancy agreed to in a in a weak moment this morning that.|S
+me045|huh.|B
+fe004|i was really strong.|S
+me045|huh.|B
+fn050|huh.|B
+me010|uh sorry in a in a friendly moment.|S
+me045|same thing.|S
+me010|anyway uh that we were that we're going to try to get a uh first cut at the revised formalism by the end of next week.|S
+me010|okay.|S
+me045|all right.|S
+me010|probably skipping the mental spaces part.|S
+fe004|seems|D
+me045|right i do.|S
+me010|uh just trying to write up essentially what what you guys have worked out so that everybody has something to look at.|S
+me010|we've talked about it but only the innermost inner group currently uh|D
+me045|uhhuh.|B
+me045|knows.|S
+me010|knows uh|D
+me045|okay.|B
+fe004|yeah and and not even all of them really do.|S
+me045|yeah.|S
+fe004|but like|D
+me010|right.|S
+me045|there's the group as a whole knows.|S
+me045|but no individual member|D
+me010|well that that yeah there's one of the advantages of a document right?|S
+me045|yeah.|S
+me010|is is that it actually transfers from head to head.|S
+fe004|right.|B
+me010|so anyway.|F
+me045|okay.|B
+me010|so um|F
+fe004|uh communication.|S
+me010|huh?|Q
+fe004|communication.|S
+me010|communication documentation and stuff.|S
+me045|huh.|B
+me010|anyway so uh with a little luck|D
+me010|uh let's let's have that as a goal anyway.|S
+me010|and|D
+me045|so uh what was the date there?|Q
+me045|monday?|Q
+me045|or|D
+me010|no no no.|S
+me045|it's a friday.|S
+me010|no uh we're talking about a week end of next week.|S
+fe004|but uh but but the two of us will probably talk to you at well before|D
+me045|end of next week.|S
+me045|i thought you said beginning of|D
+fe004|i mean|D
+me045|yeah.|S
+fe004|anyway let's talk separately about how|D
+me045|yeah i have a busy weekend.|S
+me045|but after that yeah.|S
+me045|gung ho.|S
+me010|okay yeah so so sometime next week.|S
+me045|great.|S
+me010|now if it turns out that that effort leads us into some big hole that's fine.|S
+me045|uhhuh.|B
+me045|okay.|S
+me010|you know if you say we're we're dump dump dump.|S
+me010|there's a really hard problem.|S
+me010|we haven't solved yet.|S
+me010|that that's just fine.|S
+me045|okay.|S
+fe004|uhhuh.|B
+me045|but at at least sort of try and work out what the state of the art is right now.|S
+me010|right if to the extent that we have it let's write it.|S
+me045|okay.|S
+me010|and to the extent we don't let's find out what we need to do.|S
+me045|okay.|S
+me010|so uh|F
+mn015|can we is it worth thinking of an example out of our tourism thing domain that involves a a a decent mental space shift or setting up?|Q
+me010|i think it is.|S
+me010|but uh but i interrupted before keith got to tell us what happened with where is the powder tower or whatever.|S
+fe004|right.|B
+me045|well uh what was supposed to happen?|Q
+me045|i've sort of been actually caught up in some other ones.|S
+me045|so um you know i don't have a write up of or i haven't elaborated on the ideas that we were already talking about.|S
+mn015|huh yeah i think i think we already came to the conclusion that we have two alternative paths that we two alternative ways of representing it.|S
+me045|which were|D
+mn015|one is sort of a has a|D
+mn015|um|F
+me045|it's gone.|S
+mn015|um|F
+me045|the question of whether the polysemy is sort of like in the construction or pragmatic.|S
+fe004|one of them was|D
+fe004|right.|S
+mn015|or comes|D
+fe004|right.|S
+mn015|is resolved later.|S
+mn015|yeah.|B
+me045|i think it has to be the the second case.|S
+mn015|yeah.|S
+me045|um so did you is it clear what we're talking about here?|Q
+fe004|i agree.|S
+me010|uh|F
+me045|the question is whether the construction is semantic or like ambiguous between asking for location and asking for path.|S
+mn015|it's|D
+fe004|so you might be yeah and asking for directions.|S
+me045|um|F
+mn015|should we have a a a|D
+me045|or or whether the construction semantically uh is clearly only asking for location.|S
+fe004|uh|D
+me045|but pragmatically that's construed as meaning tell me how to get there.|S
+me010|uhhuh.|B
+mn015|so assume these are two uh nodes we can observe in the bayes-net.|S
+me010|yep.|S
+fe004|yeah.|S
+me010|right.|B
+mn015|so these are either true or false.|S
+mn015|and it's also just true or false.|S
+mn015|if we encounter a phrase such as where is x. should that set this to true and this to true?|Q
+mn015|and the bayes-net figures out which under the situation in general is more likely.|S
+mn015|um or should it just activate this have this be false?|Q
+mn015|and the bayes-net figures out whether this actually now means|D
+me010|uh that's a|D
+me010|okay so that's a that's a separate issue.|S
+fe004|slightly different.|S
+me045|okay.|B
+me010|so i i i i agree with you that um it's a disaster to try to make separate constructions for every uh pragmatic reading.|S
+me045|uhhuh.|D
+me010|although there are some that will need to be there.|S
+fe004|good.|D
+fe004|uhhuh.|B
+me045|right.|S
+fe004|right.|S
+me010|i mean there's some that|D
+fe004|or have every construction list all the possible pragmatic implications of the same one.|S
+me010|you can't do that either.|S
+me010|yeah.|S
+fe004|right.|S
+fe004|yeah.|B
+me010|but you know um almost certainly can you pass the salt is a construction worth noting that there is this this this this uh|D
+me045|yeah.|B
+fe004|request.|S
+me045|uhhuh yeah.|B
+fe004|very yeah.|S
+me045|so right this one is maybe in the gray area.|S
+me045|is it is it like that or is it just sort of obvious from world knowledge that no one you wouldn't want to know the location without wanting to know how to get there or whatever?|Q
+fe004|huh.|B
+me010|yeah.|B
+mn015|one|D
+mn015|or in some cases it's it's quite definitely.|S
+me010|yeah.|B
+mn015|so that you just know want to know where it is.|S
+me045|yeah.|F
+me045|well the question is basically is this conventional or conversational implicature.|S
+me010|exactly yeah.|S
+fe004|might be yeah.|S
+me010|and i guess see the more important thing at this stage is that we should be able to know how we would handle it in|D
+me010|in the short run it's more important to know how we would treat technically what we would do if we decided a. and what we would do if we decided b. than it is to decide a. or b. right now.|S
+fe004|right.|S
+me045|okay right.|S
+fe004|right.|B
+fe004|which one it is.|S
+me045|which of that is yeah okay.|S
+mn015|huh.|B
+fe004|because there will be other examples that are one way or the other right.|S
+me010|we know for sure that we have to be able to do both.|S
+me045|yeah.|B
+me010|so i guess in the short run let's let's be real clear on what the two alternatives would be.|S
+me045|okay.|S
+mn015|and then we had another idea floating around um which we wanted to uh get your input on.|S
+mn015|and that concerns the|D
+mn015|but the nice thing is we would have a person that would like to work on it.|S
+mn015|and that's irina gurevich from e.m.l. who is going to be visiting us uh the week before uh august.|S
+mn015|and a little bit into august.|S
+mn015|and she would like to apply the ontology that is um being crafted at e.m.l.|S
+mn015|that's not the one i sent you.|S
+mn015|the one i sent you was from g.m.d. out of a european crumpet.|S
+me010|it was terrible.|S
+mn015|agreed.|S
+mn015|um and one of the one of the those ideas was|D
+mn015|so|F
+mn015|back to the old johno observation that if if you have a dialogue history and it said the word admission fee was uh mentioned um it's more likely that the person actually wants to enter than just take a picture of it.|S
+mn015|from the outside.|S
+mn015|now what could imagine to you know have a list for each construction of things that one should look up in the discourse history yeah.|S
+mn015|that's the really stupid way.|S
+mn015|then there is the really clever way that was suggested by keith.|S
+mn015|and then there is the uh middle way that i'm suggesting.|S
+mn015|and that is you you get x. which is whatever.|S
+mn015|the castle.|S
+mn015|the ontology will tell us that castles have opening hours.|S
+mn015|that they have admission fees.|S
+mn015|they have whatever.|S
+mn015|and then this is we go via a thesaurus.|S
+mn015|and look up certain linguistic surface structures that are related to these concepts.|S
+mn015|and feed those through the dialogue history.|S
+mn015|and check dynamically|D
+mn015|for each entity we look it up check whether any of these were mentioned and then activate the corresponding nodes on the discourse side.|S
+mn015|but keith suggested that a a much cleaner way would be is you know to keep track of the discourse in such a way that you if you know that something like that has been mentioned before this just continues to add up|D
+mn015|you know in in a|D
+me045|so if someone mentions admission fees that activates an enter schema which sticks around for a little while in your in the representation of what's being talked about.|S
+me045|and then when someone asks where is x. you've already got the the enter schema activated.|S
+me010|uhhuh.|B
+fe004|kind of a priming|D
+me045|and you're able to to conclude on it.|S
+me010|yeah.|B
+fe004|priming a spreading activation.|S
+me010|right.|B
+me045|yeah.|S
+me010|yeah so that's certainly more realistic.|S
+me010|i i mean psychologically.|S
+me045|right.|B
+me010|now technically|D
+me045|yeah.|B
+me010|um|F
+me003|well uh is it doesn't it seem like if you just managed the dialogue history with a a thread that you know kept track of of the activity of|D
+me003|i mean because it would the the thread would know what nodes like needed to be activated.|S
+me003|so it could just keep track of how long it's been since something's been mentioned and automatically load it in.|S
+me010|yeah.|S
+me010|you could do that.|S
+me010|um|F
+me010|but here's here's a way|D
+me010|in in the bayes-net you could you could think about it this way that if um at the time admissions fee was mentioned you could increase the probability that someone wanted to enter.|S
+fe004|turn prior on.|S
+me003|yeah that's what i i wasn't i was i wasn't thinking in terms of enter schemas.|S
+me003|i was just|D
+me010|fair enough okay.|S
+me010|but but in terms of the the current implementation|D
+me010|right.|S
+me010|so that|D
+me010|um|F
+fe004|it would already be higher in the context.|S
+me010|that the the the conditional probability that someone|D
+me010|so at the time you mentioned it|D
+me010|this is this is essentially the bayes-net equivalent of the spreading activation.|S
+me045|uhhuh.|B
+me045|yeah.|B
+me010|it's in some ways it's not as good.|S
+me010|but it's the implementation we got.|S
+me045|yeah sure.|S
+me010|we don't have a connectionist implementation.|S
+me045|no i mean|D
+me010|now now my guess is that it's not a question of time but it is a question of whether another intervening object has been mentioned.|S
+fe004|yeah relevance.|S
+fe004|yeah.|B
+me010|i mean we could look at|D
+me045|yeah.|B
+me010|this is|D
+me010|of course the other thing we we do is is we have this data coming.|S
+me045|yeah.|B
+me010|which probably will blow all our theories.|S
+me010|but but skipping that|D
+me045|yeah right.|S
+me010|so so but my guess is what what'll probably will happen here's a here's a proposed design is that there're certain constructions which uh for our purposes do change the probabilities of eva decisions and various other kinds.|S
+me010|and|F
+me010|that the uh standard way that that these contexts work is sort of stack like or whatever.|S
+me010|but that's sort of the most recent thing.|S
+me010|and so it could be that when another uh tourist entity gets mentioned you|D
+fe004|renew.|S
+me010|essentially you know re i essentially re-initialize the state.|S
+me003|huh.|B
+fe004|yeah.|B
+me045|uhhuh.|B
+me010|and of course if we had a fancier one with multiple worlds you could have uh you could keep track of what someone was uh saying about this and that.|S
+me010|you know i want to go in the morning.|S
+me045|yeah.|B
+me010|i want to|D
+me045|here's my plan for today.|S
+me045|here's my plan for tomorrow.|S
+me010|yeah or yeah in the morning morning i'm planning to go shopping.|S
+me045|hypothetically.|S
+me010|in the afternoon to the powder tower.|S
+me045|yeah.|B
+me010|uh so i'm talking about shopping.|S
+me010|and then you say uh you know well um what's it cost or something.|S
+me045|uhhuh.|B
+me010|or|D
+me010|anyway.|F
+me010|so one could well imagine|D
+me010|but not yet.|S
+me045|yeah.|B
+me010|but i do think that the it'll turn out that it's going to be depend pretty much on whether there's been an override.|S
+mn015|yeah i mean if if you ask how much does a train ride and and cinema around the vineyards cost and then somebody tells you it's sixty dollars and then you say okay how much is uh i would like to visit the whatever something completely different then i go to you know point reyes.|S
+me010|yeah.|B
+mn015|it it's not more likely that you want to enter anything.|S
+mn015|but it's as a matter of fact a complete rejection of entering by doing that.|S
+me010|right.|B
+fe004|right.|B
+me010|right.|B
+me045|yeah.|B
+fe004|so when you have admission fee and it changes something it's only for that particular it's relational right?|S
+fe004|it's only for that particular object.|S
+me010|yeah i|D
+me010|yeah.|S
+me010|well and and and the simple idea is that it's it's only for for the current uh tourist entity of interest.|S
+fe004|yeah.|S
+me045|yeah.|S
+fe004|right.|B
+mn015|yeah but that's|D
+mn015|i mean this this function|D
+mn015|so has the current object been mentioned in in with a question about concerning its|D
+me010|no no it's it it goes the other it goes in the other direction.|S
+me010|is|D
+me010|when when the this is mentioned the uh probability of of let's say entering changes.|S
+fe004|of that object.|S
+me010|changes.|S
+fe004|for but|D
+fe004|right.|S
+me003|you could just uh just basically it it observes an uh it sets the a node for entered or true or something.|S
+me010|yeah.|B
+me010|yeah.|B
+me010|now uh but i think robert's right that to determine that okay you may well want to go through a thesaurus.|S
+me003|discourse enter.|S
+me010|and and|F
+me010|so if the issue is if so now this construction has been matched and you say okay does this actually have any implications for our decisions then there's another piece of code that presumably does that computation.|S
+fe004|so sort of forward chaining in a way rather than backward.|S
+me010|yeah yeah.|S
+fe004|okay.|S
+me010|but but what's robert's saying is is|D
+me010|and i think he's right is you don't want to try to build into the construction itself all the synonyms and all you know all the|D
+me010|uh|F
+me010|maybe.|S
+me010|i'll have to think about that.|S
+fe004|huh.|B
+me010|i don't know.|S
+me010|i mean it i can i can think of arguments in either direction on that.|S
+me010|but somehow you want to do it.|S
+mn015|uhhuh.|B
+mn015|well it's just another sort of construction side is how to get at the possible inferences we can draw from the discourse history.|S
+mn015|or changing of the probabilities and or.|S
+fe004|guess it's like i the other thing is whether you have a user model that has you know whatever a current plan whatever plans that had been discussed.|S
+fe004|and|D
+fe004|i don't know.|S
+fe004|i mean|D
+me003|what uh what's the argument for putting it in the construction?|Q
+me003|is it just that the synonym selection is better or|D
+me010|oh well the the the argument is that you're going to have the|D
+me010|if you've recognized the word|D
+me010|you've recognized the word which means you have a lexical construction for it.|S
+me010|so you could just as well tag the lexical construction with the fact that it's a uh you know thirty percent increase in probability of entering.|S
+me010|you so you could you could you could invert invert the whole thing so you you tag that information on to the lexicon.|S
+me003|huh.|B
+me003|oh i see.|S
+me010|since you had to recognize it anyway.|S
+me010|that that's the argument in the other direction.|S
+me010|at at|D
+me010|yeah and this is|D
+mn015|even though uh the lexical construction itself out out of context uh won't do it.|S
+mn015|i mean you have to keep track whether the person says.|S
+mn015|but but i'm not interested in the opening times.|S
+fe004|yeah.|B
+mn015|is sort of more a v. type.|S
+me010|yeah there's yeah there's that as well.|S
+mn015|yep.|B
+mn015|huh.|D
+mn015|so|D
+mn015|but we'll|D
+mn015|uh we have time to|D
+mn015|this is a just a sidetrack.|S
+mn015|but uh|F
+mn015|i think it's also something that people have not done before is um sort of abuse an ontology for these kinds of uh inferences on|D
+mn015|whether anything relevant to the current something has been uh has crept up in the dialogue history already or not.|S
+mn015|and um|F
+mn015|i have the uh if we wanted to have that function in the dialogue dialogue module of smartkom i have the written consent of jan to put it in there.|S
+me010|good.|S
+me010|okay well this this is highly relevant to someone's thesis.|S
+mn015|yes.|S
+mn015|um that's uh i'm i'm keeping on good terms with jan.|S
+me010|you've noticed that.|S
+mn015|yeah.|S
+me010|okay.|S
+me010|so the point is it's very likely that robert's thesis is going to be along these lines.|S
+me010|and the local rules are if it's your thesis you get to decide how it's done.|S
+fe004|oh|D
+me010|okay so if you know if this is seriously if this becomes part of your thesis you can say hey we're going to do it this way that's the way it's done.|S
+mn015|huh.|D
+fe004|yay it's not me!|S
+fe004|it's always me when it's someone's thesis.|S
+me010|no no no!|S
+me010|no no we've got a lot we've got a lot of theses going.|S
+me045|there's a few of us around now.|S
+fe004|yay!|S
+fe004|i know it is.|S
+me010|yeah.|B
+me010|right.|B
+mn015|well let's let's talk after friday the twenty ninth.|S
+mn015|then we'll see how|D
+me010|right so he's got a he's got a meeting in germany with his thesis advisor.|S
+fe004|yeah he said he's going to finish his thesis by then.|S
+me045|oh yeah.|S
+mn015|yeah.|D
+mn015|i should try to finish it by then yeah.|S
+me010|oh right.|S
+mn015|so|F
+me010|um|F
+me010|yeah so i think in fact that's the other thing.|S
+me010|uh this is this is speaking of hard problems this is a very good time um to start trying to make explicit where construal comes in.|S
+me010|and you know where where the construction per se ends and where construal comes in.|S
+me045|uhhuh.|D
+mn015|uhhuh.|D
+me010|because this is clearly part of|D
+fe004|yeah we've we've done quite a bit of that.|S
+me010|huh?|Q
+me045|yeah.|S
+fe004|we've been doing quite a bit of that.|S
+me045|yeah.|B
+me010|well i said but that's part of what the|D
+fe004|we have many jobs for you robert.|S
+me010|yeah well he's going to need this.|S
+fe004|the conclusion.|S
+me045|yeah it seems to always land in your category.|S
+fe004|yeah.|S
+me010|right so right so thing that's part of why we want the formalism.|S
+me045|you're lucky.|S
+me010|is is because it is going to have implicit in it|D
+me045|yeah.|B
+mn015|was i in the room?|Q
+fe004|no you weren't there on purpose.|S
+me010|yeah.|D
+fe004|like|D
+me045|made it much easier to make these decisions.|S
+fe004|obviously.|S
+me045|uh|F
+fe004|yeah.|B
+me010|right well i that's tentative.|S
+me010|they aren't decisions.|S
+me045|yeah right right right.|S
+me010|they're they're just proposals.|S
+fe004|no they're decisions.|S
+me045|yes excuse me.|S
+fe004|okay.|S
+me010|yeah that that's the point is is|D
+me045|yeah.|S
+mn015|constraints.|S
+mn015|let's call them constraints around which one has to|D
+me010|yeah.|S
+me010|yeah anyway but so that's that's|D
+fe004|actually|D
+fe004|yeah there's a problem with that word too though.|S
+me003|yeah but it the decisions i made had to do with my thesis.|S
+me010|yeah.|D
+me003|so consequently don't i get to decide then that it's robert's job?|Q
+me010|no.|S
+me010|uh|F
+me045|anyhow.|S
+fe004|well i'll just pick a piece of the problem and then just push the hard stuff into the center and say it's robert's.|S
+mn015|i've always been completely in favor of consensus decisions.|S
+fe004|like|F
+mn015|so we'll we'll find a way.|S
+me010|right.|D
+fe004|i can|D
+me010|well we we we will.|S
+me010|but um|F
+fe004|i haven't okay.|S
+me010|not|D
+mn015|it it might even be interesting then to say that i should be forced to um sort of pull some of the ideas that have been floating in my head out of the uh out of the top hat.|S
+me010|yes.|S
+mn015|and um|F
+me045|always good.|S
+me010|right.|B
+mn015|that metaphor is not going anywhere you know.|S
+me045|yeah.|B
+me010|no absolutely.|S
+me010|so uh you had you know you you had done one draft.|S
+mn015|yes and um it's none of that is basically still around.|S
+me010|and another draft|D
+fe004|i didn't get|D
+mn015|but it's|D
+me010|okay.|S
+me045|that's normal.|S
+fe004|oh i guess it's good i didn't read it.|S
+me010|i this is i'm shocked.|S
+me010|this is the first time i've seen a thesis proposal change.|S
+me010|right anyway uh so|F
+fe004|really?|Q
+me010|but yeah a second that would be great.|S
+me010|so uh a i mean you're going to need it anyway.|S
+mn015|huh.|D
+mn015|yeah and i would like to discuss it.|S
+me010|and|D
+mn015|and you know get you guys's input.|S
+me010|right.|B
+mn015|and make it sort of bomb proof.|S
+me010|yep.|S
+fe004|bomb proof.|S
+me045|good.|S
+fe004|oh oh okay.|S
+mn015|bulletproof.|S
+mn015|that's the word i was looking for.|S
+me010|both proof.|D
+me045|either way.|S
+fe004|both.|S
+me010|right.|S
+me010|uh|F
+fe004|good luck really.|S
+me010|so that so this i mean so this is the point is we we're going to have to cycle through this.|S
+me010|but the draft of the proposal on the constructions is is going to tell us a lot about what we think needs to be done by construal.|S
+me045|yeah.|B
+me010|and um we ought to be doing it.|S
+mn015|okay.|B
+mn015|yeah we need we need some then we need to make some dates.|S
+mn015|um|F
+mn015|meeting regular meeting time for the summer.|S
+mn015|we really haven't found one.|S
+mn015|we did thursdays one for a while.|S
+mn015|i just talked to ami.|S
+mn015|it's a coincidence that he can't do couldn't do it today here.|S
+fe004|usually he can.|S
+mn015|usually he has no real constraints.|S
+mn015|so|F
+me010|and the n.t.l. meeting moved to wednesday.|S
+me010|because of of uh|D
+mn015|yeah it was just an exception.|S
+me010|yeah you weren't here.|S
+me010|but but but uh and so if that's okay with you.|S
+me010|you would|D
+me045|it's is it staying basically at the wednesday noon?|Q
+me010|yeah it was|D
+me045|okay it was off this week.|S
+fe004|yeah i always thought it was staying.|S
+me045|yeah.|B
+me010|right.|B
+fe004|yeah i thought it was just this week that we were changing it.|S
+mn015|huh yeah.|B
+me010|okay.|S
+mn015|and um how do we feel about doing it wednesdays?|Q
+mn015|because it seems to me that this is sort of a time where when we have things to discuss with other people there.|S
+mn015|they seem to be tons of people around.|S
+me010|the only disadvantage is that it may interfere with other.|S
+mn015|or|D
+mn015|subgroup meetings.|S
+me010|you know other other|D
+me010|no you uh people in this group connecting with with.|S
+fe004|those people who happen to be around.|S
+me010|those people who who might not be around so much.|S
+me010|uh i don't care.|S
+me010|uh you know i have no fixed|D
+me045|to tell you the truth i'd i'd i'd would like to avoid more than one i.c.s.i. meeting per day if possible.|S
+me010|okay.|S
+me045|but i mean i don't know.|S
+me045|whatever.|S
+me010|no that's fine.|S
+me010|i mean that|D
+mn015|the i'd like to have them all in one day.|S
+mn015|so package them up and then|D
+me045|yeah i can understand that.|S
+me010|well|D
+me010|people people differ in their tastes in this matter.|S
+me045|yeah.|B
+me010|i i'm neutral.|S
+me045|yeah.|B
+fe004|yeah i'm always here anyway.|S
+mn015|it's okay that|D
+fe004|so|F
+me010|yeah that's me too.|S
+fe004|it doesn't matter.|S
+me010|i'm basically i'm here.|S
+me010|so|F
+mn015|well if one sort of thing is this room is taken at after three thirty pretty much every day.|S
+mn015|by the data collection.|S
+fe004|oh.|S
+mn015|so we have subjects anyway except for this week we have subjects in here.|S
+mn015|that's why it was one.|S
+fe004|oh.|D
+me010|okay.|S
+mn015|so we just knew|D
+fe004|so did you just say that ami can't make one o'clock?|Q
+mn015|no he can.|S
+fe004|oh okay.|S
+me045|oh.|S
+mn015|so let's say thursday one.|S
+mn015|but for next week this is a bit late.|S
+mn015|so i would suggest that we need to to talk|D
+fe004|oh oh|F
+fe004|okay.|B
+mn015|okay about the the|D
+fe004|could we do thursday at one thirty?|Q
+fe004|would that that be horrible?|Q
+mn015|no.|S
+mn015|yes.|S
+fe004|oh really?|Q
+mn015|because uh this room is again taken at two thirty by morgan.|S
+fe004|oh okay okay you didn't tell me that.|S
+fe004|okay that's fine.|S
+mn015|and the meeting recorder meeting meeting meeting recording on meeting meetings.|S
+fe004|okay okay okay okay yeah.|S
+mn015|so|F
+me010|interesting.|D
+me045|uh yeah.|S
+me010|so you're proposing that we meet tuesday.|S
+mn015|how about that?|Q
+me010|i i could|D
+me045|next week.|S
+fe004|well we're meeting tuesday.|S
+fe004|i mean we usually meet tuesday or like linguists um at two.|S
+me003|would it|D
+me045|that's right.|S
+fe004|so|F
+me003|and the|D
+fe004|do you want to meet again here|D
+mn015|i mean|D
+me003|is the speech-gen meeting still at on tuesdays?|Q
+mn015|well actually we did scrap our monday time just because bhaskara couldn't come monday.|S
+fe004|hhh maybe i do need a palm pilot.|S
+mn015|so there's nothing's impeding monday anymore either.|S
+me045|that doesn't apply to a|D
+mn015|get a fresh start.|S
+me003|although i thought you wanted to go camping on monday uh take off mondays a lot so you could go camping.|S
+mn015|yeah that's another thing yeah.|S
+mn015|but um i mean there are also usually then holidays anyways.|S
+mn015|i mean like sometimes it works out that way.|S
+fe004|usually?|Q
+mn015|so huh.|S
+fe004|well i mean the linguists' meeting happens to be at two.|S
+fe004|but i think that's i mean|D
+me045|that should be relatively flexible|D
+fe004|pretty flexible i think.|S
+me045|yeah there's just sort of the two to four of us.|S
+fe004|so|F
+fe004|the multiple meetings.|S
+me045|right?|Q
+me045|yeah.|S
+fe004|yeah.|B
+me045|so|F
+fe004|right.|S
+me045|and you know of course nancy and i are just sort of always talking anyway and sometimes we do it in that room.|S
+fe004|yeah.|B
+me045|so you know i mean|D
+mn015|okay so forget about the the camping thing.|S
+mn015|so let's uh any other problems|D
+mn015|but i suggested monday.|S
+mn015|if that's a problem for me then i shouldn't suggest it.|S
+me003|ha ha ha.|S
+me010|okay.|D
+mn015|so|F
+me045|um all of the proposed times sound fine with me.|S
+fe004|same here.|S
+mn015|monday?|Q
+me010|okay i mean what i think robert's saying is that|D
+me045|earlier in the week.|S
+me010|earlier we|D
+me010|at least for next week there's a lot of stuff we want to get done.|S
+me045|uhhuh yeah.|B
+me010|so why don't we plan to meet monday?|Q
+mn015|huh.|B
+me010|and we'll see if we want to meet any more than that.|S
+me045|okay.|S
+mn015|okay.|S
+fe004|what time?|Q
+fe004|at one two three?|Q
+mn015|one two three?|Q
+mn015|three's too late.|S
+mn015|two thirty?|Q
+me010|oh i yeah i actually two is the earliest i can meet on monday.|S
+mn015|okay two.|S
+me010|here i'm blissfully agreeing to things and realizing that i actually do have some stuff scheduled on monday.|S
+me045|sure sounds great.|S
+me045|uh so that's the eighteenth.|S
+fe004|you guys will still remind me right?|S
+me003|no way.|S
+fe004|you'll come and take all the the the good headphones first and then remind me.|S
+mn015|why do you|D
+me045|yeah exactly.|S
+mn015|and|F
+me045|sorry two p.m.|S
+fe004|why do i have this unless i'm going to write?|Q
+mn015|do i get to see uh your formalism before that?|Q
+fe004|fine.|S
+fe004|yes.|S
+fe004|uh would you like to?|Q
+mn015|uhhuh.|S
+mn015|i i would like i would sort of get a get a notion of what what you guys have in store for me.|S
+fe004|okay i was actually going to work on it for tomorrow like this this weekend.|S
+fe004|yeah.|B
+me010|well you know maybe maybe we can put this is part of what we can do monday if we want.|S
+fe004|yeah|D
+fe004|okay.|S
+me045|all right.|S
+mn015|okay.|D
+fe004|i mean i i i|D
+me010|is some some version.|S
+fe004|yeah so there was like you know in my head the goal to have like an intermediate version like everything i know.|S
+me045|uhhuh.|B
+fe004|and then i would talk to you and figure out everything you know that you know see if they're consistent.|S
+me045|yeah.|B
+me045|okay.|B
+me045|why don't maybe you and i should meet sort of more or less first thing monday morning and then we can work on this.|S
+fe004|yes yeah.|S
+fe004|that's fine with me.|S
+me045|okay.|S
+fe004|so|F
+fe004|i might i might um|D
+fe004|you said you're busy over until the weekend right?|S
+me045|yeah sort of through the weekend.|S
+me045|because kate has a photography show.|S
+fe004|that's fine so we might continue our email thing.|S
+me045|yeah.|B
+fe004|and that might be fine too.|S
+fe004|so maybe i'll send you some.|S
+me045|um if you have time after this i'll show you the noun phrase thing.|S
+fe004|okay that would be cool.|S
+fe004|so|F
+fe004|okay and we'll you want to|D
+mn015|so the idea is on monday at two we'll we'll see an intermediate version of the formalism for the constructions.|S
+me045|yeah.|B
+fe004|so that's okay for you|D
+mn015|and do an online merging with my construal ideas.|S
+fe004|sure sure.|S
+me010|okay.|S
+me045|all right.|S
+mn015|so it won't be like a semi formal presentation of my proposal.|S
+fe004|that's okay.|S
+mn015|it'll be more like towards finalizing that proposal.|S
+mn015|okay that's fine.|S
+me045|okay.|S
+fe004|because then you'll find out more of what we're making you do.|S
+mn015|yep and then|D
+me045|yeah.|D
+me003|huh huh.|B
+mn015|yikes.|S
+me045|oy deadlines.|S
+fe004|we'll make a presentation of your of your proposal.|S
+mn015|perfect can you also write it up?|S
+fe004|it's like this is what we're doing.|S
+fe004|and the complement is robert.|S
+mn015|i'll i'll send you|D
+mn015|i'll i'll send you a style file right?|S
+fe004|okay.|S
+mn015|you just|D
+fe004|i already sent you my my bib file.|S
+fe004|so|F
+mn015|okay.|S
+mn015|and um|F
+mn015|sounds good.|D
+me045|someday we also have to we should probably talk about the other side of the where is x. construction.|S
+me045|which is the issue of um how do you simulate questions?|Q
+me045|what does the simspec look like for a question?|Q
+mn015|yeah.|S
+me010|uhhuh.|B
+me045|because it's a little different.|S
+fe004|yeah.|B
+me010|yeah now we|D
+me045|we had to we had an idea for this which seemed like it would probably work.|S
+me010|great okay.|S
+me010|yeah simspec may need we may need to rename that.|S
+fe004|i yeah i|D
+me045|yeah.|S
+me010|okay so let's think of a name for for whatever the this intermediate structure is.|S
+me010|oh we talked about semspec for semantic specification.|S
+me045|huh.|B
+me010|and that seems|D
+me010|um|F
+me045|it's more general.|S
+me010|you know so it's a minimal change.|S
+fe004|only have to change one vowel.|S
+fe004|that's great.|S
+me010|yeah just|D
+fe004|all the old like graphs.|S
+me010|right.|B
+fe004|just change the just like mark out the|D
+me045|cool.|S
+me010|right a little|D
+me010|you know that's what text substitution uh macros are for.|S
+me045|yeah it's good for you.|S
+fe004|yeah.|S
+me010|anyway uh so let's let's for the moment call it that until we think of something better.|S
+me045|okay.|S
+me010|and yeah we absolutely need to find|D
+me010|part of what was missing were markings of all sorts that weren't in there.|S
+me010|including the questions.|S
+me010|we didn't we never did figure out how we were going to do emphasis in in uh the semspec.|S
+me045|uhhuh.|B
+me045|yeah.|B
+fe004|yeah we've talked a little bit about that too.|S
+fe004|which|D
+fe004|uh uh it's hard for me to figure out with sort of our general linguistic issues how they map onto this particular one.|S
+fe004|but|F
+me045|yeah.|S
+fe004|okay yeah understood.|S
+me010|but that's part of the formalism.|S
+me010|is got to be uh how things like that get marked.|S
+me045|uhhuh.|B
+fe004|do you have data like the the you have preliminary data?|Q
+fe004|because i know you know we've been using this one easy sentence.|S
+fe004|and i'm sure you guys have uh maybe you are the one who've been looking at the rest of it.|S
+me045|um|D
+fe004|it'd it'd be useful for me if we want to have it a little bit more data oriented.|S
+me045|to tell you the truth what i've been looking at has not been the data so far.|S
+fe004|yeah.|B
+fe004|uhhuh uhhuh.|B
+me045|and i have not gotten them out of the way yet.|S
+fe004|uhhuh.|B
+me045|surprise.|S
+me045|so um|F
+fe004|yeah.|B
+me045|so i have not really approached a lot of the data.|S
+me045|but i mean obviously like these the the question one.|S
+me045|since we have this idea about the indefinite pronoun thing and all that you know i can try and um run with that.|S
+me045|you know try and do some of the sentence constructions now.|S
+mn015|okay do you want to run the indefinite pronoun idea past jerry?|Q
+me045|it would make sense.|S
+fe004|okay.|B
+me045|oh yeah the basic idea is that|D
+me045|um uh you know|D
+me045|uh let's see if i can formulate this.|S
+mn015|so mary fixed the car with a wrench.|S
+me045|yeah.|B
+mn015|so you perform the mental sum.|S
+mn015|and then you know who fixed the car with a wrench.|S
+mn015|you basically are told to to do this.|S
+mn015|in the in analogously to the way you would do someone fixed the car with a wrench.|S
+mn015|and then you hand it back to your hippocampus.|S
+mn015|and find out what that you know.|S
+me045|means.|S
+mn015|means.|S
+mn015|and then come up with that so who that someone was.|S
+me045|the w.h. question has this as sort of extra thing which says and when you're done tell me who fills that slot or you know.|S
+me010|uhhuh.|B
+me045|so um|F
+me045|and you know this is sort of a nice way to do it.|S
+me045|the idea of sort of saying that you treat from the simulation point of view or whatever you treat uh w.h. constructions similarly to uh indefinite pronouns.|S
+me045|like someone fixed the car.|S
+me045|because lots of languages um have w.h. questions with an indefinite pronoun in situ or whatever.|S
+fe004|use actually the same one.|S
+me045|and you just get intonation to tell you that it's a question.|S
+me010|all right which is|D
+me045|so it makes sense.|S
+me045|um|F
+me010|skolemization.|S
+me045|huh?|Q
+me010|in in logic it's it's it's huh.|S
+fe004|huh.|B
+fe004|right let's put a skolem skolem constant in.|S
+me045|yeah.|B
+me010|what?|Q
+fe004|yeah.|B
+me045|sure.|S
+fe004|yeah right.|S
+me045|okay.|S
+me010|that's not that's not saying it's bad.|S
+me010|it's just that|D
+me045|right right no of course.|S
+fe004|huh.|B
+me010|that that the logicians have have uh|D
+me045|that's right.|S
+mn015|come up with this.|S
+me045|it makes sense from that point of view too which is actually better.|S
+me045|so yeah um|F
+me045|anyway but just that kind of thing.|S
+me045|and we'll figure out exactly how to write that up and so on.|S
+me045|but|F
+me010|good.|S
+me045|uh no all the focus stuff.|S
+me045|we sort of just dropped that.|S
+me045|because it was too weird.|S
+me045|and we didn't even know like what we were talking about exactly.|S
+me045|what the object of study was.|S
+fe004|um huh.|B
+me045|so|F
+me010|yeah well if if i mean part of of what the exercise is by the end of next week is to say what are the things that we just don't have answers for yet.|S
+me045|yeah.|B
+me010|that's fine.|S
+me045|yep.|B
+me010|i mean|D
+fe004|uhhuh.|B
+mn015|well if you if you do want to discuss focus background and then get me into that.|S
+mn015|because i mean i i scientifically worked on that for for almost two years.|S
+me045|yeah.|B
+me045|okay then certainly we will.|S
+fe004|yeah you should definitely um be on on that|D
+me045|good.|S
+fe004|maybe maybe by after monday we'll you can see what things we are and aren't|D
+me045|yeah we should figure out what our questions are for example to ask you.|S
+fe004|yeah yeah.|S
+me045|so|F
+fe004|okay.|S
+me045|okay.|S
+me010|hans.|S
+me010|has i haven't seen hans boas.|S
+fe004|he's been around.|S
+me045|yeah.|S
+me010|okay so has he been been involved with this?|S
+fe004|just maybe not today.|S
+me010|or|D
+fe004|uh with us?|Q
+fe004|yeah.|S
+me045|yeah.|S
+me010|yeah.|B
+fe004|i would say that that those discussions have been primarily um keith and keith and me.|S
+fe004|but um|F
+fe004|like in the meeting i mean he sort of i like the last meeting we had i think we were all very much part of it.|S
+me045|yeah.|B
+fe004|but um|F
+me045|sometimes hans has been sort of coming in there as sort of like a devil's advocate type role or something.|S
+fe004|but different|D
+fe004|yeah.|S
+me045|like this make you know i'm going to pretend i'm a linguist who has nothing to do with this.|S
+me045|this makes no sense.|S
+me045|and he'll just go off on parts of it which definitely need fixing.|S
+fe004|right.|B
+me045|but aren't where we're at right now.|S
+fe004|like like what you call certain things.|S
+me045|so it's|D
+fe004|which we decided long ago we don't care that much right now.|S
+me045|yeah.|B
+me010|right.|B
+me010|okay.|S
+fe004|but in a sense it's good to know that he of all people|D
+fe004|you know like maybe a lot of people would have much stronger reactions.|S
+fe004|so you know he's like a relatively friendly linguist.|S
+me045|yeah.|B
+fe004|and yet a word like constraint causes a lot of problems.|S
+me045|yeah.|B
+fe004|and so right so|F
+me010|okay this is consistent with um the role i had suggested that he he play.|S
+fe004|uh.|S
+me045|uhhuh.|B
+me010|okay which was that one of the things i would like to see happen is a paper that was tentatively called towards a formal cognitive semantics.|S
+me010|which was addressed to these linguists uh who haven't been following this stuff at all.|S
+me045|yeah.|B
+me010|so it could be that he's actually at some level thinking about how am i going to communicate this story.|S
+me045|yeah.|B
+me045|yeah.|B
+me010|so internally we should just do whatever works.|S
+me045|yeah.|B
+me010|because it's hard enough.|S
+me045|yeah.|B
+me010|but if he if he turns is is really going to turn around and help to write this version that does connect with as many as possible of the other linguists in the world um then then it becomes important to use terminology that doesn't make it hard.|S
+fe004|uhhuh.|B
+me045|uhhuh.|B
+me045|yeah.|B
+me045|yeah.|B
+fe004|uhhuh sure.|B
+me010|i mean it's going to be plenty hard for for people to understand it as it is.|S
+me010|but you don't want to make it worse.|S
+me045|yeah.|B
+me045|yeah.|B
+me010|so|F
+me045|no right i mean that role is is uh indispensable.|S
+me045|but that's not where sort of our heads were at in these meetings.|S
+me010|right.|S
+me010|yeah yeah no that's fine.|S
+me045|it was a little strange.|S
+me010|i just wanted to|D
+me010|i have to catch up with him and i wanted to get a feeling for that okay.|S
+me045|yeah.|S
+fe004|uhhuh.|B
+me045|so i don't know what his take will be on these meetings exactly you know.|S
+me010|okay good.|S
+me045|because sometimes he sort of sounds like we're talking a bunch of goobledy-gook from his point of view.|S
+fe004|i think it's good when we're|D
+fe004|when we're into data and looking at the some specific linguistic phenomenon in in english or in german in particular whatever that's great.|S
+me010|yeah.|B
+me045|uhhuh.|B
+fe004|and ben and and hans are if if anything more you know they have more to say than let's say i would about some of these things.|S
+me010|right.|B
+fe004|but when it's like well how do we capture these things you know i think it's definitely been keith and i who have you know who have worried more about the|S
+me010|well that's good that's i think that should be the the core group.|S
+me045|uhhuh.|B
+fe004|which is fine.|S
+me045|yeah.|B
+fe004|uhhuh.|B
+me010|and um|F
+me010|that's you know i think very close to the maximum number of people working together that can get something done.|S
+me045|yeah.|B
+fe004|yes.|S
+fe004|yeah we actually have i think we have been making progress.|S
+fe004|and its sort of surprising.|S
+me045|yeah.|B
+me010|i i i i definitely get that impression yeah.|S
+fe004|you know like|D
+me010|that's great.|S
+me045|yep.|S
+fe004|yeah.|B
+fe004|so anyone else would like uh ruin the balance of|D
+fe004|anyway.|S
+me010|well but well but then then we have to come back to the bigger group.|S
+fe004|right.|S
+me045|yeah.|B
+me010|yeah great and then we're we're going to|D
+me010|because of this other big thing we haven't talked about is actually implementing this stuff.|S
+me010|so that i guess the three of us are going to connect tomorrow about that.|S
+fe004|yeah we could talk tomorrow.|S
+fe004|i was just going to say though that for instance there was you know out of a meeting with johno came the suggestion that oh could it be that the meaning constraints really aren't used for selection.|S
+fe004|which has sort of been implicit in the parsing strategy we talked about.|S
+me010|right.|B
+fe004|in which case we we can just say that they're the effects or the bindings.|S
+fe004|which uh so far in terms of like putting up all the constraints as you know pushing them into type constraints the when i've you know then proposed it to linguists who haven't yet given me you know we haven't yet thought of a reason that that wouldn't work.|S
+fe004|right as long as we allow our type constraints to be reasonably complex.|S
+me010|well it|D
+fe004|so anyway to be to talk about later.|S
+me010|yeah it has to in the sense that you're going to use them|D
+me010|it's you know it's sort of a um generate and test kind of thing.|S
+fe004|uhhuh uhhuh.|B
+me010|and if you over generate then you'll have to do more.|S
+me010|i mean if there are some constraints that you hold back and don't use uh in your initial matching then you'll match some things.|S
+fe004|uhhuh uhhuh.|B
+me010|i mean i i i don't think there's any way that it could completely fail.|S
+me010|it it could be that uh you wind up|D
+me010|i mean|D
+me010|the original bad idea of purely context free grammars died because there were just vastly too many parses.|S
+me010|you know exponentially many parses.|S
+me010|and so the concern might be that not that it would totally fail but that|D
+fe004|uhhuh.|B
+fe004|uhhuh.|B
+fe004|that it would still generate too many right?|S
+me010|it would still|D
+fe004|so by just having even bringing semantics in for matching just in the form of semantic types right?|S
+fe004|like conceptually these have to be construed as this this and this might still give us quite a few possibilities.|S
+me010|yeah.|B
+me010|we don't know.|S
+fe004|that you know and and it certainly helps a lot.|S
+me010|but yeah.|S
+fe004|i mean let's put it that way.|S
+me010|no question yeah.|S
+fe004|so|F
+me010|and i think it's a it's a perfectly fine place to start.|S
+me010|you know and say let's see how far we can go this way.|S
+fe004|uhhuh uhhuh.|B
+me010|and uh|F
+me003|well it definitely makes the problem easier.|S
+me010|i'm i'm in favor of that.|S
+me010|uh because i think i think it's as you know i think it's real hard and if if we|D
+me010|right.|S
+fe004|so friday?|Q
+fe004|monday?|Q
+me045|yeah.|S
+fe004|monday.|S
+me045|yeah.|S
+fe004|so okay that's tuesday.|S
+me010|yeah.|B
+me045|yeah.|S
+fe004|like that's the conclusion okay.|S
+mn015|so your dance card is completely filled now?|Q
+me003|uhhuh.|B
+me045|shoot.|S
+fe004|yeah and i have nothing to do this weekend but work.|S
+mn015|why don't|D
+fe004|no that's not really true|D
+fe004|but like|D
+me045|bummer.|S
+me003|what about what about d.d. r?|Q
+fe004|it's almost true.|S
+fe004|oh i don't have it this weekend.|S
+fe004|so tsk don't have to worry about that.|S
+me003|huh.|S
+me010|d.d.r. he asked?|Q
+fe004|speaking of dance.|S
+fe004|dance dance revolution.|S
+fe004|i can't believe i'm|D
+fe004|it's a it's like a game but it's for like dancing.|S
+fe004|hard to it's like karaoke but for dancing.|S
+fe004|and they tell you what|D
+fe004|it's amazing.|S
+fe004|it's so much fun.|S
+fe004|yeah it's so good.|S
+fe004|my friend has a home version and he brought it over.|S
+fe004|and we are so into it.|S
+fe004|it's so amazing.|S
+fe004|well you know of it?|Q
+fe004|it's one of your hobbies?|Q
+fe004|it's great exercise i must say.|S
+fe004|i can't wait to hear this.|S
+fe004|uhhuh.|B
+fe004|oh definitely they have like places instead of like yeah instead of karaoke bars now that have like d.d.r.|S
+fe004|like|D
+fe004|yeah yeah i didn't until i started hanging out with this friend who's like oh well i can bring over the d.d.r. if you want.|S
+fe004|oh oh dance dance revolution okay.|S
+fe004|he actually brought a clone called stepping selection.|S
+fe004|but it's just as good.|S
+fe004|so|F
