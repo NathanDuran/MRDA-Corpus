@@ -1,1338 +1,1338 @@
-fe016|okay.|fg
-fe016|so um|fh
-fe016|i was going to try to get out of here like in half an hour.|rt
-fe016|um|fh
-fe016|because i really appreciate people coming.|s
-fe016|and the main thing that i was going to ask people to help with today is to give input on what kinds of database format we should use in starting to link up things like word transcripts and annotations of word transcripts.|s
-fe016|so anything that transcribers or discourse coders or whatever put in the signal with time marks for like words and phone boundaries and all the stuff we get out of the forced alignments and the recognizer.|e
-fe016|so we have this um|fh
-fe016|i think a starting point is clearly the the channelized output of dave gelbart's program.|s
-fe016|which don brought a copy of.|e
-me011|yeah.|b
-me011|yeah i'm i'm familiar with that.|bk
-me011|i mean we i sort of already have developed an x.m.l. format for this sort of stuff.|s
-fe016|um|fh
-fe016|which|%--
-me018|can i see it?|rt
-me011|and so the only question is it the sort of thing that you want to use or not.|s
-me011|have you looked at that?|rt
-me011|i mean i had a web page up.|df
-fe016|right.|aa
-fe016|so|fh
-fe016|i actually mostly need to be able to link up or|s
-me011|so|fg
-fe016|it's it's a question both of what the representation is and|s
-me011|you mean this?|d
-me011|i guess i am going to be standing up and drawing on the board.|s
-fe016|okay.|bk
-fe016|yeah.|aa
-fe016|so you should definitely.|na
-me011|um so so it definitely had that as a concept.|s
-me011|so it has a single timeline.|s
-fe016|uhhuh.|bk
-me011|and then you can have lots of different sections.|s
-me011|each of which have i.d.'s attached to it.|s
-me011|and then you can refer from other sections to those i.d.'s.|s
-me011|if you want to.|e
-me011|so that|s
-me011|um|fh
-me011|so that you start with with a timeline tag.|df
-me011|timeline.|t1
-me011|and then you have a bunch of times.|s
-me011|i don't i don't remember exactly what my notation was.|no
-mn017|oh i remember seeing an example of this.|bk
-me011|but it|%--
-fe016|right.|bk
-fe016|right.|bk
-mn017|yeah.|bk
-me011|yeah.|bk
-me011|t. equals one point three two.|t1
-me011|uh|fh
-me011|and then i i also had optional things like accuracy.|s
-me011|and then i.d. equals t. one uh one seven.|t1
-me011|and then i also wanted to to be to be able to not specify specifically what the time was and just have a stamp.|s
-fe016|right.|bk
-me011|yeah so these are arbitrary assigned by a program.|s
-me011|not not by a user.|e
-me011|so you have a whole bunch of those.|s
-me011|and then somewhere further down you might have something like an utterance tag.|s
-me011|which has start equals t. seventeen.|e
-me011|end equals t. eighteen.|e
-me011|so what that's saying is we know it starts at this particular time.|s
-me011|we don't know when it ends.|s
-fe016|okay.|bk
-me011|right?|d
-me011|but it ends at this t. eighteen.|s
-me011|which may be somewhere else.|e
-me011|we say there's another utterance.|s
-me011|we don't know what the time actually is.|s
-me011|but we know that it's the same time as this end time.|s
-mn017|huh.|b
-me011|you know thirty eight.|e
-me011|whatever you want.|s
-mn017|so you're essentially defining a lattice.|bu
-me011|okay.|b
-me011|yes.|aa
-me011|exactly.|aa
-mn017|yeah.|b
-me011|and then uh and then these also have i.d.'s.|s
-me011|right?|d
-me011|so you could you could have some sort of other other tag later in the file that would be something like um oh i don't know uh noise type equals door slam.|cs
-me011|you know?|d
-me011|and then uh you could either say time equals a particular time mark or you could do other sorts of references.|cs
-me011|so or or you might have a prosody.|s
-me011|prosody.|s
-me011|right?|d
-me011|d. ?|bu
-me011|t. ?|bu
-fe016|it's an o. instead of an i. .|df
-fe016|but the d. is good.|aap
-me011|you like the d. ?|d
-fe016|yeah.|aa
-me011|that's a good d. .|ba
-me011|um|fg
-me011|you know so you could have some sort of type here.|s
-me011|and then you could have|s
-me011|um|fh
-me011|the utterance that it's referring to could be u. seventeen or something like that.|s
-fe016|okay.|bk
-fe016|so|fh
-fe016|i mean that seems that seems great for all of the encoding of things with time.|ba
-fe016|and|fh
-me011|oh well.|bk
-fe016|um|fh
-fe016|i i guess my question is more uh what what do you do with say a forced alignment?|qw
-fe016|i mean you've got all these phone labels.|df
-fe016|and what do you do if you just conceptually if you get um transcriptions where the words are staying but the time boundaries are changing because you've got a new recognition output?|qw
-fe016|or sort of what's the um sequence of going from the waveforms that stay the same the transcripts that may or may not change and then the utterance which where the time boundaries that may or may not change?|qw
-mn017|oh that's|bk
-mn017|that's actually very nicely handled here.|s
-fe016|um|fh
-mn017|because you could you could all you'd have to change is the um time stamps in the timeline without without uh changing the i.d.'s.|df
-fe016|and you'd be able to propagate all of the the information?|bu
-me011|right.|bk
-me011|that's the that's why you do that extra level of indirection.|s
-me011|so that you can just change the timeline.|df
-mn017|except the timeline is going to be huge.|s
-mn017|if you say|s
-me011|yes.|aa
-fe016|yeah.|aa
-fe016|yeah especially at the phone level.|na
-mn017|suppose you have a phone level alignment.|e
-fe016|the we we have phone level backtraces.|s
-mn017|you'd have you'd have|%--
-me011|yeah this|fg
-me011|i don't think i would do this for phone level.|ng
-fe016|um|fh
-me011|i think for phone level you want to use some sort of binary representation.|s
-me011|because it'll be too dense otherwise.|df
-fe016|okay.|fg
-fe016|so if you were doing that and you had this sort of companion uh thing that gets called up for phone level uh what would that look like?|fh
-fe016|how would you|qw
-me011|i would use just an existing an existing way of doing it.|s
-mn017|huh.|b
-mn017|but but why not use it for phone level?|qw
-mn017|it's just a matter of it's just a matter of it being bigger.|df
-mn017|but if you have|s
-mn017|you know barring memory limitations uh i mean this is still the|s
-me011|it's parsing limitations.|nd
-me011|i don't want to have this text file that you have to read in the whole thing to do something very simple for.|s
-mn017|oh no.|ar
-mn017|you would use it only for purposes where you actually want the phone level information i'd imagine.|nd
-fe016|so you could have some file that configures how much information you want in your in your x.m.l. or something.|s
-me011|right.|bk
-me011|i mean you'd|%--
-fe016|um|fh
-fe016|because it does get very with|df
-me011|i i am imagining you'd have multiple versions of this depending on the information that you want.|s
-mn017|you|%--
-fe016|right.|aa
-me011|um|fh
-me011|i'm just|s
-me011|what i'm wondering is whether|s
-me011|i think for word level this would be okay.|s
-fe016|yeah.|aa
-fe016|yeah.|aa
-me011|for word level it's all right.|s
-fe016|definitely.|na
-mn017|uhhuh.|b
-me011|for lower than word level you're talking about so much data that i just i don't know.|no
-me011|i don't know if that|s
-fe016|i mean we actually have|s
-fe016|so one thing that don is doing is we're we're running for every frame you get a pitch value.|s
-me018|lattices are big too.|s
-fe016|and not only one pitch value but different kinds of pitch values.|e
-fe016|depending on|e
-me011|yeah i mean for something like that i would use p. file.|fg
-me011|or or any frame level stuff i would use p. file.|s
-fe016|meaning?|d
-me011|uh that's a well or something like it.|s
-me011|it's uh icsi has a format for frame level representation of features.|s
-fe016|okay.|bk
-me011|um|fh
-fe016|that you could call that you would tie into this representation with like an i.d.|bu
-me011|right.|aa
-me011|right.|aa
-me011|or or there's a there's a particular way in x.m.l. to refer to external resources.|s
-fe016|and|fh
-fe016|okay.|bk
-me011|so you would say refer to this external file.|s
-me011|um|fh
-me011|so that external file wouldn't be in|s
-fe016|so that might that might work.|na
-me018|but what what's the advantage of doing that versus just putting it into this format?|rt
-me011|more compact.|s
-me011|which i think is is better.|ba
-me018|uhhuh.|b
-me011|i mean if you did it at this|s
-fe016|i mean these are long meetings.|s
-fe016|and with for every frame|s
-me011|you don't want to do it with that|s
-fe016|um|fh
-me011|anything at frame level you had better encode binary.|s
-me011|or it's going to be really painful.|df
-mn017|or you just|cs
-mn017|i mean i like text formats.|cs
-mn017|um|fh
-mn017|you can always uh g. zip them.|cs
-mn017|and um you know decompress them on the fly if if space is really a concern.|fh
-me018|yeah i was|fg
-me018|i was thinking the advantage is that we can share this with other people.|s
-me011|well but if you're talking about one per frame you're talking about gigabyte-size files.|nd
-me011|you're going to actually run out of space in your filesystem for one file.|df
-fe016|these are big files.|na
-fe016|these are really|s
-fe016|i mean|fh
-me011|right?|d
-me011|because you have a two-gigabyte limit on most o.s.'s.|df
-mn017|right.|bk
-mn017|okay.|bk
-mn017|i would say|s
-mn017|okay so frame level is probably not a good idea.|bk
-fe016|and it's|%--
-mn017|but for phone level stuff it's perfectly|s
-mn017|like phones or syllables or anything like that.|s
-fe016|phones are every five frames though.|ng
-fe016|so|fh
-fe016|or something like that.|e
-mn017|but but but most of the frames are actually not speech.|df
-mn017|so|fh
-mn017|you know people don't|s
-fe016|yeah.|bk
-mn017|look at it words times the average the average number of phones in an english word is i don't know five maybe?|bu
-fe016|but we actually|ng
-mn017|so look at it number of words times five.|df
-fe016|oh so you mean pause phones take up a lot of the|bu
-mn017|that's not that not|%--
-fe016|long pause phones.|bsc
-me011|yep.|aa
-mn017|exactly.|aa
-fe016|yeah.|bk
-fe016|okay.|bk
-mn017|yeah.|aa
-fe016|that's true.|aa
-fe016|but you do have to keep them in there.|s
-fe016|yeah.|fh
-me011|so i think it it's debatable whether you want to do phone level in the same thing.|s
-fe016|okay.|bk
-me011|but i think anything at frame level even p. file is too verbose.|ba
-fe016|okay.|bk
-fe016|so|fg
-me011|i would use something tighter than p. files.|cs
-fe016|do you are you familiar with it?|rt
-me011|so|fh
-fe016|i haven't seen this particular format.|df
-mn017|i mean i've i've used them.|na
-fe016|but|fh
-mn017|i don't know what their structure is.|no
-fe016|okay.|bk
-mn017|i've forgot what the|no
-me018|but wait a minute.|co
-me018|p. file for each frame is storing a vector of cepstral or p.l.p. values.|bu
-me018|right?|d
-me011|it's whatever you want actually.|ng
-me018|right.|bk
-me011|so that what's nice about the p. file it|s
-me011|built into it is the concept of frames utterances sentences that sort of thing that structure.|s
-me011|and then also attached to it is an arbitrary vector of values.|s
-fe016|oh.|bk
-me011|and it can take different types.|s
-me011|so it they don't all have to be floats.|s
-me011|you know you can have integers and you can have doubles and all that sort of stuff.|e
-fe016|so that that sounds that sounds about what i|s
-me011|um|fh
-me011|right?|d
-me011|and it has a header it has a header format that describes it to some extent.|s
-me011|so|fh
-me011|the only problem with it is it's actually storing the utterance numbers and the frame numbers in the file.|s
-me011|even though they're always sequential.|e
-me011|and so it does waste a lot of space.|s
-mn017|huh.|b
-me011|but it's still a lot tighter than than ascii.|s
-me011|and we have a lot of tools already to deal with it.|s
-fe016|you do?|d
-fe016|okay.|bk
-fe016|is there some documentation on this somewhere?|rt
-me011|yeah.|aa
-me011|there's a ton of it.|na
-fe016|okay.|bk
-fe016|great.|ba
-me011|man pages and uh source code and me.|df
-fe016|so|fh
-fe016|i mean that sounds good.|ba
-fe016|i i was just looking for something|s
-fe016|i'm not a database person.|df
-fe016|but something sort of standard enough that you know if we start using this we can give it out.|s
-fe016|other people can work on it.|s
-me011|yeah it's not standard.|bk
-fe016|or is it|qy
-me011|i mean it's something that we developed at icsi.|df
-me011|but uh|fh
-fe016|but it's been used here.|s
-me011|but it's been used here.|m
-fe016|and people've|s
-me011|and and you know we have a well configured system that you can distribute for free.|s
-me011|and|%--
-me018|i mean it must be the equivalent of whatever you guys used to store your computed features in right?|bu
-fe016|okay.|b
-mn017|yeah.|aa
-mn017|we have|s
-mn017|actually we we use a generalization of the the sphere format.|rt
-me018|huh.|bk
-mn017|um|fh
-mn017|but|fh
-mn017|yeah so there is something like that.|na
-mn017|but it's um probably not as|s
-me018|and i think there's|s
-me011|well what does h.t.k. do for features?|qw
-me011|or does it even have a concept of features?|qy
-mn017|they it has its own|s
-mn017|i mean entropic has their own feature format that's called like s. s.d. or some s.f. or something like that.|s
-fe016|yeah.|bk
-me018|yeah.|bk
-me011|i'm just wondering would it be worth while to use that instead?|cs
-mn017|huh?|%
-fe016|yeah.|bk
-fe016|this is exactly the kind of decision it's just whatever|s
-me018|but i mean people don't typically share this kind of stuff right?|bu
-mn017|right.|b
-me018|i mean|fh
-me011|they generate their own.|na
-fe016|actually i i just you know we we've done this stuff on prosodics.|fg
-me018|yeah.|bk
-fe016|and three or four places have asked for those prosodic files.|s
-fe016|and we just have an ascii uh output of frame by frame.|s
-me011|uh right.|bk
-fe016|which is fine.|df
-fe016|but it gets unwieldy to go in and and query these files with really huge files.|s
-me011|right.|bk
-fe016|i mean we could do it.|s
-fe016|i was just thinking if there's something that where all the frame values are|s
-me011|and and again if you have a|s
-fe016|huh?|rt
-me011|if you have a two hour long meeting that's going to|s
-fe016|they're they're they're quite large.|s
-fe016|and these are for ten minute switchboard conversations.|s
-me011|yeah i mean they'd be enormous.|na
-me011|right.|aa
-fe016|and|fh
-fe016|so it's doable.|s
-fe016|it's just that you can only store a feature vector at frame by frame.|df
-fe016|and it doesn't have any kind of|s
-fe016|um|fh
-me018|is is the sharing part of this a pretty important consideration?|rt
-me018|or does that just sort of uh a nice thing to have?|qrr
-fe016|i i don't know enough about what we're going to do with the data.|no
-fe016|but i thought it would be good to get something that we can that other people can use or adopt for their own kinds of encoding.|s
-fe016|and just i mean we have to use we have to make some decision about what to do.|df
-me011|yeah.|b
-fe016|and especially for the prosody work what what it ends up being is you get features from the signal.|s
-fe016|and of course those change every time your alignments change.|s
-fe016|so you rerun a recognizer.|s
-fe016|you want to recompute your features um and then keep the database up to date.|s
-me011|right.|b
-fe016|or you change a word or you change a utterance boundary segment which is going to happen a lot.|s
-fe016|and so i wanted something where all of this can be done in a elegant way.|s
-fe016|and that if somebody wants to try something or compute something else that it can be done flexibly.|s
-fe016|um|fh
-fe016|it doesn't have to be pretty.|s
-fe016|it just has to be you know easy to use and|s
-me011|yeah the other thing|s
-me011|we should look at atlas.|cs
-me011|the nist thing.|e
-fe016|oh.|b
-mn017|huh.|b
-me011|and see if they have anything at that level.|cs
-fe016|uh|fh
-me011|i mean i'm not sure what to do about this with atlas.|no
-me011|because they chose a different route.|df
-me011|i chose something that|s
-me011|there are sort of two choices.|s
-me011|your your file format can know about know that you're talking about language and speech which is what i chose and time.|e
-me011|or your file format can just be a graph representation.|e
-me011|and then the application has to impose the structure on top.|s
-me011|so what it looked like atlas chose is they chose the other way.|s
-me011|which was their file format is just nodes and links.|e
-me011|and you have to interpret what they mean yourself.|e
-fe016|and why did you not choose that type of approach?|rt
-me011|uh because i knew that we were doing speech.|s
-me011|and i thought it was better if you're looking at a raw file to be for the tags to say it's an utterance as opposed to the tag to say it's a link.|s
-fe016|okay.|bk
-fe016|okay.|bk
-fe016|but other than that are they compatible?|rt
-me011|so but|fh
-fe016|i mean you could sort of|s
-me011|yeah.|aa
-me011|they're reasonably compatible.|na
-fe016|i mean you you could|s
-me018|you could probably translate between them.|s
-fe016|yeah that's|bk
-me011|yep.|aa
-fe016|so|fh
-me011|so|fg
-me011|well the other thing is if we choose to use atlas which maybe we should just do we should just throw this out before we invest a lot of time in it.|s
-fe016|okay.|b
-fe016|i don't|%--
-fe016|so this is what the meeting's about.|s
-fe016|just sort of how to|df
-me011|yeah.|aa
-fe016|um because we need to come up with a database like this just to do our work.|df
-fe016|and i actually don't care as long as it's something useful to other people what we choose.|s
-me011|yeah.|b
-fe016|so maybe it's maybe you know|s
-fe016|if if you have any idea of how to choose because i don't.|no
-me011|the only thing|s
-me011|yeah.|bk
-mn017|do they already have tools?|rt
-me011|i mean i i chose this for a couple reasons.|s
-me011|one of them is that it's easy to parse.|df
-me011|you don't need a full x.m.l. parser.|df
-me011|it's very easy to just write a perl script to parse it.|df
-mn017|as long as uh each tag is on one line.|s
-me011|exactly.|aa
-me011|exactly.|aa
-me011|which i always do.|s
-fe016|and you can have as much information in the tag as you want.|s
-fe016|right?|d
-me011|well i have it structured.|s
-me011|right?|d
-me011|so each type tag has only particular items that it can take.|s
-fe016|can you but you can add to those structures if you|bu
-me011|sure.|aa
-me011|if you have more information.|2
-me011|so what what nist would say is that instead of doing this you would say something like link start equals um you know some node i.d.|s
-fe016|yeah.|aa
-fe016|so|fh
-me011|end equals some other node i.d.|s
-me011|and then type would be utterance.|s
-mn017|huh.|b
-me011|you know so it's very similar.|s
-fe016|so why would it be a a waste to do it this way if it's similar enough that we can always translate it?|qw
-me018|it probably wouldn't be a waste.|ng
-me018|it would mean that at some point if we wanted to switch we'd just have to translate everything.|df
-me011|write a translator.|2
-me011|but it|fg
-fe016|but it but that sounds|s
-me011|since they are developing a big|s
-me018|but that's|s
-me018|i don't think that's a big deal.|ba
-fe016|as long as it is|s
-me011|they're developing a big infrastructure.|s
-me011|and so it seems to me that if if we want to use that we might as well go directly to what they're doing rather than|cs
-mn017|if we want to|s
-mn017|do they already have something that's that would be useful for us in place?|rt
-me018|yeah.|bk
-me018|see that's the question.|s
-me018|i mean how stable is their|qw
-me018|are they ready to go?|rt
-me011|the i looked at it|s
-me018|or|qrr
-me011|the last time i looked at it was a while ago.|no
-me011|probably a year ago.|e
-me018|huh.|bk
-me011|uh when we first started talking about this.|e
-me011|and at that time at least it was still not very complete.|nd
-me011|and so specifically they didn't have any external format representation at that time.|e
-me011|they just had the sort of conceptual node uh annotated transcription graph.|e
-me011|which i really liked.|e
-me011|and that's exactly what this stuff is based on.|s
-me011|since then they've developed their own external file format.|s
-me011|which is uh you know this sort of this sort of thing.|e
-me011|um and apparently they've also developed a lot of tools.|fh
-me011|but i haven't looked at them.|s
-me011|maybe i should.|cs
-mn017|we should we should find out.|cs
-fe016|i mean would the tools would the tools run on something like this if you can translate them anyway?|qy
-me011|um what would would would what would worry me is that maybe we might miss a little detail.|h
-fe016|i mean that i guess it's a question that|s
-mn017|it's a hassle.|ng
-fe016|uh yeah.|fh
-mn017|if|%
-me011|that would make it very difficult to translate from one to the other.|df
-fe016|okay.|bk
-mn017|i i think if it's conceptually close and they already have or will have tools that everybody else will be using i mean it would be crazy to do something you know separate that|s
-fe016|okay.|bk
-me011|yeah we might as well.|aa
-me011|yep.|bk
-fe016|yeah.|b
-me011|so i'll i'll take a closer look at it.|cc
-fe016|actually|fg
-fe016|so it's|fg
-fe016|that that would really be the question is just what you would feel is in the long run the best thing.|s
-me011|and|fh
-me011|right.|bk
-fe016|because once we start sort of doing this i don't we don't actually have enough time to probably have to rehash it out again.|df
-me011|the|%--
-me011|yep.|b
-fe016|and|fh
-me011|the other thing the other way that i sort of established this was as easy translation to and from the transcriber format.|s
-fe016|right.|bk
-me011|um|fh
-fe016|right.|bk
-me011|but|fh
-fe016|i mean i like this.|s
-fe016|this is sort of intuitively easy to actually read.|s
-me011|yep.|bk
-fe016|as easy it could as it could be.|e
-fe016|but|fh
-fe016|i suppose that as long as they have a type here that specifies utt|s
-fe016|um|fh
-me011|it's almost the same.|s
-fe016|it's yeah close enough that|s
-me011|the the the the point is with this though is that you can't really add any supplementary information.|s
-me011|right?|d
-me011|so if you suddenly decide that you want|s
-fe016|you have to make a different type.|cs
-me011|yeah.|aa
-me011|you'd have to make a different type.|m
-fe016|so|fg
-fe016|well if you look at it|s
-fe016|and um|fh
-fe016|i guess in my mind i don't know enough jane would know better about the types of annotations.|s
-fe016|and and but i imagine that those are things that would well you guys mentioned this that could span any|s
-fe016|it could be in its own channel.|s
-fe016|it could span time boundaries of any type.|s
-me011|right.|b
-fe016|it could be instantaneous.|s
-fe016|things like that.|s
-fe016|um|fh
-fe016|and then from the recognition side we have backtraces at the phone level.|s
-fe016|if if it can handle that it could handle states or whatever.|s
-me011|right.|b
-fe016|and then at the prosody-level we have frame sort of like cepstral feature files.|s
-me011|yep.|b
-fe016|uh like these p. files or anything like that.|e
-fe016|and that's sort of the world of things that i|s
-fe016|and then we have the aligned channels of course.|s
-me011|right.|b
-fe016|and|fh
-mn017|it seems to me you want to keep the frame level stuff separate.|bs
-fe016|yeah.|aa
-fe016|i i definitely agree.|na
-mn017|and then|%--
-fe016|and i wanted to find actually a a nicer format or a maybe a more compact format than what we used before.|s
-me011|right.|b
-fe016|just because you've got ten channels or whatever and two hours of a meeting.|df
-fe016|it's it's a lot of|s
-mn017|now now how would you how would you represent um multiple speakers in this framework?|qw
-me011|huge.|na
-mn017|were you would just represent them as|s
-me011|um|h
-mn017|you would have like a speaker tag or something?|d
-me011|there's a speaker tag up at the top which identifies them.|s
-me011|and then each|s
-me011|the way i had it is each turn or each utterance i don't even remember now had a speaker i.d. tag attached to it.|s
-mn017|uhhuh.|b
-mn017|okay.|bk
-me011|and in this format you would have a different tag.|s
-me011|which which would uh be linked to the link.|s
-fe016|yeah.|bk
-me011|so so somewhere else you would have another thing that would be|s
-me011|um|fh
-me011|let's see would it be a node or a link?|t1
-me011|um|fh
-me011|and so so this one would have um an i.d. is link link seventy four or something like that.|s
-me011|and then somewhere up here you would have a link that that uh you know was referencing l. seventy four and had speaker adam.|s
-mn017|uhhuh.|b
-fe016|actually it's the channel i think that|ng
-mn017|is?|%
-me011|you know.|fh
-me011|or something like that.|s
-fe016|i mean|%--
-mn017|well channel or speaker or whatever.|s
-fe016|yeah channel is what the channelized output|s
-mn017|it doesn't|s
-me011|this isn't quite right.|s
-me011|i have to look at it again.|s
-mn017|right.|b
-fe016|yeah but|bk
-mn017|but but so how in the nist format do we express a hierarchical relationship between um say an utterance and the words within it?|fg
-mn017|so how do you tell that these are the words that belong to that utterance?|qw
-me011|um you would have another structure lower down than this that would be saying they're all belonging to this i.d.|h
-mn017|uhhuh.|bk
-me018|so each thing refers to the utterance that it belongs to.|bu
-me011|right.|aa
-me018|so it's it's not it's sort of bottom up.|bu
-me011|and then each utterance could refer to a turn.|s
-me011|and each turn could refer to something higher up.|s
-fe016|and what if you actually have|qw
-fe016|so right now what you have as utterance um the closest thing that comes out of the channelized is the stuff between the segment boundaries that the transcribers put in or that thilo put in.|s
-fe016|which may or may not actually be like a it's usually not um the beginning and end of a sentence say.|e
-me011|well that's why i didn't call it sentence.|df
-fe016|so|fh
-fe016|right.|bk
-fe016|um so it's like a segment or something.|s
-me011|yeah.|aa
-fe016|so|fh
-fe016|i mean i assume this is possible that if you have someone annotates the punctuation or whatever when they transcribe you can say you know from for from the beginning of the sentence to the end of the sentence from the annotations this is a unit.|s
-fe016|even though it never actually|e
-fe016|it's only a unit by virtue of the annotations at the word level.|e
-me011|sure.|aa
-me011|i mean so you would you would have yet another tag.|s
-fe016|and then that would get a tag somehow.|s
-me011|you'd have another tag which says this is of type sentence.|s
-fe016|okay.|bk
-fe016|okay.|bk
-me011|and|fh
-fe016|but it's just not overtly in the|s
-me011|what|%--
-mn017|okay.|b
-fe016|um because this is exactly the kind of|fh
-mn017|so|fg
-fe016|i think that should be possible as long as the|s
-fe016|but uh what i don't understand is where the where in this type of file that would be expressed.|no
-me011|right.|bk
-me011|you would have another tag somewhere.|s
-me011|it's well there're two ways of doing it.|s
-fe016|so it would just be floating before the sentence or floating after the sentence without a time mark.|s
-me011|you could have some sort of link type.|df
-me011|type equals sentence.|df
-me011|and i.d. is s. whatever.|df
-me011|and then lower down you could have an utterance.|df
-me011|so the type is utterance equals utt.|df
-me011|and you could either say that|s
-me011|no.|ar
-me011|i don't know.|no
-me011|i take that back.|s
-mn017|so here's the thing.|s
-mn017|um|fh
-fe016|see because it's|s
-me011|can you can you say that this is part of this?|rt
-mn017|hhh.|%
-fe016|it's|%
-me018|you would just have a|s
-me011|or do you say this is part of this?|qrr
-me011|i think|s
-fe016|but they're|s
-me018|you would refer up to the sentence.|s
-mn017|well the thing|s
-fe016|they're actually overlapping each other sort of.|nd
-me011|so|fg
-mn017|the thing is that something may be a part of one thing for one purpose and another thing of another purpose.|ng
-me011|right.|b
-fe016|you have to have another type then i guess.|s
-mn017|so|%--
-mn017|um|fg
-mn017|well.|fg
-me011|well i think i'm i think i had better look at it again.|cs
-mn017|let's let's so let's|s
-fe016|yeah.|b
-fe016|okay.|bk
-mn017|so|fg
-me011|because i i'm|df
-fe016|okay.|b
-mn017|so for instance|s
-me011|there's one level there's one more level of indirection that i'm forgetting.|s
-mn017|suppose you have a word sequence.|s
-mn017|and you have two different segmentations of that same word sequence.|s
-mn017|say one segmentation is in terms of um you know uh sentences.|s
-mn017|and another segmentation is in terms of um i don't know prosodic phrases.|s
-mn017|and let's say that they don't nest.|s
-mn017|so you know a prosodic phrase may cross two sentences or something.|fh
-me011|right.|b
-mn017|i don't know if that's true or not.|no
-mn017|but let's|fh
-fe016|well it's definitely true with the segment.|s
-mn017|right.|bk
-fe016|that's what i exactly what i meant by the utterances versus the sentence could be sort of|df
-mn017|yeah.|b
-mn017|so you want to be you want to say this this word is part of that sentence and this prosodic phrase.|s
-fe016|yeah.|fh
-fe016|yeah.|b
-mn017|but the phrase is not part of the sentence.|s
-mn017|and neither is the sentence part of the phrase.|s
-fe016|right.|aa
-me011|i'm pretty sure that you can do that.|na
-me011|but i'm forgetting the exact level of nesting.|no
-mn017|so you would have to have two different pointers from the word up one level up.|fg
-mn017|one to the|s
-me011|so so what you would end up having is a tag saying here's a word.|s
-me011|and it starts here and it ends here.|s
-mn017|right.|bk
-me011|and then lower down you would say here's a prosodic boundary.|s
-me011|and it has these words in it.|s
-me011|and lower down you'd have here's a sentence.|s
-fe016|right.|b
-mn017|right.|b
-me011|and it has these words in it.|s
-fe016|so you would be able to go in and say you know give me all the words in the in the prosodic phrase.|s
-fe016|and give me all the words in the|s
-me011|yep.|aa
-fe016|yeah.|bk
-me011|so i think that's that would|s
-fe016|um okay.|bk
-me011|let me look at it again.|co
-mn017|uhhuh.|b
-fe016|okay.|bk
-mn017|the the the other issue that you had was how do you actually efficiently extract um find and extract information in a structure of this type.|tc
-me011|so|fh
-fe016|that's good.|ba
-mn017|so you gave some examples like|fh
-fe016|well.|h
-fe016|uh and i mean you guys might|s
-fe016|i don't know if this is premature.|no
-fe016|because i suppose once you get the representation you can do this.|df
-fe016|but the kinds of things i was worried about is|s
-mn017|no that's not clear.|ar
-fe016|uh|fh
-mn017|i mean yeah you sure you can do it.|df
-fe016|well okay.|bk
-fe016|so if it|s
-mn017|but can you do it sort of you know it|df
-fe016|i mean i can't do it.|j
-fe016|but i can|s
-fe016|um|fh
-mn017|you got to you got to do this you you're going to want to do this very quickly.|s
-me011|well|fg
-mn017|or else you'll spend all your time sort of searching through very complex data structures.|s
-fe016|right.|bk
-fe016|you'd need a sort of a paradigm for how to do it.|s
-fe016|but an example would be find all the cases in which adam started to talk while andreas was talking and his pitch was rising.|s
-fe016|andreas's pitch.|e
-fe016|that kind of thing.|s
-me011|right.|bk
-me011|i mean that's going to be|s
-me011|is the rising pitch a feature?|rt
-me011|or is it going to be in the same file?|qrr
-fe016|well the rising pitch will never be hand annotated.|h
-fe016|so the all the prosodic features are going to be automatically|df
-me011|but the|fg
-me011|i mean that's going to be hard regardless.|s
-fe016|so they're going to be in those|df
-me011|right?|d
-me011|because you're going to have to write a program that goes through your feature file and looks for rising pitches.|df
-mn017|yeah.|b
-fe016|so|fg
-fe016|right.|aa
-fe016|so normally what we would do is we would say what do we want to assign rising pitch to.|s
-fe016|are we going to assign it to words.|s
-fe016|are we going to just assign it to sort of|s
-fe016|when it's rising we have a begin end rise representation.|s
-fe016|but suppose we dump out this file.|s
-fe016|and we say uh for every word we just classify it as you know rise or fall or neither.|s
-me011|okay.|bk
-me011|well in that case you would add that to this format.|s
-fe016|okay.|bk
-fe016|so we would basically be sort of um taking the format and enriching it with things that we want to query in relation to the words that are already in the file.|s
-me011|right.|bk
-fe016|and then querying it.|s
-fe016|okay.|fh
-mn017|you want sort of a grep that's that works at the structural on the structural representation.|cs
-me011|you have that.|ng
-me011|there's a standard again in x.m.l. specifically for searching x.m.l. documents structured x. x.m.l. documents where you can specify both the content and the structural position.|s
-mn017|yeah but it's it's not clear that that's|bk
-fe016|if|%--
-mn017|that's relative to the structure of the x.m.l. document.|df
-mn017|not to the structure of what you're representing in the document.|df
-me011|you use it as a tool.|df
-me011|you use it as a tool.|df
-me011|not an end user.|df
-me011|it's not an end user thing.|df
-mn017|right.|bk
-me011|it's it's you would use that to build your tool to do that sort of search.|df
-mn017|right.|b
-mn017|because here you're specifying a lattice.|s
-fe016|uh|%
-mn017|so the underlying that's the underlying data structure.|s
-fe016|but as long as the|s
-mn017|and you want to be able to search in that lattice.|s
-me011|it's a graph.|ng
-me011|but|fh
-mn017|that's different from searching through the text.|s
-fe016|but it seems like as long as the features that|s
-me011|well.|fg
-me011|no no no.|ar
-me011|the whole point is that the text and the lattice are isomorphic.|df
-me011|they represent each other completely.|s
-mn017|um|fg
-me011|so that|s
-me011|i mean|%--
-fe016|that's true if the features from your acoustics or whatever that are not explicitly in this are at the level of these types.|aap
-mn017|hhh.|%
-fe016|that that if you can do that|s
-me011|yeah but that's going to be the trouble no matter what.|bk
-me011|right?|d
-me011|no matter what format you choose you're going to have the you're going to have the difficulty of relating the the frame level features.|df
-fe016|that's right.|aa
-fe016|that's true.|aa
-fe016|that's why i was trying to figure out what's the best format for this representation.|df
-me011|yep.|b
-fe016|and it's still going to be|s
-fe016|it's still going to be uh not direct.|s
-mn017|huh.|b
-fe016|you know it|s
-me011|right.|bk
-fe016|or another example was you know uh where in the language where in the word sequence are people interrupting.|s
-fe016|so|fh
-fe016|i guess that one's actually easier.|ba
-me018|what about|qw
-me018|what about um the idea of using a relational database to uh store the information from the x.m. l?|r
-me018|so you would have|df
-me018|x.m.l. basically would|df
-me018|uh|fh
-me018|you you could use the x.m.l. to put the data in.|df
-me018|and then when you get data out you put it back in x.m.l.|df
-me018|so use x.m.l. as sort of the the transfer format.|df
-me011|transfer.|2
-me018|uh but then you store the data in the database.|df
-me018|which allows you to do all kinds of good search things in there.|e
-me011|the uh|fg
-me011|one of the things that atlas is doing is they're trying to define an a.p.i. which is independent of the back store.|s
-fe016|huh?|bh
-me011|so that uh you could define a single a.p.i. and the the storage could be flat x.m.l. files or a database.|df
-me018|uhhuh.|b
-me011|my opinion on that is for the sort of stuff that we're doing i suspect it's overkill to do a full relational database that um just a flat file and uh search tools i bet will be enough.|ba
-mn017|but|%
-me011|but that's the advantage of atlas is that if we actually take decide to go that route completely and we program to their a.p.i. then if we wanted to add a database later it would be pretty easy.|s
-me018|uhhuh.|b
-me018|uhhuh.|b
-fe016|it seems like the kind of thing you'd do if i don't know if people start adding all kinds of bells and whistles to the data.|ng
-fe016|and so that might be|s
-fe016|i mean it'd be good for us to know to use a format where we know we can easily um input that to some database if other people are using it.|bd
-me011|yep.|b
-fe016|something like that.|s
-me011|i guess i'm just a little hesitant to try to go whole hog on sort of the the whole framework that that nist is talking about with atlas and a database and all that sort of stuff.|bd
-fe016|so|fh
-me011|because it's a big learning curve just to get going.|df
-me018|huh.|b
-mn017|huh.|b
-me011|whereas if we just do a flat file format sure it may not be as efficient.|cs
-me011|but everyone can program in perl and and use it.|df
-fe016|okay.|bk
-me011|right?|d
-me011|so as opposed to|s
-mn017|but this is|s
-mn017|i i'm still um not convinced that you can do much at all on the text on the flat file that that you know the text representation.|nd
-mn017|because the text representation is going to be uh not reflecting the structure of of your words and annotations.|df
-mn017|it's just it's|df
-me011|well if it's not representing it then how do you recover it?|df
-me011|of course it's representing it.|nd
-mn017|no.|ar
-mn017|you you have to|s
-me011|that's the whole point.|df
-mn017|what you have to do is you have to basically|s
-mn017|yeah you can use perl to read it in and construct a internal representation that is essentially a lattice.|df
-mn017|but the|s
-me018|yeah.|b
-me011|okay.|bk
-mn017|and then|s
-me011|well that was a different point.|ng
-me011|right?|d
-me011|so what i was saying is that|df
-mn017|right.|b
-mn017|but that's what you'll have to do.|ng
-me011|for perl if you want to just do perl.|df
-me011|if you wanted to use the structured x.m.l. query language that's a different thing.|nd
-me011|and it's a set of tools that let you specify given the d. d.d.t.d.t.d. of the document um what sorts of structural searches you want to do.|df
-me011|so you want to say that you know you're looking for um a tag within a tag within a particular tag that has this particular text in it um and uh refers to a particular value.|e
-me011|and so the point isn't that an end user who is looking for a query like you specified wouldn't program it in this language.|e
-me011|what you would do is someone would build a tool that used that as a library.|e
-me011|so that they so that you wouldn't have to construct the internal representations yourself.|df
-fe016|is a|%--
-fe016|see i think the kinds of questions at least in the next to the end of this year are there may be a lot of different ones.|s
-fe016|but they'll all have a similar nature.|s
-fe016|they'll be looking at either a word level prosodic uh an a value.|s
-fe016|like a continuous value.|e
-me011|uhhuh.|b
-fe016|like the slope of something.|e
-fe016|but|fh
-fe016|you know we'll do something where we some kind of data reduction where the prosodic features are sort uh either at the word level or at the segment level.|s
-me011|right.|bk
-fe016|or or something like that.|e
-fe016|they're not going to be at the phone level and they're not going to be at the frame level when we get done with sort of giving them simpler shapes and things.|s
-fe016|and so the main thing is just being able|fh
-fe016|well i guess the two goals.|s
-fe016|um one that chuck mentioned is starting out with something that we don't have to start over that we don't have to throw away if other people want to extend it for other kinds of questions.|df
-me011|right.|b
-fe016|and being able to at least get enough uh information out on where we condition the location of features on information that's in the kind of file that you put up there.|df
-fe016|and that would that would do it.|s
-fe016|i mean for me.|df
-me011|yeah.|bk
-me011|i think that there are quick and dirty solutions.|s
-me011|and then there are long-term big infrastructure solutions.|s
-me011|and so we want to try to pick something that lets us do a little bit of both.|cs
-fe016|in the between.|2
-fe016|right.|aa
-fe016|and especially that the representation doesn't have to be thrown away.|df
-me011|um|fh
-me011|right.|b
-fe016|even if your tools change.|e
-me011|and so it seems to me that|s
-me011|i mean i have to look at it again to see whether it can really do what we want.|s
-me011|but if we use the atlas external file representation um it seems like it's rich enough that you could do quick tools just as i said in perl.|s
-fe016|yeah.|b
-me011|and then later on if we choose to go up the learning curve we can use the whole atlas infrastructure.|s
-fe016|i mean that sounds good to me.|na
-me011|which has all that built in.|e
-fe016|i i don't|%--
-fe016|so|fg
-fe016|if if you would look at that and let us know what you think|cs
-me011|sure.|aa
-fe016|i mean i think we're sort of guinea pigs.|ba
-fe016|because i i want to get the prosody work done.|df
-fe016|but i don't want to waste time you know getting the|df
-mn017|oh maybe|%--
-fe016|yeah?|rt
-mn017|um|h
-me011|well i wouldn't wait for the formats because anything you pick we'll be able to translate to another form.|cs
-mn017|well|fg
-fe016|okay.|bk
-mn017|well maybe you should actually look at it yourself too to get a sense of what it is you'll you'll be dealing with.|cs
-mn017|because um you know adam might have one opinion but you might have another.|df
-me001|yeah.|b
-mn017|so|fh
-fe016|yeah definitely.|aa
-mn017|i think the more eyes look at this the better.|cs
-fe016|especially if there's um you know if someone can help with at least the the setup of the right|na
-fe016|oh hi.|s
-me011|hi jane.|s
-mn017|huh.|b
-fe016|the right representation.|r
-fe016|then you know i hope it won't|s
-fe016|we don't actually need the whole full-blown thing to be ready.|s
-me011|can you|t3
-me011|oh well.|ba
-fe016|so|fh
-fe016|um|fh
-fe016|so maybe if you guys can look at it and sort of see what|co
-me011|sure.|aa
-me001|yeah.|aa
-fe016|um|fh
-fe016|i think we're we're we're actually just|tc
-me011|we're about done.|s
-fe016|yeah.|aa
-fe016|wrapping up.|na
-me001|huh.|b
-fe016|but|fh
-fe016|um|fh
-fe016|yeah.|bk
-fe016|sorry it's a uh short meeting.|fa
-fe016|but um|fh
-fe016|well i don't know.|no
-fe016|is there anything else?|rt
-fe016|like|%--
-fe016|i mean that helps me a lot.|s
-me011|well i think the other thing we might want to look at is alternatives to p. file.|h
-fe016|but|fh
-me011|i mean the reason i like p. file is i'm already familiar with it.|df
-me011|we have expertise here.|df
-me011|and so if we pick something else there's the learning curve problem.|s
-me011|but i mean it is just something we developed at icsi.|df
-me011|and so|fh
-mn017|is there an is there an i.a.p. i?|rt
-me011|yeah.|aa
-mn017|okay.|bk
-me011|there's an a.p.i. for it.|na
-me011|and uh|fh
-mn017|there used to be a problem that they get too large.|rt
-me011|a bunch of libraries p. file utilities.|na
-mn017|and so basically the uh the filesystem wouldn't|s
-me011|well that's going to be a problem no matter what.|ng
-me011|you have the two-gigabyte limit on the filesystem size.|df
-me011|and we definitely hit that with broadcast news.|e
-mn017|maybe you could extend the a.p.i. to uh support uh like splitting up you know conceptually one file into smaller files on disk.|cs
-mn017|so that you can essentially you know have arbitrarily long|df
-me011|yep.|bk
-me011|most of the tools can handle that.|ng
-me011|so that|s
-mn017|yeah.|b
-me011|we didn't do it at the a.p.i. level.|s
-me011|we did it at the tool level.|s
-me011|that that most many of them can you can specify several p. files.|s
-me011|and they'll just be done sequentially.|s
-mn017|okay.|bk
-me011|so|fh
-fe016|so i guess|s
-fe016|yeah.|bk
-fe016|if if you and don can if you can show him the p. file stuff and see.|co
-me011|sure.|aa
-fe016|so this would be like for the f. zero.|df
-me011|i mean if you do man p. file or apropos p. file you'll see a lot.|s
-me001|true.|b
-me001|i've used the p. file i think.|ng
-me001|i've looked at it at least briefly i think when we were doing something.|bd
-mn017|what does the p. stand for anyway?|qw
-me011|i have no idea.|no
-me001|oh in there.|t1
-me011|i didn't i didn't develop it.|df
-me011|you know it was i think it was dave johnson.|df
-me011|so it's all part of the quicknet library.|df
-me011|it has all the utilities for it.|e
-mn017|no p. files were around way before quicknet.|ar
-me011|oh were they?|bh
-mn017|p. files were were around when with um rap.|df
-me018|uhhuh.|aa
-mn017|right?|d
-fe016|it's like the history of icsi.|j
-mn017|you worked with p. files.|bu
-fe016|like|%
-me011|uhhuh.|b
-me018|no.|ar
-mn017|i worked with p. files.|s
-fe016|yeah?|bh
-me018|i don't remember what the p. is though.|no
-mn017|no.|ar
-me011|but there are they're|s
-me011|the quicknet library has a bunch of things in it to handle p. files.|s
-mn017|yeah.|b
-me011|so it works pretty well.|s
-fe016|and that isn't really i guess as important as the the main i don't know what you call it the the main sort of word level.|s
-me011|neither do i.|t3
-me018|probably stands for phil.|s
-me018|phil kohn.|e
-me011|it's a phil file?|d
-me018|yeah.|bk
-me018|that's my guess.|na
-fe016|huh.|b
-fe016|okay.|fg
-fe016|well that's really useful.|ba
-fe016|i mean this is exactly the kind of thing that i wanted to settle.|s
-fe016|um|fh
-fe016|so|fh
-me011|yeah i've been meaning to look at the atlas stuff again anyway.|s
-fe016|great.|ba
-me011|so just keep|s
-fe016|yeah.|b
-fe016|i guess it's also sort of a political|s
-fe016|i mean if if you feel like that's a community that would be good to tie into anyway then it's sounds like it's worth doing.|na
-me011|yeah i think it it|bk
-mn017|i think there's|s
-me011|and uh as i said i what i did with this stuff i based it on theirs.|s
-me011|it's just they hadn't actually come up with an external format yet.|df
-me011|so now that they have come up with a format it doesn't it seems pretty reasonable to use it.|df
-mn017|huh.|b
-me011|but let me look at it again.|cc
-fe016|okay.|bk
-fe016|great.|ba
-me011|as i said that|s
-fe016|because we actually can start|s
-me011|there's one level there's one more level of indirection.|s
-me011|and i'm just blanking on exactly how it works.|s
-me011|i got to look at it again.|cc
-fe016|i mean we can start with um i guess this input from dave's.|cs
-fe016|which you had printed out the channelized input.|e
-fe016|because he has all of the channels.|df
-fe016|you know with the channels in the tag and stuff like that.|e
-me011|yeah i've seen it.|bk
-fe016|so that would be directly|s
-me011|yep.|bk
-fe016|um|fh
-me011|easy easy to map.|2
-fe016|yeah.|aa
-fe016|and so then it would just be a matter of getting making sure to handle the annotations that are you know not at the word level and um to import|s
-me001|where are those annotations coming from?|rt
-fe016|well right now i jane would would|no
-me011|uhhuh.|b
-fe016|yeah.|b
-fe008|are you talking about the overlap annotations?|bu
-fe016|yeah.|aa
-fe016|any kind of annotation that like isn't already there.|df
-fe016|uh you know anything you can envision.|df
-fe008|yeah.|bk
-fe008|so what i was imagining was um so dave says we can have unlimited numbers of green ribbons.|s
-fe008|and so put uh a a green ribbon on for an overlap code.|s
-fe008|and since we we|s
-fe008|i i think it's important to remain flexible regarding the time bins for now.|cs
-fe008|and so it's nice to have|s
-fe008|however you know you want to have it uh uh located in the discourse.|cs
-fe008|so|fh
-fe008|um|fh
-fe008|if we if we tie the overlap code to the first word in the overlap then you'll have a time marking.|s
-fe008|it won't it'll be independent of the time bins.|s
-fe008|however these evolve shrink or whatever.|e
-fe008|increase.|e
-fe008|or|fh
-fe008|also you could have different time bins for different purposes.|cs
-fe008|and having it tied to the first word in an overlap segment is unique uh you know anchored clear.|s
-fe008|and it would just end up on a separate ribbon.|s
-fe008|so the overlap coding is going to be easy with respect to that.|s
-me011|right.|b
-fe008|you look puzzled.|s
-me018|i i just i don't quite understand what these things are.|no
-fe008|okay.|bk
-fe008|what the codes themselves?|bu
-me018|uh|fh
-me018|well overlap codes.|s
-fe008|or the|qrr
-me018|i'm not sure what that|no
-me011|well i mean is that|qy
-fe008|well we don't have to go into the codes.|s
-me018|it probably doesn't matter.|s
-fe008|we don't have to go into the codes.|r
-me018|no i|%--
-me011|i mean it doesn't|s
-me011|i mean that not for the topic of this meeting.|s
-fe008|but let me just|co
-fe008|no.|ar
-fe008|the idea is just to have a separate green ribbon.|bs
-fe008|you know.|fh
-fe008|and and and let's say that this is a time bin.|s
-fe008|there's a word here.|s
-fe008|this is the first word of an overlapping segment of any length.|s
-fe008|overlapping with any other uh word uh segment of any length.|s
-fe008|and um|fh
-fe008|then you can indicate that this here was perhaps a a backchannel.|s
-fe008|or you can say that it was um a usurping of the turn.|s
-fe008|or you can you know any any number of categories.|s
-fe008|but the fact is you have it time tagged in a way that's independent of the uh particular time bin that the word ends up in.|s
-fe008|if it's a large unit or a small unit or|e
-mn017|uhhuh.|b
-fe008|we change the boundaries of the units.|s
-fe016|right.|b
-fe008|it's still unique and and uh fits with the format.|s
-fe008|flexible all that.|e
-mn017|um|fg
-mn017|it would be nice|s
-mn017|um|fh
-mn017|uh this is sort of regarding uh uh it's related but not directly germane to the topic of discussion.|df
-mn017|but when it comes to annotations um you often find yourself in the situation where you have different annotations of the same say word sequence.|s
-fe008|yeah.|b
-mn017|okay?|d
-fe008|yeah.|b
-mn017|and sometimes the word sequences even differ slightly because they were edited at one place but not the other.|s
-mn017|so once this data gets out there some people might start annotating this for i don't know dialogue acts or um you know topics or what the heck.|s
-mn017|you know.|fh
-mn017|there's a zillion things that people might annotate this for.|s
-mn017|and the only thing that is really sort of common among all the the various versions of this data is the word sequence.|s
-fe008|yep.|b
-mn017|or approximately|s
-fe016|or the time.|s
-mn017|or the times.|m
-mn017|but see if you'd annotate dialogue acts you don't necessarily want to or topics you don't really want to be dealing with time marks.|ng
-fe016|i guess.|fh
-mn017|you'd it's much more efficient for them to just see the word sequence right?|df
-fe016|uhhuh.|b
-mn017|i mean most people aren't as sophisticated as as we are here with you know uh time alignments and stuff.|bd
-mn017|so|fg
-mn017|so the the the point is|s
-me011|should should we mention some names on the people who are|cs
-mn017|right.|b
-mn017|so|fh
-mn017|um|fh
-mn017|the my point is that you're going to end up with uh word sequences that are differently annotated.|s
-mn017|and you want some tool uh that is able to sort of merge these different annotations back into a single uh version.|s
-mn017|okay?|d
-mn017|um and we had this problem very massively uh at s.r.i. when we worked uh a while back on uh well on dialogue acts as well as uh you know|fh
-mn017|um what was it?|fh
-mn017|uh|fh
-fe016|well all the switchboard in it.|s
-mn017|utterance types.|s
-fe016|yeah.|b
-mn017|there's uh automatic uh punctuation and stuff like that.|s
-mn017|because we had one set of annotations that were based on uh one version of the transcripts with a particular segmentation.|df
-mn017|and then we had another version that was based on uh a different slightly edited version of the transcripts with a different segmentation.|df
-mn017|so we had these two different versions which were you know you could tell they were from the same source but they weren't identical.|s
-mn017|so it was extremely hard to reliably merge these two back together to correlate the information from the different annotations.|s
-me011|yep.|bk
-me011|i i don't see any way that file formats are going to help us with that.|s
-mn017|no.|aa
-me011|it's it's all a question of semantic.|df
-mn017|no.|aa
-mn017|but once you have a file format i can imagine writing not personally but someone writing a tool that is essentially an alignment tool um that mediates between various versions.|s
-fe016|uhhuh.|b
-me011|yeah.|b
-mn017|and uh sort of like uh you know you have this thing in unix where you have uh diff.|e
-me011|diff.|2
-fe016|w. diff or diff.|2
-mn017|there's the uh diff that actually tries to reconcile different two diffs based on the same original.|df
-fe016|yeah.|b
-fe008|is it s. diff?|qy
-me011|yep.|b
-fe008|huh.|b
-mn017|something like that.|s
-mn017|um but operating on these lattices that are really what's behind this uh this annotation format.|fh
-me011|yep.|bk
-mn017|so|fh
-fe016|you could definitely do that with the|cs
-me011|there's actually a diff library you can use to do things like that that so you have different formats.|s
-mn017|so somewhere in the a.p.i. you would like to have like a merge or some some function that merges two two versions.|s
-me011|yeah i think it's going to be very hard.|bk
-me011|any sort of structured anything when you try to merge is really really hard.|df
-mn017|right.|b
-me011|because you|df
-me011|the hard part isn't the file format.|df
-me011|the hard part is specifying what you mean by merge.|df
-mn017|is|2
-mn017|exactly.|aa
-fe016|but the one thing that would work here actually for that is more reliable than the utterances is the the speaker ons and offs.|cs
-me011|and that's very difficult.|ba
-fe016|so if you have a good|s
-fe016|um|fh
-me011|but this is exactly what i mean is that that the problem|na
-fe016|yeah.|b
-fe016|you just have to know what to tie it to.|s
-me011|yeah.|aa
-me011|exactly.|aa
-me011|the problem is saying what are the semantics.|s
-fe016|and|%--
-me011|what do you mean by merge.|s
-fe016|right right.|aa
-mn017|right.|b
-me011|so|fh
-mn017|so so just to let you know what we where we kluged it by uh doing uh by doing hhh|fg
-mn017|both were based on words.|s
-mn017|so we have two versions of the same words you know sprinkled with with different tags for annotations.|s
-me011|and then you did diff.|s
-mn017|and we did diff.|s
-me011|yeah.|bk
-mn017|exactly.|aa
-me011|that's just what i thought.|s
-mn017|and that's how|s
-me011|that's just how i would have done it.|s
-mn017|yeah.|bk
-mn017|but you know it had lots of errors.|s
-mn017|and things would end up in the wrong order and so forth.|s
-mn017|uh|fh
-mn017|so|fh
-me011|yep.|b
-mn017|um if you had a more|fh
-mn017|uh|fh
-mn017|it it was a kluge.|s
-mn017|because it was basically reducing everything to uh to uh uh to textual alignment.|df
-me011|a textual.|2
-mn017|um|fh
-mn017|so|fh
-fe016|but|fg
-fe016|isn't that something where whoever if if the people who are making changes say in the transcripts because this all happened when the transcripts were different um if they tie it to something like if they tied it to the acoustic segment if they|qy
-fe016|you know what i mean?|d
-fe016|then or if they tied it to an acoustic segment and we had the time marks that would help.|s
-fe016|but the problem is exactly as adam said that you get you know you don't have that information or it's lost in the merge somehow.|s
-me011|yep.|b
-fe016|so|fh
-fe008|well can i ask one question?|rt
-fe008|it it seems to me that um we will have an official version of the corpus which will be only one one version in terms of the words where the words are concerned.|s
-fe008|we'd still have the the merging issue maybe if coding were done independently of the|s
-mn017|and you're going to get that.|s
-fe008|but but|fh
-mn017|because if the data gets out people will do all kinds of things to it.|df
-mn017|and uh you know several years from now you might want to look into um the prosody of referring expressions.|e
-mn017|and someone at the university of who knows where has annotated the referring expressions.|e
-me011|right.|b
-mn017|so you want to get that annotation and bring it back in line with your data.|s
-me011|but unfortunately they've also hand edited it.|s
-mn017|okay?|d
-fe008|okay then|%
-fe016|but they've also|s
-fe016|exactly.|aa
-fe016|and so that's exactly what we should somehow when you distribute the data say that you know that have some way of knowing how to merge it back in and asking people to try to do that.|s
-mn017|yeah.|aa
-me011|yep.|b
-mn017|right.|b
-fe008|well then the|%--
-me018|what's what's wrong with doing times?|rt
-fe008|i agree.|aa
-me018|i|%--
-fe008|that was what i was wondering.|s
-fe016|uh yeah time is the|h
-fe008|time is unique.|s
-me011|well|fg
-fe008|you were saying that you didn't think we should|s
-fe016|time is passing!|fe
-mn017|time time times are ephemeral.|j
-fe008|andreas was saying|s
-fe008|yeah.|fh
-me011|what if they haven't notated with them times?|qw
-fe016|yeah.|b
-fe016|he he's a language modeling person though.|s
-mn017|um|fh
-me011|so so imagine|fg
-me011|i think his his example is a good one.|ba
-me011|imagine that this person who developed the corpus of the referring expressions didn't include time.|s
-mn017|uhhuh.|b
-mn017|yeah.|aa
-me011|he included references to words.|s
-fe008|ach!|%
-fe008|well then|%--
-me011|he said that at this word is when when it happened.|s
-mn017|yeah.|aa
-mn017|or she.|ng
-fe008|but then couldn't you just indirectly figure out the time tied to the word?|qy
-me011|or she.|m
-fe016|but still they|s
-fe016|exactly.|aa
-me011|sure.|aa
-fe016|yeah.|aa
-me011|but what if what if they change the words?|ng
-fe008|not|%--
-fe008|well.|fh
-fe008|but you'd have some anchoring point.|s
-fe008|he couldn't have changed all the words.|ng
-me018|but can they change the words without changing the time of the word?|rt
-me011|sure.|aa
-me011|but they could have changed it a little.|arp
-me011|the the point is that that they may have annotated it off a word transcript that isn't the same as our word transcript.|s
-me011|so how do you merge it back in?|qw
-me011|i understand what you're saying.|s
-mn017|huh.|b
-mn017|uhhuh.|b
-me011|and i i guess the answer is um it's going to be different every time.|s
-me011|it's it's just going to be|s
-fe016|yeah.|b
-fe008|yeah.|b
-fe016|you only know the boundaries of the|s
-me011|it's exactly what i said before.|s
-me011|which is that what do you mean by merge.|s
-me011|so in this case where you have the words and you don't have the times well what do you mean by merge?|qw
-fe016|right.|b
-me011|if you tell me what you mean i can write a program to do it.|s
-fe016|right.|bk
-fe016|you can merge at the level of the representation that the other person preserved and that's it.|s
-me011|right.|aa
-me011|and that's about all you can do.|s
-fe016|and beyond that all you know is is relative ordering.|s
-fe016|and sometimes even that is wrong.|s
-me011|so so in so in this one you would have to do a best match between the word sequences.|fg
-fe016|so|fh
-mn017|uhhuh.|b
-me011|extract the times from the best match of theirs to yours.|s
-me011|and use that.|s
-fe016|and then infer that their time marks are somewhere in between.|s
-me011|right.|aa
-fe016|yeah exactly.|aa
-fe008|but it could be that they just uh i mean it could be that they chunked they they lost certain utterances and all that stuff.|s
-me011|right.|aa
-me011|exactly.|aa
-me011|so it could get very very ugly.|s
-fe008|or|%--
-fe016|definitely.|aa
-fe016|definitely.|aa
-fe008|yeah.|b
-fe016|all right.|fg
-fe016|well i guess i i didn't want to keep people too long.|tc
-fe008|that's interesting.|ba
-fe016|and adam wanted people|s
-fe016|i'll read the digits.|cc
-fe016|if anyone else offers to that'd be great.|s
-fe016|and|fh
-mn017|uh well.|t1
-fe016|if not i guess|s
-me011|yeah.|b
-me011|more digits the better.|s
-mn017|for for the for the benefit of science we'll read the digits.|j
-me011|okay.|fg
-fe016|thanks thanks a lot.|ft
-me011|this is|s
-fe016|it's really helpful.|s
-fe016|i mean adam and don will sort of meet.|s
-fe016|and i think that's great.|ba
-fe016|very useful.|ba
+fe016|okay.|F|fg|fg
+fe016|so um|F|fh|fh
+fe016|i was going to try to get out of here like in half an hour.|S|s|rt
+fe016|um|F|fh|fh
+fe016|because i really appreciate people coming.|S|s|s
+fe016|and the main thing that i was going to ask people to help with today is to give input on what kinds of database format we should use in starting to link up things like word transcripts and annotations of word transcripts.|S|s|s
+fe016|so anything that transcribers or discourse coders or whatever put in the signal with time marks for like words and phone boundaries and all the stuff we get out of the forced alignments and the recognizer.|S|s|e
+fe016|so we have this um|D|fh|fh
+fe016|i think a starting point is clearly the the channelized output of dave gelbart's program.|S|s|s
+fe016|which don brought a copy of.|S|s|e
+me011|yeah.|B|b|b
+me011|yeah i'm i'm familiar with that.|S|s|bk
+me011|i mean we i sort of already have developed an x.m.l. format for this sort of stuff.|S|s|s
+fe016|um|F|fh|fh
+fe016|which|D|%|%
+me018|can i see it?|Q|qy|rt
+me011|and so the only question is it the sort of thing that you want to use or not.|S|s|s
+me011|have you looked at that?|Q|qy|rt
+me011|i mean i had a web page up.|S|s|df
+fe016|right.|S|s|aa
+fe016|so|F|fh|fh
+fe016|i actually mostly need to be able to link up or|D|s|s
+me011|so|F|fg|fg
+fe016|it's it's a question both of what the representation is and|D|s|s
+me011|you mean this?|Q|qy|d
+me011|i guess i am going to be standing up and drawing on the board.|S|s|s
+fe016|okay.|S|s|bk
+fe016|yeah.|S|s|aa
+fe016|so you should definitely.|S|s|na
+me011|um so so it definitely had that as a concept.|S|s|s
+me011|so it has a single timeline.|S|s|s
+fe016|uhhuh.|S|s|bk
+me011|and then you can have lots of different sections.|S|s|s
+me011|each of which have i.d.'s attached to it.|S|s|s
+me011|and then you can refer from other sections to those i.d.'s.|S|s|s
+me011|if you want to.|S|s|e
+me011|so that|D|s|s
+me011|um|F|fh|fh
+me011|so that you start with with a timeline tag.|S|s|df
+me011|timeline.|S|s|t1
+me011|and then you have a bunch of times.|S|s|s
+me011|i don't i don't remember exactly what my notation was.|S|s|no
+mn017|oh i remember seeing an example of this.|S|s|bk
+me011|but it|D|%|%
+fe016|right.|S|s|bk
+fe016|right.|S|s|bk
+mn017|yeah.|S|s|bk
+me011|yeah.|S|s|bk
+me011|t. equals one point three two.|S|s|t1
+me011|uh|F|fh|fh
+me011|and then i i also had optional things like accuracy.|S|s|s
+me011|and then i.d. equals t. one uh one seven.|S|s|t1
+me011|and then i also wanted to to be to be able to not specify specifically what the time was and just have a stamp.|S|s|s
+fe016|right.|S|s|bk
+me011|yeah so these are arbitrary assigned by a program.|S|s|s
+me011|not not by a user.|S|s|e
+me011|so you have a whole bunch of those.|S|s|s
+me011|and then somewhere further down you might have something like an utterance tag.|S|s|s
+me011|which has start equals t. seventeen.|S|s|e
+me011|end equals t. eighteen.|S|s|e
+me011|so what that's saying is we know it starts at this particular time.|S|s|s
+me011|we don't know when it ends.|S|s|s
+fe016|okay.|S|s|bk
+me011|right?|Q|qy|d
+me011|but it ends at this t. eighteen.|S|s|s
+me011|which may be somewhere else.|S|s|e
+me011|we say there's another utterance.|S|s|s
+me011|we don't know what the time actually is.|S|s|s
+me011|but we know that it's the same time as this end time.|S|s|s
+mn017|huh.|B|b|b
+me011|you know thirty eight.|S|s|e
+me011|whatever you want.|S|s|s
+mn017|so you're essentially defining a lattice.|S|s|bu
+me011|okay.|B|b|b
+me011|yes.|S|s|aa
+me011|exactly.|S|s|aa
+mn017|yeah.|B|b|b
+me011|and then uh and then these also have i.d.'s.|S|s|s
+me011|right?|Q|qy|d
+me011|so you could you could have some sort of other other tag later in the file that would be something like um oh i don't know uh noise type equals door slam.|S|s|cs
+me011|you know?|Q|qy|d
+me011|and then uh you could either say time equals a particular time mark or you could do other sorts of references.|S|s|cs
+me011|so or or you might have a prosody.|S|s|s
+me011|prosody.|S|s|s
+me011|right?|Q|qy|d
+me011|d. ?|Q|qy|bu
+me011|t. ?|Q|qy|bu
+fe016|it's an o. instead of an i. .|S|s|df
+fe016|but the d. is good.|S|s|aap
+me011|you like the d. ?|Q|qy|d
+fe016|yeah.|S|s|aa
+me011|that's a good d. .|S|s|ba
+me011|um|F|fg|fg
+me011|you know so you could have some sort of type here.|S|s|s
+me011|and then you could have|D|s|s
+me011|um|F|fh|fh
+me011|the utterance that it's referring to could be u. seventeen or something like that.|S|s|s
+fe016|okay.|S|s|bk
+fe016|so|F|fh|fh
+fe016|i mean that seems that seems great for all of the encoding of things with time.|S|s|ba
+fe016|and|F|fh|fh
+me011|oh well.|S|s|bk
+fe016|um|F|fh|fh
+fe016|i i guess my question is more uh what what do you do with say a forced alignment?|Q|qw|qw
+fe016|i mean you've got all these phone labels.|S|s|df
+fe016|and what do you do if you just conceptually if you get um transcriptions where the words are staying but the time boundaries are changing because you've got a new recognition output?|Q|qw|qw
+fe016|or sort of what's the um sequence of going from the waveforms that stay the same the transcripts that may or may not change and then the utterance which where the time boundaries that may or may not change?|Q|qw|qw
+mn017|oh that's|D|s|bk
+mn017|that's actually very nicely handled here.|S|s|s
+fe016|um|F|fh|fh
+mn017|because you could you could all you'd have to change is the um time stamps in the timeline without without uh changing the i.d.'s.|S|s|df
+fe016|and you'd be able to propagate all of the the information?|Q|qy|bu
+me011|right.|S|s|bk
+me011|that's the that's why you do that extra level of indirection.|S|s|s
+me011|so that you can just change the timeline.|S|s|df
+mn017|except the timeline is going to be huge.|S|s|s
+mn017|if you say|D|s|s
+me011|yes.|S|s|aa
+fe016|yeah.|S|s|aa
+fe016|yeah especially at the phone level.|S|s|na
+mn017|suppose you have a phone level alignment.|S|s|e
+fe016|the we we have phone level backtraces.|S|s|s
+mn017|you'd have you'd have|D|%|%
+me011|yeah this|D|fg|fg
+me011|i don't think i would do this for phone level.|S|s|ng
+fe016|um|F|fh|fh
+me011|i think for phone level you want to use some sort of binary representation.|S|s|s
+me011|because it'll be too dense otherwise.|S|s|df
+fe016|okay.|F|fg|fg
+fe016|so if you were doing that and you had this sort of companion uh thing that gets called up for phone level uh what would that look like?|Q|fh|fh
+fe016|how would you|D|qw|qw
+me011|i would use just an existing an existing way of doing it.|S|s|s
+mn017|huh.|B|b|b
+mn017|but but why not use it for phone level?|Q|qw|qw
+mn017|it's just a matter of it's just a matter of it being bigger.|S|s|df
+mn017|but if you have|D|s|s
+mn017|you know barring memory limitations uh i mean this is still the|D|s|s
+me011|it's parsing limitations.|S|s|nd
+me011|i don't want to have this text file that you have to read in the whole thing to do something very simple for.|S|s|s
+mn017|oh no.|S|s|ar
+mn017|you would use it only for purposes where you actually want the phone level information i'd imagine.|S|s|nd
+fe016|so you could have some file that configures how much information you want in your in your x.m.l. or something.|S|s|s
+me011|right.|S|s|bk
+me011|i mean you'd|D|%|%
+fe016|um|F|fh|fh
+fe016|because it does get very with|D|s|df
+me011|i i am imagining you'd have multiple versions of this depending on the information that you want.|S|s|s
+mn017|you|D|%|%
+fe016|right.|S|s|aa
+me011|um|F|fh|fh
+me011|i'm just|D|s|s
+me011|what i'm wondering is whether|D|s|s
+me011|i think for word level this would be okay.|S|s|s
+fe016|yeah.|S|s|aa
+fe016|yeah.|S|s|aa
+me011|for word level it's all right.|S|s|s
+fe016|definitely.|S|s|na
+mn017|uhhuh.|B|b|b
+me011|for lower than word level you're talking about so much data that i just i don't know.|S|s|no
+me011|i don't know if that|D|s|s
+fe016|i mean we actually have|D|s|s
+fe016|so one thing that don is doing is we're we're running for every frame you get a pitch value.|S|s|s
+me018|lattices are big too.|S|s|s
+fe016|and not only one pitch value but different kinds of pitch values.|S|s|e
+fe016|depending on|D|s|e
+me011|yeah i mean for something like that i would use p. file.|S|fg|fg
+me011|or or any frame level stuff i would use p. file.|S|s|s
+fe016|meaning?|Q|qw|d
+me011|uh that's a well or something like it.|S|s|s
+me011|it's uh icsi has a format for frame level representation of features.|S|s|s
+fe016|okay.|S|s|bk
+me011|um|F|fh|fh
+fe016|that you could call that you would tie into this representation with like an i.d.|S|s|bu
+me011|right.|S|s|aa
+me011|right.|S|s|aa
+me011|or or there's a there's a particular way in x.m.l. to refer to external resources.|S|s|s
+fe016|and|F|fh|fh
+fe016|okay.|S|s|bk
+me011|so you would say refer to this external file.|S|s|s
+me011|um|F|fh|fh
+me011|so that external file wouldn't be in|D|s|s
+fe016|so that might that might work.|S|s|na
+me018|but what what's the advantage of doing that versus just putting it into this format?|Q|qw|rt
+me011|more compact.|S|s|s
+me011|which i think is is better.|S|s|ba
+me018|uhhuh.|B|b|b
+me011|i mean if you did it at this|D|s|s
+fe016|i mean these are long meetings.|S|s|s
+fe016|and with for every frame|D|s|s
+me011|you don't want to do it with that|D|s|s
+fe016|um|F|fh|fh
+me011|anything at frame level you had better encode binary.|S|s|s
+me011|or it's going to be really painful.|S|s|df
+mn017|or you just|D|s|cs
+mn017|i mean i like text formats.|S|s|cs
+mn017|um|F|fh|fh
+mn017|you can always uh g. zip them.|S|s|cs
+mn017|and um you know decompress them on the fly if if space is really a concern.|S|fh|fh
+me018|yeah i was|D|fg|fg
+me018|i was thinking the advantage is that we can share this with other people.|S|s|s
+me011|well but if you're talking about one per frame you're talking about gigabyte-size files.|S|s|nd
+me011|you're going to actually run out of space in your filesystem for one file.|S|s|df
+fe016|these are big files.|S|s|na
+fe016|these are really|D|s|s
+fe016|i mean|F|fh|fh
+me011|right?|Q|qy|d
+me011|because you have a two-gigabyte limit on most o.s.'s.|S|s|df
+mn017|right.|S|s|bk
+mn017|okay.|S|s|bk
+mn017|i would say|D|s|s
+mn017|okay so frame level is probably not a good idea.|S|s|bk
+fe016|and it's|D|%|%
+mn017|but for phone level stuff it's perfectly|D|s|s
+mn017|like phones or syllables or anything like that.|S|s|s
+fe016|phones are every five frames though.|S|s|ng
+fe016|so|F|fh|fh
+fe016|or something like that.|S|s|e
+mn017|but but but most of the frames are actually not speech.|S|s|df
+mn017|so|F|fh|fh
+mn017|you know people don't|D|s|s
+fe016|yeah.|S|s|bk
+mn017|look at it words times the average the average number of phones in an english word is i don't know five maybe?|Q|qy|bu
+fe016|but we actually|D|s|ng
+mn017|so look at it number of words times five.|S|s|df
+fe016|oh so you mean pause phones take up a lot of the|D|s|bu
+mn017|that's not that not|D|%|%
+fe016|long pause phones.|S|s|bsc
+me011|yep.|S|s|aa
+mn017|exactly.|S|s|aa
+fe016|yeah.|S|s|bk
+fe016|okay.|S|s|bk
+mn017|yeah.|S|s|aa
+fe016|that's true.|S|s|aa
+fe016|but you do have to keep them in there.|S|s|s
+fe016|yeah.|F|fh|fh
+me011|so i think it it's debatable whether you want to do phone level in the same thing.|S|s|s
+fe016|okay.|S|s|bk
+me011|but i think anything at frame level even p. file is too verbose.|S|s|ba
+fe016|okay.|S|s|bk
+fe016|so|F|fg|fg
+me011|i would use something tighter than p. files.|S|s|cs
+fe016|do you are you familiar with it?|Q|qy|rt
+me011|so|F|fh|fh
+fe016|i haven't seen this particular format.|S|s|df
+mn017|i mean i've i've used them.|S|s|na
+fe016|but|F|fh|fh
+mn017|i don't know what their structure is.|S|s|no
+fe016|okay.|S|s|bk
+mn017|i've forgot what the|D|s|no
+me018|but wait a minute.|S|s|co
+me018|p. file for each frame is storing a vector of cepstral or p.l.p. values.|S|s|bu
+me018|right?|Q|qy|d
+me011|it's whatever you want actually.|S|s|ng
+me018|right.|S|s|bk
+me011|so that what's nice about the p. file it|D|s|s
+me011|built into it is the concept of frames utterances sentences that sort of thing that structure.|S|s|s
+me011|and then also attached to it is an arbitrary vector of values.|S|s|s
+fe016|oh.|S|s|bk
+me011|and it can take different types.|S|s|s
+me011|so it they don't all have to be floats.|S|s|s
+me011|you know you can have integers and you can have doubles and all that sort of stuff.|S|s|e
+fe016|so that that sounds that sounds about what i|D|s|s
+me011|um|F|fh|fh
+me011|right?|Q|qy|d
+me011|and it has a header it has a header format that describes it to some extent.|S|s|s
+me011|so|F|fh|fh
+me011|the only problem with it is it's actually storing the utterance numbers and the frame numbers in the file.|S|s|s
+me011|even though they're always sequential.|S|s|e
+me011|and so it does waste a lot of space.|S|s|s
+mn017|huh.|B|b|b
+me011|but it's still a lot tighter than than ascii.|S|s|s
+me011|and we have a lot of tools already to deal with it.|S|s|s
+fe016|you do?|Q|qy|d
+fe016|okay.|S|s|bk
+fe016|is there some documentation on this somewhere?|Q|qy|rt
+me011|yeah.|S|s|aa
+me011|there's a ton of it.|S|s|na
+fe016|okay.|S|s|bk
+fe016|great.|S|s|ba
+me011|man pages and uh source code and me.|S|s|df
+fe016|so|F|fh|fh
+fe016|i mean that sounds good.|S|s|ba
+fe016|i i was just looking for something|D|s|s
+fe016|i'm not a database person.|S|s|df
+fe016|but something sort of standard enough that you know if we start using this we can give it out.|S|s|s
+fe016|other people can work on it.|S|s|s
+me011|yeah it's not standard.|S|s|bk
+fe016|or is it|D|qy|qy
+me011|i mean it's something that we developed at icsi.|S|s|df
+me011|but uh|F|fh|fh
+fe016|but it's been used here.|S|s|s
+me011|but it's been used here.|S|s|m
+fe016|and people've|D|s|s
+me011|and and you know we have a well configured system that you can distribute for free.|S|s|s
+me011|and|D|%|%
+me018|i mean it must be the equivalent of whatever you guys used to store your computed features in right?|S|s|bu
+fe016|okay.|B|b|b
+mn017|yeah.|S|s|aa
+mn017|we have|D|s|s
+mn017|actually we we use a generalization of the the sphere format.|S|s|rt
+me018|huh.|S|s|bk
+mn017|um|F|fh|fh
+mn017|but|F|fh|fh
+mn017|yeah so there is something like that.|S|s|na
+mn017|but it's um probably not as|D|s|s
+me018|and i think there's|D|s|s
+me011|well what does h.t.k. do for features?|Q|qw|qw
+me011|or does it even have a concept of features?|Q|qy|qy
+mn017|they it has its own|D|s|s
+mn017|i mean entropic has their own feature format that's called like s. s.d. or some s.f. or something like that.|S|s|s
+fe016|yeah.|S|s|bk
+me018|yeah.|S|s|bk
+me011|i'm just wondering would it be worth while to use that instead?|Q|qy|cs
+mn017|huh?|D|%|%
+fe016|yeah.|S|s|bk
+fe016|this is exactly the kind of decision it's just whatever|D|s|s
+me018|but i mean people don't typically share this kind of stuff right?|S|s|bu
+mn017|right.|B|b|b
+me018|i mean|F|fh|fh
+me011|they generate their own.|S|s|na
+fe016|actually i i just you know we we've done this stuff on prosodics.|S|fg|fg
+me018|yeah.|S|s|bk
+fe016|and three or four places have asked for those prosodic files.|S|s|s
+fe016|and we just have an ascii uh output of frame by frame.|S|s|s
+me011|uh right.|S|s|bk
+fe016|which is fine.|S|s|df
+fe016|but it gets unwieldy to go in and and query these files with really huge files.|S|s|s
+me011|right.|S|s|bk
+fe016|i mean we could do it.|S|s|s
+fe016|i was just thinking if there's something that where all the frame values are|D|s|s
+me011|and and again if you have a|D|s|s
+fe016|huh?|Q|qw|rt
+me011|if you have a two hour long meeting that's going to|D|s|s
+fe016|they're they're they're quite large.|S|s|s
+fe016|and these are for ten minute switchboard conversations.|S|s|s
+me011|yeah i mean they'd be enormous.|S|s|na
+me011|right.|S|s|aa
+fe016|and|F|fh|fh
+fe016|so it's doable.|S|s|s
+fe016|it's just that you can only store a feature vector at frame by frame.|S|s|df
+fe016|and it doesn't have any kind of|D|s|s
+fe016|um|F|fh|fh
+me018|is is the sharing part of this a pretty important consideration?|Q|qy|rt
+me018|or does that just sort of uh a nice thing to have?|Q|qrr|qrr
+fe016|i i don't know enough about what we're going to do with the data.|S|s|no
+fe016|but i thought it would be good to get something that we can that other people can use or adopt for their own kinds of encoding.|S|s|s
+fe016|and just i mean we have to use we have to make some decision about what to do.|S|s|df
+me011|yeah.|B|b|b
+fe016|and especially for the prosody work what what it ends up being is you get features from the signal.|S|s|s
+fe016|and of course those change every time your alignments change.|S|s|s
+fe016|so you rerun a recognizer.|S|s|s
+fe016|you want to recompute your features um and then keep the database up to date.|S|s|s
+me011|right.|B|b|b
+fe016|or you change a word or you change a utterance boundary segment which is going to happen a lot.|S|s|s
+fe016|and so i wanted something where all of this can be done in a elegant way.|S|s|s
+fe016|and that if somebody wants to try something or compute something else that it can be done flexibly.|S|s|s
+fe016|um|F|fh|fh
+fe016|it doesn't have to be pretty.|S|s|s
+fe016|it just has to be you know easy to use and|D|s|s
+me011|yeah the other thing|D|s|s
+me011|we should look at atlas.|S|s|cs
+me011|the nist thing.|S|s|e
+fe016|oh.|B|b|b
+mn017|huh.|B|b|b
+me011|and see if they have anything at that level.|S|s|cs
+fe016|uh|F|fh|fh
+me011|i mean i'm not sure what to do about this with atlas.|S|s|no
+me011|because they chose a different route.|S|s|df
+me011|i chose something that|D|s|s
+me011|there are sort of two choices.|S|s|s
+me011|your your file format can know about know that you're talking about language and speech which is what i chose and time.|S|s|e
+me011|or your file format can just be a graph representation.|S|s|e
+me011|and then the application has to impose the structure on top.|S|s|s
+me011|so what it looked like atlas chose is they chose the other way.|S|s|s
+me011|which was their file format is just nodes and links.|S|s|e
+me011|and you have to interpret what they mean yourself.|S|s|e
+fe016|and why did you not choose that type of approach?|Q|qw|rt
+me011|uh because i knew that we were doing speech.|S|s|s
+me011|and i thought it was better if you're looking at a raw file to be for the tags to say it's an utterance as opposed to the tag to say it's a link.|S|s|s
+fe016|okay.|S|s|bk
+fe016|okay.|S|s|bk
+fe016|but other than that are they compatible?|Q|qy|rt
+me011|so but|F|fh|fh
+fe016|i mean you could sort of|D|s|s
+me011|yeah.|S|s|aa
+me011|they're reasonably compatible.|S|s|na
+fe016|i mean you you could|D|s|s
+me018|you could probably translate between them.|S|s|s
+fe016|yeah that's|D|s|bk
+me011|yep.|S|s|aa
+fe016|so|F|fh|fh
+me011|so|F|fg|fg
+me011|well the other thing is if we choose to use atlas which maybe we should just do we should just throw this out before we invest a lot of time in it.|S|s|s
+fe016|okay.|B|b|b
+fe016|i don't|D|%|%
+fe016|so this is what the meeting's about.|S|s|s
+fe016|just sort of how to|D|s|df
+me011|yeah.|S|s|aa
+fe016|um because we need to come up with a database like this just to do our work.|S|s|df
+fe016|and i actually don't care as long as it's something useful to other people what we choose.|S|s|s
+me011|yeah.|B|b|b
+fe016|so maybe it's maybe you know|D|s|s
+fe016|if if you have any idea of how to choose because i don't.|S|s|no
+me011|the only thing|D|s|s
+me011|yeah.|S|s|bk
+mn017|do they already have tools?|Q|qy|rt
+me011|i mean i i chose this for a couple reasons.|S|s|s
+me011|one of them is that it's easy to parse.|S|s|df
+me011|you don't need a full x.m.l. parser.|S|s|df
+me011|it's very easy to just write a perl script to parse it.|S|s|df
+mn017|as long as uh each tag is on one line.|S|s|s
+me011|exactly.|S|s|aa
+me011|exactly.|S|s|aa
+me011|which i always do.|S|s|s
+fe016|and you can have as much information in the tag as you want.|S|s|s
+fe016|right?|Q|qy|d
+me011|well i have it structured.|S|s|s
+me011|right?|Q|qy|d
+me011|so each type tag has only particular items that it can take.|S|s|s
+fe016|can you but you can add to those structures if you|D|s|bu
+me011|sure.|S|s|aa
+me011|if you have more information.|S|s|2
+me011|so what what nist would say is that instead of doing this you would say something like link start equals um you know some node i.d.|S|s|s
+fe016|yeah.|S|s|aa
+fe016|so|F|fh|fh
+me011|end equals some other node i.d.|S|s|s
+me011|and then type would be utterance.|S|s|s
+mn017|huh.|B|b|b
+me011|you know so it's very similar.|S|s|s
+fe016|so why would it be a a waste to do it this way if it's similar enough that we can always translate it?|Q|qw|qw
+me018|it probably wouldn't be a waste.|S|s|ng
+me018|it would mean that at some point if we wanted to switch we'd just have to translate everything.|S|s|df
+me011|write a translator.|S|s|2
+me011|but it|F|fg|fg
+fe016|but it but that sounds|D|s|s
+me011|since they are developing a big|D|s|s
+me018|but that's|D|s|s
+me018|i don't think that's a big deal.|S|s|ba
+fe016|as long as it is|D|s|s
+me011|they're developing a big infrastructure.|S|s|s
+me011|and so it seems to me that if if we want to use that we might as well go directly to what they're doing rather than|D|s|cs
+mn017|if we want to|D|s|s
+mn017|do they already have something that's that would be useful for us in place?|Q|qy|rt
+me018|yeah.|S|s|bk
+me018|see that's the question.|S|s|s
+me018|i mean how stable is their|D|qw|qw
+me018|are they ready to go?|Q|qy|rt
+me011|the i looked at it|D|s|s
+me018|or|D|qrr|qrr
+me011|the last time i looked at it was a while ago.|S|s|no
+me011|probably a year ago.|S|s|e
+me018|huh.|S|s|bk
+me011|uh when we first started talking about this.|S|s|e
+me011|and at that time at least it was still not very complete.|S|s|nd
+me011|and so specifically they didn't have any external format representation at that time.|S|s|e
+me011|they just had the sort of conceptual node uh annotated transcription graph.|S|s|e
+me011|which i really liked.|S|s|e
+me011|and that's exactly what this stuff is based on.|S|s|s
+me011|since then they've developed their own external file format.|S|s|s
+me011|which is uh you know this sort of this sort of thing.|S|s|e
+me011|um and apparently they've also developed a lot of tools.|S|fh|fh
+me011|but i haven't looked at them.|S|s|s
+me011|maybe i should.|S|s|cs
+mn017|we should we should find out.|S|s|cs
+fe016|i mean would the tools would the tools run on something like this if you can translate them anyway?|Q|qy|qy
+me011|um what would would would what would worry me is that maybe we might miss a little detail.|S|h|h
+fe016|i mean that i guess it's a question that|D|s|s
+mn017|it's a hassle.|S|s|ng
+fe016|uh yeah.|F|fh|fh
+mn017|if|D|%|%
+me011|that would make it very difficult to translate from one to the other.|S|s|df
+fe016|okay.|S|s|bk
+mn017|i i think if it's conceptually close and they already have or will have tools that everybody else will be using i mean it would be crazy to do something you know separate that|D|s|s
+fe016|okay.|S|s|bk
+me011|yeah we might as well.|S|s|aa
+me011|yep.|S|s|bk
+fe016|yeah.|B|b|b
+me011|so i'll i'll take a closer look at it.|S|s|cc
+fe016|actually|F|fg|fg
+fe016|so it's|F|fg|fg
+fe016|that that would really be the question is just what you would feel is in the long run the best thing.|S|s|s
+me011|and|F|fh|fh
+me011|right.|S|s|bk
+fe016|because once we start sort of doing this i don't we don't actually have enough time to probably have to rehash it out again.|S|s|df
+me011|the|D|%|%
+me011|yep.|B|b|b
+fe016|and|F|fh|fh
+me011|the other thing the other way that i sort of established this was as easy translation to and from the transcriber format.|S|s|s
+fe016|right.|S|s|bk
+me011|um|F|fh|fh
+fe016|right.|S|s|bk
+me011|but|F|fh|fh
+fe016|i mean i like this.|S|s|s
+fe016|this is sort of intuitively easy to actually read.|S|s|s
+me011|yep.|S|s|bk
+fe016|as easy it could as it could be.|S|s|e
+fe016|but|F|fh|fh
+fe016|i suppose that as long as they have a type here that specifies utt|D|s|s
+fe016|um|F|fh|fh
+me011|it's almost the same.|S|s|s
+fe016|it's yeah close enough that|D|s|s
+me011|the the the the point is with this though is that you can't really add any supplementary information.|S|s|s
+me011|right?|Q|qy|d
+me011|so if you suddenly decide that you want|D|s|s
+fe016|you have to make a different type.|S|s|cs
+me011|yeah.|S|s|aa
+me011|you'd have to make a different type.|S|s|m
+fe016|so|F|fg|fg
+fe016|well if you look at it|D|s|s
+fe016|and um|F|fh|fh
+fe016|i guess in my mind i don't know enough jane would know better about the types of annotations.|S|s|s
+fe016|and and but i imagine that those are things that would well you guys mentioned this that could span any|D|s|s
+fe016|it could be in its own channel.|S|s|s
+fe016|it could span time boundaries of any type.|S|s|s
+me011|right.|B|b|b
+fe016|it could be instantaneous.|S|s|s
+fe016|things like that.|S|s|s
+fe016|um|F|fh|fh
+fe016|and then from the recognition side we have backtraces at the phone level.|S|s|s
+fe016|if if it can handle that it could handle states or whatever.|S|s|s
+me011|right.|B|b|b
+fe016|and then at the prosody-level we have frame sort of like cepstral feature files.|S|s|s
+me011|yep.|B|b|b
+fe016|uh like these p. files or anything like that.|S|s|e
+fe016|and that's sort of the world of things that i|D|s|s
+fe016|and then we have the aligned channels of course.|S|s|s
+me011|right.|B|b|b
+fe016|and|F|fh|fh
+mn017|it seems to me you want to keep the frame level stuff separate.|S|s|bs
+fe016|yeah.|S|s|aa
+fe016|i i definitely agree.|S|s|na
+mn017|and then|D|%|%
+fe016|and i wanted to find actually a a nicer format or a maybe a more compact format than what we used before.|S|s|s
+me011|right.|B|b|b
+fe016|just because you've got ten channels or whatever and two hours of a meeting.|S|s|df
+fe016|it's it's a lot of|D|s|s
+mn017|now now how would you how would you represent um multiple speakers in this framework?|Q|qw|qw
+me011|huge.|S|s|na
+mn017|were you would just represent them as|D|s|s
+me011|um|F|h|h
+mn017|you would have like a speaker tag or something?|Q|qy|d
+me011|there's a speaker tag up at the top which identifies them.|S|s|s
+me011|and then each|D|s|s
+me011|the way i had it is each turn or each utterance i don't even remember now had a speaker i.d. tag attached to it.|S|s|s
+mn017|uhhuh.|B|b|b
+mn017|okay.|S|s|bk
+me011|and in this format you would have a different tag.|S|s|s
+me011|which which would uh be linked to the link.|S|s|s
+fe016|yeah.|S|s|bk
+me011|so so somewhere else you would have another thing that would be|D|s|s
+me011|um|F|fh|fh
+me011|let's see would it be a node or a link?|Q|qr|t1
+me011|um|F|fh|fh
+me011|and so so this one would have um an i.d. is link link seventy four or something like that.|S|s|s
+me011|and then somewhere up here you would have a link that that uh you know was referencing l. seventy four and had speaker adam.|S|s|s
+mn017|uhhuh.|B|b|b
+fe016|actually it's the channel i think that|D|s|ng
+mn017|is?|D|%|%
+me011|you know.|F|fh|fh
+me011|or something like that.|S|s|s
+fe016|i mean|D|%|%
+mn017|well channel or speaker or whatever.|S|s|s
+fe016|yeah channel is what the channelized output|D|s|s
+mn017|it doesn't|D|s|s
+me011|this isn't quite right.|S|s|s
+me011|i have to look at it again.|S|s|s
+mn017|right.|B|b|b
+fe016|yeah but|D|s|bk
+mn017|but but so how in the nist format do we express a hierarchical relationship between um say an utterance and the words within it?|Q|fg|fg
+mn017|so how do you tell that these are the words that belong to that utterance?|Q|qw|qw
+me011|um you would have another structure lower down than this that would be saying they're all belonging to this i.d.|S|h|h
+mn017|uhhuh.|S|s|bk
+me018|so each thing refers to the utterance that it belongs to.|S|s|bu
+me011|right.|S|s|aa
+me018|so it's it's not it's sort of bottom up.|S|s|bu
+me011|and then each utterance could refer to a turn.|S|s|s
+me011|and each turn could refer to something higher up.|S|s|s
+fe016|and what if you actually have|D|qw|qw
+fe016|so right now what you have as utterance um the closest thing that comes out of the channelized is the stuff between the segment boundaries that the transcribers put in or that thilo put in.|S|s|s
+fe016|which may or may not actually be like a it's usually not um the beginning and end of a sentence say.|S|s|e
+me011|well that's why i didn't call it sentence.|S|s|df
+fe016|so|F|fh|fh
+fe016|right.|S|s|bk
+fe016|um so it's like a segment or something.|S|s|s
+me011|yeah.|S|s|aa
+fe016|so|F|fh|fh
+fe016|i mean i assume this is possible that if you have someone annotates the punctuation or whatever when they transcribe you can say you know from for from the beginning of the sentence to the end of the sentence from the annotations this is a unit.|S|s|s
+fe016|even though it never actually|D|s|e
+fe016|it's only a unit by virtue of the annotations at the word level.|S|s|e
+me011|sure.|S|s|aa
+me011|i mean so you would you would have yet another tag.|S|s|s
+fe016|and then that would get a tag somehow.|S|s|s
+me011|you'd have another tag which says this is of type sentence.|S|s|s
+fe016|okay.|S|s|bk
+fe016|okay.|S|s|bk
+me011|and|F|fh|fh
+fe016|but it's just not overtly in the|D|s|s
+me011|what|D|%|%
+mn017|okay.|B|b|b
+fe016|um because this is exactly the kind of|D|fh|fh
+mn017|so|F|fg|fg
+fe016|i think that should be possible as long as the|D|s|s
+fe016|but uh what i don't understand is where the where in this type of file that would be expressed.|S|s|no
+me011|right.|S|s|bk
+me011|you would have another tag somewhere.|S|s|s
+me011|it's well there're two ways of doing it.|S|s|s
+fe016|so it would just be floating before the sentence or floating after the sentence without a time mark.|S|s|s
+me011|you could have some sort of link type.|S|s|df
+me011|type equals sentence.|S|s|df
+me011|and i.d. is s. whatever.|S|s|df
+me011|and then lower down you could have an utterance.|S|s|df
+me011|so the type is utterance equals utt.|S|s|df
+me011|and you could either say that|D|s|s
+me011|no.|S|s|ar
+me011|i don't know.|S|s|no
+me011|i take that back.|S|s|s
+mn017|so here's the thing.|S|s|s
+mn017|um|F|fh|fh
+fe016|see because it's|D|s|s
+me011|can you can you say that this is part of this?|Q|qy|rt
+mn017|hhh.|D|%|%
+fe016|it's|D|%|%
+me018|you would just have a|D|s|s
+me011|or do you say this is part of this?|Q|qrr|qrr
+me011|i think|D|s|s
+fe016|but they're|D|s|s
+me018|you would refer up to the sentence.|S|s|s
+mn017|well the thing|D|s|s
+fe016|they're actually overlapping each other sort of.|S|s|nd
+me011|so|F|fg|fg
+mn017|the thing is that something may be a part of one thing for one purpose and another thing of another purpose.|S|s|ng
+me011|right.|B|b|b
+fe016|you have to have another type then i guess.|S|s|s
+mn017|so|D|%|%
+mn017|um|F|fg|fg
+mn017|well.|F|fg|fg
+me011|well i think i'm i think i had better look at it again.|S|s|cs
+mn017|let's let's so let's|D|s|s
+fe016|yeah.|B|b|b
+fe016|okay.|S|s|bk
+mn017|so|F|fg|fg
+me011|because i i'm|D|s|df
+fe016|okay.|B|b|b
+mn017|so for instance|D|s|s
+me011|there's one level there's one more level of indirection that i'm forgetting.|S|s|s
+mn017|suppose you have a word sequence.|S|s|s
+mn017|and you have two different segmentations of that same word sequence.|S|s|s
+mn017|say one segmentation is in terms of um you know uh sentences.|S|s|s
+mn017|and another segmentation is in terms of um i don't know prosodic phrases.|S|s|s
+mn017|and let's say that they don't nest.|S|s|s
+mn017|so you know a prosodic phrase may cross two sentences or something.|S|fh|fh
+me011|right.|B|b|b
+mn017|i don't know if that's true or not.|S|s|no
+mn017|but let's|D|fh|fh
+fe016|well it's definitely true with the segment.|S|s|s
+mn017|right.|S|s|bk
+fe016|that's what i exactly what i meant by the utterances versus the sentence could be sort of|D|s|df
+mn017|yeah.|B|b|b
+mn017|so you want to be you want to say this this word is part of that sentence and this prosodic phrase.|S|s|s
+fe016|yeah.|F|fh|fh
+fe016|yeah.|B|b|b
+mn017|but the phrase is not part of the sentence.|S|s|s
+mn017|and neither is the sentence part of the phrase.|S|s|s
+fe016|right.|S|s|aa
+me011|i'm pretty sure that you can do that.|S|s|na
+me011|but i'm forgetting the exact level of nesting.|S|s|no
+mn017|so you would have to have two different pointers from the word up one level up.|S|fg|fg
+mn017|one to the|D|s|s
+me011|so so what you would end up having is a tag saying here's a word.|S|s|s
+me011|and it starts here and it ends here.|S|s|s
+mn017|right.|S|s|bk
+me011|and then lower down you would say here's a prosodic boundary.|S|s|s
+me011|and it has these words in it.|S|s|s
+me011|and lower down you'd have here's a sentence.|S|s|s
+fe016|right.|B|b|b
+mn017|right.|B|b|b
+me011|and it has these words in it.|S|s|s
+fe016|so you would be able to go in and say you know give me all the words in the in the prosodic phrase.|S|s|s
+fe016|and give me all the words in the|D|s|s
+me011|yep.|S|s|aa
+fe016|yeah.|S|s|bk
+me011|so i think that's that would|D|s|s
+fe016|um okay.|S|s|bk
+me011|let me look at it again.|S|s|co
+mn017|uhhuh.|B|b|b
+fe016|okay.|S|s|bk
+mn017|the the the other issue that you had was how do you actually efficiently extract um find and extract information in a structure of this type.|S|s|tc
+me011|so|F|fh|fh
+fe016|that's good.|S|s|ba
+mn017|so you gave some examples like|D|fh|fh
+fe016|well.|F|h|h
+fe016|uh and i mean you guys might|D|s|s
+fe016|i don't know if this is premature.|S|s|no
+fe016|because i suppose once you get the representation you can do this.|S|s|df
+fe016|but the kinds of things i was worried about is|D|s|s
+mn017|no that's not clear.|S|s|ar
+fe016|uh|F|fh|fh
+mn017|i mean yeah you sure you can do it.|S|s|df
+fe016|well okay.|S|s|bk
+fe016|so if it|D|s|s
+mn017|but can you do it sort of you know it|D|s|df
+fe016|i mean i can't do it.|S|s|j
+fe016|but i can|D|s|s
+fe016|um|F|fh|fh
+mn017|you got to you got to do this you you're going to want to do this very quickly.|S|s|s
+me011|well|F|fg|fg
+mn017|or else you'll spend all your time sort of searching through very complex data structures.|S|s|s
+fe016|right.|S|s|bk
+fe016|you'd need a sort of a paradigm for how to do it.|S|s|s
+fe016|but an example would be find all the cases in which adam started to talk while andreas was talking and his pitch was rising.|S|s|s
+fe016|andreas's pitch.|S|s|e
+fe016|that kind of thing.|S|s|s
+me011|right.|S|s|bk
+me011|i mean that's going to be|D|s|s
+me011|is the rising pitch a feature?|Q|qy|rt
+me011|or is it going to be in the same file?|Q|qrr|qrr
+fe016|well the rising pitch will never be hand annotated.|S|h|h
+fe016|so the all the prosodic features are going to be automatically|D|s|df
+me011|but the|F|fg|fg
+me011|i mean that's going to be hard regardless.|S|s|s
+fe016|so they're going to be in those|D|s|df
+me011|right?|Q|qy|d
+me011|because you're going to have to write a program that goes through your feature file and looks for rising pitches.|S|s|df
+mn017|yeah.|B|b|b
+fe016|so|F|fg|fg
+fe016|right.|S|s|aa
+fe016|so normally what we would do is we would say what do we want to assign rising pitch to.|S|s|s
+fe016|are we going to assign it to words.|S|s|s
+fe016|are we going to just assign it to sort of|D|s|s
+fe016|when it's rising we have a begin end rise representation.|S|s|s
+fe016|but suppose we dump out this file.|S|s|s
+fe016|and we say uh for every word we just classify it as you know rise or fall or neither.|S|s|s
+me011|okay.|S|s|bk
+me011|well in that case you would add that to this format.|S|s|s
+fe016|okay.|S|s|bk
+fe016|so we would basically be sort of um taking the format and enriching it with things that we want to query in relation to the words that are already in the file.|S|s|s
+me011|right.|S|s|bk
+fe016|and then querying it.|S|s|s
+fe016|okay.|F|fh|fh
+mn017|you want sort of a grep that's that works at the structural on the structural representation.|S|s|cs
+me011|you have that.|S|s|ng
+me011|there's a standard again in x.m.l. specifically for searching x.m.l. documents structured x. x.m.l. documents where you can specify both the content and the structural position.|S|s|s
+mn017|yeah but it's it's not clear that that's|D|s|bk
+fe016|if|D|%|%
+mn017|that's relative to the structure of the x.m.l. document.|S|s|df
+mn017|not to the structure of what you're representing in the document.|S|s|df
+me011|you use it as a tool.|S|s|df
+me011|you use it as a tool.|S|s|df
+me011|not an end user.|S|s|df
+me011|it's not an end user thing.|S|s|df
+mn017|right.|S|s|bk
+me011|it's it's you would use that to build your tool to do that sort of search.|S|s|df
+mn017|right.|B|b|b
+mn017|because here you're specifying a lattice.|S|s|s
+fe016|uh|D|%|%
+mn017|so the underlying that's the underlying data structure.|S|s|s
+fe016|but as long as the|D|s|s
+mn017|and you want to be able to search in that lattice.|S|s|s
+me011|it's a graph.|S|s|ng
+me011|but|F|fh|fh
+mn017|that's different from searching through the text.|S|s|s
+fe016|but it seems like as long as the features that|D|s|s
+me011|well.|F|fg|fg
+me011|no no no.|S|s|ar
+me011|the whole point is that the text and the lattice are isomorphic.|S|s|df
+me011|they represent each other completely.|S|s|s
+mn017|um|F|fg|fg
+me011|so that|D|s|s
+me011|i mean|D|%|%
+fe016|that's true if the features from your acoustics or whatever that are not explicitly in this are at the level of these types.|S|s|aap
+mn017|hhh.|D|%|%
+fe016|that that if you can do that|D|s|s
+me011|yeah but that's going to be the trouble no matter what.|S|s|bk
+me011|right?|Q|qy|d
+me011|no matter what format you choose you're going to have the you're going to have the difficulty of relating the the frame level features.|S|s|df
+fe016|that's right.|S|s|aa
+fe016|that's true.|S|s|aa
+fe016|that's why i was trying to figure out what's the best format for this representation.|S|s|df
+me011|yep.|B|b|b
+fe016|and it's still going to be|D|s|s
+fe016|it's still going to be uh not direct.|S|s|s
+mn017|huh.|B|b|b
+fe016|you know it|D|s|s
+me011|right.|S|s|bk
+fe016|or another example was you know uh where in the language where in the word sequence are people interrupting.|S|s|s
+fe016|so|F|fh|fh
+fe016|i guess that one's actually easier.|S|s|ba
+me018|what about|D|qw|qw
+me018|what about um the idea of using a relational database to uh store the information from the x.m. l?|Q|qo|r
+me018|so you would have|D|s|df
+me018|x.m.l. basically would|D|s|df
+me018|uh|F|fh|fh
+me018|you you could use the x.m.l. to put the data in.|S|s|df
+me018|and then when you get data out you put it back in x.m.l.|S|s|df
+me018|so use x.m.l. as sort of the the transfer format.|S|s|df
+me011|transfer.|S|s|2
+me018|uh but then you store the data in the database.|S|s|df
+me018|which allows you to do all kinds of good search things in there.|S|s|e
+me011|the uh|F|fg|fg
+me011|one of the things that atlas is doing is they're trying to define an a.p.i. which is independent of the back store.|S|s|s
+fe016|huh?|Q|qy|bh
+me011|so that uh you could define a single a.p.i. and the the storage could be flat x.m.l. files or a database.|S|s|df
+me018|uhhuh.|B|b|b
+me011|my opinion on that is for the sort of stuff that we're doing i suspect it's overkill to do a full relational database that um just a flat file and uh search tools i bet will be enough.|S|s|ba
+mn017|but|D|%|%
+me011|but that's the advantage of atlas is that if we actually take decide to go that route completely and we program to their a.p.i. then if we wanted to add a database later it would be pretty easy.|S|s|s
+me018|uhhuh.|B|b|b
+me018|uhhuh.|B|b|b
+fe016|it seems like the kind of thing you'd do if i don't know if people start adding all kinds of bells and whistles to the data.|S|s|ng
+fe016|and so that might be|D|s|s
+fe016|i mean it'd be good for us to know to use a format where we know we can easily um input that to some database if other people are using it.|S|s|bd
+me011|yep.|B|b|b
+fe016|something like that.|S|s|s
+me011|i guess i'm just a little hesitant to try to go whole hog on sort of the the whole framework that that nist is talking about with atlas and a database and all that sort of stuff.|S|s|bd
+fe016|so|F|fh|fh
+me011|because it's a big learning curve just to get going.|S|s|df
+me018|huh.|B|b|b
+mn017|huh.|B|b|b
+me011|whereas if we just do a flat file format sure it may not be as efficient.|S|s|cs
+me011|but everyone can program in perl and and use it.|S|s|df
+fe016|okay.|S|s|bk
+me011|right?|Q|qy|d
+me011|so as opposed to|D|s|s
+mn017|but this is|D|s|s
+mn017|i i'm still um not convinced that you can do much at all on the text on the flat file that that you know the text representation.|S|s|nd
+mn017|because the text representation is going to be uh not reflecting the structure of of your words and annotations.|S|s|df
+mn017|it's just it's|D|s|df
+me011|well if it's not representing it then how do you recover it?|Q|qw|df
+me011|of course it's representing it.|S|s|nd
+mn017|no.|S|s|ar
+mn017|you you have to|D|s|s
+me011|that's the whole point.|S|s|df
+mn017|what you have to do is you have to basically|D|s|s
+mn017|yeah you can use perl to read it in and construct a internal representation that is essentially a lattice.|S|s|df
+mn017|but the|D|s|s
+me018|yeah.|B|b|b
+me011|okay.|S|s|bk
+mn017|and then|D|s|s
+me011|well that was a different point.|S|s|ng
+me011|right?|Q|qy|d
+me011|so what i was saying is that|D|s|df
+mn017|right.|B|b|b
+mn017|but that's what you'll have to do.|S|s|ng
+me011|for perl if you want to just do perl.|S|s|df
+me011|if you wanted to use the structured x.m.l. query language that's a different thing.|S|s|nd
+me011|and it's a set of tools that let you specify given the d. d.d.t.d.t.d. of the document um what sorts of structural searches you want to do.|S|s|df
+me011|so you want to say that you know you're looking for um a tag within a tag within a particular tag that has this particular text in it um and uh refers to a particular value.|S|s|e
+me011|and so the point isn't that an end user who is looking for a query like you specified wouldn't program it in this language.|S|s|e
+me011|what you would do is someone would build a tool that used that as a library.|S|s|e
+me011|so that they so that you wouldn't have to construct the internal representations yourself.|S|s|df
+fe016|is a|D|%|%
+fe016|see i think the kinds of questions at least in the next to the end of this year are there may be a lot of different ones.|S|s|s
+fe016|but they'll all have a similar nature.|S|s|s
+fe016|they'll be looking at either a word level prosodic uh an a value.|S|s|s
+fe016|like a continuous value.|S|s|e
+me011|uhhuh.|B|b|b
+fe016|like the slope of something.|S|s|e
+fe016|but|F|fh|fh
+fe016|you know we'll do something where we some kind of data reduction where the prosodic features are sort uh either at the word level or at the segment level.|S|s|s
+me011|right.|S|s|bk
+fe016|or or something like that.|S|s|e
+fe016|they're not going to be at the phone level and they're not going to be at the frame level when we get done with sort of giving them simpler shapes and things.|S|s|s
+fe016|and so the main thing is just being able|D|fh|fh
+fe016|well i guess the two goals.|S|s|s
+fe016|um one that chuck mentioned is starting out with something that we don't have to start over that we don't have to throw away if other people want to extend it for other kinds of questions.|S|s|df
+me011|right.|B|b|b
+fe016|and being able to at least get enough uh information out on where we condition the location of features on information that's in the kind of file that you put up there.|S|s|df
+fe016|and that would that would do it.|S|s|s
+fe016|i mean for me.|S|s|df
+me011|yeah.|S|s|bk
+me011|i think that there are quick and dirty solutions.|S|s|s
+me011|and then there are long-term big infrastructure solutions.|S|s|s
+me011|and so we want to try to pick something that lets us do a little bit of both.|S|s|cs
+fe016|in the between.|S|s|2
+fe016|right.|S|s|aa
+fe016|and especially that the representation doesn't have to be thrown away.|S|s|df
+me011|um|F|fh|fh
+me011|right.|B|b|b
+fe016|even if your tools change.|S|s|e
+me011|and so it seems to me that|D|s|s
+me011|i mean i have to look at it again to see whether it can really do what we want.|S|s|s
+me011|but if we use the atlas external file representation um it seems like it's rich enough that you could do quick tools just as i said in perl.|S|s|s
+fe016|yeah.|B|b|b
+me011|and then later on if we choose to go up the learning curve we can use the whole atlas infrastructure.|S|s|s
+fe016|i mean that sounds good to me.|S|s|na
+me011|which has all that built in.|S|s|e
+fe016|i i don't|D|%|%
+fe016|so|F|fg|fg
+fe016|if if you would look at that and let us know what you think|D|s|cs
+me011|sure.|S|s|aa
+fe016|i mean i think we're sort of guinea pigs.|S|s|ba
+fe016|because i i want to get the prosody work done.|S|s|df
+fe016|but i don't want to waste time you know getting the|D|s|df
+mn017|oh maybe|D|%|%
+fe016|yeah?|Q|qw|rt
+mn017|um|F|h|h
+me011|well i wouldn't wait for the formats because anything you pick we'll be able to translate to another form.|S|s|cs
+mn017|well|F|fg|fg
+fe016|okay.|S|s|bk
+mn017|well maybe you should actually look at it yourself too to get a sense of what it is you'll you'll be dealing with.|S|s|cs
+mn017|because um you know adam might have one opinion but you might have another.|S|s|df
+me001|yeah.|B|b|b
+mn017|so|F|fh|fh
+fe016|yeah definitely.|S|s|aa
+mn017|i think the more eyes look at this the better.|S|s|cs
+fe016|especially if there's um you know if someone can help with at least the the setup of the right|D|s|na
+fe016|oh hi.|S|s|s
+me011|hi jane.|S|s|s
+mn017|huh.|B|b|b
+fe016|the right representation.|S|s|r
+fe016|then you know i hope it won't|D|s|s
+fe016|we don't actually need the whole full-blown thing to be ready.|S|s|s
+me011|can you|D|qy|t3
+me011|oh well.|S|s|ba
+fe016|so|F|fh|fh
+fe016|um|F|fh|fh
+fe016|so maybe if you guys can look at it and sort of see what|D|s|co
+me011|sure.|S|s|aa
+me001|yeah.|S|s|aa
+fe016|um|F|fh|fh
+fe016|i think we're we're we're actually just|D|s|tc
+me011|we're about done.|S|s|s
+fe016|yeah.|S|s|aa
+fe016|wrapping up.|S|s|na
+me001|huh.|B|b|b
+fe016|but|F|fh|fh
+fe016|um|F|fh|fh
+fe016|yeah.|S|s|bk
+fe016|sorry it's a uh short meeting.|S|s|fa
+fe016|but um|F|fh|fh
+fe016|well i don't know.|S|s|no
+fe016|is there anything else?|Q|qo|rt
+fe016|like|D|%|%
+fe016|i mean that helps me a lot.|S|s|s
+me011|well i think the other thing we might want to look at is alternatives to p. file.|S|h|h
+fe016|but|F|fh|fh
+me011|i mean the reason i like p. file is i'm already familiar with it.|S|s|df
+me011|we have expertise here.|S|s|df
+me011|and so if we pick something else there's the learning curve problem.|S|s|s
+me011|but i mean it is just something we developed at icsi.|S|s|df
+me011|and so|F|fh|fh
+mn017|is there an is there an i.a.p. i?|Q|qy|rt
+me011|yeah.|S|s|aa
+mn017|okay.|S|s|bk
+me011|there's an a.p.i. for it.|S|s|na
+me011|and uh|F|fh|fh
+mn017|there used to be a problem that they get too large.|S|s|rt
+me011|a bunch of libraries p. file utilities.|S|s|na
+mn017|and so basically the uh the filesystem wouldn't|D|s|s
+me011|well that's going to be a problem no matter what.|S|s|ng
+me011|you have the two-gigabyte limit on the filesystem size.|S|s|df
+me011|and we definitely hit that with broadcast news.|S|s|e
+mn017|maybe you could extend the a.p.i. to uh support uh like splitting up you know conceptually one file into smaller files on disk.|S|s|cs
+mn017|so that you can essentially you know have arbitrarily long|D|s|df
+me011|yep.|S|s|bk
+me011|most of the tools can handle that.|S|s|ng
+me011|so that|D|s|s
+mn017|yeah.|B|b|b
+me011|we didn't do it at the a.p.i. level.|S|s|s
+me011|we did it at the tool level.|S|s|s
+me011|that that most many of them can you can specify several p. files.|S|s|s
+me011|and they'll just be done sequentially.|S|s|s
+mn017|okay.|S|s|bk
+me011|so|F|fh|fh
+fe016|so i guess|D|s|s
+fe016|yeah.|S|s|bk
+fe016|if if you and don can if you can show him the p. file stuff and see.|S|s|co
+me011|sure.|S|s|aa
+fe016|so this would be like for the f. zero.|S|s|df
+me011|i mean if you do man p. file or apropos p. file you'll see a lot.|S|s|s
+me001|true.|B|b|b
+me001|i've used the p. file i think.|S|s|ng
+me001|i've looked at it at least briefly i think when we were doing something.|S|s|bd
+mn017|what does the p. stand for anyway?|Q|qw|qw
+me011|i have no idea.|S|s|no
+me001|oh in there.|S|s|t1
+me011|i didn't i didn't develop it.|S|s|df
+me011|you know it was i think it was dave johnson.|S|s|df
+me011|so it's all part of the quicknet library.|S|s|df
+me011|it has all the utilities for it.|S|s|e
+mn017|no p. files were around way before quicknet.|S|s|ar
+me011|oh were they?|Q|qy|bh
+mn017|p. files were were around when with um rap.|S|s|df
+me018|uhhuh.|S|s|aa
+mn017|right?|Q|qy|d
+fe016|it's like the history of icsi.|S|s|j
+mn017|you worked with p. files.|S|s|bu
+fe016|like|D|%|%
+me011|uhhuh.|B|b|b
+me018|no.|S|s|ar
+mn017|i worked with p. files.|S|s|s
+fe016|yeah?|Q|qy|bh
+me018|i don't remember what the p. is though.|S|s|no
+mn017|no.|S|s|ar
+me011|but there are they're|D|s|s
+me011|the quicknet library has a bunch of things in it to handle p. files.|S|s|s
+mn017|yeah.|B|b|b
+me011|so it works pretty well.|S|s|s
+fe016|and that isn't really i guess as important as the the main i don't know what you call it the the main sort of word level.|S|s|s
+me011|neither do i.|S|s|t3
+me018|probably stands for phil.|S|s|s
+me018|phil kohn.|S|s|e
+me011|it's a phil file?|Q|qy|d
+me018|yeah.|S|s|bk
+me018|that's my guess.|S|s|na
+fe016|huh.|B|b|b
+fe016|okay.|F|fg|fg
+fe016|well that's really useful.|S|s|ba
+fe016|i mean this is exactly the kind of thing that i wanted to settle.|S|s|s
+fe016|um|F|fh|fh
+fe016|so|F|fh|fh
+me011|yeah i've been meaning to look at the atlas stuff again anyway.|S|s|s
+fe016|great.|S|s|ba
+me011|so just keep|D|s|s
+fe016|yeah.|B|b|b
+fe016|i guess it's also sort of a political|D|s|s
+fe016|i mean if if you feel like that's a community that would be good to tie into anyway then it's sounds like it's worth doing.|S|s|na
+me011|yeah i think it it|D|s|bk
+mn017|i think there's|D|s|s
+me011|and uh as i said i what i did with this stuff i based it on theirs.|S|s|s
+me011|it's just they hadn't actually come up with an external format yet.|S|s|df
+me011|so now that they have come up with a format it doesn't it seems pretty reasonable to use it.|S|s|df
+mn017|huh.|B|b|b
+me011|but let me look at it again.|S|s|cc
+fe016|okay.|S|s|bk
+fe016|great.|S|s|ba
+me011|as i said that|D|s|s
+fe016|because we actually can start|D|s|s
+me011|there's one level there's one more level of indirection.|S|s|s
+me011|and i'm just blanking on exactly how it works.|S|s|s
+me011|i got to look at it again.|S|s|cc
+fe016|i mean we can start with um i guess this input from dave's.|S|s|cs
+fe016|which you had printed out the channelized input.|S|s|e
+fe016|because he has all of the channels.|S|s|df
+fe016|you know with the channels in the tag and stuff like that.|S|s|e
+me011|yeah i've seen it.|S|s|bk
+fe016|so that would be directly|D|s|s
+me011|yep.|S|s|bk
+fe016|um|F|fh|fh
+me011|easy easy to map.|S|s|2
+fe016|yeah.|S|s|aa
+fe016|and so then it would just be a matter of getting making sure to handle the annotations that are you know not at the word level and um to import|D|s|s
+me001|where are those annotations coming from?|Q|qw|rt
+fe016|well right now i jane would would|D|s|no
+me011|uhhuh.|B|b|b
+fe016|yeah.|B|b|b
+fe008|are you talking about the overlap annotations?|Q|qy|bu
+fe016|yeah.|S|s|aa
+fe016|any kind of annotation that like isn't already there.|S|s|df
+fe016|uh you know anything you can envision.|S|s|df
+fe008|yeah.|S|s|bk
+fe008|so what i was imagining was um so dave says we can have unlimited numbers of green ribbons.|S|s|s
+fe008|and so put uh a a green ribbon on for an overlap code.|S|s|s
+fe008|and since we we|D|s|s
+fe008|i i think it's important to remain flexible regarding the time bins for now.|S|s|cs
+fe008|and so it's nice to have|D|s|s
+fe008|however you know you want to have it uh uh located in the discourse.|S|s|cs
+fe008|so|F|fh|fh
+fe008|um|F|fh|fh
+fe008|if we if we tie the overlap code to the first word in the overlap then you'll have a time marking.|S|s|s
+fe008|it won't it'll be independent of the time bins.|S|s|s
+fe008|however these evolve shrink or whatever.|S|s|e
+fe008|increase.|S|s|e
+fe008|or|F|fh|fh
+fe008|also you could have different time bins for different purposes.|S|s|cs
+fe008|and having it tied to the first word in an overlap segment is unique uh you know anchored clear.|S|s|s
+fe008|and it would just end up on a separate ribbon.|S|s|s
+fe008|so the overlap coding is going to be easy with respect to that.|S|s|s
+me011|right.|B|b|b
+fe008|you look puzzled.|S|s|s
+me018|i i just i don't quite understand what these things are.|S|s|no
+fe008|okay.|S|s|bk
+fe008|what the codes themselves?|Q|qy|bu
+me018|uh|F|fh|fh
+me018|well overlap codes.|S|s|s
+fe008|or the|D|qrr|qrr
+me018|i'm not sure what that|D|s|no
+me011|well i mean is that|D|qy|qy
+fe008|well we don't have to go into the codes.|S|s|s
+me018|it probably doesn't matter.|S|s|s
+fe008|we don't have to go into the codes.|S|s|r
+me018|no i|D|%|%
+me011|i mean it doesn't|D|s|s
+me011|i mean that not for the topic of this meeting.|S|s|s
+fe008|but let me just|D|s|co
+fe008|no.|S|s|ar
+fe008|the idea is just to have a separate green ribbon.|S|s|bs
+fe008|you know.|F|fh|fh
+fe008|and and and let's say that this is a time bin.|S|s|s
+fe008|there's a word here.|S|s|s
+fe008|this is the first word of an overlapping segment of any length.|S|s|s
+fe008|overlapping with any other uh word uh segment of any length.|S|s|s
+fe008|and um|F|fh|fh
+fe008|then you can indicate that this here was perhaps a a backchannel.|S|s|s
+fe008|or you can say that it was um a usurping of the turn.|S|s|s
+fe008|or you can you know any any number of categories.|S|s|s
+fe008|but the fact is you have it time tagged in a way that's independent of the uh particular time bin that the word ends up in.|S|s|s
+fe008|if it's a large unit or a small unit or|D|s|e
+mn017|uhhuh.|B|b|b
+fe008|we change the boundaries of the units.|S|s|s
+fe016|right.|B|b|b
+fe008|it's still unique and and uh fits with the format.|S|s|s
+fe008|flexible all that.|S|s|e
+mn017|um|F|fg|fg
+mn017|it would be nice|D|s|s
+mn017|um|F|fh|fh
+mn017|uh this is sort of regarding uh uh it's related but not directly germane to the topic of discussion.|S|s|df
+mn017|but when it comes to annotations um you often find yourself in the situation where you have different annotations of the same say word sequence.|S|s|s
+fe008|yeah.|B|b|b
+mn017|okay?|Q|qy|d
+fe008|yeah.|B|b|b
+mn017|and sometimes the word sequences even differ slightly because they were edited at one place but not the other.|S|s|s
+mn017|so once this data gets out there some people might start annotating this for i don't know dialogue acts or um you know topics or what the heck.|S|s|s
+mn017|you know.|F|fh|fh
+mn017|there's a zillion things that people might annotate this for.|S|s|s
+mn017|and the only thing that is really sort of common among all the the various versions of this data is the word sequence.|S|s|s
+fe008|yep.|B|b|b
+mn017|or approximately|D|s|s
+fe016|or the time.|S|s|s
+mn017|or the times.|S|s|m
+mn017|but see if you'd annotate dialogue acts you don't necessarily want to or topics you don't really want to be dealing with time marks.|S|s|ng
+fe016|i guess.|F|fh|fh
+mn017|you'd it's much more efficient for them to just see the word sequence right?|S|s|df
+fe016|uhhuh.|B|b|b
+mn017|i mean most people aren't as sophisticated as as we are here with you know uh time alignments and stuff.|S|s|bd
+mn017|so|F|fg|fg
+mn017|so the the the point is|D|s|s
+me011|should should we mention some names on the people who are|D|qy|cs
+mn017|right.|B|b|b
+mn017|so|F|fh|fh
+mn017|um|F|fh|fh
+mn017|the my point is that you're going to end up with uh word sequences that are differently annotated.|S|s|s
+mn017|and you want some tool uh that is able to sort of merge these different annotations back into a single uh version.|S|s|s
+mn017|okay?|Q|qy|d
+mn017|um and we had this problem very massively uh at s.r.i. when we worked uh a while back on uh well on dialogue acts as well as uh you know|D|fh|fh
+mn017|um what was it?|Q|fh|fh
+mn017|uh|F|fh|fh
+fe016|well all the switchboard in it.|S|s|s
+mn017|utterance types.|S|s|s
+fe016|yeah.|B|b|b
+mn017|there's uh automatic uh punctuation and stuff like that.|S|s|s
+mn017|because we had one set of annotations that were based on uh one version of the transcripts with a particular segmentation.|S|s|df
+mn017|and then we had another version that was based on uh a different slightly edited version of the transcripts with a different segmentation.|S|s|df
+mn017|so we had these two different versions which were you know you could tell they were from the same source but they weren't identical.|S|s|s
+mn017|so it was extremely hard to reliably merge these two back together to correlate the information from the different annotations.|S|s|s
+me011|yep.|S|s|bk
+me011|i i don't see any way that file formats are going to help us with that.|S|s|s
+mn017|no.|S|s|aa
+me011|it's it's all a question of semantic.|S|s|df
+mn017|no.|S|s|aa
+mn017|but once you have a file format i can imagine writing not personally but someone writing a tool that is essentially an alignment tool um that mediates between various versions.|S|s|s
+fe016|uhhuh.|B|b|b
+me011|yeah.|B|b|b
+mn017|and uh sort of like uh you know you have this thing in unix where you have uh diff.|S|s|e
+me011|diff.|S|s|2
+fe016|w. diff or diff.|S|s|2
+mn017|there's the uh diff that actually tries to reconcile different two diffs based on the same original.|S|s|df
+fe016|yeah.|B|b|b
+fe008|is it s. diff?|Q|qy|qy
+me011|yep.|B|b|b
+fe008|huh.|D|b|b
+mn017|something like that.|S|s|s
+mn017|um but operating on these lattices that are really what's behind this uh this annotation format.|S|fh|fh
+me011|yep.|S|s|bk
+mn017|so|F|fh|fh
+fe016|you could definitely do that with the|D|s|cs
+me011|there's actually a diff library you can use to do things like that that so you have different formats.|S|s|s
+mn017|so somewhere in the a.p.i. you would like to have like a merge or some some function that merges two two versions.|S|s|s
+me011|yeah i think it's going to be very hard.|S|s|bk
+me011|any sort of structured anything when you try to merge is really really hard.|S|s|df
+mn017|right.|B|b|b
+me011|because you|D|s|df
+me011|the hard part isn't the file format.|S|s|df
+me011|the hard part is specifying what you mean by merge.|S|s|df
+mn017|is|D|s|2
+mn017|exactly.|S|s|aa
+fe016|but the one thing that would work here actually for that is more reliable than the utterances is the the speaker ons and offs.|S|s|cs
+me011|and that's very difficult.|S|s|ba
+fe016|so if you have a good|D|s|s
+fe016|um|F|fh|fh
+me011|but this is exactly what i mean is that that the problem|D|s|na
+fe016|yeah.|B|b|b
+fe016|you just have to know what to tie it to.|S|s|s
+me011|yeah.|S|s|aa
+me011|exactly.|S|s|aa
+me011|the problem is saying what are the semantics.|S|s|s
+fe016|and|D|%|%
+me011|what do you mean by merge.|S|s|s
+fe016|right right.|S|s|aa
+mn017|right.|B|b|b
+me011|so|F|fh|fh
+mn017|so so just to let you know what we where we kluged it by uh doing uh by doing hhh|D|fg|fg
+mn017|both were based on words.|S|s|s
+mn017|so we have two versions of the same words you know sprinkled with with different tags for annotations.|S|s|s
+me011|and then you did diff.|S|s|s
+mn017|and we did diff.|S|s|s
+me011|yeah.|S|s|bk
+mn017|exactly.|S|s|aa
+me011|that's just what i thought.|S|s|s
+mn017|and that's how|D|s|s
+me011|that's just how i would have done it.|S|s|s
+mn017|yeah.|S|s|bk
+mn017|but you know it had lots of errors.|S|s|s
+mn017|and things would end up in the wrong order and so forth.|S|s|s
+mn017|uh|F|fh|fh
+mn017|so|F|fh|fh
+me011|yep.|B|b|b
+mn017|um if you had a more|D|fh|fh
+mn017|uh|F|fh|fh
+mn017|it it was a kluge.|S|s|s
+mn017|because it was basically reducing everything to uh to uh uh to textual alignment.|S|s|df
+me011|a textual.|S|s|2
+mn017|um|F|fh|fh
+mn017|so|F|fh|fh
+fe016|but|F|fg|fg
+fe016|isn't that something where whoever if if the people who are making changes say in the transcripts because this all happened when the transcripts were different um if they tie it to something like if they tied it to the acoustic segment if they|D|qy|qy
+fe016|you know what i mean?|Q|qy|d
+fe016|then or if they tied it to an acoustic segment and we had the time marks that would help.|S|s|s
+fe016|but the problem is exactly as adam said that you get you know you don't have that information or it's lost in the merge somehow.|S|s|s
+me011|yep.|B|b|b
+fe016|so|F|fh|fh
+fe008|well can i ask one question?|Q|qy|rt
+fe008|it it seems to me that um we will have an official version of the corpus which will be only one one version in terms of the words where the words are concerned.|S|s|s
+fe008|we'd still have the the merging issue maybe if coding were done independently of the|D|s|s
+mn017|and you're going to get that.|S|s|s
+fe008|but but|F|fh|fh
+mn017|because if the data gets out people will do all kinds of things to it.|S|s|df
+mn017|and uh you know several years from now you might want to look into um the prosody of referring expressions.|S|s|e
+mn017|and someone at the university of who knows where has annotated the referring expressions.|S|s|e
+me011|right.|B|b|b
+mn017|so you want to get that annotation and bring it back in line with your data.|S|s|s
+me011|but unfortunately they've also hand edited it.|S|s|s
+mn017|okay?|Q|qy|d
+fe008|okay then|D|%|%
+fe016|but they've also|D|s|s
+fe016|exactly.|S|s|aa
+fe016|and so that's exactly what we should somehow when you distribute the data say that you know that have some way of knowing how to merge it back in and asking people to try to do that.|S|s|s
+mn017|yeah.|S|s|aa
+me011|yep.|B|b|b
+mn017|right.|B|b|b
+fe008|well then the|D|%|%
+me018|what's what's wrong with doing times?|Q|qw|rt
+fe008|i agree.|S|s|aa
+me018|i|D|%|%
+fe008|that was what i was wondering.|S|s|s
+fe016|uh yeah time is the|D|h|h
+fe008|time is unique.|S|s|s
+me011|well|F|fg|fg
+fe008|you were saying that you didn't think we should|D|s|s
+fe016|time is passing!|S|s|fe
+mn017|time time times are ephemeral.|S|s|j
+fe008|andreas was saying|D|s|s
+fe008|yeah.|F|fh|fh
+me011|what if they haven't notated with them times?|Q|qw|qw
+fe016|yeah.|B|b|b
+fe016|he he's a language modeling person though.|S|s|s
+mn017|um|F|fh|fh
+me011|so so imagine|D|fg|fg
+me011|i think his his example is a good one.|S|s|ba
+me011|imagine that this person who developed the corpus of the referring expressions didn't include time.|S|s|s
+mn017|uhhuh.|B|b|b
+mn017|yeah.|S|s|aa
+me011|he included references to words.|S|s|s
+fe008|ach!|D|%|%
+fe008|well then|D|%|%
+me011|he said that at this word is when when it happened.|S|s|s
+mn017|yeah.|S|s|aa
+mn017|or she.|S|s|ng
+fe008|but then couldn't you just indirectly figure out the time tied to the word?|Q|qy|qy
+me011|or she.|S|s|m
+fe016|but still they|D|s|s
+fe016|exactly.|S|s|aa
+me011|sure.|S|s|aa
+fe016|yeah.|S|s|aa
+me011|but what if what if they change the words?|Q|qw|ng
+fe008|not|D|%|%
+fe008|well.|F|fh|fh
+fe008|but you'd have some anchoring point.|S|s|s
+fe008|he couldn't have changed all the words.|S|s|ng
+me018|but can they change the words without changing the time of the word?|Q|qy|rt
+me011|sure.|S|s|aa
+me011|but they could have changed it a little.|S|s|arp
+me011|the the point is that that they may have annotated it off a word transcript that isn't the same as our word transcript.|S|s|s
+me011|so how do you merge it back in?|Q|qw|qw
+me011|i understand what you're saying.|S|s|s
+mn017|huh.|B|b|b
+mn017|uhhuh.|B|b|b
+me011|and i i guess the answer is um it's going to be different every time.|S|s|s
+me011|it's it's just going to be|D|s|s
+fe016|yeah.|B|b|b
+fe008|yeah.|D|b|b
+fe016|you only know the boundaries of the|D|s|s
+me011|it's exactly what i said before.|S|s|s
+me011|which is that what do you mean by merge.|S|s|s
+me011|so in this case where you have the words and you don't have the times well what do you mean by merge?|Q|qw|qw
+fe016|right.|B|b|b
+me011|if you tell me what you mean i can write a program to do it.|S|s|s
+fe016|right.|S|s|bk
+fe016|you can merge at the level of the representation that the other person preserved and that's it.|S|s|s
+me011|right.|S|s|aa
+me011|and that's about all you can do.|S|s|s
+fe016|and beyond that all you know is is relative ordering.|S|s|s
+fe016|and sometimes even that is wrong.|S|s|s
+me011|so so in so in this one you would have to do a best match between the word sequences.|S|fg|fg
+fe016|so|F|fh|fh
+mn017|uhhuh.|B|b|b
+me011|extract the times from the best match of theirs to yours.|S|s|s
+me011|and use that.|S|s|s
+fe016|and then infer that their time marks are somewhere in between.|S|s|s
+me011|right.|S|s|aa
+fe016|yeah exactly.|S|s|aa
+fe008|but it could be that they just uh i mean it could be that they chunked they they lost certain utterances and all that stuff.|S|s|s
+me011|right.|S|s|aa
+me011|exactly.|S|s|aa
+me011|so it could get very very ugly.|S|s|s
+fe008|or|D|%|%
+fe016|definitely.|S|s|aa
+fe016|definitely.|S|s|aa
+fe008|yeah.|B|b|b
+fe016|all right.|F|fg|fg
+fe016|well i guess i i didn't want to keep people too long.|S|s|tc
+fe008|that's interesting.|S|s|ba
+fe016|and adam wanted people|D|s|s
+fe016|i'll read the digits.|S|s|cc
+fe016|if anyone else offers to that'd be great.|S|s|s
+fe016|and|F|fh|fh
+mn017|uh well.|S|s|t1
+fe016|if not i guess|D|s|s
+me011|yeah.|B|b|b
+me011|more digits the better.|S|s|s
+mn017|for for the for the benefit of science we'll read the digits.|S|s|j
+me011|okay.|F|fg|fg
+fe016|thanks thanks a lot.|S|s|ft
+me011|this is|D|s|s
+fe016|it's really helpful.|S|s|s
+fe016|i mean adam and don will sort of meet.|S|s|s
+fe016|and i think that's great.|S|s|ba
+fe016|very useful.|S|s|ba

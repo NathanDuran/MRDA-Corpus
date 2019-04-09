@@ -1,959 +1,959 @@
-mn015|so i guess this is more or less now just to get you up to date johno.|rt
-mn015|this is what uh|s
-me003|this is a meeting for me.|j
-mn015|um|fh
-mn015|eva bhaskara and i did.|s
-fn050|did you add more stuff to it later?|rt
-mn015|um why?|h
-fn050|um i don't know.|h
-fn050|there were like the you know and all that stuff.|s
-fn050|but i thought you you said you were adding stuff.|s
-fn050|but i don't know.|bd
-mn015|uh no.|h
-mn015|this is|%--
-mn015|um|fh
-mn015|ha!|fe
-mn015|very nice.|ba
-mn015|um so we thought that we can write up uh an element.|cs
-mn015|and for each of the situation nodes that we observed in the bayes net.|e
-mn015|so|fh
-mn015|what's the situation like at the entity that is mentioned?|rt
-mn015|if we know anything about it.|e
-mn015|is it under construction?|rt
-mn015|or is it on fire or something happening to it?|rt
-mn015|or is it stable?|rt
-mn015|and so forth.|e
-mn015|going all the way um through parking location hotel car restroom riots fairs strikes or disasters.|s
-me003|so is this is a situation are is all the things which can be happening right now?|rt
-me003|or what is the situation type?|rt
-mn015|that's basically just specifying the the input for the what's|s
-me003|oh i see.|bk
-me003|why are you specifying it in x m l?|rt
-mn015|um just because it forces us to be specific about the values here.|h
-me003|okay.|bk
-mn015|and also i mean this is a what the input is going to be.|e
-mn015|right?|d
-mn015|so we will uh|cc
-mn015|this is a schema this is|s
-me003|well yeah i just don't know if this is what the does this is what java bayes takes as a bayes net spec?|fg
-mn015|no because i mean if we i mean we're sure going to interface to we're going to get an x m l document from somewhere.|ar
-mn015|right?|d
-mn015|and that x m l document will say we are able to we were able to observe that the element um of the location that the car is near.|s
-mn015|so that's going to be um|s
-me003|so this is the situational context everything in it.|bu
-me003|is that what situation is short for?|rt
-me003|situational context?|bu
-mn015|yep.|aa
-me003|okay.|bk
-mn015|so this is just again an x m l schemata which defines a set of possible uh permissible x m l structures.|rt
-mn015|which we view as input into the bayes net.|e
-mn015|right?|d
-me003|and then we can uh possibly run one of them uh transformations?|bu
-me003|that put it into the format that the bayes or java bayes or whatever wants.|e
-mn015|are you talking are you talking about the the structure?|bu
-me003|well it|%--
-mn015|i mean when you observe a node.|e
-me003|when you when you say the input to the java bayes it takes a certain format.|s
-mn015|uhhuh.|b
-me003|right?|d
-me003|which i don't think is this.|e
-me003|although i don't know.|no
-mn015|no it's certainly not this.|ar
-mn015|nuh.|ar
-me003|so you could just couldn't you just run a|qy
-mn015|x s l yeah.|2
-me003|yeah.|aa
-me003|to convert it into the java bayes format?|bu
-mn015|yep.|aa
-me003|okay.|bk
-mn015|that's that's no problem.|ba
-mn015|but i even think that um|s
-mn015|i mean once once you have this sort of as running as a module|s
-mn015|right?|d
-mn015|what you want is you want to say okay give me the posterior probabilities of the go there node when this is happening.|s
-mn015|right?|d
-mn015|when the person said this the car is there it's raining and this is happening.|s
-mn015|and with this you can specify the what's happening in the situation and what's happening with the user.|e
-mn015|so we get after we are done through the situation we get the user vector.|s
-mn015|so this is a|s
-me003|so this is just a specification of all the possible inputs?|bu
-mn015|yep.|aa
-mn015|and|fh
-mn015|all the possible outputs too.|e
-me003|okay.|bk
-mn015|so we have um for example the uh go there decision node.|s
-mn015|which has two elements.|rt
-mn015|going there and its posterior probability.|e
-mn015|and not going there and its posterior probability.|e
-mn015|because the output is always going to be all the decision nodes and all the the all the posterior probabilities for all the values.|df
-me003|and then we would just look at the uh struct that we want to look at?|rt
-me003|in terms of if if we're only asking about one of the|e
-me003|so like if i'm just interested in the going there node i would just pull that information out of the struct that gets that would that java bayes would output?|bu
-mn015|um pretty much yes.|h
-mn015|but i think it's a little bit more complex.|s
-mn015|as if i understand it correctly it always gives you all the posterior probabilities for all the values of all decision nodes.|df
-mn015|so when we input something we always get the uh posterior probabilities for all of these.|s
-mn015|right?|d
-me003|okay.|bk
-mn015|so there is no way of telling it not to tell us about the eva values.|s
-me003|yeah wait i agree.|aa
-me003|that's yeah use oh uh yeah okay.|bk
-mn015|so so we get this whole list of of um things.|s
-mn015|and the question is what to do with it.|s
-mn015|what to hand on.|s
-mn015|how to interpret it.|s
-mn015|in a sense.|e
-mn015|so you said if you i'm only interested in whether he wants to go there or not then i just look at that node.|s
-mn015|look which one|s
-me003|look at that struct in the output?|bu
-me003|right?|d
-mn015|yep.|aa
-mn015|look at that struct in the the output.|m
-mn015|even though i wouldn't call it a struct.|e
-mn015|but|fh
-me003|well well it's an x m l structure that's being returned.|s
-mn015|oh uhhuh.|bk
-me003|right?|d
-mn015|so every part of a structure is a struct.|s
-mn015|yeah.|b
-me003|yeah i just uh i just was abbreviated it to struct in my head and started going with that.|s
-mn015|that element or object i would say.|s
-me003|not a c struct that's not what i was trying to|s
-mn015|yeah.|b
-me003|though yeah.|s
-mn015|okay.|fg
-mn015|and um|fh
-mn015|the reason is why i think it's a little bit more complex or why why we can even think about it as an interesting problem in and of itself is|df
-mn015|um|fh
-mn015|so the uh|s
-mn015|let's look at an example.|co
-me003|well wouldn't we just take the structure that's outputted and then run another transformation on it that would just dump the one that we wanted out?|rt
-mn015|yeah we'd need to prune.|aa
-mn015|right?|d
-mn015|throw things away.|s
-me003|well actually you don't even need to do that with x m l.|nd
-me003|can't you just look at one specific|ng
-mn015|yeah exactly the xerxes allows you to say just give me the value of that and that and that.|aa
-mn015|but we don't really know what we're interested in before we look at the complete at at the overall result.|s
-mn015|so the person said um where is x.|s
-mn015|and so|fh
-mn015|we want to know um is does he want info.|s
-mn015|on this.|e
-mn015|or know the location.|e
-mn015|or does he want to go there.|e
-mn015|let's assume this is our our question.|co
-me003|sure.|bk
-mn015|nuh?|d
-mn015|so|fh
-mn015|um|fh
-mn015|do this in perl.|t1
-mn015|so we get|s
-mn015|okay.|b
-mn015|let's assume this is the output.|co
-mn015|so|fh
-mn015|we should be able to conclude from that that|s
-mn015|i mean it's always going to give us a value of how likely we think it is that he wants to go there and doesn't want to go there.|s
-mn015|or how likely it is that he wants to get information.|e
-mn015|but maybe we should just reverse this to make it a little bit more delicate.|cs
-mn015|so does he want to know where it is or does he want to go there?|qr
-me003|he wants to know where it is.|s
-mn015|right.|aa
-mn015|i i i tend to agree.|aa
-mn015|and if it's if|s
-me003|well now i mean you could|cs
-mn015|and if there's sort of a clear winner here|s
-mn015|and um and this is pretty uh indifferent|fh
-mn015|then we then we might conclude that he actually wants to just know where uh uh he does want to go there.|s
-me003|uh out of curiosity is there a reason why we wouldn't combine these three nodes into one smaller subnet?|fg
-me003|that would just basically be the question for|s
-me003|we have where is x is the question.|bu
-me003|right?|d
-me003|that would just be info on or location?|bu
-me003|based upon|e
-mn015|or go there.|2
-mn015|a lot of people ask that if they actually just want to go there.|df
-mn015|people come up to you on campus and say where's the library.|s
-mn015|you're going to say you're going to say go down that way.|s
-mn015|you're not going to say it's it's five hundred yards away from you or it's north of you or it's located|s
-me003|well i mean but the there's so you just have three decisions for the final node that would link these three nodes in the net together.|s
-mn015|um|h
-mn015|i don't know whether i understand what you mean.|no
-mn015|but again in this given this input we also in some situations may want to postulate an opinion whether that person wants to go there now.|cs
-mn015|the nicest way.|e
-mn015|use a cab.|e
-mn015|or so|s
-mn015|wants to know it wants to know where it is because he wants something fixed there because he wants to visit it or whatever.|s
-mn015|so it i mean all i'm saying is whatever our input is we're always going to get the full output.|bs
-mn015|and some some things will always be sort of too not significant enough.|s
-me003|or or it'll be tight.|e
-me003|you won't it'll be hard to decide.|e
-mn015|yep.|aa
-me003|but i mean i guess i guess the thing is uh this is another smaller case of reasoning in the case of an uncertainty.|df
-me003|which makes me think bayes net should be the way to solve these things.|s
-me003|so if you had if for every construction|s
-me003|right?|d
-mn015|oh!|fe
-me003|you could say well there here's the where is construction.|cs
-me003|and for the where is construction we know we need to look at this node that merges these three things together.|s
-mn015|uhhuh.|b
-me003|as for to decide the response.|df
-me003|and since we have a finite number of constructions that we can deal with we could have a finite number of nodes.|s
-mn015|okay.|bk
-me003|say if we had to deal with arbitrary language it wouldn't make any sense to do that.|s
-mn015|uhhuh.|b
-me003|because there'd be no way to generate the nodes for every possible sentence.|df
-mn015|uhhuh.|b
-me003|but since we can only deal with a finite amount of stuff|s
-mn015|so basically the idea is to to feed the output of that belief net into another belief net.|bu
-me003|yeah so basically take these three things and then put them into another belief net.|aa
-mn015|but why why why only those three?|qw
-mn015|why not the|qw
-me003|well i mean for the where is question.|s
-me003|so we'd have a node for the where is question.|s
-mn015|yeah but we believe that all the decision nodes are can be relevant for the where is|arp
-mn015|and the where how do i get to.|e
-mn015|or the tell me something about.|e
-me003|you can come in if you want.|s
-mn015|yes it is allowed.|s
-me003|as long as you're not wearing your your headphones.|2
-me003|well i i see i don't know if this is a good idea or not.|s
-me003|i'm just throwing it out.|s
-me003|but uh it seems like we could have i or uh we could put all of all of the information that could also be relevant into the where is node answer.|cs
-mn015|uhhuh.|b
-mn015|yep.|aa
-me003|node.|e
-me003|thing.|e
-me003|stuff.|e
-me003|and uh|fh
-fn050|okay.|b
-mn015|i mean|fg
-mn015|let's not forget we're going to get some very strong input from these from these discourse things.|co
-mn015|right?|d
-mn015|so|fh
-mn015|tell me the location of x.|s
-mn015|nuh?|d
-mn015|or where is x located at.|s
-me003|we|%--
-mn015|nuh?|d
-me003|yeah i know but the bayes net would be able to the weights on the on the nodes in the bayes net would be able to do all that.|s
-me003|wouldn't it?|d
-mn015|uhhuh.|aa
-me003|here's a|s
-me003|oh!|fe
-me003|oh i'll wait until you're plugged in.|cc
-me003|oh don't sit there.|co
-me003|sit here.|co
-me003|you know how you don't like that one.|df
-me003|it's okay.|s
-me003|that's the weird one.|df
-me003|that's the one that's painful that hurts it hurts so bad.|df
-me003|i'm i'm happy that they're recording that.|j
-me003|that headphone the headphone that you have to put on backwards with the little little thing and the little little foam block on it.|rt
-me003|it's a painful painful microphone.|ba
-mn015|i think it's called the crown.|s
-me003|the crown.|m
-fn050|what?|rt
-mn015|yeah.|aa
-mn015|versus the sony.|s
-me012|the crown?|d
-me012|is that the actual name?|rt
-mn015|uhhuh.|aa
-me012|okay.|bk
-mn015|the manufacturer.|e
-me003|i don't see a manufacturer on it.|s
-me003|oh wait.|co
-mn015|you|%--
-me003|here it is.|s
-me003|this thingy.|e
-me003|yeah it's the crown.|na
-me003|the crown of pain.|j
-me012|yes.|aa
-mn015|you're online?|d
-me003|are you are your mike is your mike on?|rt
-me012|indeed.|aa
-me003|okay.|bk
-me003|so you've been working with these guys.|bu
-me003|you know what's going on?|d
-me012|yes.|aa
-me012|i have.|aa
-me012|and i do.|e
-me012|yeah all right.|bk
-me003|excellent!|fe
-me012|so where are we?|t
-mn015|we're discussing this.|t
-me012|i don't think it can handle french.|j
-me012|but anyway.|s
-mn015|so|fg
-mn015|assume we have something coming in.|co
-mn015|a person says where is x.|s
-mn015|and we get a certain we have a situation vector and a user vector and everything is fine.|rt
-mn015|and and our and our|%--
-me003|did you just did you just stick the the the the microphone actually in the tea?|rt
-me012|no.|ar
-mn015|and um|fh
-me012|i'm not drinking tea.|ng
-me012|what are you talking about?|t3
-me003|oh yeah.|bk
-me003|sorry.|fa
-mn015|let's just assume our bayes net just has three decision nodes for the time being.|co
-mn015|these three he wants to know something about it he wants to know where it is he wants to go there.|s
-me003|in terms of these would be how we would answer the question where is.|bu
-me003|right?|d
-me003|we|%--
-me003|this is that's what you it seemed like explained it to me earlier.|s
-me003|we we're we want to know how to answer the question where is x.|s
-mn015|yeah but huh|aap
-mn015|yeah.|b
-mn015|no i can i can do the timing node in here too.|df
-mn015|and say okay|s
-me003|well yeah but in the uh let's just deal with the the simple case of we're not worrying about timing or anything.|nd
-me003|we just want to know how we should answer where is x.|e
-mn015|okay.|bk
-mn015|and um|fh
-mn015|okay and|fh
-mn015|go there has two values.|s
-mn015|right?|d
-mn015|go there and not go there.|rt
-mn015|let's assume those are the posterior probabilities of that.|co
-me012|uhhuh.|b
-mn015|info on has true or false and location.|s
-mn015|so he wants to know something about it.|s
-mn015|and he wants to know something he wants to know where it is.|s
-me012|excuse me.|fa
-mn015|has these values.|e
-mn015|and um|fh
-me003|oh i see why we can't do that.|bk
-mn015|and um in this case we would probably all agree that he wants to go there.|s
-mn015|our belief net thinks he wants to go there.|s
-mn015|right?|d
-me012|yeah.|b
-me012|uhhuh.|aa
-mn015|in the uh whatever.|e
-mn015|if we have something like this here.|rt
-mn015|and|fh
-mn015|this like that ..|e
-mn015|and maybe here also some|e
-me012|you should probably make them out of|cs
-me012|yeah.|b
-me003|well it|%--
-mn015|something like that.|s
-mn015|then we would guess aha he our belief net has stronger beliefs that he wants to know where it is than actually wants to go there.|s
-mn015|right?|d
-me003|that it doesn't this assume though that they're evenly weighted?|bu
-fn050|true.|aa
-me003|like|%--
-me003|i guess they are evenly weighted.|s
-me012|the different decision nodes you mean?|bu
-me003|yeah the go there the info on and the location.|na
-me012|well yeah this is making the assumption.|na
-me012|yes.|aa
-mn015|what do you mean by differently weighted?|qw
-me003|like|%--
-mn015|they don't feed into anything really anymore.|df
-me003|or i|%--
-me012|but i mean why do we|qw
-me012|if we trusted the go there node more much more than we trusted the other ones then we would conclude even in this situation that he wanted to go there.|s
-me012|so in that sense we weight them equally.|s
-mn015|okay.|bk
-me012|right now.|e
-mn015|makes sense.|bk
-mn015|yeah.|b
-me003|so but i guess the question that i was wondering or maybe robert was proposing to me is|s
-mn015|but|%--
-me003|how do we make the decision on as to which one to listen to?|rt
-me012|yeah so the final decision is the combination of these three.|s
-me012|so again it's it's some kind of uh|s
-me003|bayes net.|2
-me012|yeah sure.|aa
-me003|okay so then the question so then my question is to you then would be|s
-me003|so is the only reason we can make all these smaller bayes nets because we know we can only deal with a finite set of constructions?|rt
-me003|because if we're just taking arbitrary language in we couldn't have a node for every possible question.|df
-me003|you know?|d
-me012|a decision node for every possible question you mean.|bc
-me003|well i like in the case of yeah.|na
-me003|in the any piece of language we wouldn't be able to answer it with this system if we just|na
-me003|because we wouldn't have the correct node.|df
-me003|basically what you're proposing is a where is node.|bu
-me003|right?|d
-me012|yeah.|aa
-me003|and and if we and if someone says you know uh something in mandarin to the system wouldn't know which node to look at to answer that question.|bu
-me012|so is|%--
-me012|yeah.|b
-me003|right?|d
-me012|yeah.|aa
-mn015|huh|fg
-me003|so but but if we have a finite|s
-me003|what?|rt
-mn015|i don't see your point.|ng
-mn015|what what what i am thinking or what we're about to propose here is we're always going to get the whole list of values and their posterior probabilities.|s
-mn015|and now we need an expert system or belief net or something that interprets that ..|s
-mn015|that looks at all the values and says the winner is timing.|e
-mn015|now go there.|s
-mn015|uh go there timing now.|s
-mn015|or the winner is info on function off.|e
-mn015|so he wants to know something about it and what it does.|e
-mn015|nuh?|d
-mn015|uh regardless of of of the input|s
-me003|yeah but but how does the expert but how does the expert system know which one to declare the winner if it doesn't know the question it is and how that question should be answered?|nd
-mn015|based on the what the question was so what the discourse the ontology the situation and the user model gave us we came up with these values for these decisions.|s
-me003|yeah i know but how do we weight what we get out?|arp
-me003|as which one which ones are important.|e
-me003|so my so if we were to it with a bayes net we'd have to have a node for every question that we knew how to deal with.|cs
-me003|that would take all of the inputs and weight them appropriately for that question.|e
-mn015|uhhuh.|rt
-me003|does that make sense?|f
-me003|yay?|d
-me003|nay?|d
-me012|um i mean are you saying that what happens if you try to scale this up to the situation or are we just dealing with arbitrary language?|h
-me003|we|%--
-me012|is that your point?|rt
-me003|well no i i guess my question is is the reason that we can make a node|ar
-me003|or okay so let me see if i'm confused.|co
-me003|are we going to make a node for every question?|qy
-me003|does that make sense?|rt
-me003|or not?|qrr
-me012|for every question?|d
-me012|like|%--
-me003|every construction.|bsc
-me012|huh|h
-me012|i don't not necessarily i would think.|nd
-me012|i mean it's not based on constructions.|df
-me012|it's based on things like uh there's going to be a node for go there or not and there's going to be a node for enter view approach.|df
-me003|okay.|fg
-me003|so someone asked a question.|s
-me012|yeah.|b
-me003|how do we decide how to answer it?|qw
-mn015|well look at look face yourself with this question.|h
-mn015|you get this you'll have this is what you get.|s
-mn015|and now you have to make a decision what do we think.|s
-mn015|what does this tell us?|qw
-mn015|and not knowing what was asked and what happened and whether the person was a tourist or a local.|e
-mn015|because all of these factors have presumably already gone into making these posterior probabilities.|df
-me003|yeah.|b
-mn015|what what we need is a just a mechanism that says aha there is|cs
-me003|i just don't think a winner take all type of thing is the|nd
-me012|i mean in general like we won't just have those three.|s
-me012|right?|d
-me012|we'll have uh like many many nodes.|s
-mn015|yep.|aa
-me012|so we have to like so that it's no longer possible to just look at the nodes themselves and figure out what the person is trying to say.|s
-mn015|because there are interdependencies.|df
-mn015|right?|d
-mn015|the uh|%--
-mn015|uh no so if if for example the go there posterior possibility is so high um|s
-mn015|uh if it's if it has reached reached a certain height then all of this becomes irrelevant.|s
-mn015|so if even if if the function or the history or something is scoring pretty good on the true node true value|s
-me003|i don't know about that.|nd
-me003|because that would suggest that i mean|s
-mn015|he wants to go there and know something about it?|2
-me003|do they have to be|qy
-me003|yeah do they have to be mutually exclusive?|aa
-mn015|i think to some extent they are.|na
-mn015|or maybe they're not.|am
-me003|because i uh the way you describe what they meant they weren't uh they didn't seem mutually exclusive to me.|df
-mn015|well if he doesn't want to go there even if the enter posterior|s
-mn015|so|fh
-mn015|go there is no.|s
-mn015|enter is high.|s
-mn015|and info on is high.|s
-me003|well yeah just out of the other three though that you had in the|s
-mn015|huh?|br
-me003|those three nodes.|s
-me003|they didn't seem like they were mutually exclusive.|r
-mn015|no there's no.|ar
-mn015|but|%--
-mn015|it's through the|s
-me003|so so yeah but some so some things would drop out and some things would still be important.|s
-mn015|uhhuh.|b
-me003|but i guess what's confusing me is if we have a bayes net to deal another bayes net to deal with this stuff.|rt
-me012|uhhuh.|rt
-me003|you know.|fh
-me003|uh|fh
-me003|is the only reason okay so i guess if we have a another bayes net to deal with this stuff the only reason we can design it is because we know what each question is asking?|bu
-me012|yeah.|aa
-me012|i think that's true.|aa
-me003|and then so the only reason way we would know what question he's asking is based upon|bu
-me003|oh so if let's say i had a construction parser and i plug this in i would know what each construction the communicative intent of the construction was.|bu
-me012|uhhuh.|rt
-me003|and so then i would know how to weight the nodes appropriately in response.|s
-me003|so no matter what they said if i could map it onto a where is construction i could say uh.|s
-me012|uhhuh.|b
-me003|well the intent here was where is.|s
-me012|okay right.|bk
-me003|and i could look at those.|cc
-me012|yeah.|aa
-me012|yes i mean|aa
-me012|sure.|aa
-me012|you do need to know i mean to have that kind of information.|na
-mn015|huh|b
-mn015|yeah i'm also agreeing that a simple|na
-mn015|take the ones where we have a clear winner.|cs
-mn015|forget about the ones where it's all sort of middle ground.|cs
-mn015|prune those out.|cs
-mn015|and just hand over the ones where we have a winner.|cs
-mn015|yeah because that would be the easiest way.|ba
-mn015|we just compose as an output an x m l message that says go there now enter historical information.|cs
-mn015|and not care whether that's consistent with anything.|s
-mn015|right?|d
-mn015|but in this case if we say definitely he doesn't want to go there he just wants to know where it is.|s
-mn015|or let's call this this look at|s
-mn015|he wants to know something about the history of.|s
-mn015|so he said tell me something about the history of that.|e
-mn015|now the but for some reason the endpoint approach gets a really high score too.|s
-mn015|we can't expect this to be sort of at o point three three three o point three three three o point three three three.|s
-mn015|right?|d
-mn015|somebody needs to zap that.|cs
-mn015|you know?|d
-mn015|or know there needs to be some knowledge that|e
-me003|we yeah but the bayes net that would merge|aap
-me003|i just realized that i had my hand in between my mouth and my uh my and my microphone.|fa
-me003|so then the bayes net that would merge there that would make the decision between go there info on and location would have a node to tell you which one of those three you wanted.|s
-me003|and based upon that node then you would look at the other stuff.|e
-mn015|yep.|aa
-me003|i mean|%--
-mn015|yep.|aa
-me003|does that make sense?|f
-mn015|yep it's sort of one of those that's it's more like a decision tree if if you want.|fg
-mn015|you first look at the lowball ones.|bu
-me003|yeah|fg
-mn015|and then|s
-me003|yeah i didn't intend to say that every possible|s
-me003|okay.|fh
-me003|there was a confusion there.|s
-me003|i didn't intend to say every possible thing should go into the bayes net.|s
-me003|because some of the things aren't relevant in the bayes net for a specific question.|df
-me003|like the endpoint is not necessarily relevant in the bayes net for where is until after you've decided whether you want to go there or not.|e
-mn015|uhhuh.|b
-me012|right.|aa
-me003|show us the way bhaskara.|co
-me012|i guess the other thing is that um yeah|s
-me012|i mean when you're asked a specific question and you don't even|s
-me012|like if you're asked a where is question you may not even look like ask for the posterior probability of the uh e v a node.|s
-me012|right?|d
-me012|because that's what i mean in the bayes net you always ask for the posterior probability of a specific node.|df
-me012|so i mean|fh
-me012|you may not even bother to compute things you don't need.|s
-mn015|um|fg
-mn015|aren't we always computing all?|bu
-me012|no.|ar
-me012|you can compute uh the posterior probability of one subset of the nodes given some other nodes.|df
-me012|but totally ignore some other nodes also.|e
-me012|basically things you ignore get marginalized over.|s
-mn015|yeah but that's that's just shifting the problem.|nd
-mn015|then you would have to make a decision.|ng
-mn015|okay if it's a where is question which decision nodes do i query.|s
-me012|yeah so you have to make|aa
-me012|yeah.|aa
-me012|yes.|aa
-mn015|that's|%--
-me012|but i would think that's what you want to do.|na
-me012|right?|d
-mn015|huh.|arp
-fn050|well eventually you still have to pick out which ones you look at.|ng
-mn015|yeah.|aa
-fn050|so it's pretty much the same problem.|s
-mn015|yeah it's it's it's apples and oranges.|s
-fn050|isn't it?|d
-mn015|nuh?|d
-mn015|i mean maybe it does make a difference in terms of performance computational time.|s
-mn015|so either you always have it compute all the posterior possibilities for all the values for all nodes and then prune the ones you think that are irrelevant|cs
-me012|uhhuh.|rt
-me012|huh|b
-mn015|or you just make a a priori estimate of what you think might be relevant and query those.|cs
-me012|yeah.|aa
-me003|so basically you'd have a decision tree query go there?|bu
-me003|if if that's false query this one if that's true query that one.|e
-me003|and just basically do a binary search through the|e
-me012|i don't know if it would necessarily be that uh complicated.|aap
-me012|but uh|fh
-me003|well in the case of go there it would be.|nd
-me012|i mean it|s
-me003|in the case|s
-me003|because if you needed if if go there was true you'd want to know what endpoint was.|df
-me003|and if it was false you'd want to look at either income info on or history.|df
-me012|yeah.|aa
-me012|that's true i guess.|aa
-me012|yeah so in a way you would have that.|na
-me003|also i'm somewhat boggled by that hugin software.|t
-me012|okay why's that?|bk
-me003|i can't figure out how to get the probabilities into it.|s
-me003|like i'd look at|s
-me012|uhhuh.|rt
-me003|it's it's boggling me.|s
-me012|okay.|bk
-me012|all right.|bk
-me012|well hopefully it's fixable.|s
-me003|oh yeah yeah i i just think i haven't figured out what the terms in hugin mean versus what java bayes terms are.|aa
-me012|it's there's a|%--
-me012|okay.|bk
-mn015|um by the way are do we know whether jerry and nancy are coming?|fg
-me012|so we can figure this out.|s
-mn015|or|qrr
-me012|they should come when they're done their stuff basically whenever that is.|na
-me012|so|fh
-me003|what what do they need to do left?|rt
-me012|um|h
-me012|i guess jerry needs to enter marks.|s
-me012|but i don't know if he's going to do that now or later.|s
-me012|but uh if he's going to enter marks it's going to take him awhile i guess.|fh
-me012|and he won't be here.|s
-me003|and what's nancy doing?|rt
-me012|nancy?|m
-me012|um she was sort of finishing up the uh calculation of marks and assigning of grades.|h
-me012|but i don't know if she should be here.|s
-me012|well or she should be free after that.|s
-me012|so|fh
-me012|assuming she's coming to this meeting.|e
-me012|i don't know if she knows about it.|no
-me003|she's on the email list.|bu
-me003|right?|d
-me012|is she?|bu
-me012|okay.|bk
-mn015|uhhuh.|b
-mn015|okay.|fg
-mn015|because|%--
-mn015|basically what where we also have decided prior to this meeting is that we would have a rerun of the three of us sitting together.|bs
-fn050|okay.|b
-mn015|sometime this week again.|e
-me012|okay.|b
-mn015|and finish up the uh values of this.|e
-mn015|so we have uh believe it or not we have all the bottom ones here.|rt
-me003|well i|%--
-fn050|you added a bunch of nodes for|qy
-mn015|yep.|aa
-fn050|okay.|bk
-mn015|we we we have actually what we have is this line.|s
-mn015|right?|d
-me003|uh what do the uh structures do?|fg
-mn015|huh|b
-me003|so the the the for instance this location node's got two inputs.|rt
-me003|that one you|e
-me012|four inputs.|bc
-mn015|huh|b
-mn015|four.|aa
-me012|those are the bottom things are inputs also.|df
-me003|oh i see.|bk
-me012|yeah.|bk
-me003|okay that was|s
-me003|okay that makes a lot more sense to me now.|fh
-mn015|yep.|b
-me003|because i thought it was like that one in stuart's book about you know the|s
-me012|alarm in the dog?|2
-me003|yeah.|aa
-me012|yeah.|b
-me003|or the earthquake and the alarm.|bc
-me012|sorry yeah i'm confusing two.|fa
-me003|yeah there's a dog one too.|s
-me003|but that's in java bayes.|e
-me003|isn't it?|d
-me012|right.|aa
-me012|maybe.|am
-me003|but there's something about bowel problems or something with the dog.|s
-me012|yeah.|b
-mn015|and we have all the top ones.|s
-mn015|all the ones to which no arrows are pointing.|e
-mn015|what we're missing are the these.|s
-mn015|where arrows are pointing.|e
-mn015|where we're combining top ones.|e
-mn015|so we have to come up with values for this and this this this and so forth.|co
-mn015|and maybe just fiddle around with it a little bit more.|cs
-mn015|and um|fh
-mn015|and then it's just uh edges.|s
-mn015|many of|%--
-mn015|edges.|r
-mn015|and um we won't meet next monday.|fh
-mn015|so|fh
-me003|because of memorial day?|d
-mn015|yep.|aa
-me012|we'll meet next tuesday i guess.|cc
-mn015|yeah.|aa
-me003|when's jerry leaving for italia?|rt
-mn015|on on friday.|s
-me012|which friday?|d
-mn015|this this friday.|s
-me012|okay.|bk
-fn050|oh this friday?|bk
-me003|ugh.|b
-mn015|this friday.|aa
-me003|as in four days?|bu
-mn015|yep.|aa
-me003|or three days.|bsc
-me012|is he how long is he gone for?|rt
-mn015|two weeks.|s
-me012|italy huh?|rt
-me012|what's uh what's there?|rt
-mn015|well it's a country.|j
-mn015|buildings.|j
-mn015|people.|j
-me003|but it's not a conference or anything.|s
-me012|pasta.|j
-me003|he's just visiting.|s
-mn015|huh|rt
-me012|right.|bk
-me012|just visiting.|aa
-mn015|vacation.|s
-me012|it's a pretty nice place.|ba
-me012|in my brief uh encounter with it.|e
-mn015|do you guys|qy
-mn015|oh yeah so part of what we actually want to do is sort of schedule out what we want to surprise him with when when he comes back.|t
-mn015|um so|fh
-me003|oh i think we should disappoint him.|j
-mn015|yeah?|rt
-mn015|you or have a finished construction parser and a working belief net.|s
-mn015|and uh|fh
-me003|that wouldn't be disappointing.|ba
-me003|i think we should do absolutely no work for the two weeks that he's gone.|cs
-mn015|well that's actually what i had planned personally.|j
-mn015|i had i i had sort of scheduled out in my mind that you guys do a lot of work and i do nothing.|j
-mn015|and then i sort of|s
-me003|oh yeah that sounds good too.|ba
-mn015|sort of bask in in your glory.|s
-mn015|but uh do you guys have any vacation plans?|qy
-mn015|because i myself am going to be um gone.|df
-mn015|but this is actually not really important.|bd
-mn015|just this weekend we're going camping.|s
-me003|yeah i'm want to be this gone this weekend too.|s
-mn015|uh|b
-mn015|but we're all going to be here on tuesday again?|bu
-mn015|looks like it.|e
-fn050|yeah.|aa
-mn015|okay then let's meet meet again next tuesday.|co
-mn015|and um finish up this bayes net.|fh
-mn015|and once we have finished it i guess we can um|s
-mn015|and that's going to be more just you and me.|s
-mn015|because bhaskara is doing probabilistic recursive structured object oriented uh|df
-me003|killing machines.|2
-mn015|reasoning machines.|bc
-me012|yes.|b
-mn015|and um|fh
-me003|killing reasoning what's the difference?|j
-fn050|wait so you're saying next tuesday is it the whole group meeting?|bu
-fn050|or just us three working on it or or|qrr
-mn015|uh|h
-mn015|the whole group.|s
-mn015|and we present our results.|cc
-mn015|our final.|e
-fn050|okay.|bk
-mn015|definite.|e
-fn050|so when you were saying we need to do a re run of like|bu
-me012|what?|qw
-fn050|what like just working out the rest of the|bu
-mn015|yeah we should do this the upcoming days.|aa
-fn050|this week?|d
-mn015|so this week yeah.|aa
-fn050|okay.|bk
-me003|when you say the whole group you mean the four of us and keith?|bu
-mn015|and ami might|na
-me003|ami might be here.|na
-me003|and it's possible that nancy will be here.|e
-mn015|yep.|aa
-me003|so|fh
-me003|yeah.|fh
-mn015|because you know|s
-mn015|once we have the belief net done|s
-me003|you're just going to have to explain it to me then on tuesday.|co
-me003|how it's all going to work out.|e
-me003|you know.|b
-mn015|we will.|cc
-mn015|okay because then once we have it sort of up and running then we can start you know defining the interfaces.|aa
-mn015|and then feed stuff into it.|e
-mn015|and get stuff out of it.|e
-mn015|and then hook it up to some fake construction parser.|e
-mn015|and|fh
-me003|that you will have in about nine months or so.|2
-me003|yeah.|b
-mn015|yeah.|b
-mn015|and um|fh
-me003|the first bad version will be done in nine months.|j
-mn015|yeah i can worry about the ontology interface.|cc
-mn015|and you can keith can worry about the discourse.|co
-mn015|i mean this is pretty um i mean i i i hope everybody uh knows that these are just going to be uh dummy values.|s
-mn015|right?|d
-me012|which|%--
-mn015|where the|e
-me012|which ones?|rt
-mn015|so so if the endpoint if the go there is yes and no then go there discourse will just be fifty fifty.|s
-mn015|right?|d
-me012|um what do you mean if the go there says no then the go there is|h
-fn050|i don't get it.|s
-me012|i don't understand.|s
-mn015|um|h
-me012|like the go there depends on all those four things.|s
-mn015|yep.|aa
-me012|yeah.|b
-mn015|but what are the values of the go there discourse?|rt
-me012|well it depends on the situation.|s
-me012|if the discourse is strongly indicating that|s
-mn015|yeah but uh we have no discourse input.|s
-me012|oh i see the see uh specifically in our situation d and o are going to be uh|bk
-me012|yeah.|bk
-me012|sure.|bk
-me012|so whatever.|s
-fn050|so so far we have|bs
-fn050|is that what the keith node is?|rt
-mn015|yep.|aa
-fn050|okay and you're taking it out for now?|bk
-fn050|or|qrr
-mn015|well this is d|s
-mn015|okay this i can i can get it in here.|s
-fn050|all the d s are|s
-mn015|i can get it in here.|r
-mn015|so we have the uh um|s
-mn015|let's let's call it keith johno.|cs
-mn015|node.|e
-me012|johno.|m
-mn015|there is an h somewhere printed.|s
-me003|there you go.|s
-me012|yeah people have the same problem with my name.|s
-mn015|yeah.|b
-me012|oops!|fe
-mn015|and um|fh
-me003|does does the h go before the a or after the a?|qr
-me012|oh in my name?|bu
-me003|yeah.|aa
-me012|before the a.|s
-me003|okay good.|ba
-me003|because you when you said people have the same problem i thought|s
-me003|because my h goes after the uh the|s
-me012|people have the inverse problem with my name.|s
-me003|okay.|bk
-me003|i always have to check every time i send you an email a past email of yours to make sure i'm spelling your name correctly.|s
-me012|yeah.|b
-me012|that's good.|bk
-me003|i worry about you.|j
-me012|i appreciate that.|ft
-mn015|but when you abbreviate yourself as the basman you don't use any h s.|s
-me012|basman?|m
-me012|yeah it's because of the chessplayer named michael basman.|df
-me012|who is my hero.|e
-mn015|okay.|bk
-me003|you're a geek!|fe
-me003|it's okay.|ba
-me003|how do you|qw
-mn015|okay.|fg
-me003|how do you pronounce your name?|rt
-fn050|eva.|s
-me003|eva?|d
-fn050|yeah.|aa
-me012|not eva?|d
-me003|what if i were what if i were to call you eva?|qo
-fn050|i'd probably still respond to it.|s
-fn050|i've had people call me eva.|s
-fn050|but i don't know.|no
-me003|no not just eva eva.|ng
-me003|like if i take the v and pronounce it like it was a german v.|df
-mn015|which is f.|2
-me003|yeah.|aa
-fn050|um no idea then.|h
-mn015|voiced.|2
-fn050|what?|br
-me003|it sounds like an f.|s
-fn050|i|%--
-me003|there's also an f in german.|s
-fn050|okay.|bk
-me003|which is why i|e
-mn015|well it's just the difference between voiced and unvoiced.|s
-me003|yeah.|b
-fn050|okay.|bk
-me003|as long as that's okay.|s
-fn050|um|fg
-me003|i mean i might slip out and say it accidentally.|s
-me003|that's all i'm saying.|bd
-fn050|that's fine.|ba
-me012|yeah it doesn't matter what those nodes are anyway.|fg
-me012|because we'll just make the weights zero for now.|df
-mn015|yep.|aa
-mn015|we'll make them zero for now.|na
-mn015|because it who who knows what they come up with.|df
-mn015|what's going to come in there.|e
-mn015|okay.|fh
-mn015|and um|fh
-mn015|then|%--
-mn015|should we start on thursday?|rt
-me012|okay.|aa
-mn015|and not meet tomorrow?|d
-me012|sure.|aa
-mn015|okay.|bk
-mn015|i'll send an email.|cc
-mn015|make a time suggestion.|cc
-me003|wait.|co
-me003|maybe it's okay so that that that we can that we have one node per construction.|s
-me003|because even in people like they don't know what you're talking about if you're using some sort of strange construction.|df
-mn015|yeah they would still sort of get the closest best fit.|aap
-me003|well yeah but i mean the uh i mean that's what the construction parser would do.|aap
-me003|uh i mean if you said something completely arbitrary it would find the closest construction.|df
-mn015|uhhuh.|b
-mn015|okay.|b
-me003|right?|d
-me003|but if you said something that was uh|s
-me003|theoretically the construction parser would do that.|bsc
-me003|but if you said something for which there was no construction whatsoever people wouldn't have any idea what you were talking about.|s
-mn015|uhhuh.|b
-me003|like bus dog fried egg i mean.|e
-me003|you know.|b
-mn015|or if even something chinese for example.|2
-me003|or something in mandarin yeah.|e
-me003|or cantonese as the case may be.|e
-me003|what do you think about that bhaskara?|qo
-me012|i mean|h
-me012|well|h
-me012|but how many constructions do could we possibly have nodes for?|qw
-me003|in this system or in|bu
-me012|no we.|ar
-me012|like when people do this kind of thing.|e
-me003|oh when how many constructions do people have?|bu
-me012|yeah.|aa
-me003|i have not the slightest idea.|no
-me012|is it considered to be like in are they considered to be like very uh sort of abstract things?|rt
-me003|every noun is a construction.|s
-me012|okay so it's like in the thousands.|bk
-me003|the|%--
-me003|yeah.|b
-me003|any any form meaning pair to my understanding is a construction.|s
-me012|okay.|bk
-mn015|so|fh
-me003|and form starts at the level of noun or actually maybe even sounds.|e
-mn015|phoneme.|2
-mn015|yep.|b
-me003|yeah.|b
-me003|and goes upwards.|e
-me003|until you get the ditransitive construction.|e
-me003|and then of course the i guess maybe there can be the|s
-me003|can there be combinations of the|bu
-me012|discourse level constructions.|2
-me003|yeah.|aa
-me003|the giving a speech construction.|s
-mn015|rhetorical constructions.|s
-mn015|yeah.|rt
-me012|yes.|b
-mn015|but i mean you know you can probably count count the ways.|fg
-mn015|i mean|fh
-me003|it's yeah i would definitely say it's finite.|na
-mn015|yeah.|aa
-me003|and at least in compilers that's all that really matters.|s
-me003|as long as your analysis is finite.|e
-me012|how's that how it can be finite again?|rt
-me003|nah i can't think of a way it would be infinite.|s
-mn015|well you can come up with new constructions.|ng
-me003|yeah if the if your if your brain was totally non deterministic then perhaps there's a way to get uh an infinite number of constructions that you'd have to worry about.|aa
-me012|but i mean in the practical sense it's impossible.|s
-me003|right because if we have a fixed number of neurons.|aa
-me012|yeah.|aa
-me003|so the best case scenario would be the number of constructions|s
-me003|or the worst case scenario is the number of constructions equals the number of neurons.|bsc
-me012|well two to the power of the number of neurons.|aap
-me003|right.|aa
-me003|but still finite.|aap
-mn015|okay.|b
-me003|no wait.|co
-me003|not necessarily is it?|rt
-me003|we can end the meeting.|co
-me003|i just|%--
-me003|can't you use different different levels of activation?|rt
-me003|across uh lots of different neurons to specify different values.|e
-mn015|uhhuh.|b
-me012|um yeah but there's like a certain level of|h
-me003|there's a bandwidth issue.|2
-me003|right?|d
-me012|yeah so you can't do better than something.|na
-me003|yeah.|b
+mn015|so i guess this is more or less now just to get you up to date johno.|S|s|rt
+mn015|this is what uh|D|s|s
+me003|this is a meeting for me.|S|s|j
+mn015|um|F|fh|fh
+mn015|eva bhaskara and i did.|S|s|s
+fn050|did you add more stuff to it later?|Q|qy|rt
+mn015|um why?|Q|h|h
+fn050|um i don't know.|S|h|h
+fn050|there were like the you know and all that stuff.|S|s|s
+fn050|but i thought you you said you were adding stuff.|S|s|s
+fn050|but i don't know.|S|s|bd
+mn015|uh no.|S|h|h
+mn015|this is|D|%|%
+mn015|um|F|fh|fh
+mn015|ha!|S|s|fe
+mn015|very nice.|S|s|ba
+mn015|um so we thought that we can write up uh an element.|S|s|cs
+mn015|and for each of the situation nodes that we observed in the bayes net.|S|s|e
+mn015|so|F|fh|fh
+mn015|what's the situation like at the entity that is mentioned?|Q|qw|rt
+mn015|if we know anything about it.|S|s|e
+mn015|is it under construction?|Q|qy|rt
+mn015|or is it on fire or something happening to it?|Q|qrr|rt
+mn015|or is it stable?|Q|qrr|rt
+mn015|and so forth.|S|s|e
+mn015|going all the way um through parking location hotel car restroom riots fairs strikes or disasters.|S|s|s
+me003|so is this is a situation are is all the things which can be happening right now?|Q|qy|rt
+me003|or what is the situation type?|Q|qrr|rt
+mn015|that's basically just specifying the the input for the what's|D|s|s
+me003|oh i see.|S|s|bk
+me003|why are you specifying it in x m l?|Q|qw|rt
+mn015|um just because it forces us to be specific about the values here.|S|h|h
+me003|okay.|S|s|bk
+mn015|and also i mean this is a what the input is going to be.|S|s|e
+mn015|right?|Q|qy|d
+mn015|so we will uh|D|s|cc
+mn015|this is a schema this is|D|s|s
+me003|well yeah i just don't know if this is what the does this is what java bayes takes as a bayes net spec?|Q|fg|fg
+mn015|no because i mean if we i mean we're sure going to interface to we're going to get an x m l document from somewhere.|S|s|ar
+mn015|right?|Q|qy|d
+mn015|and that x m l document will say we are able to we were able to observe that the element um of the location that the car is near.|S|s|s
+mn015|so that's going to be um|D|s|s
+me003|so this is the situational context everything in it.|S|s|bu
+me003|is that what situation is short for?|Q|qy|rt
+me003|situational context?|Q|qy|bu
+mn015|yep.|S|s|aa
+me003|okay.|S|s|bk
+mn015|so this is just again an x m l schemata which defines a set of possible uh permissible x m l structures.|S|s|rt
+mn015|which we view as input into the bayes net.|S|s|e
+mn015|right?|Q|qy|d
+me003|and then we can uh possibly run one of them uh transformations?|Q|qy|bu
+me003|that put it into the format that the bayes or java bayes or whatever wants.|S|s|e
+mn015|are you talking are you talking about the the structure?|Q|qy|bu
+me003|well it|D|%|%
+mn015|i mean when you observe a node.|S|s|e
+me003|when you when you say the input to the java bayes it takes a certain format.|S|s|s
+mn015|uhhuh.|B|b|b
+me003|right?|Q|qy|d
+me003|which i don't think is this.|S|s|e
+me003|although i don't know.|S|s|no
+mn015|no it's certainly not this.|S|s|ar
+mn015|nuh.|S|s|ar
+me003|so you could just couldn't you just run a|D|qy|qy
+mn015|x s l yeah.|S|s|2
+me003|yeah.|S|s|aa
+me003|to convert it into the java bayes format?|Q|qy|bu
+mn015|yep.|S|s|aa
+me003|okay.|S|s|bk
+mn015|that's that's no problem.|S|s|ba
+mn015|but i even think that um|D|s|s
+mn015|i mean once once you have this sort of as running as a module|D|s|s
+mn015|right?|Q|qy|d
+mn015|what you want is you want to say okay give me the posterior probabilities of the go there node when this is happening.|S|s|s
+mn015|right?|Q|qy|d
+mn015|when the person said this the car is there it's raining and this is happening.|S|s|s
+mn015|and with this you can specify the what's happening in the situation and what's happening with the user.|S|s|e
+mn015|so we get after we are done through the situation we get the user vector.|S|s|s
+mn015|so this is a|D|s|s
+me003|so this is just a specification of all the possible inputs?|Q|qy|bu
+mn015|yep.|S|s|aa
+mn015|and|F|fh|fh
+mn015|all the possible outputs too.|S|s|e
+me003|okay.|S|s|bk
+mn015|so we have um for example the uh go there decision node.|S|s|s
+mn015|which has two elements.|S|s|rt
+mn015|going there and its posterior probability.|S|s|e
+mn015|and not going there and its posterior probability.|S|s|e
+mn015|because the output is always going to be all the decision nodes and all the the all the posterior probabilities for all the values.|S|s|df
+me003|and then we would just look at the uh struct that we want to look at?|Q|qy|rt
+me003|in terms of if if we're only asking about one of the|D|s|e
+me003|so like if i'm just interested in the going there node i would just pull that information out of the struct that gets that would that java bayes would output?|Q|qy|bu
+mn015|um pretty much yes.|S|h|h
+mn015|but i think it's a little bit more complex.|S|s|s
+mn015|as if i understand it correctly it always gives you all the posterior probabilities for all the values of all decision nodes.|S|s|df
+mn015|so when we input something we always get the uh posterior probabilities for all of these.|S|s|s
+mn015|right?|Q|qy|d
+me003|okay.|S|s|bk
+mn015|so there is no way of telling it not to tell us about the eva values.|S|s|s
+me003|yeah wait i agree.|S|s|aa
+me003|that's yeah use oh uh yeah okay.|S|s|bk
+mn015|so so we get this whole list of of um things.|S|s|s
+mn015|and the question is what to do with it.|S|s|s
+mn015|what to hand on.|S|s|s
+mn015|how to interpret it.|S|s|s
+mn015|in a sense.|S|s|e
+mn015|so you said if you i'm only interested in whether he wants to go there or not then i just look at that node.|S|s|s
+mn015|look which one|D|s|s
+me003|look at that struct in the output?|Q|qy|bu
+me003|right?|Q|qy|d
+mn015|yep.|S|s|aa
+mn015|look at that struct in the the output.|S|s|m
+mn015|even though i wouldn't call it a struct.|S|s|e
+mn015|but|F|fh|fh
+me003|well well it's an x m l structure that's being returned.|S|s|s
+mn015|oh uhhuh.|S|s|bk
+me003|right?|Q|qy|d
+mn015|so every part of a structure is a struct.|S|s|s
+mn015|yeah.|B|b|b
+me003|yeah i just uh i just was abbreviated it to struct in my head and started going with that.|S|s|s
+mn015|that element or object i would say.|S|s|s
+me003|not a c struct that's not what i was trying to|D|s|s
+mn015|yeah.|B|b|b
+me003|though yeah.|S|s|s
+mn015|okay.|F|fg|fg
+mn015|and um|F|fh|fh
+mn015|the reason is why i think it's a little bit more complex or why why we can even think about it as an interesting problem in and of itself is|D|s|df
+mn015|um|F|fh|fh
+mn015|so the uh|D|s|s
+mn015|let's look at an example.|S|s|co
+me003|well wouldn't we just take the structure that's outputted and then run another transformation on it that would just dump the one that we wanted out?|Q|qy|rt
+mn015|yeah we'd need to prune.|S|s|aa
+mn015|right?|Q|qy|d
+mn015|throw things away.|S|s|s
+me003|well actually you don't even need to do that with x m l.|S|s|nd
+me003|can't you just look at one specific|D|s|ng
+mn015|yeah exactly the xerxes allows you to say just give me the value of that and that and that.|S|s|aa
+mn015|but we don't really know what we're interested in before we look at the complete at at the overall result.|S|s|s
+mn015|so the person said um where is x.|S|s|s
+mn015|and so|F|fh|fh
+mn015|we want to know um is does he want info.|S|s|s
+mn015|on this.|S|s|e
+mn015|or know the location.|S|s|e
+mn015|or does he want to go there.|S|s|e
+mn015|let's assume this is our our question.|S|s|co
+me003|sure.|S|s|bk
+mn015|nuh?|Q|qy|d
+mn015|so|F|fh|fh
+mn015|um|F|fh|fh
+mn015|do this in perl.|S|s|t1
+mn015|so we get|D|s|s
+mn015|okay.|B|b|b
+mn015|let's assume this is the output.|S|s|co
+mn015|so|F|fh|fh
+mn015|we should be able to conclude from that that|D|s|s
+mn015|i mean it's always going to give us a value of how likely we think it is that he wants to go there and doesn't want to go there.|S|s|s
+mn015|or how likely it is that he wants to get information.|S|s|e
+mn015|but maybe we should just reverse this to make it a little bit more delicate.|S|s|cs
+mn015|so does he want to know where it is or does he want to go there?|Q|qr|qr
+me003|he wants to know where it is.|S|s|s
+mn015|right.|S|s|aa
+mn015|i i i tend to agree.|S|s|aa
+mn015|and if it's if|D|s|s
+me003|well now i mean you could|D|s|cs
+mn015|and if there's sort of a clear winner here|D|s|s
+mn015|and um and this is pretty uh indifferent|D|fh|fh
+mn015|then we then we might conclude that he actually wants to just know where uh uh he does want to go there.|S|s|s
+me003|uh out of curiosity is there a reason why we wouldn't combine these three nodes into one smaller subnet?|Q|fg|fg
+me003|that would just basically be the question for|D|s|s
+me003|we have where is x is the question.|S|s|bu
+me003|right?|Q|qy|d
+me003|that would just be info on or location?|Q|qy|bu
+me003|based upon|D|s|e
+mn015|or go there.|S|s|2
+mn015|a lot of people ask that if they actually just want to go there.|S|s|df
+mn015|people come up to you on campus and say where's the library.|S|s|s
+mn015|you're going to say you're going to say go down that way.|S|s|s
+mn015|you're not going to say it's it's five hundred yards away from you or it's north of you or it's located|D|s|s
+me003|well i mean but the there's so you just have three decisions for the final node that would link these three nodes in the net together.|S|s|s
+mn015|um|F|h|h
+mn015|i don't know whether i understand what you mean.|S|s|no
+mn015|but again in this given this input we also in some situations may want to postulate an opinion whether that person wants to go there now.|S|s|cs
+mn015|the nicest way.|S|s|e
+mn015|use a cab.|S|s|e
+mn015|or so|D|s|s
+mn015|wants to know it wants to know where it is because he wants something fixed there because he wants to visit it or whatever.|S|s|s
+mn015|so it i mean all i'm saying is whatever our input is we're always going to get the full output.|S|s|bs
+mn015|and some some things will always be sort of too not significant enough.|S|s|s
+me003|or or it'll be tight.|S|s|e
+me003|you won't it'll be hard to decide.|S|s|e
+mn015|yep.|S|s|aa
+me003|but i mean i guess i guess the thing is uh this is another smaller case of reasoning in the case of an uncertainty.|S|s|df
+me003|which makes me think bayes net should be the way to solve these things.|S|s|s
+me003|so if you had if for every construction|D|s|s
+me003|right?|Q|qy|d
+mn015|oh!|S|s|fe
+me003|you could say well there here's the where is construction.|S|s|cs
+me003|and for the where is construction we know we need to look at this node that merges these three things together.|S|s|s
+mn015|uhhuh.|B|b|b
+me003|as for to decide the response.|S|s|df
+me003|and since we have a finite number of constructions that we can deal with we could have a finite number of nodes.|S|s|s
+mn015|okay.|S|s|bk
+me003|say if we had to deal with arbitrary language it wouldn't make any sense to do that.|S|s|s
+mn015|uhhuh.|B|b|b
+me003|because there'd be no way to generate the nodes for every possible sentence.|S|s|df
+mn015|uhhuh.|B|b|b
+me003|but since we can only deal with a finite amount of stuff|D|s|s
+mn015|so basically the idea is to to feed the output of that belief net into another belief net.|S|s|bu
+me003|yeah so basically take these three things and then put them into another belief net.|S|s|aa
+mn015|but why why why only those three?|Q|qw|qw
+mn015|why not the|D|qw|qw
+me003|well i mean for the where is question.|S|s|s
+me003|so we'd have a node for the where is question.|S|s|s
+mn015|yeah but we believe that all the decision nodes are can be relevant for the where is|D|s|arp
+mn015|and the where how do i get to.|S|s|e
+mn015|or the tell me something about.|S|s|e
+me003|you can come in if you want.|S|s|s
+mn015|yes it is allowed.|S|s|s
+me003|as long as you're not wearing your your headphones.|S|s|2
+me003|well i i see i don't know if this is a good idea or not.|S|s|s
+me003|i'm just throwing it out.|S|s|s
+me003|but uh it seems like we could have i or uh we could put all of all of the information that could also be relevant into the where is node answer.|S|s|cs
+mn015|uhhuh.|B|b|b
+mn015|yep.|S|s|aa
+me003|node.|S|s|e
+me003|thing.|S|s|e
+me003|stuff.|S|s|e
+me003|and uh|F|fh|fh
+fn050|okay.|B|b|b
+mn015|i mean|F|fg|fg
+mn015|let's not forget we're going to get some very strong input from these from these discourse things.|S|s|co
+mn015|right?|Q|qy|d
+mn015|so|F|fh|fh
+mn015|tell me the location of x.|S|s|s
+mn015|nuh?|Q|qy|d
+mn015|or where is x located at.|S|s|s
+me003|we|D|%|%
+mn015|nuh?|Q|qy|d
+me003|yeah i know but the bayes net would be able to the weights on the on the nodes in the bayes net would be able to do all that.|S|s|s
+me003|wouldn't it?|Q|qy|d
+mn015|uhhuh.|S|s|aa
+me003|here's a|D|s|s
+me003|oh!|S|s|fe
+me003|oh i'll wait until you're plugged in.|S|s|cc
+me003|oh don't sit there.|S|s|co
+me003|sit here.|S|s|co
+me003|you know how you don't like that one.|S|s|df
+me003|it's okay.|S|s|s
+me003|that's the weird one.|S|s|df
+me003|that's the one that's painful that hurts it hurts so bad.|S|s|df
+me003|i'm i'm happy that they're recording that.|S|s|j
+me003|that headphone the headphone that you have to put on backwards with the little little thing and the little little foam block on it.|S|s|rt
+me003|it's a painful painful microphone.|S|s|ba
+mn015|i think it's called the crown.|S|s|s
+me003|the crown.|S|s|m
+fn050|what?|Q|qw|rt
+mn015|yeah.|S|s|aa
+mn015|versus the sony.|S|s|s
+me012|the crown?|Q|qy|d
+me012|is that the actual name?|Q|qy|rt
+mn015|uhhuh.|S|s|aa
+me012|okay.|S|s|bk
+mn015|the manufacturer.|S|s|e
+me003|i don't see a manufacturer on it.|S|s|s
+me003|oh wait.|S|s|co
+mn015|you|D|%|%
+me003|here it is.|S|s|s
+me003|this thingy.|S|s|e
+me003|yeah it's the crown.|S|s|na
+me003|the crown of pain.|S|s|j
+me012|yes.|S|s|aa
+mn015|you're online?|Q|qy|d
+me003|are you are your mike is your mike on?|Q|qy|rt
+me012|indeed.|S|s|aa
+me003|okay.|S|s|bk
+me003|so you've been working with these guys.|S|s|bu
+me003|you know what's going on?|Q|qy|d
+me012|yes.|S|s|aa
+me012|i have.|S|s|aa
+me012|and i do.|S|s|e
+me012|yeah all right.|S|s|bk
+me003|excellent!|S|s|fe
+me012|so where are we?|Q|qy|t
+mn015|we're discussing this.|S|s|t
+me012|i don't think it can handle french.|S|s|j
+me012|but anyway.|S|s|s
+mn015|so|F|fg|fg
+mn015|assume we have something coming in.|S|s|co
+mn015|a person says where is x.|S|s|s
+mn015|and we get a certain we have a situation vector and a user vector and everything is fine.|S|s|rt
+mn015|and and our and our|D|%|%
+me003|did you just did you just stick the the the the microphone actually in the tea?|Q|qy|rt
+me012|no.|S|s|ar
+mn015|and um|F|fh|fh
+me012|i'm not drinking tea.|S|s|ng
+me012|what are you talking about?|Q|qw|t3
+me003|oh yeah.|S|s|bk
+me003|sorry.|S|s|fa
+mn015|let's just assume our bayes net just has three decision nodes for the time being.|S|s|co
+mn015|these three he wants to know something about it he wants to know where it is he wants to go there.|S|s|s
+me003|in terms of these would be how we would answer the question where is.|S|s|bu
+me003|right?|Q|qy|d
+me003|we|D|%|%
+me003|this is that's what you it seemed like explained it to me earlier.|S|s|s
+me003|we we're we want to know how to answer the question where is x.|S|s|s
+mn015|yeah but huh|D|s|aap
+mn015|yeah.|B|b|b
+mn015|no i can i can do the timing node in here too.|S|s|df
+mn015|and say okay|S|s|s
+me003|well yeah but in the uh let's just deal with the the simple case of we're not worrying about timing or anything.|S|s|nd
+me003|we just want to know how we should answer where is x.|S|s|e
+mn015|okay.|S|s|bk
+mn015|and um|F|fh|fh
+mn015|okay and|F|fh|fh
+mn015|go there has two values.|S|s|s
+mn015|right?|Q|qy|d
+mn015|go there and not go there.|S|s|rt
+mn015|let's assume those are the posterior probabilities of that.|S|s|co
+me012|uhhuh.|B|b|b
+mn015|info on has true or false and location.|S|s|s
+mn015|so he wants to know something about it.|S|s|s
+mn015|and he wants to know something he wants to know where it is.|S|s|s
+me012|excuse me.|S|s|fa
+mn015|has these values.|S|s|e
+mn015|and um|F|fh|fh
+me003|oh i see why we can't do that.|S|s|bk
+mn015|and um in this case we would probably all agree that he wants to go there.|S|s|s
+mn015|our belief net thinks he wants to go there.|S|s|s
+mn015|right?|Q|qy|d
+me012|yeah.|B|b|b
+me012|uhhuh.|S|s|aa
+mn015|in the uh whatever.|S|s|e
+mn015|if we have something like this here.|S|s|rt
+mn015|and|F|fh|fh
+mn015|this like that ..|S|s|e
+mn015|and maybe here also some|D|s|e
+me012|you should probably make them out of|D|s|cs
+me012|yeah.|B|b|b
+me003|well it|D|%|%
+mn015|something like that.|S|s|s
+mn015|then we would guess aha he our belief net has stronger beliefs that he wants to know where it is than actually wants to go there.|S|s|s
+mn015|right?|Q|qy|d
+me003|that it doesn't this assume though that they're evenly weighted?|Q|qy|bu
+fn050|true.|S|s|aa
+me003|like|D|%|%
+me003|i guess they are evenly weighted.|S|s|s
+me012|the different decision nodes you mean?|Q|qy|bu
+me003|yeah the go there the info on and the location.|S|s|na
+me012|well yeah this is making the assumption.|S|s|na
+me012|yes.|S|s|aa
+mn015|what do you mean by differently weighted?|Q|qw|qw
+me003|like|D|%|%
+mn015|they don't feed into anything really anymore.|S|s|df
+me003|or i|D|%|%
+me012|but i mean why do we|D|qw|qw
+me012|if we trusted the go there node more much more than we trusted the other ones then we would conclude even in this situation that he wanted to go there.|S|s|s
+me012|so in that sense we weight them equally.|S|s|s
+mn015|okay.|S|s|bk
+me012|right now.|S|s|e
+mn015|makes sense.|S|s|bk
+mn015|yeah.|B|b|b
+me003|so but i guess the question that i was wondering or maybe robert was proposing to me is|D|s|s
+mn015|but|D|%|%
+me003|how do we make the decision on as to which one to listen to?|Q|qw|rt
+me012|yeah so the final decision is the combination of these three.|S|s|s
+me012|so again it's it's some kind of uh|D|s|s
+me003|bayes net.|S|s|2
+me012|yeah sure.|S|s|aa
+me003|okay so then the question so then my question is to you then would be|D|s|s
+me003|so is the only reason we can make all these smaller bayes nets because we know we can only deal with a finite set of constructions?|Q|qy|rt
+me003|because if we're just taking arbitrary language in we couldn't have a node for every possible question.|S|s|df
+me003|you know?|Q|qy|d
+me012|a decision node for every possible question you mean.|S|s|bc
+me003|well i like in the case of yeah.|S|s|na
+me003|in the any piece of language we wouldn't be able to answer it with this system if we just|D|s|na
+me003|because we wouldn't have the correct node.|S|s|df
+me003|basically what you're proposing is a where is node.|S|s|bu
+me003|right?|Q|qy|d
+me012|yeah.|S|s|aa
+me003|and and if we and if someone says you know uh something in mandarin to the system wouldn't know which node to look at to answer that question.|S|s|bu
+me012|so is|D|%|%
+me012|yeah.|B|b|b
+me003|right?|Q|qy|d
+me012|yeah.|S|s|aa
+mn015|huh|F|fg|fg
+me003|so but but if we have a finite|D|s|s
+me003|what?|Q|qw|rt
+mn015|i don't see your point.|S|s|ng
+mn015|what what what i am thinking or what we're about to propose here is we're always going to get the whole list of values and their posterior probabilities.|S|s|s
+mn015|and now we need an expert system or belief net or something that interprets that ..|S|s|s
+mn015|that looks at all the values and says the winner is timing.|S|s|e
+mn015|now go there.|S|s|s
+mn015|uh go there timing now.|S|s|s
+mn015|or the winner is info on function off.|S|s|e
+mn015|so he wants to know something about it and what it does.|S|s|e
+mn015|nuh?|Q|qy|d
+mn015|uh regardless of of of the input|D|s|s
+me003|yeah but but how does the expert but how does the expert system know which one to declare the winner if it doesn't know the question it is and how that question should be answered?|Q|qw|nd
+mn015|based on the what the question was so what the discourse the ontology the situation and the user model gave us we came up with these values for these decisions.|S|s|s
+me003|yeah i know but how do we weight what we get out?|S|s|arp
+me003|as which one which ones are important.|S|s|e
+me003|so my so if we were to it with a bayes net we'd have to have a node for every question that we knew how to deal with.|S|s|cs
+me003|that would take all of the inputs and weight them appropriately for that question.|S|s|e
+mn015|uhhuh.|B|b|rt
+me003|does that make sense?|Q|qy|f
+me003|yay?|Q|qy|d
+me003|nay?|Q|qy|d
+me012|um i mean are you saying that what happens if you try to scale this up to the situation or are we just dealing with arbitrary language?|Q|h|h
+me003|we|D|%|%
+me012|is that your point?|Q|qy|rt
+me003|well no i i guess my question is is the reason that we can make a node|D|s|ar
+me003|or okay so let me see if i'm confused.|S|s|co
+me003|are we going to make a node for every question?|Q|qy|qy
+me003|does that make sense?|Q|qy|rt
+me003|or not?|Q|qrr|qrr
+me012|for every question?|Q|qy|d
+me012|like|D|%|%
+me003|every construction.|S|s|bsc
+me012|huh|F|h|h
+me012|i don't not necessarily i would think.|S|s|nd
+me012|i mean it's not based on constructions.|S|s|df
+me012|it's based on things like uh there's going to be a node for go there or not and there's going to be a node for enter view approach.|S|s|df
+me003|okay.|F|fg|fg
+me003|so someone asked a question.|S|s|s
+me012|yeah.|B|b|b
+me003|how do we decide how to answer it?|Q|qw|qw
+mn015|well look at look face yourself with this question.|S|h|h
+mn015|you get this you'll have this is what you get.|S|s|s
+mn015|and now you have to make a decision what do we think.|S|s|s
+mn015|what does this tell us?|Q|qw|qw
+mn015|and not knowing what was asked and what happened and whether the person was a tourist or a local.|S|s|e
+mn015|because all of these factors have presumably already gone into making these posterior probabilities.|S|s|df
+me003|yeah.|B|b|b
+mn015|what what we need is a just a mechanism that says aha there is|S|s|cs
+me003|i just don't think a winner take all type of thing is the|D|s|nd
+me012|i mean in general like we won't just have those three.|S|s|s
+me012|right?|Q|qy|d
+me012|we'll have uh like many many nodes.|S|s|s
+mn015|yep.|S|s|aa
+me012|so we have to like so that it's no longer possible to just look at the nodes themselves and figure out what the person is trying to say.|S|s|s
+mn015|because there are interdependencies.|S|s|df
+mn015|right?|Q|qy|d
+mn015|the uh|D|%|%
+mn015|uh no so if if for example the go there posterior possibility is so high um|D|s|s
+mn015|uh if it's if it has reached reached a certain height then all of this becomes irrelevant.|S|s|s
+mn015|so if even if if the function or the history or something is scoring pretty good on the true node true value|D|s|s
+me003|i don't know about that.|S|s|nd
+me003|because that would suggest that i mean|D|s|s
+mn015|he wants to go there and know something about it?|Q|qy|2
+me003|do they have to be|D|qy|qy
+me003|yeah do they have to be mutually exclusive?|S|s|aa
+mn015|i think to some extent they are.|S|s|na
+mn015|or maybe they're not.|S|s|am
+me003|because i uh the way you describe what they meant they weren't uh they didn't seem mutually exclusive to me.|S|s|df
+mn015|well if he doesn't want to go there even if the enter posterior|D|s|s
+mn015|so|F|fh|fh
+mn015|go there is no.|S|s|s
+mn015|enter is high.|S|s|s
+mn015|and info on is high.|S|s|s
+me003|well yeah just out of the other three though that you had in the|D|s|s
+mn015|huh?|Q|qw|br
+me003|those three nodes.|S|s|s
+me003|they didn't seem like they were mutually exclusive.|S|s|r
+mn015|no there's no.|S|s|ar
+mn015|but|D|%|%
+mn015|it's through the|D|s|s
+me003|so so yeah but some so some things would drop out and some things would still be important.|S|s|s
+mn015|uhhuh.|B|b|b
+me003|but i guess what's confusing me is if we have a bayes net to deal another bayes net to deal with this stuff.|S|s|rt
+me012|uhhuh.|B|b|rt
+me003|you know.|F|fh|fh
+me003|uh|F|fh|fh
+me003|is the only reason okay so i guess if we have a another bayes net to deal with this stuff the only reason we can design it is because we know what each question is asking?|Q|qy|bu
+me012|yeah.|S|s|aa
+me012|i think that's true.|S|s|aa
+me003|and then so the only reason way we would know what question he's asking is based upon|D|s|bu
+me003|oh so if let's say i had a construction parser and i plug this in i would know what each construction the communicative intent of the construction was.|S|s|bu
+me012|uhhuh.|B|b|rt
+me003|and so then i would know how to weight the nodes appropriately in response.|S|s|s
+me003|so no matter what they said if i could map it onto a where is construction i could say uh.|S|s|s
+me012|uhhuh.|B|b|b
+me003|well the intent here was where is.|S|s|s
+me012|okay right.|S|s|bk
+me003|and i could look at those.|S|s|cc
+me012|yeah.|S|s|aa
+me012|yes i mean|D|s|aa
+me012|sure.|S|s|aa
+me012|you do need to know i mean to have that kind of information.|S|s|na
+mn015|huh|B|b|b
+mn015|yeah i'm also agreeing that a simple|D|s|na
+mn015|take the ones where we have a clear winner.|S|s|cs
+mn015|forget about the ones where it's all sort of middle ground.|S|s|cs
+mn015|prune those out.|S|s|cs
+mn015|and just hand over the ones where we have a winner.|S|s|cs
+mn015|yeah because that would be the easiest way.|S|s|ba
+mn015|we just compose as an output an x m l message that says go there now enter historical information.|S|s|cs
+mn015|and not care whether that's consistent with anything.|S|s|s
+mn015|right?|Q|qy|d
+mn015|but in this case if we say definitely he doesn't want to go there he just wants to know where it is.|S|s|s
+mn015|or let's call this this look at|D|s|s
+mn015|he wants to know something about the history of.|S|s|s
+mn015|so he said tell me something about the history of that.|S|s|e
+mn015|now the but for some reason the endpoint approach gets a really high score too.|S|s|s
+mn015|we can't expect this to be sort of at o point three three three o point three three three o point three three three.|S|s|s
+mn015|right?|Q|qy|d
+mn015|somebody needs to zap that.|S|s|cs
+mn015|you know?|Q|qy|d
+mn015|or know there needs to be some knowledge that|D|s|e
+me003|we yeah but the bayes net that would merge|D|s|aap
+me003|i just realized that i had my hand in between my mouth and my uh my and my microphone.|S|s|fa
+me003|so then the bayes net that would merge there that would make the decision between go there info on and location would have a node to tell you which one of those three you wanted.|S|s|s
+me003|and based upon that node then you would look at the other stuff.|S|s|e
+mn015|yep.|S|s|aa
+me003|i mean|D|%|%
+mn015|yep.|S|s|aa
+me003|does that make sense?|Q|qy|f
+mn015|yep it's sort of one of those that's it's more like a decision tree if if you want.|S|fg|fg
+mn015|you first look at the lowball ones.|S|s|bu
+me003|yeah|D|fg|fg
+mn015|and then|D|s|s
+me003|yeah i didn't intend to say that every possible|D|s|s
+me003|okay.|F|fh|fh
+me003|there was a confusion there.|S|s|s
+me003|i didn't intend to say every possible thing should go into the bayes net.|S|s|s
+me003|because some of the things aren't relevant in the bayes net for a specific question.|S|s|df
+me003|like the endpoint is not necessarily relevant in the bayes net for where is until after you've decided whether you want to go there or not.|S|s|e
+mn015|uhhuh.|B|b|b
+me012|right.|S|s|aa
+me003|show us the way bhaskara.|S|s|co
+me012|i guess the other thing is that um yeah|D|s|s
+me012|i mean when you're asked a specific question and you don't even|D|s|s
+me012|like if you're asked a where is question you may not even look like ask for the posterior probability of the uh e v a node.|S|s|s
+me012|right?|Q|qy|d
+me012|because that's what i mean in the bayes net you always ask for the posterior probability of a specific node.|S|s|df
+me012|so i mean|F|fh|fh
+me012|you may not even bother to compute things you don't need.|S|s|s
+mn015|um|F|fg|fg
+mn015|aren't we always computing all?|Q|qy|bu
+me012|no.|S|s|ar
+me012|you can compute uh the posterior probability of one subset of the nodes given some other nodes.|S|s|df
+me012|but totally ignore some other nodes also.|S|s|e
+me012|basically things you ignore get marginalized over.|S|s|s
+mn015|yeah but that's that's just shifting the problem.|S|s|nd
+mn015|then you would have to make a decision.|S|s|ng
+mn015|okay if it's a where is question which decision nodes do i query.|S|s|s
+me012|yeah so you have to make|D|s|aa
+me012|yeah.|S|s|aa
+me012|yes.|S|s|aa
+mn015|that's|D|%|%
+me012|but i would think that's what you want to do.|S|s|na
+me012|right?|Q|qy|d
+mn015|huh.|S|s|arp
+fn050|well eventually you still have to pick out which ones you look at.|S|s|ng
+mn015|yeah.|S|s|aa
+fn050|so it's pretty much the same problem.|S|s|s
+mn015|yeah it's it's it's apples and oranges.|S|s|s
+fn050|isn't it?|Q|qy|d
+mn015|nuh?|Q|qy|d
+mn015|i mean maybe it does make a difference in terms of performance computational time.|S|s|s
+mn015|so either you always have it compute all the posterior possibilities for all the values for all nodes and then prune the ones you think that are irrelevant|D|s|cs
+me012|uhhuh.|B|b|rt
+me012|huh|B|b|b
+mn015|or you just make a a priori estimate of what you think might be relevant and query those.|S|s|cs
+me012|yeah.|S|s|aa
+me003|so basically you'd have a decision tree query go there?|Q|qy|bu
+me003|if if that's false query this one if that's true query that one.|S|s|e
+me003|and just basically do a binary search through the|D|s|e
+me012|i don't know if it would necessarily be that uh complicated.|S|s|aap
+me012|but uh|F|fh|fh
+me003|well in the case of go there it would be.|S|s|nd
+me012|i mean it|D|s|s
+me003|in the case|D|s|s
+me003|because if you needed if if go there was true you'd want to know what endpoint was.|S|s|df
+me003|and if it was false you'd want to look at either income info on or history.|S|s|df
+me012|yeah.|S|s|aa
+me012|that's true i guess.|S|s|aa
+me012|yeah so in a way you would have that.|S|s|na
+me003|also i'm somewhat boggled by that hugin software.|S|s|t
+me012|okay why's that?|S|s|bk
+me003|i can't figure out how to get the probabilities into it.|S|s|s
+me003|like i'd look at|D|s|s
+me012|uhhuh.|B|b|rt
+me003|it's it's boggling me.|S|s|s
+me012|okay.|S|s|bk
+me012|all right.|S|s|bk
+me012|well hopefully it's fixable.|S|s|s
+me003|oh yeah yeah i i just think i haven't figured out what the terms in hugin mean versus what java bayes terms are.|S|s|aa
+me012|it's there's a|D|%|%
+me012|okay.|S|s|bk
+mn015|um by the way are do we know whether jerry and nancy are coming?|Q|fg|fg
+me012|so we can figure this out.|S|s|s
+mn015|or|D|qrr|qrr
+me012|they should come when they're done their stuff basically whenever that is.|S|s|na
+me012|so|F|fh|fh
+me003|what what do they need to do left?|Q|qw|rt
+me012|um|F|h|h
+me012|i guess jerry needs to enter marks.|S|s|s
+me012|but i don't know if he's going to do that now or later.|S|s|s
+me012|but uh if he's going to enter marks it's going to take him awhile i guess.|S|fh|fh
+me012|and he won't be here.|S|s|s
+me003|and what's nancy doing?|Q|qw|rt
+me012|nancy?|Q|qh|m
+me012|um she was sort of finishing up the uh calculation of marks and assigning of grades.|S|h|h
+me012|but i don't know if she should be here.|S|s|s
+me012|well or she should be free after that.|S|s|s
+me012|so|F|fh|fh
+me012|assuming she's coming to this meeting.|S|s|e
+me012|i don't know if she knows about it.|S|s|no
+me003|she's on the email list.|S|s|bu
+me003|right?|Q|qy|d
+me012|is she?|Q|qy|bu
+me012|okay.|S|s|bk
+mn015|uhhuh.|B|b|b
+mn015|okay.|F|fg|fg
+mn015|because|D|%|%
+mn015|basically what where we also have decided prior to this meeting is that we would have a rerun of the three of us sitting together.|S|s|bs
+fn050|okay.|B|b|b
+mn015|sometime this week again.|S|s|e
+me012|okay.|B|b|b
+mn015|and finish up the uh values of this.|S|s|e
+mn015|so we have uh believe it or not we have all the bottom ones here.|S|s|rt
+me003|well i|D|%|%
+fn050|you added a bunch of nodes for|D|qy|qy
+mn015|yep.|S|s|aa
+fn050|okay.|S|s|bk
+mn015|we we we have actually what we have is this line.|S|s|s
+mn015|right?|Q|qy|d
+me003|uh what do the uh structures do?|Q|fg|fg
+mn015|huh|B|b|b
+me003|so the the the for instance this location node's got two inputs.|S|s|rt
+me003|that one you|D|s|e
+me012|four inputs.|S|s|bc
+mn015|huh|B|b|b
+mn015|four.|S|s|aa
+me012|those are the bottom things are inputs also.|S|s|df
+me003|oh i see.|S|s|bk
+me012|yeah.|S|s|bk
+me003|okay that was|D|s|s
+me003|okay that makes a lot more sense to me now.|S|fh|fh
+mn015|yep.|B|b|b
+me003|because i thought it was like that one in stuart's book about you know the|D|s|s
+me012|alarm in the dog?|Q|qy|2
+me003|yeah.|S|s|aa
+me012|yeah.|B|b|b
+me003|or the earthquake and the alarm.|S|s|bc
+me012|sorry yeah i'm confusing two.|S|s|fa
+me003|yeah there's a dog one too.|S|s|s
+me003|but that's in java bayes.|S|s|e
+me003|isn't it?|Q|qy|d
+me012|right.|S|s|aa
+me012|maybe.|S|s|am
+me003|but there's something about bowel problems or something with the dog.|S|s|s
+me012|yeah.|B|b|b
+mn015|and we have all the top ones.|S|s|s
+mn015|all the ones to which no arrows are pointing.|S|s|e
+mn015|what we're missing are the these.|S|s|s
+mn015|where arrows are pointing.|S|s|e
+mn015|where we're combining top ones.|S|s|e
+mn015|so we have to come up with values for this and this this this and so forth.|S|s|co
+mn015|and maybe just fiddle around with it a little bit more.|S|s|cs
+mn015|and um|F|fh|fh
+mn015|and then it's just uh edges.|S|s|s
+mn015|many of|D|%|%
+mn015|edges.|S|s|r
+mn015|and um we won't meet next monday.|S|fh|fh
+mn015|so|F|fh|fh
+me003|because of memorial day?|Q|qy|d
+mn015|yep.|S|s|aa
+me012|we'll meet next tuesday i guess.|S|s|cc
+mn015|yeah.|S|s|aa
+me003|when's jerry leaving for italia?|Q|qw|rt
+mn015|on on friday.|S|s|s
+me012|which friday?|Q|qw|d
+mn015|this this friday.|S|s|s
+me012|okay.|S|s|bk
+fn050|oh this friday?|S|s|bk
+me003|ugh.|B|b|b
+mn015|this friday.|S|s|aa
+me003|as in four days?|Q|qy|bu
+mn015|yep.|S|s|aa
+me003|or three days.|S|s|bsc
+me012|is he how long is he gone for?|Q|qw|rt
+mn015|two weeks.|S|s|s
+me012|italy huh?|Q|qh|rt
+me012|what's uh what's there?|Q|qw|rt
+mn015|well it's a country.|S|s|j
+mn015|buildings.|S|s|j
+mn015|people.|S|s|j
+me003|but it's not a conference or anything.|S|s|s
+me012|pasta.|S|s|j
+me003|he's just visiting.|S|s|s
+mn015|huh|B|b|rt
+me012|right.|S|s|bk
+me012|just visiting.|S|s|aa
+mn015|vacation.|S|s|s
+me012|it's a pretty nice place.|S|s|ba
+me012|in my brief uh encounter with it.|S|s|e
+mn015|do you guys|D|qy|qy
+mn015|oh yeah so part of what we actually want to do is sort of schedule out what we want to surprise him with when when he comes back.|S|s|t
+mn015|um so|F|fh|fh
+me003|oh i think we should disappoint him.|S|s|j
+mn015|yeah?|Q|qh|rt
+mn015|you or have a finished construction parser and a working belief net.|S|s|s
+mn015|and uh|F|fh|fh
+me003|that wouldn't be disappointing.|S|s|ba
+me003|i think we should do absolutely no work for the two weeks that he's gone.|S|s|cs
+mn015|well that's actually what i had planned personally.|S|s|j
+mn015|i had i i had sort of scheduled out in my mind that you guys do a lot of work and i do nothing.|S|s|j
+mn015|and then i sort of|D|s|s
+me003|oh yeah that sounds good too.|S|s|ba
+mn015|sort of bask in in your glory.|S|s|s
+mn015|but uh do you guys have any vacation plans?|Q|qy|qy
+mn015|because i myself am going to be um gone.|S|s|df
+mn015|but this is actually not really important.|S|s|bd
+mn015|just this weekend we're going camping.|S|s|s
+me003|yeah i'm want to be this gone this weekend too.|S|s|s
+mn015|uh|B|b|b
+mn015|but we're all going to be here on tuesday again?|Q|qy|bu
+mn015|looks like it.|S|s|e
+fn050|yeah.|S|s|aa
+mn015|okay then let's meet meet again next tuesday.|S|s|co
+mn015|and um finish up this bayes net.|S|fh|fh
+mn015|and once we have finished it i guess we can um|D|s|s
+mn015|and that's going to be more just you and me.|S|s|s
+mn015|because bhaskara is doing probabilistic recursive structured object oriented uh|D|s|df
+me003|killing machines.|S|s|2
+mn015|reasoning machines.|S|s|bc
+me012|yes.|B|b|b
+mn015|and um|F|fh|fh
+me003|killing reasoning what's the difference?|Q|qh|j
+fn050|wait so you're saying next tuesday is it the whole group meeting?|Q|qy|bu
+fn050|or just us three working on it or or|D|qrr|qrr
+mn015|uh|F|h|h
+mn015|the whole group.|S|s|s
+mn015|and we present our results.|S|s|cc
+mn015|our final.|S|s|e
+fn050|okay.|S|s|bk
+mn015|definite.|S|s|e
+fn050|so when you were saying we need to do a re run of like|D|s|bu
+me012|what?|Q|qw|qw
+fn050|what like just working out the rest of the|D|s|bu
+mn015|yeah we should do this the upcoming days.|S|s|aa
+fn050|this week?|Q|qy|d
+mn015|so this week yeah.|S|s|aa
+fn050|okay.|S|s|bk
+me003|when you say the whole group you mean the four of us and keith?|Q|qy|bu
+mn015|and ami might|D|s|na
+me003|ami might be here.|S|s|na
+me003|and it's possible that nancy will be here.|S|s|e
+mn015|yep.|S|s|aa
+me003|so|F|fh|fh
+me003|yeah.|F|fh|fh
+mn015|because you know|D|s|s
+mn015|once we have the belief net done|D|s|s
+me003|you're just going to have to explain it to me then on tuesday.|S|s|co
+me003|how it's all going to work out.|S|s|e
+me003|you know.|B|b|b
+mn015|we will.|S|s|cc
+mn015|okay because then once we have it sort of up and running then we can start you know defining the interfaces.|S|s|aa
+mn015|and then feed stuff into it.|S|s|e
+mn015|and get stuff out of it.|S|s|e
+mn015|and then hook it up to some fake construction parser.|S|s|e
+mn015|and|F|fh|fh
+me003|that you will have in about nine months or so.|S|s|2
+me003|yeah.|B|b|b
+mn015|yeah.|B|b|b
+mn015|and um|F|fh|fh
+me003|the first bad version will be done in nine months.|S|s|j
+mn015|yeah i can worry about the ontology interface.|S|s|cc
+mn015|and you can keith can worry about the discourse.|S|s|co
+mn015|i mean this is pretty um i mean i i i hope everybody uh knows that these are just going to be uh dummy values.|S|s|s
+mn015|right?|Q|qy|d
+me012|which|D|%|%
+mn015|where the|D|s|e
+me012|which ones?|Q|qw|rt
+mn015|so so if the endpoint if the go there is yes and no then go there discourse will just be fifty fifty.|S|s|s
+mn015|right?|Q|qy|d
+me012|um what do you mean if the go there says no then the go there is|D|h|h
+fn050|i don't get it.|S|s|s
+me012|i don't understand.|S|s|s
+mn015|um|F|h|h
+me012|like the go there depends on all those four things.|S|s|s
+mn015|yep.|S|s|aa
+me012|yeah.|B|b|b
+mn015|but what are the values of the go there discourse?|Q|qw|rt
+me012|well it depends on the situation.|S|s|s
+me012|if the discourse is strongly indicating that|D|s|s
+mn015|yeah but uh we have no discourse input.|S|s|s
+me012|oh i see the see uh specifically in our situation d and o are going to be uh|D|s|bk
+me012|yeah.|S|s|bk
+me012|sure.|S|s|bk
+me012|so whatever.|S|s|s
+fn050|so so far we have|D|s|bs
+fn050|is that what the keith node is?|Q|qy|rt
+mn015|yep.|S|s|aa
+fn050|okay and you're taking it out for now?|S|s|bk
+fn050|or|D|qrr|qrr
+mn015|well this is d|D|s|s
+mn015|okay this i can i can get it in here.|S|s|s
+fn050|all the d s are|D|s|s
+mn015|i can get it in here.|S|s|r
+mn015|so we have the uh um|D|s|s
+mn015|let's let's call it keith johno.|S|s|cs
+mn015|node.|S|s|e
+me012|johno.|S|s|m
+mn015|there is an h somewhere printed.|S|s|s
+me003|there you go.|S|s|s
+me012|yeah people have the same problem with my name.|S|s|s
+mn015|yeah.|B|b|b
+me012|oops!|S|s|fe
+mn015|and um|F|fh|fh
+me003|does does the h go before the a or after the a?|Q|qr|qr
+me012|oh in my name?|Q|qy|bu
+me003|yeah.|S|s|aa
+me012|before the a.|S|s|s
+me003|okay good.|S|s|ba
+me003|because you when you said people have the same problem i thought|D|s|s
+me003|because my h goes after the uh the|D|s|s
+me012|people have the inverse problem with my name.|S|s|s
+me003|okay.|S|s|bk
+me003|i always have to check every time i send you an email a past email of yours to make sure i'm spelling your name correctly.|S|s|s
+me012|yeah.|B|b|b
+me012|that's good.|S|s|bk
+me003|i worry about you.|S|s|j
+me012|i appreciate that.|S|s|ft
+mn015|but when you abbreviate yourself as the basman you don't use any h s.|S|s|s
+me012|basman?|Q|qy|m
+me012|yeah it's because of the chessplayer named michael basman.|S|s|df
+me012|who is my hero.|S|s|e
+mn015|okay.|S|s|bk
+me003|you're a geek!|S|s|fe
+me003|it's okay.|S|s|ba
+me003|how do you|D|qw|qw
+mn015|okay.|F|fg|fg
+me003|how do you pronounce your name?|Q|qw|rt
+fn050|eva.|S|s|s
+me003|eva?|Q|qy|d
+fn050|yeah.|S|s|aa
+me012|not eva?|Q|qy|d
+me003|what if i were what if i were to call you eva?|Q|qo|qo
+fn050|i'd probably still respond to it.|S|s|s
+fn050|i've had people call me eva.|S|s|s
+fn050|but i don't know.|S|s|no
+me003|no not just eva eva.|S|s|ng
+me003|like if i take the v and pronounce it like it was a german v.|S|s|df
+mn015|which is f.|S|s|2
+me003|yeah.|S|s|aa
+fn050|um no idea then.|S|h|h
+mn015|voiced.|S|s|2
+fn050|what?|Q|qw|br
+me003|it sounds like an f.|S|s|s
+fn050|i|D|%|%
+me003|there's also an f in german.|S|s|s
+fn050|okay.|S|s|bk
+me003|which is why i|D|s|e
+mn015|well it's just the difference between voiced and unvoiced.|S|s|s
+me003|yeah.|B|b|b
+fn050|okay.|S|s|bk
+me003|as long as that's okay.|S|s|s
+fn050|um|F|fg|fg
+me003|i mean i might slip out and say it accidentally.|S|s|s
+me003|that's all i'm saying.|S|s|bd
+fn050|that's fine.|S|s|ba
+me012|yeah it doesn't matter what those nodes are anyway.|S|fg|fg
+me012|because we'll just make the weights zero for now.|S|s|df
+mn015|yep.|S|s|aa
+mn015|we'll make them zero for now.|S|s|na
+mn015|because it who who knows what they come up with.|S|s|df
+mn015|what's going to come in there.|S|s|e
+mn015|okay.|F|fh|fh
+mn015|and um|F|fh|fh
+mn015|then|D|%|%
+mn015|should we start on thursday?|Q|qy|rt
+me012|okay.|S|s|aa
+mn015|and not meet tomorrow?|Q|qy|d
+me012|sure.|S|s|aa
+mn015|okay.|S|s|bk
+mn015|i'll send an email.|S|s|cc
+mn015|make a time suggestion.|S|s|cc
+me003|wait.|S|s|co
+me003|maybe it's okay so that that that we can that we have one node per construction.|S|s|s
+me003|because even in people like they don't know what you're talking about if you're using some sort of strange construction.|S|s|df
+mn015|yeah they would still sort of get the closest best fit.|S|s|aap
+me003|well yeah but i mean the uh i mean that's what the construction parser would do.|S|s|aap
+me003|uh i mean if you said something completely arbitrary it would find the closest construction.|S|s|df
+mn015|uhhuh.|B|b|b
+mn015|okay.|B|b|b
+me003|right?|Q|qy|d
+me003|but if you said something that was uh|D|s|s
+me003|theoretically the construction parser would do that.|S|s|bsc
+me003|but if you said something for which there was no construction whatsoever people wouldn't have any idea what you were talking about.|S|s|s
+mn015|uhhuh.|B|b|b
+me003|like bus dog fried egg i mean.|S|s|e
+me003|you know.|B|b|b
+mn015|or if even something chinese for example.|S|s|2
+me003|or something in mandarin yeah.|S|s|e
+me003|or cantonese as the case may be.|S|s|e
+me003|what do you think about that bhaskara?|Q|qo|qo
+me012|i mean|F|h|h
+me012|well|F|h|h
+me012|but how many constructions do could we possibly have nodes for?|Q|qw|qw
+me003|in this system or in|D|qr|bu
+me012|no we.|S|s|ar
+me012|like when people do this kind of thing.|S|s|e
+me003|oh when how many constructions do people have?|Q|qw|bu
+me012|yeah.|S|s|aa
+me003|i have not the slightest idea.|S|s|no
+me012|is it considered to be like in are they considered to be like very uh sort of abstract things?|Q|qy|rt
+me003|every noun is a construction.|S|s|s
+me012|okay so it's like in the thousands.|S|s|bk
+me003|the|D|%|%
+me003|yeah.|B|b|b
+me003|any any form meaning pair to my understanding is a construction.|S|s|s
+me012|okay.|S|s|bk
+mn015|so|F|fh|fh
+me003|and form starts at the level of noun or actually maybe even sounds.|S|s|e
+mn015|phoneme.|S|s|2
+mn015|yep.|B|b|b
+me003|yeah.|B|b|b
+me003|and goes upwards.|S|s|e
+me003|until you get the ditransitive construction.|S|s|e
+me003|and then of course the i guess maybe there can be the|D|s|s
+me003|can there be combinations of the|D|qy|bu
+me012|discourse level constructions.|S|s|2
+me003|yeah.|S|s|aa
+me003|the giving a speech construction.|S|s|s
+mn015|rhetorical constructions.|S|s|s
+mn015|yeah.|B|b|rt
+me012|yes.|B|b|b
+mn015|but i mean you know you can probably count count the ways.|S|fg|fg
+mn015|i mean|F|fh|fh
+me003|it's yeah i would definitely say it's finite.|S|s|na
+mn015|yeah.|S|s|aa
+me003|and at least in compilers that's all that really matters.|S|s|s
+me003|as long as your analysis is finite.|S|s|e
+me012|how's that how it can be finite again?|Q|qw|rt
+me003|nah i can't think of a way it would be infinite.|S|s|s
+mn015|well you can come up with new constructions.|S|s|ng
+me003|yeah if the if your if your brain was totally non deterministic then perhaps there's a way to get uh an infinite number of constructions that you'd have to worry about.|S|s|aa
+me012|but i mean in the practical sense it's impossible.|S|s|s
+me003|right because if we have a fixed number of neurons.|S|s|aa
+me012|yeah.|S|s|aa
+me003|so the best case scenario would be the number of constructions|D|s|s
+me003|or the worst case scenario is the number of constructions equals the number of neurons.|S|s|bsc
+me012|well two to the power of the number of neurons.|S|s|aap
+me003|right.|S|s|aa
+me003|but still finite.|S|s|aap
+mn015|okay.|B|b|b
+me003|no wait.|S|s|co
+me003|not necessarily is it?|Q|qy|rt
+me003|we can end the meeting.|S|s|co
+me003|i just|D|%|%
+me003|can't you use different different levels of activation?|Q|qy|rt
+me003|across uh lots of different neurons to specify different values.|S|s|e
+mn015|uhhuh.|B|b|b
+me012|um yeah but there's like a certain level of|D|h|h
+me003|there's a bandwidth issue.|S|s|2
+me003|right?|Q|qy|d
+me012|yeah so you can't do better than something.|S|s|na
+me003|yeah.|B|b|b

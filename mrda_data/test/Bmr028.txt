@@ -1,1770 +1,1770 @@
-me011|and we're going.|s
-me011|so the only status|s
-me011|well first of all we haven't decided whether we're meeting recorder data issues or recognition this week.|t
-me011|i think we were recognition.|s
-me013|what was on the list the|qw
-me013|i mean i sent you a couple things.|s
-me013|although i don't remember them.|s
-me011|you only sent me one thing which was demo status.|s
-me011|and asking which one we were on this week.|s
-me013|right.|bk
-me013|uh that was the second thing.|bk
-me013|right right.|bk
-me011|so should we simply assert that this week we are recognition and next week data issues?|rt
-fe008|huh.|b
-me018|i think that's correct.|na
-me011|and|%--
-fe008|yeah i think so too.|aa
-me018|yeah.|b
-me011|and uh|fh
-fe008|yeah.|b
-me011|so i think what we should probably do is any quick small stuff we can do every week.|cs
-me011|so like morgan asked about the demo status.|cs
-me011|we can go ahead and talk about that a little bit.|cs
-me011|and then do then alternate in more depth.|cs
-me013|by the way i'll i i won't be here next thursday.|s
-me013|i'll be out of town.|s
-me011|okay.|bk
-me013|but|fh
-me011|actually i may not be here either.|s
-me011|so|fh
-me011|i got to double check the dates.|s
-me011|but anyway.|rt
-me011|so uh demo status.|t
-me011|first of all i did a little thing for liz with the transcriber tool that um first of all it uses the forced alignments.|s
-me011|so that the words appear uh in their own segments rather than in long in long chunks.|s
-mn017|oh.|b
-me011|she said that that she thought that was a much better idea for the other stuff she's working on.|s
-mn017|yeah that's great.|bk
-me011|um|fh
-me011|and that works fine.|ba
-me011|except it's even slower to load.|ba
-me011|it's already pretty slow to load.|ba
-mn014|yeah it's more segments?|bk
-me001|it's slow.|ba
-mn014|or|qrr
-mn014|yeah.|b
-mn017|is that because the transcripts get longer?|rt
-mn014|yeah.|b
-mn017|the transcript file gets longer.|e
-me011|yeah yep.|aa
-mn014|yep.|aa
-me011|and the transcriber tool is just not very good at at that.|s
-mn017|but but that's that's|s
-mn017|you didn't have to change the software for that yet.|bu
-mn017|right?|bu
-me011|correct.|aa
-mn017|it's just formatting the right kind of uh x m l?|bu
-me011|yeah it's just writing conversion tools from the format that the aligner.|fg
-me011|actually he did a s r t file for it.|s
-mn017|uhhuh okay.|bk
-me011|and then just back into transcriber transcriber format.|s
-mn017|oh good that's very good okay.|ba
-me011|yeah so my my decision was for the first pass for this demo that liz was talking about i decided that i would do um only enough to get it working as opposed to any coding.|fg
-mn017|uhhuh.|b
-mn017|right.|b
-me011|and so the other thing she wanted to display the stylized f zeroes i think they're called.|rt
-me011|is that right?|rt
-me001|yeah the linear fit.|aa
-mn017|uhhuh.|b
-me011|and uh|fh
-me011|so what i did is i just took the file with those in it converted it so that it looks like an audio file.|s
-mn017|right.|b
-me011|and so you it shows that instead of the wavefile.|s
-me011|and so that that's working.|s
-mn017|cool.|b
-me011|and i think it actually looks pretty good.|ba
-mn017|uhhuh.|b
-me011|um i'd like someone who's more familiar with it to look at it.|cs
-me011|because when i was looking at it we seemed to have lots of stuff going on when no one's saying anything.|df
-me001|that's just background speech.|s
-me011|uh.|bk
-me001|yeah.|b
-me001|so|fh
-me018|so do you have to pad that out uh so that it looks like it's an eight kilohertz sampled thing?|rt
-me011|no i the audio file you can specify any sampling rate.|ar
-me018|or|qrr
-me011|and so i i specified instead of you know sixteen thousand or eight thousand i specified a hundred.|s
-me018|huh.|b
-me011|um|fh
-me011|and the only problem with that is that there's a bug in transcriber.|s
-me011|that if the sample rate is too low when it tries to compute the shape file it fails.|s
-mn017|huh.|b
-me011|um and crashes.|e
-me011|um|fh
-me011|but the solution to that is just set the option so it doesn't compute the shape file and it will work.|cs
-me011|and the only problem with that is you can't uh zoom out on it.|bd
-me011|you can zoom in but not out.|e
-me013|what's a shape file?|rt
-me011|the shape file is|s
-me011|if you think about a wavefile sixteen thousand samples per second is way too many to display on the screen.|ba
-me013|uhhuh.|b
-me011|so what transcriber does is it computes a another thing to display based on the waveform.|s
-me001|we're talking about we're talking about that demo.|t3
-fe016|yeah tried that and it died.|bk
-me011|and it displays it at|s
-me001|yeah did it?|bk
-me011|and it allows you to show many different resolutions.|s
-me011|so there's a little user interface component that lets you select the resolution.|s
-fe016|great.|ba
-me013|i see.|bk
-me011|and if you don't compute the wavefile you can't zoom out.|s
-me011|you can't get a larger view of it.|s
-me011|but you can zoom in.|s
-mn017|huh.|b
-me011|um|fh
-me011|and that's all right.|ba
-me011|because at at a hundred samples that's already pretty far out.|df
-me011|and uh so i think it looks pretty good.|ba
-me011|but i'll let liz look at it and see what she thinks.|s
-mn017|uhhuh.|b
-fe016|i i got the wavefile.|s
-fe016|but|%--
-fe016|sorry i got the wavefile.|fa
-fe016|but i couldn't get the words yet.|rt
-fe016|but the the wavefile part looks looks good.|ba
-me011|okay.|bk
-me011|we should if you were having problems with the words we should figure out why.|cs
-fe016|i i'll have done i'm probably doing something wrong.|s
-me011|okay.|bk
-fe016|sorry this microphone's moving around.|fa
-fe016|i can't put this over my ear.|s
-fe008|it could do you have to put it in your ear?|rt
-me011|you you clip that part over your ear.|s
-fe016|i can i can do that.|s
-fe016|but there's no orientation where the|df
-fe016|darn!|fe
-me011|we'll all watch liz play with the mike.|s
-fe008|does it really need to go in her ear?|r
-me011|um|%--
-fe008|that that bud.|e
-fe008|it doesn't have to go in her ear.|bu
-fe008|right?|d
-me011|uh no it doesn't have to.|aa
-me011|but that that's i find that's the only way to wear it.|df
-fe008|oh wow.|bk
-me011|is that the bud's in the ear and that the link is over it.|e
-me013|this bud's for|t1
-me011|but so anyway i think that looks pretty good.|fg
-me013|no.|t1
-me011|the only the only other thing we might want to do with that is be able to display more than one waveform.|cs
-fe016|huh.|b
-me011|and that actually shouldn't be too slow.|ba
-me011|uh because it's much lower resolution than a full waveform.|df
-mn014|yeah.|b
-me011|the problem with it is just it does require coding.|df
-me001|yeah it|fg
-me011|and so it would be much better to get uh dave gelbart to do that than me.|s
-me011|because he's familiar with the code.|df
-me011|and is more likely to be able to get it to work quickly.|df
-me001|it'd be nice if we can do like a quick hack.|cs
-me001|just so we can play the audio file too.|df
-fe016|right.|aa
-me001|um with with the display.|cs
-me011|oh okay.|bk
-me001|like even if we i think that even if we didn't display the waveform it might be better to rather play the waveform than display it.|ba
-me001|i mean like if we were to choose i don't know if i were to choose between one or the other i'd rather have it played.|cs
-me011|uhhuh.|bk
-me011|i understand what you mean.|bk
-fe016|yeah.|b
-me001|and then displayed.|e
-me011|right.|bk
-me011|but for the demo maybe it doesn't matter.|am
-me011|i'm not sure whether you want to do the demo live anyway.|no
-me011|or just screen shots of what we have.|cs
-me011|the problem with doing it live is it takes so long to load that um|ba
-me013|i don't know.|no
-mn017|so this the this uh the sluggishness of the loading is all due to the parsing of the x m l format.|bu
-me011|um i was talking to dave gelbart about that.|s
-mn017|right?|d
-me011|and apparently it's not actually the parsing of the x m l raw|s
-me011|that going from the x m l to an internal tree structure is pretty fast.|ba
-mn017|huh.|b
-me011|but then it walks the tree to assemble its internal data structures.|s
-me011|and that's slow.|ba
-mn017|huh.|b
-me018|seems like you should be able to spawn that off into a background process.|s
-me018|because not everything is displayed in that tree at once.|bu
-me018|right?|d
-me011|uh no.|h
-me011|but what it does is it actually assembles all the user interface components then.|s
-mn017|but|%--
-me018|right.|b
-me011|and then displays all the user interface components.|s
-me013|i'm i'm confused.|df
-me018|seems like you want to|s
-me013|uh is is this downloading something that happens once?|rt
-me011|yes.|aa
-me013|and and then when you display different things it's fine?|bu
-me013|so in that case|s
-mn017|no whenever you load a new meeting or a new transcript.|ar
-me011|a new transcript.|2
-mn014|yep.|b
-me013|well a new meeting a transcript right.|s
-mn017|right.|bk
-me013|but but for but for|%--
-me011|or audio file.|e
-me011|well actually the audio files are pretty fast too.|ba
-me013|for presentation in uh uh i wouldn't be|s
-mn014|yeah.|aa
-me001|yeah.|aa
-mn017|you just have to have the thing running before you open your laptop.|s
-me001|yeah.|b
-fe016|yeah.|b
-me011|right the only problem with that is if anything goes wrong or if you want to switch from one thing to another.|fg
-fe016|right.|b
-me001|yeah.|b
-me013|go wrong?|bu
-mn014|yeah.|b
-me013|i see yeah.|bk
-fe016|right i guess for the demo you can always play just store the pieces that you're going to display and play those as separate files if we can't you know actually do it.|fg
-mn017|just make shorter files.|cs
-fe016|but it's you know it it's|s
-me011|that's true we could just subset it.|aa
-fe016|yeah.|aa
-me011|that's a good idea.|ba
-mn017|yeah.|b
-me011|that's actually probably the right thing to do.|ba
-fe016|and just make it|%--
-mn014|yep.|b
-me011|you know just take ten minutes instead of an hour and a half.|s
-mn014|yeah that's what i did for for my talk.|fg
-me013|oh oh you're downloading a whole meeting.|bk
-me011|yeah.|aa
-me013|oh yeah that.|na
-mn014|yeah.|b
-me011|yeah so that that's actually the definitely the way to do it.|fg
-mn014|yeah.|bk
-me011|that's a good idea.|ba
-me013|yeah.|b
-me013|and then still do it ahead of time.|s
-me013|but then at least you're covered if if uh if there's a problem.|s
-me011|yeah if there are any problems.|fg
-fe016|right.|b
-me011|yeah i mean even five minutes is probably enough.|fg
-mn014|huh.|b
-fe016|right.|b
-fe016|so what happened to is it possible at all to display the words in their aligned locations?|fg
-me011|that's what i did.|s
-fe016|okay so sorry.|bk
-me011|yeah.|b
-mn017|you missed that part.|s
-fe016|i missed|s
-fe016|okay great!|bk
-fe016|but it|%--
-fe016|okay.|bk
-fe016|i couldn't get the words and the waveform at the same time for some reason.|s
-fe016|and there must be some|s
-fe016|i'll i'll work on it with don and see what i'm doing wrong.|cc
-me011|yeah i mean just ask just come by my office.|fg
-me011|i can show you as well.|s
-fe016|okay great well thanks a lot.|ba
-fe016|that's really great.|ba
-me011|right.|bk
-me011|and for the information retrieval uh don has been working on that.|t
-me011|so|fh
-me001|yeah so it's coming along.|fg
-me011|it looks like|s
-me001|um|fh
-me001|just hacking dan's code and stepping through it.|s
-me001|but i think it's close.|ba
-me011|great.|ba
-me001|and we should be there pretty soon.|s
-me001|with at least like at least with you know being able to search over certain amount of meetings.|bd
-me001|just like really basic stuff.|bd
-me001|just asking looking for a word and looking through a bunch of different meetings.|e
-me001|and if we have time i'll also add you know like choosing which speakers you want to include and stuff.|s
-me001|but|fh
-me013|okay well i'm going to start working on this the week after next.|bk
-me013|so that's the point when i'll need to look more carefully at what what what you guys have.|s
-me001|so is the end of the month still the the|bu
-me013|right the week after|aa
-me013|the monday the week after next is july second.|s
-me013|which is the first day i get back.|s
-me001|okay.|bk
-me013|so|fh
-me001|okay.|bk
-me011|yeah so i think for the stuff liz was talking about we have something that'll work now.|fg
-me011|and liz can look at it and see if she wants anything else.|s
-me011|maybe we can work on doing displaying multiple or displaying one and playing back the other.|cs
-fe016|so do you think it's reasonable to display more than one before the demo?|rt
-fe016|because|df
-me011|um i think i'd i'd have to ask dave.|fg
-me011|i did it once before.|s
-me011|and it was just so slow to scroll that i gave up.|s
-fe016|huh.|b
-me011|but the advantage is that these things are much lower sampling rate.|ba
-fe016|right.|b
-me011|and so then it might be all right.|am
-fe016|okay let me know.|bk
-me001|morgan when's the demo?|rt
-me013|well uh i'm giving a talk on july sixteenth.|fh
-me013|it's a monday in four weeks.|bu
-mn017|so if if raw speed is the problem this thing is written in tcl.|fg
-me013|three weeks?|d
-me011|tcl.|2
-mn017|right?|d
-mn017|i mean john osterhout uh you know he started his own company based on tcl stuff.|s
-mn017|and maybe they have the native code compiler or something.|s
-me011|i mean we could check.|df
-me011|i don't think they do.|s
-me011|um there was actually a java back end that apparently is actually a little faster.|s
-me011|it generates byte code.|s
-mn017|huh.|b
-me011|but uh|fh
-me013|it's always exciting to hear that java's faster than something.|ba
-me011|yeah.|bk
-me011|well everything is faster than tcl t k.|s
-me013|yeah.|b
-me011|it's a string substitution language basically.|s
-me011|i should probably beep that out in case john osterhout ever listens.|s
-fe008|but tcl is wonderful.|fa
-me011|but|fh
-me011|well it is wonderful.|na
-me011|it is for prototyping and user interface.|e
-me011|it's just really the language is awful.|ba
-fe008|there you go.|s
-fe008|oh.|bk
-me013|beep.|j
-me011|beep.|m
-me011|right.|bk
-me011|but let me tell you how i really feel.|s
-me013|we're all entitled to our opinions here.|s
-me011|yep.|bk
-fe008|yeah i like it.|fg
-me013|um yeah so it's yeah i think it must be three and a half weeks.|fg
-fe008|it's great.|ba
-me013|uh because july the the meeting is july sixteenth through eighteenth.|df
-me013|and uh my talk's the first day.|s
-me013|so|fh
-me001|okay.|bk
-me013|i'm flying out there the sunday before.|s
-me013|so um|fh
-mn017|huh.|b
-me013|i guess you know it'd be desirable if a week ahead of that we basically had thought we had it.|s
-me013|which would allow a week for|s
-me011|oh that's right.|bk
-me001|for realizing we don't?|2
-me013|re iterating.|s
-me013|yeah pretty much.|aa
-me013|yeah.|b
-me011|then the other issue related to that is data release.|t
-me011|if we want to show this in public it should be|s
-me011|so i uh haven't gotten any other replies from the original email asking for approval.|s
-me011|so i sent out another set this morning.|s
-me013|i i saw that.|s
-me011|and uh we'll see if we get any responses.|s
-fe016|i just did it.|rt
-me011|very good.|ba
-fe016|but it is|s
-fe016|i did want to say that um|s
-me011|did you notice i put in the filter?|rt
-fe016|no!|ar
-fe016|no no!|ar
-me011|go ahead.|co
-fe016|i just figured you|s
-me011|there's a link there that now says if you want to search by filter by a regular expression you can.|s
-fe016|oh my gosh.|ba
-fe016|okay.|bk
-me011|i put that in just for you.|rt
-fe016|terrific.|ba
-fe016|well since you didn't answer the|s
-fe016|so there was a question i had asked adam whether it's possible to search only for your own name your own utterances.|s
-fe016|so that you know you don't have to go through the whole meeting.|s
-fe016|and um|fh
-fe016|and i didn't hear back.|s
-fe016|so i thought okay it's probably too hard.|s
-fe016|he's overloaded.|s
-fe016|i won't say anything.|s
-fe016|i'll just do it.|s
-fe016|great.|ba
-fe016|okay so anyway i looked at everybody else's|bk
-me011|it's actually an arbitrary arbitrary regular expression.|s
-fe016|good.|ba
-me011|but if you search your name you'll get all of the things you said and any time anyone said your name.|s
-fe016|so|%--
-fe016|that's great.|ba
-me011|so|fh
-me013|and it's it's case insensitive.|s
-me011|correct.|bk
-me013|yeah.|b
-fe016|that's great.|b
-me018|did you actually look through your transcripts?|rt
-me018|or you just approved them all?|d
-fe016|uh well|h
-me018|i just approved all mine.|s
-me018|i didn't look at them.|s
-fe016|i sort of spot checked.|s
-fe016|i was trying to remember|s
-mn017|oh darn!|fe
-mn017|i haven't done that yet.|s
-mn017|uh okay.|bk
-fe016|i couldn't find the the keywords for things that i thought i had said wrong.|s
-fe016|so|fh
-me011|it's hard to find.|ba
-fe016|that makes it|s
-me018|that's a compliment to you.|s
-me018|he said it's hard to find things you say wrong.|e
-me011|huh|%--
-fe016|it's hard to find anything that you say in these.|ba
-me011|yep.|aa
-fe016|great.|ba
-fe016|well thanks for the filter.|ft
-me011|you really do have to sort of|s
-fe016|uh it's really useful|ba
-fe016|because if you're only at part of a meeting or something.|df
-me013|so we have our first information retrieval example.|s
-me013|it's a regular expression.|s
-me011|yeah that's right.|bk
-fe016|yeah!|aa
-me013|searcher.|s
-fe016|that's actually well it's useful.|ba
-me011|and it demonstrates why it doesn't work.|s
-me011|because you really want to go more than one meeting.|df
-me013|yeah.|aa
-me013|yeah.|b
-me011|and you need a better user interface for displaying the results.|s
-fe016|but this helps a lot.|ba
-me011|so|fh
-me011|yeah.|bk
-me013|you want to say where are where find all the contentious things i said.|s
-fe016|great thanks.|ft
-me011|yeah really.|bk
-me018|find everything that should be bleeped.|cs
-me011|that's right we do have that nice marker is that|fg
-me011|because we all know we're being recorded whenever anyone says anything like that we then have a conversation about bleeping it out.|df
-fe016|right.|b
-fe016|yeah you can search for beep or bleep.|fg
-me011|so|fh
-me011|yep.|aa
-me013|yeah.|b
-fe016|in somebody else's turn.|s
-me011|um oh and also we actually have a few people who have still not filled out speaker forms.|fg
-me011|specifically in the n s a ones.|s
-me011|and i noticed that when i tried to uh uh generate the transcripts for n s a that there are a few with no speaker forms.|s
-me011|and so uh i have a i sent out yet another this morning which i think makes six total emails that i've sent to these people.|s
-me011|and so i think we need to escalate to some other method of trying to contact them.|s
-me013|um right.|fg
-mn017|stalk them at their|cs
-me013|has has has joachim sokol replied?|rt
-mn017|like in the morning when i leave for work.|e
-me011|nope.|ar
-me013|or|qrr
-fe008|i think maybe talk to him first in person.|cs
-fe008|that's what i would think.|s
-me013|he's not around is the only problem.|ng
-fe008|uhhuh.|bk
-fe008|oh is that right?|bk
-fe008|oh i saw him i saw him on tuesday.|s
-me013|yeah otherwise it'd be a good idea.|aa
-me013|yeah he popped in.|s
-me013|but i mean he's basically gone.|e
-fe008|oh okay.|bk
-mn017|cold calling at lunch time uh dinner time i mean.|s
-me011|well if i could find phone numbers that would certainly work.|s
-fe008|well did you ask lila?|rt
-me011|but|fh
-fe008|because i bet she has this information.|df
-me011|yeah that's a good idea.|aa
-me011|i'll ask her if she can track some of them down.|cc
-me013|yeah.|b
-fe008|yeah.|b
-me013|yeah and and tell her you know tell her your specific problem.|fh
-me013|she'll fix|s
-fe008|and it|%--
-fe008|and uh then there's still um|s
-fe008|miguel is still an active member of the group and he's|s
-fe008|what i mean is he's an active member and he's still here.|s
-me013|he's right there yeah.|s
-me011|uhhuh.|b
-fe008|very helpful.|ba
-me011|yeah i didn't actually see who they all were.|fg
-me011|um a couple of them were like people at i b m who were here for one of the i b m meetings.|df
-me013|yeah.|b
-me011|and one a guy from s r i who was at one of the s r i meetings.|df
-me011|and so uh those might be harder to track down.|s
-fe008|most of them though really were visitors here and lila should have contacts with them.|df
-me011|yep.|aa
-fe008|nice meetings by the way.|ba
-fe008|yeah.|b
-me011|i mean they they were people who didn't have accounts at icsi.|df
-me011|so they're they're harder to find.|ba
-fe008|well not the ones that|nd
-fe008|are you are you sure?|qy
-me011|am i sure about what?|qy
-fe008|yeah n s a one and n s a three.|rt
-me011|there were other people also.|s
-fe008|we're talking about those?|bu
-me011|there were other other people also who didn't fill out the speaker forms in addition to the n s as.|e
-me013|in in other meetings.|s
-me011|yeah.|aa
-me013|yeah.|b
-fe008|oh oh i see okay fine.|bk
-me013|well s r i people easy to find.|s
-fe016|yeah.|b
-me011|yeah.|b
-me013|and uh i b m people also just let us know.|s
-me013|i mean|%--
-me013|just we certainly have their email.|s
-fe008|but i knew everybody in the n s a meetings.|s
-me011|uhhuh.|b
-fe008|so i'm sure that we have uh fresh you know information on them.|s
-me011|right.|b
-me011|yeah none of the emails bounced so i know they're going somewhere.|fg
-fe008|good okay.|bk
-me013|right.|bk
-me011|that's all i have.|t
-me011|you want to talk about recognition?|d
-mn017|chuck you want to talk about recognition?|rt
-me018|i haven't done anything.|s
-me011|liz you want to talk about recognition?|j
-me018|i was|s
-me011|thilo you want to talk about recognition?|j
-me018|i was away for a couple of days.|df
-me018|so|fh
-me018|i haven't done a|s
-fe016|we're sort of in a stage where we're uh don's going through getting some of the next meetings that jane has.|s
-fe016|and uh you know creating a second database.|s
-fe016|so we haven't actually run anything yet.|s
-fe016|we need to get a critical mass for that.|s
-mn017|however i just got an email from thilo saying that we are ready to run|s
-mn017|i mean we have segmentations for the old meetings that are from his segmenter.|s
-fe016|and check the segmentations.|2
-me001|uhhuh.|b
-fe016|yeah.|b
-mn017|and so|fh
-mn017|you you had three different versions with different like pause thresholds between the segments?|bu
-fe016|great.|ba
-mn014|yep yep.|aa
-mn014|yeah just yeah just smooth the the output of the of the detector.|aa
-mn017|right and you recommended using the one with two maximum of two seconds?|bk
-mn014|yeah.|aa
-fe016|a what do you mean a different pause threshold?|qw
-mn014|yep.|aa
-mn017|but two|s
-mn014|or you can yeah you can use the one with one second or whatever.|s
-fe016|do you mean a|qy
-mn014|i i i there's no not much difference between the the one second and the two second one.|ba
-mn017|uhhuh.|b
-mn017|i mean the only advantage to using the longer threshold would be that you run less risk of missing some some speech.|bu
-me011|backchannel.|2
-mn017|right?|d
-mn014|and i think wouldn't it be better to to have a little longer sequences for the recognizer?|rt
-mn014|because of the language model as sometimes it happens that that it cuts off within a|s
-fe016|yeah.|aa
-mn017|but two seconds is pretty long.|s
-mn017|so|fh
-mn014|yeah but we can be sure that as or we can be not not totally sure.|bk
-fe016|no it's not bad.|ar
-fe016|that's good.|ba
-mn014|but we can be somehow sure that there is nothing not no speech between those.|s
-mn017|huh.|b
-mn017|huh|b
-fe016|yeah|fg
-mn014|so it it|%--
-me018|what does the two second threshold mean?|rt
-mn014|i think it doesn't|s
-fe016|i i think that's that's good.|ba
-mn014|it's the same as in the the smoother for the i b m thing.|rt
-me011|it combines them if it's if the pause is longer than|s
-mn014|yeah.|b
-fe016|it's it's no more than six words so roughly on average.|s
-me018|uh.|bk
-mn014|so yeah.|b
-mn017|huh.|b
-mn014|so|fh
-fe016|that's pretty good i think.|ba
-me011|right so the the trade off is you get longer utterances but you miss fewer utterances.|fg
-fe016|it's better than a|ba
-mn014|but yeah but but the the chunks are already in general are short.|fg
-mn014|so i i i think it would be better to have to have more of them concatenated together in order to have better language model.|ba
-mn017|huh.|b
-mn014|or language modeling.|bsc
-mn017|i think two seconds huh|s
-mn014|i don't know.|bd
-mn017|i would maybe go with one second.|cs
-mn017|i don't know it's a|s
-me011|well take a look|s
-mn014|yeah.|aa
-mn014|do that.|co
-mn014|yeah.|b
-mn017|see what the length distribution is.|cs
-mn014|yeah but but there's there's really not much difference between the one second and the two second.|fg
-mn017|yeah.|b
-mn017|really?|bh
-me018|i wouldn't think that the language model would continue across two seconds.|s
-mn014|so just take the one the one second one.|co
-mn017|uh i'm i'm i'm just scared that with two seconds you get you get um you you get false recognitions.|s
-fe016|yeah.|b
-fe016|well yeah you do|na
-mn017|you're going to yeah you're going to hurt yourself occasionally by having missing the language model context.|s
-mn017|but you might hurt yourself more by having misrecognitions due to background speech or uh noise or whatever.|s
-mn014|i i'm not too afraid about that as|s
-mn014|when there when there would be something some background speech or something there there would be a a chunk in another channel.|df
-mn017|oh i see then oh i see okay.|bk
-fe016|yeah i think it's better.|fg
-mn014|and when there is something in between i i i do not concatenate them.|s
-mn017|oh right oh that's|bk
-fe016|the longer is better.|s
-mn014|it's just when there is when they are sequentially and|s
-fe016|there's there's|s
-mn017|uhhuh okay sure.|bk
-mn014|so i i would use|cs
-mn017|we can try them all and see which works better.|s
-fe016|there's a there's a lot of these cases just like now where i people say uh uh when they're trying to|s
-mn017|uhhuh.|b
-fe016|there's about a half second pause to a second in between and then another word|ba
-mn014|yep.|b
-mn017|okay.|b
-fe016|and it's much better if we can keep those together i think.|ba
-me011|yeah it's uh funny looking at some of the transcripts.|fg
-me011|i was filtering by person.|s
-mn017|uhhuh.|b
-me011|and in one of the one of the early meetings one particular person almost the only thing they said the entire meeting was yeah uhhuh.|s
-me011|it was just a whole list of them.|s
-me011|it was very funny.|ba
-fe008|i bet i know who that was.|s
-mn017|okay so so we need to split the waveforms then.|fg
-fe008|yeah.|b
-mn017|or do you already have them split up?|qrr
-mn017|no you don't.|bu
-mn017|right?|d
-mn014|no.|aa
-mn017|so so i guess don would need your help to to create a new set of split uh meetings.|s
-me001|sure.|bk
-fe016|you know you just fake the format that you take as input with the synch times to a new set of synch times.|s
-mn017|if|%--
-mn014|we could|%--
-mn017|right.|b
-mn014|huh|b
-me011|uh do we know about disk?|fg
-fe016|and|fh
-mn017|but|%--
-mn017|oh yeah there's that pressure.|bk
-me011|uh abbott disk.|e
-me013|uh i know they're in.|na
-me011|okay.|bk
-me013|and uh but i don't know i think he was wasn't he asking about|qy
-me018|he had a problem.|s
-me018|right?|d
-me011|yep.|aa
-mn014|yep.|aa
-fe016|oh.|bk
-me013|well there was an issue.|s
-me013|he wanted to take it down.|s
-me013|and then he tried|s
-me018|he did and then it didn't work.|s
-me011|couldn't format them.|s
-me018|and|fh
-me011|no.|s
-me018|i didn't hear anything after that.|s
-me011|the only reason i'm asking is you're going to need space to split them up.|s
-me011|and so i wanted to make sure we had some available for you.|s
-me001|i still have like probably .six seven eight gig on my disk.|s
-me011|okay so we're okay we're still okay for another couple days then.|bk
-fe016|and i have i have like another un backed i have another six gig which jeremy if you're not using can on x a.|s
-me001|yeah.|b
-me011|so we're okay for for a couple weeks then.|r
-me013|markham probably needs he probably needs us to approve another time to take things down.|bu
-fe016|to you.|%
-me013|right?|d
-me013|in order to do that.|e
-me018|yeah he he didn't say he hasn't said anything to me about it.|bk
-me013|i thought he i thought he said in that mail that he would need to take it down another time.|s
-me013|so i think he|s
-me018|yeah i think|fg
-me011|yeah he just didn't say when.|fg
-me011|so|fh
-me018|yeah he|fg
-me013|well no i think he wanted us to tell him when.|s
-fe016|how about during the picnic?|cs
-me011|uh.|bk
-me011|yeah i'm sure he'd appreciate that.|ba
-me013|yeah i'm sure he'd love to|fg
-me011|well my feeling about that|s
-me013|fortunately markham's not a transcriber.|ba
-me013|but um|fh
-me011|is is|%--
-fe016|beep.|rt
-me011|well okay that's the point.|s
-me011|so it's jane that we have to coordinate that through.|s
-me011|uh what i was going to say is as soon as possible and i'm willing to not work for an hour to get it done.|s
-me011|uh but|fh
-me013|i might not work.|t1
-mn017|oops i'm sorry.|fa
-mn014|oops!|fe
-me001|whoa!|fe
-me013|i'm i'm willing to not work for an hour.|m
-me011|because when abbott's|s
-me013|i know you're willing to not work for an hour.|j
-me011|yeah right.|bk
-me013|but i|%--
-me011|because when abbott is down you can't work.|s
-fe016|you're really dedicated if you're no matter how you parse that one.|ba
-mn017|okay.|bk
-me011|but uh i think the the people it disrupts the most are the transcribers.|tc
-fe008|well you know uh i all i need to do is mail um send them a mail like two days in advance so they can schedule their time.|s
-fe008|i did that with the last outage i i wrote to them letting them know that this|s
-me011|okay.|bk
-mn017|huh.|b
-me013|so okay it sounds like markham should almost decide when he wants to do it and tell us as long as|s
-fe008|was not um|%--
-me011|so early next week.|s
-me011|and just as long as we have a little warning.|2
-me013|yeah.|aa
-fe016|so that means we can't um save meeting data either.|bu
-fe008|yeah.|b
-fe016|right?|d
-me011|uh just not during that time when it's down.|aap
-me011|but that it should be down for an hour.|bd
-fe016|so it just can't so we can't have two meetings in a row where the first meeting's during that hour.|bu
-fe016|that's all i meant.|s
-me011|right.|aa
-me011|well no we can store them here.|ar
-fe016|that that's happening like today.|s
-me011|we can store them here.|r
-me011|you we just run the risk that if you have a crash we lose the data.|s
-fe016|temporarily.|e
-me011|so|fh
-me018|they're stored on popcorn.|s
-fe008|this is on popcorn or|s
-fe016|well no i i mean the|s
-fe016|oh okay.|bk
-me011|yep.|b
-fe008|this is on popcorn or something?|bu
-me011|yep.|aa
-fe008|yeah okay.|bk
-me013|we store we store our data on popcorn.|s
-me011|anything else?|tc
-me013|that's really great.|ba
-me011|excuse me?|br
-me013|i was just thinking we store our data on popcorn.|s
-me013|how many how many institutes can you say do that?|qw
-me011|yep.|b
-mn017|pop goes the data.|j
-me013|okay.|bk
-me013|uh megabytes and many megabytes too.|s
-me013|um what what uh|qw
-me011|we have a kernel on popcorn too.|j
-mn017|right.|b
-fe008|that's very good.|ba
-me013|so uh what what's on your queue for for recognition experiments?|qw
-mn017|can i have butter on my meeting?|j
-me013|let's talk about that for a second maybe.|cs
-fe008|what was the question?|qw
-me018|uh|b
-me013|what what was on his queue for recognition experiments?|r
-fe008|okay.|bk
-me018|um i'm rebuilding the net that we're going to use for the tandem stuff.|h
-me018|and so what i'm doing is um putting in the stream reader into the quicknet libraries for the s r i feature files.|s
-me011|huh.|b
-me018|which is the right way to do it.|s
-me018|i mean when we did our first experiments and i was uh creating s r i feature files from the icsi front end i just had perl scripts you know and hacked a bunch of stuff together.|s
-me018|just to get it going.|s
-me018|but the the right way to do it is to integrate it in with the icsi tools.|s
-me018|and so|fh
-me018|that's what i'm doing now.|s
-me018|and so once i get that done then i'll generate the p files i need.|s
-me018|because we already have the feature files in the s r i format.|df
-me013|uhhuh.|b
-me018|so what i need to do is make it so that the the quicknet stuff can read those.|s
-me018|and uh|fh
-mn017|is that independent?|rt
-mn017|or related to also being able to write out the uh feature file in the s r i format?|qrr
-me018|it's both.|s
-me018|there's a there's an input stream and an output stream.|e
-me011|input reader and an output stream.|s
-mn017|oh okay so then you could use um you could use um uh like feacalc and just specify as an output format|bk
-me011|yeah.|b
-me018|yeah.|b
-me011|yeah that's the point.|fg
-mn017|the the|%--
-mn017|oh okay.|bk
-mn017|i'm just ignorant about the software architecture of this thing.|df
-me018|yeah.|b
-me011|yeah so if if you|fg
-me011|right quicknet is a very nice stream based library.|fg
-mn017|uhhuh.|b
-me011|so without too much effort once he has the classes written we can incorporate it into all the standard tools.|s
-mn017|oh cool.|ba
-me011|so|fh
-mn017|great.|ba
-me018|so then it's uh tandem experiments after that?|d
-me013|uhhuh.|b
-me011|and at some point i'd like to get back to uh porting quicknet to the multiprocessor linux box.|s
-me013|yeah.|b
-me011|you know i i have forward passes working but i haven't done training yet.|s
-mn017|so speaking of linux so there's some impetus at um s r i to actually uh build support linux as a platform.|fg
-mn017|so|fh
-me011|uhhuh.|b
-mn017|what that means is once we have uh everything running on linux we can|s
-mn017|also use a|%--
-fe016|run all our jobs on your machines|2
-mn017|yeah|aa
-me018|we don't have too many we just have that just have a few linux|s
-mn017|i mean if you can't use all the processors on whatever machine we'll help you with that.|s
-me011|yeah that's right.|s
-me011|well that's the nice thing about it is that since it's coarse parallelism you don't have to do anything special.|s
-mn017|right exactly.|aa
-me011|so i mean that would be a fine use for for that machine.|ba
-mn017|yeah.|b
-mn017|so it's just uh|s
-me011|five more processors.|2
-me013|oh i know what it was.|t3
-mn017|uh yeah.|b
-me013|um yeah um|fg
-me013|some|%--
-mn017|or if uh you know in the future if linux machines become like way cheaper than uh you know solaris machines then you know that wouldn't be a reason not to use linux anymore.|s
-me011|yep.|bk
-mn017|so|fh
-me013|yeah.|b
-me013|um i think it would be neat at some point in this to do um a recognition uh pass on one of the p z m mikes for these same meetings that you've been|fg
-mn017|for the meeting?|2
-fe016|yeah.|b
-me013|i mean it's going to be terrible.|ba
-mn017|uhhuh.|b
-me013|but you know we we just don't know how terrible.|s
-fe016|it's also an interesting problem to come up with the reference.|s
-mn017|uhhuh.|b
-me013|and|%--
-fe016|so the reference file for the relative times at which|s
-me011|oh yeah that's really hard.|ba
-fe016|so|fh
-fe016|well it's an interesting question because i was thinking well you can force align the transcriber transcripts and then of course you try to merge them in time.|s
-me011|it's not determined.|s
-me013|uhhuh.|b
-fe016|but how do you score?|qw
-me011|i think the first pass is throw out words which are overlapped.|cs
-fe016|i mean it's just an interesting problem.|s
-me011|that would be a good first pass.|s
-me011|just ignore everything that has any overlap.|cs
-mn017|huh.|b
-fe016|right i mean there's a whole sort of|fg
-me013|yeah because you have a set of scores about that.|fg
-fe016|right we right.|fg
-me013|so maybe then that wouldn't be so bad.|s
-fe016|but there's a whole interesting discussion.|s
-fe016|because of course the alignments are not perfect either.|s
-me013|oh.|b
-fe016|and so um in fact we actually don't have a a|s
-me011|right.|b
-me013|yeah.|b
-fe016|i mean it's worth trying.|s
-me013|but that'd be a hell of a lot better than what we do with just these.|ba
-fe016|i|%--
-me013|and|fh
-fe016|right right.|b
-me013|and and again if you rule out the overlap you have some numbers for that.|s
-me013|because that's yet another|df
-me013|but i i'm just concerned of course about that|s
-fe016|oh i see you mean when only one person is|bk
-me011|yep.|b
-fe016|yes we could we could try|s
-me013|because you have scores for that for the other case.|df
-fe016|right.|b
-fe016|right exactly.|aa
-mn017|uhhuh.|b
-me013|and|fh
-fe016|yeah we we should try|cs
-me013|we just don't know how bad it will be.|s
-me013|i mean one of the things that dave was noticing we were talking this morning is that it seems like and we don't know this in detail but it seems like you're getting a lot from the channel adaptation the speaker adaptation and so forth.|s
-me001|huh.|b
-mn017|huh.|b
-mn017|uhhuh.|b
-me013|um so you are already in that recognizer doing something that is likely to affect uh the the far field microphone uh formant.|s
-mn017|huh.|b
-mn017|right.|b
-me013|so it may not|s
-me013|i mean it's going to be bad.|s
-mn017|right.|b
-me013|but uh it may not be like won't decode kind of bad.|s
-mn017|right.|b
-me013|it might might only be that it goes from forty percent to eighty or something like that.|s
-me011|yeah eighty percent.|2
-me011|yeah.|b
-mn017|right.|b
-fe016|do you assume you know the speaker when you do this?|rt
-me013|i want us to assume the whatever it was you assumed when you did the other the the close mike.|s
-mn017|you just you just|s
-fe016|well well there there's only one person who it can be.|s
-fe016|because they own that microphone.|df
-mn017|right.|b
-fe016|i'm just wondering there's|s
-mn017|yeah that that becomes another problem actually.|fg
-me001|well and then you have the gender detection.|s
-fe016|it's not a|ar
-mn014|yeah.|b
-me011|well but for a|%--
-me011|but for for scoring you can do it or not do it as you choose.|s
-fe016|right and|aa
-me013|oh i'm|%--
-fe016|right but in terms of for|aa
-me011|so|fh
-me013|but you're saying for this for the adaptation you mean.|bu
-fe016|right.|b
-mn017|so so not well for everything.|aap
-fe016|for adaptation right.|m
-mn017|for for even feature normalization for uh vocal tract length estimation|e
-fe016|you know do you do a supervised adaptation|s
-me013|right.|b
-fe016|all of these adaptations|2
-mn017|all of all of these assume you know who's speaking.|s
-fe016|assume that the same person|2
-mn017|so|fh
-mn014|huh.|b
-mn017|you would have to do a speaker segmentation first on the far field signal.|s
-fe016|yeah.|b
-me011|well but you can use the|s
-me011|when you're doing the scoring since you're you're going to be scoring against transcript you can use|s
-mn017|you mean you want to cheat.|s
-me011|well you're doing that anyway.|bd
-fe016|well i was just|fg
-mn017|no if|%--
-fe008|ooo!|fe
-fe008|i don't like that term.|ba
-me011|so try to cheat in the same way that you're doing with the close talking.|cs
-fe008|i don't like that term.|r
-me013|i|%--
-fe016|actually the those are two|s
-fe008|i don't like that term.|r
-me013|i have|%--
-mn017|okay we we're going to bleep that out.|bk
-me013|i i have a suggestion.|s
-me013|do the simplest thing first.|cs
-me011|yeah right.|bk
-me013|because we're going to want to know that anyway.|df
-fe016|so wait the simplest thing is you cheat saying|s
-me013|in other words if you|s
-me013|no it's no it's even simpler thing than that is just that you don't know.|ar
-mn017|you mean you you don't do all those normalizations.|bu
-me011|yeah.|b
-me013|yeah.|aa
-fe016|oh you totally unadapted.|bk
-me011|just do or a free|s
-me011|yeah.|aa
-me013|yeah because you can get a number uh for that with the other as well.|aa
-fe016|uh right.|fh
-me013|right?|d
-me013|you can turn those things off.|s
-me013|right?|d
-mn017|um actually we don't have any models.|ng
-fe016|yeah.|b
-mn017|um you can|%--
-fe016|no you can|ar
-mn017|um|fh
-fe016|you can use a speaker uh|s
-fe016|what about gender detection?|cs
-mn017|actually it's that it's it's we would have to re train models that are not that have none of that stuff uh in it.|s
-mn017|but actually we could|s
-mn017|we can just run it assuming that it's all one speaker basically.|s
-mn017|and see what happens.|s
-me013|yeah.|b
-me013|yeah.|b
-me013|yeah and then put it in correctly and see how much that helps.|fg
-fe016|yeah.|b
-mn017|yeah.|b
-me013|i mean i was just thinking do the one that's easiest first|s
-me013|because you want to know how much that's helping you in these cases anyhow.|df
-mn017|actually|%--
-mn014|but|%--
-mn014|do you have gender dependent models?|rt
-mn017|actually no|%--
-mn017|sorry.|fa
-mn014|are the models gender dependent?|r
-me001|huh.|b
-mn017|yeah.|aa
-me011|yeah they're all gender dependent.|aa
-fe016|yeah.|b
-mn014|so|fh
-fe016|yeah so you can|fg
-me011|so we would have to at least do that.|s
-mn017|no actually|%--
-fe016|no you can run both.|ar
-mn014|yeah.|b
-fe016|and you can|s
-mn014|yeah.|b
-mn017|no actually what here's here's what we would usually do under these circumstances.|s
-me011|and pick whichever is better.|2
-mn017|we would actually we would run some sort of segmentation.|s
-mn017|thilo's is as good as any probably.|s
-mn017|um and then we would do an unsupervised clustering of of the segments to|fh
-mn017|and and put the similar ones into bins that would be sort of pseudo speakers.|s
-me013|uhhuh.|b
-mn017|and then we would do our standard processing on these pseudo speakers.|s
-mn017|and that turns out to work very well on broadcast news spine.|s
-mn017|those types of tasks where you don't have the speaker segmentation given to you.|s
-me011|does the clustering do you give it sort of a target number of clusters or is it adapted in some way?|qr
-mn017|um you can either do it by target number or by some measure of dissimilarity that you use as a threshold.|h
-me011|uhhuh.|b
-me011|that's what i'm just thinking one of the big differences with broadcast news and these meetings is we have many fewer participants.|s
-fe016|the other thing is that you actually have direction here.|s
-mn017|right.|aa
-fe016|so unlike these corpora that are recorded with other microphones like the right way to do this i guess you know in the future would be well in general thilo's sitting there and this p z m is going to you know he's roughly in that location.|s
-me011|speaker i d.|s
-me011|yeah.|b
-me011|well there're different ways of thinking about it.|fg
-me011|i mean that that would be true if you had a meeting situation with multiple mikes.|df
-me011|but if you only had your p d a sitting in front of you|s
-fe016|well any case where the people are not all sitting at the same place and they're not moving around too much.|s
-me011|and you have more than one mike.|2
-me013|yeah if you don't have one more than one mike you don't have a very good handle on location.|fg
-fe016|well you have distance and you have|ng
-me013|that's it's not enough.|nd
-fe016|i mean that um jane's the pickup of adam on this mike is going to be different than me in terms of energy and so forth over the whole meeting.|s
-me011|oh so just from clustering you might be able to cluster it better because of that.|bk
-fe016|you might get some clustering from the speaker and some of it from the characteristics of the distance.|s
-me013|huh.|b
-me011|from mike.|2
-me011|yeah.|b
-me013|yeah.|b
-fe016|and|fh
-me013|but say if if you had a a cardioid mike or something sitting someplace then sitting there then it would its its response to him would be about the same as the response to him and so on.|s
-me011|and transfer functions.|2
-fe016|right exactly.|aa
-mn017|well you can do you can you you can do certain normalizations like you know gain control|s
-me011|well i think there're lots of lots of ways of doing it.|s
-fe016|they're both picked up in the clustering i guess.|s
-me013|uhhuh.|b
-mn017|uh before you do the clustering to rule out those those types of things.|s
-fe016|or to just do the clustering knowing that you're capturing both.|aap
-fe016|it's just that the kind of clustering we've done before hasn't had that uh distance factor or location factor in it in the same way.|s
-me013|i see.|bk
-me013|yeah.|b
-fe016|and so we're not really modeling it directly.|s
-fe016|if somebody does we maybe we add that.|cs
-mn017|huh.|b
-me011|yeah that's an interesting|fg
-fe016|because i think it would be a pretty big difference.|df
-fe016|when you listen you can sort of tell where people are.|s
-me011|it's a big difference.|ba
-me011|yeah.|b
-mn017|okay that would be fun fun to try.|bk
-fe016|not which you know side.|e
-fe016|but|%--
-me011|well humans are really good at that.|s
-me011|transfer function through the head and things like that.|s
-fe016|right even with one microphone.|aa
-me011|so you know even if you only have one ear you can still get get good transfers.|s
-me013|yeah.|b
-me013|yeah.|b
-fe016|right so our our clustering is not going to be intelligent that way.|fg
-me011|so|fh
-fe016|it's just going to pick up whatever energy difference or whatever is.|s
-me011|yeah.|b
-me013|but anyway i i'd it'd be neat to have that.|fg
-me013|because you know we've been at this for a little while.|df
-me013|and we don't have have any results yet with with conversational speech at a distance.|s
-mn017|uhhuh.|b
-mn017|okay.|bk
-me013|so um|fh
-mn017|huh.|b
-me011|yeah.|b
-me013|we should at least get a first one.|cs
-me011|something.|2
-me011|yeah.|b
-fe016|okay.|bk
-fe008|huh.|b
-me013|um and the other thing this would kind of be a hail mary.|bd
-fe016|uhhuh.|b
-me013|but but uh uh dave does have this stuff that is helping on digits.|s
-me013|and you know and so with then it'd be you know just throw that in and see.|s
-mn017|oh yeah then we should|bk
-me011|yeah so it'd be cool to see if it helped.|fg
-mn017|well first you have to filter the whole training set and re train.|cs
-fe016|yeah.|b
-me001|uhhuh.|b
-me013|yeah.|aa
-me011|that would be quick.|ba
-fe016|uhhuh.|b
-me011|since i think he did it in matlab.|df
-me013|uh well he can do it in something else.|aap
-fe008|huh interesting.|ba
-me011|yep.|b
-me013|but i mean you know it's|s
-me011|can't you export c from matlab?|qy
-me013|um|fh
-me013|actually we're experimenting with phase stuff now.|s
-me011|or is that mathematica?|qrr
-me013|and and uh this uh first result he got uh was really great.|s
-me013|it actually uh uh didn't exactly eliminate the reverberation.|s
-me013|but it completely got rid of the speech.|s
-mn017|oh.|bk
-mn017|that would solve all of our problems.|s
-fe008|wow.|%
-me013|yeah well i was thinking that.|aa
-mn017|wouldn't it?|d
-me011|well so just take the inverse and you're fine.|cs
-me013|so it's|%--
-me013|that's|%--
-me013|you think i didn't tell him that?|d
-me013|no i got pretty excited.|s
-me013|because it completely got rid of the speech.|df
-me013|so i was thinking well so|s
-me011|so that's a speech detector.|s
-me011|that's great.|ba
-fe008|that's interesting.|ba
-me013|you know it could be useful for lots of things.|s
-me013|so we have to|s
-fe008|did it get rid of other stuff too though?|rt
-mn017|huh.|b
-me013|what?|br
-fe008|did it get rid of other stuff besides the speech?|rt
-me011|yeah just subtract that|fg
-me013|well we have to sort of check that out.|s
-me011|subtract that from the original signal and you're set.|s
-me013|that's|%--
-fe008|okay.|bk
-fe008|wow interesting.|ba
-me013|yeah.|b
-me013|yeah.|b
-mn017|right then you can do like an you can estimate the the noise estimates.|fg
-me011|noise estimate.|2
-me011|signal to noise.|s
-mn017|right yeah.|aa
-me011|that's great.|ba
-fe016|uhhuh.|b
-me013|reminds me of when when herve and i were first playing with uh context dependent things for nets.|s
-me013|and and at one point we took out the speech input.|s
-me013|so we only had priors and our performance went up.|s
-mn017|huh.|b
-fe008|wow.|ba
-me011|i guess that's why herve always talks about using the priors as one of the mixtures in in his all ways combos.|s
-mn017|huh.|b
-me013|yeah.|b
-me013|well of course it was a bug.|s
-me013|but i mean it's it's a but it was pretty it was pretty funny anyway.|s
-me011|but still|s
-fe008|wow interesting.|ba
-mn017|yeah.|b
-fe008|huh.|b
-me011|so if you run uh your recognizer with all probabilities equal what do you get out?|qo
-me011|probably garbage.|am
-me018|whatever the language model says.|s
-me011|i bet the pruning|s
-mn014|yep.|aa
-me011|the pruning probably prunes everything out.|s
-mn017|you get out switchboard.|s
-mn017|that's just the the language model.|e
-me011|yeah that's right.|aa
-me013|so that's how it was generated.|s
-mn017|yeah so we have this new speaker adaptation.|fg
-mn017|um|fh
-mn017|a oh it's a sort of feature normalization.|s
-mn017|uh like speaker adaptation.|e
-mn017|which uh which i which i wrote about in the last status report.|e
-mn017|which seems to be helping about a percent and a half on hub five.|s
-mn017|so um we haven't tried that yet on the meetings.|fh
-mn017|uh but hopefully it'll help there too.|s
-fe008|i want to ask um so you know that the data i have upgraded it considerably.|s
-fe008|so i've probably made i probably corrected something like|s
-fe008|well|%--
-fe008|it's really a substantial amount of things that i've caught changed um added to it.|s
-fe008|including a lot of uh backchannels.|s
-fe008|so when you're running things if you run it on the old|s
-fe008|so if you if you run it on the new version then the numbers will be um and you compare it to the to runs on the old version then you're going to end up with more of an improvement than would actually be the case.|s
-mn017|huh.|b
-me011|different.|2
-mn017|uhhuh.|b
-mn017|well we we have a frozen we do all our experiments with a frozen version of the transcripts as of i don't know.|s
-fe008|as of february?|2
-mn017|as of|s
-mn017|no a little|ar
-mn017|i don't know.|no
-mn017|when when did we grab the transcripts?|qw
-fe008|so a like the h l t paper?|bu
-me001|the for the it was march probably.|am
-fe016|sorry.|fa
-mn017|the|%--
-fe016|for these meetings?|bu
-mn017|we're talking about which which version we're using for evaluating the recognition.|s
-mn017|which version of the transcripts.|e
-fe016|right they're somewhere in between january and late march or something like that.|bk
-me001|yeah something around there.|aa
-fe008|okay well so long as you have the same baseline then you'll be able to tell.|bk
-me011|but they are channelized ones though?|bu
-mn017|no no.|ar
-mn017|yeah obviously yeah.|aa
-fe016|they're meetings that are now channelized but they were not from|nd
-fe008|so long as so long as it's the same baseline you'll be able to tell.|s
-mn017|the uh the other thing is|s
-mn017|the the|%--
-fe008|but but i'm just i'm just saying that if you were to compare that with running that on the new data that it would be an a more optimistic outcome.|df
-mn017|huh and|fg
-mn017|well the and the other thing is it takes only a a minute to rescore all the old outputs with|s
-mn017|if you had new transcripts then we we just rescore the old|cs
-me011|right because you haven't done any training.|fg
-mn017|sorry?|br
-me011|right because we're not doing it for training.|r
-fe016|yeah we haven't modified the recognizer at all.|fg
-me011|right so it's really it would be really easy to re do it.|fg
-fe016|so actually um at some point we should update and rescore everything with you know the corrected transcripts.|cs
-mn017|we just we save|%--
-me011|yeah it'd be interesting just to see how much it changes.|fg
-mn017|well the the|%--
-fe016|just to|%--
-me011|i bet it wouldn't change a lot.|s
-mn017|right.|aa
-me001|what are the nature of most of the changes?|rt
-fe008|yeah.|b
-me011|we can take we can have a pool.|cs
-fe016|sometimes the changes are um cases where the recognizer would get it wrong anyway.|rt
-fe016|because it was some word that we didn't have in the vocabulary.|df
-me011|that's just what i was thinking.|s
-mn017|so i i the thing is when|s
-fe016|or|%--
-fe016|but it does help to get the backchannels back in and things like that.|s
-mn017|right.|b
-mn017|so whenever the right now the the scoring is based on segments.|s
-mn017|um which is not great.|s
-mn017|because for instance|df
-mn017|so so the the other way to do the scoring is using a a nist format called s t m s.|s
-mn017|uh segment time marked.|s
-me011|yep i we know about it.|bk
-mn017|where|%--
-mn017|so um i have to convert the uh transcripts into this format and then the scoring program actually looks at the times.|s
-mn017|and uh you know it you can have a different segmentation in your recognizer output than in your references.|s
-mn017|and it will still do the right thing.|s
-mn017|so that's what we need to basically uh to|s
-mn017|huh?|br
-me011|transcriber will export s t m.|s
-mn017|oh.|bk
-me011|in case you care.|s
-mn017|well but then there's other changes.|bd
-mn017|so i mean there's other|s
-me011|okay.|bk
-mn017|we we strip away a lot of the mark up uh in the transcripts.|s
-mn017|which you know isn't relevant to the scoring of the speech recognition output.|s
-me011|right.|b
-mn017|so|fh
-fe016|would that doesn't that only change the scoring if a word has moved into a different segment?|rt
-fe016|i mean i don't think that's i hardly ever see that.|s
-fe016|i think most of them are pretty good.|s
-mn017|no i mean if|ar
-mn017|i i assume you also changed some boundaries.|bu
-fe008|huh i did.|aa
-mn017|right?|d
-mn017|so if we want to use new transcripts with a different segmentation then we can't use them in the current way we do scoring.|s
-mn017|we have to switch to this|s
-fe016|oh you mean you would need to re run the recognition.|bu
-mn017|no we have to|ar
-mn017|there's a difference|s
-fe016|i mean if you re ran the recognition then you just run it|bu
-mn017|right right.|aa
-fe016|oh i see.|bk
-fe016|if you want to use the old|s
-fe016|you can actually never though really infer what you would get with a different|s
-mn017|that's true.|aa
-fe016|you know it's it's probably more fair to re run the whole re run that.|s
-fe016|uh in other words it's not really a scoring script problem.|s
-fe016|it's|%--
-mn017|no but if you just want to see what|ar
-mn017|like suppose you fixed some no jane fixed some typos and you want to see what effect does that have on the word error.|s
-mn017|then we can we|s
-me011|right but but if the segments change that won't work.|fg
-fe016|yeah yeah.|b
-fe016|you it'll sort of work but it's not exactly what you would maybe get from recognition.|s
-me011|well i mean what happens if you break one segment into two?|qo
-fe016|you never know.|s
-me011|suddenly they don't match at all and you can't line them up anymore.|s
-mn017|no but that's what the|ar
-mn017|well that's what i'm saying.|s
-fe016|well you you you|%--
-mn017|you can line them up based on the times.|s
-fe016|you can|%--
-fe016|yeah.|aa
-mn017|so the scoring program with if you give it an s t m reference file it will actually compare the words based on their time marks.|s
-me011|right.|b
-fe016|yeah.|b
-mn017|so therefore you can|s
-mn017|um|fh
-me011|does s t m do it per word or per utterance?|qy
-mn017|it's per utterance.|s
-mn017|but it it allows as long as you hypothesize the word in the right segment in the reference it gives you credit for that.|df
-me011|what i thought.|bk
-me011|all right.|bk
-mn017|so it does a it does a word alignment like you have to do for scoring.|s
-fe016|uhhuh.|b
-me011|and then it does also some|2
-mn017|but it constrains the words to lie within the the time bins of the reference.|s
-me011|within the segment.|2
-me011|yep.|b
-me011|i see.|bk
-mn017|and for you to get a credit for it.|e
-mn017|so|fh
-fe008|that sounds great.|ba
-mn017|so so it's it should be just a straightforward re formatting issue of the references.|s
-mn017|so|fh
-fe008|yeah i mean i was thinking the other day that this is not just conversational speech.|fg
-fe008|the fact that is has so much technological jargon in it it makes it considerably harder to um to transcribe and to to double check and all those things.|df
-fe008|so i think you're going to find a substantial gain in terms of the word accuracy.|s
-fe008|so long as those words are in your vocabulary.|df
-fe016|well it definitely helps with um forced alignment too.|s
-me011|one percent.|s
-fe016|because you know when we know the the the true words and we're adding them to the vocabulary and training a language model and so forth for future meetings especially the like the front end meetings or meetings with a lot of jargon in them that is not represented in switchboard or callhome then it then it really helps.|df
-fe008|well all of them are all of our all of our meetings have a lot of jargon in them but we know what those words are.|aap
-fe016|so|fh
-fe016|yeah.|bk
-fe008|i mean i don't know how you get them into the vocabulary.|no
-fe008|but it would seem|s
-fe008|now i have to i have to i really need to uh raise a question about the term cheating.|tc
-fe008|okay?|d
-fe008|and the reason is um if i understand that cheating is a term which is used to apply for basically what all of linguistics corpus linguistics does and what what my transcribers are doing and what i do which is a methodology whereby you actually physically mark things in the data.|s
-me011|all|%--
-fe008|like the transcription.|e
-fe008|like the words that are actually there.|e
-me011|all we mean by that is that we're giving the recognizer more information than it would have if you were running it raw.|bd
-me011|over a meeting that no person has ever listened to or transcribed.|e
-fe008|okay i mean that that part is okay.|bk
-fe008|but i but i do wonder sometimes if it might be possible to use a term that's a little bit less evaluative like um hand marked.|cs
-me013|uh but cheating is is|fg
-me013|sure but but cheating is is is pretty commonly used to mean this.|bk
-mn017|it's a it's a technical term.|df
-fe016|it i guess it it's been around for a long time.|ba
-me013|it really is|%--
-me011|it is yep.|df
-fe016|and it it's sort of um because it's so strong a word people don't take it that seriously.|s
-me013|yeah.|aa
-me013|yeah|fg
-fe016|in it's not negatively viewed.|s
-fe016|it just really means|s
-me013|it's|%--
-me013|it's even more than that.|s
-me013|i think it it really gives a very strong perspective that you know that what you were doing is not an un biased experiment.|s
-me013|if you don't say that then people think oh they did that and they threw that but that doesn't represent what would happen in the real world.|s
-me013|but if you say we did a cheating experiment which is really the standard way you'd say it it says you deliberately put in a piece of information that you would not have in the real world so that you can learn something.|s
-me013|just as part as your process.|e
-me013|so it's i i don't know.|no
-me013|i|%--
-fe008|okay i guess what i'm i'm thinking is just in if uh when these are presented in an interdisciplinary context it might be nice to add that explanation.|bk
-fe008|because otherwise it sounds like a pejorative statement on an alternative methodology.|df
-fe008|because it sounds like it sort of devalues the the um all other approach which is to to put those distinctions in.|df
-me013|maybe i i've heard this at i c s l p for years and years and years though.|am
-me013|i mean it's it's pretty pretty common people say this.|s
-mn017|if well you in a to a broader audience you could call it a diagnostic experiment rather than a cheating experiment.|fg
-fe016|actually jane is right.|df
-fe016|like in conversation analysis i've never heard people use this.|df
-fe016|because they're not using an automatic system.|df
-fe016|so it really|s
-mn017|but they don't run experiments.|s
-me013|yeah.|b
-fe016|right i'm well|aa
-fe008|they can do experiments.|na
-fe016|you can do experiments.|df
-fe016|but the it's cheating relative to what we call a system where we can completely control this black box.|s
-fe016|and it's not a very smart system.|s
-fe016|it it only knows what we give it.|s
-fe016|and if if it knows more than we would really give it when it runs we call it cheating.|s
-fe016|but it's|%--
-fe016|yeah it's only used in a community that does some type of computational modeling.|s
-me013|yeah in pattern recognition or in|aa
-fe016|i think it's really not used in any kind of community doing experiments on human perception.|s
-me013|yeah.|b
-fe016|or|%--
-me013|right.|fg
-fe016|you know so she certainly can define it.|s
-me013|yeah it's machine machine experiments.|fg
-me013|um i mean when when the uh the neural net uh wave hit in the mid-eighties|fh
-me013|and by the late eighties there were uh we were reviewing thousands of papers that were coming out in neural nets.|s
-me013|it was really hot.|s
-me013|everybody thought it would do everything.|s
-me013|um and a really common error that people were making was they were just reporting their uh uh classification results on the data that they were training on.|s
-me013|and so i think it was it was it was very important for people then who were doing something diagnostic to say hey i know i'm doing something that isn't kosher.|s
-mn017|huh.|b
-me013|and to make it really clear that they knew it.|df
-me013|so that was i think why why it became a popular term.|s
-fe008|yeah it just seems like you know if it were bootstrapping or if it were i mean there are other ways to maybe get the point across.|fg
-me013|but it isn't bootstrapping.|nd
-me013|uh it's it's really cheating.|s
-me011|it's it's using information you wouldn't normally have.|s
-me013|it's just|%--
-me013|yeah yeah.|aa
-fe008|well okay.|bk
-me013|but it's cheating in a way that's it's it's announcing to everybody hey i'm cheating by doing this.|s
-me011|so|fh
-me013|it's saying so it's all above the table.|s
-me013|i'm actually using this other thing.|s
-fe008|okay.|bk
-me013|that's that's that's the reason.|s
-fe008|okay all right.|bk
-me013|bootstrapping would imply it was actually legitimate in some kind of way.|s
-me011|huh.|b
-fe008|well i i think|s
-me013|but|%--
-me011|we're not de legitimizing the data.|df
-me011|we're de legitimizing the experiment.|s
-me011|we're not saying that the data is cheating data.|s
-me011|we're saying we are cheating by using this data.|s
-me013|yeah.|b
-fe008|okay.|bk
-me013|yeah.|aa
-me011|because normally you wouldn't have that data available.|df
-fe008|okay okay.|bk
-me013|yeah.|b
-me013|anyway.|fg
-fe008|does seem to me that it that it carries over some baggage with it that uh that|s
-fe008|i can understand it in context as you described it.|df
-fe008|but it it seems to me that um it does import some negative evaluation that um would maybe not be good if|s
-me013|it has some shock value.|m
-fe008|it has shock value.|s
-fe008|and|%--
-me013|which is part of why it's used.|s
-fe008|to the to the wrong audience i think that that might be a negative shock.|s
-fe016|yeah i i think to the wrong audience i agree that um|aa
-me013|uhhuh.|b
-mn017|it's like a disclaimer.|s
-fe016|to the wrong we should just explain what it what it means here and that it's a common term.|cs
-fe008|yeah we started with hand marked data or with uh you know hand transcribed data.|aa
-fe016|and|%--
-fe016|we're|%--
-fe008|or|%--
-me011|shoot!|fe
-fe008|yeah.|b
-fe008|did you break the microphone?|qy
-fe016|yeah.|b
-me011|just the clip.|ng
-fe008|nnn okay.|s
-mn017|now we have to delete that expletive.|s
-fe008|okay well i feel better now.|t
-fe008|thank you very much.|ft
-fe016|huh the first time i heard that i i thought you know the same thing.|s
-me001|thank you andreas.|ft
-fe016|and i guess you after a while it becomes almost a it's a bit of a a humbling thing when somebody says that.|s
-me011|it's it it really is part of the jargon.|s
-me013|but it's also is|s
-fe016|if they get good results but we were cheating on this feature because we took it for granted even though we can't really assume that then it's actually the opposite.|s
-me013|right.|aa
-fe016|it's|%--
-fe008|the trouble is that|s
-fe008|you know i understand it in that context.|df
-fe008|but it but it is almost resentful.|s
-fe008|it's almost like you know resentful of the data resentful of the um the hard work that's going into preparing the data.|s
-me011|well|%--
-fe008|is|%--
-me013|no no it has i don't think you're saying the data is cheating.|ar
-fe016|well it's it's|%--
-me013|i think you're saying in my experiment i cheated in this way.|s
-me011|that's what i was saying.|s
-mn014|yeah.|b
-me013|i mean another is what liz was talking about how in the switchboard tests in all the switchboard tests we've been doing we've been making the same uh same uh uh standard using the same standard way of of getting the data to test on.|s
-me013|which means that we weren't actually running it on on uh on data that had had no speech.|s
-me013|and in a sense that was cheating.|s
-fe008|okay.|bk
-me013|so so it it's it's a good wake up call if people well we have this performance but you have to keep in mind we're doing we're we're not doing the whole real task in this way and this way and this way.|s
-me013|but i'll convince you that that it's still important for you to listen to what i have to say next because of this and this.|s
-fe008|okay okay.|bk
-me013|and so it's just a way of putting it all out on the table uh as opposed to|s
-me011|uh and it's used for a lot of different types of data.|s
-me011|so whether you have segmentation or not is it male or female or not um do you know the signal to noise.|s
-me013|yeah.|b
-fe008|huh.|b
-me011|like that's another one i see all the time where you assume it's known.|s
-me013|yeah sure.|b
-fe008|oh interesting.|b
-me013|yeah.|b
-me011|and you say it's cheating because you don't actually compute it.|s
-mn017|huh.|b
-fe008|i didn't know that.|df
-fe008|huh!|fe
-me013|in|%--
-me013|in the multi band experiments in the first one we really wanted to find out what if you knew which band was really noisy.|s
-fe008|uhhuh.|b
-me011|right.|b
-me013|i mean suppose you just know that.|s
-me011|same cheating.|s
-me013|and then then even if you know that can that help you?|qo
-me013|i mean what can what strategy can you do to do well without that particular band in the spectrum?|qw
-mn017|huh.|b
-me013|and so that was important to know as a baseline.|s
-me013|and and then once you knew that then you go well now how do i know that that's noisy.|s
-mn017|huh.|b
-fe008|okay.|b
-me013|and and and uh|fh
-me013|but you know i i should also say that there's a lot of it's not just the word cheating but there's lots of other things that we talk about which as soon as you go outside of your narrow little group it gets very very confusing to people.|s
-me011|uhhuh.|b
-fe008|oh sure terminology is always context dependent.|bk
-me013|and|%--
-fe008|no question about it.|ba
-fe008|it's just that it seems like the the point without the negative evaluation would be.|s
-fe008|however you know i understand your point that it it has a long tradition in this field.|s
-me011|it's not even really negative.|s
-fe008|i didn't realize.|s
-fe008|and is used|s
-fe008|this is interesting what what adam said about it being used also for a bunch of other uh dimensions.|s
-me013|well the example i was thinking of also was this thing that that herve and and hynek and i made about uh increasing the error rate.|s
-me013|and so we we did a number of papers and talks and so forth about uh uh the the virtues of increasing the error rate.|s
-fe008|oh.|bk
-me013|okay.|f
-me013|and i mean and the whole point of it was not that it was good to increase your error rate but it was good to be willing to risk increasing your error rate by trying risky things and trying because there's this notion of a local minimum that if you just have some system that's very complex|s
-me013|and you you you turn some knobs to try to make it better and better you'll never get out of this local minimum.|s
-me011|fine tune little bits.|2
-fe008|uhhuh.|b
-me013|you have to be willing to jump to something that's quite different.|s
-mn017|huh.|b
-fe008|interesting.|b
-me013|and the first time you jump to something quite different or maybe the first ten times or a hundred times you do it's going to be much much worse.|s
-me013|because you've optimized the other system.|df
-me013|so the effect the immediate effect is going to be to increase your error rate.|s
-fe008|interesting.|ba
-me013|and so it was we had a couple papers like towards increasing the error rate in speech and and so on.|s
-me011|huh.|b
-me013|and we really did get feedback from a few people some of whom were you know fairly senior that that um well you know you you you we're really concerned about you misleading people into thinking they should be increasing the error rate.|s
-mn017|huh.|b
-fe008|yeah.|b
-me013|and uh and we go we thought oh come on.|s
-me013|but|fh
-me011|did you read the paper?|rt
-mn017|but weren't you cheating in those experiments?|rt
-fe008|yeah.|bk
-me013|that's|%--
-me013|we weren't.|s
-me013|that's why we increased the error rate.|s
-fe008|interesting.|b
-fe016|actually i think of cheating as a way to do some work where you can't address all of the computational tasks.|s
-fe016|like if we want to study um speaker habits but we can't do speaker detection.|s
-fe016|but we want to assume let's say we know this is jane and we know this is chuck.|s
-fe016|even though automatically to look at the habits we would need to also first figure that out.|s
-me013|uhhuh.|b
-fe016|but we can sort of cheat on that factor.|s
-fe016|because it's somebody else's research.|df
-fe016|and then we just|s
-fe016|so it's then we want to make a proof of concept for|s
-me011|what what this|%--
-me011|right what would this be like if it were perfect?|fg
-fe016|if someone else|%--
-me011|if this component were perfect.|e
-fe016|right uh or but we really can't work on that problem.|aa
-mn014|yep.|b
-fe016|we don't have time.|s
-fe016|we're not interested or whatever.|s
-me011|huh.|b
-fe016|and so you you assume it's given.|s
-me011|it's too hard usually.|ba
-fe016|because it's um you want to go forward with your research and assume that you have that information.|df
-fe008|uhhuh.|b
-fe016|so|fh
-fe016|i guess if i don't ever think of it as negative more like it's something we're not building.|s
-me011|it's not pejorative at all.|ba
-fe008|well the term itself is.|ng
-fe008|you know?|d
-me011|but it's not pejorative towards the data.|nd
-fe008|but but it and it's pejorative with respect to a certain purpose.|df
-me011|it's pejorative towards|s
-fe008|i understand.|bk
-me011|it's pejorative to ourselves.|s
-fe008|i i wanted to raise the issue.|s
-mn017|self|%--
-me011|right?|d
-me011|to say i am cheating in this experiment is not saying that the data is bad.|s
-me013|yeah.|fg
-fe008|yeah.|fg
-me013|but|%--
-me011|it's saying that my experiment is bad.|s
-me013|yeah.|b
-me013|anyway it's colloquial.|fg
-fe008|anyway.|m
-me013|and and uh it's it's interesting to hear that that someone coming from a different direction it it sounds the way it sounds to you.|s
-me013|but but uh i i'd never heard that before.|s
-me011|yep.|b
-fe008|okay that's interesting okay.|bk
-me013|so so so that's interesting.|ba
-fe008|well i wanted to raise the issue.|s
-fe008|and um|fh
-me013|uhhuh.|b
-fe008|i i uh i appreciate the discussion.|s
-fe008|i wanted to ask one other question which is a different matter.|t
-fe008|which is with respect to um this thing that you've been working on for the recording monitoring script.|rt
-fe008|so the idea you had this script that you're working on to be sure that the microphone values are in are kept in.|s
-me011|oh right i haven't gotten back to that recently.|bk
-fe008|okay okay.|bk
-me011|but|fh
-mn017|huh.|b
-me011|i assume you're saying you want me to get back to it.|bu
-fe008|because you know|%--
-fe008|well i was just wondering if|s
-fe008|because i i am finding that um in double checking i've run across um one data set where the microphone was off early on.|s
-fe008|and then two other speakers their microphones went off later.|s
-me011|huh.|b
-fe008|and this is out of like seven speakers.|s
-fe008|so out of seven speakers four microphones you know basically three three microphones basically flaked.|s
-fe008|which makes it hard for the data to be used for all possible purposes.|s
-me018|do you think the battery ran out?|rt
-fe008|that's what i think.|na
-me018|or|qrr
-fe008|i think the two that flaked late i think it was the battery.|s
-fe008|but you know if the script could um you know alert the recording person to that|s
-fe008|i mean i don't know if there's a way to replace a battery if it happens in the middle of a meeting.|s
-me011|well|%--
-fe008|maybe that's hopeless anyway.|am
-me011|well you can but you'll lose a lot of data.|s
-fe008|but|%--
-mn014|yeah.|b
-me011|but i mean that doesn't really help.|s
-me011|because often the recording person isn't in the room.|df
-fe008|oh i see.|bk
-me011|so what are you going to do?|qo
-me011|i mean it will the person if you're looking up at the board and i disable the screensaver you will see that the mike is off.|s
-me011|but that doesn't necessarily help.|s
-fe008|okay then i guess that raises the question of uh whether we should screen the data before they get transcribed.|bk
-me011|so|fh
-fe008|because although i think that the data are still useful in terms of providing content.|df
-fe008|and and that i know that having three out of seven microphones out of commission during some part of the meeting restricts the uh usefulness of the data for other purposes.|s
-fe016|yeah.|b
-me011|uhhuh.|b
-fe016|i i think that's a really good idea.|ba
-fe008|and maybe you don't want to have it|cs
-fe016|because for all kinds of studies we don't really enjoy meetings where some of the where the signal's going off at times.|df
-fe016|it just makes it hard to study any kind of parameters.|s
-fe016|so|fh
-fe016|if there's a way to check the signal quality before transcribing it and you find any problem at all it'd be much better to go to another meeting i think.|cs
-fe008|i actually think that thilo's in a in a a you know when you do the pre segmenter and you and you run across troubles he he runs across some of these that are|s
-mn014|yeah.|bk
-mn014|yeah some of these things are captured by yeah um by looking at at the minimum and maximum and whatever.|fg
-fe008|so we have some part of that.|s
-mn014|you find in the channels.|s
-mn014|and|fh
-me011|it's just hard to tell between that and just someone not talking.|ba
-fe008|i|%--
-mn014|but|%--
-mn014|yep yep yeah yeah.|aa
-me011|so|fh
-fe008|well the and the other aspect of it is um that when the microphone is not well adjusted then even if it's not a lapel mike you can get lapel mike type behavior.|s
-me011|right.|bk
-fe008|because i'm i'm expecting for example with this that you're going to end up you know picking up other peoples' signals.|s
-fe016|i've already written some notes here.|s
-fe016|so i|%--
-me011|uhhuh.|b
-fe016|um right uh|b
-fe008|yeah i mean it's just you know the microphone is intended for certain adjustments.|bk
-me011|well we should be getting new equipment in so we don't have to use the earplug any more.|s
-fe016|okay.|b
-fe016|but it's my ear.|bd
-fe016|i'm sure it's something wrong with my head.|bd
-me011|it's your hair.|cs
-mn014|huh.|b
-fe016|but|fh
-fe016|um actually is there a way though to use whatever you're using for background noise to check post hoc that a microphone was constantly on?|qy
-fe016|i mean|%--
-me011|i mean you you can do sort of a check.|s
-fe016|uh like this|%--
-me011|but it will be very hard to tell the difference between that and um someone not talking.|bd
-me013|just so it doesn't when the microphone's dead it doesn't put out zeros?|bu
-me011|no.|ar
-me013|or|qrr
-me013|uhhuh.|bk
-mn017|what does it put out?|qw
-me001|really?|bh
-me013|johnson noise.|s
-fe016|but then how are how are you detecting during a meeting?|qw
-me011|little bit of noise.|s
-me013|yeah.|b
-me011|i use a threshold.|s
-me011|if it's below a particular value it it flashes yellow.|s
-me011|so as i uh but it's not perfect.|bd
-fe016|but is it better than nothing?|rt
-me011|yeah probably.|am
-fe016|because it would really be|s
-me011|i mean this is the reason why i haven't gotten back to it is because my first pass at it didn't really work.|s
-me011|because all the mikes have different noise levels.|df
-fe016|right.|bk
-mn017|huh.|b
-me011|and so i have to do something a little more clever.|s
-me001|it's just the noise from the connections and the everything.|bu
-fe016|but you could|%--
-me011|yep yep.|aa
-fe016|so you could run that post hoc on a already recorded meeting in the sense that you know not everyone as you just said you won't be there.|cs
-fe016|and then if we find any problems have the transcribers listen and|cs
-me011|yep.|b
-fe016|i really think it's better not to transcribe a meeting that's going to have problems once you've spent all this effort.|cs
-me011|yep.|b
-fe008|the only argument for doing so would be with reference to the content content maps.|s
-fe016|yeah yeah.|aa
-fe008|uh but maybe then it should be done in the old original way.|cs
-fe008|instead of channelizing and having the uh uh you know elaborate coding of the backchannels.|cs
-mn017|huh.|b
-mn017|yeah you could still uh|fg
-me011|yeah there's uh the the standard deviation of the signal gives you a good clue.|fg
-me011|i mean if that is too low then you can be pretty sure that it's uh empty.|s
-fe016|uhhuh.|b
-me001|huh.|b
-mn014|yeah.|fg
-mn014|yeah sometimes you you capture that when you mix it together.|fg
-mn014|and|%--
-me011|right exactly.|aa
-mn014|yeah yeah.|b
-fe008|and actually an an alternative to even doing that level of transcription would be to have a transcriber listen and and you know maybe just|cs
-fe008|oh i don't know if a uh|no
-fe008|well someone who's associated with the meeting could have like a summary of points handled in the meeting.|cs
-fe008|you know maybe if we could pay one person who knows that subject matter to do an outline of the meeting's content.|cs
-me011|uhhuh.|b
-fe008|instead of losing the content altogether.|e
-mn017|well it's even if if you could still transcribe the words based on the far field microphone or something you could uh still use it for say language modeling.|s
-me011|is there a|qy
-me011|far field.|2
-me011|yeah.|b
-mn017|you know.|f
-fe008|i guess the trouble in my mind is that it that it's not a very neat corpus.|ba
-fe008|if you say these data are available.|s
-fe016|yeah.|b
-mn017|right.|b
-fe008|but these are imperfect.|s
-fe016|yeah.|fg
-fe008|because of the you know the batteries flaked.|s
-me011|well we'll just we'll we'll just have to note those.|s
-fe016|i'd we're i'd much rather have you know meetings that have all the channels.|s
-fe016|even if we had to skip a meeting or something.|e
-mn017|well if|%--
-mn017|right.|b
-fe016|just for all these other purposes.|df
-fe016|so|fh
-fe008|and we have so many.|s
-mn017|i guess there is no|s
-me001|you could put them at the back of the queue or something.|cs
-me011|well i i i think we can't throw away that data.|s
-fe016|yeah.|b
-me011|because otherwise we'll end up with very few meetings.|df
-fe016|right but just|aa
-mn017|there's there's no shortage of meetings.|s
-me001|yeah.|b
-me011|but|fh
-mn014|yep.|b
-mn017|so|fh
-fe016|right there but there's a shortage of transcription power.|fg
-mn017|we can afford we can|s
-fe008|we have such a backlog i mean to be able to get through the backlog of the of the good meetings it would be nice to not have energies diverted.|s
-mn017|huh.|b
-fe016|yeah.|b
-me011|do we have a|qy
-me011|i'm sorry for interrupting.|fa
-me011|do we have an e d u meeting at four?|qy
-fe008|that's fine.|bk
-mn017|huh|h
-fe008|oh good question.|bk
-fe016|you know what?|qy
-fe016|they their four o'clock cancelled.|s
-mn014|i don't think so.|am
-fe016|and they're starting at four twenty.|s
-fe016|and i'll set up at four fifteen.|s
-me011|okay great.|bk
-me011|good.|bk
-mn017|uhhuh.|b
-mn017|huh hey i bet there's tea.|fg
-me013|yeah but there's|bk
-me011|because otherwise i was going to say we have to cancel.|df
-fe016|yeah.|bk
-me013|there's tea also though.|s
-mn017|yeah.|aa
-fe008|okay.|bk
-fe016|yeah so you'll have|s
-me013|so maybe we should maybe we should do a uh simultaneous digits digits read in the interest of of getting the snacks.|cs
-me011|a simultaneous digit okay.|bk
-fe008|uhhuh.|b
-mn017|hey i've never done one of those.|s
-me013|oh you never have?|bk
-me013|oh it's a treat.|ba
-fe016|you have to plug your ears or just prepare not to laugh.|cs
-mn017|right.|bk
-me013|okay.|bk
-me011|everyone ready?|bu
-me011|reading simultaneous digits three two one!|fe
-fe008|yeah.|aa
-fe008|yep yep.|aa
+me011|and we're going.|S|s|s
+me011|so the only status|D|s|s
+me011|well first of all we haven't decided whether we're meeting recorder data issues or recognition this week.|S|s|t
+me011|i think we were recognition.|S|s|s
+me013|what was on the list the|D|qw|qw
+me013|i mean i sent you a couple things.|S|s|s
+me013|although i don't remember them.|S|s|s
+me011|you only sent me one thing which was demo status.|S|s|s
+me011|and asking which one we were on this week.|S|s|s
+me013|right.|S|s|bk
+me013|uh that was the second thing.|S|s|bk
+me013|right right.|S|s|bk
+me011|so should we simply assert that this week we are recognition and next week data issues?|Q|qy|rt
+fe008|huh.|B|b|b
+me018|i think that's correct.|S|s|na
+me011|and|D|%|%
+fe008|yeah i think so too.|S|s|aa
+me018|yeah.|B|b|b
+me011|and uh|F|fh|fh
+fe008|yeah.|B|b|b
+me011|so i think what we should probably do is any quick small stuff we can do every week.|S|s|cs
+me011|so like morgan asked about the demo status.|S|s|cs
+me011|we can go ahead and talk about that a little bit.|S|s|cs
+me011|and then do then alternate in more depth.|S|s|cs
+me013|by the way i'll i i won't be here next thursday.|S|s|s
+me013|i'll be out of town.|S|s|s
+me011|okay.|S|s|bk
+me013|but|F|fh|fh
+me011|actually i may not be here either.|S|s|s
+me011|so|F|fh|fh
+me011|i got to double check the dates.|S|s|s
+me011|but anyway.|S|s|rt
+me011|so uh demo status.|S|s|t
+me011|first of all i did a little thing for liz with the transcriber tool that um first of all it uses the forced alignments.|S|s|s
+me011|so that the words appear uh in their own segments rather than in long in long chunks.|S|s|s
+mn017|oh.|B|b|b
+me011|she said that that she thought that was a much better idea for the other stuff she's working on.|S|s|s
+mn017|yeah that's great.|S|s|bk
+me011|um|F|fh|fh
+me011|and that works fine.|S|s|ba
+me011|except it's even slower to load.|S|s|ba
+me011|it's already pretty slow to load.|S|s|ba
+mn014|yeah it's more segments?|S|s|bk
+me001|it's slow.|S|s|ba
+mn014|or|D|qrr|qrr
+mn014|yeah.|B|b|b
+mn017|is that because the transcripts get longer?|Q|qy|rt
+mn014|yeah.|B|b|b
+mn017|the transcript file gets longer.|S|s|e
+me011|yeah yep.|S|s|aa
+mn014|yep.|S|s|aa
+me011|and the transcriber tool is just not very good at at that.|S|s|s
+mn017|but but that's that's|D|s|s
+mn017|you didn't have to change the software for that yet.|S|s|bu
+mn017|right?|Q|qy|bu
+me011|correct.|S|s|aa
+mn017|it's just formatting the right kind of uh x m l?|Q|qy|bu
+me011|yeah it's just writing conversion tools from the format that the aligner.|S|fg|fg
+me011|actually he did a s r t file for it.|S|s|s
+mn017|uhhuh okay.|S|s|bk
+me011|and then just back into transcriber transcriber format.|S|s|s
+mn017|oh good that's very good okay.|S|s|ba
+me011|yeah so my my decision was for the first pass for this demo that liz was talking about i decided that i would do um only enough to get it working as opposed to any coding.|S|fg|fg
+mn017|uhhuh.|B|b|b
+mn017|right.|B|b|b
+me011|and so the other thing she wanted to display the stylized f zeroes i think they're called.|S|s|rt
+me011|is that right?|Q|qy|rt
+me001|yeah the linear fit.|S|s|aa
+mn017|uhhuh.|B|b|b
+me011|and uh|F|fh|fh
+me011|so what i did is i just took the file with those in it converted it so that it looks like an audio file.|S|s|s
+mn017|right.|B|b|b
+me011|and so you it shows that instead of the wavefile.|S|s|s
+me011|and so that that's working.|S|s|s
+mn017|cool.|B|b|b
+me011|and i think it actually looks pretty good.|S|s|ba
+mn017|uhhuh.|B|b|b
+me011|um i'd like someone who's more familiar with it to look at it.|S|s|cs
+me011|because when i was looking at it we seemed to have lots of stuff going on when no one's saying anything.|S|s|df
+me001|that's just background speech.|S|s|s
+me011|uh.|S|s|bk
+me001|yeah.|B|b|b
+me001|so|F|fh|fh
+me018|so do you have to pad that out uh so that it looks like it's an eight kilohertz sampled thing?|Q|qy|rt
+me011|no i the audio file you can specify any sampling rate.|S|s|ar
+me018|or|D|qrr|qrr
+me011|and so i i specified instead of you know sixteen thousand or eight thousand i specified a hundred.|S|s|s
+me018|huh.|B|b|b
+me011|um|F|fh|fh
+me011|and the only problem with that is that there's a bug in transcriber.|S|s|s
+me011|that if the sample rate is too low when it tries to compute the shape file it fails.|S|s|s
+mn017|huh.|B|b|b
+me011|um and crashes.|S|s|e
+me011|um|F|fh|fh
+me011|but the solution to that is just set the option so it doesn't compute the shape file and it will work.|S|s|cs
+me011|and the only problem with that is you can't uh zoom out on it.|S|s|bd
+me011|you can zoom in but not out.|S|s|e
+me013|what's a shape file?|Q|qw|rt
+me011|the shape file is|D|s|s
+me011|if you think about a wavefile sixteen thousand samples per second is way too many to display on the screen.|S|s|ba
+me013|uhhuh.|B|b|b
+me011|so what transcriber does is it computes a another thing to display based on the waveform.|S|s|s
+me001|we're talking about we're talking about that demo.|S|s|t3
+fe016|yeah tried that and it died.|S|s|bk
+me011|and it displays it at|D|s|s
+me001|yeah did it?|S|s|bk
+me011|and it allows you to show many different resolutions.|S|s|s
+me011|so there's a little user interface component that lets you select the resolution.|S|s|s
+fe016|great.|S|s|ba
+me013|i see.|S|s|bk
+me011|and if you don't compute the wavefile you can't zoom out.|S|s|s
+me011|you can't get a larger view of it.|S|s|s
+me011|but you can zoom in.|S|s|s
+mn017|huh.|B|b|b
+me011|um|F|fh|fh
+me011|and that's all right.|S|s|ba
+me011|because at at a hundred samples that's already pretty far out.|S|s|df
+me011|and uh so i think it looks pretty good.|S|s|ba
+me011|but i'll let liz look at it and see what she thinks.|S|s|s
+mn017|uhhuh.|B|b|b
+fe016|i i got the wavefile.|S|s|s
+fe016|but|D|%|%
+fe016|sorry i got the wavefile.|S|s|fa
+fe016|but i couldn't get the words yet.|S|s|rt
+fe016|but the the wavefile part looks looks good.|S|s|ba
+me011|okay.|S|s|bk
+me011|we should if you were having problems with the words we should figure out why.|S|s|cs
+fe016|i i'll have done i'm probably doing something wrong.|S|s|s
+me011|okay.|S|s|bk
+fe016|sorry this microphone's moving around.|S|s|fa
+fe016|i can't put this over my ear.|S|s|s
+fe008|it could do you have to put it in your ear?|Q|qy|rt
+me011|you you clip that part over your ear.|S|s|s
+fe016|i can i can do that.|S|s|s
+fe016|but there's no orientation where the|D|s|df
+fe016|darn!|S|s|fe
+me011|we'll all watch liz play with the mike.|S|s|s
+fe008|does it really need to go in her ear?|Q|qy|r
+me011|um|D|%|%
+fe008|that that bud.|S|s|e
+fe008|it doesn't have to go in her ear.|S|s|bu
+fe008|right?|Q|qy|d
+me011|uh no it doesn't have to.|S|s|aa
+me011|but that that's i find that's the only way to wear it.|S|s|df
+fe008|oh wow.|S|s|bk
+me011|is that the bud's in the ear and that the link is over it.|S|s|e
+me013|this bud's for|D|s|t1
+me011|but so anyway i think that looks pretty good.|S|fg|fg
+me013|no.|S|s|t1
+me011|the only the only other thing we might want to do with that is be able to display more than one waveform.|S|s|cs
+fe016|huh.|B|b|b
+me011|and that actually shouldn't be too slow.|S|s|ba
+me011|uh because it's much lower resolution than a full waveform.|S|s|df
+mn014|yeah.|B|b|b
+me011|the problem with it is just it does require coding.|S|s|df
+me001|yeah it|D|fg|fg
+me011|and so it would be much better to get uh dave gelbart to do that than me.|S|s|s
+me011|because he's familiar with the code.|S|s|df
+me011|and is more likely to be able to get it to work quickly.|S|s|df
+me001|it'd be nice if we can do like a quick hack.|S|s|cs
+me001|just so we can play the audio file too.|S|s|df
+fe016|right.|S|s|aa
+me001|um with with the display.|S|s|cs
+me011|oh okay.|S|s|bk
+me001|like even if we i think that even if we didn't display the waveform it might be better to rather play the waveform than display it.|S|s|ba
+me001|i mean like if we were to choose i don't know if i were to choose between one or the other i'd rather have it played.|S|s|cs
+me011|uhhuh.|S|s|bk
+me011|i understand what you mean.|S|s|bk
+fe016|yeah.|B|b|b
+me001|and then displayed.|S|s|e
+me011|right.|S|s|bk
+me011|but for the demo maybe it doesn't matter.|S|s|am
+me011|i'm not sure whether you want to do the demo live anyway.|S|s|no
+me011|or just screen shots of what we have.|S|s|cs
+me011|the problem with doing it live is it takes so long to load that um|D|s|ba
+me013|i don't know.|S|s|no
+mn017|so this the this uh the sluggishness of the loading is all due to the parsing of the x m l format.|S|s|bu
+me011|um i was talking to dave gelbart about that.|S|s|s
+mn017|right?|Q|qy|d
+me011|and apparently it's not actually the parsing of the x m l raw|D|s|s
+me011|that going from the x m l to an internal tree structure is pretty fast.|S|s|ba
+mn017|huh.|B|b|b
+me011|but then it walks the tree to assemble its internal data structures.|S|s|s
+me011|and that's slow.|S|s|ba
+mn017|huh.|B|b|b
+me018|seems like you should be able to spawn that off into a background process.|S|s|s
+me018|because not everything is displayed in that tree at once.|S|s|bu
+me018|right?|Q|qy|d
+me011|uh no.|S|h|h
+me011|but what it does is it actually assembles all the user interface components then.|S|s|s
+mn017|but|D|%|%
+me018|right.|B|b|b
+me011|and then displays all the user interface components.|S|s|s
+me013|i'm i'm confused.|S|s|df
+me018|seems like you want to|D|s|s
+me013|uh is is this downloading something that happens once?|Q|qy|rt
+me011|yes.|S|s|aa
+me013|and and then when you display different things it's fine?|Q|qy|bu
+me013|so in that case|D|s|s
+mn017|no whenever you load a new meeting or a new transcript.|S|s|ar
+me011|a new transcript.|S|s|2
+mn014|yep.|B|b|b
+me013|well a new meeting a transcript right.|S|s|s
+mn017|right.|S|s|bk
+me013|but but for but for|D|%|%
+me011|or audio file.|S|s|e
+me011|well actually the audio files are pretty fast too.|S|s|ba
+me013|for presentation in uh uh i wouldn't be|D|s|s
+mn014|yeah.|S|s|aa
+me001|yeah.|S|s|aa
+mn017|you just have to have the thing running before you open your laptop.|S|s|s
+me001|yeah.|B|b|b
+fe016|yeah.|B|b|b
+me011|right the only problem with that is if anything goes wrong or if you want to switch from one thing to another.|S|fg|fg
+fe016|right.|B|b|b
+me001|yeah.|B|b|b
+me013|go wrong?|Q|qy|bu
+mn014|yeah.|B|b|b
+me013|i see yeah.|S|s|bk
+fe016|right i guess for the demo you can always play just store the pieces that you're going to display and play those as separate files if we can't you know actually do it.|S|fg|fg
+mn017|just make shorter files.|S|s|cs
+fe016|but it's you know it it's|D|s|s
+me011|that's true we could just subset it.|S|s|aa
+fe016|yeah.|S|s|aa
+me011|that's a good idea.|S|s|ba
+mn017|yeah.|B|b|b
+me011|that's actually probably the right thing to do.|S|s|ba
+fe016|and just make it|D|%|%
+mn014|yep.|B|b|b
+me011|you know just take ten minutes instead of an hour and a half.|S|s|s
+mn014|yeah that's what i did for for my talk.|S|fg|fg
+me013|oh oh you're downloading a whole meeting.|S|s|bk
+me011|yeah.|S|s|aa
+me013|oh yeah that.|S|s|na
+mn014|yeah.|B|b|b
+me011|yeah so that that's actually the definitely the way to do it.|S|fg|fg
+mn014|yeah.|S|s|bk
+me011|that's a good idea.|S|s|ba
+me013|yeah.|B|b|b
+me013|and then still do it ahead of time.|S|s|s
+me013|but then at least you're covered if if uh if there's a problem.|S|s|s
+me011|yeah if there are any problems.|S|fg|fg
+fe016|right.|B|b|b
+me011|yeah i mean even five minutes is probably enough.|S|fg|fg
+mn014|huh.|B|b|b
+fe016|right.|B|b|b
+fe016|so what happened to is it possible at all to display the words in their aligned locations?|Q|fg|fg
+me011|that's what i did.|S|s|s
+fe016|okay so sorry.|S|s|bk
+me011|yeah.|B|b|b
+mn017|you missed that part.|S|s|s
+fe016|i missed|D|s|s
+fe016|okay great!|S|s|bk
+fe016|but it|D|%|%
+fe016|okay.|S|s|bk
+fe016|i couldn't get the words and the waveform at the same time for some reason.|S|s|s
+fe016|and there must be some|D|s|s
+fe016|i'll i'll work on it with don and see what i'm doing wrong.|S|s|cc
+me011|yeah i mean just ask just come by my office.|S|fg|fg
+me011|i can show you as well.|S|s|s
+fe016|okay great well thanks a lot.|S|s|ba
+fe016|that's really great.|S|s|ba
+me011|right.|S|s|bk
+me011|and for the information retrieval uh don has been working on that.|S|s|t
+me011|so|F|fh|fh
+me001|yeah so it's coming along.|S|fg|fg
+me011|it looks like|D|s|s
+me001|um|F|fh|fh
+me001|just hacking dan's code and stepping through it.|S|s|s
+me001|but i think it's close.|S|s|ba
+me011|great.|S|s|ba
+me001|and we should be there pretty soon.|S|s|s
+me001|with at least like at least with you know being able to search over certain amount of meetings.|S|s|bd
+me001|just like really basic stuff.|S|s|bd
+me001|just asking looking for a word and looking through a bunch of different meetings.|S|s|e
+me001|and if we have time i'll also add you know like choosing which speakers you want to include and stuff.|S|s|s
+me001|but|F|fh|fh
+me013|okay well i'm going to start working on this the week after next.|S|s|bk
+me013|so that's the point when i'll need to look more carefully at what what what you guys have.|S|s|s
+me001|so is the end of the month still the the|D|s|bu
+me013|right the week after|D|s|aa
+me013|the monday the week after next is july second.|S|s|s
+me013|which is the first day i get back.|S|s|s
+me001|okay.|S|s|bk
+me013|so|F|fh|fh
+me001|okay.|S|s|bk
+me011|yeah so i think for the stuff liz was talking about we have something that'll work now.|S|fg|fg
+me011|and liz can look at it and see if she wants anything else.|S|s|s
+me011|maybe we can work on doing displaying multiple or displaying one and playing back the other.|S|s|cs
+fe016|so do you think it's reasonable to display more than one before the demo?|Q|qy|rt
+fe016|because|D|s|df
+me011|um i think i'd i'd have to ask dave.|S|fg|fg
+me011|i did it once before.|S|s|s
+me011|and it was just so slow to scroll that i gave up.|S|s|s
+fe016|huh.|B|b|b
+me011|but the advantage is that these things are much lower sampling rate.|S|s|ba
+fe016|right.|B|b|b
+me011|and so then it might be all right.|S|s|am
+fe016|okay let me know.|S|s|bk
+me001|morgan when's the demo?|Q|qw|rt
+me013|well uh i'm giving a talk on july sixteenth.|S|fh|fh
+me013|it's a monday in four weeks.|S|s|bu
+mn017|so if if raw speed is the problem this thing is written in tcl.|S|fg|fg
+me013|three weeks?|Q|qrr|d
+me011|tcl.|S|s|2
+mn017|right?|Q|qy|d
+mn017|i mean john osterhout uh you know he started his own company based on tcl stuff.|S|s|s
+mn017|and maybe they have the native code compiler or something.|S|s|s
+me011|i mean we could check.|S|s|df
+me011|i don't think they do.|S|s|s
+me011|um there was actually a java back end that apparently is actually a little faster.|S|s|s
+me011|it generates byte code.|S|s|s
+mn017|huh.|B|b|b
+me011|but uh|F|fh|fh
+me013|it's always exciting to hear that java's faster than something.|S|s|ba
+me011|yeah.|S|s|bk
+me011|well everything is faster than tcl t k.|S|s|s
+me013|yeah.|B|b|b
+me011|it's a string substitution language basically.|S|s|s
+me011|i should probably beep that out in case john osterhout ever listens.|S|s|s
+fe008|but tcl is wonderful.|S|s|fa
+me011|but|F|fh|fh
+me011|well it is wonderful.|S|s|na
+me011|it is for prototyping and user interface.|S|s|e
+me011|it's just really the language is awful.|S|s|ba
+fe008|there you go.|S|s|s
+fe008|oh.|S|s|bk
+me013|beep.|S|s|j
+me011|beep.|S|s|m
+me011|right.|S|s|bk
+me011|but let me tell you how i really feel.|S|s|s
+me013|we're all entitled to our opinions here.|S|s|s
+me011|yep.|S|s|bk
+fe008|yeah i like it.|S|fg|fg
+me013|um yeah so it's yeah i think it must be three and a half weeks.|S|fg|fg
+fe008|it's great.|S|s|ba
+me013|uh because july the the meeting is july sixteenth through eighteenth.|S|s|df
+me013|and uh my talk's the first day.|S|s|s
+me013|so|F|fh|fh
+me001|okay.|S|s|bk
+me013|i'm flying out there the sunday before.|S|s|s
+me013|so um|F|fh|fh
+mn017|huh.|B|b|b
+me013|i guess you know it'd be desirable if a week ahead of that we basically had thought we had it.|S|s|s
+me013|which would allow a week for|D|s|s
+me011|oh that's right.|S|s|bk
+me001|for realizing we don't?|Q|qy|2
+me013|re iterating.|S|s|s
+me013|yeah pretty much.|S|s|aa
+me013|yeah.|B|b|b
+me011|then the other issue related to that is data release.|S|s|t
+me011|if we want to show this in public it should be|D|s|s
+me011|so i uh haven't gotten any other replies from the original email asking for approval.|S|s|s
+me011|so i sent out another set this morning.|S|s|s
+me013|i i saw that.|S|s|s
+me011|and uh we'll see if we get any responses.|S|s|s
+fe016|i just did it.|S|s|rt
+me011|very good.|S|s|ba
+fe016|but it is|D|s|s
+fe016|i did want to say that um|D|s|s
+me011|did you notice i put in the filter?|Q|qy|rt
+fe016|no!|S|s|ar
+fe016|no no!|S|s|ar
+me011|go ahead.|S|s|co
+fe016|i just figured you|D|s|s
+me011|there's a link there that now says if you want to search by filter by a regular expression you can.|S|s|s
+fe016|oh my gosh.|S|s|ba
+fe016|okay.|S|s|bk
+me011|i put that in just for you.|S|s|rt
+fe016|terrific.|S|s|ba
+fe016|well since you didn't answer the|D|s|s
+fe016|so there was a question i had asked adam whether it's possible to search only for your own name your own utterances.|S|s|s
+fe016|so that you know you don't have to go through the whole meeting.|S|s|s
+fe016|and um|F|fh|fh
+fe016|and i didn't hear back.|S|s|s
+fe016|so i thought okay it's probably too hard.|S|s|s
+fe016|he's overloaded.|S|s|s
+fe016|i won't say anything.|S|s|s
+fe016|i'll just do it.|S|s|s
+fe016|great.|S|s|ba
+fe016|okay so anyway i looked at everybody else's|D|s|bk
+me011|it's actually an arbitrary arbitrary regular expression.|S|s|s
+fe016|good.|S|s|ba
+me011|but if you search your name you'll get all of the things you said and any time anyone said your name.|S|s|s
+fe016|so|D|%|%
+fe016|that's great.|S|s|ba
+me011|so|F|fh|fh
+me013|and it's it's case insensitive.|S|s|s
+me011|correct.|S|s|bk
+me013|yeah.|B|b|b
+fe016|that's great.|B|b|b
+me018|did you actually look through your transcripts?|Q|qy|rt
+me018|or you just approved them all?|Q|qrr|d
+fe016|uh well|F|h|h
+me018|i just approved all mine.|S|s|s
+me018|i didn't look at them.|S|s|s
+fe016|i sort of spot checked.|S|s|s
+fe016|i was trying to remember|D|s|s
+mn017|oh darn!|S|s|fe
+mn017|i haven't done that yet.|S|s|s
+mn017|uh okay.|S|s|bk
+fe016|i couldn't find the the keywords for things that i thought i had said wrong.|S|s|s
+fe016|so|F|fh|fh
+me011|it's hard to find.|S|s|ba
+fe016|that makes it|D|s|s
+me018|that's a compliment to you.|S|s|s
+me018|he said it's hard to find things you say wrong.|S|s|e
+me011|huh|D|%|%
+fe016|it's hard to find anything that you say in these.|S|s|ba
+me011|yep.|S|s|aa
+fe016|great.|S|s|ba
+fe016|well thanks for the filter.|S|s|ft
+me011|you really do have to sort of|D|s|s
+fe016|uh it's really useful|D|s|ba
+fe016|because if you're only at part of a meeting or something.|S|s|df
+me013|so we have our first information retrieval example.|S|s|s
+me013|it's a regular expression.|S|s|s
+me011|yeah that's right.|S|s|bk
+fe016|yeah!|S|s|aa
+me013|searcher.|S|s|s
+fe016|that's actually well it's useful.|S|s|ba
+me011|and it demonstrates why it doesn't work.|S|s|s
+me011|because you really want to go more than one meeting.|S|s|df
+me013|yeah.|S|s|aa
+me013|yeah.|B|b|b
+me011|and you need a better user interface for displaying the results.|S|s|s
+fe016|but this helps a lot.|S|s|ba
+me011|so|F|fh|fh
+me011|yeah.|S|s|bk
+me013|you want to say where are where find all the contentious things i said.|S|s|s
+fe016|great thanks.|S|s|ft
+me011|yeah really.|S|s|bk
+me018|find everything that should be bleeped.|S|s|cs
+me011|that's right we do have that nice marker is that|D|fg|fg
+me011|because we all know we're being recorded whenever anyone says anything like that we then have a conversation about bleeping it out.|S|s|df
+fe016|right.|B|b|b
+fe016|yeah you can search for beep or bleep.|S|fg|fg
+me011|so|F|fh|fh
+me011|yep.|S|s|aa
+me013|yeah.|B|b|b
+fe016|in somebody else's turn.|S|s|s
+me011|um oh and also we actually have a few people who have still not filled out speaker forms.|S|fg|fg
+me011|specifically in the n s a ones.|S|s|s
+me011|and i noticed that when i tried to uh uh generate the transcripts for n s a that there are a few with no speaker forms.|S|s|s
+me011|and so uh i have a i sent out yet another this morning which i think makes six total emails that i've sent to these people.|S|s|s
+me011|and so i think we need to escalate to some other method of trying to contact them.|S|s|s
+me013|um right.|F|fg|fg
+mn017|stalk them at their|D|s|cs
+me013|has has has joachim sokol replied?|Q|qy|rt
+mn017|like in the morning when i leave for work.|S|s|e
+me011|nope.|S|s|ar
+me013|or|D|qrr|qrr
+fe008|i think maybe talk to him first in person.|S|s|cs
+fe008|that's what i would think.|S|s|s
+me013|he's not around is the only problem.|S|s|ng
+fe008|uhhuh.|S|s|bk
+fe008|oh is that right?|S|s|bk
+fe008|oh i saw him i saw him on tuesday.|S|s|s
+me013|yeah otherwise it'd be a good idea.|S|s|aa
+me013|yeah he popped in.|S|s|s
+me013|but i mean he's basically gone.|S|s|e
+fe008|oh okay.|S|s|bk
+mn017|cold calling at lunch time uh dinner time i mean.|S|s|s
+me011|well if i could find phone numbers that would certainly work.|S|s|s
+fe008|well did you ask lila?|Q|qy|rt
+me011|but|F|fh|fh
+fe008|because i bet she has this information.|S|s|df
+me011|yeah that's a good idea.|S|s|aa
+me011|i'll ask her if she can track some of them down.|S|s|cc
+me013|yeah.|B|b|b
+fe008|yeah.|B|b|b
+me013|yeah and and tell her you know tell her your specific problem.|S|fh|fh
+me013|she'll fix|D|s|s
+fe008|and it|D|%|%
+fe008|and uh then there's still um|D|s|s
+fe008|miguel is still an active member of the group and he's|D|s|s
+fe008|what i mean is he's an active member and he's still here.|S|s|s
+me013|he's right there yeah.|S|s|s
+me011|uhhuh.|B|b|b
+fe008|very helpful.|S|s|ba
+me011|yeah i didn't actually see who they all were.|S|fg|fg
+me011|um a couple of them were like people at i b m who were here for one of the i b m meetings.|S|s|df
+me013|yeah.|B|b|b
+me011|and one a guy from s r i who was at one of the s r i meetings.|S|s|df
+me011|and so uh those might be harder to track down.|S|s|s
+fe008|most of them though really were visitors here and lila should have contacts with them.|S|s|df
+me011|yep.|S|s|aa
+fe008|nice meetings by the way.|S|s|ba
+fe008|yeah.|B|b|b
+me011|i mean they they were people who didn't have accounts at icsi.|S|s|df
+me011|so they're they're harder to find.|S|s|ba
+fe008|well not the ones that|D|s|nd
+fe008|are you are you sure?|Q|qy|qy
+me011|am i sure about what?|Q|qy|qy
+fe008|yeah n s a one and n s a three.|S|s|rt
+me011|there were other people also.|S|s|s
+fe008|we're talking about those?|Q|qy|bu
+me011|there were other other people also who didn't fill out the speaker forms in addition to the n s as.|S|s|e
+me013|in in other meetings.|S|s|s
+me011|yeah.|S|s|aa
+me013|yeah.|B|b|b
+fe008|oh oh i see okay fine.|S|s|bk
+me013|well s r i people easy to find.|S|s|s
+fe016|yeah.|B|b|b
+me011|yeah.|B|b|b
+me013|and uh i b m people also just let us know.|S|s|s
+me013|i mean|D|%|%
+me013|just we certainly have their email.|S|s|s
+fe008|but i knew everybody in the n s a meetings.|S|s|s
+me011|uhhuh.|B|b|b
+fe008|so i'm sure that we have uh fresh you know information on them.|S|s|s
+me011|right.|B|b|b
+me011|yeah none of the emails bounced so i know they're going somewhere.|S|fg|fg
+fe008|good okay.|S|s|bk
+me013|right.|S|s|bk
+me011|that's all i have.|S|s|t
+me011|you want to talk about recognition?|Q|qy|d
+mn017|chuck you want to talk about recognition?|Q|qy|rt
+me018|i haven't done anything.|S|s|s
+me011|liz you want to talk about recognition?|Q|qy|j
+me018|i was|D|s|s
+me011|thilo you want to talk about recognition?|Q|qy|j
+me018|i was away for a couple of days.|S|s|df
+me018|so|F|fh|fh
+me018|i haven't done a|D|s|s
+fe016|we're sort of in a stage where we're uh don's going through getting some of the next meetings that jane has.|S|s|s
+fe016|and uh you know creating a second database.|S|s|s
+fe016|so we haven't actually run anything yet.|S|s|s
+fe016|we need to get a critical mass for that.|S|s|s
+mn017|however i just got an email from thilo saying that we are ready to run|D|s|s
+mn017|i mean we have segmentations for the old meetings that are from his segmenter.|S|s|s
+fe016|and check the segmentations.|S|s|2
+me001|uhhuh.|B|b|b
+fe016|yeah.|B|b|b
+mn017|and so|F|fh|fh
+mn017|you you had three different versions with different like pause thresholds between the segments?|Q|qy|bu
+fe016|great.|S|s|ba
+mn014|yep yep.|S|s|aa
+mn014|yeah just yeah just smooth the the output of the of the detector.|S|s|aa
+mn017|right and you recommended using the one with two maximum of two seconds?|S|s|bk
+mn014|yeah.|S|s|aa
+fe016|a what do you mean a different pause threshold?|Q|qw|qw
+mn014|yep.|S|s|aa
+mn017|but two|D|s|s
+mn014|or you can yeah you can use the one with one second or whatever.|S|s|s
+fe016|do you mean a|D|qy|qy
+mn014|i i i there's no not much difference between the the one second and the two second one.|S|s|ba
+mn017|uhhuh.|B|b|b
+mn017|i mean the only advantage to using the longer threshold would be that you run less risk of missing some some speech.|S|s|bu
+me011|backchannel.|S|s|2
+mn017|right?|Q|qy|d
+mn014|and i think wouldn't it be better to to have a little longer sequences for the recognizer?|Q|qy|rt
+mn014|because of the language model as sometimes it happens that that it cuts off within a|D|s|s
+fe016|yeah.|S|s|aa
+mn017|but two seconds is pretty long.|S|s|s
+mn017|so|F|fh|fh
+mn014|yeah but we can be sure that as or we can be not not totally sure.|S|s|bk
+fe016|no it's not bad.|S|s|ar
+fe016|that's good.|S|s|ba
+mn014|but we can be somehow sure that there is nothing not no speech between those.|S|s|s
+mn017|huh.|B|b|b
+mn017|huh|B|b|b
+fe016|yeah|F|fg|fg
+mn014|so it it|D|%|%
+me018|what does the two second threshold mean?|Q|qw|rt
+mn014|i think it doesn't|D|s|s
+fe016|i i think that's that's good.|S|s|ba
+mn014|it's the same as in the the smoother for the i b m thing.|S|s|rt
+me011|it combines them if it's if the pause is longer than|D|s|s
+mn014|yeah.|B|b|b
+fe016|it's it's no more than six words so roughly on average.|S|s|s
+me018|uh.|S|s|bk
+mn014|so yeah.|B|b|b
+mn017|huh.|B|b|b
+mn014|so|F|fh|fh
+fe016|that's pretty good i think.|S|s|ba
+me011|right so the the trade off is you get longer utterances but you miss fewer utterances.|S|fg|fg
+fe016|it's better than a|D|s|ba
+mn014|but yeah but but the the chunks are already in general are short.|S|fg|fg
+mn014|so i i i think it would be better to have to have more of them concatenated together in order to have better language model.|S|s|ba
+mn017|huh.|B|b|b
+mn014|or language modeling.|S|s|bsc
+mn017|i think two seconds huh|D|s|s
+mn014|i don't know.|S|s|bd
+mn017|i would maybe go with one second.|S|s|cs
+mn017|i don't know it's a|D|s|s
+me011|well take a look|D|s|s
+mn014|yeah.|S|s|aa
+mn014|do that.|S|s|co
+mn014|yeah.|B|b|b
+mn017|see what the length distribution is.|S|s|cs
+mn014|yeah but but there's there's really not much difference between the one second and the two second.|S|fg|fg
+mn017|yeah.|B|b|b
+mn017|really?|Q|qy|bh
+me018|i wouldn't think that the language model would continue across two seconds.|S|s|s
+mn014|so just take the one the one second one.|S|s|co
+mn017|uh i'm i'm i'm just scared that with two seconds you get you get um you you get false recognitions.|S|s|s
+fe016|yeah.|B|b|b
+fe016|well yeah you do|D|s|na
+mn017|you're going to yeah you're going to hurt yourself occasionally by having missing the language model context.|S|s|s
+mn017|but you might hurt yourself more by having misrecognitions due to background speech or uh noise or whatever.|S|s|s
+mn014|i i'm not too afraid about that as|D|s|s
+mn014|when there when there would be something some background speech or something there there would be a a chunk in another channel.|S|s|df
+mn017|oh i see then oh i see okay.|S|s|bk
+fe016|yeah i think it's better.|S|fg|fg
+mn014|and when there is something in between i i i do not concatenate them.|S|s|s
+mn017|oh right oh that's|D|s|bk
+fe016|the longer is better.|S|s|s
+mn014|it's just when there is when they are sequentially and|D|s|s
+fe016|there's there's|D|s|s
+mn017|uhhuh okay sure.|S|s|bk
+mn014|so i i would use|D|s|cs
+mn017|we can try them all and see which works better.|S|s|s
+fe016|there's a there's a lot of these cases just like now where i people say uh uh when they're trying to|D|s|s
+mn017|uhhuh.|B|b|b
+fe016|there's about a half second pause to a second in between and then another word|D|s|ba
+mn014|yep.|B|b|b
+mn017|okay.|B|b|b
+fe016|and it's much better if we can keep those together i think.|S|s|ba
+me011|yeah it's uh funny looking at some of the transcripts.|S|fg|fg
+me011|i was filtering by person.|S|s|s
+mn017|uhhuh.|B|b|b
+me011|and in one of the one of the early meetings one particular person almost the only thing they said the entire meeting was yeah uhhuh.|S|s|s
+me011|it was just a whole list of them.|S|s|s
+me011|it was very funny.|S|s|ba
+fe008|i bet i know who that was.|S|s|s
+mn017|okay so so we need to split the waveforms then.|S|fg|fg
+fe008|yeah.|B|b|b
+mn017|or do you already have them split up?|Q|qrr|qrr
+mn017|no you don't.|S|s|bu
+mn017|right?|Q|qy|d
+mn014|no.|S|s|aa
+mn017|so so i guess don would need your help to to create a new set of split uh meetings.|S|s|s
+me001|sure.|S|s|bk
+fe016|you know you just fake the format that you take as input with the synch times to a new set of synch times.|S|s|s
+mn017|if|D|%|%
+mn014|we could|D|%|%
+mn017|right.|B|b|b
+mn014|huh|B|b|b
+me011|uh do we know about disk?|Q|fg|fg
+fe016|and|F|fh|fh
+mn017|but|D|%|%
+mn017|oh yeah there's that pressure.|S|s|bk
+me011|uh abbott disk.|S|s|e
+me013|uh i know they're in.|S|s|na
+me011|okay.|S|s|bk
+me013|and uh but i don't know i think he was wasn't he asking about|D|qy|qy
+me018|he had a problem.|S|s|s
+me018|right?|Q|qy|d
+me011|yep.|S|s|aa
+mn014|yep.|S|s|aa
+fe016|oh.|S|s|bk
+me013|well there was an issue.|S|s|s
+me013|he wanted to take it down.|S|s|s
+me013|and then he tried|D|s|s
+me018|he did and then it didn't work.|S|s|s
+me011|couldn't format them.|S|s|s
+me018|and|F|fh|fh
+me011|no.|S|s|s
+me018|i didn't hear anything after that.|S|s|s
+me011|the only reason i'm asking is you're going to need space to split them up.|S|s|s
+me011|and so i wanted to make sure we had some available for you.|S|s|s
+me001|i still have like probably .six seven eight gig on my disk.|S|s|s
+me011|okay so we're okay we're still okay for another couple days then.|S|s|bk
+fe016|and i have i have like another un backed i have another six gig which jeremy if you're not using can on x a.|S|s|s
+me001|yeah.|B|b|b
+me011|so we're okay for for a couple weeks then.|S|s|r
+me013|markham probably needs he probably needs us to approve another time to take things down.|S|s|bu
+fe016|to you.|D|%|%
+me013|right?|Q|qy|d
+me013|in order to do that.|S|s|e
+me018|yeah he he didn't say he hasn't said anything to me about it.|S|s|bk
+me013|i thought he i thought he said in that mail that he would need to take it down another time.|S|s|s
+me013|so i think he|D|s|s
+me018|yeah i think|D|fg|fg
+me011|yeah he just didn't say when.|S|fg|fg
+me011|so|F|fh|fh
+me018|yeah he|D|fg|fg
+me013|well no i think he wanted us to tell him when.|S|s|s
+fe016|how about during the picnic?|Q|qo|cs
+me011|uh.|S|s|bk
+me011|yeah i'm sure he'd appreciate that.|S|s|ba
+me013|yeah i'm sure he'd love to|D|fg|fg
+me011|well my feeling about that|D|s|s
+me013|fortunately markham's not a transcriber.|S|s|ba
+me013|but um|F|fh|fh
+me011|is is|D|%|%
+fe016|beep.|S|s|rt
+me011|well okay that's the point.|S|s|s
+me011|so it's jane that we have to coordinate that through.|S|s|s
+me011|uh what i was going to say is as soon as possible and i'm willing to not work for an hour to get it done.|S|s|s
+me011|uh but|F|fh|fh
+me013|i might not work.|S|s|t1
+mn017|oops i'm sorry.|S|s|fa
+mn014|oops!|S|s|fe
+me001|whoa!|S|s|fe
+me013|i'm i'm willing to not work for an hour.|S|s|m
+me011|because when abbott's|D|s|s
+me013|i know you're willing to not work for an hour.|S|s|j
+me011|yeah right.|S|s|bk
+me013|but i|D|%|%
+me011|because when abbott is down you can't work.|S|s|s
+fe016|you're really dedicated if you're no matter how you parse that one.|S|s|ba
+mn017|okay.|S|s|bk
+me011|but uh i think the the people it disrupts the most are the transcribers.|S|s|tc
+fe008|well you know uh i all i need to do is mail um send them a mail like two days in advance so they can schedule their time.|S|s|s
+fe008|i did that with the last outage i i wrote to them letting them know that this|D|s|s
+me011|okay.|S|s|bk
+mn017|huh.|B|b|b
+me013|so okay it sounds like markham should almost decide when he wants to do it and tell us as long as|D|s|s
+fe008|was not um|D|%|%
+me011|so early next week.|S|s|s
+me011|and just as long as we have a little warning.|S|s|2
+me013|yeah.|S|s|aa
+fe016|so that means we can't um save meeting data either.|S|s|bu
+fe008|yeah.|B|b|b
+fe016|right?|Q|qy|d
+me011|uh just not during that time when it's down.|S|s|aap
+me011|but that it should be down for an hour.|S|s|bd
+fe016|so it just can't so we can't have two meetings in a row where the first meeting's during that hour.|S|s|bu
+fe016|that's all i meant.|S|s|s
+me011|right.|S|s|aa
+me011|well no we can store them here.|S|s|ar
+fe016|that that's happening like today.|S|s|s
+me011|we can store them here.|S|s|r
+me011|you we just run the risk that if you have a crash we lose the data.|S|s|s
+fe016|temporarily.|S|s|e
+me011|so|F|fh|fh
+me018|they're stored on popcorn.|S|s|s
+fe008|this is on popcorn or|D|s|s
+fe016|well no i i mean the|D|s|s
+fe016|oh okay.|S|s|bk
+me011|yep.|B|b|b
+fe008|this is on popcorn or something?|Q|qy|bu
+me011|yep.|S|s|aa
+fe008|yeah okay.|S|s|bk
+me013|we store we store our data on popcorn.|S|s|s
+me011|anything else?|Q|qo|tc
+me013|that's really great.|S|s|ba
+me011|excuse me?|Q|qw|br
+me013|i was just thinking we store our data on popcorn.|S|s|s
+me013|how many how many institutes can you say do that?|Q|qw|qw
+me011|yep.|B|b|b
+mn017|pop goes the data.|S|s|j
+me013|okay.|S|s|bk
+me013|uh megabytes and many megabytes too.|S|s|s
+me013|um what what uh|D|qw|qw
+me011|we have a kernel on popcorn too.|S|s|j
+mn017|right.|B|b|b
+fe008|that's very good.|S|s|ba
+me013|so uh what what's on your queue for for recognition experiments?|Q|qw|qw
+mn017|can i have butter on my meeting?|Q|qy|j
+me013|let's talk about that for a second maybe.|S|s|cs
+fe008|what was the question?|Q|qw|qw
+me018|uh|B|b|b
+me013|what what was on his queue for recognition experiments?|Q|qw|r
+fe008|okay.|S|s|bk
+me018|um i'm rebuilding the net that we're going to use for the tandem stuff.|S|h|h
+me018|and so what i'm doing is um putting in the stream reader into the quicknet libraries for the s r i feature files.|S|s|s
+me011|huh.|B|b|b
+me018|which is the right way to do it.|S|s|s
+me018|i mean when we did our first experiments and i was uh creating s r i feature files from the icsi front end i just had perl scripts you know and hacked a bunch of stuff together.|S|s|s
+me018|just to get it going.|S|s|s
+me018|but the the right way to do it is to integrate it in with the icsi tools.|S|s|s
+me018|and so|F|fh|fh
+me018|that's what i'm doing now.|S|s|s
+me018|and so once i get that done then i'll generate the p files i need.|S|s|s
+me018|because we already have the feature files in the s r i format.|S|s|df
+me013|uhhuh.|B|b|b
+me018|so what i need to do is make it so that the the quicknet stuff can read those.|S|s|s
+me018|and uh|F|fh|fh
+mn017|is that independent?|Q|qy|rt
+mn017|or related to also being able to write out the uh feature file in the s r i format?|Q|qrr|qrr
+me018|it's both.|S|s|s
+me018|there's a there's an input stream and an output stream.|S|s|e
+me011|input reader and an output stream.|S|s|s
+mn017|oh okay so then you could use um you could use um uh like feacalc and just specify as an output format|D|s|bk
+me011|yeah.|B|b|b
+me018|yeah.|B|b|b
+me011|yeah that's the point.|S|fg|fg
+mn017|the the|D|%|%
+mn017|oh okay.|S|s|bk
+mn017|i'm just ignorant about the software architecture of this thing.|S|s|df
+me018|yeah.|B|b|b
+me011|yeah so if if you|D|fg|fg
+me011|right quicknet is a very nice stream based library.|S|fg|fg
+mn017|uhhuh.|B|b|b
+me011|so without too much effort once he has the classes written we can incorporate it into all the standard tools.|S|s|s
+mn017|oh cool.|S|s|ba
+me011|so|F|fh|fh
+mn017|great.|S|s|ba
+me018|so then it's uh tandem experiments after that?|Q|qy|d
+me013|uhhuh.|B|b|b
+me011|and at some point i'd like to get back to uh porting quicknet to the multiprocessor linux box.|S|s|s
+me013|yeah.|B|b|b
+me011|you know i i have forward passes working but i haven't done training yet.|S|s|s
+mn017|so speaking of linux so there's some impetus at um s r i to actually uh build support linux as a platform.|S|fg|fg
+mn017|so|F|fh|fh
+me011|uhhuh.|B|b|b
+mn017|what that means is once we have uh everything running on linux we can|D|s|s
+mn017|also use a|D|%|%
+fe016|run all our jobs on your machines|D|s|2
+mn017|yeah|D|s|aa
+me018|we don't have too many we just have that just have a few linux|D|s|s
+mn017|i mean if you can't use all the processors on whatever machine we'll help you with that.|S|s|s
+me011|yeah that's right.|S|s|s
+me011|well that's the nice thing about it is that since it's coarse parallelism you don't have to do anything special.|S|s|s
+mn017|right exactly.|S|s|aa
+me011|so i mean that would be a fine use for for that machine.|S|s|ba
+mn017|yeah.|B|b|b
+mn017|so it's just uh|D|s|s
+me011|five more processors.|S|s|2
+me013|oh i know what it was.|S|s|t3
+mn017|uh yeah.|B|b|b
+me013|um yeah um|F|fg|fg
+me013|some|D|%|%
+mn017|or if uh you know in the future if linux machines become like way cheaper than uh you know solaris machines then you know that wouldn't be a reason not to use linux anymore.|S|s|s
+me011|yep.|S|s|bk
+mn017|so|F|fh|fh
+me013|yeah.|B|b|b
+me013|um i think it would be neat at some point in this to do um a recognition uh pass on one of the p z m mikes for these same meetings that you've been|D|fg|fg
+mn017|for the meeting?|Q|qy|2
+fe016|yeah.|B|b|b
+me013|i mean it's going to be terrible.|S|s|ba
+mn017|uhhuh.|B|b|b
+me013|but you know we we just don't know how terrible.|S|s|s
+fe016|it's also an interesting problem to come up with the reference.|S|s|s
+mn017|uhhuh.|B|b|b
+me013|and|D|%|%
+fe016|so the reference file for the relative times at which|D|s|s
+me011|oh yeah that's really hard.|S|s|ba
+fe016|so|F|fh|fh
+fe016|well it's an interesting question because i was thinking well you can force align the transcriber transcripts and then of course you try to merge them in time.|S|s|s
+me011|it's not determined.|S|s|s
+me013|uhhuh.|B|b|b
+fe016|but how do you score?|Q|qw|qw
+me011|i think the first pass is throw out words which are overlapped.|S|s|cs
+fe016|i mean it's just an interesting problem.|S|s|s
+me011|that would be a good first pass.|S|s|s
+me011|just ignore everything that has any overlap.|S|s|cs
+mn017|huh.|B|b|b
+fe016|right i mean there's a whole sort of|D|fg|fg
+me013|yeah because you have a set of scores about that.|S|fg|fg
+fe016|right we right.|F|fg|fg
+me013|so maybe then that wouldn't be so bad.|S|s|s
+fe016|but there's a whole interesting discussion.|S|s|s
+fe016|because of course the alignments are not perfect either.|S|s|s
+me013|oh.|B|b|b
+fe016|and so um in fact we actually don't have a a|D|s|s
+me011|right.|B|b|b
+me013|yeah.|B|b|b
+fe016|i mean it's worth trying.|S|s|s
+me013|but that'd be a hell of a lot better than what we do with just these.|S|s|ba
+fe016|i|D|%|%
+me013|and|F|fh|fh
+fe016|right right.|B|b|b
+me013|and and again if you rule out the overlap you have some numbers for that.|S|s|s
+me013|because that's yet another|D|s|df
+me013|but i i'm just concerned of course about that|D|s|s
+fe016|oh i see you mean when only one person is|D|s|bk
+me011|yep.|B|b|b
+fe016|yes we could we could try|D|s|s
+me013|because you have scores for that for the other case.|S|s|df
+fe016|right.|B|b|b
+fe016|right exactly.|S|s|aa
+mn017|uhhuh.|B|b|b
+me013|and|F|fh|fh
+fe016|yeah we we should try|D|s|cs
+me013|we just don't know how bad it will be.|S|s|s
+me013|i mean one of the things that dave was noticing we were talking this morning is that it seems like and we don't know this in detail but it seems like you're getting a lot from the channel adaptation the speaker adaptation and so forth.|S|s|s
+me001|huh.|B|b|b
+mn017|huh.|B|b|b
+mn017|uhhuh.|B|b|b
+me013|um so you are already in that recognizer doing something that is likely to affect uh the the far field microphone uh formant.|S|s|s
+mn017|huh.|B|b|b
+mn017|right.|B|b|b
+me013|so it may not|D|s|s
+me013|i mean it's going to be bad.|S|s|s
+mn017|right.|B|b|b
+me013|but uh it may not be like won't decode kind of bad.|S|s|s
+mn017|right.|B|b|b
+me013|it might might only be that it goes from forty percent to eighty or something like that.|S|s|s
+me011|yeah eighty percent.|S|s|2
+me011|yeah.|B|b|b
+mn017|right.|B|b|b
+fe016|do you assume you know the speaker when you do this?|Q|qy|rt
+me013|i want us to assume the whatever it was you assumed when you did the other the the close mike.|S|s|s
+mn017|you just you just|D|s|s
+fe016|well well there there's only one person who it can be.|S|s|s
+fe016|because they own that microphone.|S|s|df
+mn017|right.|B|b|b
+fe016|i'm just wondering there's|D|s|s
+mn017|yeah that that becomes another problem actually.|S|fg|fg
+me001|well and then you have the gender detection.|S|s|s
+fe016|it's not a|D|s|ar
+mn014|yeah.|B|b|b
+me011|well but for a|D|%|%
+me011|but for for scoring you can do it or not do it as you choose.|S|s|s
+fe016|right and|D|s|aa
+me013|oh i'm|D|%|%
+fe016|right but in terms of for|D|s|aa
+me011|so|F|fh|fh
+me013|but you're saying for this for the adaptation you mean.|S|s|bu
+fe016|right.|B|b|b
+mn017|so so not well for everything.|S|s|aap
+fe016|for adaptation right.|S|s|m
+mn017|for for even feature normalization for uh vocal tract length estimation|D|s|e
+fe016|you know do you do a supervised adaptation|D|s|s
+me013|right.|B|b|b
+fe016|all of these adaptations|D|s|2
+mn017|all of all of these assume you know who's speaking.|S|s|s
+fe016|assume that the same person|D|s|2
+mn017|so|F|fh|fh
+mn014|huh.|B|b|b
+mn017|you would have to do a speaker segmentation first on the far field signal.|S|s|s
+fe016|yeah.|B|b|b
+me011|well but you can use the|D|s|s
+me011|when you're doing the scoring since you're you're going to be scoring against transcript you can use|D|s|s
+mn017|you mean you want to cheat.|S|s|s
+me011|well you're doing that anyway.|S|s|bd
+fe016|well i was just|D|fg|fg
+mn017|no if|D|%|%
+fe008|ooo!|S|s|fe
+fe008|i don't like that term.|S|s|ba
+me011|so try to cheat in the same way that you're doing with the close talking.|S|s|cs
+fe008|i don't like that term.|S|s|r
+me013|i|D|%|%
+fe016|actually the those are two|D|s|s
+fe008|i don't like that term.|S|s|r
+me013|i have|D|%|%
+mn017|okay we we're going to bleep that out.|S|s|bk
+me013|i i have a suggestion.|S|s|s
+me013|do the simplest thing first.|S|s|cs
+me011|yeah right.|S|s|bk
+me013|because we're going to want to know that anyway.|S|s|df
+fe016|so wait the simplest thing is you cheat saying|D|s|s
+me013|in other words if you|D|s|s
+me013|no it's no it's even simpler thing than that is just that you don't know.|S|s|ar
+mn017|you mean you you don't do all those normalizations.|S|s|bu
+me011|yeah.|B|b|b
+me013|yeah.|S|s|aa
+fe016|oh you totally unadapted.|S|s|bk
+me011|just do or a free|D|s|s
+me011|yeah.|S|s|aa
+me013|yeah because you can get a number uh for that with the other as well.|S|s|aa
+fe016|uh right.|S|fh|fh
+me013|right?|Q|qy|d
+me013|you can turn those things off.|S|s|s
+me013|right?|Q|qy|d
+mn017|um actually we don't have any models.|S|s|ng
+fe016|yeah.|B|b|b
+mn017|um you can|D|%|%
+fe016|no you can|D|s|ar
+mn017|um|F|fh|fh
+fe016|you can use a speaker uh|D|s|s
+fe016|what about gender detection?|Q|qo|cs
+mn017|actually it's that it's it's we would have to re train models that are not that have none of that stuff uh in it.|S|s|s
+mn017|but actually we could|D|s|s
+mn017|we can just run it assuming that it's all one speaker basically.|S|s|s
+mn017|and see what happens.|S|s|s
+me013|yeah.|B|b|b
+me013|yeah.|B|b|b
+me013|yeah and then put it in correctly and see how much that helps.|S|fg|fg
+fe016|yeah.|B|b|b
+mn017|yeah.|B|b|b
+me013|i mean i was just thinking do the one that's easiest first|D|s|s
+me013|because you want to know how much that's helping you in these cases anyhow.|S|s|df
+mn017|actually|D|%|%
+mn014|but|D|%|%
+mn014|do you have gender dependent models?|Q|qy|rt
+mn017|actually no|D|%|%
+mn017|sorry.|S|s|fa
+mn014|are the models gender dependent?|Q|qy|r
+me001|huh.|B|b|b
+mn017|yeah.|S|s|aa
+me011|yeah they're all gender dependent.|S|s|aa
+fe016|yeah.|B|b|b
+mn014|so|F|fh|fh
+fe016|yeah so you can|D|fg|fg
+me011|so we would have to at least do that.|S|s|s
+mn017|no actually|D|%|%
+fe016|no you can run both.|S|s|ar
+mn014|yeah.|B|b|b
+fe016|and you can|D|s|s
+mn014|yeah.|B|b|b
+mn017|no actually what here's here's what we would usually do under these circumstances.|S|s|s
+me011|and pick whichever is better.|S|s|2
+mn017|we would actually we would run some sort of segmentation.|S|s|s
+mn017|thilo's is as good as any probably.|S|s|s
+mn017|um and then we would do an unsupervised clustering of of the segments to|D|fh|fh
+mn017|and and put the similar ones into bins that would be sort of pseudo speakers.|S|s|s
+me013|uhhuh.|B|b|b
+mn017|and then we would do our standard processing on these pseudo speakers.|S|s|s
+mn017|and that turns out to work very well on broadcast news spine.|S|s|s
+mn017|those types of tasks where you don't have the speaker segmentation given to you.|S|s|s
+me011|does the clustering do you give it sort of a target number of clusters or is it adapted in some way?|Q|qr|qr
+mn017|um you can either do it by target number or by some measure of dissimilarity that you use as a threshold.|S|h|h
+me011|uhhuh.|B|b|b
+me011|that's what i'm just thinking one of the big differences with broadcast news and these meetings is we have many fewer participants.|S|s|s
+fe016|the other thing is that you actually have direction here.|S|s|s
+mn017|right.|S|s|aa
+fe016|so unlike these corpora that are recorded with other microphones like the right way to do this i guess you know in the future would be well in general thilo's sitting there and this p z m is going to you know he's roughly in that location.|S|s|s
+me011|speaker i d.|S|s|s
+me011|yeah.|B|b|b
+me011|well there're different ways of thinking about it.|S|fg|fg
+me011|i mean that that would be true if you had a meeting situation with multiple mikes.|S|s|df
+me011|but if you only had your p d a sitting in front of you|D|s|s
+fe016|well any case where the people are not all sitting at the same place and they're not moving around too much.|S|s|s
+me011|and you have more than one mike.|S|s|2
+me013|yeah if you don't have one more than one mike you don't have a very good handle on location.|S|fg|fg
+fe016|well you have distance and you have|D|s|ng
+me013|that's it's not enough.|S|s|nd
+fe016|i mean that um jane's the pickup of adam on this mike is going to be different than me in terms of energy and so forth over the whole meeting.|S|s|s
+me011|oh so just from clustering you might be able to cluster it better because of that.|S|s|bk
+fe016|you might get some clustering from the speaker and some of it from the characteristics of the distance.|S|s|s
+me013|huh.|B|b|b
+me011|from mike.|S|s|2
+me011|yeah.|B|b|b
+me013|yeah.|B|b|b
+fe016|and|F|fh|fh
+me013|but say if if you had a a cardioid mike or something sitting someplace then sitting there then it would its its response to him would be about the same as the response to him and so on.|S|s|s
+me011|and transfer functions.|S|s|2
+fe016|right exactly.|S|s|aa
+mn017|well you can do you can you you can do certain normalizations like you know gain control|D|s|s
+me011|well i think there're lots of lots of ways of doing it.|S|s|s
+fe016|they're both picked up in the clustering i guess.|S|s|s
+me013|uhhuh.|B|b|b
+mn017|uh before you do the clustering to rule out those those types of things.|S|s|s
+fe016|or to just do the clustering knowing that you're capturing both.|S|s|aap
+fe016|it's just that the kind of clustering we've done before hasn't had that uh distance factor or location factor in it in the same way.|S|s|s
+me013|i see.|S|s|bk
+me013|yeah.|B|b|b
+fe016|and so we're not really modeling it directly.|S|s|s
+fe016|if somebody does we maybe we add that.|S|s|cs
+mn017|huh.|B|b|b
+me011|yeah that's an interesting|D|fg|fg
+fe016|because i think it would be a pretty big difference.|S|s|df
+fe016|when you listen you can sort of tell where people are.|S|s|s
+me011|it's a big difference.|S|s|ba
+me011|yeah.|B|b|b
+mn017|okay that would be fun fun to try.|S|s|bk
+fe016|not which you know side.|S|s|e
+fe016|but|D|%|%
+me011|well humans are really good at that.|S|s|s
+me011|transfer function through the head and things like that.|S|s|s
+fe016|right even with one microphone.|S|s|aa
+me011|so you know even if you only have one ear you can still get get good transfers.|S|s|s
+me013|yeah.|B|b|b
+me013|yeah.|B|b|b
+fe016|right so our our clustering is not going to be intelligent that way.|S|fg|fg
+me011|so|F|fh|fh
+fe016|it's just going to pick up whatever energy difference or whatever is.|S|s|s
+me011|yeah.|B|b|b
+me013|but anyway i i'd it'd be neat to have that.|S|fg|fg
+me013|because you know we've been at this for a little while.|S|s|df
+me013|and we don't have have any results yet with with conversational speech at a distance.|S|s|s
+mn017|uhhuh.|B|b|b
+mn017|okay.|S|s|bk
+me013|so um|F|fh|fh
+mn017|huh.|B|b|b
+me011|yeah.|B|b|b
+me013|we should at least get a first one.|S|s|cs
+me011|something.|S|s|2
+me011|yeah.|B|b|b
+fe016|okay.|S|s|bk
+fe008|huh.|B|b|b
+me013|um and the other thing this would kind of be a hail mary.|S|s|bd
+fe016|uhhuh.|B|b|b
+me013|but but uh uh dave does have this stuff that is helping on digits.|S|s|s
+me013|and you know and so with then it'd be you know just throw that in and see.|S|s|s
+mn017|oh yeah then we should|D|s|bk
+me011|yeah so it'd be cool to see if it helped.|S|fg|fg
+mn017|well first you have to filter the whole training set and re train.|S|s|cs
+fe016|yeah.|B|b|b
+me001|uhhuh.|B|b|b
+me013|yeah.|S|s|aa
+me011|that would be quick.|S|s|ba
+fe016|uhhuh.|B|b|b
+me011|since i think he did it in matlab.|S|s|df
+me013|uh well he can do it in something else.|S|s|aap
+fe008|huh interesting.|S|s|ba
+me011|yep.|B|b|b
+me013|but i mean you know it's|D|s|s
+me011|can't you export c from matlab?|Q|qy|qy
+me013|um|F|fh|fh
+me013|actually we're experimenting with phase stuff now.|S|s|s
+me011|or is that mathematica?|Q|qrr|qrr
+me013|and and uh this uh first result he got uh was really great.|S|s|s
+me013|it actually uh uh didn't exactly eliminate the reverberation.|S|s|s
+me013|but it completely got rid of the speech.|S|s|s
+mn017|oh.|S|s|bk
+mn017|that would solve all of our problems.|S|s|s
+fe008|wow.|D|%|%
+me013|yeah well i was thinking that.|S|s|aa
+mn017|wouldn't it?|Q|qy|d
+me011|well so just take the inverse and you're fine.|S|s|cs
+me013|so it's|D|%|%
+me013|that's|D|%|%
+me013|you think i didn't tell him that?|Q|qy|d
+me013|no i got pretty excited.|S|s|s
+me013|because it completely got rid of the speech.|S|s|df
+me013|so i was thinking well so|D|s|s
+me011|so that's a speech detector.|S|s|s
+me011|that's great.|S|s|ba
+fe008|that's interesting.|S|s|ba
+me013|you know it could be useful for lots of things.|S|s|s
+me013|so we have to|D|s|s
+fe008|did it get rid of other stuff too though?|Q|qy|rt
+mn017|huh.|B|b|b
+me013|what?|Q|qw|br
+fe008|did it get rid of other stuff besides the speech?|Q|qy|rt
+me011|yeah just subtract that|D|fg|fg
+me013|well we have to sort of check that out.|S|s|s
+me011|subtract that from the original signal and you're set.|S|s|s
+me013|that's|D|%|%
+fe008|okay.|S|s|bk
+fe008|wow interesting.|S|s|ba
+me013|yeah.|B|b|b
+me013|yeah.|B|b|b
+mn017|right then you can do like an you can estimate the the noise estimates.|S|fg|fg
+me011|noise estimate.|S|s|2
+me011|signal to noise.|S|s|s
+mn017|right yeah.|S|s|aa
+me011|that's great.|S|s|ba
+fe016|uhhuh.|B|b|b
+me013|reminds me of when when herve and i were first playing with uh context dependent things for nets.|S|s|s
+me013|and and at one point we took out the speech input.|S|s|s
+me013|so we only had priors and our performance went up.|S|s|s
+mn017|huh.|B|b|b
+fe008|wow.|S|s|ba
+me011|i guess that's why herve always talks about using the priors as one of the mixtures in in his all ways combos.|S|s|s
+mn017|huh.|B|b|b
+me013|yeah.|B|b|b
+me013|well of course it was a bug.|S|s|s
+me013|but i mean it's it's a but it was pretty it was pretty funny anyway.|S|s|s
+me011|but still|D|s|s
+fe008|wow interesting.|S|s|ba
+mn017|yeah.|B|b|b
+fe008|huh.|B|b|b
+me011|so if you run uh your recognizer with all probabilities equal what do you get out?|Q|qo|qo
+me011|probably garbage.|S|s|am
+me018|whatever the language model says.|S|s|s
+me011|i bet the pruning|D|s|s
+mn014|yep.|S|s|aa
+me011|the pruning probably prunes everything out.|S|s|s
+mn017|you get out switchboard.|S|s|s
+mn017|that's just the the language model.|S|s|e
+me011|yeah that's right.|S|s|aa
+me013|so that's how it was generated.|S|s|s
+mn017|yeah so we have this new speaker adaptation.|S|fg|fg
+mn017|um|F|fh|fh
+mn017|a oh it's a sort of feature normalization.|S|s|s
+mn017|uh like speaker adaptation.|S|s|e
+mn017|which uh which i which i wrote about in the last status report.|S|s|e
+mn017|which seems to be helping about a percent and a half on hub five.|S|s|s
+mn017|so um we haven't tried that yet on the meetings.|S|fh|fh
+mn017|uh but hopefully it'll help there too.|S|s|s
+fe008|i want to ask um so you know that the data i have upgraded it considerably.|S|s|s
+fe008|so i've probably made i probably corrected something like|D|s|s
+fe008|well|D|%|%
+fe008|it's really a substantial amount of things that i've caught changed um added to it.|S|s|s
+fe008|including a lot of uh backchannels.|S|s|s
+fe008|so when you're running things if you run it on the old|D|s|s
+fe008|so if you if you run it on the new version then the numbers will be um and you compare it to the to runs on the old version then you're going to end up with more of an improvement than would actually be the case.|S|s|s
+mn017|huh.|B|b|b
+me011|different.|S|s|2
+mn017|uhhuh.|B|b|b
+mn017|well we we have a frozen we do all our experiments with a frozen version of the transcripts as of i don't know.|S|s|s
+fe008|as of february?|Q|qy|2
+mn017|as of|D|s|s
+mn017|no a little|D|s|ar
+mn017|i don't know.|S|s|no
+mn017|when when did we grab the transcripts?|Q|qw|qw
+fe008|so a like the h l t paper?|Q|qy|bu
+me001|the for the it was march probably.|S|s|am
+fe016|sorry.|S|s|fa
+mn017|the|D|%|%
+fe016|for these meetings?|Q|qy|bu
+mn017|we're talking about which which version we're using for evaluating the recognition.|S|s|s
+mn017|which version of the transcripts.|S|s|e
+fe016|right they're somewhere in between january and late march or something like that.|S|s|bk
+me001|yeah something around there.|S|s|aa
+fe008|okay well so long as you have the same baseline then you'll be able to tell.|S|s|bk
+me011|but they are channelized ones though?|Q|qy|bu
+mn017|no no.|S|s|ar
+mn017|yeah obviously yeah.|S|s|aa
+fe016|they're meetings that are now channelized but they were not from|D|s|nd
+fe008|so long as so long as it's the same baseline you'll be able to tell.|S|s|s
+mn017|the uh the other thing is|D|s|s
+mn017|the the|D|%|%
+fe008|but but i'm just i'm just saying that if you were to compare that with running that on the new data that it would be an a more optimistic outcome.|S|s|df
+mn017|huh and|D|fg|fg
+mn017|well the and the other thing is it takes only a a minute to rescore all the old outputs with|D|s|s
+mn017|if you had new transcripts then we we just rescore the old|D|s|cs
+me011|right because you haven't done any training.|S|fg|fg
+mn017|sorry?|Q|qw|br
+me011|right because we're not doing it for training.|S|s|r
+fe016|yeah we haven't modified the recognizer at all.|S|fg|fg
+me011|right so it's really it would be really easy to re do it.|S|fg|fg
+fe016|so actually um at some point we should update and rescore everything with you know the corrected transcripts.|S|s|cs
+mn017|we just we save|D|%|%
+me011|yeah it'd be interesting just to see how much it changes.|S|fg|fg
+mn017|well the the|D|%|%
+fe016|just to|D|%|%
+me011|i bet it wouldn't change a lot.|S|s|s
+mn017|right.|S|s|aa
+me001|what are the nature of most of the changes?|Q|qw|rt
+fe008|yeah.|B|b|b
+me011|we can take we can have a pool.|S|s|cs
+fe016|sometimes the changes are um cases where the recognizer would get it wrong anyway.|S|s|rt
+fe016|because it was some word that we didn't have in the vocabulary.|S|s|df
+me011|that's just what i was thinking.|S|s|s
+mn017|so i i the thing is when|D|s|s
+fe016|or|D|%|%
+fe016|but it does help to get the backchannels back in and things like that.|S|s|s
+mn017|right.|B|b|b
+mn017|so whenever the right now the the scoring is based on segments.|S|s|s
+mn017|um which is not great.|S|s|s
+mn017|because for instance|D|s|df
+mn017|so so the the other way to do the scoring is using a a nist format called s t m s.|S|s|s
+mn017|uh segment time marked.|S|s|s
+me011|yep i we know about it.|S|s|bk
+mn017|where|D|%|%
+mn017|so um i have to convert the uh transcripts into this format and then the scoring program actually looks at the times.|S|s|s
+mn017|and uh you know it you can have a different segmentation in your recognizer output than in your references.|S|s|s
+mn017|and it will still do the right thing.|S|s|s
+mn017|so that's what we need to basically uh to|D|s|s
+mn017|huh?|Q|qw|br
+me011|transcriber will export s t m.|S|s|s
+mn017|oh.|S|s|bk
+me011|in case you care.|S|s|s
+mn017|well but then there's other changes.|S|s|bd
+mn017|so i mean there's other|D|s|s
+me011|okay.|S|s|bk
+mn017|we we strip away a lot of the mark up uh in the transcripts.|S|s|s
+mn017|which you know isn't relevant to the scoring of the speech recognition output.|S|s|s
+me011|right.|B|b|b
+mn017|so|F|fh|fh
+fe016|would that doesn't that only change the scoring if a word has moved into a different segment?|Q|qy|rt
+fe016|i mean i don't think that's i hardly ever see that.|S|s|s
+fe016|i think most of them are pretty good.|S|s|s
+mn017|no i mean if|D|s|ar
+mn017|i i assume you also changed some boundaries.|S|s|bu
+fe008|huh i did.|S|s|aa
+mn017|right?|Q|qy|d
+mn017|so if we want to use new transcripts with a different segmentation then we can't use them in the current way we do scoring.|S|s|s
+mn017|we have to switch to this|D|s|s
+fe016|oh you mean you would need to re run the recognition.|S|s|bu
+mn017|no we have to|D|s|ar
+mn017|there's a difference|D|s|s
+fe016|i mean if you re ran the recognition then you just run it|D|s|bu
+mn017|right right.|S|s|aa
+fe016|oh i see.|S|s|bk
+fe016|if you want to use the old|D|s|s
+fe016|you can actually never though really infer what you would get with a different|D|s|s
+mn017|that's true.|S|s|aa
+fe016|you know it's it's probably more fair to re run the whole re run that.|S|s|s
+fe016|uh in other words it's not really a scoring script problem.|S|s|s
+fe016|it's|D|%|%
+mn017|no but if you just want to see what|D|s|ar
+mn017|like suppose you fixed some no jane fixed some typos and you want to see what effect does that have on the word error.|S|s|s
+mn017|then we can we|D|s|s
+me011|right but but if the segments change that won't work.|S|fg|fg
+fe016|yeah yeah.|B|b|b
+fe016|you it'll sort of work but it's not exactly what you would maybe get from recognition.|S|s|s
+me011|well i mean what happens if you break one segment into two?|Q|qo|qo
+fe016|you never know.|S|s|s
+me011|suddenly they don't match at all and you can't line them up anymore.|S|s|s
+mn017|no but that's what the|D|s|ar
+mn017|well that's what i'm saying.|S|s|s
+fe016|well you you you|D|%|%
+mn017|you can line them up based on the times.|S|s|s
+fe016|you can|D|%|%
+fe016|yeah.|S|s|aa
+mn017|so the scoring program with if you give it an s t m reference file it will actually compare the words based on their time marks.|S|s|s
+me011|right.|B|b|b
+fe016|yeah.|B|b|b
+mn017|so therefore you can|D|s|s
+mn017|um|F|fh|fh
+me011|does s t m do it per word or per utterance?|Q|qy|qy
+mn017|it's per utterance.|S|s|s
+mn017|but it it allows as long as you hypothesize the word in the right segment in the reference it gives you credit for that.|S|s|df
+me011|what i thought.|S|s|bk
+me011|all right.|S|s|bk
+mn017|so it does a it does a word alignment like you have to do for scoring.|S|s|s
+fe016|uhhuh.|B|b|b
+me011|and then it does also some|D|s|2
+mn017|but it constrains the words to lie within the the time bins of the reference.|S|s|s
+me011|within the segment.|S|s|2
+me011|yep.|B|b|b
+me011|i see.|S|s|bk
+mn017|and for you to get a credit for it.|S|s|e
+mn017|so|F|fh|fh
+fe008|that sounds great.|S|s|ba
+mn017|so so it's it should be just a straightforward re formatting issue of the references.|S|s|s
+mn017|so|F|fh|fh
+fe008|yeah i mean i was thinking the other day that this is not just conversational speech.|S|fg|fg
+fe008|the fact that is has so much technological jargon in it it makes it considerably harder to um to transcribe and to to double check and all those things.|S|s|df
+fe008|so i think you're going to find a substantial gain in terms of the word accuracy.|S|s|s
+fe008|so long as those words are in your vocabulary.|S|s|df
+fe016|well it definitely helps with um forced alignment too.|S|s|s
+me011|one percent.|S|s|s
+fe016|because you know when we know the the the true words and we're adding them to the vocabulary and training a language model and so forth for future meetings especially the like the front end meetings or meetings with a lot of jargon in them that is not represented in switchboard or callhome then it then it really helps.|S|s|df
+fe008|well all of them are all of our all of our meetings have a lot of jargon in them but we know what those words are.|S|s|aap
+fe016|so|F|fh|fh
+fe016|yeah.|S|s|bk
+fe008|i mean i don't know how you get them into the vocabulary.|S|s|no
+fe008|but it would seem|D|s|s
+fe008|now i have to i have to i really need to uh raise a question about the term cheating.|S|s|tc
+fe008|okay?|Q|qy|d
+fe008|and the reason is um if i understand that cheating is a term which is used to apply for basically what all of linguistics corpus linguistics does and what what my transcribers are doing and what i do which is a methodology whereby you actually physically mark things in the data.|S|s|s
+me011|all|D|%|%
+fe008|like the transcription.|S|s|e
+fe008|like the words that are actually there.|S|s|e
+me011|all we mean by that is that we're giving the recognizer more information than it would have if you were running it raw.|S|s|bd
+me011|over a meeting that no person has ever listened to or transcribed.|S|s|e
+fe008|okay i mean that that part is okay.|S|s|bk
+fe008|but i but i do wonder sometimes if it might be possible to use a term that's a little bit less evaluative like um hand marked.|S|s|cs
+me013|uh but cheating is is|D|fg|fg
+me013|sure but but cheating is is is pretty commonly used to mean this.|S|s|bk
+mn017|it's a it's a technical term.|S|s|df
+fe016|it i guess it it's been around for a long time.|S|s|ba
+me013|it really is|D|%|%
+me011|it is yep.|S|s|df
+fe016|and it it's sort of um because it's so strong a word people don't take it that seriously.|S|s|s
+me013|yeah.|S|s|aa
+me013|yeah|D|fg|fg
+fe016|in it's not negatively viewed.|S|s|s
+fe016|it just really means|D|s|s
+me013|it's|D|%|%
+me013|it's even more than that.|S|s|s
+me013|i think it it really gives a very strong perspective that you know that what you were doing is not an un biased experiment.|S|s|s
+me013|if you don't say that then people think oh they did that and they threw that but that doesn't represent what would happen in the real world.|S|s|s
+me013|but if you say we did a cheating experiment which is really the standard way you'd say it it says you deliberately put in a piece of information that you would not have in the real world so that you can learn something.|S|s|s
+me013|just as part as your process.|S|s|e
+me013|so it's i i don't know.|S|s|no
+me013|i|D|%|%
+fe008|okay i guess what i'm i'm thinking is just in if uh when these are presented in an interdisciplinary context it might be nice to add that explanation.|S|s|bk
+fe008|because otherwise it sounds like a pejorative statement on an alternative methodology.|S|s|df
+fe008|because it sounds like it sort of devalues the the um all other approach which is to to put those distinctions in.|S|s|df
+me013|maybe i i've heard this at i c s l p for years and years and years though.|S|s|am
+me013|i mean it's it's pretty pretty common people say this.|S|s|s
+mn017|if well you in a to a broader audience you could call it a diagnostic experiment rather than a cheating experiment.|S|fg|fg
+fe016|actually jane is right.|S|s|df
+fe016|like in conversation analysis i've never heard people use this.|S|s|df
+fe016|because they're not using an automatic system.|S|s|df
+fe016|so it really|D|s|s
+mn017|but they don't run experiments.|S|s|s
+me013|yeah.|B|b|b
+fe016|right i'm well|D|s|aa
+fe008|they can do experiments.|S|s|na
+fe016|you can do experiments.|S|s|df
+fe016|but the it's cheating relative to what we call a system where we can completely control this black box.|S|s|s
+fe016|and it's not a very smart system.|S|s|s
+fe016|it it only knows what we give it.|S|s|s
+fe016|and if if it knows more than we would really give it when it runs we call it cheating.|S|s|s
+fe016|but it's|D|%|%
+fe016|yeah it's only used in a community that does some type of computational modeling.|S|s|s
+me013|yeah in pattern recognition or in|D|s|aa
+fe016|i think it's really not used in any kind of community doing experiments on human perception.|S|s|s
+me013|yeah.|B|b|b
+fe016|or|D|%|%
+me013|right.|F|fg|fg
+fe016|you know so she certainly can define it.|S|s|s
+me013|yeah it's machine machine experiments.|S|fg|fg
+me013|um i mean when when the uh the neural net uh wave hit in the mid-eighties|D|fh|fh
+me013|and by the late eighties there were uh we were reviewing thousands of papers that were coming out in neural nets.|S|s|s
+me013|it was really hot.|S|s|s
+me013|everybody thought it would do everything.|S|s|s
+me013|um and a really common error that people were making was they were just reporting their uh uh classification results on the data that they were training on.|S|s|s
+me013|and so i think it was it was it was very important for people then who were doing something diagnostic to say hey i know i'm doing something that isn't kosher.|S|s|s
+mn017|huh.|B|b|b
+me013|and to make it really clear that they knew it.|S|s|df
+me013|so that was i think why why it became a popular term.|S|s|s
+fe008|yeah it just seems like you know if it were bootstrapping or if it were i mean there are other ways to maybe get the point across.|S|fg|fg
+me013|but it isn't bootstrapping.|S|s|nd
+me013|uh it's it's really cheating.|S|s|s
+me011|it's it's using information you wouldn't normally have.|S|s|s
+me013|it's just|D|%|%
+me013|yeah yeah.|S|s|aa
+fe008|well okay.|S|s|bk
+me013|but it's cheating in a way that's it's it's announcing to everybody hey i'm cheating by doing this.|S|s|s
+me011|so|F|fh|fh
+me013|it's saying so it's all above the table.|S|s|s
+me013|i'm actually using this other thing.|S|s|s
+fe008|okay.|S|s|bk
+me013|that's that's that's the reason.|S|s|s
+fe008|okay all right.|S|s|bk
+me013|bootstrapping would imply it was actually legitimate in some kind of way.|S|s|s
+me011|huh.|B|b|b
+fe008|well i i think|D|s|s
+me013|but|D|%|%
+me011|we're not de legitimizing the data.|S|s|df
+me011|we're de legitimizing the experiment.|S|s|s
+me011|we're not saying that the data is cheating data.|S|s|s
+me011|we're saying we are cheating by using this data.|S|s|s
+me013|yeah.|B|b|b
+fe008|okay.|S|s|bk
+me013|yeah.|S|s|aa
+me011|because normally you wouldn't have that data available.|S|s|df
+fe008|okay okay.|S|s|bk
+me013|yeah.|B|b|b
+me013|anyway.|F|fg|fg
+fe008|does seem to me that it that it carries over some baggage with it that uh that|D|s|s
+fe008|i can understand it in context as you described it.|S|s|df
+fe008|but it it seems to me that um it does import some negative evaluation that um would maybe not be good if|D|s|s
+me013|it has some shock value.|S|s|m
+fe008|it has shock value.|S|s|s
+fe008|and|D|%|%
+me013|which is part of why it's used.|S|s|s
+fe008|to the to the wrong audience i think that that might be a negative shock.|S|s|s
+fe016|yeah i i think to the wrong audience i agree that um|D|s|aa
+me013|uhhuh.|B|b|b
+mn017|it's like a disclaimer.|S|s|s
+fe016|to the wrong we should just explain what it what it means here and that it's a common term.|S|s|cs
+fe008|yeah we started with hand marked data or with uh you know hand transcribed data.|S|s|aa
+fe016|and|D|%|%
+fe016|we're|D|%|%
+fe008|or|D|%|%
+me011|shoot!|S|s|fe
+fe008|yeah.|B|b|b
+fe008|did you break the microphone?|Q|qy|qy
+fe016|yeah.|B|b|b
+me011|just the clip.|S|s|ng
+fe008|nnn okay.|S|s|s
+mn017|now we have to delete that expletive.|S|s|s
+fe008|okay well i feel better now.|S|s|t
+fe008|thank you very much.|S|s|ft
+fe016|huh the first time i heard that i i thought you know the same thing.|S|s|s
+me001|thank you andreas.|S|s|ft
+fe016|and i guess you after a while it becomes almost a it's a bit of a a humbling thing when somebody says that.|S|s|s
+me011|it's it it really is part of the jargon.|S|s|s
+me013|but it's also is|D|s|s
+fe016|if they get good results but we were cheating on this feature because we took it for granted even though we can't really assume that then it's actually the opposite.|S|s|s
+me013|right.|S|s|aa
+fe016|it's|D|%|%
+fe008|the trouble is that|D|s|s
+fe008|you know i understand it in that context.|S|s|df
+fe008|but it but it is almost resentful.|S|s|s
+fe008|it's almost like you know resentful of the data resentful of the um the hard work that's going into preparing the data.|S|s|s
+me011|well|D|%|%
+fe008|is|D|%|%
+me013|no no it has i don't think you're saying the data is cheating.|S|s|ar
+fe016|well it's it's|D|%|%
+me013|i think you're saying in my experiment i cheated in this way.|S|s|s
+me011|that's what i was saying.|S|s|s
+mn014|yeah.|B|b|b
+me013|i mean another is what liz was talking about how in the switchboard tests in all the switchboard tests we've been doing we've been making the same uh same uh uh standard using the same standard way of of getting the data to test on.|S|s|s
+me013|which means that we weren't actually running it on on uh on data that had had no speech.|S|s|s
+me013|and in a sense that was cheating.|S|s|s
+fe008|okay.|S|s|bk
+me013|so so it it's it's a good wake up call if people well we have this performance but you have to keep in mind we're doing we're we're not doing the whole real task in this way and this way and this way.|S|s|s
+me013|but i'll convince you that that it's still important for you to listen to what i have to say next because of this and this.|S|s|s
+fe008|okay okay.|S|s|bk
+me013|and so it's just a way of putting it all out on the table uh as opposed to|D|s|s
+me011|uh and it's used for a lot of different types of data.|S|s|s
+me011|so whether you have segmentation or not is it male or female or not um do you know the signal to noise.|S|s|s
+me013|yeah.|B|b|b
+fe008|huh.|B|b|b
+me011|like that's another one i see all the time where you assume it's known.|S|s|s
+me013|yeah sure.|B|b|b
+fe008|oh interesting.|B|b|b
+me013|yeah.|B|b|b
+me011|and you say it's cheating because you don't actually compute it.|S|s|s
+mn017|huh.|B|b|b
+fe008|i didn't know that.|S|s|df
+fe008|huh!|S|s|fe
+me013|in|D|%|%
+me013|in the multi band experiments in the first one we really wanted to find out what if you knew which band was really noisy.|S|s|s
+fe008|uhhuh.|B|b|b
+me011|right.|B|b|b
+me013|i mean suppose you just know that.|S|s|s
+me011|same cheating.|S|s|s
+me013|and then then even if you know that can that help you?|Q|qo|qo
+me013|i mean what can what strategy can you do to do well without that particular band in the spectrum?|Q|qw|qw
+mn017|huh.|B|b|b
+me013|and so that was important to know as a baseline.|S|s|s
+me013|and and then once you knew that then you go well now how do i know that that's noisy.|S|s|s
+mn017|huh.|B|b|b
+fe008|okay.|B|b|b
+me013|and and and uh|F|fh|fh
+me013|but you know i i should also say that there's a lot of it's not just the word cheating but there's lots of other things that we talk about which as soon as you go outside of your narrow little group it gets very very confusing to people.|S|s|s
+me011|uhhuh.|B|b|b
+fe008|oh sure terminology is always context dependent.|S|s|bk
+me013|and|D|%|%
+fe008|no question about it.|S|s|ba
+fe008|it's just that it seems like the the point without the negative evaluation would be.|S|s|s
+fe008|however you know i understand your point that it it has a long tradition in this field.|S|s|s
+me011|it's not even really negative.|S|s|s
+fe008|i didn't realize.|S|s|s
+fe008|and is used|D|s|s
+fe008|this is interesting what what adam said about it being used also for a bunch of other uh dimensions.|S|s|s
+me013|well the example i was thinking of also was this thing that that herve and and hynek and i made about uh increasing the error rate.|S|s|s
+me013|and so we we did a number of papers and talks and so forth about uh uh the the virtues of increasing the error rate.|S|s|s
+fe008|oh.|S|s|bk
+me013|okay.|S|s|f
+me013|and i mean and the whole point of it was not that it was good to increase your error rate but it was good to be willing to risk increasing your error rate by trying risky things and trying because there's this notion of a local minimum that if you just have some system that's very complex|D|s|s
+me013|and you you you turn some knobs to try to make it better and better you'll never get out of this local minimum.|S|s|s
+me011|fine tune little bits.|S|s|2
+fe008|uhhuh.|B|b|b
+me013|you have to be willing to jump to something that's quite different.|S|s|s
+mn017|huh.|B|b|b
+fe008|interesting.|B|b|b
+me013|and the first time you jump to something quite different or maybe the first ten times or a hundred times you do it's going to be much much worse.|S|s|s
+me013|because you've optimized the other system.|S|s|df
+me013|so the effect the immediate effect is going to be to increase your error rate.|S|s|s
+fe008|interesting.|S|s|ba
+me013|and so it was we had a couple papers like towards increasing the error rate in speech and and so on.|S|s|s
+me011|huh.|B|b|b
+me013|and we really did get feedback from a few people some of whom were you know fairly senior that that um well you know you you you we're really concerned about you misleading people into thinking they should be increasing the error rate.|S|s|s
+mn017|huh.|B|b|b
+fe008|yeah.|B|b|b
+me013|and uh and we go we thought oh come on.|S|s|s
+me013|but|F|fh|fh
+me011|did you read the paper?|Q|qy|rt
+mn017|but weren't you cheating in those experiments?|Q|qy|rt
+fe008|yeah.|S|s|bk
+me013|that's|D|%|%
+me013|we weren't.|S|s|s
+me013|that's why we increased the error rate.|S|s|s
+fe008|interesting.|B|b|b
+fe016|actually i think of cheating as a way to do some work where you can't address all of the computational tasks.|S|s|s
+fe016|like if we want to study um speaker habits but we can't do speaker detection.|S|s|s
+fe016|but we want to assume let's say we know this is jane and we know this is chuck.|S|s|s
+fe016|even though automatically to look at the habits we would need to also first figure that out.|S|s|s
+me013|uhhuh.|B|b|b
+fe016|but we can sort of cheat on that factor.|S|s|s
+fe016|because it's somebody else's research.|S|s|df
+fe016|and then we just|D|s|s
+fe016|so it's then we want to make a proof of concept for|D|s|s
+me011|what what this|D|%|%
+me011|right what would this be like if it were perfect?|Q|fg|fg
+fe016|if someone else|D|%|%
+me011|if this component were perfect.|S|s|e
+fe016|right uh or but we really can't work on that problem.|S|s|aa
+mn014|yep.|B|b|b
+fe016|we don't have time.|S|s|s
+fe016|we're not interested or whatever.|S|s|s
+me011|huh.|B|b|b
+fe016|and so you you assume it's given.|S|s|s
+me011|it's too hard usually.|S|s|ba
+fe016|because it's um you want to go forward with your research and assume that you have that information.|S|s|df
+fe008|uhhuh.|B|b|b
+fe016|so|F|fh|fh
+fe016|i guess if i don't ever think of it as negative more like it's something we're not building.|S|s|s
+me011|it's not pejorative at all.|S|s|ba
+fe008|well the term itself is.|S|s|ng
+fe008|you know?|Q|qy|d
+me011|but it's not pejorative towards the data.|S|s|nd
+fe008|but but it and it's pejorative with respect to a certain purpose.|S|s|df
+me011|it's pejorative towards|D|s|s
+fe008|i understand.|S|s|bk
+me011|it's pejorative to ourselves.|S|s|s
+fe008|i i wanted to raise the issue.|S|s|s
+mn017|self|D|%|%
+me011|right?|Q|qy|d
+me011|to say i am cheating in this experiment is not saying that the data is bad.|S|s|s
+me013|yeah.|F|fg|fg
+fe008|yeah.|F|fg|fg
+me013|but|D|%|%
+me011|it's saying that my experiment is bad.|S|s|s
+me013|yeah.|B|b|b
+me013|anyway it's colloquial.|S|fg|fg
+fe008|anyway.|S|s|m
+me013|and and uh it's it's interesting to hear that that someone coming from a different direction it it sounds the way it sounds to you.|S|s|s
+me013|but but uh i i'd never heard that before.|S|s|s
+me011|yep.|B|b|b
+fe008|okay that's interesting okay.|S|s|bk
+me013|so so so that's interesting.|S|s|ba
+fe008|well i wanted to raise the issue.|S|s|s
+fe008|and um|F|fh|fh
+me013|uhhuh.|B|b|b
+fe008|i i uh i appreciate the discussion.|S|s|s
+fe008|i wanted to ask one other question which is a different matter.|S|s|t
+fe008|which is with respect to um this thing that you've been working on for the recording monitoring script.|S|s|rt
+fe008|so the idea you had this script that you're working on to be sure that the microphone values are in are kept in.|S|s|s
+me011|oh right i haven't gotten back to that recently.|S|s|bk
+fe008|okay okay.|S|s|bk
+me011|but|F|fh|fh
+mn017|huh.|B|b|b
+me011|i assume you're saying you want me to get back to it.|S|s|bu
+fe008|because you know|D|%|%
+fe008|well i was just wondering if|D|s|s
+fe008|because i i am finding that um in double checking i've run across um one data set where the microphone was off early on.|S|s|s
+fe008|and then two other speakers their microphones went off later.|S|s|s
+me011|huh.|B|b|b
+fe008|and this is out of like seven speakers.|S|s|s
+fe008|so out of seven speakers four microphones you know basically three three microphones basically flaked.|S|s|s
+fe008|which makes it hard for the data to be used for all possible purposes.|S|s|s
+me018|do you think the battery ran out?|Q|qy|rt
+fe008|that's what i think.|S|s|na
+me018|or|D|qrr|qrr
+fe008|i think the two that flaked late i think it was the battery.|S|s|s
+fe008|but you know if the script could um you know alert the recording person to that|D|s|s
+fe008|i mean i don't know if there's a way to replace a battery if it happens in the middle of a meeting.|S|s|s
+me011|well|D|%|%
+fe008|maybe that's hopeless anyway.|S|s|am
+me011|well you can but you'll lose a lot of data.|S|s|s
+fe008|but|D|%|%
+mn014|yeah.|B|b|b
+me011|but i mean that doesn't really help.|S|s|s
+me011|because often the recording person isn't in the room.|S|s|df
+fe008|oh i see.|S|s|bk
+me011|so what are you going to do?|Q|qo|qo
+me011|i mean it will the person if you're looking up at the board and i disable the screensaver you will see that the mike is off.|S|s|s
+me011|but that doesn't necessarily help.|S|s|s
+fe008|okay then i guess that raises the question of uh whether we should screen the data before they get transcribed.|S|s|bk
+me011|so|F|fh|fh
+fe008|because although i think that the data are still useful in terms of providing content.|S|s|df
+fe008|and and that i know that having three out of seven microphones out of commission during some part of the meeting restricts the uh usefulness of the data for other purposes.|S|s|s
+fe016|yeah.|B|b|b
+me011|uhhuh.|B|b|b
+fe016|i i think that's a really good idea.|S|s|ba
+fe008|and maybe you don't want to have it|D|s|cs
+fe016|because for all kinds of studies we don't really enjoy meetings where some of the where the signal's going off at times.|S|s|df
+fe016|it just makes it hard to study any kind of parameters.|S|s|s
+fe016|so|F|fh|fh
+fe016|if there's a way to check the signal quality before transcribing it and you find any problem at all it'd be much better to go to another meeting i think.|S|s|cs
+fe008|i actually think that thilo's in a in a a you know when you do the pre segmenter and you and you run across troubles he he runs across some of these that are|D|s|s
+mn014|yeah.|S|s|bk
+mn014|yeah some of these things are captured by yeah um by looking at at the minimum and maximum and whatever.|S|fg|fg
+fe008|so we have some part of that.|S|s|s
+mn014|you find in the channels.|S|s|s
+mn014|and|F|fh|fh
+me011|it's just hard to tell between that and just someone not talking.|S|s|ba
+fe008|i|D|%|%
+mn014|but|D|%|%
+mn014|yep yep yeah yeah.|S|s|aa
+me011|so|F|fh|fh
+fe008|well the and the other aspect of it is um that when the microphone is not well adjusted then even if it's not a lapel mike you can get lapel mike type behavior.|S|s|s
+me011|right.|S|s|bk
+fe008|because i'm i'm expecting for example with this that you're going to end up you know picking up other peoples' signals.|S|s|s
+fe016|i've already written some notes here.|S|s|s
+fe016|so i|D|%|%
+me011|uhhuh.|B|b|b
+fe016|um right uh|B|b|b
+fe008|yeah i mean it's just you know the microphone is intended for certain adjustments.|S|s|bk
+me011|well we should be getting new equipment in so we don't have to use the earplug any more.|S|s|s
+fe016|okay.|B|b|b
+fe016|but it's my ear.|S|s|bd
+fe016|i'm sure it's something wrong with my head.|S|s|bd
+me011|it's your hair.|S|s|cs
+mn014|huh.|B|b|b
+fe016|but|F|fh|fh
+fe016|um actually is there a way though to use whatever you're using for background noise to check post hoc that a microphone was constantly on?|Q|qy|qy
+fe016|i mean|D|%|%
+me011|i mean you you can do sort of a check.|S|s|s
+fe016|uh like this|D|%|%
+me011|but it will be very hard to tell the difference between that and um someone not talking.|S|s|bd
+me013|just so it doesn't when the microphone's dead it doesn't put out zeros?|Q|qy|bu
+me011|no.|S|s|ar
+me013|or|D|qrr|qrr
+me013|uhhuh.|S|s|bk
+mn017|what does it put out?|Q|qw|qw
+me001|really?|Q|qy|bh
+me013|johnson noise.|S|s|s
+fe016|but then how are how are you detecting during a meeting?|Q|qw|qw
+me011|little bit of noise.|S|s|s
+me013|yeah.|B|b|b
+me011|i use a threshold.|S|s|s
+me011|if it's below a particular value it it flashes yellow.|S|s|s
+me011|so as i uh but it's not perfect.|S|s|bd
+fe016|but is it better than nothing?|Q|qy|rt
+me011|yeah probably.|S|s|am
+fe016|because it would really be|D|s|s
+me011|i mean this is the reason why i haven't gotten back to it is because my first pass at it didn't really work.|S|s|s
+me011|because all the mikes have different noise levels.|S|s|df
+fe016|right.|S|s|bk
+mn017|huh.|B|b|b
+me011|and so i have to do something a little more clever.|S|s|s
+me001|it's just the noise from the connections and the everything.|S|s|bu
+fe016|but you could|D|%|%
+me011|yep yep.|S|s|aa
+fe016|so you could run that post hoc on a already recorded meeting in the sense that you know not everyone as you just said you won't be there.|S|s|cs
+fe016|and then if we find any problems have the transcribers listen and|D|s|cs
+me011|yep.|B|b|b
+fe016|i really think it's better not to transcribe a meeting that's going to have problems once you've spent all this effort.|S|s|cs
+me011|yep.|B|b|b
+fe008|the only argument for doing so would be with reference to the content content maps.|S|s|s
+fe016|yeah yeah.|S|s|aa
+fe008|uh but maybe then it should be done in the old original way.|S|s|cs
+fe008|instead of channelizing and having the uh uh you know elaborate coding of the backchannels.|S|s|cs
+mn017|huh.|B|b|b
+mn017|yeah you could still uh|D|fg|fg
+me011|yeah there's uh the the standard deviation of the signal gives you a good clue.|S|fg|fg
+me011|i mean if that is too low then you can be pretty sure that it's uh empty.|S|s|s
+fe016|uhhuh.|B|b|b
+me001|huh.|B|b|b
+mn014|yeah.|F|fg|fg
+mn014|yeah sometimes you you capture that when you mix it together.|S|fg|fg
+mn014|and|D|%|%
+me011|right exactly.|S|s|aa
+mn014|yeah yeah.|B|b|b
+fe008|and actually an an alternative to even doing that level of transcription would be to have a transcriber listen and and you know maybe just|D|s|cs
+fe008|oh i don't know if a uh|D|s|no
+fe008|well someone who's associated with the meeting could have like a summary of points handled in the meeting.|S|s|cs
+fe008|you know maybe if we could pay one person who knows that subject matter to do an outline of the meeting's content.|S|s|cs
+me011|uhhuh.|B|b|b
+fe008|instead of losing the content altogether.|S|s|e
+mn017|well it's even if if you could still transcribe the words based on the far field microphone or something you could uh still use it for say language modeling.|S|s|s
+me011|is there a|D|qy|qy
+me011|far field.|S|s|2
+me011|yeah.|B|b|b
+mn017|you know.|S|s|f
+fe008|i guess the trouble in my mind is that it that it's not a very neat corpus.|S|s|ba
+fe008|if you say these data are available.|S|s|s
+fe016|yeah.|B|b|b
+mn017|right.|B|b|b
+fe008|but these are imperfect.|S|s|s
+fe016|yeah.|F|fg|fg
+fe008|because of the you know the batteries flaked.|S|s|s
+me011|well we'll just we'll we'll just have to note those.|S|s|s
+fe016|i'd we're i'd much rather have you know meetings that have all the channels.|S|s|s
+fe016|even if we had to skip a meeting or something.|S|s|e
+mn017|well if|D|%|%
+mn017|right.|B|b|b
+fe016|just for all these other purposes.|S|s|df
+fe016|so|F|fh|fh
+fe008|and we have so many.|S|s|s
+mn017|i guess there is no|D|s|s
+me001|you could put them at the back of the queue or something.|S|s|cs
+me011|well i i i think we can't throw away that data.|S|s|s
+fe016|yeah.|B|b|b
+me011|because otherwise we'll end up with very few meetings.|S|s|df
+fe016|right but just|D|s|aa
+mn017|there's there's no shortage of meetings.|S|s|s
+me001|yeah.|B|b|b
+me011|but|F|fh|fh
+mn014|yep.|B|b|b
+mn017|so|F|fh|fh
+fe016|right there but there's a shortage of transcription power.|S|fg|fg
+mn017|we can afford we can|D|s|s
+fe008|we have such a backlog i mean to be able to get through the backlog of the of the good meetings it would be nice to not have energies diverted.|S|s|s
+mn017|huh.|B|b|b
+fe016|yeah.|B|b|b
+me011|do we have a|D|qy|qy
+me011|i'm sorry for interrupting.|S|s|fa
+me011|do we have an e d u meeting at four?|Q|qy|qy
+fe008|that's fine.|S|s|bk
+mn017|huh|F|h|h
+fe008|oh good question.|S|s|bk
+fe016|you know what?|Q|qy|qy
+fe016|they their four o'clock cancelled.|S|s|s
+mn014|i don't think so.|S|s|am
+fe016|and they're starting at four twenty.|S|s|s
+fe016|and i'll set up at four fifteen.|S|s|s
+me011|okay great.|S|s|bk
+me011|good.|S|s|bk
+mn017|uhhuh.|B|b|b
+mn017|huh hey i bet there's tea.|S|fg|fg
+me013|yeah but there's|D|s|bk
+me011|because otherwise i was going to say we have to cancel.|S|s|df
+fe016|yeah.|S|s|bk
+me013|there's tea also though.|S|s|s
+mn017|yeah.|S|s|aa
+fe008|okay.|S|s|bk
+fe016|yeah so you'll have|D|s|s
+me013|so maybe we should maybe we should do a uh simultaneous digits digits read in the interest of of getting the snacks.|S|s|cs
+me011|a simultaneous digit okay.|S|s|bk
+fe008|uhhuh.|B|b|b
+mn017|hey i've never done one of those.|S|s|s
+me013|oh you never have?|S|s|bk
+me013|oh it's a treat.|S|s|ba
+fe016|you have to plug your ears or just prepare not to laugh.|S|s|cs
+mn017|right.|S|s|bk
+me013|okay.|S|s|bk
+me011|everyone ready?|Q|qy|bu
+me011|reading simultaneous digits three two one!|S|s|fe
+fe008|yeah.|S|s|aa
+fe008|yep yep.|S|s|aa

@@ -16,26 +16,57 @@ The words, labels and frequencies are also saved as plain text files in the /met
 
 ## Data Format
 Utterance are tagged with the MRDA tagset, which is a variation of the [SWBD-DAMSL](https://web.stanford.edu/~jurafsky/ws97/manual.august1.html) DA.
-The original MRDA label construction allowed DA to be concatenated in the form <*general tag*> ^ <*specific tag*> . <*disruptive from*> (see the [mrda_manual](mrda_manual.pdf)).
-For simplicity only the first <*specific tag*> is kept, making one DA tag per utterance.
+The original MRDA label construction allowed DA to be concatenated in the form <*general tag*> ^ <*specific tag*> . <*disruptive from*> (see the [MRDA manual](mrda_manual.pdf)).
+
+There are three sets of DA included: 
+- Basic, collapses all DA into 5 labels outlined in the original documentation DA maps (see the [basic DA map file](mrda_data/metadata/basic_da_map.txt)).
+- General, uses the 12 <*general tag*> described in the [MRDA manual](mrda_manual.pdf).
+- Full, uses only the first <*specific tag*> from the original labels, 52 in total.
 
 By default:
-- Utterances are written one per line in the format *Speaker* | *Utterance Text* | *Dialogue Act Tag*. This can be changed to only output the utterance text by setting the utterance_only_flag = True.
+- Utterances are written one per line in the format *Speaker* | *Utterance Text* | *Basic DA Tag* | *General DA Tag* | *Full DA Tag*. Setting the utterance_only_flag == True, will change the default output to only one utterance per line i.e. no speaker or DA tags.
 - Utterances marked as *Non-verbal* ('x' tags) are removed i.e. 'Laughter' or 'Throat_clearing'.
 - Utterances marked as *Non-labeled* ('z' tags) are removed.
-- *Interrupted* and *Abandoned* tags are collapsed into one  tag ('%--').
+- *Interrupted*, *Abandoned* and *Uninterpretable* tags are collapsed into one tag ('%').
 - All disfluency annotations are removed i.e. '#', '<', '>', etc.
 
 ### Example Utterances
-fe016|okay.|fg
+fe016|okay.|F|fg|fg
 
-fe016|so um|fh
+fe016|so um|F|fh|fh
 
-fe016|i was going to try to get out of here like in half an hour.|rt
+fe016|i was going to try to get out of here like in half an hour.|S|s|rt
 
-### Dialogue Acts
+## Dialogue Acts
+
+### Basic Labels
 Dialogue Act    | MRDA Label    | Count
---- | --- | ---
+--- | :---: | :---:
+Statement   | S    | 64233
+BackChannel   | B    | 14620
+Disruption   | D    | 14548
+FloorGrabber | F    | 7818
+Question    | Q    | 6983
+
+### General Labels
+Dialogue Act    | MRDA Label    | Count
+--- | :---: | :---:
+Statement   | s    | 69873
+Continuer   | b    | 15167
+Floor Holder   | fh    | 8362
+Yes-No-question | qy    | 4986
+Interrupted/Abandoned/Uninterpretable    | %    | 3103
+Floor Grabber   | fg    | 3092
+Wh-Question   | qw    | 1707
+Hold Before Answer/Agreement   | h    | 792
+Or-Clause | qrr    | 392
+Rhetorical Question    | qh    | 352
+Or Question | qr    | 207
+Open-ended Question    | qo    | 169
+
+### Full Labels
+Dialogue Act    | MRDA Label    | Count
+--- | :---: | :---:
 Statement   | s    | 33472
 Continuer   | b    | 15013
 Floor Holder   | fh    | 8362
@@ -43,9 +74,9 @@ Acknowledge-answer | bk    | 7177
 Accept    | aa    | 5898
 Defending/Explanation    | df    | 3724
 Expansions of y/n Answers | e    | 3200
+Interrupted/Abandoned/Uninterpretable | %    | 3103
 Rising Tone | rt    | 3101
 Floor Grabber    | fg    | 3092
-Interrupted/Abandoned | %--    | 2855
 Offer  | cs | 2662
 Assessment/Appreciation    | ba    | 2216
 Understanding Check   | bu    | 2091
@@ -69,7 +100,6 @@ Exclamation    | fe    | 307
 Mimic Other   | m    | 293
 Apology    | fa    | 259
 About-task  | t    | 253
-Uninterpretable | %    | 248
 Signal-non-understanding   | br    | 236
 Accept-part  | aap    | 219
 Rhetorical-Question	| qh    | 214
@@ -95,7 +125,9 @@ Welcome    | fw    | 6
 - Max utterance length: 85
 - Maximum dialogue length: 3391
 - Vocabulary size: 10866
-- Number of labels: 53
+- Number of basic labels: 5
+- Number of general labels: 12
+- Number of full labels: 52
 - Number of dialogue in train set: 51
 - Maximum length of dialogue in train set: 3391
 - Number of dialogue in test set: 12
@@ -112,10 +144,12 @@ Welcome    | fw    | 6
 - word_freq = Dictionary with {word : frequency} pairs.
 - vocabulary = Full vocabulary - Gluon NLP [Vocabulary.](http://gluon-nlp.mxnet.io/api/modules/vocab.html#gluonnlp.Vocab)
 - vocabulary_size = Number of words in the vocabulary.
-- label_freq = Dictionary with {dialogue act label : frequency} pairs.
-- labels = Full labels - Gluon NLP [Vocabulary.](http://gluon-nlp.mxnet.io/api/modules/vocab.html#gluonnlp.Vocab)
-- num_labels = Number of labels used from the Switchboard data.
 
-Each data set also has;
+Each label set (basic, general or full) also has:
+- <*setname*>_label_freq = Dictionary with {dialogue act label : frequency} pairs.
+- <*setname*>_labels = Full DA labels in a Gluon NLP [Vocabulary.](http://gluon-nlp.mxnet.io/api/modules/vocab.html#gluonnlp.Vocab)
+- num_<*setname*>_labels = Number of labels used from each of the label sets.
+
+Each data set also has:
 - <*setname*>_num_dialogues = Number of dialogues in the set.
 - <*setname*>_max_dialogues_len = Length of the longest dialogue in the set.

@@ -1,1740 +1,1740 @@
-me013|and uh uh hans-guenter will be here um i think by next next tuesday or so.|s
-mn007|uhhuh.|b
-mn052|oh okay.|bk
-me013|so he's he's going to be here for about three weeks.|s
-mn052|oh.|bk
-mn052|that's nice.|ba
-me018|just for a visit?|d
-me013|and|fh
-me013|uh|fh
-me013|uh we'll see.|h
-me013|we might might end up with some longer collaboration or something.|df
-me018|huh.|b
-me013|so he's going to look in on everything we're doing.|s
-me018|cool.|ba
-mn007|uhhuh.|b
-me013|and give us his his thoughts.|s
-me013|and so it'll be another another good person looking at things.|s
-mn052|oh.|b
-mn052|huh.|b
-me026|that's his spectral subtraction group?|d
-me026|is that right?|qy
-me013|yeah.|aa
-me026|oh okay.|bk
-me013|yeah.|aa
-me026|so i guess i should probably talk to him a bit too?|cs
-me013|oh yeah.|aa
-me013|yeah.|aa
-me013|yeah.|aa
-me013|no he'll be around for three weeks.|s
-me013|he's uh um very very easygoing.|ba
-me013|easy to talk to.|ba
-me013|and uh very interested in everything.|ba
-me018|really nice guy.|ba
-me013|yeah.|aa
-me013|yeah.|aa
-mn052|yeah we met him in amsterdam.|fg
-me013|yeah.|bk
-me013|yeah he's been here before.|s
-me013|i mean he's he's he's he's|s
-mn052|oh okay.|bk
-mn052|i haven't noticed him.|s
-me018|back when i was a grad student he was here for a uh uh a year or six months.|s
-me013|nine months.|s
-me018|something like that.|s
-me013|something like that.|s
-me018|yeah.|bk
-me013|yeah.|bk
-me013|yeah.|bk
-me013|he's he's done a couple stays here.|s
-mn052|huh.|b
-me013|yeah.|fh
-me018|so um i guess we got lots to catch up on.|fg
-me018|and we haven't met for a couple of weeks.|df
-me018|we didn't meet last week morgan.|s
-me018|um i went around and talked to everybody.|fh
-me018|and it seemed like they they had some new results.|s
-me018|but rather than them coming up and telling me i figured we should just wait a week and they can tell both you know all of us.|s
-me018|so um|fh
-me018|why don't we why don't we start with you dave?|co
-me026|oh okay.|aa
-me018|and then um we can go on.|co
-me018|so|fh
-me026|so um since we're looking at putting this um mean log magnitude spectral subtraction um into the smartkom system i did a test seeing if um it would work using past only and plus the present to calculate the mean.|fg
-me026|so i did a test um where i used twelve seconds from the past and the present frame to um calculate the mean.|s
-me026|and|%--
-me018|twelve seconds.|bk
-me018|twelve twelve seconds back from the current frame.|bu
-me026|uh|h
-me018|is that what you mean?|rt
-me026|twelve seconds um counting back from the end of the current frame.|na
-me026|yeah.|aa
-me018|okay.|bk
-me026|so it was um i think it was twenty one frames.|s
-me018|okay.|bk
-me026|and that worked out to about twelve seconds.|s
-me018|uhhuh.|bk
-me026|and compared to um using a twelve second centered window i think there was a drop in performance.|rt
-me026|but it was just a slight drop.|s
-me013|uhhuh.|b
-me018|huh.|bk
-me026|is is that right?|rt
-me013|um|h
-me013|yeah i mean it was pretty it was pretty tiny.|aa
-me026|uhhuh.|bk
-me013|yeah.|fh
-me026|so that was encouraging.|s
-me026|and um|fh
-me026|that that um that's encouraging for for the idea of using it in an interactive system like smartkom.|e
-me026|and um another issue i'm i'm thinking about is in the smartkom system.|fh
-me026|so say twelve seconds in the earlier test seemed like a good length of time.|s
-me026|but what happens if you have less than twelve seconds?|qw
-me026|and um|fh
-me026|so i before um back in may i did some experiments using say two seconds or four seconds or six seconds.|s
-me026|in those i trained the models using mean subtraction with the means calculated over two seconds or four seconds or six seconds.|s
-me026|and um|fh
-me026|here i was curious what if i trained the models using twelve seconds.|s
-me026|but i i gave it a situation where the test set i was subtracted using two seconds or four seconds or six seconds.|s
-me026|and um|fh
-me026|so i did that for about three different conditions.|s
-me026|and um|fh
-me026|i mean i i think it was um four|s
-me026|i think i think it was um something like four seconds and um six seconds and eight seconds.|r
-me026|something like that.|s
-me026|and it seems like it it it hurts compared to if you actually train the models using that same length of time.|s
-me026|but it it doesn't hurt that much.|df
-me026|um|fh
-me026|usually less than point five percent.|e
-me026|although i think i did see one where it was a point eight percent or so rise in word error rate.|rt
-me026|but this is um where um even if i train on the uh model and mean subtracted it with the same length of time as in the test it the word error rate is around um ten percent or nine percent.|df
-me026|so it doesn't seem like that big a a difference.|df
-me013|but it but looking at it the other way isn't it what you're saying that it didn't help you to have the longer time for training?|rt
-me013|if you were going to have a short time for|e
-me026|that that's true.|aa
-me026|um|fh
-me013|i mean why would you do it if you knew that you were going to have short windows in testing?|qw
-me018|yeah it seems like for your i mean in normal situations you would never get twelve seconds of speech.|s
-me018|right?|d
-mn052|you need twelve seconds in the past to estimate right?|s
-me018|i'm not|%--
-me013|yeah.|b
-mn052|or or you're looking at six sec seconds in future and six in|qrr
-me026|um twelve|s
-me026|uh for the test it's just twelve seconds in the past.|nd
-me013|no total.|ar
-mn052|no it's all.|s
-mn052|oh okay.|bk
-me018|is this twelve seconds of uh regardless of speech or silence?|rt
-me018|or twelve seconds of speech?|qrr
-me026|of of speech.|s
-me018|okay.|bk
-mn052|uhhuh.|b
-me013|the other thing um which maybe relates a little bit to something else we've talked about in terms of windowing and so on is that um i wonder if you trained with twelve seconds and then when you were two seconds in you used two seconds.|s
-me013|and when you were four seconds in you used four seconds.|s
-me013|and when you were six|s
-me013|and you basically build up to the twelve seconds.|s
-me013|so that if you have very long utterances you have the best.|s
-me026|yeah.|b
-me013|but if you have shorter utterances you use what you can.|s
-me026|right.|bk
-me026|and that's actually what we're planning to do in smartkom.|s
-me013|okay.|b
-me026|but|%--
-me013|yeah.|bk
-me026|so i so i guess the the question i was trying to get at with those experiments is does it matter what models you use.|s
-me026|does it matter how much time you use to calculate the mean when you were um doing the training data.|e
-me013|right.|bk
-me013|but i mean the other thing is that that's|s
-me013|i mean the other way of looking at this going back to uh mean cepstral subtraction versus rasta kind of things is that you could look at mean cepstral subtraction.|s
-me013|especially the way you're doing it uh as being a kind of filter.|e
-me013|and so the other thing is just to design a filter.|cs
-me013|you know basically you're you're you're doing a high pass filter or a band pass filter of some sort.|df
-me013|and and just design a filter.|s
-me013|and then you know a filter will have a certain behavior.|df
-me013|and you can look at the start up behavior when you start up with nothing.|df
-me026|uhhuh.|b
-me013|and and you know it will uh if you have an i.i.r. filter for instance it will um uh not behave in the steady state way that you would like it to behave until you get a long enough period.|s
-me013|but um|fh
-me013|uh|fh
-me013|by just constraining yourself to have your filter be only a subtraction of the mean you're kind of you know tying your hands behind your back.|s
-me013|because there's filters have all sorts of temporal and spectral behaviors.|df
-me026|uhhuh.|b
-me013|and the only thing you know consistent that we know about is that you want to get rid of the very low frequency component.|s
-me026|huh.|b
-mn052|but do you really want to calculate the mean?|qy
-mn052|and you neglect all the silence regions or you just use everything that's twelve seconds?|d
-mn052|and|%--
-me026|um|h
-me026|you do you mean in my tests so far?|bu
-mn052|yeah.|aa
-me026|most of the silence has been cut out.|s
-mn052|okay.|bk
-me026|just there's just inter word silences.|s
-mn052|uhhuh.|b
-mn052|and they are like pretty short.|s
-me026|pretty short.|2
-mn052|yeah.|bk
-me026|yeah.|aa
-mn052|okay.|bk
-mn052|yeah.|b
-mn052|uhhuh.|b
-mn052|so you really need a lot of speech to estimate the mean of it.|s
-me026|well if i only use six seconds it still works pretty well.|h
-mn052|yeah.|b
-mn052|yeah.|b
-mn052|uhhuh.|b
-me026|i saw in my test before.|df
-me026|i was trying twelve seconds because that was the best in my test before.|df
-mn052|okay.|b
-me026|and that increasing past twelve seconds didn't seem to help.|df
-mn052|huh.|b
-mn052|huh.|b
-me026|um yeah.|fh
-me026|i guess it's something i need to play with more to decide how to set that up for the smartkom system.|s
-me026|like maybe if i trained on six seconds it would work better when i only had two seconds or four seconds and|cs
-me013|yeah.|aa
-me013|yeah.|aa
-me013|and um|fg
-me026|okay.|b
-me013|yeah and again if you take this filtering perspective and if you essentially have it build up over time|bk
-me013|i mean if you computed means over two and then over four and over six essentially what you're getting at is a kind of uh ramp up of a filter anyway.|s
-me013|and so you may may just want to think of it as a filter.|s
-me013|but uh if you do that then um in practice somebody using the smartkom system one would think if they're using it for a while it means that their first utterance instead of you know getting uh a forty percent error rate reduction they'll get a uh over what uh you'd get without this uh um policy uh you get thirty percent.|s
-me013|and then the second utterance that you give they get the full you know uh full benefit of it if it's this ongoing thing.|s
-me018|oh.|bk
-me018|so you you cache the utterances?|bu
-me018|that's how you get your|bu
-me018|uh|fh
-me013|well i'm saying in practice yeah.|na
-me018|uh.|bk
-me013|that's if somebody's using a system to ask for directions or something.|df
-me018|okay.|bk
-me018|okay.|bk
-me013|you know they'll say something first.|df
-me013|and and to begin with if it doesn't get them quite right maybe they'll come back and say excuse me.|s
-me018|uhhuh.|b
-me013|uh|fh
-me013|or some|%--
-me013|i mean it should have some policy like that anyway.|s
-me018|uhhuh.|b
-me013|and and uh|fh
-me013|uh in any event they might ask a second question.|fh
-me013|and it's not like what he's doing doesn't uh improve things.|s
-me013|it does improve things.|s
-me013|just not as much as he would like.|e
-me013|and so uh there's a higher probability of it making an error uh in the first utterance.|fh
-me018|what would be really cool is if you could have|cs
-me018|uh this probably users would never like this.|bd
-me018|but if you had could have a system where before they began to use it they had to introduce themselves verbally.|cs
-me013|uhhuh.|b
-me018|you know.|fh
-me013|yeah.|bk
-me018|hi.|s
-me018|my name is so-and-so.|s
-me018|i'm from blah blah blah.|s
-me018|and you could use that initial speech to do all these adaptations.|df
-me026|uhhuh.|b
-me018|and|%--
-me013|right.|bk
-me013|oh the other thing i guess which which|s
-me013|uh|fh
-me013|i don't know much about as much as i should about the rest of the system.|no
-me013|but but um|fh
-me013|couldn't you uh if you if you sort of did a first pass|cs
-me013|i don't know what kind of uh uh capability we have at the moment for for doing second passes on on uh uh some kind of little small lattice or a graph or confusion network or something.|no
-me013|but if you did first pass with um the with either without the mean subtraction or with a a very short time one|s
-me013|and then um once you uh actually had the whole utterance in if you did um the uh uh longer time version then based on everything that you had um and then at that point only used it to distinguish between you know top n. um possible utterances or something you you might it might not take very much time.|s
-me013|i mean i know in the large vocabulary uh uh systems people were evaluating on in the past some people really pushed everything in to make it in one pass.|s
-me013|but other people didn't and had multiple passes.|s
-me013|and um|fh
-me013|the argument um against multiple passes was has often been but we want to this to be you know have a nice interactive response.|s
-me013|and the counterargument to that which say uh b.b.n.i. think had was yeah.|s
-me013|but our second responses are second uh passes and third passes are really really fast.|s
-me018|uhhuh.|b
-me013|so um if if your second pass takes a millisecond who cares?|fh
-me013|um|fh
-me026|so um|fg
-me026|the the idea of the second pass would be waiting till you have more recorded speech?|bu
-me026|or|qrr
-me013|yeah.|aa
-me013|so if it turned out to be a problem that you didn't have enough speech because you need a longer longer window to do this processing then uh one tactic is you know looking at the larger system and not just at the front end stuff is to take in um the speech with some simpler mechanism or shorter time mechanism.|s
-me026|uhhuh.|b
-me013|um do the best you can and come up with some possible alternates of what might have been said.|fh
-me013|and uh either in the form of an n. best list or in the form of a lattice or or confusion network or whatever.|e
-me026|uhhuh.|b
-me013|and then the decoding of that is much much faster or can be much much faster if it isn't a big bushy network.|s
-me013|and you can decode that now with speech that you've actually processed using this longer time uh subtraction.|s
-me026|huh.|b
-me013|so i mean it's it's common that people do this sort of thing where they do more things that are more complex or require looking over more time whatever in some kind of second pass.|df
-me026|uhhuh.|b
-me026|okay.|b
-me013|um and again if the second pass is really really fast uh another one i've heard of is is in in connected digit stuff um going back and and through backtrace and finding regions that are considered to be a a digit but uh which have very low energy.|fh
-me026|uhhuh.|b
-me026|okay.|b
-me013|so uh i mean there's lots of things you can do in second passes at all sorts of levels.|fh
-me013|anyway i'm throwing too many things out.|s
-me013|but|fh
-me018|so is that uh that it?|rt
-me026|i guess that's it.|na
-me018|okay.|bk
-me018|uh do you want to go sunil?|fh
-mn052|yep.|aa
-mn052|um so|fh
-mn052|the last two weeks was like|s
-mn052|so i've been working on that wiener filtering.|s
-mn052|and|fh
-mn052|uh|fh
-mn052|found that uh single like i just do a normal wiener filtering like the standard method of wiener filtering.|s
-mn052|and that doesn't actually give me any improvement over like|s
-mn052|i mean uh it actually improves over the baseline.|s
-mn052|but it's not like it doesn't meet something like fifty percent or something.|s
-mn052|so i've been playing with the|s
-me018|improves over the base line m.f.c.c. system?|bu
-mn052|yeah.|aa
-me018|yeah.|bk
-mn052|yeah.|aa
-mn052|yeah.|aa
-mn052|so um|fh
-mn052|so that's the improvement is somewhere around like thirty percent over the baseline.|s
-me013|is that using in combination with something else?|rt
-mn052|no.|ar
-me013|with with a|e
-mn052|just just one stage wiener filter.|nd
-mn052|which is a standard wiener filter.|e
-me013|no no.|ar
-me013|but i mean in combination with our online normalization or with the l.d. a?|rt
-mn052|yeah yeah yeah yeah.|bk
-mn052|so i just plug in the wiener filtering.|s
-me013|oh okay.|bk
-mn052|i mean in the in our system where|s
-me018|oh okay.|bk
-mn052|so i|s
-me013|so does it does that mean it gets worse?|fg
-me013|or|qrr
-mn052|no.|ar
-mn052|it actually improves over the baseline of not having a wiener filter in the whole system.|df
-mn052|like i have an l.d.a.l.d.a. plus online normalization.|e
-me013|yeah.|bk
-mn052|and then i plug in the wiener filter in that.|s
-mn052|so it improves over not having the wiener filter.|nd
-mn052|so it improves.|nd
-mn052|but it it doesn't take it like beyond like thirty percent over the baseline.|df
-mn052|so|fh
-me013|but that's what i'm confused about.|s
-me013|because i think i thought that our system was more like forty percent without the wiener filtering.|bu
-mn052|no.|ar
-mn052|it's like uh|s
-mn007|huh.|b
-mn052|well these are not|s
-me018|is this with the new v.a. d?|rt
-mn052|no it's the old v.a.d.|ar
-mn052|so my baseline was uh nine|s
-mn052|this is like the baseline is ninety five point six eight and eighty nine and|s
-me013|so i mean if you can do all these in word errors it's a lot a lot easier actually.|fg
-mn052|what was that?|br
-mn052|sorry?|br
-me013|if you do all these in word error rates it's a lot easier right?|r
-mn052|oh.|bk
-mn052|okay okay okay.|bk
-me013|okay.|fh
-mn052|errors right i don't have.|s
-me013|because then you can figure out the percentages.|df
-mn052|it's all accuracies.|s
-me013|yeah.|bk
-mn007|the baseline is something similar to|s
-mn007|a i mean|fh
-mn007|the the the baseline that you are talking about is the m.f.c.c. baseline right?|bu
-mn052|the yeah.|aa
-mn007|or|qrr
-mn052|there are two baselines.|s
-mn052|okay.|bk
-mn052|so the baseline one baseline is m.f.c.c. baseline.|na
-mn007|uhhuh.|b
-mn052|that when i said thirty percent improvement it's like m.f.c.c. baseline.|s
-me013|so so|fg
-me013|so what's it start on?|qw
-me013|the m.f.c.c. baseline is is what?|d
-me013|is at what level.|e
-mn052|it's the|s
-mn052|it's just the mel frequency and that's it.|s
-me013|no what's what's the number?|ar
-mn052|uh so i don't have that number here.|h
-mn052|okay okay okay.|bk
-mn052|i have it here.|s
-mn052|uh it's the v.a.d. plus the baseline actually.|fh
-mn052|i'm talking about the the m.f.c.c. plus i do a frame dropping on it.|df
-mn052|so that's like the word error rate is like four point three.|rt
-me013|four point three.|bk
-mn052|like ten point seven.|s
-me013|what's ten point seven?|qw
-mn052|it's a medium|s
-mn052|okay sorry.|fa
-mn052|there's a well well matched medium mismatched and a high matched.|s
-me013|uh.|b
-mn052|so i don't have the like the|s
-me013|yeah.|b
-me013|okay.|fg
-me013|four point three.|s
-mn052|so|fh
-me013|ten point seven.|s
-mn052|and forty.|s
-me013|and|%--
-mn052|forty percent is the high mismatch.|s
-me013|okay.|bk
-mn052|and that becomes like four point three.|s
-me013|not changed.|s
-mn052|yeah.|aa
-mn052|it's like ten point one.|rt
-mn052|still the same.|na
-mn052|and the high mismatch is like eighteen point five.|s
-me013|eighteen point five.|bk
-mn052|five.|2
-me013|and what were you just describing?|rt
-mn052|oh the one is this one is just the baseline plus the uh wiener filter plugged into it.|bk
-me013|but where's the uh online normalization and so on?|qw
-mn052|oh.|bk
-mn052|okay.|bk
-mn052|so|%--
-mn052|sorry.|fa
-mn052|so with the with the online normalization the performance was um ten|s
-mn052|okay so it's like four point three.|bk
-mn052|uh|fh
-mn052|and again that's the the ten point uh four and twenty point one.|s
-mn052|that was with online normalization and l.d.a.|s
-mn052|so the well matched has like literally not changed by adding online or l.d.a. on it.|s
-mn052|but the|%--
-mn052|i mean even the medium mismatch is pretty much the same.|s
-mn052|and the high mismatch was improved by twenty percent absolute.|s
-me013|okay.|bk
-me013|and what kind of number|qw
-me013|and what are we talking about here?|qw
-me013|is this t.i. digits?|rt
-mn052|it's the it's italian.|s
-me013|or|qrr
-mn052|i'm talking about italian.|s
-me013|italian?|2
-mn052|yeah.|aa
-me013|and what did|qw
-me013|so what was the um uh corresponding number say for um uh the alcatel system for instance?|qw
-mn052|huh.|b
-me013|do you know?|qy
-mn007|yeah.|bk
-mn007|so it looks to be um|s
-mn052|you have it?|rt
-mn007|yep.|aa
-mn007|it's three point four.|rt
-mn007|uh eight point uh seven.|s
-mn007|and uh thirteen point seven.|s
-me013|okay.|b
-mn052|yep.|b
-me013|okay.|bk
-mn052|so thanks.|ft
-mn007|uhhuh.|b
-me013|okay.|bk
-mn052|so|fg
-mn052|uh this is the single stage wiener filter.|fh
-mn052|with the noise estimation was based on first ten frames.|s
-me013|uhhuh.|b
-mn052|actually i started with using the v.a.d. to estimate the noise.|s
-mn052|and then i found that it works.|s
-mn052|it doesn't work for finnish and spanish.|s
-mn052|because the v.a.d. endpoints are not good to estimate the noise.|df
-mn052|because it cuts into the speech sometimes.|df
-mn052|so i end up overestimating the noise and getting a worse result.|s
-me013|uhhuh.|b
-mn052|so it works only for italian by for using a v.a.d. to estimate noise.|fh
-mn052|it works for italian because the vad was trained on italian.|df
-me013|uhhuh.|b
-mn052|so uh|fh
-mn052|so this was uh|s
-mn052|and so this was giving|s
-mn052|um|fh
-mn052|this this was like not improving a lot on this baseline of not having the wiener filter on it.|s
-mn052|and|fh
-mn052|so|fh
-mn052|uh i ran this stuff with one more stage of wiener filtering on it.|fh
-mn052|but the second time what i did was i estimated the new wiener filter based on the cleaned up speech and did uh smoothing in the frequency to to reduce the variance.|s
-me013|uhhuh.|b
-mn052|i mean i have i've i've observed there are like a lot of bumps in the frequency when i do this wiener filtering.|s
-mn052|which is more like a musical noise or something.|e
-mn052|and so by adding another stage of wiener filtering the results on the speechdat-car was like|fh
-mn052|um|fh
-mn052|so i still don't have the word error rate.|s
-mn052|i'm sorry about it.|fa
-mn052|but the overall improvement was like fifty six point four six.|s
-mn052|this was again using ten frames of noise estimate and two stage of wiener filtering.|df
-mn052|and the rest is like the l.d.a. and the online normalization all remaining the same.|s
-mn052|uh|fh
-mn052|so this was like compared to uh uh fifty seven is what you got by using the french telecom system.|bu
-mn052|right?|d
-mn007|no i don't think so.|ar
-mn007|is it on italian?|rt
-mn052|no.|ar
-mn052|this is over the whole speechdat-car.|nd
-mn052|so|fh
-mn007|oh yeah fifty seven|s
-mn052|point|2
-mn007|right.|aa
-mn052|yeah.|bk
-mn052|so the new the new wiener filtering schema is like some fifty six point four six.|s
-mn052|which is like one percent still less than what you got using the french telecom system.|e
-mn007|uhhuh.|b
-mn007|uhhuh.|b
-me013|but it's a pretty similar number in any event.|bu
-mn052|it's very similar.|na
-me013|yeah.|bk
-me013|but again you're you're more or less doing what they were doing.|bu
-me013|right?|d
-mn052|it's it's different in a sense like|nd
-mn052|i'm actually cleaning up the cleaned up spectrum.|df
-mn052|which they're not doing.|e
-mn052|they're what they're doing is they have two stage stages of estimating the wiener filter.|s
-me013|yeah.|bk
-mn052|but the final filter what they do is they they take it to their time domain by doing an inverse fourier transform.|s
-me013|uhhuh.|b
-mn052|and they filter the original signal using that filter.|s
-mn052|which is like final filter is acting on the input noisy speech rather than on the cleaned up.|e
-mn052|so this is more like i'm doing wiener filter twice.|s
-mn052|but the only thing is that the second time i'm actually smoothing the filter and then cleaning up the cleaned up spectrum first level.|s
-me013|okay.|bk
-mn052|and so that that's that's what the difference is.|s
-mn052|and actually i tried it on the original clean i mean the original spectrum where like i the second time i estimate the filter but actually clean up the noisy speech rather the first output of the first stage.|s
-mn052|and that doesn't seems to be a giving i mean that much improvement.|s
-mn052|i i didn't run it for the whole case.|s
-mn052|and|fh
-mn052|and what i what i tried was by using the same thing|s
-mn052|but uh|fh
-mn052|so we actually found that the vad is very like crucial.|s
-mn052|i mean just by changing the vad itself gives you the a lot of improvement.|df
-me013|uhhuh.|b
-mn052|by instead of using the current vad if you just take up the vad output from the channel zero when instead of using channel zero and channel one.|df
-mn052|because that was the that was the reason why i was not getting a lot of improvement for estimating the noise.|df
-mn052|so i just used the channel zero vad to estimate the noise so that it gives me some reliable markers for this noise estimation.|s
-me013|what's a channel zero vad?|qw
-me013|i'm i'm confused about that.|s
-mn052|um|h
-mn052|so it's like|s
-mn007|so it's the close talking microphone.|s
-mn052|yeah.|aa
-mn052|the close talking without|s
-me013|oh oh oh oh.|bk
-mn052|so because the channel zero and channel one are like the same speech but only i mean the same endpoints.|s
-mn052|but the only thing is that the speech is very noisy for channel one.|s
-mn052|so you can actually use the output of the channel zero for channel one for the vad.|s
-mn052|i mean that's like a cheating method.|s
-me013|right.|bk
-me013|i mean|fh
-me013|so are they going to|qy
-me013|what are they doing to do?|qw
-me013|do we know yet?|rt
-me013|about as far as what they're what the rules are going to be and what we can use.|e
-mn007|yeah.|bk
-mn007|so actually i received a a new document describing this.|s
-mn052|yeah that's|s
-mn007|and what they did finally is to huh uh not to align the utterances but to perform recognition.|s
-mn007|um only on the close talking microphone.|fh
-mn007|and to take the result of the recognition to get the boundaries uh of speech.|s
-mn052|which is the channel zero.|s
-me013|so it's not like that's being done in one place or one time.|bu
-mn007|and|%--
-me013|that's that's just a rule.|bu
-me013|and we'd you you were permitted to do that?|bu
-me013|is is that it?|qy
-mn007|uh i think they will send um files.|h
-mn007|but we we don't well apparently|s
-me013|oh so they will send files.|bk
-me013|so everybody will have the same boundaries to work with?|d
-mn007|yeah.|aa
-mn007|yeah.|aa
-mn052|but actually their alignment actually is not seems to be improving in like on all cases.|s
-me013|okay.|bk
-mn007|oh|%--
-mn007|yeah.|bk
-mn007|so what happened here is that um the overall improvement that they have with this method|fh
-mn007|so well to be more precise what they have is they have these alignments.|fh
-mn007|and then they drop the beginning silence and and the end silence.|s
-mn007|but they keep uh two hundred milliseconds before speech and two hundred after speech.|s
-mn007|and they keep the speech pauses also.|s
-mn007|um|fh
-mn007|and the overall improvement over the m.f.c.c. baseline|s
-mn007|so when they just uh add this frame dropping in addition it's uh forty percent right?|bu
-me013|uhhuh.|b
-mn007|fourteen percent i mean.|bsc
-me013|uhhuh.|b
-mn052|yeah.|b
-mn007|um|fh
-mn052|which is|%--
-mn007|which is|%--
-mn007|um|fh
-mn007|which is the overall improvement.|e
-mn007|but in some cases it doesn't improve at all.|s
-mn007|like uh do you remember which case?|qy
-me013|uhhuh.|b
-mn052|it gives like negative well in in like some italian and t.i. digits.|s
-mn007|yeah.|aa
-mn007|some.|%
-mn052|right?|d
-mn007|right.|aa
-mn052|yeah.|bk
-mn052|so by using the endpointed speech actually it's worse than the baseline in some instances.|s
-mn007|huh.|b
-mn052|which could be due to the word pattern.|e
-mn007|yeah.|b
-me013|yeah.|fg
-mn007|the other thing also is that fourteen percent is less than what you obtain using a real v.a.d.|s
-mn052|yeah our neural net.|aa
-mn007|so without cheating like this.|e
-mn052|yeah yeah.|b
-mn007|so|fh
-mn007|uh|fh
-mn007|so i think this shows that there is still work.|s
-mn007|uh well working on the v.a.d. is still still important i think.|ba
-me013|yeah.|aa
-mn007|uh|fh
-me018|can i ask just a a high level question?|rt
-me018|can you just say like one or two sentences about wiener filtering and why why are people doing that?|co
-mn052|huh.|b
-me018|what's what's the deal with that?|qw
-mn052|okay.|bk
-mn052|so|fh
-mn052|the wiener filter it's it's like it's like you try to minimize|s
-mn052|i mean so the basic principle of wiener filter is like you try to minimize the uh uh difference between the noisy signal and the clean signal.|s
-mn052|if you have two channels.|e
-mn052|like let's say you have a clean signal and you have an additional channel where you know what is the noisy signal.|s
-mn052|and then you try to minimize the error between these two.|s
-me018|uhhuh.|bk
-me018|uhhuh.|bk
-mn052|so that's the basic principle.|s
-mn052|and you get|s
-mn052|you can do that|s
-mn052|i mean if if you have only a noisy signal at a level which you you try to estimate the noise from the assuming that the first few frames are noise.|s
-mn052|or if you have a voice activity detector uh you estimate the noise spectrum.|s
-me018|uhhuh.|bk
-mn052|and then you|s
-me018|do you assume the noise is the same?|rt
-mn052|yeah.|b
-mn052|in yeah after the speech starts.|aa
-me018|uhhuh.|bk
-mn052|so|fh
-mn052|but that's not the case in uh many many of our cases.|s
-mn052|but it works reasonably well.|df
-me018|i see.|bk
-mn052|and and then you what you do is you uh|s
-mn052|so again|%--
-mn052|i can write down some of these|t3
-mn052|oh okay.|bk
-mn052|yeah.|bk
-mn052|and then you do this|s
-mn052|uh this is the transfer function of the wiener filter.|s
-mn052|so s.f. is a clean speech spectrum power spectrum.|s
-me018|uhhuh.|bk
-mn052|and n. is the noisy power spectrum.|s
-mn052|and so this is the transfer function.|s
-me013|right.|aa
-me013|actually i guess.|t1
-mn052|and|fh
-mn052|yeah.|fh
-me013|yeah.|b
-mn052|and then you multiply your noisy power spectrum with this.|s
-mn052|you get an estimate of the clean power spectrum.|s
-me018|i see.|bk
-me018|okay.|bk
-mn052|so|fh
-mn052|but the thing is that you have to estimate the s.f. from the noisy spectrum what you have.|s
-mn052|so you estimate the n.f. from the initial noise portions.|s
-mn052|and then you subtract that from the current noisy spectrum to get an estimate of the s.f.|s
-mn052|so sometimes that becomes zero.|s
-mn052|because you you don't have a true estimate of the noise.|df
-mn052|so the filter will have like sometimes zeros in it.|s
-me018|uhhuh.|b
-mn052|because some frequency values will be zeroed out because of that.|df
-mn052|and that creates a lot of discontinuities across the spectrum because the filter.|s
-mn052|so|fh
-mn052|uh|fh
-mn052|so that's what that was just the first stage of wiener filtering that i tried.|s
-me018|so is this um basically uh similar to just regular spectral subtraction?|rt
-mn052|it|%--
-me013|it's all pretty related.|na
-me013|yeah.|aa
-mn052|yeah.|aa
-me013|it's it's there's a there's a whole class of techniques where you try in some sense to minimize the noise.|df
-me018|uhhuh.|bk
-me013|and it's typically a mean square sense uh uh uh in in in some way.|s
-me013|and uh uh spectral subtraction is is uh uh one approach to it.|s
-me018|do people use the wiener filtering in combination with the spectral subtraction typically?|rt
-me018|or is are they sort of competing techniques?|qrr
-mn052|not seen.|s
-mn052|they are very similar techniques.|na
-me018|yeah.|bk
-mn052|so it's like i haven't seen anybody using wiener filter with spectral subtraction.|s
-me018|oh okay.|bk
-mn007|uhhuh.|b
-me018|i see.|bk
-me018|i see.|bk
-me013|i mean in the long run you're doing the same thing.|s
-me013|but but there you make different approximations.|s
-me018|uhhuh.|b
-mn052|yeah.|b
-me013|and in spectral subtraction for instance there's a a an estimation factor.|s
-me018|huh.|b
-me013|you sometimes will figure out what the noise is.|s
-me013|and you'll multiply that noise spectrum times some constant and subtract that.|s
-me013|rather than|s
-me013|and sometimes people|s
-me013|even though this really should be in the power domain sometimes people work in the magnitude domain because it it it works better.|s
-me018|uhhuh.|b
-me013|uh you know.|fh
-me018|so why did you choose uh wiener filtering over some other one of these other techniques?|qw
-mn052|uh the reason was like we had this choice of using spectral subtraction wiener filtering and there was one more thing which which i'm trying is this sub space approach.|h
-mn052|so|fh
-mn052|stephane is working on spectral subtraction.|s
-me018|oh okay.|bk
-mn052|so i picked up|s
-me018|so you're sort of trying them all.|bu
-mn052|yeah.|aa
-mn052|we just wanted to have a few noise production compensation techniques.|df
-me018|uh.|bk
-me018|i see.|bk
-mn052|and then pick some from that.|df
-me018|oh okay.|bk
-me013|i i mean|fg
-me018|uhhuh.|bk
-mn052|pick one.|df
-me013|yeah i mean there's carmen's working on another on the vector taylor series.|bk
-mn052|yeah v.a.d.|bk
-mn052|yeah.|b
-me013|so they were just kind of trying to cover a bunch of different things with this task and see you know what are what are the issues for each of them.|s
-me018|uh.|bk
-me018|okay.|bk
-mn052|yeah.|b
-me018|that makes sense.|bk
-me018|yeah.|b
-me018|uhhuh.|bk
-me018|uhhuh.|bk
-me013|um|fh
-me018|cool.|ba
-me018|thanks.|ft
-mn052|so|fg
-me013|yeah.|b
-mn052|so one of one of the things that i tried like i said was to remove those zeros in the filter by doing some smoothing of the filter.|s
-me018|uhhuh.|bk
-mn052|like you estimate the edge of square.|s
-mn052|and then you do a smoothing across the frequency so that those zeros get like flattened out.|s
-me018|uhhuh.|bk
-mn052|and that doesn't seems to be improving by trying it on the first time.|s
-mn052|so what i did was like i did this.|s
-mn052|and then you i plugged in the one more the same thing but with the smoothed filter the second time.|s
-mn052|and that seems to be working.|s
-me018|uhhuh.|b
-me018|uhhuh.|b
-mn052|so that's where i got like fifty six point five percent improvement on speechdat-car with that.|s
-mn052|and|fh
-mn052|so the other thing what i tried was i used still the ten frames of noise estimate.|s
-mn052|but i used this channel zero vad to drop the frames.|s
-mn052|so i'm not still not estimating.|s
-mn052|and that has taken the performance to like sixty seven percent in speechdat-car.|s
-mn052|which is which which like sort of shows that by using a proper vad you can just take it to further better levels.|e
-mn052|and|fh
-mn052|so|fh
-me018|so that's sort of like you know best case performance?|bu
-mn052|yeah.|aa
-mn052|so far i've seen sixty seven|s
-mn052|i mean no.|ar
-mn052|i haven't seen like sixty seven percent.|s
-mn052|and uh|fh
-mn052|using the channel zero vad to estimate the noise also seems to be improving.|s
-mn052|but i don't have the results for all the cases with that.|s
-mn052|so i used channel zero vad to estimate noise as a lesser 2x frame.|s
-mn052|which is like everywhere i use the channel zero v.a.d.|e
-mn052|and that seems to be the best combination uh rather than using a few frames to estimate and then drop a channel.|s
-me013|so i'm i'm still a little confused.|s
-me013|is that channel zero information going to be accessible during this test?|bu
-mn052|nnn|h
-mn052|no.|ar
-mn052|this is just to test whether we can really improve by using a better vad.|df
-me013|uhhuh.|b
-me013|uhhuh.|b
-mn052|so|fh
-mn052|i mean so this is like the noise compensation is fixed.|s
-mn007|uhhuh.|b
-mn052|but you make a better decision on the endpoints.|s
-mn052|that's like seems to be|s
-me013|uhhuh.|b
-mn052|so we|s
-mn052|so i mean which which means like by using this technique what we improve just the vad.|s
-me013|yes.|b
-mn052|we can just take the performance by another ten percent or better.|s
-me013|okay.|bk
-mn052|so that that was just the uh reason for doing that experiment.|s
-mn052|and um|fh
-mn052|yeah but this all these things i have to still try it on the t.i. digits.|fg
-mn052|which is like i'm just running.|e
-mn052|and there seems to be not improving a a lot on the t.i. digits.|s
-mn052|so i'm like investigating that why it's not.|s
-mn052|and|fh
-mn052|um|fh
-mn052|um|fh
-mn052|well after that.|t1
-mn052|so|fh
-mn052|uh|fh
-mn052|so the other the other thing is like i've been i'm doing all this stuff on the power spectrum.|s
-mn052|so|fh
-mn052|tried this stuff on the mel as well.|s
-mn052|mel and the magnitude and mel magnitude and all those things.|e
-mn052|but it seems to be the power spectrum seems to be getting the best result.|s
-mn052|so one of one of reasons i thought like doing the averaging after the filtering using the mel filter bank that seems to be maybe helping rather than trying it on the mel filter filtered outputs.|s
-me013|uhhuh.|b
-me013|uhhuh.|b
-mn052|so just|s
-me013|makes sense.|s
-mn052|yeah.|bk
-mn052|that's that's the only thing that i could think of why why it's giving improvement on the mel.|s
-mn052|and yep.|fh
-mn052|so that's it.|s
-me013|uh how about the subspace stuff?|rt
-mn052|subspace i'm i'm like that's still in a little bit in the back burner.|ng
-mn052|because i've been putting a lot effort on this to make it work on tuning things and other stuff.|df
-me013|okay.|b
-mn052|so|fh
-mn052|i was like going parallely.|s
-mn052|but not much of improvement.|s
-mn052|i'm just have some skeletons ready.|s
-mn052|need some more time for it.|s
-me013|okay.|b
-mn052|huh.|fh
-me018|that it?|d
-mn052|yep.|aa
-mn052|yep.|aa
-me018|cool.|ba
-me018|do you want to go stephane?|co
-mn007|uh yeah.|aa
-mn007|so i've been uh working still on the spectral subtraction.|s
-mn007|um|fh
-mn007|so to to remind you a little bit of of what i did before is just to apply some spectral subtraction with an overestimation factor.|s
-mn007|also to get um an estimate of the noise uh spectrum.|rt
-mn007|and subtract this estimation of the noise spectrum from the uh signal spectrum but subtracting more when the s.n.r. is is uh low.|s
-mn007|which is a technique that it's often used.|e
-me018|subtracting more meaning|d
-mn007|so you overestimate the noise spectrum.|s
-mn007|you multiply the noise spectrum by a factor uh which depends on the s.n.r.|s
-me018|oh okay.|bk
-mn007|so above twenty d.b.|s
-me018|i see.|bk
-mn007|it's one so you just subtract the noise.|s
-me018|uhhuh.|b
-mn007|and then it's|s
-mn007|generally well i use actually a linear uh function of the s.n.r.|s
-me018|uhhuh.|b
-mn007|which is bounded to like two or three when the s.n.r. is below zero d.b.|e
-me018|uhhuh.|b
-me018|uhhuh.|b
-mn007|um doing just this uh either on the f.f.t. bins or on the mel bands um doesn't yield any improvement.|fh
-me013|oh.|b
-me013|um uh what are you doing with negative uh powers?|fg
-mn007|yeah.|bk
-mn007|so there is also a threshold of course.|s
-mn007|because after subtraction you can have negative energies.|s
-me018|uhhuh.|b
-mn007|and|%--
-mn007|so what i i just do is to put uh to to add to put the threshold first and then to add a small amount of noise.|s
-mn007|which right now is speech shaped.|e
-mn007|um|fh
-me018|speech shaped?|d
-mn007|yeah.|bk
-mn007|so it's it has the overall overall energy.|s
-mn007|uh|fh
-mn007|it has the overall power spectrum of speech.|s
-mn007|so with a bump around one kilohertz.|s
-me018|so when when you talk about there being something less than zero after subtracting the noise is that at a particular frequency bin?|rt
-mn007|uhhuh.|b
-mn007|yeah.|aa
-mn007|there can be frequency bins with negative values.|na
-me018|okay.|bk
-me018|and so when you say you're adding something that has the overall shape of speech is that in a in a particular frequency bin?|rt
-me018|or you're adding something across all the frequencies when you get these negatives?|d
-mn007|for each frequencies i i'm adding some uh noise.|na
-mn007|but the the amount of the amount of noise i add is not the same for all the frequency bins.|df
-me018|uh.|bk
-me018|okay.|bk
-me018|i gotcha.|bk
-me018|right.|bk
-mn007|uh right now i don't think if it makes sense to add something that's speech shaped.|s
-mn007|because then you have silence portion that have some spectra similar to the the overall speech spectra.|df
-me018|uhhuh.|b
-mn007|but|%--
-mn007|yeah.|fh
-mn007|so this is something i can still work on.|s
-me018|so what does that mean?|fg
-mn007|but|%--
-mn007|huh.|b
-me018|i'm trying to understand what it means when you do the spectral subtraction and you get a negative.|s
-me018|it means that at that particular frequency range you subtracted more energy than there was actually|bu
-mn007|that means that|s
-mn007|uhhuh.|b
-mn007|yeah.|b
-mn007|so so yeah you have an an estimation of the noise spectrum.|fg
-mn007|but sometimes of course it's as the noise is not perfectly stationary.|s
-mn007|sometimes this estimation can be uh too small.|rt
-mn007|so you don't subtract enough.|s
-mn007|but sometimes it can be too large also if if the noise uh energy in this particular frequency band drops for some reason.|s
-me018|uhhuh.|b
-me018|uhhuh.|b
-mn007|huh.|fh
-me018|so in in an ideal word world if the noise were always the same then when you subtracted it the worst that you would get would be a zero.|bu
-me018|i mean the lowest you would get would be a zero.|s
-me013|right.|b
-me018|because if there was no other energy there you're just subtracting exactly the noise.|bu
-mn007|uhhuh.|b
-mn007|yeah.|aa
-me013|yep there's all there's all sorts of uh deviations from the ideal here.|bk
-me013|i mean for instance you're you're talking about the signal and noise um at a particular point.|df
-me013|and even if something is sort of stationary in terms of statistics there's no guarantee that any particular instantiation or piece of it is exactly a particular number or bounded by a particular range.|s
-mn007|uhhuh.|b
-me013|so you're figuring out from some chunk of of of the signal what you think the noise is.|s
-me013|then you're subtracting that from another chunk.|s
-me018|uhhuh.|b
-me013|and there's absolutely no reason to think that you'd know that it wouldn't uh be negative in some places.|s
-mn007|uhhuh.|b
-mn007|huh.|b
-me013|uh on the other hand that just means that in some sense you've made a mistake.|fh
-me013|because you certainly have subtracted a bigger number than is due to the noise.|df
-me018|uhhuh.|b
-me013|um also we speak the whole where all this stuff comes from is from an assumption that signal and noise are uncorrelated.|fh
-me013|and that certainly makes sense in in in a statistical interpretation that you know over um all possible realizations that they're uncorrelated.|s
-me018|uhhuh.|b
-me013|or assuming uh ergodicity that that um across time uh it's uncorrelated.|s
-me013|but if you just look at a quarter second uh and you cross multiply the two things uh you could very well uh end up with something that sums to something that's not zero.|s
-me013|so in fact the two signals could have some relation to one another.|s
-me013|and so there's all sorts of deviations from ideal in this.|s
-me013|and and given all that you could definitely end up with something that's negative.|s
-me013|but if down the road you're making use of something as if it is a power spectrum um then it can be bad to have something negative.|s
-me013|now the other thing i wonder about actually is what if you left it negative?|qw
-me013|what happens?|qw
-me013|i mean because|df
-mn052|is that the log?|qy
-me013|um are you taking the log before you add them up to the mel?|fh
-mn052|after that.|nd
-mn052|no.|ar
-mn052|after.|nd
-me013|right.|bk
-me013|so the thing is i wonder how if you put your thresholds after that i wonder how often you would end up with uh with negative values.|s
-mn052|but you will|s
-mn052|but you end up reducing some neighboring frequency bins in the average right?|bu
-mn052|when you add the negative to the positive value.|e
-mn052|which is the true estimate.|e
-me013|yeah.|aa
-me013|but nonetheless uh you know these are it's another kind of smoothing right?|ng
-me013|that you're doing.|e
-mn052|yeah.|aa
-me013|right.|b
-me013|so you've done your best shot at figuring out what the noise should be.|s
-me013|and now then you've subtracted it off.|s
-me013|and then after that instead of instead of uh uh leaving it as is and adding things adding up some neighbors you artificially push it up.|s
-mn052|huh.|b
-me013|which is you know it's there's no particular reason that that's the right thing to do either.|s
-me013|right?|d
-mn052|yeah yeah.|aa
-me013|so um|fh
-me013|uh|fh
-me013|in fact what you'd be doing is saying well we're we're we're going to definitely diminish the effect of this frequency in this little frequency bin in the in the overall mel summation.|s
-me013|it's just a thought.|bd
-me013|i i don't know if it would be|no
-mn052|yeah.|b
-me018|sort of the opposite of that would be if if you find out you're going to get a negative number you don't do the subtraction for that bin.|s
-mn052|uhhuh.|b
-mn052|that is true.|aa
-me013|nnn yeah.|h
-mn007|uhhuh.|b
-me018|that would be almost the opposite.|bu
-me013|although|%--
-me018|right?|d
-me018|instead of leaving it negative you don't do it.|bu
-me018|if your if your subtraction's going to result in a negative number you you don't do subtraction in that.|bu
-me013|yeah.|aa
-me013|but that means that in a situation where you thought that that the bin was almost entirely noise you left it.|s
-me018|yeah.|bk
-mn052|we just|%--
-me013|uh|fh
-me018|yeah i'm just saying that's like the opposite.|df
-mn052|yeah.|b
-me013|yeah.|aa
-me013|well yeah that's that's the opposite.|na
-me018|yeah.|fh
-mn007|uhhuh.|b
-me013|yeah.|aa
-mn007|and yeah.|fg
-mn007|some people also if it's a negative value they uh re compute it using interpolation from the edges and bins.|s
-mn052|for frames frequency bins.|s
-me013|yeah.|b
-mn007|well there are different things that you can do.|e
-me018|oh.|bk
-me013|people can also uh reflect it back up and essentially do a full wave rectification instead of a instead of half wave.|s
-me018|oh.|bk
-me013|but it was just a thought that that it might be something to try.|df
-mn007|uhhuh.|b
-mn007|uhhuh.|b
-mn007|yep.|bk
-mn007|well actually i tried something else based on this um is to to put some smoothing.|s
-mn007|um because it seems to to help or it seems to help the wiener filtering.|fh
-me013|uhhuh.|b
-mn007|and|fh
-mn007|huh|fh
-mn007|so what i did is uh some kind of nonlinear smoothing.|s
-mn007|actually i have a recursion that computes|s
-mn007|yeah let me go back a little bit.|bk
-mn007|actually when you do spectral subtraction you can uh find this this equivalent in the in the spectral domain.|s
-mn007|you can uh compute|s
-mn007|you can say that your spectral subtraction is a filter.|s
-mn007|um and the gain of this filter is the um signal energy minus what you subtract divided by the signal energy.|fh
-mn007|and this is a gain that varies over time and you know of course uh depending on the on the noise spectrum and on the speech spectrum.|s
-mn007|and|fh
-mn007|what happen actually is that during low s.n.r. values the gain is close to zero.|s
-mn007|but it varies a lot.|e
-mn007|huh|fh
-mn007|and this this is the cause of musical noise and all these the the fact you we go below zero one frame and then you can have an energy that's above zero.|s
-me013|uhhuh.|b
-mn007|and|%--
-mn007|huh.|fh
-mn007|so the smoothing is i did a smoothing actually on this gain uh trajectory.|rt
-mn007|but it's the smoothing is nonlinear in the sense that i tried to not smooth if the gain is high.|rt
-mn007|because in this case we know that uh the estimate of the gain is correct.|df
-mn007|because we we are not close to to to zero.|df
-mn007|um and to do more smoothing if the gain is low.|fh
-mn007|huh|fh
-mn007|um|fh
-mn007|yeah.|fh
-mn007|so|fh
-mn007|well.|fh
-mn007|basically that's this idea.|s
-mn007|and it seems to give pretty good results.|s
-mn007|uh although i've just just tested on italian and finnish.|fh
-mn007|and on italian it seems my result seems to be a little bit better than the wiener filtering.|s
-mn052|uhhuh.|aa
-mn007|right?|d
-mn052|yeah the one you showed yesterday.|aa
-mn052|right?|d
-me013|yeah.|b
-mn007|uh i don't know if you have these the detailed improvements for italian finnish and spanish there.|fh
-mn007|or you have just have your own.|s
-mn052|no i don't have for each.|ar
-mn052|i i just just have the final number here.|df
-mn007|uhhuh.|b
-me013|so these numbers he was giving before with the four point three and the ten point one and so forth those were italian right?|bu
-mn052|yeah yeah yeah.|aa
-me013|yeah.|b
-mn007|uh|%
-mn052|so so no.|fg
-mn052|i actually didn't give you the number which is the final one.|df
-mn007|uh no.|ar
-mn007|we've|%--
-mn052|which is after two stages of wiener filtering.|e
-mn052|i mean that was i just well like the overall improvement is like fifty six point five.|s
-me013|right.|bk
-mn052|so|fh
-mn007|uhhuh.|b
-mn052|i mean his number is still better than what i got in the two stages of wiener filtering.|s
-mn007|yeah.|b
-me013|right.|bk
-mn007|on italian.|2
-mn007|but on finnish it's a little bit worse apparently.|s
-mn052|uhhuh.|b
-mn007|um|fh
-me013|but do you have numbers in terms of word error rates on on italian ? so just so you have some sense of reference?|rt
-mn007|yeah.|aa
-mn007|uh so it's uh three point uh eight.|na
-me013|uhhuh.|b
-mn007|am i right?|rt
-mn052|oh okay.|bk
-mn052|yeah right.|aa
-mn052|okay.|bk
-mn007|and then uh uh nine point uh one.|rt
-me013|uhhuh.|b
-mn007|and finally uh sixteen point five.|s
-me013|and this is um spectral subtraction plus what?|d
-mn007|plus plus nonlinear smoothing.|s
-mn007|well it's the system it's exactly the the same system as sunil tried.|df
-me013|online normalization and l.d. a?|bu
-mn007|but|%--
-me013|yeah.|bk
-mn007|yeah.|aa
-me013|yeah.|b
-mn007|but instead of double stage wiener filtering it's it's this smoothed spectral subtraction.|s
-mn007|um yeah.|fh
-me013|right.|b
-me018|what is it the um france telecom system uses?|qw
-me018|for do they use spectral subtraction or wiener filtering?|qr
-me018|or|fh
-mn052|they use spectral subtraction.|s
-mn052|right.|aa
-mn007|for what?|d
-mn052|french telecom.|s
-mn007|it it's wiener filtering.|nd
-mn052|oh it's it's wiener filtering.|bk
-mn007|am i right?|qy
-mn052|sorry.|ft
-mn007|well it's some kind of wiener filtering.|aap
-me018|oh.|bk
-mn052|yeah filtering.|na
-mn052|yeah it's not exactly wiener filtering.|na
-mn052|but some variant of wiener filtering.|df
-mn007|yeah.|b
-me018|i see.|bk
-me013|yeah.|b
-mn052|yeah.|b
-me013|plus uh i guess they have some sort of cepstral normalization as well.|s
-mn052|they have like|s
-mn007|uhhuh.|b
-mn052|yeah.|bk
-mn052|the just noise compensation technique is a variant of wiener filtering.|s
-mn052|plus they do some some smoothing techniques on the final filter.|s
-mn052|the they actually do the filtering in the time domain.|s
-me018|huh.|b
-mn007|yeah.|b
-mn052|so they would take this h.f. squared back taking inverse fourier transform.|s
-me018|huh.|b
-mn052|and they convolve the time domain signal with that.|s
-me018|oh i see.|bk
-mn052|and they do some smoothing on that final filter impulse response.|s
-me018|huh.|b
-mn007|but they also have two two different smoothing.|s
-mn007|one in the time domain.|e
-mn052|i mean i'm i'm.|s
-mn007|and one in the frequency domain by just taking the first um coefficients of the impulse response.|e
-mn052|but|%
-mn007|so basically it's similar.|s
-mn007|i mean what you did it's similar.|s
-mn052|it's similar in the smoothing.|2
-mn007|because you have also two two kind of smoothing.|df
-mn052|and|%--
-mn007|one in the time domain.|e
-mn052|yeah.|b
-mn007|and one in the frequency domain.|e
-mn052|yeah.|b
-mn052|the frequency domain.|2
-mn007|yeah.|fh
-me018|does the smoothing in the time domain help|qy
-mn007|um|fh
-me018|well do you get this musical noise stuff with wiener filtering?|rt
-me018|or is that only with uh spectral subtraction?|qrr
-mn052|no you get it with wiener filtering also.|ar
-mn007|yeah.|b
-me018|does the smoothing in the time domain help with that?|qy
-me018|or some other smoothing?|qrr
-mn052|oh no.|ar
-mn052|you still end up with zeros in the spectrum.|df
-mn007|yeah.|b
-mn052|sometimes.|e
-me013|i mean it's not clear that these musical noises hurt us in recognition.|no
-me018|huh.|b
-me013|we don't know if they do.|s
-me018|huh.|b
-mn052|yeah.|b
-me013|i mean they they sound bad.|s
-me013|but we're not listening to it usually.|s
-me018|uhhuh.|b
-mn052|yeah i know.|s
-mn007|uhhuh.|b
-me018|huh.|b
-mn007|uh actually the the smoothing that i did do here reduced the musical noise.|nd
-mn007|well it|%--
-mn052|uhhuh.|b
-mn007|huh.|fh
-mn052|yeah.|b
-mn052|yeah.|b
-mn052|the|%--
-mn007|well i cannot you cannot hear|df
-mn007|well actually what i did not say is that this is not in the f.f.t. bins.|df
-mn007|this is in the mel frequency bands.|df
-mn007|um|fh
-mn007|so|fh
-mn007|it could be seen as a a a smoothing in the frequency domain because i used in mel bands in addition and then the other phase of smoothing in the time domain.|s
-mn007|huh.|fh
-mn007|but when you look at the spectrogram if you don't have any smoothing you clearly see like in silence portions and at the beginning and end of speech you see spots of high energy randomly distributed over the the spectrogram.|df
-me018|uhhuh.|b
-me018|uhhuh.|b
-mn007|um|fh
-me018|that's the musical noise?|bu
-mn007|which is musical noise.|e
-me018|uhhuh.|b
-mn007|yeah.|aa
-mn007|if if it if you listen to it|s
-mn007|uh if you do this in the f.f.t. bins then you have spots of energy randomly distributing.|s
-mn007|and if you if you re synthesize these spot sounds as like sounds.|s
-me018|uhhuh.|b
-mn007|uh|fh
-mn007|and|fh
-me013|well none of these systems by the way have i mean you both are are working with um our system that does not have the neural net.|bu
-me013|right?|d
-mn007|uhhuh.|aa
-mn052|yep.|aa
-mn052|yeah.|aa
-me013|okay.|bk
-mn007|yeah.|aa
-me013|so one would hope presumably that the neural net part of it would would improve things further as as they did before.|bu
-mn007|yeah.|aa
-mn007|um|fh
-mn007|yeah.|aa
-mn007|although if if we um look at the result from the proposals one of the reason uh the system with the neural net was um more than well around five percent better is that it was much better on highly mismatched condition.|ng
-mn007|i'm thinking for instance on the t.i. digits trained on clean speech and tested on noisy speech.|df
-me013|uhhuh.|b
-mn007|uh for this case the system with the neural net was much better.|s
-me013|uhhuh.|b
-mn007|but not much on the in the other cases.|s
-me013|yeah.|b
-mn007|and|fh
-mn007|if we have no uh spectral subtraction or wiener filtering um the system is uh we thought the neural neural network is much better than before.|s
-mn007|even in these cases of high mismatch.|e
-mn007|so maybe the neural net will help less.|s
-mn007|but um|fh
-me013|maybe.|am
-me018|could you train a neural net to do spectral subtraction?|rt
-me013|yeah.|aa
-me013|it could do a nonlinear spectral subtraction.|na
-mn007|uhhuh.|b
-me013|but i don't know if it|no
-me013|i mean you have to figure out what your targets are.|df
-me018|yeah.|bk
-me018|i was thinking if you had a clean version of the signal and and a noisy version and your targets were the m.f. uh you know whatever frequency bins|s
-mn007|uhhuh.|b
-me013|right.|bk
-mn007|uhhuh.|b
-me013|yeah well that's not so much spectral subtraction then.|bk
-mn007|uhhuh.|b
-me013|but but but it's but at any rate yeah people|s
-me013|uh|fh
-me018|people do that?|2
-me013|yeah.|aa
-me013|in fact we had visitors here who did that.|na
-me013|i think when you were here way back when.|s
-mn007|uhhuh.|b
-me018|huh.|bk
-me013|uh|fh
-me013|people done lots of experimentation over the years with training neural nets.|s
-me013|and it's not a bad thing to do.|s
-me013|it's another approach.|s
-me018|huh.|b
-mn007|uhhuh.|b
-me013|i mean it's it um|%--
-me013|the objection everyone always raises which has some truth to it is that um it's good for mapping from a particular noise to clean.|s
-me013|but then you get a different noise.|s
-me018|uhhuh.|b
-me013|and the experiments we saw that visitors did here showed that it there was at least some um gentleness to the degradation when you switched to different noises.|s
-me013|it did seem to help.|s
-me013|so that you're right.|aa
-me013|that's another another way to go.|na
-me018|how did it compare on i mean for for good cases where it it uh stuff that it was trained on?|qw
-me018|did it do pretty well?|rt
-me013|oh yeah.|aa
-me013|it did very well.|na
-me018|huh.|b
-me013|yeah.|fh
-me018|huh.|b
-mn007|uhhuh.|b
-me013|um|fh
-me013|but to some extent that's kind of what we're doing.|s
-me013|i mean we're not doing exactly that.|df
-me013|we're not trying to generate good examples.|df
-me013|but by trying to do the best classifier you possibly can for these little phonetic categories|df
-me018|uhhuh.|bk
-me018|you could say it's sort of built in.|2
-me013|it's|%--
-me013|yeah.|aa
-me013|it's kind of built into that.|na
-me018|huh.|b
-me013|and and that's why we have found that it it does help.|s
-me018|uhhuh.|b
-me013|um|fh
-me013|so|fh
-me013|um|fh
-me013|yeah i mean we'll just have to try it.|bk
-me013|but i i would i would i would imagine that it will help some.|df
-me013|i mean it we'll just have to see whether it helps more or less the same.|s
-me013|but i would imagine it would help some.|s
-mn007|uhhuh.|b
-me013|so in any event all of this i was just confirming that all of this was with a simpler system.|s
-mn007|yeah.|aa
-mn007|yeah.|aa
-me013|okay?|d
-mn007|um|fg
-mn007|yeah so this is the um|bk
-mn007|well actually this was kind of the first try with this spectral subtraction plus smoothing.|rt
-me013|uhhuh.|b
-mn007|and i was kind of excited by the result.|s
-me013|uhhuh.|b
-mn007|um then i started to optimize the different parameters.|fh
-mn007|and|fh
-mn007|uh the first thing i tried to optimize is the um time constant of the smoothing.|s
-mn007|and it seems that the one that i chose for the first experiment was the optimal one.|s
-mn007|so uh|fh
-me013|it's amazing how often that happens.|ba
-mn007|um|fh
-mn007|so this is the first thing.|s
-mn007|um|fh
-mn007|yeah another thing that i it's important to mention is um that this has this has some additional latency.|bk
-mn007|um|fh
-mn007|because when i do the smoothing uh it's a recursion that estimated the means so of the of the gain curve.|df
-mn007|and|fh
-mn007|this is a filter that has some latency.|s
-mn007|and i noticed that it's better if we take into account this latency.|ba
-mn007|so instead of using the current estimated mean to uh subtract the current frame it's better to use an estimate that's somewhere in the future.|cs
-mn007|um|fh
-me018|and that's what causes the latency?|d
-mn007|yeah.|aa
-me013|uhhuh.|b
-me018|okay.|bk
-mn052|you mean the the mean is computed based on some frames in the future also?|bu
-mn052|or or no?|qrr
-mn007|it's the recursion.|s
-mn007|so it's it's the center recursion.|s
-mn007|right?|d
-mn052|uhhuh.|aa
-mn007|um|fh
-mn007|and the latency of this recursion is around fifty milliseconds.|s
-me013|one five?|bu
-me013|one five?|bu
-me013|five zero?|bu
-mn007|five zero.|m
-mn007|yeah.|aa
-me013|five zero.|bk
-mn007|um|fh
-me013|yeah.|bk
-mn007|huh|fh
-mn052|i'm sorry.|ft
-mn052|why why is that delay coming?|rt
-mn052|like you estimate the mean?|d
-mn007|yeah.|aa
-mn007|the mean estimation has some delay.|df
-mn007|right?|d
-mn007|i mean the the filter that that estimates the mean has a time constant.|df
-mn052|oh yeah.|b
-mn052|it isn't|%--
-mn052|okay.|bk
-mn052|so it's like it looks into the future also.|bu
-mn007|yeah.|aa
-mn052|okay.|bk
-me013|what if you just look into the past?|qw
-mn007|it's uh not as good.|s
-mn007|it's not bad.|s
-me013|how by how much?|d
-mn007|um it helps a lot over the the baseline.|fh
-mn007|but huh|fh
-me013|by how much?|d
-mn007|it|%--
-mn007|it's around three percent um relative.|s
-me013|worse.|bu
-mn007|yeah.|aa
-mn007|yeah.|fh
-mn007|um|fh
-me013|huh.|b
-mn007|huh|fh
-mn007|so uh|fh
-me013|it's depending on how all this stuff comes out.|s
-me013|we may or may not be able to add any latency.|s
-mn007|yeah but|aa
-mn007|yeah.|aa
-mn007|so yeah it depends.|na
-mn007|uh actually it's it's it's three percent.|s
-mn007|right.|fh
-mn007|huh.|fh
-mn007|yeah.|bk
-mn007|but i don't think we have to worry too much on that right now while you|s
-mn007|uhhuh.|fh
-me013|um|fg
-mn007|so|%--
-me013|yeah i mean i think the only thing is that|bk
-me013|i would worry about it a little.|s
-mn007|uhhuh.|b
-me013|because if we completely ignore latency and then we discover that we really have to do something about it we're going to be find ourselves in a bind.|df
-mn007|uhhuh.|b
-me013|so um|fh
-me013|you know maybe you could make it twenty five.|cs
-mn007|yeah.|aa
-me013|you know what i mean?|d
-mn007|oh yes.|aa
-me013|yeah just you know just be be a little conservative.|cs
-me013|because we may end up with this crunch where all of a sudden we have to cut the latency in half or something.|df
-mn007|uhhuh.|b
-mn007|yeah.|b
-me013|okay.|fh
-mn007|um|fg
-mn007|so|fg
-mn007|yeah there are other things in the um algorithm that i didn't uh a lot yet.|bk
-me018|oh.|bk
-mn007|which|%--
-me018|sorry.|ft
-me018|a quick question just about the latency thing.|s
-me018|if if there's another part of the system that causes a latency of a hundred milliseconds is this an additive thing?|rt
-me018|or or is yours hidden in that?|qrr
-mn007|uhhuh.|b
-mn007|no.|ar
-me018|uh|fh
-mn007|it's it's added.|nd
-me018|it's additive.|bk
-mn007|uhhuh.|b
-me018|okay.|bk
-mn052|we can|%--
-mn052|okay.|bk
-mn052|we can do something in parallel also in some like some cases like if you wanted to do voice activity detection.|s
-me018|uhhuh.|bk
-mn052|and we can do that in parallel with some other filtering you can do.|s
-mn007|huh.|b
-mn052|so you can make a decision on that voice activity detection.|s
-mn052|and then you decide whether you want to filter or not.|s
-mn007|yeah.|b
-mn052|but by then you already have the sufficient samples to do the filtering.|s
-me018|uhhuh.|b
-mn052|so|fh
-mn052|so sometimes you can do it anyway.|s
-me018|i mean couldn't|qy
-me018|uh|fh
-me018|i|%--
-me018|couldn't you just also i mean if you know that the the largest latency in the system is two hundred milliseconds don't you couldn't you just buffer up that number of frames?|qy
-me018|and then everything uses that buffer.|e
-mn052|yeah.|b
-me018|and that way it's not additive.|e
-me013|well in fact everything is sent over in buffers because of|s
-me013|isn't it the t.c.p. buffer some|qy
-mn052|you mean the the data the super frame or something?|bu
-mn007|uhhuh.|b
-me013|yeah.|aa
-me013|yeah.|aa
-mn007|yeah.|b
-mn052|yeah but that has a variable latency.|bk
-mn052|because the last frame doesn't have any latency.|df
-mn007|uhhuh.|b
-mn052|and first frame has a twenty framed latency.|df
-mn052|so you can't rely on that latency all the time.|s
-me013|yeah.|b
-mn052|because|%--
-mn007|yeah.|b
-mn052|i mean the transmission over over the air interface is like a buffer.|s
-mn052|twenty frame.|s
-me018|yeah.|b
-mn052|twenty four frames.|bsc
-me018|yeah.|b
-mn052|so|fh
-mn052|but the only thing is that the first frame in that twenty four frame buffer has a twenty four frame latency.|s
-mn052|and the last frame doesn't have any latency.|s
-me018|uhhuh.|bk
-mn052|because it just goes as|df
-mn052|yeah.|fh
-me018|yeah i wasn't thinking of that one in particular.|bk
-me018|but more of you know if if there is some part of your system that has to buffer twenty frames uh can't the other parts of the system draw out of that buffer and therefore not add to the latency?|rt
-me013|yeah.|b
-me013|yeah.|bk
-me013|and and that's sort of one of the|s
-me013|all of that sort of stuff is things that they're debating in their standards committee.|s
-me018|oh.|bk
-me018|huh?|bh
-mn007|uhhuh.|b
-mn007|yeah.|fg
-mn007|so|fh
-mn007|um|fh
-mn007|there is uh these parameters that i still have to to look at.|tc
-mn007|like i played a little bit with this overestimation factor.|e
-mn007|uh|fh
-mn007|but i still have to to look more at this.|df
-mn007|um|fh
-mn007|at the level of noise i add after uh i know that adding noise helped um the system just using spectral subtraction without smoothing.|s
-mn007|but i don't know right now if it's still important or not and if the level i choose before is still the right one.|no
-mn007|same thing for the shape of the the noise.|s
-mn007|maybe it would be better to add just white noise instead of speech shaped noise.|am
-me013|that'd be more like the j. rasta thing in a sense.|s
-mn007|uhhuh.|aa
-me013|yeah.|fh
-mn007|um yep.|fh
-mn007|uh and another thing is to|fh
-mn007|yeah.|bk
-mn007|for this i just use as noise estimate the mean uh spectrum of the first twenty frames of each utterance.|s
-mn007|i don't remember for this experiment what did you use for these two stage.|no
-mn052|i used ten just ten frames.|s
-mn007|the ten frames?|bu
-mn052|yeah because|aa
-mn052|i mean the reason was like in t.i. digits i don't have a lot.|df
-mn052|i had twenty frames most of the time.|e
-mn007|uhhuh.|b
-mn007|um|fh
-mn007|but so what's this result you told me about the fact that if you use more than ten frames you can improve by|qw
-mn052|well that's that's using the channel zero.|s
-mn052|if i use a channel zero vad to estimate the noise.|rt
-mn007|oh okay.|bk
-mn052|which|%--
-mn007|but this is ten frames plus plus|bu
-mn052|channel zero dropping.|s
-mn007|channel|bk
-mn007|uh no.|ar
-mn007|these results with two stage wiener filtering is ten frames.|s
-mn052|huh.|b
-mn052|oh this|%--
-mn007|but possibly more.|e
-mn007|i mean if channel one v.a.d. gives you|s
-mn052|yeah.|b
-mn052|uhhuh.|b
-mn007|yeah.|fh
-mn052|yeah.|aa
-mn007|okay.|bk
-mn007|yeah.|fg
-mn007|but in this experiment i did i didn't use any v.a.d.|s
-mn007|i just used the twenty first frame to estimate the noise.|s
-mn007|and so i expected it to be a little bit better if uh i use more more frames.|s
-mn007|um|fh
-mn007|okay that's it for spectral subtraction.|bk
-mn007|the second thing i was working on is to um try to look at noise estimation huh and using some technique that doesn't need voice activity detection.|tc
-mn007|um|fh
-mn007|and for this i simply used some code that uh i had from from belgium.|s
-mn007|which is technique that um takes a bunch of frame.|e
-mn007|um|fh
-mn007|and for each frequency bands of this frame takes a look at the minima of the energy.|e
-mn007|and then average these minima and take this as an an energy estimate of the noise for this particular frequency band.|rt
-mn007|and there is something more to this actually.|s
-mn007|what is done is that uh these minima are computed um based on um high resolution spectra.|s
-mn007|so i compute an f.f.t. based on the long uh signal frame.|s
-mn007|which is sixty four millisecond.|e
-me018|so you have one minimum for each frequency?|d
-mn007|what what i what i uh i do actually is to take a bunch of to take a tile on the spectrogram.|s
-mn007|and this tile is five hundred milliseconds long and two hundred hertz wide.|s
-me018|huh.|bk
-mn007|and this tile|s
-mn007|uh in this tile appears like the harmonics if you have a voiced sound.|s
-mn007|because it's it's the f.t.t. bins.|df
-mn007|and when you take the the minima of of these this tile|s
-mn007|when you don't have speech these minima will give you some noise level estimate.|s
-mn007|if you have voiced speech these minima will still give you some noise estimate because the minima are between the harmonics.|s
-mn007|and if you have other other kind of speech sounds then it's not the case.|s
-mn007|but if the time frame is long enough uh like five hundred milliseconds seems to be long enough you still have portions which uh are very close which minima are very close to the noise energy.|s
-me013|i'm confused.|s
-mn007|huh.|b
-me013|you said five hundred milliseconds.|s
-me013|but you said sixty four milliseconds.|s
-me013|which is which?|rt
-me013|what|qw
-mn007|sixty four milliseconds is to compute the f.f.t. uh bins.|rt
-mn007|the the f.f.t.|s
-me013|yeah.|b
-me013|yeah.|b
-mn007|um|fh
-mn007|actually it's better to use sixty four milliseconds because um if you use thirty milliseconds then uh because of the this short windowing and at low pitch uh sounds the harmonics are not uh correctly separated.|s
-me013|uhhuh.|b
-mn007|so if you take these minima it they will overestimate the noise a lot.|s
-me013|so you take sixty four millisecond f.f.t.'s and then you average them over five hundred?|bu
-me013|or|qrr
-me013|uh what do you do over five hundred?|fh
-mn007|so i take to i take a bunch of these sixty four millisecond frame to cover five hundred milliseconds.|s
-me013|uh.|bk
-me013|okay.|bk
-mn007|and then i look for the minima.|fh
-me013|i see.|bk
-me018|huh.|b
-mn007|on the on on the bunch of uh fifty frames right?|e
-me013|i see.|bk
-mn007|huh.|fh
-mn007|so the interest of this is that as with this technique you can estimate some reasonable noise spectra with only five hundred milliseconds of of signal.|s
-mn007|so if the the the noise varies a lot uh you can track better track the noise.|s
-me013|uhhuh.|b
-mn007|which is not the case if you rely on the voice activity detector.|e
-mn007|so even if there are no speech pauses you can track the noise level.|s
-mn007|the only requirement is that you must have in these five hundred milliseconds segment you must have voiced sound at least.|s
-mn007|because this these will help you to to track the the noise level.|df
-mn007|um|fh
-mn007|so what i did is just to simply replace the v.a.d. based uh noise estimate by this estimate.|s
-mn007|first on speechdat-car.|e
-mn007|well only on speechdat-car actually.|e
-mn007|and it's uh slightly worse.|s
-mn007|like one percent relative compared to the v.a.d. based estimates.|e
-mn007|um|fh
-mn007|i think the reason why it's not better is that the speechdat-car noises are all stationary.|df
-mn007|um|fh
-mn007|so|fh
-mn007|there really is no need to have something that's adaptive.|s
-me013|uhhuh.|b
-mn007|and uh|fh
-mn007|well they are mainly stationary.|s
-mn007|um|fh
-mn007|but i expect maybe some improvement on t.i. digits.|s
-mn007|because nnn in this case the noises are all sometimes very variable.|df
-mn007|uh so i have to test it.|fh
-mn007|huh.|fh
-me013|but are you comparing with something|qy
-me013|i'm i'm a little confused again.|s
-me013|it|%--
-me013|uh when you compare it with the v.a.d. based which v.a.|qw
-mn007|uhhuh.|bk
-mn007|it's|%--
-me013|is this is this the|qy
-mn007|it's the france telecom based spectra uh wiener filtering and v.a.d.|rt
-mn007|so it's their system.|rt
-mn007|but just i replace their noise estimate by this one.|s
-me013|oh you're not doing this with our system?|bk
-mn007|in i'm not.|na
-mn007|no no.|aa
-mn007|yeah.|ar
-mn007|it's our system.|nd
-mn007|but with just the wiener filtering from their system.|df
-mn007|right?|d
-mn007|huh.|fh
-me013|okay.|bk
-mn007|yeah.|b
-mn007|actually the best system that we still have is uh our system but with their noise compensation scheme.|bu
-mn007|right?|d
-me013|right.|aa
-mn007|so i'm trying to improve on this and by by replacing their noise estimate by uh something that might be better.|s
-me013|but|%--
-me013|okay.|bk
-me013|but the spectral subtraction scheme that you reported on also requires a a noise estimate.|s
-mn007|yeah.|bk
-mn007|yeah.|aa
-mn007|but i|s
-me013|couldn't you try this for that?|rt
-me013|do you think it might help?|rt
-mn007|not yet.|nd
-mn007|because i did this in parallel.|df
-mn007|and i was working on one and the other.|df
-me013|i see.|bk
-me013|i see.|bk
-me013|yeah.|b
-mn007|um|fh
-mn007|yeah for for sure i will.|aa
-mn052|yeah.|b
-mn007|i can try also huh the spectral subtraction.|s
-me013|okay.|b
-mn052|so i'm also using that new noise estimate technique on this wiener filtering what i'm trying.|s
-mn007|uhhuh.|b
-mn052|so i i have like some experiments running i don't have the results.|s
-me013|yeah.|b
-me013|yeah.|b
-mn052|so|fh
-mn052|i don't estimate the noise on the ten frames but use his estimate.|s
-mn007|uhhuh.|b
-me013|yeah.|b
-mn007|um|fh
-mn007|yeah.|fh
-mn007|i um also implemented a um spectral whitening idea.|s
-mn007|which is in the um ericsson proposal.|e
-mn007|uh the idea is just to um flatten the log uh spectrum um and to flatten it more if the the probability of silence is higher.|s
-mn007|so in this way you can also reduce somewhat reduce the musical noise.|s
-mn007|and you reduce the variability if you have different noise shapes.|s
-mn007|because the the spectrum becomes more flat in the silence portions.|df
-mn007|um|fh
-mn007|yeah.|fh
-mn007|with this no improvement.|s
-mn007|uh but there are a lot of parameters that we can play with.|df
-mn007|and|fh
-mn007|um|fh
-mn007|actually this this could be seen as a soft version of the frame dropping.|s
-mn007|because um you could just put the threshold and say that below the threshold i will flatten completely flatten the the spectrum.|df
-mn007|and above this threshold uh keep the same spectrum.|s
-mn007|so it would be like frame dropping.|s
-mn007|because during the silence portions which are below the threshold of voice activity probability uh you would have some kind of dummy frame.|df
-mn007|which is a perfectly flat spectrum.|e
-mn007|and this uh whitening is something that's more soft because um you whiten you just uh have a function the whitening is a function of the speech probability.|s
-mn007|so it's not a hard decision.|s
-me013|uhhuh.|b
-mn007|um|fh
-mn007|so i think maybe it can be used together with frame dropping and when we are not sure about if it's speech or silence.|s
-mn007|well maybe it has something do with this.|am
-me013|it's interesting.|ba
-me013|i mean um you know in in j. rasta we were essentially adding in uh white uh white noise dependent on our estimate of the noise.|s
-mn007|uhhuh.|bk
-me013|on the overall estimate of the noise.|e
-me013|uh i think it never occurred to us to use a probability in there.|fh
-mn007|uhhuh.|bk
-me013|you could imagine one that that that made use of where where the amount that you added in was uh a function of the probability of it being speech or noise.|s
-mn007|uhhuh.|b
-mn007|uhhuh.|b
-mn007|yeah|bk
-mn007|yeah right now it's a constant that just depending on the the noise spectrum.|bk
-mn052|there's|%
-me013|yeah.|b
-mn007|uhhuh.|fh
-me013|because that that brings in sort of powers of classifiers that we don't really have in uh this other estimate.|s
-mn007|uhhuh.|b
-me013|so it could be it could be interesting.|s
-mn007|uhhuh.|b
-mn007|uhhuh.|b
-me013|what what what point does the uh system stop recording?|rt
-me013|how much|qw
-me018|it'll keep going till i guess when they run out of disk space.|s
-me013|it went a little long?|d
-me013|i mean disk|s
-me018|but|%--
-me018|i think we're okay.|s
-mn007|so|b
-me013|okay.|bk
-mn007|yeah.|bk
-mn007|uh|fg
-mn007|yeah so there are with this technique there are some|fg
-mn007|i just did something exactly the same as as the ericsson proposal.|s
-mn007|but um the probability of speech is not computed the same way.|s
-mn007|and i think for yeah for a lot of things actually a a good speech probability is important.|s
-mn007|like for frame dropping you improve like you can improve from ten percent as sunil showed if you use the channel zero speech probabilities.|e
-me013|uhhuh.|b
-me013|uhhuh.|b
-mn007|for this it might help.|s
-mn007|um|fh
-me013|uhhuh.|b
-mn007|so yeah.|fh
-mn007|uh|fh
-mn007|so yeah.|fh
-mn007|the next thing i started to do is to uh try to develop a better voice activity detector.|s
-mn007|and|fh
-mn007|um|fh
-mn007|i|%--
-mn007|um|fh
-mn007|yeah for this i think we can maybe try to train the neural network for voice activity detection on all the data that we have including all the speechdat-car data.|bk
-mn007|um|fh
-mn007|and so i'm starting to obtain alignments on these databases.|s
-mn007|um and the way i i do that is that i just use the h.t.k. system but i train it only on the close talking microphone.|fh
-mn007|and then i aligned i obtained the viterbi alignment of the training utterances.|s
-mn007|um|fh
-mn007|it seems to be|s
-mn007|uh|fh
-mn007|actually what i observed is that for italian it doesn't seem there seems to be a problem.|s
-mn052|no.|ar
-mn007|well.|fh
-mn052|so it doesn't seems to help by their use of channel zero or channel one.|s
-mn007|because|%--
-mn007|what?|br
-mn052|uh you mean their the frame dropping right?|bu
-mn007|yeah.|aa
-mn052|yeah it doesn't.|bk
-mn007|yeah.|bk
-mn007|so but actually the v.a.d. was trained on italian also.|s
-mn052|italian.|2
-mn007|so um|fh
-mn007|the the current v.a.d. that we have was trained on uh spine right?|bu
-mn007|italian and t.i. digits with noise and|e
-mn052|t.i. digits.|s
-mn007|uh yeah.|aa
-mn007|and it seems to work on italian but not on the finnish and spanish data.|s
-mn007|so maybe one reason is that finnish and spanish noise are different.|fh
-mn007|and|fh
-mn007|actually we observed we listened to some of the utterances and sometimes for finnish there is music in the recordings and strange things.|s
-mn007|right?|d
-mn052|yeah.|aa
-mn007|um|fh
-mn007|yeah so the idea was to train all the databases and obtain an alignment to train on these databases.|bk
-mn007|and um|fh
-mn007|also to um try different kind of features uh as input to the v.a.d. network.|s
-mn007|and|fh
-mn007|we came up with a bunch of features that we want to try.|s
-mn007|like um the spectral slope the um the degree degree of voicing with the features that uh we started to develop with carmen um with uh the correlation between bands and different kind of features.|e
-mn052|yeah.|b
-mn052|uhhuh.|b
-mn007|and yeah.|fh
-mn052|the energy also.|s
-mn007|the energy.|bk
-mn007|yeah of course.|aa
-mn052|yeah.|b
-me013|yeah right.|aa
-mn007|yeah.|b
-me013|okay.|fg
-me013|well hans-guenter will be here next week.|s
-me013|so i think he'll be interested in all all of these things.|s
-me013|and so.|fh
-mn007|uhhuh.|b
-me013|huh.|b
-me018|okay.|fg
-me018|shall we uh do digits?|co
-me013|yeah.|aa
-me018|want to go ahead morgan?|co
-me013|sure.|aa
+me013|and uh uh hans-guenter will be here um i think by next next tuesday or so.|S|s|s
+mn007|uhhuh.|B|b|b
+mn052|oh okay.|S|s|bk
+me013|so he's he's going to be here for about three weeks.|S|s|s
+mn052|oh.|S|s|bk
+mn052|that's nice.|S|s|ba
+me018|just for a visit?|Q|qy|d
+me013|and|F|fh|fh
+me013|uh|F|fh|fh
+me013|uh we'll see.|S|h|h
+me013|we might might end up with some longer collaboration or something.|S|s|df
+me018|huh.|B|b|b
+me013|so he's going to look in on everything we're doing.|S|s|s
+me018|cool.|S|s|ba
+mn007|uhhuh.|B|b|b
+me013|and give us his his thoughts.|S|s|s
+me013|and so it'll be another another good person looking at things.|S|s|s
+mn052|oh.|B|b|b
+mn052|huh.|B|b|b
+me026|that's his spectral subtraction group?|Q|qy|d
+me026|is that right?|Q|qy|qy
+me013|yeah.|S|s|aa
+me026|oh okay.|S|s|bk
+me013|yeah.|S|s|aa
+me026|so i guess i should probably talk to him a bit too?|Q|qy|cs
+me013|oh yeah.|S|s|aa
+me013|yeah.|S|s|aa
+me013|yeah.|S|s|aa
+me013|no he'll be around for three weeks.|S|s|s
+me013|he's uh um very very easygoing.|S|s|ba
+me013|easy to talk to.|S|s|ba
+me013|and uh very interested in everything.|S|s|ba
+me018|really nice guy.|S|s|ba
+me013|yeah.|S|s|aa
+me013|yeah.|S|s|aa
+mn052|yeah we met him in amsterdam.|S|fg|fg
+me013|yeah.|S|s|bk
+me013|yeah he's been here before.|S|s|s
+me013|i mean he's he's he's he's|D|s|s
+mn052|oh okay.|S|s|bk
+mn052|i haven't noticed him.|S|s|s
+me018|back when i was a grad student he was here for a uh uh a year or six months.|S|s|s
+me013|nine months.|S|s|s
+me018|something like that.|S|s|s
+me013|something like that.|S|s|s
+me018|yeah.|S|s|bk
+me013|yeah.|S|s|bk
+me013|yeah.|S|s|bk
+me013|he's he's done a couple stays here.|S|s|s
+mn052|huh.|B|b|b
+me013|yeah.|F|fh|fh
+me018|so um i guess we got lots to catch up on.|S|fg|fg
+me018|and we haven't met for a couple of weeks.|S|s|df
+me018|we didn't meet last week morgan.|S|s|s
+me018|um i went around and talked to everybody.|S|fh|fh
+me018|and it seemed like they they had some new results.|S|s|s
+me018|but rather than them coming up and telling me i figured we should just wait a week and they can tell both you know all of us.|S|s|s
+me018|so um|F|fh|fh
+me018|why don't we why don't we start with you dave?|Q|qw|co
+me026|oh okay.|S|s|aa
+me018|and then um we can go on.|S|s|co
+me018|so|F|fh|fh
+me026|so um since we're looking at putting this um mean log magnitude spectral subtraction um into the smartkom system i did a test seeing if um it would work using past only and plus the present to calculate the mean.|S|fg|fg
+me026|so i did a test um where i used twelve seconds from the past and the present frame to um calculate the mean.|S|s|s
+me026|and|D|%|%
+me018|twelve seconds.|S|s|bk
+me018|twelve twelve seconds back from the current frame.|S|s|bu
+me026|uh|F|h|h
+me018|is that what you mean?|Q|qy|rt
+me026|twelve seconds um counting back from the end of the current frame.|S|s|na
+me026|yeah.|S|s|aa
+me018|okay.|S|s|bk
+me026|so it was um i think it was twenty one frames.|S|s|s
+me018|okay.|S|s|bk
+me026|and that worked out to about twelve seconds.|S|s|s
+me018|uhhuh.|S|s|bk
+me026|and compared to um using a twelve second centered window i think there was a drop in performance.|S|s|rt
+me026|but it was just a slight drop.|S|s|s
+me013|uhhuh.|B|b|b
+me018|huh.|S|s|bk
+me026|is is that right?|Q|qy|rt
+me013|um|F|h|h
+me013|yeah i mean it was pretty it was pretty tiny.|S|s|aa
+me026|uhhuh.|S|s|bk
+me013|yeah.|F|fh|fh
+me026|so that was encouraging.|S|s|s
+me026|and um|F|fh|fh
+me026|that that um that's encouraging for for the idea of using it in an interactive system like smartkom.|S|s|e
+me026|and um another issue i'm i'm thinking about is in the smartkom system.|S|fh|fh
+me026|so say twelve seconds in the earlier test seemed like a good length of time.|S|s|s
+me026|but what happens if you have less than twelve seconds?|Q|qw|qw
+me026|and um|F|fh|fh
+me026|so i before um back in may i did some experiments using say two seconds or four seconds or six seconds.|S|s|s
+me026|in those i trained the models using mean subtraction with the means calculated over two seconds or four seconds or six seconds.|S|s|s
+me026|and um|F|fh|fh
+me026|here i was curious what if i trained the models using twelve seconds.|S|s|s
+me026|but i i gave it a situation where the test set i was subtracted using two seconds or four seconds or six seconds.|S|s|s
+me026|and um|F|fh|fh
+me026|so i did that for about three different conditions.|S|s|s
+me026|and um|F|fh|fh
+me026|i mean i i think it was um four|D|s|s
+me026|i think i think it was um something like four seconds and um six seconds and eight seconds.|S|s|r
+me026|something like that.|S|s|s
+me026|and it seems like it it it hurts compared to if you actually train the models using that same length of time.|S|s|s
+me026|but it it doesn't hurt that much.|S|s|df
+me026|um|F|fh|fh
+me026|usually less than point five percent.|S|s|e
+me026|although i think i did see one where it was a point eight percent or so rise in word error rate.|S|s|rt
+me026|but this is um where um even if i train on the uh model and mean subtracted it with the same length of time as in the test it the word error rate is around um ten percent or nine percent.|S|s|df
+me026|so it doesn't seem like that big a a difference.|S|s|df
+me013|but it but looking at it the other way isn't it what you're saying that it didn't help you to have the longer time for training?|Q|qy|rt
+me013|if you were going to have a short time for|D|s|e
+me026|that that's true.|S|s|aa
+me026|um|F|fh|fh
+me013|i mean why would you do it if you knew that you were going to have short windows in testing?|Q|qw|qw
+me018|yeah it seems like for your i mean in normal situations you would never get twelve seconds of speech.|S|s|s
+me018|right?|Q|qy|d
+mn052|you need twelve seconds in the past to estimate right?|S|s|s
+me018|i'm not|D|%|%
+me013|yeah.|B|b|b
+mn052|or or you're looking at six sec seconds in future and six in|D|qrr|qrr
+me026|um twelve|D|s|s
+me026|uh for the test it's just twelve seconds in the past.|S|s|nd
+me013|no total.|S|s|ar
+mn052|no it's all.|S|s|s
+mn052|oh okay.|S|s|bk
+me018|is this twelve seconds of uh regardless of speech or silence?|Q|qy|rt
+me018|or twelve seconds of speech?|Q|qrr|qrr
+me026|of of speech.|S|s|s
+me018|okay.|S|s|bk
+mn052|uhhuh.|B|b|b
+me013|the other thing um which maybe relates a little bit to something else we've talked about in terms of windowing and so on is that um i wonder if you trained with twelve seconds and then when you were two seconds in you used two seconds.|S|s|s
+me013|and when you were four seconds in you used four seconds.|S|s|s
+me013|and when you were six|D|s|s
+me013|and you basically build up to the twelve seconds.|S|s|s
+me013|so that if you have very long utterances you have the best.|S|s|s
+me026|yeah.|B|b|b
+me013|but if you have shorter utterances you use what you can.|S|s|s
+me026|right.|S|s|bk
+me026|and that's actually what we're planning to do in smartkom.|S|s|s
+me013|okay.|B|b|b
+me026|but|D|%|%
+me013|yeah.|S|s|bk
+me026|so i so i guess the the question i was trying to get at with those experiments is does it matter what models you use.|S|s|s
+me026|does it matter how much time you use to calculate the mean when you were um doing the training data.|S|s|e
+me013|right.|S|s|bk
+me013|but i mean the other thing is that that's|D|s|s
+me013|i mean the other way of looking at this going back to uh mean cepstral subtraction versus rasta kind of things is that you could look at mean cepstral subtraction.|S|s|s
+me013|especially the way you're doing it uh as being a kind of filter.|S|s|e
+me013|and so the other thing is just to design a filter.|S|s|cs
+me013|you know basically you're you're you're doing a high pass filter or a band pass filter of some sort.|S|s|df
+me013|and and just design a filter.|S|s|s
+me013|and then you know a filter will have a certain behavior.|S|s|df
+me013|and you can look at the start up behavior when you start up with nothing.|S|s|df
+me026|uhhuh.|B|b|b
+me013|and and you know it will uh if you have an i.i.r. filter for instance it will um uh not behave in the steady state way that you would like it to behave until you get a long enough period.|S|s|s
+me013|but um|F|fh|fh
+me013|uh|F|fh|fh
+me013|by just constraining yourself to have your filter be only a subtraction of the mean you're kind of you know tying your hands behind your back.|S|s|s
+me013|because there's filters have all sorts of temporal and spectral behaviors.|S|s|df
+me026|uhhuh.|B|b|b
+me013|and the only thing you know consistent that we know about is that you want to get rid of the very low frequency component.|S|s|s
+me026|huh.|B|b|b
+mn052|but do you really want to calculate the mean?|Q|qy|qy
+mn052|and you neglect all the silence regions or you just use everything that's twelve seconds?|Q|qr|d
+mn052|and|D|%|%
+me026|um|F|h|h
+me026|you do you mean in my tests so far?|Q|qy|bu
+mn052|yeah.|S|s|aa
+me026|most of the silence has been cut out.|S|s|s
+mn052|okay.|S|s|bk
+me026|just there's just inter word silences.|S|s|s
+mn052|uhhuh.|B|b|b
+mn052|and they are like pretty short.|S|s|s
+me026|pretty short.|S|s|2
+mn052|yeah.|S|s|bk
+me026|yeah.|S|s|aa
+mn052|okay.|S|s|bk
+mn052|yeah.|B|b|b
+mn052|uhhuh.|B|b|b
+mn052|so you really need a lot of speech to estimate the mean of it.|S|s|s
+me026|well if i only use six seconds it still works pretty well.|S|h|h
+mn052|yeah.|B|b|b
+mn052|yeah.|B|b|b
+mn052|uhhuh.|B|b|b
+me026|i saw in my test before.|S|s|df
+me026|i was trying twelve seconds because that was the best in my test before.|S|s|df
+mn052|okay.|B|b|b
+me026|and that increasing past twelve seconds didn't seem to help.|S|s|df
+mn052|huh.|B|b|b
+mn052|huh.|B|b|b
+me026|um yeah.|F|fh|fh
+me026|i guess it's something i need to play with more to decide how to set that up for the smartkom system.|S|s|s
+me026|like maybe if i trained on six seconds it would work better when i only had two seconds or four seconds and|D|s|cs
+me013|yeah.|S|s|aa
+me013|yeah.|S|s|aa
+me013|and um|F|fg|fg
+me026|okay.|B|b|b
+me013|yeah and again if you take this filtering perspective and if you essentially have it build up over time|D|s|bk
+me013|i mean if you computed means over two and then over four and over six essentially what you're getting at is a kind of uh ramp up of a filter anyway.|S|s|s
+me013|and so you may may just want to think of it as a filter.|S|s|s
+me013|but uh if you do that then um in practice somebody using the smartkom system one would think if they're using it for a while it means that their first utterance instead of you know getting uh a forty percent error rate reduction they'll get a uh over what uh you'd get without this uh um policy uh you get thirty percent.|S|s|s
+me013|and then the second utterance that you give they get the full you know uh full benefit of it if it's this ongoing thing.|S|s|s
+me018|oh.|S|s|bk
+me018|so you you cache the utterances?|Q|qy|bu
+me018|that's how you get your|D|s|bu
+me018|uh|F|fh|fh
+me013|well i'm saying in practice yeah.|S|s|na
+me018|uh.|S|s|bk
+me013|that's if somebody's using a system to ask for directions or something.|S|s|df
+me018|okay.|S|s|bk
+me018|okay.|S|s|bk
+me013|you know they'll say something first.|S|s|df
+me013|and and to begin with if it doesn't get them quite right maybe they'll come back and say excuse me.|S|s|s
+me018|uhhuh.|B|b|b
+me013|uh|F|fh|fh
+me013|or some|D|%|%
+me013|i mean it should have some policy like that anyway.|S|s|s
+me018|uhhuh.|B|b|b
+me013|and and uh|F|fh|fh
+me013|uh in any event they might ask a second question.|S|fh|fh
+me013|and it's not like what he's doing doesn't uh improve things.|S|s|s
+me013|it does improve things.|S|s|s
+me013|just not as much as he would like.|S|s|e
+me013|and so uh there's a higher probability of it making an error uh in the first utterance.|S|fh|fh
+me018|what would be really cool is if you could have|D|s|cs
+me018|uh this probably users would never like this.|S|s|bd
+me018|but if you had could have a system where before they began to use it they had to introduce themselves verbally.|S|s|cs
+me013|uhhuh.|B|b|b
+me018|you know.|F|fh|fh
+me013|yeah.|S|s|bk
+me018|hi.|S|s|s
+me018|my name is so-and-so.|S|s|s
+me018|i'm from blah blah blah.|S|s|s
+me018|and you could use that initial speech to do all these adaptations.|S|s|df
+me026|uhhuh.|B|b|b
+me018|and|D|%|%
+me013|right.|S|s|bk
+me013|oh the other thing i guess which which|D|s|s
+me013|uh|F|fh|fh
+me013|i don't know much about as much as i should about the rest of the system.|S|s|no
+me013|but but um|F|fh|fh
+me013|couldn't you uh if you if you sort of did a first pass|D|qy|cs
+me013|i don't know what kind of uh uh capability we have at the moment for for doing second passes on on uh uh some kind of little small lattice or a graph or confusion network or something.|S|s|no
+me013|but if you did first pass with um the with either without the mean subtraction or with a a very short time one|D|s|s
+me013|and then um once you uh actually had the whole utterance in if you did um the uh uh longer time version then based on everything that you had um and then at that point only used it to distinguish between you know top n. um possible utterances or something you you might it might not take very much time.|S|s|s
+me013|i mean i know in the large vocabulary uh uh systems people were evaluating on in the past some people really pushed everything in to make it in one pass.|S|s|s
+me013|but other people didn't and had multiple passes.|S|s|s
+me013|and um|F|fh|fh
+me013|the argument um against multiple passes was has often been but we want to this to be you know have a nice interactive response.|S|s|s
+me013|and the counterargument to that which say uh b.b.n.i. think had was yeah.|S|s|s
+me013|but our second responses are second uh passes and third passes are really really fast.|S|s|s
+me018|uhhuh.|B|b|b
+me013|so um if if your second pass takes a millisecond who cares?|Q|fh|fh
+me013|um|F|fh|fh
+me026|so um|F|fg|fg
+me026|the the idea of the second pass would be waiting till you have more recorded speech?|Q|qy|bu
+me026|or|D|qrr|qrr
+me013|yeah.|S|s|aa
+me013|so if it turned out to be a problem that you didn't have enough speech because you need a longer longer window to do this processing then uh one tactic is you know looking at the larger system and not just at the front end stuff is to take in um the speech with some simpler mechanism or shorter time mechanism.|S|s|s
+me026|uhhuh.|B|b|b
+me013|um do the best you can and come up with some possible alternates of what might have been said.|S|fh|fh
+me013|and uh either in the form of an n. best list or in the form of a lattice or or confusion network or whatever.|S|s|e
+me026|uhhuh.|B|b|b
+me013|and then the decoding of that is much much faster or can be much much faster if it isn't a big bushy network.|S|s|s
+me013|and you can decode that now with speech that you've actually processed using this longer time uh subtraction.|S|s|s
+me026|huh.|B|b|b
+me013|so i mean it's it's common that people do this sort of thing where they do more things that are more complex or require looking over more time whatever in some kind of second pass.|S|s|df
+me026|uhhuh.|B|b|b
+me026|okay.|B|b|b
+me013|um and again if the second pass is really really fast uh another one i've heard of is is in in connected digit stuff um going back and and through backtrace and finding regions that are considered to be a a digit but uh which have very low energy.|S|fh|fh
+me026|uhhuh.|B|b|b
+me026|okay.|B|b|b
+me013|so uh i mean there's lots of things you can do in second passes at all sorts of levels.|S|fh|fh
+me013|anyway i'm throwing too many things out.|S|s|s
+me013|but|F|fh|fh
+me018|so is that uh that it?|Q|qy|rt
+me026|i guess that's it.|S|s|na
+me018|okay.|S|s|bk
+me018|uh do you want to go sunil?|Q|fh|fh
+mn052|yep.|S|s|aa
+mn052|um so|F|fh|fh
+mn052|the last two weeks was like|D|s|s
+mn052|so i've been working on that wiener filtering.|S|s|s
+mn052|and|F|fh|fh
+mn052|uh|F|fh|fh
+mn052|found that uh single like i just do a normal wiener filtering like the standard method of wiener filtering.|S|s|s
+mn052|and that doesn't actually give me any improvement over like|D|s|s
+mn052|i mean uh it actually improves over the baseline.|S|s|s
+mn052|but it's not like it doesn't meet something like fifty percent or something.|S|s|s
+mn052|so i've been playing with the|D|s|s
+me018|improves over the base line m.f.c.c. system?|Q|qy|bu
+mn052|yeah.|S|s|aa
+me018|yeah.|S|s|bk
+mn052|yeah.|S|s|aa
+mn052|yeah.|S|s|aa
+mn052|so um|F|fh|fh
+mn052|so that's the improvement is somewhere around like thirty percent over the baseline.|S|s|s
+me013|is that using in combination with something else?|Q|qy|rt
+mn052|no.|S|s|ar
+me013|with with a|D|s|e
+mn052|just just one stage wiener filter.|S|s|nd
+mn052|which is a standard wiener filter.|S|s|e
+me013|no no.|S|s|ar
+me013|but i mean in combination with our online normalization or with the l.d. a?|Q|qr|rt
+mn052|yeah yeah yeah yeah.|S|s|bk
+mn052|so i just plug in the wiener filtering.|S|s|s
+me013|oh okay.|S|s|bk
+mn052|i mean in the in our system where|D|s|s
+me018|oh okay.|S|s|bk
+mn052|so i|D|s|s
+me013|so does it does that mean it gets worse?|Q|fg|fg
+me013|or|D|qrr|qrr
+mn052|no.|S|s|ar
+mn052|it actually improves over the baseline of not having a wiener filter in the whole system.|S|s|df
+mn052|like i have an l.d.a.l.d.a. plus online normalization.|S|s|e
+me013|yeah.|S|s|bk
+mn052|and then i plug in the wiener filter in that.|S|s|s
+mn052|so it improves over not having the wiener filter.|S|s|nd
+mn052|so it improves.|S|s|nd
+mn052|but it it doesn't take it like beyond like thirty percent over the baseline.|S|s|df
+mn052|so|F|fh|fh
+me013|but that's what i'm confused about.|S|s|s
+me013|because i think i thought that our system was more like forty percent without the wiener filtering.|S|s|bu
+mn052|no.|S|s|ar
+mn052|it's like uh|D|s|s
+mn007|huh.|B|b|b
+mn052|well these are not|D|s|s
+me018|is this with the new v.a. d?|Q|qy|rt
+mn052|no it's the old v.a.d.|S|s|ar
+mn052|so my baseline was uh nine|D|s|s
+mn052|this is like the baseline is ninety five point six eight and eighty nine and|D|s|s
+me013|so i mean if you can do all these in word errors it's a lot a lot easier actually.|S|fg|fg
+mn052|what was that?|Q|qw|br
+mn052|sorry?|Q|qw|br
+me013|if you do all these in word error rates it's a lot easier right?|S|s|r
+mn052|oh.|S|s|bk
+mn052|okay okay okay.|S|s|bk
+me013|okay.|F|fh|fh
+mn052|errors right i don't have.|S|s|s
+me013|because then you can figure out the percentages.|S|s|df
+mn052|it's all accuracies.|S|s|s
+me013|yeah.|S|s|bk
+mn007|the baseline is something similar to|D|s|s
+mn007|a i mean|F|fh|fh
+mn007|the the the baseline that you are talking about is the m.f.c.c. baseline right?|S|s|bu
+mn052|the yeah.|S|s|aa
+mn007|or|D|qrr|qrr
+mn052|there are two baselines.|S|s|s
+mn052|okay.|S|s|bk
+mn052|so the baseline one baseline is m.f.c.c. baseline.|S|s|na
+mn007|uhhuh.|B|b|b
+mn052|that when i said thirty percent improvement it's like m.f.c.c. baseline.|S|s|s
+me013|so so|F|fg|fg
+me013|so what's it start on?|Q|qw|qw
+me013|the m.f.c.c. baseline is is what?|Q|qw|d
+me013|is at what level.|S|s|e
+mn052|it's the|D|s|s
+mn052|it's just the mel frequency and that's it.|S|s|s
+me013|no what's what's the number?|S|s|ar
+mn052|uh so i don't have that number here.|S|h|h
+mn052|okay okay okay.|S|s|bk
+mn052|i have it here.|S|s|s
+mn052|uh it's the v.a.d. plus the baseline actually.|S|fh|fh
+mn052|i'm talking about the the m.f.c.c. plus i do a frame dropping on it.|S|s|df
+mn052|so that's like the word error rate is like four point three.|S|s|rt
+me013|four point three.|S|s|bk
+mn052|like ten point seven.|S|s|s
+me013|what's ten point seven?|Q|qw|qw
+mn052|it's a medium|D|s|s
+mn052|okay sorry.|S|s|fa
+mn052|there's a well well matched medium mismatched and a high matched.|S|s|s
+me013|uh.|B|b|b
+mn052|so i don't have the like the|D|s|s
+me013|yeah.|B|b|b
+me013|okay.|F|fg|fg
+me013|four point three.|S|s|s
+mn052|so|F|fh|fh
+me013|ten point seven.|S|s|s
+mn052|and forty.|S|s|s
+me013|and|D|%|%
+mn052|forty percent is the high mismatch.|S|s|s
+me013|okay.|S|s|bk
+mn052|and that becomes like four point three.|S|s|s
+me013|not changed.|S|s|s
+mn052|yeah.|S|s|aa
+mn052|it's like ten point one.|S|s|rt
+mn052|still the same.|S|s|na
+mn052|and the high mismatch is like eighteen point five.|S|s|s
+me013|eighteen point five.|S|s|bk
+mn052|five.|D|s|2
+me013|and what were you just describing?|Q|qw|rt
+mn052|oh the one is this one is just the baseline plus the uh wiener filter plugged into it.|S|s|bk
+me013|but where's the uh online normalization and so on?|Q|qw|qw
+mn052|oh.|S|s|bk
+mn052|okay.|S|s|bk
+mn052|so|D|%|%
+mn052|sorry.|S|s|fa
+mn052|so with the with the online normalization the performance was um ten|D|s|s
+mn052|okay so it's like four point three.|S|s|bk
+mn052|uh|F|fh|fh
+mn052|and again that's the the ten point uh four and twenty point one.|S|s|s
+mn052|that was with online normalization and l.d.a.|S|s|s
+mn052|so the well matched has like literally not changed by adding online or l.d.a. on it.|S|s|s
+mn052|but the|D|%|%
+mn052|i mean even the medium mismatch is pretty much the same.|S|s|s
+mn052|and the high mismatch was improved by twenty percent absolute.|S|s|s
+me013|okay.|S|s|bk
+me013|and what kind of number|D|qw|qw
+me013|and what are we talking about here?|Q|qw|qw
+me013|is this t.i. digits?|Q|qy|rt
+mn052|it's the it's italian.|S|s|s
+me013|or|D|qrr|qrr
+mn052|i'm talking about italian.|S|s|s
+me013|italian?|Q|qy|2
+mn052|yeah.|S|s|aa
+me013|and what did|D|qw|qw
+me013|so what was the um uh corresponding number say for um uh the alcatel system for instance?|Q|qw|qw
+mn052|huh.|B|b|b
+me013|do you know?|D|qy|qy
+mn007|yeah.|S|s|bk
+mn007|so it looks to be um|D|s|s
+mn052|you have it?|Q|qy|rt
+mn007|yep.|S|s|aa
+mn007|it's three point four.|S|s|rt
+mn007|uh eight point uh seven.|S|s|s
+mn007|and uh thirteen point seven.|S|s|s
+me013|okay.|B|b|b
+mn052|yep.|B|b|b
+me013|okay.|S|s|bk
+mn052|so thanks.|S|s|ft
+mn007|uhhuh.|B|b|b
+me013|okay.|S|s|bk
+mn052|so|F|fg|fg
+mn052|uh this is the single stage wiener filter.|S|fh|fh
+mn052|with the noise estimation was based on first ten frames.|S|s|s
+me013|uhhuh.|B|b|b
+mn052|actually i started with using the v.a.d. to estimate the noise.|S|s|s
+mn052|and then i found that it works.|S|s|s
+mn052|it doesn't work for finnish and spanish.|S|s|s
+mn052|because the v.a.d. endpoints are not good to estimate the noise.|S|s|df
+mn052|because it cuts into the speech sometimes.|S|s|df
+mn052|so i end up overestimating the noise and getting a worse result.|S|s|s
+me013|uhhuh.|B|b|b
+mn052|so it works only for italian by for using a v.a.d. to estimate noise.|S|fh|fh
+mn052|it works for italian because the vad was trained on italian.|S|s|df
+me013|uhhuh.|B|b|b
+mn052|so uh|F|fh|fh
+mn052|so this was uh|D|s|s
+mn052|and so this was giving|D|s|s
+mn052|um|F|fh|fh
+mn052|this this was like not improving a lot on this baseline of not having the wiener filter on it.|S|s|s
+mn052|and|F|fh|fh
+mn052|so|F|fh|fh
+mn052|uh i ran this stuff with one more stage of wiener filtering on it.|S|fh|fh
+mn052|but the second time what i did was i estimated the new wiener filter based on the cleaned up speech and did uh smoothing in the frequency to to reduce the variance.|S|s|s
+me013|uhhuh.|B|b|b
+mn052|i mean i have i've i've observed there are like a lot of bumps in the frequency when i do this wiener filtering.|S|s|s
+mn052|which is more like a musical noise or something.|S|s|e
+mn052|and so by adding another stage of wiener filtering the results on the speechdat-car was like|D|fh|fh
+mn052|um|F|fh|fh
+mn052|so i still don't have the word error rate.|S|s|s
+mn052|i'm sorry about it.|S|s|fa
+mn052|but the overall improvement was like fifty six point four six.|S|s|s
+mn052|this was again using ten frames of noise estimate and two stage of wiener filtering.|S|s|df
+mn052|and the rest is like the l.d.a. and the online normalization all remaining the same.|S|s|s
+mn052|uh|F|fh|fh
+mn052|so this was like compared to uh uh fifty seven is what you got by using the french telecom system.|S|s|bu
+mn052|right?|Q|qy|d
+mn007|no i don't think so.|S|s|ar
+mn007|is it on italian?|Q|qy|rt
+mn052|no.|S|s|ar
+mn052|this is over the whole speechdat-car.|S|s|nd
+mn052|so|F|fh|fh
+mn007|oh yeah fifty seven|D|s|s
+mn052|point|D|s|2
+mn007|right.|S|s|aa
+mn052|yeah.|S|s|bk
+mn052|so the new the new wiener filtering schema is like some fifty six point four six.|S|s|s
+mn052|which is like one percent still less than what you got using the french telecom system.|S|s|e
+mn007|uhhuh.|B|b|b
+mn007|uhhuh.|B|b|b
+me013|but it's a pretty similar number in any event.|S|s|bu
+mn052|it's very similar.|S|s|na
+me013|yeah.|S|s|bk
+me013|but again you're you're more or less doing what they were doing.|S|s|bu
+me013|right?|Q|qy|d
+mn052|it's it's different in a sense like|D|s|nd
+mn052|i'm actually cleaning up the cleaned up spectrum.|S|s|df
+mn052|which they're not doing.|S|s|e
+mn052|they're what they're doing is they have two stage stages of estimating the wiener filter.|S|s|s
+me013|yeah.|S|s|bk
+mn052|but the final filter what they do is they they take it to their time domain by doing an inverse fourier transform.|S|s|s
+me013|uhhuh.|B|b|b
+mn052|and they filter the original signal using that filter.|S|s|s
+mn052|which is like final filter is acting on the input noisy speech rather than on the cleaned up.|S|s|e
+mn052|so this is more like i'm doing wiener filter twice.|S|s|s
+mn052|but the only thing is that the second time i'm actually smoothing the filter and then cleaning up the cleaned up spectrum first level.|S|s|s
+me013|okay.|S|s|bk
+mn052|and so that that's that's what the difference is.|S|s|s
+mn052|and actually i tried it on the original clean i mean the original spectrum where like i the second time i estimate the filter but actually clean up the noisy speech rather the first output of the first stage.|S|s|s
+mn052|and that doesn't seems to be a giving i mean that much improvement.|S|s|s
+mn052|i i didn't run it for the whole case.|S|s|s
+mn052|and|F|fh|fh
+mn052|and what i what i tried was by using the same thing|D|s|s
+mn052|but uh|F|fh|fh
+mn052|so we actually found that the vad is very like crucial.|S|s|s
+mn052|i mean just by changing the vad itself gives you the a lot of improvement.|S|s|df
+me013|uhhuh.|B|b|b
+mn052|by instead of using the current vad if you just take up the vad output from the channel zero when instead of using channel zero and channel one.|S|s|df
+mn052|because that was the that was the reason why i was not getting a lot of improvement for estimating the noise.|S|s|df
+mn052|so i just used the channel zero vad to estimate the noise so that it gives me some reliable markers for this noise estimation.|S|s|s
+me013|what's a channel zero vad?|Q|qw|qw
+me013|i'm i'm confused about that.|S|s|s
+mn052|um|F|h|h
+mn052|so it's like|D|s|s
+mn007|so it's the close talking microphone.|S|s|s
+mn052|yeah.|S|s|aa
+mn052|the close talking without|D|s|s
+me013|oh oh oh oh.|S|s|bk
+mn052|so because the channel zero and channel one are like the same speech but only i mean the same endpoints.|S|s|s
+mn052|but the only thing is that the speech is very noisy for channel one.|S|s|s
+mn052|so you can actually use the output of the channel zero for channel one for the vad.|S|s|s
+mn052|i mean that's like a cheating method.|S|s|s
+me013|right.|S|s|bk
+me013|i mean|F|fh|fh
+me013|so are they going to|D|qy|qy
+me013|what are they doing to do?|Q|qw|qw
+me013|do we know yet?|Q|qy|rt
+me013|about as far as what they're what the rules are going to be and what we can use.|S|s|e
+mn007|yeah.|S|s|bk
+mn007|so actually i received a a new document describing this.|S|s|s
+mn052|yeah that's|D|s|s
+mn007|and what they did finally is to huh uh not to align the utterances but to perform recognition.|S|s|s
+mn007|um only on the close talking microphone.|S|fh|fh
+mn007|and to take the result of the recognition to get the boundaries uh of speech.|S|s|s
+mn052|which is the channel zero.|S|s|s
+me013|so it's not like that's being done in one place or one time.|S|s|bu
+mn007|and|D|%|%
+me013|that's that's just a rule.|S|s|bu
+me013|and we'd you you were permitted to do that?|Q|qy|bu
+me013|is is that it?|Q|qy|qy
+mn007|uh i think they will send um files.|S|h|h
+mn007|but we we don't well apparently|D|s|s
+me013|oh so they will send files.|S|s|bk
+me013|so everybody will have the same boundaries to work with?|Q|qy|d
+mn007|yeah.|S|s|aa
+mn007|yeah.|S|s|aa
+mn052|but actually their alignment actually is not seems to be improving in like on all cases.|S|s|s
+me013|okay.|S|s|bk
+mn007|oh|D|%|%
+mn007|yeah.|S|s|bk
+mn007|so what happened here is that um the overall improvement that they have with this method|D|fh|fh
+mn007|so well to be more precise what they have is they have these alignments.|S|fh|fh
+mn007|and then they drop the beginning silence and and the end silence.|S|s|s
+mn007|but they keep uh two hundred milliseconds before speech and two hundred after speech.|S|s|s
+mn007|and they keep the speech pauses also.|S|s|s
+mn007|um|F|fh|fh
+mn007|and the overall improvement over the m.f.c.c. baseline|D|s|s
+mn007|so when they just uh add this frame dropping in addition it's uh forty percent right?|S|s|bu
+me013|uhhuh.|B|b|b
+mn007|fourteen percent i mean.|S|s|bsc
+me013|uhhuh.|B|b|b
+mn052|yeah.|B|b|b
+mn007|um|F|fh|fh
+mn052|which is|D|%|%
+mn007|which is|D|%|%
+mn007|um|F|fh|fh
+mn007|which is the overall improvement.|S|s|e
+mn007|but in some cases it doesn't improve at all.|S|s|s
+mn007|like uh do you remember which case?|Q|qy|qy
+me013|uhhuh.|B|b|b
+mn052|it gives like negative well in in like some italian and t.i. digits.|S|s|s
+mn007|yeah.|S|s|aa
+mn007|some.|D|%|%
+mn052|right?|Q|qy|d
+mn007|right.|S|s|aa
+mn052|yeah.|S|s|bk
+mn052|so by using the endpointed speech actually it's worse than the baseline in some instances.|S|s|s
+mn007|huh.|B|b|b
+mn052|which could be due to the word pattern.|S|s|e
+mn007|yeah.|B|b|b
+me013|yeah.|F|fg|fg
+mn007|the other thing also is that fourteen percent is less than what you obtain using a real v.a.d.|S|s|s
+mn052|yeah our neural net.|S|s|aa
+mn007|so without cheating like this.|S|s|e
+mn052|yeah yeah.|B|b|b
+mn007|so|F|fh|fh
+mn007|uh|F|fh|fh
+mn007|so i think this shows that there is still work.|S|s|s
+mn007|uh well working on the v.a.d. is still still important i think.|S|s|ba
+me013|yeah.|S|s|aa
+mn007|uh|F|fh|fh
+me018|can i ask just a a high level question?|Q|qy|rt
+me018|can you just say like one or two sentences about wiener filtering and why why are people doing that?|Q|qy|co
+mn052|huh.|B|b|b
+me018|what's what's the deal with that?|Q|qw|qw
+mn052|okay.|S|s|bk
+mn052|so|F|fh|fh
+mn052|the wiener filter it's it's like it's like you try to minimize|D|s|s
+mn052|i mean so the basic principle of wiener filter is like you try to minimize the uh uh difference between the noisy signal and the clean signal.|S|s|s
+mn052|if you have two channels.|S|s|e
+mn052|like let's say you have a clean signal and you have an additional channel where you know what is the noisy signal.|S|s|s
+mn052|and then you try to minimize the error between these two.|S|s|s
+me018|uhhuh.|S|s|bk
+me018|uhhuh.|S|s|bk
+mn052|so that's the basic principle.|S|s|s
+mn052|and you get|D|s|s
+mn052|you can do that|D|s|s
+mn052|i mean if if you have only a noisy signal at a level which you you try to estimate the noise from the assuming that the first few frames are noise.|S|s|s
+mn052|or if you have a voice activity detector uh you estimate the noise spectrum.|S|s|s
+me018|uhhuh.|S|s|bk
+mn052|and then you|D|s|s
+me018|do you assume the noise is the same?|Q|qy|rt
+mn052|yeah.|B|b|b
+mn052|in yeah after the speech starts.|S|s|aa
+me018|uhhuh.|S|s|bk
+mn052|so|F|fh|fh
+mn052|but that's not the case in uh many many of our cases.|S|s|s
+mn052|but it works reasonably well.|S|s|df
+me018|i see.|S|s|bk
+mn052|and and then you what you do is you uh|D|s|s
+mn052|so again|D|%|%
+mn052|i can write down some of these|D|s|t3
+mn052|oh okay.|S|s|bk
+mn052|yeah.|S|s|bk
+mn052|and then you do this|D|s|s
+mn052|uh this is the transfer function of the wiener filter.|S|s|s
+mn052|so s.f. is a clean speech spectrum power spectrum.|S|s|s
+me018|uhhuh.|S|s|bk
+mn052|and n. is the noisy power spectrum.|S|s|s
+mn052|and so this is the transfer function.|S|s|s
+me013|right.|S|s|aa
+me013|actually i guess.|S|s|t1
+mn052|and|F|fh|fh
+mn052|yeah.|F|fh|fh
+me013|yeah.|D|b|b
+mn052|and then you multiply your noisy power spectrum with this.|S|s|s
+mn052|you get an estimate of the clean power spectrum.|S|s|s
+me018|i see.|S|s|bk
+me018|okay.|S|s|bk
+mn052|so|F|fh|fh
+mn052|but the thing is that you have to estimate the s.f. from the noisy spectrum what you have.|S|s|s
+mn052|so you estimate the n.f. from the initial noise portions.|S|s|s
+mn052|and then you subtract that from the current noisy spectrum to get an estimate of the s.f.|S|s|s
+mn052|so sometimes that becomes zero.|S|s|s
+mn052|because you you don't have a true estimate of the noise.|S|s|df
+mn052|so the filter will have like sometimes zeros in it.|S|s|s
+me018|uhhuh.|B|b|b
+mn052|because some frequency values will be zeroed out because of that.|S|s|df
+mn052|and that creates a lot of discontinuities across the spectrum because the filter.|S|s|s
+mn052|so|F|fh|fh
+mn052|uh|F|fh|fh
+mn052|so that's what that was just the first stage of wiener filtering that i tried.|S|s|s
+me018|so is this um basically uh similar to just regular spectral subtraction?|Q|qy|rt
+mn052|it|D|%|%
+me013|it's all pretty related.|S|s|na
+me013|yeah.|S|s|aa
+mn052|yeah.|S|s|aa
+me013|it's it's there's a there's a whole class of techniques where you try in some sense to minimize the noise.|S|s|df
+me018|uhhuh.|S|s|bk
+me013|and it's typically a mean square sense uh uh uh in in in some way.|S|s|s
+me013|and uh uh spectral subtraction is is uh uh one approach to it.|S|s|s
+me018|do people use the wiener filtering in combination with the spectral subtraction typically?|Q|qy|rt
+me018|or is are they sort of competing techniques?|Q|qrr|qrr
+mn052|not seen.|S|s|s
+mn052|they are very similar techniques.|S|s|na
+me018|yeah.|S|s|bk
+mn052|so it's like i haven't seen anybody using wiener filter with spectral subtraction.|S|s|s
+me018|oh okay.|S|s|bk
+mn007|uhhuh.|B|b|b
+me018|i see.|S|s|bk
+me018|i see.|S|s|bk
+me013|i mean in the long run you're doing the same thing.|S|s|s
+me013|but but there you make different approximations.|S|s|s
+me018|uhhuh.|B|b|b
+mn052|yeah.|B|b|b
+me013|and in spectral subtraction for instance there's a a an estimation factor.|S|s|s
+me018|huh.|B|b|b
+me013|you sometimes will figure out what the noise is.|S|s|s
+me013|and you'll multiply that noise spectrum times some constant and subtract that.|S|s|s
+me013|rather than|D|s|s
+me013|and sometimes people|D|s|s
+me013|even though this really should be in the power domain sometimes people work in the magnitude domain because it it it works better.|S|s|s
+me018|uhhuh.|B|b|b
+me013|uh you know.|F|fh|fh
+me018|so why did you choose uh wiener filtering over some other one of these other techniques?|Q|qw|qw
+mn052|uh the reason was like we had this choice of using spectral subtraction wiener filtering and there was one more thing which which i'm trying is this sub space approach.|S|h|h
+mn052|so|F|fh|fh
+mn052|stephane is working on spectral subtraction.|S|s|s
+me018|oh okay.|S|s|bk
+mn052|so i picked up|D|s|s
+me018|so you're sort of trying them all.|S|s|bu
+mn052|yeah.|S|s|aa
+mn052|we just wanted to have a few noise production compensation techniques.|S|s|df
+me018|uh.|S|s|bk
+me018|i see.|S|s|bk
+mn052|and then pick some from that.|S|s|df
+me018|oh okay.|S|s|bk
+me013|i i mean|F|fg|fg
+me018|uhhuh.|S|s|bk
+mn052|pick one.|S|s|df
+me013|yeah i mean there's carmen's working on another on the vector taylor series.|S|s|bk
+mn052|yeah v.a.d.|S|s|bk
+mn052|yeah.|B|b|b
+me013|so they were just kind of trying to cover a bunch of different things with this task and see you know what are what are the issues for each of them.|S|s|s
+me018|uh.|S|s|bk
+me018|okay.|S|s|bk
+mn052|yeah.|B|b|b
+me018|that makes sense.|S|s|bk
+me018|yeah.|B|b|b
+me018|uhhuh.|S|s|bk
+me018|uhhuh.|S|s|bk
+me013|um|F|fh|fh
+me018|cool.|S|s|ba
+me018|thanks.|S|s|ft
+mn052|so|F|fg|fg
+me013|yeah.|B|b|b
+mn052|so one of one of the things that i tried like i said was to remove those zeros in the filter by doing some smoothing of the filter.|S|s|s
+me018|uhhuh.|S|s|bk
+mn052|like you estimate the edge of square.|S|s|s
+mn052|and then you do a smoothing across the frequency so that those zeros get like flattened out.|S|s|s
+me018|uhhuh.|S|s|bk
+mn052|and that doesn't seems to be improving by trying it on the first time.|S|s|s
+mn052|so what i did was like i did this.|S|s|s
+mn052|and then you i plugged in the one more the same thing but with the smoothed filter the second time.|S|s|s
+mn052|and that seems to be working.|S|s|s
+me018|uhhuh.|B|b|b
+me018|uhhuh.|B|b|b
+mn052|so that's where i got like fifty six point five percent improvement on speechdat-car with that.|S|s|s
+mn052|and|F|fh|fh
+mn052|so the other thing what i tried was i used still the ten frames of noise estimate.|S|s|s
+mn052|but i used this channel zero vad to drop the frames.|S|s|s
+mn052|so i'm not still not estimating.|S|s|s
+mn052|and that has taken the performance to like sixty seven percent in speechdat-car.|S|s|s
+mn052|which is which which like sort of shows that by using a proper vad you can just take it to further better levels.|S|s|e
+mn052|and|F|fh|fh
+mn052|so|F|fh|fh
+me018|so that's sort of like you know best case performance?|Q|qy|bu
+mn052|yeah.|S|s|aa
+mn052|so far i've seen sixty seven|D|s|s
+mn052|i mean no.|S|s|ar
+mn052|i haven't seen like sixty seven percent.|S|s|s
+mn052|and uh|F|fh|fh
+mn052|using the channel zero vad to estimate the noise also seems to be improving.|S|s|s
+mn052|but i don't have the results for all the cases with that.|S|s|s
+mn052|so i used channel zero vad to estimate noise as a lesser 2x frame.|S|s|s
+mn052|which is like everywhere i use the channel zero v.a.d.|S|s|e
+mn052|and that seems to be the best combination uh rather than using a few frames to estimate and then drop a channel.|S|s|s
+me013|so i'm i'm still a little confused.|S|s|s
+me013|is that channel zero information going to be accessible during this test?|Q|qy|bu
+mn052|nnn|F|h|h
+mn052|no.|S|s|ar
+mn052|this is just to test whether we can really improve by using a better vad.|S|s|df
+me013|uhhuh.|B|b|b
+me013|uhhuh.|B|b|b
+mn052|so|F|fh|fh
+mn052|i mean so this is like the noise compensation is fixed.|S|s|s
+mn007|uhhuh.|B|b|b
+mn052|but you make a better decision on the endpoints.|S|s|s
+mn052|that's like seems to be|D|s|s
+me013|uhhuh.|B|b|b
+mn052|so we|D|s|s
+mn052|so i mean which which means like by using this technique what we improve just the vad.|S|s|s
+me013|yes.|B|b|b
+mn052|we can just take the performance by another ten percent or better.|S|s|s
+me013|okay.|S|s|bk
+mn052|so that that was just the uh reason for doing that experiment.|S|s|s
+mn052|and um|F|fh|fh
+mn052|yeah but this all these things i have to still try it on the t.i. digits.|S|fg|fg
+mn052|which is like i'm just running.|S|s|e
+mn052|and there seems to be not improving a a lot on the t.i. digits.|S|s|s
+mn052|so i'm like investigating that why it's not.|S|s|s
+mn052|and|F|fh|fh
+mn052|um|F|fh|fh
+mn052|um|F|fh|fh
+mn052|well after that.|S|s|t1
+mn052|so|F|fh|fh
+mn052|uh|F|fh|fh
+mn052|so the other the other thing is like i've been i'm doing all this stuff on the power spectrum.|S|s|s
+mn052|so|F|fh|fh
+mn052|tried this stuff on the mel as well.|S|s|s
+mn052|mel and the magnitude and mel magnitude and all those things.|S|s|e
+mn052|but it seems to be the power spectrum seems to be getting the best result.|S|s|s
+mn052|so one of one of reasons i thought like doing the averaging after the filtering using the mel filter bank that seems to be maybe helping rather than trying it on the mel filter filtered outputs.|S|s|s
+me013|uhhuh.|B|b|b
+me013|uhhuh.|B|b|b
+mn052|so just|D|s|s
+me013|makes sense.|S|s|s
+mn052|yeah.|S|s|bk
+mn052|that's that's the only thing that i could think of why why it's giving improvement on the mel.|S|s|s
+mn052|and yep.|F|fh|fh
+mn052|so that's it.|S|s|s
+me013|uh how about the subspace stuff?|Q|qw|rt
+mn052|subspace i'm i'm like that's still in a little bit in the back burner.|S|s|ng
+mn052|because i've been putting a lot effort on this to make it work on tuning things and other stuff.|S|s|df
+me013|okay.|D|b|b
+mn052|so|F|fh|fh
+mn052|i was like going parallely.|S|s|s
+mn052|but not much of improvement.|S|s|s
+mn052|i'm just have some skeletons ready.|S|s|s
+mn052|need some more time for it.|S|s|s
+me013|okay.|D|b|b
+mn052|huh.|F|fh|fh
+me018|that it?|Q|qy|d
+mn052|yep.|S|s|aa
+mn052|yep.|S|s|aa
+me018|cool.|S|s|ba
+me018|do you want to go stephane?|Q|qy|co
+mn007|uh yeah.|S|s|aa
+mn007|so i've been uh working still on the spectral subtraction.|S|s|s
+mn007|um|F|fh|fh
+mn007|so to to remind you a little bit of of what i did before is just to apply some spectral subtraction with an overestimation factor.|S|s|s
+mn007|also to get um an estimate of the noise uh spectrum.|S|s|rt
+mn007|and subtract this estimation of the noise spectrum from the uh signal spectrum but subtracting more when the s.n.r. is is uh low.|S|s|s
+mn007|which is a technique that it's often used.|S|s|e
+me018|subtracting more meaning|D|qw|d
+mn007|so you overestimate the noise spectrum.|S|s|s
+mn007|you multiply the noise spectrum by a factor uh which depends on the s.n.r.|S|s|s
+me018|oh okay.|S|s|bk
+mn007|so above twenty d.b.|S|s|s
+me018|i see.|S|s|bk
+mn007|it's one so you just subtract the noise.|S|s|s
+me018|uhhuh.|B|b|b
+mn007|and then it's|D|s|s
+mn007|generally well i use actually a linear uh function of the s.n.r.|S|s|s
+me018|uhhuh.|B|b|b
+mn007|which is bounded to like two or three when the s.n.r. is below zero d.b.|S|s|e
+me018|uhhuh.|B|b|b
+me018|uhhuh.|B|b|b
+mn007|um doing just this uh either on the f.f.t. bins or on the mel bands um doesn't yield any improvement.|S|fh|fh
+me013|oh.|D|b|b
+me013|um uh what are you doing with negative uh powers?|Q|fg|fg
+mn007|yeah.|S|s|bk
+mn007|so there is also a threshold of course.|S|s|s
+mn007|because after subtraction you can have negative energies.|S|s|s
+me018|uhhuh.|B|b|b
+mn007|and|D|%|%
+mn007|so what i i just do is to put uh to to add to put the threshold first and then to add a small amount of noise.|S|s|s
+mn007|which right now is speech shaped.|S|s|e
+mn007|um|F|fh|fh
+me018|speech shaped?|Q|qw|d
+mn007|yeah.|S|s|bk
+mn007|so it's it has the overall overall energy.|S|s|s
+mn007|uh|F|fh|fh
+mn007|it has the overall power spectrum of speech.|S|s|s
+mn007|so with a bump around one kilohertz.|S|s|s
+me018|so when when you talk about there being something less than zero after subtracting the noise is that at a particular frequency bin?|Q|qy|rt
+mn007|uhhuh.|B|b|b
+mn007|yeah.|S|s|aa
+mn007|there can be frequency bins with negative values.|S|s|na
+me018|okay.|S|s|bk
+me018|and so when you say you're adding something that has the overall shape of speech is that in a in a particular frequency bin?|Q|qy|rt
+me018|or you're adding something across all the frequencies when you get these negatives?|Q|qrr|d
+mn007|for each frequencies i i'm adding some uh noise.|S|s|na
+mn007|but the the amount of the amount of noise i add is not the same for all the frequency bins.|S|s|df
+me018|uh.|S|s|bk
+me018|okay.|S|s|bk
+me018|i gotcha.|S|s|bk
+me018|right.|S|s|bk
+mn007|uh right now i don't think if it makes sense to add something that's speech shaped.|S|s|s
+mn007|because then you have silence portion that have some spectra similar to the the overall speech spectra.|S|s|df
+me018|uhhuh.|B|b|b
+mn007|but|D|%|%
+mn007|yeah.|F|fh|fh
+mn007|so this is something i can still work on.|S|s|s
+me018|so what does that mean?|Q|fg|fg
+mn007|but|D|%|%
+mn007|huh.|B|b|b
+me018|i'm trying to understand what it means when you do the spectral subtraction and you get a negative.|S|s|s
+me018|it means that at that particular frequency range you subtracted more energy than there was actually|D|s|bu
+mn007|that means that|D|s|s
+mn007|uhhuh.|B|b|b
+mn007|yeah.|B|b|b
+mn007|so so yeah you have an an estimation of the noise spectrum.|S|fg|fg
+mn007|but sometimes of course it's as the noise is not perfectly stationary.|S|s|s
+mn007|sometimes this estimation can be uh too small.|S|s|rt
+mn007|so you don't subtract enough.|S|s|s
+mn007|but sometimes it can be too large also if if the noise uh energy in this particular frequency band drops for some reason.|S|s|s
+me018|uhhuh.|B|b|b
+me018|uhhuh.|B|b|b
+mn007|huh.|F|fh|fh
+me018|so in in an ideal word world if the noise were always the same then when you subtracted it the worst that you would get would be a zero.|S|s|bu
+me018|i mean the lowest you would get would be a zero.|S|s|s
+me013|right.|B|b|b
+me018|because if there was no other energy there you're just subtracting exactly the noise.|S|s|bu
+mn007|uhhuh.|B|b|b
+mn007|yeah.|S|s|aa
+me013|yep there's all there's all sorts of uh deviations from the ideal here.|S|s|bk
+me013|i mean for instance you're you're talking about the signal and noise um at a particular point.|S|s|df
+me013|and even if something is sort of stationary in terms of statistics there's no guarantee that any particular instantiation or piece of it is exactly a particular number or bounded by a particular range.|S|s|s
+mn007|uhhuh.|B|b|b
+me013|so you're figuring out from some chunk of of of the signal what you think the noise is.|S|s|s
+me013|then you're subtracting that from another chunk.|S|s|s
+me018|uhhuh.|B|b|b
+me013|and there's absolutely no reason to think that you'd know that it wouldn't uh be negative in some places.|S|s|s
+mn007|uhhuh.|B|b|b
+mn007|huh.|B|b|b
+me013|uh on the other hand that just means that in some sense you've made a mistake.|S|fh|fh
+me013|because you certainly have subtracted a bigger number than is due to the noise.|S|s|df
+me018|uhhuh.|B|b|b
+me013|um also we speak the whole where all this stuff comes from is from an assumption that signal and noise are uncorrelated.|S|fh|fh
+me013|and that certainly makes sense in in in a statistical interpretation that you know over um all possible realizations that they're uncorrelated.|S|s|s
+me018|uhhuh.|B|b|b
+me013|or assuming uh ergodicity that that um across time uh it's uncorrelated.|S|s|s
+me013|but if you just look at a quarter second uh and you cross multiply the two things uh you could very well uh end up with something that sums to something that's not zero.|S|s|s
+me013|so in fact the two signals could have some relation to one another.|S|s|s
+me013|and so there's all sorts of deviations from ideal in this.|S|s|s
+me013|and and given all that you could definitely end up with something that's negative.|S|s|s
+me013|but if down the road you're making use of something as if it is a power spectrum um then it can be bad to have something negative.|S|s|s
+me013|now the other thing i wonder about actually is what if you left it negative?|Q|qw|qw
+me013|what happens?|Q|qw|qw
+me013|i mean because|D|s|df
+mn052|is that the log?|Q|qy|qy
+me013|um are you taking the log before you add them up to the mel?|Q|fh|fh
+mn052|after that.|S|s|nd
+mn052|no.|S|s|ar
+mn052|after.|S|s|nd
+me013|right.|S|s|bk
+me013|so the thing is i wonder how if you put your thresholds after that i wonder how often you would end up with uh with negative values.|S|s|s
+mn052|but you will|D|s|s
+mn052|but you end up reducing some neighboring frequency bins in the average right?|S|s|bu
+mn052|when you add the negative to the positive value.|S|s|e
+mn052|which is the true estimate.|S|s|e
+me013|yeah.|S|s|aa
+me013|but nonetheless uh you know these are it's another kind of smoothing right?|S|s|ng
+me013|that you're doing.|S|s|e
+mn052|yeah.|S|s|aa
+me013|right.|B|b|b
+me013|so you've done your best shot at figuring out what the noise should be.|S|s|s
+me013|and now then you've subtracted it off.|S|s|s
+me013|and then after that instead of instead of uh uh leaving it as is and adding things adding up some neighbors you artificially push it up.|S|s|s
+mn052|huh.|B|b|b
+me013|which is you know it's there's no particular reason that that's the right thing to do either.|S|s|s
+me013|right?|Q|qy|d
+mn052|yeah yeah.|S|s|aa
+me013|so um|F|fh|fh
+me013|uh|F|fh|fh
+me013|in fact what you'd be doing is saying well we're we're we're going to definitely diminish the effect of this frequency in this little frequency bin in the in the overall mel summation.|S|s|s
+me013|it's just a thought.|S|s|bd
+me013|i i don't know if it would be|D|s|no
+mn052|yeah.|B|b|b
+me018|sort of the opposite of that would be if if you find out you're going to get a negative number you don't do the subtraction for that bin.|S|s|s
+mn052|uhhuh.|B|b|b
+mn052|that is true.|S|s|aa
+me013|nnn yeah.|S|h|h
+mn007|uhhuh.|B|b|b
+me018|that would be almost the opposite.|S|s|bu
+me013|although|D|%|%
+me018|right?|Q|qy|d
+me018|instead of leaving it negative you don't do it.|S|s|bu
+me018|if your if your subtraction's going to result in a negative number you you don't do subtraction in that.|S|s|bu
+me013|yeah.|S|s|aa
+me013|but that means that in a situation where you thought that that the bin was almost entirely noise you left it.|S|s|s
+me018|yeah.|S|s|bk
+mn052|we just|D|%|%
+me013|uh|F|fh|fh
+me018|yeah i'm just saying that's like the opposite.|S|s|df
+mn052|yeah.|B|b|b
+me013|yeah.|S|s|aa
+me013|well yeah that's that's the opposite.|S|s|na
+me018|yeah.|F|fh|fh
+mn007|uhhuh.|B|b|b
+me013|yeah.|S|s|aa
+mn007|and yeah.|F|fg|fg
+mn007|some people also if it's a negative value they uh re compute it using interpolation from the edges and bins.|S|s|s
+mn052|for frames frequency bins.|S|s|s
+me013|yeah.|B|b|b
+mn007|well there are different things that you can do.|S|s|e
+me018|oh.|S|s|bk
+me013|people can also uh reflect it back up and essentially do a full wave rectification instead of a instead of half wave.|S|s|s
+me018|oh.|S|s|bk
+me013|but it was just a thought that that it might be something to try.|S|s|df
+mn007|uhhuh.|B|b|b
+mn007|uhhuh.|B|b|b
+mn007|yep.|S|s|bk
+mn007|well actually i tried something else based on this um is to to put some smoothing.|S|s|s
+mn007|um because it seems to to help or it seems to help the wiener filtering.|S|fh|fh
+me013|uhhuh.|B|b|b
+mn007|and|F|fh|fh
+mn007|huh|F|fh|fh
+mn007|so what i did is uh some kind of nonlinear smoothing.|S|s|s
+mn007|actually i have a recursion that computes|D|s|s
+mn007|yeah let me go back a little bit.|S|s|bk
+mn007|actually when you do spectral subtraction you can uh find this this equivalent in the in the spectral domain.|S|s|s
+mn007|you can uh compute|D|s|s
+mn007|you can say that your spectral subtraction is a filter.|S|s|s
+mn007|um and the gain of this filter is the um signal energy minus what you subtract divided by the signal energy.|S|fh|fh
+mn007|and this is a gain that varies over time and you know of course uh depending on the on the noise spectrum and on the speech spectrum.|S|s|s
+mn007|and|F|fh|fh
+mn007|what happen actually is that during low s.n.r. values the gain is close to zero.|S|s|s
+mn007|but it varies a lot.|S|s|e
+mn007|huh|F|fh|fh
+mn007|and this this is the cause of musical noise and all these the the fact you we go below zero one frame and then you can have an energy that's above zero.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|and|D|%|%
+mn007|huh.|F|fh|fh
+mn007|so the smoothing is i did a smoothing actually on this gain uh trajectory.|S|s|rt
+mn007|but it's the smoothing is nonlinear in the sense that i tried to not smooth if the gain is high.|S|s|rt
+mn007|because in this case we know that uh the estimate of the gain is correct.|S|s|df
+mn007|because we we are not close to to to zero.|S|s|df
+mn007|um and to do more smoothing if the gain is low.|S|fh|fh
+mn007|huh|F|fh|fh
+mn007|um|F|fh|fh
+mn007|yeah.|F|fh|fh
+mn007|so|F|fh|fh
+mn007|well.|F|fh|fh
+mn007|basically that's this idea.|S|s|s
+mn007|and it seems to give pretty good results.|S|s|s
+mn007|uh although i've just just tested on italian and finnish.|S|fh|fh
+mn007|and on italian it seems my result seems to be a little bit better than the wiener filtering.|S|s|s
+mn052|uhhuh.|S|s|aa
+mn007|right?|Q|qy|d
+mn052|yeah the one you showed yesterday.|S|s|aa
+mn052|right?|Q|qy|d
+me013|yeah.|B|b|b
+mn007|uh i don't know if you have these the detailed improvements for italian finnish and spanish there.|S|fh|fh
+mn007|or you have just have your own.|S|s|s
+mn052|no i don't have for each.|S|s|ar
+mn052|i i just just have the final number here.|S|s|df
+mn007|uhhuh.|B|b|b
+me013|so these numbers he was giving before with the four point three and the ten point one and so forth those were italian right?|S|s|bu
+mn052|yeah yeah yeah.|S|s|aa
+me013|yeah.|B|b|b
+mn007|uh|D|%|%
+mn052|so so no.|S|fg|fg
+mn052|i actually didn't give you the number which is the final one.|S|s|df
+mn007|uh no.|S|s|ar
+mn007|we've|D|%|%
+mn052|which is after two stages of wiener filtering.|S|s|e
+mn052|i mean that was i just well like the overall improvement is like fifty six point five.|S|s|s
+me013|right.|S|s|bk
+mn052|so|F|fh|fh
+mn007|uhhuh.|B|b|b
+mn052|i mean his number is still better than what i got in the two stages of wiener filtering.|S|s|s
+mn007|yeah.|B|b|b
+me013|right.|S|s|bk
+mn007|on italian.|S|s|2
+mn007|but on finnish it's a little bit worse apparently.|S|s|s
+mn052|uhhuh.|B|b|b
+mn007|um|F|fh|fh
+me013|but do you have numbers in terms of word error rates on on italian ? so just so you have some sense of reference?|Q|qy|rt
+mn007|yeah.|S|s|aa
+mn007|uh so it's uh three point uh eight.|S|s|na
+me013|uhhuh.|B|b|b
+mn007|am i right?|Q|qy|rt
+mn052|oh okay.|S|s|bk
+mn052|yeah right.|S|s|aa
+mn052|okay.|S|s|bk
+mn007|and then uh uh nine point uh one.|S|s|rt
+me013|uhhuh.|B|b|b
+mn007|and finally uh sixteen point five.|S|s|s
+me013|and this is um spectral subtraction plus what?|Q|qw|d
+mn007|plus plus nonlinear smoothing.|S|s|s
+mn007|well it's the system it's exactly the the same system as sunil tried.|S|s|df
+me013|online normalization and l.d. a?|Q|qy|bu
+mn007|but|D|%|%
+me013|yeah.|S|s|bk
+mn007|yeah.|S|s|aa
+me013|yeah.|B|b|b
+mn007|but instead of double stage wiener filtering it's it's this smoothed spectral subtraction.|S|s|s
+mn007|um yeah.|F|fh|fh
+me013|right.|B|b|b
+me018|what is it the um france telecom system uses?|Q|qw|qw
+me018|for do they use spectral subtraction or wiener filtering?|Q|qr|qr
+me018|or|F|fh|fh
+mn052|they use spectral subtraction.|S|s|s
+mn052|right.|S|s|aa
+mn007|for what?|Q|qw|d
+mn052|french telecom.|S|s|s
+mn007|it it's wiener filtering.|S|s|nd
+mn052|oh it's it's wiener filtering.|S|s|bk
+mn007|am i right?|Q|qy|qy
+mn052|sorry.|S|s|ft
+mn007|well it's some kind of wiener filtering.|S|s|aap
+me018|oh.|S|s|bk
+mn052|yeah filtering.|S|s|na
+mn052|yeah it's not exactly wiener filtering.|S|s|na
+mn052|but some variant of wiener filtering.|S|s|df
+mn007|yeah.|B|b|b
+me018|i see.|S|s|bk
+me013|yeah.|B|b|b
+mn052|yeah.|D|b|b
+me013|plus uh i guess they have some sort of cepstral normalization as well.|S|s|s
+mn052|they have like|D|s|s
+mn007|uhhuh.|B|b|b
+mn052|yeah.|S|s|bk
+mn052|the just noise compensation technique is a variant of wiener filtering.|S|s|s
+mn052|plus they do some some smoothing techniques on the final filter.|S|s|s
+mn052|the they actually do the filtering in the time domain.|S|s|s
+me018|huh.|B|b|b
+mn007|yeah.|B|b|b
+mn052|so they would take this h.f. squared back taking inverse fourier transform.|S|s|s
+me018|huh.|B|b|b
+mn052|and they convolve the time domain signal with that.|S|s|s
+me018|oh i see.|S|s|bk
+mn052|and they do some smoothing on that final filter impulse response.|S|s|s
+me018|huh.|B|b|b
+mn007|but they also have two two different smoothing.|S|s|s
+mn007|one in the time domain.|S|s|e
+mn052|i mean i'm i'm.|D|s|s
+mn007|and one in the frequency domain by just taking the first um coefficients of the impulse response.|S|s|e
+mn052|but|D|%|%
+mn007|so basically it's similar.|S|s|s
+mn007|i mean what you did it's similar.|S|s|s
+mn052|it's similar in the smoothing.|S|s|2
+mn007|because you have also two two kind of smoothing.|S|s|df
+mn052|and|D|%|%
+mn007|one in the time domain.|S|s|e
+mn052|yeah.|B|b|b
+mn007|and one in the frequency domain.|S|s|e
+mn052|yeah.|B|b|b
+mn052|the frequency domain.|S|s|2
+mn007|yeah.|F|fh|fh
+me018|does the smoothing in the time domain help|D|qy|qy
+mn007|um|F|fh|fh
+me018|well do you get this musical noise stuff with wiener filtering?|Q|qy|rt
+me018|or is that only with uh spectral subtraction?|Q|qrr|qrr
+mn052|no you get it with wiener filtering also.|S|s|ar
+mn007|yeah.|B|b|b
+me018|does the smoothing in the time domain help with that?|Q|qy|qy
+me018|or some other smoothing?|Q|qrr|qrr
+mn052|oh no.|S|s|ar
+mn052|you still end up with zeros in the spectrum.|S|s|df
+mn007|yeah.|B|b|b
+mn052|sometimes.|S|s|e
+me013|i mean it's not clear that these musical noises hurt us in recognition.|S|s|no
+me018|huh.|B|b|b
+me013|we don't know if they do.|S|s|s
+me018|huh.|B|b|b
+mn052|yeah.|B|b|b
+me013|i mean they they sound bad.|S|s|s
+me013|but we're not listening to it usually.|S|s|s
+me018|uhhuh.|B|b|b
+mn052|yeah i know.|D|s|s
+mn007|uhhuh.|B|b|b
+me018|huh.|B|b|b
+mn007|uh actually the the smoothing that i did do here reduced the musical noise.|S|s|nd
+mn007|well it|D|%|%
+mn052|uhhuh.|B|b|b
+mn007|huh.|F|fh|fh
+mn052|yeah.|B|b|b
+mn052|yeah.|B|b|b
+mn052|the|D|%|%
+mn007|well i cannot you cannot hear|D|s|df
+mn007|well actually what i did not say is that this is not in the f.f.t. bins.|S|s|df
+mn007|this is in the mel frequency bands.|S|s|df
+mn007|um|F|fh|fh
+mn007|so|F|fh|fh
+mn007|it could be seen as a a a smoothing in the frequency domain because i used in mel bands in addition and then the other phase of smoothing in the time domain.|S|s|s
+mn007|huh.|F|fh|fh
+mn007|but when you look at the spectrogram if you don't have any smoothing you clearly see like in silence portions and at the beginning and end of speech you see spots of high energy randomly distributed over the the spectrogram.|S|s|df
+me018|uhhuh.|B|b|b
+me018|uhhuh.|B|b|b
+mn007|um|F|fh|fh
+me018|that's the musical noise?|Q|qy|bu
+mn007|which is musical noise.|S|s|e
+me018|uhhuh.|B|b|b
+mn007|yeah.|S|s|aa
+mn007|if if it if you listen to it|D|s|s
+mn007|uh if you do this in the f.f.t. bins then you have spots of energy randomly distributing.|S|s|s
+mn007|and if you if you re synthesize these spot sounds as like sounds.|S|s|s
+me018|uhhuh.|B|b|b
+mn007|uh|F|fh|fh
+mn007|and|F|fh|fh
+me013|well none of these systems by the way have i mean you both are are working with um our system that does not have the neural net.|S|s|bu
+me013|right?|Q|qy|d
+mn007|uhhuh.|S|s|aa
+mn052|yep.|S|s|aa
+mn052|yeah.|S|s|aa
+me013|okay.|S|s|bk
+mn007|yeah.|S|s|aa
+me013|so one would hope presumably that the neural net part of it would would improve things further as as they did before.|S|s|bu
+mn007|yeah.|S|s|aa
+mn007|um|F|fh|fh
+mn007|yeah.|S|s|aa
+mn007|although if if we um look at the result from the proposals one of the reason uh the system with the neural net was um more than well around five percent better is that it was much better on highly mismatched condition.|S|s|ng
+mn007|i'm thinking for instance on the t.i. digits trained on clean speech and tested on noisy speech.|S|s|df
+me013|uhhuh.|B|b|b
+mn007|uh for this case the system with the neural net was much better.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|but not much on the in the other cases.|S|s|s
+me013|yeah.|B|b|b
+mn007|and|F|fh|fh
+mn007|if we have no uh spectral subtraction or wiener filtering um the system is uh we thought the neural neural network is much better than before.|S|s|s
+mn007|even in these cases of high mismatch.|S|s|e
+mn007|so maybe the neural net will help less.|S|s|s
+mn007|but um|F|fh|fh
+me013|maybe.|S|s|am
+me018|could you train a neural net to do spectral subtraction?|Q|qy|rt
+me013|yeah.|S|s|aa
+me013|it could do a nonlinear spectral subtraction.|S|s|na
+mn007|uhhuh.|B|b|b
+me013|but i don't know if it|D|s|no
+me013|i mean you have to figure out what your targets are.|S|s|df
+me018|yeah.|S|s|bk
+me018|i was thinking if you had a clean version of the signal and and a noisy version and your targets were the m.f. uh you know whatever frequency bins|D|s|s
+mn007|uhhuh.|B|b|b
+me013|right.|S|s|bk
+mn007|uhhuh.|B|b|b
+me013|yeah well that's not so much spectral subtraction then.|S|s|bk
+mn007|uhhuh.|B|b|b
+me013|but but but it's but at any rate yeah people|D|s|s
+me013|uh|F|fh|fh
+me018|people do that?|Q|qy|2
+me013|yeah.|S|s|aa
+me013|in fact we had visitors here who did that.|S|s|na
+me013|i think when you were here way back when.|S|s|s
+mn007|uhhuh.|B|b|b
+me018|huh.|S|s|bk
+me013|uh|F|fh|fh
+me013|people done lots of experimentation over the years with training neural nets.|S|s|s
+me013|and it's not a bad thing to do.|S|s|s
+me013|it's another approach.|S|s|s
+me018|huh.|B|b|b
+mn007|uhhuh.|B|b|b
+me013|i mean it's it um|D|%|%
+me013|the objection everyone always raises which has some truth to it is that um it's good for mapping from a particular noise to clean.|S|s|s
+me013|but then you get a different noise.|S|s|s
+me018|uhhuh.|B|b|b
+me013|and the experiments we saw that visitors did here showed that it there was at least some um gentleness to the degradation when you switched to different noises.|S|s|s
+me013|it did seem to help.|S|s|s
+me013|so that you're right.|S|s|aa
+me013|that's another another way to go.|S|s|na
+me018|how did it compare on i mean for for good cases where it it uh stuff that it was trained on?|Q|qw|qw
+me018|did it do pretty well?|Q|qy|rt
+me013|oh yeah.|S|s|aa
+me013|it did very well.|S|s|na
+me018|huh.|B|b|b
+me013|yeah.|F|fh|fh
+me018|huh.|B|b|b
+mn007|uhhuh.|B|b|b
+me013|um|F|fh|fh
+me013|but to some extent that's kind of what we're doing.|S|s|s
+me013|i mean we're not doing exactly that.|S|s|df
+me013|we're not trying to generate good examples.|S|s|df
+me013|but by trying to do the best classifier you possibly can for these little phonetic categories|D|s|df
+me018|uhhuh.|S|s|bk
+me018|you could say it's sort of built in.|S|s|2
+me013|it's|D|%|%
+me013|yeah.|S|s|aa
+me013|it's kind of built into that.|S|s|na
+me018|huh.|B|b|b
+me013|and and that's why we have found that it it does help.|S|s|s
+me018|uhhuh.|B|b|b
+me013|um|F|fh|fh
+me013|so|F|fh|fh
+me013|um|F|fh|fh
+me013|yeah i mean we'll just have to try it.|S|s|bk
+me013|but i i would i would i would imagine that it will help some.|S|s|df
+me013|i mean it we'll just have to see whether it helps more or less the same.|S|s|s
+me013|but i would imagine it would help some.|S|s|s
+mn007|uhhuh.|B|b|b
+me013|so in any event all of this i was just confirming that all of this was with a simpler system.|S|s|s
+mn007|yeah.|S|s|aa
+mn007|yeah.|S|s|aa
+me013|okay?|Q|qy|d
+mn007|um|F|fg|fg
+mn007|yeah so this is the um|D|s|bk
+mn007|well actually this was kind of the first try with this spectral subtraction plus smoothing.|S|s|rt
+me013|uhhuh.|B|b|b
+mn007|and i was kind of excited by the result.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|um then i started to optimize the different parameters.|S|fh|fh
+mn007|and|F|fh|fh
+mn007|uh the first thing i tried to optimize is the um time constant of the smoothing.|S|s|s
+mn007|and it seems that the one that i chose for the first experiment was the optimal one.|S|s|s
+mn007|so uh|F|fh|fh
+me013|it's amazing how often that happens.|S|s|ba
+mn007|um|F|fh|fh
+mn007|so this is the first thing.|S|s|s
+mn007|um|F|fh|fh
+mn007|yeah another thing that i it's important to mention is um that this has this has some additional latency.|S|s|bk
+mn007|um|F|fh|fh
+mn007|because when i do the smoothing uh it's a recursion that estimated the means so of the of the gain curve.|S|s|df
+mn007|and|F|fh|fh
+mn007|this is a filter that has some latency.|S|s|s
+mn007|and i noticed that it's better if we take into account this latency.|S|s|ba
+mn007|so instead of using the current estimated mean to uh subtract the current frame it's better to use an estimate that's somewhere in the future.|S|s|cs
+mn007|um|F|fh|fh
+me018|and that's what causes the latency?|Q|qw|d
+mn007|yeah.|S|s|aa
+me013|uhhuh.|B|b|b
+me018|okay.|S|s|bk
+mn052|you mean the the mean is computed based on some frames in the future also?|Q|qy|bu
+mn052|or or no?|Q|qrr|qrr
+mn007|it's the recursion.|S|s|s
+mn007|so it's it's the center recursion.|S|s|s
+mn007|right?|Q|qy|d
+mn052|uhhuh.|S|s|aa
+mn007|um|F|fh|fh
+mn007|and the latency of this recursion is around fifty milliseconds.|S|s|s
+me013|one five?|Q|qy|bu
+me013|one five?|Q|qy|bu
+me013|five zero?|Q|qy|bu
+mn007|five zero.|S|s|m
+mn007|yeah.|S|s|aa
+me013|five zero.|S|s|bk
+mn007|um|F|fh|fh
+me013|yeah.|S|s|bk
+mn007|huh|F|fh|fh
+mn052|i'm sorry.|S|s|ft
+mn052|why why is that delay coming?|Q|qw|rt
+mn052|like you estimate the mean?|Q|qy|d
+mn007|yeah.|S|s|aa
+mn007|the mean estimation has some delay.|S|s|df
+mn007|right?|Q|qy|d
+mn007|i mean the the filter that that estimates the mean has a time constant.|S|s|df
+mn052|oh yeah.|B|b|b
+mn052|it isn't|D|%|%
+mn052|okay.|S|s|bk
+mn052|so it's like it looks into the future also.|S|s|bu
+mn007|yeah.|S|s|aa
+mn052|okay.|S|s|bk
+me013|what if you just look into the past?|Q|qw|qw
+mn007|it's uh not as good.|S|s|s
+mn007|it's not bad.|S|s|s
+me013|how by how much?|Q|qw|d
+mn007|um it helps a lot over the the baseline.|S|fh|fh
+mn007|but huh|F|fh|fh
+me013|by how much?|Q|qw|d
+mn007|it|D|%|%
+mn007|it's around three percent um relative.|S|s|s
+me013|worse.|S|s|bu
+mn007|yeah.|S|s|aa
+mn007|yeah.|F|fh|fh
+mn007|um|F|fh|fh
+me013|huh.|B|b|b
+mn007|huh|F|fh|fh
+mn007|so uh|F|fh|fh
+me013|it's depending on how all this stuff comes out.|S|s|s
+me013|we may or may not be able to add any latency.|S|s|s
+mn007|yeah but|D|s|aa
+mn007|yeah.|S|s|aa
+mn007|so yeah it depends.|S|s|na
+mn007|uh actually it's it's it's three percent.|S|s|s
+mn007|right.|D|fh|fh
+mn007|huh.|F|fh|fh
+mn007|yeah.|S|s|bk
+mn007|but i don't think we have to worry too much on that right now while you|D|s|s
+mn007|uhhuh.|F|fh|fh
+me013|um|F|fg|fg
+mn007|so|D|%|%
+me013|yeah i mean i think the only thing is that|D|s|bk
+me013|i would worry about it a little.|S|s|s
+mn007|uhhuh.|B|b|b
+me013|because if we completely ignore latency and then we discover that we really have to do something about it we're going to be find ourselves in a bind.|S|s|df
+mn007|uhhuh.|B|b|b
+me013|so um|F|fh|fh
+me013|you know maybe you could make it twenty five.|S|s|cs
+mn007|yeah.|S|s|aa
+me013|you know what i mean?|Q|qy|d
+mn007|oh yes.|S|s|aa
+me013|yeah just you know just be be a little conservative.|S|s|cs
+me013|because we may end up with this crunch where all of a sudden we have to cut the latency in half or something.|S|s|df
+mn007|uhhuh.|B|b|b
+mn007|yeah.|B|b|b
+me013|okay.|F|fh|fh
+mn007|um|F|fg|fg
+mn007|so|F|fg|fg
+mn007|yeah there are other things in the um algorithm that i didn't uh a lot yet.|S|s|bk
+me018|oh.|S|s|bk
+mn007|which|D|%|%
+me018|sorry.|S|s|ft
+me018|a quick question just about the latency thing.|S|s|s
+me018|if if there's another part of the system that causes a latency of a hundred milliseconds is this an additive thing?|Q|qy|rt
+me018|or or is yours hidden in that?|Q|qrr|qrr
+mn007|uhhuh.|B|b|b
+mn007|no.|S|s|ar
+me018|uh|F|fh|fh
+mn007|it's it's added.|S|s|nd
+me018|it's additive.|S|s|bk
+mn007|uhhuh.|B|b|b
+me018|okay.|S|s|bk
+mn052|we can|D|%|%
+mn052|okay.|S|s|bk
+mn052|we can do something in parallel also in some like some cases like if you wanted to do voice activity detection.|S|s|s
+me018|uhhuh.|S|s|bk
+mn052|and we can do that in parallel with some other filtering you can do.|S|s|s
+mn007|huh.|B|b|b
+mn052|so you can make a decision on that voice activity detection.|S|s|s
+mn052|and then you decide whether you want to filter or not.|S|s|s
+mn007|yeah.|B|b|b
+mn052|but by then you already have the sufficient samples to do the filtering.|S|s|s
+me018|uhhuh.|B|b|b
+mn052|so|F|fh|fh
+mn052|so sometimes you can do it anyway.|S|s|s
+me018|i mean couldn't|D|qy|qy
+me018|uh|F|fh|fh
+me018|i|D|%|%
+me018|couldn't you just also i mean if you know that the the largest latency in the system is two hundred milliseconds don't you couldn't you just buffer up that number of frames?|Q|qy|qy
+me018|and then everything uses that buffer.|S|s|e
+mn052|yeah.|D|b|b
+me018|and that way it's not additive.|S|s|e
+me013|well in fact everything is sent over in buffers because of|D|s|s
+me013|isn't it the t.c.p. buffer some|D|qy|qy
+mn052|you mean the the data the super frame or something?|Q|qy|bu
+mn007|uhhuh.|B|b|b
+me013|yeah.|S|s|aa
+me013|yeah.|S|s|aa
+mn007|yeah.|B|b|b
+mn052|yeah but that has a variable latency.|S|s|bk
+mn052|because the last frame doesn't have any latency.|S|s|df
+mn007|uhhuh.|B|b|b
+mn052|and first frame has a twenty framed latency.|S|s|df
+mn052|so you can't rely on that latency all the time.|S|s|s
+me013|yeah.|B|b|b
+mn052|because|D|%|%
+mn007|yeah.|B|b|b
+mn052|i mean the transmission over over the air interface is like a buffer.|S|s|s
+mn052|twenty frame.|S|s|s
+me018|yeah.|B|b|b
+mn052|twenty four frames.|S|s|bsc
+me018|yeah.|B|b|b
+mn052|so|F|fh|fh
+mn052|but the only thing is that the first frame in that twenty four frame buffer has a twenty four frame latency.|S|s|s
+mn052|and the last frame doesn't have any latency.|S|s|s
+me018|uhhuh.|S|s|bk
+mn052|because it just goes as|D|s|df
+mn052|yeah.|F|fh|fh
+me018|yeah i wasn't thinking of that one in particular.|S|s|bk
+me018|but more of you know if if there is some part of your system that has to buffer twenty frames uh can't the other parts of the system draw out of that buffer and therefore not add to the latency?|Q|qy|rt
+me013|yeah.|B|b|b
+me013|yeah.|S|s|bk
+me013|and and that's sort of one of the|D|s|s
+me013|all of that sort of stuff is things that they're debating in their standards committee.|S|s|s
+me018|oh.|S|s|bk
+me018|huh?|Q|qy|bh
+mn007|uhhuh.|B|b|b
+mn007|yeah.|F|fg|fg
+mn007|so|F|fh|fh
+mn007|um|F|fh|fh
+mn007|there is uh these parameters that i still have to to look at.|S|s|tc
+mn007|like i played a little bit with this overestimation factor.|S|s|e
+mn007|uh|F|fh|fh
+mn007|but i still have to to look more at this.|S|s|df
+mn007|um|F|fh|fh
+mn007|at the level of noise i add after uh i know that adding noise helped um the system just using spectral subtraction without smoothing.|S|s|s
+mn007|but i don't know right now if it's still important or not and if the level i choose before is still the right one.|S|s|no
+mn007|same thing for the shape of the the noise.|S|s|s
+mn007|maybe it would be better to add just white noise instead of speech shaped noise.|S|s|am
+me013|that'd be more like the j. rasta thing in a sense.|S|s|s
+mn007|uhhuh.|S|s|aa
+me013|yeah.|F|fh|fh
+mn007|um yep.|S|fh|fh
+mn007|uh and another thing is to|D|fh|fh
+mn007|yeah.|S|s|bk
+mn007|for this i just use as noise estimate the mean uh spectrum of the first twenty frames of each utterance.|S|s|s
+mn007|i don't remember for this experiment what did you use for these two stage.|S|s|no
+mn052|i used ten just ten frames.|S|s|s
+mn007|the ten frames?|Q|qy|bu
+mn052|yeah because|D|s|aa
+mn052|i mean the reason was like in t.i. digits i don't have a lot.|S|s|df
+mn052|i had twenty frames most of the time.|S|s|e
+mn007|uhhuh.|B|b|b
+mn007|um|F|fh|fh
+mn007|but so what's this result you told me about the fact that if you use more than ten frames you can improve by|D|qw|qw
+mn052|well that's that's using the channel zero.|S|s|s
+mn052|if i use a channel zero vad to estimate the noise.|S|s|rt
+mn007|oh okay.|S|s|bk
+mn052|which|D|%|%
+mn007|but this is ten frames plus plus|D|s|bu
+mn052|channel zero dropping.|S|s|s
+mn007|channel|D|s|bk
+mn007|uh no.|S|s|ar
+mn007|these results with two stage wiener filtering is ten frames.|S|s|s
+mn052|huh.|B|b|b
+mn052|oh this|D|%|%
+mn007|but possibly more.|S|s|e
+mn007|i mean if channel one v.a.d. gives you|D|s|s
+mn052|yeah.|B|b|b
+mn052|uhhuh.|B|b|b
+mn007|yeah.|F|fh|fh
+mn052|yeah.|S|s|aa
+mn007|okay.|S|s|bk
+mn007|yeah.|F|fg|fg
+mn007|but in this experiment i did i didn't use any v.a.d.|S|s|s
+mn007|i just used the twenty first frame to estimate the noise.|S|s|s
+mn007|and so i expected it to be a little bit better if uh i use more more frames.|S|s|s
+mn007|um|F|fh|fh
+mn007|okay that's it for spectral subtraction.|S|s|bk
+mn007|the second thing i was working on is to um try to look at noise estimation huh and using some technique that doesn't need voice activity detection.|S|s|tc
+mn007|um|F|fh|fh
+mn007|and for this i simply used some code that uh i had from from belgium.|S|s|s
+mn007|which is technique that um takes a bunch of frame.|S|s|e
+mn007|um|F|fh|fh
+mn007|and for each frequency bands of this frame takes a look at the minima of the energy.|S|s|e
+mn007|and then average these minima and take this as an an energy estimate of the noise for this particular frequency band.|S|s|rt
+mn007|and there is something more to this actually.|S|s|s
+mn007|what is done is that uh these minima are computed um based on um high resolution spectra.|S|s|s
+mn007|so i compute an f.f.t. based on the long uh signal frame.|S|s|s
+mn007|which is sixty four millisecond.|S|s|e
+me018|so you have one minimum for each frequency?|Q|qy|d
+mn007|what what i what i uh i do actually is to take a bunch of to take a tile on the spectrogram.|S|s|s
+mn007|and this tile is five hundred milliseconds long and two hundred hertz wide.|S|s|s
+me018|huh.|S|s|bk
+mn007|and this tile|D|s|s
+mn007|uh in this tile appears like the harmonics if you have a voiced sound.|S|s|s
+mn007|because it's it's the f.t.t. bins.|S|s|df
+mn007|and when you take the the minima of of these this tile|D|s|s
+mn007|when you don't have speech these minima will give you some noise level estimate.|S|s|s
+mn007|if you have voiced speech these minima will still give you some noise estimate because the minima are between the harmonics.|S|s|s
+mn007|and if you have other other kind of speech sounds then it's not the case.|S|s|s
+mn007|but if the time frame is long enough uh like five hundred milliseconds seems to be long enough you still have portions which uh are very close which minima are very close to the noise energy.|S|s|s
+me013|i'm confused.|S|s|s
+mn007|huh.|B|b|b
+me013|you said five hundred milliseconds.|S|s|s
+me013|but you said sixty four milliseconds.|S|s|s
+me013|which is which?|Q|qw|rt
+me013|what|D|qw|qw
+mn007|sixty four milliseconds is to compute the f.f.t. uh bins.|S|s|rt
+mn007|the the f.f.t.|S|s|s
+me013|yeah.|B|b|b
+me013|yeah.|B|b|b
+mn007|um|F|fh|fh
+mn007|actually it's better to use sixty four milliseconds because um if you use thirty milliseconds then uh because of the this short windowing and at low pitch uh sounds the harmonics are not uh correctly separated.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|so if you take these minima it they will overestimate the noise a lot.|S|s|s
+me013|so you take sixty four millisecond f.f.t.'s and then you average them over five hundred?|Q|qy|bu
+me013|or|D|qrr|qrr
+me013|uh what do you do over five hundred?|Q|fh|fh
+mn007|so i take to i take a bunch of these sixty four millisecond frame to cover five hundred milliseconds.|S|s|s
+me013|uh.|S|s|bk
+me013|okay.|S|s|bk
+mn007|and then i look for the minima.|S|fh|fh
+me013|i see.|S|s|bk
+me018|huh.|B|b|b
+mn007|on the on on the bunch of uh fifty frames right?|S|s|e
+me013|i see.|S|s|bk
+mn007|huh.|F|fh|fh
+mn007|so the interest of this is that as with this technique you can estimate some reasonable noise spectra with only five hundred milliseconds of of signal.|S|s|s
+mn007|so if the the the noise varies a lot uh you can track better track the noise.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|which is not the case if you rely on the voice activity detector.|S|s|e
+mn007|so even if there are no speech pauses you can track the noise level.|S|s|s
+mn007|the only requirement is that you must have in these five hundred milliseconds segment you must have voiced sound at least.|S|s|s
+mn007|because this these will help you to to track the the noise level.|S|s|df
+mn007|um|F|fh|fh
+mn007|so what i did is just to simply replace the v.a.d. based uh noise estimate by this estimate.|S|s|s
+mn007|first on speechdat-car.|S|s|e
+mn007|well only on speechdat-car actually.|S|s|e
+mn007|and it's uh slightly worse.|S|s|s
+mn007|like one percent relative compared to the v.a.d. based estimates.|S|s|e
+mn007|um|F|fh|fh
+mn007|i think the reason why it's not better is that the speechdat-car noises are all stationary.|S|s|df
+mn007|um|F|fh|fh
+mn007|so|F|fh|fh
+mn007|there really is no need to have something that's adaptive.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|and uh|F|fh|fh
+mn007|well they are mainly stationary.|S|s|s
+mn007|um|F|fh|fh
+mn007|but i expect maybe some improvement on t.i. digits.|S|s|s
+mn007|because nnn in this case the noises are all sometimes very variable.|S|s|df
+mn007|uh so i have to test it.|S|fh|fh
+mn007|huh.|F|fh|fh
+me013|but are you comparing with something|D|qy|qy
+me013|i'm i'm a little confused again.|S|s|s
+me013|it|D|%|%
+me013|uh when you compare it with the v.a.d. based which v.a.|D|qw|qw
+mn007|uhhuh.|S|s|bk
+mn007|it's|D|%|%
+me013|is this is this the|D|qy|qy
+mn007|it's the france telecom based spectra uh wiener filtering and v.a.d.|S|s|rt
+mn007|so it's their system.|S|s|rt
+mn007|but just i replace their noise estimate by this one.|S|s|s
+me013|oh you're not doing this with our system?|S|s|bk
+mn007|in i'm not.|S|s|na
+mn007|no no.|S|s|aa
+mn007|yeah.|S|s|ar
+mn007|it's our system.|S|s|nd
+mn007|but with just the wiener filtering from their system.|S|s|df
+mn007|right?|Q|qy|d
+mn007|huh.|F|fh|fh
+me013|okay.|S|s|bk
+mn007|yeah.|B|b|b
+mn007|actually the best system that we still have is uh our system but with their noise compensation scheme.|S|s|bu
+mn007|right?|Q|qy|d
+me013|right.|S|s|aa
+mn007|so i'm trying to improve on this and by by replacing their noise estimate by uh something that might be better.|S|s|s
+me013|but|D|%|%
+me013|okay.|S|s|bk
+me013|but the spectral subtraction scheme that you reported on also requires a a noise estimate.|S|s|s
+mn007|yeah.|S|s|bk
+mn007|yeah.|S|s|aa
+mn007|but i|D|s|s
+me013|couldn't you try this for that?|Q|qy|rt
+me013|do you think it might help?|Q|qy|rt
+mn007|not yet.|S|s|nd
+mn007|because i did this in parallel.|S|s|df
+mn007|and i was working on one and the other.|S|s|df
+me013|i see.|S|s|bk
+me013|i see.|S|s|bk
+me013|yeah.|B|b|b
+mn007|um|F|fh|fh
+mn007|yeah for for sure i will.|S|s|aa
+mn052|yeah.|B|b|b
+mn007|i can try also huh the spectral subtraction.|S|s|s
+me013|okay.|B|b|b
+mn052|so i'm also using that new noise estimate technique on this wiener filtering what i'm trying.|S|s|s
+mn007|uhhuh.|B|b|b
+mn052|so i i have like some experiments running i don't have the results.|S|s|s
+me013|yeah.|B|b|b
+me013|yeah.|B|b|b
+mn052|so|F|fh|fh
+mn052|i don't estimate the noise on the ten frames but use his estimate.|S|s|s
+mn007|uhhuh.|B|b|b
+me013|yeah.|B|b|b
+mn007|um|F|fh|fh
+mn007|yeah.|F|fh|fh
+mn007|i um also implemented a um spectral whitening idea.|S|s|s
+mn007|which is in the um ericsson proposal.|S|s|e
+mn007|uh the idea is just to um flatten the log uh spectrum um and to flatten it more if the the probability of silence is higher.|S|s|s
+mn007|so in this way you can also reduce somewhat reduce the musical noise.|S|s|s
+mn007|and you reduce the variability if you have different noise shapes.|S|s|s
+mn007|because the the spectrum becomes more flat in the silence portions.|S|s|df
+mn007|um|F|fh|fh
+mn007|yeah.|F|fh|fh
+mn007|with this no improvement.|S|s|s
+mn007|uh but there are a lot of parameters that we can play with.|S|s|df
+mn007|and|F|fh|fh
+mn007|um|F|fh|fh
+mn007|actually this this could be seen as a soft version of the frame dropping.|S|s|s
+mn007|because um you could just put the threshold and say that below the threshold i will flatten completely flatten the the spectrum.|S|s|df
+mn007|and above this threshold uh keep the same spectrum.|S|s|s
+mn007|so it would be like frame dropping.|S|s|s
+mn007|because during the silence portions which are below the threshold of voice activity probability uh you would have some kind of dummy frame.|S|s|df
+mn007|which is a perfectly flat spectrum.|S|s|e
+mn007|and this uh whitening is something that's more soft because um you whiten you just uh have a function the whitening is a function of the speech probability.|S|s|s
+mn007|so it's not a hard decision.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|um|F|fh|fh
+mn007|so i think maybe it can be used together with frame dropping and when we are not sure about if it's speech or silence.|S|s|s
+mn007|well maybe it has something do with this.|S|s|am
+me013|it's interesting.|S|s|ba
+me013|i mean um you know in in j. rasta we were essentially adding in uh white uh white noise dependent on our estimate of the noise.|S|s|s
+mn007|uhhuh.|S|s|bk
+me013|on the overall estimate of the noise.|S|s|e
+me013|uh i think it never occurred to us to use a probability in there.|S|fh|fh
+mn007|uhhuh.|S|s|bk
+me013|you could imagine one that that that made use of where where the amount that you added in was uh a function of the probability of it being speech or noise.|S|s|s
+mn007|uhhuh.|B|b|b
+mn007|uhhuh.|B|b|b
+mn007|yeah|D|s|bk
+mn007|yeah right now it's a constant that just depending on the the noise spectrum.|S|s|bk
+mn052|there's|D|%|%
+me013|yeah.|B|b|b
+mn007|uhhuh.|F|fh|fh
+me013|because that that brings in sort of powers of classifiers that we don't really have in uh this other estimate.|S|s|s
+mn007|uhhuh.|D|b|b
+me013|so it could be it could be interesting.|S|s|s
+mn007|uhhuh.|B|b|b
+mn007|uhhuh.|B|b|b
+me013|what what what point does the uh system stop recording?|Q|qw|rt
+me013|how much|D|qw|qw
+me018|it'll keep going till i guess when they run out of disk space.|S|s|s
+me013|it went a little long?|Q|qy|d
+me013|i mean disk|D|s|s
+me018|but|D|%|%
+me018|i think we're okay.|S|s|s
+mn007|so|B|b|b
+me013|okay.|S|s|bk
+mn007|yeah.|S|s|bk
+mn007|uh|F|fg|fg
+mn007|yeah so there are with this technique there are some|D|fg|fg
+mn007|i just did something exactly the same as as the ericsson proposal.|S|s|s
+mn007|but um the probability of speech is not computed the same way.|S|s|s
+mn007|and i think for yeah for a lot of things actually a a good speech probability is important.|S|s|s
+mn007|like for frame dropping you improve like you can improve from ten percent as sunil showed if you use the channel zero speech probabilities.|S|s|e
+me013|uhhuh.|B|b|b
+me013|uhhuh.|B|b|b
+mn007|for this it might help.|S|s|s
+mn007|um|F|fh|fh
+me013|uhhuh.|B|b|b
+mn007|so yeah.|F|fh|fh
+mn007|uh|F|fh|fh
+mn007|so yeah.|F|fh|fh
+mn007|the next thing i started to do is to uh try to develop a better voice activity detector.|S|s|s
+mn007|and|F|fh|fh
+mn007|um|F|fh|fh
+mn007|i|D|%|%
+mn007|um|F|fh|fh
+mn007|yeah for this i think we can maybe try to train the neural network for voice activity detection on all the data that we have including all the speechdat-car data.|S|s|bk
+mn007|um|F|fh|fh
+mn007|and so i'm starting to obtain alignments on these databases.|S|s|s
+mn007|um and the way i i do that is that i just use the h.t.k. system but i train it only on the close talking microphone.|S|fh|fh
+mn007|and then i aligned i obtained the viterbi alignment of the training utterances.|S|s|s
+mn007|um|F|fh|fh
+mn007|it seems to be|D|s|s
+mn007|uh|F|fh|fh
+mn007|actually what i observed is that for italian it doesn't seem there seems to be a problem.|S|s|s
+mn052|no.|S|s|ar
+mn007|well.|F|fh|fh
+mn052|so it doesn't seems to help by their use of channel zero or channel one.|S|s|s
+mn007|because|D|%|%
+mn007|what?|Q|qw|br
+mn052|uh you mean their the frame dropping right?|S|s|bu
+mn007|yeah.|S|s|aa
+mn052|yeah it doesn't.|S|s|bk
+mn007|yeah.|S|s|bk
+mn007|so but actually the v.a.d. was trained on italian also.|S|s|s
+mn052|italian.|S|s|2
+mn007|so um|F|fh|fh
+mn007|the the current v.a.d. that we have was trained on uh spine right?|S|s|bu
+mn007|italian and t.i. digits with noise and|D|s|e
+mn052|t.i. digits.|S|s|s
+mn007|uh yeah.|S|s|aa
+mn007|and it seems to work on italian but not on the finnish and spanish data.|S|s|s
+mn007|so maybe one reason is that finnish and spanish noise are different.|S|fh|fh
+mn007|and|F|fh|fh
+mn007|actually we observed we listened to some of the utterances and sometimes for finnish there is music in the recordings and strange things.|S|s|s
+mn007|right?|Q|qy|d
+mn052|yeah.|S|s|aa
+mn007|um|F|fh|fh
+mn007|yeah so the idea was to train all the databases and obtain an alignment to train on these databases.|S|s|bk
+mn007|and um|F|fh|fh
+mn007|also to um try different kind of features uh as input to the v.a.d. network.|S|s|s
+mn007|and|F|fh|fh
+mn007|we came up with a bunch of features that we want to try.|S|s|s
+mn007|like um the spectral slope the um the degree degree of voicing with the features that uh we started to develop with carmen um with uh the correlation between bands and different kind of features.|S|s|e
+mn052|yeah.|B|b|b
+mn052|uhhuh.|B|b|b
+mn007|and yeah.|F|fh|fh
+mn052|the energy also.|S|s|s
+mn007|the energy.|S|s|bk
+mn007|yeah of course.|S|s|aa
+mn052|yeah.|B|b|b
+me013|yeah right.|S|s|aa
+mn007|yeah.|B|b|b
+me013|okay.|F|fg|fg
+me013|well hans-guenter will be here next week.|S|s|s
+me013|so i think he'll be interested in all all of these things.|S|s|s
+me013|and so.|F|fh|fh
+mn007|uhhuh.|B|b|b
+me013|huh.|B|b|b
+me018|okay.|F|fg|fg
+me018|shall we uh do digits?|Q|qy|co
+me013|yeah.|S|s|aa
+me018|want to go ahead morgan?|Q|qy|co
+me013|sure.|S|s|aa

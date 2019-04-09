@@ -1,1073 +1,1073 @@
-me003|are we to just to make sure i know what's going on we're talking about robert's thesis proposal today?|bu
-me003|is that|qy
-mn015|we could.|s
-me003|true?|bu
-fe004|we are?|bu
-mn015|we might.|am
-fe004|okay.|bk
-me010|well you you had you said there were two things that you might want to do.|s
-me003|is|%--
-me010|one was rehearse your talk|s
-me003|oh yes and that too.|bk
-mn015|not not rehearse.|s
-mn015|i mean i have just not spent any time on it.|df
-mn015|so i can show you what i've got get your input on it and maybe some suggestions.|cs
-mn015|that would be great.|ba
-mn015|and the same is true for the proposal.|s
-mn015|i will have time to do some revision and some additional stuff on various airplanes and trains.|rt
-mn015|so um|fh
-mn015|i don't know how much of a chance you had to actually read it.|no
-fe004|i haven't looked at it.|nd
-mn015|because|%--
-fe004|yet.|e
-mn015|but you could always send me comments per electronic mail.|rt
-fe004|but i will.|cc
-mn015|and they will be incorporated.|rt
-fe004|okay.|bk
-mn015|um the|fh
-mn015|it basically says well this is construal.|s
-mn015|and then it continues to say that one could potentially build a probabilistic relational model that has some general domain general rules|s
-mn015|how things are construed.|rt
-mn015|and then the idea is to use ontology situation user and discourse model to instantiate elements in the classes of the probabilistic relational model to do some inferences in terms of what is being construed as what.|s
-fe004|huh.|b
-mn015|in our beloved tourism domain.|s
-mn015|but with a focus on|s
-fe004|can i|%--
-me045|i think i need a copy of this yes.|s
-fe004|sorry.|fa
-mn015|huh?|br
-me045|is there an extra copy around?|rt
-me003|okay we can we can we can pass pass my uh we can pass my extra copy around.|s
-fe004|uh he sent it.|s
-fe004|okay you can keep it.|bk
-me003|uh actually my only copy now that i think about it.|bsc
-fe004|okay.|bk
-me003|but i already read half of it.|bd
-mn015|um i don't i uh i don't need it.|s
-me003|so it's okay.|ba
-me045|okay.|bk
-mn015|um actually this is the the newest version after your comments.|s
-mn015|and|fh
-me010|yeah no i i i see this has got the castle in it and stuff like that.|fg
-mn015|yeah.|b
-me010|yep.|b
-me003|oh maybe the version i didn't have|s
-me003|that i mine the|%--
-me003|did the one you sent on the email have the|qy
-me010|yeah.|aa
-me003|that was the most recent one?|bu
-me010|uh yeah i think so.|aa
-me003|okay.|bk
-mn015|yep.|aa
-me003|because i read halfway but i didn't see a castle thing.|s
-fe004|i'm changing this.|s
-fe004|just so you know.|s
-mn015|yeah.|bk
-fe004|but anyway|%--
-mn015|um if you would have checked your email you may have received a note from yees asking you to send me the uh|s
-fe004|oh oh sorry.|bk
-fe004|okay.|bk
-fe004|sorry.|fa
-mn015|current formalism thing that you presented.|e
-fe004|okay i will.|bk
-fe004|okay okay.|bk
-fe004|okay.|bk
-mn015|but for this it doesn't matter.|s
-mn015|but uh|fh
-fe004|we can talk about it later.|s
-fe004|that's not even ready.|s
-fe004|so um|fh
-fe004|okay go on to uh whatever.|fg
-mn015|and|fh
-fe004|i'm making changes.|s
-fe004|don't worry about that.|co
-fe004|okay uhhuh|b
-fe004|oh okay sorry.|bk
-fe004|go on.|co
-mn015|and any type of comment whether it's a spelling or a syntax or|s
-fe004|uhhuh.|rt
-me045|there's only one s in interesting.|s
-mn015|readability|e
-mn015|huh?|br
-me045|there's only one s in interesting on page five.|s
-mn015|interesting.|ba
-fe004|anyway.|fg
-fe004|and uh email any time.|co
-fe004|but most usefully before|e
-me003|the twenty first i'm assuming.|2
-fe004|the twenty first?|bu
-mn015|twenty ninth.|s
-me010|no this is the twenty first.|ar
-me045|that's|%--
-me003|what?|br
-me003|today's the twenty first?|bu
-me045|well better hurry up then!|co
-me003|oh man!|ba
-mn015|the twenty ninth.|r
-fe004|before the twenty ninth.|s
-fe004|okay.|bk
-me003|okay.|bk
-mn015|that's when i'm meeting with wolfgang wahlster to sell him this idea.|s
-fe004|uhhuh.|b
-fe004|okay.|bk
-mn015|okay.|fg
-mn015|then i'm also going to present a little talk at e m l about what we have done here.|rt
-mn015|and so|fh
-mn015|of course i'm i'm going to start out with this slide.|s
-mn015|so the most relevant aspects of our stay here.|s
-mn015|and um|fh
-mn015|then i'm asking them to imagine that they're standing somewhere in heidelberg.|s
-mn015|and someone asks them in the morning the cave forty five is a is a well known discotheque.|s
-mn015|which is certainly not open at that that time.|s
-me045|okay.|b
-mn015|and so|fh
-mn015|they're supposed to imagine that you know do they think the person wants to go there or just know where it is.|rt
-mn015|uh|fh
-mn015|which is probably not uh the case in that discotheque example.|s
-mn015|or in the bavaria example.|s
-mn015|you just want to know where it is.|s
-mn015|and so forth.|s
-mn015|so basically we can make a point that here is ontological knowledge.|s
-mn015|but if it's nine nine p m in the evening then the discotheque question would be for example one that might ask for directions instead of just location.|s
-mn015|um and so forth and so forth.|s
-mn015|that's sort of motivating it.|s
-mn015|then what have we done so far?|rt
-mn015|we had our little bit of um um smartkom stuff that we did.|rt
-mn015|um|fh
-me045|oh you've got the parser done.|s
-me045|sorry.|fa
-mn015|that's the not the construction parser.|s
-me045|okay.|bk
-mn015|that's the uh tablet based parser.|e
-fe004|easy parser.|2
-me045|okay.|b
-mn015|and|fh
-mn015|the generation outputter.|s
-me003|halfway done.|2
-me003|yeah.|b
-mn015|that's done.|aap
-fe004|huh.|b
-mn015|you have to change those strategies.|s
-me003|okay.|bk
-mn015|right?|bu
-me003|yeah.|aa
-mn015|that's ten words?|bu
-me003|well it you know|s
-me003|maybe twelve.|s
-mn015|twelve okay.|bk
-mn015|and um and fey is doing the synthesis stuff as we speak.|s
-mn015|that's all about that.|rt
-mn015|then i'm going to talk about the data.|s
-mn015|you know these things about|s
-mn015|uh actually i have an example|s
-mn015|probably.|s
-mn015|two|%--
-mn015|can you hear that?|rt
-me045|uhhuh.|aa
-mn015|or should i turn the volume on?|qrr
-fe004|i could hear it.|na
-me003|i can hear it.|na
-me045|i heard it.|na
-me003|they might not hear it in the|s
-me003|well maybe they will.|bd
-me003|i don't know.|bd
-fe004|this was an actual um subject?|d
-fe004|uh.|bk
-mn015|uhhuh.|aa
-me045|sounds like fey.|s
-fe004|yeah.|aa
-mn015|but they're they're mimicking the synthesis when they speak to the computer.|s
-me045|oh okay.|bk
-mn015|the you can observe that all the time.|s
-me045|oh really?|bh
-mn015|they're trying to match their prosody onto the machine.|s
-me045|interesting.|b
-me045|oh it's pretty slow.|ba
-mn015|yeah you have to|%--
-me045|the system breaking.|s
-fe004|what is the|qw
-fe004|oh!|fe
-mn015|okay and so forth and so forth.|bk
-mn015|um i will talk about our problems with the rephrasing.|s
-mn015|and how we solved it.|s
-mn015|and some preliminary observations.|s
-mn015|also um|fh
-mn015|i'm not going to put in the figures from liz.|s
-mn015|but i thought it would interesting to uh um point out that it's basically the same.|s
-mn015|um as in every human human telephone conversation and the human computer telephone conversation is of course quite quite different from uh some first uh observations.|s
-mn015|then|fh
-mn015|sort of feed you back to our original problem.|rt
-mn015|because uh|%--
-mn015|how to get there.|rt
-mn015|what actually is happening there today?|rt
-mn015|and then maybe talk about the big picture here.|rt
-mn015|tell a little bit as much as i can about the n t l story.|s
-mn015|i i i do want to um|s
-mn015|i'm not quite sure about this whether i should put this in.|s
-mn015|um that you know you have these two sort of different ideas that are or two different camps of people envisioning how language understanding works.|s
-mn015|and then talk a bit about the embodied and simulation approach favored here.|s
-mn015|and as a prelude i'll talk about monkeys in italy.|s
-mn015|and um srini was going to send me some slides.|s
-mn015|but he didn't do it.|s
-mn015|so from but i have the paper.|s
-mn015|i can make a resume of that.|s
-mn015|and then i stole an x schema from one of your talks i think.|s
-fe004|oh.|bk
-fe004|i was like where'd you get that.|s
-me045|yeah that looks familiar.|ba
-fe004|okay.|bk
-fe004|looks familiar.|s
-mn015|i think that's bergen chang something or the other.|s
-fe004|uh|b
-me010|whatever.|ba
-fe004|okay.|b
-mn015|um and that's|fh
-mn015|now i'm not going to bring that.|s
-mn015|so that's basically what i have so far.|s
-mn015|and the rest is for airplanes.|s
-mn015|so x schemas then i would like to do|s
-mn015|talk about the construction aspect.|s
-mn015|and then at the end about our bayes net.|s
-fe004|uhhuh.|b
-mn015|end of story.|tc
-mn015|anything i forgot that we should mention?|rt
-mn015|oh maybe the f m r i stuff.|s
-mn015|should i mention the fact that um we're also actually started going to start to look at people's brains in a more direct way?|qy
-me010|you certainly can.|s
-me010|i mean you know i don't know|no
-fe004|you might just want to like tack that on as a comment to something.|cs
-me010|right.|aa
-me010|um.|fg
-mn015|future activities something?|bu
-me010|well the time to mention it if you mention it is when you talk about mirror neurons.|s
-me010|then you should talk about the more recent stuff about the kicking.|s
-me010|and you know the|s
-mn015|yeah.|bk
-me010|yeah yeah.|b
-me010|and that the plan is to see to what extent the you'll get the same phenomena with stories about this.|s
-me010|so that|%--
-mn015|uhhuh.|b
-me010|and that we're planning to do this.|s
-me010|um|fh
-me010|which we are.|s
-me010|so that's one thing.|s
-me010|um|fh
-me010|depends i mean there is a um whole language learning story.|s
-me010|okay?|d
-mn015|yeah.|aa
-me010|which|%--
-me010|uh actually|%--
-me010|even on your five layer slide you you've got an old one that that leaves that off.|s
-mn015|yeah i i i do have it here.|bk
-fe004|huh.|b
-me010|yeah.|b
-mn015|um|fh
-mn015|and of course you know the the big picture is this bit.|s
-me010|right.|b
-mn015|but you know it would|s
-mn015|but i don't think i i am capable of of pulling this off and doing justice to the matter.|s
-mn015|i mean there is interesting stuff in terms of how language works.|ba
-mn015|so the emergentism story would be nice to be you know it would be nice to tell people.|s
-mn015|how what's happening there.|e
-mn015|plus how the uh language learning stuff works.|s
-me010|okay so so anyway i i agree that's not central.|fg
-mn015|but|%--
-me010|what you might want to do is|cs
-fe004|uhhuh.|b
-me010|um|fh
-me010|and may not.|bd
-me010|but you might want to this is rip off a bunch of the slides on the|cs
-me010|there the there we've got various generations of slides that show language analysis and matching to the underlying image schemas.|s
-me010|and|fh
-me010|um how the construction and simulation|fh
-me010|that that whole|s
-mn015|yeah that that's that comes up to the x schema slide.|fg
-fe004|okay right.|bk
-mn015|so basically i'm going to steal that from nancy.|s
-mn015|one of nancy's|s
-fe004|okay i can give you a more recent if you want.|bk
-fe004|well that might have enough.|s
-mn015|uh i|%--
-mn015|yeah but i also have stuff you trash you left over.|bk
-me010|okay.|bk
-mn015|your quals and your triple a i.|rt
-me010|the quals the the the quals slides would be fine.|ba
-fe004|yeah.|bk
-me010|you could get it out of there or|s
-fe004|which i can even email you then.|cs
-fe004|you know like there probably was a little few changes.|s
-fe004|not a big deal.|ba
-fe004|yeah you could steal anything you want.|s
-fe004|i don't care.|s
-fe004|which you've already done obviously.|s
-fe004|so|fh
-mn015|well i i don't feel bad about it at all.|s
-fe004|sorry.|fa
-fe004|no you shouldn't.|aa
-mn015|because because you are on the uh title.|df
-mn015|i mean on the the you're that's see that's you.|s
-fe004|oh that's great that's great.|ba
-me010|yeah.|b
-fe004|i'm glad to see propagation.|s
-me010|yeah.|b
-fe004|huh!|b
-mn015|huh?|br
-mn015|propagated?|bu
-fe004|yes.|aa
-mn015|i mean i might even mention that this work you're doing is sort of also with the m p i in leipzig.|am
-mn015|so|fh
-fe004|it's it's certainly related.|s
-fe004|um|fh
-mn015|because um e m l is building up a huge thing in leipzig.|df
-fe004|might want to say.|cs
-fe004|is it?|bh
-mn015|so it|s
-mn015|it's on biocomputation would|s
-me010|yeah it's different.|fg
-me010|this is the uh d n a building or the double helix building.|s
-me010|yeah.|b
-mn015|yeah.|b
-fe004|kind of a different level of analysis.|ba
-me010|the yeah it was it turns out that if if you have multiple billions of dollars you can do all sorts of weird things.|s
-me010|and|%--
-me003|wait they're building building in the shape of d n a?|co
-fe004|what?|br
-me003|is that what you said?|g
-me010|roughly yeah.|na
-me045|oh oh boy.|fa
-me010|including cross bridges.|e
-me010|and|fh
-fe004|what?|br
-me045|that's brilliant!|ba
-fe004|oh my god!|fe
-me045|hhh.|b
-me010|you you really now i spent the last time i was there i spent maybe two hours hearing this story.|s
-me010|which is um|s
-fe004|of what?|qw
-me003|you definitely want to don't want to waste that money on research.|cs
-fe004|the building.|bu
-me003|you know?|d
-me010|right.|bk
-me003|that's horrible.|ba
-me010|right.|b
-me010|well no no there's infinite money.|s
-me010|see.|f
-me010|you you you then fill it with researchers.|s
-fe004|and give them more money.|s
-fe004|they just want a fun place for them to to work.|s
-me010|right.|b
-me010|right.|b
-me045|and everybody gets a trampoline in their office.|j
-mn015|well the the offices are actually a little|s
-mn015|the|%--
-mn015|think of um ramps coming out of the double helix.|s
-mn015|and then you have these half domes glass half domes.|s
-mn015|and the offices are in in the glass half dome.|rt
-fe004|really?|bh
-me045|all right let's stop talking about this.|bk
-me010|yeah.|b
-fe004|does it exist yet?|rt
-me010|yeah.|b
-mn015|uh as a model.|fh
-fe004|they are now building it?|bu
-fe004|huh.|bk
-mn015|but i|%--
-me010|so yeah i think that's that's a good point.|fg
-me010|that the date the uh|s
-me010|a lot of the this is interacting with uh people in italy.|s
-me010|but also definitely the people in leipzig.|s
-me010|and|fh
-me010|the|fh
-me010|the the combination of the biology and the leipzig connection might be interesting to these guys.|s
-me010|yeah.|b
-me010|okay.|b
-me010|okay.|b
-me010|anyway enough of that.|fg
-me010|let's talk about your thesis proposal.|co
-mn015|yeah if somebody has something to say.|bk
-me010|yep.|bk
-me045|you might want to uh double check the spellings of the authors' names on your references.|cs
-me045|you had a few uh misspells in your slides there.|s
-me045|like i believe you had jackendorf.|e
-me010|um|h
-me045|uh unless there's a person called jackendorf.|bd
-me010|no no no.|ar
-me045|yeah.|b
-fe004|on that one?|bu
-me045|but that's the only thing i noticed in there.|s
-fe004|in the presentation?|bu
-me045|in the presentation.|m
-fe004|i'll probably i might have i'll probably have comments for you separately.|am
-fe004|not important.|ba
-fe004|anyway|fh
-mn015|oh in the presentation here.|s
-fe004|yeah that's what he was talking about.|aa
-me045|yeah.|aa
-mn015|i was actually worried about bibtex.|s
-mn015|uh no that's quite possible.|fh
-mn015|that's copy and paste from something.|cs
-me010|so i did|s
-me010|it looks like the uh metaphor didn't get in yet.|s
-mn015|uh it did.|ng
-mn015|there is a reference to srini|s
-me010|well reference is one thing.|bd
-me010|the question is is there any place|qy
-me010|oh did you put in something about|qy
-fe004|metonymy and metaphor here.|2
-fe004|right?|bu
-me010|uh the individual|%--
-me010|we'd talked about putting in something about people had|s
-me010|uh|fh
-me010|oh yeah okay.|bk
-me010|good i see where you have it.|ba
-me010|so the top of the second of page two you have a sentence.|s
-mn015|uhhuh.|b
-me010|but what i meant is i think even before you give this to wahlster uh you should|cs
-me010|unless you put it in the text.|s
-me010|and i don't think it's there yet.|s
-me010|about we talked about is the um scalability that you get by um combining the constructions with the general construal mechanism.|s
-me010|is that in there?|rt
-mn015|yeah.|aa
-mn015|huh um|fh
-me010|uh okay so where where is it?|bk
-me010|because i'll have to take a look.|df
-mn015|um but i i did not focus on that aspect.|h
-mn015|but um uh|fh
-mn015|um it's just underneath uh um that reference to metaphor.|s
-mn015|so it's the last paragraph.|s
-mn015|before two.|s
-mn015|so on page two|s
-mn015|um the main focus|s
-me010|uh okay.|bk
-me010|yeah.|b
-mn015|but that's really|s
-fe004|that's not about that.|2
-mn015|yeah.|aa
-fe004|is it?|g
-me010|no it it it says it.|s
-me010|but it doesn't say it doesn't it it|s
-mn015|why.|2
-me010|yeah it doesn't give the punch line.|aa
-mn015|uhhuh.|bk
-me010|because let me tell the gang what i think the punch line is.|df
-me010|because it's actually important.|s
-me010|which is that the constructions that uh nancy and keith and friends are doing uh are in a way quite general.|ba
-me010|but cover only base cases.|s
-me010|and to make them apply to metaphorical cases and metonymic cases and all those things requires this additional mechanism of construal.|s
-me010|and the punch line is he claimed that if you do this right you can get essentially orthogonality.|s
-me010|that if you introduce a new construction at at the base level it should uh interact with all the metonymies and metaphors.|s
-me010|so that all of the projections of it also should work.|s
-me045|uhhuh.|b
-me010|and similarly if you introduce a new metaphor it should then uh compose with all of the constructions.|s
-me045|uhhuh.|b
-me045|yeah.|b
-me010|and it to the extent that that's true then then it's a big win over anything that exists.|s
-me003|so does that mean instead of having tons and tons of rules in your context free grammar you just have these base constructs and then a general mechanism for coercing them?|bu
-me045|yeah.|b
-me010|uhhuh.|aa
-me010|so that you know for example uh in the metaphor case that you have a kind of direct idea of a source path and goal.|s
-me010|and any metaphorical one and abstract goals and all that sort of stuff you can do the same grammar.|s
-me010|and it is the same grammar.|s
-me003|huh.|b
-me010|but um|fh
-me010|the trick is that the|s
-me010|the way the construction's written it requires that the object of the preposition for example be a container.|s
-me010|well trouble isn't a container.|s
-me010|but it gets construed as a container.|s
-me003|right.|b
-me010|et cetera.|s
-me010|so that's that's where this um|s
-me003|so with construal you don't have to have a construction for every possible thing that can fill the rule.|bu
-me010|right.|aa
-me010|so's it's it it's a very big deal in this framework.|s
-me010|and the thesis proposal as it stands doesn't|s
-me010|um i don't think say that as clearly as it could.|fh
-mn015|no it doesn't say it at all no.|na
-mn015|even though one could argue what if there are basic cases even.|df
-mn015|i mean it seems like nothing is context free.|s
-me010|oh nothing is context free.|aap
-me010|but there are basic cases.|s
-me010|that is um there are physical containers.|s
-me010|there are physical paths.|s
-me010|there|%--
-me010|you know.|f
-me010|et cetera.|e
-mn015|but walked into the cafe and ordered a drink and walked into the cafe and broke his nose.|ng
-mn015|that's sort of|s
-me010|oh it doesn't mean that they're unambiguous.|ng
-me010|i mean a cafe can be construed as a container or it can be construed you know as as a obstacle.|s
-mn015|huh yeah.|b
-me045|uhhuh.|b
-me010|or as some physical object.|s
-me010|so there are multiple construals.|s
-me010|and in fact that's part of what has to be done.|s
-me010|this is why there's this interaction between the analysis and the construal.|s
-mn015|uhhuh.|b
-mn015|yep.|b
-me010|the the the double arrow.|s
-mn015|yep.|b
-me010|so uh yeah i mean it doesn't magically make ambiguity go away.|bd
-mn015|no.|b
-me010|but it does say that uh if you walked into the cafe and broke your nose then you are construing the cafe as an obstacle.|s
-mn015|uhhuh.|b
-me010|and if that's not consistent with other things then you've got to reject that reading.|s
-mn015|yep.|b
-me003|you con you conditioned me with your first sentence.|s
-me003|and so i thought why would he walk into the cafe and then somehow break his nose.|s
-me045|he slipped on the wet floor.|s
-me003|uh oh uh|fh
-me010|right.|bk
-mn015|you don't find that usage.|s
-mn015|uh uh i checked for it in the brown national corpus.|rt
-me010|yeah.|b
-mn015|the walk into it never really means as in walked smack|s
-me010|but run into does.|s
-mn015|yeah but if you find walked smacked into the cafe or slammed into the wall|bk
-me010|yeah no but run into does.|bk
-mn015|uhhuh.|b
-me010|because you will find run into|s
-me010|uh|fh
-me003|cars run into telephone poles all the time.|s
-me010|well or into the cafe for that|2
-me010|you know.|f
-mn015|right.|b
-me010|his car ran into the cafe.|s
-mn015|yeah or you can run into an old friend or run.|fg
-me010|well you can run into in that sense too.|s
-me010|but uh|fh
-fe004|yeah run into might even be more impact sense than you know container sense.|fg
-me010|right.|aa
-me045|depends.|am
-me010|but like run into an old friend it probably needs its own construction.|s
-me010|i mean uh you know george would have i'm sure some complicated reason why it really was an instance of something else.|s
-fe004|uhhuh uhhuh.|b
-me010|and maybe it is.|s
-me010|but um|fh
-me010|there are idioms.|s
-me010|and my guess is that's one of them.|s
-me010|but um i don't know.|bd
-fe004|all contact.|s
-fe004|i mean there's contact that doesn't social contact.|s
-fe004|whatever.|bd
-fe004|i mean|%--
-me010|uh|fg
-me045|sudden surprising contact.|cs
-me045|right?|d
-me010|yeah but it's it's it's it's right yeah it's more|fg
-fe004|forceful.|cs
-me045|but of course no.|s
-me045|i mean it has a life of its own.|s
-me045|it's sort of partially inspired by the spatial|s
-me010|well this is this motivated|s
-me010|but yeah.|aa
-me045|yeah.|b
-me010|oh yeah for sure.|aa
-me010|motivated.|r
-me010|but then you can't parse on motivated.|s
-me045|yeah.|b
-me045|yeah right.|aa
-me010|uh|fh
-fe004|too bad.|ba
-me003|you should get a t shirt that says that.|cs
-me010|okay.|bk
-fe004|there's there's lots of things you could make t shirts out of.|bd
-fe004|but uh|fh
-fe004|this has gotten|s
-fe004|i mean|%--
-fe004|we don't need the words to that.|s
-mn015|probably not your marks in the kitchen today.|s
-fe004|what?|br
-mn015|not not your marks.|s
-fe004|oh no no no no no no no no no we're not going there.|ar
-fe004|okay.|fg
-me045|in other news.|fg
-me010|okay so um|fg
-me010|anything else you want to ask us about?|qo
-me010|the thesis proposal you got|s
-mn015|well|%--
-me010|we could look at a particular thing and give you feedback on it.|cs
-mn015|well there actually|s
-mn015|the what would have been really nice is to find an example for all of this uh from our domain.|s
-mn015|so maybe if we if we can make one up now that would be incredibly helpful.|cs
-fe004|so where it should illustrate|bu
-me010|okay.|bk
-mn015|how|%--
-fe004|uh when you say all this do you mean like i don't know the related work stuff?|bu
-fe004|as well as mappings?|bu
-me010|right right|fg
-mn015|well we have for example a canonical use of something.|s
-mn015|and it's you know we have some constructions.|s
-mn015|and then it's construed as something.|s
-mn015|and then we we may get the same constructions with a metaphorical use that's also relevant to the to the domain.|s
-me010|okay let's let's suppose you use in and on.|s
-me010|i mean that's what you started with.|s
-mn015|uhhuh.|b
-me010|so in the bus and on the bus.|s
-me010|um that's actually a little tricky in english.|ba
-me010|because to some extent they're synonyms.|s
-me010|okay.|f
-mn015|i had two hours with george on this.|s
-me010|okay what did he say?|bk
-mn015|so it|%--
-fe004|did you?|qy
-mn015|um um|fh
-fe004|join the club.|co
-me010|right oh that's|%--
-mn015|on the bus is a is a metaphorical metonymy.|s
-mn015|that relates some path metaphorically.|s
-mn015|and you're on on that path.|s
-mn015|and i mean it's he there's a platform notion.|s
-me010|yeah i i believe all that.|fg
-me010|it's just|%--
-mn015|right?|d
-mn015|he's on the standing on the bus waving to me.|s
-me010|yeah.|b
-mn015|but the regular as we speak johno was on the bus to new york.|s
-me010|yeah.|b
-me010|yeah.|b
-mn015|um uh|fh
-mn015|he's|%--
-mn015|that's uh|%--
-mn015|what did i call it here?|t1
-mn015|the transportation schema something.|s
-me010|yeah.|b
-mn015|where you can be on the first flight on the second flight.|s
-me010|yeah.|fg
-mn015|and you can be you know on the wagon.|s
-me010|right so so that that may or may not be what you what you want to do.|fg
-me010|i mean you could do something much simpler.|s
-mn015|yeah.|bk
-me010|like under the bus or something.|cs
-me010|where|%--
-mn015|but it's it's unfortunately this is not really something a tourist would ever say.|ng
-mn015|so|fh
-me010|well unless he was repairing it or something.|ng
-me010|but yeah.|bd
-mn015|yeah.|bk
-mn015|but um|fh
-me010|uh but okay.|fg
-mn015|so in terms of the this|s
-fe004|i see.|b
-mn015|we had we had initially we'd started discussing the out of film.|s
-me010|right.|b
-mn015|and there's a lot of out of analysis.|s
-mn015|so um|fh
-me010|right.|b
-mn015|could we capture that?|rt
-mn015|with a different construal of|e
-fe004|yeah it's a little it's|bk
-fe004|uh we've thought about it before uh uh to use the examples in other papers.|s
-fe004|and it's it's a little complicated.|ba
-me045|out of out of film in particular.|s
-fe004|because you're like it's a state of there's resource.|df
-me045|yeah.|bk
-fe004|right?|d
-fe004|and like what is film?|qh
-fe004|the state you know you're out of the state of having film right and somehow film is standing for the the the state of having some resource is just labeled as that resource.|s
-me045|it's|%--
-me045|yeah i mean|s
-fe004|i mean|%--
-me045|but|%--
-me045|and plus the fact that there's also|s
-fe004|it's a little bit|%--
-me045|i mean can you say like the film ran out?|qy
-me045|you know.|f
-me045|or maybe you could say something like the film is out.|s
-fe004|yeah is film the trajector?|bk
-me045|so like the the film went away from where it should be.|s
-me045|namely with you or something.|s
-me045|right?|d
-me045|you know.|f
-me045|the the film the film is gone.|s
-me045|right?|d
-me045|um|fh
-me045|i never really knew what was going on.|no
-me045|i mean i i find it sort of a little bit farfetched to say that that i'm out of film means that i have left the state of having film or something like that.|df
-fe004|it's weird.|ba
-fe004|that|%--
-me045|but|fh
-me010|uh.|b
-fe004|or having is also um associated with location.|fg
-me045|yeah yeah.|aa
-fe004|right?|d
-fe004|so if the film left|s
-fe004|you know state is being near film.|s
-mn015|so running running out of something is different from being out of somewhere.|s
-me010|or being out of something as uh as well.|2
-me010|so running out of it definitely has a process aspect to it.|s
-fe004|uhhuh.|aa
-fe004|but that's from run yeah.|aap
-me045|uhhuh.|b
-me010|so|fh
-me010|that's okay.|bd
-me010|i mean but the difference|s
-fe004|yeah.|bk
-mn015|is the the final state of running out of something is being out of it.|s
-me010|is|qy
-me045|yeah.|aa
-me010|right.|aa
-fe004|yeah so|aa
-me045|you got there.|s
-fe004|that part is fine.|ba
-me045|you got to out of it.|s
-me010|yeah.|b
-me045|yeah.|b
-me010|but uh|fg
-me045|huh!|ba
-me010|yeah so so so no one has in in of the|s
-me010|uh|fh
-me010|professional linguists.|s
-me010|they haven't|%--
-fe004|uh|fh
-me010|there was this whole thesis on out of.|s
-fe004|there was?|br
-me010|well there i thought or there was a paper on it.|s
-fe004|who?|qw
-me045|out.|s
-me010|huh?|br
-me045|there was one on on out or out of?|d
-me010|there was|s
-me010|well it may be just out.|s
-me045|okay.|bk
-me010|yeah.|b
-me010|i think there was over.|s
-me010|but there was also a paper on out.|s
-me045|yeah susan lindner.|fg
-me045|right?|d
-me010|or something.|s
-fe004|oh yeah you're right yeah.|na
-me045|the the the syrup spread out.|bu
-me045|that kind of thing?|d
-me010|yeah and all that sort of stuff.|aa
-fe004|yeah.|aa
-fe004|and undoubtably there's been reams of work about it in cognitive linguistics.|s
-me010|okay but anyway we're not going to do that between now and next week.|fg
-fe004|but|fh
-fe004|yeah.|bk
-mn015|yeah.|bk
-me010|okay.|bk
-me010|so um|fh
-fe004|it's not one of the it's more straightforward ones forward ones to defend.|s
-fe004|so you probably don't want to use it for the purposes.|s
-mn015|uhhuh.|b
-me010|right.|b
-me010|okay.|b
-fe004|these are you're addressing like computational linguists.|bu
-fe004|right?|d
-fe004|or are you?|rt
-mn015|there's going to be four computational linguists.|s
-fe004|okay but more emphasis on the computational or emphasis on the linguist?|bk
-mn015|it's|%--
-mn015|more there's going to be the just four computational linguists by coincidence.|s
-mn015|but the rest is whatever biocomputing people and physicists.|s
-me010|no no no but not for your talk.|ar
-fe004|oh okay.|bk
-me010|we're worrying about the the|%--
-mn015|oh the thesis.|s
-me010|it's just for one guy.|s
-fe004|oh i meant this.|fg
-mn015|that's that's should be very computational.|s
-fe004|you know like|s
-fe004|okay.|bk
-me010|yeah.|b
-mn015|and uh|%--
-fe004|so i would try to i would stay away from one that involves weird construal stuff.|s
-me045|yeah.|b
-me010|right.|aa
-fe004|you know it's an obvious one.|s
-me045|totally weird stuff.|ba
-mn015|i mean the the old bakery example might be nice.|cs
-fe004|but uh|fh
-mn015|is there a bakery around here?|qy
-me045|yeah.|aa
-mn015|so if you we really just construe it as a|cs
-fe004|around?|bu
-mn015|no it's the bakery itself.|ar
-mn015|is it a building uh that you want to go to or is it something to eat that you want to buy?|qh
-fe004|oh.|bk
-fe004|oh oh yeah yeah.|bk
-fe004|we've thought about that.|s
-fe004|right right.|b
-mn015|and then|%--
-fe004|nnn.|b
-fe004|no!|ar
-fe004|what?|br
-fe004|bakery can't be something you're going to eat.|nd
-me010|no no the question is do you want to do you want to construe do you want to constr strue|ar
-me003|it's a speech act.|s
-me010|exactly it's because do you want to do you want to view the bakery as a a place that that for example if|aa
-fe004|yeah.|b
-fe004|where you can get baked goods.|2
-me010|well well that's one.|s
-me010|you want to buy something.|s
-me010|but the other is|s
-me010|uh you might have smelled a smell and are just curious about whether there'd be a bakery in the neighborhood.|s
-me010|or|fh
-me045|uhhuh.|b
-me010|um pfff|%--
-me010|you know you wonder how people here make their living.|s
-me010|and there're all sorts of reasons why you might be asking about the existence of a bakery.|s
-me045|yeah.|b
-me010|that doesn't mean i want to buy some baked goods.|s
-fe004|okay.|bk
-me010|but um|fh
-me010|those are interesting examples.|ba
-me010|but it's not clear that they're mainly construal examples.|s
-me045|yeah.|aa
-fe004|so it's a lot of pragmatics there that|s
-mn015|huh.|b
-me010|there's all sorts of stuff going on.|na
-me010|so|fh
-fe004|might be beyond what you want to do.|s
-me010|let's so let's think about this from the point of view of construal.|co
-me010|so let's first do a|co
-me010|so the metonymy thing is probably the easiest.|ba
-me010|and and actually the|s
-me010|though the one you have isn't quite|s
-fe004|you mean the|bu
-fe004|you mean the steak wants to pay?|bu
-me010|no not that one.|ar
-me010|that's that's a the sort of background.|s
-me010|this is the uh page five.|s
-me003|about plato and the book?|bu
-me010|no.|ar
-fe004|oh.|fg
-mn015|no.|ar
-fe004|um|b
-me045|onward.|s
-me010|just beyond that.|s
-fe004|how much does it cost?|rt
-mn015|where is the castle?|qw
-me010|yeah.|b
-me045|a castle.|s
-mn015|how old is it?|qw
-mn015|how much does it cost?|qw
-me003|oh.|b
-me045|uhhuh.|b
-fe004|to go in.|2
-fe004|that's like|s
-me045|two hundred million dollars.|j
-me010|right.|aa
-me010|it's not for sale.|s
-me010|uh so|fh
-me045|yeah i think that's a good example actually.|fg
-fe004|yeah that's good.|aa
-mn015|but as nancy just suggested it's probably ellipticus.|arp
-fe004|ellipsis.|2
-mn015|huh|b
-fe004|like it doesn't refer to thing.|s
-fe004|it refers to you know|s
-fe004|thing standing for most relevant activity for a tourist.|s
-fe004|you could think of it that way.|s
-fe004|but|fh
-me010|yeah.|aa
-me045|well shoot!|fe
-me045|isn't that i mean that's what|qh
-mn015|well i mean my argument here is it's it's it's the same thing as plato's on the top shelf.|ng
-me045|figuring that out is what this is about.|ng
-fe004|yeah yeah no i agree.|aa
-mn015|i'm|%--
-mn015|you know that you can refer to a book of plato by using plato.|s
-fe004|yeah.|bk
-mn015|and you can refer back to it.|s
-fe004|no no i i'm agreeing that this is a good um|aa
-mn015|and so you can castles have as tourist sites have admission fees.|s
-mn015|so you can say where is the castle.|s
-mn015|how much does it cost.|s
-mn015|um|fh
-mn015|how far is it from here.|s
-me045|uhhuh.|b
-mn015|so|fh
-mn015|you're also not referring to the width of the object or so.|s
-fe004|huh.|b
-mn015|www.|b
-fe004|uhhuh.|b
-me045|huh.|b
-me010|okay can we think of a nice metaphorical use of where in the tourist's domain|fg
-me010|um|fh
-me045|huh.|b
-me010|so you know it's|s
-me010|you you can sometimes use where for when.|cs
-me010|in the sense of you know|s
-me010|um|fh
-me010|where where where was um|qh
-me010|where was heidelberg um in the thirty years' war?|qh
-me010|or something.|e
-me045|uh yeah.|bk
-mn015|uhhuh.|b
-me010|you know or some such thing.|e
-me010|um|b
-me045|like what side were they on?|bu
-me045|or|qrr
-fe004|what?|br
-me010|yeah essentially yeah.|aa
-fe004|okay i was like huh.|bk
-fe004|it was here.|s
-fe004|like um|fh
-me010|but anyway so there are there are cases like that.|s
-me010|um|fh
-fe004|uh.|b
-fe004|or like its developmental state or something like that.|s
-fe004|you could i guess you could get that.|cs
-me010|yeah.|b
-me010|um.|fh
-fe004|um.|fh
-me045|i mean there's also things like i mean|s
-me045|um|fh
-me045|i guess i could ask something like where can i find out about blah blah blah.|s
-me045|in a sort of|s
-me045|doesn't i don't necessarily have to care about the spatial location.|s
-me045|just give me a phone number.|s
-me045|and i'll call them or something like that.|bu
-me010|yeah there certainly is that yeah.|na
-me010|you know where could i learn its opening hours or something.|s
-me045|yeah.|bk
-me010|but that's not metaphorical.|s
-fe004|huh.|b
-me010|it's another|s
-me045|yeah.|bk
-me010|so we're thinking about um|s
-me010|or we could also think about|cs
-me010|uh|fh
-mn015|well i i i|%--
-me010|how about i'm in a hurry?|qo
-fe004|state.|s
-me010|it but it's a state and the the issue is is that it may be just a usage.|s
-me045|huh.|b
-me010|you know that it's not particularly metaphorical.|s
-me010|i don't know.|bd
-me045|huh.|b
-fe004|right.|b
-fe004|so you want a more exotic one version of that.|cs
-me045|oh.|fg
-me010|yeah yeah right.|aa
-me010|uh!|fe
-me010|how about|qw
-fe004|i'm really into|s
-me010|i i i you know i'm in i'm in a state of exhaustion.|cs
-me010|or something like that.|s
-fe004|do you really say that?|am
-me010|which a tourist|s
-me010|huh?|br
-fe004|would you really say that?|am
-me010|a uh well you can certainly say um you know i'm in overload.|na
-me045|yeah.|aa
-me010|tourists will often say that.|e
-me003|i'm really into art.|s
-fe004|yeah i was going to say like|aa
-me003|uh|fh
-me010|oh you can do that?|am
-me010|really?|qh
-me010|of course that's that that's definitely a uh|s
-me045|fixed.|2
-fe004|a fixed expression yeah.|m
-me010|that's a uh|s
-me010|right but|bk
-fe004|there're too there're all sorts of fixed expressions.|s
-fe004|i don't like uh|s
-fe004|i'm out of sorts now.|s
-me010|right.|b
-fe004|like i'm in trouble.|s
-mn015|well i when uh just|%--
-mn015|the data that i've looked at so far that|s
-me010|yeah.|b
-mn015|i mean there's tons of cases for polysemy.|ba
-me010|right.|b
-mn015|so you know making reference to buildings as institutions as containers as|s
-fe004|uhhuh.|b
-me010|right.|b
-mn015|you know whatever.|e
-mn015|um so in for example in museums you know as a building or as something where pictures hang versus you know something that puts on exhibits.|s
-me010|right as an institution.|bk
-mn015|so forth.|e
-mn015|but|fh
-me010|yeah.|b
-mn015|um.|fh
-fe004|why don't you want to use any of those?|rt
-mn015|huh?|br
-fe004|so you don't want to use one that's|bu
-mn015|yeah well|bk
-mn015|no but this|ar
-mn015|that's what i have you know started doing.|s
-me010|the castle the that old castle one is sort of|s
-mn015|metonymy polysemy.|s
-me003|i love van gogh.|s
-me010|yeah.|b
-me010|uh!|b
-fe004|i want to go see the van gogh.|s
-me045|oh geez.|ba
-fe004|anyway i'm sorry.|tc
-mn015|but i think the argument should be uh can be made that you know despite the fact that this is not the most metaphorical domain|s
-mn015|because people interacting with h t i systems try to be straightforward and less lyrical|s
-me010|yeah.|b
-mn015|construal still is uh you know completely um key in terms of finding out any of these things.|s
-mn015|so um|fh
-me010|right.|bk
-me010|so that's that's that's a that's a reasonable point.|s
-me010|that it in this domain you're going to get less metaphor and more metonymy.|s
-mn015|we uh i with a i looked with a student i looked at the entire database that we have on heidelberg for cases of metonymy.|rt
-me010|and polysemy and stuff like that.|s
-me010|yeah.|b
-mn015|hardly anything.|s
-mn015|so not even in descriptions did we find anything um relevant.|s
-me045|i have to go.|t3
-me010|all right yeah.|bk
-mn015|but okay this is just something we'll we'll see.|fg
-mn015|um|fh
-me010|right.|bk
-me010|see you.|t3
-mn015|and deal with.|s
-me010|okay well i guess if anybody has additional suggestions|fg
-mn015|i mean maybe the where is something question as a whole you know can be construed as locational versus instructional request.|am
-me010|yeah.|bk
-mn015|so if we're not talk about the|s
-fe004|location versus what?|rt
-mn015|instruction.|s
-fe004|instruction oh directions yeah.|bk
-me010|sure.|b
-mn015|yeah.|bk
-fe004|oh i thought that was definitely treated as an example of construal.|bu
-fe004|right?|d
-mn015|yeah but then you're not on the lexical level.|aa
-mn015|that's sort of one level higher.|df
-fe004|oh you want a lexical example.|bk
-mn015|but i don't need it.|arp
-me010|well you might want both.|am
-mn015|uhhuh.|b
-fe004|yeah.|b
-mn015|also it would be nice to get ultimately to get a nice mental space example.|cs
-me010|we|%--
-mn015|so even temporal references are|s
-mn015|just in the spatial domain are rare.|ba
-me010|but it's it's easy to make up plausible ones.|nd
-me010|you know?|d
-mn015|when when you're getting information on objects.|s
-me010|right.|aa
-mn015|so i mean|%--
-me010|you know you know where|%--
-me010|yeah.|b
-me010|what color was this in in in the nineteenth century?|qh
-mn015|yeah.|b
-me010|what was this|%--
-me010|instead of what you know how was this painted.|s
-me010|what color was this painted?|qh
-me010|um|fh
-me010|was this alleyway open?|qh
-mn015|yeah maybe we can include that also in our second uh data run.|fg
-me010|uh|fh
-mn015|we we can show people pictures of objects.|cs
-mn015|and then have then ask the system about the objects.|cs
-mn015|and engage in conversation on the history and the art and the architecture and so forth.|cs
-me010|uhhuh.|b
-me010|okay so why don't we plan to give you feedback electronically.|fg
-me010|wish you a good trip.|tc
-me010|all success.|s
-me003|for some reason when you said feedback electronically i thought of that|s
-me003|you ever see the simpsons where they're like the family's got the buzzers?|qy
-me003|and they buzz each other when they don't like what the other one is saying.|e
-fe004|yeah that's the first one i think.|aa
-me003|it was a very early one.|aap
-fe004|the very very first one.|r
-me003|i don't know if it's the first one.|no
-fe004|huh.|b
-fe004|huh.|b
+me003|are we to just to make sure i know what's going on we're talking about robert's thesis proposal today?|Q|qy|bu
+me003|is that|D|qy|qy
+mn015|we could.|S|s|s
+me003|true?|Q|qy|bu
+fe004|we are?|Q|qy|bu
+mn015|we might.|S|s|am
+fe004|okay.|S|s|bk
+me010|well you you had you said there were two things that you might want to do.|S|s|s
+me003|is|D|%|%
+me010|one was rehearse your talk|D|s|s
+me003|oh yes and that too.|S|s|bk
+mn015|not not rehearse.|S|s|s
+mn015|i mean i have just not spent any time on it.|S|s|df
+mn015|so i can show you what i've got get your input on it and maybe some suggestions.|S|s|cs
+mn015|that would be great.|S|s|ba
+mn015|and the same is true for the proposal.|S|s|s
+mn015|i will have time to do some revision and some additional stuff on various airplanes and trains.|S|s|rt
+mn015|so um|F|fh|fh
+mn015|i don't know how much of a chance you had to actually read it.|S|s|no
+fe004|i haven't looked at it.|S|s|nd
+mn015|because|D|%|%
+fe004|yet.|S|s|e
+mn015|but you could always send me comments per electronic mail.|S|s|rt
+fe004|but i will.|S|s|cc
+mn015|and they will be incorporated.|S|s|rt
+fe004|okay.|S|s|bk
+mn015|um the|F|fh|fh
+mn015|it basically says well this is construal.|S|s|s
+mn015|and then it continues to say that one could potentially build a probabilistic relational model that has some general domain general rules|D|s|s
+mn015|how things are construed.|S|s|rt
+mn015|and then the idea is to use ontology situation user and discourse model to instantiate elements in the classes of the probabilistic relational model to do some inferences in terms of what is being construed as what.|S|s|s
+fe004|huh.|B|b|b
+mn015|in our beloved tourism domain.|S|s|s
+mn015|but with a focus on|D|s|s
+fe004|can i|D|%|%
+me045|i think i need a copy of this yes.|S|s|s
+fe004|sorry.|S|s|fa
+mn015|huh?|Q|qw|br
+me045|is there an extra copy around?|Q|qy|rt
+me003|okay we can we can we can pass pass my uh we can pass my extra copy around.|S|s|s
+fe004|uh he sent it.|S|s|s
+fe004|okay you can keep it.|S|s|bk
+me003|uh actually my only copy now that i think about it.|S|s|bsc
+fe004|okay.|S|s|bk
+me003|but i already read half of it.|S|s|bd
+mn015|um i don't i uh i don't need it.|S|s|s
+me003|so it's okay.|S|s|ba
+me045|okay.|S|s|bk
+mn015|um actually this is the the newest version after your comments.|S|s|s
+mn015|and|F|fh|fh
+me010|yeah no i i i see this has got the castle in it and stuff like that.|S|fg|fg
+mn015|yeah.|B|b|b
+me010|yep.|B|b|b
+me003|oh maybe the version i didn't have|D|s|s
+me003|that i mine the|D|%|%
+me003|did the one you sent on the email have the|D|qy|qy
+me010|yeah.|S|s|aa
+me003|that was the most recent one?|Q|qy|bu
+me010|uh yeah i think so.|S|s|aa
+me003|okay.|S|s|bk
+mn015|yep.|S|s|aa
+me003|because i read halfway but i didn't see a castle thing.|S|s|s
+fe004|i'm changing this.|S|s|s
+fe004|just so you know.|S|s|s
+mn015|yeah.|S|s|bk
+fe004|but anyway|D|%|%
+mn015|um if you would have checked your email you may have received a note from yees asking you to send me the uh|D|s|s
+fe004|oh oh sorry.|S|s|bk
+fe004|okay.|S|s|bk
+fe004|sorry.|S|s|fa
+mn015|current formalism thing that you presented.|S|s|e
+fe004|okay i will.|S|s|bk
+fe004|okay okay.|S|s|bk
+fe004|okay.|S|s|bk
+mn015|but for this it doesn't matter.|S|s|s
+mn015|but uh|F|fh|fh
+fe004|we can talk about it later.|S|s|s
+fe004|that's not even ready.|S|s|s
+fe004|so um|F|fh|fh
+fe004|okay go on to uh whatever.|S|fg|fg
+mn015|and|F|fh|fh
+fe004|i'm making changes.|S|s|s
+fe004|don't worry about that.|S|s|co
+fe004|okay uhhuh|B|b|b
+fe004|oh okay sorry.|S|s|bk
+fe004|go on.|S|s|co
+mn015|and any type of comment whether it's a spelling or a syntax or|D|s|s
+fe004|uhhuh.|B|b|rt
+me045|there's only one s in interesting.|S|s|s
+mn015|readability|D|s|e
+mn015|huh?|Q|qw|br
+me045|there's only one s in interesting on page five.|S|s|s
+mn015|interesting.|S|s|ba
+fe004|anyway.|F|fg|fg
+fe004|and uh email any time.|S|s|co
+fe004|but most usefully before|D|s|e
+me003|the twenty first i'm assuming.|S|s|2
+fe004|the twenty first?|Q|qy|bu
+mn015|twenty ninth.|S|s|s
+me010|no this is the twenty first.|S|s|ar
+me045|that's|D|%|%
+me003|what?|Q|qw|br
+me003|today's the twenty first?|Q|qy|bu
+me045|well better hurry up then!|S|s|co
+me003|oh man!|S|s|ba
+mn015|the twenty ninth.|S|s|r
+fe004|before the twenty ninth.|S|s|s
+fe004|okay.|S|s|bk
+me003|okay.|S|s|bk
+mn015|that's when i'm meeting with wolfgang wahlster to sell him this idea.|S|s|s
+fe004|uhhuh.|B|b|b
+fe004|okay.|S|s|bk
+mn015|okay.|F|fg|fg
+mn015|then i'm also going to present a little talk at e m l about what we have done here.|S|s|rt
+mn015|and so|F|fh|fh
+mn015|of course i'm i'm going to start out with this slide.|S|s|s
+mn015|so the most relevant aspects of our stay here.|S|s|s
+mn015|and um|F|fh|fh
+mn015|then i'm asking them to imagine that they're standing somewhere in heidelberg.|S|s|s
+mn015|and someone asks them in the morning the cave forty five is a is a well known discotheque.|S|s|s
+mn015|which is certainly not open at that that time.|S|s|s
+me045|okay.|B|b|b
+mn015|and so|F|fh|fh
+mn015|they're supposed to imagine that you know do they think the person wants to go there or just know where it is.|S|s|rt
+mn015|uh|F|fh|fh
+mn015|which is probably not uh the case in that discotheque example.|S|s|s
+mn015|or in the bavaria example.|S|s|s
+mn015|you just want to know where it is.|S|s|s
+mn015|and so forth.|S|s|s
+mn015|so basically we can make a point that here is ontological knowledge.|S|s|s
+mn015|but if it's nine nine p m in the evening then the discotheque question would be for example one that might ask for directions instead of just location.|S|s|s
+mn015|um and so forth and so forth.|S|s|s
+mn015|that's sort of motivating it.|S|s|s
+mn015|then what have we done so far?|Q|qh|rt
+mn015|we had our little bit of um um smartkom stuff that we did.|S|s|rt
+mn015|um|F|fh|fh
+me045|oh you've got the parser done.|S|s|s
+me045|sorry.|S|s|fa
+mn015|that's the not the construction parser.|S|s|s
+me045|okay.|S|s|bk
+mn015|that's the uh tablet based parser.|S|s|e
+fe004|easy parser.|S|s|2
+me045|okay.|B|b|b
+mn015|and|F|fh|fh
+mn015|the generation outputter.|S|s|s
+me003|halfway done.|S|s|2
+me003|yeah.|B|b|b
+mn015|that's done.|S|s|aap
+fe004|huh.|B|b|b
+mn015|you have to change those strategies.|S|s|s
+me003|okay.|S|s|bk
+mn015|right?|Q|qy|bu
+me003|yeah.|S|s|aa
+mn015|that's ten words?|Q|qy|bu
+me003|well it you know|D|s|s
+me003|maybe twelve.|S|s|s
+mn015|twelve okay.|S|s|bk
+mn015|and um and fey is doing the synthesis stuff as we speak.|S|s|s
+mn015|that's all about that.|S|s|rt
+mn015|then i'm going to talk about the data.|S|s|s
+mn015|you know these things about|D|s|s
+mn015|uh actually i have an example|D|s|s
+mn015|probably.|S|s|s
+mn015|two|D|%|%
+mn015|can you hear that?|Q|qy|rt
+me045|uhhuh.|S|s|aa
+mn015|or should i turn the volume on?|Q|qrr|qrr
+fe004|i could hear it.|S|s|na
+me003|i can hear it.|S|s|na
+me045|i heard it.|S|s|na
+me003|they might not hear it in the|D|s|s
+me003|well maybe they will.|S|s|bd
+me003|i don't know.|S|s|bd
+fe004|this was an actual um subject?|Q|qy|d
+fe004|uh.|S|s|bk
+mn015|uhhuh.|S|s|aa
+me045|sounds like fey.|S|s|s
+fe004|yeah.|S|s|aa
+mn015|but they're they're mimicking the synthesis when they speak to the computer.|S|s|s
+me045|oh okay.|S|s|bk
+mn015|the you can observe that all the time.|S|s|s
+me045|oh really?|Q|qy|bh
+mn015|they're trying to match their prosody onto the machine.|S|s|s
+me045|interesting.|B|b|b
+me045|oh it's pretty slow.|S|s|ba
+mn015|yeah you have to|D|%|%
+me045|the system breaking.|S|s|s
+fe004|what is the|D|qw|qw
+fe004|oh!|S|s|fe
+mn015|okay and so forth and so forth.|S|s|bk
+mn015|um i will talk about our problems with the rephrasing.|S|s|s
+mn015|and how we solved it.|S|s|s
+mn015|and some preliminary observations.|S|s|s
+mn015|also um|F|fh|fh
+mn015|i'm not going to put in the figures from liz.|S|s|s
+mn015|but i thought it would interesting to uh um point out that it's basically the same.|S|s|s
+mn015|um as in every human human telephone conversation and the human computer telephone conversation is of course quite quite different from uh some first uh observations.|S|s|s
+mn015|then|F|fh|fh
+mn015|sort of feed you back to our original problem.|S|s|rt
+mn015|because uh|D|%|%
+mn015|how to get there.|S|s|rt
+mn015|what actually is happening there today?|Q|qh|rt
+mn015|and then maybe talk about the big picture here.|S|s|rt
+mn015|tell a little bit as much as i can about the n t l story.|S|s|s
+mn015|i i i do want to um|D|s|s
+mn015|i'm not quite sure about this whether i should put this in.|S|s|s
+mn015|um that you know you have these two sort of different ideas that are or two different camps of people envisioning how language understanding works.|S|s|s
+mn015|and then talk a bit about the embodied and simulation approach favored here.|S|s|s
+mn015|and as a prelude i'll talk about monkeys in italy.|S|s|s
+mn015|and um srini was going to send me some slides.|S|s|s
+mn015|but he didn't do it.|S|s|s
+mn015|so from but i have the paper.|S|s|s
+mn015|i can make a resume of that.|S|s|s
+mn015|and then i stole an x schema from one of your talks i think.|S|s|s
+fe004|oh.|S|s|bk
+fe004|i was like where'd you get that.|S|s|s
+me045|yeah that looks familiar.|S|s|ba
+fe004|okay.|S|s|bk
+fe004|looks familiar.|S|s|s
+mn015|i think that's bergen chang something or the other.|S|s|s
+fe004|uh|B|b|b
+me010|whatever.|S|s|ba
+fe004|okay.|B|b|b
+mn015|um and that's|D|fh|fh
+mn015|now i'm not going to bring that.|S|s|s
+mn015|so that's basically what i have so far.|S|s|s
+mn015|and the rest is for airplanes.|S|s|s
+mn015|so x schemas then i would like to do|D|s|s
+mn015|talk about the construction aspect.|S|s|s
+mn015|and then at the end about our bayes net.|S|s|s
+fe004|uhhuh.|B|b|b
+mn015|end of story.|S|s|tc
+mn015|anything i forgot that we should mention?|Q|qo|rt
+mn015|oh maybe the f m r i stuff.|S|s|s
+mn015|should i mention the fact that um we're also actually started going to start to look at people's brains in a more direct way?|Q|qy|qy
+me010|you certainly can.|S|s|s
+me010|i mean you know i don't know|D|s|no
+fe004|you might just want to like tack that on as a comment to something.|S|s|cs
+me010|right.|S|s|aa
+me010|um.|F|fg|fg
+mn015|future activities something?|Q|qy|bu
+me010|well the time to mention it if you mention it is when you talk about mirror neurons.|S|s|s
+me010|then you should talk about the more recent stuff about the kicking.|S|s|s
+me010|and you know the|D|s|s
+mn015|yeah.|S|s|bk
+me010|yeah yeah.|B|b|b
+me010|and that the plan is to see to what extent the you'll get the same phenomena with stories about this.|S|s|s
+me010|so that|D|%|%
+mn015|uhhuh.|B|b|b
+me010|and that we're planning to do this.|S|s|s
+me010|um|F|fh|fh
+me010|which we are.|S|s|s
+me010|so that's one thing.|S|s|s
+me010|um|F|fh|fh
+me010|depends i mean there is a um whole language learning story.|S|s|s
+me010|okay?|Q|qy|d
+mn015|yeah.|S|s|aa
+me010|which|D|%|%
+me010|uh actually|D|%|%
+me010|even on your five layer slide you you've got an old one that that leaves that off.|S|s|s
+mn015|yeah i i i do have it here.|S|s|bk
+fe004|huh.|B|b|b
+me010|yeah.|B|b|b
+mn015|um|F|fh|fh
+mn015|and of course you know the the big picture is this bit.|S|s|s
+me010|right.|B|b|b
+mn015|but you know it would|D|s|s
+mn015|but i don't think i i am capable of of pulling this off and doing justice to the matter.|S|s|s
+mn015|i mean there is interesting stuff in terms of how language works.|S|s|ba
+mn015|so the emergentism story would be nice to be you know it would be nice to tell people.|S|s|s
+mn015|how what's happening there.|S|s|e
+mn015|plus how the uh language learning stuff works.|S|s|s
+me010|okay so so anyway i i agree that's not central.|S|fg|fg
+mn015|but|D|%|%
+me010|what you might want to do is|D|s|cs
+fe004|uhhuh.|B|b|b
+me010|um|F|fh|fh
+me010|and may not.|S|s|bd
+me010|but you might want to this is rip off a bunch of the slides on the|D|s|cs
+me010|there the there we've got various generations of slides that show language analysis and matching to the underlying image schemas.|S|s|s
+me010|and|F|fh|fh
+me010|um how the construction and simulation|D|fh|fh
+me010|that that whole|D|s|s
+mn015|yeah that that's that comes up to the x schema slide.|S|fg|fg
+fe004|okay right.|S|s|bk
+mn015|so basically i'm going to steal that from nancy.|S|s|s
+mn015|one of nancy's|D|s|s
+fe004|okay i can give you a more recent if you want.|S|s|bk
+fe004|well that might have enough.|S|s|s
+mn015|uh i|D|%|%
+mn015|yeah but i also have stuff you trash you left over.|S|s|bk
+me010|okay.|S|s|bk
+mn015|your quals and your triple a i.|S|s|rt
+me010|the quals the the the quals slides would be fine.|S|s|ba
+fe004|yeah.|S|s|bk
+me010|you could get it out of there or|D|s|s
+fe004|which i can even email you then.|S|s|cs
+fe004|you know like there probably was a little few changes.|S|s|s
+fe004|not a big deal.|S|s|ba
+fe004|yeah you could steal anything you want.|S|s|s
+fe004|i don't care.|S|s|s
+fe004|which you've already done obviously.|S|s|s
+fe004|so|F|fh|fh
+mn015|well i i don't feel bad about it at all.|S|s|s
+fe004|sorry.|S|s|fa
+fe004|no you shouldn't.|S|s|aa
+mn015|because because you are on the uh title.|S|s|df
+mn015|i mean on the the you're that's see that's you.|S|s|s
+fe004|oh that's great that's great.|S|s|ba
+me010|yeah.|B|b|b
+fe004|i'm glad to see propagation.|S|s|s
+me010|yeah.|B|b|b
+fe004|huh!|B|b|b
+mn015|huh?|Q|qw|br
+mn015|propagated?|Q|qy|bu
+fe004|yes.|S|s|aa
+mn015|i mean i might even mention that this work you're doing is sort of also with the m p i in leipzig.|S|s|am
+mn015|so|F|fh|fh
+fe004|it's it's certainly related.|S|s|s
+fe004|um|F|fh|fh
+mn015|because um e m l is building up a huge thing in leipzig.|S|s|df
+fe004|might want to say.|S|s|cs
+fe004|is it?|Q|qy|bh
+mn015|so it|D|s|s
+mn015|it's on biocomputation would|D|s|s
+me010|yeah it's different.|S|fg|fg
+me010|this is the uh d n a building or the double helix building.|S|s|s
+me010|yeah.|B|b|b
+mn015|yeah.|B|b|b
+fe004|kind of a different level of analysis.|S|s|ba
+me010|the yeah it was it turns out that if if you have multiple billions of dollars you can do all sorts of weird things.|S|s|s
+me010|and|D|%|%
+me003|wait they're building building in the shape of d n a?|S|s|co
+fe004|what?|Q|qw|br
+me003|is that what you said?|Q|qy|g
+me010|roughly yeah.|S|s|na
+me045|oh oh boy.|S|s|fa
+me010|including cross bridges.|S|s|e
+me010|and|F|fh|fh
+fe004|what?|Q|qw|br
+me045|that's brilliant!|S|s|ba
+fe004|oh my god!|S|s|fe
+me045|hhh.|B|b|b
+me010|you you really now i spent the last time i was there i spent maybe two hours hearing this story.|S|s|s
+me010|which is um|D|s|s
+fe004|of what?|Q|qw|qw
+me003|you definitely want to don't want to waste that money on research.|S|s|cs
+fe004|the building.|S|s|bu
+me003|you know?|Q|qy|d
+me010|right.|S|s|bk
+me003|that's horrible.|S|s|ba
+me010|right.|B|b|b
+me010|well no no there's infinite money.|S|s|s
+me010|see.|S|s|f
+me010|you you you then fill it with researchers.|S|s|s
+fe004|and give them more money.|S|s|s
+fe004|they just want a fun place for them to to work.|S|s|s
+me010|right.|B|b|b
+me010|right.|B|b|b
+me045|and everybody gets a trampoline in their office.|S|s|j
+mn015|well the the offices are actually a little|D|s|s
+mn015|the|D|%|%
+mn015|think of um ramps coming out of the double helix.|S|s|s
+mn015|and then you have these half domes glass half domes.|S|s|s
+mn015|and the offices are in in the glass half dome.|S|s|rt
+fe004|really?|Q|qy|bh
+me045|all right let's stop talking about this.|S|s|bk
+me010|yeah.|B|b|b
+fe004|does it exist yet?|Q|qy|rt
+me010|yeah.|B|b|b
+mn015|uh as a model.|S|fh|fh
+fe004|they are now building it?|Q|qy|bu
+fe004|huh.|S|s|bk
+mn015|but i|D|%|%
+me010|so yeah i think that's that's a good point.|S|fg|fg
+me010|that the date the uh|D|s|s
+me010|a lot of the this is interacting with uh people in italy.|S|s|s
+me010|but also definitely the people in leipzig.|S|s|s
+me010|and|F|fh|fh
+me010|the|F|fh|fh
+me010|the the combination of the biology and the leipzig connection might be interesting to these guys.|S|s|s
+me010|yeah.|B|b|b
+me010|okay.|D|b|b
+me010|okay.|B|b|b
+me010|anyway enough of that.|S|fg|fg
+me010|let's talk about your thesis proposal.|S|s|co
+mn015|yeah if somebody has something to say.|S|s|bk
+me010|yep.|S|s|bk
+me045|you might want to uh double check the spellings of the authors' names on your references.|S|s|cs
+me045|you had a few uh misspells in your slides there.|S|s|s
+me045|like i believe you had jackendorf.|S|s|e
+me010|um|F|h|h
+me045|uh unless there's a person called jackendorf.|S|s|bd
+me010|no no no.|S|s|ar
+me045|yeah.|B|b|b
+fe004|on that one?|Q|qy|bu
+me045|but that's the only thing i noticed in there.|S|s|s
+fe004|in the presentation?|Q|qy|bu
+me045|in the presentation.|S|s|m
+fe004|i'll probably i might have i'll probably have comments for you separately.|S|s|am
+fe004|not important.|S|s|ba
+fe004|anyway|F|fh|fh
+mn015|oh in the presentation here.|S|s|s
+fe004|yeah that's what he was talking about.|S|s|aa
+me045|yeah.|S|s|aa
+mn015|i was actually worried about bibtex.|S|s|s
+mn015|uh no that's quite possible.|S|fh|fh
+mn015|that's copy and paste from something.|S|s|cs
+me010|so i did|D|s|s
+me010|it looks like the uh metaphor didn't get in yet.|S|s|s
+mn015|uh it did.|S|s|ng
+mn015|there is a reference to srini|D|s|s
+me010|well reference is one thing.|S|s|bd
+me010|the question is is there any place|D|qy|qy
+me010|oh did you put in something about|D|qy|qy
+fe004|metonymy and metaphor here.|S|s|2
+fe004|right?|Q|qy|bu
+me010|uh the individual|D|%|%
+me010|we'd talked about putting in something about people had|D|s|s
+me010|uh|F|fh|fh
+me010|oh yeah okay.|S|s|bk
+me010|good i see where you have it.|S|s|ba
+me010|so the top of the second of page two you have a sentence.|S|s|s
+mn015|uhhuh.|B|b|b
+me010|but what i meant is i think even before you give this to wahlster uh you should|D|s|cs
+me010|unless you put it in the text.|S|s|s
+me010|and i don't think it's there yet.|S|s|s
+me010|about we talked about is the um scalability that you get by um combining the constructions with the general construal mechanism.|S|s|s
+me010|is that in there?|Q|qy|rt
+mn015|yeah.|S|s|aa
+mn015|huh um|F|fh|fh
+me010|uh okay so where where is it?|S|s|bk
+me010|because i'll have to take a look.|S|s|df
+mn015|um but i i did not focus on that aspect.|S|h|h
+mn015|but um uh|F|fh|fh
+mn015|um it's just underneath uh um that reference to metaphor.|S|s|s
+mn015|so it's the last paragraph.|S|s|s
+mn015|before two.|S|s|s
+mn015|so on page two|D|s|s
+mn015|um the main focus|D|s|s
+me010|uh okay.|S|s|bk
+me010|yeah.|B|b|b
+mn015|but that's really|D|s|s
+fe004|that's not about that.|S|s|2
+mn015|yeah.|S|s|aa
+fe004|is it?|Q|qy|g
+me010|no it it it says it.|S|s|s
+me010|but it doesn't say it doesn't it it|D|s|s
+mn015|why.|S|s|2
+me010|yeah it doesn't give the punch line.|S|s|aa
+mn015|uhhuh.|S|s|bk
+me010|because let me tell the gang what i think the punch line is.|S|s|df
+me010|because it's actually important.|S|s|s
+me010|which is that the constructions that uh nancy and keith and friends are doing uh are in a way quite general.|S|s|ba
+me010|but cover only base cases.|S|s|s
+me010|and to make them apply to metaphorical cases and metonymic cases and all those things requires this additional mechanism of construal.|S|s|s
+me010|and the punch line is he claimed that if you do this right you can get essentially orthogonality.|S|s|s
+me010|that if you introduce a new construction at at the base level it should uh interact with all the metonymies and metaphors.|S|s|s
+me010|so that all of the projections of it also should work.|S|s|s
+me045|uhhuh.|B|b|b
+me010|and similarly if you introduce a new metaphor it should then uh compose with all of the constructions.|S|s|s
+me045|uhhuh.|B|b|b
+me045|yeah.|B|b|b
+me010|and it to the extent that that's true then then it's a big win over anything that exists.|S|s|s
+me003|so does that mean instead of having tons and tons of rules in your context free grammar you just have these base constructs and then a general mechanism for coercing them?|Q|qy|bu
+me045|yeah.|B|b|b
+me010|uhhuh.|S|s|aa
+me010|so that you know for example uh in the metaphor case that you have a kind of direct idea of a source path and goal.|S|s|s
+me010|and any metaphorical one and abstract goals and all that sort of stuff you can do the same grammar.|S|s|s
+me010|and it is the same grammar.|S|s|s
+me003|huh.|B|b|b
+me010|but um|F|fh|fh
+me010|the trick is that the|D|s|s
+me010|the way the construction's written it requires that the object of the preposition for example be a container.|S|s|s
+me010|well trouble isn't a container.|S|s|s
+me010|but it gets construed as a container.|S|s|s
+me003|right.|B|b|b
+me010|et cetera.|S|s|s
+me010|so that's that's where this um|D|s|s
+me003|so with construal you don't have to have a construction for every possible thing that can fill the rule.|S|s|bu
+me010|right.|S|s|aa
+me010|so's it's it it's a very big deal in this framework.|S|s|s
+me010|and the thesis proposal as it stands doesn't|D|s|s
+me010|um i don't think say that as clearly as it could.|S|fh|fh
+mn015|no it doesn't say it at all no.|S|s|na
+mn015|even though one could argue what if there are basic cases even.|S|s|df
+mn015|i mean it seems like nothing is context free.|S|s|s
+me010|oh nothing is context free.|S|s|aap
+me010|but there are basic cases.|S|s|s
+me010|that is um there are physical containers.|S|s|s
+me010|there are physical paths.|S|s|s
+me010|there|D|%|%
+me010|you know.|S|s|f
+me010|et cetera.|S|s|e
+mn015|but walked into the cafe and ordered a drink and walked into the cafe and broke his nose.|S|s|ng
+mn015|that's sort of|D|s|s
+me010|oh it doesn't mean that they're unambiguous.|S|s|ng
+me010|i mean a cafe can be construed as a container or it can be construed you know as as a obstacle.|S|s|s
+mn015|huh yeah.|B|b|b
+me045|uhhuh.|B|b|b
+me010|or as some physical object.|S|s|s
+me010|so there are multiple construals.|S|s|s
+me010|and in fact that's part of what has to be done.|S|s|s
+me010|this is why there's this interaction between the analysis and the construal.|S|s|s
+mn015|uhhuh.|B|b|b
+mn015|yep.|B|b|b
+me010|the the the double arrow.|S|s|s
+mn015|yep.|B|b|b
+me010|so uh yeah i mean it doesn't magically make ambiguity go away.|S|s|bd
+mn015|no.|B|b|b
+me010|but it does say that uh if you walked into the cafe and broke your nose then you are construing the cafe as an obstacle.|S|s|s
+mn015|uhhuh.|B|b|b
+me010|and if that's not consistent with other things then you've got to reject that reading.|S|s|s
+mn015|yep.|B|b|b
+me003|you con you conditioned me with your first sentence.|S|s|s
+me003|and so i thought why would he walk into the cafe and then somehow break his nose.|S|s|s
+me045|he slipped on the wet floor.|S|s|s
+me003|uh oh uh|F|fh|fh
+me010|right.|S|s|bk
+mn015|you don't find that usage.|S|s|s
+mn015|uh uh i checked for it in the brown national corpus.|S|s|rt
+me010|yeah.|B|b|b
+mn015|the walk into it never really means as in walked smack|D|s|s
+me010|but run into does.|S|s|s
+mn015|yeah but if you find walked smacked into the cafe or slammed into the wall|D|s|bk
+me010|yeah no but run into does.|S|s|bk
+mn015|uhhuh.|B|b|b
+me010|because you will find run into|D|s|s
+me010|uh|F|fh|fh
+me003|cars run into telephone poles all the time.|S|s|s
+me010|well or into the cafe for that|D|s|2
+me010|you know.|S|s|f
+mn015|right.|B|b|b
+me010|his car ran into the cafe.|S|s|s
+mn015|yeah or you can run into an old friend or run.|S|fg|fg
+me010|well you can run into in that sense too.|S|s|s
+me010|but uh|F|fh|fh
+fe004|yeah run into might even be more impact sense than you know container sense.|S|fg|fg
+me010|right.|S|s|aa
+me045|depends.|S|s|am
+me010|but like run into an old friend it probably needs its own construction.|S|s|s
+me010|i mean uh you know george would have i'm sure some complicated reason why it really was an instance of something else.|S|s|s
+fe004|uhhuh uhhuh.|B|b|b
+me010|and maybe it is.|S|s|s
+me010|but um|F|fh|fh
+me010|there are idioms.|S|s|s
+me010|and my guess is that's one of them.|S|s|s
+me010|but um i don't know.|S|s|bd
+fe004|all contact.|S|s|s
+fe004|i mean there's contact that doesn't social contact.|S|s|s
+fe004|whatever.|S|s|bd
+fe004|i mean|D|%|%
+me010|uh|F|fg|fg
+me045|sudden surprising contact.|S|s|cs
+me045|right?|Q|qy|d
+me010|yeah but it's it's it's it's right yeah it's more|D|fg|fg
+fe004|forceful.|S|s|cs
+me045|but of course no.|S|s|s
+me045|i mean it has a life of its own.|S|s|s
+me045|it's sort of partially inspired by the spatial|D|s|s
+me010|well this is this motivated|D|s|s
+me010|but yeah.|S|s|aa
+me045|yeah.|B|b|b
+me010|oh yeah for sure.|S|s|aa
+me010|motivated.|S|s|r
+me010|but then you can't parse on motivated.|S|s|s
+me045|yeah.|B|b|b
+me045|yeah right.|S|s|aa
+me010|uh|F|fh|fh
+fe004|too bad.|S|s|ba
+me003|you should get a t shirt that says that.|S|s|cs
+me010|okay.|S|s|bk
+fe004|there's there's lots of things you could make t shirts out of.|S|s|bd
+fe004|but uh|F|fh|fh
+fe004|this has gotten|D|s|s
+fe004|i mean|D|%|%
+fe004|we don't need the words to that.|S|s|s
+mn015|probably not your marks in the kitchen today.|S|s|s
+fe004|what?|Q|qw|br
+mn015|not not your marks.|S|s|s
+fe004|oh no no no no no no no no no we're not going there.|S|s|ar
+fe004|okay.|F|fg|fg
+me045|in other news.|F|fg|fg
+me010|okay so um|F|fg|fg
+me010|anything else you want to ask us about?|Q|qo|qo
+me010|the thesis proposal you got|D|s|s
+mn015|well|D|%|%
+me010|we could look at a particular thing and give you feedback on it.|S|s|cs
+mn015|well there actually|D|s|s
+mn015|the what would have been really nice is to find an example for all of this uh from our domain.|S|s|s
+mn015|so maybe if we if we can make one up now that would be incredibly helpful.|S|s|cs
+fe004|so where it should illustrate|D|s|bu
+me010|okay.|S|s|bk
+mn015|how|D|%|%
+fe004|uh when you say all this do you mean like i don't know the related work stuff?|Q|qy|bu
+fe004|as well as mappings?|Q|qy|bu
+me010|right right|F|fg|fg
+mn015|well we have for example a canonical use of something.|S|s|s
+mn015|and it's you know we have some constructions.|S|s|s
+mn015|and then it's construed as something.|S|s|s
+mn015|and then we we may get the same constructions with a metaphorical use that's also relevant to the to the domain.|S|s|s
+me010|okay let's let's suppose you use in and on.|S|s|s
+me010|i mean that's what you started with.|S|s|s
+mn015|uhhuh.|B|b|b
+me010|so in the bus and on the bus.|S|s|s
+me010|um that's actually a little tricky in english.|S|s|ba
+me010|because to some extent they're synonyms.|S|s|s
+me010|okay.|S|s|f
+mn015|i had two hours with george on this.|S|s|s
+me010|okay what did he say?|S|s|bk
+mn015|so it|D|%|%
+fe004|did you?|Q|qy|qy
+mn015|um um|F|fh|fh
+fe004|join the club.|S|s|co
+me010|right oh that's|D|%|%
+mn015|on the bus is a is a metaphorical metonymy.|S|s|s
+mn015|that relates some path metaphorically.|S|s|s
+mn015|and you're on on that path.|S|s|s
+mn015|and i mean it's he there's a platform notion.|S|s|s
+me010|yeah i i believe all that.|S|fg|fg
+me010|it's just|D|%|%
+mn015|right?|Q|qy|d
+mn015|he's on the standing on the bus waving to me.|S|s|s
+me010|yeah.|B|b|b
+mn015|but the regular as we speak johno was on the bus to new york.|S|s|s
+me010|yeah.|B|b|b
+me010|yeah.|B|b|b
+mn015|um uh|F|fh|fh
+mn015|he's|D|%|%
+mn015|that's uh|D|%|%
+mn015|what did i call it here?|Q|qw|t1
+mn015|the transportation schema something.|S|s|s
+me010|yeah.|B|b|b
+mn015|where you can be on the first flight on the second flight.|S|s|s
+me010|yeah.|F|fg|fg
+mn015|and you can be you know on the wagon.|S|s|s
+me010|right so so that that may or may not be what you what you want to do.|S|fg|fg
+me010|i mean you could do something much simpler.|S|s|s
+mn015|yeah.|S|s|bk
+me010|like under the bus or something.|S|s|cs
+me010|where|D|%|%
+mn015|but it's it's unfortunately this is not really something a tourist would ever say.|S|s|ng
+mn015|so|F|fh|fh
+me010|well unless he was repairing it or something.|S|s|ng
+me010|but yeah.|S|s|bd
+mn015|yeah.|S|s|bk
+mn015|but um|F|fh|fh
+me010|uh but okay.|F|fg|fg
+mn015|so in terms of the this|D|s|s
+fe004|i see.|B|b|b
+mn015|we had we had initially we'd started discussing the out of film.|S|s|s
+me010|right.|B|b|b
+mn015|and there's a lot of out of analysis.|S|s|s
+mn015|so um|F|fh|fh
+me010|right.|B|b|b
+mn015|could we capture that?|Q|qy|rt
+mn015|with a different construal of|D|s|e
+fe004|yeah it's a little it's|D|s|bk
+fe004|uh we've thought about it before uh uh to use the examples in other papers.|S|s|s
+fe004|and it's it's a little complicated.|S|s|ba
+me045|out of out of film in particular.|S|s|s
+fe004|because you're like it's a state of there's resource.|S|s|df
+me045|yeah.|S|s|bk
+fe004|right?|Q|qy|d
+fe004|and like what is film?|Q|qh|qh
+fe004|the state you know you're out of the state of having film right and somehow film is standing for the the the state of having some resource is just labeled as that resource.|S|s|s
+me045|it's|D|%|%
+me045|yeah i mean|D|s|s
+fe004|i mean|D|%|%
+me045|but|D|%|%
+me045|and plus the fact that there's also|D|s|s
+fe004|it's a little bit|D|%|%
+me045|i mean can you say like the film ran out?|Q|qy|qy
+me045|you know.|S|s|f
+me045|or maybe you could say something like the film is out.|S|s|s
+fe004|yeah is film the trajector?|S|s|bk
+me045|so like the the film went away from where it should be.|S|s|s
+me045|namely with you or something.|S|s|s
+me045|right?|Q|qy|d
+me045|you know.|S|s|f
+me045|the the film the film is gone.|S|s|s
+me045|right?|Q|qy|d
+me045|um|F|fh|fh
+me045|i never really knew what was going on.|S|s|no
+me045|i mean i i find it sort of a little bit farfetched to say that that i'm out of film means that i have left the state of having film or something like that.|S|s|df
+fe004|it's weird.|S|s|ba
+fe004|that|D|%|%
+me045|but|F|fh|fh
+me010|uh.|B|b|b
+fe004|or having is also um associated with location.|S|fg|fg
+me045|yeah yeah.|S|s|aa
+fe004|right?|Q|qy|d
+fe004|so if the film left|D|s|s
+fe004|you know state is being near film.|S|s|s
+mn015|so running running out of something is different from being out of somewhere.|S|s|s
+me010|or being out of something as uh as well.|S|s|2
+me010|so running out of it definitely has a process aspect to it.|S|s|s
+fe004|uhhuh.|S|s|aa
+fe004|but that's from run yeah.|S|s|aap
+me045|uhhuh.|B|b|b
+me010|so|F|fh|fh
+me010|that's okay.|S|s|bd
+me010|i mean but the difference|D|s|s
+fe004|yeah.|S|s|bk
+mn015|is the the final state of running out of something is being out of it.|S|s|s
+me010|is|D|qy|qy
+me045|yeah.|S|s|aa
+me010|right.|S|s|aa
+fe004|yeah so|D|s|aa
+me045|you got there.|S|s|s
+fe004|that part is fine.|S|s|ba
+me045|you got to out of it.|S|s|s
+me010|yeah.|B|b|b
+me045|yeah.|B|b|b
+me010|but uh|F|fg|fg
+me045|huh!|S|s|ba
+me010|yeah so so so no one has in in of the|D|s|s
+me010|uh|F|fh|fh
+me010|professional linguists.|S|s|s
+me010|they haven't|D|%|%
+fe004|uh|F|fh|fh
+me010|there was this whole thesis on out of.|S|s|s
+fe004|there was?|Q|qy|br
+me010|well there i thought or there was a paper on it.|S|s|s
+fe004|who?|Q|qw|qw
+me045|out.|S|s|s
+me010|huh?|Q|qw|br
+me045|there was one on on out or out of?|Q|qy|d
+me010|there was|D|s|s
+me010|well it may be just out.|S|s|s
+me045|okay.|S|s|bk
+me010|yeah.|B|b|b
+me010|i think there was over.|S|s|s
+me010|but there was also a paper on out.|S|s|s
+me045|yeah susan lindner.|S|fg|fg
+me045|right?|Q|qy|d
+me010|or something.|S|s|s
+fe004|oh yeah you're right yeah.|S|s|na
+me045|the the the syrup spread out.|S|s|bu
+me045|that kind of thing?|Q|qy|d
+me010|yeah and all that sort of stuff.|S|s|aa
+fe004|yeah.|S|s|aa
+fe004|and undoubtably there's been reams of work about it in cognitive linguistics.|S|s|s
+me010|okay but anyway we're not going to do that between now and next week.|S|fg|fg
+fe004|but|F|fh|fh
+fe004|yeah.|S|s|bk
+mn015|yeah.|S|s|bk
+me010|okay.|S|s|bk
+me010|so um|F|fh|fh
+fe004|it's not one of the it's more straightforward ones forward ones to defend.|S|s|s
+fe004|so you probably don't want to use it for the purposes.|S|s|s
+mn015|uhhuh.|B|b|b
+me010|right.|B|b|b
+me010|okay.|D|b|b
+fe004|these are you're addressing like computational linguists.|S|s|bu
+fe004|right?|Q|qy|d
+fe004|or are you?|Q|qy|rt
+mn015|there's going to be four computational linguists.|S|s|s
+fe004|okay but more emphasis on the computational or emphasis on the linguist?|S|s|bk
+mn015|it's|D|%|%
+mn015|more there's going to be the just four computational linguists by coincidence.|S|s|s
+mn015|but the rest is whatever biocomputing people and physicists.|S|s|s
+me010|no no no but not for your talk.|S|s|ar
+fe004|oh okay.|S|s|bk
+me010|we're worrying about the the|D|%|%
+mn015|oh the thesis.|S|s|s
+me010|it's just for one guy.|S|s|s
+fe004|oh i meant this.|S|fg|fg
+mn015|that's that's should be very computational.|S|s|s
+fe004|you know like|D|s|s
+fe004|okay.|S|s|bk
+me010|yeah.|B|b|b
+mn015|and uh|D|%|%
+fe004|so i would try to i would stay away from one that involves weird construal stuff.|S|s|s
+me045|yeah.|B|b|b
+me010|right.|S|s|aa
+fe004|you know it's an obvious one.|S|s|s
+me045|totally weird stuff.|S|s|ba
+mn015|i mean the the old bakery example might be nice.|S|s|cs
+fe004|but uh|F|fh|fh
+mn015|is there a bakery around here?|Q|qy|qy
+me045|yeah.|S|s|aa
+mn015|so if you we really just construe it as a|D|s|cs
+fe004|around?|Q|qy|bu
+mn015|no it's the bakery itself.|S|s|ar
+mn015|is it a building uh that you want to go to or is it something to eat that you want to buy?|Q|qh|qh
+fe004|oh.|S|s|bk
+fe004|oh oh yeah yeah.|S|s|bk
+fe004|we've thought about that.|S|s|s
+fe004|right right.|B|b|b
+mn015|and then|D|%|%
+fe004|nnn.|B|b|b
+fe004|no!|S|s|ar
+fe004|what?|Q|qw|br
+fe004|bakery can't be something you're going to eat.|S|s|nd
+me010|no no the question is do you want to do you want to construe do you want to constr strue|D|s|ar
+me003|it's a speech act.|S|s|s
+me010|exactly it's because do you want to do you want to view the bakery as a a place that that for example if|D|s|aa
+fe004|yeah.|B|b|b
+fe004|where you can get baked goods.|S|s|2
+me010|well well that's one.|S|s|s
+me010|you want to buy something.|S|s|s
+me010|but the other is|D|s|s
+me010|uh you might have smelled a smell and are just curious about whether there'd be a bakery in the neighborhood.|S|s|s
+me010|or|F|fh|fh
+me045|uhhuh.|B|b|b
+me010|um pfff|D|%|%
+me010|you know you wonder how people here make their living.|S|s|s
+me010|and there're all sorts of reasons why you might be asking about the existence of a bakery.|S|s|s
+me045|yeah.|B|b|b
+me010|that doesn't mean i want to buy some baked goods.|S|s|s
+fe004|okay.|S|s|bk
+me010|but um|F|fh|fh
+me010|those are interesting examples.|S|s|ba
+me010|but it's not clear that they're mainly construal examples.|S|s|s
+me045|yeah.|S|s|aa
+fe004|so it's a lot of pragmatics there that|D|s|s
+mn015|huh.|B|b|b
+me010|there's all sorts of stuff going on.|S|s|na
+me010|so|F|fh|fh
+fe004|might be beyond what you want to do.|S|s|s
+me010|let's so let's think about this from the point of view of construal.|S|s|co
+me010|so let's first do a|D|s|co
+me010|so the metonymy thing is probably the easiest.|S|s|ba
+me010|and and actually the|D|s|s
+me010|though the one you have isn't quite|D|s|s
+fe004|you mean the|D|qy|bu
+fe004|you mean the steak wants to pay?|Q|qy|bu
+me010|no not that one.|S|s|ar
+me010|that's that's a the sort of background.|S|s|s
+me010|this is the uh page five.|S|s|s
+me003|about plato and the book?|Q|qy|bu
+me010|no.|S|s|ar
+fe004|oh.|F|fg|fg
+mn015|no.|S|s|ar
+fe004|um|B|b|b
+me045|onward.|S|s|s
+me010|just beyond that.|S|s|s
+fe004|how much does it cost?|Q|qw|rt
+mn015|where is the castle?|Q|qw|qw
+me010|yeah.|B|b|b
+me045|a castle.|S|s|s
+mn015|how old is it?|Q|qw|qw
+mn015|how much does it cost?|Q|qw|qw
+me003|oh.|B|b|b
+me045|uhhuh.|B|b|b
+fe004|to go in.|S|s|2
+fe004|that's like|D|s|s
+me045|two hundred million dollars.|S|s|j
+me010|right.|S|s|aa
+me010|it's not for sale.|S|s|s
+me010|uh so|F|fh|fh
+me045|yeah i think that's a good example actually.|S|fg|fg
+fe004|yeah that's good.|S|s|aa
+mn015|but as nancy just suggested it's probably ellipticus.|S|s|arp
+fe004|ellipsis.|S|s|2
+mn015|huh|B|b|b
+fe004|like it doesn't refer to thing.|S|s|s
+fe004|it refers to you know|D|s|s
+fe004|thing standing for most relevant activity for a tourist.|S|s|s
+fe004|you could think of it that way.|S|s|s
+fe004|but|F|fh|fh
+me010|yeah.|S|s|aa
+me045|well shoot!|S|s|fe
+me045|isn't that i mean that's what|D|qh|qh
+mn015|well i mean my argument here is it's it's it's the same thing as plato's on the top shelf.|S|s|ng
+me045|figuring that out is what this is about.|S|s|ng
+fe004|yeah yeah no i agree.|S|s|aa
+mn015|i'm|D|%|%
+mn015|you know that you can refer to a book of plato by using plato.|S|s|s
+fe004|yeah.|S|s|bk
+mn015|and you can refer back to it.|S|s|s
+fe004|no no i i'm agreeing that this is a good um|D|s|aa
+mn015|and so you can castles have as tourist sites have admission fees.|S|s|s
+mn015|so you can say where is the castle.|S|s|s
+mn015|how much does it cost.|S|s|s
+mn015|um|F|fh|fh
+mn015|how far is it from here.|S|s|s
+me045|uhhuh.|B|b|b
+mn015|so|F|fh|fh
+mn015|you're also not referring to the width of the object or so.|S|s|s
+fe004|huh.|B|b|b
+mn015|www.|B|b|b
+fe004|uhhuh.|B|b|b
+me045|huh.|B|b|b
+me010|okay can we think of a nice metaphorical use of where in the tourist's domain|D|fg|fg
+me010|um|F|fh|fh
+me045|huh.|B|b|b
+me010|so you know it's|D|s|s
+me010|you you can sometimes use where for when.|S|s|cs
+me010|in the sense of you know|D|s|s
+me010|um|F|fh|fh
+me010|where where where was um|D|qh|qh
+me010|where was heidelberg um in the thirty years' war?|Q|qh|qh
+me010|or something.|S|s|e
+me045|uh yeah.|S|s|bk
+mn015|uhhuh.|B|b|b
+me010|you know or some such thing.|S|s|e
+me010|um|B|b|b
+me045|like what side were they on?|Q|qy|bu
+me045|or|D|qrr|qrr
+fe004|what?|Q|qw|br
+me010|yeah essentially yeah.|S|s|aa
+fe004|okay i was like huh.|S|s|bk
+fe004|it was here.|S|s|s
+fe004|like um|F|fh|fh
+me010|but anyway so there are there are cases like that.|S|s|s
+me010|um|F|fh|fh
+fe004|uh.|B|b|b
+fe004|or like its developmental state or something like that.|S|s|s
+fe004|you could i guess you could get that.|S|s|cs
+me010|yeah.|B|b|b
+me010|um.|F|fh|fh
+fe004|um.|F|fh|fh
+me045|i mean there's also things like i mean|D|s|s
+me045|um|F|fh|fh
+me045|i guess i could ask something like where can i find out about blah blah blah.|S|s|s
+me045|in a sort of|D|s|s
+me045|doesn't i don't necessarily have to care about the spatial location.|S|s|s
+me045|just give me a phone number.|S|s|s
+me045|and i'll call them or something like that.|S|s|bu
+me010|yeah there certainly is that yeah.|S|s|na
+me010|you know where could i learn its opening hours or something.|S|s|s
+me045|yeah.|S|s|bk
+me010|but that's not metaphorical.|S|s|s
+fe004|huh.|B|b|b
+me010|it's another|D|s|s
+me045|yeah.|S|s|bk
+me010|so we're thinking about um|D|s|s
+me010|or we could also think about|D|s|cs
+me010|uh|F|fh|fh
+mn015|well i i i|D|%|%
+me010|how about i'm in a hurry?|Q|qo|qo
+fe004|state.|S|s|s
+me010|it but it's a state and the the issue is is that it may be just a usage.|S|s|s
+me045|huh.|B|b|b
+me010|you know that it's not particularly metaphorical.|S|s|s
+me010|i don't know.|S|s|bd
+me045|huh.|B|b|b
+fe004|right.|B|b|b
+fe004|so you want a more exotic one version of that.|S|s|cs
+me045|oh.|F|fg|fg
+me010|yeah yeah right.|S|s|aa
+me010|uh!|S|s|fe
+me010|how about|D|qw|qw
+fe004|i'm really into|D|s|s
+me010|i i i you know i'm in i'm in a state of exhaustion.|S|s|cs
+me010|or something like that.|S|s|s
+fe004|do you really say that?|Q|qy|am
+me010|which a tourist|D|s|s
+me010|huh?|Q|qw|br
+fe004|would you really say that?|Q|qy|am
+me010|a uh well you can certainly say um you know i'm in overload.|S|s|na
+me045|yeah.|S|s|aa
+me010|tourists will often say that.|S|s|e
+me003|i'm really into art.|S|s|s
+fe004|yeah i was going to say like|D|s|aa
+me003|uh|F|fh|fh
+me010|oh you can do that?|Q|qy|am
+me010|really?|Q|qh|qh
+me010|of course that's that that's definitely a uh|D|s|s
+me045|fixed.|S|s|2
+fe004|a fixed expression yeah.|S|s|m
+me010|that's a uh|D|s|s
+me010|right but|D|s|bk
+fe004|there're too there're all sorts of fixed expressions.|S|s|s
+fe004|i don't like uh|D|s|s
+fe004|i'm out of sorts now.|S|s|s
+me010|right.|B|b|b
+fe004|like i'm in trouble.|S|s|s
+mn015|well i when uh just|D|%|%
+mn015|the data that i've looked at so far that|D|s|s
+me010|yeah.|B|b|b
+mn015|i mean there's tons of cases for polysemy.|S|s|ba
+me010|right.|B|b|b
+mn015|so you know making reference to buildings as institutions as containers as|D|s|s
+fe004|uhhuh.|B|b|b
+me010|right.|B|b|b
+mn015|you know whatever.|S|s|e
+mn015|um so in for example in museums you know as a building or as something where pictures hang versus you know something that puts on exhibits.|S|s|s
+me010|right as an institution.|S|s|bk
+mn015|so forth.|S|s|e
+mn015|but|F|fh|fh
+me010|yeah.|B|b|b
+mn015|um.|F|fh|fh
+fe004|why don't you want to use any of those?|Q|qw|rt
+mn015|huh?|Q|qw|br
+fe004|so you don't want to use one that's|D|s|bu
+mn015|yeah well|D|s|bk
+mn015|no but this|D|s|ar
+mn015|that's what i have you know started doing.|S|s|s
+me010|the castle the that old castle one is sort of|D|s|s
+mn015|metonymy polysemy.|S|s|s
+me003|i love van gogh.|S|s|s
+me010|yeah.|B|b|b
+me010|uh!|D|b|b
+fe004|i want to go see the van gogh.|S|s|s
+me045|oh geez.|S|s|ba
+fe004|anyway i'm sorry.|S|s|tc
+mn015|but i think the argument should be uh can be made that you know despite the fact that this is not the most metaphorical domain|D|s|s
+mn015|because people interacting with h t i systems try to be straightforward and less lyrical|D|s|s
+me010|yeah.|B|b|b
+mn015|construal still is uh you know completely um key in terms of finding out any of these things.|S|s|s
+mn015|so um|F|fh|fh
+me010|right.|S|s|bk
+me010|so that's that's that's a that's a reasonable point.|S|s|s
+me010|that it in this domain you're going to get less metaphor and more metonymy.|S|s|s
+mn015|we uh i with a i looked with a student i looked at the entire database that we have on heidelberg for cases of metonymy.|S|s|rt
+me010|and polysemy and stuff like that.|S|s|s
+me010|yeah.|B|b|b
+mn015|hardly anything.|S|s|s
+mn015|so not even in descriptions did we find anything um relevant.|S|s|s
+me045|i have to go.|S|s|t3
+me010|all right yeah.|S|s|bk
+mn015|but okay this is just something we'll we'll see.|S|fg|fg
+mn015|um|F|fh|fh
+me010|right.|S|s|bk
+me010|see you.|S|s|t3
+mn015|and deal with.|S|s|s
+me010|okay well i guess if anybody has additional suggestions|D|fg|fg
+mn015|i mean maybe the where is something question as a whole you know can be construed as locational versus instructional request.|S|s|am
+me010|yeah.|S|s|bk
+mn015|so if we're not talk about the|D|s|s
+fe004|location versus what?|Q|qw|rt
+mn015|instruction.|S|s|s
+fe004|instruction oh directions yeah.|S|s|bk
+me010|sure.|B|b|b
+mn015|yeah.|S|s|bk
+fe004|oh i thought that was definitely treated as an example of construal.|S|s|bu
+fe004|right?|Q|qy|d
+mn015|yeah but then you're not on the lexical level.|S|s|aa
+mn015|that's sort of one level higher.|S|s|df
+fe004|oh you want a lexical example.|S|s|bk
+mn015|but i don't need it.|S|s|arp
+me010|well you might want both.|S|s|am
+mn015|uhhuh.|B|b|b
+fe004|yeah.|B|b|b
+mn015|also it would be nice to get ultimately to get a nice mental space example.|S|s|cs
+me010|we|D|%|%
+mn015|so even temporal references are|D|s|s
+mn015|just in the spatial domain are rare.|S|s|ba
+me010|but it's it's easy to make up plausible ones.|S|s|nd
+me010|you know?|Q|qy|d
+mn015|when when you're getting information on objects.|S|s|s
+me010|right.|S|s|aa
+mn015|so i mean|D|%|%
+me010|you know you know where|D|%|%
+me010|yeah.|B|b|b
+me010|what color was this in in in the nineteenth century?|Q|qh|qh
+mn015|yeah.|B|b|b
+me010|what was this|D|%|%
+me010|instead of what you know how was this painted.|S|s|s
+me010|what color was this painted?|Q|qh|qh
+me010|um|F|fh|fh
+me010|was this alleyway open?|Q|qh|qh
+mn015|yeah maybe we can include that also in our second uh data run.|S|fg|fg
+me010|uh|F|fh|fh
+mn015|we we can show people pictures of objects.|S|s|cs
+mn015|and then have then ask the system about the objects.|S|s|cs
+mn015|and engage in conversation on the history and the art and the architecture and so forth.|S|s|cs
+me010|uhhuh.|B|b|b
+me010|okay so why don't we plan to give you feedback electronically.|S|fg|fg
+me010|wish you a good trip.|S|s|tc
+me010|all success.|S|s|s
+me003|for some reason when you said feedback electronically i thought of that|D|s|s
+me003|you ever see the simpsons where they're like the family's got the buzzers?|Q|qy|qy
+me003|and they buzz each other when they don't like what the other one is saying.|S|s|e
+fe004|yeah that's the first one i think.|S|s|aa
+me003|it was a very early one.|S|s|aap
+fe004|the very very first one.|S|s|r
+me003|i don't know if it's the first one.|S|s|no
+fe004|huh.|B|b|b
+fe004|huh.|B|b|b

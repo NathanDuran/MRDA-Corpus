@@ -1,606 +1,606 @@
-me013|okay.|fg
-me013|so|fg
-me013|uh today we're looking at a number of uh things we're trying.|fh
-me013|and uh fortunately for listeners to this uh we lost some of it's visual.|fh
-me013|but um got tables in front of us.|fh
-me013|um what is what does combo mean?|fh
-mn007|so combo is um a system where we have these features that go through a network.|s
-mn007|and then this same string of features but low pass filtered with the low pass filter used in the m s g features.|s
-mn007|and so these low pass filtered goes through m uh another m l p.|s
-mn007|and then the linear output of these two m l p's are combined just by adding the values and then there is this k l t.|s
-mn007|um the output is used as uh features as well.|fh
-me013|um so let me try to restate this and see if i have it right.|fg
-me013|there is uh there is the features uh there's the o g i features and then um those features um go through a contextual uh|bu
-me013|l l let's take this bottom one pointed to by the bottom arrow.|s
-me013|um those features go through a contextualized k l t.|fh
-mn007|yeah.|aa
-me013|then these features also uh get um low pass filtered.|bu
-mn007|yeah.|aa
-mn007|so|fh
-mn007|yeah i could perhaps draw this on the blackboard.|cc
-me013|sure.|aa
-me013|yeah.|aa
-me013|yeah.|b
-mn007|yeah.|b
-fn002|the graph.|t3
-fn002|yeah another one.|t3
-mn007|thank you.|ft
-me013|yeah that's good.|ba
-mn007|so we have these features from o g i that goes through the three paths.|s
-me013|yeah.|bk
-me013|three okay.|bk
-mn007|the first is a k l t using several frames of the features.|s
-me013|yeah.|b
-me013|yeah.|b
-mn007|the second path is uh m l p also using nine frames several frames of features.|rt
-me013|yeah.|b
-me013|uhhuh.|b
-mn007|the third path is this low pass filter.|rt
-me013|uhhuh.|b
-mn007|uh m l p.|s
-me013|aha!|fe
-me013|aha!|fe
-mn007|adding the outputs just like in the second the the proposal from for the first evaluation.|rt
-me013|yeah.|b
-me013|yeah.|b
-me013|yeah.|b
-mn007|and then the k l t and then the two together again.|m
-me013|no the k l t.|2
-me013|and those two together.|2
-fn002|two h t k.|t1
-me013|that's it.|s
-mn007|um so this is|s
-me013|okay so that's that's this bottom one.|s
-mn007|yeah.|aa
-me013|and so uh and then the the the one at the top.|fh
-me013|and i presume these things that uh are in yellow are in yellow because overall they're the best?|d
-mn007|yeah.|aa
-mn007|that's the reason yeah.|na
-me013|oh let's focus on them then.|bk
-me013|so what's the block diagram for the one above it?|qw
-mn007|for the the first yellow line you mean?|bu
-me013|yeah.|aa
-mn007|yeah.|b
-mn007|so it's uh basically the same except that we don't have this uh low pass filtering so we have only two streams.|h
-fn002|step.|2
-mn007|well.|fh
-mn007|there's there's no low low pass processing used as additional feature stream.|s
-me013|uhhuh.|b
-me013|uhhuh.|b
-mn007|um|fh
-me013|do you um they mentioned made some uh when i was on the phone with sunil they they mentioned some weighting scheme that was used to evaluate all of these numbers.|s
-mn007|yeah.|bk
-mn007|uh actually the way things seems to|s
-mn007|um well it's uh forty percent for t i digit sixty for all the speechdat cars.|s
-mn007|well all these languages.|s
-mn007|um the well match is forty medium thirty five and high mismatch twenty five.|fh
-mn007|yeah.|fh
-me013|um and we don't have the t i digits part yet?|fg
-mn007|uh no.|h
-me013|okay.|bk
-mn007|but yeah.|fh
-mn007|generally what you observe with t i digits is that the result are very close whatever the the system.|s
-me013|okay.|bk
-me013|and so have you put all these numbers together into a single number representing that?|rt
-mn007|yeah.|b
-me013|i mean not|s
-mn007|uh not yet.|nd
-mn007|no.|ar
-me013|okay so that should be pretty easy to do and that would be good.|cs
-mn007|huh yeah yeah.|aa
-me013|then we could compare the two and say what was better.|cs
-mn007|huh.|b
-mn007|yeah.|b
-me013|um and how does this compare to the numbers?|fh
-me013|oh so o g i two is just the top top row?|bu
-fn002|yeah.|aa
-mn007|so yeah to|aa
-mn007|actually o g i two is the the baseline with the o g i features.|nd
-mn007|but this is not exactly the result that they have because they've they're still made some changes in the features.|s
-me013|okay.|b
-mn007|and well but uh actually our results are better than their results.|s
-mn007|um i don't know by how much because they did not send us the new results.|fh
-me013|okay.|bk
-me013|uh okay so the one one place where it looks like we're messing things up a bit is in the highly mismatched italian.|fg
-mn007|yeah.|b
-mn007|yeah.|aa
-mn007|yeah.|fg
-mn007|there is something funny happening here because|na
-mn007|yeah.|aa
-me013|yeah.|aa
-mn007|but there are thirty six and then sometimes we are we are we are around forty two and|df
-me013|now up.|s
-me013|uh so one of the ideas that you had mentioned last time was having a a second um silence detection.|fg
-mn007|yeah.|aa
-mn007|so there are some results here.|s
-fn002|for the italian.|s
-mn007|uh so the third and the fifth line of the table|rt
-fn002|for this one.|s
-me013|so filt is what that is?|bu
-mn007|filt yeah.|aa
-fn002|yeah.|b
-mn007|um yeah so it seems for the the well match and mismatched condition.|fh
-mn007|it's uh it brings something.|s
-mn007|uh but uh actually apparently there are there's no room left for any silence detector at the server side because of the delay.|fh
-mn007|uh well|fh
-me013|oh we can't do it.|bs
-me013|oh okay.|bk
-mn007|no.|aa
-fn002|for that for that we|s
-me013|oh.|b
-mn007|uh|fh
-me013|too bad.|by
-me013|good idea but can't do it.|ba
-mn007|yeah.|b
-me013|okay.|fg
-mn007|except i don't know because they i think they are still working well.|no
-me013|uhhuh.|b
-mn007|uh two days ago they were still working on this trying to reduce the delay of the silence detector.|s
-mn007|so but|fh
-mn007|yeah.|fh
-mn007|if we had time perhaps we could try to find uh some kind of compromise between the delay that's on the handset and on the server side.|cs
-mn007|perhaps try to reduce the delay on the handset.|cs
-mn007|and|fh
-mn007|but well huh for the moment they have this large delay on the the feature computation and so we don't|s
-me013|okay.|b
-me013|so|fg
-me013|all right so for now at least that's not there.|s
-me013|you have some results with low pass filter cepstrum.|s
-me013|doesn't have a huge effect but it but it looks like it you know maybe could help in a couple places.|s
-mn007|i|%--
-mn007|yeah.|aa
-me013|uh little bit.|s
-me013|um and um um|fh
-me013|yeah.|fh
-me013|and uh let's see.|fh
-me013|what else did we have in there?|qw
-me013|uh i guess it makes a um at this point this is|fh
-me013|i i guess i should probably look at these others a little bit.|cc
-me013|uh and you you yellowed these out.|fh
-me013|uh but uh uh|fh
-me013|oh i see yeah that that one you can't use because of the delay.|bk
-me013|those look pretty good.|ba
-me013|um let's see that one.|fh
-me013|well even the just the the second row doesn't look that bad right?|s
-me013|that's just uh|s
-mn007|yep.|b
-me013|yeah?|%
-me013|and and that looks like an interesting one too.|s
-fn002|huh yeah.|b
-me013|uh|fh
-mn007|actually the yeah the second line is uh pretty much like the first line in yellow.|rt
-mn007|except that we don't have this k l t on the first on the left part of the diagram.|s
-mn007|we just have the features as they are.|s
-me013|uhhuh.|b
-mn007|um|fh
-me013|yeah.|b
-me013|yeah so when we do this weighted measure we should compare the two because it might even come out better.|cs
-mn007|uhhuh.|aa
-me013|and it's it's it's a little slightly simpler.|df
-mn007|yeah.|b
-me013|so so there's so i i would put that one also as a as a maybe.|s
-me013|uh and it|fh
-me013|yeah and it's actually does does significantly better on the uh uh highly mismatched italian.|fh
-me013|so|fh
-me013|and little worse on the on the m m case.|e
-me013|but|fh
-me013|uh well yeah it's worse than a few things.|fh
-mn007|uhhuh.|b
-me013|so uh let's see how that that see how that comes out on their their measure.|cs
-me013|and are are we running this uh for t i digits?|qy
-me013|or uh|qr
-mn007|yeah.|aa
-mn007|yeah.|aa
-me013|now is t i di is that part of the result that they get for the uh development the results that they're supposed to get at the end of end of the month the t i digits are there also?|qy
-mn007|yeah.|aa
-mn007|it's included yeah.|na
-me013|oh okay.|bk
-me013|okay.|b
-me013|and see what else there is here.|cc
-me013|um oh i see.|bk
-me013|the one i was looking down here at the the the row below the lower yellowed one.|s
-me013|uh that's uh that's with the reduced uh k l t size reduced dimensionality.|s
-mn007|yeah.|b
-mn007|yeah.|aa
-me013|what happens there is it's around the same.|bs
-me013|and so you could reduce the dimension as you were saying before a bit perhaps.|cs
-mn007|yeah it's it's significantly worse well but uhhuh.|s
-me013|it's significantly worse.|na
-me013|it's it's uh it's it's mostly worse.|na
-mn007|except for the h m.|s
-fn002|for many a mismatch it's worse.|s
-mn007|but|fh
-me013|yeah.|b
-me013|but it is little.|s
-me013|i mean not not by a huge amount.|df
-me013|i don't know.|no
-me013|what are what are the sizes of any of these sets?|qw
-me013|i i'm i'm sure you told me before but i've forgotten.|s
-me013|so you know how many words are in uh one of these test sets?|qw
-mn007|uh|h
-fn002|i don't remember.|no
-mn007|um it's it depends well the well matched is generally larger than the other sets.|h
-me013|about?|d
-mn007|and i think it's around two thousand or three thousand words perhaps at least.|s
-fn002|but words well word i don't know.|s
-mn007|huh?|d
-mn007|the words yeah.|s
-fn002|sentences.|s
-mn007|sentences.|m
-mn007|some sets have five hundred sentences.|s
-mn007|so|fh
-fn002|yeah.|bk
-mn007|huh.|b
-me013|so the so the sets so the test sets are between five hundred and two thousand sentences let's say.|s
-me013|and each sentence on the average has four or five digits?|d
-me013|or is it most of them longer or|qrr
-fn002|yeah.|aa
-fn002|for the italian even seven digits more or less.|na
-mn007|yeah.|aa
-mn007|it it|%--
-fn002|but sometime the sentence have only one digit.|arp
-mn007|seven digits.|s
-fn002|and sometime uh like uh the number of uh credit cards something like that.|s
-me013|uhhuh.|b
-me013|right so between one and sixteen.|bk
-me013|see the i mean the reason i'm asking is is is we have all these small differences and i don't know how seriously to take them right?|df
-me013|so uh if if you had uh just you know to give an example if you had uh um if you had a thousand words then uh a a tenth of a percent would just be one word.|fh
-mn007|yeah.|b
-me013|right?|d
-me013|so so it wouldn't mean anything.|s
-fn002|yeah.|b
-mn007|yeah.|b
-me013|oh.|b
-me013|um so um yeah it be kind of i'd kind of like to know what the sizes of these test sets were actually.|fh
-fn002|the size that we have?|bu
-mn007|yeah.|b
-mn007|we could we could run run some kind of significance tests.|cs
-me013|yeah since these|s
-me013|well also just to know the numbers.|df
-mn007|or|fh
-fn002|yeah.|b
-me013|right.|b
-me013|so these these are word error rates.|s
-mn007|yeah.|b
-me013|so this is on how many words?|d
-mn007|yep.|b
-fn002|yeah we have the result that the output of the h t k.|s
-me013|yeah.|b
-fn002|the number of of sentences no it's the number isn't.|s
-mn007|yeah sure sure.|aa
-mn007|yeah sure.|b
-me013|yeah.|bk
-mn007|yeah.|b
-me013|so anyway if you could just mail out what those numbers are and then then that that be great.|co
-fn002|yeah.|bk
-me013|um what else is there here?|fh
-me013|um see the second second from the bottom it says s i l.|fh
-me013|but this is some different kind of silence or thing or|d
-me013|what was that?|qw
-mn007|uh|fh
-fn002|it the the output silence of the m l p.|s
-mn007|oh yeah.|bk
-mn007|i see.|bk
-fn002|it's only one small experiment to know what happened.|s
-fn002|to apply also to include also the the silence of the m l p we have the fifty six form and the silence to pick up the silence and we include those.|s
-me013|yes.|b
-me013|uhhuh uhhuh.|b
-me013|the silence plus the k l t output?|d
-me013|oh so you're only using the silence.|bu
-mn007|yeah.|b
-fn002|yeah because when we apply the k l t|aa
-mn007|no they're i think there is this silence in addition to the um k l t outputs.|ar
-me013|no.|ar
-fn002|in addition yes.|na
-fn002|in addition|s
-mn007|it is because we we we just keep uh we don't keep all the dimensions after the k l t.|df
-mn007|and yeah.|fh
-fn002|and we not we are not sure if we pick we have the silence.|s
-mn007|so we try to add the silence also in addition to the these twenty eight dimensions.|s
-me013|i see.|bk
-me013|okay.|b
-me013|and what and what's o g i forty five?|qw
-mn007|uh it's it's o g i two.|h
-me013|the bottom one there?|d
-mn007|it's so the it's the features from the first line.|rt
-fn002|it's in fact o g i two.|s
-mn007|and yeah.|fh
-me013|right but i mean what's the what does the last row mean?|bk
-mn007|so it's uh basically this but without the k l t on the from the left path.|s
-me013|i thought that was the one i thought that was the second row.|s
-me013|so what's the difference between the second|qw
-mn007|uh the second line you don't have this combo stuff so you just|s
-me013|oh.|bk
-mn007|uh|fh
-me013|so this is like the second line but with with the combo stuff.|bu
-mn007|yeah.|b
-fn002|and with the all the output of the combo.|aap
-mn007|yeah.|b
-me013|okay.|b
-me013|yeah.|b
-mn007|yeah.|b
-fn002|uh|fh
-me013|okay so|fg
-me013|all right.|fg
-me013|so it looks to me i guess the same.|bs
-me013|given that we have to take the filt ones out of the the running because of this delay problem so it looks to me like the ones you said i agree are are the ones to look at.|na
-mn007|uhhuh.|b
-me013|but i just would add the the the second row one.|cs
-mn007|yeah.|b
-me013|and then um if we can um|fh
-mn007|huh.|b
-me013|oh yeah also when when they're using this weighting scheme of forty thirty five twenty five is that on the percentages or on the raw errors?|qr
-me013|i guess it's probably on the percentages right?|bu
-mn007|uh i guess yeah.|h
-me013|yeah okay.|bk
-mn007|i guess yeah.|aa
-mn007|huh.|b
-me013|all right.|b
-mn007|it's not clear here.|s
-me013|okay.|bk
-me013|maybe maybe they'll argue about it.|s
-me013|um okay.|fg
-me013|so if we can know what how many words are in each.|co
-me013|and then um dave uh dave promised to get us something tomorrow which will be there as far as they've gotten friday.|s
-mn007|uhhuh.|b
-mn007|yeah.|b
-me013|and then we'll operate with that.|s
-me013|and uh how long did it|qw
-me013|i guess if we're not doing all these things if we're only doing um|s
-me013|um i guess since this is development data it's legitimate to do more than one.|fh
-me013|right?|d
-me013|i mean ordinarily if in final test data you don't want to do several and and take the best.|s
-mn007|yeah.|b
-mn007|huh.|b
-me013|that's that's that's not proper.|s
-me013|but if this is development data we could still look at a couple.|cs
-mn007|yeah.|aa
-mn007|we can.|na
-mn007|yeah.|aa
-mn007|sure.|aa
-mn007|but we have to decide.|s
-mn007|i mean we have to fix the system on this on this data to choose the best.|s
-me013|yeah.|b
-mn007|and these|%--
-me013|right.|bk
-me013|but the question is when when do we fix the system.|s
-mn007|but we could.|s
-me013|do we fix the system uh tomorrow or do we fix the system on tuesday?|qr
-mn007|it|%--
-mn007|i think we fixed on tuesday yeah.|s
-me013|i yeah okay except that we do have to write it up.|bk
-mn007|yeah.|b
-mn007|uhhuh.|b
-mn007|uhhuh.|b
-mn007|yeah.|b
-me013|also so|fh
-mn007|yeah.|b
-me013|um|fh
-mn007|uh yeah well.|fg
-mn007|well basically it's this with perhaps some kind of printing and some some other.|s
-me013|right.|bk
-me013|so maybe what we do is we we we uh as soon as we get the data from them we start the training and so forth.|cs
-mn007|yeah but|fg
-mn007|uhhuh.|b
-me013|but we start the write up right away because as you say there there's only minor differences between these.|co
-mn007|i think you we could we could start soon yeah.|na
-me013|yeah.|b
-mn007|write up something.|na
-me013|yeah and and i i would you know i would i'd kind of like to see it.|s
-mn007|um yeah.|fh
-mn007|uhhuh.|b
-me013|maybe i can i can edit it a bit.|cc
-me013|uh sure.|fh
-me013|the my what in this in this situation is my forte which is english.|s
-mn007|yeah.|b
-me013|uh so|fh
-mn007|huh.|b
-me013|uh yeah.|fh
-me013|have have you seen do they have a format for how they want the system descriptions or anything?|qy
-mn007|uh not really.|h
-me013|okay.|b
-mn007|um there is the format of the table which is quite impressive.|fh
-me013|uh i see.|bk
-me013|yes for those who are listening to this and not looking at it uh it's not really that impressive it's just tiny.|s
-me013|it's all these little categories set a set b set c multi condition clean.|s
-me013|uh no mitigation.|s
-me013|wow.|bk
-me013|do you know what no what no mitigation means here?|qy
-mn007|um it should be the the problem with the error channel error.|h
-me013|oh that's probably the|s
-mn007|or|fh
-me013|this is probably channel error stuff.|bu
-mn007|yeah.|b
-me013|huh?|d
-me013|oh this is right it says right above here channel channel error resilience.|bk
-mn007|yeah.|b
-me013|yeah.|bk
-me013|so recognition performance is just the top part actually.|s
-me013|uh and they have yes split between seen data bases and non seen so basically between development and and evaluation.|fh
-mn007|yeah.|b
-me013|and so|fh
-me013|right.|fh
-me013|it's presumed there's all sorts of tuning that's gone on on the what they call seen databases.|s
-me013|and there won't be tuning for the uh unseen.|e
-me013|multi condition multi condition.|s
-me013|so they have looks like they have|s
-mn007|uhhuh.|b
-me013|uh uh|fh
-me013|so they splitting up between the t i digits and everything else i see.|s
-me013|so the everything else is the speechdat car that's the multilingual|s
-mn007|yeah so it's not divided between languages you mean or|bu
-me013|well it is.|ar
-mn007|it just|%--
-me013|it is.|ar
-me013|but there's also there's these tables over here for the for the t i digits and these tables over here for the car data.|df
-mn007|oh yeah.|bk
-me013|which is which is i guess all the multilingual stuff.|e
-me013|and then uh there's they also split up between multi condition and clean only.|s
-mn007|yeah.|b
-mn007|for t i digits.|bu
-me013|yes.|aa
-mn007|yeah actually yeah.|aa
-mn007|for the t i digits they want to train on clean and on noisy.|rt
-me013|yeah.|bk
-mn007|and yeah.|fh
-me013|so we're doing that also i guess.|bu
-mn007|uh yeah.|h
-mn007|but uh we actually|fh
-mn007|do we have the features?|rt
-mn007|yeah.|aa
-mn007|for the clean t i digits but we did not test it yet.|s
-mn007|uh the clean training stuff.|s
-me013|okay.|bk
-mn007|huh.|b
-me013|well anyway sounds like there'll be a lot to do just to work with our partners to fill out the tables over the next uh next few days.|fg
-mn007|uhhuh.|b
-fn002|yes.|b
-me013|i guess they have to send it out|s
-me013|let's see the thirty first is uh uh wednesday.|s
-me013|and i think the it has to be there by some hour uh european time on wednesday.|s
-mn007|huh huh.|b
-me013|so i think basically|s
-fn002|we lost time uh wednesday maybe because that the difference in the time may be is a long different of the time.|s
-me013|excuse me?|br
-fn002|maybe the thursday the twelfth of the night of the thirty one is is not valid in europe.|s
-mn007|yeah.|b
-fn002|we don't know is happening.|s
-me013|yes so i mean i think we have to actually get it done tuesday.|fg
-fn002|tuesday.|bk
-mn007|yeah well.|b
-me013|right.|fh
-me013|because i i think|s
-mn007|except if if it's the thirty one at midnight.|arp
-me013|uh uh|fh
-mn007|or i don't know.|bd
-mn007|we can still do some work on wednesday morning.|cs
-me013|yeah well.|b
-mn007|yeah well.|fh
-me013|is but is is it i thought it was actually something like five p m on|bu
-mn007|yeah.|aa
-fn002|yeah.|b
-mn007|uhhuh.|b
-me013|was like i thought it was five p m or something.|bu
-me013|i didn't think it was midnight.|s
-me013|i thought they said they wanted everything by|bu
-fn002|yeah five p m.|aa
-me013|well so five p m their time is is|s
-fn002|not five p m three p m.|nd
-me013|if|%--
-me013|three p m.|bk
-fn002|three p m.|na
-me013|all right that's six in the morning here.|s
-mn007|it's|%--
-fn002|uh no.|ar
-mn007|no.|ar
-fn002|three three three p m?|bu
-mn007|no we are wondering about the the the hour that we have to|ng
-mn007|uh i don't know if it's three p m it's|no
-fn002|oh yeah yeah yeah yeah.|aa
-fn002|three p m here is in europe midnight.|s
-mn007|yeah it's it's midnight but|aa
-me013|yes yes but i didn't think it was midnight that it was due.|df
-fn002|oh okay.|bk
-me013|i thought it was due at some hour during the day like five p m or something.|df
-fn002|huh huh.|b
-fn002|uhhuh.|b
-fn002|maybe.|%
-me013|in which case|s
-me013|so i i uh well we should look.|co
-me013|but my assumption is that we basically have to be done tuesday.|s
-me013|um so then next thursday we can sort of have a little aftermath.|fh
-fn002|yeah.|b
-me013|but then then we'll actually have the new data which is the german and the danish.|s
-mn007|yeah.|b
-me013|but that really will be much less work because uh the system will be fixed.|s
-mn007|yeah.|b
-me013|so all we'll do is take whatever they have and and uh and run it through the process.|co
-mn007|yeah.|b
-mn007|uhhuh.|b
-me013|uh we won't be changing the training on anything.|fh
-me013|so there'll be no new training there'll just be new h t k runs.|s
-me013|so that's means in some sense we can kind of relax from this after after tuesday.|s
-me013|and and uh maybe next meeting we can start talking a little bit about where we want to go from here uh in terms of uh the research.|fh
-mn007|uhhuh.|b
-me013|um you know what things uh did you think of when you were uh doing this process that uh you just didn't really have time to adequately work on?|fh
-me013|uh uh so|fh
-mn007|uhhuh.|b
-mn007|yeah.|b
-me013|what?|qo
-me006|oh stephane always has these great ideas.|s
-me006|and|%--
-me006|oh but uh we don't have time.|s
-mn007|sure.|aa
-me013|yeah.|b
-me006|yeah.|b
-me013|yeah.|b
-mn007|i'm not sure these are great ideas.|bd
-me013|but they're ideas.|s
-me013|yeah?|d
-me013|oh that was good.|ba
-mn007|yeah.|b
-me006|yeah.|b
-me013|and and uh also it's still true that uh i think it's true that that we we at least got fairly consistent improved results by running uh the uh neural net transformation in parallel with the features.|s
-mn007|but|%--
-me013|rather than uh in sequence which was was your suggestion and that that that seems to have been borne out.|s
-mn007|uhhuh.|b
-mn007|uhhuh.|b
-me013|the fact that none of these are are you know enormous is is is not too surprising .|s
-me013|most improvements aren't enormous.|s
-me013|and uh|fh
-mn007|yeah.|b
-me013|some of them are.|s
-me013|but uh i mean you have something really really wrong and you fix it you can get big and really enormous improvements.|fh
-mn007|uhhuh.|b
-me013|but uh um because our best improvements over the years that we've gotten from finding bugs.|fh
-me013|but|%--
-me013|anyway.|fh
-me013|okay.|fg
-me013|well i i think i see where we are and everybody knows what they're doing and is there is there anything else we should talk about?|bs
-me013|or or are we done?|qrr
-mn007|uhhuh.|b
-mn007|i think it's okay.|s
-mn007|um we|fh
-mn007|so basically we will i think we'll try to to focus on these three architectures.|cc
-mn007|and and perhaps i was thinking also a fourth one with just just a single k l t.|cs
-mn007|because we did not really test that .|df
-mn007|removing all these k l t's and putting one single k l t at the end.|cs
-me013|uhhuh.|b
-me013|yeah i mean that would be pretty low maintenance to try it.|na
-mn007|yeah.|b
-me013|uh if you can fit it in.|fh
-mn007|uhhuh.|b
-me013|oh i have yeah i do have one other piece of information which uh i should tell people outside of this group too.|cc
-me013|uh i don't know if we're going to need it uh but uh jeff up at the uh university of washington has uh gotten a hold of a uh uh some kind of server farm of uh of ten uh uh multiprocessor uh i b m machines r s six thousands.|fh
-mn007|uhhuh.|b
-me013|and and uh so i think each one is four processors or something or i don't know eight hundred megahertz or something.|s
-me013|and there's four processors in a box and there's ten boxes and there's some kind of|s
-me013|so if you know he's got a lot of processing power.|s
-me013|and um|fh
-me013|we'd have to schedule it.|s
-me013|but if we have some big jobs and we want to want to want to run them he's he's offering it.|s
-mn007|uhhuh.|b
-me013|so|fh
-me013|it's uh|%--
-me013|when he was here uh uh he he used not only every machine here but every machine on campus as far as i could tell.|s
-me013|so|fh
-me013|so in some ways he just got his payback.|s
-me013|but uh again i i don't know if we'll end up with if we're going to be c p u limited on anything that we're doing in this group.|s
-mn007|uhhuh.|b
-me013|but but if if we are that's an offer.|s
-me013|okay.|fg
-me013|well uh you guys doing great stuff so that's that that's really neat.|fh
-me013|and uh|fh
-me013|we'll uh uh don't think we need to uh|s
-me013|um oh well the other thing i guess that i will say is that uh the digits that we're going to record momentarily is starting to get are starting to get into a pretty good size collection.|fh
-me013|and um in addition to the speechdat stuff we will have those to work with really pretty soon now.|fh
-me013|so that's that's another source of data.|s
-me013|um which is under somewhat better control and that we can we can make measurements of the room.|fh
-me013|the uh that you know if we feel there's other measurements we don't have that we'd like to have we can make them.|cs
-me013|and|fh
-me013|uh dave and i were just talking about that a little while ago.|s
-mn007|uhhuh.|b
-me013|so uh that's another another possibility for this this kind of work.|s
-me013|k uh if nobody has anything else maybe we should go around do do our digits do our digits duty.|co
-me013|okay.|fh
-me013|okay i'll start.|cc
+me013|okay.|F|fg|fg
+me013|so|F|fg|fg
+me013|uh today we're looking at a number of uh things we're trying.|S|fh|fh
+me013|and uh fortunately for listeners to this uh we lost some of it's visual.|S|fh|fh
+me013|but um got tables in front of us.|S|fh|fh
+me013|um what is what does combo mean?|Q|fh|fh
+mn007|so combo is um a system where we have these features that go through a network.|S|s|s
+mn007|and then this same string of features but low pass filtered with the low pass filter used in the m s g features.|S|s|s
+mn007|and so these low pass filtered goes through m uh another m l p.|S|s|s
+mn007|and then the linear output of these two m l p's are combined just by adding the values and then there is this k l t.|S|s|s
+mn007|um the output is used as uh features as well.|S|fh|fh
+me013|um so let me try to restate this and see if i have it right.|S|fg|fg
+me013|there is uh there is the features uh there's the o g i features and then um those features um go through a contextual uh|D|s|bu
+me013|l l let's take this bottom one pointed to by the bottom arrow.|S|s|s
+me013|um those features go through a contextualized k l t.|S|fh|fh
+mn007|yeah.|S|s|aa
+me013|then these features also uh get um low pass filtered.|S|s|bu
+mn007|yeah.|S|s|aa
+mn007|so|F|fh|fh
+mn007|yeah i could perhaps draw this on the blackboard.|S|s|cc
+me013|sure.|S|s|aa
+me013|yeah.|S|s|aa
+me013|yeah.|B|b|b
+mn007|yeah.|B|b|b
+fn002|the graph.|S|s|t3
+fn002|yeah another one.|S|s|t3
+mn007|thank you.|S|s|ft
+me013|yeah that's good.|S|s|ba
+mn007|so we have these features from o g i that goes through the three paths.|S|s|s
+me013|yeah.|S|s|bk
+me013|three okay.|S|s|bk
+mn007|the first is a k l t using several frames of the features.|S|s|s
+me013|yeah.|B|b|b
+me013|yeah.|B|b|b
+mn007|the second path is uh m l p also using nine frames several frames of features.|S|s|rt
+me013|yeah.|B|b|b
+me013|uhhuh.|B|b|b
+mn007|the third path is this low pass filter.|S|s|rt
+me013|uhhuh.|B|b|b
+mn007|uh m l p.|S|s|s
+me013|aha!|S|s|fe
+me013|aha!|S|s|fe
+mn007|adding the outputs just like in the second the the proposal from for the first evaluation.|S|s|rt
+me013|yeah.|B|b|b
+me013|yeah.|B|b|b
+me013|yeah.|B|b|b
+mn007|and then the k l t and then the two together again.|S|s|m
+me013|no the k l t.|S|s|2
+me013|and those two together.|S|s|2
+fn002|two h t k.|S|s|t1
+me013|that's it.|S|s|s
+mn007|um so this is|D|s|s
+me013|okay so that's that's this bottom one.|S|s|s
+mn007|yeah.|S|s|aa
+me013|and so uh and then the the the one at the top.|S|fh|fh
+me013|and i presume these things that uh are in yellow are in yellow because overall they're the best?|Q|qy|d
+mn007|yeah.|S|s|aa
+mn007|that's the reason yeah.|S|s|na
+me013|oh let's focus on them then.|S|s|bk
+me013|so what's the block diagram for the one above it?|Q|qw|qw
+mn007|for the the first yellow line you mean?|Q|qy|bu
+me013|yeah.|S|s|aa
+mn007|yeah.|B|b|b
+mn007|so it's uh basically the same except that we don't have this uh low pass filtering so we have only two streams.|S|h|h
+fn002|step.|S|s|2
+mn007|well.|F|fh|fh
+mn007|there's there's no low low pass processing used as additional feature stream.|S|s|s
+me013|uhhuh.|B|b|b
+me013|uhhuh.|B|b|b
+mn007|um|F|fh|fh
+me013|do you um they mentioned made some uh when i was on the phone with sunil they they mentioned some weighting scheme that was used to evaluate all of these numbers.|S|s|s
+mn007|yeah.|S|s|bk
+mn007|uh actually the way things seems to|D|s|s
+mn007|um well it's uh forty percent for t i digit sixty for all the speechdat cars.|S|s|s
+mn007|well all these languages.|S|s|s
+mn007|um the well match is forty medium thirty five and high mismatch twenty five.|S|fh|fh
+mn007|yeah.|F|fh|fh
+me013|um and we don't have the t i digits part yet?|Q|fg|fg
+mn007|uh no.|S|h|h
+me013|okay.|S|s|bk
+mn007|but yeah.|F|fh|fh
+mn007|generally what you observe with t i digits is that the result are very close whatever the the system.|S|s|s
+me013|okay.|S|s|bk
+me013|and so have you put all these numbers together into a single number representing that?|Q|qy|rt
+mn007|yeah.|B|b|b
+me013|i mean not|D|s|s
+mn007|uh not yet.|S|s|nd
+mn007|no.|S|s|ar
+me013|okay so that should be pretty easy to do and that would be good.|S|s|cs
+mn007|huh yeah yeah.|S|s|aa
+me013|then we could compare the two and say what was better.|S|s|cs
+mn007|huh.|B|b|b
+mn007|yeah.|B|b|b
+me013|um and how does this compare to the numbers?|Q|fh|fh
+me013|oh so o g i two is just the top top row?|Q|qy|bu
+fn002|yeah.|S|s|aa
+mn007|so yeah to|D|s|aa
+mn007|actually o g i two is the the baseline with the o g i features.|S|s|nd
+mn007|but this is not exactly the result that they have because they've they're still made some changes in the features.|S|s|s
+me013|okay.|B|b|b
+mn007|and well but uh actually our results are better than their results.|S|s|s
+mn007|um i don't know by how much because they did not send us the new results.|S|fh|fh
+me013|okay.|S|s|bk
+me013|uh okay so the one one place where it looks like we're messing things up a bit is in the highly mismatched italian.|S|fg|fg
+mn007|yeah.|B|b|b
+mn007|yeah.|S|s|aa
+mn007|yeah.|F|fg|fg
+mn007|there is something funny happening here because|D|s|na
+mn007|yeah.|S|s|aa
+me013|yeah.|S|s|aa
+mn007|but there are thirty six and then sometimes we are we are we are around forty two and|D|s|df
+me013|now up.|S|s|s
+me013|uh so one of the ideas that you had mentioned last time was having a a second um silence detection.|S|fg|fg
+mn007|yeah.|S|s|aa
+mn007|so there are some results here.|S|s|s
+fn002|for the italian.|S|s|s
+mn007|uh so the third and the fifth line of the table|D|s|rt
+fn002|for this one.|S|s|s
+me013|so filt is what that is?|Q|qy|bu
+mn007|filt yeah.|S|s|aa
+fn002|yeah.|B|b|b
+mn007|um yeah so it seems for the the well match and mismatched condition.|S|fh|fh
+mn007|it's uh it brings something.|S|s|s
+mn007|uh but uh actually apparently there are there's no room left for any silence detector at the server side because of the delay.|S|fh|fh
+mn007|uh well|F|fh|fh
+me013|oh we can't do it.|S|s|bs
+me013|oh okay.|S|s|bk
+mn007|no.|S|s|aa
+fn002|for that for that we|D|s|s
+me013|oh.|B|b|b
+mn007|uh|F|fh|fh
+me013|too bad.|S|s|by
+me013|good idea but can't do it.|S|s|ba
+mn007|yeah.|B|b|b
+me013|okay.|F|fg|fg
+mn007|except i don't know because they i think they are still working well.|S|s|no
+me013|uhhuh.|B|b|b
+mn007|uh two days ago they were still working on this trying to reduce the delay of the silence detector.|S|s|s
+mn007|so but|F|fh|fh
+mn007|yeah.|F|fh|fh
+mn007|if we had time perhaps we could try to find uh some kind of compromise between the delay that's on the handset and on the server side.|S|s|cs
+mn007|perhaps try to reduce the delay on the handset.|S|s|cs
+mn007|and|F|fh|fh
+mn007|but well huh for the moment they have this large delay on the the feature computation and so we don't|D|s|s
+me013|okay.|B|b|b
+me013|so|F|fg|fg
+me013|all right so for now at least that's not there.|S|s|s
+me013|you have some results with low pass filter cepstrum.|S|s|s
+me013|doesn't have a huge effect but it but it looks like it you know maybe could help in a couple places.|S|s|s
+mn007|i|D|%|%
+mn007|yeah.|S|s|aa
+me013|uh little bit.|S|s|s
+me013|um and um um|F|fh|fh
+me013|yeah.|F|fh|fh
+me013|and uh let's see.|F|fh|fh
+me013|what else did we have in there?|Q|qw|qw
+me013|uh i guess it makes a um at this point this is|D|fh|fh
+me013|i i guess i should probably look at these others a little bit.|S|s|cc
+me013|uh and you you yellowed these out.|S|fh|fh
+me013|uh but uh uh|F|fh|fh
+me013|oh i see yeah that that one you can't use because of the delay.|S|s|bk
+me013|those look pretty good.|S|s|ba
+me013|um let's see that one.|S|fh|fh
+me013|well even the just the the second row doesn't look that bad right?|S|s|s
+me013|that's just uh|D|s|s
+mn007|yep.|B|b|b
+me013|yeah?|D|%|%
+me013|and and that looks like an interesting one too.|S|s|s
+fn002|huh yeah.|B|b|b
+me013|uh|F|fh|fh
+mn007|actually the yeah the second line is uh pretty much like the first line in yellow.|S|s|rt
+mn007|except that we don't have this k l t on the first on the left part of the diagram.|S|s|s
+mn007|we just have the features as they are.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|um|F|fh|fh
+me013|yeah.|B|b|b
+me013|yeah so when we do this weighted measure we should compare the two because it might even come out better.|S|s|cs
+mn007|uhhuh.|S|s|aa
+me013|and it's it's it's a little slightly simpler.|S|s|df
+mn007|yeah.|B|b|b
+me013|so so there's so i i would put that one also as a as a maybe.|S|s|s
+me013|uh and it|D|fh|fh
+me013|yeah and it's actually does does significantly better on the uh uh highly mismatched italian.|S|fh|fh
+me013|so|F|fh|fh
+me013|and little worse on the on the m m case.|S|s|e
+me013|but|F|fh|fh
+me013|uh well yeah it's worse than a few things.|S|fh|fh
+mn007|uhhuh.|B|b|b
+me013|so uh let's see how that that see how that comes out on their their measure.|S|s|cs
+me013|and are are we running this uh for t i digits?|Q|qy|qy
+me013|or uh|D|qr|qr
+mn007|yeah.|S|s|aa
+mn007|yeah.|S|s|aa
+me013|now is t i di is that part of the result that they get for the uh development the results that they're supposed to get at the end of end of the month the t i digits are there also?|Q|qy|qy
+mn007|yeah.|S|s|aa
+mn007|it's included yeah.|S|s|na
+me013|oh okay.|S|s|bk
+me013|okay.|B|b|b
+me013|and see what else there is here.|S|s|cc
+me013|um oh i see.|S|s|bk
+me013|the one i was looking down here at the the the row below the lower yellowed one.|S|s|s
+me013|uh that's uh that's with the reduced uh k l t size reduced dimensionality.|S|s|s
+mn007|yeah.|B|b|b
+mn007|yeah.|S|s|aa
+me013|what happens there is it's around the same.|S|s|bs
+me013|and so you could reduce the dimension as you were saying before a bit perhaps.|S|s|cs
+mn007|yeah it's it's significantly worse well but uhhuh.|S|s|s
+me013|it's significantly worse.|S|s|na
+me013|it's it's uh it's it's mostly worse.|S|s|na
+mn007|except for the h m.|S|s|s
+fn002|for many a mismatch it's worse.|S|s|s
+mn007|but|F|fh|fh
+me013|yeah.|B|b|b
+me013|but it is little.|S|s|s
+me013|i mean not not by a huge amount.|S|s|df
+me013|i don't know.|S|s|no
+me013|what are what are the sizes of any of these sets?|Q|qw|qw
+me013|i i'm i'm sure you told me before but i've forgotten.|S|s|s
+me013|so you know how many words are in uh one of these test sets?|Q|qw|qw
+mn007|uh|F|h|h
+fn002|i don't remember.|S|s|no
+mn007|um it's it depends well the well matched is generally larger than the other sets.|S|h|h
+me013|about?|Q|qy|d
+mn007|and i think it's around two thousand or three thousand words perhaps at least.|S|s|s
+fn002|but words well word i don't know.|S|s|s
+mn007|huh?|Q|qo|d
+mn007|the words yeah.|S|s|s
+fn002|sentences.|S|s|s
+mn007|sentences.|S|s|m
+mn007|some sets have five hundred sentences.|S|s|s
+mn007|so|F|fh|fh
+fn002|yeah.|S|s|bk
+mn007|huh.|B|b|b
+me013|so the so the sets so the test sets are between five hundred and two thousand sentences let's say.|S|s|s
+me013|and each sentence on the average has four or five digits?|Q|qy|d
+me013|or is it most of them longer or|D|qrr|qrr
+fn002|yeah.|S|s|aa
+fn002|for the italian even seven digits more or less.|S|s|na
+mn007|yeah.|S|s|aa
+mn007|it it|D|%|%
+fn002|but sometime the sentence have only one digit.|S|s|arp
+mn007|seven digits.|S|s|s
+fn002|and sometime uh like uh the number of uh credit cards something like that.|S|s|s
+me013|uhhuh.|B|b|b
+me013|right so between one and sixteen.|S|s|bk
+me013|see the i mean the reason i'm asking is is is we have all these small differences and i don't know how seriously to take them right?|S|s|df
+me013|so uh if if you had uh just you know to give an example if you had uh um if you had a thousand words then uh a a tenth of a percent would just be one word.|S|fh|fh
+mn007|yeah.|B|b|b
+me013|right?|Q|qy|d
+me013|so so it wouldn't mean anything.|S|s|s
+fn002|yeah.|B|b|b
+mn007|yeah.|B|b|b
+me013|oh.|B|b|b
+me013|um so um yeah it be kind of i'd kind of like to know what the sizes of these test sets were actually.|S|fh|fh
+fn002|the size that we have?|Q|qy|bu
+mn007|yeah.|B|b|b
+mn007|we could we could run run some kind of significance tests.|S|s|cs
+me013|yeah since these|D|s|s
+me013|well also just to know the numbers.|S|s|df
+mn007|or|F|fh|fh
+fn002|yeah.|B|b|b
+me013|right.|B|b|b
+me013|so these these are word error rates.|S|s|s
+mn007|yeah.|B|b|b
+me013|so this is on how many words?|Q|qy|d
+mn007|yep.|B|b|b
+fn002|yeah we have the result that the output of the h t k.|S|s|s
+me013|yeah.|B|b|b
+fn002|the number of of sentences no it's the number isn't.|S|s|s
+mn007|yeah sure sure.|S|s|aa
+mn007|yeah sure.|B|b|b
+me013|yeah.|S|s|bk
+mn007|yeah.|B|b|b
+me013|so anyway if you could just mail out what those numbers are and then then that that be great.|S|s|co
+fn002|yeah.|S|s|bk
+me013|um what else is there here?|Q|fh|fh
+me013|um see the second second from the bottom it says s i l.|S|fh|fh
+me013|but this is some different kind of silence or thing or|D|qy|d
+me013|what was that?|Q|qw|qw
+mn007|uh|F|fh|fh
+fn002|it the the output silence of the m l p.|S|s|s
+mn007|oh yeah.|S|s|bk
+mn007|i see.|S|s|bk
+fn002|it's only one small experiment to know what happened.|S|s|s
+fn002|to apply also to include also the the silence of the m l p we have the fifty six form and the silence to pick up the silence and we include those.|S|s|s
+me013|yes.|B|b|b
+me013|uhhuh uhhuh.|B|b|b
+me013|the silence plus the k l t output?|Q|qy|d
+me013|oh so you're only using the silence.|S|s|bu
+mn007|yeah.|B|b|b
+fn002|yeah because when we apply the k l t|D|s|aa
+mn007|no they're i think there is this silence in addition to the um k l t outputs.|S|s|ar
+me013|no.|S|s|ar
+fn002|in addition yes.|S|s|na
+fn002|in addition|D|s|s
+mn007|it is because we we we just keep uh we don't keep all the dimensions after the k l t.|S|s|df
+mn007|and yeah.|F|fh|fh
+fn002|and we not we are not sure if we pick we have the silence.|S|s|s
+mn007|so we try to add the silence also in addition to the these twenty eight dimensions.|S|s|s
+me013|i see.|S|s|bk
+me013|okay.|B|b|b
+me013|and what and what's o g i forty five?|Q|qw|qw
+mn007|uh it's it's o g i two.|S|h|h
+me013|the bottom one there?|Q|qy|d
+mn007|it's so the it's the features from the first line.|S|s|rt
+fn002|it's in fact o g i two.|S|s|s
+mn007|and yeah.|F|fh|fh
+me013|right but i mean what's the what does the last row mean?|S|s|bk
+mn007|so it's uh basically this but without the k l t on the from the left path.|S|s|s
+me013|i thought that was the one i thought that was the second row.|S|s|s
+me013|so what's the difference between the second|D|qw|qw
+mn007|uh the second line you don't have this combo stuff so you just|D|s|s
+me013|oh.|S|s|bk
+mn007|uh|F|fh|fh
+me013|so this is like the second line but with with the combo stuff.|S|s|bu
+mn007|yeah.|B|b|b
+fn002|and with the all the output of the combo.|S|s|aap
+mn007|yeah.|B|b|b
+me013|okay.|B|b|b
+me013|yeah.|B|b|b
+mn007|yeah.|B|b|b
+fn002|uh|F|fh|fh
+me013|okay so|F|fg|fg
+me013|all right.|F|fg|fg
+me013|so it looks to me i guess the same.|S|s|bs
+me013|given that we have to take the filt ones out of the the running because of this delay problem so it looks to me like the ones you said i agree are are the ones to look at.|S|s|na
+mn007|uhhuh.|B|b|b
+me013|but i just would add the the the second row one.|S|s|cs
+mn007|yeah.|B|b|b
+me013|and then um if we can um|F|fh|fh
+mn007|huh.|B|b|b
+me013|oh yeah also when when they're using this weighting scheme of forty thirty five twenty five is that on the percentages or on the raw errors?|Q|qr|qr
+me013|i guess it's probably on the percentages right?|S|s|bu
+mn007|uh i guess yeah.|S|h|h
+me013|yeah okay.|S|s|bk
+mn007|i guess yeah.|S|s|aa
+mn007|huh.|B|b|b
+me013|all right.|B|b|b
+mn007|it's not clear here.|S|s|s
+me013|okay.|S|s|bk
+me013|maybe maybe they'll argue about it.|S|s|s
+me013|um okay.|F|fg|fg
+me013|so if we can know what how many words are in each.|S|s|co
+me013|and then um dave uh dave promised to get us something tomorrow which will be there as far as they've gotten friday.|S|s|s
+mn007|uhhuh.|B|b|b
+mn007|yeah.|B|b|b
+me013|and then we'll operate with that.|S|s|s
+me013|and uh how long did it|D|qw|qw
+me013|i guess if we're not doing all these things if we're only doing um|D|s|s
+me013|um i guess since this is development data it's legitimate to do more than one.|S|fh|fh
+me013|right?|Q|qy|d
+me013|i mean ordinarily if in final test data you don't want to do several and and take the best.|S|s|s
+mn007|yeah.|B|b|b
+mn007|huh.|B|b|b
+me013|that's that's that's not proper.|S|s|s
+me013|but if this is development data we could still look at a couple.|S|s|cs
+mn007|yeah.|S|s|aa
+mn007|we can.|S|s|na
+mn007|yeah.|S|s|aa
+mn007|sure.|S|s|aa
+mn007|but we have to decide.|S|s|s
+mn007|i mean we have to fix the system on this on this data to choose the best.|S|s|s
+me013|yeah.|B|b|b
+mn007|and these|D|%|%
+me013|right.|S|s|bk
+me013|but the question is when when do we fix the system.|S|s|s
+mn007|but we could.|S|s|s
+me013|do we fix the system uh tomorrow or do we fix the system on tuesday?|Q|qr|qr
+mn007|it|D|%|%
+mn007|i think we fixed on tuesday yeah.|S|s|s
+me013|i yeah okay except that we do have to write it up.|S|s|bk
+mn007|yeah.|B|b|b
+mn007|uhhuh.|B|b|b
+mn007|uhhuh.|B|b|b
+mn007|yeah.|B|b|b
+me013|also so|F|fh|fh
+mn007|yeah.|B|b|b
+me013|um|F|fh|fh
+mn007|uh yeah well.|F|fg|fg
+mn007|well basically it's this with perhaps some kind of printing and some some other.|S|s|s
+me013|right.|S|s|bk
+me013|so maybe what we do is we we we uh as soon as we get the data from them we start the training and so forth.|S|s|cs
+mn007|yeah but|F|fg|fg
+mn007|uhhuh.|B|b|b
+me013|but we start the write up right away because as you say there there's only minor differences between these.|S|s|co
+mn007|i think you we could we could start soon yeah.|S|s|na
+me013|yeah.|B|b|b
+mn007|write up something.|S|s|na
+me013|yeah and and i i would you know i would i'd kind of like to see it.|S|s|s
+mn007|um yeah.|F|fh|fh
+mn007|uhhuh.|B|b|b
+me013|maybe i can i can edit it a bit.|S|s|cc
+me013|uh sure.|F|fh|fh
+me013|the my what in this in this situation is my forte which is english.|S|s|s
+mn007|yeah.|B|b|b
+me013|uh so|F|fh|fh
+mn007|huh.|B|b|b
+me013|uh yeah.|F|fh|fh
+me013|have have you seen do they have a format for how they want the system descriptions or anything?|Q|qy|qy
+mn007|uh not really.|S|h|h
+me013|okay.|B|b|b
+mn007|um there is the format of the table which is quite impressive.|S|fh|fh
+me013|uh i see.|S|s|bk
+me013|yes for those who are listening to this and not looking at it uh it's not really that impressive it's just tiny.|S|s|s
+me013|it's all these little categories set a set b set c multi condition clean.|S|s|s
+me013|uh no mitigation.|S|s|s
+me013|wow.|S|s|bk
+me013|do you know what no what no mitigation means here?|Q|qy|qy
+mn007|um it should be the the problem with the error channel error.|S|h|h
+me013|oh that's probably the|D|s|s
+mn007|or|F|fh|fh
+me013|this is probably channel error stuff.|S|s|bu
+mn007|yeah.|B|b|b
+me013|huh?|Q|qy|d
+me013|oh this is right it says right above here channel channel error resilience.|S|s|bk
+mn007|yeah.|B|b|b
+me013|yeah.|S|s|bk
+me013|so recognition performance is just the top part actually.|S|s|s
+me013|uh and they have yes split between seen data bases and non seen so basically between development and and evaluation.|S|fh|fh
+mn007|yeah.|B|b|b
+me013|and so|F|fh|fh
+me013|right.|F|fh|fh
+me013|it's presumed there's all sorts of tuning that's gone on on the what they call seen databases.|S|s|s
+me013|and there won't be tuning for the uh unseen.|S|s|e
+me013|multi condition multi condition.|S|s|s
+me013|so they have looks like they have|D|s|s
+mn007|uhhuh.|B|b|b
+me013|uh uh|F|fh|fh
+me013|so they splitting up between the t i digits and everything else i see.|S|s|s
+me013|so the everything else is the speechdat car that's the multilingual|D|s|s
+mn007|yeah so it's not divided between languages you mean or|D|qy|bu
+me013|well it is.|S|s|ar
+mn007|it just|D|%|%
+me013|it is.|S|s|ar
+me013|but there's also there's these tables over here for the for the t i digits and these tables over here for the car data.|S|s|df
+mn007|oh yeah.|S|s|bk
+me013|which is which is i guess all the multilingual stuff.|S|s|e
+me013|and then uh there's they also split up between multi condition and clean only.|S|s|s
+mn007|yeah.|B|b|b
+mn007|for t i digits.|S|s|bu
+me013|yes.|S|s|aa
+mn007|yeah actually yeah.|S|s|aa
+mn007|for the t i digits they want to train on clean and on noisy.|S|s|rt
+me013|yeah.|S|s|bk
+mn007|and yeah.|F|fh|fh
+me013|so we're doing that also i guess.|S|s|bu
+mn007|uh yeah.|S|h|h
+mn007|but uh we actually|D|fh|fh
+mn007|do we have the features?|Q|qy|rt
+mn007|yeah.|S|s|aa
+mn007|for the clean t i digits but we did not test it yet.|S|s|s
+mn007|uh the clean training stuff.|S|s|s
+me013|okay.|S|s|bk
+mn007|huh.|B|b|b
+me013|well anyway sounds like there'll be a lot to do just to work with our partners to fill out the tables over the next uh next few days.|S|fg|fg
+mn007|uhhuh.|B|b|b
+fn002|yes.|B|b|b
+me013|i guess they have to send it out|D|s|s
+me013|let's see the thirty first is uh uh wednesday.|S|s|s
+me013|and i think the it has to be there by some hour uh european time on wednesday.|S|s|s
+mn007|huh huh.|B|b|b
+me013|so i think basically|D|s|s
+fn002|we lost time uh wednesday maybe because that the difference in the time may be is a long different of the time.|S|s|s
+me013|excuse me?|Q|qo|br
+fn002|maybe the thursday the twelfth of the night of the thirty one is is not valid in europe.|S|s|s
+mn007|yeah.|B|b|b
+fn002|we don't know is happening.|S|s|s
+me013|yes so i mean i think we have to actually get it done tuesday.|S|fg|fg
+fn002|tuesday.|S|s|bk
+mn007|yeah well.|B|b|b
+me013|right.|F|fh|fh
+me013|because i i think|D|s|s
+mn007|except if if it's the thirty one at midnight.|S|s|arp
+me013|uh uh|F|fh|fh
+mn007|or i don't know.|S|s|bd
+mn007|we can still do some work on wednesday morning.|S|s|cs
+me013|yeah well.|B|b|b
+mn007|yeah well.|F|fh|fh
+me013|is but is is it i thought it was actually something like five p m on|D|s|bu
+mn007|yeah.|S|s|aa
+fn002|yeah.|B|b|b
+mn007|uhhuh.|B|b|b
+me013|was like i thought it was five p m or something.|S|s|bu
+me013|i didn't think it was midnight.|S|s|s
+me013|i thought they said they wanted everything by|D|s|bu
+fn002|yeah five p m.|S|s|aa
+me013|well so five p m their time is is|D|s|s
+fn002|not five p m three p m.|S|s|nd
+me013|if|D|%|%
+me013|three p m.|S|s|bk
+fn002|three p m.|S|s|na
+me013|all right that's six in the morning here.|S|s|s
+mn007|it's|D|%|%
+fn002|uh no.|S|s|ar
+mn007|no.|S|s|ar
+fn002|three three three p m?|Q|qy|bu
+mn007|no we are wondering about the the the hour that we have to|D|s|ng
+mn007|uh i don't know if it's three p m it's|D|s|no
+fn002|oh yeah yeah yeah yeah.|S|s|aa
+fn002|three p m here is in europe midnight.|S|s|s
+mn007|yeah it's it's midnight but|D|s|aa
+me013|yes yes but i didn't think it was midnight that it was due.|S|s|df
+fn002|oh okay.|S|s|bk
+me013|i thought it was due at some hour during the day like five p m or something.|S|s|df
+fn002|huh huh.|B|b|b
+fn002|uhhuh.|B|b|b
+fn002|maybe.|D|%|%
+me013|in which case|D|s|s
+me013|so i i uh well we should look.|S|s|co
+me013|but my assumption is that we basically have to be done tuesday.|S|s|s
+me013|um so then next thursday we can sort of have a little aftermath.|S|fh|fh
+fn002|yeah.|B|b|b
+me013|but then then we'll actually have the new data which is the german and the danish.|S|s|s
+mn007|yeah.|B|b|b
+me013|but that really will be much less work because uh the system will be fixed.|S|s|s
+mn007|yeah.|B|b|b
+me013|so all we'll do is take whatever they have and and uh and run it through the process.|S|s|co
+mn007|yeah.|B|b|b
+mn007|uhhuh.|B|b|b
+me013|uh we won't be changing the training on anything.|S|fh|fh
+me013|so there'll be no new training there'll just be new h t k runs.|S|s|s
+me013|so that's means in some sense we can kind of relax from this after after tuesday.|S|s|s
+me013|and and uh maybe next meeting we can start talking a little bit about where we want to go from here uh in terms of uh the research.|S|fh|fh
+mn007|uhhuh.|B|b|b
+me013|um you know what things uh did you think of when you were uh doing this process that uh you just didn't really have time to adequately work on?|Q|fh|fh
+me013|uh uh so|F|fh|fh
+mn007|uhhuh.|B|b|b
+mn007|yeah.|B|b|b
+me013|what?|Q|qo|qo
+me006|oh stephane always has these great ideas.|S|s|s
+me006|and|D|%|%
+me006|oh but uh we don't have time.|S|s|s
+mn007|sure.|S|s|aa
+me013|yeah.|B|b|b
+me006|yeah.|B|b|b
+me013|yeah.|B|b|b
+mn007|i'm not sure these are great ideas.|S|s|bd
+me013|but they're ideas.|S|s|s
+me013|yeah?|Q|qo|d
+me013|oh that was good.|S|s|ba
+mn007|yeah.|B|b|b
+me006|yeah.|B|b|b
+me013|and and uh also it's still true that uh i think it's true that that we we at least got fairly consistent improved results by running uh the uh neural net transformation in parallel with the features.|S|s|s
+mn007|but|D|%|%
+me013|rather than uh in sequence which was was your suggestion and that that that seems to have been borne out.|S|s|s
+mn007|uhhuh.|B|b|b
+mn007|uhhuh.|B|b|b
+me013|the fact that none of these are are you know enormous is is is not too surprising .|S|s|s
+me013|most improvements aren't enormous.|S|s|s
+me013|and uh|F|fh|fh
+mn007|yeah.|B|b|b
+me013|some of them are.|S|s|s
+me013|but uh i mean you have something really really wrong and you fix it you can get big and really enormous improvements.|S|fh|fh
+mn007|uhhuh.|B|b|b
+me013|but uh um because our best improvements over the years that we've gotten from finding bugs.|S|fh|fh
+me013|but|D|%|%
+me013|anyway.|F|fh|fh
+me013|okay.|F|fg|fg
+me013|well i i think i see where we are and everybody knows what they're doing and is there is there anything else we should talk about?|S|s|bs
+me013|or or are we done?|Q|qrr|qrr
+mn007|uhhuh.|B|b|b
+mn007|i think it's okay.|S|s|s
+mn007|um we|F|fh|fh
+mn007|so basically we will i think we'll try to to focus on these three architectures.|S|s|cc
+mn007|and and perhaps i was thinking also a fourth one with just just a single k l t.|S|s|cs
+mn007|because we did not really test that .|S|s|df
+mn007|removing all these k l t's and putting one single k l t at the end.|S|s|cs
+me013|uhhuh.|B|b|b
+me013|yeah i mean that would be pretty low maintenance to try it.|S|s|na
+mn007|yeah.|B|b|b
+me013|uh if you can fit it in.|S|fh|fh
+mn007|uhhuh.|B|b|b
+me013|oh i have yeah i do have one other piece of information which uh i should tell people outside of this group too.|S|s|cc
+me013|uh i don't know if we're going to need it uh but uh jeff up at the uh university of washington has uh gotten a hold of a uh uh some kind of server farm of uh of ten uh uh multiprocessor uh i b m machines r s six thousands.|S|fh|fh
+mn007|uhhuh.|B|b|b
+me013|and and uh so i think each one is four processors or something or i don't know eight hundred megahertz or something.|S|s|s
+me013|and there's four processors in a box and there's ten boxes and there's some kind of|D|s|s
+me013|so if you know he's got a lot of processing power.|S|s|s
+me013|and um|F|fh|fh
+me013|we'd have to schedule it.|S|s|s
+me013|but if we have some big jobs and we want to want to want to run them he's he's offering it.|S|s|s
+mn007|uhhuh.|B|b|b
+me013|so|F|fh|fh
+me013|it's uh|D|%|%
+me013|when he was here uh uh he he used not only every machine here but every machine on campus as far as i could tell.|S|s|s
+me013|so|F|fh|fh
+me013|so in some ways he just got his payback.|S|s|s
+me013|but uh again i i don't know if we'll end up with if we're going to be c p u limited on anything that we're doing in this group.|S|s|s
+mn007|uhhuh.|B|b|b
+me013|but but if if we are that's an offer.|S|s|s
+me013|okay.|F|fg|fg
+me013|well uh you guys doing great stuff so that's that that's really neat.|S|fh|fh
+me013|and uh|F|fh|fh
+me013|we'll uh uh don't think we need to uh|D|s|s
+me013|um oh well the other thing i guess that i will say is that uh the digits that we're going to record momentarily is starting to get are starting to get into a pretty good size collection.|S|fh|fh
+me013|and um in addition to the speechdat stuff we will have those to work with really pretty soon now.|S|fh|fh
+me013|so that's that's another source of data.|S|s|s
+me013|um which is under somewhat better control and that we can we can make measurements of the room.|S|fh|fh
+me013|the uh that you know if we feel there's other measurements we don't have that we'd like to have we can make them.|S|s|cs
+me013|and|F|fh|fh
+me013|uh dave and i were just talking about that a little while ago.|S|s|s
+mn007|uhhuh.|B|b|b
+me013|so uh that's another another possibility for this this kind of work.|S|s|s
+me013|k uh if nobody has anything else maybe we should go around do do our digits do our digits duty.|S|s|co
+me013|okay.|F|fh|fh
+me013|okay i'll start.|S|s|cc
