@@ -1,1417 +1,1417 @@
-me013|okay.|F
-me013|uh|F
-mn007|okay so there is kind of summary of what has been done.|S
-me013|go ahead.|S
-mn007|it's this.|S
-me013|oh okay.|S
-mn007|summary of experiments since well since last week.|S
-mn007|and also since the we've started to run work on this.|S
-mn007|um so since last week we've started to fill the column with um uh features with nets trained on p l p with online normalization.|S
-mn007|but with delta also.|S
-mn007|because the column was not completely|D
-me013|huh huh.|B
-me013|uhhuh.|B
-me013|uhhuh.|B
-mn007|well it's still not completely filled.|S
-mn007|but we have more results to compare with network using without p l p.|S
-mn007|and finally um uh p uh delta seems very important.|S
-mn007|uh i don't know.|S
-mn007|if you take um let's say anyway aurora two b.|S
-mn007|so the next the second uh part of the table.|S
-me013|uhhuh.|D
-mn007|uh when we use the large training set using french spanish and english you have one hundred and six without delta.|S
-mn007|and eighty nine with the delta.|S
-me013|and again all of these numbers are with a hundred per cent being uh the baseline performance.|S
-mn007|yeah uhhuh.|S
-mn007|on the baseline yeah.|S
-me013|but with a mel cepstra system going straight into the h t k.|S
-mn007|so|F
-mn007|yeah yeah.|S
-me013|yes.|S
-mn007|so now we see that the gap between the different training set is much uh uh much smaller.|S
-me006|it's out of the way.|S
-mn007|um|F
-mn007|but actually um for english training on timit is still better than the other languages.|S
-mn007|and|D
-mn007|uh|F
-mn007|yeah.|B
-mn007|and also for italian actually.|S
-mn007|if you take the second set of experiment for italian|D
-mn007|so the mismatched condition.|S
-me013|uhhuh.|B
-mn007|um when we use the training on timit.|S
-mn007|so it's multi english.|S
-mn007|we have a ninety one number.|S
-me013|uhhuh.|B
-mn007|and training with other languages is a little bit worse.|S
-me013|um oh i see.|S
-me013|down near the bottom of this sheet.|S
-me013|uh yes.|B
-mn007|so|F
-mn007|yeah.|B
-me013|okay.|B
-mn007|and yeah and here the gap is still more important between using delta and not using delta.|S
-me013|yes.|B
-mn007|if if i take the training the large training set it's we have one hundred and seventy two.|S
-me013|yeah.|B
-mn007|and one hundred and four when we use delta.|S
-me013|uhhuh.|B
-mn007|uh even if the contexts used is quite the same.|S
-mn007|because without delta we use seventeenths seventeen frames.|S
-mn007|uh|F
-mn007|yeah um so the second point is that we have no single cross language experiments uh that we did not have last week.|S
-mn007|uh so this is training the net on french only.|S
-mn007|or on english only.|S
-mn007|and testing on italian.|S
-me013|uhhuh.|B
-mn007|and training the net on french only.|S
-mn007|and spanish only.|S
-mn007|and testing on uh t i digits.|S
-me013|uhhuh.|D
-mn007|and|D
-mn007|um|F
-mn007|yeah.|F
-mn007|what we see is that these nets are not as good.|S
-mn007|except for the multi english which is always one of the best.|S
-mn007|yeah.|F
-mn007|then we started to work on a large database containing uh sentences from the french from the spanish from the timit from spine uh from uh english digits and from italian digits.|D
-mn007|so this is the another line another set of lines in the table.|S
-me013|uh yes.|B
-mn007|uh with spine.|D
-me013|uhhuh.|B
-mn007|and uh actually we did this before knowing the result of all the data.|S
-mn007|uh so we have to redo the uh the experiment training the net with uh p l p but with delta.|S
-me013|uhhuh.|B
-mn007|but with delta.|S
-mn007|but um this this net performed quite well.|S
-mn007|well|D
-mn007|it's it's better than the net using french spanish and english only.|S
-mn007|uh.|B
-mn007|so|F
-mn007|uh yeah.|B
-mn007|we have also started feature combination experiments.|S
-mn007|uh many experiments using features and net outputs together.|S
-mn007|and this is the results are on the other document.|S
-mn007|uh we can discuss this after perhaps well just another few minutes.|S
-mn007|yeah so basically there are four four kind of systems.|S
-mn007|the first one yeah is combining um two feature streams uh using|D
-mn007|and each feature stream has its own m.p.l.|S
-mn007|so it's the kind of similar to the tandem that was proposed for the first.|S
-mn007|the multi stream tandem for the first proposal.|S
-mn007|the second is using features and k l t transformed m l p outputs.|S
-mn007|and the third one is to use a single k l t transform features as well as m l p outputs.|S
-mn007|um|F
-mn007|yeah.|F
-mn007|huh.|D
-mn007|you know you can you can comment these results also.|S
-fn002|yes i can|D
-fn002|i would like to say that for example um huh if we doesn't use the delta delta uh we have an improve when we use some combination.|S
-fn002|but when|D
-mn007|yeah just to be clear the numbers here are uh recognition accuracy.|S
-fn002|yeah this yeah this number recognition|D
-mn007|so it's not the again we switch to another.|S
-fn002|yes and the baseline the baseline have is eighty two.|S
-me013|baseline is eighty two.|S
-fn002|yeah.|S
-mn007|so it's experiment only on the italian mismatched for the moment for this.|S
-me013|uh this is italian mismatched.|S
-fn002|yeah by the moment.|S
-mn007|um|F
-me013|okay.|S
-mn007|huh.|B
-fn002|and first in the experiment one i i do i i use different m l p.|S
-me013|uhhuh.|B
-fn002|and is obviously that the multi english m l p is the better.|S
-fn002|um for the ne rest of experiment i use multi english.|S
-fn002|only multi english.|S
-fn002|and i try to combine different type of feature.|S
-fn002|but the result is that the m s g three feature doesn't work for the italian database.|S
-fn002|because never help to increase the accuracy.|S
-mn007|yeah uh actually if we look at the table|D
-mn007|the huge table|D
-me013|uhhuh.|B
-mn007|um we see that for t i digits m s g perform as well as the p l p.|S
-mn007|but this is not the case for italian what where the error rate is is almost uh twice the error rate of p l p.|S
-me013|uhhuh.|B
-mn007|so um uh well i don't think this is a bug.|S
-mn007|but this this is something in probably in the m s g um process that|D
-mn007|uh|F
-mn007|i don't know what exactly.|S
-mn007|perhaps the fact that the the there's no low pass filter.|S
-mn007|well|D
-mn007|or no pre pre emphasis filter.|S
-mn007|and that there is some d c offset in the italian.|S
-mn007|or well|D
-mn007|something simple like that.|S
-mn007|but that we need to sort out if want to uh get improvement by combining p l p and m s g.|S
-me013|uhhuh.|B
-mn007|because for the moment m s g doesn't bring much information.|S
-me013|uhhuh.|B
-mn007|and as carmen said if we combine the two we have the result basically of p l p.|S
-me013|i|D
-me013|um the uh baseline system|D
-me013|when you said the baseline system was uh uh eighty two per cent that was trained on what and tested on what?|Q
-me013|that was uh italian mismatched uh uh digits uh is the testing.|S
-fn002|yeah.|S
-me013|and the training is italian digits?|Q
-fn002|yeah.|S
-me013|so the mismatch just refers to the noise and and uh microphone and so forth.|S
-fn002|yeah.|S
-me013|right?|Q
-mn007|yeah.|D
-me013|so um did we have|D
-me013|so would that then correspond to the first line here of where the training is is the uh italian digits?|Q
-fn002|the the training of the h t k?|Q
-fn002|yes.|S
-me013|yes.|S
-fn002|uh yes.|F
-fn002|this|D
-fn002|yes.|S
-me013|yes.|B
-fn002|yes.|B
-me013|training of the net.|S
-me013|yeah.|B
-fn002|yeah.|B
-me013|so um so what that says is that in a matched condition we end up with a fair amount worse putting in the uh p l p.|S
-me013|now would do we have a number i suppose for the matched|D
-me013|i i don't mean matched.|S
-me013|but uh use of italian training in italian digits for p l p only?|Q
-fn002|uh yes.|S
-mn007|uh yeah.|S
-mn007|so this is basically this is in the table.|S
-mn007|uh so the number is fifty two.|S
-fn002|another table.|S
-mn007|uh|F
-me013|fifty two per cent.|S
-mn007|so no it's it's the|D
-fn002|no.|S
-me013|no fifty two per cent of eighty two?|S
-mn007|of of of uh eighteen.|S
-fn002|eighty.|S
-fn002|eighty.|S
-mn007|of eighteen.|S
-mn007|so it's it's error rate basically.|S
-fn002|it's plus six.|S
-mn007|error rate ratio.|S
-mn007|so|F
-mn007|so|F
-me013|oh this is accuracy!|S
-me013|huh.|D
-fn002|yeah.|B
-me013|okay.|S
-mn007|uh so we have nine nine let's say ninety per cent.|S
-me013|ninety.|S
-mn007|yeah.|B
-mn007|um which is uh what we have also if use p l p and m s g together.|S
-me013|yeah.|B
-mn007|eighty nine point seven.|S
-me013|okay so even just p l p uh it is not in the matched condition|D
-me013|um i wonder if it's a difference between p l p and mel cepstra or whether it's that the net half for some reason is not helping.|S
-mn007|uh.|B
-mn007|p l p and mel cepstra give the same same results.|S
-me013|same result pretty much.|S
-mn007|well we have these results.|S
-mn007|i don't know.|S
-mn007|it's not|D
-me013|so|D
-mn007|do you have this result with p l p alone feeding h t k?|Q
-mn007|that that's what you mean.|S
-fn002|yeah.|S
-mn007|just p l p at the input of h t k.|S
-fn002|yeah yeah yeah yeah.|S
-fn002|at the first and the|D
-fn002|yeah.|B
-mn007|yeah.|B
-mn007|so p l p|D
-me013|eighty eight point six.|S
-mn007|yeah.|B
-me013|um so adding m s g|D
-mn007|um|F
-me013|um well but that's yeah that's without the neural net.|S
-me013|right?|Q
-mn007|yeah that's without the neural net.|S
-mn007|and that's the result basically that o g i has also with the m f c c with online normalization.|S
-me013|but she had said eighty two.|S
-mn007|this is the well but this is without online normalization.|S
-me013|right?|Q
-me013|oh this the eighty two?|S
-mn007|yeah.|B
-mn007|eighty two is the it's the aurora baseline.|S
-mn007|so m f c c.|S
-mn007|then we can use|D
-mn007|well o g i they use m f c c the baseline m f c c plus online normalization.|S
-me013|oh i'm sorry.|S
-me013|i i keep getting confused.|S
-me013|because this is accuracy.|S
-mn007|yeah sorry.|S
-mn007|yeah.|S
-fn002|yeah.|S
-me013|okay all right.|S
-mn007|yeah.|B
-me013|all right so this is i was thinking all this was worse.|S
-me013|okay so this is all better.|S
-me013|because eighty nine is bigger than eighty two.|S
-fn002|yes better.|S
-mn007|uhhuh.|B
-me013|okay.|S
-fn002|yeah.|B
-me013|i'm i'm all better now.|S
-me013|okay go ahead.|S
-mn007|so what what happens is that when we apply online normalization we jump to almost ninety per cent.|S
-me013|yeah.|B
-me013|uhhuh.|B
-mn007|uh when we apply a neural network is the same.|S
-mn007|we jump to ninety per cent.|S
-fn002|nnn we don't know exactly.|S
-me013|yeah.|B
-mn007|and and um|F
-mn007|whatever the normalization actually.|S
-mn007|if we use neural network even if the features are not correctly normalized we jump to ninety per cent.|S
-me013|so we go from eighty eighty eight point six to to ninety or something.|S
-mn007|so|F
-mn007|well ninety|D
-mn007|no i i mean ninety|D
-mn007|it's around eighty nine.|S
-mn007|ninety.|S
-me013|eighty nine.|S
-mn007|eighty eight.|S
-fn002|yeah.|B
-mn007|well there are minor minor differences.|S
-me013|and then adding the m s g does nothing basically.|S
-mn007|no.|S
-me013|yeah okay.|S
-mn007|uh for italian yeah.|S
-me013|for this case right.|S
-mn007|um|F
-me013|all right.|B
-me013|so um so actually the answer for experiments with one is that adding m s g if you uh does not help in that case|D
-mn007|uhhuh.|B
-me013|um|F
-mn007|yeah.|B
-mn007|but|D
-me013|the other ones we'd have to look at it.|S
-mn007|yeah.|B
-me013|but|F
-me013|and the multi english does.|S
-me013|uh|F
-me013|so if we think of this in error rates we start off with uh eighteen per cent error rate roughly.|S
-mn007|uhhuh.|B
-me013|um and we uh almost uh cut that in half by um putting in the online normalization and the neural net.|S
-mn007|yeah.|B
-me013|and the m s g doesn't however particularly affect things.|S
-mn007|no.|B
-me013|and we cut off i guess about twenty five per cent of the error.|S
-me013|uh no not quite that.|S
-me013|is it?|Q
-me013|uh two point six out of eighteen.|S
-me013|about um sixteen per cent or something of the error um if we use multi english instead of the matching condition.|S
-mn007|uhhuh.|B
-me013|not matching condition.|S
-mn007|yeah.|B
-me013|but uh the uh italian training.|S
-fn002|yeah.|S
-mn007|uhhuh.|B
-me013|okay.|S
-mn007|huh.|B
-fn002|we select these these these tasks.|S
-fn002|because it's the more difficult.|S
-me013|yes good.|S
-me013|okay.|S
-me013|so then you're assuming multi english is closer to the kind of thing that you could use.|S
-me013|since you're not going to have matching uh data for the uh for the new for the other languages and so forth.|S
-me013|um one thing is that|D
-me013|uh i think i asked you this before.|S
-me013|but i want to double check.|S
-me013|when you say m e in these other tests that's the multi english.|S
-mn007|that's it's a part it's|D
-me013|but it is not all of the multi english.|S
-me013|right?|Q
-me013|it is some piece of part of it.|S
-mn007|or one million frames.|S
-me013|and the multi english is how much?|Q
-fn002|you have here the information.|S
-mn007|it's one million and a half.|S
-mn007|yeah.|B
-me013|oh so you used almost all.|S
-me013|you used two thirds of it.|S
-mn007|yeah.|B
-me013|you think.|S
-me013|so it's still it hurts you seems to hurt you a fair amount to add in this french and spanish.|S
-mn007|huh.|B
-fn002|yeah.|S
-me013|i wonder why.|S
-me013|uh|F
-me006|well stephane was saying that they weren't hand labeled.|S
-fn002|yeah.|B
-mn007|yeah it's|D
-mn007|yeah.|B
-me006|the french and the spanish.|S
-fn002|the spanish.|S
-fn002|maybe for that.|S
-me013|huh.|B
-mn007|huh.|B
-me013|still.|S
-me013|okay.|S
-me013|all right go ahead.|S
-me013|and then then|D
-fn002|um|F
-fn002|huh with the experiment type two.|S
-fn002|i first i tried to combine nnn some feature from the m l p and other feature.|S
-fn002|another feature.|S
-me013|uhhuh.|B
-fn002|and we we can|D
-fn002|first the feature are without delta and delta delta.|S
-fn002|and we can see that in the situation uh the m s g three the same help nothing.|S
-me013|uhhuh.|B
-fn002|and then i do the same.|S
-fn002|but with the delta and delta delta p l p delta and delta delta.|S
-fn002|and they all but they all put off the m l p is it without delta and delta delta.|S
-me013|uhhuh.|D
-fn002|and we have a little bit less result than the the the baseline p l p with delta and delta delta.|S
-fn002|maybe if when we have the new the new neural network trained with p l p delta and delta delta|D
-fn002|maybe the final result must be better.|S
-fn002|i don't know.|S
-fn002|uh|F
-mn007|actually just to be some more|D
-mn007|do|D
-mn007|this number this eighty seven point one number has to be compared with the|D
-me013|yes yeah i mean it can't be compared with the other.|S
-mn007|which number?|Q
-me013|because this is uh with multi english uh training.|S
-fn002|uhhuh.|B
-me013|so you have to compare it with the one over that you've got in a box.|S
-me013|which is that uh the eighty four point six.|S
-fn002|uhhuh.|B
-me013|right?|Q
-mn007|uh|F
-me013|so|F
-mn007|yeah but i mean in this case for the eighty seven point one we used m l p outputs for the p l p net.|S
-me013|yeah.|B
-mn007|and straight features with delta delta.|S
-me013|yeah.|B
-fn002|uhhuh.|B
-mn007|and straight features with delta delta gives you what's on the first sheet.|S
-me013|not not|D
-mn007|it's eighty eight point six.|S
-me013|no no no.|S
-fn002|yes.|S
-me013|not trained with multi english.|S
-fn002|no but they they feature without|D
-mn007|uh yeah but this is the second configuration.|S
-mn007|so we use feature uh net outputs together with features.|S
-mn007|so yeah.|F
-mn007|this is not perhaps not clear here.|S
-mn007|but in this table the first column is for m l p and the second for the features.|S
-me013|uh oh i see.|S
-me013|uh so you're saying so asking the question what what has adding the m l p done to improve over the|D
-mn007|so just|F
-mn007|yeah|F
-mn007|so actually it it it decreased the the accuracy.|S
-me013|uh|F
-fn002|yeah.|B
-me013|yes.|S
-me013|uhhuh.|B
-mn007|because we have eighty eight point six.|S
-mn007|and even the m l p alone|D
-mn007|what gives the m l p alone?|Q
-mn007|multi english p l p.|S
-mn007|oh no.|S
-mn007|it gives eighty three point six.|S
-mn007|so we have eighty three point six and eighty eighty point six.|S
-fn002|but|D
-mn007|that gives eighty seven point one.|S
-me013|uhhuh.|B
-me013|eighty|D
-me013|i thought it was eighty|D
-me013|oh okay.|S
-me013|eighty three point six and eighty eighty eight point six.|S
-mn007|eighty three point six.|S
-mn007|eighty|D
-me013|okay.|S
-mn007|is is that right?|Q
-mn007|yeah.|S
-fn002|yeah.|B
-fn002|but i don't know.|S
-fn002|but maybe if we have the neural network trained with the p l p delta and delta delta maybe this can help.|S
-mn007|perhaps yeah.|S
-me013|well that's that's one thing.|S
-me013|but see the other thing is that|D
-me013|um i mean it's good to take the difficult case.|S
-me013|but let's let's consider what that means.|S
-me013|what what we're saying is that one one of the things that|D
-me013|i mean my interpretation of your your original suggestion is something like this as motivation.|S
-me013|when we train on data that is in one sense or another similar to the testing data then we get a win by having discriminant training.|S
-mn007|uhhuh.|B
-me013|when we train on something that's quite different we have a potential to have some problems.|S
-mn007|uhhuh.|B
-me013|and um if we get something that helps us when it's somewhat similar and doesn't hurt us too much when it when it's quite different that's maybe not so bad.|S
-mn007|yeah.|B
-me013|so the question is if you took the same combination and you tried it out on uh on say digits|D
-mn007|huh.|D
-mn007|on t i digits?|Q
-mn007|okay.|B
-me013|you know.|S
-me013|was that experiment done?|Q
-mn007|no not yet.|S
-me013|yeah okay.|S
-me013|uh then does that uh you know maybe with similar noise conditions and so forth does it does it then look much better?|Q
-mn007|uhhuh.|D
-me013|and so what is the range over these different kinds of uh of tests?|Q
-me013|so anyway.|S
-me013|okay go ahead.|S
-mn007|yeah.|B
-fn002|and with this type of configuration which i do on experiment using the new neural net with name broad klatt twenty seven.|S
-me013|uhhuh.|B
-fn002|uh i have found more or less the same result.|S
-mn007|so it's slightly better.|S
-fn002|little bit better.|S
-mn007|yeah.|B
-me013|slightly better.|S
-mn007|yeah.|B
-fn002|slightly better.|S
-fn002|yes better.|S
-me013|and and you know again maybe if you use the uh delta there uh you would bring it up to where it was uh you know at least about the same for a difficult case.|S
-fn002|yeah maybe maybe maybe.|S
-mn007|yeah.|B
-fn002|oh yeah.|S
-mn007|yeah.|B
-me013|so|F
-fn002|yeah.|S
-mn007|well so perhaps let's let's jump at the last experiment.|S
-mn007|it's either less information from the neural network if we use only the silence output.|S
-me013|uhhuh.|B
-mn007|it's again better.|S
-mn007|so it's eighty nine point point one.|S
-me013|uhhuh.|B
-fn002|yeah.|B
-fn002|yeah and we have only forty forty feature.|S
-mn007|so|F
-fn002|because in this situation we have one hundred and three feature.|S
-me013|yeah.|B
-fn002|yeah.|B
-fn002|and then with the first configuration i i am found that work uh doesn't work|D
-me013|yeah.|B
-fn002|uh well work.|S
-fn002|but is better the second configuration.|S
-fn002|because i for the p l p delta and delta delta here i have eighty five point three accuracy.|S
-fn002|and with the second configuration i have eighty seven point one.|S
-me013|um by the way there is another uh suggestion that would apply uh to the second configuration.|S
-me013|um which uh was made uh by uh hari.|S
-me013|and that was that um if you have uh feed two streams into h t k um and you uh change the uh variances|D
-me013|if you scale the variances associated with uh these streams um you can effectively scale the streams.|S
-me013|right?|Q
-me013|so um you know without changing the scripts for h t k.|S
-me013|which is the rule here uh you can still change the variances.|S
-mn007|uhhuh.|B
-mn007|uhhuh.|B
-me013|which would effectively change the scale of these these uh two streams that come in.|S
-mn007|uh yeah.|B
-me013|and um so um if you do that for instance it may be the case that um the m l p should not be considered as strongly for instance.|S
-mn007|huh.|B
-me013|and um so this is just setting them to be|D
-me013|excuse me.|S
-me013|of equal equal weight.|S
-me013|maybe it shouldn't be equal weight.|S
-fn002|maybe.|S
-me013|right you know i'm sorry to say that gives more experiments if we wanted to look at that.|S
-me013|but but uh um you know on the other hand it's just experiments at the level of the h t k recognition.|S
-mn007|huh.|B
-me013|it's not even the h t k.|S
-me013|uh uh|F
-mn007|yeah.|B
-fn002|yeah yeah.|B
-me013|well i guess you have to do the h t k training also.|S
-fn002|so this is what we decided to do.|S
-me013|uh do you?|Q
-me013|let me think.|F
-me013|maybe you don't.|S
-me013|uh|F
-me013|yeah you have to change the|D
-me013|no you can just do it in as once you've done the training|D
-me006|and then you can vary it.|S
-me013|yeah the training is just coming up with the variances.|S
-me006|yeah.|B
-me013|so i guess you could could just scale them all.|S
-mn007|scale them?|Q
-me013|variances.|S
-mn007|yeah.|B
-mn007|but|D
-mn007|is it i mean the h t k models are diagonal covariances.|S
-mn007|so i is it|D
-me013|that's uh exactly the point i think.|S
-me013|that if you change um change what they are|D
-mn007|huh.|B
-me013|it's diagonal covariance matrices.|S
-mn007|uhhuh.|B
-me013|but you say what those variances are.|S
-mn007|uhhuh.|B
-me013|so that you know it's diagonal but the diagonal means that then you're going to it's going to it's going to internally multiply it and and uh uh it uh implicitly exponentiated to get probabilities and so it's it's going to it's it's going to affect the range of things if you change the change the variances of some of the features.|S
-mn007|huh.|B
-mn007|huh.|B
-fn002|do|D
-me013|so it's precisely given that model you can very simply affect uh the the strength that you apply the features.|S
-me013|that was that was uh hari's suggestion.|S
-mn007|yeah yeah.|B
-me013|so um|F
-fn002|yeah.|B
-me013|yeah.|B
-me013|so|F
-me013|so it could just be that treating them equally treating two streams equally is just just not the right thing to do.|S
-me013|of course it's potentially opening a can of worms.|S
-me013|because you you know maybe it should be a different number for for each kind of test set or something.|S
-mn007|uhhuh.|B
-me013|but|F
-me013|okay.|S
-mn007|yeah.|D
-me013|so i guess the other thing is to take you know if one were to take uh you know a couple of the most successful of these.|S
-mn007|yeah and test across everything.|S
-me013|and uh|F
-me013|yeah try all these different tests.|S
-mn007|huh.|D
-fn002|yeah.|B
-mn007|yeah.|B
-me013|all right.|S
-me013|uh|F
-mn007|so the next point.|S
-mn007|yeah.|F
-mn007|we've had some discussion with steve and shawn.|S
-mn007|um about um articulatory stuff.|S
-mn007|um|F
-mn007|so we'll perhaps start something next week.|S
-me013|uhhuh.|B
-mn007|um discussion with hynek sunil and pratibha for trying to plug in their our our networks with their within their block diagram.|F
-mn007|uh where to plug in the the network uh after the the feature.|S
-mn007|before as um as a plugin or as another path.|S
-mn007|discussion about multi band and traps.|S
-mn007|um|F
-mn007|actually hynek would like to see|D
-mn007|perhaps if you remember the block diagram there is uh temporal l d a followed by a spectral l d a for each uh critical band.|S
-mn007|and he would like to replace these by a network.|S
-mn007|which would uh make the system look like a trap.|S
-mn007|well basically it would be a trap system.|S
-mn007|basically this is a trap system.|S
-mn007|kind of trap system i mean.|S
-mn007|but where the neural network are replaced by l d a.|S
-mn007|um yeah.|F
-mn007|and about multi band.|S
-mn007|uh i started multi band m l p trainings.|S
-mn007|um|F
-mn007|actually i i prefer to do exactly what i did when i was in belgium.|S
-mn007|so i take exactly the same configurations.|S
-mn007|seven bands with nine frames of context.|S
-mn007|and we just train on timit.|S
-mn007|and on the large database.|S
-mn007|so with spine and everything.|S
-mn007|and uh|F
-mn007|i'm starting to train also networks with larger contexts.|S
-mn007|so this would would be something between traps and multi band.|S
-mn007|because we still have quite large bands.|S
-mn007|and but with a lot of context also.|S
-mn007|so um|F
-mn007|yeah.|F
-mn007|we still have to work on finnish.|S
-mn007|um basically to make a decision on which m l p can be the best across the different languages.|S
-mn007|for the moment it's the timit network and perhaps the network trained on everything.|S
-mn007|so now we can test these two networks on with with delta and large networks.|S
-mn007|well test them also on finnish.|S
-fn002|huh.|B
-mn007|and see which one is the the the best.|S
-mn007|uh well the next part of the document is well basically a kind of summary of what everything that has been done.|S
-mn007|so we have seventy nine m l p's trained on|D
-mn007|one two three four uh three four five six seven.|S
-mn007|ten on ten different databases.|S
-me013|uhhuh.|D
-mn007|uh|F
-mn007|the number of frames is bad also.|S
-mn007|so we have one million and a half for some.|S
-mn007|three million for other.|S
-mn007|and six million for the last one.|S
-mn007|uh|F
-mn007|yeah as we mentioned timit is the only that's hand labeled.|S
-mn007|and perhaps this is what makes the difference.|S
-mn007|um|F
-mn007|yeah the other are just viterbi aligned.|S
-mn007|so these seventy nine m l p differ on different things.|S
-mn007|first um with respect to the online normalization.|S
-mn007|there are that use bad online normalization.|S
-mn007|and other good online normalization.|S
-mn007|um|F
-mn007|with respect to the features.|S
-mn007|with respect to the use of delta.|S
-mn007|or no.|S
-mn007|uh with respect to to the hidden layer size and to the targets.|S
-mn007|uh but of course we don't have all the combination of these different parameters.|S
-mn007|um|F
-mn007|what's this?|Q
-mn007|we only have two hundred eighty six different tests.|S
-mn007|and not two thousand.|S
-me013|uh.|S
-me013|i was impressed.|S
-me013|boy!|S
-me013|two thousand.|S
-mn007|yeah.|S
-me013|okay.|S
-fn002|uh yes.|B
-me013|all right now i'm just slightly impressed.|S
-fn002|i say this morning that thought it was the|D
-me013|okay.|B
-mn007|um|F
-mn007|yeah basically the observation is what we discussed already.|S
-mn007|the m s g problem.|S
-mn007|um|F
-mn007|the fact that the m l p trained on target task decreased the error rate.|S
-mn007|but when the m m l p is trained on the is not trained on the target task it increased the error rate compared to using straight features.|S
-mn007|except if the features are bad.|S
-mn007|uh actually except if the features are not correctly online normalized.|S
-mn007|in this case the tandem is still better.|S
-mn007|even if it's trained on not on the target digits.|S
-me013|yeah so it sounds like yeah the net corrects some of the problems with some poor normalization.|S
-mn007|yeah.|S
-me013|but if you can do good normalization it's it's uh okay.|S
-mn007|yeah.|B
-fn002|yeah.|B
-mn007|uh so the fourth point is yeah the timit plus noise seems to be the training set that gives better the best network.|S
-me013|so let me before you go on to possible issues.|S
-mn007|uhhuh.|B
-me013|so on the m s g uh problem|D
-me013|um i think that in in the um in the short time solution|D
-me013|um that is um trying to figure out what we can proceed forward with to make the greatest progress|D
-mn007|uhhuh.|B
-me013|uh much as i said with j rasta.|S
-me013|even though i really like j rasta.|S
-me013|and i really like m s g.|S
-mn007|huh.|B
-me013|i think it's kind of in category that it's it it may be complicated.|S
-mn007|yeah.|B
-me013|and uh it might be if someone's interested in it uh certainly encourage anybody to look into it in the longer term.|S
-me013|once we get out of this particular rush uh for results.|S
-mn007|huh.|B
-me013|but in the short term unless you have some some strong idea of what's wrong|D
-mn007|i don't know at all.|S
-mn007|but i've perhaps i have the feeling that it's something that's quite quite simple.|S
-mn007|or just like nnn no high pass filter.|S
-me013|yeah probably.|S
-mn007|or huh|F
-mn007|yeah my but i don't know.|S
-me013|there's supposed to well m s g is supposed to have an online normalization though.|S
-me013|right?|Q
-mn007|it's there is yeah an a.g. kind of a.g.c.|S
-mn007|yeah yeah yeah.|B
-me013|yeah but also there's an online besides the a g c there's an online normalization that's supposed to be.|S
-me013|uh|F
-me013|yeah.|S
-mn007|huh.|B
-me013|taking out means and variances and so forth.|S
-me013|so|F
-mn007|yeah.|B
-me013|in in fact the online normalization that we're using came from the m s g design.|S
-me013|so it's|D
-mn007|um|F
-mn007|yeah but|D
-mn007|yeah.|B
-mn007|but this was the bad online normalization actually.|S
-fn002|maybe may|D
-mn007|are your results are still with the bad the bad|D
-fn002|no.|S
-fn002|with the better|D
-fn002|no.|S
-mn007|with the o l n two.|S
-mn007|uh yeah you have you have o l n two.|S
-fn002|oh!|S
-fn002|yeah yeah yeah!|S
-fn002|with two with online two.|S
-mn007|yeah.|B
-fn002|yeah yeah.|B
-me013|online two is good.|S
-mn007|so it's is the good yeah.|S
-fn002|yep.|B
-me013|two is good.|S
-fn002|it's a good.|S
-mn007|and|D
-me013|no two is bad.|S
-mn007|yeah.|S
-me013|okay.|S
-fn002|well actually it's good with the with the good.|S
-me013|yeah.|B
-me013|so yeah i i agree.|S
-me013|it's probably something simple.|S
-me013|uh if if uh someone you know uh wants to play with it for a little bit.|S
-me013|i mean you're going to do what you're going to do.|S
-mn007|huh.|B
-me013|but but my my guess would be that it's something that is a simple thing that could take a while to find.|S
-mn007|but|D
-mn007|yeah.|B
-mn007|huh.|B
-mn007|i see.|S
-mn007|yeah.|B
-me013|yeah.|B
-mn007|and|D
-me013|and the other the results uh observations two and three um is|D
-mn007|huh.|D
-me013|uh|F
-me013|yeah that's pretty much what we've seen.|S
-me013|that's that what we were concerned about is that if it's not on the target task|D
-me013|if it's on the target task then it it it helps to have the m l p transforming it.|S
-mn007|huh.|B
-me013|if it uh if it's not on the target task then depending on how different it is uh you can get uh a reduction in performance.|S
-mn007|huh.|B
-me013|and the question is now how to how to get one and not the other?|Q
-me013|or how to how to ameliorate the the problems.|S
-mn007|huh.|B
-me013|um because it it certainly does is nice to have in there when it when there is something like the training data.|S
-mn007|uhhuh.|B
-mn007|um|F
-mn007|yeah so the the reason yeah the reason is that perhaps the target the task dependency the language dependency and the noise dependency|D
-me013|so that's what you say there.|S
-me013|i see.|S
-mn007|well the but this is still not clear.|S
-mn007|because|D
-mn007|um|F
-mn007|i i i don't think we have enough result to talk about the the language dependency.|S
-mn007|well the timit network is still the best.|S
-mn007|but there is also the other difference.|S
-mn007|the fact that it's it's hand labeled.|S
-me013|hey!|S
-me013|um just you can just sit here.|S
-me013|uh i i don't think we want to mess with the microphones.|S
-me013|but it's uh|D
-me013|just uh have a seat.|S
-me013|um|F
-me013|summary of the first uh uh forty five minutes is that some stuff work and works and some stuff doesn't.|S
-me013|okay.|S
-mn007|we still have uh this.|S
-mn007|one of these perhaps?|Q
-fn002|yeah.|B
-me013|yeah i guess we can do a little better than that.|S
-mn007|huh.|B
-mn007|uhhuh.|B
-me013|but i think if you if you start off with the other one actually that sort of has it in words.|S
-me013|and then that has it the associated results.|S
-fn002|um|F
-me013|okay.|F
-me013|so you're saying that um um although from what we see|D
-me013|yes there's what you would expect in terms of a language dependency and a noise dependency that is uh when the neural net is trained on one of those and tested on something different we don't do as well as in the target thing.|S
-me013|but you're saying that uh it is although that general thing is observable so far there's something you're not completely convinced about.|S
-me013|and and what is that?|Q
-me013|i mean you say not clear yet.|S
-me013|what what do you mean?|Q
-mn007|uh i mean the the fact that well for for t i digits the timit net is the best.|S
-mn007|huh uh.|B
-mn007|which is the english net.|S
-me013|uhhuh.|B
-mn007|but the other are slightly worse.|S
-mn007|but you have two two effects the effect of changing language.|S
-mn007|and the effect of training on something that's viterbi aligned instead of hand hand labeled.|S
-fn002|yeah.|B
-mn007|so um|F
-mn007|yeah.|B
-me013|do you think the alignments are bad?|Q
-me013|i mean have you looked at the alignments at all?|Q
-me013|what the viterbi alignment's doing.|S
-mn007|huh|F
-mn007|i don't i don't know.|S
-mn007|did did you look at the spanish alignments carmen?|Q
-fn002|huh no.|S
-me013|might be interesting to look at it.|S
-me013|because i mean that is just looking.|S
-me013|but um um it's not clear to me you necessarily would do so badly from a viterbi alignment.|S
-me013|it depends how good the recognizer is.|S
-mn007|huh.|B
-me013|that's that the the engine is that's doing the alignment.|S
-mn007|yeah but but perhaps it's not really the the alignment that's bad.|S
-mn007|but the just the phoneme string that's used for the alignment.|S
-me013|aha!|S
-fn002|yeah.|S
-mn007|huh.|B
-me013|the pronunciation models and so forth.|S
-mn007|i mean for we|D
-mn007|it's single pronunciation.|S
-mn007|uh|F
-me013|aha!|S
-me013|i see.|S
-mn007|french french uh phoneme strings were corrected manually.|S
-mn007|so we asked people to listen to the the sentence.|S
-mn007|and we gave the phoneme string and they kind of correct them.|S
-mn007|but still.|S
-mn007|there there might be errors just in the in in the string of phonemes.|S
-mn007|huh|F
-mn007|um|F
-mn007|yeah so this is not really the viterbi alignment.|S
-mn007|in fact|D
-mn007|yeah.|B
-mn007|um the third the third uh issue is the noise dependency perhaps.|S
-mn007|but well this is not clear yet.|S
-mn007|because all our nets are trained on the same noises.|S
-mn007|and|F
-me013|i thought some of the nets were trained with spine and so forth.|S
-me013|so it and that has other noise.|S
-mn007|yeah.|S
-mn007|so|D
-mn007|yeah.|F
-mn007|but|D
-mn007|yeah.|F
-mn007|results are only coming for for this net.|S
-mn007|huh.|B
-me013|okay yeah just don't just need more more results there with that that.|S
-mn007|yeah.|S
-mn007|um|F
-mn007|so uh from these results we have some questions with answers.|S
-mn007|what should be the network input?|Q
-mn007|um p l p work as well as m f c c i mean.|S
-mn007|um|F
-mn007|but it seems important to use the delta.|S
-mn007|uh with respect to the network size|D
-mn007|there's one experiment that's still running.|S
-mn007|and we should have the result today.|S
-mn007|comparing network with five hundred and one thousand units.|S
-mn007|so|F
-mn007|still no answer actually.|S
-me013|huh huh.|B
-mn007|uh the training set|D
-mn007|well some kind of answer|D
-mn007|we can we can tell which training set gives the best result.|S
-mn007|but we don't know exactly why.|S
-me013|uh right i mean the multi english so far is is the best.|S
-mn007|uh so|D
-mn007|yeah.|B
-me013|multi multi english just means timit.|S
-me013|right?|Q
-mn007|yeah.|S
-fn002|yeah.|S
-me013|so uh that's|D
-me013|yeah.|B
-me013|so and and when you add other things in to to broaden it it gets worse uh typically.|S
-mn007|huh.|B
-me013|yeah.|B
-mn007|uhhuh.|B
-mn007|then uh some questions without answers.|S
-me013|okay.|B
-mn007|uh training set.|S
-mn007|um|F
-me013|uhhuh.|B
-mn007|uh training targets|D
-me013|i like that.|S
-me013|the training set is both questions with answers and without answers.|S
-mn007|it's|D
-mn007|yeah.|B
-mn007|yeah.|B
-me013|it's sort of yes it's it's multi uh purpose.|S
-mn007|yeah.|B
-me013|okay.|B
-mn007|uh training|D
-mn007|right so yeah the training targets actually|D
-mn007|the two of the main issues perhaps are still the language dependency and the noise dependency.|S
-mn007|and perhaps to try to reduce the language dependency we should focus on finding some other kind of training targets.|S
-me013|uhhuh.|B
-mn007|and labeling labeling seems important.|S
-mn007|because of timit results.|S
-me013|uhhuh.|B
-mn007|uh|F
-mn007|for moment you use we use phonetic targets.|S
-mn007|but we could also use articulatory targets soft targets.|S
-mn007|and perhaps even um use networks that doesn't do classification.|S
-mn007|but just regression.|S
-mn007|so uh train to have neural networks that|D
-mn007|um um uh|F
-me013|uhhuh.|B
-mn007|does a regression|D
-mn007|and well basically compute features and not nnn features without noise i mean uh transform the noisy features in other features that are not noisy.|S
-mn007|but continuous features.|S
-mn007|not uh uh hard targets.|S
-me013|uhhuh.|B
-me013|uhhuh.|B
-mn007|uh|F
-me013|yeah that seems like a good thing to do probably.|S
-me013|yeah.|F
-me013|not uh again a short term sort of thing.|S
-mn007|yeah.|B
-me013|i mean one of the things about that is that um it's|D
-me013|the i guess the major risk you have there of being is being dependent on very dependent on the kind of noise and and so forth.|S
-mn007|yeah.|B
-mn007|but yeah.|B
-me013|uh but it's another thing to try.|S
-mn007|so this is this is one thing this this could be could help could help perhaps to reduce language dependency.|S
-mn007|and for the noise part um we could combine this with other approaches like well the kleinschmidt approach.|S
-mn007|so the the idea of putting all the noise that we can find inside a database.|S
-me013|uhhuh.|B
-fn002|yeah.|B
-mn007|i think kleinschmidt was using more than fifty different noises to train his network.|S
-mn007|and so this is one approach.|S
-me013|uhhuh.|B
-mn007|and the other is multi band uh that i think is more robust to the noisy changes.|S
-me013|uhhuh.|B
-mn007|so perhaps i think something like multi band trained on a lot of noises with uh features based targets could could could help.|S
-me013|yeah if you it's interesting thought.|S
-me013|maybe if you just trained up|D
-me013|i mean yeah one one fantasy would be you have something like articulatory targets.|S
-me013|and you have um some reasonable database.|S
-me013|um|F
-me013|but then which is um copied over many times with a range of different noises.|S
-mn007|uhhuh.|B
-me013|and uh if because what you're trying to do is come up with a a core reasonable feature set which is then going to be used uh by the the uh h m m system.|S
-mn007|huh.|B
-me013|so|F
-me013|yeah okay.|S
-mn007|so|F
-mn007|um yeah.|F
-mn007|the future work is well try to connect to the to make to plug in the system to the o g i.|S
-mn007|system|D
-mn007|um there are still open questions there.|S
-me013|uhhuh.|B
-mn007|where to put the m l p basically.|S
-mn007|um|F
-me013|and i guess you know the the the real open question|D
-me013|i mean there's lots of open questions.|S
-me013|but one of the core quote open questions for that is um um if we take the uh you know the best ones here|D
-me013|maybe not just the best one.|S
-me013|but the best few or something.|S
-me013|you want the most promising group from these other experiments.|S
-me013|um how well do they do over a range of these different tests not just the italian?|Q
-mn007|huh.|B
-me013|um|F
-me013|and|D
-me013|right?|Q
-mn007|huh yeah yeah.|S
-me013|and then um then see again how|D
-me013|we know that there's a there's a uh a a loss in performance when the neural net is trained on conditions that are different than than uh we're going to test on.|S
-me013|but well if you look over a range of these different tests um how well do these different ways of combining the straight features with the m l p features uh stand up over that range?|Q
-fn002|uhhuh.|B
-me013|that's that that seems like the the the real question.|S
-me013|and if you know that|D
-me013|so if you just take p l p with uh the double deltas.|S
-me013|assume that's the the feature.|S
-me013|look at these different ways of combining it.|S
-me013|and uh take let's say just take uh multi english.|S
-me013|cause that works pretty well for the training.|S
-mn007|uhhuh.|B
-me013|and just take that case and then look over all the different things.|S
-me013|how does that how does that compare between the?|Q
-mn007|so all the all the test sets you mean?|Q
-mn007|yeah.|B
-fn002|yeah.|S
-me013|all the different test sets.|S
-mn007|and|D
-me013|and for and for the couple different ways that you have of of of combining them.|S
-mn007|yeah.|B
-me013|um how well do they stand up over the|D
-fn002|uhhuh.|B
-mn007|huh.|B
-mn007|and perhaps doing this for changing the variance of the streams and so on getting different scaling.|S
-me013|that's another possibility if you have time.|S
-me013|yeah.|B
-me013|yeah.|B
-mn007|um|F
-mn007|yeah so this would be more working on the m l p as an additional path instead of an insert to the to their diagram.|S
-mn007|because|D
-mn007|yeah.|B
-mn007|perhaps the insert idea is kind of strange.|S
-mn007|because they they make l d a.|S
-mn007|and then we will again add a network does discriminate that discriminates.|S
-me013|yeah it's a little strange.|S
-mn007|or|F
-me013|but on the other hand they did it before.|S
-mn007|huh.|D
-me013|um|D
-mn007|huh.|B
-mn007|and and and|F
-mn007|yeah.|F
-mn007|and because also perhaps we know that the when we have very good features the m l p doesn't help.|S
-mn007|so i don't know.|S
-me013|um the other thing though is that|D
-me013|um|F
-me013|so uh we we want to get their path running here.|S
-me013|right?|Q
-me013|if so we can add this other stuff.|S
-mn007|um|F
-me013|as an additional path.|S
-me013|right?|Q
-mn007|yeah the the way we want to do|D
-me013|because they're doing l d a rasta?|Q
-mn007|the|D
-mn007|what?|Q
-me013|they're doing l d a rasta.|S
-mn007|yeah the way we want to do it perhaps is to just to get the v a d labels and the final features.|S
-me013|yeah?|Q
-mn007|so they will send us the well provide us with the feature files.|S
-me013|i see.|B
-me013|i see.|B
-mn007|and with v a d binary labels.|S
-mn007|so that we can uh get our m l p features.|S
-mn007|and filter them with the v a d.|S
-mn007|and then combine them with their feature stream.|S
-me013|i see.|F
-mn007|so|D
-me013|so we so first thing of course we'd want to do there is to make sure that when we get those labels of final features is that we get the same results as them.|S
-me013|without putting in a second path.|S
-mn007|uh you mean|D
-mn007|oh yeah!|S
-mn007|just retraining retraining the h t k.|S
-me013|yeah just just to make sure that we have we understand properly what things are our very first thing to do is to is to double check that we get the exact same results as them on h t k.|S
-mn007|well|D
-mn007|oh yeah.|B
-mn007|yeah okay.|S
-mn007|huh.|B
-me013|uh i mean i don't know that we need to|D
-fn002|yeah.|B
-mn007|yeah.|B
-me013|um do we need to retrain?|Q
-me013|i mean we can just take the their training files also.|S
-me013|but but uh|F
-me013|just for the testing just make sure that we get the same results so we can duplicate it before we add in another|D
-mn007|huh.|B
-mn007|okay.|S
-me013|because otherwise you know we won't know what things mean.|S
-mn007|oh yeah.|S
-mn007|okay.|B
-mn007|and um|F
-mn007|yeah so lograsta|D
-mn007|i don't know if we want to|D
-mn007|we can try networks with log rasta filtered features.|S
-me013|maybe.|S
-mn007|huh.|B
-mn007|i'm sorry?|Q
-mn007|yeah well|D
-mn007|yeah.|B
-me013|oh you know the other thing is when you say|D
-mn007|but|D
-me013|i'm i'm sorry i'm interrupting that.|S
-me013|um uh when you're talking about combining multiple features|D
-me013|um suppose we said okay we've got these different features and so forth.|S
-me013|but p l p seems pretty good.|S
-me013|if we take the approach that mike did and have|D
-mn007|huh.|B
-me013|i mean one of the situations we have is we have these different conditions.|S
-me013|we have different languages.|S
-me013|we have different different noises.|S
-me013|um if we have some drastically different conditions and we just train up different m l ps with them.|S
-mn007|uhhuh.|B
-me013|and put put them together.|S
-me013|what what what mike found for the reverberation case at least i mean|D
-me013|i mean who knows if it'll work for these other ones.|S
-me013|that you did have nice interpolative effects.|S
-me013|that is that yes if you knew what the reverberation condition was going to be and you trained for that then you got the best results.|S
-me013|but if you had say a heavily reverberation heavy reverberation case and a no reverberation case uh and then you fed the thing uh something that was a modest amount of reverberation then you'd get some result in between the two.|S
-me013|so it was sort of behaved reasonably.|S
-me013|is that a fair|D
-me013|yeah.|B
-mn007|yeah.|B
-mn007|so you you think it's perhaps better to have several m l ps?|Q
-mn007|yeah.|B
-mn007|but|D
-me013|it works better if what?|Q
-me013|i see.|S
-me013|well see|D
-me013|you were doing something that was|D
-me013|so maybe the analogy isn't quite right.|S
-me013|you were doing something that was in way a little better behaved.|S
-me013|you had for a single variable.|S
-me013|which was uh uh reverberation.|S
-me013|here the problem seems to be is that we don't have a a really huge net with a really huge amount of training data.|S
-me013|but we have for this kind of task i would think sort of a modest amount.|S
-me013|i mean a million frames actually isn't that much.|S
-me013|we have a modest amount of of uh training data from a couple different conditions.|S
-me013|and then uh in yeah that and the real situation is that there's enormous variability that we anticipate in the test set in terms of language.|S
-me013|and noise type.|S
-me013|uh and uh uh channel characteristic.|S
-me013|sort of all over the map.|S
-me013|a bunch of different dimensions.|S
-me013|and so i'm just concerned that we don't really have um the data to train up|D
-me013|i mean one of the things that we were seeing is that when we added in we still don't have a good explanation for this.|S
-me013|but we are seeing that we're adding in uh a few different databases.|S
-me013|and uh the performance is getting worse.|S
-me013|and uh when we just take one of those databases that's a pretty good one it actually is is is is is better.|S
-me013|and uh that says to me yes that you know there might be some problems with the pronunciation models that some of the databases we're adding in or something like that.|S
-me013|but one way or another we don't have uh seemingly the ability to represent in the neural net of the size that we have um all of the variability that we're going to be covering.|S
-me013|so that i'm i'm i'm hoping that|D
-me013|um this is another take on the efficiency argument you're making.|S
-me013|which i'm hoping that with moderate size neural nets uh that uh if we if they look at more constrained conditions they they'll have enough parameters to really represent them.|S
-me013|uhhuh.|B
-me013|uhhuh.|B
-me013|uhhuh.|B
-me013|yeah.|B
-mn007|so doing both is is not is not right you mean.|S
-mn007|or|F
-mn007|yeah.|D
-me013|yeah.|B
-me013|i i just sort of have a feeling|D
-mn007|but yeah.|F
-mn007|huh.|B
-me013|yeah.|B
-mn007|uhhuh.|S
-me013|i mean the um i think it's true that the o g i folk found that using l d a rasta|D
-me013|which is a kind of log rasta.|S
-me013|it's just that they have the|D
-me013|i mean it's done in the log domain as i recall.|S
-me013|and it's it uh it's just that they it's trained up.|S
-me013|right?|Q
-me013|that that um benefitted from online normalization.|S
-me013|so they did at least in their case it did seem to be somewhat complimentary.|S
-me013|so will it be in our case where we're using the neural net?|Q
-me013|i mean they they were not not using the neural net.|S
-me013|uh i don't know.|S
-me013|okay so the other things you have here are uh trying to improve results from a single|D
-me013|yeah.|S
-me013|make stuff better.|S
-me013|okay.|S
-me013|uh yeah.|F
-me013|and c p u memory issues.|S
-me013|yeah.|B
-me013|we've been sort of ignoring that.|S
-me013|haven't we?|Q
-me013|but|D
-mn007|yeah so i don't know.|S
-me013|yeah but i|D
-mn007|but we have to address the problem of c p u and memory we|D
-me013|well i think my impression|D
-me013|you you folks have been looking at this more than me.|S
-me013|but my impression was that uh there was a a a a strict constraint on the delay.|S
-fn002|yeah.|B
-me013|but beyond that it was kind of that uh using less memory was better.|S
-me013|and using less c p u was better.|S
-me013|something like that.|S
-me013|right?|Q
-mn007|yeah but|D
-mn007|yeah.|B
-mn007|so yeah but we've|D
-mn007|i don't know.|S
-mn007|we have to get some reference point to where we|D
-mn007|well what's a reasonable number?|Q
-mn007|perhaps because if it's if it's too large or large.|S
-mn007|or|F
-me013|um well i don't think we're um completely off the wall.|S
-me013|i mean i think that if we if we have|D
-me013|uh i mean the ultimate fall back that we could do|D
-me013|if we find|D
-me013|uh|F
-me013|i mean we may find that we we're not really going to worry about the m l p.|S
-me013|you know if the m l p ultimately after all is said and done doesn't really help then we won't have it in.|S
-mn007|huh.|B
-me013|if m l p does we find help us enough in some conditions uh we might even have more than one m l p.|S
-me013|we could simply say that is uh done on the uh server.|S
-mn007|huh.|B
-me013|and it's|D
-me013|uh|F
-me013|we do the other manipulations that we're doing before that.|S
-me013|so i i i think i think that's that's okay.|S
-mn007|and yeah.|F
-me013|so i think the key thing was um this plug into o g i.|S
-me013|um|F
-me013|what what are they what are they going to be working|D
-me013|do we know what they're going to be working on while we take their features?|Q
-mn007|they're they're starting to work on some kind of multi band.|S
-me013|and|F
-mn007|so um|F
-mn007|this that was pratibha.|S
-mn007|sunil|D
-mn007|what was he doing?|Q
-mn007|do you remember?|Q
-fn002|sunil?|Q
-mn007|yeah.|S
-mn007|he was doing something new?|Q
-mn007|or|D
-fn002|i i don't i didn't remember.|S
-fn002|maybe he's working with neural network.|S
-mn007|i don't think so.|S
-mn007|trying to tune|D
-mn007|networks?|Q
-fn002|yeah i think so.|S
-mn007|i think they were also mainly|D
-mn007|well working a little bit of new things like networks and multi band.|S
-mn007|but mainly trying to tune their their system as it is now.|S
-mn007|just trying to get the best from this this architecture.|S
-fn002|yeah.|S
-me013|okay.|S
-mn007|uh|F
-me013|so i guess the way it would work is that you'd get|D
-me013|there'd be some point where you say okay this is their version one or whatever.|S
-me013|and we get these v a d labels and features and so forth for all these test sets from them.|S
-mn007|uhhuh.|B
-me013|and then um uh that's what we work with.|S
-me013|we have a certain level we try to improve it with this other path.|S
-me013|and then um uh when it gets to be uh january|D
-me013|some point|D
-me013|uh we say okay we we have shown that we can improve this in this way.|S
-me013|so now uh um what's your newest version.|S
-me013|and then maybe they'll have something that's better.|S
-me013|and then we we'd combine it.|S
-me013|this is always hard.|S
-me013|i mean i i i used to work with uh folks who were trying to improve a good uh h m m system with uh with a neural net system.|S
-me013|and uh it was common problem that you'd|D
-me013|oh and this actually this is true not just for neural nets.|S
-me013|but just for in general if people were working with uh rescoring uh n best lists or lattices that come came from uh a mainstream recognizer.|S
-me013|uh you get something from the the other site at one point and you work really hard on making it better with rescoring.|S
-me013|but they're working really hard too.|S
-me013|so by the time you have uh improved their score they have also improved their score.|S
-mn007|huh.|B
-me013|and now there isn't any difference.|S
-mn007|yeah.|B
-me013|because the other|D
-fn002|yeah.|B
-me013|so um i guess at some point we'll have to|D
-mn007|so it's|D
-me013|uh uh|F
-me013|i i don't know.|S
-me013|i think we're we're integrated a little more tightly than happens in a lot of those cases.|S
-me013|i think at the moment they they say that they have a better thing we can we|D
-me013|what takes all the time here is that we're trying so many things.|S
-mn007|huh.|B
-me013|presumably uh in a in a day we could turn around.|S
-me013|uh taking a new set of things from them and and rescoring it.|S
-mn007|huh huh.|B
-me013|right?|Q
-me013|so|F
-mn007|yeah perhaps we could.|S
-me013|yeah.|S
-me013|well okay.|S
-me013|no this is i think this is good.|S
-me013|i think that the most wide open thing is the issues about the uh you know different trainings.|S
-me013|you know training targets and noises and so forth.|S
-mn007|huh.|B
-me013|that's sort of wide open.|S
-mn007|so we we can for we we can forget combining multiple features and m l g perhaps?|Q
-mn007|or focus more on the targets and on the training data?|Q
-mn007|and|F
-me013|yeah i think for right now um i i i really liked m s g.|S
-me013|and i think that you know one of the things i liked about it is has such different temporal properties.|S
-me013|and um i think that there is ultimately a really good uh potential for you know bringing in things with different temporal properties.|S
-me013|um but um uh|F
-me013|we only have limited time.|S
-me013|and there's a lot of other things we have to look at.|S
-mn007|huh.|B
-me013|and it seems like much more core questions are issues about the training set.|S
-me013|and the training targets.|S
-me013|and fitting in uh what we're doing with what they're doing.|S
-me013|and you know with limited time.|S
-me013|yeah.|B
-me013|i think we have to start cutting down.|S
-me013|so uh|F
-mn007|huh.|B
-me013|i think so.|S
-me013|yeah.|F
-me013|and then you know once we|D
-me013|um having gone through this process and trying many different things i would imagine that certain things uh come up that you are curious about.|S
-me013|uh that you'd not getting to.|S
-me013|and so when the dust settles from the evaluation uh i think that would time to go back and take whatever intrigued you most.|S
-me013|you know got you most interested.|S
-me013|uh and uh and and work with it you know for the next round.|S
-me013|uh as you can tell from these numbers uh nothing that any of us is going to do is actually going to completely solve the problem.|S
-me013|so|F
-mn007|huh.|B
-me013|so there'll still be plenty to do.|S
-me013|barry you've been pretty quiet.|S
-me006|just listening.|S
-me013|well i figured that.|S
-me013|but that what what what were you involved in in this primarily?|Q
-me006|um helping out uh preparing.|S
-me006|well they've been kind of running all the experiments and stuff.|S
-me006|and i've been uh uh doing some work on the on the preparing all all the data for them to to um train and to test on.|S
-me006|um|F
-me006|yeah right now i'm i'm focusing mainly on this final project i'm working on in jordan's class.|S
-me013|uh.|S
-me013|i see.|S
-me006|yeah.|B
-me013|right.|B
-me013|what's what's that?|Q
-me006|um i'm trying to|D
-me006|um so there was a paper in i c s l p about um this this multi band um belief net structure this guy did.|S
-me013|uhhuh.|B
-me006|uh basically it was two h m ms with with a with a dependency arrow between the two h m ms.|S
-me013|uhhuh.|B
-me006|and so i want to try try coupling them instead of having an arrow that that flows from one sub band to another sub band.|S
-me006|i want to try having the arrows go both ways.|S
-me006|and um i'm just going to see if if that that better models um uh asynchrony in any way.|S
-me006|or um yeah.|F
-me013|oh.|S
-me013|okay.|S
-me013|well that sounds interesting.|S
-me006|yeah.|S
-me013|okay.|S
-me013|all right.|S
-me013|anything to you wanted to|D
-me013|no.|S
-me013|okay.|S
-me013|silent partner in the in the meeting.|S
-me013|we got a laugh out of him.|S
-me013|that's good.|S
-me013|okay everyone must contribute to the our our sound sound files here.|S
-me013|okay so speaking of which if we don't have anything else that we need|D
-me013|you happy with where we are?|Q
-me013|know know know where we're going?|Q
-mn007|huh.|B
-me013|uh|F
-mn007|i think so yeah.|S
-me013|yeah yeah.|S
-me013|you you happy?|Q
-fn002|uhhuh.|S
-me013|you're happy.|S
-me013|okay everyone should be happy.|S
-me013|okay.|S
-me013|you don't have to be happy.|S
-me013|you're almost done.|S
-me013|yeah yeah.|S
-me013|okay.|S
-me026|actually i should mention|D
-me026|so if um about the linux machine.|S
-me026|swede.|S
-me013|yeah.|S
-me026|so it looks like the um normal neural net tools are installed there.|S
-mn007|huh.|B
-me026|and um dan ellis i believe knows something about using that machine.|S
-me026|so|F
-me026|if people are interested in in getting jobs running on that maybe i could help with that.|S
-mn007|huh.|D
-mn007|yeah but i don't know if we really need now a lot of machines.|S
-mn007|well we could start computing another huge table.|S
-mn007|but|F
-mn007|yeah we|D
-me013|well yeah i think we want a different table at least.|S
-mn007|yeah sure.|S
-me013|right?|Q
-me013|i mean there's there's some different things that we're trying to get at now.|S
-mn007|but|F
-me013|but|F
-mn007|yeah.|B
-mn007|huh.|B
-me013|so yeah as far as you can tell you're actually okay on on c p u uh for training and so on?|Q
-me013|yeah.|D
-mn007|uh yeah i think so.|S
-mn007|well more is always better.|S
-mn007|but huh|F
-mn007|i don't think we have to train a lot of networks now that we know.|S
-mn007|we just select what works fine.|S
-me013|okay.|S
-me013|okay.|B
-fn002|yeah.|B
-mn007|and try to improve this.|S
-me013|and we're okay on and we're okay on disk?|Q
-fn002|to work|D
-mn007|and|F
-mn007|it's okay yeah.|S
-mn007|well sometimes we have some problems.|S
-fn002|some problems with the|D
-me013|but they're correctable uh problems.|S
-fn002|you know.|S
-mn007|yeah restarting the script basically.|S
-mn007|and|D
-me013|yes.|S
-me013|yeah i'm familiar with that one.|S
-me013|okay.|F
-me013|all right.|S
-me013|so uh since uh we didn't get a channel on for you you don't have to read any digits.|S
-me013|but the rest of us will.|S
-me013|uh is it on?|Q
-me013|well we didn't.|S
-me013|uh|F
-me013|i think i won't touch anything.|S
-me013|because i'm afraid of making the driver crash.|S
-me013|which it seems to do pretty easily.|S
-me013|okay thanks.|S
-me013|okay so we'll uh i'll start off the|D
-me013|uh um|F
-me013|connect the|D
-mn007|my battery is low.|S
-me013|well let's hope it works.|S
-me013|maybe you should go first and see.|S
-me013|so that you're okay.|S
-fn002|batteries.|D
-me006|yeah your battery's going down too.|S
+me013|okay.|F|fg|fg
+me013|uh|F|fh|fh
+mn007|okay so there is kind of summary of what has been done.|S|fg|fg
+me013|go ahead.|S|s|co
+mn007|it's this.|S|s|s
+me013|oh okay.|S|s|bk
+mn007|summary of experiments since well since last week.|S|s|rt
+mn007|and also since the we've started to run work on this.|S|s|rt
+mn007|um so since last week we've started to fill the column with um uh features with nets trained on p l p with online normalization.|S|fh|fh
+mn007|but with delta also.|S|s|s
+mn007|because the column was not completely|D|s|s
+me013|huh huh.|B|b|b
+me013|uhhuh.|B|b|b
+me013|uhhuh.|B|b|b
+mn007|well it's still not completely filled.|S|s|rt
+mn007|but we have more results to compare with network using without p l p.|S|s|rt
+mn007|and finally um uh p uh delta seems very important.|S|s|s
+mn007|uh i don't know.|S|fh|fh
+mn007|if you take um let's say anyway aurora two b.|S|s|rt
+mn007|so the next the second uh part of the table.|S|s|rt
+me013|uhhuh.|D|b|b
+mn007|uh when we use the large training set using french spanish and english you have one hundred and six without delta.|S|s|rt
+mn007|and eighty nine with the delta.|S|s|s
+me013|and again all of these numbers are with a hundred per cent being uh the baseline performance.|S|s|bu
+mn007|yeah uhhuh.|S|s|aa
+mn007|on the baseline yeah.|S|s|na
+me013|but with a mel cepstra system going straight into the h t k.|S|s|bu
+mn007|so|F|fg|fg
+mn007|yeah yeah.|S|s|aa
+me013|yes.|S|s|bk
+mn007|so now we see that the gap between the different training set is much uh uh much smaller.|S|s|s
+me006|it's out of the way.|S|s|s
+mn007|um|F|fh|fh
+mn007|but actually um for english training on timit is still better than the other languages.|S|s|rt
+mn007|and|D|%|%
+mn007|uh|F|fh|fh
+mn007|yeah.|B|b|b
+mn007|and also for italian actually.|S|s|s
+mn007|if you take the second set of experiment for italian|D|s|s
+mn007|so the mismatched condition.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|um when we use the training on timit.|S|s|rt
+mn007|so it's multi english.|S|s|rt
+mn007|we have a ninety one number.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|and training with other languages is a little bit worse.|S|s|s
+me013|um oh i see.|S|h|h
+me013|down near the bottom of this sheet.|S|s|s
+me013|uh yes.|B|b|b
+mn007|so|F|fg|fg
+mn007|yeah.|B|b|b
+me013|okay.|B|b|b
+mn007|and yeah and here the gap is still more important between using delta and not using delta.|S|s|s
+me013|yes.|B|b|b
+mn007|if if i take the training the large training set it's we have one hundred and seventy two.|S|s|rt
+me013|yeah.|B|b|b
+mn007|and one hundred and four when we use delta.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|uh even if the contexts used is quite the same.|S|fh|fh
+mn007|because without delta we use seventeenths seventeen frames.|S|s|s
+mn007|uh|F|fh|fh
+mn007|yeah um so the second point is that we have no single cross language experiments uh that we did not have last week.|S|fh|fh
+mn007|uh so this is training the net on french only.|S|fh|fh
+mn007|or on english only.|S|s|s
+mn007|and testing on italian.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|and training the net on french only.|S|s|s
+mn007|and spanish only.|S|s|s
+mn007|and testing on uh t i digits.|S|s|s
+me013|uhhuh.|D|b|b
+mn007|and|D|%|%
+mn007|um|F|fh|fh
+mn007|yeah.|F|fh|fh
+mn007|what we see is that these nets are not as good.|S|s|s
+mn007|except for the multi english which is always one of the best.|S|s|s
+mn007|yeah.|F|fh|fh
+mn007|then we started to work on a large database containing uh sentences from the french from the spanish from the timit from spine uh from uh english digits and from italian digits.|D|s|rt
+mn007|so this is the another line another set of lines in the table.|S|s|rt
+me013|uh yes.|B|b|b
+mn007|uh with spine.|D|s|s
+me013|uhhuh.|B|b|b
+mn007|and uh actually we did this before knowing the result of all the data.|S|s|s
+mn007|uh so we have to redo the uh the experiment training the net with uh p l p but with delta.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|but with delta.|S|s|s
+mn007|but um this this net performed quite well.|S|s|s
+mn007|well|D|%|%
+mn007|it's it's better than the net using french spanish and english only.|S|s|s
+mn007|uh.|B|b|b
+mn007|so|F|fg|fg
+mn007|uh yeah.|B|b|b
+mn007|we have also started feature combination experiments.|S|s|rt
+mn007|uh many experiments using features and net outputs together.|S|s|s
+mn007|and this is the results are on the other document.|S|s|rt
+mn007|uh we can discuss this after perhaps well just another few minutes.|S|s|cs
+mn007|yeah so basically there are four four kind of systems.|S|s|s
+mn007|the first one yeah is combining um two feature streams uh using|D|s|s
+mn007|and each feature stream has its own m.p.l.|S|s|rt
+mn007|so it's the kind of similar to the tandem that was proposed for the first.|S|s|s
+mn007|the multi stream tandem for the first proposal.|S|s|rt
+mn007|the second is using features and k l t transformed m l p outputs.|S|s|rt
+mn007|and the third one is to use a single k l t transform features as well as m l p outputs.|S|s|rt
+mn007|um|F|fh|fh
+mn007|yeah.|F|fh|fh
+mn007|huh.|D|b|b
+mn007|you know you can you can comment these results also.|S|s|cs
+fn002|yes i can|D|s|aa
+fn002|i would like to say that for example um huh if we doesn't use the delta delta uh we have an improve when we use some combination.|S|s|rt
+fn002|but when|D|%|%
+mn007|yeah just to be clear the numbers here are uh recognition accuracy.|S|fg|fg
+fn002|yeah this yeah this number recognition|D|s|bk
+mn007|so it's not the again we switch to another.|S|s|s
+fn002|yes and the baseline the baseline have is eighty two.|S|s|s
+me013|baseline is eighty two.|S|s|bk
+fn002|yeah.|S|s|aa
+mn007|so it's experiment only on the italian mismatched for the moment for this.|S|s|s
+me013|uh this is italian mismatched.|S|fh|fh
+fn002|yeah by the moment.|S|s|aa
+mn007|um|F|fg|fg
+me013|okay.|S|s|bk
+mn007|huh.|B|b|b
+fn002|and first in the experiment one i i do i i use different m l p.|S|s|rt
+me013|uhhuh.|B|b|b
+fn002|and is obviously that the multi english m l p is the better.|S|s|s
+fn002|um for the ne rest of experiment i use multi english.|S|fh|fh
+fn002|only multi english.|S|s|e
+fn002|and i try to combine different type of feature.|S|s|s
+fn002|but the result is that the m s g three feature doesn't work for the italian database.|S|s|s
+fn002|because never help to increase the accuracy.|S|s|s
+mn007|yeah uh actually if we look at the table|D|s|s
+mn007|the huge table|D|s|rt
+me013|uhhuh.|B|b|b
+mn007|um we see that for t i digits m s g perform as well as the p l p.|S|s|rt
+mn007|but this is not the case for italian what where the error rate is is almost uh twice the error rate of p l p.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|so um uh well i don't think this is a bug.|S|fh|fh
+mn007|but this this is something in probably in the m s g um process that|D|s|s
+mn007|uh|F|fh|fh
+mn007|i don't know what exactly.|S|s|no
+mn007|perhaps the fact that the the there's no low pass filter.|S|s|cs
+mn007|well|D|%|%
+mn007|or no pre pre emphasis filter.|S|s|cs
+mn007|and that there is some d c offset in the italian.|S|s|s
+mn007|or well|D|%|%
+mn007|something simple like that.|S|s|rt
+mn007|but that we need to sort out if want to uh get improvement by combining p l p and m s g.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|because for the moment m s g doesn't bring much information.|S|s|df
+me013|uhhuh.|B|b|b
+mn007|and as carmen said if we combine the two we have the result basically of p l p.|S|s|s
+me013|i|D|%|%
+me013|um the uh baseline system|D|fg|fg
+me013|when you said the baseline system was uh uh eighty two per cent that was trained on what and tested on what?|Q|qw|qw
+me013|that was uh italian mismatched uh uh digits uh is the testing.|S|s|s
+fn002|yeah.|S|s|aa
+me013|and the training is italian digits?|Q|qy|bu
+fn002|yeah.|S|s|aa
+me013|so the mismatch just refers to the noise and and uh microphone and so forth.|S|s|bu
+fn002|yeah.|S|s|aa
+me013|right?|Q|qy|d
+mn007|yeah.|D|b|b
+me013|so um did we have|D|fh|fh
+me013|so would that then correspond to the first line here of where the training is is the uh italian digits?|Q|qy|rt
+fn002|the the training of the h t k?|Q|qy|bu
+fn002|yes.|S|s|aa
+me013|yes.|S|s|aa
+fn002|uh yes.|F|fg|fg
+fn002|this|D|s|s
+fn002|yes.|S|s|aa
+me013|yes.|B|b|b
+fn002|yes.|B|b|b
+me013|training of the net.|S|s|s
+me013|yeah.|B|b|b
+fn002|yeah.|B|b|b
+me013|so um so what that says is that in a matched condition we end up with a fair amount worse putting in the uh p l p.|S|fh|fh
+me013|now would do we have a number i suppose for the matched|D|qy|qy
+me013|i i don't mean matched.|S|s|s
+me013|but uh use of italian training in italian digits for p l p only?|Q|qy|bu
+fn002|uh yes.|S|h|h
+mn007|uh yeah.|S|h|h
+mn007|so this is basically this is in the table.|S|s|s
+mn007|uh so the number is fifty two.|S|fh|fh
+fn002|another table.|S|s|2
+mn007|uh|F|fh|fh
+me013|fifty two per cent.|S|s|bu
+mn007|so no it's it's the|D|s|s
+fn002|no.|S|s|ar
+me013|no fifty two per cent of eighty two?|S|s|bk
+mn007|of of of uh eighteen.|S|s|s
+fn002|eighty.|S|s|s
+fn002|eighty.|S|s|r
+mn007|of eighteen.|S|s|r
+mn007|so it's it's error rate basically.|S|s|s
+fn002|it's plus six.|S|s|rt
+mn007|error rate ratio.|S|s|bsc
+mn007|so|F|fh|fh
+mn007|so|F|fh|fh
+me013|oh this is accuracy!|S|s|bk
+me013|huh.|D|b|b
+fn002|yeah.|B|b|b
+me013|okay.|S|s|bk
+mn007|uh so we have nine nine let's say ninety per cent.|S|fg|fg
+me013|ninety.|S|s|bk
+mn007|yeah.|B|b|b
+mn007|um which is uh what we have also if use p l p and m s g together.|S|fh|fh
+me013|yeah.|B|b|b
+mn007|eighty nine point seven.|S|s|s
+me013|okay so even just p l p uh it is not in the matched condition|D|fg|fg
+me013|um i wonder if it's a difference between p l p and mel cepstra or whether it's that the net half for some reason is not helping.|S|fh|fh
+mn007|uh.|B|b|b
+mn007|p l p and mel cepstra give the same same results.|S|s|s
+me013|same result pretty much.|S|s|bk
+mn007|well we have these results.|S|s|s
+mn007|i don't know.|S|s|no
+mn007|it's not|D|s|s
+me013|so|D|fg|fg
+mn007|do you have this result with p l p alone feeding h t k?|Q|qy|rt
+mn007|that that's what you mean.|S|s|s
+fn002|yeah.|S|s|aa
+mn007|just p l p at the input of h t k.|S|s|e
+fn002|yeah yeah yeah yeah.|S|s|bk
+fn002|at the first and the|D|s|s
+fn002|yeah.|B|b|b
+mn007|yeah.|B|b|b
+mn007|so p l p|D|s|s
+me013|eighty eight point six.|S|s|s
+mn007|yeah.|B|b|b
+me013|um so adding m s g|D|fg|fg
+mn007|um|F|fh|fh
+me013|um well but that's yeah that's without the neural net.|S|fh|fh
+me013|right?|Q|qy|bu
+mn007|yeah that's without the neural net.|S|s|aa
+mn007|and that's the result basically that o g i has also with the m f c c with online normalization.|S|s|rt
+me013|but she had said eighty two.|S|s|rt
+mn007|this is the well but this is without online normalization.|S|s|s
+me013|right?|Q|qy|d
+me013|oh this the eighty two?|S|s|bk
+mn007|yeah.|B|b|b
+mn007|eighty two is the it's the aurora baseline.|S|s|s
+mn007|so m f c c.|S|s|e
+mn007|then we can use|D|s|s
+mn007|well o g i they use m f c c the baseline m f c c plus online normalization.|S|s|rt
+me013|oh i'm sorry.|S|s|bk
+me013|i i keep getting confused.|S|s|s
+me013|because this is accuracy.|S|s|df
+mn007|yeah sorry.|S|s|bk
+mn007|yeah.|S|s|aa
+fn002|yeah.|S|s|aa
+me013|okay all right.|S|s|bk
+mn007|yeah.|B|b|b
+me013|all right so this is i was thinking all this was worse.|S|s|bk
+me013|okay so this is all better.|S|s|bk
+me013|because eighty nine is bigger than eighty two.|S|s|s
+fn002|yes better.|S|s|m
+mn007|uhhuh.|B|b|b
+me013|okay.|S|s|bk
+fn002|yeah.|B|b|b
+me013|i'm i'm all better now.|S|s|tc
+me013|okay go ahead.|S|s|bk
+mn007|so what what happens is that when we apply online normalization we jump to almost ninety per cent.|S|s|rt
+me013|yeah.|B|b|b
+me013|uhhuh.|B|b|b
+mn007|uh when we apply a neural network is the same.|S|s|rt
+mn007|we jump to ninety per cent.|S|s|rt
+fn002|nnn we don't know exactly.|S|s|ng
+me013|yeah.|B|b|b
+mn007|and and um|F|fh|fh
+mn007|whatever the normalization actually.|S|s|s
+mn007|if we use neural network even if the features are not correctly normalized we jump to ninety per cent.|S|s|s
+me013|so we go from eighty eighty eight point six to to ninety or something.|S|s|bu
+mn007|so|F|fh|fh
+mn007|well ninety|D|s|s
+mn007|no i i mean ninety|D|s|ar
+mn007|it's around eighty nine.|S|s|s
+mn007|ninety.|S|s|s
+me013|eighty nine.|S|s|bk
+mn007|eighty eight.|S|s|s
+fn002|yeah.|B|b|b
+mn007|well there are minor minor differences.|S|s|s
+me013|and then adding the m s g does nothing basically.|S|s|bu
+mn007|no.|S|s|aa
+me013|yeah okay.|S|s|bk
+mn007|uh for italian yeah.|S|s|e
+me013|for this case right.|S|s|s
+mn007|um|F|fh|fh
+me013|all right.|B|b|b
+me013|so um so actually the answer for experiments with one is that adding m s g if you uh does not help in that case|D|fh|fh
+mn007|uhhuh.|B|b|b
+me013|um|F|fh|fh
+mn007|yeah.|B|b|b
+mn007|but|D|%|%
+me013|the other ones we'd have to look at it.|S|s|s
+mn007|yeah.|B|b|b
+me013|but|F|fh|fh
+me013|and the multi english does.|S|s|s
+me013|uh|F|fh|fh
+me013|so if we think of this in error rates we start off with uh eighteen per cent error rate roughly.|S|s|s
+mn007|uhhuh.|B|b|b
+me013|um and we uh almost uh cut that in half by um putting in the online normalization and the neural net.|S|s|s
+mn007|yeah.|B|b|b
+me013|and the m s g doesn't however particularly affect things.|S|s|s
+mn007|no.|B|b|b
+me013|and we cut off i guess about twenty five per cent of the error.|S|s|s
+me013|uh no not quite that.|S|fh|fh
+me013|is it?|Q|qy|g
+me013|uh two point six out of eighteen.|S|s|t1
+me013|about um sixteen per cent or something of the error um if we use multi english instead of the matching condition.|S|s|s
+mn007|uhhuh.|B|b|b
+me013|not matching condition.|S|s|s
+mn007|yeah.|B|b|b
+me013|but uh the uh italian training.|S|s|s
+fn002|yeah.|S|s|aa
+mn007|uhhuh.|B|b|b
+me013|okay.|S|s|bk
+mn007|huh.|B|b|b
+fn002|we select these these these tasks.|S|s|s
+fn002|because it's the more difficult.|S|s|df
+me013|yes good.|S|s|bk
+me013|okay.|S|s|bk
+me013|so then you're assuming multi english is closer to the kind of thing that you could use.|S|s|s
+me013|since you're not going to have matching uh data for the uh for the new for the other languages and so forth.|S|s|df
+me013|um one thing is that|D|fh|fh
+me013|uh i think i asked you this before.|S|s|df
+me013|but i want to double check.|S|s|df
+me013|when you say m e in these other tests that's the multi english.|S|s|bu
+mn007|that's it's a part it's|D|s|s
+me013|but it is not all of the multi english.|S|s|bu
+me013|right?|Q|qy|d
+me013|it is some piece of part of it.|S|s|s
+mn007|or one million frames.|S|s|rt
+me013|and the multi english is how much?|Q|qy|d
+fn002|you have here the information.|S|s|s
+mn007|it's one million and a half.|S|s|s
+mn007|yeah.|B|b|b
+me013|oh so you used almost all.|S|s|bk
+me013|you used two thirds of it.|S|s|s
+mn007|yeah.|B|b|b
+me013|you think.|S|s|s
+me013|so it's still it hurts you seems to hurt you a fair amount to add in this french and spanish.|S|s|s
+mn007|huh.|B|b|b
+fn002|yeah.|S|s|aa
+me013|i wonder why.|S|s|s
+me013|uh|F|fh|fh
+me006|well stephane was saying that they weren't hand labeled.|S|s|s
+fn002|yeah.|B|b|b
+mn007|yeah it's|D|s|s
+mn007|yeah.|B|b|b
+me006|the french and the spanish.|S|s|s
+fn002|the spanish.|S|s|2
+fn002|maybe for that.|S|s|s
+me013|huh.|B|b|b
+mn007|huh.|B|b|b
+me013|still.|S|s|s
+me013|okay.|S|s|bk
+me013|all right go ahead.|S|s|bk
+me013|and then then|D|%|%
+fn002|um|F|fh|fh
+fn002|huh with the experiment type two.|S|s|rt
+fn002|i first i tried to combine nnn some feature from the m l p and other feature.|S|s|rt
+fn002|another feature.|S|s|bsc
+me013|uhhuh.|B|b|b
+fn002|and we we can|D|s|s
+fn002|first the feature are without delta and delta delta.|S|s|rt
+fn002|and we can see that in the situation uh the m s g three the same help nothing.|S|s|s
+me013|uhhuh.|B|b|b
+fn002|and then i do the same.|S|s|rt
+fn002|but with the delta and delta delta p l p delta and delta delta.|S|s|rt
+fn002|and they all but they all put off the m l p is it without delta and delta delta.|S|s|s
+me013|uhhuh.|D|b|b
+fn002|and we have a little bit less result than the the the baseline p l p with delta and delta delta.|S|s|s
+fn002|maybe if when we have the new the new neural network trained with p l p delta and delta delta|D|s|cs
+fn002|maybe the final result must be better.|S|s|cs
+fn002|i don't know.|S|s|bd
+fn002|uh|F|fg|fg
+mn007|actually just to be some more|D|fg|fg
+mn007|do|D|%|%
+mn007|this number this eighty seven point one number has to be compared with the|D|s|s
+me013|yes yeah i mean it can't be compared with the other.|S|fg|fg
+mn007|which number?|Q|qw|qw
+me013|because this is uh with multi english uh training.|S|s|df
+fn002|uhhuh.|B|b|b
+me013|so you have to compare it with the one over that you've got in a box.|S|s|s
+me013|which is that uh the eighty four point six.|S|s|s
+fn002|uhhuh.|B|b|b
+me013|right?|Q|qy|d
+mn007|uh|F|fg|fg
+me013|so|F|fh|fh
+mn007|yeah but i mean in this case for the eighty seven point one we used m l p outputs for the p l p net.|S|fg|fg
+me013|yeah.|B|b|b
+mn007|and straight features with delta delta.|S|s|s
+me013|yeah.|B|b|b
+fn002|uhhuh.|B|b|b
+mn007|and straight features with delta delta gives you what's on the first sheet.|S|s|s
+me013|not not|D|s|s
+mn007|it's eighty eight point six.|S|s|s
+me013|no no no.|S|s|ar
+fn002|yes.|S|s|ar
+me013|not trained with multi english.|S|s|s
+fn002|no but they they feature without|D|s|ar
+mn007|uh yeah but this is the second configuration.|S|s|bk
+mn007|so we use feature uh net outputs together with features.|S|s|s
+mn007|so yeah.|F|fh|fh
+mn007|this is not perhaps not clear here.|S|s|ar
+mn007|but in this table the first column is for m l p and the second for the features.|S|s|s
+me013|uh oh i see.|S|s|bk
+me013|uh so you're saying so asking the question what what has adding the m l p done to improve over the|D|s|bk
+mn007|so just|F|fg|fg
+mn007|yeah|F|fg|fg
+mn007|so actually it it it decreased the the accuracy.|S|s|s
+me013|uh|F|fh|fh
+fn002|yeah.|B|b|b
+me013|yes.|S|s|bk
+me013|uhhuh.|B|b|b
+mn007|because we have eighty eight point six.|S|s|df
+mn007|and even the m l p alone|D|s|s
+mn007|what gives the m l p alone?|Q|qw|rt
+mn007|multi english p l p.|S|s|rt
+mn007|oh no.|S|s|bsc
+mn007|it gives eighty three point six.|S|s|bsc
+mn007|so we have eighty three point six and eighty eighty point six.|S|s|s
+fn002|but|D|%|%
+mn007|that gives eighty seven point one.|S|s|s
+me013|uhhuh.|B|b|b
+me013|eighty|D|s|s
+me013|i thought it was eighty|D|s|s
+me013|oh okay.|S|s|bk
+me013|eighty three point six and eighty eighty eight point six.|S|s|s
+mn007|eighty three point six.|S|s|t1
+mn007|eighty|D|s|t1
+me013|okay.|S|s|bk
+mn007|is is that right?|Q|qy|rt
+mn007|yeah.|S|s|aa
+fn002|yeah.|B|b|b
+fn002|but i don't know.|S|fg|fg
+fn002|but maybe if we have the neural network trained with the p l p delta and delta delta maybe this can help.|S|s|s
+mn007|perhaps yeah.|S|s|am
+me013|well that's that's one thing.|S|s|aap
+me013|but see the other thing is that|D|s|s
+me013|um i mean it's good to take the difficult case.|S|s|ba
+me013|but let's let's consider what that means.|S|s|rt
+me013|what what we're saying is that one one of the things that|D|s|s
+me013|i mean my interpretation of your your original suggestion is something like this as motivation.|S|s|s
+me013|when we train on data that is in one sense or another similar to the testing data then we get a win by having discriminant training.|S|s|s
+mn007|uhhuh.|B|b|b
+me013|when we train on something that's quite different we have a potential to have some problems.|S|s|s
+mn007|uhhuh.|B|b|b
+me013|and um if we get something that helps us when it's somewhat similar and doesn't hurt us too much when it when it's quite different that's maybe not so bad.|S|s|s
+mn007|yeah.|B|b|b
+me013|so the question is if you took the same combination and you tried it out on uh on say digits|D|s|s
+mn007|huh.|D|b|b
+mn007|on t i digits?|Q|qy|2
+mn007|okay.|B|b|b
+me013|you know.|S|s|f
+me013|was that experiment done?|Q|qy|rt
+mn007|no not yet.|S|s|ar
+me013|yeah okay.|S|s|bk
+me013|uh then does that uh you know maybe with similar noise conditions and so forth does it does it then look much better?|Q|qo|qo
+mn007|uhhuh.|D|b|b
+me013|and so what is the range over these different kinds of uh of tests?|Q|qo|qo
+me013|so anyway.|S|s|tc
+me013|okay go ahead.|S|s|bk
+mn007|yeah.|B|b|b
+fn002|and with this type of configuration which i do on experiment using the new neural net with name broad klatt twenty seven.|S|s|s
+me013|uhhuh.|B|b|b
+fn002|uh i have found more or less the same result.|S|s|s
+mn007|so it's slightly better.|S|s|ba
+fn002|little bit better.|S|s|s
+mn007|yeah.|B|b|b
+me013|slightly better.|S|s|aa
+mn007|yeah.|B|b|b
+fn002|slightly better.|S|s|aa
+fn002|yes better.|S|s|aa
+me013|and and you know again maybe if you use the uh delta there uh you would bring it up to where it was uh you know at least about the same for a difficult case.|S|s|s
+fn002|yeah maybe maybe maybe.|S|fg|fg
+mn007|yeah.|B|b|b
+fn002|oh yeah.|S|s|bk
+mn007|yeah.|B|b|b
+me013|so|F|fh|fh
+fn002|yeah.|S|s|aa
+mn007|well so perhaps let's let's jump at the last experiment.|S|s|t
+mn007|it's either less information from the neural network if we use only the silence output.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|it's again better.|S|s|s
+mn007|so it's eighty nine point point one.|S|s|s
+me013|uhhuh.|B|b|b
+fn002|yeah.|B|b|b
+fn002|yeah and we have only forty forty feature.|S|s|s
+mn007|so|F|fh|fh
+fn002|because in this situation we have one hundred and three feature.|S|s|s
+me013|yeah.|B|b|b
+fn002|yeah.|B|b|b
+fn002|and then with the first configuration i i am found that work uh doesn't work|D|s|s
+me013|yeah.|B|b|b
+fn002|uh well work.|S|s|s
+fn002|but is better the second configuration.|S|s|s
+fn002|because i for the p l p delta and delta delta here i have eighty five point three accuracy.|S|s|s
+fn002|and with the second configuration i have eighty seven point one.|S|s|s
+me013|um by the way there is another uh suggestion that would apply uh to the second configuration.|S|fh|fh
+me013|um which uh was made uh by uh hari.|S|s|s
+me013|and that was that um if you have uh feed two streams into h t k um and you uh change the uh variances|D|s|s
+me013|if you scale the variances associated with uh these streams um you can effectively scale the streams.|S|s|s
+me013|right?|Q|qy|d
+me013|so um you know without changing the scripts for h t k.|S|fh|fh
+me013|which is the rule here uh you can still change the variances.|S|s|s
+mn007|uhhuh.|B|b|b
+mn007|uhhuh.|B|b|b
+me013|which would effectively change the scale of these these uh two streams that come in.|S|s|s
+mn007|uh yeah.|B|b|b
+me013|and um so um if you do that for instance it may be the case that um the m l p should not be considered as strongly for instance.|S|fh|fh
+mn007|huh.|B|b|b
+me013|and um so this is just setting them to be|D|fg|fg
+me013|excuse me.|S|s|fa
+me013|of equal equal weight.|S|s|s
+me013|maybe it shouldn't be equal weight.|S|s|s
+fn002|maybe.|S|s|am
+me013|right you know i'm sorry to say that gives more experiments if we wanted to look at that.|S|s|s
+me013|but but uh um you know on the other hand it's just experiments at the level of the h t k recognition.|S|s|df
+mn007|huh.|B|b|b
+me013|it's not even the h t k.|S|s|s
+me013|uh uh|F|fh|fh
+mn007|yeah.|B|b|b
+fn002|yeah yeah.|B|b|b
+me013|well i guess you have to do the h t k training also.|S|s|s
+fn002|so this is what we decided to do.|S|s|s
+me013|uh do you?|Q|fh|fh
+me013|let me think.|F|h|h
+me013|maybe you don't.|S|s|t1
+me013|uh|F|fh|fh
+me013|yeah you have to change the|D|fg|fg
+me013|no you can just do it in as once you've done the training|D|s|t1
+me006|and then you can vary it.|S|s|2
+me013|yeah the training is just coming up with the variances.|S|s|bk
+me006|yeah.|B|b|b
+me013|so i guess you could could just scale them all.|S|s|s
+mn007|scale them?|Q|qy|d
+me013|variances.|S|s|s
+mn007|yeah.|B|b|b
+mn007|but|D|%|%
+mn007|is it i mean the h t k models are diagonal covariances.|S|s|s
+mn007|so i is it|D|qy|qy
+me013|that's uh exactly the point i think.|S|s|s
+me013|that if you change um change what they are|D|s|s
+mn007|huh.|B|b|b
+me013|it's diagonal covariance matrices.|S|s|s
+mn007|uhhuh.|B|b|b
+me013|but you say what those variances are.|S|s|s
+mn007|uhhuh.|B|b|b
+me013|so that you know it's diagonal but the diagonal means that then you're going to it's going to it's going to internally multiply it and and uh uh it uh implicitly exponentiated to get probabilities and so it's it's going to it's it's going to affect the range of things if you change the change the variances of some of the features.|S|s|s
+mn007|huh.|B|b|b
+mn007|huh.|B|b|b
+fn002|do|D|%|%
+me013|so it's precisely given that model you can very simply affect uh the the strength that you apply the features.|S|s|s
+me013|that was that was uh hari's suggestion.|S|s|s
+mn007|yeah yeah.|B|b|b
+me013|so um|F|fh|fh
+fn002|yeah.|B|b|b
+me013|yeah.|B|b|b
+me013|so|F|fh|fh
+me013|so it could just be that treating them equally treating two streams equally is just just not the right thing to do.|S|fg|fg
+me013|of course it's potentially opening a can of worms.|S|s|s
+me013|because you you know maybe it should be a different number for for each kind of test set or something.|S|s|s
+mn007|uhhuh.|B|b|b
+me013|but|F|fh|fh
+me013|okay.|S|s|bk
+mn007|yeah.|D|b|b
+me013|so i guess the other thing is to take you know if one were to take uh you know a couple of the most successful of these.|S|s|cs
+mn007|yeah and test across everything.|S|fg|fg
+me013|and uh|F|fh|fh
+me013|yeah try all these different tests.|S|s|aa
+mn007|huh.|D|b|b
+fn002|yeah.|B|b|b
+mn007|yeah.|B|b|b
+me013|all right.|S|s|bk
+me013|uh|F|fh|fh
+mn007|so the next point.|S|fg|fg
+mn007|yeah.|F|fh|fh
+mn007|we've had some discussion with steve and shawn.|S|s|s
+mn007|um about um articulatory stuff.|S|s|rt
+mn007|um|F|fh|fh
+mn007|so we'll perhaps start something next week.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|um discussion with hynek sunil and pratibha for trying to plug in their our our networks with their within their block diagram.|F|fh|fh
+mn007|uh where to plug in the the network uh after the the feature.|S|s|s
+mn007|before as um as a plugin or as another path.|S|s|s
+mn007|discussion about multi band and traps.|S|s|s
+mn007|um|F|fh|fh
+mn007|actually hynek would like to see|D|s|s
+mn007|perhaps if you remember the block diagram there is uh temporal l d a followed by a spectral l d a for each uh critical band.|S|s|s
+mn007|and he would like to replace these by a network.|S|s|s
+mn007|which would uh make the system look like a trap.|S|s|s
+mn007|well basically it would be a trap system.|S|s|s
+mn007|basically this is a trap system.|S|s|s
+mn007|kind of trap system i mean.|S|s|s
+mn007|but where the neural network are replaced by l d a.|S|s|s
+mn007|um yeah.|F|fh|fh
+mn007|and about multi band.|S|s|s
+mn007|uh i started multi band m l p trainings.|S|s|rt
+mn007|um|F|fh|fh
+mn007|actually i i prefer to do exactly what i did when i was in belgium.|S|s|s
+mn007|so i take exactly the same configurations.|S|s|s
+mn007|seven bands with nine frames of context.|S|s|s
+mn007|and we just train on timit.|S|s|s
+mn007|and on the large database.|S|s|s
+mn007|so with spine and everything.|S|s|s
+mn007|and uh|F|fh|fh
+mn007|i'm starting to train also networks with larger contexts.|S|s|s
+mn007|so this would would be something between traps and multi band.|S|s|s
+mn007|because we still have quite large bands.|S|s|s
+mn007|and but with a lot of context also.|S|s|s
+mn007|so um|F|fh|fh
+mn007|yeah.|F|fg|fg
+mn007|we still have to work on finnish.|S|s|s
+mn007|um basically to make a decision on which m l p can be the best across the different languages.|S|s|s
+mn007|for the moment it's the timit network and perhaps the network trained on everything.|S|s|s
+mn007|so now we can test these two networks on with with delta and large networks.|S|fh|fh
+mn007|well test them also on finnish.|S|s|s
+fn002|huh.|B|b|b
+mn007|and see which one is the the the best.|S|s|s
+mn007|uh well the next part of the document is well basically a kind of summary of what everything that has been done.|S|s|s
+mn007|so we have seventy nine m l p's trained on|D|s|s
+mn007|one two three four uh three four five six seven.|S|s|t1
+mn007|ten on ten different databases.|S|s|s
+me013|uhhuh.|D|b|b
+mn007|uh|F|fh|fh
+mn007|the number of frames is bad also.|S|s|ba
+mn007|so we have one million and a half for some.|S|s|s
+mn007|three million for other.|S|s|s
+mn007|and six million for the last one.|S|s|s
+mn007|uh|F|fh|fh
+mn007|yeah as we mentioned timit is the only that's hand labeled.|S|fg|fg
+mn007|and perhaps this is what makes the difference.|S|s|s
+mn007|um|F|fh|fh
+mn007|yeah the other are just viterbi aligned.|S|s|s
+mn007|so these seventy nine m l p differ on different things.|S|s|s
+mn007|first um with respect to the online normalization.|S|s|s
+mn007|there are that use bad online normalization.|S|s|s
+mn007|and other good online normalization.|S|s|s
+mn007|um|F|fh|fh
+mn007|with respect to the features.|S|s|s
+mn007|with respect to the use of delta.|S|s|s
+mn007|or no.|S|s|bsc
+mn007|uh with respect to to the hidden layer size and to the targets.|S|s|bsc
+mn007|uh but of course we don't have all the combination of these different parameters.|S|s|s
+mn007|um|F|fh|fh
+mn007|what's this?|Q|qw|qw
+mn007|we only have two hundred eighty six different tests.|S|s|s
+mn007|and not two thousand.|S|s|s
+me013|uh.|S|s|bk
+me013|i was impressed.|S|s|s
+me013|boy!|S|s|fe
+me013|two thousand.|S|s|s
+mn007|yeah.|S|s|s
+me013|okay.|S|s|bk
+fn002|uh yes.|B|b|b
+me013|all right now i'm just slightly impressed.|S|s|bk
+fn002|i say this morning that thought it was the|D|s|s
+me013|okay.|B|b|b
+mn007|um|F|fg|fg
+mn007|yeah basically the observation is what we discussed already.|S|fg|fg
+mn007|the m s g problem.|S|s|rt
+mn007|um|F|fh|fh
+mn007|the fact that the m l p trained on target task decreased the error rate.|S|s|s
+mn007|but when the m m l p is trained on the is not trained on the target task it increased the error rate compared to using straight features.|S|s|s
+mn007|except if the features are bad.|S|s|s
+mn007|uh actually except if the features are not correctly online normalized.|S|fh|fh
+mn007|in this case the tandem is still better.|S|s|s
+mn007|even if it's trained on not on the target digits.|S|s|s
+me013|yeah so it sounds like yeah the net corrects some of the problems with some poor normalization.|S|fg|fg
+mn007|yeah.|S|s|aa
+me013|but if you can do good normalization it's it's uh okay.|S|s|s
+mn007|yeah.|B|b|b
+fn002|yeah.|B|b|b
+mn007|uh so the fourth point is yeah the timit plus noise seems to be the training set that gives better the best network.|S|s|rt
+me013|so let me before you go on to possible issues.|S|fg|fg
+mn007|uhhuh.|B|b|b
+me013|so on the m s g uh problem|D|s|s
+me013|um i think that in in the um in the short time solution|D|s|s
+me013|um that is um trying to figure out what we can proceed forward with to make the greatest progress|D|s|s
+mn007|uhhuh.|B|b|b
+me013|uh much as i said with j rasta.|S|s|s
+me013|even though i really like j rasta.|S|s|s
+me013|and i really like m s g.|S|s|s
+mn007|huh.|B|b|b
+me013|i think it's kind of in category that it's it it may be complicated.|S|s|s
+mn007|yeah.|B|b|b
+me013|and uh it might be if someone's interested in it uh certainly encourage anybody to look into it in the longer term.|S|s|cs
+me013|once we get out of this particular rush uh for results.|S|s|s
+mn007|huh.|B|b|b
+me013|but in the short term unless you have some some strong idea of what's wrong|D|s|cs
+mn007|i don't know at all.|S|s|no
+mn007|but i've perhaps i have the feeling that it's something that's quite quite simple.|S|s|df
+mn007|or just like nnn no high pass filter.|S|s|cs
+me013|yeah probably.|S|s|am
+mn007|or huh|F|fh|fh
+mn007|yeah my but i don't know.|S|s|bk
+me013|there's supposed to well m s g is supposed to have an online normalization though.|S|s|s
+me013|right?|Q|qy|d
+mn007|it's there is yeah an a.g. kind of a.g.c.|S|s|na
+mn007|yeah yeah yeah.|B|b|b
+me013|yeah but also there's an online besides the a g c there's an online normalization that's supposed to be.|S|fg|fg
+me013|uh|F|fh|fh
+me013|yeah.|S|s|aa
+mn007|huh.|B|b|b
+me013|taking out means and variances and so forth.|S|s|s
+me013|so|F|fh|fh
+mn007|yeah.|B|b|b
+me013|in in fact the online normalization that we're using came from the m s g design.|S|s|s
+me013|so it's|D|s|s
+mn007|um|F|h|h
+mn007|yeah but|D|s|bk
+mn007|yeah.|B|b|b
+mn007|but this was the bad online normalization actually.|S|s|s
+fn002|maybe may|D|s|am
+mn007|are your results are still with the bad the bad|D|qy|t3
+fn002|no.|S|s|ar
+fn002|with the better|D|s|s
+fn002|no.|S|s|ar
+mn007|with the o l n two.|S|s|s
+mn007|uh yeah you have you have o l n two.|S|s|s
+fn002|oh!|S|s|fe
+fn002|yeah yeah yeah!|S|s|aa
+fn002|with two with online two.|S|s|s
+mn007|yeah.|B|b|b
+fn002|yeah yeah.|B|b|b
+me013|online two is good.|S|s|ba
+mn007|so it's is the good yeah.|S|s|s
+fn002|yep.|B|b|b
+me013|two is good.|S|s|r
+fn002|it's a good.|S|s|aa
+mn007|and|D|%|%
+me013|no two is bad.|S|s|bsc
+mn007|yeah.|S|s|aa
+me013|okay.|S|s|bk
+fn002|well actually it's good with the with the good.|S|s|s
+me013|yeah.|B|b|b
+me013|so yeah i i agree.|S|fg|fg
+me013|it's probably something simple.|S|s|s
+me013|uh if if uh someone you know uh wants to play with it for a little bit.|S|s|cs
+me013|i mean you're going to do what you're going to do.|S|s|rt
+mn007|huh.|B|b|b
+me013|but but my my guess would be that it's something that is a simple thing that could take a while to find.|S|s|s
+mn007|but|D|%|%
+mn007|yeah.|B|b|b
+mn007|huh.|B|b|b
+mn007|i see.|S|s|bk
+mn007|yeah.|B|b|b
+me013|yeah.|B|b|b
+mn007|and|D|%|%
+me013|and the other the results uh observations two and three um is|D|s|s
+mn007|huh.|D|b|b
+me013|uh|F|fh|fh
+me013|yeah that's pretty much what we've seen.|S|fh|fh
+me013|that's that what we were concerned about is that if it's not on the target task|D|s|s
+me013|if it's on the target task then it it it helps to have the m l p transforming it.|S|s|s
+mn007|huh.|B|b|b
+me013|if it uh if it's not on the target task then depending on how different it is uh you can get uh a reduction in performance.|S|s|s
+mn007|huh.|B|b|b
+me013|and the question is now how to how to get one and not the other?|Q|qo|qo
+me013|or how to how to ameliorate the the problems.|S|s|s
+mn007|huh.|B|b|b
+me013|um because it it certainly does is nice to have in there when it when there is something like the training data.|S|fh|fh
+mn007|uhhuh.|B|b|b
+mn007|um|F|fg|fg
+mn007|yeah so the the reason yeah the reason is that perhaps the target the task dependency the language dependency and the noise dependency|D|fg|fg
+me013|so that's what you say there.|S|s|s
+me013|i see.|S|s|bk
+mn007|well the but this is still not clear.|S|s|s
+mn007|because|D|s|s
+mn007|um|F|fh|fh
+mn007|i i i don't think we have enough result to talk about the the language dependency.|S|s|s
+mn007|well the timit network is still the best.|S|s|s
+mn007|but there is also the other difference.|S|s|df
+mn007|the fact that it's it's hand labeled.|S|s|df
+me013|hey!|S|s|fe
+me013|um just you can just sit here.|S|s|t3
+me013|uh i i don't think we want to mess with the microphones.|S|s|co
+me013|but it's uh|D|%|%
+me013|just uh have a seat.|S|s|co
+me013|um|F|fh|fh
+me013|summary of the first uh uh forty five minutes is that some stuff work and works and some stuff doesn't.|S|s|t3
+me013|okay.|S|s|bk
+mn007|we still have uh this.|S|s|t
+mn007|one of these perhaps?|Q|qy|d
+fn002|yeah.|B|b|b
+me013|yeah i guess we can do a little better than that.|S|fh|fh
+mn007|huh.|B|b|b
+mn007|uhhuh.|B|b|b
+me013|but i think if you if you start off with the other one actually that sort of has it in words.|S|s|s
+me013|and then that has it the associated results.|S|s|s
+fn002|um|F|fg|fg
+me013|okay.|F|fh|fh
+me013|so you're saying that um um although from what we see|D|s|bs
+me013|yes there's what you would expect in terms of a language dependency and a noise dependency that is uh when the neural net is trained on one of those and tested on something different we don't do as well as in the target thing.|S|s|bs
+me013|but you're saying that uh it is although that general thing is observable so far there's something you're not completely convinced about.|S|s|bs
+me013|and and what is that?|Q|qw|rt
+me013|i mean you say not clear yet.|S|s|e
+me013|what what do you mean?|Q|qw|qw
+mn007|uh i mean the the fact that well for for t i digits the timit net is the best.|S|h|h
+mn007|huh uh.|B|b|b
+mn007|which is the english net.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|but the other are slightly worse.|S|s|rt
+mn007|but you have two two effects the effect of changing language.|S|s|df
+mn007|and the effect of training on something that's viterbi aligned instead of hand hand labeled.|S|s|df
+fn002|yeah.|B|b|b
+mn007|so um|F|fh|fh
+mn007|yeah.|B|b|b
+me013|do you think the alignments are bad?|Q|qy|rt
+me013|i mean have you looked at the alignments at all?|Q|qy|qy
+me013|what the viterbi alignment's doing.|S|s|s
+mn007|huh|F|fh|fh
+mn007|i don't i don't know.|S|s|no
+mn007|did did you look at the spanish alignments carmen?|Q|qy|qy
+fn002|huh no.|S|h|h
+me013|might be interesting to look at it.|S|s|cs
+me013|because i mean that is just looking.|S|s|df
+me013|but um um it's not clear to me you necessarily would do so badly from a viterbi alignment.|S|s|df
+me013|it depends how good the recognizer is.|S|s|df
+mn007|huh.|B|b|b
+me013|that's that the the engine is that's doing the alignment.|S|s|s
+mn007|yeah but but perhaps it's not really the the alignment that's bad.|S|s|am
+mn007|but the just the phoneme string that's used for the alignment.|S|s|cs
+me013|aha!|S|s|bk
+fn002|yeah.|S|s|aa
+mn007|huh.|B|b|b
+me013|the pronunciation models and so forth.|S|s|bs
+mn007|i mean for we|D|s|s
+mn007|it's single pronunciation.|S|s|bk
+mn007|uh|F|fh|fh
+me013|aha!|S|s|fe
+me013|i see.|S|s|bk
+mn007|french french uh phoneme strings were corrected manually.|S|s|s
+mn007|so we asked people to listen to the the sentence.|S|s|s
+mn007|and we gave the phoneme string and they kind of correct them.|S|s|s
+mn007|but still.|S|s|s
+mn007|there there might be errors just in the in in the string of phonemes.|S|s|s
+mn007|huh|F|fh|fh
+mn007|um|F|fh|fh
+mn007|yeah so this is not really the viterbi alignment.|S|fh|fh
+mn007|in fact|D|%|%
+mn007|yeah.|B|b|b
+mn007|um the third the third uh issue is the noise dependency perhaps.|S|fh|fh
+mn007|but well this is not clear yet.|S|s|s
+mn007|because all our nets are trained on the same noises.|S|s|df
+mn007|and|F|fh|fh
+me013|i thought some of the nets were trained with spine and so forth.|S|s|s
+me013|so it and that has other noise.|S|s|s
+mn007|yeah.|S|s|aa
+mn007|so|D|%|%
+mn007|yeah.|F|fh|fh
+mn007|but|D|%|%
+mn007|yeah.|F|fh|fh
+mn007|results are only coming for for this net.|S|s|s
+mn007|huh.|B|b|b
+me013|okay yeah just don't just need more more results there with that that.|S|s|bk
+mn007|yeah.|S|s|aa
+mn007|um|F|fh|fh
+mn007|so uh from these results we have some questions with answers.|S|fg|fg
+mn007|what should be the network input?|Q|qw|qw
+mn007|um p l p work as well as m f c c i mean.|S|s|s
+mn007|um|F|fh|fh
+mn007|but it seems important to use the delta.|S|s|rt
+mn007|uh with respect to the network size|D|s|s
+mn007|there's one experiment that's still running.|S|s|s
+mn007|and we should have the result today.|S|s|s
+mn007|comparing network with five hundred and one thousand units.|S|s|s
+mn007|so|F|fh|fh
+mn007|still no answer actually.|S|s|s
+me013|huh huh.|B|b|b
+mn007|uh the training set|D|s|s
+mn007|well some kind of answer|D|s|s
+mn007|we can we can tell which training set gives the best result.|S|s|s
+mn007|but we don't know exactly why.|S|s|df
+me013|uh right i mean the multi english so far is is the best.|S|fg|fg
+mn007|uh so|D|fh|fh
+mn007|yeah.|B|b|b
+me013|multi multi english just means timit.|S|s|bu
+me013|right?|Q|qy|d
+mn007|yeah.|S|s|aa
+fn002|yeah.|S|s|aa
+me013|so uh that's|D|s|s
+me013|yeah.|B|b|b
+me013|so and and when you add other things in to to broaden it it gets worse uh typically.|S|s|s
+mn007|huh.|B|b|b
+me013|yeah.|B|b|b
+mn007|uhhuh.|B|b|b
+mn007|then uh some questions without answers.|S|s|s
+me013|okay.|B|b|b
+mn007|uh training set.|S|fh|fh
+mn007|um|F|fh|fh
+me013|uhhuh.|B|b|b
+mn007|uh training targets|D|fh|fh
+me013|i like that.|S|s|ba
+me013|the training set is both questions with answers and without answers.|S|s|s
+mn007|it's|D|%|%
+mn007|yeah.|B|b|b
+mn007|yeah.|B|b|b
+me013|it's sort of yes it's it's multi uh purpose.|S|s|s
+mn007|yeah.|B|b|b
+me013|okay.|B|b|b
+mn007|uh training|D|fh|fh
+mn007|right so yeah the training targets actually|D|fh|fh
+mn007|the two of the main issues perhaps are still the language dependency and the noise dependency.|S|s|s
+mn007|and perhaps to try to reduce the language dependency we should focus on finding some other kind of training targets.|S|s|cs
+me013|uhhuh.|B|b|b
+mn007|and labeling labeling seems important.|S|s|s
+mn007|because of timit results.|S|s|df
+me013|uhhuh.|B|b|b
+mn007|uh|F|fh|fh
+mn007|for moment you use we use phonetic targets.|S|s|rt
+mn007|but we could also use articulatory targets soft targets.|S|s|s
+mn007|and perhaps even um use networks that doesn't do classification.|S|s|cs
+mn007|but just regression.|S|s|s
+mn007|so uh train to have neural networks that|D|s|s
+mn007|um um uh|F|fh|fh
+me013|uhhuh.|B|b|b
+mn007|does a regression|D|s|s
+mn007|and well basically compute features and not nnn features without noise i mean uh transform the noisy features in other features that are not noisy.|S|s|cs
+mn007|but continuous features.|S|s|cs
+mn007|not uh uh hard targets.|S|s|e
+me013|uhhuh.|B|b|b
+me013|uhhuh.|B|b|b
+mn007|uh|F|fh|fh
+me013|yeah that seems like a good thing to do probably.|S|fg|fg
+me013|yeah.|F|fh|fh
+me013|not uh again a short term sort of thing.|S|s|s
+mn007|yeah.|B|b|b
+me013|i mean one of the things about that is that um it's|D|s|s
+me013|the i guess the major risk you have there of being is being dependent on very dependent on the kind of noise and and so forth.|S|s|s
+mn007|yeah.|B|b|b
+mn007|but yeah.|B|b|b
+me013|uh but it's another thing to try.|S|fh|fh
+mn007|so this is this is one thing this this could be could help could help perhaps to reduce language dependency.|S|s|s
+mn007|and for the noise part um we could combine this with other approaches like well the kleinschmidt approach.|S|s|s
+mn007|so the the idea of putting all the noise that we can find inside a database.|S|s|s
+me013|uhhuh.|B|b|b
+fn002|yeah.|B|b|b
+mn007|i think kleinschmidt was using more than fifty different noises to train his network.|S|s|s
+mn007|and so this is one approach.|S|s|rt
+me013|uhhuh.|B|b|b
+mn007|and the other is multi band uh that i think is more robust to the noisy changes.|S|s|s
+me013|uhhuh.|B|b|b
+mn007|so perhaps i think something like multi band trained on a lot of noises with uh features based targets could could could help.|S|s|am
+me013|yeah if you it's interesting thought.|S|s|aa
+me013|maybe if you just trained up|D|s|s
+me013|i mean yeah one one fantasy would be you have something like articulatory targets.|S|s|s
+me013|and you have um some reasonable database.|S|s|s
+me013|um|F|fh|fh
+me013|but then which is um copied over many times with a range of different noises.|S|s|s
+mn007|uhhuh.|B|b|b
+me013|and uh if because what you're trying to do is come up with a a core reasonable feature set which is then going to be used uh by the the uh h m m system.|S|s|s
+mn007|huh.|B|b|b
+me013|so|F|fh|fh
+me013|yeah okay.|S|s|bk
+mn007|so|F|fg|fg
+mn007|um yeah.|F|fh|fh
+mn007|the future work is well try to connect to the to make to plug in the system to the o g i.|S|s|s
+mn007|system|D|s|rt
+mn007|um there are still open questions there.|S|s|rt
+me013|uhhuh.|B|b|b
+mn007|where to put the m l p basically.|S|s|s
+mn007|um|F|fh|fh
+me013|and i guess you know the the the real open question|D|s|s
+me013|i mean there's lots of open questions.|S|s|s
+me013|but one of the core quote open questions for that is um um if we take the uh you know the best ones here|D|s|s
+me013|maybe not just the best one.|S|s|s
+me013|but the best few or something.|S|s|s
+me013|you want the most promising group from these other experiments.|S|s|s
+me013|um how well do they do over a range of these different tests not just the italian?|Q|qo|qo
+mn007|huh.|B|b|b
+me013|um|F|fh|fh
+me013|and|D|%|%
+me013|right?|Q|qy|d
+mn007|huh yeah yeah.|S|h|h
+me013|and then um then see again how|D|s|s
+me013|we know that there's a there's a uh a a loss in performance when the neural net is trained on conditions that are different than than uh we're going to test on.|S|s|s
+me013|but well if you look over a range of these different tests um how well do these different ways of combining the straight features with the m l p features uh stand up over that range?|Q|qo|qo
+fn002|uhhuh.|B|b|b
+me013|that's that that seems like the the the real question.|S|s|s
+me013|and if you know that|D|s|s
+me013|so if you just take p l p with uh the double deltas.|S|s|s
+me013|assume that's the the feature.|S|s|s
+me013|look at these different ways of combining it.|S|s|s
+me013|and uh take let's say just take uh multi english.|S|s|s
+me013|cause that works pretty well for the training.|S|s|df
+mn007|uhhuh.|B|b|b
+me013|and just take that case and then look over all the different things.|S|s|s
+me013|how does that how does that compare between the?|Q|qw|qw
+mn007|so all the all the test sets you mean?|Q|qy|bu
+mn007|yeah.|B|b|b
+fn002|yeah.|S|s|aa
+me013|all the different test sets.|S|s|m
+mn007|and|D|%|%
+me013|and for and for the couple different ways that you have of of of combining them.|S|s|e
+mn007|yeah.|B|b|b
+me013|um how well do they stand up over the|D|qw|qw
+fn002|uhhuh.|B|b|b
+mn007|huh.|B|b|b
+mn007|and perhaps doing this for changing the variance of the streams and so on getting different scaling.|S|s|s
+me013|that's another possibility if you have time.|S|s|s
+me013|yeah.|B|b|b
+me013|yeah.|B|b|b
+mn007|um|F|fh|fh
+mn007|yeah so this would be more working on the m l p as an additional path instead of an insert to the to their diagram.|S|s|s
+mn007|because|D|%|%
+mn007|yeah.|B|b|b
+mn007|perhaps the insert idea is kind of strange.|S|s|s
+mn007|because they they make l d a.|S|s|df
+mn007|and then we will again add a network does discriminate that discriminates.|S|s|s
+me013|yeah it's a little strange.|S|s|aap
+mn007|or|F|fh|fh
+me013|but on the other hand they did it before.|S|s|aap
+mn007|huh.|D|b|b
+me013|um|D|fg|fg
+mn007|huh.|B|b|b
+mn007|and and and|F|fg|fg
+mn007|yeah.|F|fg|fg
+mn007|and because also perhaps we know that the when we have very good features the m l p doesn't help.|S|s|df
+mn007|so i don't know.|S|s|bd
+me013|um the other thing though is that|D|fg|fg
+me013|um|F|fh|fh
+me013|so uh we we want to get their path running here.|S|fg|fg
+me013|right?|Q|qy|d
+me013|if so we can add this other stuff.|S|s|s
+mn007|um|F|fh|fh
+me013|as an additional path.|S|s|s
+me013|right?|Q|qy|d
+mn007|yeah the the way we want to do|D|s|aa
+me013|because they're doing l d a rasta?|Q|qy|bu
+mn007|the|D|%|%
+mn007|what?|Q|qw|br
+me013|they're doing l d a rasta.|S|s|r
+mn007|yeah the way we want to do it perhaps is to just to get the v a d labels and the final features.|S|s|aa
+me013|yeah?|Q|qy|d
+mn007|so they will send us the well provide us with the feature files.|S|s|s
+me013|i see.|B|b|b
+me013|i see.|B|b|b
+mn007|and with v a d binary labels.|S|s|s
+mn007|so that we can uh get our m l p features.|S|s|s
+mn007|and filter them with the v a d.|S|s|s
+mn007|and then combine them with their feature stream.|S|s|s
+me013|i see.|F|fg|fg
+mn007|so|D|%|%
+me013|so we so first thing of course we'd want to do there is to make sure that when we get those labels of final features is that we get the same results as them.|S|s|s
+me013|without putting in a second path.|S|s|s
+mn007|uh you mean|D|h|h
+mn007|oh yeah!|S|s|fe
+mn007|just retraining retraining the h t k.|S|s|s
+me013|yeah just just to make sure that we have we understand properly what things are our very first thing to do is to is to double check that we get the exact same results as them on h t k.|S|s|co
+mn007|well|D|%|%
+mn007|oh yeah.|B|b|b
+mn007|yeah okay.|S|s|aa
+mn007|huh.|B|b|b
+me013|uh i mean i don't know that we need to|D|s|s
+fn002|yeah.|B|b|b
+mn007|yeah.|B|b|b
+me013|um do we need to retrain?|Q|qy|rt
+me013|i mean we can just take the their training files also.|S|s|s
+me013|but but uh|F|fh|fh
+me013|just for the testing just make sure that we get the same results so we can duplicate it before we add in another|D|s|co
+mn007|huh.|B|b|b
+mn007|okay.|S|s|aa
+me013|because otherwise you know we won't know what things mean.|S|s|df
+mn007|oh yeah.|S|s|bk
+mn007|okay.|B|b|b
+mn007|and um|F|fg|fg
+mn007|yeah so lograsta|D|fg|fg
+mn007|i don't know if we want to|D|s|s
+mn007|we can try networks with log rasta filtered features.|S|s|cs
+me013|maybe.|S|s|am
+mn007|huh.|B|b|b
+mn007|i'm sorry?|Q|qw|br
+mn007|yeah well|D|s|bk
+mn007|yeah.|B|b|b
+me013|oh you know the other thing is when you say|D|s|s
+mn007|but|D|%|%
+me013|i'm i'm sorry i'm interrupting that.|S|s|fa
+me013|um uh when you're talking about combining multiple features|D|fh|fh
+me013|um suppose we said okay we've got these different features and so forth.|S|s|s
+me013|but p l p seems pretty good.|S|s|ba
+me013|if we take the approach that mike did and have|D|s|s
+mn007|huh.|B|b|b
+me013|i mean one of the situations we have is we have these different conditions.|S|s|s
+me013|we have different languages.|S|s|s
+me013|we have different different noises.|S|s|s
+me013|um if we have some drastically different conditions and we just train up different m l ps with them.|S|s|cs
+mn007|uhhuh.|B|b|b
+me013|and put put them together.|S|s|s
+me013|what what what mike found for the reverberation case at least i mean|D|s|s
+me013|i mean who knows if it'll work for these other ones.|S|s|s
+me013|that you did have nice interpolative effects.|S|s|s
+me013|that is that yes if you knew what the reverberation condition was going to be and you trained for that then you got the best results.|S|s|rt
+me013|but if you had say a heavily reverberation heavy reverberation case and a no reverberation case uh and then you fed the thing uh something that was a modest amount of reverberation then you'd get some result in between the two.|S|s|s
+me013|so it was sort of behaved reasonably.|S|s|s
+me013|is that a fair|D|qy|qy
+me013|yeah.|B|b|b
+mn007|yeah.|B|b|b
+mn007|so you you think it's perhaps better to have several m l ps?|Q|qy|d
+mn007|yeah.|B|b|b
+mn007|but|D|%|%
+me013|it works better if what?|Q|qw|qw
+me013|i see.|S|s|bk
+me013|well see|D|s|s
+me013|you were doing something that was|D|s|s
+me013|so maybe the analogy isn't quite right.|S|s|bd
+me013|you were doing something that was in way a little better behaved.|S|s|s
+me013|you had for a single variable.|S|s|s
+me013|which was uh uh reverberation.|S|s|s
+me013|here the problem seems to be is that we don't have a a really huge net with a really huge amount of training data.|S|s|s
+me013|but we have for this kind of task i would think sort of a modest amount.|S|s|s
+me013|i mean a million frames actually isn't that much.|S|s|s
+me013|we have a modest amount of of uh training data from a couple different conditions.|S|s|s
+me013|and then uh in yeah that and the real situation is that there's enormous variability that we anticipate in the test set in terms of language.|S|s|s
+me013|and noise type.|S|s|s
+me013|uh and uh uh channel characteristic.|S|fh|fh
+me013|sort of all over the map.|S|s|s
+me013|a bunch of different dimensions.|S|s|s
+me013|and so i'm just concerned that we don't really have um the data to train up|D|s|s
+me013|i mean one of the things that we were seeing is that when we added in we still don't have a good explanation for this.|S|s|s
+me013|but we are seeing that we're adding in uh a few different databases.|S|s|s
+me013|and uh the performance is getting worse.|S|fh|fh
+me013|and uh when we just take one of those databases that's a pretty good one it actually is is is is is better.|S|fh|fh
+me013|and uh that says to me yes that you know there might be some problems with the pronunciation models that some of the databases we're adding in or something like that.|S|fh|fh
+me013|but one way or another we don't have uh seemingly the ability to represent in the neural net of the size that we have um all of the variability that we're going to be covering.|S|s|s
+me013|so that i'm i'm i'm hoping that|D|s|s
+me013|um this is another take on the efficiency argument you're making.|S|fh|fh
+me013|which i'm hoping that with moderate size neural nets uh that uh if we if they look at more constrained conditions they they'll have enough parameters to really represent them.|S|s|s
+me013|uhhuh.|B|b|b
+me013|uhhuh.|B|b|b
+me013|uhhuh.|B|b|b
+me013|yeah.|B|b|b
+mn007|so doing both is is not is not right you mean.|S|s|bu
+mn007|or|F|fh|fh
+mn007|yeah.|D|b|b
+me013|yeah.|B|b|b
+me013|i i just sort of have a feeling|D|s|s
+mn007|but yeah.|F|fg|fg
+mn007|huh.|B|b|b
+me013|yeah.|B|b|b
+mn007|uhhuh.|S|s|aa
+me013|i mean the um i think it's true that the o g i folk found that using l d a rasta|D|s|s
+me013|which is a kind of log rasta.|S|s|s
+me013|it's just that they have the|D|s|s
+me013|i mean it's done in the log domain as i recall.|S|s|s
+me013|and it's it uh it's just that they it's trained up.|S|s|s
+me013|right?|Q|qy|d
+me013|that that um benefitted from online normalization.|S|s|s
+me013|so they did at least in their case it did seem to be somewhat complimentary.|S|s|bs
+me013|so will it be in our case where we're using the neural net?|Q|qo|qo
+me013|i mean they they were not not using the neural net.|S|s|s
+me013|uh i don't know.|S|s|bd
+me013|okay so the other things you have here are uh trying to improve results from a single|D|s|bk
+me013|yeah.|S|s|bk
+me013|make stuff better.|S|s|bs
+me013|okay.|S|s|bk
+me013|uh yeah.|F|fh|fh
+me013|and c p u memory issues.|S|s|s
+me013|yeah.|B|b|b
+me013|we've been sort of ignoring that.|S|s|s
+me013|haven't we?|Q|qy|g
+me013|but|D|%|%
+mn007|yeah so i don't know.|S|s|aa
+me013|yeah but i|D|fg|fg
+mn007|but we have to address the problem of c p u and memory we|D|qy|d
+me013|well i think my impression|D|s|s
+me013|you you folks have been looking at this more than me.|S|s|bd
+me013|but my impression was that uh there was a a a a strict constraint on the delay.|S|s|s
+fn002|yeah.|B|b|b
+me013|but beyond that it was kind of that uh using less memory was better.|S|s|s
+me013|and using less c p u was better.|S|s|s
+me013|something like that.|S|s|s
+me013|right?|Q|qy|d
+mn007|yeah but|D|s|bk
+mn007|yeah.|B|b|b
+mn007|so yeah but we've|D|fg|fg
+mn007|i don't know.|S|s|no
+mn007|we have to get some reference point to where we|D|s|s
+mn007|well what's a reasonable number?|Q|qo|qo
+mn007|perhaps because if it's if it's too large or large.|S|s|s
+mn007|or|F|fh|fh
+me013|um well i don't think we're um completely off the wall.|S|h|h
+me013|i mean i think that if we if we have|D|s|s
+me013|uh i mean the ultimate fall back that we could do|D|s|s
+me013|if we find|D|s|s
+me013|uh|F|fh|fh
+me013|i mean we may find that we we're not really going to worry about the m l p.|S|s|s
+me013|you know if the m l p ultimately after all is said and done doesn't really help then we won't have it in.|S|s|s
+mn007|huh.|B|b|b
+me013|if m l p does we find help us enough in some conditions uh we might even have more than one m l p.|S|s|s
+me013|we could simply say that is uh done on the uh server.|S|s|s
+mn007|huh.|B|b|b
+me013|and it's|D|s|s
+me013|uh|F|fh|fh
+me013|we do the other manipulations that we're doing before that.|S|s|s
+me013|so i i i think i think that's that's okay.|S|s|ba
+mn007|and yeah.|F|fg|fg
+me013|so i think the key thing was um this plug into o g i.|S|s|s
+me013|um|F|fh|fh
+me013|what what are they what are they going to be working|D|qw|qw
+me013|do we know what they're going to be working on while we take their features?|Q|qy|rt
+mn007|they're they're starting to work on some kind of multi band.|S|s|rt
+me013|and|F|fh|fh
+mn007|so um|F|fh|fh
+mn007|this that was pratibha.|S|s|rt
+mn007|sunil|D|s|s
+mn007|what was he doing?|Q|qw|rt
+mn007|do you remember?|Q|qy|rt
+fn002|sunil?|Q|qy|br
+mn007|yeah.|S|s|aa
+mn007|he was doing something new?|Q|qy|d
+mn007|or|D|qrr|qrr
+fn002|i i don't i didn't remember.|S|s|no
+fn002|maybe he's working with neural network.|S|s|am
+mn007|i don't think so.|S|s|s
+mn007|trying to tune|D|s|s
+mn007|networks?|Q|qy|br
+fn002|yeah i think so.|S|s|am
+mn007|i think they were also mainly|D|s|s
+mn007|well working a little bit of new things like networks and multi band.|S|s|s
+mn007|but mainly trying to tune their their system as it is now.|S|s|s
+mn007|just trying to get the best from this this architecture.|S|s|s
+fn002|yeah.|S|s|aa
+me013|okay.|S|s|bk
+mn007|uh|F|fh|fh
+me013|so i guess the way it would work is that you'd get|D|s|s
+me013|there'd be some point where you say okay this is their version one or whatever.|S|s|s
+me013|and we get these v a d labels and features and so forth for all these test sets from them.|S|s|s
+mn007|uhhuh.|B|b|b
+me013|and then um uh that's what we work with.|S|fh|fh
+me013|we have a certain level we try to improve it with this other path.|S|s|cs
+me013|and then um uh when it gets to be uh january|D|s|cs
+me013|some point|D|s|s
+me013|uh we say okay we we have shown that we can improve this in this way.|S|s|s
+me013|so now uh um what's your newest version.|S|s|cs
+me013|and then maybe they'll have something that's better.|S|s|s
+me013|and then we we'd combine it.|S|s|s
+me013|this is always hard.|S|s|s
+me013|i mean i i i used to work with uh folks who were trying to improve a good uh h m m system with uh with a neural net system.|S|s|s
+me013|and uh it was common problem that you'd|D|s|s
+me013|oh and this actually this is true not just for neural nets.|S|s|s
+me013|but just for in general if people were working with uh rescoring uh n best lists or lattices that come came from uh a mainstream recognizer.|S|s|s
+me013|uh you get something from the the other site at one point and you work really hard on making it better with rescoring.|S|s|s
+me013|but they're working really hard too.|S|s|s
+me013|so by the time you have uh improved their score they have also improved their score.|S|s|s
+mn007|huh.|B|b|b
+me013|and now there isn't any difference.|S|s|s
+mn007|yeah.|B|b|b
+me013|because the other|D|s|df
+fn002|yeah.|B|b|b
+me013|so um i guess at some point we'll have to|D|s|s
+mn007|so it's|D|s|s
+me013|uh uh|F|fh|fh
+me013|i i don't know.|S|s|bd
+me013|i think we're we're integrated a little more tightly than happens in a lot of those cases.|S|s|s
+me013|i think at the moment they they say that they have a better thing we can we|D|s|s
+me013|what takes all the time here is that we're trying so many things.|S|s|s
+mn007|huh.|B|b|b
+me013|presumably uh in a in a day we could turn around.|S|s|s
+me013|uh taking a new set of things from them and and rescoring it.|S|s|s
+mn007|huh huh.|B|b|b
+me013|right?|Q|qy|d
+me013|so|F|fh|fh
+mn007|yeah perhaps we could.|S|s|aa
+me013|yeah.|S|s|bk
+me013|well okay.|S|s|bk
+me013|no this is i think this is good.|S|s|ba
+me013|i think that the most wide open thing is the issues about the uh you know different trainings.|S|s|s
+me013|you know training targets and noises and so forth.|S|s|f
+mn007|huh.|B|b|b
+me013|that's sort of wide open.|S|s|s
+mn007|so we we can for we we can forget combining multiple features and m l g perhaps?|Q|qy|d
+mn007|or focus more on the targets and on the training data?|Q|qrr|d
+mn007|and|F|fh|fh
+me013|yeah i think for right now um i i i really liked m s g.|S|s|bk
+me013|and i think that you know one of the things i liked about it is has such different temporal properties.|S|s|s
+me013|and um i think that there is ultimately a really good uh potential for you know bringing in things with different temporal properties.|S|fh|fh
+me013|um but um uh|F|fh|fh
+me013|we only have limited time.|S|s|s
+me013|and there's a lot of other things we have to look at.|S|s|s
+mn007|huh.|B|b|b
+me013|and it seems like much more core questions are issues about the training set.|S|s|s
+me013|and the training targets.|S|s|s
+me013|and fitting in uh what we're doing with what they're doing.|S|s|s
+me013|and you know with limited time.|S|s|s
+me013|yeah.|B|b|b
+me013|i think we have to start cutting down.|S|s|cs
+me013|so uh|F|fh|fh
+mn007|huh.|B|b|b
+me013|i think so.|S|s|s
+me013|yeah.|F|fh|fh
+me013|and then you know once we|D|s|s
+me013|um having gone through this process and trying many different things i would imagine that certain things uh come up that you are curious about.|S|s|s
+me013|uh that you'd not getting to.|S|s|s
+me013|and so when the dust settles from the evaluation uh i think that would time to go back and take whatever intrigued you most.|S|s|s
+me013|you know got you most interested.|S|s|s
+me013|uh and uh and and work with it you know for the next round.|S|fh|fh
+me013|uh as you can tell from these numbers uh nothing that any of us is going to do is actually going to completely solve the problem.|S|s|s
+me013|so|F|fh|fh
+mn007|huh.|B|b|b
+me013|so there'll still be plenty to do.|S|s|s
+me013|barry you've been pretty quiet.|S|s|t
+me006|just listening.|S|s|s
+me013|well i figured that.|S|s|rt
+me013|but that what what what were you involved in in this primarily?|Q|qw|rt
+me006|um helping out uh preparing.|S|h|h
+me006|well they've been kind of running all the experiments and stuff.|S|s|s
+me006|and i've been uh uh doing some work on the on the preparing all all the data for them to to um train and to test on.|S|s|s
+me006|um|F|fh|fh
+me006|yeah right now i'm i'm focusing mainly on this final project i'm working on in jordan's class.|S|fh|fh
+me013|uh.|S|s|bk
+me013|i see.|S|s|bk
+me006|yeah.|B|b|b
+me013|right.|B|b|b
+me013|what's what's that?|Q|qw|qw
+me006|um i'm trying to|D|s|s
+me006|um so there was a paper in i c s l p about um this this multi band um belief net structure this guy did.|S|fh|fh
+me013|uhhuh.|B|b|b
+me006|uh basically it was two h m ms with with a with a dependency arrow between the two h m ms.|S|s|s
+me013|uhhuh.|B|b|b
+me006|and so i want to try try coupling them instead of having an arrow that that flows from one sub band to another sub band.|S|s|s
+me006|i want to try having the arrows go both ways.|S|s|s
+me006|and um i'm just going to see if if that that better models um uh asynchrony in any way.|S|fh|fh
+me006|or um yeah.|F|fh|fh
+me013|oh.|S|s|bk
+me013|okay.|S|s|bk
+me013|well that sounds interesting.|S|s|ba
+me006|yeah.|S|s|bk
+me013|okay.|S|s|bk
+me013|all right.|S|s|bk
+me013|anything to you wanted to|D|qo|rt
+me013|no.|S|s|bk
+me013|okay.|S|s|bk
+me013|silent partner in the in the meeting.|S|s|ba
+me013|we got a laugh out of him.|S|s|s
+me013|that's good.|S|s|ba
+me013|okay everyone must contribute to the our our sound sound files here.|S|s|s
+me013|okay so speaking of which if we don't have anything else that we need|D|fg|fg
+me013|you happy with where we are?|Q|qy|d
+me013|know know know where we're going?|Q|qy|d
+mn007|huh.|B|b|b
+me013|uh|F|fh|fh
+mn007|i think so yeah.|S|s|aa
+me013|yeah yeah.|S|s|bk
+me013|you you happy?|Q|qy|d
+fn002|uhhuh.|S|s|aa
+me013|you're happy.|S|s|bk
+me013|okay everyone should be happy.|S|s|s
+me013|okay.|S|s|bk
+me013|you don't have to be happy.|S|s|s
+me013|you're almost done.|S|s|rt
+me013|yeah yeah.|S|s|bk
+me013|okay.|S|s|bk
+me026|actually i should mention|D|s|t
+me026|so if um about the linux machine.|S|s|s
+me026|swede.|S|s|rt
+me013|yeah.|S|s|bk
+me026|so it looks like the um normal neural net tools are installed there.|S|s|s
+mn007|huh.|B|b|b
+me026|and um dan ellis i believe knows something about using that machine.|S|s|s
+me026|so|F|fh|fh
+me026|if people are interested in in getting jobs running on that maybe i could help with that.|S|s|cs
+mn007|huh.|D|b|b
+mn007|yeah but i don't know if we really need now a lot of machines.|S|s|bk
+mn007|well we could start computing another huge table.|S|s|aap
+mn007|but|F|fh|fh
+mn007|yeah we|D|%|%
+me013|well yeah i think we want a different table at least.|S|fg|fg
+mn007|yeah sure.|S|s|aa
+me013|right?|Q|qy|d
+me013|i mean there's there's some different things that we're trying to get at now.|S|s|s
+mn007|but|F|fh|fh
+me013|but|F|fh|fh
+mn007|yeah.|B|b|b
+mn007|huh.|B|b|b
+me013|so yeah as far as you can tell you're actually okay on on c p u uh for training and so on?|Q|qy|bu
+me013|yeah.|D|b|b
+mn007|uh yeah i think so.|S|s|aa
+mn007|well more is always better.|S|s|arp
+mn007|but huh|F|fh|fh
+mn007|i don't think we have to train a lot of networks now that we know.|S|s|s
+mn007|we just select what works fine.|S|s|s
+me013|okay.|S|s|bk
+me013|okay.|B|b|b
+fn002|yeah.|B|b|b
+mn007|and try to improve this.|S|s|s
+me013|and we're okay on and we're okay on disk?|Q|qy|d
+fn002|to work|D|%|%
+mn007|and|F|fh|fh
+mn007|it's okay yeah.|S|s|aa
+mn007|well sometimes we have some problems.|S|s|ng
+fn002|some problems with the|D|s|2
+me013|but they're correctable uh problems.|S|s|s
+fn002|you know.|S|s|s
+mn007|yeah restarting the script basically.|S|s|aa
+mn007|and|D|%|%
+me013|yes.|S|s|bk
+me013|yeah i'm familiar with that one.|S|s|bd
+me013|okay.|F|fh|fh
+me013|all right.|S|s|t
+me013|so uh since uh we didn't get a channel on for you you don't have to read any digits.|S|fh|fh
+me013|but the rest of us will.|S|s|s
+me013|uh is it on?|Q|qy|rt
+me013|well we didn't.|S|s|s
+me013|uh|F|fh|fh
+me013|i think i won't touch anything.|S|s|s
+me013|because i'm afraid of making the driver crash.|S|s|df
+me013|which it seems to do pretty easily.|S|s|s
+me013|okay thanks.|S|s|ft
+me013|okay so we'll uh i'll start off the|D|s|bk
+me013|uh um|F|fh|fh
+me013|connect the|D|s|co
+mn007|my battery is low.|S|s|s
+me013|well let's hope it works.|S|s|s
+me013|maybe you should go first and see.|S|s|co
+me013|so that you're okay.|S|s|df
+fn002|batteries.|D|%|%
+me006|yeah your battery's going down too.|S|fg|fg

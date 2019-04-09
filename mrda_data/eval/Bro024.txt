@@ -1,1900 +1,1899 @@
-me013|so uh|F
-me013|yeah.|F
-me013|the suggestion was to have these guys start to|D
-me018|okay.|B
-me018|why don't you go ahead dave?|Q
-me026|okay.|S
-me026|um|F
-me026|so yeah the this past week i've been mainly occupied with um getting some results from the s.r.i. system trained on this short hub five training set for the mean subtraction method.|S
-me026|and um|F
-me026|i ran some tests last night.|S
-me026|but um|F
-me026|the results are suspicious.|S
-me026|um it's um because they're the baseline results are worse than um andreas than results andreas got previously.|S
-me026|and it could have something to do with um|D
-me018|that's on digits?|Q
-me026|that's on digits.|S
-me026|it it it could it could have something to do with um downsampling.|S
-me018|huh.|B
-me026|that's that's worth looking into.|S
-me026|um|F
-me026|and um|F
-me026|apart from that i guess the the main thing i have i have to talk is um where i'm planning to go over the next week.|S
-me026|um|F
-me026|so i've been working on integrating this mean subtraction approach into the smartkom system.|S
-me026|and there's this question of well so um in my tests before with h.t.k.i. found it worked it worked the best with about twelve seconds of data used to estimate the mean.|S
-me026|but we'll often have less in the smartkom system.|S
-me026|um|F
-me026|so i think we'll use as much data as we have at a particular time.|S
-me026|and we'll we'll concatenate utterances together um to get as much data as we possibly can from the user.|S
-me026|but um there's a question of how to set up the models so um we could train the models.|S
-me026|if we think twelve seconds is ideal we could train the models using twelve seconds to calculate the mean to mean subtract the training data.|S
-me026|or we could um use some other amount.|S
-me026|so like i did an experiment where i um was using six seconds in test.|S
-me026|um but for i tried twelve seconds in train.|S
-me026|and i tried um um the same in train.|S
-me026|i'm i tried six seconds in train.|S
-me026|and six seconds in train was about point three percent better.|S
-me026|um and um it's not clear to me yet whether that's something significant.|S
-me026|so i want to do some tests and um actually make some plots of um for a particular amount of data and test what happens if you vary the amount of data in train.|S
-me018|uhhuh.|S
-me013|uh guenter i don't know if you followed this stuff but this is uh a uh uh long-term long-term window f.f.t.'s.|S
-mn058|yeah.|S
-me013|yeah.|S
-me013|yeah he you talked about it.|S
-mn058|we we spoke about it already.|S
-me013|oh okay.|S
-mn058|yeah.|S
-me013|so you know what he's doing.|S
-me013|all right.|S
-me026|so i was i actually ran the experiments mostly.|S
-me026|and i i was i was hoping to have the plots with me today.|S
-me026|i just didn't get to it.|S
-me026|but um|F
-me026|yeah i i would be curious about people's feedback on this.|S
-me026|because i'm i i think there are some i think it's it's kind of like a a bit of a tricky engineering problem.|S
-me026|i'm trying to figure out what's the optimal way to set this up.|S
-me026|so um i'll try to make the plots and then put some postscript up on my on my web page.|S
-me026|and i'll mention it in my status report if people want to take a look.|S
-me013|you could clarify something for me.|S
-me013|you're saying point three percent.|S
-me013|you take a point three percent hit when the training and testing links are don't match or something?|Q
-me013|is that what it is?|Q
-me013|or|D
-me026|well it|D
-me026|i i don't think it it's just for any mismatch you take a hit.|S
-me013|yeah.|B
-me026|in some cases it might be better to have a mismatch.|S
-me013|yeah.|B
-me026|like i think i saw something like like if you only have two seconds in test or um maybe it was something like four seconds you actually do a little better if you um train on six seconds than if you train on four seconds.|S
-me013|right.|B
-me026|um|F
-me026|but the case uh with the point three percent hit was using six seconds in test um comparing train on twelve seconds versus train on six seconds.|S
-me013|and which was worse?|Q
-me026|the train on twelve seconds.|S
-me013|okay.|S
-me013|but point three percent uh from what to what?|Q
-me013|that's point three percent.|S
-me026|on the the the accuracies went from it was something vaguely like ninety five point six accuracy um improved to ninety five point nine when i|D
-me013|so four point four to four point one.|S
-me026|okay.|S
-me013|so yeah.|F
-me013|so about a about an eight percent uh seven or eight percent relative.|S
-me026|okay.|S
-me013|uh|F
-me013|yeah.|F
-me013|well i think in a you know if if you were going for an evaluation system you'd care.|S
-me013|but if you were doing a live system that people were actually using nobody would notice.|S
-me013|it's uh i think the thing is to get something that's practical that that you could really use.|S
-me026|huh.|S
-me026|that's that's interesting.|S
-me026|all right the uh i see your point.|S
-me026|i guess i was thinking of it as um an interesting research problem.|S
-me013|yeah.|S
-me026|the how to i was thinking that for the a.s.r.u. paper we could have a section saying for smartkom we we in we tried this approach in uh interactive system which i don't think has been done before.|S
-me013|uhhuh.|B
-me013|uhhuh.|B
-me026|and and then there was two research questions from that.|S
-me026|and one is the does it still work if you just use the past history.|S
-me013|uhhuh.|B
-me026|all right.|S
-me026|and the other was this question of um what i was just talking about now.|S
-me026|so i guess that's why i thought it was interesting.|S
-me013|i mean a short time f.f.t. short time cepstrum calculation uh mean mean calculation work that people have in commercial systems they do this all the time.|S
-me013|they the they calculate it from previous utterances and then use it you know.|S
-me026|yeah.|B
-me026|um|B
-me013|but but uh|F
-me013|as you say there hasn't been that much with this long longtime uh spectra work.|S
-me013|uh|F
-me026|oh oh okay.|S
-me026|so that's that's that's standard.|S
-me026|um|F
-me013|yeah.|S
-me013|pretty common.|S
-me013|yeah.|S
-me026|okay.|S
-me013|um|F
-me013|but uh|F
-me013|yes.|F
-me013|no it is interesting.|S
-me013|and the other thing is i mean there's two sides to these really small uh gradations in performance.|S
-me013|um i mean on the one hand in a practical system if something is uh four point four percent error four point one percent error people won't really tell be able to tell the difference.|S
-me013|on the other hand when you're doing uh research you may uh you might find that the way that you build up a change from a ninety five percent accurate system to a ninety eight percent accurate system is through ten or twelve little things that you do that each are point three percent.|S
-me013|so so the they they it's i don't mean to say that they're they're irrelevant.|S
-me013|uh they are relevant.|S
-me013|but um for a demo you won't see it.|S
-me026|uhhuh.|B
-me026|right.|S
-me026|okay.|S
-me013|yeah.|B
-me026|and um|F
-me026|let's let's see.|F
-me026|um|F
-me026|okay.|S
-me026|and then there's um another thing i want to start looking at um is um the choice of the analysis window length.|S
-me026|so i've just been using two seconds.|S
-me026|just because that's what carlos did before.|S
-me026|uh i wrote to him asking about he chose the two seconds.|S
-me026|and it seemed like he chose it a bit informally.|S
-me026|so um|F
-me026|with the with the h.t.k. set-up i should be able to do some experiments on just varying that length.|S
-me026|say between one and three seconds in a few different reverberation conditions.|S
-me026|um say this room and also a few of the artificial impulse responses we have for reverberation.|S
-me026|just um making some plots and seeing how they look.|S
-me026|and um|F
-me026|so|F
-me026|with the the sampling rate i was using one second or two seconds or four seconds is at a power of two um number of samples.|S
-me026|and um i'll i'll for the ones in between i guess i'll just zero pad.|S
-me013|uhhuh.|B
-me013|i guess one thing that might also be an issue uh because part of what you're doing is you're getting a a spectrum over a bunch of different kinds of speech sounds.|S
-me013|um|F
-me013|and so it might matter how fast someone was talking for instance.|S
-me026|oh.|S
-me013|you know if you if if if there's a lot of phones in one second maybe you'll get a a really good sampling of all these different things.|S
-me013|and and uh on the other hand if someone's talking slowly maybe you'd need more.|S
-me013|so|F
-me013|i don't know if you have some samples of faster or slower speech.|S
-me026|huh.|B
-me013|but it might make a difference.|S
-me013|i don't know.|S
-me026|uh yeah.|S
-me026|i don't i don't think the t.i. digits data that i have um is would be appropriate for that.|S
-me013|yeah probably not.|S
-me013|yeah.|S
-me026|but what do you what about if i i fed it through some kind of um speech processing algorithm that changed the speech rate?|Q
-me013|yeah but then you'll have the degradation of of uh whatever you do uh added onto that.|S
-me013|but maybe.|S
-me013|yeah.|S
-me013|maybe if you get something that sounds that that's does a pretty job at that.|S
-me026|yeah.|S
-me026|well uh just if you think it's worth looking into.|S
-me013|you could imagine that.|S
-me026|i mean it it is getting a little away from reverberation.|S
-me013|um yeah.|S
-me013|it's just that you're making a choice.|S
-me013|uh i was thinking more from the system aspect if you're making a choice for smartkom that that that it might be that it's it the optimal number could be different depending on|D
-me026|yeah.|B
-me026|right.|S
-me013|could be.|S
-me013|i don't know.|D
-me026|and and the third thing um uh is um barry explained l.d.a. filtering to me yesterday.|S
-me026|and so um mike shire in his thesis um did a a series of experiments um training l.d.a. filters in on different conditions.|S
-me026|and you were interested in having me repeat this for|D
-me026|for this mean subtraction approach?|Q
-me026|is is that right?|Q
-me026|or for these long analysis windows i guess is the right way to put it.|S
-me013|i guess the the the issue i was the general issue i was bringing up was that if you're have a moving moving window uh a a a set of weights times things that uh move along shift along in time that you have in fact a linear time invariant filter.|S
-me013|and you just happened to have picked a particular one by setting all the weights to be equal.|S
-me013|and so the issue is what are some other filters that you could use uh in that sense of filter.|S
-me026|uhhuh.|B
-me013|and um|F
-me013|as i was saying i think the simplest thing to do is not to train anything but just to do some sort of uh uh hamming or hanning uh kind of window kind of thing.|S
-me026|right.|S
-me026|uhhuh.|S
-me013|just sort of to de emphasize the jarring.|S
-me013|so i think that would sort of be the first thing to do.|S
-me013|but then yeah the l.d.a. uh is interesting because it would sort of say well suppose you actually trained this up to do the best you could by some criterion.|S
-me013|what would the filter look like then?|Q
-me026|uhhuh.|B
-me013|uh|F
-me013|and um|F
-me013|that's sort of what we're doing in this aurora stuff.|S
-me013|and uh|F
-me013|it's still not clear to me in the long run whether the best thing to do would be to do that or to have some stylized version of the filter that looks like these things you've trained up because you always have the problem that it's trained up for one condition and it isn't quite right for another.|S
-me013|so|F
-me013|uh that's that's why that's why rasta filter has actually ended up lasting a long time.|S
-me013|people still using it quite a bit because you don't change it.|S
-me013|so|F
-me013|doesn't get any worse.|S
-me013|uh|F
-me026|huh.|B
-me013|anyway.|F
-me026|okay.|F
-me026|so um|F
-me026|actually i was just thinking about what i was asking about earlier which is about having less than say twelve seconds in the smartkom system to do the mean subtraction.|S
-me026|you said in systems where you use cepstral mean subtraction they concatenate utterances.|S
-me026|and do you know how they address this issue of um testing versus training?|Q
-me026|can|D
-mn058|i think what they do is they do it always online.|S
-me013|go ahead.|D
-mn058|i mean that you just take what you have from the past.|S
-mn058|that you calculate the mean of this and subtract the mean.|S
-me026|okay.|S
-me026|um|F
-mn058|and then you can yeah you you can increase your window while you get while you are getting more samples.|S
-me026|okay.|S
-me026|um|F
-me026|and um so so in in that case what do they do when they're um performing the cepstral mean subtraction on the training data?|Q
-me026|so because you'd have hours and hours of training data.|S
-me026|so do they cut it off and start over?|Q
-me026|at intervals.|S
-me026|or|D
-mn058|so do you have uh you you mean you have files which are hours of hours long?|Q
-mn058|or|D
-me026|oh well no.|S
-me026|i guess not.|S
-mn058|yeah.|S
-me026|but|D
-mn058|i mean usually you have in the training set you have similar conditions.|S
-mn058|i mean file lengths are i guess the same order or in the same size as for test data or|D
-mn058|aren't they?|Q
-me026|okay.|S
-me026|but it's|D
-me026|okay.|S
-me026|so if someone's interacting with the system though uh morgan uh morgan said that you would tend to um chain utterances together.|S
-me026|um|F
-me013|well i think what i was i thought what i was saying was that um at any given point you are going to start off with what you had from before.|S
-me026|oh.|B
-me013|from|D
-me013|and so if you're splitting things up into utterances.|S
-me013|so for instance in a dialogue system where you're going to be asking uh you know for some information there's some initial something.|S
-me013|and you know the first time out you you might have some general average.|S
-me013|but you you you don't have very much information yet.|S
-me013|but at after they've given one utterance you've got something.|S
-me013|you can compute your mean cepstra from that.|S
-me026|uhhuh.|B
-me013|and then can use it for the next thing that they say.|S
-me013|uh|F
-me013|so that you know the performance should be better that second time.|S
-me013|um|F
-me013|and i think the heuristics of exactly how people handle that and how they handle their training i'm sure vary from place to place.|S
-me013|but i think the ideally it seems to me anyway that you you would want to do the same thing in training as you do in test.|S
-me013|but that's that's just uh a prejudice.|S
-me013|and i think anybody working on this with some particular task would experiment.|S
-me026|right.|S
-me026|i i guess the question i had was um amount of data was the amount of data that you'd give it to um update this estimate.|S
-me026|because say you if you have say five thousand utterances in your training set um and you you keep the mean from the last utterance.|S
-me026|by the time it gets to the five thousandth utterance|D
-me013|no but those are all different people with different i mean in|D
-me013|so for instance in in the in a telephone task these are different phone calls.|S
-me013|so you don't want to chain it together from a from a different phone call.|S
-me026|okay.|S
-me026|so so so they would|D
-me013|so it's within speaker.|S
-mn058|yeah.|B
-me013|within phone call.|S
-me013|if it's a dialogue system it's within whatever this characteristic you're trying to get rid of is expected to be consistent over.|S
-mn058|huh.|B
-me026|and it|D
-me013|right?|Q
-me026|right.|S
-me026|okay.|S
-me026|so you'd you and so in training you would start over at at every new phone call or at every new speaker.|S
-me013|yeah.|S
-me026|yeah.|F
-me026|okay.|S
-me013|yeah.|S
-me013|now you know maybe you'd use something from the others.|S
-me013|just because at the beginning of a call you don't know anything.|S
-me013|and so you might have some kind of general thing that's your best guess to start with.|S
-me013|but|D
-me013|so i i|D
-me013|you know a lot of these things are proprietary.|S
-me013|so we're doing a little bit of guesswork here.|S
-me013|i mean what do what do people do who really face these problems in the field?|Q
-me013|well they have companies.|S
-me013|and they don't tell other people exactly what they do.|S
-me013|but but i mean when you the the hints that you get from what they when they talk about it are that they do they all do something like this.|S
-me026|right.|B
-me026|right.|S
-me026|okay.|S
-me026|i see.|S
-me026|because i so this smartkom task first off it's this t.v. and movie information system.|S
-me013|yeah but you might have somebody who's using it.|S
-me026|and|D
-me013|and then later you might have somebody else who's using it.|S
-me026|yeah.|B
-me026|yeah.|B
-me013|and so you'd want to set some|D
-me026|right.|S
-me026|right.|S
-me026|i i see.|S
-me026|i was i was about to say so if if you ask it what what movies are on t.v. tonight.|S
-me013|yeah.|S
-me013|yeah.|B
-me026|if i look at my wristwatch when i say that it's about two seconds.|S
-me013|yeah.|B
-me026|the way i currently have the mean subtraction um set up the the analysis window is two seconds.|S
-me026|so what you just said about what do you start with raises a question of what do i start with then.|S
-me013|uhhuh.|B
-me026|i guess it because|D
-me013|well.|F
-me013|okay.|S
-me013|so in that situation though maybe what's a little different there is i think you're talking about there's only one|D
-me013|it it it also depends|D
-me013|we're getting a little off track here.|S
-me026|oh.|S
-me013|but but but|F
-me026|right.|S
-me013|uh there's been some discussion about whether the work we're doing in that project is going to be for the kiosk or for the mobile or for both.|S
-me013|and i think for this kind of discussion it matters.|S
-me013|if it's in the kiosk then the physical situation is the same.|S
-me013|it's going to you know the exact interaction of the microphone's going to differ depending on the person and so forth.|S
-me013|but at least the basic acoustics are going to be the same.|S
-me013|so if it's really in one kiosk then i think that you could just chain together and and you know as much as much speech as possible to|D
-me013|because what you're really trying to get at is the is the reverberation characteristic.|S
-me026|yeah.|S
-me013|but in in the case of the mobile uh presumably the acoustic's changing all over the place.|S
-me026|right.|S
-me013|and in that case you probably don't want to have it be endless because you want to have some sort of it's it's not a question of how long do you think it's you can get an approximation to a stationary something given that it's not really stationary.|S
-me026|right.|S
-mn058|huh.|B
-me026|right.|S
-me013|so|F
-me026|and i i i guess i just started thinking of another question.|S
-me026|which is for for the very first frame what what do i do.|S
-me026|if i'm if i take if i use that frame to calculate the mean then i'm just going to get nothing.|S
-me013|uhhuh.|B
-me013|right.|S
-me026|um|F
-me026|so i should probably have some kind of default mean for the first couple of frames.|S
-me013|yeah.|S
-me013|yeah.|S
-me026|okay.|S
-me013|yeah.|S
-me013|or subtract nothing.|S
-me013|i mean it's|D
-me026|or subtract nothing.|S
-me026|and and that's that's i guess that's something that's people have figured out how to deal with in cepstral mean subtraction as well?|Q
-me013|yeah yeah.|B
-me013|yeah people do something.|S
-me013|they they uh they have some um|D
-me013|uh|F
-me013|in in cepstral mean subtraction for short-term window analysis windows as is usually done you're trying to get rid of some very general characteristic.|S
-me013|and so uh if you have any other information about what a general kind of characteristic would be then you you can do it there.|S
-me018|you can also|D
-me018|you can also reflect the data.|S
-me018|so you take uh|D
-me018|you know.|F
-me018|i'm not sure how many frames you need.|S
-me018|but you take that many from the front and flip it around to as the negative value.|S
-me026|uhhuh.|B
-me013|yeah.|S
-me013|that's|D
-me018|so you can always|D
-me013|yeah.|B
-me013|the other thing is that and and i i remember b.b.n. doing this is that if you have a multi pass system um if the first pass it takes most of the computation the second and the third pass could be very very quick.|S
-me013|just looking at a relatively small small uh space of hypotheses.|S
-me026|huh.|B
-me026|uhhuh.|B
-me013|then you can do your first pass without any subtraction at all.|S
-me026|oh.|B
-me013|and then your second pass uh uh eliminates those most of those hypotheses by uh by having an improved improved version of the analysis.|S
-me026|okay.|B
-me026|okay.|S
-me013|so|F
-me026|okay.|B
-me026|so that was all i had for now.|S
-me013|yeah.|S
-me018|do you want to go barry?|Q
-me006|yeah.|S
-me006|okay.|S
-me006|um so for the past uh week or two i've been just writing my uh formal thesis proposal.|S
-me006|um so i'm taking this qualifier exam that's coming up in two weeks.|S
-me006|and i i finish writing a proposal and submit it to the committee.|S
-me006|um|F
-me006|and uh should i should i explain uh more about what what i'm proposing to do and and stuff?|Q
-me013|yes briefly.|S
-me018|yeah briefly.|S
-me006|okay.|S
-me006|um|F
-me006|so briefly i'm proposing to do a a new approach to speech recognition using um a combination of uh multi band ideas and ideas um about the uh acoustic phonetic approach to speech recognition.|S
-me006|um so i will be using these graphical models that um that implement the multi band approach to recognize a set of intermediate categories that might involve uh things like phonetic features or other other feature things that are more closely related to the acoustic signal itself.|S
-me006|um and the hope in all of this is that by going multi band and by going into these um intermediate classifications that we can get a system that's more robust to to unseen noises and situations like that.|S
-me006|um|F
-me006|and so|F
-me006|some of the research issues involved in this are um one what kind of intermediate categories do we need to classify.|S
-me006|um another one is um what what other types of structures in these multi band graphical models should we consider in order to um combine evidence from the sub bands.|S
-me006|and uh the third one is how do we how do we merge all the uh information from the individual uh multi band classifiers to come up with word word recognition or or phone recognition things.|S
-me006|um|F
-me006|so basically that's that's what i've been doing.|S
-me018|so you've got two weeks huh?|S
-me006|and|F
-me006|i got two weeks to brush up on um presentation stuff.|S
-me006|and um|F
-me013|oh i thought you were finishing your thesis in two weeks.|S
-me006|but|F
-me006|oh that too.|S
-me013|yeah.|S
-me006|yeah.|D
-me018|are you going to do any dry runs for your thing?|Q
-me018|or are you just going to|D
-me006|yes.|S
-me006|yes.|S
-me006|i um i'm i'm going to do some.|S
-me006|would you be interested?|Q
-me018|sure.|S
-me006|to help out.|S
-me018|sure.|S
-me006|okay.|S
-me006|thanks.|S
-me006|yeah.|F
-me018|is that it?|Q
-me018|hhh.|D
-me006|that's it.|S
-me018|okay.|S
-me018|uh hhh.|F
-me018|let's see.|F
-me018|so we've got forty minutes left.|S
-me018|and it seems like there's a lot of material.|S
-me018|any suggestions about where we where we should go next?|Q
-mn052|huh.|B
-me018|uh|F
-me018|do you want to go sunil?|Q
-me018|maybe we'll just start with you.|S
-mn052|yeah.|S
-mn052|but i actually stuck most of this in our last meeting with guenter.|S
-mn052|um|F
-mn052|but i'll just|D
-mn052|um|F
-mn052|so the last week uh i showed some results with only speechdat-car.|S
-mn052|which was like some fifty six percent.|S
-mn052|and uh i didn't|D
-mn052|i mean i i found that the results|D
-mn052|i mean i wasn't getting that results on the t.i. digit.|S
-mn052|so i was like looking into why what is wrong with the t.i. digits.|S
-mn052|why why i was not getting it.|S
-mn052|and i found that the noise estimation is a reason for the t.i. digits to perform worse than the baseline.|S
-mn052|so uh i actually picked|D
-mn052|i mean the first thing i did was i just scaled the noise estimate by a factor which is less than one to see if that because i found there are a lot of zeros in the spectrogram for the t.i. digits when i used this approach.|S
-mn052|so the first thing i did was i just scaled the noise estimate.|S
-mn052|and i found|D
-mn052|so the the results that i've shown here are the complete results using the new|D
-mn052|well the the new technique is nothing but the noise estimate scaled by a factor of point five.|S
-mn052|so it's just an ad hoc.|S
-mn052|i mean some intermediate result because it's not optimized for anything.|S
-mn052|so the results the trend the only trend i could see from those results was like the the the current noise estimation or the uh noise composition scheme is working good for like the car noise type of thing.|S
-mn052|because i've the only only very good result in the t.i. digits is the noise car noise condition for their test a..|S
-mn052|which is like the best i could see that|D
-mn052|uh for any non stationary noise like babble or subway or any street some restaurant noise it's like it's not performing very well.|S
-mn052|so|F
-mn052|the so that that's the first thing i uh i could make out from this stuff.|S
-mn052|and|F
-mn058|yeah i think what is important to see is that there is a big difference between the training modes.|S
-mn058|uhhuh.|F
-mn052|yeah.|S
-mn058|if you have clean training you get also a fifty percent improvement.|S
-mn052|yeah.|B
-mn058|but if you have muddy condition training you get only twenty percent.|S
-mn052|yeah.|B
-mn052|yeah.|B
-mn007|uhhuh.|B
-mn058|uhhuh.|F
-mn052|uh and in that twenty percent it's very inconsistent across different noise conditions.|S
-mn058|huh.|B
-mn052|so i have like a forty five percent for car noise.|S
-mn052|and then there's a minus five percent for the babble.|S
-mn058|huh.|B
-mn052|and there's this thirty three for the station.|S
-mn052|and so it's it's not it's not actually very consistent across.|S
-mn052|so|F
-mn052|the only correlation between the speechdat-car and this performance is the stationarity of the noise that is there in these conditions and the speechdat-car.|S
-mn058|uhhuh.|B
-mn052|and uh|F
-mn052|so|F
-mn052|so the overall result is like in the last page.|S
-mn052|which is like forty seven.|S
-mn052|which is still very imbalanced because there are like fifty six percent on the speechdat-car and thirty five percent on the t.i. digits.|S
-mn052|and|F
-mn052|uh|F
-mn052|the fifty six percent is like comparable to what the french telecom gets.|S
-mn052|but the thirty five percent is way off.|S
-me013|i'm sort of confused.|S
-me013|but|F
-me013|this|D
-me013|i'm looking on the second page.|S
-mn052|oh.|S
-mn052|yep.|S
-me013|and it says fifty percent.|S
-me013|looking in the lower right-hand corner.|S
-me013|fifty percent relative performance.|S
-mn058|for the clean training.|S
-me013|is that|D
-mn058|and if you if you look|D
-me013|is that fifty percent improvement?|Q
-mn052|yeah.|S
-mn058|yeah.|S
-mn052|for that's for the clean training and the noisy testing for the t.i. digits.|S
-me013|so it's improvement over the baseline mel cepstrum.|S
-mn052|yeah.|S
-mn052|yeah.|S
-me013|but the baseline mel cepstrum under those training doesn't do as well.|S
-me013|i i'm i'm trying to understand why it's it's eighty percent.|S
-me013|that's an accuracy number i guess.|S
-mn052|yeah yeah yeah.|S
-me013|right?|Q
-me013|so that's not as good as the one up above.|S
-mn052|no.|S
-me013|but the fifty is better than the one up above.|S
-mn052|yeah.|S
-me013|so i'm confused.|S
-mn052|uh actually the noise compensation whatever uh we are put in it works very well for the high mismatch condition.|S
-mn052|i mean it's consistent in the speechdat-car.|S
-mn052|and in the clean training also it gives it|D
-mn052|but this fifty percent is is that the the high mismatch performance equivalent to the high mismatch performance in the speech.|S
-me018|so so since the high mismatch performance is much worse to begin with it's easier to get a better relative improvement.|S
-mn052|yeah.|S
-mn052|yeah.|B
-mn052|i do.|S
-mn052|yeah yeah.|B
-mn052|so by putting this noise.|S
-mn007|yeah.|B
-mn007|yeah if we look at the figures on the right we see that the reference system is very bad.|S
-me013|oh.|S
-mn052|yeah.|D
-mn052|the reference drops like a very fast.|S
-me013|oh oh oh oh oh oh.|S
-mn007|like for clean clean training condition.|S
-me013|i see.|S
-mn052|yeah.|B
-me013|i see.|S
-mn007|nnn.|F
-me013|this is this is t.i. digits we're looking at?|Q
-mn052|yeah.|S
-me013|this whole page is t.i. digits?|Q
-mn052|yeah.|S
-mn052|oh.|S
-me013|or this is|D
-mn052|oh yeah.|S
-mn052|it's not written anywhere.|S
-mn052|yeah it's t.i. digits.|S
-mn052|the first spreadsheet is t.i. digits.|S
-me013|huh.|B
-mn058|huh.|B
-me013|how does clean training do for the uh car?|Q
-me013|stuff?|D
-mn052|the car?|Q
-mn052|oh.|S
-mn052|still it still uh that that's still consistent.|S
-mn052|i mean i get the best performance in the case of car which is the third column in the a. condition.|S
-me013|no.|S
-me013|i mean this is added noise.|S
-me013|i mean this is t.i. digits.|S
-me013|i'm sorry.|S
-me013|i meant in in the in the uh multi language uh uh finnish and|D
-mn052|uh|F
-mn058|this is next next page.|S
-mn052|that's the next next spreadsheet is.|S
-mn058|huh.|F
-mn052|so that is the performance for italian finnish and spanish.|S
-me013|training condition.|S
-me013|oh right.|S
-me013|so clean corresponds to high mismatch.|S
-mn052|yeah.|B
-me013|and increase|D
-me013|that's increase|D
-mn058|improvement.|S
-mn052|improvement.|S
-mn058|yeah.|B
-mn052|that's percentage increase is the percentage improvement over the baseline.|S
-mn058|it's it's a|D
-mn052|so that's|D
-me013|which means decrease in word error rate?|Q
-mn052|yeah.|S
-me013|okay.|S
-me013|so percentage increase means decrease.|S
-me013|okay.|S
-mn052|yeah yeah.|S
-mn058|yeah.|S
-mn058|the the there was a very long discussion about this on on the on the uh amsterdam meeting.|S
-me013|yeah.|B
-mn058|how to how to calculate it then.|S
-mn052|yeah.|S
-mn052|there's there's a|D
-mn058|i i i guess you are using finally this the scheme which they|D
-mn052|which is there in the spreadsheet.|S
-mn052|i'm not changing anything in there.|S
-mn058|okay.|B
-mn058|huh.|B
-me013|all right.|S
-mn052|so|F
-mn052|uh|F
-mn052|yeah.|F
-mn052|so all the h.m. numbers are very good.|S
-mn052|in the sense they are better than what the french telecom gets.|S
-mn052|so|F
-mn052|but the the only number that's still i mean which stephane also got in his result was that medium mismatch of the finnish.|S
-mn052|which is very which is a very strange situation where we used the we changed the proto for initializing the h.m.m.|S
-mn052|i mean this this is basically because it gets stuck in some local minimum in the training.|S
-mn052|that seventy five point seven nine in the finnish mismatch which is that the eleven point nine six what we see.|S
-me013|uhhuh.|B
-mn058|huh.|B
-mn052|yeah.|F
-me013|so we have to jiggle it somehow?|Q
-mn052|yeah.|S
-mn052|so we start with that different proto and it becomes eighty eight.|S
-mn052|which is like some fifty percent improvement.|S
-me013|wait a minute.|S
-me013|start with a different what?|Q
-mn052|different prototype.|S
-mn052|which is like a different initialization for the uh transition probabilities.|S
-mn052|it's just that right now the initialization is to stay more in the current state.|S
-mn052|which is point four point six right?|S
-mn007|yeah.|S
-mn052|yeah.|S
-mn052|and if it changes to point five point five which is equal for transition and self loop where it becomes eighty eight percent.|S
-me018|well but that involves mucking with the back end.|S
-me018|which is not allowed.|S
-mn052|yeah.|S
-mn052|we can't do it.|S
-me018|yeah.|F
-mn052|yeah.|F
-mn007|huh.|B
-mn052|so|F
-mn058|i mean it uh like|D
-mn058|it is well known this this medium match condition of the finnish data has some strange effects.|S
-mn052|very|D
-mn007|yeah.|B
-mn052|it has a very few at uh actually uh i mean words also.|S
-mn058|i mean that is|D
-mn058|yeah.|S
-mn058|that too.|S
-mn052|it's a very very small set actually.|S
-mn058|yeah.|B
-mn058|uhhuh.|B
-mn058|there is a a there is a lot of uh there are a lot of utterances with music in with music in the background.|S
-mn052|so there is|D
-mn052|yeah.|S
-mn052|yeah yeah yeah.|S
-mn058|huh.|F
-mn052|yeah.|S
-me013|uhhuh.|B
-mn052|yeah.|S
-mn052|it has some music also.|S
-mn052|i mean very horrible music like like 4x.|S
-mn052|i know.|S
-me013|so maybe for that one you need a much smarter v.a. d?|Q
-me013|huh|F
-me013|if it's music.|S
-mn052|uh|F
-mn052|so|F
-mn052|that that's the that's about the results.|S
-mn052|and uh|F
-mn052|the summary is like|D
-mn052|okay.|F
-mn052|so there are the other thing what i tried was which i explained in the last meeting is using the channel zero for uh for both dropping and estimating the noise.|S
-mn052|and that's like just to get a feel of how good it is.|S
-mn052|i guess the fifty six percent improvement in the speechdat-car becomes like sixty seven percent.|S
-mn052|like ten percent better.|S
-mn052|but that's that's not a that's a cheating experiment.|S
-mn052|so|F
-mn052|that's just|D
-mn052|so|F
-mn058|but the but the uh forty seven point nine percent which you have now that's already a remarkable improvement in comparison to the first proposal.|S
-mn052|yeah.|S
-mn052|so we had forty four percent in the first proposal.|S
-mn058|okay.|B
-mn058|uhhuh.|B
-mn052|yeah.|S
-mn052|we have a big|D
-mn052|so the major improvement that we got was in all the high mismatch cases.|S
-mn052|because all those numbers were in sixties and seventies.|S
-mn052|because we never had any noise compensations.|S
-mn058|huh.|B
-mn052|so that's where the biggest improvement came up.|S
-mn052|not much in the well match and the medium match and t.i. digits also right now.|S
-mn052|so this is still at three or four percent improvement over the first proposal.|S
-mn058|huh.|B
-mn058|huh.|B
-me013|yeah so that's good.|S
-mn052|yeah.|F
-mn052|so|F
-me013|then if we can improve the noise estimation then it should get better.|S
-mn058|yeah.|S
-mn058|i i started thinking about also|D
-mn058|i mean yeah uh i discovered the same problem when i started working on uh on this aurora task almost two years ago.|S
-mn058|that you have the problem with this|D
-mn058|at the beginning we had only this condition training of the t.i. digits.|S
-mn052|yeah.|B
-mn058|and uh i i found the same problem.|S
-mn058|just taking um what we were used to use i mean uh some type of spectral subtraction you get even worse results than the basis.|S
-mn052|yeah.|D
-mn058|and uh|F
-mn052|yeah.|D
-mn052|yeah.|D
-mn058|i i tried to find an explanation for it.|S
-mn058|so|F
-me013|huh.|B
-mn052|so|F
-mn052|yes.|S
-mn052|stephane also has the same experience of using the spectral subtraction right?|S
-mn058|huh.|B
-mn007|uhhuh.|S
-mn052|yeah.|B
-mn007|yeah.|S
-mn052|so here here i mean i found that it's if i changed the noise estimate i could get an improvement.|S
-mn052|so that's so it's something which i can actually pursue is the noise estimate.|S
-mn058|uhhuh.|S
-mn052|and|F
-mn058|yeah i think what you do is in when when you have the the this multi condition training mode um then you have then you can train models for the speech for the words as well as for the pauses where you really have all information about the noise available.|S
-mn052|yeah.|B
-mn058|and|F
-mn058|it was surprising.|S
-mn058|at the beginning it was not surprising to me that you get really the best results on doing it this way.|S
-mn058|i mean in comparison to any type of training on clean data and any type of processing.|S
-mn058|but it was|D
-mn058|so|F
-mn058|it it seems to be the best what what what we can do in this moment is multi condition training.|S
-mn058|and when we now start introducing some some noise reduction technique we we introduce also somehow artificial distortions.|S
-mn052|yeah.|B
-mn058|and these artificial distortions uh i have the feeling that they are the reason why why we have the problems in this multi condition training.|S
-mn058|that means the h.m.m.'s we trained they are they are based on gaussians.|S
-mn052|yeah.|B
-mn058|and on modeling gaussians.|S
-mn058|and if you|D
-mn058|can i move a little bit with this?|Q
-mn058|yeah.|S
-mn058|and if we introduce now this this spectral subtraction or wiener filtering stuff|D
-mn058|so usually what you have is maybe um|D
-mn058|i'm i'm showing now an envelope.|S
-mn058|um|F
-mn058|maybe you'll for this time.|S
-mn058|so usually you have maybe in clean condition you have something which looks like this.|S
-mn058|and if it is noisy it is somewhere here.|S
-mn058|and then you try to subtract it or wiener filter or whatever.|S
-mn058|and what you get is you have always these problems that you have this these these these zeros in there.|S
-mn052|yeah.|B
-mn058|and you have to do something if you get these negative values.|S
-mn058|i mean this is your noise estimate and you somehow subtract it or do whatever.|S
-mn058|uh and then you have|D
-mn058|and then i think what you do is you introduce some some artificial distribution in this.|S
-mn058|uh|F
-mn058|in in the models.|S
-mn058|i mean you you train it also this way.|S
-mn058|but somehow there is there is no longer a a gaussian distribution.|S
-mn058|it is somehow a strange distribution which we introduce with these artificial distortions.|S
-mn058|and and i was thinking that that might be the reason why you get these problems in the especially in the multi condition training mode.|S
-me013|uhhuh.|B
-mn052|yeah yeah.|S
-mn052|yeah.|S
-mn052|the the models are not complex enough to absorb that additional variability that you're introducing.|S
-me018|thanks adam.|S
-mn058|yeah.|S
-mn058|yes.|S
-mn052|well that's|D
-mn052|yeah.|F
-mn052|so|F
-mn007|i also have the feeling that um the reason why it doesn't work is yeah that the models are much are um not complex enough.|S
-mn007|because i actually i always had a good experience with spectral subtraction.|S
-mn007|just a straight spectral subtraction algorithm when i was using neural networks big neural networks which maybe are more able to model strange distributions.|S
-mn058|uhhuh.|B
-mn007|and|F
-mn007|but|F
-mn007|yeah.|F
-mn007|then i tried the same exactly the same spectral subtraction algorithm on these aurora tasks.|S
-mn007|and it simply doesn't work.|S
-mn058|huh.|B
-mn007|it's even it uh hurts even.|S
-mn007|so|F
-me013|we probably should at some point here try the tandem the the the system two kind of stuff with this with the spectral subtraction for that reason.|S
-mn058|huh.|B
-mn058|uhhuh.|B
-me013|because again it should do a transformation to a domain where it maybe looks more gaussian.|S
-mn007|uhhuh.|B
-mn058|huh.|B
-mn058|yeah.|F
-mn058|i i was|D
-mn058|just yesterday when i was thinking about it um what what we could try to do or do about it|D
-mn058|i mean if you if you get at this in this situation that you get this this negative values and you simply set it to zero or to a constant or whatever if we if we would use there a somehow um a random generator which which has a certain distribution not a certain yeah a special distribution we should see we we have to think about it.|S
-mn052|it's|D
-mn058|and that we so introduce again some natural behavior in this trajectory.|S
-me013|uhhuh.|B
-mn052|uhhuh.|B
-mn052|very different from speech.|S
-mn052|still i mean it shouldn't confuse the|D
-mn058|yeah i mean similar to what what you see really in in the real um noisy situation.|S
-mn052|okay.|S
-mn052|uhhuh.|B
-mn058|or in the clean situation.|S
-mn058|but but somehow a a natural distribution.|S
-me013|but isn't that again sort of the idea of the additive thing?|Q
-me013|if it as as we had in the j. stuff.|S
-me013|i mean basically if if you have random data um in in the time domain then when you look at the spectrum it's going to be pretty flat.|S
-mn058|uhhuh.|B
-me013|and and|F
-me013|uh|F
-me013|so just add something everywhere rather than just in those places.|S
-me013|it's just a constant right?|S
-mn007|uhhuh.|B
-mn058|yeah.|S
-mn058|i think|D
-mn058|yeah.|F
-mn058|it's it's just especially in these segments.|S
-mn058|i mean you introduce um very artificial behavior.|S
-me013|yeah.|B
-mn058|and|F
-me013|yeah.|S
-me013|well see if you add something everywhere it has almost no effect up up up on on top.|S
-mn007|uhhuh.|B
-me013|and it and it and it has significant effect down there.|S
-me013|that was sort of the idea.|S
-mn058|uhhuh.|B
-mn052|huh.|B
-mn052|yeah.|S
-mn052|the that's true.|S
-mn052|that those those regions are the cause for this those negative values or whatever you get.|S
-mn058|uhhuh.|B
-mn058|uhhuh.|B
-mn052|yeah.|F
-mn052|so|F
-mn058|i mean we we could uh we we could think how what what we could try.|S
-mn052|yeah.|B
-mn058|i mean it it was just an idea.|S
-mn052|yeah yeah.|S
-mn007|uhhuh.|B
-mn058|i mean we|D
-me013|i think when it's noisy people should just speak up.|S
-mn058|to|D
-mn058|huh.|B
-mn052|so|D
-mn007|if we look at the france telecom proposal they use some kind of noise addition.|S
-mn007|they have a random number generator right?|S
-mn007|and they add noise on the trajectory of uh the log energy only right?|S
-me013|oh they do.|S
-me013|oh.|B
-mn052|yep.|S
-mn052|c.c. zero and log energy also.|S
-mn007|yeah.|S
-mn052|yeah.|S
-mn007|um|F
-mn007|but i don't know how much effect it this have.|S
-mn007|but they do that.|S
-mn052|now?|Q
-mn007|yeah.|F
-mn058|uhhuh.|S
-mn052|oh.|B
-me013|huh.|B
-mn058|so it it it it it is somehow similar to what|D
-mn007|i think because they have log energy.|S
-mn007|yeah.|S
-mn007|and then just generate random number.|S
-mn007|they have some kind of mean and variance.|S
-mn007|and they add this number to to the log energy simply.|S
-mn007|um|F
-me013|to the|D
-mn052|yeah.|S
-mn052|the the log energy the after the clean cleaning up.|S
-mn007|uhhuh.|S
-mn052|so they add a random random noise to it.|S
-me013|to the just the energy or to the mel uh to the mel filter?|Q
-mn052|no.|S
-mn052|only to the log energy.|S
-mn007|only|D
-mn007|yeah.|S
-me013|oh.|S
-mn058|uhhuh.|B
-me013|so it because i mean i think this is most interesting for the mel filters.|S
-mn058|uhhuh.|B
-me013|right?|Q
-me013|or or f.f.t.'s.|S
-me013|one or the other.|S
-mn058|but but they do not apply filtering of the log energy or what|D
-mn052|like uh i mean|D
-mn058|like like a spectral subtraction.|S
-mn058|or|F
-mn052|no their filter is not m. domain.|S
-mn058|yeah.|S
-mn052|so they did filter their time signal.|S
-mn058|i|D
-mn052|and then what|D
-mn058|and then they calculate from this the log energy.|S
-mn058|or|F
-mn052|yeah.|S
-mn052|then after that it is almost the same as the baseline system.|S
-mn058|uhhuh.|S
-mn052|and then the final log energy that they that they get that to the to that they add some random noise.|S
-me013|yeah but again that's just log energy as opposed to filter bank energy.|S
-mn052|yeah.|B
-mn058|huh.|B
-mn052|so it's not the mel.|S
-mn052|you know it's not the mel filter bank output.|S
-me013|yeah.|F
-mn058|uhhuh.|B
-mn052|these are log energy computed from the time domain signal.|S
-mn007|uhhuh.|B
-mn052|not from the mel filter banks.|S
-mn052|so|F
-me013|huh.|B
-mn007|maybe it's just a way to decrease the importance of this particular parameter in the in the world feature vector.|S
-mn052|did|D
-mn007|if you add noise to one of the parameters you widen the distributions.|S
-me013|huh.|B
-mn052|becomes flat.|S
-mn052|the variance yeah reduces.|S
-mn007|and|D
-mn052|so|F
-mn052|huh yeah.|F
-mn007|eee-sss-uh.|D
-me013|so it could reduce the dependence on the amplitude and so on.|S
-me013|yeah?|Q
-mn007|yeah.|S
-mn052|yeah.|B
-mn052|although|D
-me013|maybe.|S
-me018|so is uh is that about it?|Q
-mn007|uhhuh.|B
-mn052|uh|F
-me018|or|D
-mn052|so the|D
-mn052|okay.|S
-mn052|so the other thing is the i'm just looking at a little bit on the delay issue where the delay of the system is like a hundred and eighty millisecond.|S
-mn052|so i just just tried another system i mean another filter which i've like shown at the end.|S
-mn052|which is very similar to the existing uh filter.|S
-mn052|only uh only thing is that the phase is is like a totally nonlinear phase.|S
-mn052|because it's a it's not a symmetric filter anymore.|S
-me018|this is for the l.d. a?|Q
-mn052|yeah.|S
-mn052|so so this this is like so this makes the delay like zero for l.d.a.|S
-mn052|because it's completely causal.|S
-me018|oh.|S
-mn052|so|F
-mn052|so i got actually just the results for the italian for that.|S
-mn052|and that's like|D
-mn052|so the fifty one point o. nine has become forty eight point o. six.|S
-mn052|which is like three percent relative degradation.|S
-mn007|uhhuh.|B
-mn052|so i have like the fifty one point o. nine.|S
-mn052|and|F
-mn052|so|F
-mn052|i don't know it fares for the other conditions.|S
-mn052|so it's just like it's like a three percent relative degradation.|S
-mn052|with the|D
-mn058|but but is there is there a problem with the one hundred eighty milliseconds?|Q
-mn058|or|D
-me013|well this is|D
-mn052|uh|D
-mn058|yeah i mean i talked to to uh i uh i talked uh about it with with hynek.|S
-mn058|i mean there is|D
-me013|this is|D
-me013|so so basically our our position is that um we shouldn't be unduly constraining the latency at this point.|S
-me013|because we're all still experimenting with trying to make the performance better in the presence of noise.|S
-me013|uh there is a minority in that group who is arguing who are arguing for um uh having a further constraining of the latency.|S
-me013|so we're just continuing to keep aware of what the tradeoffs are and you know what what do we gain from having longer or shorter latencies.|S
-mn058|huh.|B
-me013|but since we always seem to at least get something out of longer latencies not being so constrained we're tending to go with that if we're not told we can't do it.|S
-mn058|uhhuh.|B
-me018|what where was the um the smallest latency of all the systems last time?|Q
-mn052|the french telecom.|S
-me013|well france telecom was was was very short latency.|S
-mn058|it's|D
-me013|and they had a very good result.|S
-me018|what what was it?|Q
-me013|it was thirty five.|S
-mn058|it was in the order of thirty milliseconds.|S
-mn058|or|F
-me013|yeah.|S
-me018|thirteen?|Q
-mn058|thirty.|S
-me018|thirty.|S
-mn052|thirty four.|S
-me013|yeah.|S
-mn058|yeah.|S
-me013|yeah so it's possible to get very short latency.|S
-me013|but again we're the the approaches that we're using are ones that take advantage of|D
-me018|yeah.|B
-me018|i was just curious about where we are compared to you know the shortest that people have done.|S
-mn058|but but i think this thirty milliseconds they they did it did not include the the delta calculation.|S
-mn052|yeah.|S
-mn058|and this is included now.|S
-mn052|yeah.|S
-mn052|yeah.|B
-mn052|yeah.|S
-mn058|you know?|Q
-mn052|yeah.|S
-mn052|so if they include the delta it will be an additional forty millisecond.|S
-mn007|uhhuh.|S
-mn058|yeah.|S
-me013|yeah.|B
-mn058|i i don't remember the|D
-mn058|they were not using the h.t.k. delta?|Q
-mn052|no they're using a nine point window.|S
-mn052|which is like a four on either side.|S
-mn058|nine point.|S
-mn052|which is like|D
-mn058|okay.|S
-mn052|so.|F
-mn058|huh.|B
-mn052|they didn't include that.|S
-me013|yeah.|B
-mn058|uhhuh.|B
-mn052|so|D
-me018|okay.|S
-mn007|where does the compression in decoding delay comes from?|Q
-mn052|that's the way the the the frames are packed.|S
-mn052|like you have to wait for one more frame to pack.|S
-mn052|because it's the c.r.c. is computed for two frames always.|S
-mn007|uhhuh.|B
-me013|well that they would need that forty milliseconds also.|S
-me013|right?|Q
-mn052|no.|S
-mn052|they actually changed the compression scheme altogether.|S
-mn007|uhhuh.|B
-mn052|so they have their own compression and decoding scheme.|S
-mn052|and they i don't know what they have.|S
-me013|oh.|S
-mn052|but they have coded zero delay for that.|S
-mn052|because they i know they changed it.|S
-mn052|their compression.|S
-mn052|they have their own c.r.c.|S
-mn052|their their own error correction mechanism.|S
-me013|oh.|B
-mn052|so they don't have to wait more than one more frame to know whether the current frame is in error.|S
-me013|oh okay.|S
-mn052|so they changed the whole thing so that there's no delay for that compression and part also.|S
-me013|huh.|B
-mn058|uhhuh.|B
-mn052|even you have reported actually zero delay for the compression.|S
-mn052|i thought maybe you also have some different|D
-mn058|huh.|B
-mn058|huh.|B
-mn058|no i think i i used this scheme as it was before.|S
-mn052|okay.|B
-mn052|uh.|D
-mn052|uhhuh.|D
-me018|okay.|F
-me018|we've got twenty minutes.|S
-me018|so we should probably try to move along.|S
-me018|uh did you want to go next stephane?|Q
-mn007|i can go next.|S
-mn007|yeah.|S
-mn007|huh.|F
-me013|oh.|F
-mn007|it's|D
-me013|wait a minute.|S
-me013|it's|D
-mn007|yeah.|S
-mn007|we have to take|D
-me013|wait a minute.|S
-me013|i think i'm confused.|S
-mn007|well.|F
-mn007|okay.|S
-me013|all right.|S
-mn007|so you have one sheet.|S
-mn007|this one is you don't need it.|S
-mn007|all right.|S
-me013|uh|F
-mn007|so you have to take the whole the five.|S
-mn007|there should be five sheets.|S
-me013|okay.|S
-me013|i have four now.|S
-me013|because i left one with dave because i thought i was dropping one off and passing the others on.|S
-me013|so no.|S
-me013|we're not.|S
-me013|okay.|S
-mn052|thanks.|S
-fn002|please give me one.|S
-me013|uh we need one more over here.|S
-mn007|okay maybe there's not enough for everybody.|S
-me018|i can share with barry.|S
-mn007|but|F
-me006|yeah.|B
-mn058|okay.|B
-me013|oh okay.|S
-mn007|can we look at this?|Q
-me026|yeah.|B
-mn007|so|F
-mn007|yeah there are two figures showing actually the huh um performance of the current v.a.d.|S
-mn007|so it's a neural network based on p.l.p. parameters.|S
-mn007|uh which estimate silence probabilities.|S
-mn007|and then i just put a median filtering on this.|S
-mn007|to smooth the probabilities right?|S
-mn007|um|F
-mn007|i didn't use the the scheme that's currently in the proposal.|S
-mn007|because i don't want to.|S
-mn007|in the proposal|D
-mn007|well in in the system we want to add like speech frame before every word and a little bit of of uh a couple of frames after also.|S
-mn007|uh but to estimate the performance of the v.a.d. we don't want to do that.|S
-mn007|because it would artificially increase the um the false alarm rate of speech detection.|S
-mn007|right?|Q
-mn007|um|F
-mn007|so|F
-mn007|there is normally a figure for the finnish and one for italian.|S
-mn007|and maybe someone has two for the italian.|S
-mn007|because i'm missing one figure here.|S
-mn052|no.|S
-mn007|well.|F
-mn007|well whatever.|S
-mn007|uh yeah so one surprising thing that we can notice first is that apparently the speech miss rate is uh higher than the false alarm rate.|S
-mn007|so|F
-mn058|so so what is the lower curve and the upper curve?|Q
-mn007|it means|D
-mn007|uhhuh.|S
-mn007|yeah there are two curves.|S
-mn058|yeah.|B
-mn007|one curve's for the close talking microphone which is the lower curve.|S
-mn058|uh okay.|S
-mn007|and the other one is for the distant microphone.|S
-mn007|which has more noise.|S
-mn007|so|F
-mn007|it's logical that it performs worse.|S
-mn007|so as i was saying the miss rate is quite important.|S
-mn007|uh which means that we tend to label speech as as a silence.|S
-mn007|and|F
-mn007|uh i didn't analyze further yet.|S
-mn007|but i think it's it may be due to the fricative sounds.|S
-mn007|which may be in noisy condition maybe label labelled as silence.|S
-mn007|and it may also be due to the alignment.|S
-mn007|because|D
-mn007|well the reference alignment.|S
-mn007|because right now i just use an alignment obtained from from a system trained on channel zero.|S
-mn007|and|F
-mn007|i checked it a little bit.|S
-mn007|but there might be alignment errors.|S
-mn007|um yeah.|F
-mn007|like the fact that the the models tend to align their first state on silence and their last state on silence also.|S
-mn007|so the reference reference alignment would label as speech some silence frame before speech and after speech.|S
-mn007|this is something that we already noticed before.|S
-mn007|when|D
-mn007|huh|F
-mn007|so this this could also explain uh the high miss rate maybe.|S
-mn058|and and this this curves are the average over the whole database.|S
-mn007|uh|F
-mn058|so|F
-mn007|yeah.|S
-mn007|right.|S
-mn058|huh.|S
-mn007|um|F
-mn007|yeah.|S
-mn007|and the different points of the curves are for five uh thresholds on the probability uh from point three to point seven.|S
-mn052|so that threshold|D
-mn007|uhhuh.|F
-mn007|yeah.|F
-mn052|okay.|S
-mn052|okay.|S
-mn052|so the detection threshold is very|D
-mn007|so the|D
-mn007|the v.a. d?|Q
-mn052|yeah yeah.|D
-mn007|yeah.|S
-mn007|there first a threshold on the probability that puts all the values to zero or one.|S
-mn052|huh.|B
-mn007|and then the median filtering.|S
-mn052|yeah.|S
-mn052|so the median filtering is fixed.|S
-mn052|you just change the threshold.|S
-mn007|yeah.|S
-mn007|it's fixed.|S
-mn007|yeah.|S
-mn052|yeah.|S
-mn007|uhhuh.|S
-mn007|so going from channel zero to channel one uh almost double the error rate.|S
-mn007|um|F
-mn007|yeah.|F
-mn007|well so it's a reference performance that we can you know if we want to to work on the v.a.d. we can work on this basis.|S
-mn052|uhhuh.|B
-mn007|and|F
-mn052|okay.|S
-me006|is this is this v.a.d.a.m.l. p?|Q
-mn007|yeah.|S
-me006|okay.|S
-me006|how how big is it?|Q
-mn007|it's a very big one.|S
-mn007|i don't remember.|S
-mn052|so three three hundred and fifty inputs.|S
-mn052|uh|F
-mn052|six thousand hidden nodes and two outputs.|S
-me006|okay.|S
-mn052|yeah.|B
-mn007|uhhuh.|B
-me013|middle sized one.|S
-mn052|yeah.|S
-mn007|uhhuh.|B
-mn007|yeah.|F
-mn007|uh ppp|F
-mn007|i don't know you have questions about that or suggestions?|Q
-mn052|huh.|B
-mn052|so.|B
-mn007|it seems the performance seems worse in finnish.|S
-mn007|which|D
-mn052|well it's not trained on finnish.|S
-mn007|uh|F
-fn002|it's worse.|S
-mn007|it's not trained on finnish.|S
-mn007|yeah.|S
-me013|what's it trained on?|Q
-mn052|i mean the m.l.p.'s not trained on finnish.|S
-me013|right.|S
-me013|what's it trained on?|Q
-mn052|oh oh.|S
-mn052|sorry.|S
-mn052|uh it's italian t.i. digits.|S
-me013|yeah.|B
-me013|oh it's trained on italian?|Q
-mn052|yeah.|S
-me013|yeah.|S
-mn007|uhhuh.|B
-me013|okay.|S
-mn007|and|D
-mn052|that's right.|D
-me013|okay.|F
-mn007|and also there are like funny noises on finnish.|S
-mn007|more than on italian.|S
-mn058|uhhuh.|B
-mn007|i mean like music.|S
-mn052|yeah.|B
-mn007|and um|F
-mn052|yeah the yeah it's true.|S
-mn007|so yeah.|F
-mn007|we were looking at this.|S
-mn007|but for most of the noises noises are|D
-mn007|um|F
-mn007|i don't know if we want to talk about that.|S
-mn007|but|F
-mn007|well the the car noises are below like five hundred hertz.|S
-mn007|and we were looking at the music utterances.|S
-mn007|and in this case the noise is more about two thousand hertz.|S
-mn007|well the music energy's very low apparently.|S
-mn052|yeah.|B
-mn007|uh|F
-mn007|uh from zero to two two thousand hertz.|S
-mn007|so maybe just looking at this frequency range for from five hundred to two thousand would improve somewhat the v.a.d.|S
-mn052|huh.|B
-mn007|and|F
-mn052|yeah.|S
-mn007|huh.|F
-mn052|so there are like some some some parameters you wanted to use or something?|Q
-mn007|yeah.|F
-mn007|but|F
-mn007|yes.|S
-mn052|or yeah.|F
-mn007|uhhuh.|S
-mn007|uh the next|D
-mn007|um|F
-mn058|so is the is the is the training is the training based on these labels files which you take as reference here?|Q
-mn007|oh it's there.|S
-mn058|when you train the neural net you|D
-mn007|yeah.|S
-mn007|no.|S
-mn007|it's not.|S
-mn007|it's it was trained on some alignment obtained|D
-mn007|um|F
-mn007|uh for the italian data i think we trained the neural network on with embedded training.|S
-mn007|so re estimation of the alignment using the neural network i guess.|S
-mn007|that's right?|Q
-mn052|yeah.|S
-mn052|we actually trained uh the on the italian training part.|S
-mn007|yeah.|B
-mn052|we we had another system with|D
-mn007|so it was a a phonetic classification system for the italian aurora data.|S
-mn052|yeah.|S
-mn052|it must be somewhere.|S
-mn052|yeah.|B
-mn007|for the aurora data that it was trained on it was different.|S
-mn007|like for t.i. digits you used a a previous system that you had i guess.|S
-mn052|what|D
-mn052|no it|D
-mn052|yeah yeah.|S
-mn052|that's true.|S
-mn007|so the alignments from the different database that are used for training came from different system.|S
-mn052|yeah.|B
-mn007|then we put them together.|S
-mn007|well you put them together and trained the v.a.d. on them.|S
-mn052|yeah.|B
-mn007|huh.|F
-mn052|yeah.|B
-mn058|huh.|B
-mn007|uh|F
-mn007|but did you use channel did you align channel one also?|Q
-mn007|or|D
-mn052|i just took their entire italian training part.|S
-mn007|yeah.|S
-mn052|so it was both channel zero plus channel one.|S
-mn007|so|D
-mn007|yeah.|S
-mn007|so the alignments might be wrong then on channel one right?|S
-mn052|on one.|S
-mn052|possible.|S
-mn007|so we might|D
-mn007|yeah.|F
-mn052|we can do a realignment.|S
-mn052|that's true.|S
-mn007|at least want to retrain on these alignments.|S
-mn007|which should be better because they come from close talking microphone.|S
-mn058|yeah.|S
-mn058|the that was my idea.|S
-mn058|i mean if if it if it is not the same labeling which is taking the spaces.|S
-mn052|yeah.|B
-mn007|okay.|B
-mn052|yeah possible.|S
-mn007|yeah.|S
-mn058|huh.|S
-mn052|i mean it|D
-mn007|yeah.|B
-mn052|so the system|D
-mn052|so the v.a.d. was trained on maybe different set of labels for channel zero and channel one.|S
-mn007|uhhuh.|B
-mn052|and|F
-mn058|uhhuh.|S
-mn007|uhhuh.|B
-mn052|was the alignments were were different for certainly different because they were independently trained.|S
-mn052|we didn't copy the channel zero alignments to channel one.|S
-mn007|uhhuh.|B
-mn058|uhhuh.|S
-mn052|yeah.|B
-mn007|yeah.|B
-mn052|but for the new alignments what you generated you just copied the channel zero to channel one right?|S
-mn007|right.|S
-mn007|yeah.|D
-mn052|yeah.|S
-mn007|um|F
-mn007|and uh hhh|F
-mn007|actually when we look at at the v.a.d. for some utterances it's almost perfect.|S
-mn007|i mean it just dropped one frame.|S
-mn007|the first frame of speech.|S
-mn007|or|F
-mn007|so there are some utterances where it's almost one hundred percent v.a.d. performance.|S
-mn058|huh.|S
-mn007|uh|F
-mn007|but yeah.|F
-mn007|huh|F
-mn007|yep.|S
-mn007|so the next thing is um i have the spreadsheet for three different system.|S
-mn007|but for this you only have to look right now on the speechdat-car performance.|S
-mn007|uh because i didn't test|D
-mn007|so i didn't test the spectral subtraction on t.i. digits yet.|S
-mn007|uh so you have three sheets.|S
-mn007|one is the um proposal one system.|S
-mn007|actually it's not exactly proposal one.|S
-mn007|it's the system that sunil just described.|S
-mn007|um|F
-mn007|but with uh wiener filtering from um france telecom included.|S
-mn007|um so this gives like fifty seven point seven percent uh uh error rate reduction on the speechdat-car data.|S
-mn007|huh|F
-mn007|and then i have two sheets where it's for a system where|D
-mn007|uh|F
-mn007|so it's again the same system.|S
-mn007|but in this case we have spectral subtraction.|S
-mn007|with a maximum overestimation factor of two point five.|S
-mn007|uh there is smoothing of the gain trajectory with some kind of uh low pass filter.|S
-mn007|which has forty milliseconds latency.|S
-mn007|and then after subtraction um i add a constant to the energies.|S
-mn007|and i have two cases where the first case is where the constant is twenty five d.b. below the mean speech energy.|S
-mn007|and the other is thirty d.b. below.|S
-mn007|um|F
-mn007|and for these two system we have like fifty five point uh five percent improvement.|S
-mn007|and fifty eight point one.|S
-mn007|so again it's around fifty six fifty seven.|S
-mn007|uh|F
-me013|because i notice the t.i. digits number is exactly the same for these last two.|S
-mn007|yeah because i didn't|D
-mn007|for the france telecom uh spectral subtraction included in the our system the t.i. digits number are the right one.|S
-mn007|but not for the other system.|S
-mn007|because i didn't test it yet this system including with spectral subtraction on the t.i. digits data.|S
-mn007|i just tested it on speechdat-car.|S
-mn058|uhhuh.|S
-me013|uh!|S
-me013|so so that means the only thing|D
-mn058|so so so these numbers are simply|D
-mn007|this we have to|D
-mn007|yeah.|S
-mn058|yeah.|S
-me013|yeah.|B
-mn052|but this number.|S
-mn058|okay.|S
-mn007|yes.|S
-me013|so you so you just should look at that fifty eight point o. nine percent and so on.|S
-mn007|right.|S
-mn007|right.|D
-me013|okay.|S
-me013|good.|S
-mn007|uhhuh.|B
-mn007|um|F
-mn007|yeah.|F
-mn052|so this|D
-mn052|so by uh by by reducing the noise a a decent threshold like minus thirty d.b. it's like uh you are like reducing the floor of the noisy regions right?|S
-mn007|yeah.|S
-mn007|yeah.|S
-mn007|the floor is lower.|S
-mn007|um|F
-mn052|uhhuh.|B
-mn007|uhhuh.|F
-me013|i'm sorry.|S
-me013|so when you say minus twenty five or minus thirty d.b. with respect to what?|Q
-mn007|to the average um speech energy.|S
-mn007|which is estimated on the world database.|S
-me013|okay.|S
-me013|so basically you're creating a signal to noise ratio of twenty five or thirty d.b.|S
-mn007|yeah.|S
-mn007|but it's not|D
-mn058|i i i think what you do is this.|S
-me013|uh|D
-mn007|it it's|D
-mn058|when when you have this after you subtracted it i mean then you get something with this uh where you set the values to zero.|S
-mn058|and then you simply add an additive constant again.|S
-mn007|yeah.|S
-mn058|so you shift it somehow.|S
-mn058|this this whole curve is shifted again.|S
-mn007|right.|S
-me013|but did you do that before the thresholding to zero?|Q
-mn007|it's|D
-me013|or|D
-mn007|but it's after the thresholding.|S
-mn007|so|F
-me013|oh.|S
-me013|so you'd really want to do it before.|S
-mn007|maybe|D
-me013|right?|Q
-mn007|maybe we might do it before.|S
-mn007|yeah.|S
-me013|yeah.|S
-me013|because then the then you would have less of that phenomenon.|S
-mn007|yeah.|S
-mn058|hhh.|D
-me013|i think.|S
-mn007|uh|F
-mn007|yeah.|S
-mn007|but still when you do this and you take the log after that it it reduce the the variance.|S
-me013|yeah.|S
-me013|it it|D
-mn007|but|F
-me013|right.|S
-mn007|huh|F
-me013|yeah that will reduce the variance.|S
-me013|that'll help.|S
-me013|but maybe if you does do it before you get less of these funny looking things he's drawing.|S
-mn058|uhhuh.|B
-mn007|um|F
-mn052|so before it's like adding this to the to the original.|S
-mn058|but but|F
-mn007|we would|D
-me013|right at the point where you've done the subtraction.|S
-mn052|okay.|S
-me013|um essentially you're adding a constant into everything.|S
-mn007|uhhuh.|S
-mn058|but the way stephane did it it is exactly the way i have implemented in the phone.|S
-mn058|so|F
-me013|oh yeah.|S
-me013|better do it different then.|S
-me013|yeah.|B
-mn007|um|F
-mn007|yeah.|B
-me013|just you you just you just set it for a particular signal to noise ratio that you want.|S
-mn058|yeah i i made similar investigations like stephane did here.|S
-mn058|just uh adding this constant and and looking how dependent is it on the value of the constant.|S
-me013|yeah.|B
-me013|yeah.|B
-mn007|uhhuh.|B
-mn058|and then must choose them somehow to give on average the best results for a certain range of the signal to noise ratios.|S
-mn007|yeah.|B
-me013|uhhuh.|B
-mn007|uhhuh.|B
-mn058|so|F
-mn007|oh it's clear.|S
-mn007|i should have given other results.|S
-mn007|also it's clear when you don't add noise it's much worse.|S
-mn007|like around five percent worse i guess.|S
-me013|uhhuh.|S
-mn007|and if you add too much noise it get worse also.|S
-mn007|and it seems that right now this this is a constant that does not depend on on anything that you can learn from the utterance.|S
-mn007|it's just a constant noise addition.|S
-mn007|um|F
-mn007|and i i think|D
-me013|i i'm sorry.|S
-mn007|i think|D
-me013|then then i'm confused.|S
-me013|i thought|D
-me013|you're saying it doesn't depend on the utterance.|S
-me013|but i thought you were adding an amount that was twenty five d.b. down from the signal energy.|S
-mn007|yeah.|S
-mn007|so the way i did that i just measured the average speech energy of the all the italian data.|S
-me013|oh!|S
-mn007|and then i i have i used this as mean speech energy.|S
-mn007|uhhuh.|F
-me013|oh it's just a constant amount over all.|S
-mn007|yeah.|B
-mn007|and|F
-mn007|what i observed is that for italian and spanish when you go to thirty and twenty five d.b. uh it it's good.|S
-mn052|okay.|S
-mn052|oh.|S
-mn007|it stays in this range.|S
-mn007|it's uh the|D
-mn007|well the performance of the this algorithm is quite good.|S
-mn007|but for finnish you have a degradation already when you go from thirty five to thirty.|S
-mn007|and then from thirty to twenty five.|S
-mn007|and i have the feeling that maybe it's because just finnish has a mean energy that's lower than than the other databases.|S
-mn007|and due to this the thresholds should be|D
-me013|yeah.|B
-mn007|the the the noise addition should be lower.|S
-me013|but in i mean in the real thing you're not going to be able to measure what people are doing over half an hour or an hour or anything right?|S
-mn007|and|D
-me013|so you have to come up with this number from something else.|S
-mn007|yeah.|S
-mn007|so|F
-mn058|uh but you are not doing it now language dependent?|Q
-mn058|or|D
-mn007|it's not.|S
-mn007|it's just something that's fixed.|S
-mn058|no.|S
-mn058|it's overall.|S
-mn007|yeah.|S
-mn058|okay.|S
-mn007|uhhuh.|S
-mn007|um|F
-mn007|yeah so i|D
-me013|but what he is doing language dependent is measuring what that number reference is that he comes down twenty five down from.|S
-mn007|no.|S
-mn007|it no.|S
-mn007|because i did it i started working on italian.|S
-me013|no?|Q
-mn007|i obtained this average energy.|S
-me013|yeah.|S
-mn007|and then i used this one.|S
-mn052|for all the languages.|S
-mn007|yeah.|S
-mn052|okay.|S
-me013|so it's sort of arbitrary.|S
-me013|i mean so if if|D
-mn052|yeah.|B
-me013|yeah.|F
-mn007|yep.|S
-mn007|um|F
-me013|yeah.|F
-mn007|yeah so the next thing is to use this as as maybe initialization.|S
-mn007|and then use something online.|S
-me013|uhhuh.|S
-me013|something more adaptive.|S
-mn007|but and i expect improvement at least in finnish because uh the way|D
-me013|yeah.|S
-me013|okay.|B
-mn007|well.|F
-mn007|um|F
-mn007|for italian and spanish it's this value works good but not necessarily for finnish.|S
-mn007|huh|F
-mn007|but unfortunately there is like this forty millisecond latency.|S
-mn007|and|F
-mn007|um|F
-mn007|yeah so i would try to somewhat reduce this.|S
-mn007|i already know that if i completely remove this latency so um it um there is a three percent hit on italian.|S
-mn058|uhhuh.|B
-mn052|does latency|D
-mn052|sorry.|S
-mn052|go ahead.|S
-mn058|yeah.|S
-mn058|your your smoothing was uh over this so to say the the factor of the wiener.|S
-mn058|and then it's uh|D
-mn058|what was it?|Q
-mn058|this|D
-mn007|uhhuh.|B
-mn058|this smoothing it was over the subtraction factor so to say.|S
-mn007|it's a smoothing over the the gain of the subtraction algorithm.|S
-mn058|was this done|D
-mn058|uhhuh.|B
-mn058|and and you are looking into the future into the past.|S
-mn007|right.|S
-mn058|and smoothing.|S
-mn058|uhhuh.|B
-mn007|so to smooth this thing.|S
-mn007|yeah.|F
-mn007|um|F
-mn058|and did did you try simply to smooth um to smooth the the to to smooth stronger the the envelope?|Q
-mn007|um|F
-mn007|no.|S
-mn007|i did not.|S
-mn058|huh.|B
-mn007|huh.|F
-mn058|because i mean it should have a similar effect if you|D
-mn007|yeah.|B
-mn058|i mean you you have now several stages of smoothing so to say.|S
-mn058|you start up.|S
-mn058|as far as i remember you you smooth somehow the envelope.|S
-mn058|you smooth somehow the noise estimate.|S
-mn007|uhhuh.|B
-mn058|and and later on you smooth also this subtraction factor.|S
-mn007|huh.|B
-mn007|uh no.|S
-mn007|it's it's just the gain that's smoothed actually.|S
-mn052|uh actually i i do all the smoothing.|S
-mn007|but it's smoothed|D
-mn058|uh.|B
-mn058|oh it it was you.|S
-mn052|yeah yeah.|S
-mn007|uh yeah.|S
-mn058|yeah.|S
-mn007|yeah.|S
-mn058|yeah.|B
-mn007|no in this case it's just the gain.|S
-mn058|uhhuh.|S
-mn007|and|F
-mn007|but the way it's done is that um for low gain there is this nonlinear smoothing actually.|S
-mn007|for low gains um i use the smoothed uh smoothed version.|S
-mn058|uh.|B
-mn007|but for high gain it's i don't smooth.|S
-mn058|uhhuh.|B
-mn058|i just uh it experience shows you if if you do the|D
-mn058|the best is to do the smoothing as early as possible.|S
-mn007|uhhuh.|S
-mn058|so when you start up|D
-mn058|i mean you start up with the with the somehow with the noisy envelope.|S
-mn007|uhhuh.|S
-mn058|and best is to smooth this somehow.|S
-mn007|uhhuh.|S
-mn007|uh yeah.|S
-mn007|i could try this.|S
-mn007|um|F
-mn058|and|D
-mn052|so before estimating the s.n.r. smooth the envelope.|S
-mn058|yeah.|S
-mn058|yeah.|S
-mn058|uhhuh.|S
-mn007|uhhuh.|B
-mn007|but|F
-mn007|yeah.|F
-mn007|then i i would need to find a way to like smooth less also when there is high energy.|S
-mn007|because i noticed that it it helps a little bit to like smooth more during low energy portions and less during speech.|S
-mn058|yes.|S
-mn007|because if you smooth then you kind of distort the speech.|S
-mn058|yeah.|S
-mn058|yeah.|S
-mn058|right.|S
-mn007|um|F
-mn007|uhhuh.|F
-mn058|yeah i think when|D
-mn058|you you could do it in this way that you say if you if i'm|D
-mn058|you have somehow a noise estimate.|S
-mn007|uhhuh.|B
-mn058|and if you say i'm i'm with my envelope.|S
-mn058|i'm close to this noise estimate.|S
-mn007|yeah.|B
-mn058|and then you you would like to have a stronger smoothing.|S
-mn007|uhhuh.|S
-mn058|so you could you could base it on your estimation of the signal to noise ratio on your actual|D
-mn007|uhhuh.|B
-mn007|uhhuh.|B
-mn007|huh.|B
-mn052|yeah.|S
-mn052|or some silence probability from the vad if you have|D
-mn007|um|F
-mn007|yeah.|S
-mn007|but i don't trust the current vad.|S
-mn007|so|F
-mn052|yeah.|S
-mn052|uh so not not right now maybe.|S
-mn007|well maybe.|S
-mn007|maybe.|S
-me013|the vad later will be much better.|S
-me013|yeah.|F
-me013|so|F
-me013|i see.|S
-me018|so is that it?|Q
-mn007|uh fff i think that's it.|S
-mn007|yeah.|S
-mn007|uh|F
-mn058|so to summarize the performance of these speechdat-car results is similar than than yours so to say.|S
-mn052|yeah.|S
-mn007|yeah.|B
-mn052|so the fifty eight is like the some fifty six point.|S
-mn058|you have you have fifty six point four.|S
-mn058|and and and dependent on this additive constant it is better or or worse.|S
-mn052|yeah.|S
-mn052|that's true.|S
-mn007|yeah.|B
-mn052|slightly better?|Q
-mn007|uhhuh.|B
-mn052|yeah.|B
-mn058|yeah.|F
-mn007|uhhuh.|B
-mn007|and yeah.|F
-mn007|the condition where it's better than your approach it's it just because maybe it's better on well matched and that the weight on well matched is is bigger.|S
-mn052|yeah.|S
-mn052|yeah you you caught up.|S
-mn007|because|D
-mn052|yep.|S
-mn052|that's true.|S
-mn007|if you don't weigh differently the different condition you can see that your well the the two stage wiener filtering is maybe better.|S
-mn007|or|F
-mn007|it's better for high mismatch right?|S
-mn052|yeah.|B
-mn052|yeah.|S
-mn052|it's better for high mismatch.|S
-mn007|uhhuh.|B
-mn007|but a little bit worse for well matched.|S
-mn052|so over all it gets yeah worse for the well matched condition.|S
-mn052|so|D
-mn007|uhhuh.|B
-me018|so we need to combine these two.|S
-mn052|uh|F
-mn052|that's that's the best thing is like the french telecom system is optimized for the well matched condition.|S
-mn007|uhhuh.|S
-mn052|they|D
-mn052|yeah.|F
-mn052|so they know that the weighting is good for the well matched.|S
-mn052|and so there's|D
-mn052|everywhere the well matched's performance is very good for the french telecom.|S
-mn007|yeah.|S
-mn058|uhhuh.|B
-mn007|uhhuh.|B
-mn052|we are we may also have to do something similar.|S
-mn007|uhhuh.|D
-me013|well our tradition here has always been to focus on the mismatched.|S
-mn052|um the|F
-me013|because it's more interesting.|S
-mn058|my mine was it too i mean.|S
-me013|yeah.|S
-mn058|before i started working on this aurora.|S
-mn058|so|F
-me013|yeah.|D
-me013|yeah.|D
-me013|yeah.|B
-me013|okay.|F
-me018|carmen?|Q
-me018|do you uh|D
-fn002|well i only say that the this is a summary of the of all the v.t.s. experiments.|S
-fn002|and say that the result in the last um for italian the last experiment for italian are bad.|S
-fn002|i make a mistake when i write.|S
-fn002|up at d. i copy one of the bad result.|S
-mn052|so you|D
-fn002|and|F
-fn002|there you know this|D
-fn002|um|F
-fn002|well.|F
-fn002|if we put everything we improve a lot the spectral use of the v.t.s.|S
-fn002|but the final result are not still huh good like the wiener filter for example.|S
-fn002|i don't know.|S
-fn002|maybe it's it's possible to to have the same result.|S
-mn052|that's somewhere.|S
-fn002|i don't know exactly.|S
-fn002|huh.|F
-fn002|because i have huh worse result in medium mismatch and high mismatch.|S
-mn052|you you have a better|D
-mn052|yeah.|F
-mn052|you have some results that are good for the high mismatch.|S
-fn002|and yeah.|F
-fn002|i are more or less similar but but are worse.|S
-fn002|and|F
-fn002|still i don't have the result for t.i. digits.|S
-fn002|the program is training.|S
-fn002|maybe for this weekend i will have result t.i. digits.|S
-fn002|and i can complete that like this.|S
-fn002|well.|F
-me013|uh.|B
-me013|right.|B
-fn002|one thing that i note are not here in this result but are speak are spoken before with sunil i i improve my result using clean l.d.a. filter.|S
-mn052|uhhuh.|B
-me013|uhhuh.|B
-fn002|if i use uh the l.d.a. filter that are training with the noisy speech that hurts the my results.|S
-me013|so what are these numbers here?|Q
-me013|are these with the clean or with the noisy?|Q
-fn002|this is with the clean.|S
-me013|okay.|S
-fn002|with the noise i have worse result that if i doesn't use it.|S
-me013|uhhuh.|B
-fn002|but that may be because with this technique we are using really really clean speech.|S
-fn002|the speech the representation that go to the h.t.k. is really clean speech.|S
-fn002|because it's from the dictionary.|S
-fn002|the code book.|S
-fn002|and maybe from that.|S
-fn002|i don't know.|S
-mn007|uhhuh.|B
-fn002|because i think that you did some experiments using the two the two l.d.a. filter clean and and noise.|S
-mn007|it's|D
-fn002|and it doesn't matter too much.|S
-mn007|um|F
-mn007|yeah i did that.|S
-mn007|but it doesn't matter on speechdat-car.|S
-mn007|but it matters uh a lot on t.i. digits.|S
-fn002|it's better to use clean.|S
-mn052|using the clean filter.|S
-mn007|yeah.|S
-mn007|uh it's much better when you we used the clean derived l.d.a. filter.|S
-fn002|uhhuh.|B
-fn002|maybe you can do also this.|S
-mn052|yeah.|B
-fn002|to use clean speech.|S
-mn007|uh|F
-mn052|yeah i'll try.|S
-mn007|but yeah.|F
-mn007|sunil in in your result it's|D
-mn052|i i'll try the|D
-mn052|no i i my result is with the noisy noisy l.d.a.|S
-mn007|it's with the noisy one.|S
-mn007|yeah.|S
-mn052|yeah.|B
-me013|oh.|S
-mn052|it's with the noisy.|S
-mn007|so|F
-mn052|yeah.|S
-mn052|it's it's not the clean l.d.a.|S
-me013|um|F
-mn052|it's in in the front sheet i have like like the summary.|S
-mn052|yeah.|S
-me013|and and your result is with the|D
-mn007|it's with the clean l.d.a.|S
-mn052|oh.|S
-mn052|this is your results are all with the clean l.d.a. result.|S
-fn002|yeah with the clean l.d.a.|S
-mn007|yeah.|S
-mn052|okay.|S
-fn002|is that the reason?|Q
-mn007|and in your case it's all all noisy.|S
-mn052|all noisy.|S
-mn007|yeah.|S
-mn052|yeah.|S
-mn007|but|F
-fn002|and|D
-mn052|uh|F
-mn007|yeah.|F
-mn052|uh|F
-mn007|but i observe my case it's in uh uh at least on speechdat-car it doesn't matter.|S
-mn007|but t.i. digits it's like two or three percent absolute uh better.|S
-mn052|on t.i. digits this matters.|S
-mn052|absolute.|S
-mn052|uh|F
-mn007|so if|D
-me013|so you really might want to try the clean i think.|S
-mn052|yeah i i i will have to look at it.|S
-mn052|yeah that's true.|S
-me013|yeah.|B
-me013|yeah that could be sizeable right there.|S
-fn002|and this is everything.|S
-mn058|yeah.|S
-mn058|maybe you you are leaving in in about two weeks carmen.|S
-me013|okay.|B
-mn058|no?|Q
-fn002|yeah.|S
-mn058|yeah.|S
-mn058|so i mean if if if i would put it put on the head of a project manager i i i would say uh um i mean there is not so much time left now.|S
-me013|be my guest.|S
-mn058|i mean if um|F
-mn058|what what i would do is i i i would pick the best consolation which you think.|S
-mn058|and create create all the results for the whole database that you get to the final number as as sunil did it.|S
-fn002|and prepare at the|D
-mn058|and um|F
-mn058|and maybe also to to write somehow a document where you describe your approach and what you have done.|S
-fn002|yeah.|S
-fn002|i was thinking to do that next week.|S
-me013|yeah.|B
-mn058|yeah.|B
-me013|yeah.|B
-me013|i'll i'll borrow the head back and and agree.|S
-fn002|yeah.|S
-fn002|i i i will do that next week.|S
-me013|yeah.|S
-me013|that's that's|D
-me013|right.|S
-me013|in fact actually i i guess the uh the spanish government uh requires that anyway.|S
-me013|they want some kind of report from everybody who's in the program.|S
-fn002|uhhuh.|B
-me013|so|F
-me013|and of course i'd we'd we'd like to see it too.|S
-me013|so|F
-fn002|okay.|S
-me013|yeah.|F
-me018|so um|F
-me018|what's do you think we uh should do the digits or skip it?|Q
-me018|or what are what do you think?|Q
-me013|uh we have them now?|Q
-me018|yeah.|S
-me018|got them.|S
-me013|uh why why don't we do it?|Q
-me018|okay.|S
-me013|just just take a minute.|S
-fn002|i can send|D
-fn002|yet.|S
-me018|would you pass those down?|Q
-me013|oh.|S
-me013|sorry.|S
-me018|okay.|F
-me018|um|F
-me018|so i guess i'll go ahead.|S
-me018|um|F
+me013|so uh|F|fg|fg
+me013|yeah.|F|fg|fg
+me013|the suggestion was to have these guys start to|D|s|s
+me018|okay.|B|b|b
+me018|why don't you go ahead dave?|Q|qw|co
+me026|okay.|S|s|bk
+me026|um|F|fh|fh
+me026|so yeah the this past week i've been mainly occupied with um getting some results from the s.r.i. system trained on this short hub five training set for the mean subtraction method.|S|fh|fh
+me026|and um|F|fh|fh
+me026|i ran some tests last night.|S|s|s
+me026|but um|F|fh|fh
+me026|the results are suspicious.|S|s|s
+me026|um it's um because they're the baseline results are worse than um andreas than results andreas got previously.|S|fh|fh
+me026|and it could have something to do with um|D|s|s
+me018|that's on digits?|Q|qy|bu
+me026|that's on digits.|S|s|m
+me026|it it it could it could have something to do with um downsampling.|S|s|df
+me018|huh.|B|b|b
+me026|that's that's worth looking into.|S|s|ba
+me026|um|F|fh|fh
+me026|and um|F|fh|fh
+me026|apart from that i guess the the main thing i have i have to talk is um where i'm planning to go over the next week.|S|s|s
+me026|um|F|fh|fh
+me026|so i've been working on integrating this mean subtraction approach into the smartkom system.|S|s|s
+me026|and there's this question of well so um in my tests before with h.t.k.i. found it worked it worked the best with about twelve seconds of data used to estimate the mean.|S|s|s
+me026|but we'll often have less in the smartkom system.|S|s|rt
+me026|um|F|fh|fh
+me026|so i think we'll use as much data as we have at a particular time.|S|s|s
+me026|and we'll we'll concatenate utterances together um to get as much data as we possibly can from the user.|S|s|s
+me026|but um there's a question of how to set up the models so um we could train the models.|S|fh|fh
+me026|if we think twelve seconds is ideal we could train the models using twelve seconds to calculate the mean to mean subtract the training data.|S|s|s
+me026|or we could um use some other amount.|S|s|s
+me026|so like i did an experiment where i um was using six seconds in test.|S|fh|fh
+me026|um but for i tried twelve seconds in train.|S|fh|fh
+me026|and i tried um um the same in train.|S|s|s
+me026|i'm i tried six seconds in train.|S|s|s
+me026|and six seconds in train was about point three percent better.|S|s|s
+me026|um and um it's not clear to me yet whether that's something significant.|S|fh|fh
+me026|so i want to do some tests and um actually make some plots of um for a particular amount of data and test what happens if you vary the amount of data in train.|S|s|s
+me018|uhhuh.|S|s|bk
+me013|uh guenter i don't know if you followed this stuff but this is uh a uh uh long-term long-term window f.f.t.'s.|S|s|s
+mn058|yeah.|S|s|bk
+me013|yeah.|S|s|bk
+me013|yeah he you talked about it.|S|s|bk
+mn058|we we spoke about it already.|S|s|s
+me013|oh okay.|S|s|bk
+mn058|yeah.|S|s|bk
+me013|so you know what he's doing.|S|s|s
+me013|all right.|S|s|bk
+me026|so i was i actually ran the experiments mostly.|S|s|s
+me026|and i i was i was hoping to have the plots with me today.|S|s|s
+me026|i just didn't get to it.|S|s|s
+me026|but um|F|fh|fh
+me026|yeah i i would be curious about people's feedback on this.|S|s|s
+me026|because i'm i i think there are some i think it's it's kind of like a a bit of a tricky engineering problem.|S|s|df
+me026|i'm trying to figure out what's the optimal way to set this up.|S|s|s
+me026|so um i'll try to make the plots and then put some postscript up on my on my web page.|S|fh|fh
+me026|and i'll mention it in my status report if people want to take a look.|S|s|cc
+me013|you could clarify something for me.|S|s|co
+me013|you're saying point three percent.|S|s|s
+me013|you take a point three percent hit when the training and testing links are don't match or something?|Q|qy|bu
+me013|is that what it is?|Q|qy|qy
+me013|or|D|qrr|qrr
+me026|well it|D|%|%
+me026|i i don't think it it's just for any mismatch you take a hit.|S|s|nd
+me013|yeah.|B|b|b
+me026|in some cases it might be better to have a mismatch.|S|s|s
+me013|yeah.|B|b|b
+me026|like i think i saw something like like if you only have two seconds in test or um maybe it was something like four seconds you actually do a little better if you um train on six seconds than if you train on four seconds.|S|s|e
+me013|right.|B|b|b
+me026|um|F|fh|fh
+me026|but the case uh with the point three percent hit was using six seconds in test um comparing train on twelve seconds versus train on six seconds.|S|s|s
+me013|and which was worse?|Q|qw|rt
+me026|the train on twelve seconds.|S|s|s
+me013|okay.|S|s|bk
+me013|but point three percent uh from what to what?|Q|qw|d
+me013|that's point three percent.|S|s|e
+me026|on the the the accuracies went from it was something vaguely like ninety five point six accuracy um improved to ninety five point nine when i|D|s|s
+me013|so four point four to four point one.|S|s|s
+me026|okay.|S|s|bk
+me013|so yeah.|F|fh|fh
+me013|so about a about an eight percent uh seven or eight percent relative.|S|s|s
+me026|okay.|S|s|bk
+me013|uh|F|fh|fh
+me013|yeah.|F|fg|fg
+me013|well i think in a you know if if you were going for an evaluation system you'd care.|S|s|s
+me013|but if you were doing a live system that people were actually using nobody would notice.|S|s|s
+me013|it's uh i think the thing is to get something that's practical that that you could really use.|S|s|s
+me026|huh.|S|s|bk
+me026|that's that's interesting.|S|s|ba
+me026|all right the uh i see your point.|S|s|bk
+me026|i guess i was thinking of it as um an interesting research problem.|S|s|df
+me013|yeah.|S|s|bk
+me026|the how to i was thinking that for the a.s.r.u. paper we could have a section saying for smartkom we we in we tried this approach in uh interactive system which i don't think has been done before.|S|s|s
+me013|uhhuh.|B|b|b
+me013|uhhuh.|B|b|b
+me026|and and then there was two research questions from that.|S|s|s
+me026|and one is the does it still work if you just use the past history.|S|s|e
+me013|uhhuh.|B|b|b
+me026|all right.|S|s|bk
+me026|and the other was this question of um what i was just talking about now.|S|s|e
+me026|so i guess that's why i thought it was interesting.|S|s|s
+me013|i mean a short time f.f.t. short time cepstrum calculation uh mean mean calculation work that people have in commercial systems they do this all the time.|S|s|s
+me013|they the they calculate it from previous utterances and then use it you know.|S|s|df
+me026|yeah.|B|b|b
+me026|um|B|b|b
+me013|but but uh|F|fh|fh
+me013|as you say there hasn't been that much with this long longtime uh spectra work.|S|s|s
+me013|uh|F|fh|fh
+me026|oh oh okay.|S|s|bk
+me026|so that's that's that's standard.|S|s|bu
+me026|um|F|fh|fh
+me013|yeah.|S|s|aa
+me013|pretty common.|S|s|na
+me013|yeah.|S|s|aa
+me026|okay.|S|s|bk
+me013|um|F|fh|fh
+me013|but uh|F|fh|fh
+me013|yes.|F|fh|fh
+me013|no it is interesting.|S|s|ba
+me013|and the other thing is i mean there's two sides to these really small uh gradations in performance.|S|s|s
+me013|um i mean on the one hand in a practical system if something is uh four point four percent error four point one percent error people won't really tell be able to tell the difference.|S|fh|fh
+me013|on the other hand when you're doing uh research you may uh you might find that the way that you build up a change from a ninety five percent accurate system to a ninety eight percent accurate system is through ten or twelve little things that you do that each are point three percent.|S|s|s
+me013|so so the they they it's i don't mean to say that they're they're irrelevant.|S|s|s
+me013|uh they are relevant.|S|s|s
+me013|but um for a demo you won't see it.|S|fh|fh
+me026|uhhuh.|B|b|b
+me026|right.|S|s|bk
+me026|okay.|S|s|bk
+me013|yeah.|B|b|b
+me026|and um|F|fg|fg
+me026|let's let's see.|F|fh|fh
+me026|um|F|fh|fh
+me026|okay.|S|s|bk
+me026|and then there's um another thing i want to start looking at um is um the choice of the analysis window length.|S|s|tc
+me026|so i've just been using two seconds.|S|s|s
+me026|just because that's what carlos did before.|S|s|df
+me026|uh i wrote to him asking about he chose the two seconds.|S|fh|fh
+me026|and it seemed like he chose it a bit informally.|S|s|s
+me026|so um|F|fh|fh
+me026|with the with the h.t.k. set-up i should be able to do some experiments on just varying that length.|S|s|s
+me026|say between one and three seconds in a few different reverberation conditions.|S|s|e
+me026|um say this room and also a few of the artificial impulse responses we have for reverberation.|S|fh|fh
+me026|just um making some plots and seeing how they look.|S|s|e
+me026|and um|F|fh|fh
+me026|so|F|fh|fh
+me026|with the the sampling rate i was using one second or two seconds or four seconds is at a power of two um number of samples.|S|s|s
+me026|and um i'll i'll for the ones in between i guess i'll just zero pad.|S|s|cc
+me013|uhhuh.|B|b|b
+me013|i guess one thing that might also be an issue uh because part of what you're doing is you're getting a a spectrum over a bunch of different kinds of speech sounds.|S|s|s
+me013|um|F|fh|fh
+me013|and so it might matter how fast someone was talking for instance.|S|s|s
+me026|oh.|S|s|bk
+me013|you know if you if if if there's a lot of phones in one second maybe you'll get a a really good sampling of all these different things.|S|s|s
+me013|and and uh on the other hand if someone's talking slowly maybe you'd need more.|S|s|s
+me013|so|F|fh|fh
+me013|i don't know if you have some samples of faster or slower speech.|S|s|no
+me026|huh.|B|b|b
+me013|but it might make a difference.|S|s|s
+me013|i don't know.|S|s|no
+me026|uh yeah.|S|s|bk
+me026|i don't i don't think the t.i. digits data that i have um is would be appropriate for that.|S|s|ng
+me013|yeah probably not.|S|s|na
+me013|yeah.|S|s|aa
+me026|but what do you what about if i i fed it through some kind of um speech processing algorithm that changed the speech rate?|Q|qw|cs
+me013|yeah but then you'll have the degradation of of uh whatever you do uh added onto that.|S|s|bk
+me013|but maybe.|S|s|am
+me013|yeah.|S|s|aa
+me013|maybe if you get something that sounds that that's does a pretty job at that.|S|s|am
+me026|yeah.|S|s|bk
+me026|well uh just if you think it's worth looking into.|S|s|ng
+me013|you could imagine that.|S|s|s
+me026|i mean it it is getting a little away from reverberation.|S|s|df
+me013|um yeah.|S|h|h
+me013|it's just that you're making a choice.|S|s|s
+me013|uh i was thinking more from the system aspect if you're making a choice for smartkom that that that it might be that it's it the optimal number could be different depending on|D|s|df
+me026|yeah.|B|b|b
+me026|right.|S|s|bk
+me013|could be.|S|s|am
+me013|i don't know.|D|s|no
+me026|and and the third thing um uh is um barry explained l.d.a. filtering to me yesterday.|S|s|tc
+me026|and so um mike shire in his thesis um did a a series of experiments um training l.d.a. filters in on different conditions.|S|fh|fh
+me026|and you were interested in having me repeat this for|D|s|s
+me026|for this mean subtraction approach?|Q|qy|bu
+me026|is is that right?|Q|qy|qy
+me026|or for these long analysis windows i guess is the right way to put it.|S|s|e
+me013|i guess the the the issue i was the general issue i was bringing up was that if you're have a moving moving window uh a a a set of weights times things that uh move along shift along in time that you have in fact a linear time invariant filter.|S|s|s
+me013|and you just happened to have picked a particular one by setting all the weights to be equal.|S|s|s
+me013|and so the issue is what are some other filters that you could use uh in that sense of filter.|S|s|s
+me026|uhhuh.|B|b|b
+me013|and um|F|fh|fh
+me013|as i was saying i think the simplest thing to do is not to train anything but just to do some sort of uh uh hamming or hanning uh kind of window kind of thing.|S|s|cs
+me026|right.|S|s|bk
+me026|uhhuh.|S|s|bk
+me013|just sort of to de emphasize the jarring.|S|s|df
+me013|so i think that would sort of be the first thing to do.|S|s|s
+me013|but then yeah the l.d.a. uh is interesting because it would sort of say well suppose you actually trained this up to do the best you could by some criterion.|S|s|s
+me013|what would the filter look like then?|Q|qw|qw
+me026|uhhuh.|B|b|b
+me013|uh|F|fh|fh
+me013|and um|F|fh|fh
+me013|that's sort of what we're doing in this aurora stuff.|S|s|s
+me013|and uh|F|fh|fh
+me013|it's still not clear to me in the long run whether the best thing to do would be to do that or to have some stylized version of the filter that looks like these things you've trained up because you always have the problem that it's trained up for one condition and it isn't quite right for another.|S|s|no
+me013|so|F|fh|fh
+me013|uh that's that's why that's why rasta filter has actually ended up lasting a long time.|S|s|df
+me013|people still using it quite a bit because you don't change it.|S|s|df
+me013|so|F|fh|fh
+me013|doesn't get any worse.|S|s|s
+me013|uh|F|fh|fh
+me026|huh.|B|b|b
+me013|anyway.|F|fh|fh
+me026|okay.|F|fg|fg
+me026|so um|F|fh|fh
+me026|actually i was just thinking about what i was asking about earlier which is about having less than say twelve seconds in the smartkom system to do the mean subtraction.|S|s|s
+me026|you said in systems where you use cepstral mean subtraction they concatenate utterances.|S|s|bu
+me026|and do you know how they address this issue of um testing versus training?|Q|qy|rt
+me026|can|D|%|%
+mn058|i think what they do is they do it always online.|S|s|s
+me013|go ahead.|D|s|co
+mn058|i mean that you just take what you have from the past.|S|s|s
+mn058|that you calculate the mean of this and subtract the mean.|S|s|s
+me026|okay.|S|s|bk
+me026|um|F|fh|fh
+mn058|and then you can yeah you you can increase your window while you get while you are getting more samples.|S|s|s
+me026|okay.|S|s|bk
+me026|um|F|fh|fh
+me026|and um so so in in that case what do they do when they're um performing the cepstral mean subtraction on the training data?|Q|fh|fh
+me026|so because you'd have hours and hours of training data.|S|s|df
+me026|so do they cut it off and start over?|Q|qy|rt
+me026|at intervals.|S|s|e
+me026|or|D|qrr|qrr
+mn058|so do you have uh you you mean you have files which are hours of hours long?|Q|qy|bu
+mn058|or|D|qrr|qrr
+me026|oh well no.|S|s|ar
+me026|i guess not.|S|s|nd
+mn058|yeah.|S|s|bk
+me026|but|D|%|%
+mn058|i mean usually you have in the training set you have similar conditions.|S|s|s
+mn058|i mean file lengths are i guess the same order or in the same size as for test data or|D|s|df
+mn058|aren't they?|Q|qy|g
+me026|okay.|S|s|bk
+me026|but it's|D|%|%
+me026|okay.|S|s|bk
+me026|so if someone's interacting with the system though uh morgan uh morgan said that you would tend to um chain utterances together.|S|s|ng
+me026|um|F|fh|fh
+me013|well i think what i was i thought what i was saying was that um at any given point you are going to start off with what you had from before.|S|s|s
+me026|oh.|B|b|b
+me013|from|D|%|%
+me013|and so if you're splitting things up into utterances.|S|s|s
+me013|so for instance in a dialogue system where you're going to be asking uh you know for some information there's some initial something.|S|s|df
+me013|and you know the first time out you you might have some general average.|S|s|df
+me013|but you you you don't have very much information yet.|S|s|df
+me013|but at after they've given one utterance you've got something.|S|s|df
+me013|you can compute your mean cepstra from that.|S|s|df
+me026|uhhuh.|B|b|b
+me013|and then can use it for the next thing that they say.|S|s|s
+me013|uh|F|fh|fh
+me013|so that you know the performance should be better that second time.|S|s|df
+me013|um|F|fh|fh
+me013|and i think the heuristics of exactly how people handle that and how they handle their training i'm sure vary from place to place.|S|s|s
+me013|but i think the ideally it seems to me anyway that you you would want to do the same thing in training as you do in test.|S|s|s
+me013|but that's that's just uh a prejudice.|S|s|bd
+me013|and i think anybody working on this with some particular task would experiment.|S|s|s
+me026|right.|S|s|aa
+me026|i i guess the question i had was um amount of data was the amount of data that you'd give it to um update this estimate.|S|s|s
+me026|because say you if you have say five thousand utterances in your training set um and you you keep the mean from the last utterance.|S|s|df
+me026|by the time it gets to the five thousandth utterance|D|s|s
+me013|no but those are all different people with different i mean in|D|s|ar
+me013|so for instance in in the in a telephone task these are different phone calls.|S|s|e
+me013|so you don't want to chain it together from a from a different phone call.|S|s|df
+me026|okay.|S|s|bk
+me026|so so so they would|D|%|%
+me013|so it's within speaker.|S|s|s
+mn058|yeah.|B|b|b
+me013|within phone call.|S|s|s
+me013|if it's a dialogue system it's within whatever this characteristic you're trying to get rid of is expected to be consistent over.|S|s|s
+mn058|huh.|B|b|b
+me026|and it|D|%|%
+me013|right?|Q|qy|d
+me026|right.|S|s|aa
+me026|okay.|S|s|bk
+me026|so you'd you and so in training you would start over at at every new phone call or at every new speaker.|S|s|s
+me013|yeah.|S|s|aa
+me026|yeah.|F|fh|fh
+me026|okay.|S|s|bk
+me013|yeah.|S|s|bk
+me013|now you know maybe you'd use something from the others.|S|s|s
+me013|just because at the beginning of a call you don't know anything.|S|s|df
+me013|and so you might have some kind of general thing that's your best guess to start with.|S|s|s
+me013|but|D|%|%
+me013|so i i|D|%|%
+me013|you know a lot of these things are proprietary.|S|s|s
+me013|so we're doing a little bit of guesswork here.|S|s|s
+me013|i mean what do what do people do who really face these problems in the field?|Q|qw|qw
+me013|well they have companies.|S|s|s
+me013|and they don't tell other people exactly what they do.|S|s|s
+me013|but but i mean when you the the hints that you get from what they when they talk about it are that they do they all do something like this.|S|s|s
+me026|right.|B|b|b
+me026|right.|S|s|bk
+me026|okay.|S|s|bk
+me026|i see.|S|s|bk
+me026|because i so this smartkom task first off it's this t.v. and movie information system.|S|s|s
+me013|yeah but you might have somebody who's using it.|S|s|bk
+me026|and|D|%|%
+me013|and then later you might have somebody else who's using it.|S|s|s
+me026|yeah.|B|b|b
+me026|yeah.|B|b|b
+me013|and so you'd want to set some|D|s|s
+me026|right.|S|s|bk
+me026|right.|S|s|bk
+me026|i i see.|S|s|bk
+me026|i was i was about to say so if if you ask it what what movies are on t.v. tonight.|S|s|s
+me013|yeah.|S|s|bk
+me013|yeah.|B|b|b
+me026|if i look at my wristwatch when i say that it's about two seconds.|S|s|s
+me013|yeah.|B|b|b
+me026|the way i currently have the mean subtraction um set up the the analysis window is two seconds.|S|s|s
+me026|so what you just said about what do you start with raises a question of what do i start with then.|S|s|s
+me013|uhhuh.|B|b|b
+me026|i guess it because|D|s|s
+me013|well.|F|fg|fg
+me013|okay.|S|s|bk
+me013|so in that situation though maybe what's a little different there is i think you're talking about there's only one|D|s|s
+me013|it it it also depends|D|s|s
+me013|we're getting a little off track here.|S|s|s
+me026|oh.|S|s|bk
+me013|but but but|F|fh|fh
+me026|right.|S|s|aa
+me013|uh there's been some discussion about whether the work we're doing in that project is going to be for the kiosk or for the mobile or for both.|S|fh|fh
+me013|and i think for this kind of discussion it matters.|S|s|ba
+me013|if it's in the kiosk then the physical situation is the same.|S|s|df
+me013|it's going to you know the exact interaction of the microphone's going to differ depending on the person and so forth.|S|s|s
+me013|but at least the basic acoustics are going to be the same.|S|s|s
+me013|so if it's really in one kiosk then i think that you could just chain together and and you know as much as much speech as possible to|D|s|s
+me013|because what you're really trying to get at is the is the reverberation characteristic.|S|s|df
+me026|yeah.|S|s|bk
+me013|but in in the case of the mobile uh presumably the acoustic's changing all over the place.|S|s|s
+me026|right.|S|s|bk
+me013|and in that case you probably don't want to have it be endless because you want to have some sort of it's it's not a question of how long do you think it's you can get an approximation to a stationary something given that it's not really stationary.|S|s|s
+me026|right.|S|s|bk
+mn058|huh.|B|b|b
+me026|right.|S|s|bk
+me013|so|F|fh|fh
+me026|and i i i guess i just started thinking of another question.|S|s|s
+me026|which is for for the very first frame what what do i do.|S|s|e
+me026|if i'm if i take if i use that frame to calculate the mean then i'm just going to get nothing.|S|s|s
+me013|uhhuh.|B|b|b
+me013|right.|S|s|aa
+me026|um|F|fh|fh
+me026|so i should probably have some kind of default mean for the first couple of frames.|S|s|bu
+me013|yeah.|S|s|aa
+me013|yeah.|S|s|aa
+me026|okay.|S|s|bk
+me013|yeah.|S|s|aa
+me013|or subtract nothing.|S|s|cs
+me013|i mean it's|D|s|s
+me026|or subtract nothing.|S|s|bk
+me026|and and that's that's i guess that's something that's people have figured out how to deal with in cepstral mean subtraction as well?|Q|qy|bu
+me013|yeah yeah.|B|b|b
+me013|yeah people do something.|S|s|aa
+me013|they they uh they have some um|D|s|s
+me013|uh|F|fh|fh
+me013|in in cepstral mean subtraction for short-term window analysis windows as is usually done you're trying to get rid of some very general characteristic.|S|s|s
+me013|and so uh if you have any other information about what a general kind of characteristic would be then you you can do it there.|S|fh|fh
+me018|you can also|D|s|s
+me018|you can also reflect the data.|S|s|cs
+me018|so you take uh|D|s|s
+me018|you know.|F|fh|fh
+me018|i'm not sure how many frames you need.|S|s|no
+me018|but you take that many from the front and flip it around to as the negative value.|S|s|s
+me026|uhhuh.|B|b|b
+me013|yeah.|S|s|bk
+me013|that's|D|%|%
+me018|so you can always|D|s|df
+me013|yeah.|B|b|b
+me013|the other thing is that and and i i remember b.b.n. doing this is that if you have a multi pass system um if the first pass it takes most of the computation the second and the third pass could be very very quick.|S|s|s
+me013|just looking at a relatively small small uh space of hypotheses.|S|s|e
+me026|huh.|B|b|b
+me026|uhhuh.|B|b|b
+me013|then you can do your first pass without any subtraction at all.|S|s|s
+me026|oh.|B|b|b
+me013|and then your second pass uh uh eliminates those most of those hypotheses by uh by having an improved improved version of the analysis.|S|s|s
+me026|okay.|B|b|b
+me026|okay.|S|s|bk
+me013|so|F|fh|fh
+me026|okay.|B|b|b
+me026|so that was all i had for now.|S|s|s
+me013|yeah.|S|s|bk
+me018|do you want to go barry?|Q|qy|co
+me006|yeah.|S|s|aa
+me006|okay.|S|s|aa
+me006|um so for the past uh week or two i've been just writing my uh formal thesis proposal.|S|fh|fh
+me006|um so i'm taking this qualifier exam that's coming up in two weeks.|S|fh|fh
+me006|and i i finish writing a proposal and submit it to the committee.|S|s|s
+me006|um|F|fh|fh
+me006|and uh should i should i explain uh more about what what i'm proposing to do and and stuff?|Q|fh|fh
+me013|yes briefly.|S|s|na
+me018|yeah briefly.|S|s|na
+me006|okay.|S|s|bk
+me006|um|F|fh|fh
+me006|so briefly i'm proposing to do a a new approach to speech recognition using um a combination of uh multi band ideas and ideas um about the uh acoustic phonetic approach to speech recognition.|S|s|s
+me006|um so i will be using these graphical models that um that implement the multi band approach to recognize a set of intermediate categories that might involve uh things like phonetic features or other other feature things that are more closely related to the acoustic signal itself.|S|fh|fh
+me006|um and the hope in all of this is that by going multi band and by going into these um intermediate classifications that we can get a system that's more robust to to unseen noises and situations like that.|S|fh|fh
+me006|um|F|fh|fh
+me006|and so|F|fh|fh
+me006|some of the research issues involved in this are um one what kind of intermediate categories do we need to classify.|S|s|s
+me006|um another one is um what what other types of structures in these multi band graphical models should we consider in order to um combine evidence from the sub bands.|S|fh|fh
+me006|and uh the third one is how do we how do we merge all the uh information from the individual uh multi band classifiers to come up with word word recognition or or phone recognition things.|S|fh|fh
+me006|um|F|fh|fh
+me006|so basically that's that's what i've been doing.|S|s|s
+me018|so you've got two weeks huh?|S|s|bu
+me006|and|F|fh|fh
+me006|i got two weeks to brush up on um presentation stuff.|S|s|na
+me006|and um|F|fh|fh
+me013|oh i thought you were finishing your thesis in two weeks.|S|s|bu
+me006|but|F|fh|fh
+me006|oh that too.|S|s|bk
+me013|yeah.|S|s|bk
+me006|yeah.|D|%|%
+me018|are you going to do any dry runs for your thing?|Q|qy|qy
+me018|or are you just going to|D|qrr|qrr
+me006|yes.|S|s|aa
+me006|yes.|S|s|aa
+me006|i um i'm i'm going to do some.|S|s|na
+me006|would you be interested?|Q|qy|rt
+me018|sure.|S|s|aa
+me006|to help out.|S|s|e
+me018|sure.|S|s|aa
+me006|okay.|S|s|bk
+me006|thanks.|S|s|ft
+me006|yeah.|F|fh|fh
+me018|is that it?|Q|qy|rt
+me006|that's it.|S|s|na
+me018|okay.|S|s|bk
+me018|uh hhh.|F|fg|fg
+me018|let's see.|F|fh|fh
+me018|so we've got forty minutes left.|S|s|tc
+me018|and it seems like there's a lot of material.|S|s|s
+me018|any suggestions about where we where we should go next?|Q|qy|rt
+mn052|huh.|B|b|b
+me018|uh|F|fh|fh
+me018|do you want to go sunil?|Q|qy|co
+me018|maybe we'll just start with you.|S|s|s
+mn052|yeah.|S|s|aa
+mn052|but i actually stuck most of this in our last meeting with guenter.|S|s|ng
+mn052|um|F|fh|fh
+mn052|but i'll just|D|s|s
+mn052|um|F|fh|fh
+mn052|so the last week uh i showed some results with only speechdat-car.|S|s|s
+mn052|which was like some fifty six percent.|S|s|e
+mn052|and uh i didn't|D|fh|fh
+mn052|i mean i i found that the results|D|s|s
+mn052|i mean i wasn't getting that results on the t.i. digit.|S|s|s
+mn052|so i was like looking into why what is wrong with the t.i. digits.|S|s|s
+mn052|why why i was not getting it.|S|s|s
+mn052|and i found that the noise estimation is a reason for the t.i. digits to perform worse than the baseline.|S|s|s
+mn052|so uh i actually picked|D|fh|fh
+mn052|i mean the first thing i did was i just scaled the noise estimate by a factor which is less than one to see if that because i found there are a lot of zeros in the spectrogram for the t.i. digits when i used this approach.|S|s|s
+mn052|so the first thing i did was i just scaled the noise estimate.|S|s|s
+mn052|and i found|D|s|s
+mn052|so the the results that i've shown here are the complete results using the new|D|s|s
+mn052|well the the new technique is nothing but the noise estimate scaled by a factor of point five.|S|s|e
+mn052|so it's just an ad hoc.|S|s|s
+mn052|i mean some intermediate result because it's not optimized for anything.|S|s|df
+mn052|so the results the trend the only trend i could see from those results was like the the the current noise estimation or the uh noise composition scheme is working good for like the car noise type of thing.|S|fh|fh
+mn052|because i've the only only very good result in the t.i. digits is the noise car noise condition for their test a..|S|s|s
+mn052|which is like the best i could see that|D|s|s
+mn052|uh for any non stationary noise like babble or subway or any street some restaurant noise it's like it's not performing very well.|S|fh|fh
+mn052|so|F|fh|fh
+mn052|the so that that's the first thing i uh i could make out from this stuff.|S|s|s
+mn052|and|F|fh|fh
+mn058|yeah i think what is important to see is that there is a big difference between the training modes.|S|fg|fg
+mn058|uhhuh.|F|fh|fh
+mn052|yeah.|S|s|bk
+mn058|if you have clean training you get also a fifty percent improvement.|S|s|s
+mn052|yeah.|B|b|b
+mn058|but if you have muddy condition training you get only twenty percent.|S|s|s
+mn052|yeah.|B|b|b
+mn052|yeah.|B|b|b
+mn007|uhhuh.|B|b|b
+mn058|uhhuh.|F|fh|fh
+mn052|uh and in that twenty percent it's very inconsistent across different noise conditions.|S|s|s
+mn058|huh.|B|b|b
+mn052|so i have like a forty five percent for car noise.|S|s|s
+mn052|and then there's a minus five percent for the babble.|S|s|s
+mn058|huh.|B|b|b
+mn052|and there's this thirty three for the station.|S|s|s
+mn052|and so it's it's not it's not actually very consistent across.|S|s|s
+mn052|so|F|fh|fh
+mn052|the only correlation between the speechdat-car and this performance is the stationarity of the noise that is there in these conditions and the speechdat-car.|S|s|s
+mn058|uhhuh.|B|b|b
+mn052|and uh|F|fh|fh
+mn052|so|F|fh|fh
+mn052|so the overall result is like in the last page.|S|s|s
+mn052|which is like forty seven.|S|s|e
+mn052|which is still very imbalanced because there are like fifty six percent on the speechdat-car and thirty five percent on the t.i. digits.|S|s|e
+mn052|and|F|fh|fh
+mn052|uh|F|fh|fh
+mn052|the fifty six percent is like comparable to what the french telecom gets.|S|s|s
+mn052|but the thirty five percent is way off.|S|s|s
+me013|i'm sort of confused.|S|s|s
+me013|but|F|fh|fh
+me013|this|D|%|%
+me013|i'm looking on the second page.|S|s|s
+mn052|oh.|S|s|bk
+mn052|yep.|S|s|bk
+me013|and it says fifty percent.|S|s|s
+me013|looking in the lower right-hand corner.|S|s|e
+me013|fifty percent relative performance.|S|s|s
+mn058|for the clean training.|S|s|s
+me013|is that|D|qy|qy
+mn058|and if you if you look|D|s|s
+me013|is that fifty percent improvement?|Q|qy|rt
+mn052|yeah.|S|s|aa
+mn058|yeah.|S|s|aa
+mn052|for that's for the clean training and the noisy testing for the t.i. digits.|S|s|df
+me013|so it's improvement over the baseline mel cepstrum.|S|s|bu
+mn052|yeah.|S|s|aa
+mn052|yeah.|S|s|aa
+me013|but the baseline mel cepstrum under those training doesn't do as well.|S|s|s
+me013|i i'm i'm trying to understand why it's it's eighty percent.|S|s|s
+me013|that's an accuracy number i guess.|S|s|bu
+mn052|yeah yeah yeah.|S|s|aa
+me013|right?|Q|qy|d
+me013|so that's not as good as the one up above.|S|s|s
+mn052|no.|S|s|aa
+me013|but the fifty is better than the one up above.|S|s|s
+mn052|yeah.|S|s|aa
+me013|so i'm confused.|S|s|s
+mn052|uh actually the noise compensation whatever uh we are put in it works very well for the high mismatch condition.|S|fg|fg
+mn052|i mean it's consistent in the speechdat-car.|S|s|df
+mn052|and in the clean training also it gives it|D|s|s
+mn052|but this fifty percent is is that the the high mismatch performance equivalent to the high mismatch performance in the speech.|S|s|s
+me018|so so since the high mismatch performance is much worse to begin with it's easier to get a better relative improvement.|S|fg|fg
+mn052|yeah.|S|s|bk
+mn052|yeah.|B|b|b
+mn052|i do.|S|s|s
+mn052|yeah yeah.|B|b|b
+mn052|so by putting this noise.|S|s|s
+mn007|yeah.|B|b|b
+mn007|yeah if we look at the figures on the right we see that the reference system is very bad.|S|s|s
+me013|oh.|S|s|bk
+mn052|yeah.|D|b|b
+mn052|the reference drops like a very fast.|S|s|s
+me013|oh oh oh oh oh oh.|S|s|bk
+mn007|like for clean clean training condition.|S|s|e
+me013|i see.|S|s|bk
+mn052|yeah.|B|b|b
+me013|i see.|S|s|bk
+mn007|nnn.|F|fh|fh
+me013|this is this is t.i. digits we're looking at?|Q|qy|bu
+mn052|yeah.|S|s|aa
+me013|this whole page is t.i. digits?|Q|qy|bu
+mn052|yeah.|S|s|aa
+mn052|oh.|S|s|bk
+me013|or this is|D|qrr|qrr
+mn052|oh yeah.|S|s|bk
+mn052|it's not written anywhere.|S|s|s
+mn052|yeah it's t.i. digits.|S|s|na
+mn052|the first spreadsheet is t.i. digits.|S|s|na
+me013|huh.|B|b|b
+mn058|huh.|B|b|b
+me013|how does clean training do for the uh car?|Q|qw|qw
+me013|stuff?|D|%|%
+mn052|the car?|Q|qy|bu
+mn052|oh.|S|s|bk
+mn052|still it still uh that that's still consistent.|S|s|s
+mn052|i mean i get the best performance in the case of car which is the third column in the a. condition.|S|s|s
+me013|no.|S|s|ar
+me013|i mean this is added noise.|S|s|ng
+me013|i mean this is t.i. digits.|S|s|ng
+me013|i'm sorry.|S|s|fa
+me013|i meant in in the in the uh multi language uh uh finnish and|D|s|ng
+mn052|uh|F|fg|fg
+mn058|this is next next page.|S|s|s
+mn052|that's the next next spreadsheet is.|S|s|s
+mn058|huh.|F|fh|fh
+mn052|so that is the performance for italian finnish and spanish.|S|s|s
+me013|training condition.|S|s|s
+me013|oh right.|S|s|bk
+me013|so clean corresponds to high mismatch.|S|s|s
+mn052|yeah.|B|b|b
+me013|and increase|D|%|%
+me013|that's increase|D|s|s
+mn058|improvement.|S|s|2
+mn052|improvement.|S|s|2
+mn058|yeah.|B|b|b
+mn052|that's percentage increase is the percentage improvement over the baseline.|S|s|s
+mn058|it's it's a|D|%|%
+mn052|so that's|D|%|%
+me013|which means decrease in word error rate?|Q|qy|bu
+mn052|yeah.|S|s|aa
+me013|okay.|S|s|bk
+me013|so percentage increase means decrease.|S|s|bs
+me013|okay.|S|s|bk
+mn052|yeah yeah.|S|s|aa
+mn058|yeah.|S|s|bk
+mn058|the the there was a very long discussion about this on on the on the uh amsterdam meeting.|S|s|s
+me013|yeah.|B|b|b
+mn058|how to how to calculate it then.|S|s|s
+mn052|yeah.|S|s|bk
+mn052|there's there's a|D|s|s
+mn058|i i i guess you are using finally this the scheme which they|D|s|s
+mn052|which is there in the spreadsheet.|S|s|2
+mn052|i'm not changing anything in there.|S|s|s
+mn058|okay.|B|b|b
+mn058|huh.|B|b|b
+me013|all right.|S|s|bk
+mn052|so|F|fg|fg
+mn052|uh|F|fg|fg
+mn052|yeah.|F|fg|fg
+mn052|so all the h.m. numbers are very good.|S|s|s
+mn052|in the sense they are better than what the french telecom gets.|S|s|e
+mn052|so|F|fh|fh
+mn052|but the the only number that's still i mean which stephane also got in his result was that medium mismatch of the finnish.|S|s|s
+mn052|which is very which is a very strange situation where we used the we changed the proto for initializing the h.m.m.|S|s|e
+mn052|i mean this this is basically because it gets stuck in some local minimum in the training.|S|s|df
+mn052|that seventy five point seven nine in the finnish mismatch which is that the eleven point nine six what we see.|S|s|s
+me013|uhhuh.|B|b|b
+mn058|huh.|B|b|b
+mn052|yeah.|F|fh|fh
+me013|so we have to jiggle it somehow?|Q|qy|bu
+mn052|yeah.|S|s|aa
+mn052|so we start with that different proto and it becomes eighty eight.|S|s|s
+mn052|which is like some fifty percent improvement.|S|s|e
+me013|wait a minute.|S|s|co
+me013|start with a different what?|Q|qw|br
+mn052|different prototype.|S|s|s
+mn052|which is like a different initialization for the uh transition probabilities.|S|s|e
+mn052|it's just that right now the initialization is to stay more in the current state.|S|s|s
+mn052|which is point four point six right?|S|s|e
+mn007|yeah.|S|s|aa
+mn052|yeah.|S|s|bk
+mn052|and if it changes to point five point five which is equal for transition and self loop where it becomes eighty eight percent.|S|s|s
+me018|well but that involves mucking with the back end.|S|s|ng
+me018|which is not allowed.|S|s|e
+mn052|yeah.|S|s|aa
+mn052|we can't do it.|S|s|na
+me018|yeah.|F|fh|fh
+mn052|yeah.|F|fh|fh
+mn007|huh.|B|b|b
+mn052|so|F|fh|fh
+mn058|i mean it uh like|D|s|s
+mn058|it is well known this this medium match condition of the finnish data has some strange effects.|S|s|s
+mn052|very|D|%|%
+mn007|yeah.|B|b|b
+mn052|it has a very few at uh actually uh i mean words also.|S|s|s
+mn058|i mean that is|D|s|s
+mn058|yeah.|S|s|aa
+mn058|that too.|S|s|na
+mn052|it's a very very small set actually.|S|s|s
+mn058|yeah.|B|b|b
+mn058|uhhuh.|B|b|b
+mn058|there is a a there is a lot of uh there are a lot of utterances with music in with music in the background.|S|s|s
+mn052|so there is|D|s|s
+mn052|yeah.|S|s|aa
+mn052|yeah yeah yeah.|S|s|aa
+mn058|huh.|F|fh|fh
+mn052|yeah.|S|s|aa
+me013|uhhuh.|B|b|b
+mn052|yeah.|S|s|aa
+mn052|it has some music also.|S|s|na
+mn052|i mean very horrible music like like 4x.|S|s|e
+mn052|i know.|S|s|s
+me013|so maybe for that one you need a much smarter v.a. d?|Q|qy|cs
+me013|huh|F|fh|fh
+me013|if it's music.|S|s|e
+mn052|uh|F|fg|fg
+mn052|so|F|fg|fg
+mn052|that that's the that's about the results.|S|s|s
+mn052|and uh|F|fh|fh
+mn052|the summary is like|D|s|s
+mn052|okay.|F|fg|fg
+mn052|so there are the other thing what i tried was which i explained in the last meeting is using the channel zero for uh for both dropping and estimating the noise.|S|s|s
+mn052|and that's like just to get a feel of how good it is.|S|s|df
+mn052|i guess the fifty six percent improvement in the speechdat-car becomes like sixty seven percent.|S|s|s
+mn052|like ten percent better.|S|s|e
+mn052|but that's that's not a that's a cheating experiment.|S|s|df
+mn052|so|F|fh|fh
+mn052|that's just|D|s|s
+mn052|so|F|fh|fh
+mn058|but the but the uh forty seven point nine percent which you have now that's already a remarkable improvement in comparison to the first proposal.|S|s|s
+mn052|yeah.|S|s|aa
+mn052|so we had forty four percent in the first proposal.|S|s|s
+mn058|okay.|B|b|b
+mn058|uhhuh.|B|b|b
+mn052|yeah.|S|s|aa
+mn052|we have a big|D|s|s
+mn052|so the major improvement that we got was in all the high mismatch cases.|S|fg|fg
+mn052|because all those numbers were in sixties and seventies.|S|s|df
+mn052|because we never had any noise compensations.|S|s|df
+mn058|huh.|B|b|b
+mn052|so that's where the biggest improvement came up.|S|s|s
+mn052|not much in the well match and the medium match and t.i. digits also right now.|S|s|s
+mn052|so this is still at three or four percent improvement over the first proposal.|S|s|s
+mn058|huh.|B|b|b
+mn058|huh.|B|b|b
+me013|yeah so that's good.|S|s|bk
+mn052|yeah.|F|fh|fh
+mn052|so|F|fh|fh
+me013|then if we can improve the noise estimation then it should get better.|S|s|cs
+mn058|yeah.|S|s|bk
+mn058|i i started thinking about also|D|s|s
+mn058|i mean yeah uh i discovered the same problem when i started working on uh on this aurora task almost two years ago.|S|s|s
+mn058|that you have the problem with this|D|s|df
+mn058|at the beginning we had only this condition training of the t.i. digits.|S|s|df
+mn052|yeah.|B|b|b
+mn058|and uh i i found the same problem.|S|fh|fh
+mn058|just taking um what we were used to use i mean uh some type of spectral subtraction you get even worse results than the basis.|S|s|df
+mn052|yeah.|D|b|b
+mn058|and uh|F|fh|fh
+mn052|yeah.|D|b|b
+mn052|yeah.|D|b|b
+mn058|i i tried to find an explanation for it.|S|s|s
+mn058|so|F|fh|fh
+me013|huh.|B|b|b
+mn052|so|F|fg|fg
+mn052|yes.|S|s|bk
+mn052|stephane also has the same experience of using the spectral subtraction right?|S|s|s
+mn058|huh.|B|b|b
+mn007|uhhuh.|S|s|aa
+mn052|yeah.|B|b|b
+mn007|yeah.|S|s|aa
+mn052|so here here i mean i found that it's if i changed the noise estimate i could get an improvement.|S|s|s
+mn052|so that's so it's something which i can actually pursue is the noise estimate.|S|s|s
+mn058|uhhuh.|S|s|bk
+mn052|and|F|fh|fh
+mn058|yeah i think what you do is in when when you have the the this multi condition training mode um then you have then you can train models for the speech for the words as well as for the pauses where you really have all information about the noise available.|S|fg|fg
+mn052|yeah.|B|b|b
+mn058|and|F|fh|fh
+mn058|it was surprising.|S|s|s
+mn058|at the beginning it was not surprising to me that you get really the best results on doing it this way.|S|s|s
+mn058|i mean in comparison to any type of training on clean data and any type of processing.|S|s|df
+mn058|but it was|D|s|s
+mn058|so|F|fh|fh
+mn058|it it seems to be the best what what what we can do in this moment is multi condition training.|S|s|cs
+mn058|and when we now start introducing some some noise reduction technique we we introduce also somehow artificial distortions.|S|s|cs
+mn052|yeah.|B|b|b
+mn058|and these artificial distortions uh i have the feeling that they are the reason why why we have the problems in this multi condition training.|S|s|s
+mn058|that means the h.m.m.'s we trained they are they are based on gaussians.|S|s|s
+mn052|yeah.|B|b|b
+mn058|and on modeling gaussians.|S|s|e
+mn058|and if you|D|s|s
+mn058|can i move a little bit with this?|Q|qy|t3
+mn058|yeah.|S|s|bk
+mn058|and if we introduce now this this spectral subtraction or wiener filtering stuff|D|s|s
+mn058|so usually what you have is maybe um|D|fh|fh
+mn058|i'm i'm showing now an envelope.|S|s|s
+mn058|um|F|fh|fh
+mn058|maybe you'll for this time.|S|s|am
+mn058|so usually you have maybe in clean condition you have something which looks like this.|S|s|s
+mn058|and if it is noisy it is somewhere here.|S|s|s
+mn058|and then you try to subtract it or wiener filter or whatever.|S|s|s
+mn058|and what you get is you have always these problems that you have this these these these zeros in there.|S|s|s
+mn052|yeah.|B|b|b
+mn058|and you have to do something if you get these negative values.|S|s|s
+mn058|i mean this is your noise estimate and you somehow subtract it or do whatever.|S|s|s
+mn058|uh and then you have|D|fh|fh
+mn058|and then i think what you do is you introduce some some artificial distribution in this.|S|s|s
+mn058|uh|F|fh|fh
+mn058|in in the models.|S|s|e
+mn058|i mean you you train it also this way.|S|s|s
+mn058|but somehow there is there is no longer a a gaussian distribution.|S|s|s
+mn058|it is somehow a strange distribution which we introduce with these artificial distortions.|S|s|s
+mn058|and and i was thinking that that might be the reason why you get these problems in the especially in the multi condition training mode.|S|s|s
+me013|uhhuh.|B|b|b
+mn052|yeah yeah.|S|s|aa
+mn052|yeah.|S|s|aa
+mn052|the the models are not complex enough to absorb that additional variability that you're introducing.|S|s|s
+me018|thanks adam.|S|s|ft
+mn058|yeah.|S|s|bk
+mn058|yes.|S|s|aa
+mn052|well that's|D|%|%
+mn052|yeah.|F|fh|fh
+mn052|so|F|fh|fh
+mn007|i also have the feeling that um the reason why it doesn't work is yeah that the models are much are um not complex enough.|S|s|s
+mn007|because i actually i always had a good experience with spectral subtraction.|S|s|df
+mn007|just a straight spectral subtraction algorithm when i was using neural networks big neural networks which maybe are more able to model strange distributions.|S|s|e
+mn058|uhhuh.|B|b|b
+mn007|and|F|fh|fh
+mn007|but|F|fh|fh
+mn007|yeah.|F|fh|fh
+mn007|then i tried the same exactly the same spectral subtraction algorithm on these aurora tasks.|S|s|rt
+mn007|and it simply doesn't work.|S|s|s
+mn058|huh.|B|b|b
+mn007|it's even it uh hurts even.|S|s|s
+mn007|so|F|fh|fh
+me013|we probably should at some point here try the tandem the the the system two kind of stuff with this with the spectral subtraction for that reason.|S|s|cs
+mn058|huh.|B|b|b
+mn058|uhhuh.|B|b|b
+me013|because again it should do a transformation to a domain where it maybe looks more gaussian.|S|s|df
+mn007|uhhuh.|B|b|b
+mn058|huh.|B|b|b
+mn058|yeah.|F|fg|fg
+mn058|i i was|D|%|%
+mn058|just yesterday when i was thinking about it um what what we could try to do or do about it|D|s|cs
+mn058|i mean if you if you get at this in this situation that you get this this negative values and you simply set it to zero or to a constant or whatever if we if we would use there a somehow um a random generator which which has a certain distribution not a certain yeah a special distribution we should see we we have to think about it.|S|s|s
+mn052|it's|D|%|%
+mn058|and that we so introduce again some natural behavior in this trajectory.|S|s|cs
+me013|uhhuh.|B|b|b
+mn052|uhhuh.|B|b|b
+mn052|very different from speech.|S|s|s
+mn052|still i mean it shouldn't confuse the|D|s|s
+mn058|yeah i mean similar to what what you see really in in the real um noisy situation.|S|s|bk
+mn052|okay.|S|s|bk
+mn052|uhhuh.|B|b|b
+mn058|or in the clean situation.|S|s|e
+mn058|but but somehow a a natural distribution.|S|s|df
+me013|but isn't that again sort of the idea of the additive thing?|Q|qy|bu
+me013|if it as as we had in the j. stuff.|S|s|e
+me013|i mean basically if if you have random data um in in the time domain then when you look at the spectrum it's going to be pretty flat.|S|s|df
+mn058|uhhuh.|B|b|b
+me013|and and|F|fh|fh
+me013|uh|F|fh|fh
+me013|so just add something everywhere rather than just in those places.|S|s|cs
+me013|it's just a constant right?|S|s|s
+mn007|uhhuh.|B|b|b
+mn058|yeah.|S|s|aa
+mn058|i think|D|s|s
+mn058|yeah.|F|fh|fh
+mn058|it's it's just especially in these segments.|S|s|s
+mn058|i mean you introduce um very artificial behavior.|S|s|s
+me013|yeah.|B|b|b
+mn058|and|F|fh|fh
+me013|yeah.|S|s|bk
+me013|well see if you add something everywhere it has almost no effect up up up on on top.|S|s|s
+mn007|uhhuh.|B|b|b
+me013|and it and it and it has significant effect down there.|S|s|s
+me013|that was sort of the idea.|S|s|s
+mn058|uhhuh.|B|b|b
+mn052|huh.|B|b|b
+mn052|yeah.|S|s|aa
+mn052|the that's true.|S|s|aa
+mn052|that those those regions are the cause for this those negative values or whatever you get.|S|s|s
+mn058|uhhuh.|B|b|b
+mn058|uhhuh.|B|b|b
+mn052|yeah.|F|fh|fh
+mn052|so|F|fh|fh
+mn058|i mean we we could uh we we could think how what what we could try.|S|s|cs
+mn052|yeah.|B|b|b
+mn058|i mean it it was just an idea.|S|s|df
+mn052|yeah yeah.|S|s|aa
+mn007|uhhuh.|B|b|b
+mn058|i mean we|D|s|s
+me013|i think when it's noisy people should just speak up.|S|s|cs
+mn058|to|D|%|%
+mn058|huh.|B|b|b
+mn052|so|D|%|%
+mn007|if we look at the france telecom proposal they use some kind of noise addition.|S|s|s
+mn007|they have a random number generator right?|S|s|s
+mn007|and they add noise on the trajectory of uh the log energy only right?|S|s|s
+me013|oh they do.|S|s|bk
+me013|oh.|B|b|b
+mn052|yep.|S|s|aa
+mn052|c.c. zero and log energy also.|S|s|na
+mn007|yeah.|S|s|aa
+mn052|yeah.|S|s|aa
+mn007|um|F|fh|fh
+mn007|but i don't know how much effect it this have.|S|s|no
+mn007|but they do that.|S|s|s
+mn052|now?|Q|qy|d
+mn007|yeah.|F|fh|fh
+mn058|uhhuh.|S|s|bk
+mn052|oh.|B|b|b
+me013|huh.|B|b|b
+mn058|so it it it it it is somehow similar to what|D|s|s
+mn007|i think because they have log energy.|S|s|df
+mn007|yeah.|S|s|aa
+mn007|and then just generate random number.|S|s|df
+mn007|they have some kind of mean and variance.|S|s|df
+mn007|and they add this number to to the log energy simply.|S|s|df
+mn007|um|F|fh|fh
+me013|to the|D|%|%
+mn052|yeah.|S|s|aa
+mn052|the the log energy the after the clean cleaning up.|S|s|s
+mn007|uhhuh.|S|s|aa
+mn052|so they add a random random noise to it.|S|s|s
+me013|to the just the energy or to the mel uh to the mel filter?|Q|qr|d
+mn052|no.|S|s|ar
+mn052|only to the log energy.|S|s|s
+mn007|only|D|%|%
+mn007|yeah.|S|s|aa
+me013|oh.|S|s|bk
+mn058|uhhuh.|B|b|b
+me013|so it because i mean i think this is most interesting for the mel filters.|S|s|df
+mn058|uhhuh.|B|b|b
+me013|right?|Q|qy|d
+me013|or or f.f.t.'s.|S|s|e
+me013|one or the other.|S|s|e
+mn058|but but they do not apply filtering of the log energy or what|D|s|s
+mn052|like uh i mean|D|s|s
+mn058|like like a spectral subtraction.|S|s|e
+mn058|or|F|fh|fh
+mn052|no their filter is not m. domain.|S|s|ar
+mn058|yeah.|S|s|aa
+mn052|so they did filter their time signal.|S|s|s
+mn058|i|D|%|%
+mn052|and then what|D|s|s
+mn058|and then they calculate from this the log energy.|S|s|s
+mn058|or|F|fh|fh
+mn052|yeah.|S|s|aa
+mn052|then after that it is almost the same as the baseline system.|S|s|s
+mn058|uhhuh.|S|s|bk
+mn052|and then the final log energy that they that they get that to the to that they add some random noise.|S|s|s
+me013|yeah but again that's just log energy as opposed to filter bank energy.|S|s|bk
+mn052|yeah.|B|b|b
+mn058|huh.|B|b|b
+mn052|so it's not the mel.|S|s|s
+mn052|you know it's not the mel filter bank output.|S|s|s
+me013|yeah.|F|fh|fh
+mn058|uhhuh.|B|b|b
+mn052|these are log energy computed from the time domain signal.|S|s|df
+mn007|uhhuh.|B|b|b
+mn052|not from the mel filter banks.|S|s|df
+mn052|so|F|fh|fh
+me013|huh.|B|b|b
+mn007|maybe it's just a way to decrease the importance of this particular parameter in the in the world feature vector.|S|s|s
+mn052|did|D|%|%
+mn007|if you add noise to one of the parameters you widen the distributions.|S|s|df
+me013|huh.|B|b|b
+mn052|becomes flat.|S|s|2
+mn052|the variance yeah reduces.|S|s|2
+mn007|and|D|%|%
+mn052|so|F|fh|fh
+mn052|huh yeah.|F|fh|fh
+mn007|eee-sss-uh.|D|%|%
+me013|so it could reduce the dependence on the amplitude and so on.|S|s|bu
+me013|yeah?|Q|qy|d
+mn007|yeah.|S|s|aa
+mn052|yeah.|B|b|b
+mn052|although|D|%|%
+me013|maybe.|S|s|am
+me018|so is uh is that about it?|Q|qy|rt
+mn007|uhhuh.|B|b|b
+mn052|uh|F|fg|fg
+me018|or|D|qrr|qrr
+mn052|so the|D|%|%
+mn052|okay.|S|s|bk
+mn052|so the other thing is the i'm just looking at a little bit on the delay issue where the delay of the system is like a hundred and eighty millisecond.|S|s|tc
+mn052|so i just just tried another system i mean another filter which i've like shown at the end.|S|fh|fh
+mn052|which is very similar to the existing uh filter.|S|s|e
+mn052|only uh only thing is that the phase is is like a totally nonlinear phase.|S|s|s
+mn052|because it's a it's not a symmetric filter anymore.|S|s|df
+me018|this is for the l.d. a?|Q|qy|d
+mn052|yeah.|S|s|aa
+mn052|so so this this is like so this makes the delay like zero for l.d.a.|S|s|s
+mn052|because it's completely causal.|S|s|df
+me018|oh.|S|s|bk
+mn052|so|F|fh|fh
+mn052|so i got actually just the results for the italian for that.|S|s|s
+mn052|and that's like|D|s|s
+mn052|so the fifty one point o. nine has become forty eight point o. six.|S|s|s
+mn052|which is like three percent relative degradation.|S|s|e
+mn007|uhhuh.|B|b|b
+mn052|so i have like the fifty one point o. nine.|S|s|s
+mn052|and|F|fh|fh
+mn052|so|F|fh|fh
+mn052|i don't know it fares for the other conditions.|S|s|no
+mn052|so it's just like it's like a three percent relative degradation.|S|s|s
+mn052|with the|D|s|s
+mn058|but but is there is there a problem with the one hundred eighty milliseconds?|Q|qy|rt
+mn058|or|D|qrr|qrr
+me013|well this is|D|h|h
+mn052|uh|D|h|h
+mn058|yeah i mean i talked to to uh i uh i talked uh about it with with hynek.|S|fg|fg
+mn058|i mean there is|D|s|s
+me013|this is|D|s|s
+me013|so so basically our our position is that um we shouldn't be unduly constraining the latency at this point.|S|fg|fg
+me013|because we're all still experimenting with trying to make the performance better in the presence of noise.|S|s|df
+me013|uh there is a minority in that group who is arguing who are arguing for um uh having a further constraining of the latency.|S|fh|fh
+me013|so we're just continuing to keep aware of what the tradeoffs are and you know what what do we gain from having longer or shorter latencies.|S|fh|fh
+mn058|huh.|B|b|b
+me013|but since we always seem to at least get something out of longer latencies not being so constrained we're tending to go with that if we're not told we can't do it.|S|s|s
+mn058|uhhuh.|B|b|b
+me018|what where was the um the smallest latency of all the systems last time?|Q|qw|rt
+mn052|the french telecom.|S|s|s
+me013|well france telecom was was was very short latency.|S|s|s
+mn058|it's|D|%|%
+me013|and they had a very good result.|S|s|s
+me018|what what was it?|Q|qw|rt
+me013|it was thirty five.|S|s|s
+mn058|it was in the order of thirty milliseconds.|S|s|s
+mn058|or|F|fh|fh
+me013|yeah.|S|s|aa
+me018|thirteen?|Q|qy|bu
+mn058|thirty.|S|s|nd
+me018|thirty.|S|s|bk
+mn052|thirty four.|S|s|t1
+me013|yeah.|S|s|aa
+mn058|yeah.|S|s|aa
+me013|yeah so it's possible to get very short latency.|S|s|bk
+me013|but again we're the the approaches that we're using are ones that take advantage of|D|s|s
+me018|yeah.|B|b|b
+me018|i was just curious about where we are compared to you know the shortest that people have done.|S|s|s
+mn058|but but i think this thirty milliseconds they they did it did not include the the delta calculation.|S|fg|fg
+mn052|yeah.|S|s|bk
+mn058|and this is included now.|S|s|s
+mn052|yeah.|S|s|bk
+mn052|yeah.|B|b|b
+mn052|yeah.|S|s|bk
+mn058|you know?|Q|qy|d
+mn052|yeah.|S|s|bk
+mn052|so if they include the delta it will be an additional forty millisecond.|S|s|s
+mn007|uhhuh.|S|s|aa
+mn058|yeah.|S|s|aa
+me013|yeah.|B|b|b
+mn058|i i don't remember the|D|s|no
+mn058|they were not using the h.t.k. delta?|Q|qy|bu
+mn052|no they're using a nine point window.|S|s|ar
+mn052|which is like a four on either side.|S|s|e
+mn058|nine point.|S|s|bk
+mn052|which is like|D|s|e
+mn058|okay.|S|s|bk
+mn052|so.|F|fh|fh
+mn058|huh.|B|b|b
+mn052|they didn't include that.|S|s|s
+me013|yeah.|B|b|b
+mn058|uhhuh.|B|b|b
+mn052|so|D|%|%
+me018|okay.|S|s|bk
+mn007|where does the compression in decoding delay comes from?|Q|qw|rt
+mn052|that's the way the the the frames are packed.|S|s|s
+mn052|like you have to wait for one more frame to pack.|S|s|df
+mn052|because it's the c.r.c. is computed for two frames always.|S|s|df
+mn007|uhhuh.|B|b|b
+me013|well that they would need that forty milliseconds also.|S|s|bu
+me013|right?|Q|qy|d
+mn052|no.|S|s|ar
+mn052|they actually changed the compression scheme altogether.|S|s|df
+mn007|uhhuh.|B|b|b
+mn052|so they have their own compression and decoding scheme.|S|s|s
+mn052|and they i don't know what they have.|S|s|no
+me013|oh.|S|s|bk
+mn052|but they have coded zero delay for that.|S|s|s
+mn052|because they i know they changed it.|S|s|df
+mn052|their compression.|S|s|e
+mn052|they have their own c.r.c.|S|s|s
+mn052|their their own error correction mechanism.|S|s|e
+me013|oh.|B|b|b
+mn052|so they don't have to wait more than one more frame to know whether the current frame is in error.|S|s|df
+me013|oh okay.|S|s|bk
+mn052|so they changed the whole thing so that there's no delay for that compression and part also.|S|s|s
+me013|huh.|B|b|b
+mn058|uhhuh.|B|b|b
+mn052|even you have reported actually zero delay for the compression.|S|s|s
+mn052|i thought maybe you also have some different|D|s|s
+mn058|huh.|B|b|b
+mn058|huh.|B|b|b
+mn058|no i think i i used this scheme as it was before.|S|s|ar
+mn052|okay.|B|b|b
+mn052|uh.|D|b|b
+mn052|uhhuh.|D|b|b
+me018|okay.|F|fg|fg
+me018|we've got twenty minutes.|S|s|tc
+me018|so we should probably try to move along.|S|s|co
+me018|uh did you want to go next stephane?|Q|fh|fh
+mn007|i can go next.|S|s|na
+mn007|yeah.|S|s|aa
+mn007|huh.|F|fh|fh
+me013|oh.|F|fg|fg
+mn007|it's|D|%|%
+me013|wait a minute.|S|s|co
+me013|it's|D|%|%
+mn007|yeah.|S|s|bk
+mn007|we have to take|D|s|s
+me013|wait a minute.|S|s|co
+me013|i think i'm confused.|S|s|s
+mn007|well.|F|fg|fg
+mn007|okay.|S|s|bk
+me013|all right.|S|s|bk
+mn007|so you have one sheet.|S|s|s
+mn007|this one is you don't need it.|S|s|s
+mn007|all right.|S|s|bk
+me013|uh|F|fh|fh
+mn007|so you have to take the whole the five.|S|s|s
+mn007|there should be five sheets.|S|s|s
+me013|okay.|S|s|bk
+me013|i have four now.|S|s|s
+me013|because i left one with dave because i thought i was dropping one off and passing the others on.|S|s|df
+me013|so no.|S|s|s
+me013|we're not.|S|s|s
+me013|okay.|S|s|bk
+mn052|thanks.|S|s|ft
+fn002|please give me one.|S|s|cs
+me013|uh we need one more over here.|S|s|t3
+mn007|okay maybe there's not enough for everybody.|S|s|bk
+me018|i can share with barry.|S|s|cc
+mn007|but|F|fh|fh
+me006|yeah.|B|b|b
+mn058|okay.|B|b|b
+me013|oh okay.|S|s|bk
+mn007|can we look at this?|Q|qy|cs
+me026|yeah.|B|b|b
+mn007|so|F|fg|fg
+mn007|yeah there are two figures showing actually the huh um performance of the current v.a.d.|S|s|bk
+mn007|so it's a neural network based on p.l.p. parameters.|S|s|s
+mn007|uh which estimate silence probabilities.|S|s|e
+mn007|and then i just put a median filtering on this.|S|s|s
+mn007|to smooth the probabilities right?|S|s|e
+mn007|um|F|fh|fh
+mn007|i didn't use the the scheme that's currently in the proposal.|S|s|s
+mn007|because i don't want to.|S|s|df
+mn007|in the proposal|D|s|s
+mn007|well in in the system we want to add like speech frame before every word and a little bit of of uh a couple of frames after also.|S|s|df
+mn007|uh but to estimate the performance of the v.a.d. we don't want to do that.|S|s|s
+mn007|because it would artificially increase the um the false alarm rate of speech detection.|S|s|df
+mn007|right?|Q|qy|d
+mn007|um|F|fh|fh
+mn007|so|F|fh|fh
+mn007|there is normally a figure for the finnish and one for italian.|S|s|s
+mn007|and maybe someone has two for the italian.|S|s|s
+mn007|because i'm missing one figure here.|S|s|df
+mn052|no.|S|s|ar
+mn007|well.|F|fh|fh
+mn007|well whatever.|S|s|ng
+mn007|uh yeah so one surprising thing that we can notice first is that apparently the speech miss rate is uh higher than the false alarm rate.|S|s|bk
+mn007|so|F|fh|fh
+mn058|so so what is the lower curve and the upper curve?|Q|qw|rt
+mn007|it means|D|s|s
+mn007|uhhuh.|S|s|bk
+mn007|yeah there are two curves.|S|s|bk
+mn058|yeah.|B|b|b
+mn007|one curve's for the close talking microphone which is the lower curve.|S|s|s
+mn058|uh okay.|S|s|bk
+mn007|and the other one is for the distant microphone.|S|s|s
+mn007|which has more noise.|S|s|e
+mn007|so|F|fh|fh
+mn007|it's logical that it performs worse.|S|s|df
+mn007|so as i was saying the miss rate is quite important.|S|s|rt
+mn007|uh which means that we tend to label speech as as a silence.|S|s|e
+mn007|and|F|fh|fh
+mn007|uh i didn't analyze further yet.|S|s|s
+mn007|but i think it's it may be due to the fricative sounds.|S|s|df
+mn007|which may be in noisy condition maybe label labelled as silence.|S|s|e
+mn007|and it may also be due to the alignment.|S|s|df
+mn007|because|D|%|%
+mn007|well the reference alignment.|S|s|e
+mn007|because right now i just use an alignment obtained from from a system trained on channel zero.|S|s|df
+mn007|and|F|fh|fh
+mn007|i checked it a little bit.|S|s|s
+mn007|but there might be alignment errors.|S|s|s
+mn007|um yeah.|F|fh|fh
+mn007|like the fact that the the models tend to align their first state on silence and their last state on silence also.|S|s|e
+mn007|so the reference reference alignment would label as speech some silence frame before speech and after speech.|S|s|df
+mn007|this is something that we already noticed before.|S|s|s
+mn007|when|D|%|%
+mn007|huh|F|fh|fh
+mn007|so this this could also explain uh the high miss rate maybe.|S|s|am
+mn058|and and this this curves are the average over the whole database.|S|s|bu
+mn007|uh|F|fh|fh
+mn058|so|F|fh|fh
+mn007|yeah.|S|s|aa
+mn007|right.|S|s|aa
+mn058|huh.|S|s|bk
+mn007|um|F|fh|fh
+mn007|yeah.|S|s|bk
+mn007|and the different points of the curves are for five uh thresholds on the probability uh from point three to point seven.|S|s|s
+mn052|so that threshold|D|s|s
+mn007|uhhuh.|F|fh|fh
+mn007|yeah.|F|fh|fh
+mn052|okay.|S|s|bk
+mn052|okay.|S|s|bk
+mn052|so the detection threshold is very|D|s|s
+mn007|so the|D|fg|fg
+mn007|the v.a. d?|Q|qy|d
+mn052|yeah yeah.|D|b|b
+mn007|yeah.|S|s|aa
+mn007|there first a threshold on the probability that puts all the values to zero or one.|S|s|s
+mn052|huh.|B|b|b
+mn007|and then the median filtering.|S|s|s
+mn052|yeah.|S|s|bk
+mn052|so the median filtering is fixed.|S|s|bu
+mn052|you just change the threshold.|S|s|bu
+mn007|yeah.|S|s|aa
+mn007|it's fixed.|S|s|na
+mn007|yeah.|S|s|aa
+mn052|yeah.|S|s|bk
+mn007|uhhuh.|S|s|aa
+mn007|so going from channel zero to channel one uh almost double the error rate.|S|s|rt
+mn007|um|F|fh|fh
+mn007|yeah.|F|fh|fh
+mn007|well so it's a reference performance that we can you know if we want to to work on the v.a.d. we can work on this basis.|S|s|s
+mn052|uhhuh.|B|b|b
+mn007|and|F|fh|fh
+mn052|okay.|S|s|bk
+me006|is this is this v.a.d.a.m.l. p?|Q|qy|qy
+mn007|yeah.|S|s|aa
+me006|okay.|S|s|bk
+me006|how how big is it?|Q|qw|qw
+mn007|it's a very big one.|S|s|s
+mn007|i don't remember.|S|s|no
+mn052|so three three hundred and fifty inputs.|S|s|s
+mn052|uh|F|fh|fh
+mn052|six thousand hidden nodes and two outputs.|S|s|s
+me006|okay.|S|s|bk
+mn052|yeah.|B|b|b
+mn007|uhhuh.|B|b|b
+me013|middle sized one.|S|s|j
+mn052|yeah.|S|s|aa
+mn007|uhhuh.|B|b|b
+mn007|yeah.|F|fg|fg
+mn007|uh ppp|F|fh|fh
+mn007|i don't know you have questions about that or suggestions?|Q|qy|d
+mn052|huh.|B|b|b
+mn052|so.|B|b|b
+mn007|it seems the performance seems worse in finnish.|S|s|s
+mn007|which|D|%|%
+mn052|well it's not trained on finnish.|S|s|s
+mn007|uh|F|fh|fh
+fn002|it's worse.|S|s|s
+mn007|it's not trained on finnish.|S|s|na
+mn007|yeah.|S|s|aa
+me013|what's it trained on?|Q|qw|rt
+mn052|i mean the m.l.p.'s not trained on finnish.|S|s|s
+me013|right.|S|s|bk
+me013|what's it trained on?|Q|qw|rt
+mn052|oh oh.|S|s|bk
+mn052|sorry.|S|s|fa
+mn052|uh it's italian t.i. digits.|S|s|s
+me013|yeah.|B|b|b
+me013|oh it's trained on italian?|Q|qy|bh
+mn052|yeah.|S|s|aa
+me013|yeah.|S|s|bk
+mn007|uhhuh.|B|b|b
+me013|okay.|S|s|bk
+mn007|and|D|%|%
+mn052|that's right.|D|s|aa
+me013|okay.|F|fh|fh
+mn007|and also there are like funny noises on finnish.|S|s|s
+mn007|more than on italian.|S|s|e
+mn058|uhhuh.|B|b|b
+mn007|i mean like music.|S|s|e
+mn052|yeah.|B|b|b
+mn007|and um|F|fh|fh
+mn052|yeah the yeah it's true.|S|s|aa
+mn007|so yeah.|F|fh|fh
+mn007|we were looking at this.|S|s|s
+mn007|but for most of the noises noises are|D|s|s
+mn007|um|F|fh|fh
+mn007|i don't know if we want to talk about that.|S|s|no
+mn007|but|F|fh|fh
+mn007|well the the car noises are below like five hundred hertz.|S|s|s
+mn007|and we were looking at the music utterances.|S|s|s
+mn007|and in this case the noise is more about two thousand hertz.|S|s|s
+mn007|well the music energy's very low apparently.|S|s|e
+mn052|yeah.|B|b|b
+mn007|uh|F|fh|fh
+mn007|uh from zero to two two thousand hertz.|S|s|e
+mn007|so maybe just looking at this frequency range for from five hundred to two thousand would improve somewhat the v.a.d.|S|s|cs
+mn052|huh.|B|b|b
+mn007|and|F|fh|fh
+mn052|yeah.|S|s|aa
+mn007|huh.|F|fh|fh
+mn052|so there are like some some some parameters you wanted to use or something?|Q|qy|bu
+mn007|yeah.|F|fh|fh
+mn007|but|F|fh|fh
+mn007|yes.|S|s|bk
+mn052|or yeah.|F|fh|fh
+mn007|uhhuh.|S|s|aa
+mn007|uh the next|D|s|tc
+mn007|um|F|fh|fh
+mn058|so is the is the is the training is the training based on these labels files which you take as reference here?|Q|qy|rt
+mn007|oh it's there.|S|s|s
+mn058|when you train the neural net you|D|s|e
+mn007|yeah.|S|s|aa
+mn007|no.|S|s|ar
+mn007|it's not.|S|s|nd
+mn007|it's it was trained on some alignment obtained|D|s|s
+mn007|um|F|fh|fh
+mn007|uh for the italian data i think we trained the neural network on with embedded training.|S|s|s
+mn007|so re estimation of the alignment using the neural network i guess.|S|s|df
+mn007|that's right?|Q|qy|d
+mn052|yeah.|S|s|aa
+mn052|we actually trained uh the on the italian training part.|S|s|s
+mn007|yeah.|B|b|b
+mn052|we we had another system with|D|s|s
+mn007|so it was a a phonetic classification system for the italian aurora data.|S|s|bu
+mn052|yeah.|S|s|aa
+mn052|it must be somewhere.|S|s|s
+mn052|yeah.|B|b|b
+mn007|for the aurora data that it was trained on it was different.|S|s|s
+mn007|like for t.i. digits you used a a previous system that you had i guess.|S|s|e
+mn052|what|D|%|%
+mn052|no it|D|s|ar
+mn052|yeah yeah.|S|s|aa
+mn052|that's true.|S|s|aa
+mn007|so the alignments from the different database that are used for training came from different system.|S|s|s
+mn052|yeah.|B|b|b
+mn007|then we put them together.|S|s|s
+mn007|well you put them together and trained the v.a.d. on them.|S|s|s
+mn052|yeah.|B|b|b
+mn007|huh.|F|fh|fh
+mn052|yeah.|B|b|b
+mn058|huh.|B|b|b
+mn007|uh|F|fh|fh
+mn007|but did you use channel did you align channel one also?|Q|qy|qy
+mn007|or|D|qrr|qrr
+mn052|i just took their entire italian training part.|S|s|s
+mn007|yeah.|S|s|bk
+mn052|so it was both channel zero plus channel one.|S|s|s
+mn007|so|D|%|%
+mn007|yeah.|S|s|bk
+mn007|so the alignments might be wrong then on channel one right?|S|s|bu
+mn052|on one.|S|s|2
+mn052|possible.|S|s|am
+mn007|so we might|D|s|s
+mn007|yeah.|F|fh|fh
+mn052|we can do a realignment.|S|s|cs
+mn052|that's true.|S|s|s
+mn007|at least want to retrain on these alignments.|S|s|cs
+mn007|which should be better because they come from close talking microphone.|S|s|e
+mn058|yeah.|S|s|bk
+mn058|the that was my idea.|S|s|s
+mn058|i mean if if it if it is not the same labeling which is taking the spaces.|S|s|df
+mn052|yeah.|B|b|b
+mn007|okay.|B|b|b
+mn052|yeah possible.|S|s|am
+mn007|yeah.|S|s|bk
+mn058|huh.|S|s|bk
+mn052|i mean it|D|s|s
+mn007|yeah.|B|b|b
+mn052|so the system|D|s|s
+mn052|so the v.a.d. was trained on maybe different set of labels for channel zero and channel one.|S|s|s
+mn007|uhhuh.|B|b|b
+mn052|and|F|fh|fh
+mn058|uhhuh.|S|s|aa
+mn007|uhhuh.|B|b|b
+mn052|was the alignments were were different for certainly different because they were independently trained.|S|s|s
+mn052|we didn't copy the channel zero alignments to channel one.|S|s|s
+mn007|uhhuh.|B|b|b
+mn058|uhhuh.|S|s|bk
+mn052|yeah.|B|b|b
+mn007|yeah.|B|b|b
+mn052|but for the new alignments what you generated you just copied the channel zero to channel one right?|S|s|bu
+mn007|right.|S|s|aa
+mn007|yeah.|D|b|b
+mn052|yeah.|S|s|bk
+mn007|um|F|fg|fg
+mn007|and uh hhh|F|fg|fg
+mn007|actually when we look at at the v.a.d. for some utterances it's almost perfect.|S|s|s
+mn007|i mean it just dropped one frame.|S|s|e
+mn007|the first frame of speech.|S|s|e
+mn007|or|F|fh|fh
+mn007|so there are some utterances where it's almost one hundred percent v.a.d. performance.|S|s|s
+mn058|huh.|S|s|bk
+mn007|uh|F|fh|fh
+mn007|but yeah.|F|fh|fh
+mn007|huh|F|fh|fh
+mn007|yep.|S|s|bk
+mn007|so the next thing is um i have the spreadsheet for three different system.|S|s|rt
+mn007|but for this you only have to look right now on the speechdat-car performance.|S|s|s
+mn007|uh because i didn't test|D|s|df
+mn007|so i didn't test the spectral subtraction on t.i. digits yet.|S|fh|fh
+mn007|uh so you have three sheets.|S|fh|fh
+mn007|one is the um proposal one system.|S|s|e
+mn007|actually it's not exactly proposal one.|S|s|s
+mn007|it's the system that sunil just described.|S|s|s
+mn007|um|F|fh|fh
+mn007|but with uh wiener filtering from um france telecom included.|S|s|rt
+mn007|um so this gives like fifty seven point seven percent uh uh error rate reduction on the speechdat-car data.|S|s|s
+mn007|huh|F|fh|fh
+mn007|and then i have two sheets where it's for a system where|D|s|s
+mn007|uh|F|fh|fh
+mn007|so it's again the same system.|S|s|s
+mn007|but in this case we have spectral subtraction.|S|s|s
+mn007|with a maximum overestimation factor of two point five.|S|s|e
+mn007|uh there is smoothing of the gain trajectory with some kind of uh low pass filter.|S|s|s
+mn007|which has forty milliseconds latency.|S|s|e
+mn007|and then after subtraction um i add a constant to the energies.|S|s|s
+mn007|and i have two cases where the first case is where the constant is twenty five d.b. below the mean speech energy.|S|s|rt
+mn007|and the other is thirty d.b. below.|S|s|s
+mn007|um|F|fh|fh
+mn007|and for these two system we have like fifty five point uh five percent improvement.|S|s|s
+mn007|and fifty eight point one.|S|s|s
+mn007|so again it's around fifty six fifty seven.|S|s|s
+mn007|uh|F|fh|fh
+me013|because i notice the t.i. digits number is exactly the same for these last two.|S|s|s
+mn007|yeah because i didn't|D|s|aa
+mn007|for the france telecom uh spectral subtraction included in the our system the t.i. digits number are the right one.|S|s|df
+mn007|but not for the other system.|S|s|df
+mn007|because i didn't test it yet this system including with spectral subtraction on the t.i. digits data.|S|s|df
+mn007|i just tested it on speechdat-car.|S|s|df
+mn058|uhhuh.|S|s|bk
+me013|uh!|S|s|bk
+me013|so so that means the only thing|D|s|bu
+mn058|so so so these numbers are simply|D|s|bu
+mn007|this we have to|D|s|s
+mn007|yeah.|S|s|aa
+mn058|yeah.|S|s|bk
+me013|yeah.|B|b|b
+mn052|but this number.|S|s|s
+mn058|okay.|S|s|bk
+mn007|yes.|S|s|aa
+me013|so you so you just should look at that fifty eight point o. nine percent and so on.|S|s|bu
+mn007|right.|S|s|aa
+mn007|right.|D|s|aa
+me013|okay.|S|s|bk
+me013|good.|S|s|ba
+mn007|uhhuh.|B|b|b
+mn007|um|F|fh|fh
+mn007|yeah.|F|fh|fh
+mn052|so this|D|s|s
+mn052|so by uh by by reducing the noise a a decent threshold like minus thirty d.b. it's like uh you are like reducing the floor of the noisy regions right?|S|s|bu
+mn007|yeah.|S|s|bk
+mn007|yeah.|S|s|aa
+mn007|the floor is lower.|S|s|na
+mn007|um|F|fh|fh
+mn052|uhhuh.|B|b|b
+mn007|uhhuh.|F|fh|fh
+me013|i'm sorry.|S|s|fa
+me013|so when you say minus twenty five or minus thirty d.b. with respect to what?|Q|qw|d
+mn007|to the average um speech energy.|S|s|s
+mn007|which is estimated on the world database.|S|s|e
+me013|okay.|S|s|bk
+me013|so basically you're creating a signal to noise ratio of twenty five or thirty d.b.|S|s|bs
+mn007|yeah.|S|s|aa
+mn007|but it's not|D|s|s
+mn058|i i i think what you do is this.|S|s|s
+me013|uh|D|%|%
+mn007|it it's|D|%|%
+mn058|when when you have this after you subtracted it i mean then you get something with this uh where you set the values to zero.|S|s|cs
+mn058|and then you simply add an additive constant again.|S|s|cs
+mn007|yeah.|S|s|aa
+mn058|so you shift it somehow.|S|s|cs
+mn058|this this whole curve is shifted again.|S|s|s
+mn007|right.|S|s|aa
+me013|but did you do that before the thresholding to zero?|Q|qy|rt
+mn007|it's|D|%|%
+me013|or|D|qrr|qrr
+mn007|but it's after the thresholding.|S|s|nd
+mn007|so|F|fh|fh
+me013|oh.|S|s|bk
+me013|so you'd really want to do it before.|S|s|bu
+mn007|maybe|D|%|%
+me013|right?|Q|qy|d
+mn007|maybe we might do it before.|S|s|am
+mn007|yeah.|S|s|aa
+me013|yeah.|S|s|bk
+me013|because then the then you would have less of that phenomenon.|S|s|df
+mn007|yeah.|S|s|aa
+mn058|hhh.|D|%|%
+me013|i think.|S|s|e
+mn007|uh|F|fh|fh
+mn007|yeah.|S|s|bk
+mn007|but still when you do this and you take the log after that it it reduce the the variance.|S|fg|fg
+me013|yeah.|S|s|aa
+me013|it it|D|%|%
+mn007|but|F|fh|fh
+me013|right.|S|s|aa
+mn007|huh|F|fh|fh
+me013|yeah that will reduce the variance.|S|s|na
+me013|that'll help.|S|s|s
+me013|but maybe if you does do it before you get less of these funny looking things he's drawing.|S|s|cs
+mn058|uhhuh.|B|b|b
+mn007|um|F|fh|fh
+mn052|so before it's like adding this to the to the original.|S|s|s
+mn058|but but|F|fg|fg
+mn007|we would|D|%|%
+me013|right at the point where you've done the subtraction.|S|s|s
+mn052|okay.|S|s|bk
+me013|um essentially you're adding a constant into everything.|S|fh|fh
+mn007|uhhuh.|S|s|bk
+mn058|but the way stephane did it it is exactly the way i have implemented in the phone.|S|s|s
+mn058|so|F|fh|fh
+me013|oh yeah.|S|s|bk
+me013|better do it different then.|S|s|cs
+me013|yeah.|B|b|b
+mn007|um|F|fh|fh
+mn007|yeah.|B|b|b
+me013|just you you just you just set it for a particular signal to noise ratio that you want.|S|s|cs
+mn058|yeah i i made similar investigations like stephane did here.|S|s|bk
+mn058|just uh adding this constant and and looking how dependent is it on the value of the constant.|S|s|df
+me013|yeah.|B|b|b
+me013|yeah.|B|b|b
+mn007|uhhuh.|B|b|b
+mn058|and then must choose them somehow to give on average the best results for a certain range of the signal to noise ratios.|S|s|df
+mn007|yeah.|B|b|b
+me013|uhhuh.|B|b|b
+mn007|uhhuh.|B|b|b
+mn058|so|F|fh|fh
+mn007|oh it's clear.|S|s|s
+mn007|i should have given other results.|S|s|s
+mn007|also it's clear when you don't add noise it's much worse.|S|s|s
+mn007|like around five percent worse i guess.|S|s|e
+me013|uhhuh.|S|s|bk
+mn007|and if you add too much noise it get worse also.|S|s|s
+mn007|and it seems that right now this this is a constant that does not depend on on anything that you can learn from the utterance.|S|s|s
+mn007|it's just a constant noise addition.|S|s|e
+mn007|um|F|fh|fh
+mn007|and i i think|D|s|s
+me013|i i'm sorry.|S|s|fa
+mn007|i think|D|%|%
+me013|then then i'm confused.|S|s|s
+me013|i thought|D|s|s
+me013|you're saying it doesn't depend on the utterance.|S|s|bs
+me013|but i thought you were adding an amount that was twenty five d.b. down from the signal energy.|S|s|bu
+mn007|yeah.|S|s|bk
+mn007|so the way i did that i just measured the average speech energy of the all the italian data.|S|s|df
+me013|oh!|S|s|bk
+mn007|and then i i have i used this as mean speech energy.|S|s|df
+mn007|uhhuh.|F|fh|fh
+me013|oh it's just a constant amount over all.|S|s|bk
+mn007|yeah.|B|b|b
+mn007|and|F|fg|fg
+mn007|what i observed is that for italian and spanish when you go to thirty and twenty five d.b. uh it it's good.|S|s|s
+mn052|okay.|S|s|bk
+mn052|oh.|S|s|bk
+mn007|it stays in this range.|S|s|s
+mn007|it's uh the|D|s|s
+mn007|well the performance of the this algorithm is quite good.|S|s|s
+mn007|but for finnish you have a degradation already when you go from thirty five to thirty.|S|s|s
+mn007|and then from thirty to twenty five.|S|s|s
+mn007|and i have the feeling that maybe it's because just finnish has a mean energy that's lower than than the other databases.|S|s|df
+mn007|and due to this the thresholds should be|D|s|s
+me013|yeah.|B|b|b
+mn007|the the the noise addition should be lower.|S|s|bsc
+me013|but in i mean in the real thing you're not going to be able to measure what people are doing over half an hour or an hour or anything right?|S|s|s
+mn007|and|D|%|%
+me013|so you have to come up with this number from something else.|S|s|s
+mn007|yeah.|S|s|aa
+mn007|so|F|fh|fh
+mn058|uh but you are not doing it now language dependent?|Q|qy|d
+mn058|or|D|qrr|qrr
+mn007|it's not.|S|s|na
+mn007|it's just something that's fixed.|S|s|df
+mn058|no.|S|s|bk
+mn058|it's overall.|S|s|s
+mn007|yeah.|S|s|bk
+mn058|okay.|S|s|bk
+mn007|uhhuh.|S|s|bk
+mn007|um|F|fh|fh
+mn007|yeah so i|D|s|bk
+me013|but what he is doing language dependent is measuring what that number reference is that he comes down twenty five down from.|S|s|s
+mn007|no.|S|s|ar
+mn007|it no.|S|s|ar
+mn007|because i did it i started working on italian.|S|s|df
+me013|no?|Q|qy|bh
+mn007|i obtained this average energy.|S|s|df
+me013|yeah.|S|s|bk
+mn007|and then i used this one.|S|s|df
+mn052|for all the languages.|S|s|bu
+mn007|yeah.|S|s|aa
+mn052|okay.|S|s|bk
+me013|so it's sort of arbitrary.|S|s|ba
+me013|i mean so if if|D|s|s
+mn052|yeah.|B|b|b
+me013|yeah.|F|fh|fh
+mn007|yep.|S|s|aa
+mn007|um|F|fg|fg
+me013|yeah.|F|fh|fh
+mn007|yeah so the next thing is to use this as as maybe initialization.|S|fg|fg
+mn007|and then use something online.|S|s|s
+me013|uhhuh.|S|s|bk
+me013|something more adaptive.|S|s|2
+mn007|but and i expect improvement at least in finnish because uh the way|D|s|s
+me013|yeah.|S|s|bk
+me013|okay.|B|b|b
+mn007|well.|F|fh|fh
+mn007|um|F|fh|fh
+mn007|for italian and spanish it's this value works good but not necessarily for finnish.|S|s|s
+mn007|huh|F|fh|fh
+mn007|but unfortunately there is like this forty millisecond latency.|S|s|s
+mn007|and|F|fh|fh
+mn007|um|F|fh|fh
+mn007|yeah so i would try to somewhat reduce this.|S|s|bk
+mn007|i already know that if i completely remove this latency so um it um there is a three percent hit on italian.|S|s|s
+mn058|uhhuh.|B|b|b
+mn052|does latency|D|qy|qy
+mn052|sorry.|S|s|fa
+mn052|go ahead.|S|s|cs
+mn058|yeah.|S|s|bk
+mn058|your your smoothing was uh over this so to say the the factor of the wiener.|S|s|s
+mn058|and then it's uh|D|s|s
+mn058|what was it?|Q|qw|t1
+mn058|this|D|%|%
+mn007|uhhuh.|B|b|b
+mn058|this smoothing it was over the subtraction factor so to say.|S|s|s
+mn007|it's a smoothing over the the gain of the subtraction algorithm.|S|s|s
+mn058|was this done|D|%|%
+mn058|uhhuh.|B|b|b
+mn058|and and you are looking into the future into the past.|S|s|bu
+mn007|right.|S|s|aa
+mn058|and smoothing.|S|s|s
+mn058|uhhuh.|B|b|b
+mn007|so to smooth this thing.|S|s|s
+mn007|yeah.|F|fh|fh
+mn007|um|F|fh|fh
+mn058|and did did you try simply to smooth um to smooth the the to to smooth stronger the the envelope?|Q|qy|rt
+mn007|um|F|h|h
+mn007|no.|S|s|ar
+mn007|i did not.|S|s|nd
+mn058|huh.|B|b|b
+mn007|huh.|F|fh|fh
+mn058|because i mean it should have a similar effect if you|D|s|s
+mn007|yeah.|B|b|b
+mn058|i mean you you have now several stages of smoothing so to say.|S|s|s
+mn058|you start up.|S|s|s
+mn058|as far as i remember you you smooth somehow the envelope.|S|s|s
+mn058|you smooth somehow the noise estimate.|S|s|s
+mn007|uhhuh.|B|b|b
+mn058|and and later on you smooth also this subtraction factor.|S|s|s
+mn007|huh.|B|b|b
+mn007|uh no.|S|h|h
+mn007|it's it's just the gain that's smoothed actually.|S|s|nd
+mn052|uh actually i i do all the smoothing.|S|s|s
+mn007|but it's smoothed|D|s|s
+mn058|uh.|B|b|b
+mn058|oh it it was you.|S|s|bk
+mn052|yeah yeah.|S|s|aa
+mn007|uh yeah.|S|s|aa
+mn058|yeah.|S|s|bk
+mn007|yeah.|S|s|aa
+mn058|yeah.|B|b|b
+mn007|no in this case it's just the gain.|S|fg|fg
+mn058|uhhuh.|S|s|bk
+mn007|and|F|fh|fh
+mn007|but the way it's done is that um for low gain there is this nonlinear smoothing actually.|S|s|s
+mn007|for low gains um i use the smoothed uh smoothed version.|S|s|s
+mn058|uh.|B|b|b
+mn007|but for high gain it's i don't smooth.|S|s|s
+mn058|uhhuh.|B|b|b
+mn058|i just uh it experience shows you if if you do the|D|s|s
+mn058|the best is to do the smoothing as early as possible.|S|s|s
+mn007|uhhuh.|S|s|bk
+mn058|so when you start up|D|s|s
+mn058|i mean you start up with the with the somehow with the noisy envelope.|S|s|s
+mn007|uhhuh.|S|s|bk
+mn058|and best is to smooth this somehow.|S|s|cs
+mn007|uhhuh.|S|s|bk
+mn007|uh yeah.|S|s|bk
+mn007|i could try this.|S|s|na
+mn007|um|F|fh|fh
+mn058|and|D|%|%
+mn052|so before estimating the s.n.r. smooth the envelope.|S|s|bu
+mn058|yeah.|S|s|aa
+mn058|yeah.|S|s|aa
+mn058|uhhuh.|S|s|aa
+mn007|uhhuh.|B|b|b
+mn007|but|F|fg|fg
+mn007|yeah.|F|fh|fh
+mn007|then i i would need to find a way to like smooth less also when there is high energy.|S|s|rt
+mn007|because i noticed that it it helps a little bit to like smooth more during low energy portions and less during speech.|S|s|df
+mn058|yes.|S|s|aa
+mn007|because if you smooth then you kind of distort the speech.|S|s|df
+mn058|yeah.|S|s|aa
+mn058|yeah.|S|s|aa
+mn058|right.|S|s|aa
+mn007|um|F|fh|fh
+mn007|uhhuh.|F|fh|fh
+mn058|yeah i think when|D|s|bk
+mn058|you you could do it in this way that you say if you if i'm|D|s|cs
+mn058|you have somehow a noise estimate.|S|s|s
+mn007|uhhuh.|B|b|b
+mn058|and if you say i'm i'm with my envelope.|S|s|s
+mn058|i'm close to this noise estimate.|S|s|s
+mn007|yeah.|B|b|b
+mn058|and then you you would like to have a stronger smoothing.|S|s|s
+mn007|uhhuh.|S|s|bk
+mn058|so you could you could base it on your estimation of the signal to noise ratio on your actual|D|s|cs
+mn007|uhhuh.|B|b|b
+mn007|uhhuh.|B|b|b
+mn007|huh.|B|b|b
+mn052|yeah.|S|s|bk
+mn052|or some silence probability from the vad if you have|D|s|cs
+mn007|um|F|h|h
+mn007|yeah.|S|s|aa
+mn007|but i don't trust the current vad.|S|s|ng
+mn007|so|F|fh|fh
+mn052|yeah.|S|s|bk
+mn052|uh so not not right now maybe.|S|s|df
+mn007|well maybe.|S|s|am
+mn007|maybe.|S|s|am
+me013|the vad later will be much better.|S|s|s
+me013|yeah.|F|fh|fh
+me013|so|F|fh|fh
+me013|i see.|S|s|bk
+me018|so is that it?|Q|qy|rt
+mn007|uh fff i think that's it.|S|h|h
+mn007|yeah.|S|s|aa
+mn007|uh|F|fh|fh
+mn058|so to summarize the performance of these speechdat-car results is similar than than yours so to say.|S|s|tc
+mn052|yeah.|S|s|aa
+mn007|yeah.|B|b|b
+mn052|so the fifty eight is like the some fifty six point.|S|s|s
+mn058|you have you have fifty six point four.|S|s|s
+mn058|and and and dependent on this additive constant it is better or or worse.|S|s|s
+mn052|yeah.|S|s|aa
+mn052|that's true.|S|s|aa
+mn007|yeah.|B|b|b
+mn052|slightly better?|Q|qy|2
+mn007|uhhuh.|B|b|b
+mn052|yeah.|B|b|b
+mn058|yeah.|F|fh|fh
+mn007|uhhuh.|B|b|b
+mn007|and yeah.|F|fg|fg
+mn007|the condition where it's better than your approach it's it just because maybe it's better on well matched and that the weight on well matched is is bigger.|S|s|s
+mn052|yeah.|S|s|aa
+mn052|yeah you you caught up.|S|s|na
+mn007|because|D|%|%
+mn052|yep.|S|s|aa
+mn052|that's true.|S|s|aa
+mn007|if you don't weigh differently the different condition you can see that your well the the two stage wiener filtering is maybe better.|S|s|df
+mn007|or|F|fh|fh
+mn007|it's better for high mismatch right?|S|s|s
+mn052|yeah.|B|b|b
+mn052|yeah.|S|s|aa
+mn052|it's better for high mismatch.|S|s|na
+mn007|uhhuh.|B|b|b
+mn007|but a little bit worse for well matched.|S|s|s
+mn052|so over all it gets yeah worse for the well matched condition.|S|s|s
+mn052|so|D|%|%
+mn007|uhhuh.|B|b|b
+me018|so we need to combine these two.|S|s|cs
+mn052|uh|F|h|h
+mn052|that's that's the best thing is like the french telecom system is optimized for the well matched condition.|S|s|s
+mn007|uhhuh.|S|s|bk
+mn052|they|D|%|%
+mn052|yeah.|F|fh|fh
+mn052|so they know that the weighting is good for the well matched.|S|s|df
+mn052|and so there's|D|s|s
+mn052|everywhere the well matched's performance is very good for the french telecom.|S|s|df
+mn007|yeah.|S|s|aa
+mn058|uhhuh.|B|b|b
+mn007|uhhuh.|B|b|b
+mn052|we are we may also have to do something similar.|S|s|cs
+mn007|uhhuh.|D|b|b
+me013|well our tradition here has always been to focus on the mismatched.|S|s|s
+mn052|um the|F|fg|fg
+me013|because it's more interesting.|S|s|df
+mn058|my mine was it too i mean.|S|s|s
+me013|yeah.|S|s|bk
+mn058|before i started working on this aurora.|S|s|e
+mn058|so|F|fh|fh
+me013|yeah.|D|b|b
+me013|yeah.|D|b|b
+me013|yeah.|B|b|b
+me013|okay.|F|fg|fg
+me018|carmen?|Q|qy|d
+me018|do you uh|D|qy|qy
+fn002|well i only say that the this is a summary of the of all the v.t.s. experiments.|S|h|h
+fn002|and say that the result in the last um for italian the last experiment for italian are bad.|S|s|s
+fn002|i make a mistake when i write.|S|s|s
+fn002|up at d. i copy one of the bad result.|S|s|s
+mn052|so you|D|%|%
+fn002|and|F|fh|fh
+fn002|there you know this|D|s|s
+fn002|um|F|fh|fh
+fn002|well.|F|fh|fh
+fn002|if we put everything we improve a lot the spectral use of the v.t.s.|S|s|s
+fn002|but the final result are not still huh good like the wiener filter for example.|S|s|s
+fn002|i don't know.|S|s|no
+fn002|maybe it's it's possible to to have the same result.|S|s|s
+mn052|that's somewhere.|S|s|s
+fn002|i don't know exactly.|S|s|no
+fn002|huh.|F|fh|fh
+fn002|because i have huh worse result in medium mismatch and high mismatch.|S|s|s
+mn052|you you have a better|D|s|s
+mn052|yeah.|F|fg|fg
+mn052|you have some results that are good for the high mismatch.|S|s|s
+fn002|and yeah.|F|fh|fh
+fn002|i are more or less similar but but are worse.|S|s|s
+fn002|and|F|fh|fh
+fn002|still i don't have the result for t.i. digits.|S|s|rt
+fn002|the program is training.|S|s|df
+fn002|maybe for this weekend i will have result t.i. digits.|S|s|am
+fn002|and i can complete that like this.|S|s|s
+fn002|well.|F|fh|fh
+me013|uh.|B|b|b
+me013|right.|B|b|b
+fn002|one thing that i note are not here in this result but are speak are spoken before with sunil i i improve my result using clean l.d.a. filter.|S|s|s
+mn052|uhhuh.|B|b|b
+me013|uhhuh.|B|b|b
+fn002|if i use uh the l.d.a. filter that are training with the noisy speech that hurts the my results.|S|s|s
+me013|so what are these numbers here?|Q|qw|qw
+me013|are these with the clean or with the noisy?|Q|qr|qr
+fn002|this is with the clean.|S|s|s
+me013|okay.|S|s|bk
+fn002|with the noise i have worse result that if i doesn't use it.|S|s|s
+me013|uhhuh.|B|b|b
+fn002|but that may be because with this technique we are using really really clean speech.|S|s|df
+fn002|the speech the representation that go to the h.t.k. is really clean speech.|S|s|s
+fn002|because it's from the dictionary.|S|s|df
+fn002|the code book.|S|s|e
+fn002|and maybe from that.|S|s|am
+fn002|i don't know.|S|s|no
+mn007|uhhuh.|B|b|b
+fn002|because i think that you did some experiments using the two the two l.d.a. filter clean and and noise.|S|s|s
+mn007|it's|D|%|%
+fn002|and it doesn't matter too much.|S|s|s
+mn007|um|F|h|h
+mn007|yeah i did that.|S|s|na
+mn007|but it doesn't matter on speechdat-car.|S|s|rt
+mn007|but it matters uh a lot on t.i. digits.|S|s|s
+fn002|it's better to use clean.|S|s|bu
+mn052|using the clean filter.|S|s|bu
+mn007|yeah.|S|s|aa
+mn007|uh it's much better when you we used the clean derived l.d.a. filter.|S|s|na
+fn002|uhhuh.|B|b|b
+fn002|maybe you can do also this.|S|s|cs
+mn052|yeah.|B|b|b
+fn002|to use clean speech.|S|s|e
+mn007|uh|F|fh|fh
+mn052|yeah i'll try.|S|s|cc
+mn007|but yeah.|F|fh|fh
+mn007|sunil in in your result it's|D|s|s
+mn052|i i'll try the|D|s|cc
+mn052|no i i my result is with the noisy noisy l.d.a.|S|s|s
+mn007|it's with the noisy one.|S|s|bk
+mn007|yeah.|S|s|bk
+mn052|yeah.|B|b|b
+me013|oh.|S|s|bk
+mn052|it's with the noisy.|S|s|s
+mn007|so|F|fh|fh
+mn052|yeah.|S|s|aa
+mn052|it's it's not the clean l.d.a.|S|s|e
+me013|um|F|fg|fg
+mn052|it's in in the front sheet i have like like the summary.|S|s|s
+mn052|yeah.|S|s|bk
+me013|and and your result is with the|D|qw|d
+mn007|it's with the clean l.d.a.|S|s|s
+mn052|oh.|S|s|bk
+mn052|this is your results are all with the clean l.d.a. result.|S|s|bu
+fn002|yeah with the clean l.d.a.|S|s|s
+mn007|yeah.|S|s|aa
+mn052|okay.|S|s|bk
+fn002|is that the reason?|Q|qy|qy
+mn007|and in your case it's all all noisy.|S|s|s
+mn052|all noisy.|S|s|2
+mn007|yeah.|S|s|aa
+mn052|yeah.|S|s|bk
+mn007|but|F|fg|fg
+fn002|and|D|%|%
+mn052|uh|F|fg|fg
+mn007|yeah.|F|fh|fh
+mn052|uh|F|fg|fg
+mn007|but i observe my case it's in uh uh at least on speechdat-car it doesn't matter.|S|s|s
+mn007|but t.i. digits it's like two or three percent absolute uh better.|S|s|s
+mn052|on t.i. digits this matters.|S|s|2
+mn052|absolute.|S|s|2
+mn052|uh|F|fh|fh
+mn007|so if|D|%|%
+me013|so you really might want to try the clean i think.|S|s|cs
+mn052|yeah i i i will have to look at it.|S|s|bk
+mn052|yeah that's true.|S|s|aa
+me013|yeah.|B|b|b
+me013|yeah that could be sizeable right there.|S|s|bk
+fn002|and this is everything.|S|s|s
+mn058|yeah.|S|s|aa
+mn058|maybe you you are leaving in in about two weeks carmen.|S|s|bu
+me013|okay.|B|b|b
+mn058|no?|Q|qy|d
+fn002|yeah.|S|s|aa
+mn058|yeah.|S|s|bk
+mn058|so i mean if if if i would put it put on the head of a project manager i i i would say uh um i mean there is not so much time left now.|S|s|s
+me013|be my guest.|S|s|s
+mn058|i mean if um|F|fh|fh
+mn058|what what i would do is i i i would pick the best consolation which you think.|S|s|cs
+mn058|and create create all the results for the whole database that you get to the final number as as sunil did it.|S|s|cs
+fn002|and prepare at the|D|s|cs
+mn058|and um|F|fh|fh
+mn058|and maybe also to to write somehow a document where you describe your approach and what you have done.|S|s|cs
+fn002|yeah.|S|s|bk
+fn002|i was thinking to do that next week.|S|s|na
+me013|yeah.|B|b|b
+mn058|yeah.|B|b|b
+me013|yeah.|B|b|b
+me013|i'll i'll borrow the head back and and agree.|S|s|na
+fn002|yeah.|S|s|bk
+fn002|i i i will do that next week.|S|s|cc
+me013|yeah.|S|s|bk
+me013|that's that's|D|%|%
+me013|right.|S|s|bk
+me013|in fact actually i i guess the uh the spanish government uh requires that anyway.|S|s|df
+me013|they want some kind of report from everybody who's in the program.|S|s|df
+fn002|uhhuh.|B|b|b
+me013|so|F|fh|fh
+me013|and of course i'd we'd we'd like to see it too.|S|s|co
+me013|so|F|fh|fh
+fn002|okay.|S|s|aa
+me013|yeah.|F|fh|fh
+me018|so um|F|fg|fg
+me018|what's do you think we uh should do the digits or skip it?|Q|qr|rt
+me018|or what are what do you think?|Q|qw|qw
+me013|uh we have them now?|Q|h|h
+me018|yeah.|S|s|aa
+me018|got them.|S|s|na
+me013|uh why why don't we do it?|Q|h|h
+me018|okay.|S|s|bk
+me013|just just take a minute.|S|s|s
+fn002|i can send|D|s|s
+fn002|yet.|S|s|s
+me018|would you pass those down?|Q|qy|co
+me013|oh.|S|s|bk
+me013|sorry.|S|s|fa
+me018|okay.|F|fg|fg
+me018|um|F|fh|fh
+me018|so i guess i'll go ahead.|S|s|s
+me018|um|F|fh|fh

@@ -21,10 +21,14 @@ mrda_text = load_data(data_dir + all_mrda_text_file)
 
 # Split into labels and utterances
 utterances = []
-labels = []
+basic_da_labels = []
+general_da_labels = []
+full_da_labels = []
 for line in mrda_text:
     utterances.append(line.split("|")[1])
-    labels.append(line.split("|")[2])
+    basic_da_labels.append(line.split("|")[2])
+    general_da_labels.append(line.split("|")[3])
+    full_da_labels.append(line.split("|")[4])
 
 # Count total number of utterances
 num_utterances = len(utterances)
@@ -63,26 +67,68 @@ print(vocabulary_size)
 
 # Write vocabulary and word frequencies to file
 with open(metadata_dir + "vocabulary.txt", 'w+') as file:
-    for i in range(len(vocabulary)):
+    for i in range(4, len(vocabulary)):
         file.write(vocabulary.to_tokens(i) + " " + str(word_freq[vocabulary.to_tokens(i)]) + "\n")
 
-# Count the label frequencies and generate labels
-label_freq = nlp.data.count_tokens(labels)
-labels = nlp.Vocab(label_freq)
-num_labels = len(label_freq)
+# Count the basic label frequencies and generate labels
+basic_label_freq = nlp.data.count_tokens(basic_da_labels)
+basic_labels = nlp.Vocab(basic_label_freq)
+num_basic_labels = len(basic_label_freq)
 
-metadata['label_freq'] = label_freq
-metadata['labels'] = labels
-metadata['num_labels'] = num_labels
-print("Labels:")
-print(label_freq)
-print(labels)
-print(num_labels)
+metadata['basic_label_freq'] = basic_label_freq
+metadata['basic_labels'] = basic_labels
+metadata['num_basic_labels'] = num_basic_labels
+print("Basic Labels:")
+print(basic_label_freq)
+print(basic_labels)
+print(num_basic_labels)
 
 # Write labels and frequencies to file
 with open(metadata_dir + "labels.txt", 'w+') as file:
-    for i in range(len(labels)):
-        file.write(labels.to_tokens(i) + " " + str(label_freq[labels.to_tokens(i)]) + "\n")
+    file.write("Basic Labels:\n")
+    for i in range(4, len(basic_labels)):
+        file.write(basic_labels.to_tokens(i) + " " + str(basic_label_freq[basic_labels.to_tokens(i)]) + "\n")
+    file.write("\n")
+
+# Count the general label frequencies and generate labels
+general_label_freq = nlp.data.count_tokens(general_da_labels)
+general_labels = nlp.Vocab(general_label_freq)
+num_general_labels = len(general_label_freq)
+
+metadata['general_label_freq'] = general_label_freq
+metadata['general_labels'] = general_labels
+metadata['num_general_labels'] = num_general_labels
+print("General Labels:")
+print(general_label_freq)
+print(general_labels)
+print(num_general_labels)
+
+# Write labels and frequencies to file
+with open(metadata_dir + "labels.txt", 'a+') as file:
+    file.write("General Labels:\n")
+    for i in range(4, len(general_labels)):
+        file.write(general_labels.to_tokens(i) + " " + str(general_label_freq[general_labels.to_tokens(i)]) + "\n")
+    file.write("\n")
+
+# Count the full label frequencies and generate labels
+full_label_freq = nlp.data.count_tokens(full_da_labels)
+full_labels = nlp.Vocab(full_label_freq)
+num_full_labels = len(full_label_freq)
+
+metadata['full_label_freq'] = full_label_freq
+metadata['full_labels'] = full_labels
+metadata['num_full_labels'] = num_full_labels
+print("Full Labels:")
+print(full_label_freq)
+print(full_labels)
+print(num_full_labels)
+
+# Write labels and frequencies to file
+with open(metadata_dir + "labels.txt", 'a+') as file:
+    file.write("Full Labels:\n")
+    for i in range(4, len(full_labels)):
+        file.write(full_labels.to_tokens(i) + " " + str(full_label_freq[full_labels.to_tokens(i)]) + "\n")
+    file.write("\n")
 
 # Count sets number of dialogues and maximum dialogue length
 max_dialogues_len = 0

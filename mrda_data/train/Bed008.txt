@@ -1,1539 +1,1538 @@
-me010|okay so uh um|D
-me010|i don't know whether ami's coming or not.|S
-me010|um|F
-me010|but i think we ought to just get started.|S
-mn015|nancy is currently in berkeley but not here?|Q
-me003|nancy's still stick?|Q
-me010|don't know.|S
-mn015|okay.|B
-me010|anyway.|B
-me010|oh!|F
-me010|so there you go.|S
-me010|anyway so my idea for today|D
-me010|and we can uh decide that that isn't the right thing to do.|S
-me010|was to at spend at least part of the time trying to uh build the influence links.|S
-me010|you know which sets of things are uh relevant to which decisions.|S
-me010|and actually i had uh specific suggestion to start first with the path ones.|S
-me010|the database ones being in some sense less interesting to us.|S
-me010|although probably have to be done.|S
-me010|and so to do that|D
-me010|so there's and the idea was we were going to do two things.|S
-me003|is your mike on?|Q
-me010|uh|F
-me010|oh right well|D
-me010|yeah.|B
-me010|we were going to do two things.|S
-me010|one of which is just lay out the influence structure of what we think influences what.|S
-me012|that's funny.|S
-me010|and then as a uh separate but related task|D
-me010|uh particularly bhaskara and i were going to try to decide what kinds of belief nodes are needed in order to um do what we what we need to do.|S
-me010|once|D
-me010|so but we should sort of have all of the uh basic design of what influences what done before we decide exactly how to compute it.|S
-me010|so i didn't did you get a chance to look at all yet?|Q
-me012|yeah i looked at some of that stuff.|S
-me010|great.|S
-me010|okay so let's start with the uh belief nets the general influence stuff.|S
-me010|and then we'll then we'll also at some point break and talk about the techy stuff.|S
-mn015|well i think one could go there's|D
-mn015|i think we can discuss everything.|S
-mn015|first of all this i added i knew from sort of basically this has to be there.|S
-mn015|right?|Q
-mn015|um|F
-me010|oh are you going to go there or not.|S
-me010|yeah so one|D
-mn015|given given uh uh not transverse the castle the decision is does the person want to go there or is it just|D
-me010|right.|S
-me010|true.|S
-me010|does have to be there.|S
-mn015|and|F
-me010|and i'm sure we'll find more as we go that|D
-mn015|huh.|B
-mn015|so go there in the first place or not is definitely uh one of the basic ones.|S
-mn015|we can start with that.|S
-mn015|interesting effect.|S
-mn015|um is this basically true or false?|Q
-mn015|or maybe we'll get|D
-me010|well|F
-me012|which one?|Q
-mn015|what?|Q
-me045|go there.|S
-mn015|right.|F
-me010|so there is this question about|D
-mn015|here we|D
-mn015|we actually get just probabilities.|S
-me010|yeah.|B
-mn015|right?|Q
-mn015|for each down here.|S
-me010|when we're yeah when we're done.|S
-mn015|huh.|B
-me010|so so|D
-me010|the the reason it might not be true or false is that we did have this idea of when.|S
-me010|so it's you know uh current and so forth and so on or not at all.|S
-mn015|uhhuh.|B
-me010|right?|Q
-me010|and so that a decision would be do we want that|S
-me010|so you could two different things you could do.|S
-me010|you could have all those values for go there.|S
-me010|or you could have go there be binary and given that you're going there when.|S
-mn015|when.|S
-mn015|how.|S
-me010|yeah.|S
-mn015|why.|S
-me010|and so forth.|S
-mn015|yeah.|B
-me010|so i'll let|D
-me010|we'll see.|S
-mn015|huh.|B
-me045|i mean it seems that you could um uh it seems that those things would be logically independent.|S
-me045|like you would want to have them separate or binary.|S
-me045|go there and then the the possibilities of how to go there.|S
-me045|because|D
-me010|okay that's let's start that way.|S
-me045|because you know it might be easy to figure out that this person is going to need more film eventually from their utterance.|S
-me045|but it's much more complex to query when would be the most appropriate time.|S
-mn015|huh.|B
-mn015|huh.|B
-mn015|okay.|B
-mn015|and so i've tried to come up with some initial things one could observe.|S
-mn015|so who is the user?|Q
-mn015|everything that has user comes from the user model.|S
-mn015|everything that has situation comes from the situation model a.|S
-mn015|we should be be clear.|S
-mn015|but when it comes to sort of writing down|D
-mn015|when you when you do these things|D
-mn015|is it here?|Q
-mn015|you sort of have to write the values this can take.|S
-me010|right.|B
-mn015|and here i was really uh in some sometimes i was really sort of standing in front of a wall feeling very stupid.|S
-mn015|because um this case it's pretty simple.|S
-mn015|but as we will see the other ones um|D
-mn015|for example if it's a running budget so what are the discrete values of a running budget.|S
-mn015|so maybe my understanding there is too impoverished.|S
-me045|huh.|B
-mn015|how can i write here that this is something a number that keeps on changing?|Q
-me010|no uh|F
-mn015|but okay.|F
-mn015|thus is understandable?|Q
-me003|yes.|S
-me045|think so.|S
-mn015|so here for example|D
-me010|you've have you seen this before at all keith these belief net things?|Q
-me045|uh no.|S
-me045|but i think i'm following it.|S
-me045|so far.|S
-mn015|so here is the the we had that the user's budget may influence the outcome of decisions.|S
-me010|yeah.|B
-me012|huh.|B
-mn015|there we wanted to keep sort of a running total of things.|S
-me012|is this like a number that represents how much money they have left to spend?|Q
-me012|okay well i mean how is it different from user finance?|S
-mn015|um the finance is sort of here thought of as as the financial policy a person carries out in his life.|S
-mn015|he is he cheap average or spendy?|Q
-me012|all right.|S
-mn015|and um i didn't come uh|D
-mn015|maybe a user|D
-mn015|i don't know.|S
-mn015|i didn't want to write greediness.|S
-mn015|but|F
-me045|yeah.|B
-me045|huh.|B
-mn015|welcome.|S
-me010|or cheapness.|S
-mn015|welcome.|S
-me045|user thrift.|S
-me012|yeah.|S
-me010|thrift that's good.|S
-me010|great.|B
-mn015|there it is.|S
-me010|yeah so keith what's behind this is actually a program that will once you fill all this in actually solve your belief nets for you and stuff.|S
-me045|uhhuh.|B
-me010|so this is not just a display.|S
-me010|this is actually a gui to a simulator that will if we tell it all the right things we'll wind up with a functioning belief net at the other end.|S
-me045|okay.|S
-me045|okay.|S
-mn015|and it's so simple even i can use it.|S
-me045|wow that is simple!|S
-mn015|okay so here was|D
-mn015|okay i can think of uh people being cheap average or spendy or we can even have a a finer scale moderately cheap.|S
-me010|doesn't matter.|S
-mn015|doesn't matter.|S
-mn015|agree there.|S
-mn015|but here um i wasn't sure what to write in.|S
-me010|let's|D
-me010|go ahead.|S
-me012|well i mean you've written in you've written in what uh seems to be required.|S
-me012|like what else is is do you want?|Q
-mn015|if that's permissible then i'm happy.|S
-me010|well yeah so here's here's what's permissible.|S
-me010|is that you can arrange so that the um the value of that is going to have to be updated.|S
-me010|and it's not a belief update.|S
-me010|right?|Q
-me010|it's you took some actions you spent money and stuff.|S
-me010|so the update of that is going to have to be essentially external to the belief net.|S
-mn015|yeah.|S
-me010|right?|Q
-me010|and then what you're going to need is uh for the things that it influences|D
-me010|well let's first of all let's see if it does influence anything.|S
-me010|and if it does influence anything then you're going to need something that converts from the the number here to something that's relevant to the decision there.|S
-me010|so it could be they create different ranges that are relevant for different decisions or whatever.|S
-me010|but for the moment this is just a node that is conditioned externally and might influence various things.|S
-mn015|huh.|B
-mn015|yeah this is where um|D
-mn015|okay anyways.|F
-mn015|let's forget it.|S
-me010|well that's fine.|S
-me010|well anyway go ahead.|S
-mn015|okay and so this oh that|D
-me012|the other thing is that um every time that's updated beliefs will have to be propagated.|S
-me012|but then the question is do you do we want to propagate beliefs every single time it's updated or only when we need to?|Q
-me010|yeah that's a good question.|S
-me010|and uh does it have a lazy mode?|Q
-me010|i don't remember.|S
-me012|uh|F
-me012|well i mean in srini's thing there was this thing there was this um option like proper inferences which suggests that uh doesn't happen automatically.|S
-me010|oh right!|S
-me010|yeah.|B
-me010|probably does.|S
-me010|yeah.|B
-me010|someone has to track that down.|S
-me010|but i but uh|D
-mn015|i just accidentally|D
-me010|and and and i think actually uh|D
-mn015|oops!|S
-me010|one of the items for the uh user home base uh should be uh essentially non local.|S
-me010|they're only there for the day and they don't have a place that they're staying.|S
-me012|well|F
-mn015|oh just uh accidentally erased this.|S
-mn015|i i just had values here such as uh um is he we had in our list we had is he staying in our hotel.|S
-mn015|is he staying with friends.|S
-mn015|and so forth.|S
-me010|yeah.|B
-mn015|uh|F
-mn015|so we're|D
-mn015|okay.|B
-me010|so|F
-me010|it's clear where where we are right now.|S
-me010|so my suggestion is we just pick uh|D
-mn015|something down here?|Q
-me010|one you know one uh particular one of the uh|D
-me010|well let's do the first first one let's do the one that we sort of already think we did.|S
-me010|so that was the of the endpoint?|Q
-mn015|uhhuh.|S
-mn015|and um|F
-mn015|oops!|S
-me012|is|D
-me012|huh.|B
-mn015|uh.|B
-me012|so it's true or false?|Q
-mn015|no no no.|S
-me010|no that's that's a|D
-mn015|e v a.|S
-mn015|missed that one.|S
-me012|so|F
-me003|what's the difference between mode and endpoint?|Q
-me012|i thought mode.|S
-me012|yeah.|F
-me010|although that|D
-mn015|um mode was um|D
-me010|well that's|D
-me012|mode of transportation?|Q
-mn015|yeah.|S
-me012|okay.|S
-me012|also true or false.|S
-mn015|uhhuh.|B
-me010|no he he hasn't filled them in yet is what's true.|S
-me012|yeah okay.|S
-mn015|did i or didn't i?|Q
-mn015|no.|S
-mn015|probably nothing done yet.|S
-mn015|oh i just did it on the upper ones okay.|S
-mn015|makes sense.|S
-mn015|okay so this was e v a.|S
-mn015|maybe we can think of more things.|S
-mn015|cross.|S
-me012|yeah.|B
-me010|okay.|B
-me045|climb rob.|S
-mn015|climb emerge.|S
-me010|no no no.|S
-me003|uh|F
-me012|well some of those are subsumed by approach.|S
-me010|these are that's just a point.|S
-me010|this is|D
-me003|would it be an endpoint if you were crossing over it?|Q
-me045|the charles bridge you know.|S
-me010|yeah would be a for a given segment.|S
-me010|you know you you go first go the town square.|S
-me003|well i uh|D
-me045|no i mean if you go to you know if you go to prague or whatever one of your your key points that you have to do is cross the charles bridge.|S
-me045|and doesn't really matter which way you cross.|S
-me045|which where you end up at the end.|S
-me045|but the part the good part is walking over it.|S
-me045|so|F
-me010|that's subtle but true.|S
-me010|anyway.|F
-me010|so let's just leave it three with three for now.|S
-mn015|uhhuh.|B
-mn015|yeah.|B
-me010|and let's see if we can get it linked up just to get ourselves started.|S
-mn015|okay we|D
-me010|you'll see it you'll see something comes up immediately that the reason i want to do this.|S
-mn015|well the uh user was uh definitely more likely to enter if he's a local.|S
-me010|right.|B
-me010|right.|B
-mn015|more likely to view if he's a tourist.|S
-mn015|um|F
-mn015|and then of course we had the fact that given the fact that he's thrifty and there will be admission then we get all these cross um|D
-me010|we did but the three things that that it contributed to this|D
-me010|in fact the other two aren't up there.|S
-me010|so one was the ontology.|S
-mn015|we'll what type of building is it?|Q
-mn015|yeah.|S
-me010|yeah.|S
-me010|and the and the third thing we talked about was something from the discourse.|S
-mn015|what he has mentioned before.|S
-me010|okay so this is|D
-me010|right so what i what we seem to need here|D
-me010|this is why it starts getting into the technical stuff.|S
-me045|uhhuh.|B
-me010|the way we had been designing this there were three intermediate nodes.|S
-me010|uh which were the endpoint decision as seen from the uh user model as seen from the ontology and as seen from the discourse.|S
-me010|so each of those|D
-me010|the way we had it designed|D
-me010|now we can change the design.|S
-me010|but the design we had was|D
-me010|there was a decision with the same three outcomes uh based on the those three separate considerations.|S
-me045|uhhuh.|B
-me010|so if we wanted to do that would have to put in uh three intermediate nodes.|S
-mn015|uh we can load it up it you know very simple.|S
-me045|so|F
-me010|and then what you and i have to talk about is okay if we're doing that and they get combined somehow uh how do they get combined.|S
-me010|but the they're they're undoubtedly going to be more things to worry about.|S
-mn015|so this was adjusted for this one mode thing.|S
-me012|oh yes.|S
-me010|yeah.|B
-mn015|so that's in our uh in in johno's sort of pictogram everything that could contribute to whether a person wants to enter view or approach something.|S
-me010|oh it was called mode.|S
-me010|so this this is mode here means the same as endpoint.|S
-mn015|is now this endpoint.|S
-me003|right.|S
-me010|okay why don't we can we change that?|Q
-mn015|we can just rename that yeah.|S
-me010|all right.|S
-me010|you know but that was actually|D
-me010|yeah unfortunately that was a um kind of an intermediate|D
-me010|that's i don't think what we would currently do.|S
-me045|can i ask about slurred and angry as inputs to this?|Q
-me010|that's a|D
-me045|what why?|Q
-me012|like they're either true or false.|S
-mn015|the prosody?|Q
-me012|and they uh|D
-me045|okay.|S
-me012|oh i see.|S
-me003|if the if the person talking is angry or slurs their speech they might be tired or you know.|S
-me045|uhhuh.|B
-me045|okay.|S
-me045|drunk.|S
-me012|therefore|D
-me003|and you know possibly uh|D
-me045|less likely to enter.|S
-me003|some|D
-me012|uh i was thinking less likely to view.|S
-me003|yeah.|S
-me045|huh.|B
-me010|yeah.|F
-me010|but that's that seems to|D
-me010|yeah.|B
-me010|so so my advice to do is is get this down to what we think is actually likely to to be a a strong influence.|S
-me045|okay.|S
-me012|right.|B
-me010|but yeah that was what he had in mind.|S
-me010|so let's think about this this question of how do we want to handle|S
-me010|so there're two separate things.|S
-me010|one is|D
-me010|uh at least two.|S
-me010|one is how do we want to handle the notion of the ontology.|S
-me010|now what we talked about and this is another technical thing bhaskara is uh can we arrange so that|S
-me010|i think we can.|S
-me010|so that the belief net itself has properties.|S
-me010|and the properties are filled in uh from ontology items.|S
-me010|so the let's take the case of the uh this endpoint thing.|S
-me010|the notion was that if you had a few key properties like is this a tourist site you know some kind of landmark.|S
-me010|is it a place of business.|S
-me010|uh is it something you physically could enter.|S
-me045|uhhuh.|B
-me010|okay?|Q
-me010|et cetera.|S
-me010|so that there'd be certain properties that would fit into the decision node.|S
-me010|and then again as part of the outer controlling conditioning of this thing those would be set.|S
-me010|so that somehow someone would find this word look it up in the ontology pull out these properties put it into the belief net and then the decision would flow.|S
-me045|uhhuh.|B
-me010|now|F
-mn015|seems to me that we've sort of embedded a lot embedded a lot of these uh things we had in there previously in in in some of the other final decisions done here.|S
-mn015|for example if we would know that this thing is exhibiting something um|D
-me010|right.|S
-me010|right.|B
-mn015|if it's exhibiting itself it is a landmark.|S
-mn015|meaning more likely to be viewed.|S
-me010|yeah.|S
-me010|yep.|S
-mn015|if it is exhibiting pictures or sculptures and stuff like this then it's more likely to be entered.|S
-me010|i uh that's i think that's completely right.|S
-me010|and um i think that's good.|S
-me010|right?|Q
-me010|so what what that says is that we might be able to uh take and|D
-me010|in particular|D
-me010|so so the ones we talked about were uh exhibiting and selling.|S
-mn015|accessibility.|S
-me010|no accessibility meant|D
-mn015|if it's closed one probably won't enter.|S
-mn015|or if it's not accessible to a tourist ever the likelihood of that person actually wanting to enter it.|S
-me010|okay.|S
-mn015|given that he knows it of course.|S
-me010|all right.|F
-me010|so let me suggest this.|S
-me010|uh could you move those up about halfway?|Q
-me010|uh the ones that you and selling i guess.|S
-mn015|yeah all all of these.|S
-mn015|if it's fixing things selling things or servicing things.|S
-me010|right.|S
-me010|so here here's what it looks like to me.|S
-me010|is that you want an intermediate structure which uh is essentially the or of uh for this purpose of of uh selling fixing or servicing.|S
-me010|so that it uh|D
-me010|that is for certain purposes it becomes important.|S
-me010|but for this kind of purpose uh one of these places is quite like the other.|S
-me010|does that seem right?|Q
-me010|so we|D
-me003|you're basically just merging those for just the sake of endpoint decision?|Q
-me010|if we|D
-me010|yes.|S
-me003|yeah.|S
-me010|so if well it may be more than endpoint decisions.|S
-me045|uhhuh.|B
-me010|so the idea would be that you might want to merge those three.|S
-mn015|these three?|Q
-me010|yeah.|S
-me010|uh uh selling fixing and servicing.|S
-mn015|yeah.|S
-me012|what um and so either those is true or false?|Q
-me012|so|F
-me010|uh uh well it it here's where it gets a little tricky.|S
-me010|uh from the belief net point of view it is.|S
-me010|from another point of view of course it's it's it's important to know what it's selling or servicing and so forth.|S
-me045|yeah.|B
-me012|okay.|S
-me010|so for this decision it's just uh true or false.|S
-me012|yeah.|B
-me010|and in this is a case where the or seems just what you want.|S
-me012|okay.|S
-me010|that that if any of those things is true then it's the kind of place that you uh|D
-mn015|um more likely to enter.|S
-me010|are more likely to enter.|S
-me012|so you just want to have them all pointing to a summary thing?|Q
-me010|you could yeah.|S
-me010|yeah so let's do that.|S
-me010|no no no uh to to an no an intermediate node.|S
-mn015|oh okay.|S
-me010|that's the part of the idea is|D
-mn015|um is is that the object type node?|Q
-me010|i|D
-mn015|so are they the is it the kind of object that sells fixes or services things?|Q
-me010|well open up object type and let's see what its values are.|S
-mn015|oh i just created it it has none so far.|S
-me010|oh well okay first of all it's not objects.|S
-me010|we called them entities.|S
-mn015|yeah.|S
-me010|right?|Q
-mn015|and then we have sort of the um|D
-me010|let's say i put commercial.|S
-mn015|yeah.|S
-mn015|i i was just going to|D
-mn015|commercial action inside where people|D
-me010|well couldn't i do let's do commercial.|S
-me010|uh landmark.|S
-me010|and|F
-mn015|and where was the accessible yeah.|S
-me010|well|F
-me010|accessible i think is different.|S
-mn015|yeah.|B
-me010|because that's that that varies temporally.|S
-me010|whereas this is a|D
-mn015|uhhuh.|B
-me003|what would a hotel fall under?|Q
-me010|i would call that a service.|S
-me010|but but i don't know.|S
-me003|well i mean in terms of entity type?|Q
-me010|say well it's i would|D
-me010|again for this purpose i think it's commercial.|S
-me010|someplace you want to go in to do some kind of business.|S
-me003|okay.|S
-me012|um what does the underscore t at the end of each of those things signify?|Q
-mn015|um things.|S
-mn015|so places that service things sell things or fix things and places that exhibit things.|S
-me012|uhhuh.|B
-me012|okay.|S
-me012|okay.|S
-me012|that also points to entity type i guess.|S
-me045|so we're deriving um this the this feature of whether the the main action at this place happens inside or outside or what we're deriving that from what kind of activity is done there?|Q
-me045|couldn't you have it as just a primitive feature of the entity?|Q
-me010|well you could.|S
-me010|that's a that's a choice.|S
-me045|okay.|S
-me010|so uh|F
-me045|i mean it seems like that's much more reliable.|S
-me045|because you could have outdoor places that sell things.|S
-me045|and you know indoor places that do something else.|S
-me010|yeah the problem with it is that it sort of putting in a feature just for one decision.|S
-me045|and|F
-me010|now we may wind up having to do that.|S
-me045|huh.|B
-me010|this anyway this|D
-me045|okay.|S
-me010|at a mental level that's what we're going to have to sort out.|S
-me045|okay.|S
-me010|so you know what does this look like.|S
-me010|what are what are uh intermediate things that are worth computing.|S
-me010|what are the features we need in order to make all these decisions.|S
-me045|uhhuh.|B
-me010|and what's the best way to organize this so that um it's clean and and consistent and all that sort of stuff.|S
-me045|okay.|B
-me045|i'm just thinking about how people human beings who know about places and places to go and so on would store this.|S
-me045|and it would probably you wouldn't just sort of remember that they sell stuff and then deduce from that that it must be going on inside or something.|S
-mn015|well i think an entity maybe should be regard as a vector of several possible things.|S
-mn015|it can either them do do sell things fix things service things exhibit things it can be a landmark at the same time as doing these things.|S
-me045|uhhuh.|B
-mn015|it's not either or.|S
-mn015|certainly a place can be a hotel and a famous site.|S
-me045|uhhuh.|B
-mn015|many come to mind.|S
-mn015|things can be generally um a landmark and be accessible.|S
-mn015|i e a a castle.|S
-mn015|or can be a landmark or not accessible some statue.|S
-me045|uhhuh.|B
-mn015|you know can go inside.|S
-me010|okay.|F
-me010|anyway so let me suggest you do something else.|S
-me010|uh which is to get rid get rid of that long link between who the user and the endpoint.|S
-mn015|could we just move it like this?|Q
-me010|no no i don't want the link there at all.|S
-mn015|oh okay.|S
-me010|because what we're going to want is an intermediate thing.|S
-me010|which is uh the endpoint the endpoint decision based on the user models.|S
-me010|so what we we what we talked about is three separate endpoint decisions.|S
-me010|so let's make a new node.|S
-mn015|yeah.|B
-mn015|yeah.|B
-me003|just as a suggestion maybe you could save as to keep your old one nice and clean.|S
-me003|and so you can mess with this one.|S
-mn015|huh.|B
-mn015|the old one was not that not that important i think.|S
-mn015|but|F
-me003|okay well not a big deal then.|S
-mn015|let's do it then.|S
-me003|well the|D
-me003|isn't there a save as inside of java base?|Q
-mn015|but i can just take this.|S
-me003|okay.|S
-mn015|copy it somewhere else.|S
-mn015|this was user something?|Q
-mn015|or|D
-me010|well this was|D
-me010|uh let's put it this let's do endpoint underbar u.|S
-mn015|end point?|Q
-me010|endpoint end|D
-me010|this is|D
-mn015|uh.|S
-me010|it's the endpoint.|S
-mn015|gotcha yeah.|S
-me010|let's say underbar u.|S
-me010|so that's the endpoint decision uh as seen through the|D
-me003|as related from the user model.|S
-me010|right.|S
-me010|so let's let's actually|D
-me010|yeah so you can link that up to the|D
-mn015|should i rename this too?|Q
-me010|uh yeah so that i guess that's endpoint uh|D
-mn015|or|D
-mn015|it's underscore e.|S
-me010|underscore e for entity.|S
-me010|and we may change all this.|S
-me010|but|F
-me010|right.|B
-me010|and|F
-mn015|okay shouldn't i be able to move them all?|Q
-mn015|no?|Q
-mn015|or|D
-mn015|can i?|Q
-mn015|where?|Q
-mn015|what?|Q
-me010|oh i uh i don't know.|S
-me010|actually i guess the easiest thing would move move the endpoint|D
-me010|well go ahead.|S
-me010|just do whatever.|S
-mn015|wasn't this possible?|Q
-me010|well|F
-mn015|yeah.|S
-me003|i think you have to be in move mode before|D
-mn015|uhhuh.|S
-mn015|okay.|S
-me010|good.|B
-me010|right.|B
-mn015|so now we're looking for user related things that um|D
-me010|yeah.|B
-me010|and uh maybe maybe it's just one who is the user.|S
-me010|i don't know.|S
-me010|maybe maybe there's more.|S
-me045|huh.|B
-mn015|well if he's if he's in a car right now|D
-mn015|what was that?|Q
-mn015|people with harry drove the car into the cafe.|S
-me010|never mind.|S
-me010|uh anyway this is crude.|S
-me010|now but the now so so but then the question is|D
-me010|uh|F
-me010|so and and we assume that some of these properties would come indirectly through an ontology.|S
-me010|but then we had this third idea of input from the discourse.|S
-mn015|well let's should we finish this?|Q
-mn015|i mean but surely the user interests|D
-me010|sure.|S
-me010|okay.|S
-me003|the user thrift.|S
-me003|the user budget.|S
-mn015|yeah yeah.|S
-me010|well maybe.|S
-me010|again i|D
-me010|well okay put them in.|S
-me010|but what we're going to want to do is actually uh|D
-me003|well is|D
-mn015|here this was one of my problems.|S
-mn015|we have the user interest is a is a vector of five hundred values.|S
-mn015|so|F
-mn015|um that's from the user model.|S
-me012|oh you mean level of interest?|Q
-mn015|uhhuh.|B
-mn015|no not levels of interest.|S
-mn015|but things you can be interested in.|S
-me045|well|F
-me010|somebody else has built this user model.|S
-mn015|gothic churches versus baroque townhouses versus|D
-me012|oh i see.|S
-me012|right.|B
-me012|so why is it|D
-me012|oh it so it's like a vector of five hundred one's or zeroes?|Q
-mn015|is that|D
-me012|like for each thing are we are you interested in it or not?|Q
-mn015|yeah.|S
-mn015|uh i i think.|S
-me012|i see.|S
-me045|huh.|B
-me010|okay.|F
-me010|so uh you and so here let me give you two ways to handle that.|S
-me010|all right?|Q
-me010|one is um you could ignore it.|S
-me010|but the other thing you could do is have an|D
-me010|and this will give you the flavor of the of what.|S
-me010|you could have a node that's that was a measure of the match between the object's feature you know the match between the object the entity i'm sorry and the user.|S
-mn015|uhhuh.|B
-mn015|uh.|B
-me010|so you could have a a fit node.|S
-me010|and again that would have to be computed by someone else.|S
-mn015|uhhuh.|B
-me010|but uh|F
-me010|so that uh|D
-mn015|just as a mental note.|S
-mn015|uh|F
-me010|yeah that's all.|S
-mn015|uhhuh.|B
-mn015|and and should we say that this interests uh affects the likelihood of of entering?|Q
-me010|yeah.|S
-me010|i mean we could.|S
-mn015|yeah.|B
-mn015|and also if it's an expensive place to enter this may also|D
-me010|okay.|S
-me012|budget.|S
-me045|user schedule.|S
-mn015|schedule?|Q
-me045|do i have time to go in and climb all the way to the top of the koelner dome or do i just have to time to take a picture of the outside.|S
-me010|right.|S
-me003|it seems like everything in a user model affects|D
-me010|well that's what we don't want to do.|S
-me010|see that|D
-me003|yeah.|S
-me010|because then we get into huge combinatorics and stuff like that.|S
-me045|uhhuh.|B
-me003|because if the i mean and if the user is tired the user state.|S
-me012|well|F
-me003|right?|Q
-me003|it would affect stuff.|S
-me003|but i can't see why anything everything in the model wouldn't be|D
-me010|well but|F
-me012|right.|S
-me010|well that that's we can't do that.|S
-me010|so we're going to have to|D
-me003|yeah.|B
-me010|but this is a good discussion.|S
-me010|we're going to have to somehow figure out uh some way to encapsulate that.|S
-me010|uh so if there's some general notion of for example the uh relation to the time to do this to the amount of time the guy has or something like that is is the uh compatibility with his current state.|S
-me010|so that's what you'd have to do.|S
-me010|you'd have to get it down to something which uh was itself relatively compact.|S
-me010|so it could be compatibility with his current state.|S
-me010|which would include his money and his time and and his energy.|S
-me003|yeah just seems like it'd push the problem back a level.|S
-me012|right.|B
-me010|it does.|S
-me003|yeah but|D
-me045|uhhuh.|B
-me012|no but it's more than that.|S
-me012|like the the more sort of you break it up.|S
-me012|like because if you have everything pointing to one node it's like exponential.|S
-me012|whereas if you like keep breaking it up more and more it's not exponential anymore.|S
-me010|so it yeah there are two advantages.|S
-me010|that's there's one technical one.|S
-me003|yeah.|F
-me010|and the other is it it gets used.|S
-me003|so we'd basically be doing subgrouping?|Q
-me003|subgrouping basically?|Q
-me012|yeah.|S
-me003|into|D
-me003|so basically make it more tree like going backwards?|Q
-me012|right.|S
-me045|yeah.|S
-me010|right.|S
-me010|but it there's two advantages.|S
-me010|one is the technical one that you don't wind up with such big exponential uh c b t's.|S
-mn015|bhaskara?|Q
-me010|the other is it can be it presumably can be used for multiple decisions.|S
-me045|uhhuh.|B
-me010|so that if you have this idea of the compatibility with the requirements of an action to the state of the user one could well imagine that that was|D
-me012|right.|B
-me010|not only is it is it cleaner to compute it separately but it could be that it's used in multiple places.|S
-me010|anyway so in general this is the design this is really design problem.|S
-mn015|yeah.|B
-me010|okay you've got a signal a set of decisions.|S
-me010|um how do we do this?|Q
-mn015|what do i have under user state anyhow?|Q
-mn015|because i named that already something.|S
-mn015|oh that's tired fresh.|S
-mn015|yeah.|B
-mn015|maybe should be renamed into physical state.|S
-me010|or user fatigue even.|S
-me045|huh.|B
-mn015|that's with a g?|Q
-me045|uhhuh.|S
-me010|yep.|S
-me010|whatever.|S
-mn015|then we can make a user state.|S
-me010|what's what we're talking about is compatibility.|S
-me010|uh or something i don't know.|S
-me010|but|F
-me003|i guess the the question uh is|D
-me003|it's hard for me to imagine how everything wouldn't just contribute to user state again.|S
-me003|or user compatibility.|S
-me010|oh but the thing is that we uh uh we had some things that uh|D
-mn015|that don't.|S
-me010|that don't.|S
-mn015|the user interests and the user who who who the user is are completely apart from the fact whether he is tired broke|D
-me003|sure but other i thought though the node we're creating right now is user compatibility to the current action.|S
-me003|right?|Q
-me010|the|D
-me010|right.|S
-me003|seems like everything in the user model would contribute to whether or not the user was compatible with something.|S
-me010|uh maybe not.|S
-me010|i mean the that's the the issue is um|D
-me010|would even if it was true in some abstract general sense it might not be true in terms of the information we actually had and can make use of.|S
-me010|and anyway we're going to have to find some way to uh get this sufficiently simple to make it feasible.|S
-mn015|maybe um if we look at the if we split it up again into sort of um|D
-mn015|if we look at the uh the endpoint again we we said that for each of these things there are certain preconditions.|S
-mn015|so you can only enter a place if you are not too tired to do so.|S
-mn015|and also uh have the money to do so if it costs something.|S
-mn015|so if you can afford it and perform it is preconditions.|S
-mn015|viewing usually is cheap or free.|S
-mn015|is that always true?|Q
-me045|uhhuh.|B
-mn015|i don't know.|S
-me003|well with the way we're defining it i think yeah.|S
-me010|but that uh viewing it without yeah view with our definition of view it's free.|S
-me010|because you|D
-mn015|and so is approaching.|S
-me010|yeah.|B
-me045|well what about the grand canyon?|Q
-me045|right?|Q
-me045|no never mind.|S
-me045|i mean are there are there large things that you would have to pay to get up close to?|Q
-me045|like i mean|D
-me045|never mind.|S
-me045|not in the current|D
-me010|no we have to enter the park.|S
-me045|okay.|S
-me010|uh almost by definition um paying involves entering.|S
-me045|yeah.|B
-me010|going through some|D
-me045|okay.|S
-me045|right sure.|S
-me010|right.|S
-me010|uh|F
-me010|so let me suggest we switch to another one.|S
-me010|i mean clearly there's more work to be done on this.|S
-mn015|uhhuh.|B
-me010|but i think it's going to be more instructive to to think about uh other decisions that we need to make in path land.|S
-me010|and what they're going to look like.|S
-me003|so you can save this one as and open up the old one.|S
-me003|right?|Q
-me003|and|F
-me003|and then everything would be clean.|S
-me003|you could do it again.|S
-me010|why i think it's worth saving this one.|S
-me010|but i think i'd i'd like to keep this one.|S
-me012|yeah.|B
-me010|because i want to see if if we're going to reuse any of this stuff.|S
-me003|uhhuh.|B
-mn015|um|F
-mn015|so this might be|D
-mn015|what next?|Q
-me010|well you tell me.|S
-me010|so in terms of the uh planner what's what's a good one to do?|Q
-mn015|well let's this|D
-mn015|go there or not i think is a good one.|S
-me010|uh|B
-mn015|is a very basic one.|S
-mn015|so|F
-mn015|what makes things more likely that|D
-mn015|so|D
-me010|well the see the first thing is getting back to thing we left out of the other is the actual discourse.|S
-me010|so keith this is going to get into your world.|S
-me010|because uh we're going to want to know you know which constructions indicate various of these properties.|S
-me045|uhhuh.|B
-me045|uhhuh.|B
-me010|and so|F
-me010|i i don't yet know how to do this.|S
-me010|i guess we're going to wind up pulling out uh discourse properties like we have object properties.|S
-me010|and we don't know what they are yet.|S
-me045|uhhuh.|B
-me010|so that that the go there decision will have a node from uh discourse.|S
-me010|and i guess why don't we just stick a discourse thing up there to be as a placeholder for|D
-mn015|we we also had discourse features of course for the endpoint.|S
-me010|of of course.|S
-mn015|identified that.|S
-me010|yeah.|B
-mn015|and so again that's completely correct.|S
-mn015|we have the user model the situation model here.|S
-mn015|we don't have the discourse model here yet.|S
-mn015|much the same way as we didn't we don't have the ontology here.|S
-me010|well the ontology we sort of said we would pull these various kinds of properties from the ontology like exhibiting selling and so forth.|S
-mn015|really.|B
-me010|so in some sense it's it's there.|S
-mn015|uhhuh.|B
-me010|but the discourse we don't have it represented at all yet.|S
-mn015|yeah.|B
-mn015|um|F
-mn015|this be specific for second year.|S
-mn015|um|F
-mn015|and and we probably will have uh something like a discourse for endpoint.|S
-me010|but if we do it'll have the three values.|S
-mn015|huh?|Q
-me010|it'll have the e v a values.|S
-mn015|yeah.|S
-me010|if if we have it.|S
-mn015|yeah.|S
-mn015|okay just for starters.|S
-mn015|and here discourse um|D
-me010|for go there probably is true and false let's say.|S
-me010|that's what we talked about.|S
-mn015|um|F
-mn015|well i think um we're looking at the the little data that we have.|S
-mn015|so people say how do i get to the castle.|S
-mn015|and this usually means they want to go there.|S
-me045|uhhuh.|B
-mn015|so this should sort of push it in one direction.|S
-me010|right.|S
-mn015|however people also sometimes say how do i get there.|S
-mn015|in order to find out how to get there.|S
-mn015|without wanting to go there.|S
-me010|uhhuh.|S
-mn015|and sometimes um people say where is it.|S
-me045|uhhuh.|B
-mn015|because they want to know where it is.|S
-mn015|but in most cases they probably|D
-me010|yeah but that doesn't change the fact that you're you want these two values.|S
-mn015|oh yeah.|S
-mn015|true.|S
-mn015|so this is sort of some external thing that takes all the discourse stuff.|S
-mn015|and then says here it's either yep yay a or nay.|S
-mn015|yeah.|B
-mn015|okay.|B
-me010|and they'll be a uh a user go there.|S
-me010|and maybe that's all.|S
-me010|i don't know.|S
-me012|situation go there.|S
-me012|i mean because it's whether it's open or not.|S
-mn015|uhhuh.|B
-me010|okay good.|S
-me012|that definitely.|S
-me010|yep.|B
-me012|but that now that kind of|D
-me012|um what's the word?|Q
-me045|huh.|B
-me012|um the that interacts with the uh e v a thing.|S
-me012|if they just want to view it then it's fine to go there when it's closed.|S
-me012|whereas if they want to um|D
-me010|right.|S
-me012|so|F
-me010|right so that's that's where it starts getting to be uh uh essentially more interesting.|S
-me010|so what uh bhaskara says which is completely right is if you know that they're only going to view it then it doesn't matter whether it's closed or not.|S
-me045|uhhuh.|B
-me010|in terms of uh uh you know whether whether you want to go there.|S
-me012|the time of day.|S
-me012|right?|Q
-me012|i well right.|S
-me045|uhhuh.|B
-me003|it does matter though if there's like a strike or riot or something.|S
-me010|absolutely there are other situational things that do matter.|S
-me012|right.|S
-me012|so|F
-me012|yeah that's what i said.|S
-me012|just having one situational node may not be enough.|S
-me012|because this that node by itself wouldn't distinguish|D
-me010|well it can have various values.|S
-me010|yeah but we uh you you're right it might not be enough.|S
-me012|yeah i mean see i'm i'm thinking that any node that begins with go there is either going to be true or false.|S
-me045|well what|D
-me045|whoops!|S
-me010|yeah.|B
-me045|right.|B
-me010|uh.|S
-me010|i see.|S
-me010|that could be.|S
-me045|also that node i mean the go there s node would just be fed by separate ones for|D
-mn015|uhhuh.|B
-me010|could be.|S
-me045|you know there's different things the strikes and the|D
-me010|yeah.|B
-me012|like situation traffic and so on.|S
-me010|yeah.|B
-me045|yeah the time of day.|S
-me010|so so now the other thing that bhaskara uh pointed out is what this says is that uh there should be a link.|S
-me010|and this is where things are going to get very messy.|S
-me010|from the endpoint uh decision.|S
-me012|i guess the final|D
-me010|maybe the they're final and i guess the very bottom endpoint decision uh to the go there node.|S
-me010|and i don't worry about layout.|S
-me012|yeah.|B
-me010|i mean then we'll go we'll go nuts.|S
-mn015|uhhuh.|B
-me012|huh.|B
-me010|but|F
-me012|maybe we could um have intermediate node that just the endpoint and the go there s node sort of fed into.|S
-me010|could be.|S
-me010|yeah.|S
-me012|right.|S
-me012|because that's what we i mean that's why this situation comes up.|S
-me010|yeah.|B
-me010|well the go there actually the endpoint node could feed feed into the go there s.|S
-me012|yeah right.|S
-me010|that's right.|S
-me010|so the endpoint node|D
-mn015|uhhuh.|B
-me010|make that up to the go there then.|S
-mn015|yeah.|B
-me010|and again we'll have to do layout at some point.|S
-me010|but something like that.|S
-me010|now it's going to be important not to have loops by the way.|S
-mn015|i was just going to|D
-me010|uh really important in in the belief net world not to have loops.|S
-me010|uh|F
-me012|yes.|S
-mn015|how long does it take you to to compute uh|D
-me010|no it's much worse than that.|S
-me010|it if it it it it it's not it's not well defined if you're there are loops.|S
-me012|it things don't converge yeah.|S
-mn015|uh recursive action?|Q
-me010|you just you have to|D
-me010|there are all sorts of ways of breaking it up so that there isn't|D
-me010|uh|F
-mn015|uh but this isn't this is this line is just coming from over here.|S
-me010|okay.|S
-me012|yeah.|B
-me012|yeah.|S
-me010|yeah no it's not a loop yet i'm just saying we we in no in|D
-mn015|huh.|B
-me012|well but the good thing is we we could have loopy belief propagation which we all love.|S
-me010|right.|B
-me010|okay so anyway so that's another decision.|S
-me010|uh what's what's another decision you like?|Q
-mn015|okay these have no parents yet but i guess that sort of doesn't matter.|S
-mn015|right?|Q
-me010|well the idea is that you go there you go comes from something about the user from something about the situation and the uh the discourse is is a mystery.|S
-mn015|i mean this is sort of|D
-mn015|this comes from traffic and so forth yeah.|S
-mn015|should we just make some?|Q
-me010|sure if you want.|S
-mn015|um|F
-mn015|if there's parking maybe|D
-mn015|huh.|B
-mn015|oh who cares?|Q
-mn015|okay.|B
-mn015|and if he has seen it already or not and so forth.|S
-me010|right.|S
-mn015|okay.|S
-mn015|um|F
-mn015|and discourse is something that sort of|D
-mn015|should we make a keith note here?|Q
-mn015|that sort of comes from keith.|S
-me010|sure.|S
-me010|uhhuh.|B
-mn015|just sort of so we don't forget.|S
-mn015|oops!|S
-mn015|have to get used to this.|S
-mn015|okay.|S
-mn015|whoops!|S
-me045|um actually|F
-me010|and then also the discourse endpoint.|S
-me010|i i guess endpoint sub d is if you want to make it consistent.|S
-me003|uh.|F
-mn015|uhhuh.|B
-me045|um actually is this the the right way to have it?|Q
-me045|where um go there from the user and go there from the situation just sort of don't know about each other but they both feed the go there decision.|S
-me010|i think so.|S
-me045|because isn't the i mean|D
-me045|uh|F
-me045|huh|F
-me045|okay.|S
-me010|maybe not.|S
-me045|but that still allows for the possibility of the of the user model affecting our decision about whether a strike is the sort of thing which is going to keep this user away from|D
-me010|right.|S
-me045|that all that that kind of decision making happens at the go there node.|S
-me010|uh you yeah you you if you needed to do that.|S
-me045|uh.|B
-me045|if you needed it to do that.|S
-me010|yeah.|S
-me045|but uh okay i was just thinking.|S
-me010|yeah.|B
-me045|i guess maybe i'm conflating that user node with possible possible asking of the user.|S
-me045|you know?|Q
-me010|uh.|F
-me045|hey there's a strike on uh does that affect whether or not you want to go or something.|S
-me010|good point i don't i don't know how we're going to uh|D
-me045|or|F
-me045|yeah so that might not come out of a user model.|S
-me045|but you know directly out of interaction.|S
-me010|right.|S
-me010|uh i yes my you know don't yeah yeah yeah that's enough.|S
-mn015|yeah.|B
-me010|uh my current idea on that would be that each of these decision nodes has questions associated with it.|S
-me045|uhhuh.|B
-me010|and the question wouldn't itself be one of these conditional things.|S
-me010|you know given that you know there's a strike do you still want to go.|S
-me045|okay.|B
-me045|yeah.|B
-me010|but uh if you told him a bunch of stuff then you would ask him do you want to go.|S
-me045|uhhuh.|B
-me010|but i think trying to formulate the conditional question that sounds too much.|S
-me045|okay.|B
-me045|right right.|B
-me045|yeah.|B
-me045|right sure okay.|S
-me010|to me.|S
-mn015|uhhuh.|B
-me010|all right but let me let let's stay with this a minute.|S
-mn015|but|F
-me010|because i want to do a little bit of organization.|S
-me010|before we get more into details.|S
-me010|the organization is going to be that uh|D
-me010|the flavor of what's going on is going to be that uh|D
-me010|as we sort of going to this detail indeed keith is going to to worry about the various constructions that people might use.|S
-me045|uhhuh.|B
-me010|and johno has committed himself to being the parser wizard.|S
-me010|so what's going to happen is that eventually|D
-me045|all right.|B
-me010|like by the time he graduates.|S
-me010|okay?|Q
-me010|uh they'll be some sort of system which is able to take the discourse in context and have outputs that can feed the rest of belief net.|S
-me010|i i i assume everybody knows that.|S
-me010|i just want to you know get closure that that'll be the game then.|S
-me045|uhhuh.|B
-me010|so the semantics that you'll get out of the discourse will be of values that go into the various discourse based decision nodes.|S
-me010|and now some of those will get fancier like mode of transportation and stuff.|S
-me010|so it isn't by any means uh necessarily a simple thing that you want out.|S
-me010|so uh if there is and there is mode of transportation|D
-mn015|and it there's a sort of also a split if you if you blow this up and look at it in more detail there's something that comes from the discourse in terms of what was actually just said.|S
-mn015|what's the utterance giving us?|Q
-me010|yeah.|B
-mn015|and then what's the discourse history give us?|Q
-me010|yeah well that well we'll have to decide uh how much of where that goes.|S
-me045|uhhuh.|B
-mn015|that's uh two things then.|S
-mn015|huh.|B
-me045|uhhuh.|B
-me010|and it's not clear yet.|S
-me010|i mean it could be those are two separate things.|S
-me010|it could be that the discourse gadget itself integrates them as|D
-me010|which would be my guess.|S
-me010|that you'd have to do see in order to do reference and stuff like that um you've got to have both the current discourse and the context to say i want to go back there.|S
-me010|wow what does that mean.|S
-me045|uhhuh.|B
-me010|and uh|F
-mn015|uhhuh.|B
-me045|now.|S
-me045|uhhuh.|B
-me010|all right.|S
-me010|so|F
-mn015|but is is this picture that's emerging here just my wish that you have noticed already for symmetry?|Q
-mn015|or is it that we get for each each decision on the very bottom we sort of get the sub e sub d sub u and maybe a sub o o for ontology um meta node?|Q
-me010|i don't know.|S
-mn015|but it might just|D
-me010|it could be.|S
-mn015|could be.|S
-mn015|so this|D
-me010|this is this is getting into the thing i want to talk about next.|S
-me010|which is if that's true uh how do we want to combine those?|Q
-me010|or when it's true.|S
-mn015|but this uh would be nice though that you know we only have at most four at the moment um arrows going to each of the uh bottom decisions.|S
-me010|yeah.|B
-me012|yeah.|B
-mn015|and four you we can handle?|Q
-me010|no.|S
-mn015|it's too much?|Q
-me012|yeah.|B
-me010|well it if it's if it's four things and each of them has four values it turns out to be a big c p t.|S
-me010|it's not completely|D
-me010|i mean it's it's not beyond what the system could solve.|S
-me010|but it's probably beyond what we could actually uh write down or learn.|S
-mn015|right true.|S
-me010|uh but you know it's four to the fourth.|S
-me010|it's pretty big.|S
-me010|uh|F
-me003|two fifty six?|Q
-me003|is that what that|D
-me010|yeah.|S
-me010|yeah i mean|D
-me010|it's and i don't think it's going to i don't think it'll get worse than that by the way.|S
-me010|so that's a that's a good|D
-me012|huh yeah.|B
-mn015|but but four didn't we decide that all of these had true or false?|Q
-mn015|so is it's four|D
-me010|uh for go there.|D
-me010|but not but not for|D
-me003|yeah.|B
-me010|the other one's three values for endpoint already.|S
-me012|yeah i mean you need actually three to the five.|S
-me012|because uh well i mean if if it has four inputs and then it itself has three values.|S
-me003|right.|S
-me012|so|F
-me012|i mean it can get big fast.|S
-mn015|um for endpoint?|Q
-mn015|no it's it's|D
-me010|e it's the e v a.|S
-mn015|yeah down here.|S
-mn015|but this one only has two.|S
-me012|no it still has three.|S
-me010|no.|S
-me010|since they will still have three.|S
-me012|e v a.|S
-me010|each so you're uh uh from each point of view you're making the same decision.|S
-me045|uhhuh.|B
-me010|so from the point of view of the of the entity|D
-me045|uhhuh.|B
-mn015|want to view that|D
-mn015|yeah yeah.|B
-mn015|yeah.|B
-me010|yeah.|B
-me012|this and also i mean the other places where|D
-me012|like for example consider endpoint view it has inputs coming from user budget user thrift.|S
-me010|right.|B
-me012|so even|D
-me010|those are not necessarily binary.|S
-me010|so we're we're going to have to use some care in the knowledge engineering to not have this explode.|S
-me010|and in fact i think it doesn't in the sense that|D
-me010|um|F
-me010|read it|D
-me010|you know actually with the underlying semantics and stuff i think it isn't like you have two hundred and fifty six different uh ways of of thinking about whether this user wants to go to some place.|S
-me010|all right.|S
-me010|so we we just have to figure out what the regularities are and and code them.|S
-me010|but um what i was going to suggest next is maybe we want to work on this a little longer.|S
-me010|but i do want to also talk about the thing that we started into now of|D
-me010|uh|F
-me010|well it's all fine to say all these arrows come into the same place.|S
-me010|what rule of combination is used there?|Q
-me010|so yes they so these things all affect it.|S
-me045|uhhuh.|B
-me045|right.|B
-me010|how do they affect it?|Q
-me010|and belief nets have their own beliefs about uh what are good ways to do that.|S
-me010|so is it it's it's clearer clear enough what the issue is.|S
-me012|right.|B
-me010|right?|Q
-me010|so do we want to switch that now or we want to do some more of this?|Q
-mn015|basically we just need to sort of|D
-mn015|in order to get some closure on this figure out how we're going to get this picture sort of uh completely messy.|S
-me010|well here here's one of the things that that i you|D
-me010|you no|D
-me010|i don't know how easy it is to do this in the interface.|S
-me010|but you it would be great if you could actually just display at a given time uh all the things that you pick up|D
-me010|you click on endpoint.|S
-me010|okay.|S
-mn015|uhhuh.|B
-me010|and everything else fades.|S
-me010|and you just see the links that are relevant to that.|S
-me010|and i|D
-me010|does anybody remember the gui on this?|Q
-me003|uh i would almost say the other way to do that would be to open or make you know n many belief nets.|S
-me003|and then open them every time you wanted to look at a different one.|S
-mn015|uhhuh.|B
-mn015|it's probably pretty easy do it to do it in h t m l.|S
-me003|because uh|D
-mn015|just|D
-me003|yeah but|D
-mn015|uh|F
-me012|h t m l?|Q
-mn015|yeah i have each of these each of the end belief nets be be a page and then you click on the thing.|S
-mn015|and then consider that it's respective.|S
-me012|okay.|S
-me010|yeah the well the|D
-mn015|but|D
-me010|anyway so uh it clear that even with this if we put in all the arrows nobody is going to be able to read the diagram.|S
-me003|yeah.|S
-me010|all right.|S
-me010|so we have to figure out some uh uh uh basically display hack or something to do this.|S
-me010|because|D
-me010|anyway i i let me suggest that's a not a first order consideration.|S
-me010|we have two first order considerations.|S
-me010|which is what are the uh influences.|S
-me010|a.|S
-me010|and b how do they get combined mathematically?|Q
-me010|how do we display them is an issue.|S
-me010|but|D
-me010|um|F
-me003|i don't yeah i just don't think this has been designed to support something like that.|S
-me012|yeah.|B
-me012|yeah i i mean it might soon if this is going to be used in a serious way like java base then it might soon be necessary to uh start modifying it for our purposes.|S
-me010|right.|S
-me010|yeah and um i that seems like a perfectly feasible thing to get into.|S
-me010|but um we have to know what we want first.|S
-me010|okay so why don't you tell us a little bit about decision nodes and what what the choices might be for these?|Q
-me012|so|D
-me012|uh sorry.|D
-me012|i guess that's|D
-me003|you can technically wear that as you're talking.|S
-me012|yeah it's right i guess i can do that.|S
-me045|darn!|S
-me010|put it in your|D
-me010|yeah.|S
-me012|i guess this board works fine.|S
-me012|so um recall the basic problem which is that um you have a belief net and you have like a lot of different nodes all contributing to one node.|S
-me012|right?|Q
-me012|so as we discussed specifying this kind of thing is a big pain.|S
-me012|and it's will take a long time to write down.|S
-me012|because for example if these s have three possibilities each and this has three possibilities then you know you have two hundred and forty three possibilities.|S
-me012|which is already a lot of numbers to write down.|S
-me012|so what um helps us in our situation is that these all have values in the same set.|S
-me012|right?|Q
-me012|these are all like saying e v or a.|S
-me012|right?|Q
-me012|so it's not just a generalized situation like|D
-me012|i mean basically we want to just take a combination of|D
-me012|we want to view each of these as experts.|S
-me012|who are each of them is making a decision based on some factors.|S
-me012|and we want to sort of combine their decisions.|S
-me012|and create you know um sort of weighted combination.|S
-mn015|huh.|B
-mn015|rover the rover decision.|S
-me012|the what decision?|Q
-mn015|rover.|S
-mn015|all of their outputs combined to make a decision.|S
-me045|huh.|B
-me012|yeah.|S
-me012|yeah.|B
-me012|so the problem is to specify the uh so the conditional property of this given all those.|S
-me012|right?|Q
-me012|that's the way belief nets are defined.|S
-me012|like each node given its parents.|S
-me012|right?|Q
-me012|so um that's what we want .|S
-me012|we want for example p of um|D
-me012|let's call this guy y.|S
-me012|and let's call these x one x two x n.|S
-me012|right?|Q
-me012|so we want probability that y equals you know for example um e.|S
-me012|given that these guys are|D
-me012|i'll just refer to this as like x um hat or something.|S
-me012|uh the like all of them.|S
-me012|given that for example the data says you know a v a e or something.|S
-me012|right?|Q
-me010|yep.|S
-me012|so we would like to do this kind of combination.|S
-me010|all right so|D
-me010|um|F
-me010|is that uh|D
-me010|i yeah i just want to make sure everybody is with us before he goes on.|S
-me045|i think so yeah.|S
-me010|it's it's is is it clear what he wants to compute?|Q
-me012|right.|B
-me045|uhhuh.|S
-me012|so right.|F
-me012|so basically um what we don't want to do is to for every single combination of e and v and a and every single letter e give a number.|S
-me012|because that's obviously not desirable.|S
-me045|uhhuh.|B
-me012|what we want to do is find some principled way of um saying what each of these is.|S
-me012|and we want it to be a valid probability distribution.|S
-me012|so we want it to um add up to one.|S
-me012|right?|Q
-me012|so those are the two things that we uh need.|S
-me045|huh.|B
-me012|so what uh i guess what jerry suggested earlier was basically that we you know view these guys as voting.|S
-me012|and we just take the uh we essentially take um averages.|S
-me012|right?|Q
-me012|so for example here two people have voted for a.|S
-me012|one has voted for v.|S
-me012|and one has voted for e.|S
-me012|so we could say that the probabilities are you know probability of being e is one over four because one person voted for e out of four.|S
-me012|and similarly probability of|D
-me012|so this is probability of e.|S
-me012|and then probability of a given all that is um two out of four.|S
-me012|and probability of v is one out of four.|S
-me012|right?|Q
-me012|so that's step that's the uh yeah that's the that's the basic uh thing.|S
-me012|now|D
-mn015|um|F
-mn015|yeah.|B
-me012|is that all okay?|Q
-mn015|and that one outcome that's|D
-me010|what?|Q
-mn015|it's x x one voted for a.|S
-mn015|x two voted for v.|S
-me045|uhhuh.|B
-mn015|and so forth?|Q
-me010|right.|S
-mn015|yeah.|S
-me010|yep.|B
-me012|yeah.|B
-mn015|that's the outcome.|S
-me010|so this assumes symmetry and equal weights and all this sort of things which may or may not be a good assumption.|S
-me045|uhhuh.|B
-me010|so that|D
-me045|right.|B
-me012|yeah.|B
-me012|yeah.|B
-me012|so step two is um|D
-me012|right.|F
-me012|so we've assumed equal weights.|S
-me012|whereas it might turn out that you know some be that for example what the um the actual the uh verbal content of what the person said like what uh what might be uh somehow more uh important than the uh|D
-me003|x one matters more than x two or|D
-me012|right.|S
-me012|sure so we don't want to like give them all equal weight.|S
-me012|so currently we've been giving them all weight one fourth.|S
-me012|so we could replace this by uh w one w two w three and w four.|S
-me012|right?|Q
-me045|huh.|B
-me012|and in order for this to be a valid probability distribution for each um x hat we just need that the w s sum to one.|S
-me012|so they can be for example you know|D
-me012|you you could have point one point three point two and point four say.|S
-mn015|that's one.|S
-me012|and that'd be one.|S
-me012|so that um also seems to work fine.|S
-me012|and uh|D
-me003|so i just to make sure i understand this so in this case um we would still compute the average?|Q
-me012|you'd compute the weighted average.|S
-me012|so the probability of e would be uh|D
-me003|okay so|D
-me003|so it'd be so in this case the probability that y equals a would be uh w one times|D
-me045|point three.|S
-me003|or a or|D
-me003|let's see.|S
-me003|one full quarter times point one.|S
-me012|not one quarter.|S
-me012|so these numbers have been replaced with point one point three point two and point four.|S
-me045|no.|S
-me012|so you can view these as gone.|S
-me003|okay.|S
-me012|probability of|D
-me003|okay.|S
-me012|yeah.|B
-me012|yeah.|B
-me012|okay.|B
-me012|so|F
-me012|all right.|S
-me012|so this is uh step two.|S
-me012|so the next possibility is that um we've given just a single weight to each expert.|S
-me012|right?|Q
-me012|whereas it might be the case that um in certain situations one of the experts is more uh reliable and in certain situations the other expert is more reliable.|S
-me012|so the way this is handled is by what's called a mixture of experts.|S
-me012|so what you can have is|D
-me012|you augment these diagrams like this.|S
-me012|so|F
-me012|you have a new thing called h.|S
-me012|okay?|Q
-me012|this is a hidden variable.|S
-me012|and what this is is it gets its input from x one x two x three and x four.|S
-me012|and what it does is it decides which of the experts is to be trusted in this particular situation.|S
-me012|right?|Q
-me012|and then these guys all come here.|S
-me012|okay.|D
-me012|so this is slightly uh more complicated.|S
-me012|so what's going on is that um this h node looks at these four values of those guys.|S
-me012|and it decides in given these values which of these isn't likely to be more reliable or most reliable?|Q
-me012|so h produces some you know it produces a number.|S
-me012|either one two three or four in our situation.|S
-me012|right?|Q
-me012|now this guy he looks at the value of h.|S
-me012|say it's two.|S
-me012|and then he just selects the uh thing.|S
-me012|that's all there is to say i guess about it.|S
-mn015|uhhuh.|B
-me012|right so you can have a mixture that|D
-me012|right.|S
-me045|so so the function of the thing that comes out of h is very different from the function of the other inputs.|S
-me045|it's driving how the other four are interpreted.|S
-me045|okay.|S
-me012|yeah.|B
-me012|yeah.|B
-me003|so h passes a vector on to the next node?|Q
-me012|it could.|S
-me003|it could?|Q
-me003|a vector of the weights as the|D
-me012|yeah it could.|S
-me003|oh.|S
-me012|sorry.|S
-me045|well a vector with three zeroes and one one.|S
-me045|right?|Q
-me003|oh it's basically to tell the bottom node which one of the situations that it's in?|S
-me003|or which one of the weighting systems|D
-me012|right so i mean the way you|D
-me003|i was just if you wanted to pay attention to more than one you could pass a a weighting system though too.|S
-me003|couldn't you?|Q
-me003|okay.|S
-me045|um does h have to have another input to tell it alpha beta whatever or is the|D
-me045|that's determined by what the experts are saying?|Q
-me045|like the type of|D
-me045|okay.|S
-me045|huh.|D
-me045|okay.|S
-me045|okay.|S
-me045|i mean it it just seems that like without that that outside input that you've got a situation where you know like if if uh x one says no|D
-me045|you know a low value coming out of x|D
-me045|or if x one says no then ignore x one.|S
-me045|you know?|Q
-me045|i mean that seems like that'd be weird.|S
-me012|yeah well could be things like if x two and x three say yes then ignore x one also.|S
-me045|right?|Q
-me045|oh okay.|S
-me045|okay.|S
-me045|all right right.|S
-me003|oh the situations that h has are they built into the net?|Q
-me003|or|D
-me003|okay so they they could either be hand coded or learned or|D
-me003|okay.|S
-me012|yeah.|B
-me003|based on training data.|S
-me003|okay.|S
-me012|yeah.|B
-me012|yes.|S
-me003|so you specify one of these things for every one of those possible situations.|S
-me003|oh yeah.|S
-me012|yeah.|B
-me012|um well i mean to learn them we need data.|S
-me012|where are we going to get data?|Q
-me012|well i mean we need data with people intentions.|S
-me012|right?|Q
-me045|right right.|S
-me012|which is slightly tricky.|S
-me012|right.|B
-me045|uhhuh.|B
-me012|uhhuh.|B
-me012|but what's the data about?|Q
-me012|like are we able to get these nodes from the data?|Q
-me045|like how thrifty the user is?|Q
-me045|or do we have access to that?|Q
-me045|uhhuh.|B
-me045|oh right.|S
-me045|oh good.|S
-me012|yeah.|B
-me045|okay.|S
-me045|uhhuh.|B
-me045|uhhuh.|B
-me045|okay.|D
-me012|yeah but that's my question.|S
-me012|like how do we i mean how do we have data about something like um um endpoint sub e?|Q
-me012|or endpoint sub uh you know s?|Q
-me003|well basically you would say based on in this dialogue that we have which one of the things that they said uh whether it was the entity relations or whatever was the thing that determined what mode it was.|S
-me012|huh.|B
-me012|huh.|B
-me003|right?|Q
-me012|so this is what we want to learn.|S
-me012|yep.|S
-me012|right.|B
-me012|huh.|B
-me012|yeah.|B
-me012|i don't think|D
-me012|well you have a|D
-me012|can you bring up the function thing?|Q
-me012|um where is the thing that allows you to sort of|D
-me003|that's on the added variable.|S
-me003|isn't it?|Q
-me012|oh function properties.|S
-me012|is that it?|Q
-me012|huh i guess not.|S
-me012|yeah that's|D
-me045|no.|S
-me012|right.|S
-me012|okay.|S
-me012|and um it so either it'll allow us to do everything.|S
-me012|which i think is unlikely.|S
-me012|i think more likely it'll allow us to do very few of these things.|S
-me012|and in that case we'll have to um just write up little things that allow you to um create such c p u's on your own in the java base format.|S
-me012|yeah.|S
-me012|yeah.|B
-me012|yeah i was assuming that's what we'd always do.|S
-me012|because|D
-me012|yeah i was assuming that's what we'd always do.|S
-me012|it's|D
-me012|right.|B
-me012|yeah.|B
-me003|uh.|B
-me003|well in terms of java base i think it's basically what you see is what you get in|D
-me003|i don't|D
-me003|yeah.|F
-me003|i would be surprised if it supports anything more than what we have right here.|S
-me045|so|F
-me045|yeah.|B
-me045|yeah.|B
-me045|by the way um uh just talking about uh about that general end of things|D
-me045|uh is there going to be data soon from what people say when they're interacting with the system and so on?|Q
-me045|like i mean what kind of questions are being given being asked?|Q
-me045|because|D
-me045|okay.|S
-me045|yeah yeah.|B
-me045|okay.|S
-me045|okay.|B
-me045|fey you mean.|S
-me045|okay.|S
-me045|okay.|S
-me045|okay.|S
-me045|okay.|B
-me045|i'm just wondering because in terms of you know|D
-me045|i mean|D
-me045|uh|F
-me045|the figure i was thinking about this figure that we talked about.|S
-me045|fifty constructions or whatever.|S
-me045|that's uh that's a whole lot of constructions.|S
-me045|and um you know i mean one might be fairly pleased with getting a really good analysis of five maybe ten in a summer.|S
-me045|so i mean i know we're going for sort of a rough and ready.|S
-me045|uhhuh.|B
-me045|uhhuh.|B
-me045|okay.|B
-me045|okay.|S
-me045|i mean i i i i was uh i was talking about the you know if you wanted to do it really in detail.|S
-me045|and we don't really need all the detail for what we're doing right now.|S
-me045|but anyway in terms of just narrowing that task you know|D
-me045|which fifty do i do?|Q
-me045|i want to see what people are using.|S
-me045|so|F
-me045|well it will inspire me.|S
-me045|right sure sure.|B
-me045|right.|B
-me045|yeah sure.|B
-me045|sure.|B
-me045|yeah.|B
-me045|okay.|B
-me045|touche.|S
-me045|good enough.|S
+me010|okay so uh um|D|fg|fg
+me010|i don't know whether ami's coming or not.|S|s|s
+me010|um|F|fh|fh
+me010|but i think we ought to just get started.|S|s|co
+mn015|nancy is currently in berkeley but not here?|Q|qy|bu
+me003|nancy's still stick?|Q|qy|bu
+me010|don't know.|S|s|no
+mn015|okay.|B|b|b
+me010|anyway.|B|b|b
+me010|oh!|F|fg|fg
+me010|so there you go.|S|s|s
+me010|anyway so my idea for today|D|s|t
+me010|and we can uh decide that that isn't the right thing to do.|S|s|s
+me010|was to at spend at least part of the time trying to uh build the influence links.|S|s|t
+me010|you know which sets of things are uh relevant to which decisions.|S|s|e
+me010|and actually i had uh specific suggestion to start first with the path ones.|S|s|cs
+me010|the database ones being in some sense less interesting to us.|S|s|df
+me010|although probably have to be done.|S|s|e
+me010|and so to do that|D|s|s
+me010|so there's and the idea was we were going to do two things.|S|s|s
+me003|is your mike on?|Q|qy|rt
+me010|uh|F|h|h
+me010|oh right well|D|s|bk
+me010|yeah.|B|b|b
+me010|we were going to do two things.|S|s|s
+me010|one of which is just lay out the influence structure of what we think influences what.|S|s|s
+me012|that's funny.|S|s|t3
+me010|and then as a uh separate but related task|D|s|s
+me010|uh particularly bhaskara and i were going to try to decide what kinds of belief nodes are needed in order to um do what we what we need to do.|S|s|s
+me010|once|D|%|%
+me010|so but we should sort of have all of the uh basic design of what influences what done before we decide exactly how to compute it.|S|s|cs
+me010|so i didn't did you get a chance to look at all yet?|Q|qy|rt
+me012|yeah i looked at some of that stuff.|S|s|aa
+me010|great.|S|s|bk
+me010|okay so let's start with the uh belief nets the general influence stuff.|S|s|co
+me010|and then we'll then we'll also at some point break and talk about the techy stuff.|S|s|t
+mn015|well i think one could go there's|D|s|cs
+mn015|i think we can discuss everything.|S|s|t
+mn015|first of all this i added i knew from sort of basically this has to be there.|S|s|s
+mn015|right?|Q|qy|d
+mn015|um|F|fh|fh
+me010|oh are you going to go there or not.|S|s|s
+me010|yeah so one|D|fh|fh
+mn015|given given uh uh not transverse the castle the decision is does the person want to go there or is it just|D|qrr|qrr
+me010|right.|S|s|aa
+me010|true.|S|s|aa
+me010|does have to be there.|S|s|na
+mn015|and|F|fh|fh
+me010|and i'm sure we'll find more as we go that|D|s|s
+mn015|huh.|B|b|rt
+mn015|so go there in the first place or not is definitely uh one of the basic ones.|S|s|s
+mn015|we can start with that.|S|s|cs
+mn015|interesting effect.|S|s|e
+mn015|um is this basically true or false?|Q|fh|fh
+mn015|or maybe we'll get|D|qrr|qrr
+me010|well|F|fg|fg
+me012|which one?|Q|qw|bu
+mn015|what?|Q|qw|qw
+me045|go there.|S|s|s
+mn015|right.|F|fg|fg
+me010|so there is this question about|D|fg|fg
+mn015|here we|D|s|s
+mn015|we actually get just probabilities.|S|s|bu
+me010|yeah.|B|b|b
+mn015|right?|Q|qy|d
+mn015|for each down here.|S|s|e
+me010|when we're yeah when we're done.|S|s|na
+mn015|huh.|B|b|b
+me010|so so|D|%|%
+me010|the the reason it might not be true or false is that we did have this idea of when.|S|s|df
+me010|so it's you know uh current and so forth and so on or not at all.|S|s|s
+mn015|uhhuh.|B|b|b
+me010|right?|Q|qy|d
+me010|and so that a decision would be do we want that|S|fh|fh
+me010|so you could two different things you could do.|S|s|s
+me010|you could have all those values for go there.|S|s|cs
+me010|or you could have go there be binary and given that you're going there when.|S|s|cs
+mn015|when.|S|s|2
+mn015|how.|S|s|2
+me010|yeah.|S|s|aa
+mn015|why.|S|s|2
+me010|and so forth.|S|s|2
+mn015|yeah.|B|b|b
+me010|so i'll let|D|s|co
+me010|we'll see.|S|s|cc
+mn015|huh.|B|b|rt
+me045|i mean it seems that you could um uh it seems that those things would be logically independent.|S|s|cs
+me045|like you would want to have them separate or binary.|S|s|cs
+me045|go there and then the the possibilities of how to go there.|S|s|s
+me045|because|D|s|df
+me010|okay that's let's start that way.|S|s|aa
+me045|because you know it might be easy to figure out that this person is going to need more film eventually from their utterance.|S|s|df
+me045|but it's much more complex to query when would be the most appropriate time.|S|s|df
+mn015|huh.|B|b|b
+mn015|huh.|B|b|b
+mn015|okay.|B|b|b
+mn015|and so i've tried to come up with some initial things one could observe.|S|s|s
+mn015|so who is the user?|Q|qh|rt
+mn015|everything that has user comes from the user model.|S|s|s
+mn015|everything that has situation comes from the situation model a.|S|s|s
+mn015|we should be be clear.|S|s|s
+mn015|but when it comes to sort of writing down|D|s|s
+mn015|when you when you do these things|D|s|s
+mn015|is it here?|Q|qy|rt
+mn015|you sort of have to write the values this can take.|S|s|s
+me010|right.|B|b|b
+mn015|and here i was really uh in some sometimes i was really sort of standing in front of a wall feeling very stupid.|S|s|s
+mn015|because um this case it's pretty simple.|S|s|s
+mn015|but as we will see the other ones um|D|s|s
+mn015|for example if it's a running budget so what are the discrete values of a running budget.|S|s|s
+mn015|so maybe my understanding there is too impoverished.|S|s|s
+me045|huh.|B|b|b
+mn015|how can i write here that this is something a number that keeps on changing?|Q|qw|qw
+me010|no uh|F|fg|fg
+mn015|but okay.|F|fh|fh
+mn015|thus is understandable?|Q|qy|d
+me003|yes.|S|s|aa
+me045|think so.|S|s|aa
+mn015|so here for example|D|s|s
+me010|you've have you seen this before at all keith these belief net things?|Q|qy|rt
+me045|uh no.|S|h|h
+me045|but i think i'm following it.|S|s|e
+me045|so far.|S|s|e
+mn015|so here is the the we had that the user's budget may influence the outcome of decisions.|S|s|s
+me010|yeah.|B|b|b
+me012|huh.|B|b|b
+mn015|there we wanted to keep sort of a running total of things.|S|s|rt
+me012|is this like a number that represents how much money they have left to spend?|Q|qy|bu
+me012|okay well i mean how is it different from user finance?|S|s|bk
+mn015|um the finance is sort of here thought of as as the financial policy a person carries out in his life.|S|h|h
+mn015|he is he cheap average or spendy?|Q|qr|qr
+me012|all right.|S|s|bk
+mn015|and um i didn't come uh|D|s|s
+mn015|maybe a user|D|s|s
+mn015|i don't know.|S|s|s
+mn015|i didn't want to write greediness.|S|s|s
+mn015|but|F|fh|fh
+me045|yeah.|B|b|b
+me045|huh.|B|b|b
+mn015|welcome.|S|s|s
+me010|or cheapness.|S|s|2
+mn015|welcome.|S|s|r
+me045|user thrift.|S|s|2
+me012|yeah.|S|s|aa
+me010|thrift that's good.|S|s|ba
+me010|great.|B|b|b
+mn015|there it is.|S|s|s
+me010|yeah so keith what's behind this is actually a program that will once you fill all this in actually solve your belief nets for you and stuff.|S|fg|fg
+me045|uhhuh.|B|b|b
+me010|so this is not just a display.|S|s|s
+me010|this is actually a gui to a simulator that will if we tell it all the right things we'll wind up with a functioning belief net at the other end.|S|s|s
+me045|okay.|S|s|bk
+me045|okay.|S|s|bk
+mn015|and it's so simple even i can use it.|S|s|s
+me045|wow that is simple!|S|s|fe
+mn015|okay so here was|D|s|s
+mn015|okay i can think of uh people being cheap average or spendy or we can even have a a finer scale moderately cheap.|S|s|cs
+me010|doesn't matter.|S|s|2
+mn015|doesn't matter.|S|s|aa
+mn015|agree there.|S|s|aa
+mn015|but here um i wasn't sure what to write in.|S|s|s
+me010|let's|D|s|co
+me010|go ahead.|S|s|co
+me012|well i mean you've written in you've written in what uh seems to be required.|S|s|s
+me012|like what else is is do you want?|Q|qw|rt
+mn015|if that's permissible then i'm happy.|S|s|s
+me010|well yeah so here's here's what's permissible.|S|fg|fg
+me010|is that you can arrange so that the um the value of that is going to have to be updated.|S|s|s
+me010|and it's not a belief update.|S|s|s
+me010|right?|Q|qy|d
+me010|it's you took some actions you spent money and stuff.|S|s|s
+me010|so the update of that is going to have to be essentially external to the belief net.|S|s|s
+mn015|yeah.|S|s|aa
+me010|right?|Q|qy|d
+me010|and then what you're going to need is uh for the things that it influences|D|s|s
+me010|well let's first of all let's see if it does influence anything.|S|s|co
+me010|and if it does influence anything then you're going to need something that converts from the the number here to something that's relevant to the decision there.|S|s|cs
+me010|so it could be they create different ranges that are relevant for different decisions or whatever.|S|s|s
+me010|but for the moment this is just a node that is conditioned externally and might influence various things.|S|s|s
+mn015|huh.|B|b|b
+mn015|yeah this is where um|D|fg|fg
+mn015|okay anyways.|F|fh|fh
+mn015|let's forget it.|S|s|co
+me010|well that's fine.|S|s|bk
+me010|well anyway go ahead.|S|s|co
+mn015|okay and so this oh that|D|fg|fg
+me012|the other thing is that um every time that's updated beliefs will have to be propagated.|S|s|s
+me012|but then the question is do you do we want to propagate beliefs every single time it's updated or only when we need to?|Q|qr|qr
+me010|yeah that's a good question.|S|fg|fg
+me010|and uh does it have a lazy mode?|Q|qy|rt
+me010|i don't remember.|S|s|no
+me012|uh|F|h|h
+me012|well i mean in srini's thing there was this thing there was this um option like proper inferences which suggests that uh doesn't happen automatically.|S|s|s
+me010|oh right!|S|s|bk
+me010|yeah.|B|b|b
+me010|probably does.|S|s|s
+me010|yeah.|B|b|b
+me010|someone has to track that down.|S|s|co
+me010|but i but uh|D|s|s
+mn015|i just accidentally|D|s|s
+me010|and and and i think actually uh|D|s|t1
+mn015|oops!|S|s|fe
+me010|one of the items for the uh user home base uh should be uh essentially non local.|S|s|cs
+me010|they're only there for the day and they don't have a place that they're staying.|S|s|s
+me012|well|F|fg|fg
+mn015|oh just uh accidentally erased this.|S|s|s
+mn015|i i just had values here such as uh um is he we had in our list we had is he staying in our hotel.|S|s|s
+mn015|is he staying with friends.|S|s|s
+mn015|and so forth.|S|s|e
+me010|yeah.|B|b|b
+mn015|uh|F|fh|fh
+mn015|so we're|D|%|%
+mn015|okay.|B|b|b
+me010|so|F|fg|fg
+me010|it's clear where where we are right now.|S|s|s
+me010|so my suggestion is we just pick uh|D|s|cs
+mn015|something down here?|Q|qy|2
+me010|one you know one uh particular one of the uh|D|s|s
+me010|well let's do the first first one let's do the one that we sort of already think we did.|S|s|cs
+me010|so that was the of the endpoint?|Q|qy|bu
+mn015|uhhuh.|S|s|aa
+mn015|and um|F|fg|fg
+mn015|oops!|S|s|fe
+me012|is|D|%|%
+me012|huh.|B|b|b
+mn015|uh.|B|b|b
+me012|so it's true or false?|Q|qy|bu
+mn015|no no no.|S|s|ar
+me010|no that's that's a|D|s|ar
+mn015|e v a.|S|s|s
+mn015|missed that one.|S|s|s
+me012|so|F|fg|fg
+me003|what's the difference between mode and endpoint?|Q|qw|rt
+me012|i thought mode.|S|s|na
+me012|yeah.|F|fh|fh
+me010|although that|D|%|%
+mn015|um mode was um|D|h|h
+me010|well that's|D|%|%
+me012|mode of transportation?|Q|qy|2
+mn015|yeah.|S|s|aa
+me012|okay.|S|s|bk
+me012|also true or false.|S|s|s
+mn015|uhhuh.|B|b|b
+me010|no he he hasn't filled them in yet is what's true.|S|s|s
+me012|yeah okay.|S|s|bk
+mn015|did i or didn't i?|Q|qr|qr
+mn015|no.|S|s|s
+mn015|probably nothing done yet.|S|s|s
+mn015|oh i just did it on the upper ones okay.|S|s|s
+mn015|makes sense.|S|s|s
+mn015|okay so this was e v a.|S|s|rt
+mn015|maybe we can think of more things.|S|s|cs
+mn015|cross.|S|s|cs
+me012|yeah.|B|b|b
+me010|okay.|B|b|b
+me045|climb rob.|S|s|s
+mn015|climb emerge.|S|s|m
+me010|no no no.|S|s|ar
+me003|uh|F|fg|fg
+me012|well some of those are subsumed by approach.|S|s|s
+me010|these are that's just a point.|S|s|s
+me010|this is|D|s|r
+me003|would it be an endpoint if you were crossing over it?|Q|qy|rt
+me045|the charles bridge you know.|S|s|s
+me010|yeah would be a for a given segment.|S|s|aa
+me010|you know you you go first go the town square.|S|s|s
+me003|well i uh|D|%|%
+me045|no i mean if you go to you know if you go to prague or whatever one of your your key points that you have to do is cross the charles bridge.|S|s|s
+me045|and doesn't really matter which way you cross.|S|s|s
+me045|which where you end up at the end.|S|s|s
+me045|but the part the good part is walking over it.|S|s|s
+me045|so|F|fh|fh
+me010|that's subtle but true.|S|s|aa
+me010|anyway.|F|fg|fg
+me010|so let's just leave it three with three for now.|S|s|co
+mn015|uhhuh.|B|b|rt
+mn015|yeah.|B|b|b
+me010|and let's see if we can get it linked up just to get ourselves started.|S|s|co
+mn015|okay we|D|s|s
+me010|you'll see it you'll see something comes up immediately that the reason i want to do this.|S|s|df
+mn015|well the uh user was uh definitely more likely to enter if he's a local.|S|s|s
+me010|right.|B|b|b
+me010|right.|B|b|b
+mn015|more likely to view if he's a tourist.|S|s|s
+mn015|um|F|fh|fh
+mn015|and then of course we had the fact that given the fact that he's thrifty and there will be admission then we get all these cross um|D|s|s
+me010|we did but the three things that that it contributed to this|D|s|aap
+me010|in fact the other two aren't up there.|S|s|s
+me010|so one was the ontology.|S|s|rt
+mn015|we'll what type of building is it?|Q|qw|rt
+mn015|yeah.|S|s|bk
+me010|yeah.|S|s|aa
+me010|and the and the third thing we talked about was something from the discourse.|S|s|s
+mn015|what he has mentioned before.|S|s|2
+me010|okay so this is|D|s|bk
+me010|right so what i what we seem to need here|D|fh|fh
+me010|this is why it starts getting into the technical stuff.|S|s|df
+me045|uhhuh.|B|b|b
+me010|the way we had been designing this there were three intermediate nodes.|S|s|s
+me010|uh which were the endpoint decision as seen from the uh user model as seen from the ontology and as seen from the discourse.|S|fh|fh
+me010|so each of those|D|s|s
+me010|the way we had it designed|D|s|s
+me010|now we can change the design.|S|s|cs
+me010|but the design we had was|D|s|s
+me010|there was a decision with the same three outcomes uh based on the those three separate considerations.|S|s|s
+me045|uhhuh.|B|b|b
+me010|so if we wanted to do that would have to put in uh three intermediate nodes.|S|s|s
+mn015|uh we can load it up it you know very simple.|S|s|cs
+me045|so|F|fh|fh
+me010|and then what you and i have to talk about is okay if we're doing that and they get combined somehow uh how do they get combined.|S|s|co
+me010|but the they're they're undoubtedly going to be more things to worry about.|S|s|s
+mn015|so this was adjusted for this one mode thing.|S|s|bu
+me012|oh yes.|S|s|aa
+me010|yeah.|B|b|b
+mn015|so that's in our uh in in johno's sort of pictogram everything that could contribute to whether a person wants to enter view or approach something.|S|s|bu
+me010|oh it was called mode.|S|s|s
+me010|so this this is mode here means the same as endpoint.|S|s|s
+mn015|is now this endpoint.|S|s|2
+me003|right.|S|s|aa
+me010|okay why don't we can we change that?|Q|fg|fg
+mn015|we can just rename that yeah.|S|s|aa
+me010|all right.|S|s|bk
+me010|you know but that was actually|D|s|s
+me010|yeah unfortunately that was a um kind of an intermediate|D|s|s
+me010|that's i don't think what we would currently do.|S|s|s
+me045|can i ask about slurred and angry as inputs to this?|Q|qy|rt
+me010|that's a|D|%|%
+me045|what why?|Q|qw|rt
+me012|like they're either true or false.|S|s|s
+mn015|the prosody?|Q|qy|d
+me012|and they uh|D|s|s
+me045|okay.|S|s|bk
+me012|oh i see.|S|s|bk
+me003|if the if the person talking is angry or slurs their speech they might be tired or you know.|S|s|s
+me045|uhhuh.|B|b|b
+me045|okay.|S|s|bk
+me045|drunk.|S|s|2
+me012|therefore|D|qo|d
+me003|and you know possibly uh|D|h|h
+me045|less likely to enter.|S|s|2
+me003|some|D|%|%
+me012|uh i was thinking less likely to view.|S|s|nd
+me003|yeah.|S|s|aa
+me045|huh.|B|b|b
+me010|yeah.|F|fg|fg
+me010|but that's that seems to|D|s|s
+me010|yeah.|B|b|b
+me010|so so my advice to do is is get this down to what we think is actually likely to to be a a strong influence.|S|s|cs
+me045|okay.|S|s|aa
+me012|right.|B|b|b
+me010|but yeah that was what he had in mind.|S|s|s
+me010|so let's think about this this question of how do we want to handle|S|s|co
+me010|so there're two separate things.|S|s|s
+me010|one is|D|s|s
+me010|uh at least two.|S|fh|fh
+me010|one is how do we want to handle the notion of the ontology.|S|s|s
+me010|now what we talked about and this is another technical thing bhaskara is uh can we arrange so that|S|s|s
+me010|i think we can.|S|s|s
+me010|so that the belief net itself has properties.|S|s|s
+me010|and the properties are filled in uh from ontology items.|S|s|s
+me010|so the let's take the case of the uh this endpoint thing.|S|s|co
+me010|the notion was that if you had a few key properties like is this a tourist site you know some kind of landmark.|S|s|s
+me010|is it a place of business.|S|s|e
+me010|uh is it something you physically could enter.|S|fh|fh
+me045|uhhuh.|B|b|b
+me010|okay?|Q|qy|d
+me010|et cetera.|S|s|e
+me010|so that there'd be certain properties that would fit into the decision node.|S|s|s
+me010|and then again as part of the outer controlling conditioning of this thing those would be set.|S|s|s
+me010|so that somehow someone would find this word look it up in the ontology pull out these properties put it into the belief net and then the decision would flow.|S|s|df
+me045|uhhuh.|B|b|b
+me010|now|F|fh|fh
+mn015|seems to me that we've sort of embedded a lot embedded a lot of these uh things we had in there previously in in in some of the other final decisions done here.|S|s|s
+mn015|for example if we would know that this thing is exhibiting something um|D|s|s
+me010|right.|S|s|aa
+me010|right.|B|b|b
+mn015|if it's exhibiting itself it is a landmark.|S|s|rt
+mn015|meaning more likely to be viewed.|S|s|e
+me010|yeah.|S|s|aa
+me010|yep.|S|s|aa
+mn015|if it is exhibiting pictures or sculptures and stuff like this then it's more likely to be entered.|S|s|rt
+me010|i uh that's i think that's completely right.|S|s|ba
+me010|and um i think that's good.|S|fh|fh
+me010|right?|Q|qy|d
+me010|so what what that says is that we might be able to uh take and|D|s|cs
+me010|in particular|D|%|%
+me010|so so the ones we talked about were uh exhibiting and selling.|S|s|rt
+mn015|accessibility.|S|s|2
+me010|no accessibility meant|D|s|nd
+mn015|if it's closed one probably won't enter.|S|s|s
+mn015|or if it's not accessible to a tourist ever the likelihood of that person actually wanting to enter it.|S|s|s
+me010|okay.|S|s|bk
+mn015|given that he knows it of course.|S|s|e
+me010|all right.|F|fg|fg
+me010|so let me suggest this.|S|s|co
+me010|uh could you move those up about halfway?|Q|fh|fh
+me010|uh the ones that you and selling i guess.|S|fh|fh
+mn015|yeah all all of these.|S|s|na
+mn015|if it's fixing things selling things or servicing things.|S|s|s
+me010|right.|S|s|bk
+me010|so here here's what it looks like to me.|S|s|s
+me010|is that you want an intermediate structure which uh is essentially the or of uh for this purpose of of uh selling fixing or servicing.|S|s|bs
+me010|so that it uh|D|s|s
+me010|that is for certain purposes it becomes important.|S|s|s
+me010|but for this kind of purpose uh one of these places is quite like the other.|S|s|s
+me010|does that seem right?|Q|qy|bu
+me010|so we|D|s|s
+me003|you're basically just merging those for just the sake of endpoint decision?|Q|qy|bu
+me010|if we|D|s|s
+me010|yes.|S|s|aa
+me003|yeah.|S|s|bk
+me010|so if well it may be more than endpoint decisions.|S|s|arp
+me045|uhhuh.|B|b|b
+me010|so the idea would be that you might want to merge those three.|S|s|cs
+mn015|these three?|Q|qy|bu
+me010|yeah.|S|s|aa
+me010|uh uh selling fixing and servicing.|S|s|s
+mn015|yeah.|S|s|bk
+me012|what um and so either those is true or false?|Q|qy|rt
+me012|so|F|fh|fh
+me010|uh uh well it it here's where it gets a little tricky.|S|h|h
+me010|uh from the belief net point of view it is.|S|s|aap
+me010|from another point of view of course it's it's it's important to know what it's selling or servicing and so forth.|S|s|s
+me045|yeah.|B|b|b
+me012|okay.|S|s|bk
+me010|so for this decision it's just uh true or false.|S|s|bs
+me012|yeah.|B|b|b
+me010|and in this is a case where the or seems just what you want.|S|s|s
+me012|okay.|S|s|bk
+me010|that that if any of those things is true then it's the kind of place that you uh|D|s|s
+mn015|um more likely to enter.|S|s|2
+me010|are more likely to enter.|S|s|aa
+me012|so you just want to have them all pointing to a summary thing?|Q|qy|cs
+me010|you could yeah.|S|s|aa
+me010|yeah so let's do that.|S|s|co
+me010|no no no uh to to an no an intermediate node.|S|s|nd
+mn015|oh okay.|S|s|bk
+me010|that's the part of the idea is|D|s|s
+mn015|um is is that the object type node?|Q|fg|fg
+me010|i|D|%|%
+mn015|so are they the is it the kind of object that sells fixes or services things?|Q|qy|rt
+me010|well open up object type and let's see what its values are.|S|s|co
+mn015|oh i just created it it has none so far.|S|s|s
+me010|oh well okay first of all it's not objects.|S|s|s
+me010|we called them entities.|S|s|e
+mn015|yeah.|S|s|bk
+me010|right?|Q|qy|d
+mn015|and then we have sort of the um|D|s|s
+me010|let's say i put commercial.|S|s|cs
+mn015|yeah.|S|s|aa
+mn015|i i was just going to|D|s|s
+mn015|commercial action inside where people|D|s|cs
+me010|well couldn't i do let's do commercial.|S|s|co
+me010|uh landmark.|S|fh|fh
+me010|and|F|fh|fh
+mn015|and where was the accessible yeah.|S|s|2
+me010|well|F|fg|fg
+me010|accessible i think is different.|S|s|nd
+mn015|yeah.|B|b|b
+me010|because that's that that varies temporally.|S|s|df
+me010|whereas this is a|D|s|s
+mn015|uhhuh.|B|b|b
+me003|what would a hotel fall under?|Q|qw|rt
+me010|i would call that a service.|S|s|s
+me010|but but i don't know.|S|s|no
+me003|well i mean in terms of entity type?|Q|qo|e
+me010|say well it's i would|D|s|s
+me010|again for this purpose i think it's commercial.|S|s|s
+me010|someplace you want to go in to do some kind of business.|S|s|e
+me003|okay.|S|s|bk
+me012|um what does the underscore t at the end of each of those things signify?|Q|fg|fg
+mn015|um things.|S|h|h
+mn015|so places that service things sell things or fix things and places that exhibit things.|S|s|s
+me012|uhhuh.|B|b|b
+me012|okay.|S|s|bk
+me012|okay.|S|s|bk
+me012|that also points to entity type i guess.|S|s|s
+me045|so we're deriving um this the this feature of whether the the main action at this place happens inside or outside or what we're deriving that from what kind of activity is done there?|Q|qy|bu
+me045|couldn't you have it as just a primitive feature of the entity?|Q|qy|cs
+me010|well you could.|S|s|na
+me010|that's a that's a choice.|S|s|s
+me045|okay.|S|s|bk
+me010|so uh|F|fh|fh
+me045|i mean it seems like that's much more reliable.|S|s|df
+me045|because you could have outdoor places that sell things.|S|s|df
+me045|and you know indoor places that do something else.|S|s|e
+me010|yeah the problem with it is that it sort of putting in a feature just for one decision.|S|s|arp
+me045|and|F|fh|fh
+me010|now we may wind up having to do that.|S|s|s
+me045|huh.|B|b|b
+me010|this anyway this|D|s|s
+me045|okay.|S|s|bk
+me010|at a mental level that's what we're going to have to sort out.|S|s|co
+me045|okay.|S|s|bk
+me010|so you know what does this look like.|S|s|s
+me010|what are what are uh intermediate things that are worth computing.|S|s|s
+me010|what are the features we need in order to make all these decisions.|S|s|s
+me045|uhhuh.|B|b|b
+me010|and what's the best way to organize this so that um it's clean and and consistent and all that sort of stuff.|S|s|s
+me045|okay.|B|b|b
+me045|i'm just thinking about how people human beings who know about places and places to go and so on would store this.|S|s|s
+me045|and it would probably you wouldn't just sort of remember that they sell stuff and then deduce from that that it must be going on inside or something.|S|s|s
+mn015|well i think an entity maybe should be regard as a vector of several possible things.|S|s|s
+mn015|it can either them do do sell things fix things service things exhibit things it can be a landmark at the same time as doing these things.|S|s|s
+me045|uhhuh.|B|b|b
+mn015|it's not either or.|S|s|s
+mn015|certainly a place can be a hotel and a famous site.|S|s|s
+me045|uhhuh.|B|b|b
+mn015|many come to mind.|S|s|s
+mn015|things can be generally um a landmark and be accessible.|S|s|rt
+mn015|i e a a castle.|S|s|e
+mn015|or can be a landmark or not accessible some statue.|S|s|s
+me045|uhhuh.|B|b|b
+mn015|you know can go inside.|S|s|s
+me010|okay.|F|fg|fg
+me010|anyway so let me suggest you do something else.|S|s|co
+me010|uh which is to get rid get rid of that long link between who the user and the endpoint.|S|fh|fh
+mn015|could we just move it like this?|Q|qy|rt
+me010|no no i don't want the link there at all.|S|s|nd
+mn015|oh okay.|S|s|bk
+me010|because what we're going to want is an intermediate thing.|S|s|df
+me010|which is uh the endpoint the endpoint decision based on the user models.|S|s|e
+me010|so what we we what we talked about is three separate endpoint decisions.|S|s|bs
+me010|so let's make a new node.|S|s|co
+mn015|yeah.|B|b|b
+mn015|yeah.|B|b|b
+me003|just as a suggestion maybe you could save as to keep your old one nice and clean.|S|s|cs
+me003|and so you can mess with this one.|S|s|df
+mn015|huh.|B|b|b
+mn015|the old one was not that not that important i think.|S|s|ng
+mn015|but|F|fh|fh
+me003|okay well not a big deal then.|S|s|bk
+mn015|let's do it then.|S|s|co
+me003|well the|D|%|%
+me003|isn't there a save as inside of java base?|Q|qy|bu
+mn015|but i can just take this.|S|s|rt
+me003|okay.|S|s|bk
+mn015|copy it somewhere else.|S|s|e
+mn015|this was user something?|Q|qy|bu
+mn015|or|D|qrr|qrr
+me010|well this was|D|s|s
+me010|uh let's put it this let's do endpoint underbar u.|S|fh|fh
+mn015|end point?|Q|qy|bu
+me010|endpoint end|D|s|aa
+me010|this is|D|s|s
+mn015|uh.|S|s|bk
+me010|it's the endpoint.|S|s|s
+mn015|gotcha yeah.|S|s|bk
+me010|let's say underbar u.|S|s|co
+me010|so that's the endpoint decision uh as seen through the|D|s|s
+me003|as related from the user model.|S|s|2
+me010|right.|S|s|aa
+me010|so let's let's actually|D|s|co
+me010|yeah so you can link that up to the|D|s|cs
+mn015|should i rename this too?|Q|qy|rt
+me010|uh yeah so that i guess that's endpoint uh|D|h|h
+mn015|or|D|qrr|qrr
+mn015|it's underscore e.|S|s|2
+me010|underscore e for entity.|S|s|aa
+me010|and we may change all this.|S|s|s
+me010|but|F|fh|fh
+me010|right.|B|b|b
+me010|and|F|fg|fg
+mn015|okay shouldn't i be able to move them all?|Q|fg|fg
+mn015|no?|Q|qy|d
+mn015|or|D|qrr|qrr
+mn015|can i?|Q|qy|rt
+mn015|where?|Q|qw|rt
+mn015|what?|Q|qw|rt
+me010|oh i uh i don't know.|S|s|no
+me010|actually i guess the easiest thing would move move the endpoint|D|s|s
+me010|well go ahead.|S|s|co
+me010|just do whatever.|S|s|co
+mn015|wasn't this possible?|Q|qy|rt
+me010|well|F|fg|fg
+mn015|yeah.|S|s|aa
+me003|i think you have to be in move mode before|D|s|ng
+mn015|uhhuh.|S|s|aa
+mn015|okay.|S|s|bk
+me010|good.|B|b|b
+me010|right.|B|b|b
+mn015|so now we're looking for user related things that um|D|s|s
+me010|yeah.|B|b|b
+me010|and uh maybe maybe it's just one who is the user.|S|s|s
+me010|i don't know.|S|s|no
+me010|maybe maybe there's more.|S|s|am
+me045|huh.|B|b|b
+mn015|well if he's if he's in a car right now|D|s|s
+mn015|what was that?|Q|qw|rt
+mn015|people with harry drove the car into the cafe.|S|s|rt
+me010|never mind.|S|s|bd
+me010|uh anyway this is crude.|S|fg|fg
+me010|now but the now so so but then the question is|D|s|s
+me010|uh|F|fh|fh
+me010|so and and we assume that some of these properties would come indirectly through an ontology.|S|s|s
+me010|but then we had this third idea of input from the discourse.|S|s|s
+mn015|well let's should we finish this?|Q|qy|cs
+mn015|i mean but surely the user interests|D|s|s
+me010|sure.|S|s|aa
+me010|okay.|S|s|aa
+me003|the user thrift.|S|s|s
+me003|the user budget.|S|s|e
+mn015|yeah yeah.|S|s|aa
+me010|well maybe.|S|s|am
+me010|again i|D|s|s
+me010|well okay put them in.|S|s|co
+me010|but what we're going to want to do is actually uh|D|s|s
+me003|well is|D|%|%
+mn015|here this was one of my problems.|S|s|s
+mn015|we have the user interest is a is a vector of five hundred values.|S|s|s
+mn015|so|F|fh|fh
+mn015|um that's from the user model.|S|fh|fh
+me012|oh you mean level of interest?|Q|qy|bu
+mn015|uhhuh.|B|b|b
+mn015|no not levels of interest.|S|s|nd
+mn015|but things you can be interested in.|S|s|e
+me045|well|F|fg|fg
+me010|somebody else has built this user model.|S|s|s
+mn015|gothic churches versus baroque townhouses versus|D|s|s
+me012|oh i see.|S|s|bk
+me012|right.|B|b|b
+me012|so why is it|D|qw|rt
+me012|oh it so it's like a vector of five hundred one's or zeroes?|Q|qy|bu
+mn015|is that|D|%|%
+me012|like for each thing are we are you interested in it or not?|Q|qy|bu
+mn015|yeah.|S|s|aa
+mn015|uh i i think.|S|s|aa
+me012|i see.|S|s|bk
+me045|huh.|B|b|b
+me010|okay.|F|fg|fg
+me010|so uh you and so here let me give you two ways to handle that.|S|fh|fh
+me010|all right?|Q|qy|d
+me010|one is um you could ignore it.|S|s|cs
+me010|but the other thing you could do is have an|D|s|cs
+me010|and this will give you the flavor of the of what.|S|s|e
+me010|you could have a node that's that was a measure of the match between the object's feature you know the match between the object the entity i'm sorry and the user.|S|s|cs
+mn015|uhhuh.|B|b|b
+mn015|uh.|B|b|b
+me010|so you could have a a fit node.|S|s|cs
+me010|and again that would have to be computed by someone else.|S|s|s
+mn015|uhhuh.|B|b|b
+me010|but uh|F|fh|fh
+me010|so that uh|D|%|%
+mn015|just as a mental note.|S|s|s
+mn015|uh|F|fh|fh
+me010|yeah that's all.|S|s|tc
+mn015|uhhuh.|B|b|rt
+mn015|and and should we say that this interests uh affects the likelihood of of entering?|Q|qy|rt
+me010|yeah.|S|s|aa
+me010|i mean we could.|S|s|am
+mn015|yeah.|B|b|b
+mn015|and also if it's an expensive place to enter this may also|D|s|s
+me010|okay.|S|s|bk
+me012|budget.|S|s|s
+me045|user schedule.|S|s|s
+mn015|schedule?|Q|qy|bu
+me045|do i have time to go in and climb all the way to the top of the koelner dome or do i just have to time to take a picture of the outside.|S|s|na
+me010|right.|S|s|aa
+me003|it seems like everything in a user model affects|D|s|ba
+me010|well that's what we don't want to do.|S|s|s
+me010|see that|D|%|%
+me003|yeah.|S|s|aa
+me010|because then we get into huge combinatorics and stuff like that.|S|s|df
+me045|uhhuh.|B|b|b
+me003|because if the i mean and if the user is tired the user state.|S|s|s
+me012|well|F|fg|fg
+me003|right?|Q|qy|d
+me003|it would affect stuff.|S|s|e
+me003|but i can't see why anything everything in the model wouldn't be|D|s|s
+me010|well but|F|fg|fg
+me012|right.|S|s|aa
+me010|well that that's we can't do that.|S|s|s
+me010|so we're going to have to|D|s|cc
+me003|yeah.|B|b|b
+me010|but this is a good discussion.|S|s|ba
+me010|we're going to have to somehow figure out uh some way to encapsulate that.|S|s|s
+me010|uh so if there's some general notion of for example the uh relation to the time to do this to the amount of time the guy has or something like that is is the uh compatibility with his current state.|S|s|s
+me010|so that's what you'd have to do.|S|s|co
+me010|you'd have to get it down to something which uh was itself relatively compact.|S|s|co
+me010|so it could be compatibility with his current state.|S|s|cs
+me010|which would include his money and his time and and his energy.|S|s|e
+me003|yeah just seems like it'd push the problem back a level.|S|s|ng
+me012|right.|B|b|b
+me010|it does.|S|s|aa
+me003|yeah but|D|s|bk
+me045|uhhuh.|B|b|b
+me012|no but it's more than that.|S|s|nd
+me012|like the the more sort of you break it up.|S|s|e
+me012|like because if you have everything pointing to one node it's like exponential.|S|s|df
+me012|whereas if you like keep breaking it up more and more it's not exponential anymore.|S|s|s
+me010|so it yeah there are two advantages.|S|s|bs
+me010|that's there's one technical one.|S|s|s
+me003|yeah.|F|fg|fg
+me010|and the other is it it gets used.|S|s|e
+me003|so we'd basically be doing subgrouping?|Q|qy|bu
+me003|subgrouping basically?|Q|qy|bu
+me012|yeah.|S|s|aa
+me003|into|D|s|e
+me003|so basically make it more tree like going backwards?|Q|qy|bu
+me012|right.|S|s|aa
+me045|yeah.|S|s|aa
+me010|right.|S|s|aa
+me010|but it there's two advantages.|S|s|s
+me010|one is the technical one that you don't wind up with such big exponential uh c b t's.|S|s|s
+mn015|bhaskara?|Q|qy|t3
+me010|the other is it can be it presumably can be used for multiple decisions.|S|s|e
+me045|uhhuh.|B|b|b
+me010|so that if you have this idea of the compatibility with the requirements of an action to the state of the user one could well imagine that that was|D|s|s
+me012|right.|B|b|b
+me010|not only is it is it cleaner to compute it separately but it could be that it's used in multiple places.|S|s|s
+me010|anyway so in general this is the design this is really design problem.|S|fh|fh
+mn015|yeah.|B|b|b
+me010|okay you've got a signal a set of decisions.|S|s|s
+me010|um how do we do this?|Q|fh|fh
+mn015|what do i have under user state anyhow?|Q|qw|qw
+mn015|because i named that already something.|S|s|df
+mn015|oh that's tired fresh.|S|s|s
+mn015|yeah.|B|b|b
+mn015|maybe should be renamed into physical state.|S|s|cs
+me010|or user fatigue even.|S|s|cs
+me045|huh.|B|b|b
+mn015|that's with a g?|Q|qy|d
+me045|uhhuh.|S|s|aa
+me010|yep.|S|s|aa
+me010|whatever.|S|s|s
+mn015|then we can make a user state.|S|s|rt
+me010|what's what we're talking about is compatibility.|S|s|s
+me010|uh or something i don't know.|S|s|e
+me010|but|F|fh|fh
+me003|i guess the the question uh is|D|s|s
+me003|it's hard for me to imagine how everything wouldn't just contribute to user state again.|S|s|s
+me003|or user compatibility.|S|s|e
+me010|oh but the thing is that we uh uh we had some things that uh|D|fg|fg
+mn015|that don't.|S|s|2
+me010|that don't.|S|s|aa
+mn015|the user interests and the user who who who the user is are completely apart from the fact whether he is tired broke|D|s|s
+me003|sure but other i thought though the node we're creating right now is user compatibility to the current action.|S|s|aap
+me003|right?|Q|qy|d
+me010|the|D|%|%
+me010|right.|S|s|aa
+me003|seems like everything in the user model would contribute to whether or not the user was compatible with something.|S|s|s
+me010|uh maybe not.|S|s|nd
+me010|i mean the that's the the issue is um|D|s|s
+me010|would even if it was true in some abstract general sense it might not be true in terms of the information we actually had and can make use of.|S|s|s
+me010|and anyway we're going to have to find some way to uh get this sufficiently simple to make it feasible.|S|s|co
+mn015|maybe um if we look at the if we split it up again into sort of um|D|s|cs
+mn015|if we look at the uh the endpoint again we we said that for each of these things there are certain preconditions.|S|s|s
+mn015|so you can only enter a place if you are not too tired to do so.|S|s|rt
+mn015|and also uh have the money to do so if it costs something.|S|s|e
+mn015|so if you can afford it and perform it is preconditions.|S|s|s
+mn015|viewing usually is cheap or free.|S|s|rt
+mn015|is that always true?|Q|qy|qy
+me045|uhhuh.|B|b|b
+mn015|i don't know.|S|s|no
+me003|well with the way we're defining it i think yeah.|S|s|na
+me010|but that uh viewing it without yeah view with our definition of view it's free.|S|s|s
+me010|because you|D|%|%
+mn015|and so is approaching.|S|s|e
+me010|yeah.|B|b|b
+me045|well what about the grand canyon?|Q|qo|rt
+me045|right?|Q|qy|d
+me045|no never mind.|S|s|bd
+me045|i mean are there are there large things that you would have to pay to get up close to?|Q|qy|rt
+me045|like i mean|D|s|e
+me045|never mind.|S|s|bd
+me045|not in the current|D|s|s
+me010|no we have to enter the park.|S|s|ng
+me045|okay.|S|s|bk
+me010|uh almost by definition um paying involves entering.|S|s|s
+me045|yeah.|B|b|b
+me010|going through some|D|s|s
+me045|okay.|S|s|bk
+me045|right sure.|S|s|bk
+me010|right.|S|s|bk
+me010|uh|F|fg|fg
+me010|so let me suggest we switch to another one.|S|s|co
+me010|i mean clearly there's more work to be done on this.|S|s|s
+mn015|uhhuh.|B|b|b
+me010|but i think it's going to be more instructive to to think about uh other decisions that we need to make in path land.|S|s|cs
+me010|and what they're going to look like.|S|s|e
+me003|so you can save this one as and open up the old one.|S|s|cs
+me003|right?|Q|qy|d
+me003|and|F|fh|fh
+me003|and then everything would be clean.|S|s|s
+me003|you could do it again.|S|s|cs
+me010|why i think it's worth saving this one.|S|s|na
+me010|but i think i'd i'd like to keep this one.|S|s|s
+me012|yeah.|B|b|b
+me010|because i want to see if if we're going to reuse any of this stuff.|S|s|df
+me003|uhhuh.|B|b|b
+mn015|um|F|fh|fh
+mn015|so this might be|D|s|s
+mn015|what next?|Q|qw|t
+me010|well you tell me.|S|s|co
+me010|so in terms of the uh planner what's what's a good one to do?|Q|qw|qw
+mn015|well let's this|D|s|s
+mn015|go there or not i think is a good one.|S|s|ba
+me010|uh|B|b|b
+mn015|is a very basic one.|S|s|s
+mn015|so|F|fh|fh
+mn015|what makes things more likely that|D|qw|qw
+mn015|so|D|%|%
+me010|well the see the first thing is getting back to thing we left out of the other is the actual discourse.|S|fg|fg
+me010|so keith this is going to get into your world.|S|s|s
+me010|because uh we're going to want to know you know which constructions indicate various of these properties.|S|s|df
+me045|uhhuh.|B|b|b
+me045|uhhuh.|B|b|b
+me010|and so|F|fh|fh
+me010|i i don't yet know how to do this.|S|s|no
+me010|i guess we're going to wind up pulling out uh discourse properties like we have object properties.|S|s|s
+me010|and we don't know what they are yet.|S|s|s
+me045|uhhuh.|B|b|b
+me010|so that that the go there decision will have a node from uh discourse.|S|s|s
+me010|and i guess why don't we just stick a discourse thing up there to be as a placeholder for|D|qw|cs
+mn015|we we also had discourse features of course for the endpoint.|S|s|s
+me010|of of course.|S|s|aa
+mn015|identified that.|S|s|s
+me010|yeah.|B|b|b
+mn015|and so again that's completely correct.|S|fh|fh
+mn015|we have the user model the situation model here.|S|s|s
+mn015|we don't have the discourse model here yet.|S|s|s
+mn015|much the same way as we didn't we don't have the ontology here.|S|s|s
+me010|well the ontology we sort of said we would pull these various kinds of properties from the ontology like exhibiting selling and so forth.|S|s|ng
+mn015|really.|B|b|b
+me010|so in some sense it's it's there.|S|s|nd
+mn015|uhhuh.|B|b|b
+me010|but the discourse we don't have it represented at all yet.|S|s|s
+mn015|yeah.|B|b|b
+mn015|um|F|fg|fg
+mn015|this be specific for second year.|S|s|co
+mn015|um|F|fh|fh
+mn015|and and we probably will have uh something like a discourse for endpoint.|S|s|s
+me010|but if we do it'll have the three values.|S|s|s
+mn015|huh?|Q|qy|bu
+me010|it'll have the e v a values.|S|s|s
+mn015|yeah.|S|s|aa
+me010|if if we have it.|S|s|e
+mn015|yeah.|S|s|bk
+mn015|okay just for starters.|S|s|bk
+mn015|and here discourse um|D|s|s
+me010|for go there probably is true and false let's say.|S|s|cs
+me010|that's what we talked about.|S|s|df
+mn015|um|F|fh|fh
+mn015|well i think um we're looking at the the little data that we have.|S|fh|fh
+mn015|so people say how do i get to the castle.|S|s|s
+mn015|and this usually means they want to go there.|S|s|s
+me045|uhhuh.|B|b|b
+mn015|so this should sort of push it in one direction.|S|s|s
+me010|right.|S|s|aa
+mn015|however people also sometimes say how do i get there.|S|s|s
+mn015|in order to find out how to get there.|S|s|e
+mn015|without wanting to go there.|S|s|e
+me010|uhhuh.|S|s|aa
+mn015|and sometimes um people say where is it.|S|s|s
+me045|uhhuh.|B|b|b
+mn015|because they want to know where it is.|S|s|e
+mn015|but in most cases they probably|D|s|e
+me010|yeah but that doesn't change the fact that you're you want these two values.|S|s|s
+mn015|oh yeah.|S|s|aa
+mn015|true.|S|s|aa
+mn015|so this is sort of some external thing that takes all the discourse stuff.|S|s|s
+mn015|and then says here it's either yep yay a or nay.|S|s|e
+mn015|yeah.|B|b|b
+mn015|okay.|B|b|b
+me010|and they'll be a uh a user go there.|S|s|s
+me010|and maybe that's all.|S|s|am
+me010|i don't know.|S|s|no
+me012|situation go there.|S|s|s
+me012|i mean because it's whether it's open or not.|S|s|e
+mn015|uhhuh.|B|b|b
+me010|okay good.|S|s|ba
+me012|that definitely.|S|s|s
+me010|yep.|B|b|b
+me012|but that now that kind of|D|s|s
+me012|um what's the word?|Q|fh|fh
+me045|huh.|B|b|b
+me012|um the that interacts with the uh e v a thing.|S|fh|fh
+me012|if they just want to view it then it's fine to go there when it's closed.|S|s|s
+me012|whereas if they want to um|D|s|s
+me010|right.|S|s|aa
+me012|so|F|fh|fh
+me010|right so that's that's where it starts getting to be uh uh essentially more interesting.|S|fg|fg
+me010|so what uh bhaskara says which is completely right is if you know that they're only going to view it then it doesn't matter whether it's closed or not.|S|s|s
+me045|uhhuh.|B|b|b
+me010|in terms of uh uh you know whether whether you want to go there.|S|s|e
+me012|the time of day.|S|s|2
+me012|right?|Q|qy|d
+me012|i well right.|S|s|aa
+me045|uhhuh.|B|b|b
+me003|it does matter though if there's like a strike or riot or something.|S|s|bu
+me010|absolutely there are other situational things that do matter.|S|s|aa
+me012|right.|S|s|aa
+me012|so|F|fg|fg
+me012|yeah that's what i said.|S|s|s
+me012|just having one situational node may not be enough.|S|s|s
+me012|because this that node by itself wouldn't distinguish|D|s|df
+me010|well it can have various values.|S|s|nd
+me010|yeah but we uh you you're right it might not be enough.|S|s|na
+me012|yeah i mean see i'm i'm thinking that any node that begins with go there is either going to be true or false.|S|s|s
+me045|well what|D|%|%
+me045|whoops!|S|s|fe
+me010|yeah.|B|b|b
+me045|right.|B|b|b
+me010|uh.|S|s|bk
+me010|i see.|S|s|bk
+me010|that could be.|S|s|am
+me045|also that node i mean the go there s node would just be fed by separate ones for|D|s|s
+mn015|uhhuh.|B|b|rt
+me010|could be.|S|s|am
+me045|you know there's different things the strikes and the|D|s|e
+me010|yeah.|B|b|b
+me012|like situation traffic and so on.|S|s|2
+me010|yeah.|B|b|b
+me045|yeah the time of day.|S|s|aa
+me010|so so now the other thing that bhaskara uh pointed out is what this says is that uh there should be a link.|S|s|s
+me010|and this is where things are going to get very messy.|S|s|e
+me010|from the endpoint uh decision.|S|s|e
+me012|i guess the final|D|s|2
+me010|maybe the they're final and i guess the very bottom endpoint decision uh to the go there node.|S|s|s
+me010|and i don't worry about layout.|S|s|co
+me012|yeah.|B|b|b
+me010|i mean then we'll go we'll go nuts.|S|s|s
+mn015|uhhuh.|B|b|b
+me012|huh.|B|b|b
+me010|but|F|fh|fh
+me012|maybe we could um have intermediate node that just the endpoint and the go there s node sort of fed into.|S|s|cs
+me010|could be.|S|s|am
+me010|yeah.|S|s|am
+me012|right.|S|s|bk
+me012|because that's what we i mean that's why this situation comes up.|S|s|df
+me010|yeah.|B|b|b
+me010|well the go there actually the endpoint node could feed feed into the go there s.|S|s|cs
+me012|yeah right.|S|s|aa
+me010|that's right.|S|s|bk
+me010|so the endpoint node|D|s|s
+mn015|uhhuh.|B|b|b
+me010|make that up to the go there then.|S|s|co
+mn015|yeah.|B|b|b
+me010|and again we'll have to do layout at some point.|S|s|cc
+me010|but something like that.|S|s|e
+me010|now it's going to be important not to have loops by the way.|S|s|s
+mn015|i was just going to|D|s|na
+me010|uh really important in in the belief net world not to have loops.|S|s|s
+me010|uh|F|fh|fh
+me012|yes.|S|s|aa
+mn015|how long does it take you to to compute uh|D|qw|qw
+me010|no it's much worse than that.|S|s|s
+me010|it if it it it it it's not it's not well defined if you're there are loops.|S|s|s
+me012|it things don't converge yeah.|S|s|s
+mn015|uh recursive action?|Q|qw|e
+me010|you just you have to|D|s|co
+me010|there are all sorts of ways of breaking it up so that there isn't|D|s|s
+me010|uh|F|fh|fh
+mn015|uh but this isn't this is this line is just coming from over here.|S|s|ng
+me010|okay.|S|s|bk
+me012|yeah.|B|b|b
+me012|yeah.|S|s|bk
+me010|yeah no it's not a loop yet i'm just saying we we in no in|D|fg|fg
+mn015|huh.|B|b|b
+me012|well but the good thing is we we could have loopy belief propagation which we all love.|S|fg|fg
+me010|right.|B|b|b
+me010|okay so anyway so that's another decision.|S|fg|fg
+me010|uh what's what's another decision you like?|Q|h|h
+mn015|okay these have no parents yet but i guess that sort of doesn't matter.|S|s|s
+mn015|right?|Q|qy|d
+me010|well the idea is that you go there you go comes from something about the user from something about the situation and the uh the discourse is is a mystery.|S|s|s
+mn015|i mean this is sort of|D|s|s
+mn015|this comes from traffic and so forth yeah.|S|s|2
+mn015|should we just make some?|Q|qy|cs
+me010|sure if you want.|S|s|aa
+mn015|um|F|fh|fh
+mn015|if there's parking maybe|D|s|s
+mn015|huh.|B|b|b
+mn015|oh who cares?|Q|qh|qh
+mn015|okay.|B|b|b
+mn015|and if he has seen it already or not and so forth.|S|s|bu
+me010|right.|S|s|aa
+mn015|okay.|S|s|bk
+mn015|um|F|fh|fh
+mn015|and discourse is something that sort of|D|s|s
+mn015|should we make a keith note here?|Q|qy|cs
+mn015|that sort of comes from keith.|S|s|s
+me010|sure.|S|s|aa
+me010|uhhuh.|B|b|b
+mn015|just sort of so we don't forget.|S|s|df
+mn015|oops!|S|s|fe
+mn015|have to get used to this.|S|s|t1
+mn015|okay.|S|s|bk
+mn015|whoops!|S|s|fe
+me045|um actually|F|fg|fg
+me010|and then also the discourse endpoint.|S|s|s
+me010|i i guess endpoint sub d is if you want to make it consistent.|S|s|bc
+me003|uh.|F|fg|fg
+mn015|uhhuh.|B|b|b
+me045|um actually is this the the right way to have it?|Q|qy|rt
+me045|where um go there from the user and go there from the situation just sort of don't know about each other but they both feed the go there decision.|S|s|e
+me010|i think so.|S|s|aa
+me045|because isn't the i mean|D|s|df
+me045|uh|F|h|h
+me045|huh|F|fh|fh
+me045|okay.|S|s|bk
+me010|maybe not.|S|s|am
+me045|but that still allows for the possibility of the of the user model affecting our decision about whether a strike is the sort of thing which is going to keep this user away from|D|s|s
+me010|right.|S|s|aa
+me045|that all that that kind of decision making happens at the go there node.|S|s|s
+me010|uh you yeah you you if you needed to do that.|S|s|na
+me045|uh.|B|b|b
+me045|if you needed it to do that.|S|s|m
+me010|yeah.|S|s|bk
+me045|but uh okay i was just thinking.|S|s|s
+me010|yeah.|B|b|b
+me045|i guess maybe i'm conflating that user node with possible possible asking of the user.|S|s|s
+me045|you know?|Q|qy|d
+me010|uh.|F|fg|fg
+me045|hey there's a strike on uh does that affect whether or not you want to go or something.|S|s|e
+me010|good point i don't i don't know how we're going to uh|D|s|no
+me045|or|F|fh|fh
+me045|yeah so that might not come out of a user model.|S|s|s
+me045|but you know directly out of interaction.|S|s|e
+me010|right.|S|s|aa
+me010|uh i yes my you know don't yeah yeah yeah that's enough.|S|s|s
+mn015|yeah.|B|b|b
+me010|uh my current idea on that would be that each of these decision nodes has questions associated with it.|S|fh|fh
+me045|uhhuh.|B|b|b
+me010|and the question wouldn't itself be one of these conditional things.|S|s|s
+me010|you know given that you know there's a strike do you still want to go.|S|s|s
+me045|okay.|B|b|b
+me045|yeah.|B|b|b
+me010|but uh if you told him a bunch of stuff then you would ask him do you want to go.|S|s|s
+me045|uhhuh.|B|b|b
+me010|but i think trying to formulate the conditional question that sounds too much.|S|s|s
+me045|okay.|B|b|b
+me045|right right.|B|b|b
+me045|yeah.|B|b|b
+me045|right sure okay.|S|s|aa
+me010|to me.|S|s|e
+mn015|uhhuh.|B|b|b
+me010|all right but let me let let's stay with this a minute.|S|s|co
+mn015|but|F|fg|fg
+me010|because i want to do a little bit of organization.|S|s|df
+me010|before we get more into details.|S|s|e
+me010|the organization is going to be that uh|D|s|s
+me010|the flavor of what's going on is going to be that uh|D|s|s
+me010|as we sort of going to this detail indeed keith is going to to worry about the various constructions that people might use.|S|s|s
+me045|uhhuh.|B|b|b
+me010|and johno has committed himself to being the parser wizard.|S|fh|fh
+me010|so what's going to happen is that eventually|D|s|s
+me045|all right.|B|b|b
+me010|like by the time he graduates.|S|s|e
+me010|okay?|Q|qy|d
+me010|uh they'll be some sort of system which is able to take the discourse in context and have outputs that can feed the rest of belief net.|S|fh|fh
+me010|i i i assume everybody knows that.|S|s|s
+me010|i just want to you know get closure that that'll be the game then.|S|s|df
+me045|uhhuh.|B|b|b
+me010|so the semantics that you'll get out of the discourse will be of values that go into the various discourse based decision nodes.|S|s|s
+me010|and now some of those will get fancier like mode of transportation and stuff.|S|s|s
+me010|so it isn't by any means uh necessarily a simple thing that you want out.|S|s|s
+me010|so uh if there is and there is mode of transportation|D|s|s
+mn015|and it there's a sort of also a split if you if you blow this up and look at it in more detail there's something that comes from the discourse in terms of what was actually just said.|S|s|rt
+mn015|what's the utterance giving us?|Q|qr|qr
+me010|yeah.|B|b|b
+mn015|and then what's the discourse history give us?|Q|qr|qr
+me010|yeah well that well we'll have to decide uh how much of where that goes.|S|fg|fg
+me045|uhhuh.|B|b|b
+mn015|that's uh two things then.|S|s|s
+mn015|huh.|B|b|b
+me045|uhhuh.|B|b|b
+me010|and it's not clear yet.|S|s|s
+me010|i mean it could be those are two separate things.|S|s|s
+me010|it could be that the discourse gadget itself integrates them as|D|s|s
+me010|which would be my guess.|S|s|s
+me010|that you'd have to do see in order to do reference and stuff like that um you've got to have both the current discourse and the context to say i want to go back there.|S|s|s
+me010|wow what does that mean.|S|s|s
+me045|uhhuh.|B|b|b
+me010|and uh|F|fh|fh
+mn015|uhhuh.|B|b|b
+me045|now.|S|s|s
+me045|uhhuh.|B|b|b
+me010|all right.|S|s|bk
+me010|so|F|fh|fh
+mn015|but is is this picture that's emerging here just my wish that you have noticed already for symmetry?|Q|qy|qy
+mn015|or is it that we get for each each decision on the very bottom we sort of get the sub e sub d sub u and maybe a sub o o for ontology um meta node?|Q|qrr|qrr
+me010|i don't know.|S|s|no
+mn015|but it might just|D|s|s
+me010|it could be.|S|s|am
+mn015|could be.|S|s|bk
+mn015|so this|D|s|s
+me010|this is this is getting into the thing i want to talk about next.|S|s|s
+me010|which is if that's true uh how do we want to combine those?|Q|qr|qr
+me010|or when it's true.|S|s|s
+mn015|but this uh would be nice though that you know we only have at most four at the moment um arrows going to each of the uh bottom decisions.|S|s|cs
+me010|yeah.|B|b|b
+me012|yeah.|B|b|b
+mn015|and four you we can handle?|Q|qy|bu
+me010|no.|S|s|ar
+mn015|it's too much?|Q|qy|bu
+me012|yeah.|B|b|b
+me010|well it if it's if it's four things and each of them has four values it turns out to be a big c p t.|S|s|s
+me010|it's not completely|D|s|s
+me010|i mean it's it's not beyond what the system could solve.|S|s|s
+me010|but it's probably beyond what we could actually uh write down or learn.|S|s|ba
+mn015|right true.|S|s|bk
+me010|uh but you know it's four to the fourth.|S|fh|fh
+me010|it's pretty big.|S|s|ba
+me010|uh|F|fh|fh
+me003|two fifty six?|Q|qy|bu
+me003|is that what that|D|qy|qy
+me010|yeah.|S|s|aa
+me010|yeah i mean|D|s|aa
+me010|it's and i don't think it's going to i don't think it'll get worse than that by the way.|S|s|s
+me010|so that's a that's a good|D|s|ba
+me012|huh yeah.|B|b|b
+mn015|but but four didn't we decide that all of these had true or false?|Q|qy|rt
+mn015|so is it's four|D|s|s
+me010|uh for go there.|D|s|s
+me010|but not but not for|D|s|s
+me003|yeah.|B|b|b
+me010|the other one's three values for endpoint already.|S|s|s
+me012|yeah i mean you need actually three to the five.|S|fg|fg
+me012|because uh well i mean if if it has four inputs and then it itself has three values.|S|s|df
+me003|right.|S|s|bk
+me012|so|F|fh|fh
+me012|i mean it can get big fast.|S|s|s
+mn015|um for endpoint?|Q|fg|fg
+mn015|no it's it's|D|s|ar
+me010|e it's the e v a.|S|s|s
+mn015|yeah down here.|S|s|bk
+mn015|but this one only has two.|S|s|arp
+me012|no it still has three.|S|s|nd
+me010|no.|S|s|ar
+me010|since they will still have three.|S|s|s
+me012|e v a.|S|s|df
+me010|each so you're uh uh from each point of view you're making the same decision.|S|s|s
+me045|uhhuh.|B|b|b
+me010|so from the point of view of the of the entity|D|s|s
+me045|uhhuh.|B|b|b
+mn015|want to view that|D|s|2
+mn015|yeah yeah.|B|b|b
+mn015|yeah.|B|b|b
+me010|yeah.|B|b|b
+me012|this and also i mean the other places where|D|s|s
+me012|like for example consider endpoint view it has inputs coming from user budget user thrift.|S|s|s
+me010|right.|B|b|b
+me012|so even|D|s|s
+me010|those are not necessarily binary.|S|s|2
+me010|so we're we're going to have to use some care in the knowledge engineering to not have this explode.|S|s|s
+me010|and in fact i think it doesn't in the sense that|D|s|s
+me010|um|F|fh|fh
+me010|read it|D|s|rt
+me010|you know actually with the underlying semantics and stuff i think it isn't like you have two hundred and fifty six different uh ways of of thinking about whether this user wants to go to some place.|S|s|s
+me010|all right.|S|s|bk
+me010|so we we just have to figure out what the regularities are and and code them.|S|s|cs
+me010|but um what i was going to suggest next is maybe we want to work on this a little longer.|S|s|s
+me010|but i do want to also talk about the thing that we started into now of|D|s|s
+me010|uh|F|fh|fh
+me010|well it's all fine to say all these arrows come into the same place.|S|s|ba
+me010|what rule of combination is used there?|Q|qr|qr
+me010|so yes they so these things all affect it.|S|s|s
+me045|uhhuh.|B|b|b
+me045|right.|B|b|b
+me010|how do they affect it?|Q|qr|qr
+me010|and belief nets have their own beliefs about uh what are good ways to do that.|S|s|s
+me010|so is it it's it's clearer clear enough what the issue is.|S|s|s
+me012|right.|B|b|b
+me010|right?|Q|qy|d
+me010|so do we want to switch that now or we want to do some more of this?|Q|qr|t
+mn015|basically we just need to sort of|D|s|s
+mn015|in order to get some closure on this figure out how we're going to get this picture sort of uh completely messy.|S|s|s
+me010|well here here's one of the things that that i you|D|s|s
+me010|you no|D|%|%
+me010|i don't know how easy it is to do this in the interface.|S|s|bd
+me010|but you it would be great if you could actually just display at a given time uh all the things that you pick up|D|s|cs
+me010|you click on endpoint.|S|s|s
+me010|okay.|S|s|f
+mn015|uhhuh.|B|b|b
+me010|and everything else fades.|S|s|s
+me010|and you just see the links that are relevant to that.|S|s|s
+me010|and i|D|%|%
+me010|does anybody remember the gui on this?|Q|qy|qy
+me003|uh i would almost say the other way to do that would be to open or make you know n many belief nets.|S|fg|fg
+me003|and then open them every time you wanted to look at a different one.|S|s|s
+mn015|uhhuh.|B|b|b
+mn015|it's probably pretty easy do it to do it in h t m l.|S|s|s
+me003|because uh|D|s|df
+mn015|just|D|s|s
+me003|yeah but|D|s|bk
+mn015|uh|F|fh|fh
+me012|h t m l?|Q|qy|bu
+mn015|yeah i have each of these each of the end belief nets be be a page and then you click on the thing.|S|s|aa
+mn015|and then consider that it's respective.|S|s|s
+me012|okay.|S|s|bk
+me010|yeah the well the|D|s|am
+mn015|but|D|%|%
+me010|anyway so uh it clear that even with this if we put in all the arrows nobody is going to be able to read the diagram.|S|fg|fg
+me003|yeah.|S|s|aa
+me010|all right.|S|s|bk
+me010|so we have to figure out some uh uh uh basically display hack or something to do this.|S|s|cs
+me010|because|D|s|df
+me010|anyway i i let me suggest that's a not a first order consideration.|S|fg|fg
+me010|we have two first order considerations.|S|s|t
+me010|which is what are the uh influences.|S|s|s
+me010|a.|S|s|s
+me010|and b how do they get combined mathematically?|Q|qr|qr
+me010|how do we display them is an issue.|S|s|s
+me010|but|D|%|%
+me010|um|F|fh|fh
+me003|i don't yeah i just don't think this has been designed to support something like that.|S|s|s
+me012|yeah.|B|b|b
+me012|yeah i i mean it might soon if this is going to be used in a serious way like java base then it might soon be necessary to uh start modifying it for our purposes.|S|fg|fg
+me010|right.|S|s|aa
+me010|yeah and um i that seems like a perfectly feasible thing to get into.|S|fg|fg
+me010|but um we have to know what we want first.|S|s|s
+me010|okay so why don't you tell us a little bit about decision nodes and what what the choices might be for these?|Q|qo|cs
+me012|so|D|%|%
+me012|i guess that's|D|s|s
+me003|you can technically wear that as you're talking.|S|s|s
+me012|yeah it's right i guess i can do that.|S|s|s
+me045|darn!|S|s|fe
+me010|put it in your|D|s|cs
+me010|yeah.|S|s|bk
+me012|i guess this board works fine.|S|s|ba
+me012|so um recall the basic problem which is that um you have a belief net and you have like a lot of different nodes all contributing to one node.|S|s|s
+me012|right?|Q|qy|d
+me012|so as we discussed specifying this kind of thing is a big pain.|S|s|s
+me012|and it's will take a long time to write down.|S|s|s
+me012|because for example if these s have three possibilities each and this has three possibilities then you know you have two hundred and forty three possibilities.|S|s|df
+me012|which is already a lot of numbers to write down.|S|s|s
+me012|so what um helps us in our situation is that these all have values in the same set.|S|s|s
+me012|right?|Q|qy|d
+me012|these are all like saying e v or a.|S|s|s
+me012|right?|Q|qy|d
+me012|so it's not just a generalized situation like|D|s|s
+me012|i mean basically we want to just take a combination of|D|s|s
+me012|we want to view each of these as experts.|S|s|s
+me012|who are each of them is making a decision based on some factors.|S|s|s
+me012|and we want to sort of combine their decisions.|S|s|s
+me012|and create you know um sort of weighted combination.|S|s|s
+mn015|huh.|B|b|b
+mn015|rover the rover decision.|S|s|s
+me012|the what decision?|Q|qw|br
+mn015|rover.|S|s|s
+mn015|all of their outputs combined to make a decision.|S|s|s
+me045|huh.|B|b|b
+me012|yeah.|S|s|aa
+me012|yeah.|B|b|b
+me012|so the problem is to specify the uh so the conditional property of this given all those.|S|s|s
+me012|right?|Q|qy|d
+me012|that's the way belief nets are defined.|S|s|s
+me012|like each node given its parents.|S|s|e
+me012|right?|Q|qy|d
+me012|so um that's what we want .|S|fh|fh
+me012|we want for example p of um|D|s|s
+me012|let's call this guy y.|S|s|s
+me012|and let's call these x one x two x n.|S|s|s
+me012|right?|Q|qy|d
+me012|so we want probability that y equals you know for example um e.|S|s|s
+me012|given that these guys are|D|s|s
+me012|i'll just refer to this as like x um hat or something.|S|s|s
+me012|uh the like all of them.|S|s|rt
+me012|given that for example the data says you know a v a e or something.|S|s|s
+me012|right?|Q|qy|bu
+me010|yep.|S|s|aa
+me012|so we would like to do this kind of combination.|S|s|s
+me010|all right so|D|s|bk
+me010|um|F|fh|fh
+me010|is that uh|D|qy|qy
+me010|i yeah i just want to make sure everybody is with us before he goes on.|S|s|df
+me045|i think so yeah.|S|s|aa
+me010|it's it's is is it clear what he wants to compute?|Q|qy|rt
+me012|right.|B|b|b
+me045|uhhuh.|S|s|aa
+me012|so right.|F|fh|fh
+me012|so basically um what we don't want to do is to for every single combination of e and v and a and every single letter e give a number.|S|s|s
+me012|because that's obviously not desirable.|S|s|s
+me045|uhhuh.|B|b|b
+me012|what we want to do is find some principled way of um saying what each of these is.|S|s|s
+me012|and we want it to be a valid probability distribution.|S|s|s
+me012|so we want it to um add up to one.|S|s|s
+me012|right?|Q|qy|d
+me012|so those are the two things that we uh need.|S|s|s
+me045|huh.|B|b|b
+me012|so what uh i guess what jerry suggested earlier was basically that we you know view these guys as voting.|S|s|s
+me012|and we just take the uh we essentially take um averages.|S|s|s
+me012|right?|Q|qy|d
+me012|so for example here two people have voted for a.|S|s|s
+me012|one has voted for v.|S|s|s
+me012|and one has voted for e.|S|s|s
+me012|so we could say that the probabilities are you know probability of being e is one over four because one person voted for e out of four.|S|s|rt
+me012|and similarly probability of|D|s|s
+me012|so this is probability of e.|S|s|rt
+me012|and then probability of a given all that is um two out of four.|S|s|rt
+me012|and probability of v is one out of four.|S|s|s
+me012|right?|Q|qy|d
+me012|so that's step that's the uh yeah that's the that's the basic uh thing.|S|s|s
+me012|now|D|%|%
+mn015|um|F|fg|fg
+mn015|yeah.|B|b|b
+me012|is that all okay?|Q|qy|qy
+mn015|and that one outcome that's|D|s|s
+me010|what?|Q|qw|br
+mn015|it's x x one voted for a.|S|s|bu
+mn015|x two voted for v.|S|s|bu
+me045|uhhuh.|B|b|b
+mn015|and so forth?|Q|qy|d
+me010|right.|S|s|aa
+mn015|yeah.|S|s|bk
+me010|yep.|B|b|b
+me012|yeah.|B|b|b
+mn015|that's the outcome.|S|s|s
+me010|so this assumes symmetry and equal weights and all this sort of things which may or may not be a good assumption.|S|s|bu
+me045|uhhuh.|B|b|b
+me010|so that|D|s|s
+me045|right.|B|b|b
+me012|yeah.|B|b|b
+me012|yeah.|B|b|b
+me012|so step two is um|D|s|s
+me012|right.|F|fh|fh
+me012|so we've assumed equal weights.|S|s|s
+me012|whereas it might turn out that you know some be that for example what the um the actual the uh verbal content of what the person said like what uh what might be uh somehow more uh important than the uh|D|s|s
+me003|x one matters more than x two or|D|s|2
+me012|right.|S|s|aa
+me012|sure so we don't want to like give them all equal weight.|S|s|aa
+me012|so currently we've been giving them all weight one fourth.|S|s|s
+me012|so we could replace this by uh w one w two w three and w four.|S|s|s
+me012|right?|Q|qy|d
+me045|huh.|B|b|b
+me012|and in order for this to be a valid probability distribution for each um x hat we just need that the w s sum to one.|S|s|rt
+me012|so they can be for example you know|D|s|s
+me012|you you could have point one point three point two and point four say.|S|s|s
+mn015|that's one.|S|s|s
+me012|and that'd be one.|S|s|m
+me012|so that um also seems to work fine.|S|s|ba
+me012|and uh|D|%|%
+me003|so i just to make sure i understand this so in this case um we would still compute the average?|Q|qy|bu
+me012|you'd compute the weighted average.|S|s|na
+me012|so the probability of e would be uh|D|s|s
+me003|okay so|D|s|bk
+me003|so it'd be so in this case the probability that y equals a would be uh w one times|D|s|s
+me045|point three.|S|s|s
+me003|or a or|D|s|s
+me003|let's see.|S|s|s
+me003|one full quarter times point one.|S|s|s
+me012|not one quarter.|S|s|ar
+me012|so these numbers have been replaced with point one point three point two and point four.|S|s|s
+me045|no.|S|s|ar
+me012|so you can view these as gone.|S|s|s
+me003|okay.|S|s|bk
+me012|probability of|D|s|s
+me003|okay.|S|s|bk
+me012|yeah.|B|b|b
+me012|yeah.|B|b|b
+me012|okay.|B|b|b
+me012|so|F|fg|fg
+me012|all right.|S|s|bk
+me012|so this is uh step two.|S|s|s
+me012|so the next possibility is that um we've given just a single weight to each expert.|S|s|s
+me012|right?|Q|qy|d
+me012|whereas it might be the case that um in certain situations one of the experts is more uh reliable and in certain situations the other expert is more reliable.|S|s|s
+me012|so the way this is handled is by what's called a mixture of experts.|S|s|rt
+me012|so what you can have is|D|s|s
+me012|you augment these diagrams like this.|S|s|s
+me012|so|F|fh|fh
+me012|you have a new thing called h.|S|s|s
+me012|okay?|Q|qy|d
+me012|this is a hidden variable.|S|s|s
+me012|and what this is is it gets its input from x one x two x three and x four.|S|s|s
+me012|and what it does is it decides which of the experts is to be trusted in this particular situation.|S|s|s
+me012|right?|Q|qy|d
+me012|and then these guys all come here.|S|s|s
+me012|okay.|D|s|bk
+me012|so this is slightly uh more complicated.|S|s|ba
+me012|so what's going on is that um this h node looks at these four values of those guys.|S|s|s
+me012|and it decides in given these values which of these isn't likely to be more reliable or most reliable?|Q|qw|qw
+me012|so h produces some you know it produces a number.|S|s|s
+me012|either one two three or four in our situation.|S|s|s
+me012|right?|Q|qy|d
+me012|now this guy he looks at the value of h.|S|s|s
+me012|say it's two.|S|s|s
+me012|and then he just selects the uh thing.|S|s|s
+me012|that's all there is to say i guess about it.|S|s|s
+mn015|uhhuh.|B|b|b
+me012|right so you can have a mixture that|D|s|bk
+me012|right.|S|s|bk
+me045|so so the function of the thing that comes out of h is very different from the function of the other inputs.|S|s|bu
+me045|it's driving how the other four are interpreted.|S|s|s
+me045|okay.|S|s|bk
+me012|yeah.|B|b|b
+me012|yeah.|B|b|b
+me003|so h passes a vector on to the next node?|Q|qy|bu
+me012|it could.|S|s|aap
+me003|it could?|Q|qw|br
+me003|a vector of the weights as the|D|s|s
+me012|yeah it could.|S|fg|fg
+me003|oh.|S|s|bk
+me012|sorry.|S|s|fa
+me045|well a vector with three zeroes and one one.|S|s|bu
+me045|right?|Q|qy|d
+me003|oh it's basically to tell the bottom node which one of the situations that it's in?|S|s|bk
+me003|or which one of the weighting systems|D|qrr|qrr
+me012|right so i mean the way you|D|s|aa
+me003|i was just if you wanted to pay attention to more than one you could pass a a weighting system though too.|S|s|s
+me003|couldn't you?|Q|qy|g
+me003|okay.|S|s|bk
+me045|um does h have to have another input to tell it alpha beta whatever or is the|D|qr|qr
+me045|that's determined by what the experts are saying?|Q|qy|bu
+me045|like the type of|D|s|e
+me045|okay.|S|s|bk
+me045|huh.|D|b|b
+me045|okay.|S|s|bk
+me045|okay.|S|s|bk
+me045|i mean it it just seems that like without that that outside input that you've got a situation where you know like if if uh x one says no|D|s|s
+me045|you know a low value coming out of x|D|s|s
+me045|or if x one says no then ignore x one.|S|s|s
+me045|you know?|Q|qy|d
+me045|i mean that seems like that'd be weird.|S|s|ba
+me012|yeah well could be things like if x two and x three say yes then ignore x one also.|S|s|bk
+me045|right?|Q|qy|d
+me045|oh okay.|S|s|bk
+me045|okay.|S|s|bk
+me045|all right right.|S|s|bk
+me003|oh the situations that h has are they built into the net?|Q|qy|bu
+me003|or|D|qrr|qrr
+me003|okay so they they could either be hand coded or learned or|D|s|bk
+me003|okay.|S|s|bk
+me012|yeah.|B|b|b
+me003|based on training data.|S|s|s
+me003|okay.|S|s|bk
+me012|yeah.|B|b|b
+me012|yes.|S|s|bk
+me003|so you specify one of these things for every one of those possible situations.|S|s|bu
+me003|oh yeah.|S|s|bk
+me012|yeah.|B|b|b
+me012|um well i mean to learn them we need data.|S|fg|fg
+me012|where are we going to get data?|Q|qh|df
+me012|well i mean we need data with people intentions.|S|s|s
+me012|right?|Q|qy|d
+me045|right right.|S|s|aa
+me012|which is slightly tricky.|S|s|ba
+me012|right.|B|b|b
+me045|uhhuh.|B|b|b
+me012|uhhuh.|B|b|b
+me012|but what's the data about?|Q|qw|qw
+me012|like are we able to get these nodes from the data?|Q|qy|e
+me045|like how thrifty the user is?|Q|qy|bu
+me045|or do we have access to that?|Q|qrr|qrr
+me045|uhhuh.|B|b|b
+me045|oh right.|S|s|bk
+me045|oh good.|S|s|bk
+me012|yeah.|B|b|b
+me045|okay.|S|s|bk
+me045|uhhuh.|B|b|b
+me045|uhhuh.|B|b|b
+me045|okay.|D|s|bk
+me012|yeah but that's my question.|S|s|bk
+me012|like how do we i mean how do we have data about something like um um endpoint sub e?|Q|qw|qw
+me012|or endpoint sub uh you know s?|Q|qrr|qrr
+me003|well basically you would say based on in this dialogue that we have which one of the things that they said uh whether it was the entity relations or whatever was the thing that determined what mode it was.|S|s|s
+me012|huh.|B|b|b
+me012|huh.|B|b|b
+me003|right?|Q|qy|d
+me012|so this is what we want to learn.|S|s|bu
+me012|yep.|S|s|aa
+me012|right.|B|b|b
+me012|huh.|B|b|b
+me012|yeah.|B|b|b
+me012|i don't think|D|s|nd
+me012|well you have a|D|s|s
+me012|can you bring up the function thing?|Q|qy|rt
+me012|um where is the thing that allows you to sort of|D|fh|fh
+me003|that's on the added variable.|S|s|s
+me003|isn't it?|Q|qy|g
+me012|oh function properties.|S|s|s
+me012|is that it?|Q|qy|rt
+me012|huh i guess not.|S|s|ar
+me012|yeah that's|D|s|aa
+me045|no.|S|s|ar
+me012|right.|S|s|bk
+me012|okay.|S|s|bk
+me012|and um it so either it'll allow us to do everything.|S|fg|fg
+me012|which i think is unlikely.|S|s|df
+me012|i think more likely it'll allow us to do very few of these things.|S|s|s
+me012|and in that case we'll have to um just write up little things that allow you to um create such c p u's on your own in the java base format.|S|s|cs
+me012|yeah.|S|s|bk
+me012|yeah.|B|b|b
+me012|yeah i was assuming that's what we'd always do.|S|fg|fg
+me012|because|D|%|%
+me012|yeah i was assuming that's what we'd always do.|S|s|r
+me012|it's|D|%|%
+me012|right.|B|b|b
+me012|yeah.|B|b|b
+me003|uh.|B|b|b
+me003|well in terms of java base i think it's basically what you see is what you get in|D|s|s
+me003|i don't|D|s|s
+me003|yeah.|F|fh|fh
+me003|i would be surprised if it supports anything more than what we have right here.|S|s|s
+me045|so|F|fh|fh
+me045|yeah.|B|b|b
+me045|yeah.|B|b|b
+me045|by the way um uh just talking about uh about that general end of things|D|s|tc
+me045|uh is there going to be data soon from what people say when they're interacting with the system and so on?|Q|fh|fh
+me045|like i mean what kind of questions are being given being asked?|Q|qw|e
+me045|because|D|s|df
+me045|okay.|S|s|bk
+me045|yeah yeah.|B|b|b
+me045|okay.|S|s|bk
+me045|okay.|B|b|b
+me045|fey you mean.|S|s|bc
+me045|okay.|S|s|bk
+me045|okay.|S|s|bk
+me045|okay.|S|s|bk
+me045|okay.|B|b|b
+me045|i'm just wondering because in terms of you know|D|s|s
+me045|i mean|D|%|%
+me045|uh|F|fh|fh
+me045|the figure i was thinking about this figure that we talked about.|S|s|s
+me045|fifty constructions or whatever.|S|s|s
+me045|that's uh that's a whole lot of constructions.|S|s|ba
+me045|and um you know i mean one might be fairly pleased with getting a really good analysis of five maybe ten in a summer.|S|s|s
+me045|so i mean i know we're going for sort of a rough and ready.|S|s|s
+me045|uhhuh.|B|b|b
+me045|uhhuh.|B|b|b
+me045|okay.|B|b|b
+me045|okay.|S|s|bk
+me045|i mean i i i i was uh i was talking about the you know if you wanted to do it really in detail.|S|s|s
+me045|and we don't really need all the detail for what we're doing right now.|S|s|s
+me045|but anyway in terms of just narrowing that task you know|D|s|s
+me045|which fifty do i do?|Q|qh|qh
+me045|i want to see what people are using.|S|s|df
+me045|so|F|fh|fh
+me045|well it will inspire me.|S|s|s
+me045|right sure sure.|B|b|b
+me045|right.|B|b|b
+me045|yeah sure.|B|b|b
+me045|sure.|B|b|b
+me045|yeah.|B|b|b
+me045|okay.|B|b|b
+me045|touche.|S|s|ba
+me045|good enough.|S|s|ba

@@ -1,979 +1,979 @@
-me018|okay.|S
-me013|okay so the one one thing i knew i wanted to talk about was about uh sort of last minute stuff to uh try to get some recognition results.|S
-mn017|recognition results.|S
-me013|yeah.|S
-mn017|for|D
-me013|so uh on on on meeting data.|S
-me013|and so i'm i'm not sure exactly what you're doing already.|S
-me013|and and there's some stuff i've talked to dave|D
-mn017|well i just started recognition on the on thilo's segments.|S
-mn017|which was|D
-mn017|but using the|D
-mn017|the close talking microphone.|S
-me013|okay so um|F
-mn017|and you wanted i know you wanted the far field data.|S
-me013|right so so we have some stuff with no overlap uh for which there would be near near field results.|S
-mn017|uhhuh.|B
-me013|we wanted to get the far field results for that.|S
-me013|and then this this real uh long shot thing would be that we'd apply dave's processing to uh potentially training and test data.|S
-mn017|uhhuh.|B
-me013|and do the look at the same thing.|S
-me013|and in talking this morning with uh chuck and with dave one thought was to use|D
-me013|we couldn't remember how different the numbers were.|S
-me013|but if you just worked with males only and used the short training there're there're|D
-me013|uh i think chuck's recollection was that when he was doing the feature stuff it took maybe a day and a half.|S
-me013|to do the training.|S
-mn017|to re train?|Q
-me013|yeah.|S
-mn017|uh|F
-mn017|yeah.|S
-mn017|um|F
-mn017|that's about right.|S
-mn017|actually it should probably be|D
-mn017|it depends on who else is using machines.|S
-mn017|but we have more machines now.|S
-mn017|so|F
-me018|that's true.|S
-mn017|it's more like a day probably.|S
-me013|um how much worse is the short training set than the large one in terms of the ultimate performance?|Q
-mn017|huh it's like something like three three percent.|S
-mn017|three or four percent absolute.|S
-me013|yep.|S
-me013|so it's that should be fine for this i would think.|S
-me013|so we and you have the short you have short training results for the close case?|Q
-mn017|um not for meetings.|S
-mn017|because we didn't train we didn't ever recognize with the with the small models on meeting data.|S
-mn017|but i i have the models.|S
-mn017|so i could run|D
-me013|so how do you know it's|D
-me013|oh it's three percent on on uh on hub five.|S
-mn017|on|D
-me018|hub five.|S
-me013|i see.|S
-me013|yeah but we have the models so we could get that number.|S
-me013|and|F
-me013|so the question is what|D
-mn017|i mean the the huh|D
-mn017|the recognition also takes non negligible amount of time.|S
-mn017|so we might want to restrict it to maybe a few meetings.|S
-mn017|if you want to do a full comparison.|S
-me013|it has to be enough so that|D
-mn017|uh|F
-me013|i mean it's the non overlap only.|S
-me013|um and|F
-me013|it has to be enough to be sort of comparable to what you folks were seeing and what you reported already.|S
-mn017|huh.|B
-me013|i mean|D
-mn017|well do we have the do we have the processed data?|Q
-mn017|that that's also|D
-me013|no he has to create that.|S
-me013|but but but so|F
-mn017|right.|S
-me013|um|F
-me013|we have a whole parallel set of things over here which are all with digits.|S
-mn017|huh.|B
-mn017|i see.|B
-me013|and and and dave has been working with that and there's all of those issues.|S
-me013|but i know that if i go in with something that's not just digits it would be good.|S
-me013|and um so|F
-me013|we already have these results that you|D
-me013|i mean on uh a a a particular test set that you that we reported at h l t.|S
-mn017|uhhuh.|B
-mn017|right.|B
-me013|um it'd be nice to have something more than that.|S
-me013|and we had talked about was having distant|D
-me013|um and then|F
-me013|uh if we could on top of that|D
-me013|i mean so this is going to be a lot worse.|S
-me013|right?|Q
-me013|whatever comparison we one would presume.|S
-mn017|uhhuh.|B
-me013|but we don't know how much worse|D
-mn017|right.|S
-me013|uh which is certainly one interesting thing.|S
-me013|and then um|F
-me013|dave|D
-me013|i think we figured that it'd probably take a day or two to compute the the|D
-me013|uh uh|F
-me013|well how many hours of training|D
-mn017|actually i did re train|D
-mn017|i recently re trained um for another reason on the full training set.|S
-mn017|and that took only i think it took only two days.|S
-me013|yeah.|B
-mn017|so it's actually conceivable to do use the full training set.|S
-me013|yeah but we also have to do this other processing so having a smaller training set.|S
-me013|if it's only a few percent difference it might be be worth doing it.|S
-mn017|oh i see.|S
-me013|how big is the small training set?|Q
-me013|do you remember?|Q
-mn017|huh uh hhh.|B
-mn017|i don't know.|S
-mn017|something something like something between thirty and fifty hours maybe.|S
-mn017|i i forget the|D
-me013|it's around there.|S
-me013|and and and male is roughly half of that?|Q
-mn017|right.|S
-me013|or|D
-me018|well that's only male.|S
-me013|or or or was that only male?|Q
-mn017|uh actually i don't know.|S
-mn017|i i can look it up.|S
-mn017|it's it's it's just|D
-mn017|uh i don't know the remember the the number.|S
-me018|we could only just do the male only.|S
-me013|okay.|S
-me018|right?|Q
-me018|or will we run into trouble when we|D
-mn017|well the males account for most of this meeting data anyhow.|S
-me018|yeah.|S
-mn017|so|F
-mn017|yeah i would say we you do only males.|S
-me013|yeah.|S
-me013|so|F
-me013|yeah so that's certainly part of the issue is that right now he's he hasn't written his stuff for efficiency.|S
-me013|yeah it's it's in matlab.|S
-me013|and so on.|S
-me013|and and uh it's not an impossible amount of time.|S
-mn017|uhhuh.|B
-me013|we we were guesstimating it was like one and a half times faster than real time or something.|S
-me013|so if there's thirty hours of data you can calculate that he can do uh the enhancement in a day.|S
-me013|and something.|S
-mn017|uhhuh.|B
-me013|so|F
-me013|but if we were dealing with two hundred hours or something i think it'd be prohibitive.|S
-mn017|no it's definitely it's less than a hundred hours for sure.|S
-mn017|it's|D
-me013|yeah.|B
-mn017|it's probably actually uh it's uh i think it's around thirty hours.|S
-mn017|just for for one gender.|S
-me018|that's what i was thinking.|S
-me013|yeah.|B
-mn017|yeah.|B
-me018|yeah.|B
-me013|yeah so i mean it's a bit of a push.|S
-me013|but it seems like|D
-me013|okay we've got some models.|S
-me013|we've got some training data we have software that works he's got a method that helps with you know other another task.|S
-me013|um|F
-me013|it you know appears to be you know debugged.|S
-mn017|uhhuh.|B
-me013|um|F
-me018|so so one thing i was wondering is did you already do that middle one or should we re do that one too?|Q
-mn017|no i didn't do that.|S
-mn017|because we haven't even cut the waveforms for that.|S
-me018|you didn't do that okay.|S
-me018|yeah that's what i was going to say next.|S
-mn017|so|F
-me018|we have to cut the uh|D
-mn017|right.|B
-mn017|so|F
-me018|so is morgan is the plan to just pick one of the far field mikes?|Q
-me018|uh|F
-mn017|and there's a bit of a question whether you want to use um what segmentations you want to use.|S
-me013|yes.|S
-mn017|uh|F
-mn017|uh david just|D
-mn017|um i'm sorry.|S
-mn017|don just uh created a new version of the first meetings that we had previously recognized.|S
-mn017|but with different segmentation.|S
-mn017|and so um|F
-mn017|it would be nice|D
-mn017|i mean if the results are comparable to what we had before|D
-mn017|to use those segmentations.|S
-mn017|because then we could claim that everything's automatic.|S
-me018|do you know when he'll have the the comparison?|Q
-mn017|right?|Q
-mn017|well i'm as i said i just started the recognizer um|D
-mn017|it will uh it will probably be a couple hours before before i have some results.|S
-me013|oh well that's not bad.|S
-me018|oh okay.|S
-mn017|so|F
-me018|so because i don't think the new data will be ready uh for a couple days probably.|S
-me013|you mean the training.|S
-me018|so|F
-me018|the training.|S
-mn017|but the segmentations matter for the filtering.|S
-me013|yeah.|B
-mn017|right?|Q
-mn017|because|D
-me013|for the test.|S
-mn017|for the test set yeah.|S
-mn017|so|F
-me013|yeah|D
-me018|yeah.|S
-mn017|need to be|D
-mn017|but first first of course you would want to process the training data.|S
-mn017|because we want to get that started.|S
-me013|right.|S
-mn017|yeah.|B
-me013|yeah.|B
-me013|i mean it it'd be really great if it was all automatic but i think that you know given the pressure of time if|D
-me013|i mean since you're going to find out in a short amount of time that's great.|S
-mn017|uhhuh.|B
-me013|but if if it doesn't work out i think we would rather charge ahead with the older segmentations.|S
-mn017|uhhuh.|B
-mn017|right.|S
-me013|and um|F
-me013|and we were going to use one of the p z m's.|S
-me013|i i don't know what|D
-me013|probably whatever one you've been using for for for the digits.|S
-me018|i think it's that one.|S
-me018|right?|Q
-me013|is it this one?|Q
-me026|it's f.|S
-me018|f.|S
-me018|yeah that's it.|S
-me013|i i'd which|D
-me013|that's f?|Q
-me013|how do you know?|Q
-me018|that's f.|S
-me018|it's the second nearest the machine room.|S
-me013|oh.|S
-me013|bien sur|D
-me013|all right so|F
-me013|bet they'll have fun with that one.|S
-me013|okay so.|F
-me013|uh|F
-me018|okay so uh i just want to make sure i understand what we need to run.|S
-me018|um|F
-me018|let's see.|S
-me018|so it's|D
-me018|okay so if we're talking about|D
-me018|let's let's assume that we're going to use the new segmentations.|S
-me018|we need to um run recognition just looking at the no overlap column.|S
-me018|basically we have to do recognitions for all three of those cases.|S
-me018|right?|Q
-me013|uhhuh.|B
-me013|right.|S
-me018|um because we're going to be using the just the male uh model.|S
-me018|short training set for the male.|S
-mn017|uhhuh.|B
-me018|so we need to have results for all three of those.|S
-me018|even though we have|D
-mn017|maybe you should limit ourselves to the meeting recorder meetings.|S
-me018|okay.|S
-mn017|um|F
-mn017|if you were going to cut down on the test set i would suggest that.|S
-me013|well maybe.|S
-me013|but i i mean how long does it take for the test?|Q
-mn017|actually the longer the robustness meetings take longer.|S
-mn017|because there's this one speaker who talks a lot.|S
-mn017|and so|F
-mn017|the um|D
-mn017|no it's because for all the for the adaptation and normalization steps you cannot|D
-mn017|you have to you have to uh um|D
-mn017|you cannot chop it up into small pieces.|S
-mn017|so you're sort of limited by how long the longest speaker uh is speaking.|S
-mn017|so how much data there is from the the speaker who talks the most.|S
-mn017|so um you parallelize across different speakers.|S
-me018|uhhuh.|B
-mn017|but you know if you have a bunch of speakers who speak very little and then one who who speaks a lot then effectively everybody waits for the longest one to process.|S
-me013|right.|B
-me018|right.|B
-me018|yeah.|B
-me013|but what what was your result for uh that we had at the h l t?|Q
-mn017|so|F
-me013|was that a combination of me?|Q
-mn017|that was both types of meetings.|S
-mn017|but most but there were only two robustness meetings and four or five uh meeting recorders.|S
-me018|and if we're re doing the baseline anyways it it it would be okay.|S
-mn017|right.|S
-me018|to to just limit ourselves to a smaller|D
-me018|how long would it take to run recognition if we did that?|Q
-mn017|oh.|F
-mn017|uh i i|F
-mn017|i don't have i don't have a good|D
-me018|i mean is is it like a day or is it a few hours or|D
-me018|roughly.|S
-mn017|for everything?|Q
-mn017|for all the meetings?|Q
-me018|for|D
-me018|yeah let's say we just did the meeting recorder meetings for our test set.|S
-mn017|uh|F
-mn017|um|F
-mn017|it's probably more than a day.|S
-mn017|but probably less than two.|S
-me018|oh really?|Q
-me018|i didn't realize each test took that long.|S
-mn017|well no i mean for all the meetings.|S
-mn017|because it's again it's|D
-mn017|um|F
-me013|so you were doing like|D
-mn017|so each meeting each meetings takes uh something like|D
-mn017|again we we i ran when we ran these we were sort of short on machines.|S
-mn017|and um|F
-me018|uhhuh.|B
-mn017|i don't know.|S
-mn017|i i would estimate maybe four hours per meeting.|S
-mn017|something like that.|S
-me018|four hours per meeting.|S
-mn017|right.|S
-me018|wow!|S
-me013|yeah but if you so if you do half a dozen meetings that's that's about a day.|S
-me013|we also have more machines now.|S
-mn017|right right so that's why i'm saying i'm not sure how they would scale with more machines.|S
-me013|well|D
-me013|yeah.|B
-me013|yeah.|B
-me013|i mean if we had about six a six hour test set's not bad.|S
-me013|right?|Q
-mn017|right.|S
-me018|six hour test set.|S
-me018|six meetings okay.|S
-me013|you know?|Q
-me013|right?|Q
-me013|i mean a lot of the evaluations have been|D
-mn014|yeah we did.|S
-mn017|we have m r|D
-mn017|two we have two three four|D
-mn017|i think there are four meeting recorder meetings that we worked with.|S
-me013|four that you worked with?|Q
-mn014|i think it's|D
-mn014|is it the same set as the alignments?|Q
-mn017|yeah.|S
-mn014|i think it's five meeting recorder meetings.|S
-mn017|five?|Q
-mn017|okay.|S
-me013|that would be okay too.|S
-me013|i mean i'm|D
-me013|so if they have a set that they worked with|D
-me013|and you you got|D
-me013|did you do similarly in performance between them and the other meetings?|Q
-me013|or was it|D
-mn017|uh with the compared to robustness?|Q
-mn017|yeah.|S
-mn017|the big variation is by whether it's a native speaker or not.|S
-me013|yeah.|B
-mn017|and whether it's um|D
-mn017|uh i think that's the actually|D
-mn017|and and of course what um you know whether it's lapel or uh headset microphone.|S
-me013|and overlap or not.|S
-mn017|yeah.|S
-me013|yeah.|B
-me013|so maybe just with the the the meeting recorder set of the that you did before.|S
-mn017|and we can exclude we don't need to recognize the non natives.|S
-mn017|because we know that|D
-mn017|i mean in fact we excluded them previously from|D
-me013|yeah so we want to do the same same thing.|S
-mn017|right.|S
-me018|okay so all right so if we got a list of the uh segmentations for these five meeting recorder meetings we could start uh the first two experiments going right away using the short male models.|S
-mn017|uhhuh.|B
-me018|so you could get those going while dave is um creating waveforms for the re training the short male models.|S
-me013|yeah once we know which segmentations we're using.|S
-me013|yeah.|B
-me018|right okay okay.|S
-me018|and then|D
-me018|okay so do we also want to run that bottom experiment without re training the short male models on his thing?|S
-me018|did you want that?|Q
-me018|or|D
-me013|um i i agree that that would be an interesting thing to do.|S
-me013|but i sort of regard it as secondary.|S
-me018|okay so we'll save that.|S
-me013|so if there's sort of machines sitting around and people sitting around and they're waiting for other things to finish then sure.|S
-me013|but|F
-me013|uh chuck had been asking about that earlier as kind of a control to know um|D
-me013|because i mean you could imagine a fantasy in which you said that dave's processing made the uh far microphone like the near microphone.|S
-me013|in which case you shouldn't have to actually re train.|S
-mn017|uhhuh.|B
-me013|but it's it's not really true.|S
-me013|it's it's sort of fantasy.|S
-me013|it does it does muck up the data in in some funny ways.|S
-mn017|uhhuh.|B
-me013|and so|F
-me013|i'm i'm kind of questioning that.|S
-me018|well it|D
-me013|but but|F
-me018|well on a more basic level also it means that that third experiment there are actually two differences between the other experiments.|S
-me018|not one.|S
-me013|right.|S
-me018|so it's hard to know|D
-me013|it involves re training and it involves a|D
-me018|right.|S
-me013|uh that's right.|S
-me013|i mean the other thing which which it might come in to is if there was some problem in the re training.|S
-me013|i mean maybe you'd just have some mechanical thing we do wrong.|S
-me018|uhhuh.|B
-me013|uh that uh since dave's experience was that it didn't help as much if you didn't re train but it does help some that we would hopefully see that.|S
-me018|right.|B
-me018|uhhuh.|B
-me013|so that that's that's true.|S
-mn017|wait did|D
-mn017|so when you used original the original models and you just process the test set in this way do you get any do you get decent performance or not?|Q
-me026|i i i think um for the far mike h t k system i was using it did help somewhat.|S
-mn017|uhhuh.|B
-me026|i could re check that.|S
-me026|but it was such a bad baseline that i don't know what that means.|S
-mn017|uhhuh.|B
-mn017|right.|S
-mn017|right.|S
-mn017|okay.|S
-me026|because the baseline word error rate was around forty percent on digits.|S
-mn017|uhhuh.|B
-me018|on the far field?|Q
-me026|right.|S
-me013|right so|F
-mn017|okay well i'll i can get started on the|D
-mn017|well the first the one that already has a|D
-mn017|cross there.|S
-mn017|we need to re do that with small models.|S
-mn017|right?|Q
-me013|yeah.|S
-mn017|and then have to ask um i guess don to uh cut the um cut the segments for the for the distant mike.|S
-mn017|uh uh that's so we would be using the same channel for each for everything?|Q
-me013|yeah.|S
-me018|uhhuh.|S
-mn017|okay.|S
-mn017|so|F
-me013|i mean do you do you have to rely on his segmentations at all to do the top one?|Q
-mn017|no no we would use the same segmentations.|S
-mn017|but he needs to extract extract the form segments from a different channel.|S
-me013|oh okay.|S
-me013|got it.|S
-mn017|right.|S
-me018|so when you said you were going to start that top one were you going to use the new segmentations?|Q
-mn017|uhhuh.|B
-mn017|um yeah.|S
-me018|okay.|S
-mn017|if assuming that the performance turns out to be comparable with with the old experiments and the old segmentations.|S
-me018|right okay.|S
-mn017|now there's the issue of|D
-mn017|oh okay so there's the issue of speaker normalization.|S
-mn017|so with the distant microphone you wouldn't know which speaker is talking.|S
-mn017|right?|Q
-me018|can we|D
-me013|we we talked about this before.|S
-me013|i think what we were saying was that um the very fact that in both cases we're ignoring the overlap section means that um uh we're to some extent finessing that.|S
-me013|so um|F
-me013|i think for the purposes of just determining whether a far field microphone uh what the effect of the far field microphone is we should do the same to both.|S
-mn017|uhhuh.|B
-mn017|i see so you want to cheat?|S
-me013|i mean|D
-me013|we want to incorporate certain data that would not be available during final tests uh under a a full fair test of it much as we are in the all the numbers that we have so far.|S
-mn017|okay so we assume we assume knowledge of the speakers as as um in a way that's compatible with the close talking test set.|S
-mn014|oops!|S
-me013|yeah.|S
-me013|we we simply want to determine what's the difference in performance due to being distant versus close.|S
-mn017|okay.|S
-mn017|oh okay.|S
-me018|so does that mean you turn off speaker normalization when you run it or you just let it do what it would do|D
-mn017|no it means no it just means|D
-mn017|you you group together the segments that by magic you know belong to one speaker.|S
-mn017|and and treat|D
-me013|i mean to a lesser extent you had that same magic the other way too.|S
-me013|because you have leakage into other microphones.|S
-me013|right?|Q
-me013|but it's just you're using the fact that this is where this person is.|S
-mn017|right.|S
-mn017|right.|S
-me013|right?|Q
-me013|so|F
-mn017|but um|F
-me013|it's just easier to do.|S
-mn017|well in the new test actually that's not true.|S
-mn017|so again if this if these new segmentations work okay then we then it's a fair it's a completely fair test.|S
-me013|yeah.|B
-me013|so how do you determine what you use to group together to be a a|D
-mn017|you group together all the data coming in through one channel.|S
-mn017|and where thilo's speech detector has has determined that there is speech.|S
-mn017|and that speech is is deemed to come from that speaker whether that's true or not.|S
-mn017|so if you get some cross talk from another microphone then you just process this it as if it were from that speaker.|S
-me013|the only other alternative would be to turn off speaker adaptation in both.|S
-mn017|well that's more of a problem.|S
-mn017|i mean because it's you can just pretend it's some kind of|D
-mn017|i mean you can pretend it's all from one speaker.|S
-mn017|and do all this processing the same.|S
-mn017|but then you're going to get results that are worse on account of not doing proper speaker normalization.|S
-me013|uhhuh.|B
-mn017|and you're going to have|D
-mn017|so you could certainly do better than that by doing for instance uh cluster the segments.|S
-mn017|which is what we do say in a broadcast news system where you don't have speaker labels.|S
-mn017|but that would be another processing step that i'm i would have to debug first and so forth.|S
-me018|uhhuh.|B
-mn017|and so we want to avoid that.|S
-mn017|so i agree with you we should we should uh do the you know this sort of cheating experiment.|S
-me013|okay.|S
-me013|yeah and so that will tell us what the difference it between the mikes.|S
-me013|and then uh in order to|D
-me013|the the other difference that we'd have to take care of is that|D
-me013|uh yeah we we don't have a mike that uh is particular to a person.|S
-me013|and so we'll have to do some clustering.|S
-me013|and that'll be another another uh issue too.|S
-mn017|uhhuh.|B
-me013|but it it i could be wrong.|S
-me013|but it seems to me that that the speaker|D
-me013|the the level of degradation that you get from having the distant mike in a normal acoustic is much greater than what you get from say not applying speaker adaptation or applying speaker adaptation.|S
-mn017|uhhuh.|B
-me013|i think that the|D
-me013|i mean we'll see.|S
-me013|but but i think that the kind of gains that we've seen from speaker adaptation on hub five sort of things are like a few percent.|S
-me013|right?|Q
-me013|and|F
-mn017|it's not just speaker adaptation.|S
-mn017|it's the whole feature normalization process.|S
-mn017|it's uh all that is speaker based.|S
-mn017|you know so we|D
-mn017|so in that i'm|D
-mn017|um|F
-mn017|you know the most important of course is the cepstral mean subtraction.|S
-me013|yeah.|S
-mn017|and that|D
-mn017|i don't know if we|D
-mn017|we never really|D
-mn017|i don't remember|D
-mn017|because it's so far so long ago that we didn't do that on a per speaker basis.|S
-me013|it doesn't make that much difference i think.|S
-mn017|but|D
-me013|i would doubt that it would be a huge amount of difference for that.|S
-me013|so i mean i i think that that difference would definitely be marginal.|S
-me013|i think the main thing is to do something.|S
-me013|to do some cepstral mean subtraction on some level.|S
-me013|and uh so what's different about this processing is just that we're doing it at a much longer time scale.|S
-me018|uhhuh.|B
-mn017|uhhuh.|B
-me013|right?|Q
-me013|but um|F
-mn017|and by the way|F
-me026|what|D
-mn017|it's actually we're we're already if we use the same segmentations that we use for the close talking microphone then the segmentations assume that we have access to all channels.|S
-mn017|and cross correlate them.|S
-me013|that's right.|S
-mn017|so there's no point in not using that knowledge for speaker identification.|S
-me013|yeah.|S
-me018|uhhuh.|S
-me026|uh i think also for the log spectral mean subtraction uh we want to know which speaker's talking when.|S
-me013|yeah.|B
-me026|because we want to chain together the audio from one particular speaker to calculate the mean.|S
-mn017|yeah.|B
-me026|and subtract it.|S
-me026|and we don't|D
-mn017|right.|S
-me013|right.|S
-mn017|okay.|B
-me013|um yeah i guess.|S
-me013|but um|F
-me013|i also think that again once we got into it that um using some kind of clustering would probably work reasonably well there too.|S
-me013|certainly for the the two microphone case|D
-me013|which we're not going to mess with because it's another whole deal with the low quality microphones.|S
-me013|um|F
-me013|we ought to be able to at least tell that it appears that things are coming from a particular direction.|S
-me026|uhhuh.|B
-me013|so we ought to be able to use that information um as well.|S
-me013|but i think we might be able to do not too bad a job of separating out uh segments that appear to come from a single speaker.|S
-me013|both in terms of acoustic similarity and in terms of direction.|S
-me013|so i mean but that's another research thing to do.|S
-me013|and probably won't get done the next week.|S
-mn017|right so what what is the schedule here?|Q
-me013|well i mean i'm i'm leaving for for the uh the new orleans meeting uh next saturday.|S
-me013|and and um|F
-mn017|uhhuh.|B
-me013|it'd be kind of nice to have some results at least a day or two before that so that i could figure out what i wanted to say about it.|S
-mn017|uhhuh.|B
-mn017|oh we'll call you when you get there.|S
-me018|you'll have email?|Q
-me018|right?|Q
-me013|yeah.|S
-me013|uh not to mention that that uh mari's putting together this report next week too you know.|S
-mn017|uhhuh.|B
-me013|so uh|F
-me013|what we were hoping was that over the weekend we could do uh the um calculation on the training set.|S
-mn017|uhhuh.|B
-me013|and uh|F
-me013|uh maybe you know we could by the end of the weekend we could have the top one.|S
-me013|and and then early next week do these.|S
-mn017|uhhuh.|B
-me013|if we had enough machines maybe do them in parallel.|S
-mn017|uhhuh.|B
-me013|so that by the middle of the week we had had some kind of result.|S
-me013|i mean it's it's one of these hail mary kinds of things.|S
-me013|i mean it|D
-me013|it uh might might not work out.|S
-mn017|uhhuh.|B
-me013|but uh figured i may as well ask for it.|S
-mn017|okay.|B
-mn017|i'll ask|D
-me018|so|F
-mn017|the other thing is um|D
-mn017|and i'll ask don which is easier to process in terms of creating these.|S
-mn017|the the test data for the far far microphone.|S
-mn017|if if it turns out that for some reason it's easier for him to use the old um the the the old|D
-mn017|uh|F
-me018|segmentation.|S
-mn017|segmentations then we'll just use that i figure.|S
-me013|right.|S
-mn017|um|F
-me018|so um|F
-me018|i don't want you to have to be burdened with doing a lot of stuff.|S
-me018|what what can i do to|D
-me018|you said it would be easy for you to do that top one there.|S
-me018|and i guess don can do the segmentations of the uh channel f.|S
-mn017|uhhuh.|S
-mn017|um|F
-me018|i mean i can certainly help with uh re training the short male models.|S
-mn017|right.|S
-me018|uh once we have the new data.|S
-me013|you have models of short males?|Q
-mn017|yeah.|S
-mn017|um right uh let's see the the|F
-mn017|you you can i mean you could you could you could run the|D
-mn017|um|F
-mn017|you basically once the um the top the top one's done you could easily re run the whole set of experiments.|S
-me018|the top one is done i|D
-me018|i can re do the next one.|S
-me018|yeah.|S
-me018|uhhuh.|B
-mn017|uh i mean manage the jobs and so forth.|S
-me018|yeah sure.|S
-mn017|uh um|F
-me018|yeah the the bottom one would just be a matter of pointing it at a new set of files and kicking it off.|S
-mn017|that's all|D
-me018|so that would be|D
-me018|i mean not the bottom one.|S
-me018|but the middle one|D
-mn017|uhhuh.|B
-me018|would be really easy once you've got the top one going.|S
-mn017|yeah.|B
-me018|i could do that.|S
-mn017|right.|S
-me018|okay so i guess i just need to get don to uh|D
-mn017|right so somehow the|D
-mn017|assuming he uses the new naming scheme then he should call the waveforms|D
-mn017|the so the waveform names have the you know meeting meeting i d.|S
-mn017|and the microphone.|S
-mn017|and the um|D
-mn017|i guess the channel and the microphone and the speaker um speaker|D
-mn017|something that identifies the speaker.|S
-me018|uhhuh.|B
-mn017|so|F
-me018|to keep it the same but just change them all to channel f?|Q
-mn017|exactly so uh well you still need to be able to distinguish the different speakers.|S
-mn017|that's the key point.|S
-me018|right right.|B
-mn017|because if we want to do what we just discussed|D
-mn017|so uh uh the the best the easiest way to do that would be to just take you know you make the channel be channel f.|S
-me018|yeah.|B
-mn017|but then keep the speaker names the same as they would be in the old in the close talking uh version.|S
-me018|yeah.|B
-me018|okay.|S
-me018|okay.|B
-me018|okay.|S
-me018|and so that's something that don would do.|S
-me018|right?|Q
-me018|when he creates these.|S
-mn017|right exactly.|S
-me018|okay okay.|S
-me018|so will you talk to him about that?|Q
-me018|or do you want me to talk to him?|Q
-mn017|i uh i i can talk to him.|S
-me018|okay.|S
-me018|and then the bottom one in terms of the test will be|D
-me018|uh|F
-me018|that will just be a copy of the one above it except for different models from training.|S
-me026|well we also have to mean subtract the test data.|S
-me018|uh okay.|S
-me018|so we need to run|D
-me018|okay.|S
-me018|well once we have the new uh|D
-me018|well once i do that uh second experiment we'll have the um files.|S
-me018|and i can give you those to to process.|S
-me026|okay.|S
-me026|and there's um|D
-me026|so the way this means subtraction expects to work is it expects to have um this continuous stream of audio data from a particular speaker to operate on.|S
-me026|and it goes along it with this sliding window calculating the mean using the data in the window.|S
-me026|and then subtracting that.|S
-me018|so do you create this continuous stream from the individual utterance files?|Q
-me026|i mean uh|D
-me026|that's that's how i've been doing it.|S
-me026|just by concatenating files together.|S
-mn017|uhhuh.|B
-me026|um and if these files and|D
-me026|since they're individual utterance files um long silence periods are removed.|S
-me026|which is a good thing.|S
-me026|because this method might estimate the mean badly if it had to face long silence periods.|S
-me026|but that does mean that i need as much i need twice as much disk space as the original set.|S
-me026|because i need while i'm running it because i need to create this intermediate set um of these big files.|S
-mn017|uhhuh.|B
-me018|yeah.|B
-me026|and then create the finally the mean subtracted um little files.|S
-me026|and then i can get rid of the big files.|S
-me026|but while i'm doing the processing i'll i need twice as much disk space.|S
-me018|okay i'm going to i'll check with um markham.|S
-me018|and see what happened with the the disks.|S
-me018|he went to put those on a couple of weeks ago.|S
-me018|and something|D
-me013|i think markham's out on vacation.|S
-me013|i think check with dave.|S
-me018|oh okay i'll ask david then.|S
-mn014|yeah.|B
-me013|yeah.|B
-me018|you haven't seen new disks pop up?|Q
-me018|have you?|Q
-mn014|nope.|S
-mn014|i was wondering if they were in.|S
-me018|okay.|S
-me018|yeah.|B
-mn017|well they grow them on trees now.|S
-me013|i thought they were like mushrooms.|S
-me018|well he went to put them on|D
-mn017|just you shake them and they fall down.|S
-me013|they're popping up.|S
-me018|yeah.|B
-me018|he went to put them on and then something happened.|S
-me018|and he sent around a note saying oh uh it didn't work and we'll have to schedule another time.|S
-mn014|yeah.|B
-mn014|yeah.|B
-mn014|something went wrong.|S
-me018|and then|D
-me018|didn't see|D
-mn014|nothing happened.|S
-me018|nothing happened.|S
-mn014|no yeah.|B
-me018|so|F
-me018|i'll check with david about that.|S
-me018|okay.|B
-mn017|okay.|S
-me013|yeah.|B
-me013|because we still all have the that other one going.|S
-me013|which is the uh the macrophone training.|S
-me026|right.|S
-me026|and|F
-me026|so so andreas um|D
-mn017|uhhuh.|S
-me026|in u doctor speech data s r i hub five there's this uh hub five training set.|S
-mn017|uhhuh.|B
-me026|now is that the long training set there?|Q
-mn017|uhhuh.|B
-mn017|uhhuh.|B
-mn017|that's everything yeah.|S
-me026|okay.|S
-mn017|so|D
-mn017|so i can give you a list of the short version.|S
-me026|okay i i think you already did actually.|S
-mn017|so you can|D
-mn017|oh okay.|S
-me026|okay and so say the macrophone files that are included in this short training are just a subset of the macrophone files.|S
-me026|right?|Q
-mn017|that's right.|S
-me026|okay.|S
-me026|so so um when you you did some t i digits experiments training on macrophone.|S
-mn017|yeah.|B
-me026|um|F
-me026|but that's not necessarily any less data than the s r i hub five|D
-me026|set it's not a it's not a subset of the short s r i hub five set.|S
-me026|right?|Q
-mn017|um|F
-mn017|no it is.|S
-mn017|the|D
-mn017|sorry.|S
-mn017|um can you repeat the question?|Q
-me026|uh when you trained on macrophone um to do those digits experiments did you use the entire macrophone corpus?|Q
-mn017|there it is a|D
-mn017|yeah.|B
-mn017|no only the portion that was in the hub five training set.|S
-me026|oh okay.|S
-me013|that was in the hub five small training set?|Q
-mn017|well the hub five small training set contains as much macrophone as the large training set for historical reasons.|S
-me013|yes.|S
-mn017|yeah.|B
-me026|okay.|S
-me026|so um|F
-mn017|so do you have that processed there then.|S
-mn017|right?|Q
-mn017|because you already did did didn't you already do that experiment?|Q
-me026|i i got confused.|S
-me026|because i thought i thought you were using the whole macrophone set.|S
-mn017|uhhuh.|B
-mn017|no.|S
-me026|um okay.|S
-me026|well if if if i just need to use that subset i i can get it processed.|S
-me026|i actually got i think i got into it before.|S
-me026|and then i thought i was doing the wrong thing.|S
-mn017|uhhuh.|B
-me026|and i stopped.|S
-me026|and it it shouldn't take that long to do.|S
-mn017|okay.|B
-mn017|right.|S
-me013|okay.|S
-mn017|and you need only the males.|S
-mn017|so|F
-me026|oh okay.|S
-me018|so basically dave so for you to get your processing going you need the list of the uh|D
-me018|well i guess it'll|D
-me018|you'll you'll we'll need to get the segmentations.|S
-me026|yeah.|S
-me018|figure out whether we're using the new or the old from don.|S
-mn017|uhhuh.|B
-me018|and then|D
-me018|uh|F
-me018|from that you need the from the segmentations you'll have the list of wavefiles that the short uh set is trained on.|S
-me018|and then you'll need disk space.|S
-me018|and once you've got those things then you can start your processing.|S
-me018|right?|Q
-me026|yeah.|S
-me018|okay.|S
-mn017|does this this|D
-mn017|it's sort of not very nice to use the small training set for another reason.|S
-mn017|which is that the you also are losing on again because you don't use all the data you have for one speaker.|S
-mn017|so the normalizations you compute for your training speakers will be uh crummier than they would in the large training set.|S
-mn017|so um i have to so to make it really a matching experiment i have to find|D
-mn017|uh i have to use short models that were trained on normalizations that were also only estimated on the short set.|S
-mn017|which is uh|D
-me018|do you have this uh|D
-mn017|i think so.|S
-mn017|i've i i have to check.|S
-mn017|in any case i could re train short models within a few hours actually at if i use machines at s r i.|S
-me013|i wonder about that though.|S
-mn017|uhhuh.|B
-me013|i mean because all we're doing the only reason we're using the short training set is is for speed.|S
-me013|and there we're not really making any claims about using a smaller training set.|S
-mn017|yeah.|S
-me013|so as long as we're not using any testing data from|D
-mn017|no but the thing is if if we used if we used the whole training set for normalizations then david would have to process much more data.|S
-me013|yeah.|B
-mn017|which that's a that's one bottleneck for us.|S
-mn017|right?|Q
-mn017|in terms of|D
-me013|oh you mean for for his normalizations.|S
-mn017|yeah.|S
-me013|oh oh oh i'm sorry.|S
-mn017|right.|B
-mn017|so you want to do the exact same thing.|S
-me013|right.|S
-mn017|or else you'll have apples and oranges.|S
-me013|yeah.|B
-mn017|so|F
-mn017|it doesn't make i don't think it makes that much of a difference.|S
-mn017|it's just this little detail that if you can take care of that then you should.|S
-me013|uhhuh.|B
-mn017|i i think i have i have the models.|S
-mn017|i have i have|D
-mn017|um|F
-mn017|let's see um|D
-mn017|yeah and if not i can re train those models very quickly.|S
-me018|oh there's there's one other issue.|S
-me018|uh and that is that dave throws out speakers that have less than twelve seconds of training data.|S
-me018|and he said there were a few in the macrophone set like that.|S
-me018|so do we need to wait to find out who he's going to throw out?|Q
-me018|so that we create a new set of short models that don't include those speakers.|S
-mn017|uh|F
-me013|say this again.|S
-me013|sorry i missed it.|S
-me018|so in the problem is that if we proceed like we just described um when he goes to um create the new training data with his processing he throws out some speakers.|S
-me018|so the two training sets won't be identical.|S
-mn017|yeah.|B
-me013|he throws out some speakers that are that are very small.|S
-me018|yeah have just a little bit.|S
-mn017|yeah i don't think it'll make a matter.|S
-me013|yeah i think there was only a few|D
-me018|okay.|S
-me013|we thought to be the case.|S
-mn017|in fact i thought about throwing those out too.|S
-mn017|because when i heard how little speech there was for some of them i thought they can only hurt your models.|S
-mn017|because they're again their normalizations will be all all all over the map.|S
-me018|yeah.|B
-me013|right.|B
-mn017|and you won't get very very clean models from them anyhow.|S
-mn017|so|F
-me018|so you think it's okay then?|Q
-mn017|yeah.|S
-mn017|in fact if if you want to do this uh to speed things up um you we can leave out the macrophone data altogether.|S
-mn017|that hurt|D
-mn017|actually|D
-mn017|oh no sorry.|S
-mn017|not in the short.|S
-mn017|then you have too little data.|S
-mn017|okay.|S
-mn017|sorry forget that.|S
-mn017|um|F
-mn017|when you use when you go to the large training set then leaving out macrophone actually sometimes helps you.|S
-mn017|because it's it's just not relevant to the to the meeting and or to conversational speech anyway.|S
-me018|it's read.|S
-mn017|okay.|S
-mn017|yeah leave it out.|S
-mn017|and um in the event that i re train the short models|D
-mn017|um why don't you give me a list of the files that you throw out?|Q
-mn017|and i i'll throw them out too.|S
-me026|right.|S
-mn017|and then we have complete completely identical training conditions.|S
-me018|we|D
-me018|right.|S
-me018|actually you should be able to figure out dave.|S
-me018|right?|Q
-me018|once you know the segmentations uh who you're going to which speakers will get left out even before you run your processing.|S
-me026|uhhuh.|B
-me018|right?|Q
-me026|the segmentations?|Q
-me018|yeah the segmentations from don.|S
-mn017|but the segmentations are only they only affect the test set.|S
-me018|once we|D
-me026|oh.|S
-mn017|we're talking about the training speakers.|S
-me018|uh right right right right right.|S
-me013|no the training set he could go through right now and see how how long the|D
-mn017|right.|S
-me018|right but i'm just wondering how long it will take to get that information.|S
-me026|um|F
-mn017|he already has the you already have the information.|S
-me026|i i have i have it for for macrophone um already i think.|S
-mn017|right?|Q
-me026|and um i think by tomorrow i'll have it for for the rest.|S
-mn017|uhhuh.|B
-mn017|okay all right.|S
-me018|okay.|S
-mn017|okay.|B
-me013|at that one maybe.|S
-me013|uh|F
-me013|been looking at synthesizers?|Q
-mn014|synthesizers?|Q
-me013|you were looking at festival.|S
-mn014|yeah yeah i was doing something for the smartkom data collectioners.|S
-me013|yeah.|B
-mn014|robert has taken his laptop back to germany so we needed a new synthesis machine.|S
-mn014|and we have now a sun workstation in the library which does the synthesis.|S
-mn014|and the festival speech system is running on|D
-me018|sorry robert did what?|S
-me018|robert took what?|Q
-mn014|his laptop where uh which we used for the smartkom data collection for the synthesis.|S
-me018|uhhuh.|B
-mn014|and so he took it to germany.|S
-mn014|and so we couldn't do any data collection.|S
-me018|oh.|B
-me018|is he gone now?|Q
-mn014|uh|F
-mn014|no he's just gone to a smartkom workshop.|S
-me018|oh oh oh oh okay.|S
-mn014|and so we have now the sun in the library which can do that.|S
-me018|uhhuh.|B
-mn014|and i looked into the f zero thing and talked to to liz.|S
-mn014|and it seems that it's quite what she wants.|S
-mn014|but we'll have to think about the the energy thing.|S
-mn014|uh what we want to do.|S
-me013|right.|B
-me013|this was a business about uh um coming up with something that that was purely prosodic.|S
-mn017|uhhuh.|B
-me013|and so uh we're just going to use a pitch detector.|S
-me013|drive a synthesizer.|S
-me013|and since it doesn't have a hook in it for uh modifying energy we'll have a little box at the output that'll modify the energy.|S
-me013|so|F
-mn017|uhhuh.|B
-me018|uhhuh.|B
-mn017|okay.|S
-me013|so rrrrr rrrrm.|S
-me013|something like that.|S
-me018|are you are you interfacing to that thing with the c plus plus routines?|Q
-me018|or are you is there another interface that you use?|Q
-mn014|for for festival?|Q
-me018|yeah.|S
-mn014|uh you can just use it from the|D
-mn014|yeah basically from the command line.|S
-mn014|and defining the phones whatever you want to have synthesized.|S
-me018|oh.|B
-mn014|and give the f zero targets.|S
-me018|and it saves it in a|D
-mn014|and then get gives out a a waveform.|S
-mn014|and i i want to manipulate the the waveform then.|S
-me018|i see.|B
-me018|oh that's neat.|S
-mn017|uhhuh.|B
-me013|okay?|Q
-me013|digits?|Q
-me018|uh okay.|S
+me018|okay.|S|s|bk
+me013|okay so the one one thing i knew i wanted to talk about was about uh sort of last minute stuff to uh try to get some recognition results.|S|s|rt
+mn017|recognition results.|S|s|bk
+me013|yeah.|S|s|aa
+mn017|for|D|qy|bu
+me013|so uh on on on meeting data.|S|s|rt
+me013|and so i'm i'm not sure exactly what you're doing already.|S|s|s
+me013|and and there's some stuff i've talked to dave|D|s|s
+mn017|well i just started recognition on the on thilo's segments.|S|s|s
+mn017|which was|D|s|s
+mn017|but using the|D|s|s
+mn017|the close talking microphone.|S|s|bsc
+me013|okay so um|F|fg|fg
+mn017|and you wanted i know you wanted the far field data.|S|s|s
+me013|right so so we have some stuff with no overlap uh for which there would be near near field results.|S|s|aa
+mn017|uhhuh.|B|b|b
+me013|we wanted to get the far field results for that.|S|s|s
+me013|and then this this real uh long shot thing would be that we'd apply dave's processing to uh potentially training and test data.|S|s|s
+mn017|uhhuh.|B|b|b
+me013|and do the look at the same thing.|S|s|s
+me013|and in talking this morning with uh chuck and with dave one thought was to use|D|s|s
+me013|we couldn't remember how different the numbers were.|S|s|s
+me013|but if you just worked with males only and used the short training there're there're|D|s|s
+me013|uh i think chuck's recollection was that when he was doing the feature stuff it took maybe a day and a half.|S|s|s
+me013|to do the training.|S|s|e
+mn017|to re train?|Q|qy|bu
+me013|yeah.|S|s|aa
+mn017|uh|F|h|h
+mn017|yeah.|S|s|bk
+mn017|um|F|fh|fh
+mn017|that's about right.|S|s|ba
+mn017|actually it should probably be|D|s|s
+mn017|it depends on who else is using machines.|S|s|s
+mn017|but we have more machines now.|S|s|s
+mn017|so|F|fh|fh
+me018|that's true.|S|s|aa
+mn017|it's more like a day probably.|S|s|s
+me013|um how much worse is the short training set than the large one in terms of the ultimate performance?|Q|fg|fg
+mn017|huh it's like something like three three percent.|S|s|s
+mn017|three or four percent absolute.|S|s|s
+me013|yep.|S|s|aa
+me013|so it's that should be fine for this i would think.|S|s|s
+me013|so we and you have the short you have short training results for the close case?|Q|qy|bu
+mn017|um not for meetings.|S|h|h
+mn017|because we didn't train we didn't ever recognize with the with the small models on meeting data.|S|s|df
+mn017|but i i have the models.|S|s|s
+mn017|so i could run|D|s|s
+me013|so how do you know it's|D|qw|qw
+me013|oh it's three percent on on uh on hub five.|S|s|s
+mn017|on|D|%|%
+me018|hub five.|S|s|r
+me013|i see.|S|s|bk
+me013|yeah but we have the models so we could get that number.|S|fg|fg
+me013|and|F|fh|fh
+me013|so the question is what|D|qw|qw
+mn017|i mean the the huh|D|s|s
+mn017|the recognition also takes non negligible amount of time.|S|s|df
+mn017|so we might want to restrict it to maybe a few meetings.|S|s|cs
+mn017|if you want to do a full comparison.|S|s|s
+me013|it has to be enough so that|D|s|s
+mn017|uh|F|fh|fh
+me013|i mean it's the non overlap only.|S|s|s
+me013|um and|F|fh|fh
+me013|it has to be enough to be sort of comparable to what you folks were seeing and what you reported already.|S|s|s
+mn017|huh.|B|b|b
+me013|i mean|D|s|s
+mn017|well do we have the do we have the processed data?|Q|qr|qr
+mn017|that that's also|D|s|s
+me013|no he has to create that.|S|s|ar
+me013|but but but so|F|fg|fg
+mn017|right.|S|s|bk
+me013|um|F|fh|fh
+me013|we have a whole parallel set of things over here which are all with digits.|S|s|s
+mn017|huh.|B|b|b
+mn017|i see.|B|b|b
+me013|and and and dave has been working with that and there's all of those issues.|S|s|s
+me013|but i know that if i go in with something that's not just digits it would be good.|S|s|s
+me013|and um so|F|fh|fh
+me013|we already have these results that you|D|s|s
+me013|i mean on uh a a a particular test set that you that we reported at h l t.|S|s|s
+mn017|uhhuh.|B|b|b
+mn017|right.|B|b|b
+me013|um it'd be nice to have something more than that.|S|s|cs
+me013|and we had talked about was having distant|D|s|s
+me013|um and then|F|fh|fh
+me013|uh if we could on top of that|D|s|cs
+me013|i mean so this is going to be a lot worse.|S|s|s
+me013|right?|Q|qy|d
+me013|whatever comparison we one would presume.|S|s|e
+mn017|uhhuh.|B|b|b
+me013|but we don't know how much worse|D|s|s
+mn017|right.|S|s|aa
+me013|uh which is certainly one interesting thing.|S|s|ba
+me013|and then um|F|fh|fh
+me013|dave|D|%|%
+me013|i think we figured that it'd probably take a day or two to compute the the|D|s|s
+me013|uh uh|F|fh|fh
+me013|well how many hours of training|D|fh|fh
+mn017|actually i did re train|D|s|s
+mn017|i recently re trained um for another reason on the full training set.|S|s|df
+mn017|and that took only i think it took only two days.|S|s|df
+me013|yeah.|B|b|b
+mn017|so it's actually conceivable to do use the full training set.|S|s|s
+me013|yeah but we also have to do this other processing so having a smaller training set.|S|s|aap
+me013|if it's only a few percent difference it might be be worth doing it.|S|s|s
+mn017|oh i see.|S|s|bk
+me013|how big is the small training set?|Q|qw|qw
+me013|do you remember?|Q|qy|qy
+mn017|huh uh hhh.|B|b|b
+mn017|i don't know.|S|s|no
+mn017|something something like something between thirty and fifty hours maybe.|S|s|s
+mn017|i i forget the|D|s|s
+me013|it's around there.|S|s|s
+me013|and and and male is roughly half of that?|Q|qy|bu
+mn017|right.|S|s|aa
+me013|or|D|qrr|g
+me018|well that's only male.|S|s|s
+me013|or or or was that only male?|Q|qrr|qrr
+mn017|uh actually i don't know.|S|h|h
+mn017|i i can look it up.|S|s|s
+mn017|it's it's it's just|D|s|s
+mn017|uh i don't know the remember the the number.|S|s|s
+me018|we could only just do the male only.|S|s|cs
+me013|okay.|S|s|bk
+me018|right?|Q|qy|d
+me018|or will we run into trouble when we|D|qrr|bu
+mn017|well the males account for most of this meeting data anyhow.|S|s|s
+me018|yeah.|S|s|bk
+mn017|so|F|fh|fh
+mn017|yeah i would say we you do only males.|S|s|aa
+me013|yeah.|S|s|bk
+me013|so|F|fg|fg
+me013|yeah so that's certainly part of the issue is that right now he's he hasn't written his stuff for efficiency.|S|s|s
+me013|yeah it's it's in matlab.|S|fh|fh
+me013|and so on.|S|s|s
+me013|and and uh it's not an impossible amount of time.|S|s|s
+mn017|uhhuh.|B|b|b
+me013|we we were guesstimating it was like one and a half times faster than real time or something.|S|s|rt
+me013|so if there's thirty hours of data you can calculate that he can do uh the enhancement in a day.|S|s|s
+me013|and something.|S|s|s
+mn017|uhhuh.|B|b|b
+me013|so|F|fh|fh
+me013|but if we were dealing with two hundred hours or something i think it'd be prohibitive.|S|s|s
+mn017|no it's definitely it's less than a hundred hours for sure.|S|s|s
+mn017|it's|D|s|s
+me013|yeah.|B|b|b
+mn017|it's probably actually uh it's uh i think it's around thirty hours.|S|s|s
+mn017|just for for one gender.|S|s|s
+me018|that's what i was thinking.|S|s|s
+me013|yeah.|B|b|b
+mn017|yeah.|B|b|b
+me018|yeah.|B|b|b
+me013|yeah so i mean it's a bit of a push.|S|fg|fg
+me013|but it seems like|D|s|s
+me013|okay we've got some models.|S|s|s
+me013|we've got some training data we have software that works he's got a method that helps with you know other another task.|S|s|s
+me013|um|F|fh|fh
+me013|it you know appears to be you know debugged.|S|s|s
+mn017|uhhuh.|B|b|b
+me013|um|F|fh|fh
+me018|so so one thing i was wondering is did you already do that middle one or should we re do that one too?|Q|qr|qr
+mn017|no i didn't do that.|S|s|ar
+mn017|because we haven't even cut the waveforms for that.|S|s|df
+me018|you didn't do that okay.|S|s|bk
+me018|yeah that's what i was going to say next.|S|s|aa
+mn017|so|F|fh|fh
+me018|we have to cut the uh|D|s|s
+mn017|right.|B|b|b
+mn017|so|F|fh|fh
+me018|so is morgan is the plan to just pick one of the far field mikes?|Q|qy|qy
+me018|uh|F|fh|fh
+mn017|and there's a bit of a question whether you want to use um what segmentations you want to use.|S|s|s
+me013|yes.|S|s|aa
+mn017|uh|F|fh|fh
+mn017|uh david just|D|s|s
+mn017|um i'm sorry.|S|s|fa
+mn017|don just uh created a new version of the first meetings that we had previously recognized.|S|s|s
+mn017|but with different segmentation.|S|s|s
+mn017|and so um|F|fh|fh
+mn017|it would be nice|D|s|cs
+mn017|i mean if the results are comparable to what we had before|D|s|df
+mn017|to use those segmentations.|S|s|cs
+mn017|because then we could claim that everything's automatic.|S|s|df
+me018|do you know when he'll have the the comparison?|Q|qy|rt
+mn017|right?|Q|qy|d
+mn017|well i'm as i said i just started the recognizer um|D|s|s
+mn017|it will uh it will probably be a couple hours before before i have some results.|S|s|s
+me013|oh well that's not bad.|S|s|bk
+me018|oh okay.|S|s|bk
+mn017|so|F|fh|fh
+me018|so because i don't think the new data will be ready uh for a couple days probably.|S|s|s
+me013|you mean the training.|S|s|bu
+me018|so|F|fh|fh
+me018|the training.|S|s|m
+mn017|but the segmentations matter for the filtering.|S|s|bu
+me013|yeah.|B|b|b
+mn017|right?|Q|qy|d
+mn017|because|D|%|%
+me013|for the test.|S|s|aap
+mn017|for the test set yeah.|S|s|bk
+mn017|so|F|fh|fh
+me013|yeah|D|s|aa
+me018|yeah.|S|s|aa
+mn017|need to be|D|s|s
+mn017|but first first of course you would want to process the training data.|S|s|cs
+mn017|because we want to get that started.|S|s|cs
+me013|right.|S|s|aa
+mn017|yeah.|B|b|b
+me013|yeah.|B|b|b
+me013|i mean it it'd be really great if it was all automatic but i think that you know given the pressure of time if|D|fg|fg
+me013|i mean since you're going to find out in a short amount of time that's great.|S|s|s
+mn017|uhhuh.|B|b|b
+me013|but if if it doesn't work out i think we would rather charge ahead with the older segmentations.|S|s|cs
+mn017|uhhuh.|B|b|b
+mn017|right.|S|s|bk
+me013|and um|F|fh|fh
+me013|and we were going to use one of the p z m's.|S|s|s
+me013|i i don't know what|D|s|no
+me013|probably whatever one you've been using for for for the digits.|S|s|cs
+me018|i think it's that one.|S|s|s
+me018|right?|Q|qy|d
+me013|is it this one?|Q|qy|rt
+me026|it's f.|S|s|s
+me018|f.|S|s|s
+me018|yeah that's it.|S|s|aa
+me013|i i'd which|D|s|s
+me013|that's f?|Q|qy|bu
+me013|how do you know?|Q|qw|rt
+me018|that's f.|S|s|m
+me018|it's the second nearest the machine room.|S|s|s
+me013|oh.|S|s|bk
+me013|bien sur|D|s|ft
+me013|all right so|F|fg|fg
+me013|bet they'll have fun with that one.|S|s|s
+me013|okay so.|F|fh|fh
+me013|uh|F|fh|fh
+me018|okay so uh i just want to make sure i understand what we need to run.|S|fg|fg
+me018|um|F|fh|fh
+me018|let's see.|S|s|t1
+me018|so it's|D|s|s
+me018|okay so if we're talking about|D|s|s
+me018|let's let's assume that we're going to use the new segmentations.|S|s|co
+me018|we need to um run recognition just looking at the no overlap column.|S|s|s
+me018|basically we have to do recognitions for all three of those cases.|S|s|bu
+me018|right?|Q|qy|d
+me013|uhhuh.|B|b|b
+me013|right.|S|s|aa
+me018|um because we're going to be using the just the male uh model.|S|s|df
+me018|short training set for the male.|S|s|s
+mn017|uhhuh.|B|b|b
+me018|so we need to have results for all three of those.|S|s|cs
+me018|even though we have|D|s|s
+mn017|maybe you should limit ourselves to the meeting recorder meetings.|S|s|arp
+me018|okay.|S|s|bk
+mn017|um|F|fh|fh
+mn017|if you were going to cut down on the test set i would suggest that.|S|s|cs
+me013|well maybe.|S|h|h
+me013|but i i mean how long does it take for the test?|Q|qw|qw
+mn017|actually the longer the robustness meetings take longer.|S|s|s
+mn017|because there's this one speaker who talks a lot.|S|s|rt
+mn017|and so|F|fh|fh
+mn017|the um|D|%|%
+mn017|no it's because for all the for the adaptation and normalization steps you cannot|D|s|df
+mn017|you have to you have to uh um|D|s|s
+mn017|you cannot chop it up into small pieces.|S|s|s
+mn017|so you're sort of limited by how long the longest speaker uh is speaking.|S|s|s
+mn017|so how much data there is from the the speaker who talks the most.|S|s|s
+mn017|so um you parallelize across different speakers.|S|s|s
+me018|uhhuh.|B|b|b
+mn017|but you know if you have a bunch of speakers who speak very little and then one who who speaks a lot then effectively everybody waits for the longest one to process.|S|s|s
+me013|right.|B|b|b
+me018|right.|B|b|b
+me018|yeah.|B|b|b
+me013|but what what was your result for uh that we had at the h l t?|Q|qw|qw
+mn017|so|F|fh|fh
+me013|was that a combination of me?|Q|qy|e
+mn017|that was both types of meetings.|S|s|s
+mn017|but most but there were only two robustness meetings and four or five uh meeting recorders.|S|s|s
+me018|and if we're re doing the baseline anyways it it it would be okay.|S|s|bu
+mn017|right.|S|s|aa
+me018|to to just limit ourselves to a smaller|D|s|e
+me018|how long would it take to run recognition if we did that?|Q|qw|qw
+mn017|oh.|F|h|h
+mn017|uh i i|F|h|h
+mn017|i don't have i don't have a good|D|s|no
+me018|i mean is is it like a day or is it a few hours or|D|qo|qo
+me018|roughly.|S|s|e
+mn017|for everything?|Q|qy|bu
+mn017|for all the meetings?|Q|qy|bu
+me018|for|D|%|%
+me018|yeah let's say we just did the meeting recorder meetings for our test set.|S|s|aa
+mn017|uh|F|h|h
+mn017|um|F|h|h
+mn017|it's probably more than a day.|S|s|s
+mn017|but probably less than two.|S|s|s
+me018|oh really?|Q|qy|bh
+me018|i didn't realize each test took that long.|S|s|no
+mn017|well no i mean for all the meetings.|S|s|s
+mn017|because it's again it's|D|s|df
+mn017|um|F|fh|fh
+me013|so you were doing like|D|s|s
+mn017|so each meeting each meetings takes uh something like|D|s|s
+mn017|again we we i ran when we ran these we were sort of short on machines.|S|s|bd
+mn017|and um|F|fh|fh
+me018|uhhuh.|B|b|b
+mn017|i don't know.|S|s|df
+mn017|i i would estimate maybe four hours per meeting.|S|s|s
+mn017|something like that.|S|s|e
+me018|four hours per meeting.|S|s|bk
+mn017|right.|S|s|aa
+me018|wow!|S|s|fe
+me013|yeah but if you so if you do half a dozen meetings that's that's about a day.|S|fg|fg
+me013|we also have more machines now.|S|s|s
+mn017|right right so that's why i'm saying i'm not sure how they would scale with more machines.|S|s|aa
+me013|well|D|%|%
+me013|yeah.|B|b|b
+me013|yeah.|B|b|b
+me013|i mean if we had about six a six hour test set's not bad.|S|s|ba
+me013|right?|Q|qy|d
+mn017|right.|S|s|aa
+me018|six hour test set.|S|s|m
+me018|six meetings okay.|S|s|s
+me013|you know?|Q|qy|d
+me013|right?|Q|qy|d
+me013|i mean a lot of the evaluations have been|D|s|s
+mn014|yeah we did.|S|s|s
+mn017|we have m r|D|s|s
+mn017|two we have two three four|D|s|t1
+mn017|i think there are four meeting recorder meetings that we worked with.|S|s|s
+me013|four that you worked with?|Q|qy|bu
+mn014|i think it's|D|s|s
+mn014|is it the same set as the alignments?|Q|qy|qy
+mn017|yeah.|S|s|aa
+mn014|i think it's five meeting recorder meetings.|S|s|s
+mn017|five?|Q|qy|bu
+mn017|okay.|S|s|bk
+me013|that would be okay too.|S|s|ba
+me013|i mean i'm|D|s|s
+me013|so if they have a set that they worked with|D|s|s
+me013|and you you got|D|%|%
+me013|did you do similarly in performance between them and the other meetings?|Q|qy|rt
+me013|or was it|D|qrr|qrr
+mn017|uh with the compared to robustness?|Q|h|h
+mn017|yeah.|S|s|aa
+mn017|the big variation is by whether it's a native speaker or not.|S|s|s
+me013|yeah.|B|b|b
+mn017|and whether it's um|D|s|s
+mn017|uh i think that's the actually|D|s|s
+mn017|and and of course what um you know whether it's lapel or uh headset microphone.|S|s|s
+me013|and overlap or not.|S|s|2
+mn017|yeah.|S|s|aa
+me013|yeah.|B|b|b
+me013|so maybe just with the the the meeting recorder set of the that you did before.|S|s|cs
+mn017|and we can exclude we don't need to recognize the non natives.|S|s|cs
+mn017|because we know that|D|s|df
+mn017|i mean in fact we excluded them previously from|D|s|s
+me013|yeah so we want to do the same same thing.|S|s|aa
+mn017|right.|S|s|aa
+me018|okay so all right so if we got a list of the uh segmentations for these five meeting recorder meetings we could start uh the first two experiments going right away using the short male models.|S|fg|fg
+mn017|uhhuh.|B|b|rt
+me018|so you could get those going while dave is um creating waveforms for the re training the short male models.|S|s|cs
+me013|yeah once we know which segmentations we're using.|S|s|aa
+me013|yeah.|B|b|b
+me018|right okay okay.|S|s|aa
+me018|and then|D|s|s
+me018|okay so do we also want to run that bottom experiment without re training the short male models on his thing?|S|s|bk
+me018|did you want that?|Q|qy|qy
+me018|or|D|qrr|qrr
+me013|um i i agree that that would be an interesting thing to do.|S|h|h
+me013|but i sort of regard it as secondary.|S|s|ng
+me018|okay so we'll save that.|S|s|bk
+me013|so if there's sort of machines sitting around and people sitting around and they're waiting for other things to finish then sure.|S|s|s
+me013|but|F|fh|fh
+me013|uh chuck had been asking about that earlier as kind of a control to know um|D|s|s
+me013|because i mean you could imagine a fantasy in which you said that dave's processing made the uh far microphone like the near microphone.|S|s|s
+me013|in which case you shouldn't have to actually re train.|S|s|s
+mn017|uhhuh.|B|b|b
+me013|but it's it's not really true.|S|s|s
+me013|it's it's sort of fantasy.|S|s|ba
+me013|it does it does muck up the data in in some funny ways.|S|s|s
+mn017|uhhuh.|B|b|b
+me013|and so|F|fh|fh
+me013|i'm i'm kind of questioning that.|S|s|s
+me018|well it|D|%|%
+me013|but but|F|fg|fg
+me018|well on a more basic level also it means that that third experiment there are actually two differences between the other experiments.|S|s|s
+me018|not one.|S|s|e
+me013|right.|S|s|aa
+me018|so it's hard to know|D|s|ba
+me013|it involves re training and it involves a|D|s|s
+me018|right.|S|s|aa
+me013|uh that's right.|S|s|na
+me013|i mean the other thing which which it might come in to is if there was some problem in the re training.|S|s|cs
+me013|i mean maybe you'd just have some mechanical thing we do wrong.|S|s|e
+me018|uhhuh.|B|b|b
+me013|uh that uh since dave's experience was that it didn't help as much if you didn't re train but it does help some that we would hopefully see that.|S|s|s
+me018|right.|B|b|b
+me018|uhhuh.|B|b|b
+me013|so that that's that's true.|S|s|aa
+mn017|wait did|D|qy|qy
+mn017|so when you used original the original models and you just process the test set in this way do you get any do you get decent performance or not?|Q|qr|qr
+me026|i i i think um for the far mike h t k system i was using it did help somewhat.|S|s|rt
+mn017|uhhuh.|B|b|b
+me026|i could re check that.|S|s|rt
+me026|but it was such a bad baseline that i don't know what that means.|S|s|s
+mn017|uhhuh.|B|b|b
+mn017|right.|S|s|bk
+mn017|right.|S|s|bk
+mn017|okay.|S|s|bk
+me026|because the baseline word error rate was around forty percent on digits.|S|s|s
+mn017|uhhuh.|B|b|b
+me018|on the far field?|Q|qy|bu
+me026|right.|S|s|aa
+me013|right so|F|fg|fg
+mn017|okay well i'll i can get started on the|D|fg|fg
+mn017|well the first the one that already has a|D|s|s
+mn017|cross there.|S|s|t1
+mn017|we need to re do that with small models.|S|s|cs
+mn017|right?|Q|qy|d
+me013|yeah.|S|s|aa
+mn017|and then have to ask um i guess don to uh cut the um cut the segments for the for the distant mike.|S|s|s
+mn017|uh uh that's so we would be using the same channel for each for everything?|Q|qy|bu
+me013|yeah.|S|s|aa
+me018|uhhuh.|S|s|aa
+mn017|okay.|S|s|bk
+mn017|so|F|fh|fh
+me013|i mean do you do you have to rely on his segmentations at all to do the top one?|Q|qy|rt
+mn017|no no we would use the same segmentations.|S|s|ar
+mn017|but he needs to extract extract the form segments from a different channel.|S|s|s
+me013|oh okay.|S|s|bk
+me013|got it.|S|s|bk
+mn017|right.|S|s|bk
+me018|so when you said you were going to start that top one were you going to use the new segmentations?|Q|qy|rt
+mn017|uhhuh.|B|b|b
+mn017|um yeah.|S|h|h
+me018|okay.|S|s|bk
+mn017|if assuming that the performance turns out to be comparable with with the old experiments and the old segmentations.|S|s|e
+me018|right okay.|S|s|bk
+mn017|now there's the issue of|D|s|s
+mn017|oh okay so there's the issue of speaker normalization.|S|fg|fg
+mn017|so with the distant microphone you wouldn't know which speaker is talking.|S|s|s
+mn017|right?|Q|qy|d
+me018|can we|D|qy|qy
+me013|we we talked about this before.|S|s|s
+me013|i think what we were saying was that um the very fact that in both cases we're ignoring the overlap section means that um uh we're to some extent finessing that.|S|s|s
+me013|so um|F|fh|fh
+me013|i think for the purposes of just determining whether a far field microphone uh what the effect of the far field microphone is we should do the same to both.|S|s|cs
+mn017|uhhuh.|B|b|b
+mn017|i see so you want to cheat?|S|s|bk
+me013|i mean|D|%|%
+me013|we want to incorporate certain data that would not be available during final tests uh under a a full fair test of it much as we are in the all the numbers that we have so far.|S|s|df
+mn017|okay so we assume we assume knowledge of the speakers as as um in a way that's compatible with the close talking test set.|S|fg|fg
+mn014|oops!|S|s|fe
+me013|yeah.|S|s|aa
+me013|we we simply want to determine what's the difference in performance due to being distant versus close.|S|s|s
+mn017|okay.|S|s|bk
+mn017|oh okay.|S|s|bk
+me018|so does that mean you turn off speaker normalization when you run it or you just let it do what it would do|D|fg|fg
+mn017|no it means no it just means|D|s|ar
+mn017|you you group together the segments that by magic you know belong to one speaker.|S|s|s
+mn017|and and treat|D|s|s
+me013|i mean to a lesser extent you had that same magic the other way too.|S|s|s
+me013|because you have leakage into other microphones.|S|s|bu
+me013|right?|Q|qy|d
+me013|but it's just you're using the fact that this is where this person is.|S|s|s
+mn017|right.|S|s|aa
+mn017|right.|S|s|aa
+me013|right?|Q|qy|d
+me013|so|F|fh|fh
+mn017|but um|F|fg|fg
+me013|it's just easier to do.|S|s|ba
+mn017|well in the new test actually that's not true.|S|s|nd
+mn017|so again if this if these new segmentations work okay then we then it's a fair it's a completely fair test.|S|fg|fg
+me013|yeah.|B|b|b
+me013|so how do you determine what you use to group together to be a a|D|qw|qw
+mn017|you group together all the data coming in through one channel.|S|s|s
+mn017|and where thilo's speech detector has has determined that there is speech.|S|s|s
+mn017|and that speech is is deemed to come from that speaker whether that's true or not.|S|s|s
+mn017|so if you get some cross talk from another microphone then you just process this it as if it were from that speaker.|S|s|s
+me013|the only other alternative would be to turn off speaker adaptation in both.|S|s|s
+mn017|well that's more of a problem.|S|s|ng
+mn017|i mean because it's you can just pretend it's some kind of|D|s|df
+mn017|i mean you can pretend it's all from one speaker.|S|s|bd
+mn017|and do all this processing the same.|S|s|bd
+mn017|but then you're going to get results that are worse on account of not doing proper speaker normalization.|S|s|df
+me013|uhhuh.|B|b|b
+mn017|and you're going to have|D|s|s
+mn017|so you could certainly do better than that by doing for instance uh cluster the segments.|S|s|cs
+mn017|which is what we do say in a broadcast news system where you don't have speaker labels.|S|s|s
+mn017|but that would be another processing step that i'm i would have to debug first and so forth.|S|s|s
+me018|uhhuh.|B|b|b
+mn017|and so we want to avoid that.|S|s|s
+mn017|so i agree with you we should we should uh do the you know this sort of cheating experiment.|S|s|s
+me013|okay.|S|s|bk
+me013|yeah and so that will tell us what the difference it between the mikes.|S|fg|fg
+me013|and then uh in order to|D|s|s
+me013|the the other difference that we'd have to take care of is that|D|s|s
+me013|uh yeah we we don't have a mike that uh is particular to a person.|S|fh|fh
+me013|and so we'll have to do some clustering.|S|s|s
+me013|and that'll be another another uh issue too.|S|s|s
+mn017|uhhuh.|B|b|b
+me013|but it it i could be wrong.|S|s|bd
+me013|but it seems to me that that the speaker|D|s|s
+me013|the the level of degradation that you get from having the distant mike in a normal acoustic is much greater than what you get from say not applying speaker adaptation or applying speaker adaptation.|S|s|s
+mn017|uhhuh.|B|b|b
+me013|i think that the|D|s|s
+me013|i mean we'll see.|S|s|s
+me013|but but i think that the kind of gains that we've seen from speaker adaptation on hub five sort of things are like a few percent.|S|s|s
+me013|right?|Q|qy|d
+me013|and|F|fh|fh
+mn017|it's not just speaker adaptation.|S|s|nd
+mn017|it's the whole feature normalization process.|S|s|s
+mn017|it's uh all that is speaker based.|S|s|s
+mn017|you know so we|D|s|s
+mn017|so in that i'm|D|s|s
+mn017|um|F|fh|fh
+mn017|you know the most important of course is the cepstral mean subtraction.|S|s|s
+me013|yeah.|S|s|aa
+mn017|and that|D|s|s
+mn017|i don't know if we|D|s|s
+mn017|we never really|D|s|s
+mn017|i don't remember|D|s|no
+mn017|because it's so far so long ago that we didn't do that on a per speaker basis.|S|s|df
+me013|it doesn't make that much difference i think.|S|s|nd
+mn017|but|D|%|%
+me013|i would doubt that it would be a huge amount of difference for that.|S|s|e
+me013|so i mean i i think that that difference would definitely be marginal.|S|s|ba
+me013|i think the main thing is to do something.|S|s|cs
+me013|to do some cepstral mean subtraction on some level.|S|s|cs
+me013|and uh so what's different about this processing is just that we're doing it at a much longer time scale.|S|fh|fh
+me018|uhhuh.|B|b|b
+mn017|uhhuh.|B|b|b
+me013|right?|Q|qy|d
+me013|but um|F|fh|fh
+mn017|and by the way|F|fg|fg
+me026|what|D|%|%
+mn017|it's actually we're we're already if we use the same segmentations that we use for the close talking microphone then the segmentations assume that we have access to all channels.|S|s|s
+mn017|and cross correlate them.|S|s|s
+me013|that's right.|S|s|aa
+mn017|so there's no point in not using that knowledge for speaker identification.|S|s|s
+me013|yeah.|S|s|bk
+me018|uhhuh.|S|s|bk
+me026|uh i think also for the log spectral mean subtraction uh we want to know which speaker's talking when.|S|s|cs
+me013|yeah.|B|b|b
+me026|because we want to chain together the audio from one particular speaker to calculate the mean.|S|s|df
+mn017|yeah.|B|b|b
+me026|and subtract it.|S|s|e
+me026|and we don't|D|s|s
+mn017|right.|S|s|aa
+me013|right.|S|s|bk
+mn017|okay.|B|b|b
+me013|um yeah i guess.|S|h|h
+me013|but um|F|fh|fh
+me013|i also think that again once we got into it that um using some kind of clustering would probably work reasonably well there too.|S|s|bd
+me013|certainly for the the two microphone case|D|s|s
+me013|which we're not going to mess with because it's another whole deal with the low quality microphones.|S|s|s
+me013|um|F|fh|fh
+me013|we ought to be able to at least tell that it appears that things are coming from a particular direction.|S|s|s
+me026|uhhuh.|B|b|b
+me013|so we ought to be able to use that information um as well.|S|s|s
+me013|but i think we might be able to do not too bad a job of separating out uh segments that appear to come from a single speaker.|S|s|cs
+me013|both in terms of acoustic similarity and in terms of direction.|S|s|e
+me013|so i mean but that's another research thing to do.|S|s|bd
+me013|and probably won't get done the next week.|S|s|bd
+mn017|right so what what is the schedule here?|Q|fg|fg
+me013|well i mean i'm i'm leaving for for the uh the new orleans meeting uh next saturday.|S|s|s
+me013|and and um|F|fh|fh
+mn017|uhhuh.|B|b|b
+me013|it'd be kind of nice to have some results at least a day or two before that so that i could figure out what i wanted to say about it.|S|s|s
+mn017|uhhuh.|B|b|b
+mn017|oh we'll call you when you get there.|S|fg|fg
+me018|you'll have email?|Q|qy|bu
+me018|right?|Q|qy|d
+me013|yeah.|S|s|aa
+me013|uh not to mention that that uh mari's putting together this report next week too you know.|S|s|s
+mn017|uhhuh.|B|b|b
+me013|so uh|F|fh|fh
+me013|what we were hoping was that over the weekend we could do uh the um calculation on the training set.|S|s|s
+mn017|uhhuh.|B|b|b
+me013|and uh|F|h|h
+me013|uh maybe you know we could by the end of the weekend we could have the top one.|S|s|cs
+me013|and and then early next week do these.|S|s|cs
+mn017|uhhuh.|B|b|b
+me013|if we had enough machines maybe do them in parallel.|S|s|s
+mn017|uhhuh.|B|b|b
+me013|so that by the middle of the week we had had some kind of result.|S|s|s
+me013|i mean it's it's one of these hail mary kinds of things.|S|s|s
+me013|i mean it|D|s|s
+me013|it uh might might not work out.|S|s|bd
+mn017|uhhuh.|B|b|b
+me013|but uh figured i may as well ask for it.|S|s|s
+mn017|okay.|B|b|b
+mn017|i'll ask|D|%|%
+me018|so|F|fh|fh
+mn017|the other thing is um|D|s|s
+mn017|and i'll ask don which is easier to process in terms of creating these.|S|s|s
+mn017|the the test data for the far far microphone.|S|s|e
+mn017|if if it turns out that for some reason it's easier for him to use the old um the the the old|D|s|s
+mn017|uh|F|fh|fh
+me018|segmentation.|S|s|2
+mn017|segmentations then we'll just use that i figure.|S|s|bk
+me013|right.|S|s|bk
+mn017|um|F|fh|fh
+me018|so um|F|fh|fh
+me018|i don't want you to have to be burdened with doing a lot of stuff.|S|s|s
+me018|what what can i do to|D|qw|qw
+me018|you said it would be easy for you to do that top one there.|S|s|rt
+me018|and i guess don can do the segmentations of the uh channel f.|S|s|rt
+mn017|uhhuh.|S|s|aa
+mn017|um|F|h|h
+me018|i mean i can certainly help with uh re training the short male models.|S|s|cs
+mn017|right.|S|s|aa
+me018|uh once we have the new data.|S|s|s
+me013|you have models of short males?|Q|qy|bu
+mn017|yeah.|S|s|bk
+mn017|um right uh let's see the the|F|fh|fh
+mn017|you you can i mean you could you could you could run the|D|s|cs
+mn017|um|F|fh|fh
+mn017|you basically once the um the top the top one's done you could easily re run the whole set of experiments.|S|s|cs
+me018|the top one is done i|D|s|2
+me018|i can re do the next one.|S|s|cs
+me018|yeah.|S|s|bk
+me018|uhhuh.|B|b|b
+mn017|uh i mean manage the jobs and so forth.|S|s|e
+me018|yeah sure.|S|s|bk
+mn017|uh um|F|fh|fh
+me018|yeah the the bottom one would just be a matter of pointing it at a new set of files and kicking it off.|S|fg|fg
+mn017|that's all|D|%|%
+me018|so that would be|D|s|ba
+me018|i mean not the bottom one.|S|s|bsc
+me018|but the middle one|D|s|bsc
+mn017|uhhuh.|B|b|b
+me018|would be really easy once you've got the top one going.|S|s|ba
+mn017|yeah.|B|b|b
+me018|i could do that.|S|s|cs
+mn017|right.|S|s|bk
+me018|okay so i guess i just need to get don to uh|D|s|bk
+mn017|right so somehow the|D|fg|fg
+mn017|assuming he uses the new naming scheme then he should call the waveforms|D|s|cs
+mn017|the so the waveform names have the you know meeting meeting i d.|S|s|s
+mn017|and the microphone.|S|s|s
+mn017|and the um|D|s|s
+mn017|i guess the channel and the microphone and the speaker um speaker|D|s|s
+mn017|something that identifies the speaker.|S|s|s
+me018|uhhuh.|B|b|b
+mn017|so|F|fh|fh
+me018|to keep it the same but just change them all to channel f?|Q|qy|bu
+mn017|exactly so uh well you still need to be able to distinguish the different speakers.|S|s|aa
+mn017|that's the key point.|S|s|s
+me018|right right.|B|b|b
+mn017|because if we want to do what we just discussed|D|s|df
+mn017|so uh uh the the best the easiest way to do that would be to just take you know you make the channel be channel f.|S|s|cs
+me018|yeah.|B|b|b
+mn017|but then keep the speaker names the same as they would be in the old in the close talking uh version.|S|s|cs
+me018|yeah.|B|b|b
+me018|okay.|S|s|bk
+me018|okay.|B|b|b
+me018|okay.|S|s|bk
+me018|and so that's something that don would do.|S|s|bu
+me018|right?|Q|qy|d
+me018|when he creates these.|S|s|e
+mn017|right exactly.|S|s|aa
+me018|okay okay.|S|s|bk
+me018|so will you talk to him about that?|Q|qy|rt
+me018|or do you want me to talk to him?|Q|qrr|qrr
+mn017|i uh i i can talk to him.|S|s|s
+me018|okay.|S|s|bk
+me018|and then the bottom one in terms of the test will be|D|s|s
+me018|uh|F|fh|fh
+me018|that will just be a copy of the one above it except for different models from training.|S|s|bu
+me026|well we also have to mean subtract the test data.|S|s|arp
+me018|uh okay.|S|s|bk
+me018|so we need to run|D|s|t1
+me018|okay.|S|s|bk
+me018|well once we have the new uh|D|s|s
+me018|well once i do that uh second experiment we'll have the um files.|S|s|s
+me018|and i can give you those to to process.|S|s|s
+me026|okay.|S|s|bk
+me026|and there's um|D|s|s
+me026|so the way this means subtraction expects to work is it expects to have um this continuous stream of audio data from a particular speaker to operate on.|S|s|s
+me026|and it goes along it with this sliding window calculating the mean using the data in the window.|S|s|s
+me026|and then subtracting that.|S|s|s
+me018|so do you create this continuous stream from the individual utterance files?|Q|qy|rt
+me026|i mean uh|D|%|%
+me026|that's that's how i've been doing it.|S|s|na
+me026|just by concatenating files together.|S|s|e
+mn017|uhhuh.|B|b|b
+me026|um and if these files and|D|s|s
+me026|since they're individual utterance files um long silence periods are removed.|S|s|s
+me026|which is a good thing.|S|s|ba
+me026|because this method might estimate the mean badly if it had to face long silence periods.|S|s|df
+me026|but that does mean that i need as much i need twice as much disk space as the original set.|S|s|s
+me026|because i need while i'm running it because i need to create this intermediate set um of these big files.|S|s|s
+mn017|uhhuh.|B|b|b
+me018|yeah.|B|b|b
+me026|and then create the finally the mean subtracted um little files.|S|s|s
+me026|and then i can get rid of the big files.|S|s|s
+me026|but while i'm doing the processing i'll i need twice as much disk space.|S|s|s
+me018|okay i'm going to i'll check with um markham.|S|s|bk
+me018|and see what happened with the the disks.|S|s|e
+me018|he went to put those on a couple of weeks ago.|S|s|s
+me018|and something|D|%|%
+me013|i think markham's out on vacation.|S|s|s
+me013|i think check with dave.|S|s|cs
+me018|oh okay i'll ask david then.|S|s|bk
+mn014|yeah.|B|b|b
+me013|yeah.|B|b|b
+me018|you haven't seen new disks pop up?|Q|qy|bu
+me018|have you?|Q|qy|g
+mn014|nope.|S|s|ar
+mn014|i was wondering if they were in.|S|s|s
+me018|okay.|S|s|bk
+me018|yeah.|B|b|b
+mn017|well they grow them on trees now.|S|s|j
+me013|i thought they were like mushrooms.|S|s|s
+me018|well he went to put them on|D|s|j
+mn017|just you shake them and they fall down.|S|s|cs
+me013|they're popping up.|S|s|s
+me018|yeah.|B|b|b
+me018|he went to put them on and then something happened.|S|s|s
+me018|and he sent around a note saying oh uh it didn't work and we'll have to schedule another time.|S|s|s
+mn014|yeah.|B|b|b
+mn014|yeah.|B|b|b
+mn014|something went wrong.|S|s|s
+me018|and then|D|%|%
+me018|didn't see|D|%|%
+mn014|nothing happened.|S|s|2
+me018|nothing happened.|S|s|m
+mn014|no yeah.|B|b|b
+me018|so|F|fh|fh
+me018|i'll check with david about that.|S|s|s
+me018|okay.|B|b|b
+mn017|okay.|S|s|bk
+me013|yeah.|B|b|b
+me013|because we still all have the that other one going.|S|s|s
+me013|which is the uh the macrophone training.|S|s|s
+me026|right.|S|s|aa
+me026|and|F|fg|fg
+me026|so so andreas um|D|s|s
+mn017|uhhuh.|S|s|bk
+me026|in u doctor speech data s r i hub five there's this uh hub five training set.|S|s|s
+mn017|uhhuh.|B|b|b
+me026|now is that the long training set there?|Q|qy|rt
+mn017|uhhuh.|B|b|b
+mn017|uhhuh.|B|b|b
+mn017|that's everything yeah.|S|s|na
+me026|okay.|S|s|bk
+mn017|so|D|%|%
+mn017|so i can give you a list of the short version.|S|s|cs
+me026|okay i i think you already did actually.|S|s|bk
+mn017|so you can|D|s|s
+mn017|oh okay.|S|s|bk
+me026|okay and so say the macrophone files that are included in this short training are just a subset of the macrophone files.|S|fg|fg
+me026|right?|Q|qy|d
+mn017|that's right.|S|s|aa
+me026|okay.|S|s|bk
+me026|so so um when you you did some t i digits experiments training on macrophone.|S|s|s
+mn017|yeah.|B|b|b
+me026|um|F|fh|fh
+me026|but that's not necessarily any less data than the s r i hub five|D|s|bu
+me026|set it's not a it's not a subset of the short s r i hub five set.|S|s|bu
+me026|right?|Q|qy|d
+mn017|um|F|h|h
+mn017|no it is.|S|s|s
+mn017|the|D|%|%
+mn017|sorry.|S|s|fa
+mn017|um can you repeat the question?|Q|qy|rt
+me026|uh when you trained on macrophone um to do those digits experiments did you use the entire macrophone corpus?|Q|qy|r
+mn017|there it is a|D|s|m
+mn017|yeah.|B|b|b
+mn017|no only the portion that was in the hub five training set.|S|s|ar
+me026|oh okay.|S|s|bk
+me013|that was in the hub five small training set?|Q|qy|bu
+mn017|well the hub five small training set contains as much macrophone as the large training set for historical reasons.|S|s|s
+me013|yes.|S|s|bk
+mn017|yeah.|B|b|b
+me026|okay.|S|s|bk
+me026|so um|F|fh|fh
+mn017|so do you have that processed there then.|S|s|bu
+mn017|right?|Q|qy|d
+mn017|because you already did did didn't you already do that experiment?|Q|qy|rt
+me026|i i got confused.|S|s|s
+me026|because i thought i thought you were using the whole macrophone set.|S|s|df
+mn017|uhhuh.|B|b|b
+mn017|no.|S|s|ar
+me026|um okay.|S|s|bk
+me026|well if if if i just need to use that subset i i can get it processed.|S|s|s
+me026|i actually got i think i got into it before.|S|s|s
+me026|and then i thought i was doing the wrong thing.|S|s|s
+mn017|uhhuh.|B|b|b
+me026|and i stopped.|S|s|s
+me026|and it it shouldn't take that long to do.|S|s|ba
+mn017|okay.|B|b|b
+mn017|right.|S|s|bk
+me013|okay.|S|s|bk
+mn017|and you need only the males.|S|s|s
+mn017|so|F|fh|fh
+me026|oh okay.|S|s|bk
+me018|so basically dave so for you to get your processing going you need the list of the uh|D|s|bu
+me018|well i guess it'll|D|s|s
+me018|you'll you'll we'll need to get the segmentations.|S|s|bu
+me026|yeah.|S|s|aa
+me018|figure out whether we're using the new or the old from don.|S|s|s
+mn017|uhhuh.|B|b|b
+me018|and then|D|%|%
+me018|uh|F|fh|fh
+me018|from that you need the from the segmentations you'll have the list of wavefiles that the short uh set is trained on.|S|s|s
+me018|and then you'll need disk space.|S|s|s
+me018|and once you've got those things then you can start your processing.|S|s|bu
+me018|right?|Q|qy|d
+me026|yeah.|S|s|aa
+me018|okay.|S|s|bk
+mn017|does this this|D|qy|qy
+mn017|it's sort of not very nice to use the small training set for another reason.|S|s|s
+mn017|which is that the you also are losing on again because you don't use all the data you have for one speaker.|S|s|s
+mn017|so the normalizations you compute for your training speakers will be uh crummier than they would in the large training set.|S|s|ba
+mn017|so um i have to so to make it really a matching experiment i have to find|D|s|s
+mn017|uh i have to use short models that were trained on normalizations that were also only estimated on the short set.|S|s|s
+mn017|which is uh|D|s|s
+me018|do you have this uh|D|qy|qy
+mn017|i think so.|S|s|am
+mn017|i've i i have to check.|S|s|s
+mn017|in any case i could re train short models within a few hours actually at if i use machines at s r i.|S|s|s
+me013|i wonder about that though.|S|s|am
+mn017|uhhuh.|B|b|b
+me013|i mean because all we're doing the only reason we're using the short training set is is for speed.|S|s|s
+me013|and there we're not really making any claims about using a smaller training set.|S|s|s
+mn017|yeah.|S|s|aa
+me013|so as long as we're not using any testing data from|D|s|cs
+mn017|no but the thing is if if we used if we used the whole training set for normalizations then david would have to process much more data.|S|s|nd
+me013|yeah.|B|b|b
+mn017|which that's a that's one bottleneck for us.|S|s|s
+mn017|right?|Q|qy|d
+mn017|in terms of|D|s|s
+me013|oh you mean for for his normalizations.|S|s|bk
+mn017|yeah.|S|s|aa
+me013|oh oh oh i'm sorry.|S|s|bk
+mn017|right.|B|b|b
+mn017|so you want to do the exact same thing.|S|s|cs
+me013|right.|S|s|aa
+mn017|or else you'll have apples and oranges.|S|s|df
+me013|yeah.|B|b|b
+mn017|so|F|fh|fh
+mn017|it doesn't make i don't think it makes that much of a difference.|S|s|bd
+mn017|it's just this little detail that if you can take care of that then you should.|S|s|cs
+me013|uhhuh.|B|b|b
+mn017|i i think i have i have the models.|S|s|s
+mn017|i have i have|D|s|s
+mn017|um|F|fh|fh
+mn017|let's see um|D|s|t1
+mn017|yeah and if not i can re train those models very quickly.|S|fg|fg
+me018|oh there's there's one other issue.|S|fg|fg
+me018|uh and that is that dave throws out speakers that have less than twelve seconds of training data.|S|s|s
+me018|and he said there were a few in the macrophone set like that.|S|s|s
+me018|so do we need to wait to find out who he's going to throw out?|Q|qy|qy
+me018|so that we create a new set of short models that don't include those speakers.|S|s|e
+mn017|uh|F|h|h
+me013|say this again.|S|s|br
+me013|sorry i missed it.|S|s|fa
+me018|so in the problem is that if we proceed like we just described um when he goes to um create the new training data with his processing he throws out some speakers.|S|s|s
+me018|so the two training sets won't be identical.|S|s|s
+mn017|yeah.|B|b|b
+me013|he throws out some speakers that are that are very small.|S|s|aap
+me018|yeah have just a little bit.|S|s|aa
+mn017|yeah i don't think it'll make a matter.|S|fg|fg
+me013|yeah i think there was only a few|D|s|aa
+me018|okay.|S|s|bk
+me013|we thought to be the case.|S|s|s
+mn017|in fact i thought about throwing those out too.|S|s|s
+mn017|because when i heard how little speech there was for some of them i thought they can only hurt your models.|S|s|df
+mn017|because they're again their normalizations will be all all all over the map.|S|s|s
+me018|yeah.|B|b|b
+me013|right.|B|b|b
+mn017|and you won't get very very clean models from them anyhow.|S|s|s
+mn017|so|F|fh|fh
+me018|so you think it's okay then?|Q|qy|bu
+mn017|yeah.|S|s|aa
+mn017|in fact if if you want to do this uh to speed things up um you we can leave out the macrophone data altogether.|S|s|cs
+mn017|that hurt|D|s|s
+mn017|actually|D|s|s
+mn017|oh no sorry.|S|s|fa
+mn017|not in the short.|S|s|s
+mn017|then you have too little data.|S|s|s
+mn017|okay.|S|s|bk
+mn017|sorry forget that.|S|s|fa
+mn017|um|F|fh|fh
+mn017|when you use when you go to the large training set then leaving out macrophone actually sometimes helps you.|S|s|df
+mn017|because it's it's just not relevant to the to the meeting and or to conversational speech anyway.|S|s|df
+me018|it's read.|S|s|2
+mn017|okay.|S|s|bk
+mn017|yeah leave it out.|S|s|cs
+mn017|and um in the event that i re train the short models|D|s|s
+mn017|um why don't you give me a list of the files that you throw out?|Q|qh|cs
+mn017|and i i'll throw them out too.|S|s|s
+me026|right.|S|s|bk
+mn017|and then we have complete completely identical training conditions.|S|s|s
+me018|we|D|%|%
+me018|right.|S|s|bk
+me018|actually you should be able to figure out dave.|S|s|bu
+me018|right?|Q|qy|d
+me018|once you know the segmentations uh who you're going to which speakers will get left out even before you run your processing.|S|s|bu
+me026|uhhuh.|B|b|b
+me018|right?|Q|qy|d
+me026|the segmentations?|Q|qy|br
+me018|yeah the segmentations from don.|S|s|aa
+mn017|but the segmentations are only they only affect the test set.|S|s|s
+me018|once we|D|%|%
+me026|oh.|S|s|bk
+mn017|we're talking about the training speakers.|S|s|e
+me018|uh right right right right right.|S|s|bk
+me013|no the training set he could go through right now and see how how long the|D|s|s
+mn017|right.|S|s|aa
+me018|right but i'm just wondering how long it will take to get that information.|S|fg|fg
+me026|um|F|h|h
+mn017|he already has the you already have the information.|S|s|bu
+me026|i i have i have it for for macrophone um already i think.|S|s|s
+mn017|right?|Q|qy|d
+me026|and um i think by tomorrow i'll have it for for the rest.|S|s|s
+mn017|uhhuh.|B|b|b
+mn017|okay all right.|S|s|bk
+me018|okay.|S|s|bk
+mn017|okay.|B|b|b
+me013|at that one maybe.|S|s|s
+me013|uh|F|fg|fg
+me013|been looking at synthesizers?|Q|qy|bu
+mn014|synthesizers?|Q|qy|br
+me013|you were looking at festival.|S|s|s
+mn014|yeah yeah i was doing something for the smartkom data collectioners.|S|s|aa
+me013|yeah.|B|b|b
+mn014|robert has taken his laptop back to germany so we needed a new synthesis machine.|S|s|s
+mn014|and we have now a sun workstation in the library which does the synthesis.|S|s|s
+mn014|and the festival speech system is running on|D|s|s
+me018|sorry robert did what?|S|s|fa
+me018|robert took what?|Q|qw|br
+mn014|his laptop where uh which we used for the smartkom data collection for the synthesis.|S|s|rt
+me018|uhhuh.|B|b|b
+mn014|and so he took it to germany.|S|s|s
+mn014|and so we couldn't do any data collection.|S|s|s
+me018|oh.|B|b|b
+me018|is he gone now?|Q|qy|rt
+mn014|uh|F|fh|fh
+mn014|no he's just gone to a smartkom workshop.|S|s|ar
+me018|oh oh oh oh okay.|S|s|bk
+mn014|and so we have now the sun in the library which can do that.|S|s|s
+me018|uhhuh.|B|b|b
+mn014|and i looked into the f zero thing and talked to to liz.|S|s|s
+mn014|and it seems that it's quite what she wants.|S|s|s
+mn014|but we'll have to think about the the energy thing.|S|s|s
+mn014|uh what we want to do.|S|s|s
+me013|right.|B|b|b
+me013|this was a business about uh um coming up with something that that was purely prosodic.|S|s|s
+mn017|uhhuh.|B|b|b
+me013|and so uh we're just going to use a pitch detector.|S|s|s
+me013|drive a synthesizer.|S|s|s
+me013|and since it doesn't have a hook in it for uh modifying energy we'll have a little box at the output that'll modify the energy.|S|s|s
+me013|so|F|fh|fh
+mn017|uhhuh.|B|b|b
+me018|uhhuh.|B|b|b
+mn017|okay.|S|s|bk
+me013|so rrrrr rrrrm.|S|s|rt
+me013|something like that.|S|s|s
+me018|are you are you interfacing to that thing with the c plus plus routines?|Q|qy|rt
+me018|or are you is there another interface that you use?|Q|qrr|rt
+mn014|for for festival?|Q|qy|bu
+me018|yeah.|S|s|aa
+mn014|uh you can just use it from the|D|s|s
+mn014|yeah basically from the command line.|S|s|s
+mn014|and defining the phones whatever you want to have synthesized.|S|s|s
+me018|oh.|B|b|b
+mn014|and give the f zero targets.|S|s|s
+me018|and it saves it in a|D|s|2
+mn014|and then get gives out a a waveform.|S|s|s
+mn014|and i i want to manipulate the the waveform then.|S|s|s
+me018|i see.|B|b|b
+me018|oh that's neat.|S|s|ba
+mn017|uhhuh.|B|b|b
+me013|okay?|Q|qy|bu
+me013|digits?|Q|qy|bu
+me018|uh okay.|S|s|bk
