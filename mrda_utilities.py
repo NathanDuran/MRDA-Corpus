@@ -171,7 +171,7 @@ def process_transcript(transcript, database, da_map, excluded_chars=None, exclud
 
 def get_da_maps(path):
     # Load the da maps from file
-    da_map_data = load_data(path)
+    da_map_data = load_text_data(path)
 
     # Split on tabs and save to dictionary (key=full_da : val=basic_da)
     da_map = dict()
@@ -181,7 +181,7 @@ def get_da_maps(path):
     return da_map
 
 
-def load_data(path, verbose=True):
+def load_text_data(path, verbose=True):
     with open(path, "r") as file:
         # Read a line and strip newline char
         lines = [line.rstrip('\r\n') for line in file.readlines()]

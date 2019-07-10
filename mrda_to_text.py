@@ -18,10 +18,10 @@ excluded_tags = ['x', 'z']
 excluded_chars = {'<', '>', '(', ')', '-', '#', '|', '=', '@'}
 
 # Load training, test, validation and development splits
-train_split = load_data(metadata_dir + 'train_split.txt')
-test_split = load_data(metadata_dir + 'test_split.txt')
-val_split = load_data(metadata_dir + 'eval_split.txt')
-dev_split = load_data(metadata_dir + 'dev_split.txt')
+train_split = load_text_data(metadata_dir + 'train_split.txt')
+test_split = load_text_data(metadata_dir + 'test_split.txt')
+val_split = load_text_data(metadata_dir + 'eval_split.txt')
+dev_split = load_text_data(metadata_dir + 'dev_split.txt')
 
 # Load basic da map data
 da_map = get_da_maps(metadata_dir + 'basic_da_map.txt')
@@ -50,8 +50,8 @@ for meeting in transcript_list:
     meeting_name = meeting.split('.')[0]
 
     # Get the transcript and database file
-    transcript = load_data(archive_dir + "/transcripts/" + meeting_name + ".trans", verbose=False)
-    database = load_data(archive_dir + "/database/" + meeting_name + ".dadb", verbose=False)
+    transcript = load_text_data(archive_dir + "/transcripts/" + meeting_name + ".trans", verbose=False)
+    database = load_text_data(archive_dir + "/database/" + meeting_name + ".dadb", verbose=False)
 
     # Process the utterances and create a dialogue object
     dialogue = process_transcript(transcript, database, da_map, excluded_chars, excluded_tags)
