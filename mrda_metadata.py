@@ -14,10 +14,10 @@ data_dir = 'mrda_data/'
 metadata_dir = data_dir + 'metadata/'
 
 # File with all swda data
-all_mrda_text_file = "all_mrda.txt"
+full_set_text_file = "full_set.txt"
 
 # Load all_swda text file
-mrda_text = load_text_data(data_dir + all_mrda_text_file)
+mrda_text = load_text_data(data_dir + full_set_text_file)
 
 # Split into labels and utterances
 utterances = []

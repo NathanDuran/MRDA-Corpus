@@ -27,14 +27,14 @@ dev_split = load_text_data(metadata_dir + 'dev_split.txt')
 da_map = get_da_maps(metadata_dir + 'basic_da_map.txt')
 
 # Files for all the utterances in the corpus and data splits
-all_mrda_file = "all_mrda"
+full_set = "full_set"
 train_set_file = "train_set"
 test_set_file = "test_set"
 val_set_file = "eval_set"
 dev_set_file = "dev_set"
 
 # Remove old files if they exist, so we do not append to old data
-remove_file(data_dir, all_mrda_file, utterance_only_flag)
+remove_file(data_dir, full_set, utterance_only_flag)
 remove_file(data_dir, train_set_file, utterance_only_flag)
 remove_file(data_dir, test_set_file, utterance_only_flag)
 remove_file(data_dir, val_set_file, utterance_only_flag)
@@ -57,7 +57,7 @@ for meeting in transcript_list:
     dialogue = process_transcript(transcript, database, da_map, excluded_chars, excluded_tags)
 
     # Append all utterances to all_mrda text file
-    dialogue_to_file(data_dir + all_mrda_file, dialogue, utterance_only_flag, 'a+')
+    dialogue_to_file(data_dir + full_set, dialogue, utterance_only_flag, 'a+')
 
     # Determine which set this dialogue belongs to (training, test or evaluation)
     set_dir = ''
