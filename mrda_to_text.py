@@ -20,7 +20,7 @@ excluded_chars = {'<', '>', '(', ')', '-', '#', '|', '=', '@'}
 # Load training, test, validation and development splits
 train_split = load_text_data(metadata_dir + 'train_split.txt')
 test_split = load_text_data(metadata_dir + 'test_split.txt')
-val_split = load_text_data(metadata_dir + 'eval_split.txt')
+val_split = load_text_data(metadata_dir + 'val_split.txt')
 dev_split = load_text_data(metadata_dir + 'dev_split.txt')
 
 # Load basic da map data
@@ -30,7 +30,7 @@ da_map = get_da_maps(metadata_dir + 'basic_da_map.txt')
 full_set = "full_set"
 train_set_file = "train_set"
 test_set_file = "test_set"
-val_set_file = "eval_set"
+val_set_file = "val_set"
 dev_set_file = "dev_set"
 
 # Remove old files if they exist, so we do not append to old data
@@ -69,7 +69,7 @@ for meeting in transcript_list:
         set_dir = data_dir + 'test'
         set_file = test_set_file
     elif meeting_name in val_split:
-        set_dir = data_dir + 'eval'
+        set_dir = data_dir + 'val'
         set_file = val_set_file
 
     # If only saving utterances use different directory
