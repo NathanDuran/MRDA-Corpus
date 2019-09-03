@@ -1,3 +1,4 @@
+import os
 import itertools
 import gluonnlp as nlp
 from mrda_utilities import load_text_data, save_data_pickle
@@ -8,16 +9,13 @@ tokeniser = nlp.data.SpacyTokenizer('en')
 metadata = dict()
 
 # Processed data directory
-data_dir = 'mrda_data/'
+data_dir = 'mrda_data'
 
 # Metadata directory
-metadata_dir = data_dir + 'metadata/'
-
-# File with all swda data
-full_set_text_file = "full_set.txt"
+metadata_dir = os.path.join(data_dir, 'metadata')
 
 # Load all_swda text file
-mrda_text = load_text_data(data_dir + full_set_text_file)
+mrda_text = load_text_data(os.path.join(data_dir, 'full_set.txt'))
 
 # Split into labels and utterances
 utterances = []
@@ -66,7 +64,7 @@ print(vocabulary)
 print(vocabulary_size)
 
 # Write vocabulary and word frequencies to file
-with open(metadata_dir + "vocabulary.txt", 'w+') as file:
+with open(os.path.join(metadata_dir, 'vocabulary.txt'), 'w+') as file:
     for i in range(4, len(vocabulary)):
         file.write(vocabulary.to_tokens(i) + " " + str(word_freq[vocabulary.to_tokens(i)]) + "\n")
 
@@ -84,7 +82,7 @@ print(basic_labels)
 print(num_basic_labels)
 
 # Write labels and frequencies to file
-with open(metadata_dir + "labels.txt", 'w+') as file:
+with open(os.path.join(metadata_dir, 'labels.txt'), 'w+') as file:
     file.write("Basic Labels:\n")
     for i in range(4, len(basic_labels)):
         file.write(basic_labels.to_tokens(i) + " " + str(basic_label_freq[basic_labels.to_tokens(i)]) + "\n")
@@ -104,7 +102,7 @@ print(general_labels)
 print(num_general_labels)
 
 # Write labels and frequencies to file
-with open(metadata_dir + "labels.txt", 'a+') as file:
+with open(os.path.join(metadata_dir, 'labels.txt'), 'a+') as file:
     file.write("General Labels:\n")
     for i in range(4, len(general_labels)):
         file.write(general_labels.to_tokens(i) + " " + str(general_label_freq[general_labels.to_tokens(i)]) + "\n")
@@ -124,7 +122,7 @@ print(full_labels)
 print(num_full_labels)
 
 # Write labels and frequencies to file
-with open(metadata_dir + "labels.txt", 'a+') as file:
+with open(os.path.join(metadata_dir, 'labels.txt'), 'a+') as file:
     file.write("Full Labels:\n")
     for i in range(4, len(full_labels)):
         file.write(full_labels.to_tokens(i) + " " + str(full_label_freq[full_labels.to_tokens(i)]) + "\n")
@@ -137,7 +135,7 @@ sets = ['train', 'test', 'val', 'dev']
 for i in range(len(sets)):
 
     # Load data set list
-    set_list = load_text_data(metadata_dir + sets[i] + "_split.txt")
+    set_list = load_text_data(os.path.join(metadata_dir, sets[i] + '_split.txt'))
 
     # Count the number of dialogues in the set
     set_num_dialogues = len(set_list)
@@ -149,7 +147,7 @@ for i in range(len(sets)):
     for dialogue in set_list:
 
         # Load dialogues utterances
-        utterances = load_text_data(data_dir + sets[i] + "/" + dialogue + ".txt", verbose=False)
+        utterances = load_text_data(os.path.join(data_dir, sets[i], dialogue + '.txt'), verbose=False)
 
         # Check set and global maximum dialogue length
         if len(utterances) > set_max_dialogues_len:
@@ -165,4 +163,4 @@ metadata['max_dialogues_len'] = max_dialogues_len
 print("Maximum dialogue length: " + str(max_dialogues_len))
 
 # Save data to pickle file
-save_data_pickle(metadata_dir + "metadata.pkl", metadata)
+save_data_pickle(os.path.join(metadata_dir, 'metadata.pkl'), metadata)
