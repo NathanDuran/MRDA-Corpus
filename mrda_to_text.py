@@ -51,8 +51,8 @@ for meeting in transcript_list:
     meeting_name = meeting.split('.')[0]
 
     # Get the transcript and database file
-    transcript = load_text_data(os.path.join(archive_dir, 'transcripts', meeting_name, '.trans'), verbose=False)
-    database = load_text_data(os.path.join(archive_dir, 'database', meeting_name, '.dadb'), verbose=False)
+    transcript = load_text_data(os.path.join(archive_dir, 'transcripts', meeting_name + '.trans'), verbose=False)
+    database = load_text_data(os.path.join(archive_dir, 'database', meeting_name + '.dadb'), verbose=False)
 
     # Process the utterances and create a dialogue object
     dialogue = process_transcript(transcript, database, da_map, excluded_chars, excluded_tags)
