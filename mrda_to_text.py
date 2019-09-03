@@ -1,4 +1,5 @@
 from mrda_utilities import *
+import process_transcript as process
 
 # Switchboard archive directory
 archive_dir = 'mrda_archive'
@@ -54,7 +55,7 @@ for meeting in transcript_list:
     database = load_text_data(archive_dir + "/database/" + meeting_name + ".dadb", verbose=False)
 
     # Process the utterances and create a dialogue object
-    dialogue = process_transcript(transcript, database, da_map, excluded_chars, excluded_tags)
+    dialogue = process.process_transcript(transcript, database, da_map, excluded_chars, excluded_tags)
 
     # Append all utterances to all_mrda text file
     dialogue_to_file(data_dir + full_set, dialogue, utterance_only_flag, 'a+')
