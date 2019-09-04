@@ -9,7 +9,9 @@ There were two unused dialogues and these were added to the evaluation and test 
 The mrda_to_text.py script processes all dialogues into a plain text format. Individual dialogues are saved into directories corresponding
 to the set they belong to (train, test, etc). All utterances in a particular set are also saved to a text file.
 
-The mrda_utilities.py script contains various helper functions for loading/saving and processing the data, including a function for processing each dialogue.
+The mrda_utilities.py script contains various helper functions for loading/saving the data.
+
+The process_transcript.py includes functions for processing each dialogue.
 
 The mrda_metadata.py generates various metadata from the processed dialogues and saves them as a dictionary to a pickle file.
 The words, labels and frequencies are also saved as plain text files in the /metadata directory.
@@ -24,7 +26,8 @@ There are three sets of DA included:
 - Full, uses only the first <*specific tag*> from the original labels, 52 in total.
 
 By default:
-- Utterances are written one per line in the format *Speaker* | *Utterance Text* | *Basic DA Tag* | *General DA Tag* | *Full DA Tag*. Setting the utterance_only_flag == True, will change the default output to only one utterance per line i.e. no speaker or DA tags.
+- Utterances are written one per line in the format *Speaker* | *Utterance Text* | *Basic DA Tag* | *General DA Tag* | *Full DA Tag*.
+- Setting the utterance_only_flag == True, will change the default output to only one utterance per line i.e. no speaker or DA tags.
 - Utterances marked as *Non-verbal* ('x' tags) are removed i.e. 'Laughter' or 'Throat_clearing'.
 - Utterances marked as *Non-labeled* ('z' tags) are removed.
 - *Interrupted*, *Abandoned* and *Uninterpretable* tags are collapsed into one tag ('%').

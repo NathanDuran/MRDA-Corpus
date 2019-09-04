@@ -11,7 +11,7 @@ class Dialogue:
         self.num_utterances = num_utterances
         self.utterances = utterances
 
-    def to_string(self):
+    def __str__(self):
         return str("Conversation: " + self.conversation_id + "\n"
                    + "Number of Utterances: " + str(self.num_utterances))
 
@@ -24,7 +24,7 @@ class Utterance:
         self.general_da_label = general_da_label
         self.full_da_label = full_da_label
 
-    def to_string(self):
+    def __str__(self):
         return str(self.speaker + " " +
                    self.text + " " +
                    self.basic_da_label + " " +

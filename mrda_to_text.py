@@ -48,7 +48,7 @@ transcript_list = os.listdir(os.path.join(archive_dir, 'transcripts'))
 for meeting in transcript_list:
 
     # Get the id for this meeting
-    meeting_name = meeting.split('.')[0]
+    meeting_name = str(meeting.split('.')[0])
 
     # Get the transcript and database file
     transcript = load_text_data(os.path.join(archive_dir, 'transcripts', meeting_name + '.trans'), verbose=False)
@@ -57,7 +57,7 @@ for meeting in transcript_list:
     # Process the utterances and create a dialogue object
     dialogue = process_transcript(transcript, database, da_map, excluded_chars, excluded_tags)
 
-    # Append all utterances to all_mrda text file
+    # Append all utterances to full_set text file
     dialogue_to_file(os.path.join(data_dir, full_set), dialogue, utterance_only_flag, 'a+')
 
     # Determine which set this dialogue belongs to (training, test or evaluation)
