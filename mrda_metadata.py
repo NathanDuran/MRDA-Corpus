@@ -18,14 +18,8 @@ mrda_text = load_text_data(os.path.join(data_dir, 'full_set.txt'))
 
 # Split into labels and utterances
 utterances = []
-basic_da_labels = []
-general_da_labels = []
-full_da_labels = []
 for line in mrda_text:
     utterances.append(line.split("|")[1])
-    basic_da_labels.append(line.split("|")[2])
-    general_da_labels.append(line.split("|")[3])
-    full_da_labels.append(line.split("|")[4])
 
 # Count total number of utterances
 num_utterances = len(utterances)
@@ -68,64 +62,52 @@ with open(os.path.join(metadata_dir, 'vocabulary.txt'), 'w+') as file:
         file.write(vocabulary.to_tokens(i) + " " + str(word_freq[vocabulary.to_tokens(i)]) + "\n")
 
 # Count the basic label frequencies and generate labels
-basic_label_freq = nlp.data.count_tokens(basic_da_labels)
-basic_labels = nlp.Vocab(basic_label_freq)
-num_basic_labels = len(basic_label_freq)
-
-metadata['basic_label_freq'] = basic_label_freq
-metadata['basic_labels'] = basic_labels
-metadata['num_basic_labels'] = num_basic_labels
+labels, label_freq = get_label_frequency_distributions(data_dir, metadata_dir, label_map='basic_label_map.txt', label_index=2)
+metadata['basic_label_freq'] = label_freq
+metadata['basic_labels'] = labels
+metadata['num_basic_labels'] = len(labels)
 print("Basic Labels:")
-print(basic_label_freq)
-print(basic_labels)
-print(num_basic_labels)
+print(labels)
+print(len(labels))
+
+# Create label frequency chart
+label_freq_chart = plot_label_distributions(label_freq, title='MRDA Basic Label Frequency Distributions', num_labels=15)
+label_freq_chart.savefig(os.path.join(metadata_dir, 'MRDA Basic Label Frequency Distributions.png'))
 
 # Write labels and frequencies to file
-with open(os.path.join(metadata_dir, 'labels.txt'), 'w+') as file:
-    file.write("Basic Labels:\n")
-    for i in range(4, len(basic_labels)):
-        file.write(basic_labels.to_tokens(i) + " " + str(basic_label_freq[basic_labels.to_tokens(i)]) + "\n")
-    file.write("\n")
+save_label_frequency_distributions(label_freq, metadata_dir, 'basic_labels.txt', to_markdown=False)
 
 # Count the general label frequencies and generate labels
-general_label_freq = nlp.data.count_tokens(general_da_labels)
-general_labels = nlp.Vocab(general_label_freq)
-num_general_labels = len(general_label_freq)
-
-metadata['general_label_freq'] = general_label_freq
-metadata['general_labels'] = general_labels
-metadata['num_general_labels'] = num_general_labels
+labels, label_freq = get_label_frequency_distributions(data_dir, metadata_dir, label_map='general_label_map.txt', label_index=3)
+metadata['general_label_freq'] = label_freq
+metadata['general_labels'] = labels
+metadata['num_general_labels'] = len(labels)
 print("General Labels:")
-print(general_label_freq)
-print(general_labels)
-print(num_general_labels)
+print(labels)
+print(len(labels))
+
+# Create label frequency chart
+label_freq_chart = plot_label_distributions(label_freq, title='MRDA General Frequency Distributions', num_labels=15)
+label_freq_chart.savefig(os.path.join(metadata_dir, 'MRDA General Frequency Distributions.png'))
 
 # Write labels and frequencies to file
-with open(os.path.join(metadata_dir, 'labels.txt'), 'a+') as file:
-    file.write("General Labels:\n")
-    for i in range(4, len(general_labels)):
-        file.write(general_labels.to_tokens(i) + " " + str(general_label_freq[general_labels.to_tokens(i)]) + "\n")
-    file.write("\n")
+save_label_frequency_distributions(label_freq, metadata_dir, 'general_labels.txt', to_markdown=False)
 
 # Count the full label frequencies and generate labels
-full_label_freq = nlp.data.count_tokens(full_da_labels)
-full_labels = nlp.Vocab(full_label_freq)
-num_full_labels = len(full_label_freq)
-
-metadata['full_label_freq'] = full_label_freq
-metadata['full_labels'] = full_labels
-metadata['num_full_labels'] = num_full_labels
+labels, label_freq = get_label_frequency_distributions(data_dir, metadata_dir, label_map='full_label_map.txt', label_index=4)
+metadata['full_label_freq'] = label_freq
+metadata['full_labels'] = labels
+metadata['num_full_labels'] = len(labels)
 print("Full Labels:")
-print(full_label_freq)
-print(full_labels)
-print(num_full_labels)
+print(labels)
+print(len(labels))
+
+# Create label frequency chart
+label_freq_chart = plot_label_distributions(label_freq, title='MRDA Full Frequency Distributions', num_labels=15)
+label_freq_chart.savefig(os.path.join(metadata_dir, 'MRDA Full Frequency Distributions.png'))
 
 # Write labels and frequencies to file
-with open(os.path.join(metadata_dir, 'labels.txt'), 'a+') as file:
-    file.write("Full Labels:\n")
-    for i in range(4, len(full_labels)):
-        file.write(full_labels.to_tokens(i) + " " + str(full_label_freq[full_labels.to_tokens(i)]) + "\n")
-    file.write("\n")
+save_label_frequency_distributions(label_freq, metadata_dir, 'full_labels.txt', to_markdown=False)
 
 # Count sets number of dialogues and maximum dialogue length
 max_dialogues_len = 0
