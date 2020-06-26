@@ -1,8 +1,7 @@
 # Processing the Meeting Recorder Dialogue Act Corpus
 Utilities for Processing the Meeting Recorder Dialogue Act Corpus outlined in [this paper by Shriberg, E. et al.(2004)](https://aclweb.org/anthology/W04-2319) for the purpose of dialogue act (DA) classification.
-The data can also be downloaded [here](http://www1.icsi.berkeley.edu/~ees/dadb/).
+The data can also be downloaded [here](http://groups.inf.ed.ac.uk/ami/icsi/download/).
 The data is split into the original training and test sets suggested by the authors.
-The development set is now used as an evaluation set and a new development set was created from 24 randomly selected from the training set.
 There were two unused dialogues and these were added to the evaluation and test sets.
 
 ## Scripts
@@ -143,8 +142,6 @@ Welcome                        |          fw          |    6     |   0.01   |   
 - Maximum length of dialogue in test set: 2028
 - Number of dialogue in eval set: 12
 - Maximum length of dialogue in eval set: 1969
-- Number of dialogue in dev set: 24
-- Maximum length of dialogue in dev set: 2220
 
 ### Keys and values for the metadata dictionary
 - num_utterances = Total number of utterance in the full corpus.

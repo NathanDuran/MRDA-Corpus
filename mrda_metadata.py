@@ -111,7 +111,7 @@ save_label_frequency_distributions(label_freq, metadata_dir, 'full_labels.txt', 
 
 # Count sets number of dialogues and maximum dialogue length
 max_dialogues_len = 0
-sets = ['train', 'test', 'val', 'dev']
+sets = ['train', 'test', 'val']
 for i in range(len(sets)):
 
     # Load data set list

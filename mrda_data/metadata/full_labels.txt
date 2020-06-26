@@ -1,0 +1,53 @@
+Dialogue Act                          Labels         Count      %       Train Count   Train %    Test Count     Test %     Val Count     Val %  
+Statement                               s            33472    30.93        23238       30.96        4971        29.76        5263        32.03  
+Continuer                               b            15013    13.87        10517       14.01        2175        13.02        2321        14.12  
+Floor Holder                            fh            8362     7.73        5617         7.48        1520         9.10        1225         7.45  
+Acknowledge-answer                      bk            7177     6.63        5117         6.82        1031         6.17        1029         6.26  
+Accept                                  aa            5898     5.45        4097         5.46         903         5.41         898         5.46  
+Defending/Explanation                   df            3724     3.44        2790         3.72         531         3.18         403         2.45  
+Expansions of y/n Answers               e             3200     2.96        2360         3.14         540         3.23         300         1.83  
+Interrupted/Abandoned/Uninterpretable          %             3103     2.87        2171         2.89         492         2.95         440         2.68  
+Rising Tone                             rt            3101     2.87        2015         2.68         516         3.09         570         3.47  
+Floor Grabber                           fg            3092     2.86        2076         2.77         489         2.93         527         3.21  
+Offer                                   cs            2662     2.46        1878         2.50         402         2.41         382         2.32  
+Assessment/Appreciation                 ba            2216     2.05        1605         2.14         354         2.12         257         1.56  
+Understanding Check                     bu            2091     1.93        1405         1.87         371         2.22         315         1.92  
+Declarative-Question                    d             1805     1.67        1153         1.54         350         2.10         302         1.84  
+Affirmative Non-yes Answers             na            1112     1.03         870         1.16         133         0.80         109         0.66  
+Wh-Question                             qw            951      0.88         630         0.84         160         0.96         161         0.98  
+Reject                                  ar            908      0.84         594         0.79         152         0.91         162         0.99  
+Collaborative Completion                2             841      0.78         571         0.76         136         0.81         134         0.82  
+Other Answers                           no            828      0.77         563         0.75         98          0.59         167         1.02  
+Hold Before Answer/Agreement            h             792      0.73         474         0.63         134         0.80         184         1.12  
+Action-directive                        co            674      0.62         460         0.61         97          0.58         117         0.71  
+Yes-No-question                         qy            669      0.62         476         0.63         90          0.54         103         0.63  
+Dispreferred Answers                    nd            483      0.45         341         0.45         82          0.49         60          0.37  
+Humorous Material                       j             463      0.43         326         0.43         67          0.40         70          0.43  
+Downplayer                              bd            387      0.36         290         0.39         68          0.41         29          0.18  
+Commit                                  cc            371      0.34         258         0.34         51          0.31         62          0.38  
+Negative Non-no Answers                 ng            351      0.32         236         0.31         56          0.34         59          0.36  
+Maybe                                   am            349      0.32         224         0.30         66          0.40         59          0.36  
+Or-Clause                              qrr            345      0.32         216         0.29         66          0.40         63          0.38  
+Exclamation                             fe            307      0.28         195         0.26         56          0.34         56          0.34  
+Mimic Other                             m             293      0.27         200         0.27         48          0.29         45          0.27  
+Apology                                 fa            259      0.24         181         0.24         46          0.28         32          0.19  
+About-task                              t             253      0.23         154         0.21         42          0.25         57          0.35  
+Signal-non-understanding                br            236      0.22         161         0.21         39          0.23         36          0.22  
+Accept-part                            aap            219      0.20         158         0.21         27          0.16         34          0.21  
+Rhetorical-Question                     qh            214      0.20         166         0.22         30          0.18         18          0.11  
+Topic Change                            tc            212      0.20         127         0.17         35          0.21         50          0.30  
+Repeat                                  r             208      0.19         131         0.17         45          0.27         32          0.19  
+Self-talk                               t1            198      0.18         120         0.16         38          0.23         40          0.24  
+3rd-party-talk                          t3            165      0.15         105         0.14         36          0.22         24          0.15  
+Rhetorical-question Continue            bh            154      0.14         109         0.15         26          0.16         19          0.12  
+Reject-part                            bsc            150      0.14         94          0.13         22          0.13         34          0.21  
+Misspeak Self-Correction               arp            150      0.14         89          0.12         18          0.11         43          0.26  
+Reformulate/Summarize                   bs            141      0.13         89          0.12         17          0.10         35          0.21  
+"Follow Me"                             f             128      0.12         98          0.13         12          0.07         18          0.11  
+Or-Question                             qr            127      0.12         88          0.12         17          0.10         22          0.13  
+Thanking                                ft            119      0.11         88          0.12          9          0.05         22          0.13  
+Tag-Question                            g              87      0.08         58          0.08          9          0.05         20          0.12  
+Open-Question                           qo             74      0.07         49          0.07         14          0.08         11          0.07  
+Correct-misspeaking                     bc             51      0.05         29          0.04         13          0.08          9          0.05  
+Sympathy                                by             11      0.01          5          0.01          2          0.01          4          0.02  
+Welcome                                 fw             6       0.01          5          0.01          0          0.00          1          0.01  
