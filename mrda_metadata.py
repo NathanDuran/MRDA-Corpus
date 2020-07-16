@@ -50,8 +50,11 @@ metadata['mean_utterance_len'] = mean_utterance_len / num_utterances
 print("Mean utterance length: " + str(mean_utterance_len / num_utterances))
 
 # Count the word frequencies and generate vocabulary
-word_freq = nlp.data.count_tokens(list(itertools.chain(*tokenised_utterances)))
-vocabulary = nlp.Vocab(word_freq)
+word_freq = pd.DataFrame.from_dict(nlp.data.count_tokens(list(itertools.chain(*tokenised_utterances))), orient='index')
+word_freq.reset_index(inplace=True)
+word_freq.columns = ['Words', 'Count']
+word_freq.sort_values('Count', ascending=False, ignore_index=True, inplace=True)
+vocabulary = word_freq['Words'].to_list()
 vocabulary_size = len(word_freq)
 
 metadata['word_freq'] = word_freq
@@ -63,9 +66,10 @@ print(vocabulary)
 print(vocabulary_size)
 
 # Write vocabulary and word frequencies to file
+save_word_frequency_distributions(word_freq, metadata_dir, 'word_freq.txt')
 with open(os.path.join(metadata_dir, 'vocabulary.txt'), 'w+') as file:
-    for i in range(4, len(vocabulary)):
-        file.write(vocabulary.to_tokens(i) + " " + str(word_freq[vocabulary.to_tokens(i)]) + "\n")
+    for i in range(len(vocabulary)):
+        file.write(vocabulary[i] + "\n")
 
 # Count the basic label frequencies and generate labels
 labels, label_freq = get_label_frequency_distributions(data_dir, metadata_dir, label_map='basic_label_map.txt', label_index=2)
@@ -81,7 +85,10 @@ label_freq_chart = plot_label_distributions(label_freq, title='MRDA Basic Label 
 label_freq_chart.savefig(os.path.join(metadata_dir, 'MRDA Basic Label Frequency Distributions.png'))
 
 # Write labels and frequencies to file
-save_label_frequency_distributions(label_freq, metadata_dir, 'basic_labels.txt', to_markdown=False)
+save_label_frequency_distributions(label_freq, metadata_dir, 'basic_label_freq.txt', to_markdown=False)
+with open(os.path.join(metadata_dir, 'basic_labels.txt'), 'w+') as file:
+    for i in range(len(labels)):
+        file.write(labels[i] + "\n")
 
 # Count the general label frequencies and generate labels
 labels, label_freq = get_label_frequency_distributions(data_dir, metadata_dir, label_map='general_label_map.txt', label_index=3)
@@ -97,7 +104,10 @@ label_freq_chart = plot_label_distributions(label_freq, title='MRDA General Freq
 label_freq_chart.savefig(os.path.join(metadata_dir, 'MRDA General Frequency Distributions.png'))
 
 # Write labels and frequencies to file
-save_label_frequency_distributions(label_freq, metadata_dir, 'general_labels.txt', to_markdown=False)
+save_label_frequency_distributions(label_freq, metadata_dir, 'general_label_freq.txt', to_markdown=False)
+with open(os.path.join(metadata_dir, 'general_labels.txt'), 'w+') as file:
+    for i in range(len(labels)):
+        file.write(labels[i] + "\n")
 
 # Count the full label frequencies and generate labels
 labels, label_freq = get_label_frequency_distributions(data_dir, metadata_dir, label_map='full_label_map.txt', label_index=4)
@@ -113,7 +123,10 @@ label_freq_chart = plot_label_distributions(label_freq, title='MRDA Full Frequen
 label_freq_chart.savefig(os.path.join(metadata_dir, 'MRDA Full Frequency Distributions.png'))
 
 # Write labels and frequencies to file
-save_label_frequency_distributions(label_freq, metadata_dir, 'full_labels.txt', to_markdown=False)
+save_label_frequency_distributions(label_freq, metadata_dir, 'full_label_freq.txt', to_markdown=False)
+with open(os.path.join(metadata_dir, 'full_labels.txt'), 'w+') as file:
+    for i in range(len(labels)):
+        file.write(labels[i] + "\n")
 
 # Count sets number of dialogues and maximum dialogue length
 max_dialogues_len = 0

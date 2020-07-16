@@ -153,8 +153,8 @@ Welcome                        |          fw          |    6     |   0.01   |   
 - num_dialogues = Total number of dialogues in the corpus.
 - max_dialogues_len = Number of utterances in the longest dialogue in the corpus.
 - mean_dialogues_len = Average number of utterances in dialogues.
-- word_freq = Dictionary with {word : frequency} pairs.
-- vocabulary = Full vocabulary - Gluon NLP [Vocabulary.](http://gluon-nlp.mxnet.io/api/modules/vocab.html#gluonnlp.Vocab)
+- word_freq = [Dataframe](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) with Word and Count columns.
+- vocabulary = List of all words in vocabulary.
 - vocabulary_size = Number of words in the vocabulary.
 
 Each DA label set (basic, general or full) also has:
