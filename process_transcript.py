@@ -1,8 +1,7 @@
 import re
-import spacy
-from spacy.tokenizer import Tokenizer
-nlp = spacy.load('en')
-tokenizer = Tokenizer(nlp.vocab)
+import gluonnlp as nlp
+# Initialise Spacy tokeniser
+tokeniser = nlp.data.SpacyTokenizer('en_core_web_sm')
 
 
 class Dialogue:

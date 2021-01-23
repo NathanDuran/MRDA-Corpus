@@ -8,7 +8,7 @@ There were two unused dialogues and these were added to the evaluation and test 
 The mrda_to_text.py script processes all dialogues into a plain text format. Individual dialogues are saved into directories corresponding
 to the set they belong to (train, test, etc). All utterances in a particular set are also saved to a text file.
 
-The mrda_utilities.py script contains various helper functions for loading/saving the data.
+The utilities.py script contains various helper functions for loading/saving the data.
 
 The process_transcript.py includes functions for processing each dialogue.
 
@@ -130,21 +130,34 @@ Welcome                        |          fw          |    6     |   0.01   |   
 
 ## Metadata
 - Total number of utterances: 108202
-- Maximum utterance length: 85
-- Mean utterance length: 8
-- Total number of dialogues: 75
-- Maximum dialogue length: 3391
-- Mean dialogue length: 1442.7
+- Max utterance length: 85
+- Mean utterance length: 8.01
+- Total Number of dialogues: 75
+- Max dialogue length: 3391
+- Mean dialogue length: 1442.69
 - Vocabulary size: 10866
 - Number of basic labels: 5
 - Number of general labels: 12
 - Number of full labels: 52
-- Number of dialogue in train set: 51
-- Maximum length of dialogue in train set: 3391
-- Number of dialogue in test set: 12
-- Maximum length of dialogue in test set: 2028
-- Number of dialogue in eval set: 12
-- Maximum length of dialogue in eval set: 1969
+- Number of speakers: 52
+
+Train set
+- Number of dialogues: 51
+- Max dialogue length: 3391
+- Mean dialogue length: 1471.9
+- Number of utterances: 75067
+
+Test set
+- Number of dialogues: 12
+- Max dialogue length: 2028
+- Mean dialogue length: 1391.83
+- Number of utterances: 16702
+
+Val set
+- Number of dialogues: 12
+- Max dialogue length: 1969
+- Mean dialogue length: 1369.42
+- Number of utterances: 16433
 
 ### Keys and values for the metadata dictionary
 - num_utterances = Total number of utterance in the full corpus.
@@ -156,6 +169,8 @@ Welcome                        |          fw          |    6     |   0.01   |   
 - word_freq = [Dataframe](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) with Word and Count columns.
 - vocabulary = List of all words in vocabulary.
 - vocabulary_size = Number of words in the vocabulary.
+- speakers = List of all speakers.
+- num_speakers = Number of speakers in the MRDA data.
 
 Each DA label set (basic, general or full) also has:
 - <*setname*>_label_freq = [Dataframe](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) containing all data in the sets Dialogue Acts table above.
@@ -163,5 +178,7 @@ Each DA label set (basic, general or full) also has:
 - num_<*setname*>_labels = Number of labels used from each of the label sets.
 
 Each data set also has:
+- <*setname*>_num_utterances = Number of utterances in the set.
 - <*setname*>_num_dialogues = Number of dialogues in the set.
-- <*setname*>_max_dialogues_len = Length of the longest dialogue in the set.
+- <*setname*>_max_dialogue_len = Length of the longest dialogue in the set.
+- <*setname*>_mean_dialogue_len = Mean length of dialogues in the set.
